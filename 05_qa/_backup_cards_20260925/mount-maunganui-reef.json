@@ -1,0 +1,205 @@
+{
+  "slug": "mount-maunganui-reef",
+  "kind": "reef",
+  "verified_on": "2026-09-24",
+  "name": "Mount Maunganui Beach Reef (\"Mount Reef\")",
+  "place": "Mount Maunganui, Bay of Plenty",
+  "country": "New Zealand",
+  "lat": null,
+  "lon": null,
+  "year": "2005-2008 (construction started Feb/Nov 2005 — sources disagree on month — finished June 2008) [R2][R3][R4][R12]",
+  "type": "Submerged multipurpose geotextile-container (\"sandbag\") reef [R1]",
+  "purpose": "Multipurpose: improve surfing wave quality (primary, per designer), plus hoped-for coastal-protection and public-amenity/tourism benefits [R13][R1]",
+  "size": "Designed volume ~5,000 m3 [R1] or 6,000 m3 [R2] (sources disagree); built/actual volume only 2,800 m3 [R2]. Footprint 50 m wide x 100 m long (perpendicular to shore), containers up to 60 m long x 5 m diameter, per [R2]; an earlier (Nov 2005, pre-completion) account describes a V-shaped layout of two 70 m x 30 m arms sited 240 m offshore [R8]",
+  "cost": "NZ$1.5 million (~US$1 million at the time), per most sources [R2][R6][R7][R12]; one source (Wikipedia's Mount Maunganui page) instead gives an initial estimate of ~NZ$500,000 escalating to ~NZ$800,000 [R10]. Removal cost NZ$87,000 per [R2], vs \"~NZ$60,000\" per [R3][R4]",
+  "cost_usd_approx": "~US$1,000,000 (contemporary conversion cited directly by source) [R2]",
+  "financed_by": "Public donations plus community funding groups via the Mount Maunganui Reef Trust: TECT NZ$250,000, Pub Charity NZ$200,000, Bay Trust NZ$80,000 [R6][R4]",
+  "motivation": "The Mount Maunganui Reef Trust obtained resource consent in August 2000 for a pilot offshore submerged reef, conceived partly as ongoing University of Waikato surf-reef research and partly as a community/tourism project to give the town \"a superior surf break\" and attract surfing visitors [R4]. The Reef Trust argued the reef would \"return more than 30 times its cost through visitor spending,\" an economic-development pitch used to solicit the public donations and community-funding-group grants that ultimately paid for it [R8][R6]. It was explicitly framed by its designer, ASR Ltd/Kerry Black, as a wave-quality project rather than a coastal-protection project: \"Like Cable Station, the Mount Reef was designed purely to improve surfing wave quality\" [R1].",
+  "designer": "Dr Kerry Black / ASR Ltd (Raglan, NZ); design/concept paper co-authored by Black and Mead [R2][R8][R4][R9]. Master-list-cited design paper: \"Black, S.M.; Kerry, A. 1999, Coastal Manag. 27:355-365\" [R13] — author-name order looks like a transcription slip for Black, K.P. & Mead, S.T.",
+  "contractor": "Local Tauranga-area contractors managing construction (not named in sources found); ASR Ltd as design/engineering lead [R4]",
+  "status_now": "Partially removed 2014 (large geotextile containers taken out, 25 September-10 November 2014); resource consent had lapsed in 2010 [R3][R4][R6]. Remnant geotextile fabric was still washing ashore as late as January 2023, confirming the reef was not fully cleared [R12]",
+  "verdict": "failed",
+  "hover_text": "A submerged geotextile-container reef built 2005-2008 for NZ$1.5 million (~US$1m) via public/community-trust funding, aimed at improving surf quality; it was built to only about half its designed sand volume, produced rideable waves only rarely, worsened rip currents near a popular swimming beach, and was partially removed by the regional council in 2014 after its consent lapsed — with debris still washing ashore in 2023 [R1][R2][R3][R6][R7][R12].",
+  "design_as_planned": "The design, credited to Kerry Black and ASR Ltd (design/concept paper Black & Mead, cited by the project master list as \"Black, S.M.; Kerry, A. 1999, Coastal Manag. 27:355-365\" [R13]), called for a reef built from large sand-filled geotextile containers, sized larger than the earlier Narrowneck (Gold Coast) units, for a total design volume reported as approximately 5,000 m3 by one source [R1] and 6,000 m3 by another [R2]. The design promised world-class, high-quality peeling waves able to host up to 50 surfers at once [R4], plus (implicitly, from the \"multipurpose\" framing used across the sources) some coastal-protection and amenity value [R13]. An early construction-phase account (Nov 2005) describes a V-shaped layout of two 70 m x 30 m arms set 240 m offshore [R8], while the reef as intended in its final form is described elsewhere as a 50 m x 100 m submerged footprint using containers up to 60 m long and 5 m in diameter [R2]. No crest-depth figure, sand/rock split, or hydrodynamic wave-height model output was found in any source fetched for this dossier.",
+  "as_built_vs_design": "Construction was repeatedly delayed by bad weather and equipment failure [R1], stretched over roughly three years (2005-2008) instead of a single season, and never reached the designed volume: the finished structure held only about 2,800 m3 of sand-filled geotextile against a design target of 5,000-6,000 m3 [R1][R2] — i.e. built at roughly half the intended volume. Construction proceeded in halves: the left/western side began in November 2005, and by 8 March 2006 was already producing \"quick, head-high, left-hand barrels\" on a small windswell even while incomplete [R2]. The right side was reported \"nearly to specifications\" by October 2006, but final construction did not finish until June 2008 [R2][R7] — a multi-year gap the sources attribute to weather, funding, and construction snags rather than a single design change [R1][R2]. ASR Ltd, the reef's designer, later went into liquidation; the company was also separately criticised for its Boscombe (Dorset, UK) surf reef, which suffered comparable geotextile-container degradation within about two years of construction according to a peer-reviewed evaluation of that reef [R4][R9].",
+  "outcome": "When it worked, surfers reported the reef producing \"quick barreling waves similar to what you might find at a ledge like the Box but smaller,\" with ride lengths of 20-40 m [R2]; the very first days of surf on the partially built reef (Sunday, per an article dated 21-22 December 2005, i.e. most likely 18 December 2005) were described as short, sharp, chest-to-shoulder-high waves that mostly \"disappeared before making the link\" to the inner beach, more suited to bodyboarders than standing surfers at that stage [R5]. But usable conditions were rare: long-time local surfer and former surf-shop owner Derek Winter said rideable surf occurred only \"three or four times since the surf reef was completed\" and called it \"pretty pathetic\" [R7]. ASR's Dr Shaw Mead conceded the reef was \"over-sold and under-delivered\" and was \"a fickle break\" that needed precise swell/tide alignment [R7]. Coastal-protection performance was mixed: one source reports the beach in the reef's lee grew \"up to 20 m wider than sections of the beach away from the reef\" [R1] (an unreferenced-elsewhere, single-source claim). Safety outcomes were negative: the reef caused scouring, \"unexpected holes in adjacent sand,\" and \"increased rip currents,\" raising lifeguard call-out rates and drawing a \"dangerous flop\" verdict from lifeguards [R2][R3][R4]. The five-year resource consent lapsed in 2010, an independent specialist report assessed status-quo/removal/repair options, and the Bay of Plenty Regional Council opted for (partial) removal, executed 25 September-10 November 2014 at a reported cost of NZ$87,000 [R2] (vs \"~NZ$60,000\" in two other accounts [R3][R4]), described by council staff as completed \"on time and within budget\" [R6]. Removal was only partial — large sections of geotextile fabric, \"likely\" from this reef \"given the large size of the geotextile fabric,\" washed ashore near Sutherland Ave on 18 January 2023, prompting a fresh council clean-up and safety advisory [R12].",
+  "why_worked_or_failed": "The core engineering failure identified across sources is a volume shortfall: the reef was built to roughly half its designed sand volume (2,800 m3 actual vs. 5,000-6,000 m3 designed) [R1][R2], which the sources link to construction delays from weather and equipment failure rather than a documented deliberate redesign [R1]. This under-delivery meant the structure could not reliably reproduce the wave shape the design promised, leaving it \"fickle\" and dependent on rare, precisely-aligned swell and tide conditions [R7]. On the coastal-process side, the reef altered nearshore currents in ways that were not the intended benefit: it produced localised scour holes and intensified rip currents near the structure, which lifeguard services flagged as an escalating safety hazard rather than an amenity [R2][R3][R4]. The comparable Boscombe reef (same designer, ASR Ltd) showed geotextile containers physically degrading within about two years in a shallow marine setting, pointing to a possible generic durability weakness in ASR's geotextile-container approach beyond Mount Maunganui alone [R9].",
+  "unexpected_results": "The reef's most consequential unexpected effect was safety-negative rather than safety-positive: instead of the hoped-for amenity, it measurably worsened rip-current frequency and intensity near a popular swimming beach, to the point that Bay of Plenty Regional Council deputy chief executive Eddie Grogan stated \"the reef's expected positive effects have not been realised. It's also generated some unforeseen effects, including creating a large scour hole which affects waves and currents, increasing the frequency and intensity of rips which pose a serious risk to swimmers in the popular Tay Street area\" [R3]. Mount Lifeguard Service and Omanu Surf Lifesaving Club both had to increase monitoring in the area because of this [R6]. Local surf lifesaving bodies ultimately called the project a \"white elephant\" that caused \"more headaches than success stories\" [R6]. A second unexpected result was the reef's very slow, incomplete \"removal\": geotextile fabric attributable to the structure was still surfacing and washing onto the beach nearly a decade after the 2014 removal project was declared complete, in January 2023 [R12].",
+  "could_be_better": "Council staff and the independent specialist report that Bay of Plenty Regional Council commissioned before deciding on removal framed the core problem as a structure that could not deliver its promised benefits while actively creating a new hazard (rips), concluding removal was the only responsible option [R3]. ASR's own Dr Shaw Mead acknowledged the project had been \"over-sold and under-delivered\" [R7]. Veteran local surfer Derek Winter framed it as a trust-and-value failure rather than a purely technical one — that the community \"were sold a con or a lemon\" [R7]. No source fetched gives a specific engineering fix in Mount Maunganui's own case; the closest is the implicit conclusion, drawn by comparing design (5,000-6,000 m3) to built (2,800 m3), that finishing construction to the full designed volume was the design team's and Trust's own unmet target [R1][R2].",
+  "relevance_to_israel": "Tauranga/Mount Maunganui is a micro-tidal to low-meso-tidal harbour coast: the tide-table data source shows high tides ranging roughly 1.5-2.1 m and lows ranging roughly -0.1-0.6 m over a monthly cycle [R11]. This is a genuinely tidal environment — meaningfully larger than the near-zero, sub-0.5 m Mediterranean tidal range at Haifa/Israel that Lior's own outreach material argues is an advantage for reef stability [R14]. What transfers directly to Israel is not the tide range but the two failure modes documented here: (1) under-building relative to design volume (only ~47-56% of the designed sand volume was actually placed [R1][R2]) as a root cause of underperformance, and (2) a geotextile-container reef's capacity to unintentionally amplify rip currents near a public swimming beach [R2][R3][R4] — a safety risk that would need explicit hydrodynamic modelling before any similar structure is proposed for an Israeli beach. The fact that Mount Maunganui's higher tidal range did not save the project from failure (the failure was volume/construction-driven, not tide-driven) is itself a useful data point against overstating Israel's low-tide advantage as sufficient on its own.",
+  "reviews": [
+    {
+      "who": "Derek Winter",
+      "role": "veteran surfer and former Mount Maunganui surf-shop owner",
+      "quote_or_summary": "\"It's pretty pathetic... the young people and [the community] were sold a con or a lemon\"; rideable surf occurred \"three or four times since the surf reef was completed.\"",
+      "outlet": "NZ Herald (Bay of Plenty Times), \"Stuck with a 'Dead Zone'?\"",
+      "date": "",
+      "url": "https://www.nzherald.co.nz/bay-of-plenty-times/news/stuck-with-a-dead-zone/XJONH2K4USMBRMYTBBBPEQON5I/"
+    },
+    {
+      "who": "Dr Shaw Mead",
+      "role": "ASR Ltd (the reef's design/engineering company)",
+      "quote_or_summary": "The reef was \"over-sold and under-delivered\" and remains \"a fickle break.\"",
+      "outlet": "NZ Herald (Bay of Plenty Times), \"Stuck with a 'Dead Zone'?\"",
+      "date": "",
+      "url": "https://www.nzherald.co.nz/bay-of-plenty-times/news/stuck-with-a-dead-zone/XJONH2K4USMBRMYTBBBPEQON5I/"
+    },
+    {
+      "who": "Dr Kerry Black",
+      "role": "ASR Ltd designer",
+      "quote_or_summary": "On the partially built reef's first surf days (Dec 2005): \"Because only one half of the reef is in place, there isn't a focus at the start to gradually build and shape the waves.\"",
+      "outlet": "Scoop, \"1st Days Surf On The Mt Maunganui Artificial Reef\"",
+      "date": "2005-12-21",
+      "url": "https://www.scoop.co.nz/stories/CU0512/S00145.htm"
+    },
+    {
+      "who": "David Neilson",
+      "role": "Mount Maunganui Reef Trust executive officer",
+      "quote_or_summary": "On construction progress in Dec 2005: \"Another six days of perfect weather after that should see the whole of the western side of the reef completed and the reef finally ready to function as designed.\"",
+      "outlet": "Scoop, \"1st Days Surf On The Mt Maunganui Artificial Reef\"",
+      "date": "2005-12-21",
+      "url": "https://www.scoop.co.nz/stories/CU0512/S00145.htm"
+    },
+    {
+      "who": "Eddie Grogan",
+      "role": "Bay of Plenty Regional Council deputy chief executive",
+      "quote_or_summary": "On the 2014 removal decision: \"The reef's expected positive effects have not been realised. It's also generated some unforeseen effects, including creating a large scour hole which affects waves and currents, increasing the frequency and intensity of rips which pose a serious risk to swimmers in the popular Tay Street area.\"",
+      "outlet": "NZ Herald (Bay of Plenty Times), \"Mount's artificial reef to be removed\"",
+      "date": "",
+      "url": "https://www.nzherald.co.nz/bay-of-plenty-times/news/mounts-artificial-reef-to-be-removed/GA44JIIW7LW5P457SBPXO5PKYU/"
+    },
+    {
+      "who": "John Morris",
+      "role": "Bay of Plenty Regional Council pollution-prevention acting team leader",
+      "quote_or_summary": "On the completed 2014 removal project: it was \"on time and within budget.\"",
+      "outlet": "SunLive, \"Time called on artificial reef\"",
+      "date": "",
+      "url": "https://www.sunlive.co.nz/news/86837-time-called-on-artificial-reef.html"
+    },
+    {
+      "who": "Mount lifesaving/surf-club representatives",
+      "role": "unnamed in source",
+      "quote_or_summary": "On the project overall: called it a \"white elephant\" that caused \"more headaches than success stories.\"",
+      "outlet": "SunLive, \"Time called on artificial reef\"",
+      "date": "",
+      "url": "https://www.sunlive.co.nz/news/86837-time-called-on-artificial-reef.html"
+    },
+    {
+      "who": "Trudy Richards",
+      "role": "Bay of Plenty Regional Council compliance team leader",
+      "quote_or_summary": "On fabric washing ashore in 2023: it was \"likely\" reef debris \"given the large size of the geotextile fabric,\" and \"we expect it came loose due to the weather and tidal conditions experienced last week.\"",
+      "outlet": "NZ Herald (Bay of Plenty Times), \"Artificial reef washes ashore at Mount Maunganui\"",
+      "date": "",
+      "url": "https://www.nzherald.co.nz/bay-of-plenty-times/news/artificial-reef-washes-ashore-at-mount-maunganui/JXHBBAPHYNHWBONKL2Q7NHZP44/"
+    }
+  ],
+  "images": [
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Mount-Reef-Arial-1024x575.jpg?v=1573519132",
+      "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/mount-maunganui/",
+      "credit": "Raised Water Research (\"Mount Reef Arial\") — photographer not named on page",
+      "license": "All rights reserved (link only, no explicit CC/open license stated on page)",
+      "depicts": "Aerial view of Mount Maunganui / Mauao headland and beach with an arrow marking the offshore location of the artificial reef",
+      "kind": "photo",
+      "hotlink_ok": true
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Mount-Reef-Installed.jpg",
+      "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/mount-maunganui/",
+      "credit": "Raised Water Research, credited on page to ASR (the reef's design/engineering firm)",
+      "license": "All rights reserved (link only, no explicit CC/open license stated on page)",
+      "depicts": "The completed geotextile-container reef structure as installed off Mount Maunganui Beach (bathymetric/sonar-style image)",
+      "kind": "photo",
+      "hotlink_ok": true
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Mount-Reef-Right-2-Mead-Borrero.jpg",
+      "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/mount-maunganui/",
+      "credit": "Mead, Borrero (via Raised Water Research)",
+      "license": "All rights reserved (link only, no explicit CC/open license stated on page)",
+      "depicts": "A wave breaking right on the Mount Reef at sunset, surfer riding it",
+      "kind": "photo",
+      "hotlink_ok": true
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Mount-Reef-Multibean-2007.jpg",
+      "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/mount-maunganui/",
+      "credit": "Raised Water Research, sourced to Scarf 2009",
+      "license": "All rights reserved (link only, no explicit CC/open license stated on page)",
+      "depicts": "Multibeam bathymetric/depth survey of the reef structure taken in 2007, showing its submerged shape and a missing bag",
+      "kind": "diagram/survey image",
+      "hotlink_ok": true
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Mount-Reef-Deflated-Bag.jpg",
+      "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/mount-maunganui/",
+      "credit": "Raised Water Research, sourced to Dahm and Gibberd 2013",
+      "license": "All rights reserved (link only, no explicit CC/open license stated on page)",
+      "depicts": "A deflated/damaged geotextile sand container at the reef's apex, photographed during a 2013 condition survey",
+      "kind": "photo",
+      "hotlink_ok": true
+    },
+    {
+      "url": "https://www.google.com/maps/@-37.6471741,176.1986412,17z",
+      "source_page": "https://www.google.com/maps/@-37.6471741,176.1986412,17z",
+      "credit": "Google Maps / satellite imagery providers",
+      "license": "Google Maps terms of use (link only, not for redistribution)",
+      "depicts": "Satellite view centred near the Tay Street / Marine Parade corner of Mount Maunganui Beach, the onshore reference point for the (now largely removed) reef",
+      "kind": "map",
+      "hotlink_ok": null
+    }
+  ],
+  "images_rejected": [],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=QsyH6FEzDx4",
+      "platform": "YouTube",
+      "video_id": "QsyH6FEzDx4",
+      "title": "MOUNT REEF DREAM TURNS INTO REALITY!",
+      "channel": "fjsoto1",
+      "duration_seconds": 346,
+      "date": "2006-10-21",
+      "embed_ok": true,
+      "best_timestamp_seconds": 85,
+      "what_it_shows": "Amateur surf footage of the partially-completed Mount Reef filmed shortly after the second half of the geotextile structure was installed (4 October 2006). Uploader description: a small 1.5 m north-easterly swell produced 'fast hollow right hand barrels and up to 50 metre rides on both left and right hand breaks.' Links to the now-defunct official project site mountreef.co.nz.",
+      "transcript_path": null,
+      "key_quotes": [],
+      "frames": [
+        {
+          "path": "03_images/video_frames/mount-maunganui-reef/QsyH6FEzDx4_0125.jpg",
+          "timestamp": "01:25",
+          "caption": "Low-resolution frame (source video 428x240) showing a wave breaking on the reef offshore with one surfer waiting in the lineup."
+        }
+      ]
+    }
+  ],
+  "lior_images": [],
+  "references": [
+    {"id": "R1", "citation": "Wikipedia (2026). \"Multi-purpose reef.\" Wikipedia.", "url": "https://en.wikipedia.org/wiki/Multi-purpose_reef", "accessed": "2026-09-24", "supports": "design volume (~5,000 m3), construction delays, \"designed purely to improve surfing wave quality,\" beach-width claim, mixed performance description"},
+    {"id": "R2", "citation": "Raised Water Research. \"Mount Maunganui.\" raisedwaterresearch.com.", "url": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/mount-maunganui/", "accessed": "2026-09-24", "supports": "build timeline 2005-2008, footprint/container dimensions, built vs. designed volume (2,800 vs 6,000 m3), cost (NZ$1.5m / ~US$1m), removal cost (NZ$87,000) and date (Nov 2014), wave-quality description, scouring/rip problems, designer ASR Ltd/Kerry Black, image captions"},
+    {"id": "R3", "citation": "NZ Herald (Bay of Plenty Times). \"Mount's artificial reef to be removed.\"", "url": "https://www.nzherald.co.nz/bay-of-plenty-times/news/mounts-artificial-reef-to-be-removed/GA44JIIW7LW5P457SBPXO5PKYU/", "accessed": "2026-09-24", "supports": "2014 removal decision and process, Eddie Grogan quote, ~NZ$60,000 removal cost, independent specialist report and its three options, Reef Trust's inability to maintain/re-consent the structure"},
+    {"id": "R4", "citation": "NZ Herald. \"NZ's first artificial surf reef wiped out.\"", "url": "https://www.nzherald.co.nz/nz/nzs-first-artificial-surf-reef-wiped-out/NYTRFDL22KDED3WOWQE5HO5MYQ/", "accessed": "2026-09-24", "supports": "2000 resource consent, 2005-2008 construction via public donations, 2010 consent lapse, April 2014 removal announcement, University of Waikato research partnership, ASR Ltd liquidation, Boscombe comparison, scour hole and rip problems"},
+    {"id": "R5", "citation": "Scoop. \"1st Days Surf On The Mt Maunganui Artificial Reef.\" 21-22 December 2005.", "url": "https://www.scoop.co.nz/stories/CU0512/S00145.htm", "accessed": "2026-09-24", "supports": "first surf session 18 Dec 2005, wave descriptions, Kerry Black and David Neilson quotes, construction-progress detail"},
+    {"id": "R6", "citation": "SunLive. \"Time called on artificial reef.\"", "url": "https://www.sunlive.co.nz/news/86837-time-called-on-artificial-reef.html", "accessed": "2026-09-24", "supports": "removal timeline (25 Sep-10 Nov 2014), removal cost NZ$87,000, funding breakdown (TECT/Pub Charity/Bay Trust), John Morris quote, lifesaving-club \"white elephant\" quote, rip/hole concerns"},
+    {"id": "R7", "citation": "NZ Herald (Bay of Plenty Times). \"Stuck with a 'Dead Zone'?\"", "url": "https://www.nzherald.co.nz/bay-of-plenty-times/news/stuck-with-a-dead-zone/XJONH2K4USMBRMYTBBBPEQON5I/", "accessed": "2026-09-24", "supports": "completion date June 2008, cost $1.5m, Derek Winter quote, Shaw Mead quote, \"dead zone\" characterisation"},
+    {"id": "R8", "citation": "NZ Herald. \"Reef company making waves worldwide.\"", "url": "https://www.nzherald.co.nz/business/reef-company-making-waves-worldwide/LGTUQJEFRKUCKQNFLMRPCCXMHY/", "accessed": "2026-09-24", "supports": "ASR Ltd/Kerry Black company background, Mount Reef V-shaped 70m x 30m-arm design description (pre-completion, Nov 2005), \"30x return\" claim, international ASR reef pipeline, $1m budget figure"},
+    {"id": "R9", "citation": "Coastal Engineering Proceedings (ICCE). \"An Evaluation of the Physical Impact and Structural Integrity of a Geotextile Surf Reef.\"", "url": "https://icce-ojs-tamu.tdl.org/icce/index.php/icce/article/view/6794", "accessed": "2026-09-24", "supports": "Boscombe reef geotextile degradation within ~2 years (comparator for ASR Ltd's design approach), citation of Mead & Black (1999) as the Mount Maunganui precedent design paper"},
+    {"id": "R10", "citation": "Wikipedia. \"Mount Maunganui.\"", "url": "https://en.wikipedia.org/wiki/Mount_Maunganui", "accessed": "2026-09-24", "supports": "town coordinates (37°39′35″S 176°12′53″E), alternative cost figures (~NZ$500,000 escalating to ~NZ$800,000), general reef-removal narrative"},
+    {"id": "R11", "citation": "tides4fishing. \"Tide times and charts for Tauranga, Bay of Plenty.\"", "url": "https://tides4fishing.com/nz/bay-of-plenty/tauranga", "accessed": "2026-09-24", "supports": "Tauranga tidal range (max recorded high 2.1 m, min -0.1 m; spring/neap coefficient variation)"},
+    {"id": "R12", "citation": "NZ Herald (Bay of Plenty Times). \"Artificial reef washes ashore at Mount Maunganui.\"", "url": "https://www.nzherald.co.nz/bay-of-plenty-times/news/artificial-reef-washes-ashore-at-mount-maunganui/JXHBBAPHYNHWBONKL2Q7NHZP44/", "accessed": "2026-09-24", "supports": "January 2023 geotextile fabric wash-up near Sutherland Ave, Trudy Richards quotes, confirmation that 2014 removal was only partial, reef location (250 m offshore, Tay St/Marine Parade), $1.5m cost restated"},
+    {"id": "R13", "citation": "Lior's notes, 01_source_notes/jmse2023_bar_drimer_paper.md", "url": "", "accessed": "2026-09-24", "supports": "citation of the original design paper as \"Black, S.M.; Kerry, A. 1999, Coastal Manag. 27:355-365,\" multipurpose framing (coastal protection + surf + amenity), grouping among reefs where \"most... have failed\""},
+    {"id": "R14", "citation": "Lior's notes, 01_source_notes/pptx_goldcoast_swells_people_photos.md", "url": "", "accessed": "2026-09-24", "supports": "identification of \"Mount Reef\" in a 4-panel raisedwaterresearch.com comparison graphic; Lior's own outreach-email framing of Israel's small tidal range as a stability advantage (quoted as Lior's opinion, not verified fact)"},
+    {"id": "R15", "citation": "Project master list, 02_research/00_master_list.md, row mount-maunganui-reef", "url": "", "accessed": "2026-09-24", "supports": "seed classification (multipurpose artificial reef, New Zealand, cited design-paper year 1999 vs. this dossier's confirmed build years 2005-2008)"}
+  ],
+  "blocked_sources": [
+    "https://www.newstalkzb.co.nz/news/national/artificial-reef-washes-ashore-at-mount-maunganui/ (403 Forbidden on WebFetch; not used as a reference — superseded by R12 which covers the same event)",
+    "https://raisedwaterresearch.com/... (406 Mod_Security block on direct curl; content only accessible via WebFetch, which succeeded and was used as R2)"
+  ],
+  "gaps": [
+    "Exact reef coordinates (lat/lon) not published in any source found; only the onshore Tay St/Marine Parade reference point and town-centre coordinates are available, so lat/lon fields are left null in this card",
+    "Crest depth of the reef not stated in any source found",
+    "No source gives a bag-fabric spec, marine-growth data, or storm-event log specific to Mount Maunganui's degradation mode",
+    "No contractor company name found for the physical construction work (only the design/engineering firm ASR Ltd is named)",
+    "Construction start month disagreement (Feb 2005 per R1 vs Nov 2005 per R2/R8) not reconciled by any source found"
+  ]
+}

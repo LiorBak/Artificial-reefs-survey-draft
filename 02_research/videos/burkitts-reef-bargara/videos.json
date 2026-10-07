@@ -1,0 +1,41 @@
+[
+  {
+    "url": "https://www.youtube.com/watch?v=wuJ__7Js-cY",
+    "video_id": "wuJ__7Js-cY",
+    "platform": "youtube",
+    "title": "Diving Bargara, Burkitt's Reef Marine Park",
+    "channel": "Black Beard Diving",
+    "date": "2021-03-27",
+    "duration_seconds": 286,
+    "what_it_shows": "GoPro-style shore dive footage filmed at Burkitts Reef Marine Park off the Bargara esplanade: sandy/rocky reef bottom, hard coral bommies, reef fish schools, and (per the uploader's description) sea snakes, moray eels and small gummy sharks, though the exact swim path is not narrated so individual creatures were not all confirmed in the two extracted frames.",
+    "embed_ok": true,
+    "transcript_path": null,
+    "key_quotes": [],
+    "frames": [
+      {
+        "path": "C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\03_images\\video_frames\\burkitts-reef-bargara\\wuJ__7Js-cY_0025.jpg",
+        "timestamp": "00:25",
+        "caption": "A striped bubble/moon snail (Hydatina sp. or similar) on the sandy reef bottom at Burkitts Reef Marine Park."
+      },
+      {
+        "path": "C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\03_images\\video_frames\\burkitts-reef-bargara\\wuJ__7Js-cY_0205.jpg",
+        "timestamp": "02:05",
+        "caption": "A school of reef fish over hard coral bommies and coral gardens at Burkitts Reef, matching the dossier's description of the dive site [R10]."
+      }
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=O3bEn8029XQ",
+    "video_id": "O3bEn8029XQ",
+    "platform": "youtube",
+    "title": "Surfing at Bargara Beach, QLD",
+    "channel": "Campr",
+    "date": "2018-02-20",
+    "duration_seconds": 79,
+    "what_it_shows": "General tourism/promo footage of surfing conditions at Bargara Beach ('one of the best places in Australia to learn to surf'). NOT confirmed to show Burkitts Reef / the point break specifically — the title, description and metadata only say 'Bargara Beach,' with no mention of Burkitts Reef, Greg Redgard, or the reshaped point break. Included only as a labeled uncertain lead, per the honesty-over-quantity rule; do not treat as depicting this exact structure.",
+    "embed_ok": false,
+    "transcript_path": null,
+    "key_quotes": [],
+    "frames": []
+  }
+]

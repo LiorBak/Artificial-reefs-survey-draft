@@ -1,0 +1,46 @@
+[
+  {
+    "url": "https://www.youtube.com/watch?v=CEmSn956q-g",
+    "platform": "YouTube",
+    "title": "פרויקט שוברי גלים שלב א' נתניה צפון (Breakwater Project Phase A, Netanya North)",
+    "duration_seconds": 117,
+    "channel": "החברה הממשלתית להגנות מצוקי חוף הים התיכון (Government Company for Protection of Mediterranean Sea Cliffs, official channel)",
+    "date": "2024-03-28",
+    "what_it_shows": "Official aerial/drone b-roll of the six rock breakwaters actually built between Lagoon Beach and Sironit Beach, Netanya, under Phase A of the 12-unit coastal-protection scheme (the same TAMA 9/13 framework whose menu of options included, but did not use, a marine geotube). Burned-in Hebrew on-screen captions (no spoken narration — the audio track is background music only) give project facts: work began November 2020 to address a beach strip narrowed and endangered by repeated cliff collapses; the work was carried out by contractor Ma'agan (מעגן) under the supervision of Adir (אדיר) — both new contractor names not found in the text sources used for the dossier.",
+    "embed_ok": true,
+    "transcript_path": "02_research/videos/israel-geotubes-other-sites/CEmSn956q-g.txt",
+    "key_quotes": [
+      "00:15 (burned-in caption) תחילת הפרויקט נובמבר 2020 / רצועת החוף צרה ומסוכנת עקב קריסות רבות (\"Project start November 2020 / beach strip narrow and dangerous due to repeated collapses\")",
+      "00:28 (burned-in caption) הפרויקט בוצע על ידי חברת מעגן בפיקוח חברת אדיר (\"Project executed by Ma'agan company, supervised by Adir company\")",
+      "yt-dlp description: החברה הממשלתית להגנות מצוקי החוף השלימה בהצלחה את הקמת שישה שוברי גלים במסגרת הפרויקט החופי המתפרש בין חוף לגון לחוף סירונית בעיר נתניה (\"the Company successfully completed construction of six breakwaters as part of the coastal project spanning Lagoon Beach to Sironit Beach in Netanya\")"
+    ],
+    "frames": [
+      {
+        "path": "03_images/video_frames/israel-geotubes-other-sites/CEmSn956q-g_0015.jpg",
+        "timestamp": "00:15",
+        "caption": "Aerial view of the Netanya cliff/beach before Phase A construction, with burned-in caption noting the project started Nov 2020 because the beach strip had narrowed and become dangerous from repeated cliff collapses. Confirmed by viewing: matches the description, high-rise construction visible on the cliff top in the background."
+      },
+      {
+        "path": "03_images/video_frames/israel-geotubes-other-sites/CEmSn956q-g_0028.jpg",
+        "timestamp": "00:28",
+        "caption": "Aerial view of excavators and dump trucks actively building a rock breakwater arm out into the sea at Netanya, with burned-in caption crediting contractor Ma'agan under supervision of Adir. Confirmed by viewing: clearly shows rock breakwater under active construction, matching the dossier's description of Netanya's built rock breakwaters (the geotube option was never used here)."
+      }
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=X0qKYp71Fm0",
+    "platform": "YouTube",
+    "title": "הזנת חול בחופי נתניה 2022 (Sand Feeding on Netanya Beaches 2022)",
+    "duration_seconds": 119,
+    "channel": "החברה הממשלתית להגנות מצוקי חוף הים התיכון (Government Company for Protection of Mediterranean Sea Cliffs, official channel)",
+    "date": "2022-11-21",
+    "what_it_shows": "Official aerial b-roll of the ~6-week 2022 sand-nourishment operation at Netanya, feeding 150,000 m³ of clean marine sand onto the beach via a Spanish dredging vessel, explicitly described in the video's own text description as carried out 'as part of the breakwater-construction project and as part of the array of solutions for building marine protections to prevent the collapse of the coastal cliff.' Directly documents the sand-nourishment component that (like the rock breakwaters) was built at Netanya instead of, or alongside, the never-used geotube option. No spoken narration found (no subtitle track available); content summarized from the uploader's own video description.",
+    "embed_ok": true,
+    "transcript_path": null,
+    "key_quotes": [
+      "Video description: הפרויקט נמשך כשישה שבועות וכלל הזנה של 150 אלף מ\"ק חול ים נקי, באמצעות אניית מחפר ספרדית (\"The project ran about six weeks and included feeding 150,000 m³ of clean marine sand via a Spanish dredging vessel\")",
+      "Video description: הפרויקט מבוצע במסגרת פרויקט הקמת שוברי הגלים וכחלק ממערך הפתרונות להקמת הגנות ימיות (\"The project is carried out as part of the breakwater-construction project and as part of the array of solutions for building marine protections\")"
+    ],
+    "frames": []
+  }
+]

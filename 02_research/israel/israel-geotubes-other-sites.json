@@ -1,0 +1,48 @@
+{
+  "slug": "israel-geotubes-other-sites",
+  "name": "Other Geotube / Sand-Container Installations on the Israeli Coast",
+  "place": "Israel (Tel Aviv Hof HaTzuk, Netanya, and national cliff-protection company pilots)",
+  "country": "Israel",
+  "lat": null,
+  "lon": null,
+  "year_built": "no second fully-built geotube found besides Ashkelon (separate dossier); Tel Aviv Hof HaTzuk geotube planned/tendered 2019-2020, abandoned for a rock-breakwater design by 2024; Netanya TAMA 9/13 (2017) permits a geotube option, never exercised (built rock breakwaters instead, 2021-2023); 'armored geotube' pilot technology proposed Oct 2022, not deployed in the sea as of Dec 2023",
+  "closed": "not applicable - no structure built to remove",
+  "type": "0 built geotube structures found beyond Ashkelon; 1 planned-then-abandoned geotube (Tel Aviv); 1 permitted-but-unbuilt geotube option (Netanya); 1 unbuilt pilot 'armored geotube' technology (SECURE Ltd, for the national cliff-protection company)",
+  "purpose": "coastal cliff / beach erosion protection",
+  "dimensions": {
+    "tel_aviv_planned_geotube": "450 m long (extendable to 900 m-1 km), submerged 3 m, 250 m offshore",
+    "netanya_scheme_built_instead": "6 of 12 planned rock breakwaters, 3.5 km beach frontage",
+    "armored_geotube_claimed_lifespan": "~30 years vs months-to-years for plain geotextile"
+  },
+  "designer": "Tel Aviv-Yafo Municipality (Hof HaTzuk plan); Government Company for Protection of Mediterranean Sea Cliffs / Vaadat Lochof (Netanya TAMA 9/13 framework); SECURE LTD (armored-geotube concept)",
+  "contractor": "not found (Tel Aviv geotube tender not completed/awarded before plan changed); not found for Netanya breakwaters",
+  "cost": {
+    "tel_aviv_geotube": "not found",
+    "netanya_ashkelon_breakwater_repair_2021_nis": 11000000,
+    "armored_geotube_pilot_program_nis": 2450000,
+    "usd_rough": "NIS 11M repair ~= USD 3.3M at 2021 rates; NIS 2.45M innovation budget ~= USD 0.7M at 2022 rates"
+  },
+  "financed_by": "Tel Aviv-Yafo Municipality (Hof HaTzuk plan); Israeli state budget via Ministry of Environmental Protection / Government Company for Protection of Mediterranean Sea Cliffs (Netanya, armored-geotube pilot)",
+  "outcome_one_liner": "No second built geotube found on the Israeli coast besides Ashkelon: Tel Aviv's Hof HaTzuk geotube was fought off by surfers (Adi Gluska, Eyal Szmulewitz) and NGOs in 2019 and by 2024 the municipality had switched to a rock-breakwater design instead; Netanya's own master plan allowed a geotube option but the company built rock breakwaters there too; a hardened 'armored geotube' pilot exists only on paper/lab trial as of the latest source",
+  "priority": 1,
+  "kind": "israel",
+  "dossier_md": "02_research/israel/israel-geotubes-other-sites.md",
+  "references_count": 10,
+  "reviews_found": 7,
+  "seed_urls_status": {
+    "https://www.timesofisrael.com/surfers-protest-plans-for-breakwater-off-last-open-beach-in-tel-aviv/": "fetched ok",
+    "https://timeout.co.il/שובר-הגלים-בחוף-הצוק/": "fetched ok",
+    "https://www.mccp.co.il/": "fetched ok",
+    "https://he.wikipedia.org/wiki/החברה_הממשלתית_להגנות_מצוקי_חוף_הים_התיכון": "fetched ok",
+    "https://library.mevaker.gov.il/sites/DigitalLibrary/Documents/2024/Shilton/2024-Shilton-501-Matzok.pdf": "fetched ok (PDF, extracted via pdftotext)",
+    "https://oknesset.org/meetings/2/1/2144965.html": "fetched ok",
+    "https://zalul.org.il/mazok-hofy/": "fetched ok",
+    "https://netanya.mynet.co.il/local_news/article/BJUOeK7ov": "fetched ok",
+    "https://www.ynet.co.il/article/5602551": "fetched ok",
+    "http://www.admir.co.il/geotechnical-solutions/soil-engineering-and-roads/coastal-protection-geotube/": "TLS cert mismatch, blocked",
+    "https://admir.co.il/geotechnical-solutions/soil-engineering-and-roads/coastal-protection-geotube/": "HTTP 404, blocked",
+    "https://www.atzuma.co.il/hofhazuk": "JS-rendered, only generic header returned, blocked",
+    "https://www.atzuma.co.il/shomreyam": "JS-rendered, only generic header returned, blocked",
+    "https://docplayer.co.il/175089521-...": "DNS resolution failed, blocked"
+  }
+}

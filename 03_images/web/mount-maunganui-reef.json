@@ -1,0 +1,61 @@
+[
+  {
+    "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Mount-Reef-Arial-1024x575.jpg?v=1573519132",
+    "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/mount-maunganui/",
+    "credit": "Raised Water Research (\"Mount Reef Arial\") — photographer not named on page",
+    "license": "All rights reserved (link only, no explicit CC/open license stated on page)",
+    "depicts": "Aerial view of the Mount Maunganui / Tay Street artificial surf reef offshore, showing the submerged structure's footprint and surf breaking on it",
+    "date": "undated (page created ~2019, reef built 2005-2008; photo could be from any point in that window)",
+    "kind": "photo",
+    "verified": "curl -I 200 OK, Content-Type: image/jpeg (checked 2026-09-24)"
+  },
+  {
+    "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Mount-Reef-Installed.jpg",
+    "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/mount-maunganui/",
+    "credit": "Raised Water Research, credited on page to ASR (the reef's design/engineering firm)",
+    "license": "All rights reserved (link only, no explicit CC/open license stated on page)",
+    "depicts": "The completed geotextile-container reef structure as installed off Mount Maunganui Beach",
+    "date": "undated, post-2008 completion",
+    "kind": "photo",
+    "verified": "curl -I 200 OK, Content-Type: image/jpeg (checked 2026-09-24)"
+  },
+  {
+    "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Mount-Reef-Right-2-Mead-Borrero.jpg",
+    "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/mount-maunganui/",
+    "credit": "Mead, Borrero (via Raised Water Research, alt text: \"Mount Reef Surf Reef Going Right Sunset\")",
+    "license": "All rights reserved (link only, no explicit CC/open license stated on page)",
+    "depicts": "A wave breaking right on the Mount Reef at sunset, surfer riding it — the reef's surf-break function in action",
+    "date": "undated",
+    "kind": "photo",
+    "verified": "curl -I 200 OK, Content-Type: image/jpeg (checked 2026-09-24)"
+  },
+  {
+    "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Mount-Reef-Multibean-2007.jpg",
+    "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/mount-maunganui/",
+    "credit": "Raised Water Research, sourced to Scarf 2009 (alt text: \"Mount Reef Surf Reef Depth 2007\")",
+    "license": "All rights reserved (link only, no explicit CC/open license stated on page)",
+    "depicts": "Multibeam bathymetric/depth survey of the reef structure taken in 2007, showing its submerged shape and any early damage",
+    "date": "2007 (survey date)",
+    "kind": "diagram/survey image",
+    "verified": "curl -I 200 OK, Content-Type: image/jpeg (checked 2026-09-24)"
+  },
+  {
+    "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Mount-Reef-Deflated-Bag.jpg",
+    "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/mount-maunganui/",
+    "credit": "Raised Water Research, sourced to Dahm and Gibberd 2013 (alt text: \"Mount Reef Survey 2013 Deflated Bag\")",
+    "license": "All rights reserved (link only, no explicit CC/open license stated on page)",
+    "depicts": "A deflated/damaged geotextile sand container at the reef's apex, photographed during a 2013 condition survey — documents the deterioration described in the dossier",
+    "date": "2013 (survey date)",
+    "kind": "photo",
+    "verified": "curl -I 200 OK, Content-Type: image/jpeg (checked 2026-09-24)"
+  },
+  {
+    "url": "https://www.google.com/maps/@-37.6471741,176.1986412,17z",
+    "source_page": "https://www.google.com/maps/@-37.6471741,176.1986412,17z",
+    "credit": "Google Maps / satellite imagery providers",
+    "license": "Google Maps terms of use (link only, not for redistribution)",
+    "depicts": "Satellite view centred near the Tay Street / Marine Parade corner of Mount Maunganui Beach, the onshore reference point ~250 m from which the (now largely removed) reef lay offshore; the reef's own coordinates are not published in any source found, so this pin is the nearest documented fixed reference, not the structure itself",
+    "date": "current satellite imagery (accessed 2026-09-24)",
+    "kind": "map"
+  }
+]

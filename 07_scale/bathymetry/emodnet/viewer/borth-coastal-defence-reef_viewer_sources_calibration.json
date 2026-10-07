@@ -1,0 +1,28 @@
+{
+ "cal": [
+  0.9956248295482842,
+  450359.32931876974,
+  -0.9952578908718388,
+  6856008.097338744
+ ],
+ "spread": [
+  0.44031413764741956,
+  0.954666666670164
+ ],
+ "rect": [
+  0,
+  60,
+  1700,
+  1190
+ ],
+ "url": "https://emodnet.ec.europa.eu/geoviewer/?layers=13012&basemap=esri-imagery&bounds=-452338.54,6887474.90,-450630.80,6888558.66&filters=&projection=EPSG:3857",
+ "n_tiles": 600,
+ "tile_requests": [
+  "https://emodnet.ec.europa.eu/geoviewer/proxy//http://ows.emodnet-bathymetry.eu/wms?REQUEST=GetMap&SERVICE=WMS&VERSION=1.3.0&FORMAT=image%2Fpng&STYLES=&TRANSPARENT=TRUE&LAYERS=emodnet%3Asource_references&viewParams=&TIME=&WIDTH=256&HEIGHT=256&CRS=EPSG%3A3857&BBOX=-451589.9631088227%2C6887893.4928338025%2C-451284.214995682%2C6888199.240946943",
+  "https://emodnet.ec.europa.eu/geoviewer/proxy//http://ows.emodnet-bathymetry.eu/wms?REQUEST=GetMap&SERVICE=WMS&VERSION=1.3.0&FORMAT=image%2Fpng&STYLES=&TRANSPARENT=TRUE&LAYERS=emodnet%3Asource_references&viewParams=&TIME=&WIDTH=256&HEIGHT=256&CRS=EPSG%3A3857&BBOX=-451895.71122196317%2C6887893.4928338025%2C-451589.96310882247%2C6888199.240946943",
+  "https://emodnet.ec.europa.eu/geoviewer/proxy//http://ows.emodnet-bathymetry.eu/wms?REQUEST=GetMap&SERVICE=WMS&VERSION=1.3.0&FORMAT=image%2Fpng&STYLES=&TRANSPARENT=TRUE&LAYERS=emodnet%3Asource_references&viewParams=&TIME=&WIDTH=256&HEIGHT=256&CRS=EPSG%3A3857&BBOX=-451589.9631088227%2C6887587.744720662%2C-451284.214995682%2C6887893.4928338025",
+  "https://emodnet.ec.europa.eu/geoviewer/proxy//http://ows.emodnet-bathymetry.eu/wms?REQUEST=GetMap&SERVICE=WMS&VERSION=1.3.0&FORMAT=image%2Fpng&STYLES=&TRANSPARENT=TRUE&LAYERS=emodnet%3Asource_references&viewParams=&TIME=&WIDTH=256&HEIGHT=256&CRS=EPSG%3A3857&BBOX=-451589.9631088227%2C6888199.240946943%2C-451284.214995682%2C6888504.989060083",
+  "https://emodnet.ec.europa.eu/geoviewer/proxy//http://ows.emodnet-bathymetry.eu/wms?REQUEST=GetMap&SERVICE=WMS&VERSION=1.3.0&FORMAT=image%2Fpng&STYLES=&TRANSPARENT=TRUE&LAYERS=emodnet%3Asource_references&viewParams=&TIME=&WIDTH=256&HEIGHT=256&CRS=EPSG%3A3857&BBOX=-451284.21499568224%2C6887893.4928338025%2C-450978.46688254154%2C6888199.240946943",
+  "https://emodnet.ec.europa.eu/geoviewer/proxy//http://ows.emodnet-bathymetry.eu/wms?REQUEST=GetMap&SERVICE=WMS&VERSION=1.3.0&FORMAT=image%2Fpng&STYLES=&TRANSPARENT=TRUE&LAYERS=emodnet%3Asource_references&viewParams=&TIME=&WIDTH=256&HEIGHT=256&CRS=EPSG%3A3857&BBOX=-451895.71122196317%2C6887587.744720662%2C-451589.96310882247%2C6887893.4928338025"
+ ]
+}

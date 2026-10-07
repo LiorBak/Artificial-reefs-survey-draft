@@ -1,0 +1,7 @@
+comparison points: 13 of the Mortensen labels (3.5-11.5 m)
+LAT (no conversion)            vertical offset fixed 0  : shift s = 284.0 m, c = +0.00 m, RMS = 0.52 m
+LAT (no conversion)            vertical offset fitted   : shift s = 335.0 m, c = +1.27 m, RMS = 0.20 m
+AHD = LAT + 0.76 (MSQ 2014)    vertical offset fixed 0  : shift s = 316.0 m, c = +0.00 m, RMS = 0.29 m
+AHD = LAT + 0.76 (MSQ 2014)    vertical offset fitted   : shift s = 335.0 m, c = +0.51 m, RMS = 0.20 m
+MSL = LAT + 0.88 (MSQ 2026)    vertical offset fixed 0  : shift s = 320.5 m, c = +0.00 m, RMS = 0.26 m
+MSL = LAT + 0.88 (MSQ 2026)    vertical offset fitted   : shift s = 335.0 m, c = +0.39 m, RMS = 0.20 m

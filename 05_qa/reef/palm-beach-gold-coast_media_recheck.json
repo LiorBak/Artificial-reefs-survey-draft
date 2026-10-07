@@ -1,0 +1,49 @@
+{
+  "report_path": "C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\05_qa\\reef\\palm-beach-gold-coast_media_recheck.md",
+  "verdicts_json_path": "C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\05_qa\\reef\\palm-beach-gold-coast_media_recheck.json",
+  "images": [
+    {
+      "url": "https://live-production.wcms.abc-cdn.net.au/45b719e6a29fdb237a75b4f095d83fbf",
+      "shows": "structure_visible",
+      "what_i_saw": "Aerial photo of Palm Beach coastline with a dredging/backhoe vessel working offshore and a dark disturbed-seabed plume around it, matching ABC's own caption 'made up of 60,000 tonnes of boulders.' Verified download 1200x800px/235,477 bytes matches the URL served live by the article today.",
+      "confidence": "high"
+    },
+    {
+      "url": "https://www.crucollective.com.au/wp-content/uploads/2019/10/Palm-Beach-Artificial-Reef-Completion.jpg",
+      "shows": "structure_visible",
+      "what_i_saw": "Labelled aerial photo of Palm Beach with text overlays 'ARTIFICIAL REEF' (arrow to an offshore location), 'PALM BEACH NATURAL REEF', 'BENEFIT AREA', groynes, Burleigh Headland and Currumbin Creek. Page's own caption: 'Aerial view of the area benefited by the artificial reef.' Verified download 791x664px/104,402 bytes matches the page's stated dimensions and the URL's live Content-Length exactly.",
+      "confidence": "high"
+    },
+    {
+      "url": "https://www.crucollective.com.au/wp-content/uploads/2019/10/Palm-Beach-Artificial-Reef-Completion2.jpg",
+      "shows": "structure_visible",
+      "what_i_saw": "Zoomed labelled satellite/aerial image with a drawn grey capsule-shaped overlay labelled 'ARTIFICIAL REEF', an arrow marked 'Approx. 270m' from the 21st Ave groyne, and 'PALM BEACH NATURAL REEF' further offshore. Page caption ('section view showing rock sizes') is a slight mismatch to the actual content (it's a location/distance schematic, not a rock cross-section), but the reef's position is unambiguous. Verified download 567x454px/41,302 bytes matches the page's stated dimensions and the URL's live Content-Length exactly.",
+      "confidence": "high"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/5bfcd059e2ccd1869cf36e40/1600916522672-D4UT1B7FEQEBOCBBOQRI/image-asset.jpeg",
+      "shows": "site_context_only",
+      "what_i_saw": "Telephoto beach-break photo of two surfers riding a wave that peels into two peaks, other surfers in the background, wooden rail in the foreground. No landmark or reef structure visible; Bluecoast's own page ties the image to the 2017 sand-nourishment phase (pre-reef), and the card's own 'depicts' field already notes it shows 'no distinctive landmark.'",
+      "confidence": "high"
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=i6k6WN2GtWI",
+      "about": "about_the_reef",
+      "evidence": "Full official transcript is about the reef throughout, e.g. 00:00 'in 2019 the city will be constructing an artificial reef', 00:26 'boulders weighing up to 8 tons each ... located approximately 270 meters offshore from 19th Avenue', 02:07 'surfing has been kept in mind when designing the reef'."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=mHSiPEh-93M",
+      "about": "about_the_reef",
+      "evidence": "Auto-captions are almost entirely [Music]/[Applause], no spoken narration confirming the reef. Classification rests on the uploader's own YouTube description (re-fetched via yt-dlp --dump-single-json this pass): 'This time we filmed for first time in the channel at the artificial reef on Palm Beach and we had a great session!' (dated 23 June 2022). FLAGGED AS WEAK EVIDENCE: no in-video visual/audio anchor to the specific reef location distinguishes this from generic beach surf footage -- exactly the pattern Lior warned about on other cards. Recommend a second look."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=xWPl70kPFug",
+      "about": "mentions_reef_briefly",
+      "evidence": "Description (re-fetched via yt-dlp): 'A glorious day, back on Palm Beach reef as QLD ends the seasonal closure for Spanish Mackerel.' The reef is named as the fishing location but the video's subject is fishing tackle/technique, not the reef's design or function -- incidental use, not 'about' the reef."
+    }
+  ],
+  "frames": [],
+  "hero_recommendation": "https://www.crucollective.com.au/wp-content/uploads/2019/10/Palm-Beach-Artificial-Reef-Completion.jpg"
+}

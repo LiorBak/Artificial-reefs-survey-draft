@@ -1,0 +1,53 @@
+[
+  {
+    "url": "https://www.youtube.com/watch?v=i6k6WN2GtWI",
+    "video_id": "i6k6WN2GtWI",
+    "platform": "YouTube",
+    "title": "Palm Beach Artificial Reef",
+    "channel": "cityofgoldcoast",
+    "date": "2019-05-21",
+    "duration_seconds": 210,
+    "what_it_shows": "Official City of Gold Coast explainer video (animation + graphics) describing the Palm Beach Artificial Reef project ahead of the May-October 2019 construction: purpose (coastal erosion protection via sand retention), design stats (270 m offshore from 19th Avenue, 160 m long, up to 80 m wide, boulders up to 8 t, crest 1.5 m below average water level), secondary surfing amenity for intermediate surfers, and construction method (tug boats, split hopper barges from Brisbane, backhoe dredger with GPS placement).",
+    "embed_ok": true,
+    "transcript_path": "C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\02_research\\videos\\palm-beach-gold-coast\\i6k6WN2GtWI.txt",
+    "key_quotes": [
+      "00:00 [narration] \"in 2019 the city will be constructing an artificial reef as part of the Palm Beach shoreline project\"",
+      "00:26 \"boulders weighing up to 8 tons each ... located approximately 270 meters offshore from 19th Avenue\"",
+      "00:30 \"it will be 160 metres long and up to 80 metres wide\"",
+      "00:44 \"the artificial reef at its highest point will sit one and a half metres below the average water level\"",
+      "02:07 \"surfing has been kept in mind when designing the reef ... waves breaking on the reef suitable for intermediate surfers\"",
+      "03:07 \"there will be an exclusion zone around the offshore construction area to keep the public safe\""
+    ],
+    "frames": []
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=mHSiPEh-93M",
+    "video_id": "mHSiPEh-93M",
+    "platform": "YouTube",
+    "title": "Surfing the Artificial Reef at Palm Beach",
+    "channel": "The Surf Eye",
+    "date": "2022-06-27",
+    "duration_seconds": 556,
+    "what_it_shows": "Surf-filming footage (drone/water shots, no narration) of surfers riding waves at the Palm Beach artificial reef on the morning of 23 June 2022, per the uploader's description (\"first time in the channel at the artificial reef on Palm Beach\"). Auto-captions are almost entirely [Music]/[Applause] with no spoken narration, so no usable spoken quotes were extractable.",
+    "embed_ok": false,
+    "transcript_path": "C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\02_research\\videos\\palm-beach-gold-coast\\mHSiPEh-93M.txt",
+    "key_quotes": [],
+    "frames": [],
+    "best_timestamp_seconds": 60
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=xWPl70kPFug",
+    "video_id": "xWPl70kPFug",
+    "platform": "YouTube",
+    "title": "A GLORIOUS Day On Palm Beach Reef (Gold Coast, Australia)",
+    "channel": "Riko Fisho",
+    "date": "2024-02-23",
+    "duration_seconds": 949,
+    "what_it_shows": "Fishing vlog at the Palm Beach reef (QLD) targeting Spanish Mackerel as the seasonal closure ends, per the uploader's description. Not transcribed (long, fishing-focused, lower priority than the construction/surf videos); included to document the reef's use as a fishing spot / marine habitat.",
+    "embed_ok": false,
+    "transcript_path": "",
+    "key_quotes": [],
+    "frames": [],
+    "best_timestamp_seconds": 0
+  }
+]

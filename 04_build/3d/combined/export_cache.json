@@ -1,0 +1,590 @@
+{
+ "borth-coastal-defence-reef": {
+  "sig": "d826d86593adf29488a80a4100ba6f70d661add4",
+  "result": {
+   "slug": "borth-coastal-defence-reef",
+   "status": "ok",
+   "reason": "",
+   "ok": true,
+   "metrics": {
+    "area_m2": 11922.0,
+    "area_ref_m2": 11518.0,
+    "centroid": [
+     4.740647542358665,
+     331.8802214393558
+    ],
+    "centroid_ref": [
+     3.0919019810757793,
+     330.66292706527213
+    ],
+    "crest_z_m": 1.5,
+    "bbox_alongshore_m": 255.0,
+    "bbox_offshore_m": 185.0,
+    "n_reef_meshes": 1,
+    "n_skirt_ignored": 0
+   },
+   "checks": [
+    {
+     "name": "footprint area vs model.js area including the toe berm and blanket (the mesh includes them)",
+     "got": 11922.0,
+     "ref": 11518.0,
+     "err": 0.03507553394686577,
+     "tol": 0.25,
+     "unit": "relative",
+     "ok": true
+    },
+    {
+     "name": "footprint centroid vs polygon centroid",
+     "got": [
+      4.740647542358665,
+      331.8802214393558
+     ],
+     "ref": [
+      3.0919019810757793,
+      330.66292706527213
+     ],
+     "err": 2.049431023241766,
+     "tol": 6.0,
+     "unit": "m",
+     "ok": true
+    },
+    {
+     "name": "crest level vs model.js",
+     "got": 1.5,
+     "ref": 1.44,
+     "err": 0.06000000000000005,
+     "tol": 0.2,
+     "unit": "m",
+     "ok": true
+    },
+    {
+     "name": "seabed falls away offshore (+z)",
+     "got": -6.000807566276344,
+     "ref": 0.0,
+     "err": 6.000807566276344,
+     "tol": 20,
+     "unit": "deg",
+     "ok": true
+    },
+    {
+     "name": "seabed crosses 0 m MSL on a beach inside the patch (waterline at offshore 80 m; the frame's y = 0 is not the shoreline)",
+     "got": 0.0,
+     "ref": 0.0,
+     "err": 0.0,
+     "tol": 1.5,
+     "unit": "m",
+     "ok": true
+    }
+   ],
+   "area_m2": 11922.0,
+   "area_ref_m2": 11518.0,
+   "area_rel_err": 0.03507553394686577,
+   "crest_z_m": 1.5,
+   "crest_ref_m": 1.44,
+   "crest_err_m": 0.06000000000000005,
+   "bbox_m": [
+    255.0,
+    185.0
+   ],
+   "file": "3d/combined/borth-coastal-defence-reef.js",
+   "size_kb": 791,
+   "note": {
+    "rotation_deg": 0.0,
+    "skirt_ignored": 0,
+    "reef_meshes": 1,
+    "seabed_vertices": 9765,
+    "reef_vertices": 47616
+   }
+  }
+ },
+ "boscombe-surf-reef": {
+  "sig": "f6f7459056aabad22d457e0c6d391a6e49621c13",
+  "result": {
+   "slug": "boscombe-surf-reef",
+   "status": "ok",
+   "reason": "",
+   "ok": true,
+   "metrics": {
+    "area_m2": 4868.0,
+    "area_ref_m2": 4042.0622999999973,
+    "centroid": [
+     0.2530813475760066,
+     226.35250616269516
+    ],
+    "centroid_ref": [
+     -0.0019369476319023456,
+     226.38710424115274
+    ],
+    "crest_z_m": -0.8999999761581421,
+    "bbox_alongshore_m": 109.0,
+    "bbox_offshore_m": 110.0,
+    "n_reef_meshes": 1,
+    "n_skirt_ignored": 0
+   },
+   "checks": [
+    {
+     "name": "footprint area vs model.js toe polygon",
+     "got": 4868.0,
+     "ref": 4042.0622999999973,
+     "err": 0.20433571743810164,
+     "tol": 0.25,
+     "unit": "relative",
+     "ok": true
+    },
+    {
+     "name": "footprint centroid vs polygon centroid",
+     "got": [
+      0.2530813475760066,
+      226.35250616269516
+     ],
+     "ref": [
+      -0.0019369476319023456,
+      226.38710424115274
+     ],
+     "err": 0.257354537406483,
+     "tol": 6.0,
+     "unit": "m",
+     "ok": true
+    },
+    {
+     "name": "crest level vs model.js",
+     "got": -0.8999999761581421,
+     "ref": -0.9,
+     "err": 2.384185793236071e-08,
+     "tol": 0.2,
+     "unit": "m",
+     "ok": true
+    },
+    {
+     "name": "seabed falls away offshore (+z)",
+     "got": -3.728188691516216,
+     "ref": 0.0,
+     "err": 3.728188691516216,
+     "tol": 20,
+     "unit": "deg",
+     "ok": true
+    },
+    {
+     "name": "seabed at the shoreline is near 0 m MSL",
+     "got": 0.1684294583518868,
+     "ref": 0.0,
+     "err": 0.1684294583518868,
+     "tol": 1.5,
+     "unit": "m",
+     "ok": true
+    }
+   ],
+   "area_m2": 4868.0,
+   "area_ref_m2": 4042.0622999999973,
+   "area_rel_err": 0.20433571743810164,
+   "crest_z_m": -0.8999999761581421,
+   "crest_ref_m": -0.9,
+   "crest_err_m": 2.384185793236071e-08,
+   "bbox_m": [
+    109.0,
+    110.0
+   ],
+   "file": "3d/combined/boscombe-surf-reef.js",
+   "size_kb": 1519,
+   "note": {
+    "rotation_deg": 0.0,
+    "skirt_ignored": 0,
+    "reef_meshes": 1,
+    "seabed_vertices": 57799,
+    "reef_vertices": 12210
+   }
+  }
+ },
+ "bunbury-airwave": {
+  "sig": "05fd332611613706d0cc13c108f0427cdb9ea521",
+  "result": {
+   "slug": "bunbury-airwave",
+   "status": "ok",
+   "reason": "",
+   "ok": true,
+   "metrics": {
+    "area_m2": 111.97799657793803,
+    "area_ref_m2": 112.06194800000002,
+    "centroid": [
+     -0.0026271162694362664,
+     37.502689084344226
+    ],
+    "centroid_ref": [
+     -0.0030392137629687813,
+     37.50238350336518
+    ],
+    "crest_z_m": -0.6502518057823181,
+    "bbox_alongshore_m": 12.04979133605957,
+    "bbox_offshore_m": 12.069307327270508,
+    "n_reef_meshes": 1,
+    "n_skirt_ignored": 1
+   },
+   "checks": [
+    {
+     "name": "footprint area vs model.js toe polygon",
+     "got": 111.97799657793803,
+     "ref": 112.06194800000002,
+     "err": 0.0007491519071396664,
+     "tol": 0.25,
+     "unit": "relative",
+     "ok": true
+    },
+    {
+     "name": "footprint centroid vs polygon centroid",
+     "got": [
+      -0.0026271162694362664,
+      37.502689084344226
+     ],
+     "ref": [
+      -0.0030392137629687813,
+      37.50238350336518
+     ],
+     "err": 0.0005130341888510702,
+     "tol": 6.0,
+     "unit": "m",
+     "ok": true
+    },
+    {
+     "name": "crest level vs model.js",
+     "got": -0.6502518057823181,
+     "ref": -0.7950000000000004,
+     "err": 0.14474819421768226,
+     "tol": 0.2,
+     "unit": "m",
+     "ok": true
+    },
+    {
+     "name": "seabed falls away offshore (+z)",
+     "got": 1.2744210795261128,
+     "ref": 0.0,
+     "err": 1.2744210795261128,
+     "tol": 20,
+     "unit": "deg",
+     "ok": true
+    },
+    {
+     "name": "seabed at the shoreline is near 0 m MSL",
+     "got": 0.3873770481352109,
+     "ref": 0.0,
+     "err": 0.3873770481352109,
+     "tol": 1.5,
+     "unit": "m",
+     "ok": true
+    }
+   ],
+   "area_m2": 111.97799657793803,
+   "area_ref_m2": 112.06194800000002,
+   "area_rel_err": 0.0007491519071396664,
+   "crest_z_m": -0.6502518057823181,
+   "crest_ref_m": -0.7950000000000004,
+   "crest_err_m": 0.14474819421768226,
+   "bbox_m": [
+    12.0,
+    12.1
+   ],
+   "file": "3d/combined/bunbury-airwave.js",
+   "size_kb": 133,
+   "note": {
+    "rotation_deg": 180.0,
+    "skirt_ignored": 1,
+    "reef_meshes": 1,
+    "seabed_vertices": 2989,
+    "reef_vertices": 2784
+   }
+  }
+ },
+ "mount-maunganui-reef": {
+  "sig": "a1776af8ff8641d17f2bd9ec9bdeddbff542253f",
+  "result": {
+   "slug": "mount-maunganui-reef",
+   "status": "ok",
+   "reason": "",
+   "ok": true,
+   "metrics": {
+    "area_m2": 1903.5,
+    "area_ref_m2": 1788.0,
+    "centroid": [
+     -0.707184134489099,
+     310.93413448909905
+    ],
+    "centroid_ref": [
+     0.0011650504654849793,
+     307.7139715831004
+    ],
+    "crest_z_m": -2.0149998664855957,
+    "bbox_alongshore_m": 85.0,
+    "bbox_offshore_m": 74.0,
+    "n_reef_meshes": 1,
+    "n_skirt_ignored": 1
+   },
+   "checks": [
+    {
+     "name": "footprint area vs model.js footprint at the bed (the default version has a 1:1 skirt from the -2.0 m contour to the bed)",
+     "got": 1903.5,
+     "ref": 1788.0,
+     "err": 0.06459731543624161,
+     "tol": 0.25,
+     "unit": "relative",
+     "ok": true
+    },
+    {
+     "name": "footprint centroid vs polygon centroid",
+     "got": [
+      -0.707184134489099,
+      310.93413448909905
+     ],
+     "ref": [
+      0.0011650504654849793,
+      307.7139715831004
+     ],
+     "err": 3.2971514537545388,
+     "tol": 6.0,
+     "unit": "m",
+     "ok": true
+    },
+    {
+     "name": "crest level vs model.js",
+     "got": -2.0149998664855957,
+     "ref": -2.03,
+     "err": 0.015000133514404101,
+     "tol": 0.2,
+     "unit": "m",
+     "ok": true
+    },
+    {
+     "name": "seabed falls away offshore (+z)",
+     "got": -2.2842516601886206e-16,
+     "ref": 0.0,
+     "err": 2.2842516601886206e-16,
+     "tol": 20,
+     "unit": "deg",
+     "ok": true
+    },
+    {
+     "name": "seabed at the shoreline is near 0 m MSL",
+     "got": 0.14303557574748993,
+     "ref": 0.0,
+     "err": 0.14303557574748993,
+     "tol": 1.5,
+     "unit": "m",
+     "ok": true
+    }
+   ],
+   "area_m2": 1903.5,
+   "area_ref_m2": 1788.0,
+   "area_rel_err": 0.06459731543624161,
+   "crest_z_m": -2.0149998664855957,
+   "crest_ref_m": -2.03,
+   "crest_err_m": 0.015000133514404101,
+   "bbox_m": [
+    85.0,
+    74.0
+   ],
+   "file": "3d/combined/mount-maunganui-reef.js",
+   "size_kb": 388,
+   "note": {
+    "rotation_deg": 0.0,
+    "skirt_ignored": 1,
+    "reef_meshes": 1,
+    "seabed_vertices": 2898,
+    "reef_vertices": 25479
+   }
+  }
+ },
+ "palm-beach-gold-coast": {
+  "sig": "09ab09e186e4d9e0c957c00923669a7067812d5f",
+  "result": {
+   "slug": "palm-beach-gold-coast",
+   "status": "ok",
+   "reason": "",
+   "ok": true,
+   "metrics": {
+    "area_m2": 12536.999955090345,
+    "area_ref_m2": 11972.421900000008,
+    "centroid": [
+     -0.00712193725822774,
+     304.7735099883596
+    ],
+    "centroid_ref": [
+     0.0008298457696923373,
+     304.699786124741
+    ],
+    "crest_z_m": -1.4299999475479126,
+    "bbox_alongshore_m": 141.00412672400847,
+    "bbox_offshore_m": 153.00379752937374,
+    "n_reef_meshes": 1,
+    "n_skirt_ignored": 0
+   },
+   "checks": [
+    {
+     "name": "footprint area vs model.js toe polygon",
+     "got": 12536.999955090345,
+     "ref": 11972.421900000008,
+     "err": 0.04715654525091001,
+     "tol": 0.25,
+     "unit": "relative",
+     "ok": true
+    },
+    {
+     "name": "footprint centroid vs polygon centroid",
+     "got": [
+      -0.00712193725822774,
+      304.7735099883596
+     ],
+     "ref": [
+      0.0008298457696923373,
+      304.699786124741
+     ],
+     "err": 0.07415145932597907,
+     "tol": 6.0,
+     "unit": "m",
+     "ok": true
+    },
+    {
+     "name": "crest level vs model.js",
+     "got": -1.4299999475479126,
+     "ref": -1.5,
+     "err": 0.0700000524520874,
+     "tol": 0.2,
+     "unit": "m",
+     "ok": true
+    },
+    {
+     "name": "seabed falls away offshore (+z)",
+     "got": 1.619020263590119,
+     "ref": 0.0,
+     "err": 1.619020263590119,
+     "tol": 20,
+     "unit": "deg",
+     "ok": true
+    },
+    {
+     "name": "seabed at the shoreline is near 0 m MSL",
+     "got": 0.13134658078418399,
+     "ref": 0.0,
+     "err": 0.13134658078418399,
+     "tol": 1.5,
+     "unit": "m",
+     "ok": true
+    }
+   ],
+   "area_m2": 12536.999955090345,
+   "area_ref_m2": 11972.421900000008,
+   "area_rel_err": 0.04715654525091001,
+   "crest_z_m": -1.4299999475479126,
+   "crest_ref_m": -1.5,
+   "crest_err_m": 0.0700000524520874,
+   "bbox_m": [
+    141.0,
+    153.0
+   ],
+   "file": "3d/combined/palm-beach-gold-coast.js",
+   "size_kb": 951,
+   "note": {
+    "rotation_deg": 115.7,
+    "skirt_ignored": 0,
+    "reef_meshes": 1,
+    "seabed_vertices": 25066,
+    "reef_vertices": 21868
+   }
+  }
+ },
+ "prattes-reef-el-segundo": {
+  "sig": "7324978425627ca3d50fbe964d14bf4ed01f5486",
+  "result": {
+   "slug": "prattes-reef-el-segundo",
+   "status": "ok",
+   "reason": "",
+   "ok": true,
+   "metrics": {
+    "area_m2": 478.2399520849692,
+    "area_ref_m2": 435.1749500000006,
+    "centroid": [
+     0.13313514101154178,
+     91.20289290089818
+    ],
+    "centroid_ref": [
+     0.0052629373542569325,
+     91.43765444143007
+    ],
+    "crest_z_m": -1.818428874015808,
+    "bbox_alongshore_m": 60.79999923706055,
+    "bbox_offshore_m": 31.20000457763672,
+    "n_reef_meshes": 1,
+    "n_skirt_ignored": 1
+   },
+   "checks": [
+    {
+     "name": "footprint area vs model.js toe polygon",
+     "got": 478.2399520849692,
+     "ref": 435.1749500000006,
+     "err": 0.09896020459120766,
+     "tol": 0.25,
+     "unit": "relative",
+     "ok": true
+    },
+    {
+     "name": "footprint centroid vs polygon centroid",
+     "got": [
+      0.13313514101154178,
+      91.20289290089818
+     ],
+     "ref": [
+      0.0052629373542569325,
+      91.43765444143007
+     ],
+     "err": 0.2673280407684111,
+     "tol": 6.0,
+     "unit": "m",
+     "ok": true
+    },
+    {
+     "name": "crest level vs model.js",
+     "got": -1.818428874015808,
+     "ref": -1.784,
+     "err": 0.034428874015808075,
+     "tol": 0.2,
+     "unit": "m",
+     "ok": true
+    },
+    {
+     "name": "seabed falls away offshore (+z)",
+     "got": 7.937097138164821e-16,
+     "ref": 0.0,
+     "err": 7.937097138164821e-16,
+     "tol": 20,
+     "unit": "deg",
+     "ok": true
+    },
+    {
+     "name": "seabed at the shoreline is near 0 m MSL",
+     "got": 0.43833333253860474,
+     "ref": 0.0,
+     "err": 0.43833333253860474,
+     "tol": 1.5,
+     "unit": "m",
+     "ok": true
+    }
+   ],
+   "area_m2": 478.2399520849692,
+   "area_ref_m2": 435.1749500000006,
+   "area_rel_err": 0.09896020459120766,
+   "crest_z_m": -1.818428874015808,
+   "crest_ref_m": -1.784,
+   "crest_err_m": 0.034428874015808075,
+   "bbox_m": [
+    60.8,
+    31.2
+   ],
+   "file": "3d/combined/prattes-reef-el-segundo.js",
+   "size_kb": 194,
+   "note": {
+    "rotation_deg": 0.0,
+    "skirt_ignored": 1,
+    "reef_meshes": 1,
+    "seabed_vertices": 2263,
+    "reef_vertices": 12087
+   }
+  }
+ }
+}

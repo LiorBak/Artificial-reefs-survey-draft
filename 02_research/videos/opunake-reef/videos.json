@@ -1,0 +1,59 @@
+[
+  {
+    "url": "https://www.youtube.com/watch?v=-xWlsZlffZY",
+    "video_id": "-xWlsZlffZY",
+    "platform": "youtube",
+    "title": "Every Breaking Wave at OPUNAKE beach.",
+    "channel": "David McCallum",
+    "date": "2020-07-20",
+    "duration_seconds": 87,
+    "what_it_shows": "Wordless scenic clip of waves breaking along Opunake Beach, South Taranaki, on what looks like a clean/glassy day. Does not name or visibly show the artificial reef structure; general confirmation this is the same beach the reef sits on.",
+    "embed_ok": true,
+    "best_timestamp_seconds": 5,
+    "transcript_path": null,
+    "key_quotes": [],
+    "frames": [
+      {
+        "path": "03_images/video_frames/opunake-reef/-xWlsZlffZY_0005.jpg",
+        "timestamp": "00:05",
+        "caption": "Wet sand foreshore at Opunake Beach with a faint rainbow and small lines of whitewater breaking in the distance; viewed and honestly captioned, no reef structure visible (frame kept as general site context, not reef evidence)."
+      }
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=cfiQvzgdGn0",
+    "video_id": "cfiQvzgdGn0",
+    "platform": "youtube",
+    "title": "Opunake Classic 2015",
+    "channel": "Opunake Surf",
+    "date": "2015-03-08",
+    "duration_seconds": 178,
+    "what_it_shows": "Footage from the 2015 \"Opunake Classic\" surf contest at Opunake Beach — a competitor riding a wave. Uploaded by an \"Opunake Surf\" channel, confirming local surf-community activity at this exact beach; does not identify or discuss the artificial reef.",
+    "embed_ok": true,
+    "best_timestamp_seconds": 16,
+    "transcript_path": null,
+    "key_quotes": [],
+    "frames": [
+      {
+        "path": "03_images/video_frames/opunake-reef/cfiQvzgdGn0_0016.jpg",
+        "timestamp": "00:16",
+        "caption": "A surfer in a red top dropping in on a breaking wave during the 2015 Opunake Classic contest; viewed and honestly captioned, no reef structure visible."
+      }
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=GXYYCbZtz_s",
+    "video_id": "GXYYCbZtz_s",
+    "platform": "youtube",
+    "title": "Opunake Beach - Taranaki NZ",
+    "channel": "Michael Herman",
+    "date": "2021-02-10",
+    "duration_seconds": 101,
+    "what_it_shows": "General tourism-style look at Opunake Beach, described by the uploader as \"a look at Opunake's beautifully appointed beach... great spot for safe swimming.\" Scenic/amenity footage, not reef- or surf-specific.",
+    "embed_ok": true,
+    "best_timestamp_seconds": 10,
+    "transcript_path": null,
+    "key_quotes": [],
+    "frames": []
+  }
+]

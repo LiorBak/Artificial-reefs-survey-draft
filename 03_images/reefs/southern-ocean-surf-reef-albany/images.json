@@ -1,0 +1,547 @@
+[
+ {
+  "id": "southern-ocean-surf-reef-albany-img-01",
+  "file": "03_images/reefs/southern-ocean-surf-reef-albany/southern-ocean-surf-reef-albany_abc-wide-wave-ship_2025.jpg",
+  "annotated_files": [],
+  "kind": "photo",
+  "title": "Albany surf reef already 'gaining a formidable reputation': a wave breaking in King George Sound with a bulk carrier at anchor (ABC)",
+  "citation": "ABC News: Daniel Mercer (2025-07-16). Photo in: Artificial reef at Middleton Beach transforms Albany's surf scene (article by Daniel Mercer; caption 'The Albany surf reef is already gaining a formidable reputation. (ABC News: Daniel Mercer)'). ABC News, https://www.abc.net.au/news/2025-07-16/southern-ocean-surf-reef-transforms-albany-wa/105530202. Image file https://live-production.wcms.abc-cdn.net.au/1acef1f70b0ceb5b17916201362c656d (card used a cropped/resized variant of the same file). Accessed 2026-10-06.",
+  "image_url": "https://live-production.wcms.abc-cdn.net.au/1acef1f70b0ceb5b17916201362c656d",
+  "source_page": "https://www.abc.net.au/news/2025-07-16/southern-ocean-surf-reef-transforms-albany-wa/105530202",
+  "page_or_figure": "article photo 1 (caption: The Albany surf reef is already gaining a formidable reputation. (ABC News: Daniel Mercer))",
+  "image_date": "2025 (article 2025-07-16; surf photos after the 2025 opening; construction photo before it)",
+  "credit": "ABC News: Daniel Mercer",
+  "license": "ABC News copyright (all rights reserved; news editorial); link/research copy only - NOT cleared",
+  "retrieved": "2026-10-06",
+  "shows": "Wide coastal shot: hills framing King George Sound, a surfer riding a peeling wave, an anchored bulk carrier offshore. The reef is fully submerged (crest -1.0 m AHD) so no structure is visible.",
+  "structure_visible": false,
+  "state_shown": "as-built, in service (2025)",
+  "used_for": [
+   "context"
+  ],
+  "how_used": "Page illustration of the reef working (hero candidate). No dimension read; no scale.",
+  "linked_records": [
+   "02_research/reefs/southern-ocean-surf-reef-albany.json images[0]",
+   "05_qa/reef/southern-ocean-surf-reef-albany_media_recheck.json images[0]"
+  ],
+  "bytes": 649750,
+  "px": [
+   2768,
+   1848
+  ],
+  "sha256": "9e4074cc6ea3189589eb8ec97864055cfff635bd0d706b35e2cd9edf1c8bf3a8",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": true,
+  "for_3d_check": {
+   "pending": true,
+   "what_to_check": "Break position and wave direction: where the wave peels relative to the headland, the ship and the beach could be compared with the design crest orientation 270-305 deg N and 140 m cross-shore position; weak (no scale)",
+   "model_values_affected": [
+    "planform",
+    "position"
+   ]
+  },
+  "added_by": "image-registry backfill, 2026-10-06"
+ },
+ {
+  "id": "southern-ocean-surf-reef-albany-img-02",
+  "file": "03_images/reefs/southern-ocean-surf-reef-albany/southern-ocean-surf-reef-albany_abc-clean-wave-dunes_2025.jpg",
+  "annotated_files": [],
+  "kind": "photo",
+  "title": "A clean wave breaks on the Albany surf reef, seen through dune grass (ABC)",
+  "citation": "ABC News: Daniel Mercer (2025-07-16). Photo in: Artificial reef at Middleton Beach transforms Albany's surf scene (article by Daniel Mercer; caption 'A clean wave breaks on the Albany surf reef. (ABC News: Daniel Mercer)'). ABC News, https://www.abc.net.au/news/2025-07-16/southern-ocean-surf-reef-transforms-albany-wa/105530202. Image file https://live-production.wcms.abc-cdn.net.au/1927a3b21137e3775326b744d308276e (card used a cropped/resized variant of the same file). Accessed 2026-10-06.",
+  "image_url": "https://live-production.wcms.abc-cdn.net.au/1927a3b21137e3775326b744d308276e",
+  "source_page": "https://www.abc.net.au/news/2025-07-16/southern-ocean-surf-reef-transforms-albany-wa/105530202",
+  "page_or_figure": "article photo 2 (caption: A clean wave breaks on the Albany surf reef. (ABC News: Daniel Mercer))",
+  "image_date": "2025 (article 2025-07-16; surf photos after the 2025 opening; construction photo before it)",
+  "credit": "ABC News: Daniel Mercer",
+  "license": "ABC News copyright (all rights reserved; news editorial); link/research copy only - NOT cleared",
+  "retrieved": "2026-10-06",
+  "shows": "Beach-level shot through dune grass of a clean left-breaking wave peeling with a surfer visible; same hills and ship in the background.",
+  "structure_visible": false,
+  "state_shown": "as-built, in service (2025)",
+  "used_for": [
+   "context"
+  ],
+  "how_used": "Page illustration of the reef working (recommended hero image in the 2026-09-25 recheck). No dimension read.",
+  "linked_records": [
+   "02_research/reefs/southern-ocean-surf-reef-albany.json images[1]",
+   "05_qa/reef/southern-ocean-surf-reef-albany_media_recheck.json images[1]"
+  ],
+  "bytes": 1137690,
+  "px": [
+   4240,
+   2832
+  ],
+  "sha256": "da01594327ef22f84221f4a7543feba7f31b4708df6ceb3f8fc43d82a00a2e0c",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": true,
+  "for_3d_check": {
+   "pending": false,
+   "what_to_check": "none: surf photo without scale",
+   "model_values_affected": []
+  },
+  "added_by": "image-registry backfill, 2026-10-06"
+ },
+ {
+  "id": "southern-ocean-surf-reef-albany-img-03",
+  "file": "03_images/reefs/southern-ocean-surf-reef-albany/southern-ocean-surf-reef-albany_abc-vessels-building-reef_2025.jpg",
+  "annotated_files": [],
+  "kind": "aerial",
+  "title": "Specialised vessels building the Albany surf reef: a barge working over the submerged rock berm (ABC, supplied)",
+  "citation": "'Supplied' (photographer not named by ABC) (2025-07-16). Photo in: Artificial reef at Middleton Beach transforms Albany's surf scene (article by Daniel Mercer; caption 'Specialised vessels came from around the world to build the Albany surf reef. (Supplied)'). ABC News, https://www.abc.net.au/news/2025-07-16/southern-ocean-surf-reef-transforms-albany-wa/105530202. Image file https://live-production.wcms.abc-cdn.net.au/8ffae200f1ff9606775f71f627b5dc7e (card used a cropped/resized variant of the same file). Accessed 2026-10-06.",
+  "image_url": "https://live-production.wcms.abc-cdn.net.au/8ffae200f1ff9606775f71f627b5dc7e",
+  "source_page": "https://www.abc.net.au/news/2025-07-16/southern-ocean-surf-reef-transforms-albany-wa/105530202",
+  "page_or_figure": "article photo 3 (caption: Specialised vessels came from around the world to build the Albany surf reef. (Supplied))",
+  "image_date": "2025 (article 2025-07-16; surf photos after the 2025 opening; construction photo before it)",
+  "credit": "'Supplied' (photographer not named by ABC)",
+  "license": "ABC News copyright (all rights reserved; news editorial); link/research copy only - NOT cleared",
+  "retrieved": "2026-10-06",
+  "shows": "Aerial/drone shot of a dredge/crane barge and a tug working directly over a submerged elongated dark rock berm in turquoise water.",
+  "structure_visible": true,
+  "state_shown": "under construction (about April-May 2025)",
+  "used_for": [
+   "context"
+  ],
+  "how_used": "Page illustration of the construction state. No scale in the file, so not traced; the berm shape is consistent with the ~165 m footprint.",
+  "linked_records": [
+   "02_research/reefs/southern-ocean-surf-reef-albany.json images[2]",
+   "05_qa/reef/southern-ocean-surf-reef-albany_media_recheck.json images[2]"
+  ],
+  "bytes": 1506635,
+  "px": [
+   4032,
+   2268
+  ],
+  "sha256": "05c42e7327578a34d18227f9280ff3ffb5e34be7c4a460bcc3fc19c2e3b5f68c",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": true,
+  "for_3d_check": {
+   "pending": true,
+   "what_to_check": "Planform and length: if the barge size is known (jack-up barge, tug) the berm outline could be scaled and compared with the design crest length 110 m @ -2 m AHD and the ~165 m footprint; also the berm's curvature",
+   "model_values_affected": [
+    "planform",
+    "volume"
+   ]
+  },
+  "added_by": "image-registry backfill, 2026-10-06"
+ },
+ {
+  "id": "southern-ocean-surf-reef-albany-img-04",
+  "file": "03_images/reefs/southern-ocean-surf-reef-albany/southern-ocean-surf-reef-albany_rwr-surfing-wave_2025.png",
+  "annotated_files": [],
+  "kind": "photo",
+  "title": "Surfer bottom-turning on a breaking wave at the Albany reef (RWR)",
+  "citation": "Raised Water Research (2025). Midds Reef [spot profile page for the Albany / Southern Ocean Surf Reef]; image 'Southern Ocean Surf Reef Surfing Waves Artificial Reef'. https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/albany-artificial-surf-reef/. Image file https://raisedwaterresearch.com/wp-content/uploads/2025/05/Southern-Ocean-Surf-Reef-Surfing-Waves-Artificial-Reef.png. Accessed 2026-10-06.",
+  "image_url": "https://raisedwaterresearch.com/wp-content/uploads/2025/05/Southern-Ocean-Surf-Reef-Surfing-Waves-Artificial-Reef.png",
+  "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/albany-artificial-surf-reef/",
+  "page_or_figure": "page gallery image 'Southern-Ocean-Surf-Reef-Surfing-Waves-Artificial-Reef.png'",
+  "image_date": "2025 (upload path 2025/05)",
+  "credit": "Raised Water Research",
+  "license": "Copyright Raised Water Research per the card (no licence on the page); link/research copy only - NOT cleared",
+  "retrieved": "2026-10-06",
+  "shows": "Surfer bottom-turning on a breaking wave with whitewater peeling left; reef submerged, not visible.",
+  "structure_visible": false,
+  "state_shown": "as-built, in service (2025)",
+  "used_for": [
+   "context"
+  ],
+  "how_used": "Page illustration of the surf effect. No dimension read.",
+  "linked_records": [
+   "02_research/reefs/southern-ocean-surf-reef-albany.json images (card image)",
+   "05_qa/reef/southern-ocean-surf-reef-albany_media_recheck.json"
+  ],
+  "bytes": 157908,
+  "px": [
+   546,
+   255
+  ],
+  "sha256": "97ffe155677ce636068626c22ac6c50220da084812b298f82d104d318ace7214",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": true,
+  "for_3d_check": {
+   "pending": false,
+   "what_to_check": "none: surf photo without scale",
+   "model_values_affected": []
+  },
+  "added_by": "image-registry backfill, 2026-10-06"
+ },
+ {
+  "id": "southern-ocean-surf-reef-albany-img-05",
+  "file": "03_images/reefs/southern-ocean-surf-reef-albany/southern-ocean-surf-reef-albany_rwr-construction-overview_2025.jpg",
+  "annotated_files": [],
+  "kind": "aerial",
+  "title": "Aerial of the Albany artificial surf reef under construction, May 2025 (RWR)",
+  "citation": "Raised Water Research (2025). Midds Reef [spot profile page for the Albany / Southern Ocean Surf Reef]; image 'Southern Ocean Surf Reef Albany artificial surf reef construction overview'. https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/albany-artificial-surf-reef/. Image file https://raisedwaterresearch.com/wp-content/uploads/2025/05/Southern-Ocean-Surf-Reef-Albany-artificial-surf-reef-construction-overview.jpg. Accessed 2026-10-06.",
+  "image_url": "https://raisedwaterresearch.com/wp-content/uploads/2025/05/Southern-Ocean-Surf-Reef-Albany-artificial-surf-reef-construction-overview.jpg",
+  "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/albany-artificial-surf-reef/",
+  "page_or_figure": "page gallery image 'Southern-Ocean-Surf-Reef-Albany-artificial-surf-reef-construction-overview.jpg'",
+  "image_date": "2025-05 (embedded caption)",
+  "credit": "Raised Water Research (the file carries an embedded caption only; photographer not named)",
+  "license": "Copyright Raised Water Research per the card (no licence on the page); link/research copy only - NOT cleared",
+  "retrieved": "2026-10-06",
+  "shows": "Aerial shot of the sandy beach and shallow turquoise water with a clear elongated dark submerged rock-berm shadow and a small dredge vessel alongside; embedded caption 'An aerial shot of the Great Southern's artificial surf reef under construction in May, 2025.'",
+  "structure_visible": true,
+  "state_shown": "under construction (May 2025)",
+  "used_for": [
+   "context"
+  ],
+  "how_used": "Page illustration of the construction state; oblique view with no scale, so not traced. The berm shadow is visible, so it could support a planform check.",
+  "linked_records": [
+   "02_research/reefs/southern-ocean-surf-reef-albany.json images (card image)",
+   "05_qa/reef/southern-ocean-surf-reef-albany_media_recheck.json"
+  ],
+  "bytes": 27060,
+  "px": [
+   810,
+   456
+  ],
+  "sha256": "df3460ac80d21764f04f4a7b044ed70a73644fd52c62c835cae03f8fa7b80b76",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": true,
+  "for_3d_check": {
+   "pending": true,
+   "what_to_check": "Planform: the berm shadow outline vs the design crest length 110 m @ -2 m AHD and the ~165 m footprint, orientation 270-305 deg N, ~140 m offshore",
+   "model_values_affected": [
+    "planform",
+    "position"
+   ]
+  },
+  "added_by": "image-registry backfill, 2026-10-06"
+ },
+ {
+  "id": "southern-ocean-surf-reef-albany-img-06",
+  "file": "03_images/reefs/southern-ocean-surf-reef-albany/southern-ocean-surf-reef-albany_rwr-barge-deploy_2025.jpg",
+  "annotated_files": [],
+  "kind": "photo",
+  "title": "Excavator on a jack-up barge deploying rock for the Albany reef (RWR)",
+  "citation": "Raised Water Research (2025). Midds Reef [spot profile page for the Albany / Southern Ocean Surf Reef]; image 'Southern Ocean Surf Reef Barge Deploy'. https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/albany-artificial-surf-reef/. Image file https://raisedwaterresearch.com/wp-content/uploads/2025/05/Southern-Ocean-Surf-Reef-Barge-Deploy.jpg. Accessed 2026-10-06.",
+  "image_url": "https://raisedwaterresearch.com/wp-content/uploads/2025/05/Southern-Ocean-Surf-Reef-Barge-Deploy.jpg",
+  "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/albany-artificial-surf-reef/",
+  "page_or_figure": "page gallery image 'Southern-Ocean-Surf-Reef-Barge-Deploy.jpg'",
+  "image_date": "2025 (upload path 2025/05)",
+  "credit": "Raised Water Research (photographer not named)",
+  "license": "Copyright Raised Water Research per the card (no licence on the page); link/research copy only - NOT cleared",
+  "retrieved": "2026-10-06",
+  "shows": "A tracked excavator on a jack-up work barge with spud legs, beside a tug, placing rock offshore; hills of the sound behind.",
+  "structure_visible": false,
+  "state_shown": "under construction (2025)",
+  "used_for": [
+   "context"
+  ],
+  "how_used": "Page illustration of the construction method (rock placed from a jack-up barge). No dimension read.",
+  "linked_records": [
+   "02_research/reefs/southern-ocean-surf-reef-albany.json images (not on the card; found on the RWR page 2026-10-06)",
+   "05_qa/reef/southern-ocean-surf-reef-albany_media_recheck.json"
+  ],
+  "bytes": 50937,
+  "px": [
+   828,
+   466
+  ],
+  "sha256": "e626ef011c6a39b98650e0e97b350032924495d4904e63bb86cda73648dbce67",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": true,
+  "for_3d_check": {
+   "pending": false,
+   "what_to_check": "none: construction method photo",
+   "model_values_affected": []
+  },
+  "added_by": "image-registry backfill, 2026-10-06"
+ },
+ {
+  "id": "southern-ocean-surf-reef-albany-img-07",
+  "file": "03_images/reefs/southern-ocean-surf-reef-albany/southern-ocean-surf-reef-albany_rwr-construction-2_2025.png",
+  "annotated_files": [],
+  "kind": "photo",
+  "title": "Jack-up barge offshore of Middleton Beach with small waves breaking, at dusk (RWR)",
+  "citation": "Raised Water Research (2025). Midds Reef [spot profile page for the Albany / Southern Ocean Surf Reef]; image 'Southern Ocean Surf Reef Albany Middleton Beach Construction 2'. https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/albany-artificial-surf-reef/. Image file https://raisedwaterresearch.com/wp-content/uploads/2025/05/Southern-Ocean-Surf-Reef-Albany-Middleton-Beach-Construction-2.png. Accessed 2026-10-06.",
+  "image_url": "https://raisedwaterresearch.com/wp-content/uploads/2025/05/Southern-Ocean-Surf-Reef-Albany-Middleton-Beach-Construction-2.png",
+  "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/albany-artificial-surf-reef/",
+  "page_or_figure": "page gallery image 'Southern-Ocean-Surf-Reef-Albany-Middleton-Beach-Construction-2.png'",
+  "image_date": "2025 (upload path 2025/05)",
+  "credit": "Raised Water Research (photographer not named)",
+  "license": "Copyright Raised Water Research per the card (no licence on the page); link/research copy only - NOT cleared",
+  "retrieved": "2026-10-06",
+  "shows": "Dusk view from the beach of a jack-up barge with excavator working offshore, small waves breaking on the sandbar and two surfers in the water.",
+  "structure_visible": false,
+  "state_shown": "under construction (2025)",
+  "used_for": [
+   "context"
+  ],
+  "how_used": "Page illustration of the construction site from the beach. No dimension read.",
+  "linked_records": [
+   "02_research/reefs/southern-ocean-surf-reef-albany.json images (not on the card; found on the RWR page 2026-10-06)",
+   "05_qa/reef/southern-ocean-surf-reef-albany_media_recheck.json"
+  ],
+  "bytes": 987038,
+  "px": [
+   948,
+   1192
+  ],
+  "sha256": "6c6cef623a17285d75835a6d24f2bd5ea52266d75d8b7fba4d3666ddd6587828",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": true,
+  "for_3d_check": {
+   "pending": true,
+   "what_to_check": "Barge distance offshore and break position from the beach could check the 140 m cross-shore design position (need camera position)",
+   "model_values_affected": [
+    "position"
+   ]
+  },
+  "added_by": "image-registry backfill, 2026-10-06"
+ },
+ {
+  "id": "southern-ocean-surf-reef-albany-img-08",
+  "file": "03_images/reefs/southern-ocean-surf-reef-albany/southern-ocean-surf-reef-albany_rwr-granite-quarry_2025.jpg",
+  "annotated_files": [],
+  "kind": "photo",
+  "title": "Granite boulder stockpiles at the quarry supplying the Albany reef (RWR)",
+  "citation": "Raised Water Research (2025). Midds Reef [spot profile page for the Albany / Southern Ocean Surf Reef]; image 'Southern Ocean Surf Reef Granite Boulder Source'. https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/albany-artificial-surf-reef/. Image file https://raisedwaterresearch.com/wp-content/uploads/2025/05/Southern-Ocean-Surf-Reef-Granite-Boulder-Source.jpg. Accessed 2026-10-06.",
+  "image_url": "https://raisedwaterresearch.com/wp-content/uploads/2025/05/Southern-Ocean-Surf-Reef-Granite-Boulder-Source.jpg",
+  "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/albany-artificial-surf-reef/",
+  "page_or_figure": "page gallery image 'Southern-Ocean-Surf-Reef-Granite-Boulder-Source.jpg'",
+  "image_date": "2025 (upload path 2025/05)",
+  "credit": "Raised Water Research (photographer not named)",
+  "license": "Copyright Raised Water Research per the card (no licence on the page); link/research copy only - NOT cleared",
+  "retrieved": "2026-10-06",
+  "shows": "Quarry/port stockpiles of granite boulders and trucks beside the sound: the rock source, not the reef.",
+  "structure_visible": false,
+  "state_shown": "not applicable (material supply)",
+  "used_for": [
+   "not_used"
+  ],
+  "how_used": "Not used: shows the rock supply, not the reef, its site or its surf.",
+  "linked_records": [
+   "02_research/reefs/southern-ocean-surf-reef-albany.json images (not on the card; found on the RWR page 2026-10-06)",
+   "05_qa/reef/southern-ocean-surf-reef-albany_media_recheck.json"
+  ],
+  "bytes": 130118,
+  "px": [
+   828,
+   552
+  ],
+  "sha256": "5c5af46a3e795caa80441e1f21367444e653fa1db9c7e1abf76f836917f28aa8",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": false,
+  "for_3d_check": {
+   "pending": false,
+   "what_to_check": "none: not a reef image",
+   "model_values_affected": []
+  },
+  "added_by": "image-registry backfill, 2026-10-06"
+ },
+ {
+  "id": "southern-ocean-surf-reef-albany-img-09",
+  "file": "03_images/reefs/southern-ocean-surf-reef-albany/southern-ocean-surf-reef-albany_rwr-vessel-track-map_2025.png",
+  "annotated_files": [],
+  "kind": "diagram",
+  "title": "Vessel track map between the quarry (Port of Albany) and Middleton Beach (RWR)",
+  "citation": "Raised Water Research (2025). Midds Reef [spot profile page for the Albany / Southern Ocean Surf Reef]; image 'Southern Ocean Surf Reef Albany Middleton Beach Sourcing'. https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/albany-artificial-surf-reef/. Image file https://raisedwaterresearch.com/wp-content/uploads/2025/05/Southern-Ocean-Surf-Reef-Albany-Middleton-Beach-Sourcing.png. Accessed 2026-10-06.",
+  "image_url": "https://raisedwaterresearch.com/wp-content/uploads/2025/05/Southern-Ocean-Surf-Reef-Albany-Middleton-Beach-Sourcing.png",
+  "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/albany-artificial-surf-reef/",
+  "page_or_figure": "page gallery image 'Southern-Ocean-Surf-Reef-Albany-Middleton-Beach-Sourcing.png'",
+  "image_date": "2025 (upload path 2025/05)",
+  "credit": "Raised Water Research (map screenshot of a vessel-tracking service; provider not named)",
+  "license": "Copyright Raised Water Research per the card (no licence on the page); link/research copy only - NOT cleared",
+  "retrieved": "2026-10-06",
+  "shows": "Map screenshot of AIS-style vessel tracks (vessel 'P.T. MONTO') running between the Port Albany area and the Middleton Beach site: the rock-carrying route.",
+  "structure_visible": false,
+  "state_shown": "not applicable (logistics)",
+  "used_for": [
+   "not_used"
+  ],
+  "how_used": "Not used: shows vessel tracks, not the reef or seabed.",
+  "linked_records": [
+   "02_research/reefs/southern-ocean-surf-reef-albany.json images (not on the card; found on the RWR page 2026-10-06)",
+   "05_qa/reef/southern-ocean-surf-reef-albany_media_recheck.json"
+  ],
+  "bytes": 520048,
+  "px": [
+   1194,
+   1194
+  ],
+  "sha256": "dc43078f544039ab96e56cc32d11d766ba25c615158542de0ff5e20ecd0e9c74",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": false,
+  "for_3d_check": {
+   "pending": false,
+   "what_to_check": "none: not a reef image",
+   "model_values_affected": []
+  },
+  "added_by": "image-registry backfill, 2026-10-06"
+ },
+ {
+  "id": "southern-ocean-surf-reef-albany-img-10",
+  "file": "07_scale/shapes/southern-ocean-surf-reef-albany/src/design.jpg",
+  "annotated_files": [],
+  "kind": "design_drawing",
+  "title": "City of Albany / Bluecoast design table and plan diagram: crest 110 m @ -2 m AHD, 140 m offshore, left-hander, 41% surfability",
+  "citation": "City of Albany / Bluecoast Consulting Engineers (n.d.; design based on 2017 bathymetry). Southern Ocean Surf Reef (SOSR) - Final Reef Design table and plan diagram. City of Albany, completed-projects page, https://www.albany.wa.gov.au/council/projects/completed-projects/southern-ocean-surf-reef-sosr.aspx. Image file https://www.albany.wa.gov.au/Profiles/albany/Assets/ClientData/Surf_Reef/design.jpg. Accessed 2026-10-04 (identical copy re-fetched 2026-10-06).",
+  "image_url": "https://www.albany.wa.gov.au/Profiles/albany/Assets/ClientData/Surf_Reef/design.jpg",
+  "source_page": "https://www.albany.wa.gov.au/council/projects/completed-projects/southern-ocean-surf-reef-sosr.aspx",
+  "page_or_figure": "design table + plan diagram (1026 x 521 px)",
+  "image_date": "design stage (before 2025 construction; design volume based on 2017 bathymetry)",
+  "credit": "City of Albany / Bluecoast Consulting Engineers",
+  "license": "City of Albany (local government); no licence stated - link/research copy only, NOT cleared",
+  "retrieved": "2026-10-04",
+  "shows": "Left: Bluecoast design table (surfing direction left-hander, volume 54,000 m3 (2017 bathymetry), alongshore position 350 m north of the Big4 Middleton Beach Caravan Park, cross-shore 140 m from the landward toe, crest length 110 m @ -2 m AHD, crest level -1.00 m AHD, crest orientation curved 270-305 deg N, 60-degree peel angle, rides up to 100 m / 12 s, surfable ~41% of the year). Right: plan diagram of the ASR design over an aerial with the 110 m crest, 140 m offshore and 350 m alongshore labels, surfing and take-off areas.",
+  "structure_visible": true,
+  "state_shown": "design (Bluecoast final design, before construction)",
+  "used_for": [
+   "cross_check",
+   "scale"
+  ],
+  "how_used": "Source of the design parameters in the card (crest length 110 m, offshore 140 m, crest -1.0 m AHD, orientation 270-305 deg N, 54,000 m3). The plan diagram carries a 0.05/0.1 km scale bar but the shape was not traced (no sources.md / shape.json for Albany yet); the as-built outline must be traced on esri_current_2026-01-20_z18.png.",
+  "linked_records": [
+   "02_research/reefs/southern-ocean-surf-reef-albany.json images[5]",
+   "05_qa/reef/southern-ocean-surf-reef-albany_media_recheck.json images[5]"
+  ],
+  "bytes": 102447,
+  "px": [
+   1026,
+   521
+  ],
+  "sha256": "e546ed448473eb3bf1a3d7f49bf9b56f5f645875a853322343f96f646832d65f",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": true,
+  "for_3d_check": {
+   "pending": true,
+   "what_to_check": "Crest -1.0 m AHD vs the as-built crest; 110 m crest length and 140 m offshore vs the dark berm outline on the 2026-01-20 Esri image; volume 54,000 m3",
+   "model_values_affected": [
+    "crest_z",
+    "planform",
+    "volume",
+    "position"
+   ]
+  },
+  "added_by": "image-registry backfill, 2026-10-06"
+ },
+ {
+  "id": "southern-ocean-surf-reef-albany-img-11",
+  "file": "07_scale/shapes/southern-ocean-surf-reef-albany/src/rwr_bluecoast_design_diagram.png",
+  "annotated_files": [],
+  "kind": "design_drawing",
+  "title": "Southern-Ocean-Surf-Reef-Design-by-Bluecoast.png: Bluecoast plan diagram (RWR copy; scale bar 0.05 / 0.1 km)",
+  "citation": "Bluecoast Consulting Engineers (n.d.), via Raised Water Research (2025). Southern Ocean Surf Reef Design by Bluecoast [plan diagram] on: Midds Reef [spot page]. https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/albany-artificial-surf-reef/. Image file https://raisedwaterresearch.com/wp-content/uploads/2019/12/Souther-Ocean-Surf-Reef-Design-by-Bluecoast.png (file name misspelled 'Souther'). Accessed 2026-10-04 (sha256 re-verified 2026-10-06).",
+  "image_url": "https://raisedwaterresearch.com/wp-content/uploads/2019/12/Souther-Ocean-Surf-Reef-Design-by-Bluecoast.png",
+  "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/albany-artificial-surf-reef/",
+  "page_or_figure": "page gallery image (984 x 702 px)",
+  "image_date": "design stage (before 2025 construction)",
+  "credit": "Bluecoast Consulting Engineers via Raised Water Research",
+  "license": "not stated - NOT cleared",
+  "retrieved": "2026-10-04",
+  "shows": "Plan diagram of the ASR design over an aerial: 110 m crest, 140 m offshore, 350 m north of Big4 Caravan Park, 270-305 deg N crest orientation, surfing and take-off areas, bathymetric contours, scale bar 0-0.05-0.1 km.",
+  "structure_visible": true,
+  "state_shown": "design (Bluecoast final design)",
+  "used_for": [
+   "cross_check",
+   "scale"
+  ],
+  "how_used": "Higher-resolution version of the plan diagram in design.jpg: a candidate for tracing the design planform with its scale bar; not traced yet (no shape.json for Albany).",
+  "linked_records": [
+   "07_scale/shapes/southern-ocean-surf-reef-albany/src/design.jpg"
+  ],
+  "bytes": 996956,
+  "px": [
+   984,
+   702
+  ],
+  "sha256": "7cc2069f3e075e06928eec152a9619718468d084dd9c7807a8081990b5b99706",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": true,
+  "for_3d_check": {
+   "pending": true,
+   "what_to_check": "Trace the design planform and contours using the scale bar and compare with the as-built dark berm on the 2026-01-20 Esri image and with crest -1.0 m AHD",
+   "model_values_affected": [
+    "planform",
+    "crest_z",
+    "seabed"
+   ]
+  },
+  "added_by": "image-registry backfill, 2026-10-06"
+ },
+ {
+  "id": "southern-ocean-surf-reef-albany-img-12",
+  "file": "07_scale/shapes/southern-ocean-surf-reef-albany/src/esri_wayback13192_2025-01-16_z18.png",
+  "annotated_files": [],
+  "kind": "satellite",
+  "title": "Esri Wayback release 13192, Middleton Beach, z18, r=250 m (2025-01-16, before construction)",
+  "citation": "Esri, Maxar, Earthstar Geographics, and the GIS User Community (2025). World Imagery Wayback release 13192, image captured 2025-01-16. Esri World Imagery tile service, https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer, via Esri Wayback https://livingatlas.arcgis.com/wayback/. Accessed 2026-10-04.",
+  "image_url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/13192/{z}/{y}/{x}",
+  "source_page": "Esri World Imagery Wayback",
+  "page_or_figure": "centre -35.018, 117.9207, r=250 m, z18, 1022 x 1022 px, 0.489 m/px; sidecar esri_wayback13192_2025-01-16_z18.png.geo.json",
+  "image_date": "2025-01-16",
+  "credit": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+  "license": "Esri/Maxar imagery terms (not an open licence); private research copy only",
+  "retrieved": "2026-10-04",
+  "shows": "Beach and nearshore water with ripple texture; no structure (before the reef was built in 2025).",
+  "structure_visible": false,
+  "state_shown": "pre-construction (2025-01-16)",
+  "used_for": [
+   "context"
+  ],
+  "how_used": "Pre-construction baseline of the site (no reef): comparison with the 2026 frame isolates the reef. Not traced.",
+  "linked_records": [
+   "07_scale/shapes/southern-ocean-surf-reef-albany/src/esri_wayback13192_2025-01-16_z18.png.geo.json"
+  ],
+  "bytes": 1616075,
+  "px": [
+   1022,
+   1022
+  ],
+  "sha256": "1296953655b9d5f218694b4afdf60467774b4f69ffcdf7558b8dcb0701e1e6c2",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": true,
+  "for_3d_check": {
+   "pending": true,
+   "what_to_check": "Seabed/sand-bar pattern before construction vs the design bathymetry (2017) and the berm position",
+   "model_values_affected": [
+    "seabed"
+   ]
+  },
+  "added_by": "image-registry backfill, 2026-10-06"
+ },
+ {
+  "id": "southern-ocean-surf-reef-albany-img-13",
+  "file": "07_scale/shapes/southern-ocean-surf-reef-albany/src/esri_current_2026-01-20_z18.png",
+  "annotated_files": [],
+  "kind": "satellite",
+  "title": "Esri World Imagery current, Middleton Beach, z18, r=250 m (2026-01-20)",
+  "citation": "Esri, Maxar, Earthstar Geographics, and the GIS User Community (2026). World Imagery (current layer), image captured 2026-01-20. Esri World Imagery tile service, https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer. Accessed 2026-10-04.",
+  "image_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+  "source_page": "Esri World Imagery (identify DATE field)",
+  "page_or_figure": "centre -35.018, 117.9207, r=250 m, z18, 1022 x 1022 px, 0.489 m/px; sidecar esri_current_2026-01-20_z18.png.geo.json",
+  "image_date": "2026-01-20",
+  "credit": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+  "license": "Esri/Maxar imagery terms (not an open licence); private research copy only",
+  "retrieved": "2026-10-04",
+  "shows": "The completed reef visible as a dark triangular/wedge-shaped patch offshore with a wave breaking at its shoreward apex; beach, dunes and surf zone around it.",
+  "structure_visible": true,
+  "state_shown": "as-built, in service (2026-01-20)",
+  "used_for": [
+   "context"
+  ],
+  "how_used": "Best satellite view of the as-built reef (visible dark berm + breaking wave). The planform has not been traced yet (no shape.json); this is the primary candidate image for the trace and for the crest length / 140 m offshore check.",
+  "linked_records": [
+   "07_scale/shapes/southern-ocean-surf-reef-albany/src/esri_current_2026-01-20_z18.png.geo.json"
+  ],
+  "bytes": 1559141,
+  "px": [
+   1022,
+   1022
+  ],
+  "sha256": "ce13860296c89262a48e7f69cf359d4aa61e26b0aeceaaf115bcae3d496aa4db",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": true,
+  "for_3d_check": {
+   "pending": true,
+   "what_to_check": "Trace the dark berm (length vs 110 m crest @ -2 m AHD, 165 m footprint; distance offshore vs 140 m; orientation vs 270-305 deg N) and set shape.json/3D from it",
+   "model_values_affected": [
+    "planform",
+    "position",
+    "volume"
+   ]
+  },
+  "added_by": "image-registry backfill, 2026-10-06"
+ }
+]

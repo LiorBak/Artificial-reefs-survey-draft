@@ -1,0 +1,37 @@
+{
+  "slug": "yucatan-geotube-mexico",
+  "name": "Yucatan Geotube submerged breakwater",
+  "place": "Yucatan (centred on Progreso)",
+  "country": "Mexico",
+  "kind": "reef",
+  "type": "geotextile tube submerged/low-crested breakwater (+ dune reinforcement)",
+  "purpose": "beach and dune erosion control",
+  "year_built": "seed citation (Gonzalez Leija et al. 2014) is a lab wave-flume study, not a field build year [R1]; related field project near Progreso built from Sept 2005 [R2][R3]; a separate, later Progreso installation began Oct 2025 [R5][R8][R9]",
+  "priority": 2,
+  "status": "contested/mixed - 2012 designer report claims associated Progreso 7km nourishment 'stable for about 10 years, even without maintenance' [R4]; 2025 press describes region-wide results as 'dispares' (mixed) and a second Progreso install was underway Oct 2025 [R5][R6]",
+  "dimensions": {
+    "lab_model_2014": "1:5 and 1:10 scale in a 37 x 0.8 x 1.2 m flume [R1]",
+    "field_2005": "4 km total tube length, ~15-30 m offshore, tube height 0.9 m, width 1.85 m, cross-section 1.4 m2 at 70% fill, 2.0 m segments, ~15 m inlet spacing [R2][R3]",
+    "field_2025": "7 discrete tubes, each 6-10 m long, 1-1.5 m diameter [R5][R9]",
+    "source": "R1, R2, R3, R5, R9"
+  },
+  "cost": "not found for either the 2005 or 2025 field projects (unreferenced - needs source)",
+  "designer": "2005: Axis Ingenieria S.A. de C.V. / Ing. Enrique Alvarez del Rio [R2][R4]; 2025: Constructora Pech / Raul Roberto Pech Figueroa [R8][R9]",
+  "contractor": "2005: geotextile supplier TenCate Nicolon [R2]; 2025: Constructora Pech [R8]",
+  "financed_by": "2005: Ministry of the Environment of Mexico, Yucatan office, under a 2001 federal Beach Rehabilitation Program [R2]; 2025: Progreso municipal government [R5][R8]",
+  "motivation": "chronic ~1 m/yr shoreline erosion along northern Yucatan, driven partly by the Progreso pier blocking longshore sediment transport and by unauthorized private groins [R2][R4]",
+  "outcome": "short/medium-term sediment accretion of 0.45-0.90 m measured after 2005 install (70% within first 6 months) [R3]; designers' own 2012 claim of ~10-year stability for the associated nourishment [R4]; but 2025 journalism reports mixed/disputed regional results and a second Progreso install underway, with tube fabric sometimes deteriorating within 6-12 months [R5][R6][R9]",
+  "relation_to_master_list": "seeded from 02_research/00_master_list.md row yucatan-geotube-mexico, citing Gonzalez Leija, M. et al. 2014, Coastal Eng. Proc. 1:25; master list flagged the source as possibly lab/physical-model scale rather than a field installation - confirmed true: the 2014 paper is a UNAM wave-flume experiment [R1]",
+  "dossier_md": "02_research/reefs/yucatan-geotube-mexico.md",
+  "reviews_found": 2,
+  "references_count": 13,
+  "image_leads": [
+    "https://progresohoy.com/noticias/avanzan-trabajos-de-recuperacion-de-playas-en-el-malecon-de-progreso-10182872/",
+    "https://yucatan.heraldodemexico.com.mx/local/2025/10/23/que-son-para-que-sirve-los-geotubos-que-se-instalaron-en-las-playas-de-progreso-2701.html",
+    "https://www.poresto.com/yucatan/2025/10/22/instalan-geotubos-en-la-costa-de-progreso-para-frenar-la-erosion-de-las-playas.html",
+    "https://geosyntheticsmagazine.com/2006/06/01/shoreline-restored-with-geotextile-tubes-as-submerged-breakwaters/"
+  ],
+  "video_leads": [],
+  "notes": "WebSearch budget for this session was exhausted (200/200) before a dedicated video search or further named-reviewer search could be run; Wikimedia Commons was not checked. Flagged for a possible follow-up pass.",
+  "last_updated": "2026-09-24"
+}

@@ -1,0 +1,265 @@
+{
+  "slug": "palm-beach-gold-coast",
+  "name": "Palm Beach Reef",
+  "status": "verified",
+  "verified_on": "2026-09-25",
+  "shape_type": "mound",
+  "coords": "metres; origin = shoreline point nearest the reef centroid (approx. 19th Avenue, Palm Beach); x = alongshore (positive toward north, the predominant sand-transport / downdrift direction per the City of Gold Coast's own explainer video [S1]); y = offshore (positive seaward); shoreline approximated as the line y=0",
+  "polygon_m": [
+    [-0.2, 225.9], [-12.6, 227.8], [-31.0, 233.8], [-51.5, 243.7], [-70.0, 258.5],
+    [-80.2, 275.3], [-78.2, 291.1], [-59.7, 300.9], [-31.0, 304.9], [4.9, 305.9],
+    [40.8, 303.9], [66.4, 297.0], [79.8, 281.2], [75.7, 261.4], [59.2, 245.6],
+    [30.5, 233.8], [12.1, 227.8], [-0.2, 225.9]
+  ],
+  "bbox_m": {"length_alongshore": 160.0, "width_crossshore": 80.0},
+  "area_m2": 9677.6,
+  "max_dimension_m": 160.1,
+  "crest_depth_m": {"value": 1.5, "datum": "below mean sea level at the reef's highest point (≈0.6 m below lowest astronomical tide)", "ref": "R15"},
+  "distance_offshore_m": {"value": 270, "measured_from": "shoreline near 19th Avenue, Palm Beach (exact measurement point — near edge, far edge, or centroid — not specified by any source; we placed the polygon centroid at y=270 as a simplifying assumption, see derivation/open_issues)", "ref": "S1"},
+  "orientation_notes": "Elongated, rounded, asymmetric rock mound. Read off the two available plan-view graphics (the labelled aerial/schematic diagrams on Cru Collective's site, sourced from the project team) and cross-checked against the visible rock-shadow patch in the ABC News aerial photo, the mound tapers to a narrower, rounded point on its shoreward (near-shore) side and broadens to a blunter, rounded mass on its seaward (offshore) side — the opposite taper direction from Gemini's assumed 'apex seaward' chevron (see gemini_comparison). Long axis (160 m) treated as alongshore, short axis (80 m) as cross-shore, matching the conventional reading of '160 m long × 80 m wide' in every source, though no source explicitly labels which figure is alongshore vs cross-shore (flagged in open_issues). The reef sits in the lee of Palm Beach's natural offshore reef [R3], targeting dominant east-to-southeast swell [R2][R15], with sand naturally transported north along this stretch of coast [S1] — hence x-positive is defined as north. No source gives a numeric shoreline bearing or swell-approach angle; Gemini's '345° NNW shoreline / 090–110° swell' figures are not supported by any source we found and are not reproduced here.",
+  "volume_m3": {"value": 25000, "ref": "R13"},
+  "materials": "Quarried rock boulders, up to 8 t each (max individual weight, stated directly by S1, R4, R7, R16; re-verified 2026-09-25) — R2 separately describes a design-evolution note, \"The rock size was increased from 3 tons to 5 and 8 ton rocks,\" implying discrete size classes rather than a continuous range; no source states a minimum boulder weight or a formal \"X–8 t\" range. [Verification 2026-09-25: an earlier draft of this file stated \"4–8 t each\" and attributed the range to R16; R16 was re-fetched and found to state only \"up to eight tonne,\" with no minimum — the \"4 t\" figure was unsupported and has been removed.] Total ~60,000 tonnes [R7, R9 — both state \"60,000 tonnes\" directly; R2/R4/R16 do not give a total-tonnage figure], ~25,000 m³ by volume [R13]; rock type (e.g. basalt/granite) is not specified in any source we found [R2][R4][R7][R9][R13][R16]",
+  "derivation": [
+    {
+      "quantity": "alongshore length",
+      "value": 160,
+      "unit": "m",
+      "method": "stated in text",
+      "source_ref": "S1",
+      "quote_or_figure": "\"it will be 160 metres long and up to 80 metres wide\" — City of Gold Coast explainer video, 0:26",
+      "uncertainty": "±0 (consistently reported, no conflicting source found)"
+    },
+    {
+      "quantity": "cross-shore width (core)",
+      "value": 80,
+      "unit": "m",
+      "method": "stated in text",
+      "source_ref": "S1",
+      "quote_or_figure": "\"...up to 80 metres wide\" — City of Gold Coast explainer video, 0:26; matches R2 (\"...roughly 160m long and 80m wide\"), R4 (\"...approximately 160m long and 80m wide\"), R7 (\"...160 metres long and 80 metres wide\"). [Verification 2026-09-25: R6 and R9 were re-checked directly and state NO dimensions of any kind for this reef — both were wrongly included in an earlier draft's citation list and have been removed.]",
+      "uncertainty": "Majority-source value; Royal HaskoningDHV's own project page instead gives 144 m [R5] — unresolved, see open_issues. Treat 80 m as ±64 m if R5's basis is correct."
+    },
+    {
+      "quantity": "crest depth (freeboard)",
+      "value": 1.5,
+      "unit": "m below MSL",
+      "method": "stated in text",
+      "source_ref": "R15",
+      "quote_or_figure": "\"a minimum freeboard of 1.5m at mean sea level, equating to 60cm at the lowest astronomical low tide\" — Swellnet, 2019-07-29; matches S1 video (\"one and a half metres below the average water level\")",
+      "uncertainty": "±0 (stated design spec, corroborated by two independent sources)"
+    },
+    {
+      "quantity": "distance offshore",
+      "value": 270,
+      "unit": "m",
+      "method": "stated in text",
+      "source_ref": "S1",
+      "quote_or_figure": "\"located approximately 270 meters offshore from 19th Avenue\" — City of Gold Coast explainer video, 0:26; matches R2 (\"...approximately 270 m off shore\"), R4 (\"...270 metres offshore from Palm Beach\"), R7 (\"Located approximately 270 metres offshore from Nineteenth Avenue\"). [Verification 2026-09-25: R9 was re-checked directly (full-text search) and does not mention any offshore-distance figure at all — it was wrongly included in an earlier draft's citation list and has been removed.]",
+      "uncertainty": "Majority-source value; Royal HaskoningDHV's own page instead gives 330 m [R5] — unresolved. Point of measurement (near edge vs centroid) not specified; we assumed centroid, so true near-edge distance could be materially less (~226 m per our polygon's shoreward tip)."
+    },
+    {
+      "quantity": "volume of rock",
+      "value": 25000,
+      "unit": "m3",
+      "method": "stated in text",
+      "source_ref": "R13",
+      "quote_or_figure": "\"Quarried rock approx 25,000m3\" — International Coastal Management (ICM); independently roughly consistent with the ~60,000 t figure at ~2.4 t/m3 [R4][R7][R9]",
+      "uncertainty": "±10%"
+    },
+    {
+      "quantity": "plan-view shape / taper direction",
+      "value": "rounded mound, narrow shoreward, broad seaward",
+      "unit": "qualitative",
+      "method": "estimated from figure (non-scaled schematic icon) and aerial photo",
+      "source_ref": "R7 / R9",
+      "quote_or_figure": "Cru Collective 'Palm Beach Artificial Reef Completion2.jpg' plan-icon (reef drawn as a rounded shape tapering to a point at the end nearest the '19th Avenue / Approx. 270m' arrow); cross-checked against the elongated dark rock-shadow patch next to the dredging vessel in the ABC News aerial photo, which tapers toward its near/shoreward end",
+      "uncertainty": "High — both source images are illustrative/photographic, not a scaled CAD or bathymetric survey; exact vertex geometry is an estimate, not a measurement. No true as-built survey was found or accessible. [Verification 2026-09-25: the Cru Collective 'schematic' is, on direct inspection, a generic stock-style 3D rock icon rather than a purpose-drawn technical plan — this further weakens (but does not remove) its evidentiary value; the ABC aerial photo's dark patch may also be partly confounded by dredging turbidity near the vessel. The taper-direction call remains the best-supported reading available (Gemini's opposite claim cites no image at all), but should be read as 'plausible, weakly evidenced' rather than 'confirmed'.]"
+    },
+    {
+      "quantity": "net footprint area",
+      "value": 9677.6,
+      "unit": "m2",
+      "method": "estimated from aerial photo/schematic ratio (shoelace area of the constructed polygon above, itself fitted to the 160x80 m bounding box)",
+      "source_ref": "derived, not independently published",
+      "quote_or_figure": "No source found publishes a standalone 'area' figure distinct from L x W. The commonly repeated 12,800 m2 (=160 m x 80 m) is a bounding-box product, not a surveyed footprint area.",
+      "uncertainty": "±20% — depends entirely on the assumed polygon shape, which is itself an estimate (see previous row)"
+    }
+  ],
+  "images_relied_on": [
+    {
+      "url": "https://www.crucollective.com.au/wp-content/uploads/2019/10/Palm-Beach-Artificial-Reef-Completion2.jpg",
+      "what_it_is": "Labelled schematic overlay on satellite imagery (site's own caption: 'Section view of the artificial reef showing rock sizes'), showing a plan-view icon of the reef, an arrow labelled 'Approx. 270m' from 19th/21st Avenue to the reef, and the natural reef further offshore",
+      "what_was_read_off_it": "Overall elongated, rounded (not sharply faceted) mound outline; taper direction (narrower/pointed end nearest the shore-side arrow, broader/blunter end away from it); confirmation that the 270 m arrow lands on the reef's near (shoreward) edge, not its centroid. [Verification 2026-09-25: re-downloaded and viewed the file directly at 3x zoom. Confirmed the taper reading. Caveat added: the reef icon itself is a generic, stock-style 3D 'rock pile' graphic (uniform grey shading, a highlight stripe suggesting a simple stock render) rather than a purpose-drawn technical plan of this specific reef's shape — it should be read as weak, illustrative evidence of taper direction only, not as a considered rendering of the true footprint. Also confirmed independently: the arrow tip visually lands on the icon's near/pointed end, not its center — this is in tension with the polygon construction below, which places the centroid (not the near edge) at y=270; see open_issues.]",
+      "source_page": "https://www.crucollective.com.au/blog/palm-beach-artificial-reef-completion/"
+    },
+    {
+      "url": "https://www.crucollective.com.au/wp-content/uploads/2019/10/Palm-Beach-Artificial-Reef-Completion.jpg",
+      "what_it_is": "Wider labelled aerial overview (site's own caption: 'Aerial view of the area benefited by the artificial reef'), showing 'Benefit Area' (pink hatched polygon along the beach), 'Artificial Reef' (small offshore icon), 'Palm Beach Natural Reef', 11th/19th/21st Avenue groynes, Currumbin Creek and Burleigh Headland",
+      "what_was_read_off_it": "Reef position relative to the natural reef and the shoreline's north-south trend (coast runs SW, near the groynes, to NE toward Burleigh Headland in this view); the reef sits offshore and slightly north of the main 'benefit area', near the natural reef; reef icon again drawn as a rounded, blob-like (not angular) shape. [Verification 2026-09-25: re-viewed at 4x zoom; confirmed a small, low-resolution rounded blob-like icon, but at this size/resolution it is too indistinct to confirm a specific taper direction on its own — treated only as weak corroboration that the icon family is 'rounded blob' rather than 'angular chevron', not as independent taper evidence.]",
+      "source_page": "https://www.crucollective.com.au/blog/palm-beach-artificial-reef-completion/"
+    },
+    {
+      "url": "https://live-production.wcms.abc-cdn.net.au/45b719e6a29fdb237a75b4f095d83fbf",
+      "what_it_is": "Real aerial photograph of the completed reef area with a dredging vessel on site (ABC caption: 'made up of 60,000 tonnes of boulders')",
+      "what_was_read_off_it": "An elongated, roughly lens/teardrop-shaped dark patch (submerged rock visible through the water color change) beside the dredger, tapering toward its near/dredger-side end and broader/rounder at its far end — used as independent, real-photo corroboration of the taper direction read off the Cru Collective schematic (not used for absolute scale, since no ground-truth reference object of known size was identifiable in the crop). [Verification 2026-09-25: re-downloaded the full-resolution image and zoomed on the patch. Confirmed an elongated dark patch consistent with the description. Caveat added: the dredger itself is actively working at the near/broad end of the patch, so some of the darkening there may be dredging turbidity/sediment plume rather than pure submerged-rock shadow — this is a plausible confound the earlier draft did not flag, and it modestly weakens (without invalidating) this photo as independent taper-direction evidence.]",
+      "source_page": "https://www.abc.net.au/news/2022-09-03/gold-coast-no-stranger-to-beach-erosion/101381812"
+    }
+  ],
+  "gemini_comparison": {
+    "gemini_values": {
+      "shape_type": "Sculptured asymmetric rock chevron / trapezoid",
+      "length_m": "160.0",
+      "width_m": "80.0",
+      "area_m2": "12800.0 (gross; audit net 9,100 m^2)",
+      "crest_depth_m": "1.5",
+      "distance_offshore_m": "270.0",
+      "orientation": "Asymmetric apex seaward, tuned for E-ENE swell (090-110 deg)",
+      "gemini_sources": ["City of Gold Coast Shoreline Monitoring 2021", "Royal HaskoningDHV Design Summary 2019", "Swellnet Surfing Evaluation 2020"]
+    },
+    "agree": [
+      "length_m = 160 m — well sourced, matches S1 video and R2/R4/R7 (verification 2026-09-25: R6 and R9 re-checked and do not state any dimension; removed from this list)",
+      "crest_depth_m = 1.5 m below MSL — well sourced, matches R15 and S1 video",
+      "width_m = 80 m and distance_offshore_m = 270 m as the majority-source values (though see disagree: Gemini presents these without flagging the known R5 alternative)",
+      "volume_m3 = 25,000 m3 — matches R13/R2"
+    ],
+    "disagree": [
+      {
+        "quantity": "disclosure of source conflicts on width/offshore distance",
+        "gemini": "Presents 80 m width and 270 m offshore as settled facts; its own 'suspicious' self-audit note claims this as a clean match with no caveat",
+        "ours": "80 m and 270 m are the majority values, but Royal HaskoningDHV's own project page — one of the three firms in Gemini's own source list — states 144 m width and 330 m offshore instead; our card documents both figures explicitly as unresolved [R5]",
+        "why_ours": "Royal HaskoningDHV is a primary named designer on this project; omitting its own conflicting figures overstates certainty about the footprint. This is the harness-flagged discrepancy."
+      },
+      {
+        "quantity": "plan-view shape and taper direction",
+        "gemini": "'Sculptured asymmetric rock chevron/trapezoid' with a 9-vertex polygon whose single pointed apex, at (15, 310), faces seaward, with a comparatively flat/straight shoreward edge",
+        "ours": "Rounded mound tapering to a point on its shoreward side, broadening to a blunter rounded mass seaward — read directly off two project-published plan-view graphics (Cru Collective, sourced from the project team) and cross-checked against the elongated rock-shadow visible in a real aerial photo",
+        "why_ours": "Gemini cites no image or figure for its specific 9-vertex layout or apex direction (its own figure citation for this reef, see below, does not actually depict the reef's outline at all); ours is grounded in two independently inspected real project visuals that agree with each other on taper direction"
+      },
+      {
+        "quantity": "net footprint area",
+        "gemini": "'Audit net' 9,100 m2, presented as 'VERIFIED' against sources",
+        "ours": "~9,678 m2, from an independently-shaped estimated polygon",
+        "why_ours": "No source we found (or, apparently, that Gemini found — no citation is given for an area figure) publishes an independently surveyed footprint area; both 9,100 m2 and 9,678 m2 are geometric artifacts of two different assumed polygons, not measured data. Neither should be read as more than a low-confidence estimate; the closeness of the two numbers is coincidental, not corroborating."
+      },
+      {
+        "quantity": "figure/citation provenance for the reef's shape",
+        "gemini": "reefs_sediment_hydro_paper_figures.json cites 'Bluecoast Consulting Engineers & City of Gold Coast (2020), Palm Beach Artificial Reef Monitoring Report' as the source of a multibeam-bathymetry figure ('palm_beach_multibeam_survey') backing the drawn shape",
+        "ours": "The actual file (05_web_build/images/scale/palm_beach.png) is Gemini's own auto-generated scale-comparison chart (matplotlib-style axes labelled 'Alongshore/Cross-Shore Coordinate', a legend box repeating the same L/W/area/volume/crest/offshore/tide numbers already in Gemini's own JSON) — not a reproduction of any real bathymetric survey. We found no accessible copy of any such 'monitoring report' anywhere",
+        "why_ours": "Direct visual inspection of the cited file, done for this task"
+      },
+      {
+        "quantity": "rock tonnage / material in audit narrative",
+        "gemini": "Audit text states the shape 'matches the 42,000-tonne basalt rock blueprint'",
+        "ours": "~60,000 tonnes total [R7][R9] (~25,000 m3 by volume [R13]) of quarried boulders; no source specifies the rock type (e.g. basalt) [R2][R4][R7][R9][R13][R16]",
+        "why_ours": "42,000 t does not match any source we found, nor does it match Gemini's own dimensions.tonnage_t field elsewhere in the same dataset (60,000 t); 'basalt' appears in no source checked"
+      },
+      {
+        "quantity": "sand salient distance",
+        "gemini": "Audit claims the CAD's '35 m beach salient' 'matches the documented 38 m sand salient fronting the 11th Avenue SLSC tower'",
+        "ours": "No source we found publishes a specific salient-advance distance for Palm Beach; the only quantitative coastal-protection outcome found is ABC News's ~550,000 m3 of sand retained over the reef's first two years [R9]",
+        "why_ours": "No citation supports a '38 m' figure; this appears to be unsupported/invented precision"
+      },
+      {
+        "quantity": "reference list verifiability",
+        "gemini": "Three generic, undated, URL-less citations ('City of Gold Coast Shoreline Monitoring 2021', 'Royal HaskoningDHV Design Summary 2019', 'Swellnet Surfing Evaluation 2020')",
+        "ours": "20 URL-linked, individually fetched references (R1-R20 in the card) plus S1 here",
+        "why_ours": "None of Gemini's three source titles could be matched to an actual accessible page during this check; ours can each be re-fetched and verified"
+      },
+      {
+        "quantity": "orientation angle precision",
+        "gemini": "'shoreline_orientation_deg: 345 (NNW)', 'incident_swell_direction_deg: 090-110 (E to ENE)' stated as precise figures",
+        "ours": "No source we found gives a numeric shoreline bearing; swell direction is described only qualitatively as 'east to east/southeast' [R2][R15]. We report orientation qualitatively only",
+        "why_ours": "No citation supports a specific numeric bearing for either the shoreline or the swell window; presenting one implies a precision the sources don't support"
+      }
+    ]
+  },
+  "confidence": "medium",
+  "open_issues": [
+    "Width (80 m vs Royal HaskoningDHV's own 144 m) and distance offshore (270 m vs Royal HaskoningDHV's own 330 m) remain unresolved across every source checked, including this one — carried forward unchanged from the card [R5].",
+    "No source explicitly states which published figure (160 m or 80 m) is the alongshore dimension vs the cross-shore dimension; we assumed 160 m = alongshore and 80 m = cross-shore, matching the conventional reading and Gemini's own assumption, but this is an inference, not a stated fact.",
+    "The point from which '270 m offshore' is measured (near edge, far edge, or centroid) is not specified by any source; we assumed centroid for simplicity, which shifts the true near/far edges by roughly ±40-45 m depending on which convention the original designers used.",
+    "Verification 2026-09-25 flags an internal tension: our own reading of the Cru Collective schematic (images_relied_on #1) concludes the '270m' arrow visually lands on the reef's near/shoreward edge, not its centroid — yet the polygon below places the centroid (not the near edge) at y=270. If the near-edge reading is right, the whole polygon should sit roughly 40m further offshore than drawn (shoreward tip near y=266 instead of y=226, centroid near y=310 instead of y=270). This was not corrected in the polygon itself (doing so would require a new speculative construction, which this adversarial-check task's scope does not extend to), but is flagged here as an unresolved self-consistency issue for a future revision.",
+    "No true as-built CAD drawing or bathymetric survey of the constructed reef was found publicly (despite Gemini's citation, which does not correspond to any real accessible document); our polygon's exact vertex geometry is a qualitative estimate from a non-scaled marketing schematic plus a real aerial photo, not a measurement, and should be treated as illustrative of shape family (elongated, rounded, shoreward-tapered mound) rather than a precise outline.",
+    "Precise lat/lon of the reef structure itself (as opposed to the 19th Avenue onshore reference point) was not found in any source.",
+    "Net footprint area (~9,678 m2 here) is a geometric consequence of our assumed polygon shape, not an independently published or measured figure; treat as low-confidence."
+  ],
+  "references": [
+    {"id": "R2", "citation": "Raised Water Research (n.d.). \"Palm Beach Reef.\"", "url": "https://raisedwaterresearch.com/spot/artificial-reef/australia/queensland/palm-beach-reef/", "accessed": "2026-09-24", "supports": "dimensions (160x80 m, ~270 m offshore, 1.5 m below MSL); a design-history note, verbatim: \"The rock size was increased from 3 tons to 5 and 8 ton rocks\" (re-fetched and read directly via browser 2026-09-25 to correct an automated-tool misquote — see materials)."},
+    {"id": "R3", "citation": "Raised Water Research (n.d.). \"Interview with Simon Mortensen: The Designer Behind Palm Beach Reef.\"", "url": "https://raisedwaterresearch.com/interview-with-simon-mortensen-the-brains-behind-the-palm-beach-reef/", "accessed": "2026-09-24", "supports": "siting 'in the lee of a natural reef', design intent"},
+    {"id": "R4", "citation": "Hall Contracting (n.d.). \"Palm Beach shoreline project.\"", "url": "https://hallcontracting.com.au/project/palm-beach-shoreline-project/", "accessed": "2026-09-24", "supports": "dimensions (160x80 m, 270 m offshore), boulder max weight (up to 8 t each), construction method. [Verification 2026-09-25: re-checked full text — does NOT state a total-tonnage figure (e.g. 60,000 t); earlier draft's 'tonnage' summary label was imprecise and has been corrected here to 'boulder max weight'.]"},
+    {"id": "R5", "citation": "Royal HaskoningDHV (n.d.). \"Palm Beach Shoreline Protection Project.\"", "url": "https://www.haskoning.com/en/projects/holistic-beach-nourishment-to-protect-palm-beach-gold-coast", "accessed": "2026-09-24", "supports": "alternative dimension figures (144 m wide / 330 m offshore)"},
+    {"id": "R6", "citation": "Stab Magazine (2019-08-28). \"This Artificial Reef On The Gold Coast Is Half Finished And Looks Pretty Fun.\"", "url": "https://stabmag.com/news/this-artificial-reef-on-the-gold-coast-is-showing-serious-potential/", "accessed": "2026-09-24", "supports": "wave-shape description; general siting (\"a couple hundred meters off the shoreline\") and boulder weight (\"8-tonnes apiece\"). [Verification 2026-09-25: re-checked full text — does NOT state 160 m/80 m or any other precise dimension; an earlier draft's claim that R6 supports 'dimensions' was incorrect and R6 has been removed from the width/length citation lists below.]"},
+    {"id": "R7", "citation": "Cru Collective (n.d.). \"Palm Beach Artificial Reef Completion.\"", "url": "https://www.crucollective.com.au/blog/palm-beach-artificial-reef-completion/", "accessed": "2026-09-24", "supports": "dimensions; the two plan-view schematic images used to read shape/taper direction and offshore-distance arrow placement"},
+    {"id": "R9", "citation": "ABC News Australia (2022-09-03). \"Millions spent to protect Gold Coast beaches, but climate change poses a huge challenge.\"", "url": "https://www.abc.net.au/news/2022-09-03/gold-coast-no-stranger-to-beach-erosion/101381812", "accessed": "2026-09-24", "supports": "sand retained (550,000 m3/2yr), 60,000 t boulders (total tonnage, directly stated); the aerial photo used to cross-check taper direction. [Verification 2026-09-25: re-checked full text — does NOT mention any dimension (length/width) or offshore-distance figure; an earlier draft wrongly co-cited R9 for the 80 m width and 270 m offshore rows, both corrected below.]"},
+    {"id": "R13", "citation": "International Coastal Management, article by Aaron Salyer (2024-12-03, updated 2025-02-05). \"Building Artificial Surf Reefs: Worldwide Lessons & Applications.\"", "url": "https://www.coastalmanagement.com.au/artificial-surf-reefs", "accessed": "2026-09-24", "supports": "volume (~25,000 m3 quarried rock)"},
+    {"id": "R15", "citation": "Nettle, S., Swellnet (2019-07-29). \"First impressions at the Palm Beach Artificial Reef.\"", "url": "https://www.swellnet.com/news/swellnet-dispatch/2019/07/29/first-impressions-palm-beach-artificial-reef", "accessed": "2026-09-24", "supports": "freeboard spec quote (1.5 m below MSL / 60 cm at LAT)"},
+    {"id": "R16", "citation": "Nettle, S., Swellnet (2018-08-29). \"Palm Beach Reef given green light.\"", "url": "https://www.swellnet.com/news/swellnet-dispatch/2018/08/29/palm-beach-reef-given-green-light", "accessed": "2026-09-24", "supports": "boulder max weight (\"up to eight tonne\"), rock sourcing (quarried in SEQ, barged from Port of Brisbane). [Verification 2026-09-25: re-fetched and full-text-searched (curl+grep on raw HTML) — the page states only \"up to eight tonne\" boulders; no minimum weight or \"4-8 t\" range appears anywhere on the page. An earlier draft's \"4-8 t boulder range\" claim, attributed to this source, was unsupported and has been corrected throughout this file (see materials and the derivation table's implicit boulder-weight note).]"},
+    {"id": "S1", "citation": "City of Gold Coast (2019-05-21). \"Palm Beach Artificial Reef\" (official explainer video).", "url": "https://www.youtube.com/watch?v=i6k6WN2GtWI", "accessed": "2026-09-25 (transcript already on file from prior research pass; re-consulted, not newly searched)", "supports": "direct-quote dimensions (160 m long, up to 80 m wide), distance offshore (270 m from 19th Avenue), crest depth (1.5 m below average water level), and the northward alongshore sand-transport direction used to define the x-axis convention"}
+  ],
+  "verification": [
+    {
+      "item": "Alongshore length 160 m",
+      "verdict": "CONFIRMED",
+      "evidence": "Re-verified S1 against the on-file transcript (i6k6WN2GtWI.txt): \"it will be 160 metres long and up to 80 metres wide.\" Re-fetched R2 (\"roughly 160m long and 80m wide\"), R4 (\"approximately 160m long and 80m wide\"), R7 (\"160 metres long and 80 metres wide\") via WebFetch/curl+grep — all confirm verbatim."
+    },
+    {
+      "item": "Cross-shore width (core) 80 m",
+      "verdict": "CONFIRMED, citations corrected",
+      "evidence": "Confirmed by S1 transcript, R2, R4, R7 (same quotes as length, above). R6 and R9 re-checked directly (full text search) and found to state NO dimensions at all for this reef -- both removed from this row's citation list (previously wrongly included)."
+    },
+    {
+      "item": "Crest depth 1.5 m below MSL (~0.6 m below LAT)",
+      "verdict": "CONFIRMED",
+      "evidence": "Re-fetched R15 via browser (get_page_text), exact quote confirmed verbatim: \"the reef will have a minimum freeboard of 1.5m at mean sea level, equating to 60cm at the lowest astronomical low tide.\" Matches S1 transcript (\"one and a half metres below the average water level\") and R7 (\"1.5 metres below the average water level at its highest point\")."
+    },
+    {
+      "item": "Distance offshore 270 m",
+      "verdict": "CONFIRMED, citation corrected",
+      "evidence": "Confirmed by S1 transcript, R2 (\"approximately 270 m off shore\"), R4 (\"270 metres offshore from Palm Beach\"), R7 (\"Located approximately 270 metres offshore from Nineteenth Avenue\"). R9 re-checked with a full-text search for '270', 'metres offshore' and distance figures -- confirmed R9 does NOT mention any offshore distance; removed from this row's citation (previously wrongly included)."
+    },
+    {
+      "item": "Royal HaskoningDHV conflict: 144 m wide / 330 m offshore",
+      "verdict": "CONFIRMED",
+      "evidence": "Re-fetched R5 (haskoning.com) directly: \"The 144-metre-wide reef has been built 330 metres offshore.\" No length figure given on that page. Conflict against the majority 80 m / 270 m value is real and remains unresolved, exactly as the card states."
+    },
+    {
+      "item": "Volume of rock 25,000 m3",
+      "verdict": "CONFIRMED",
+      "evidence": "Re-fetched R13 (coastalmanagement.com.au) directly, exact quote: \"Quarried rock approx 25,000m3.\""
+    },
+    {
+      "item": "Total tonnage ~60,000 t",
+      "verdict": "CONFIRMED, citation tightened",
+      "evidence": "Re-fetched R7 (\"constructed using 60,000 tonnes of rock\") and R9 (\"made up of 60,000 tonnes of boulders\") -- both state the total directly. R2, R4 and R16 were re-checked and only give a per-boulder MAX weight (up to 8 t), not a total-tonnage figure; the materials field and R4's reference entry were corrected to stop implying R4 supports a total-tonnage number."
+    },
+    {
+      "item": "Boulder weight: 'up to 8 t' vs the card's former '4-8 t range'",
+      "verdict": "CORRECTED",
+      "evidence": "Re-fetched/re-grepped R16 (curl + raw-text search) -- the page states only \"up to eight tonne\" boulders in three separate mentions; no minimum weight or '4-8 t' range appears anywhere on the page. The '4-8 t' figure in the prior draft, attributed to R16, was therefore unsupported and has been removed. Separately, R2 was re-read directly via browser (WebFetch's own summary of R2 had hallucinated a nonexistent quote, \"the rocks vary in size from 4 to 8 tons each\" -- this was checked against the live rendered page and does NOT appear there); R2's actual text instead reads \"The rock size was increased from 3 tons to 5 and 8 ton rocks,\" a design-evolution note describing discrete size classes, not a stated continuous range. The materials field has been rewritten to reflect only what is actually stated: max weight up to 8 t (S1, R4, R7, R16), plus R2's 3/5/8-ton design-history note; no source gives an authoritative minimum."
+    },
+    {
+      "item": "Polygon bbox, area, validity",
+      "verdict": "CONFIRMED",
+      "evidence": "Recomputed independently with python + shapely: bounding box exactly 160.0 m (x) x 80.0 m (y); shoelace/shapely area = 9677.65 m2, matching the stated 9677.6 m2; polygon is closed, is_valid=True, exterior.is_simple=True (no self-intersections); area-weighted centroid = (0.031, 270.005), matching the stated design target of centroid at (0.03, 270.0)."
+    },
+    {
+      "item": "Plan-view shape / taper direction (narrow shoreward, broad seaward)",
+      "verdict": "PLAUSIBLE, not confirmable",
+      "evidence": "Downloaded and directly viewed all three cited images (Completion2.jpg, Completion.jpg, ABC aerial) at high zoom. Completion2.jpg does show a shape narrower/pointed at the arrow (shoreward) end and blunter/wider at the far (seaward) end, consistent with the card's claim, and the '270m' arrow visually lands on the icon's near tip, not its center -- but the icon itself is a generic stock-style 3D rock graphic, not a purpose-drawn technical plan, so this is weak evidence. Completion.jpg's icon is too small/low-res to independently confirm taper direction. The ABC aerial photo's dark patch is elongated and roughly consistent with the claimed taper, but the active dredger sits at the patch's near/broad end, so dredging turbidity may be inflating that end's apparent width -- a confound not previously flagged. Net: the taper-direction call remains the best-supported reading available (better than Gemini's citation-free opposite claim) but should be read as plausible, weakly-evidenced qualitative shape family, not a confirmed geometric fact -- consistent with (and now more explicitly caveated than) the card's existing 'High uncertainty' label."
+    },
+    {
+      "item": "Near-edge vs. centroid placement of '270 m offshore' in the polygon",
+      "verdict": "UNRESOLVED (new inconsistency flagged)",
+      "evidence": "The card's own image analysis (images_relied_on #1) concludes the 270m arrow lands on the reef's near/shoreward edge, not its centroid -- yet the polygon construction placed the CENTROID at y=270. This is an internal inconsistency not caught in the original draft. Not corrected in the polygon geometry itself (would require a new speculative construction, out of adversarial-check scope) but added to open_issues for a future revision."
+    },
+    {
+      "item": "Gemini comparison table (all rows)",
+      "verdict": "CONFIRMED accurate",
+      "evidence": "Read Gemini's actual files directly: reef_footprints.json (structures[], id 'palm_beach') confirms shape_typology 'Sculptured Asymmetric Rock Chevron / Trapezoid', a 9-vertex bounding_polygon with its single highest-y (most-seaward) vertex at (15,310) -- matching the card's 'apex seaward' description exactly; area_m2=12800.0; shoreline_orientation_deg=345, incident_swell_direction_deg='090-110' -- both match. scale_sketch_photo_alignment_audit.md (row 9, Palm Beach) contains, verbatim, 'Matches the 42,000-tonne basalt rock blueprint' and 'the documented 38 m sand salient fronting the 11th Avenue SLSC tower' -- both quoted accurately in the card. images/scale/palm_beach.png was opened directly and is confirmed to be an auto-generated chart (axis-labelled plot, a legend box repeating the same L/W/area/volume/crest/offshore numbers, a drawn '100 METERS' scale bar) -- not a scan or reproduction of any real bathymetric survey, exactly as the card describes."
+    },
+    {
+      "item": "Overall confidence rating",
+      "verdict": "CONFIRMED as medium (unchanged)",
+      "evidence": "All five headline numbers (160 m, 80 m, 1.5 m below MSL, 270 m, 25,000 m3) were independently re-confirmed at their primary sources and are unchanged by this pass. What changed were citation-hygiene errors (R6/R9 wrongly cited for dimensions/distance, R16 wrongly cited for a '4-8 t' range, R4 wrongly summarized as giving 'tonnage') and additional caveats on the already-low-confidence shape/taper and area estimates -- none of which raises or lowers confidence in the headline dimensions, so 'medium' is retained rather than changed."
+    }
+  ]
+}

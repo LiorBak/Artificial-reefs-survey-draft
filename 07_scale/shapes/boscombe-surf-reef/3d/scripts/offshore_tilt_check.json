@@ -1,0 +1,39 @@
+{
+ "row380_slope_m_per_100m_x": 0.76,
+ "row380_mean_z": -7.78,
+ "navionics_misfit_fit": {
+  "const_m": -0.23,
+  "per_100m_x_m": -1.21,
+  "per_100m_y_m": 0.31,
+  "se": [
+   0.14,
+   0.11,
+   0.2
+  ],
+  "resid_sd_m": 0.36
+ },
+ "emodnet_plane_LAT": {
+  "n": 27,
+  "z500_m": -8.85,
+  "per_100m_x_m": -0.073,
+  "per_100m_y_m": -0.98,
+  "resid_sd_m": 0.2
+ },
+ "navionics_misfit_variants": {
+  "as built (row 380 + EMODnet slope)": {
+   "mean": -0.26,
+   "sd": 1.23,
+   "rms": 1.2
+  },
+  "row 380 replaced by its alongshore mean": {
+   "mean": -0.17,
+   "sd": 0.51,
+   "rms": 0.51
+  },
+  "row mean + EMODnet alongshore gradient -0.0007 m/m": {
+   "mean": -0.16,
+   "sd": 0.45,
+   "rms": 0.46
+  }
+ }
+}

@@ -1,0 +1,223 @@
+{
+  "slug": "opunake-reef",
+  "name": "Opunake Surf Reef (North Reef)",
+  "status": "verified",
+  "verified_on": "2026-09-25",
+  "shape_type": "other (single-arm wedge, schematic)",
+  "coords": "metres; origin = shoreline point nearest the reef centroid; x = alongshore (positive toward the cove headland side referred to in sources as the reef's flank, true compass direction not published — treated as arbitrary +x); y = offshore (positive seaward); shoreline approximated as the line y=0",
+  "polygon_m": [
+    [-10, 110],
+    [10, 110],
+    [0, 200],
+    [-10, 110]
+  ],
+  "bbox_m": {
+    "length_alongshore": 20,
+    "width_crossshore": 90
+  },
+  "area_m2": 900,
+  "max_dimension_m": 90,
+  "crest_depth_m": {
+    "value": 1.5,
+    "datum": "unknown — no datum stated in any accessible source; treat as approximate depth below mean sea level",
+    "ref": "S1"
+  },
+  "distance_offshore_m": {
+    "value": 150,
+    "measured_from": "shoreline (estimated centroid distance, not a surveyed figure)",
+    "ref": "S1"
+  },
+  "orientation_notes": "No plan-view figure, survey drawing or compass bearing for the Opunake reef was found in any accessible source (R1-R12 in the card, nor Gemini's cited-but-inaccessible 'Mead & Black 2007 Design Dossier' / 'Taranaki Regional Council Monitoring Records 2010'). The polygon here is a SCHEMATIC placeholder only: a symmetric isosceles wedge with its 20 m base at the shoreward (inshore) end and its apex pointing offshore (seaward), by direct analogy to the one Opunake-designer reef whose plan geometry IS described in a primary source in our reference list — Mount Maunganui, built by the same firm (ASR Ltd) around the same time, explicitly described as having its 'apex... point[ing] seaward and the structure thicken[ing] towards the base' [R3]. Opunake's own sources (R2, R4) state only that the reef's bags 'cover an area around 90m long and 20m wide' with no shape description; R2/R4 also both note the design was for a single 'right-hand wave' (one peel direction), unlike Mount Maunganui's two-directional wave off a symmetric V — meaning the real Opunake reef almost certainly had an ASYMMETRIC wedge/arm (like the 'asymmetric polygonal wedge' shape of the comparable Cables Reef), not the symmetric triangle drawn here. We chose the symmetric schematic deliberately rather than inventing a specific asymmetric skew, because no source gives which flank was the long peeling shoulder or the arm's angle to the shoreline. Distance offshore and crest depth are both low-confidence estimates (see derivation) since neither figure is published for Opunake specifically in any source we could access.",
+  "materials": "27 sand-filled geotextile ('geo-container') bags [R2][R4] (card). CORRECTED 2026-09-25: the fabric spec 'non-woven, polyester/polyester-polypropylene' previously cited to [R2][R4] does not appear in either source's text (re-fetched in full); that exact material description is R3's account of Mount Maunganui's bags, not Opunake's, and was misattributed. Opunake's own bag fabric composition is not published in any source we could access.",
+  "derivation": [
+    {
+      "quantity": "reef length (offshore-projecting axis)",
+      "value": 90,
+      "unit": "m",
+      "method": "stated in text",
+      "source_ref": "R2",
+      "quote_or_figure": "\"The bags would cover an area around 90m long and 20m wide.\" (raisedwaterresearch.com, fetched 2026-09-25)",
+      "uncertainty": "as stated; axis assignment (offshore vs alongshore) is our inference, not stated"
+    },
+    {
+      "quantity": "reef length (offshore-projecting axis), corroborating source",
+      "value": 90,
+      "unit": "m",
+      "method": "stated in text",
+      "source_ref": "R4",
+      "quote_or_figure": "\"The bags would cover an area around 90 meters long and 20 meters wide.\" (surfertoday.com, fetched 2026-09-25)",
+      "uncertainty": "as stated"
+    },
+    {
+      "quantity": "reef width (base, alongshore)",
+      "value": 20,
+      "unit": "m",
+      "method": "stated in text",
+      "source_ref": "R2",
+      "quote_or_figure": "same sentence as above",
+      "uncertainty": "as stated; NZ Geographic (R3), the source both R2/R4 credit for the article generally, does NOT itself contain this 90x20 figure anywhere in its accessible text — verified by fetching the full article text directly; the card's [R3] tag on this figure is not supported by R3's own text and should be corrected to [R2][R4] only"
+    },
+    {
+      "quantity": "net footprint area (schematic triangle)",
+      "value": 900,
+      "unit": "m2",
+      "method": "estimated from aerial/schematic — computed as area of an isosceles triangle with base 20 m and height 90 m (0.5 x 20 x 90), NOT a published figure",
+      "source_ref": "S1",
+      "quote_or_figure": "derived, not sourced",
+      "uncertainty": "could be as high as 1800 m2 if the 90x20 envelope is read as a full rectangle rather than a tapered wedge; no source specifies which"
+    },
+    {
+      "quantity": "crest depth",
+      "value": 1.5,
+      "unit": "m",
+      "method": "estimated — no source found",
+      "source_ref": "S1",
+      "quote_or_figure": "not found in any accessible source; rough inference from the reef needing to reliably trip a published 1.8-2.5 m design wave face [R2][R3][R4] while remaining submerged across an approx. 2.5 m local tidal range [R7]",
+      "uncertainty": "±1.0 m; genuinely low confidence. NOTE (2026-09-25 verification): R7 is a live tide-table page; re-fetched this pass it showed an instantaneous next-high/next-low difference of 2.75 m, not a fixed published 'tidal range' statistic for the site (the true spring range could differ from any single day's reading). Kept the ~2.5 m figure since it is within the same order of magnitude and the crest-depth estimate already carries a ±1.0 m error bar that absorbs this."
+    },
+    {
+      "quantity": "distance offshore",
+      "value": 150,
+      "unit": "m",
+      "method": "estimated — no source found",
+      "source_ref": "S1",
+      "quote_or_figure": "not found in any accessible source; loosely bounded against the only ASR reef siting distance we could directly verify in a primary source, Mount Maunganui at 250 m in 4.5 m depth [R3], scaled down for Opunake's smaller design wave and sheltered cove setting",
+      "uncertainty": "±75 m; genuinely low confidence. Coincides with Gemini's unverified 150 m figure (see gemini_comparison) but was derived independently, not copied from it"
+    }
+  ],
+  "images_relied_on": [
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Opunake-Location.jpg?v=1572994855",
+      "what_it_is": "Photo already in the card's images list, captioned 'Opunake-Location'; downloaded to scratchpad and viewed, then deleted",
+      "what_was_read_off_it": "Confirms the cove's general shape (curving rocky shoreline, headland visible at the far/right end) and shows a line of buoys/floats strung into the water roughly parallel to shore. Not usable for scale: no scale bar, no confirmation the buoys mark the reef rather than a swim-area boundary (the card already flags this uncertainty), and the buoy line runs close to and parallel to the beach rather than showing an offshore structure — it did not change or support any specific dimension used here.",
+      "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/opunake/"
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Opunake-Reef-Flat.jpg?v=1573000303",
+      "what_it_is": "Photo already in the card's images list, captioned 'Reef Flat'; downloaded to scratchpad and viewed, then deleted",
+      "what_was_read_off_it": "Shows the bay from the rocky shoreline toward the surf break; no submerged structure, scale reference or shoreline marker distinguishable. Contributed no quantitative information; confirms only the card's existing note that the reef itself is not visible in any accepted photo.",
+      "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/opunake/"
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Opunake-Artist-Rendition.jpg?v=1572994857",
+      "what_it_is": "Photo already in the card's images list (a genuine photo despite its filename); downloaded to scratchpad and viewed, then deleted",
+      "what_was_read_off_it": "Shows several natural-looking swell lines breaking across multiple peaks along the beach with surfers on some of them; no single feature distinguishable as the reef-focused wave, and no scale reference. Contributed no quantitative information.",
+      "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/opunake/"
+    }
+  ],
+  "gemini_comparison": {
+    "gemini_values": {
+      "shape_type": "Single-arm triangular wedge (incomplete V, cove-headland orientation)",
+      "alongshore_length_m": 30.0,
+      "cross_shore_width_m": 67.0,
+      "area_m2": 1365.0,
+      "crest_depth_m": 1.4,
+      "distance_offshore_m": 150,
+      "sources_cited_by_gemini": ["Mead & Black 2007 Design Dossier (not in our reference list; not locatable/accessible to us)", "Taranaki Regional Council Environmental Monitoring Records 2010 (same)"]
+    },
+    "agree": [
+      "Overall verdict/status framing ('partially built / underperforming', single arm only built) matches our card's independently-sourced account [R1][R2][R4].",
+      "150 m distance offshore: we ended up at the same number, but reached it independently by a completely different (and equally unconfirmed) method — see derivation. Treat the match as coincidental corroboration at best, not confirmation.",
+      "~1.4-1.5 m crest depth: our independent rough estimate (1.5 m, +-1.0 m) overlaps Gemini's figure, but neither is a sourced fact."
+    ],
+    "disagree": [
+      {
+        "quantity": "alongshore length x cross-shore width",
+        "gemini": "30 m (alongshore) x 67 m (cross-shore), area 1365 m2 (per the CURRENT reef_footprints.json we read on 2026-09-25)",
+        "ours": "90 m x 20 m (bbox), schematic wedge area 900 m2 (envelope up to 1800 m2)",
+        "why_ours": "90x20 is stated verbatim, in near-identical wording, in TWO independent accessible secondary sources (R2 raisedwaterresearch.com and R4 surfertoday.com: 'The bags would cover an area around 90m long and 20m wide'). Gemini's 30x67 has no equivalent quote anywhere we could find; its own cited sources ('Mead & Black 2007 Design Dossier', 'Taranaki Regional Council Monitoring Records 2010') are not in our reference list, do not appear on ResearchGate's blocked page (R9) or anywhere else we could locate, and Gemini's own internal self-audit (scale_sketch_photo_alignment_audit.md, structure #6) documents that its polygon was 'hand-digitized' against a photo and a text dossier it wrote itself, not against any primary plan-view drawing. We therefore do not adopt Gemini's dimensions."
+      },
+      {
+        "quantity": "internal consistency of Gemini's own file",
+        "gemini": "The task brief we were given (and Gemini's own audit doc, scale_sketch_photo_alignment_audit.md) describes an unresolved 'ACTION REQUIRED' contradiction: a metadata table allegedly still stating 80m x 30m against a 30m x 67m polygon.",
+        "ours": "We independently read the CURRENT reef_footprints.json (2026-09-25) directly and found `alongshore_length_m: 30.0` / `cross_shore_width_m: 67.0` — i.e. matching the polygon, not the 80x30 the audit doc and task brief describe.",
+        "why_ours": "This is a factual correction to the premise, not a numbers dispute: the specific 'never applied' inversion flagged in the audit and repeated in our task brief no longer exists in the live file as of this check. It does not rescue Gemini's 30x67 as correct (see above), but the audit's headline claim about an unfixed contradiction is itself stale/inaccurate as of 2026-09-25."
+      },
+      {
+        "quantity": "shape typology",
+        "gemini": "\"Single-Arm Triangular Wedge (Incomplete V)\", described as a 'cove headland' arm running cross-shore along a rocky headland",
+        "ours": "Schematic single-arm wedge, apex offshore, orientation/compass bearing unknown",
+        "why_ours": "No source we could access (including Gemini's own two cited sources, which we could not locate or access) actually describes Opunake's arm as running along a rocky headland or gives its compass bearing. Gemini's 'cove headland alignment' narrative appears to be an unsourced elaboration built to explain away the 30x67 vs 80x30 discrepancy, not an independently documented fact."
+      }
+    ]
+  },
+  "confidence": "medium",
+  "open_issues": [
+    "No primary source with an actual plan-view drawing, survey, or CAD figure for the Opunake reef was found or was accessible (NZ Geographic R3's full text has no figures/images at all and does not contain the 90x20 figure; ResearchGate R9 is blocked by Cloudflare on both WebFetch and curl, exactly as already flagged in the card).",
+    "The card's citation of the 90x20 footprint as [R2][R3][R4] is only fully supported by R2 and R4; R3's accessible text does not contain this figure. Worth a small correction pass on the card/dossier (not made here, per the task's Gemini-folder read-only / no-new-facts-into-card-without-a-separate-pass convention) — flagging it here as an open issue instead.",
+    "Crest depth and distance offshore are not published anywhere we could find for Opunake specifically; both values here are low-confidence estimates, clearly separable in the JSON from the two solidly-sourced dimensions (90 m / 20 m).",
+    "The true left/right asymmetry of the reef (it produced only a right-hand wave, unlike the symmetric two-directional Mount Maunganui V) is not captured by the symmetric schematic polygon used here, because no source specifies the arm's actual skew or compass angle.",
+    "Gemini's two cited sources for its dimensions ('Mead & Black 2007 Design Dossier', 'Taranaki Regional Council Environmental Monitoring Records 2010') could not be located or accessed by us at all -- not on ResearchGate, not via a direct fetch, not anywhere in either project's folders -- so Gemini's numbers could not be confirmed at the source and are not adopted, per project rule."
+  ],
+  "references": [
+    { "id": "R1", "citation": "Melanie Reid and Bonnie Sumner, Newsroom (2021-12-06). \"The Kiwi scientist and the failed surf breaks.\"", "url": "https://newsroom.co.nz/2021/12/06/the-kiwi-scientist-and-the-failed-surf-breaks/", "accessed": "2026-09-25", "supports": "general failure narrative (reused from card)" },
+    { "id": "R2", "citation": "Raised Water Research. \"Opunake.\"", "url": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/opunake/", "accessed": "2026-09-25", "supports": "verbatim 90m x 20m footprint statement (fetched full text directly this pass); image URLs consulted" },
+    { "id": "R3", "citation": "Andrew Moores, New Zealand Geographic, Issue 078 (Mar-Apr 2006). \"Artificial surf reefs — coming to a beach near you.\"", "url": "https://www.nzgeo.com/stories/artificial-surf-reefs-coming-to-a-beach-near-you/", "accessed": "2026-09-25", "supports": "fetched full article text directly this pass (paywall bypassed via direct curl); confirms wave height/ride-length for Opunake and the Mt Maunganui apex-seaward/thickens-to-base shape analogy used for our schematic polygon; confirms this article does NOT contain the 90x20 footprint figure" },
+    { "id": "R4", "citation": "Luis MP, SurferToday. \"The history of artificial surf reefs.\"", "url": "https://www.surfertoday.com/surfing/the-history-of-artificial-surf-reefs", "accessed": "2026-09-25", "supports": "verbatim (near-identical) 90m x 20m footprint statement (fetched full text directly this pass)" },
+    { "id": "R7", "citation": "Surf-Forecast.com. \"Opunake Beach Surf Guide.\"", "url": "https://www.surf-forecast.com/breaks/Opunake-Beach", "accessed": "2026-09-24", "supports": "tidal range (~2.5 m) used in the crest-depth estimate (reused from card)" },
+    { "id": "R9", "citation": "ResearchGate (blocked). \"Studies for Resource Consent: Opunake Surfing Reef.\"", "url": "https://www.researchgate.net/publication/273133845_Studies_for_Resource_Consent_Opunake_Surfing_Reef", "accessed": "2026-09-25 (re-attempted via WebFetch and direct curl, both 403/Cloudflare-blocked, same as original card note)", "supports": "plausible original source of precise design dimensions/depth/offshore-distance, but inaccessible" },
+    { "id": "S1", "citation": "Claude's own estimate, this pass — not a published source. See derivation table entries for method and uncertainty on each estimated figure (net area, crest depth, distance offshore).", "url": "", "accessed": "2026-09-25", "supports": "crest_depth_m and distance_offshore_m estimates; schematic net-area calculation" }
+  ],
+  "verification": [
+    {
+      "item": "R2 (raisedwaterresearch.com) '90m long and 20m wide' quote",
+      "verdict": "confirmed",
+      "evidence": "Independently re-fetched via curl with a browser user-agent on 2026-09-25 (HTTP 200); exact sentence present verbatim: 'The bags would cover an area around 90m long and 20m wide.' Same fetch also confirms 'The reef was designed to create a right-hand wave on the north side of the cove at Opunake Beach' and 'all 27 geotextile bags were in place' (2009 Stuff.co.nz report), both reused elsewhere in this file."
+    },
+    {
+      "item": "R4 (surfertoday.com) '90 meters long and 20 meters wide' quote",
+      "verdict": "confirmed",
+      "evidence": "WebFetch tool returned HTTP 403 on this pass (site blocks that fetcher), so independently re-fetched via curl with a browser user-agent instead (HTTP 200, 128KB+ page). Parsed the stripped text directly: the Opunake paragraph reads '...The bags would cover an area around 90 meters long and 20 meters wide...' verbatim, plus the same 1.8-2.5 m wave height / 100 m ride-length figures used elsewhere in this file."
+    },
+    {
+      "item": "R3 (nzgeo.com) does NOT contain the 90x20 footprint figure",
+      "verdict": "confirmed",
+      "evidence": "Independently re-fetched the full 58 kB article text via curl (WebFetch 403's on this domain, as the researcher noted). A regex search for '90 m' / '90m' anywhere in the stripped text returns zero matches. The article does verbatim confirm the Mount Maunganui shape-analogy quote ('apex of the V points seaward and the structure thickens towards the base... will measure 75 m from apex to base and almost 100 m across the base', anchored '250 m off the beach in 4.5 m of water') and, separately, Opunake-specific figures of $1.3M cost, 1.8-2.5 m wave height and 100 m ride length for the (north) reef actually built — but no length/width/area figure for Opunake anywhere in the piece. Also newly confirms Opunake was planned to have two reefs (north + south), supporting this file's '(North Reef)' naming."
+    },
+    {
+      "item": "Polygon bbox and area consistent with stated 90 m x 20 m",
+      "verdict": "confirmed",
+      "evidence": "Recomputed independently in Python (shoelace formula, no external libraries): polygon [(-10,110),(10,110),(0,200),(-10,110)] has bbox x=[-10,10] (width 20), y=[110,200] (height 90), and area = 900.0 m2 exactly, matching the file's bbox_m and area_m2 fields to the reported precision."
+    },
+    {
+      "item": "Shape classification (schematic single-arm wedge, apex offshore) against the only available analogous figure",
+      "verdict": "confirmed as the best available option, not as a measurement",
+      "evidence": "No plan-view drawing, aerial photo, or CAD figure of Opunake's reef was found or is accessible (R9/ResearchGate re-confirmed still blocked, see below); the three card images (re-inspected this pass, see images_relied_on) show only shoreline/wave context with no scale reference or structure visible. The Mount Maunganui analogy this shape is based on is independently verified verbatim in R3 (above). The choice not to invent a specific asymmetric skew, despite R2/R4 confirming a single right-hand (not two-directional) wave, is the more conservative and defensible option given the data gap."
+    },
+    {
+      "item": "R9 (ResearchGate) still inaccessible",
+      "verdict": "confirmed",
+      "evidence": "Independently re-attempted via curl with a browser user-agent on 2026-09-25: HTTP 403 (Cloudflare block), matching the file's claim."
+    },
+    {
+      "item": "R7 (surf-forecast.com) ~2.5 m tidal range input",
+      "verdict": "confirmed, with a precision caveat added",
+      "evidence": "Re-fetched 2026-09-25: the page's live next-high (3.14 m) minus next-low (0.39 m) reading gives 2.75 m at the moment of this fetch, not a fixed published 'tidal range' statistic — the true range varies with the spring/neap cycle. Close enough in order of magnitude to the ~2.5 m figure used (which already sits inside a ±1.0 m crest-depth error bar) that no number was changed; a precision caveat was added to the derivation table entry instead."
+    },
+    {
+      "item": "Materials field fabric description ('non-woven, polyester/polyester-polypropylene') citation to [R2][R4]",
+      "verdict": "unsupported — corrected",
+      "evidence": "Neither R2's nor R4's fetched text (checked this pass) contains the words 'polyester' or 'non-woven' anywhere. That exact fabric description ('made of polyester or polyester-polypropylene fashioned into a geotechnical fabric that is either 5.7 mm or 9.5 mm thick') is R3's description of Mount Maunganui's bags specifically, not Opunake's. This was a misattribution carried over from the card; corrected in this file's materials field to remove the false citation and note that Opunake's own bag fabric composition is not published anywhere we could access."
+    },
+    {
+      "item": "Gemini's live reef_footprints.json values for 'opunake' (30 m x 67 m, 1,365 m2, crest 1.4 m, 150 m offshore, shape 'Single-Arm Triangular Wedge (Incomplete V)', two named sources)",
+      "verdict": "confirmed as accurately transcribed",
+      "evidence": "Read C:\\Users\\lior\\Documents\\Gemini\\AG\\artifical reef\\02_world_reefs_data\\reef_footprints.json directly on 2026-09-25 (read-only): the 'opunake' structure entry states alongshore_length_m 30.0, cross_shore_width_m 67.0, footprint_area_m2 1365.0, crest_depth_m 1.4, distance_offshore_m 150, planform_geometry.shape_typology 'Single-Arm Triangular Wedge (Incomplete V)', sources ['Mead, S. & Black, K. (2007). Opunake Artificial Reef Design Dossier.', 'Taranaki Regional Council...'] — all exactly as this file's gemini_comparison section states. Independently recomputed the shoelace area of Gemini's own 7-vertex bounding_polygon: 1365.0 m2 exactly, and its bbox: x=[-15,15] (30 m), y=[128,195] (67 m) — both match Gemini's own stated dimensions/area exactly, confirming this file's point that Gemini's numbers are self-consistent with its own unsourced polygon rather than independently verifiable against a primary source."
+    },
+    {
+      "item": "Gemini comparison's 'stale audit premise' correction (80x30 vs 30x67 'ACTION REQUIRED' claim)",
+      "verdict": "confirmed",
+      "evidence": "Read Gemini's scale_sketch_photo_alignment_audit.md directly (read-only): row 6 of its Master Comparative Geometric Matrix and its detailed Opunake section both literally state the metadata table reads 'alongshore_length_m: 80.0, cross_shore_width_m: 30.0' against a CAD polygon of 30 x 67 m, flagged 'ACTION REQUIRED' with a recommendation to update the JSON to 30/67. The live reef_footprints.json read the same day already contains 30.0/67.0, i.e. matching the polygon. This confirms the file's claim that the specific inversion described in Gemini's own audit no longer exists in the live file, without that audit document itself being updated — a correction to the task brief's premise, not a defense of Gemini's underlying (still-unsourced) numbers."
+    },
+    {
+      "item": "No number in the derivation table lacks a source or an explicit estimation method",
+      "verdict": "confirmed",
+      "evidence": "Every row cites either a quoted, re-fetched secondary source (R2/R4 for 90x20; R2/R3/R4/R7 as inputs to the two estimates) or is explicitly labeled 'estimated'/'derived, not sourced' with source_ref S1 (Claude's own estimate) and an uncertainty range. No silent/unlabeled figures were found."
+    },
+    {
+      "item": "Overall confidence label",
+      "verdict": "confirmed as 'medium' (no change)",
+      "evidence": "The two headline dimensions (90 m, 20 m) are now doubly independently re-confirmed via fresh fetches of two separate accessible sources; the shape, crest depth, distance offshore and exact area remain schematic/estimated and are already flagged as low-confidence within the medium overall rating, so no change to the confidence label was warranted."
+    }
+  ]
+}

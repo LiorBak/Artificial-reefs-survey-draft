@@ -1,0 +1,117 @@
+[
+ {
+  "slug": "narrowneck-gold-coast",
+  "lat": "-27.98639",
+  "lon": "153.42972",
+  "rest_url": "https://rest.emodnet-bathymetry.eu/depth_sample?geom=POINT(153.42972 -27.98639)",
+  "rest_status": 204,
+  "rest_body": "",
+  "inside_ERDDAP_2024_lon_lat_domain": false
+ },
+ {
+  "slug": "cables-reef-wa",
+  "lat": "-32.0",
+  "lon": "115.74",
+  "rest_url": "https://rest.emodnet-bathymetry.eu/depth_sample?geom=POINT(115.74 -32.0)",
+  "rest_status": 204,
+  "rest_body": "",
+  "inside_ERDDAP_2024_lon_lat_domain": false
+ },
+ {
+  "slug": "prattes-reef-el-segundo",
+  "lat": "33.915123",
+  "lon": "-118.432624",
+  "rest_url": "https://rest.emodnet-bathymetry.eu/depth_sample?geom=POINT(-118.432624 33.915123)",
+  "rest_status": 204,
+  "rest_body": "",
+  "inside_ERDDAP_2024_lon_lat_domain": false
+ },
+ {
+  "slug": "mount-maunganui-reef",
+  "lat": "-37.644783",
+  "lon": "176.202591",
+  "rest_url": "https://rest.emodnet-bathymetry.eu/depth_sample?geom=POINT(176.202591 -37.644783)",
+  "rest_status": 204,
+  "rest_body": "",
+  "inside_ERDDAP_2024_lon_lat_domain": false
+ },
+ {
+  "slug": "opunake-reef",
+  "lat": "-39.46",
+  "lon": "173.86",
+  "rest_url": "https://rest.emodnet-bathymetry.eu/depth_sample?geom=POINT(173.86 -39.46)",
+  "rest_status": 204,
+  "rest_body": "",
+  "inside_ERDDAP_2024_lon_lat_domain": false
+ },
+ {
+  "slug": "boscombe-surf-reef",
+  "lat": "50.717532",
+  "lon": "-1.838909",
+  "rest_url": "https://rest.emodnet-bathymetry.eu/depth_sample?geom=POINT(-1.838909 50.717532)",
+  "rest_status": 200,
+  "rest_body": "{\"min\":-6.21,\"max\":-4.87,\"avg\":-5.62,\"stdev\":0.43,\"elementarySurfaces\":12,\"interpolationType\":false,\"smoothed\":-5.3762507,\"smoothedOffset\":0.24374914,\"reference\":{\"organisation_id\":2607,\"identifier\":\"117452\",\"type\":\"CDI\",\"metadata_url\":\"https://cdi-bathymetry.seadatanet.org/report/edmo/2607/117452\"}}",
+  "inside_ERDDAP_2024_lon_lat_domain": true
+ },
+ {
+  "slug": "kovalam-reef-india",
+  "lat": "8.4004",
+  "lon": "76.9787",
+  "rest_url": "https://rest.emodnet-bathymetry.eu/depth_sample?geom=POINT(76.9787 8.4004)",
+  "rest_status": 204,
+  "rest_body": "",
+  "inside_ERDDAP_2024_lon_lat_domain": false
+ },
+ {
+  "slug": "borth-coastal-defence-reef",
+  "lat": "52.483453",
+  "lon": "-4.056205",
+  "rest_url": "https://rest.emodnet-bathymetry.eu/depth_sample?geom=POINT(-4.056205 52.483453)",
+  "rest_status": 200,
+  "rest_body": "{\"avg\":-0.1796875,\"elementarySurfaces\":3,\"interpolationType\":true,\"smoothed\":-0.41599607,\"smoothedOffset\":0.23630857,\"reference\":{\"identifier\":\"GEBCO2024\",\"type\":\"DTM\"}}",
+  "inside_ERDDAP_2024_lon_lat_domain": true
+ },
+ {
+  "slug": "palm-beach-gold-coast",
+  "lat": "-28.107334",
+  "lon": "153.470913",
+  "rest_url": "https://rest.emodnet-bathymetry.eu/depth_sample?geom=POINT(153.470913 -28.107334)",
+  "rest_status": 204,
+  "rest_body": "",
+  "inside_ERDDAP_2024_lon_lat_domain": false
+ },
+ {
+  "slug": "southern-ocean-surf-reef-albany",
+  "lat": "-35.0236",
+  "lon": "117.9136",
+  "rest_url": "https://rest.emodnet-bathymetry.eu/depth_sample?geom=POINT(117.9136 -35.0236)",
+  "rest_status": 204,
+  "rest_body": "",
+  "inside_ERDDAP_2024_lon_lat_domain": false
+ },
+ {
+  "slug": "burkitts-reef-bargara",
+  "lat": "-24.8205",
+  "lon": "152.4625",
+  "rest_url": "https://rest.emodnet-bathymetry.eu/depth_sample?geom=POINT(152.4625 -24.8205)",
+  "rest_status": 204,
+  "rest_body": "",
+  "inside_ERDDAP_2024_lon_lat_domain": false
+ },
+ {
+  "slug": "bunbury-airwave",
+  "lat": "-33.3276",
+  "lon": "115.6284",
+  "rest_url": "https://rest.emodnet-bathymetry.eu/depth_sample?geom=POINT(115.6284 -33.3276)",
+  "rest_status": 204,
+  "rest_body": "",
+  "inside_ERDDAP_2024_lon_lat_domain": false
+ },
+ {
+  "slug": "mexico-reef-2026-unnamed",
+  "lat": "",
+  "lon": "",
+  "rest_status": "no coordinate",
+  "covered": "no (no coordinate; Pacific Mexico is outside the DTM domain anyway)"
+ }
+]

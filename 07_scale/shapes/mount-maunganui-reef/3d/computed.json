@@ -1,0 +1,103 @@
+{
+ "versions": {
+  "multibeam_2013_m2p0": {
+   "volume_by_bed": {
+    "-3.0": {
+     "volume_m3": 2030.2,
+     "footprint_area_m2": 1453.25,
+     "h_max_m": 2.25,
+     "h_mean_m": 1.4,
+     "crest_z_cd": -0.9
+    },
+    "-3.5": {
+     "volume_m3": 2784.19,
+     "footprint_area_m2": 1621.25,
+     "h_max_m": 2.75,
+     "h_mean_m": 1.72,
+     "crest_z_cd": -0.9
+    },
+    "-4.0": {
+     "volume_m3": 3619.92,
+     "footprint_area_m2": 1787.75,
+     "h_max_m": 3.25,
+     "h_mean_m": 2.02,
+     "crest_z_cd": -0.9
+    },
+    "-4.5": {
+     "volume_m3": 4536.93,
+     "footprint_area_m2": 1953.25,
+     "h_max_m": 3.75,
+     "h_mean_m": 2.32,
+     "crest_z_cd": -0.9
+    },
+    "nav": {
+     "volume_m3": 1692.05,
+     "footprint_area_m2": 1367.25,
+     "h_max_m": 2.01,
+     "h_mean_m": 1.24,
+     "crest_z_cd": -0.9
+    }
+   },
+   "bed_for_2800": -3.51,
+   "area_m2": 1071.0,
+   "volume_bed-4.0_crest-0.8": 3688.1,
+   "volume_bed-4.0_crest-1.0": 3551.8,
+   "volume_bed-4.0_by_run": {
+    "0.25": 3048.7,
+    "0.5": 3245.0,
+    "1.0": 3619.9,
+    "1.5": 3982.6,
+    "2.0": 4327.0
+   },
+   "volume_above_contour_m3": 749.9,
+   "vertical_wall_minimum_volume_bed-4.0_m3": 2892.0
+  },
+  "asr_installed_toe_2008": {
+   "volume_by_bed": {
+    "-3.0": {
+     "volume_m3": 1998.99,
+     "footprint_area_m2": 1427.25,
+     "h_max_m": 2.25,
+     "h_mean_m": 1.4,
+     "crest_z_cd": -0.9
+    },
+    "-3.5": {
+     "volume_m3": 2605.73,
+     "footprint_area_m2": 1428.5,
+     "h_max_m": 2.75,
+     "h_mean_m": 1.82,
+     "crest_z_cd": -0.9
+    },
+    "-4.0": {
+     "volume_m3": 3212.47,
+     "footprint_area_m2": 1430.25,
+     "h_max_m": 3.25,
+     "h_mean_m": 2.25,
+     "crest_z_cd": -0.9
+    },
+    "-4.5": {
+     "volume_m3": 3819.21,
+     "footprint_area_m2": 1430.75,
+     "h_max_m": 3.75,
+     "h_mean_m": 2.67,
+     "crest_z_cd": -0.9
+    },
+    "nav": {
+     "volume_m3": 1702.78,
+     "footprint_area_m2": 1422.0,
+     "h_max_m": 2.01,
+     "h_mean_m": 1.2,
+     "crest_z_cd": -0.9
+    }
+   },
+   "bed_for_2800": -3.66,
+   "area_m2": 1423.8,
+   "volume_bed-4.0_crest-0.8": 3280.6,
+   "volume_bed-4.0_crest-1.0": 3144.3
+  }
+ },
+ "bed_for_2800": {
+  "multibeam_2013_m2p0": -3.51,
+  "asr_installed_toe_2008": -3.66
+ }
+}

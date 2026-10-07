@@ -1,0 +1,226 @@
+{
+  "slug": "mexico-reef-2026-unnamed",
+  "name": "Xala Reef (Costalegre artificial surf reef)",
+  "status": "verified",
+  "verified_on": "2026-09-25",
+  "shape_type": "other",
+  "shape_type_notes": "No source describes or shows the reef's planform. This polygon is a symmetric footprint ENVELOPE only (not a confirmed chevron/V/delta shape) sized by open analogy to the same designer's only other published reef (Palm Beach Reef). It is not a measurement of Xala itself.",
+  "coords": "metres; origin = shoreline point nearest the reef centroid (exact shoreline position unknown - Xala's precise coordinates are undisclosed); x = alongshore (positive direction arbitrary/unconfirmed - no source states compass orientation of the reef or shoreline), y = offshore (positive seaward); shoreline approximated as the line y=0",
+  "polygon_m": [
+    [-80, 250],
+    [-40, 230],
+    [40, 230],
+    [80, 250],
+    [80, 290],
+    [40, 310],
+    [-40, 310],
+    [-80, 290],
+    [-80, 250]
+  ],
+  "bbox_m": {"length_alongshore": 160, "width_crossshore": 80},
+  "area_m2": 11200,
+  "max_dimension_m": 164.9,
+  "crest_depth_m": {
+    "value": 1.5,
+    "datum": "below MSL (analogy value; not stated for Xala)",
+    "ref": "R7",
+    "confidence_note": "Design-analogy estimate only; no Xala-specific source gives a crest depth. Uncertainty large, plausibly anywhere between the surf-zone-minimum needed to be surfable at low tide (~0.5 m) and ~2.5 m."
+  },
+  "distance_offshore_m": {
+    "value": 270,
+    "measured_from": "shoreline (analogy value; not stated for Xala)",
+    "ref": "R7",
+    "confidence_note": "Design-analogy estimate only; no Xala-specific source gives an offshore distance."
+  },
+  "orientation_notes": "Completely unconfirmed. No source states which way the reef's arms/apex point, the angle of the structure to the shore, or which compass direction is 'alongshore-positive'. Outcome text for Xala (card `outcome` field) explicitly states no independent surf report exists, so we do not even know whether Xala breaks right, left, or both (Palm Beach, the analogy source, breaks predominantly right with a shorter left in bigger swell, per R7 - but that is Palm Beach's documented behaviour, not Xala's).",
+  "volume_m3": null,
+  "materials": "Quarried rock/boulders, ~3,000 truckloads (no tonnage or volume figure published) [R3][R4]; not geotextile [R3][R4][R12]",
+  "derivation": [
+    {
+      "quantity": "alongshore length",
+      "value": 160,
+      "unit": "m",
+      "method": "design analogy - not measured or estimated from any Xala image; taken directly from the published dimension of designer Simon Mortensen's only other documented reef, Palm Beach Reef, Gold Coast, Australia",
+      "source_ref": "R7",
+      "quote_or_figure": "\"The dimensions of the reef are roughly 160m long and 80m wide.\" (Raised Water Research, Palm Beach Reef spot page)",
+      "uncertainty": "Order-of-magnitude only. Xala could plausibly differ by ±50% or more; no Xala-specific figure exists to check against."
+    },
+    {
+      "quantity": "cross-shore width",
+      "value": 80,
+      "unit": "m",
+      "method": "design analogy, same source as alongshore length",
+      "source_ref": "R7",
+      "quote_or_figure": "\"The dimensions of the reef are roughly 160m long and 80m wide.\"",
+      "uncertainty": "Order-of-magnitude only, ±50% or more."
+    },
+    {
+      "quantity": "crest depth",
+      "value": 1.5,
+      "unit": "m below MSL",
+      "method": "design analogy to Palm Beach Reef; Mortensen was lead/principal designer of both projects and Xala press coverage describes the same rock-mound method",
+      "source_ref": "R7",
+      "quote_or_figure": "\"The team designed the reef to sit 1.5 m below mean sea level to help ensure the reef was still covered at low tide.\"",
+      "uncertainty": "Large - tidal range and target wave height at Xala's Pacific Costalegre site are unknown and could differ substantially from Palm Beach's Gold Coast micro/meso-tidal setting."
+    },
+    {
+      "quantity": "distance offshore",
+      "value": 270,
+      "unit": "m",
+      "method": "design analogy to Palm Beach Reef",
+      "source_ref": "R7",
+      "quote_or_figure": "\"The design called for installation of the reef approximately 270 m off shore.\"",
+      "uncertainty": "Large - depends entirely on Xala's local bathymetry/seabed slope, which is undocumented in any source found."
+    },
+    {
+      "quantity": "boulder count (not a footprint dimension, included for context)",
+      "value": "3,000 truckloads",
+      "unit": "truckloads",
+      "method": "stated directly in text",
+      "source_ref": "R3",
+      "quote_or_figure": "\"an artificial reef constructed with 3,000 truckloads of boulders from a nearby quarry\"",
+      "uncertainty": "Truckload size (and therefore tonnage) not specified anywhere; cannot be converted to volume/tonnage without an assumed truck capacity."
+    }
+  ],
+  "images_relied_on": [
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2026/04/Reef1-1024x573.jpg",
+      "what_it_is": "Low-angle/water-level action photo of a surfer riding a wave at Xala (already in our verified card's `images` list)",
+      "what_was_read_off_it": "Confirmed this shows a single peeling wave face from water level with open ocean behind; no shoreline, no scale reference object (boat/building/person of known distant size), and no plan-view of the reef structure itself is visible. Nothing quantitative could be measured from it. A faint drone/aircraft silhouette is visible far in the background of the companion photo but is not a usable scale reference (unknown size/distance).",
+      "source_page": "https://raisedwaterresearch.com/unveiling-the-new-reef-in-mexico/"
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2026/03/Reef2.jpg",
+      "what_it_is": "Header photo for the same article - close-up water-level shot of a surfer inside a barreling wave",
+      "what_was_read_off_it": "Same conclusion as above: no aerial/plan view, no scale reference, no measurable geometry. Both images were downloaded to a scratchpad, viewed, and deleted per project rules; not used for any numeric derivation.",
+      "source_page": "https://raisedwaterresearch.com/unveiling-the-new-reef-in-mexico/"
+    }
+  ],
+  "gemini_comparison": {
+    "gemini_values": {
+      "shape_type": "N/A - no CAD entry exists in Gemini's reef_footprints.json at all (confirmed independently: grep of 02_world_reefs_data/reef_footprints.json for 'xala'/'mexico' in the structures array returns nothing)",
+      "length_m": "~140",
+      "width_m": "~75",
+      "area_m2": "not computed",
+      "crest_depth_m": "~1.0-1.5",
+      "distance_offshore_m": "~180-250",
+      "orientation": "N/A - described only as a 'non-linear Boussinesq refraction wedge' in Gemini's xala-reef-mexico.md prose, no polygon/orientation given"
+    },
+    "agree": [
+      "Materials/construction method (3,000 truckloads of quarried rock, no geotextile) - directly sourced and matches our own card [R3][R4].",
+      "Designer identity and Palm Beach Reef pedigree - matches our card [R1][R6].",
+      "Directionally, Gemini's numbers are in the same order of magnitude as ours, which is itself telling (see disagree notes below) - both land close to Palm Beach Reef's real 160x80m/1.5m/270m dimensions."
+    ],
+    "disagree": [
+      {
+        "quantity": "length_m",
+        "gemini": "~140 m",
+        "ours": "160 m (explicitly labeled as a Palm-Beach-analogy estimate, not a Xala measurement)",
+        "why_ours": "We re-fetched all 4 of Gemini's own cited sources (Indelicato/Raised Water Research unveiling article, Romeyn/Hollywood Reporter via its Yahoo syndication, the freerepublic repost, and Hospitality Net) on 2026-09-25 and confirmed none contains any length, width, area, or footprint figure for Xala - only the boulder-truckload count. Gemini's Key Technical Specifications section presents '~140 x 75 m' with a tilde but with zero citation tying it to any of the 4 listed references, none of which is an engineering drawing or contains a number close to 140 or 75. The number cannot be derived from Gemini's own source list. Our own value (160m) is at least traceable to a real, cited, quoted figure - Palm Beach Reef's published dimension - and is labeled throughout as an unverified analogy, not a Xala fact."
+      },
+      {
+        "quantity": "width_m",
+        "gemini": "~75 m",
+        "ours": "80 m (Palm-Beach-analogy estimate)",
+        "why_ours": "Same as above - no cited source supports 75 m for Xala. 75 m is suspiciously close to Palm Beach's real 80 m, supporting our own card's 'suspicious' note that Gemini likely performed the same Simon-Mortensen/Palm-Beach analogy internally without disclosing it or citing Palm Beach as the source."
+      },
+      {
+        "quantity": "crest_depth_m",
+        "gemini": "~1.0-1.5 m below MSL",
+        "ours": "1.5 m below MSL (Palm-Beach-analogy estimate, single value not a range)",
+        "why_ours": "Palm Beach Reef's crest depth is documented as exactly 1.5 m below MSL (Raised Water Research spot page, quoted above). Gemini's range brackets this exact figure but, again, cites only the 4 Xala-specific sources, none of which mentions a crest depth at all. We present a single analogy value with an explicit large-uncertainty caveat rather than a bare range with no stated method."
+      },
+      {
+        "quantity": "distance_offshore_m",
+        "gemini": "~180-250 m",
+        "ours": "270 m (Palm-Beach-analogy estimate)",
+        "why_ours": "Palm Beach Reef sits ~270 m offshore per its own spot page. None of Gemini's 4 cited Xala sources states any offshore distance. Gemini's lower range (180-250 m) may reflect an independent guess or a partial/rounded version of the same analogy; either way it is uncited and we cannot verify it against any source."
+      },
+      {
+        "quantity": "shape_type / orientation",
+        "gemini": "Not drawn; described only in prose as a 'non-linear Boussinesq refraction wedge' with 'peeling left and right shoulders'",
+        "ours": "shape_type 'other' (undetermined footprint envelope only); orientation explicitly flagged as unknown",
+        "why_ours": "The 'peeling left and right shoulders' description is not supported by any Xala-specific source; our own verified card's Outcome section states no independent surf report of Xala exists at all, so we do not know if it produces one wave direction or two. This phrase looks like it was generalized from Palm Beach Reef's documented behavior (a right-hander plus a shorter left in bigger swell) or from generic surf-reef design language, not from anything published about Xala."
+      }
+    ]
+  },
+  "confidence": "low",
+  "open_issues": [
+    "No source found by either this project's exhaustive card/dossier sweep (2026-09-24) or this footprint task's re-check (2026-09-25) discloses any Xala-specific length, width, area, crest depth, or offshore distance.",
+    "No aerial photo, plan-view figure, engineering drawing, permit filing, or CAD/scale asset for Xala exists in this project's media indexes, in Gemini's media indexes, or in Gemini's reef_footprints.json (confirmed by direct grep - the Gemini slug 'xala-reef-mexico' has no entry in the structures array at all).",
+    "The only two verified images of Xala (both already in the card's `images` list) are close-range, water-level surf action photos with no shoreline, scale reference, or plan view visible - confirmed by direct visual inspection this task.",
+    "This entire footprint record is therefore a labeled DESIGN-ANALOGY PLACEHOLDER (to the designer's only other published reef, Palm Beach), not a Xala measurement or a figure-based estimate. It should be replaced the moment a real design paper, permit drawing, or aerial photo of Xala's reef becomes available.",
+    "Exact reef coordinates and shoreline orientation are undisclosed, so the coordinate frame's alongshore-positive direction is arbitrary and cannot be tied to a compass heading.",
+    "Whether Xala's reef is symmetric, single-armed, or a chevron/V like Palm Beach is completely unconfirmed; the polygon supplied here is a symmetric envelope specifically to avoid asserting an unconfirmed asymmetric/chevron shape."
+  ],
+  "references": [
+    {"id": "R1", "citation": "Peter Indelicato, Raised Water Research (2026-03-31). \"Unveiling the new reef in Mexico.\"", "url": "https://raisedwaterresearch.com/unveiling-the-new-reef-in-mexico/", "accessed": "2026-09-25", "supports": "Re-fetched and confirmed this task: contains zero physical dimensions/geometry for Xala."},
+    {"id": "R3", "citation": "Kathryn Romeyn, The Hollywood Reporter (2025-04-22), via syndicated Yahoo copy.", "url": "https://www.yahoo.com/lifestyle/richard-gere-next-great-role-130000544.html", "accessed": "2026-09-25", "supports": "Re-fetched and confirmed this task: only physical detail is '3,000 truckloads of boulders'; no length/width/depth/offshore distance."},
+    {"id": "R4", "citation": "Freerepublic.com repost of the Hollywood Reporter article.", "url": "https://freerepublic.com/focus/f-chat/4312838/posts", "accessed": "2026-09-25", "supports": "Re-fetched during this verification pass (the prior draft had not re-fetched it): confirmed it is a verbatim repost of R3's '3,000 truckloads of boulders' quote, with no additional dimensions."},
+    {"id": "R5", "citation": "Hospitality Net (2026). \"2026 Opening Planned for Six Senses Xala, Mexico.\"", "url": "https://www.hospitalitynet.org/announcement/41010415.html", "accessed": "2026-09-25", "supports": "Re-fetched and confirmed this task: only mentions the reef's purpose, zero dimensions."},
+    {"id": "R6", "citation": "World Surfing Conservation Conference 2026, speaker bio, \"Simon Brandi Mortensen.\"", "url": "https://www.wscc2026.com.au/key-speakers/simon-brandi-mortensen/", "accessed": "2026-09-25", "supports": "Re-fetched this task: confirms Mortensen has designed 'three additional surfing reefs globally' beyond Palm Beach (unnamed - could include Xala), and that his 'most recent project [was] completed in the Americas' (weak circumstantial support that Xala is one of these, strengthening but not proving the design-analogy method used here); gives no dimensions for any project."},
+    {"id": "R7", "citation": "Raised Water Research, \"Palm Beach Reef\" spot page (used here only as a design-analogy source for the same designer's other reef, not as a Xala source).", "url": "https://raisedwaterresearch.com/spot/artificial-reef/australia/queensland/palm-beach-reef/", "accessed": "2026-09-25", "supports": "CORRECTION (2026-09-25 verification): this URL is already R7 in the verified card's own reference list (accessed 2026-09-24, used there as designer-pedigree/outcome background) - the prior draft of this file mislabeled it as a brand-new source 'S1'. Re-fetched and confirmed this task as the source of every analogy-based numeric placeholder here: 160 m length, 80 m width, 1.5 m crest depth below MSL, 270 m offshore distance, and the right/left wave-direction detail used to caveat orientation."}
+  ],
+  "verification": [
+    {
+      "item": "R1 (Raised Water Research unveiling article) - no Xala dimensions",
+      "verdict": "confirmed",
+      "evidence": "Re-fetched 2026-09-25; article contains only name/location/designer/unveiling-event framing, zero physical dimensions."
+    },
+    {
+      "item": "R3 (Hollywood Reporter via Yahoo syndication) - only physical detail is '3,000 truckloads of boulders'",
+      "verdict": "confirmed",
+      "evidence": "Re-fetched 2026-09-25; exact quote reproduced, no length/width/depth/offshore figure anywhere in the piece."
+    },
+    {
+      "item": "R4 (freerepublic repost) duplicates R3, no new numbers",
+      "verdict": "confirmed",
+      "evidence": "Independently re-fetched this verification pass (prior draft had not re-fetched it); the same '3,000 truckloads of boulders from a nearby quarry' quote is present verbatim, nothing else."
+    },
+    {
+      "item": "R5 (Hospitality Net) - purpose statement only, zero dimensions",
+      "verdict": "confirmed",
+      "evidence": "Re-fetched 2026-09-25; only sentence is the coastal-protection purpose statement, no numbers."
+    },
+    {
+      "item": "R6 (WSCC Mortensen bio) - confirms designer but no Xala dimensions",
+      "verdict": "confirmed, with one addition",
+      "evidence": "Re-fetched 2026-09-25 and read in full: confirms 'three additional surfing reefs globally' beyond Palm Beach and adds a detail the prior draft did not surface - 'his most recent project completed in the Americas' - which is weak circumstantial support that Xala is one of Mortensen's reefs (strengthens, does not prove, the design-analogy rationale). No dimensions for any project."
+    },
+    {
+      "item": "R7/S1 (Palm Beach Reef spot page) supplies 160 m x 80 m, 1.5 m below MSL, 270 m offshore, right-hand-dominant with shorter left",
+      "verdict": "confirmed, but source-ID error found and fixed",
+      "evidence": "Re-fetched 2026-09-25; all four quoted figures and the wave-direction description match exactly. However this URL is identical to R7, already in the verified card's own reference list since the 2026-09-24 sweep - the prior draft incorrectly introduced it as a new source 'S1' and called it 'NEW this task'. Corrected throughout the .md and .json to cite the existing R7 instead of minting a duplicate ID."
+    },
+    {
+      "item": "Polygon geometry: bbox, area, max_dimension_m are internally consistent with the stated 160 m x 80 m",
+      "verdict": "confirmed",
+      "evidence": "Recomputed independently with Shapely 2.1.2 on the exact coordinate list: is_valid=True, exterior.is_simple=True, bbox=(-80,230)-(80,310) giving length_alongshore=160.0 and width_crossshore=80.0 exactly, area=11200.0 m2 exactly, max pairwise vertex distance=164.924... m, matching the file's stated area_m2 and max_dimension_m to the reported precision."
+    },
+    {
+      "item": "Shape classification 'other' / undetermined envelope (not chevron/V/delta)",
+      "verdict": "confirmed",
+      "evidence": "No source found (own project or Gemini's) describes or draws a Xala planform; the symmetric-envelope choice, rather than copying Palm Beach's asymmetric chevron, is the more conservative, defensible option given a genuine data gap."
+    },
+    {
+      "item": "Gemini comparison table is fair and accurate",
+      "verdict": "confirmed",
+      "evidence": "Directly read Gemini's 02_world_reefs_data/xala-reef-mexico.md: 'Key Technical Specifications' section states Length ~140 m, Width ~75 m at base, crest ~1.0-1.5 m below MSL, offshore ~180-250 m, citing only Indelicato/RWR, Romeyn/Hollywood Reporter, Hospitality Net, and an unlinked 'Mortensen 2026 DHI Seaport' - none of which (per the re-fetches above) contains any of those numbers. Also confirmed by direct grep that Gemini's 02_world_reefs_data/reef_footprints.json 'structures' array (16 entries) has no xala/mexico entry, and that 02_world_reefs_data/reef_footprint_scale_analysis.md and scale_sketch_photo_alignment_audit.md contain zero mentions of 'xala' or 'mexico' (0 matches each), and that 05_web_build/images/scale/ has no xala/mexico file - all exactly as the prior draft claimed."
+    },
+    {
+      "item": "Media-index claim: no other Xala images/video/frames exist in this project",
+      "verdict": "confirmed, with one wording correction",
+      "evidence": "03_images/web/mexico-reef-2026-unnamed.json lists only the 2 photos plus the approximate Google Maps pin; 02_research/videos/mexico-reef-2026-unnamed/videos.json is an empty array. CORRECTION: the prior draft's .md said 03_images/video_frames/mexico-reef-2026-unnamed/ 'does not exist' - filesystem check this verification found the folder DOES exist but is empty (0 files). Substance (no frames available) is unchanged; wording fixed in the .md."
+    },
+    {
+      "item": "No number in the derivation table lacks a source or explicit estimation method",
+      "verdict": "confirmed",
+      "evidence": "Every row of the derivation table carries either a source_ref to a re-fetched, quoted source (R3 for boulder count, R7 for all four geometric/depth/distance values) with an explicit 'design analogy' method label and an uncertainty note, or is the polygon-area figure which is explicitly labeled 'Derived, not a source figure' (computed from the analogy-based envelope)."
+    },
+    {
+      "item": "Overall confidence label",
+      "verdict": "confirmed as 'low' (no change)",
+      "evidence": "Every quantitative value in this record remains a design-analogy placeholder with no Xala-specific source; 'low' is the correct and, if anything, generous confidence label. Not lowered further only because the analogy method itself is transparent, traceable to a real cited figure, and clearly flagged as non-Xala-specific throughout."
+    }
+  ]
+}

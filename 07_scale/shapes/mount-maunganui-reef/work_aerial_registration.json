@@ -1,0 +1,26 @@
+{
+ "red": {
+  "score": 0.86,
+  "score_at_zero": 0.834,
+  "shift_px_right": -4,
+  "shift_px_down": 14,
+  "shift_E_m": -0.5,
+  "shift_N_m": -1.75
+ },
+ "dark": {
+  "score": 0.375,
+  "score_at_zero": 0.283,
+  "shift_px_right": 11,
+  "shift_px_down": 31,
+  "shift_E_m": 1.38,
+  "shift_N_m": -3.88
+ },
+ "red+dark": {
+  "score": 0.759,
+  "score_at_zero": 0.701,
+  "shift_px_right": 2,
+  "shift_px_down": 21,
+  "shift_E_m": 0.25,
+  "shift_N_m": -2.62
+ }
+}

@@ -1,0 +1,61 @@
+{
+  "report_path": "05_qa/reef/narrowneck-gold-coast_media_recheck.md",
+  "verdicts_json_path": "05_qa/reef/narrowneck-gold-coast_media_recheck.json",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/North_Narrowneck_Beach%2C_Main_Beach%2C_Queensland%2C_2026.jpg",
+      "shows": "site_context_only",
+      "what_i_saw": "Photo of a City of Gold Coast lifeguard 'ATTENTION' sign reading 'Beach: North Narrowneck', with open beach and surf behind it. No structure or unusual wave shape visible; matches the card's own depicts text.",
+      "confidence": "high"
+    },
+    {
+      "url": "https://static.wixstatic.com/media/97fa2b_f659d48522734f379fcf1a8bf0db6496~mv2.jpg/v1/fill/w_980,h_603,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/97fa2b_f659d48522734f379fcf1a8bf0db6496~mv2.jpg",
+      "shows": "reef_effect_visible",
+      "what_i_saw": "Labelled composite: aerial photo of the pre-reef eroded headland arrowed 'Narrowneck Artifical Headland', plus a 'Northern Gold Coast Beach Protection Stratagey' engineering map explicitly marking a 'Submerged reef to provide control point' and a 'salient' at this location. A diagram, not a photograph, but it directly places the submerged structure and its intended effect at the site, from the design firm's own case-study page.",
+      "confidence": "medium"
+    },
+    {
+      "url": "https://static.wixstatic.com/media/97fa2b_25f1b26178af4d1d9fadb7f07b437abf~mv2.jpg/v1/fill/w_980,h_309,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/97fa2b_25f1b26178af4d1d9fadb7f07b437abf~mv2.jpg",
+      "shows": "reef_effect_visible",
+      "what_i_saw": "Before/after pair with same Surfers Paradise skyline: eroded beach with sandbag revetment (before) vs. wide vegetated dune system and much wider beach (25 years on). ICM's own caption attributes this widening to the beach-protection project including the reef; the submerged structure itself is not visible, but the effect is explicitly captioned as this project's outcome.",
+      "confidence": "high"
+    },
+    {
+      "url": "https://static.wixstatic.com/media/164422_c1704d0a67bc488d8365e6fe2bd50708~mv2.jpg/v1/fill/w_960,h_697,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/164422_c1704d0a67bc488d8365e6fe2bd50708~mv2.jpg",
+      "shows": "structure_visible",
+      "what_i_saw": "Underwater photo: school of small fish over reddish-brown macroalgae. ICM captions it 'Marine life on Narrowneck Artificial Reef'; the algae substrate is described in the dossier as growing on the reef's geotextile bags, but the bag/container outline itself is not clearly legible under the algae and fish in this frame -- weakest structure_visible call of the set.",
+      "confidence": "low"
+    },
+    {
+      "url": "https://static.wixstatic.com/media/164422_8b3239d82ee84d159668f47acabd0dc2~mv2.png/v1/fill/w_1920,h_1080,al_c,q_95,enc_auto/164422_8b3239d82ee84d159668f47acabd0dc2~mv2.png",
+      "shows": "structure_visible",
+      "what_i_saw": "Fisheye construction-phase photo from the split-hull barge deck: a large sand-filled geotextile 'mega sandbag' container being lowered via ribbed hose off the stern, two workers watching, Gold Coast coastline in background. Matches the dossier's construction description exactly and ICM's own caption naming this project. Clear, unambiguous structure_visible.",
+      "confidence": "high"
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=oUfLGStUKPs",
+      "about": "about_the_reef",
+      "evidence": "Full transcript (oUfLGStUKPs.txt) is a first-person interview with the reef's design engineer. [00:00:19] \"The [Narrowneck] Reef is a geotextile bag reef and its primary objective was Coastal protection.\" best_timestamp_seconds=19 confirmed correct."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=crzsn6h_5mk",
+      "about": "about_the_reef",
+      "evidence": "No spoken narration/captions exist (yt-dlp: no subtitles available), but cached description is reef-specific: \"This brief video highlights the habitat and diversity of marine life that established at Narrowneck Reef by 2017... rays, wobbegong, sea turtles, dolphins, fish, crustaceans and marine flora.\" Title and channel (the reef's own coastal-management contractor) both name Narrowneck.",
+      "best_timestamp_seconds": 0
+    },
+    {
+      "url": "https://www.youtube.com/shorts/bKGU9aS3Pm0",
+      "about": "about_the_reef",
+      "evidence": "Title names 'Spotted Eagle Ray at Narrowneck Reef' specifically; cached description is music-credit only ('Music - State Drive - VYEN'), no narration to quote. Weaker confirmation (title-only) than the two videos above, kept as about_the_reef since the card already treats it as confirmed."
+    },
+    {
+      "url": "https://www.youtube.com/shorts/xCLnKjvJ9r4",
+      "about": "unknown",
+      "evidence": "Unchanged from card: cached description discusses only 'the Gold Coast Seaway' (a separate structure) and never mentions Narrowneck again beyond the title. Already correctly treated in the card as a link-only, unconfirmed lead, not embedded as confirmed footage."
+    }
+  ],
+  "frames": [],
+  "hero_recommendation": "https://static.wixstatic.com/media/164422_8b3239d82ee84d159668f47acabd0dc2~mv2.png/v1/fill/w_1920,h_1080,al_c,q_95,enc_auto/164422_8b3239d82ee84d159668f47acabd0dc2~mv2.png"
+}

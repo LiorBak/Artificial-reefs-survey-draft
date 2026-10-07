@@ -1,0 +1,24 @@
+{
+  "image": "esri_wayback_2011-01-15_z19.png",
+  "width": 1692,
+  "height": 1692,
+  "bounds": {
+    "north": -37.643002511033714,
+    "south": -37.646595991081,
+    "east": 176.20456963777542,
+    "west": 176.20003134012222
+  },
+  "zoom": 19,
+  "m_per_px_center": 0.2364210195929493,
+  "tile_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/{release}/{z}/{y}/{x}",
+  "wayback_release": "3630",
+  "center": {
+    "lat": -37.6448,
+    "lon": 176.2023
+  },
+  "radius_m": 200.0,
+  "attribution": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+  "retrieved": "2026-10-05",
+  "capture_date": "2011-01-15",
+  "capture_date_field": "SRC_DATE2"
+}

@@ -1,0 +1,269 @@
+{
+  "slug": "narrowneck-gold-coast",
+  "kind": "reef",
+  "verified_on": "2026-09-24",
+  "enriched_on": "2026-09-25",
+  "name": "Narrowneck Reef (Gold Coast Reef)",
+  "place": "Narrowneck, Gold Coast, Queensland",
+  "country": "Australia",
+  "lat": -27.98639,
+  "lon": 153.42972,
+  "year": "Construction began August 1999, completed by December 2000 [R2][R8]; renewed/topped up with 84 more containers June 2018 [R2][R9][R14].",
+  "type": "Submerged multi-purpose artificial reef (MPR) built from sand-filled geotextile containers (\"mega sandbags\"), placed on the seabed by split-hull barge with GPS positioning [R1][R2][R3][R9].",
+  "purpose": "Primary: coastal/erosion protection for the Narrowneck isthmus, where only ~100 m of land separates the Nerang River from the ocean [R2][R14]. Secondary (\"multi-purpose\"): surfing amenity, folded in partly for public-relations value in a surf-centric region [R2]. A tertiary, unplanned outcome was ecological habitat creation [R1][R3][R8][R9].",
+  "size": "Volume approx. 70,000 m3 of sand (the largest multi-purpose reef ever built at the time), from approx. 400 geotextile containers each approx. 20 m long, 3-4.5 m diameter [R1][R9][R3]. Footprint reported as 350 m x 600 m, split \"V\" shape, 200 m offshore, bags 1-10 m below sea level [R9]; a second source directly states the reef \"measures 450 meters long by 250 meters wide\" [R8] -- the two footprint figures disagree and both are given per the reference rule. Crest lowered 1 m before construction, landing about 1.5 m below the low-tide waterline [R2][R3]; by 2017 low-tide depth over the reef measured 2.5-2.6 m, i.e. the crest had sunk/settled deeper than designed [R2].",
+  "cost": "Original 1999 build: AUD $2.3 million (approx. AUD $30/m3) per one source [R3], and separately \"roughly $2.1 million AUD... over the first 10 years\" per another [R5] -- both given since they disagree on scope (one-off build vs. 10-year total). Lior's own notes and a Hebrew-language source both give \"$2.5 million,\" currency unspecified [R19][R20] -- not reconciled with the figures above. 2017-2018 renewal: approx. AUD $2 million per Mayor Tom Tate, as reported by the Gold Coast Bulletin via The Inertia [R10].",
+  "cost_usd_approx": "Very rough conversions by this report (not sourced): original build AUD $2.3M (1999 AUD~USD 0.65) approx. USD $1.5M; 2017-2018 renewal AUD $2M (2018 AUD~USD 0.75) approx. USD $1.5M.",
+  "financed_by": "Gold Coast City Council, as part of its Northern Gold Coast Beach Protection Strategy [R1][R2][R9][R13]. No private or state/federal co-funding found in any source.",
+  "motivation": "Erosion problem predates the reef by decades: a 1971 Delft University of Technology report, commissioned by the Queensland Government, recommended a groyne at Narrowneck [R9][R13]. Training walls built at the Spit in 1985 helped erosion further north but not at Narrowneck itself, and Cyclone Nancy (1990) eroded the beach back to the boulder wall protecting the Nerang River [R2]. Gold Coast City Council chose an artificial reef instead of the recommended groyne, branding it a \"Multi-Purpose Reef\" so that surfing amenity could be folded into the PR case in a surf-centric city [R2][R9][R13]. No evidence found of state/federal political involvement or a single named political champion for the original 1999 project; Mayor Tom Tate became the public face of the 2017-2018 renewal [R10].",
+  "designer": "Original 1999 design: Prof. Kerry Black and Shaw Mead (University of Waikato, NZ; later founders of coastal-engineering firm ASR) [R11]. ICM (International Coastal Management, Gold Coast) separately credits its founder Angus Jackson with leading the project as part of the wider Northern Gold Coast Beach Protection Strategy [R3] -- the two attributions disagree on lead designer; both given. The 2017-2018 renewal's coastal-engineering consultant was reported by Swellnet as ICM [R2].",
+  "contractor": "Not named for the 1999 build beyond \"Gold Coast City Council\" as project owner [R2][R9]. For the 2017-2018 renewal, the placement barge was the split-hull dredger Faucon, whose skipper gave on-record comments to Swellnet [R2].",
+  "status_now": "Still in place and monitored by Gold Coast City Council as of the most recent sources found (2019 monitoring, 2026 commentary) [R12][R14]. As of January 2026, the Gold Coast mayor announced plans to \"fast-track\" a separate, new rockwall/groyne structure immediately south of Narrowneck -- not a rebuild of the existing reef -- contested by local surfer/environmental group Save Our Spit Alliance; a live, unresolved controversy, not a completed project [R12].",
+  "verdict": "mixed",
+  "hover_text": "A 70,000 m3 sand-filled geotextile reef built 1999-2000 for about AUD $2.3M to protect Narrowneck's isthmus; it worked well for coastal protection but a last-minute 1-metre crest-lowering decision left the promised surf underperforming, while the reef became an unplanned ecological hotspot whose fishing traffic then tore the bags with boat anchors, forcing a 2017-2018 renewal [R1][R2][R3][R9][R11].",
+  "design_as_planned": "Designed by Kerry Black (University of Waikato) and Shaw Mead, using refraction-diffraction (WBEND) and Boussinesq wave modelling, checked against a 1:50-scale physical model at the UNSW Water Research Laboratory [R5][R11]. Stated targets: widen the beach 20-30 m in the reef's lee and produce surfable waves under defined conditions [R5]. A 2007 performance report (cited by Swellnet) noted the reef needed \"long period, clean swell\" to replicate the modelled wave shape, and that \"larger swells, lower tides, and offshore winds have the potential to produce hollow, plunging breakers\" [R2] -- the promised surf was explicitly conditional. The original design was a split \"V\" shape for both left- and right-hand rides with a paddling channel between the arms [R3][R9].",
+  "as_built_vs_design": "The most consequential change was a late, last-minute council decision to lower the reef's crest by 1 metre before construction -- \"the change would have no effect on sand accretion but was terminal to Narrowneck becoming a good surfing reef,\" per Swellnet [R2]. Otherwise the built reef followed the approx. 400-container, approx. 70,000 m3 design, placed via split-hull barge with GPS [R1][R3][R9]. By approx. 2011 an underwater survey found several containers missing or damaged and seaward containers buried by sand [R4]. By 2017 the bags had \"settled further into the sand\" over 17 years, deeper than as-built [R2]. Designer Shaw Mead later attributed geotextile-bag failures across his firm's projects worldwide to specific causes per site, identifying boat anchors as the Gold Coast failure mechanism: \"The containers failed due to a number of reasons including anchors (Gold Coast), debris strikes (Kovalam), during construction with over-filling (Mount Reef), propellor strike (Boscombe)\" [R11].",
+  "outcome": "Coastal protection: judged successful by the council and most independent sources; an 11-year monitoring study (Jackson et al., ICCE proceedings) found 2009 storm erosion \"was accommodated within the wider beach created in 1999,\" with gradual post-storm recovery producing a mild groyne effect [R4]. A 2019 City statement described continued sand-volume increases, but specifically in offshore sandbars rather than the upper beach -- contradicting earlier (2010-era) reports of a 30-50 m salient, which Google Earth historical imagery does not corroborate [R14]. Wikipedia (citing Turner 2006) gives an independently monitored beach-widening figure of approx. 20 m, lower than the 30-50 m figure elsewhere [R1][R14]; both given per the reference rule. Surfing: consistently underperforming versus expectations -- \"disappointing in its secondary objective to improve surfing\" [R9]; surfers \"seldom surf the reef,\" persisting after the 2017-2018 renewal [R14]. An earlier study (via ecoshape.org) reported the reef broke waves \"roughly 50% of the time,\" faces 0.7-2.0 m, average ride 150-200 m / 30 s, \"fun, but not hollow, in average conditions\" [R5]. Ecology: widely reported as an unplanned success -- popular fishing/diving/snorkelling site with macro-algae, fish and reported turtle activity on the geotextile substrate [R1][R3][R8][R9]; the 2011 survey found \"high abundance and biodiversity\" despite sand-burial and container damage [R4].",
+  "why_worked_or_failed": "Coastal protection worked primarily because the reef's core hydraulic function -- dissipating wave energy offshore and trapping sediment in the nearshore sandbar system -- does not depend on precise crest depth or bag integrity to the same degree surf-wave shaping does; even a degraded, buried or partially damaged reef still perturbs the sand-transport regime [R4][R14]. Surfing underperformed for a documented, specific reason: the council's last-minute 1-metre crest-lowering decision, made for reasons unrelated to surf quality, put the structure too deep for consistent wave-breaking under normal swell/tide/wind combinations [R2]. Compounding this, geotextile bags are inherently fragile: Shaw Mead stated that losing even a single sand-filled container changes the seabed shape and degrades wave quality, and that Gold Coast's containers specifically failed due to boat anchors [R11]. Mead's broader verdict: he \"no longer believes in the viability of geotextile bags for artificial reef construction,\" having led a critical industry review approximately a decade after Narrowneck \"which led to the change to traditional rock construction methods of the most recent MPRs built\" [R11].",
+  "unexpected_results": "Ecological colonisation and the resulting fishing/anchor-damage cycle: the reef's unplanned success as a fish habitat drew recreational fishing traffic, whose boat anchors are identified as the specific mechanism that tore the geotextile containers [R11] -- an ecological win directly causing the structural failure that required the 2017-2018 renewal. \"Moving the goalposts\" on beach-widening claims: early (2010-era) monitoring described a clear 30-50 m salient; by 2019 the City's official position shifted to say a salient was \"never expected\" and sand build-up was always meant to be offshore -- flagged by multiple Swellnet commenters as inconsistent with what residents were originally told [R14]. A 2026 political sequel: 27 years after Narrowneck was built to avoid a conventional groyne, the Gold Coast mayor proposed fast-tracking a new rockwall/groyne immediately adjacent to it, prompting the same updrift/downdrift erosion-displacement objections coastal engineers raise about hard groynes generally [R12]. Depth-measurement uncertainty: the City's post-renewal survey data claims no settlement of the new containers, directly contradicting anecdotal local reports that the new bags were already breaking less often and appeared to be settling [R14].",
+  "could_be_better": "Experts'/engineers' view: Shaw Mead, the reef's original designer, has publicly stated (in a critical review conducted roughly a decade after Narrowneck was built) that sand-filled geotextile containers should not be used for multi-purpose reef construction at all, and that the industry has since moved to rock construction [R11]. Swellnet's 2017 reporting singles out the crest-lowering decision as the single design change most responsible for the surf underperformance, implying a purely surf-focused crest depth would have produced a better wave without necessarily compromising protection [R2]. Surfers'/locals' view: commenters were blunter -- one (\"warddy,\" 2019) called it an \"absolute waste of money\" and suggested rock construction instead; another (\"the-spleen_2\") noted \"beach widening\" had originally been \"the core of the project\" as pitched by Griffith University, and found it \"funny to see how the idea has changed over time\" toward the offshore-sandbar framing [R14].",
+  "relevance_to_israel": "Narrowneck's central lesson for a Haifa or other Israeli Mediterranean project is the crest-depth-versus-tide-range trade-off: the reef's surf underperformance is traced by an independent source specifically to a council decision to change crest depth relative to the tide datum, made for reasons unrelated to surfing, which then dominated wave-breaking outcomes [R2]. The Gold Coast has a meaningful astronomical tide range (crest explicitly set \"1.5 m below the low tide waterline\") [R2][R3] -- a variable a designer must actively engineer around, since a fixed crest depth performs differently at high versus low tide. Lior's own draft outreach material argues the Mediterranean's smaller tidal range at Haifa is an advantage for reef stability and maintenance (\"the tide conditions here allow high stability and natural long-term maintenance\") [R18] -- this is Lior's own hypothesis, not an independently sourced engineering conclusion, and no numeric Haifa/Mediterranean tide-range figure was found in the sources fetched for this dossier. If correct, a Haifa reef would face a smaller version of Narrowneck's tide-datum problem, making crest-depth choice a one-time design decision rather than a chronic multi-condition compromise. Separately, Narrowneck's identified failure mechanism -- boat anchors tearing geotextile bags that had become a popular fishing spot [R11] -- is directly transferable: any Israeli geotextile-based reef that succeeds ecologically should expect the same anchor-damage risk and may want to restrict anchoring or use more anchor-resistant materials such as rock, per Mead's own post-Narrowneck design shift [R11].",
+  "reviews": [
+    {
+      "who": "linez",
+      "role": "Swellnet commenter",
+      "quote_or_summary": "\"I personally can't remember too many, if any, good days on the reef itself which was a major let down after the anticipation built up. I do remember that it did sort of break up the banks inside it both to the north and south which did on occasion deliver good waves.\" [R2]",
+      "outlet": "Swellnet Dispatch",
+      "date": "2017-11-07",
+      "url": "https://www.swellnet.com/news/swellnet-dispatch/2017/11/07/narrowneck-artificial-reef-nears-completion-updated"
+    },
+    {
+      "who": "yocal",
+      "role": "Swellnet commenter",
+      "quote_or_summary": "\"Cool. A long time ago I had a fun surf out there. Any improvement is a plus.\" [R2]",
+      "outlet": "Swellnet Dispatch",
+      "date": "2017-11-07",
+      "url": "https://www.swellnet.com/news/swellnet-dispatch/2017/11/07/narrowneck-artificial-reef-nears-completion-updated"
+    },
+    {
+      "who": "warddy",
+      "role": "Swellnet commenter",
+      "quote_or_summary": "\"Absolute waste of money ... When will these clowns realise just drop some rocks in a triangular shape and whamo pick a peak and dissipate the sand surge at the same time plus create a fisherie.\" [R14]",
+      "outlet": "Swellnet Analysis",
+      "date": "2019-08-19",
+      "url": "https://www.swellnet.com/news/swellnet-analysis/2019/08/19/narrowneck-renewal-deemed-success"
+    },
+    {
+      "who": "Fish Face",
+      "role": "Swellnet commenter",
+      "quote_or_summary": "\"Because that would be too easy and wouldn't justify the jobs of the 'experts' who created this abomination.\" [R14]",
+      "outlet": "Swellnet Analysis",
+      "date": "2019-08-21",
+      "url": "https://www.swellnet.com/news/swellnet-analysis/2019/08/19/narrowneck-renewal-deemed-success"
+    },
+    {
+      "who": "the-spleen_2",
+      "role": "Swellnet commenter, longtime local",
+      "quote_or_summary": "\"I used to surf up that end a lot, including Naz, and never noticed a salient. A friend of a friend was in the original Griffith pitch and 'beach widening' was the core of the project so it's funny to see how the idea has changed over time.\" [R14]",
+      "outlet": "Swellnet Analysis",
+      "date": "2019-08-19",
+      "url": "https://www.swellnet.com/news/swellnet-analysis/2019/08/19/narrowneck-renewal-deemed-success"
+    },
+    {
+      "who": "truebluebasher",
+      "role": "Swellnet commenter",
+      "quote_or_summary": "Describes Cyclone Oma's February 2019 erosion at Narrowneck as the \"worst erosion at Narrowneck... worst in 40 yrs.\" [R14]",
+      "outlet": "Swellnet Analysis",
+      "date": "2019-08-19",
+      "url": "https://www.swellnet.com/news/swellnet-analysis/2019/08/19/narrowneck-renewal-deemed-success"
+    },
+    {
+      "who": "Luke Sorensen",
+      "role": "Longtime North End Gold Coast surfer, photographer, spokesperson for Save Our Spit Alliance",
+      "quote_or_summary": "Op-ed arguing a newly proposed rockwall near Narrowneck risks \"intensifying erosion events on the down drift side,\" loss of \"our number one tourist attraction... our glorious golden strip of sand,\" and increased rip-current/safety risk. [R12]",
+      "outlet": "Swellnet Dispatch",
+      "date": "2026-01-07",
+      "url": "https://www.swellnet.com/news/swellnet-dispatch/2026/01/07/questioning-the-narrowneck-breakwall"
+    },
+    {
+      "who": "Stu Nettle (\"stunet\")",
+      "role": "Swellnet founder/editor, journalist, reporting from the reef construction site",
+      "quote_or_summary": "\"Under three feet of clean south-east swell, a negative tide, and light winds a few sets were capping above the construction zone though the reef itself was unsurfable.\" [R2]",
+      "outlet": "Swellnet Dispatch",
+      "date": "2017-11-07",
+      "url": "https://www.swellnet.com/news/swellnet-dispatch/2017/11/07/narrowneck-artificial-reef-nears-completion-updated"
+    },
+    {
+      "who": "Tom Tate",
+      "role": "Mayor of Gold Coast",
+      "quote_or_summary": "On the 2017-2018 renewal: \"The ultimate aim is to have this reef be here for a quarter of a century to protect the residents here as well as all the public and private properties.\" [R10]",
+      "outlet": "The Inertia (via Gold Coast Bulletin)",
+      "date": "2017-09-08",
+      "url": "https://www.theinertia.com/surf/2-million-to-be-spent-on-gold-coast-artificial-reef-renovation-officials-expect-better-surf/"
+    }
+  ],
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/North_Narrowneck_Beach%2C_Main_Beach%2C_Queensland%2C_2026.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:North_Narrowneck_Beach,_Main_Beach,_Queensland,_2026.jpg",
+      "credit": "Chris Olszewski (User:Kgbo), Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "depicts": "North Narrowneck lifeguard sign on the beach, explicitly labeled \"Beach: North Narrowneck,\" City of Gold Coast, taken 2026-07-25, directly above/adjacent to the reef's footprint.",
+      "kind": "photo",
+      "hotlink_ok": true
+    },
+    {
+      "url": "https://static.wixstatic.com/media/97fa2b_f659d48522734f379fcf1a8bf0db6496~mv2.jpg/v1/fill/w_980,h_603,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/97fa2b_f659d48522734f379fcf1a8bf0db6496~mv2.jpg",
+      "source_page": "https://www.coastalmanagement.com.au/artificial-surf-reefs",
+      "credit": "International Coastal Management (ICM)",
+      "license": "Copyright ICM, company website -- link-only, not for reproduction (not downloaded into project)",
+      "depicts": "Labeled aerial photo/schematic pair: annotated pre-reef aerial of the eroded \"Narrowneck Artificial Headland,\" plus a \"Northern Gold Coast Beach Protection Stratagey\" map showing the submerged reef control point.",
+      "kind": "photo",
+      "hotlink_ok": true
+    },
+    {
+      "url": "https://static.wixstatic.com/media/97fa2b_25f1b26178af4d1d9fadb7f07b437abf~mv2.jpg/v1/fill/w_980,h_309,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/97fa2b_25f1b26178af4d1d9fadb7f07b437abf~mv2.jpg",
+      "source_page": "https://www.coastalmanagement.com.au/artificial-surf-reefs",
+      "credit": "International Coastal Management (ICM)",
+      "license": "Copyright ICM, company website -- link-only, not for reproduction (not downloaded into project)",
+      "depicts": "Before/after comparison: eroded Narrowneck beach with sandbag revetment and Surfers Paradise skyline (before), versus a wide, dune-vegetated beach with the same skyline (25 years on).",
+      "kind": "photo",
+      "hotlink_ok": true
+    },
+    {
+      "url": "https://static.wixstatic.com/media/164422_c1704d0a67bc488d8365e6fe2bd50708~mv2.jpg/v1/fill/w_960,h_697,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/164422_c1704d0a67bc488d8365e6fe2bd50708~mv2.jpg",
+      "source_page": "https://www.coastalmanagement.com.au/artificial-surf-reefs",
+      "credit": "International Coastal Management (ICM)",
+      "license": "Copyright ICM, company website -- link-only, not for reproduction (not downloaded into project)",
+      "depicts": "Underwater photo: dense school of small silver/yellow-finned fish over reddish-brown macroalgae growing on the reef's geotextile substrate.",
+      "kind": "photo",
+      "hotlink_ok": true
+    },
+    {
+      "url": "https://static.wixstatic.com/media/164422_8b3239d82ee84d159668f47acabd0dc2~mv2.png/v1/fill/w_1920,h_1080,al_c,q_95,enc_auto/164422_8b3239d82ee84d159668f47acabd0dc2~mv2.png",
+      "source_page": "https://www.coastalmanagement.com.au/artificial-surf-reefs",
+      "credit": "International Coastal Management (ICM)",
+      "license": "Copyright ICM, company website -- link-only, not for reproduction (not downloaded into project)",
+      "depicts": "Construction-phase photo: a large geotextile \"mega sandbag\" container being lowered off a barge deck via ribbed hose, workers watching from the rail, distant high-rise coastline visible.",
+      "kind": "photo",
+      "hotlink_ok": true
+    }
+  ],
+  "images_rejected": [
+    {
+      "url": "https://www.google.com/maps/@-27.986639,153.429722,17z/data=!3m1!1e3",
+      "reason": "Not a static/citable image asset -- an interactive, session-cookied Google Maps page rather than a fixed photo file; the submerged reef is not visually distinguishable at this zoom in ordinary satellite tiles."
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=oUfLGStUKPs",
+      "platform": "YouTube",
+      "video_id": "oUfLGStUKPs",
+      "title": "NARROWNECK REEF",
+      "channel": "Griffith Centre for Coastal Management",
+      "duration_seconds": 243,
+      "date": "2015-05-13",
+      "embed_ok": true,
+      "best_timestamp_seconds": 19,
+      "what_it_shows": "Interview-style documentary with the reef's design engineer explaining why Narrowneck Reef was built (Northern Gold Coast Beach Protection Strategy, 1999), how the geotextile sandbags were placed by split-hull dredge, why a submerged reef beat groynes/beach dewatering, and the marine growth/monitoring outcomes over approx. 10 years.",
+      "transcript_path": "02_research/videos/narrowneck-gold-coast/oUfLGStUKPs.txt",
+      "key_quotes": [
+        "[00:00:19] \"The [Narrowneck] Reef is a geotextile bag reef and its primary objective was Coastal protection.\"",
+        "[00:01:00] \"...what we wanted was another control point just this side of Surfers Paradise we looked at groins we looked at beach dewatering... and the one that came out best was a submerged artificial Reef without the added bonuses of Surfing and Diving it was clearly the best solution.\"",
+        "[00:01:33] \"We've constructed a structure that you can't see but it's constantly reducing the sand transport and the storm cut so we have a wider Beach a more stable Beach.\"",
+        "[00:02:52] \"The difference between a geotextile structure and a concrete or rock structure is the type of growth we get... 10 m of water we're getting Kelps we're getting Turtles and I've dive with dolphins.\""
+      ],
+      "frames": []
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=crzsn6h_5mk",
+      "platform": "YouTube",
+      "video_id": "crzsn6h_5mk",
+      "title": "Marine Life at the Gold Coast's Narrowneck Multi-Purpose Reef (2017)",
+      "channel": "International Coastal Management",
+      "duration_seconds": 137,
+      "date": "2017-09-15",
+      "embed_ok": true,
+      "best_timestamp_seconds": 0,
+      "what_it_shows": "Underwater footage compilation of the habitat and marine life established at Narrowneck Reef by 2017 -- rays, wobbegong sharks, sea turtles, dolphins, fish, crustaceans and marine flora colonising the geotextile bags.",
+      "transcript_path": null,
+      "key_quotes": [],
+      "frames": []
+    },
+    {
+      "url": "https://www.youtube.com/shorts/bKGU9aS3Pm0",
+      "platform": "YouTube",
+      "video_id": "bKGU9aS3Pm0",
+      "title": "Spotted Eagle Ray at Narrowneck Reef",
+      "channel": "Fishy McFishface",
+      "duration_seconds": 51,
+      "date": "2024-06-14",
+      "embed_ok": true,
+      "best_timestamp_seconds": 0,
+      "what_it_shows": "Short underwater clip of a spotted eagle ray at Narrowneck Reef; background music only, no narration.",
+      "transcript_path": null,
+      "key_quotes": [],
+      "frames": []
+    },
+    {
+      "url": "https://www.youtube.com/shorts/xCLnKjvJ9r4",
+      "platform": "YouTube",
+      "video_id": "xCLnKjvJ9r4",
+      "title": "HOW PRETTY IS NARROWNECK REEF AND GOLD COAST SEAWAY #diving #underwater #beauty #turtle",
+      "channel": "Diving Diaries",
+      "duration_seconds": 83,
+      "date": "2025-06-14",
+      "embed_ok": true,
+      "best_timestamp_seconds": null,
+      "what_it_shows": "UNCERTAIN -- link only. Title names Narrowneck Reef, but the full video description discusses only \"the Gold Coast Seaway\" (a separate, nearby structure) and never mentions Narrowneck again, so it could not be confirmed the footage itself (versus just the title) actually shows Narrowneck. Kept as a lead link, not embedded as confirmed media.",
+      "transcript_path": null,
+      "key_quotes": [],
+      "frames": []
+    }
+  ],
+  "lior_images": [
+    {
+      "path": "03_images/from_lior/goldcoast_pptx/image26.png",
+      "caption": "4-panel satellite/aerial comparison of geotextile reefs, explicitly labeled \"Narrowneck\" (leftmost panel), captioned \"Size wasn't the only problem... Divers who surveyed the reef saw bags had moved, sunken and got covered by sand. And the black polypropylene bags were falling apart.\" Third-party/copyrighted image extracted from Lior's own presentation slides -- flag before any public reuse."
+    },
+    {
+      "path": "03_images/from_lior/goldcoast_pptx/image29.png",
+      "caption": "Webinar screenshot \"The Gold Coast Example - Artificial Reef\" (ICM/coastalmanagement.com.au, presenter \"aaronsalyer\"), showing the Gold Coast/Surfers Paradise coastline labeled \"Multi-Purpose Artificial Reef\" plus underwater geotextile-container photos captioned \"Seaweed & kelp attracted to reef material.\" Third-party/copyrighted webinar screenshot extracted from Lior's own presentation slides -- safe to cite/describe, flag before any public reuse."
+    }
+  ],
+  "references": [
+    {"id": "R1", "citation": "Wikipedia contributors (accessed 2026-09-24). \"Multi-purpose reef.\" Wikipedia.", "url": "https://en.wikipedia.org/wiki/Multi-purpose_reef", "accessed": "2026-09-24", "supports": "1999 build year, 70,000 m3 size, geotextile container material, Northern Gold Coast Beach Protection Strategy funding, ~20 m beach-widening figure (citing Turner 2006)."},
+    {"id": "R2", "citation": "Nettle, Stu (\"stunet\") (2017-11-07). \"Narrowneck artificial reef nears completion (updated).\" Swellnet Dispatch.", "url": "https://www.swellnet.com/news/swellnet-dispatch/2017/11/07/narrowneck-artificial-reef-nears-completion-updated", "accessed": "2026-09-24", "supports": "Erosion history, ASR/original design attribution, crest-lowering decision, 2007 report quote, 2017 renewal barge and depth measurements, surfer comments."},
+    {"id": "R3", "citation": "International Coastal Management (accessed 2026-09-24). \"Building Artificial Surf Reefs: Worldwide Lessons & Applications.\" coastalmanagement.com.au.", "url": "https://www.coastalmanagement.com.au/artificial-surf-reefs", "accessed": "2026-09-24", "supports": "Crest depth lowered 1 m, volume ~70,000 m3, cost AUD$2.3M, ICM/Angus Jackson design-leadership claim, split-V shape; source page for images 2-5."},
+    {"id": "R4", "citation": "ICCE (Coastal Engineering Proceedings) (Jackson, Tomlinson, Corbett & Strauss, 2012). \"Long Term Performance of a Submerged Coastal Control Structure: A Case Study of the Narrowneck Multi-Functional Artificial Reef.\"", "url": "https://icce-ojs-tamu.tdl.org/icce/article/view/6956", "accessed": "2026-09-24", "supports": "11-year monitoring period, 2009 storm-event performance, 2011 underwater survey findings."},
+    {"id": "R5", "citation": "Raised Water Research (accessed 2026-09-24). \"Narrowneck.\" raisedwaterresearch.com.", "url": "https://raisedwaterresearch.com/spot/artificial-reef/australia/queensland/narrowneck/", "accessed": "2026-09-24", "supports": "Design team, 2010-era performance study, 2017-2018 renewal, decline in surfing use, \"changing goalposts\" on salient claims."},
+    {"id": "R6", "citation": "EcoShape (accessed 2026-09-24). \"Artificial Reefs - Example cases.\" ecoshape.org.", "url": "https://www.ecoshape.org/en/knowledge-articles/artificial-reefs/example-cases/", "accessed": "2026-09-24", "supports": "Construction 1999-2000, ~400 containers, dual purpose, ecological colonisation."},
+    {"id": "R7", "citation": "International Coastal Management (accessed 2026-09-24). \"Artificial Reefs and Nearshore Nourishment on the Gold Coast: What the Monitoring Shows.\" coastalmanagement.com.au.", "url": "https://www.coastalmanagement.com.au/artificial-reefs-and-nearshore-nourishment-on-the-gold-coast-real-world-results", "accessed": "2026-09-24", "supports": "20-year monitoring review conclusion."},
+    {"id": "R8", "citation": "Muurmans, Maggie, Griffith Centre for Coastal Management (accessed 2026-09-24). \"How Narrowneck Copied Nature.\" boatgoldcoast.com.au.", "url": "https://boatgoldcoast.com.au/how-narrowneck-copied-nature/", "accessed": "2026-09-24", "supports": "Construction Aug 1999-Dec 2000, footprint \"450 meters long by 250 meters wide,\" 400 bags, split-V design, GPS placement, marine-life colonisation."},
+    {"id": "R9", "citation": "Wikipedia contributors (accessed 2026-09-24). \"Narrow Neck, Queensland.\" Wikipedia.", "url": "https://en.wikipedia.org/wiki/Narrow_Neck,_Queensland", "accessed": "2026-09-24", "supports": "1971 Delft report, dimensions 350x600 m, 200 m offshore, 84 containers added June 2018, coordinates."},
+    {"id": "R10", "citation": "Haro, Alexander, The Inertia (2017-09-08). \"$2 Million on Gold Coast Reef Renovation.\" theinertia.com.", "url": "https://www.theinertia.com/surf/2-million-to-be-spent-on-gold-coast-artificial-reef-renovation-officials-expect-better-surf/", "accessed": "2026-09-24", "supports": "$2 million 2017-2018 renewal cost, Mayor Tom Tate \"quarter of a century\" quote."},
+    {"id": "R11", "citation": "Rielly/The Inertia staff writer (accessed 2026-09-24). \"Why Have Most Artificial Reefs Never Really Worked?\" theinertia.com.", "url": "https://www.theinertia.com/surf/why-have-most-artificial-reefs-never-really-worked/", "accessed": "2026-09-24", "supports": "Shaw Mead quotes on geotextile-bag failure mechanisms, industry shift to rock reefs."},
+    {"id": "R12", "citation": "Sorensen, Luke, Save Our Spit Alliance (2026-01-07). \"Questioning The Narrowneck Breakwall.\" Swellnet Dispatch.", "url": "https://www.swellnet.com/news/swellnet-dispatch/2026/01/07/questioning-the-narrowneck-breakwall", "accessed": "2026-09-24", "supports": "2026 mayoral rockwall proposal, opposition arguments (kept: direct fetch blocked, WebSearch-corroborated)."},
+    {"id": "R13", "citation": "Wikipedia contributors (accessed 2026-09-24). \"Gold Coast Shoreline Management Plan.\" Wikipedia.", "url": "https://en.wikipedia.org/wiki/Gold_Coast_Shoreline_Management_Plan", "accessed": "2026-09-24", "supports": "1971 Delft Report recommendation, council's choice of reef over groyne."},
+    {"id": "R14", "citation": "Nettle, Stu (\"stunet\") (2019-08-19). \"Narrowneck renewal deemed a success.\" Swellnet Analysis.", "url": "https://www.swellnet.com/news/swellnet-analysis/2019/08/19/narrowneck-renewal-deemed-success", "accessed": "2026-09-24", "supports": "Bag failure causes, City statements on salient/offshore-sand discrepancy, reader comments, Cyclone Oma."},
+    {"id": "R15", "citation": "Wikimedia Commons (accessed 2026-09-24). Search results for \"Narrowneck Gold Coast.\"", "url": "https://commons.wikimedia.org/w/index.php?search=Narrowneck+Gold+Coast&fulltext=1&ns0=1&ns6=1&ns14=1", "accessed": "2026-09-24", "supports": "Existence/filenames/licences of Commons photos."},
+    {"id": "R16", "citation": "YouTube (accessed 2026-09-24). Search results for \"narrowneck reef gold coast.\"", "url": "https://www.youtube.com/results?search_query=narrowneck+reef+gold+coast", "accessed": "2026-09-24", "supports": "Existence/URLs of the four video leads."},
+    {"id": "R17", "citation": "Lior's notes, 01_source_notes/jmse2023_bar_drimer_paper.md.", "url": "", "accessed": "2026-09-24", "supports": "Citation details for Black & Mead 2001 and Jackson et al. 2012."},
+    {"id": "R18", "citation": "Lior's notes, 01_source_notes/pptx_goldcoast_swells_people_photos.md.", "url": "", "accessed": "2026-09-24", "supports": "ICM/aaronsalyer webinar screenshot description; Lior's draft outreach email arguing Israel's tidal range is an advantage for reef stability."},
+    {"id": "R19", "citation": "Lior's notes, 01_source_notes/lior_notes_geotubes_and_boscombe.md.", "url": "", "accessed": "2026-09-24", "supports": "Lior's own \"$2.5 million\" cost figure and \"not intended to improve breaking\" framing."},
+    {"id": "R20", "citation": "Lior's notes, 01_source_notes/hebrew_surf_route_summary.md.", "url": "", "accessed": "2026-09-24", "supports": "Lior's \"byproduct\" framing and $2.5 million cost figure."},
+    {"id": "R21", "citation": "Master list, 02_research/00_master_list.md.", "url": "", "accessed": "2026-09-24", "supports": "Cross-reference summary of geotube dimensions and \"most ASR projects have failed\" grouping."}
+  ],
+  "blocked_sources": [
+    "R12 -- Swellnet (2026-01-07) \"Questioning The Narrowneck Breakwall\" -- https://www.swellnet.com/news/swellnet-dispatch/2026/01/07/questioning-the-narrowneck-breakwall -- HTTP 403 (WebFetch) / 202 (curl, 3 retries with browser UA); no web.archive.org snapshot exists yet. Claims (2026 mayoral rockwall proposal, Luke Sorensen/Save Our Spit Alliance) kept because independently corroborated by a WebSearch result confirming the article's existence and core facts."
+  ],
+  "gaps": [
+    "No numeric Haifa/Mediterranean tide-range figure was found in any source fetched for this dossier; the Israel-relevance tidal-advantage claim rests on Lior's own unsourced hypothesis (R18), flagged as such.",
+    "Cost figures for the original 1999 build disagree across sources (AUD $2.3M one-off vs. ~AUD $2.1M over 10 years vs. Lior's $2.5M, currency unstated) and were not reconciled.",
+    "Footprint dimensions disagree between sources (350 m x 600 m per R9 vs. 450 m x 250 m per R8) and were not reconciled.",
+    "Designer attribution disagrees between sources (Kerry Black/Shaw Mead per R11 vs. Angus Jackson/ICM per R3) and was not reconciled.",
+    "YouTube Short xCLnKjvJ9r4 kept as a link-only lead (uncertain) because its description discusses only the separate Gold Coast Seaway, not Narrowneck specifically.",
+    "Google Maps satellite link dropped as not a stable/citable photo asset; no independently sourced aerial/satellite image of the reef's footprint itself was found."
+  ]
+}

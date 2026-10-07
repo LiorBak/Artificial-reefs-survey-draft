@@ -1,0 +1,225 @@
+{
+ "slug": "borth-coastal-defence-reef",
+ "reef_centre_xy": [
+  0.0021585161900996397,
+  330.5251441979486
+ ],
+ "reef_centre_ll": [
+  52.483452627698455,
+  -4.056205125723465
+ ],
+ "frame": {
+  "lat0": 52.483475,
+  "lon0": -4.05134,
+  "bx": 359.57,
+  "by": 269.57
+ },
+ "cell_size_m": {
+  "NS": 115.7634375,
+  "EW": 70.6175267499003
+ },
+ "erddap_url": "https://erddap.emodnet.eu/erddap/griddap/bathymetry_dtm_2024.csv?elevation[(52.479687):(52.486979)][(-4.065104):(-4.046354)],value_count[(52.479687):(52.486979)][(-4.065104):(-4.046354)],cdi_index[(52.479687):(52.486979)][(-4.065104):(-4.046354)],interpolation_flag[(52.479687):(52.486979)][(-4.065104):(-4.046354)],elevation_min[(52.479687):(52.486979)][(-4.065104):(-4.046354)],elevation_max[(52.479687):(52.486979)][(-4.065104):(-4.046354)],stdev[(52.479687):(52.486979)][(-4.065104):(-4.046354)]",
+ "qi_history": [
+  {
+   "release": "2024",
+   "edmo_id": 2607,
+   "identifier": "115084",
+   "type": "CDI",
+   "combined": 46.153847,
+   "horizontal": 0,
+   "vertical": 3,
+   "age": 0,
+   "purpose": 3
+  },
+  {
+   "release": "2020",
+   "edmo_id": 2607,
+   "identifier": "115084",
+   "type": "CDI",
+   "combined": 46.153847,
+   "horizontal": 0,
+   "vertical": 3,
+   "age": 0,
+   "purpose": 3
+  },
+  {
+   "release": "2018",
+   "edmo_id": 2607,
+   "identifier": "115084",
+   "type": "CDI",
+   "combined": 46.15,
+   "horizontal": 0,
+   "vertical": 3,
+   "age": 0,
+   "purpose": 3
+  },
+  {
+   "release": "2022",
+   "edmo_id": 2607,
+   "identifier": "115084",
+   "type": "CDI",
+   "combined": 46.153847,
+   "horizontal": 0,
+   "vertical": 3,
+   "age": 0,
+   "purpose": 3
+  }
+ ],
+ "source_ref_history": [
+  {
+   "release": "2024",
+   "date_start": "2024-12-31Z",
+   "edmo_id": 2607,
+   "identifier": "115084",
+   "type": "CDI"
+  },
+  {
+   "release": "2020",
+   "date_start": "2020-12-31Z",
+   "edmo_id": 2607,
+   "identifier": "115084",
+   "type": "CDI"
+  },
+  {
+   "release": "2016",
+   "date_start": "2016-08-31Z",
+   "edmo_id": 2607,
+   "identifier": "115084",
+   "type": "CDI"
+  },
+  {
+   "release": "2018",
+   "date_start": "2018-12-31Z",
+   "edmo_id": 2607,
+   "identifier": "115084",
+   "type": "CDI"
+  },
+  {
+   "release": "2014",
+   "date_start": "2014-08-31Z",
+   "edmo_id": 2607,
+   "identifier": "115084",
+   "type": "CDI"
+  },
+  {
+   "release": "2015",
+   "date_start": "2015-08-31Z",
+   "edmo_id": 2607,
+   "identifier": "115084",
+   "type": "CDI"
+  },
+  {
+   "release": "2022",
+   "date_start": "2022-12-31Z",
+   "edmo_id": 2607,
+   "identifier": "115084",
+   "type": "CDI"
+  }
+ ],
+ "patches_2024_3km": [
+  {
+   "release": "2024",
+   "edmo_id": 2607,
+   "identifier": "115084",
+   "type": "CDI",
+   "device": null,
+   "metadata_url": "https://cdi-bathymetry.seadatanet.org/report/edmo/2607/115084"
+  }
+ ],
+ "qi_2024_3km": [
+  {
+   "release": "2024",
+   "edmo_id": 2607,
+   "identifier": "115084",
+   "type": "CDI",
+   "combined": 46.153847,
+   "horizontal": 0,
+   "vertical": 3,
+   "age": 0,
+   "purpose": 3
+  }
+ ],
+ "cdi_polygons": [
+  {
+   "n_code": "1981385",
+   "dataname": "CARDIGAN BAY",
+   "c_author_edmo": "OceanWise Limited",
+   "measuring_area_type_l02": "6",
+   "detail_url": "https://cdi-bathymetry.seadatanet.org/report/1981385"
+  }
+ ],
+ "cdi_points_n": 0,
+ "cdi_tracks_n": 0,
+ "hr_nearest": [
+  {
+   "id": "BY_CHERISH_Wales_14m_WGS84",
+   "edmo": 366,
+   "res_arcmin_1_over": 128,
+   "release": 2022,
+   "bbox": [
+    -4.398,
+    52.678,
+    -4.122,
+    52.804
+   ],
+   "dist_km": 22.1,
+   "meta": "https://emodnet.ec.europa.eu/geonetwork/srv/eng/catalog.search#/metadata/SDN_CPRD_366_BY_CHERISH_Wales_14m_WGS84/"
+  },
+  {
+   "id": "BY_CHERISH_Wales_14m_WGS84",
+   "edmo": 366,
+   "res_arcmin_1_over": 128,
+   "release": 2022,
+   "bbox": [
+    -4.478,
+    52.792,
+    -4.45,
+    52.814
+   ],
+   "dist_km": 43.5,
+   "meta": "https://emodnet.ec.europa.eu/geonetwork/srv/eng/catalog.search#/metadata/SDN_CPRD_366_BY_CHERISH_Wales_14m_WGS84/"
+  },
+  {
+   "id": "BY_CHERISH_Wales_14m_WGS84",
+   "edmo": 366,
+   "res_arcmin_1_over": 128,
+   "release": 2022,
+   "bbox": [
+    -4.408,
+    52.882,
+    -4.386,
+    52.888
+   ],
+   "dist_km": 49.7,
+   "meta": "https://emodnet.ec.europa.eu/geonetwork/srv/eng/catalog.search#/metadata/SDN_CPRD_366_BY_CHERISH_Wales_14m_WGS84/"
+  },
+  {
+   "id": "14mIrishSeaSouthBannerBank",
+   "edmo": 366,
+   "res_arcmin_1_over": 128,
+   "release": 2018,
+   "bbox": [
+    -5.397,
+    52.338,
+    -5.048,
+    52.386
+   ],
+   "dist_km": 68.1,
+   "meta": "https://emodnet.ec.europa.eu/geonetwork/srv/eng/catalog.search#/metadata/SDN_CPRD_366_14mIrishSeaSouthBannerBank/"
+  },
+  {
+   "id": "BY_CHERISH_Wales_14m_WGS84",
+   "edmo": 366,
+   "res_arcmin_1_over": 128,
+   "release": 2022,
+   "bbox": [
+    -4.354,
+    53.074,
+    -4.338,
+    53.092
+   ],
+   "dist_km": 68.5,
+   "meta": "https://emodnet.ec.europa.eu/geonetwork/srv/eng/catalog.search#/metadata/SDN_CPRD_366_BY_CHERISH_Wales_14m_WGS84/"
+  }
+ ]
+}

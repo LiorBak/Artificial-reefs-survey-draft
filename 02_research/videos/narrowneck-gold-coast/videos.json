@@ -1,0 +1,65 @@
+[
+  {
+    "url": "https://www.youtube.com/watch?v=oUfLGStUKPs",
+    "platform": "YouTube",
+    "title": "NARROWNECK REEF",
+    "channel": "Griffith Centre for Coastal Management",
+    "date": "2015-05-13",
+    "duration_seconds": 243,
+    "what_it_shows": "Interview-style documentary with the reef's design engineer explaining why Narrowneck Reef was built (Northern Gold Coast Beach Protection Strategy, 1999), how the geotextile sandbags were placed by split-hull dredge, why a submerged reef beat groynes/beach dewatering as the chosen solution, and the marine growth/monitoring outcomes over ~10 years.",
+    "embed_ok": true,
+    "transcript_path": "02_research/videos/narrowneck-gold-coast/oUfLGStUKPs.txt",
+    "key_quotes": [
+      "[00:00:19] \"The [Narrowneck] Reef is a geotextile bag reef and its primary objective was Coastal protection.\"",
+      "[00:01:00] \"...what we wanted was another control point just this side of Surfers Paradise we looked at groins we looked at beach dewatering... and the one that came out best was a submerged artificial Reef without the added bonuses of Surfing and Diving it was clearly the best solution.\"",
+      "[00:01:33] \"We've constructed a structure that you can't see but it's constantly reducing the sand transport and the storm cut so we have a wider Beach a more stable Beach.\"",
+      "[00:01:57] \"McQuade won the contract for dropping the sandbags he had bought in a split Hull Hopper barge that he developed specifically for doing this type of work.\"",
+      "[00:02:52] \"The difference between a geotextile structure and a concrete or rock structure is the type of growth we get... 10 m of water we're getting Kelps we're getting Turtles and I've dive with dolphins.\"",
+      "[00:03:32] \"The data that's been collected over the last 10 years from video cameras and other measurements... clearly show that it's been a highly successful device or structure for maintaining the health of the beach.\""
+    ],
+    "frames": [],
+    "notes": "Transcript pulled via yt-dlp --write-subs/--write-auto-subs (English captions available, dedupe-cleaned VTT). No frames extracted — video is narration/interview over B-roll and construction/marine footage rather than a single held shot depicting reef geometry; captioned with timestamps instead per Lior's short-video/embed preference."
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=crzsn6h_5mk",
+    "platform": "YouTube",
+    "title": "Marine Life at the Gold Coast's Narrowneck Multi-Purpose Reef (2017)",
+    "channel": "International Coastal Management",
+    "date": "2017-09-15",
+    "duration_seconds": 137,
+    "what_it_shows": "Underwater footage compilation of the habitat and marine life established at Narrowneck Reef by 2017 — rays, wobbegong sharks, sea turtles, dolphins, fish, crustaceans and marine flora colonising the geotextile bags.",
+    "embed_ok": true,
+    "transcript_path": null,
+    "key_quotes": [],
+    "frames": [],
+    "notes": "No captions/subtitles available for this video (yt-dlp: 'There are no subtitles for the requested languages'). It appears to be music/footage-only with no spoken narration, so no transcript exists to extract. Description (from yt-dlp metadata): \"This brief video highlights the habitat and diversity of marine life that established at Narrowneck Reef by 2017. The reef is now host to variety of marine life including rays, wobbegong, sea turtles, dolphins, fish, crustaceans and marine flora.\""
+  },
+  {
+    "url": "https://www.youtube.com/shorts/xCLnKjvJ9r4",
+    "platform": "YouTube",
+    "title": "HOW PRETTY IS NARROWNECK REEF AND GOLD COAST SEAWAY #diving #underwater #beauty #turtle",
+    "channel": "Diving Diaries",
+    "date": "2025-06-14",
+    "duration_seconds": 83,
+    "what_it_shows": "Short underwater diving clip covering both Narrowneck Reef and the nearby Gold Coast Seaway, featuring reef fish and a turtle. Not fetched for transcript/frames (very short, footage-only Short, secondary priority behind the two videos above).",
+    "embed_ok": true,
+    "transcript_path": null,
+    "key_quotes": [],
+    "frames": [],
+    "notes": "Title covers both Narrowneck Reef and Gold Coast Seaway (a separate, nearby structure); relevance to Narrowneck specifically could not be confirmed beyond the title since the description focuses on the Seaway. Not selected as one of the 1-2 transcript videos; listed as a lead only. Not independently verified as embeddable beyond metadata fetch."
+  },
+  {
+    "url": "https://www.youtube.com/shorts/bKGU9aS3Pm0",
+    "platform": "YouTube",
+    "title": "Spotted Eagle Ray at Narrowneck Reef",
+    "channel": "Fishy McFishface",
+    "date": "2024-06-14",
+    "duration_seconds": 51,
+    "what_it_shows": "Short underwater clip of a spotted eagle ray at Narrowneck Reef, background music only (per metadata description: \"Music - State Drive - VYEN\").",
+    "embed_ok": true,
+    "transcript_path": null,
+    "key_quotes": [],
+    "frames": [],
+    "notes": "Very short music-only Short; not selected for transcript (no spoken content) or frame extraction. Listed as a lead confirming ongoing marine-life use of the reef."
+  }
+]

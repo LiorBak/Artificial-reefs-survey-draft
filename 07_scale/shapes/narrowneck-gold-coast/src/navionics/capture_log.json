@@ -1,0 +1,30 @@
+{
+ "url": "https://maps.garmin.com/en-US/marine?maps=another-brand&overlay=false&key=r7j0g3pq0d1k",
+ "started": "2026-10-06T10:31:26",
+ "reef_latlon": [
+  -27.986629,
+  153.434052
+ ],
+ "files": [
+  "sonar_z18_shade00.0.png",
+  "sonar_z18_shade01.0.png",
+  "sonar_z18_shade02.0.png",
+  "sonar_z18_shade03.0.png",
+  "sonar_z18_shade04.0.png",
+  "sonar_z18_shade05.0.png",
+  "sonar_z18_shade06.0.png",
+  "sonar_z18_shade07.0.png",
+  "sonar_z18_shade08.0.png",
+  "naut_z18_shade00.0.png",
+  "naut_z18_shade01.0.png",
+  "naut_z18_shade02.0.png",
+  "naut_z18_shade03.0.png",
+  "naut_z18_shade04.0.png",
+  "naut_z18_shade05.0.png",
+  "naut_z18_shade06.0.png",
+  "naut_z18_shade07.0.png",
+  "naut_z18_shade08.0.png"
+ ],
+ "note": "Garmin Navionics via maps.garmin.com marine map; depth units Meters; not for navigation; private research copy",
+ "finished": "2026-10-06T10:33:33"
+}

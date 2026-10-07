@@ -1,0 +1,256 @@
+[
+  {
+    "url": "https://www.youtube.com/watch?v=F0PslWKkbf4",
+    "platform": "YouTube",
+    "video_id": "F0PslWKkbf4",
+    "title": "Boscombe Surf Reef - The Story",
+    "channel": "BoscombeReef",
+    "duration_seconds": 315,
+    "upload_date": "2010-02-25",
+    "origin": "ours",
+    "relevance": "about_the_reef",
+    "relevance_evidence": "Whole 5-min piece is a mini-documentary on the reef: 'Here's the story of how, where and why it was built' (description); transcript covers history, structure, construction, size/position, wave mechanics, marine life.",
+    "segments": [
+      {
+        "start_s": 4,
+        "end_s": 25,
+        "what": "Intro: Europe's first artificial surf reef, GBP 11m regeneration scheme (narration)",
+        "quote": "home to Europe's first artificial surf Reef thanks to an 11 million pound regeneration scheme"
+      },
+      {
+        "start_s": 47,
+        "end_s": 69,
+        "what": "Project history: idea first raised 1999, car park sold to finance it, government permission 2007",
+        "quote": "Bournemouth burough Council sold an underused car park to finance the scheme"
+      },
+      {
+        "start_s": 69,
+        "end_s": 91,
+        "what": "Structure explained: base layer, top layer and ramp; each = webbing base + geotextile bags",
+        "quote": "each layer consists of two elements a webbing base and huge geotextile bags"
+      },
+      {
+        "start_s": 91,
+        "end_s": 110,
+        "what": "Prefabrication on a field, section concertina-folded by cranes onto a barge",
+        "quote": "the section was then concertina by huge cranes and laid onto a barge"
+      },
+      {
+        "start_s": 110,
+        "end_s": 147,
+        "what": "Aug 2008 deployment just east of Boscombe Pier: divers anchor section, barge unrolls it, bags sand-filled; largest bags 70 x 2 x 6 m",
+        "quote": "the largest bags were 70 M long 2 m high and 6 M wide"
+      },
+      {
+        "start_s": 147,
+        "end_s": 163,
+        "what": "Base layer done 2008, winter stop, top layer and ramp laid autumn 2009",
+        "quote": "in the Autumn the top layer and ramp was laid and filled"
+      },
+      {
+        "start_s": 163,
+        "end_s": 202,
+        "what": "Size, position and hydraulics: football-pitch size, 250 m offshore, acts as a ramp not a wave machine",
+        "quote": "it's the size of a football pitch and positioned 250 M offshore"
+      },
+      {
+        "start_s": 199,
+        "end_s": 226,
+        "what": "Surf use (right-handers, RNLI cover) and marine life on the reef",
+        "quote": "a variety of species now live on the reef including crabs Lobster pipe fish seab bass and mullet"
+      },
+      {
+        "start_s": 226,
+        "end_s": 242,
+        "what": "Regeneration outcome: 60-country coverage, new businesses, ~80 seafront jobs",
+        "quote": "around 80 jobs have been created along the seafront alone"
+      }
+    ],
+    "transcript_path": "02_research/videos/boscombe-surf-reef/F0PslWKkbf4.txt",
+    "transcript_source": "YouTube captions (auto, lang=en), re-pulled 2026-10-04 with transcribe.py; timestamped [mm:ss]",
+    "gemini_claims": "Gemini lists this video, but its entry is a copy of OUR OWN catalog (05_web_build/parse_videos.py reads our videos.md); no independent claim, no real Gemini transcript (only a 'Key quotes: see videos.json' stub).",
+    "embed_ok": true,
+    "thumbnail": "https://img.youtube.com/vi/F0PslWKkbf4/hqdefault.jpg",
+    "review_status": "pending_lior",
+    "date": "2010-02-25",
+    "what_it_shows": "Official-style mini-documentary covering the reef's regeneration rationale, construction method (base/top layers, geotextile bags filled with sand, cranes/barges, divers), design mechanics (ramp not wave-maker), marine life, and local economic impact (60-country media coverage, new hotels/shops/jobs).",
+    "best_timestamp_seconds": 83,
+    "key_quotes": [
+      "01:23 \"geotextile means that the special material is environmentally friendly and actually attracts marine life which grows on the bags\"",
+      "02:59 \"it does not work like a wave machine would as it does not create waves where none exist... if there's a good size swell it mimics a natural reef by acting as a ramp, pushing existing waves upwards\"",
+      "03:54 \"bosam has enjoyed global publicity gaining coverage in over 60 countries worldwide\""
+    ],
+    "frames": [
+      {
+        "path": "03_images/video_frames/boscombe-surf-reef/F0PslWKkbf4_0045.jpg",
+        "timestamp": "",
+        "caption": "\"Before\" overlay from the documentary's before/after sequence; pier pilings visible, surfer in the water, wave breaking."
+      }
+    ],
+    "about": "about the reef"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=HeiYPXt85LM",
+    "platform": "YouTube",
+    "video_id": "HeiYPXt85LM",
+    "title": "Boscombe Surf Reef - the regeneration of Boscombe",
+    "channel": "BoscombeReef",
+    "duration_seconds": 367,
+    "upload_date": "2009-11-20",
+    "origin": "ours",
+    "relevance": "mentions_reef_briefly",
+    "relevance_evidence": "Regeneration/economics piece (description: 'positive changes in the previously run-down area'); reef is named as catalyst/economic driver and surf-school business but its structure, size and build are never described. Two long silent music stretches (00:53-01:16, 01:22-01:47) are visuals only - cannot tell from the transcript whether the reef is shown.",
+    "segments": [
+      {
+        "start_s": 76,
+        "end_s": 82,
+        "what": "Reef framed as the regeneration opportunity (narration; the preceding 00:53-01:16 stretch has no speech)",
+        "quote": "putting the surf Reef out to seea this being the landbased Leisure was the real opportunity to regenerate"
+      },
+      {
+        "start_s": 107,
+        "end_s": 135,
+        "what": "'The Reef is the economic driver'; investment along the seafront, restaurant overlooking the reef",
+        "quote": "The Reef is the economic driver"
+      },
+      {
+        "start_s": 161,
+        "end_s": 195,
+        "what": "Surf-school owner Sean Taylor: people coming to surf the reef; beginners' lessons on very small waves",
+        "quote": "people are taking beginners lessons on very small waves"
+      },
+      {
+        "start_s": 214,
+        "end_s": 230,
+        "what": "Publicity value estimated ~10 million, 'a lot' attributed to the reef (currency not in caption)",
+        "quote": "a lot of that's been attributable to the reef"
+      },
+      {
+        "start_s": 250,
+        "end_s": 283,
+        "what": "Businesses named after the reef (hotel renamed 'the Reef', Urban Reef, Reef Encounter); reef 'probably the Catalyst'",
+        "quote": "a hotel Redevelopment was renamed the reef"
+      },
+      {
+        "start_s": 320,
+        "end_s": 336,
+        "what": "Funding: project paid by residential land and beach-pod sales, not council tax",
+        "quote": "funded by the sale of the [residential] land and the sale of the beach pods"
+      }
+    ],
+    "transcript_path": "02_research/videos/boscombe-surf-reef/HeiYPXt85LM.txt",
+    "transcript_source": "YouTube captions (auto, lang=en), re-pulled 2026-10-04 with transcribe.py; timestamped [mm:ss]",
+    "gemini_claims": "Gemini lists this video, but its entry is a copy of OUR OWN catalog (05_web_build/parse_videos.py reads our videos.md); no independent claim, no real Gemini transcript (only a 'Key quotes: see videos.json' stub).",
+    "embed_ok": true,
+    "thumbnail": "https://img.youtube.com/vi/HeiYPXt85LM/hqdefault.jpg",
+    "review_status": "pending_lior",
+    "date": "2009-11-20",
+    "what_it_shows": "Interview-style regeneration piece with local council/business figures (incl. Sean Taylor of Sorted Surf Shop) on Boscombe's pre-reef decline and the reef-driven seafront redevelopment (Overstrand complex, Urban Reef restaurant, Reef Encounter bar, beach pods, pier refurbishment); confirms funding came from land/beach-pod sales, not council tax.",
+    "best_timestamp_seconds": 128,
+    "key_quotes": [
+      "00:08 \"this was a very rundown area of seafront... in an area of deprivation when the life expectancy in this ward is 10 years lower than the average life expectancy in the rest of Bournemouth\"",
+      "02:08 \"it was a catalyst for all of this investment\"",
+      "03:36 \"the publicity value of what we've done here we've estimated already at 10 million... a lot of that's been attributable to the reef\" (currency not captioned)"
+    ],
+    "frames": [],
+    "about": "mentions the reef briefly"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=7xMwL09a1TI",
+    "platform": "YouTube",
+    "video_id": "7xMwL09a1TI",
+    "title": "Boscombe Surf Reef the construction story so far",
+    "channel": "BoscombeReef",
+    "duration_seconds": 123,
+    "upload_date": "2009-07-08",
+    "origin": "ours",
+    "relevance": "about_the_reef",
+    "relevance_evidence": "Pure construction video (BoscombeReef channel, Jul 2009, empty description): materials from NZ, three stitched base sections, barge deployment, divers, sand filling. Previously metadata-only; now transcribed. NOTE: says the FIRST base section is 'approximately the size of a football pitch', whereas F0PslWKkbf4 says the whole reef is football-pitch sized.",
+    "segments": [
+      {
+        "start_s": 6,
+        "end_s": 29,
+        "what": "Materials shipped from New Zealand; reef base made of three separate triple-stitched sections",
+        "quote": "the base of the Sur reath is formed from three separate sections"
+      },
+      {
+        "start_s": 37,
+        "end_s": 53,
+        "what": "Bags tied to webbing base with 1,000+ ties; first base section ~football-pitch size, folded for transport",
+        "quote": "the first section of the reef base layer is approximately the size of a football pitch"
+      },
+      {
+        "start_s": 53,
+        "end_s": 66,
+        "what": "10-tonne section lifted onto a barge",
+        "quote": "the section weighs 10 tons and so lifting is a delicate process"
+      },
+      {
+        "start_s": 61,
+        "end_s": 90,
+        "what": "Barge to site 250 m from Boscombe beach; section unfolded on the seabed; divers attach webbing to anchors",
+        "quote": "the site of the reef just 250 M from boson Beach Shoreline"
+      },
+      {
+        "start_s": 85,
+        "end_s": 112,
+        "what": "Bags filled one by one with beach sand via a 300 m pipeline; 1-4 hours per bag",
+        "quote": "a 300 M pipeline transports the sand out to sea where divers attach the pipes to the bags"
+      }
+    ],
+    "transcript_path": "02_research/videos/boscombe-surf-reef/7xMwL09a1TI.txt",
+    "transcript_source": "YouTube captions (auto, lang=en), re-pulled 2026-10-04 with transcribe.py; timestamped [mm:ss]",
+    "gemini_claims": "Gemini lists this video, but its entry is a copy of OUR OWN catalog (05_web_build/parse_videos.py reads our videos.md); no independent claim, no real Gemini transcript (only a 'Key quotes: see videos.json' stub).",
+    "embed_ok": true,
+    "thumbnail": "https://img.youtube.com/vi/7xMwL09a1TI/hqdefault.jpg",
+    "review_status": "pending_lior",
+    "date": "2009-07-08",
+    "what_it_shows": "Construction-progress video (Jul 2009, before the Nov 2009 opening): NZ geotextile mats and sandbags unpacked, three triple-stitched base sections, bags tied on with 1,000+ ties, 10-tonne section lifted on a barge, deployed 250 m offshore, divers anchor it, bags sand-filled via a 300 m pipeline (1-4 h per bag). Transcribed 2026-10-04.",
+    "best_timestamp_seconds": 0,
+    "key_quotes": [
+      "00:37 \"the bags are attached to the reef webbing base with over 1,000 ties\"",
+      "01:04 \"the site of the reef just 250 M from boson Beach Shoreline\"",
+      "01:37 \"a 300 M pipeline transports the sand out to sea where divers attach the pipes to the bags\""
+    ],
+    "frames": [],
+    "about": "about the reef"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=eceOTU06Dts",
+    "platform": "YouTube",
+    "video_id": "eceOTU06Dts",
+    "title": "Boscombe Surf Reef in action November 2009, Bournemouth UK",
+    "channel": "Sean Gardiner",
+    "duration_seconds": 63,
+    "upload_date": "2009-11-06",
+    "origin": "ours",
+    "relevance": "shows_the_reef",
+    "relevance_evidence": "CLASSIFIED FROM TITLE + DESCRIPTION ONLY (no captions, no speech - music-only clip, so there is no transcript to read): title 'Boscombe Surf Reef in action November 2009'; description 'clips of the Bournemouth Surf Reef being used by body boarders one day after the official press launch'. Earlier pass's frame note (03_images/video_frames/boscombe-surf-reef/eceOTU06Dts_0018.jpg: wave breaking, two bodyboarders, yellow marker buoy) is consistent. Uploader's 2020 update is opinion (calls the reef a council 'fiasco'/'white elephant', says the makers left for NZ); unverified, not used as fact.",
+    "segments": [
+      {
+        "start_s": 0,
+        "end_s": 63,
+        "what": "Whole clip: waves breaking over the reef with bodyboarders (per description; sub-timings not determined because there is no transcript)",
+        "quote": ""
+      }
+    ],
+    "transcript_path": null,
+    "transcript_source": "none - no captions (manual or auto) and no speech; classified from title + description",
+    "gemini_claims": "Gemini lists this video, but its entry is a copy of OUR OWN catalog (05_web_build/parse_videos.py reads our videos.md); no independent claim, no real Gemini transcript (only a 'Key quotes: see videos.json' stub).",
+    "embed_ok": true,
+    "thumbnail": "https://img.youtube.com/vi/eceOTU06Dts/hqdefault.jpg",
+    "review_status": "pending_lior",
+    "date": "2009-11-06",
+    "what_it_shows": "Short amateur clip of a wave breaking over the reef with a bodyboarder in the water near a marker buoy, one day after the official press launch; description explicitly calls the project a Bournemouth Council fiasco.",
+    "best_timestamp_seconds": 8,
+    "key_quotes": [],
+    "frames": [
+      {
+        "path": "03_images/video_frames/boscombe-surf-reef/eceOTU06Dts_0018.jpg",
+        "timestamp": "",
+        "caption": "Wave breaking left, two bodyboarders and a yellow marker buoy visible in the water."
+      }
+    ],
+    "about": "about the reef"
+  }
+]

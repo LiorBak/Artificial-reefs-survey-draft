@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="662" height="693" viewBox="0 0 662 693" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="8" y="16" font-weight="600" font-size="13" fill="#1b1f24">Narrowneck Reef (Gold Coast Reef)</text>
+<text x="8" y="32" fill="#5a626d">600 × 350 m · 114,950 m² · medium confidence</text>
+<g transform="translate(0,40)">
+<rect x="0" y="0" width="662" height="595.0" fill="#e6f1f7"/>
+<rect x="0" y="595.0" width="662" height="24" fill="#efe3c4"/>
+<line x1="0" x2="662" y1="595.0" y2="595.0" stroke="#7a6a45" stroke-width="1.5"/>
+<text x="646" y="610.0" text-anchor="end" fill="#5a626d">beach · shoreline (y = 0)</text>
+<line x1="20" x2="20" y1="591.0" y2="555.0" stroke="#3d5a73" stroke-width="1.5"/><path d="M16 559.0l4 -7l4 7z" fill="#3d5a73"/>
+<text x="16" y="18" fill="#5a626d">↑ offshore (sea)</text>
+<g fill="#c98a12" fill-opacity=".9" stroke="#1b1f24" stroke-width="1" stroke-linejoin="round"><path d="M381.0 335.0L431.0 370.0L551.0 390.0L631.0 395.0L631.0 335.0L561.0 320.0L471.0 295.0L471.0 235.0L561.0 195.0L631.0 165.0L631.0 45.0L541.0 55.0L441.0 90.0L381.0 135.0L381.0 335.0Z"/><path d="M281.0 335.0L231.0 370.0L111.0 390.0L31.0 395.0L31.0 335.0L101.0 320.0L191.0 295.0L191.0 235.0L101.0 195.0L31.0 165.0L31.0 45.0L121.0 55.0L221.0 90.0L281.0 135.0L281.0 335.0Z"/></g>
+<line x1="631.0" x2="631.0" y1="595.0" y2="395.0" stroke="#3d5a73" stroke-dasharray="3 3"/><text x="635.0" y="499.0" fill="#1b1f24">200 m</text>
+<rect x="546.0" y="636" width="50.0" height="5" fill="#1b1f24"/><rect x="596.0" y="636" width="50.0" height="5" fill="#ffffff" stroke="#1b1f24" stroke-width=".8"/><text x="546.0" y="632" fill="#1b1f24">0</text><text x="646" y="632" text-anchor="end" fill="#1b1f24">100 m</text>
+<text x="16" y="646" fill="#5a626d">1 px = 1 m</text>
+</g>
+</svg>

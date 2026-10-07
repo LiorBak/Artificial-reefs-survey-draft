@@ -1,0 +1,301 @@
+{
+  "slug": "borth-coastal-defence-reef",
+  "kind": "reef",
+  "verified_on": "2026-09-24",
+  "name": "Borth coastal defence reef (incl. Wallog headland)",
+  "place": "Borth, Ceredigion, Cardigan Bay",
+  "country": "United Kingdom",
+  "lat": 52.48533,
+  "lon": -4.05103,
+  "year": "Feasibility study May 2004 [R10]; design from Oct 2009 [R1][R4]; construction started Jan 2011 [R1]; contractor's target completion Nov 2011 [R1][R9]; Coflein gives completion March 2012 [R3]; wider Phase-1 scheme described as 2011-2015 [R6]",
+  "type": "Submerged rock (riprap) multi-purpose reef plus rock groynes, breakwaters and beach nourishment [R1][R4]",
+  "purpose": "Primary: flood and erosion protection for Borth village, built on a mobile shingle bank whose 1970s timber-groyne defences were failing [R1][R2][R4]. Secondary/amenity: shape the reef so breaking swell also creates a surf wave, because the community explicitly rejected a hard sea wall in favour of keeping an open beach [R1][R2][R4]",
+  "size": "Reef sited c.400 m offshore per the contractor (2011) [R1] / c.300 m per local/heritage sources (2013 press, Coflein) [R2][R3]; 275,000 t total material moved (84,500 t shingle replacement, 18,500 t Type-3 rock 0.3-1t, 16,200 t Type-1 rock 3-6t, 42,000 t Type-4 rock 6-10t, 500 t Type-6 rock 5-100kg) [R1]; Coflein separately states c.300,000 t of rock for the whole works [R3]",
+  "cost": "Figures vary by source, not reconciled: Phase 1 funding envelope GBP 7M (FY2009/10-2010/11) [R4]; GBP 13.5M \"first phase of the strategy\" quoted in 2009 [R1]; BAM Nuttall's winning construction tender GBP 11.5M [R1]; full phased scheme costed at GBP 29M in 2011-2013 press [R1][R2]; Coflein gives completed reef/coastal-defence works at GBP 13M [R3]; Wikipedia gives GBP 12M for the 2011-2015 scheme [R6]",
+  "cost_usd_approx": "Roughly GBP 12-13M is approximately US$15-17M, and GBP 29M is approximately US$36M, at approximate 2011-2013 GBP/USD rates of ~1.25-1.6 (rough conversion, not sourced to a specific FX reference)",
+  "financed_by": "Coast Protection Grant from the Welsh Assembly Government (later Welsh Government) and Convergence funding from the Welsh European Funding Office (WEFO) / European Regional Development Fund [R4][R6]",
+  "motivation": "Borth sits on a mobile shingle bank in Cardigan Bay; its 1970s timber groyne and breastwork sea defences were judged inadequate, with ordinary storms causing overtopping flooding through homes, per Borth councillor Ray Quant [R2]. A council feasibility study found existing defences within 10 years of failure with potentially catastrophic losses possible, triggering a 150-resident 2001 visioning meeting [R4]. Ceredigion County Council's coast and rivers engineer, Rhodri Llwyd, said the scheme had been 15 years in the making and that the community absolutely didn't want a wall, so the idea of a reef was born [R1][R2]",
+  "designer": "Royal Haskoning (detailed design, appointed Oct 2009); specialist reef designer ASR (sub-consultant); physical modelling by HR Wallingford; environmental consultant Atkins [R1][R4]. Original feasibility study \"Borth Multi-Purpose reef for Coastal Protection and Amenity\" completed May 2004 for Ceredigion County Council (authors not confirmed; ResearchGate record blocked, content corroborated via Borth Community website) [R10][R4]",
+  "contractor": "BAM Nuttall (site agent Ray Jones); plant from Norton Plant Hire [R1][R4]",
+  "status_now": "Built and in service; as of December 2011 residents reported the new defences had already stopped two high tides from flooding their properties [R2][R3]. The wider Borth-to-Ynyslas coastal-protection programme was still being planned/phased in later business-case documents, implying more phases beyond the reef itself continued years after Phase 1 (details not found) [R4]",
+  "verdict": "mixed",
+  "hover_text": "A c.300-400 m offshore multi-purpose rock reef plus groynes and beach nourishment, built 2011-2012 for roughly GBP 12-13M (reported up to GBP 29M for the full phased scheme), financed by Welsh Government and EU (WEFO/ERDF) funding; it stopped flooding within months of substantial completion, but years later the surf-industry press still describes Borth only as \"a proposed\" reef site rather than crediting it with a reliable wave [R1][R2][R3][R7].",
+  "design_as_planned": "The preferred option, chosen after comparing technical, economic, amenity, environmental and safety criteria, was \"Rock Beach Control Structures with a Multi-Purpose Reef and Beach Nourishment\" [R4][R10]. Phase 1 combined: a submerged multi-purpose reef near the Craig y Delyn cliffs at the beach's southern end (sited there so the community could keep an open beach and unobstructed views), two rock groynes and two rock breakwaters further along the frontage to retain shingle, and beach nourishment (originally 150,000 m3 of imported shingle) [R1][R4]. Designed to a 1-in-100-year storm standard while remaining adaptable to future climate change [R4]. The reef's role was explicitly dual: reduce wave energy to protect the beach from erosion and broaden the beach inshore, while also being shaped to help swell waves break as a secondary surfing amenity [R1][R2]. The team settled on \"Option 9A\" for outline design after comparing numerous layouts, with 3D physical wave-basin modelling by HR Wallingford used to size the rock armour [R1]",
+  "as_built_vs_design": "Construction followed the planned reef/groynes/breakwaters/nourishment layout, but with two contractor-driven, budget-closing changes: the client's design already carried about GBP 1M of cost overrun after physical-model testing showed extra rock was needed, and BAM Nuttall's tender then came in a further GBP 1M over that inflated budget [R1]. BAM Nuttall closed the combined c.GBP 2M gap by (1) mining and reusing the beach's own existing shingle, bulked up with cheaper imported quarried material underneath and the original shingle put back on top, instead of importing the full 150,000 m3 specified, and (2) building a temporary rock causeway out to the reef site so land-based excavators and dumper trucks could be used instead of the originally tendered floating marine plant [R1]. The causeway was intended to be removed once the reef was finished [R9]. Construction ran on a tight tidal window (6am-9pm with a three-hour high-tide stoppage), with over 8,000 material deliveries made by September 2011 [R1][R2]",
+  "outcome": "Coastal protection: residents reported the new defences had already stopped two high tides from flooding their properties by December 2011, while the works were still substantially under construction [R2][R3]. An unplanned side effect of the earthworks was the exposure of a prehistoric submerged forest (oak, pine, birch, willow and hazel stumps dated to roughly 1500 BCE) tied to the Welsh legend of Cantre'r Gwaelod, now visible at low tide [R6]. Surfing outcome is contested: press coverage at construction time promised the reef would provide excellent surf conditions and boost the local economy [R2], but the Stormrider Surf Guide, years after completion, still describes Borth as merely \"a proposed\" artificial reef site rather than a functioning named surf break [R7], and Surf-Forecast.com rates Borth's surf quality only 3.0/5 with beginner difficulty and no posted first-hand surfer reviews [R8]. No wave-height, ride-length or surfable-days measurement for the reef was found [R7][R8]",
+  "why_worked_or_failed": "For coastal protection, the scheme functioned successfully in its early years, withstanding December-2011 storms without flooding the properties it protects within months of substantial completion [R2][R3]. Credited design choices: graded, multi-tonne rock armour (up to 10 t pieces) sized via HR Wallingford's 3D physical modelling before construction rather than off-the-shelf sizing [R1]; a reef+groyne+breakwater system working with beach nourishment instead of a rigid sea wall, chosen because the community rejected a wall [R1][R2]; and a construction sequencing (temporary causeway, tidal work windows) that let the contractor place rock accurately below the high-tide line [R1]. For the surfing function, no source found explains in engineering terms (crest depth, slope, wave-focusing geometry) why the wave has or hasn't performed; the continued \"proposed\" framing in the Stormrider guide is suggestive the amenity function has not been widely recognised as delivering a notable wave, but no direct technical post-mortem was located [R7]",
+  "unexpected_results": "The exposure of the prehistoric petrified forest and its tie-in to the Cantre'r Gwaelod legend was an unplanned, publicised side effect of the earthworks [R6]. No sources found document fishing-pressure changes, ecological studies, rip-current safety incidents, litigation, or measurable tourism-economy impact specifically tied to the Borth reef (treated as a genuine gap, not confirmed absence of any such effect)",
+  "could_be_better": "No source located offers an explicit engineers'/authors' retrospective critique of the Borth scheme's design or execution (unlike, e.g., Boscombe's published post-mortem). The one available critical signal is indirect: the Stormrider Surf Guide's continued description of Borth as merely \"a proposed artificial reef site\" years after completion implies the reef has not become a recognised, reliably rideable wave in the way pre-construction press promised [R7]; Surf-Forecast's low consistency/quality scores point the same way [R8], though neither source explains which design choice is responsible. From a cost-management perspective, the construction tender came in over budget on top of a design that had already grown by about GBP 1M after physical-model testing, and the contractor had to redesign its construction method and material sourcing specifically to close that gap, implying the original budget/design had under-priced the works as first specified [R1]",
+  "relevance_to_israel": "Cardigan Bay/Aberystwyth (immediately adjacent to Borth) is macrotidal: spring tidal range is roughly 4.7-4.8 m (high spring tide c.5.4 m, low tide down to c.0.6 m) [R11]. This is drastically larger than the Israeli Mediterranean coast (Haifa/Ashkelon/Netanya etc.), which is effectively microtidal, with a tidal range on the order of tens of centimetres. A reef crest depth and rock-armour design tuned by HR Wallingford's physical modelling to work across a c.4.7 m tidal swing at Borth [R1] cannot be reused as-is on Israel's coast, since the same structure would sit permanently near a single water level in Israel rather than alternately surfacing and submerging by several metres, changing both wave-breaking performance and exposure/maintenance regime. What transfers conceptually: the core political lesson that a community explicitly chose a submerged multi-purpose reef over a hard sea wall specifically to keep an open, usable beach and views [R1][R2][R4], directly analogous to debates around geotubes/breakwaters at Ashkelon and Netanya. The value-engineering lesson (reusing existing shingle instead of full import, to control cost) is also directly transferable regardless of tidal regime [R1]",
+  "reviews": [
+    {
+      "who": "Ray Quant",
+      "role": "Borth councillor",
+      "quote_or_summary": "\"[protecting Borth with] traditional hard defences such as concrete seawalls was never going to be an option\"",
+      "outlet": "North Wales Live / Daily Post",
+      "date": "2013-04-16",
+      "url": "https://www.dailypost.co.uk/news/local-news/borths-new-coastal-defences-transform-2685578"
+    },
+    {
+      "who": "Rhodri Llwyd",
+      "role": "Coast and rivers engineer, Ceredigion County Council",
+      "quote_or_summary": "\"This scheme has been 15 years in the making... The community wanted to retain as much of an open beach as possible; they absolutely didn't want a wall, so the idea of a reef was born\"",
+      "outlet": "New Civil Engineer",
+      "date": "2011-09-15",
+      "url": "https://www.newcivilengineer.com/archive/borths-big-dig-15-09-2011/"
+    },
+    {
+      "who": "Alice Johnson",
+      "role": "Royal Haskoning construction supervisor / project manager",
+      "quote_or_summary": "\"The design of the scheme has been significantly influenced by the people of Borth, who have strongly held opinions of what they want to see on their doorstep\"",
+      "outlet": "New Civil Engineer",
+      "date": "2011-09-15",
+      "url": "https://www.newcivilengineer.com/archive/borths-big-dig-15-09-2011/"
+    },
+    {
+      "who": "Ray Jones",
+      "role": "BAM Nuttall site agent",
+      "quote_or_summary": "\"We tendered the job using floating plant. But we removed that task by proposing the construction of a temporary causeway [so we could build with land-based plant].\"",
+      "outlet": "New Civil Engineer",
+      "date": "2011-09-15",
+      "url": "https://www.newcivilengineer.com/archive/borths-big-dig-15-09-2011/"
+    },
+    {
+      "who": "Chris Denny",
+      "role": "Geograph contributor / local photographer",
+      "quote_or_summary": "\"Once the reef is finished, the causeway leading to it will be dismantled – November is the planned date\"",
+      "outlet": "Geograph Britain and Ireland",
+      "date": "2011-08-03",
+      "url": "https://www.geograph.org.uk/photo/2575564"
+    }
+  ],
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/A_bigger_splash%2C_Borth_sea_defences_-_geograph.org.uk_-_2366565.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:A_bigger_splash,_Borth_sea_defences_-_geograph.org.uk_-_2366565.jpg",
+      "credit": "Chris Denny, via Geograph Britain and Ireland / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "depicts": "Wave breaking against a barge loaded with rock armour and a wheeled loader during the Borth sea-defence works ('A bigger splash: Borth sea defences')",
+      "kind": "photo",
+      "hotlink_ok": true
+    },
+    {
+      "url": "https://s0.geograph.org.uk/geophotos/02/55/47/2554717_ca5fc76b.jpg",
+      "source_page": "https://www.geograph.org.uk/photo/2554717",
+      "credit": "Phil Champion, via Geograph Britain and Ireland",
+      "license": "CC BY-SA 2.0",
+      "depicts": "Construction fence with 'Construction Operations KEEP OUT' sign on Borth beach, closed off during the summer 2011 coastal-defence works",
+      "kind": "photo",
+      "hotlink_ok": true
+    },
+    {
+      "url": "https://s0.geograph.org.uk/geophotos/02/57/55/2575564_e576dfb2.jpg",
+      "source_page": "https://www.geograph.org.uk/photo/2575564",
+      "credit": "Chris Denny, via Geograph Britain and Ireland",
+      "license": "CC BY-SA 2.0",
+      "depicts": "Excavators building the offshore multi-purpose reef at Borth's southern end via a temporary rock causeway, evening low-tide working ('Building the reef: Borth sea defences')",
+      "kind": "photo",
+      "hotlink_ok": true
+    },
+    {
+      "url": "https://borthcommunity.info/images/stories/BamNuttall/20110818-100400.jpg",
+      "source_page": "https://borthcommunity.info/index.php/progress-pictures/326-coastal-defence-progress-pictures-august-2011",
+      "credit": "BAM Nuttall / Borth Community website (Ceredigion County Council community site)",
+      "license": "unknown - community/council progress-photo page, contractor-supplied images, no explicit license statement found",
+      "depicts": "Construction of the northern and southern multi-purpose reef at Borth, August 2011 (official project progress photo, Norton's-branded plant visible)",
+      "kind": "photo",
+      "hotlink_ok": true
+    },
+    {
+      "url": "https://borthcommunity.info/images/stories/BamNuttall/20110818-101454.jpg",
+      "source_page": "https://borthcommunity.info/index.php/progress-pictures/326-coastal-defence-progress-pictures-august-2011",
+      "credit": "BAM Nuttall / Borth Community website (Ceredigion County Council community site)",
+      "license": "unknown - community/council progress-photo page, contractor-supplied images, no explicit license statement found",
+      "depicts": "Construction of the northern and southern multi-purpose reef at Borth, August 2011 (official project progress photo)",
+      "kind": "photo",
+      "hotlink_ok": true
+    },
+    {
+      "url": "https://www.google.com/maps?q=52.4690,-4.0681&z=17&t=k",
+      "source_page": "https://www.google.com/maps?q=52.4690,-4.0681&z=17&t=k",
+      "credit": "Google Maps / satellite imagery providers",
+      "license": "Google Maps terms of use (view-only reference link, not for reproduction)",
+      "depicts": "Satellite view centred on the Craig y Delyn cliffs south end of Borth beach where the multi-purpose reef sits, c.300-400 m offshore",
+      "kind": "map",
+      "hotlink_ok": null
+    }
+  ],
+  "images_rejected": [],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=c4J6hfvynr4",
+      "platform": "YouTube",
+      "video_id": "c4J6hfvynr4",
+      "title": "Borth Sea Defenses Video 3 Feb 2011",
+      "channel": "BorthSeaDefense",
+      "duration_seconds": 238,
+      "date": "2011-02-27",
+      "embed_ok": true,
+      "best_timestamp_seconds": null,
+      "what_it_shows": "Silent amateur b-roll from a dedicated 'BorthSeaDefense' channel, filming the coastal-defence/reef construction site at Borth in February 2011, early in the works.",
+      "transcript_path": null,
+      "key_quotes": [],
+      "frames": []
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=AJXnUqQObJM",
+      "platform": "YouTube",
+      "video_id": "AJXnUqQObJM",
+      "title": "Borth sea defences and reef",
+      "channel": "binsurf66",
+      "duration_seconds": 54,
+      "date": "2011-09-13",
+      "embed_ok": true,
+      "best_timestamp_seconds": 15,
+      "what_it_shows": "Short amateur clip of two excavators working on the offshore rock reef at Borth's southern end, filmed from the beach, September 2011.",
+      "transcript_path": null,
+      "key_quotes": [],
+      "frames": [
+        {
+          "path": "03_images/video_frames/borth-coastal-defence-reef/AJXnUqQObJM_0015.jpg",
+          "timestamp": "00:15",
+          "caption": "Two excavators building the offshore rock reef at Borth's southern end, seen from the beach; waves breaking on the sand in the foreground."
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=QUB6s_F9dZc",
+      "platform": "YouTube",
+      "video_id": "QUB6s_F9dZc",
+      "title": "Borth Beach Sea Defence Works August 2011",
+      "channel": "Stephen Willcox",
+      "duration_seconds": 77,
+      "date": "2015-06-12 (upload date; footage itself is captioned August 2011)",
+      "embed_ok": true,
+      "best_timestamp_seconds": 7,
+      "what_it_shows": "Amateur clip along Borth's seafront showing houses on the beach road, construction plant and large stockpiled rock/shingle piles from the coastal-defence works, August 2011.",
+      "transcript_path": null,
+      "key_quotes": [],
+      "frames": [
+        {
+          "path": "03_images/video_frames/borth-coastal-defence-reef/QUB6s_F9dZc_0007.jpg",
+          "timestamp": "00:07",
+          "caption": "Borth seafront houses beside the beach, with excavators, dump trucks and a large stockpile of rock/quarried material for the coastal-defence works in the foreground."
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=dQieZVQUDEI",
+      "platform": "YouTube",
+      "video_id": "dQieZVQUDEI",
+      "title": "borth sea defence 2012",
+      "channel": "eirian jones",
+      "duration_seconds": 543,
+      "date": "2012-03-24",
+      "embed_ok": false,
+      "best_timestamp_seconds": 60,
+      "what_it_shows": "Longer amateur video ('komatsu 450 separating rock and shingle') showing heavy plant sorting/grading rock and shingle material as part of the Borth coastal-defence works, into 2012 (matches the reef/coastal-defence works completion date given by Coflein).",
+      "transcript_path": null,
+      "key_quotes": [],
+      "frames": []
+    }
+  ],
+  "lior_images": [],
+  "references": [
+    {
+      "id": "R1",
+      "citation": "Mark Hansford, New Civil Engineer (2011-09-15). \"Borth's Big Dig.\"",
+      "url": "https://www.newcivilengineer.com/archive/borths-big-dig-15-09-2011/",
+      "accessed": "2026-09-24",
+      "supports": "designer/contractor identities, cost figures, tender details, construction methods (causeway, shingle reuse), material tonnages, reef location/distance offshore, construction schedule, named quotes (Llwyd, Johnson, Jones)"
+    },
+    {
+      "id": "R2",
+      "citation": "North Wales Live / Daily Post, \"Borth's new coastal defences to transform town into a surfer's paradise\" (2013-04-16, updated 2013-04-19).",
+      "url": "https://www.dailypost.co.uk/news/local-news/borths-new-coastal-defences-transform-2685578",
+      "accessed": "2026-09-24",
+      "supports": "GBP 29M plan figure, reef length (300 m), purpose/motivation narrative, councillor Ray Quant quote, Llwyd and Johnson quotes, construction schedule detail"
+    },
+    {
+      "id": "R3",
+      "citation": "Coflein / RCAHMW, \"Coastal Defences, Borth,\" site record NPRN 424699.",
+      "url": "https://coflein.gov.uk/en/site/424699",
+      "accessed": "2026-09-24",
+      "supports": "completion date (March 2012), GBP 13M cost figure, 300,000 t rock from Norway, 300 m offshore length, December 2011 flood-protection report"
+    },
+    {
+      "id": "R4",
+      "citation": "Borth Community website, \"Borth Coastal Defence Overview.\"",
+      "url": "http://www.borthcommunity.info/index.php/planning-drawings/235-borth-coastal-defence/46-overview",
+      "accessed": "2026-09-24",
+      "supports": "feasibility-study history, 2001 visioning meeting, Phase 1 funding (GBP 7M) and dates, designer/contractor/consultant roles (Royal Haskoning, ASR, Atkins, BAM Nuttall), nourishment tonnages, 1-in-100-year design standard, consultation events, full-scheme phasing to Ynys Las Dunes"
+    },
+    {
+      "id": "R5",
+      "citation": "Wikipedia, \"Wallog.\"",
+      "url": "https://en.wikipedia.org/wiki/Wallog",
+      "accessed": "2026-09-24",
+      "supports": "Wallog's location and coordinates relative to Borth and Clarach Bay; confirms no reef content is described in this specific article"
+    },
+    {
+      "id": "R6",
+      "citation": "Wikipedia, \"Borth.\"",
+      "url": "https://en.wikipedia.org/wiki/Borth",
+      "accessed": "2026-09-24",
+      "supports": "village coordinates, GBP 12M/2011-2015 scheme description, exposure of the petrified forest, Cantre'r Gwaelod legend connection"
+    },
+    {
+      "id": "R7",
+      "citation": "Stormrider Surf Guide, \"Surfing in Northwest Wales, Wales.\"",
+      "url": "https://www.stormrider.surf/region/northwest-wales",
+      "accessed": "2026-09-24",
+      "supports": "description of Borth as \"a proposed artificial reef site,\" coastal geography description, general surf-quality characterisation of the area"
+    },
+    {
+      "id": "R8",
+      "citation": "Surf-Forecast.com, Borth surf break reviews page.",
+      "url": "https://www.surf-forecast.com/breaks/Borth/reviews",
+      "accessed": "2026-09-24",
+      "supports": "surf-quality/consistency/difficulty ratings for Borth; confirms absence of posted first-hand user reviews as of access date"
+    },
+    {
+      "id": "R9",
+      "citation": "Geograph Britain and Ireland, photo by Chris Denny, \"Building the reef: Borth sea defences\" (taken 2011-08-03).",
+      "url": "https://www.geograph.org.uk/photo/2575564",
+      "accessed": "2026-09-24",
+      "supports": "construction-in-progress date, temporary causeway detail, planned November 2011 completion"
+    },
+    {
+      "id": "R10",
+      "citation": "ResearchGate record, \"Borth Multi-Purpose reef for Coastal Protection and Amenity.\"",
+      "url": "https://www.researchgate.net/publication/273133799_Borth_Multi-Purpose_reef_for_Coastal_Protection_and_Amenity",
+      "accessed": "2026-09-24 (attempted; blocked, HTTP 403)",
+      "supports": "existence and title of the original feasibility study, per a web-search result snippet; content claims (May-2004 date, evaluation criteria) corroborated independently via R4"
+    },
+    {
+      "id": "R11",
+      "citation": "Tide-Forecast.com, Aberystwyth tide data.",
+      "url": "https://www.tide-forecast.com/locations/Aberystwyth-Wales/tides/latest",
+      "accessed": "2026-09-24",
+      "supports": "approximate spring tidal range figures for the Borth/Aberystwyth stretch of Cardigan Bay, used for the Israel-relevance comparison"
+    },
+    {
+      "id": "R12",
+      "citation": "YouTube search results listing for \"Borth reef coastal defence.\"",
+      "url": "https://www.youtube.com/results?search_query=Borth+reef+coastal+defence",
+      "accessed": "2026-09-24",
+      "supports": "video titles and IDs listed under Video leads (titles only; content independently confirmed via yt-dlp this session)"
+    }
+  ],
+  "blocked_sources": [
+    "ResearchGate (R10) — 403 blocked via both WebFetch and direct curl, no Wayback snapshot exists; feasibility study title/date/purpose corroborated instead via the Borth Community website (R4)"
+  ],
+  "gaps": [
+    "reef crest depth / freeboard",
+    "reef footprint width and volume in m3",
+    "authors of the May 2004 feasibility study",
+    "post-completion surf-wave-quality measurement",
+    "exact relationship between Wallog headland and the Craig y Delyn reef site",
+    "status/cost/completion of phases beyond Phase 1 (Borth to Ynyslas)"
+  ]
+}

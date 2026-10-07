@@ -1,0 +1,77 @@
+{
+  "slug": "borth-coastal-defence-reef",
+  "recheck_date": "2026-09-25",
+  "method": "Images downloaded via curl -L -A Mozilla/5.0 to scratch dir, viewed directly, deleted after. Videos not downloaded; classified from videos.json + existing viewed frames + no-transcript notes. Frames viewed directly from 03_images/video_frames/borth-coastal-defence-reef/ (excluding rejected/).",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/A_bigger_splash%2C_Borth_sea_defences_-_geograph.org.uk_-_2366565.jpg",
+      "shows": "structure_visible",
+      "what_i_saw": "Dredging/plant barge ('CAN LORO', tug 'AFON GOCH') loaded with white rock armour and a wheel loader, throwing up a large bow-wave. Rock armour material for the reef visible on deck, not yet placed.",
+      "confidence": "high"
+    },
+    {
+      "url": "https://s0.geograph.org.uk/geophotos/02/55/47/2554717_ca5fc76b.jpg",
+      "shows": "site_context_only",
+      "what_i_saw": "Chain-link construction fence with red/white 'Construction Operations KEEP OUT' sign; Borth beach/seafront/houses behind; no reef or rock structure visible offshore.",
+      "confidence": "high"
+    },
+    {
+      "url": "https://s0.geograph.org.uk/geophotos/02/57/55/2575564_e576dfb2.jpg",
+      "shows": "structure_visible",
+      "what_i_saw": "Three excavators working along an offshore rock causeway/reef extending into calm sea, evening light.",
+      "confidence": "high"
+    },
+    {
+      "url": "https://borthcommunity.info/images/stories/BamNuttall/20110818-100400.jpg",
+      "shows": "structure_visible",
+      "what_i_saw": "Three Norton's-branded excavators plus a dump truck on a rock causeway/reef extending into calm water.",
+      "confidence": "high"
+    },
+    {
+      "url": "https://borthcommunity.info/images/stories/BamNuttall/20110818-101454.jpg",
+      "shows": "structure_visible",
+      "what_i_saw": "Komatsu excavator loading a dump truck on the same rock causeway/reef extending into the sea.",
+      "confidence": "high"
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=c4J6hfvynr4",
+      "about": "about_the_reef",
+      "evidence": "videos.json what_it_shows: 'filming the coastal-defence/reef construction site at Borth in February 2011, early in the works'; silent, no captions/transcript",
+      "best_timestamp_seconds": null
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=AJXnUqQObJM",
+      "about": "about_the_reef",
+      "evidence": "Frame AJXnUqQObJM_0015.jpg viewed directly: two excavators building the offshore rock reef, seen from the beach, matches title 'Borth sea defences and reef'",
+      "best_timestamp_seconds": 15
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=QUB6s_F9dZc",
+      "about": "mentions_reef_briefly",
+      "evidence": "Frame QUB6s_F9dZc_0007.jpg viewed directly: houses, plant and a stockpile of rock/shingle on the seafront/onshore area, not the offshore reef structure itself",
+      "best_timestamp_seconds": 7
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=dQieZVQUDEI",
+      "about": "mentions_reef_briefly",
+      "evidence": "videos.json description: 'komatsu 450 separating rock and shingle', material sorting/grading for the works into 2012; not re-downloaded (embed_ok:false, no new media search performed)",
+      "best_timestamp_seconds": 60
+    }
+  ],
+  "frames": [
+    {
+      "path": "03_images/video_frames/borth-coastal-defence-reef/AJXnUqQObJM_0015.jpg",
+      "shows": "structure_visible",
+      "what_i_saw": "Two excavators on an offshore rock spit/causeway, waves breaking on the sand in the foreground, overcast sky."
+    },
+    {
+      "path": "03_images/video_frames/borth-coastal-defence-reef/QUB6s_F9dZc_0007.jpg",
+      "shows": "site_context_only",
+      "what_i_saw": "Borth seafront houses beside a shingle beach; excavators, dump trucks and a large stockpile of quarried rock/shingle in the foreground (onshore stockpile, not the offshore reef)."
+    }
+  ],
+  "hero_recommendation": "https://s0.geograph.org.uk/geophotos/02/57/55/2575564_e576dfb2.jpg",
+  "overall_verdict": "No mislabelled or misleading media found in Borth's accepted image set. 4 of 5 images show the reef/causeway structure under active construction; the 1 remaining image is correctly limited in scope (construction-closure signage on the beach, no false reef claim). One frame (QUB6s_F9dZc_0007.jpg) is downgraded to site_context_only for precision (onshore stockpile, not the reef itself), but its existing caption was already accurate, not misleading. Unlike the beach-vs-reef mislabelling issue Lior flagged for other reefs, no image, frame or video here shows generic beach/surfing content mislabelled as reef content."
+}

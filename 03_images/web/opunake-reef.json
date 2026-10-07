@@ -1,0 +1,51 @@
+[
+  {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Opunake_Beach.JPG",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Opunake_Beach.JPG",
+    "credit": "Gonzalobaeza, own work, via Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "depicts": "Opunake Beach — a picnic shelter on the grassed foreshore overlooking the cove and surf break (general site view; does not show the submerged reef structure itself, which lies offshore and is not visible from land).",
+    "date": "2012-02-24",
+    "kind": "photo",
+    "verified": "curl -sI 200 image/jpeg (2026-09-24)"
+  },
+  {
+    "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Opunake-Artist-Rendition.jpg?v=1572994857",
+    "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/opunake/",
+    "credit": "Raised Water Research (page credits its Opunake images collectively to National Geographic / Stuff.co.nz / Bournemouth Echo, no individual photographer named)",
+    "license": "Not stated on page — link only, do not download into the project folder",
+    "depicts": "Filed on the source page as \"Opunake Artist Rendition,\" but visually this is a real photograph: surfers riding a line of waves at Opunake Beach with the Opunake Surf Life Saving Club clubhouse and headland visible. Not confirmed to show the artificial reef's effect specifically (could be an ordinary swell day) — flagged as uncertain, included because it is a genuine, verifiable image of this exact beach.",
+    "date": "not stated (page published 2019)",
+    "kind": "photo",
+    "verified": "curl -sI 200 image/jpeg, 110059 bytes (2026-09-24)"
+  },
+  {
+    "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Opunake-Location.jpg?v=1572994855",
+    "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/opunake/",
+    "credit": "Raised Water Research (collectively credited to National Geographic / Stuff.co.nz / Bournemouth Echo)",
+    "license": "Not stated on page — link only, do not download into the project folder",
+    "depicts": "Rocky Opunake foreshore looking along the cove, with a line of marker buoys/floats strung out into the water toward the reef area — possibly marking the reef site or a swimming/exclusion zone, not confirmed in source text.",
+    "date": "not stated (page published 2019)",
+    "kind": "photo",
+    "verified": "curl -sI 200 image/jpeg, 38468 bytes (2026-09-24)"
+  },
+  {
+    "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Opunake-Reef-Flat.jpg?v=1573000303",
+    "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/opunake/",
+    "credit": "Raised Water Research (collectively credited to National Geographic / Stuff.co.nz / Bournemouth Echo)",
+    "license": "Not stated on page — link only, do not download into the project folder",
+    "depicts": "View across Opunake bay from the rocky shoreline toward the surf break, captioned \"Reef Flat\" on the source page (i.e. the general area of the reef site), whitewater visible on the far side of the bay; the reef structure itself is submerged and not distinguishable in the image.",
+    "date": "not stated (page published 2019)",
+    "kind": "photo",
+    "verified": "curl -sI 200 image/jpeg, 26544 bytes (2026-09-24)"
+  },
+  {
+    "url": "https://www.google.com/maps/@-39.46,173.86,17z/data=!3m1!1e3",
+    "source_page": "https://www.google.com/maps/@-39.46,173.86,17z/data=!3m1!1e3",
+    "credit": "Google Maps / satellite imagery providers",
+    "license": "Google Maps Terms of Service — view/link only, not for download or redistribution",
+    "depicts": "Satellite view of Opunake Beach cove, Taranaki, New Zealand, centred near 39.46°S 173.86°E — the reported location of the (unbuilt-to-spec) north reef on the north side of the cove.",
+    "date": "current satellite imagery (access date 2026-09-24)",
+    "kind": "map"
+  }
+]

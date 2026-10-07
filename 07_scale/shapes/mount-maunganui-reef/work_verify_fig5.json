@@ -1,0 +1,77 @@
+{
+ "fig5_scale_px_per_m": 4.2165,
+ "outline_area_m2": 1072.0,
+ "fig5_shallower_than_m2p0_area_m2": 1074.4,
+ "iou_zero_shift": 0.93,
+ "best_shift_px_dx_dy_iou": [
+  0,
+  0,
+  0.93
+ ],
+ "depth_inside_outline_m_CD": {
+  "west 3-bag block": {
+   "n_px": 8289,
+   "shallowest": -0.56,
+   "p5": -0.79,
+   "p10": -0.86,
+   "p25": -1.03,
+   "median": -1.35
+  },
+  "mid-top bag": {
+   "n_px": 1097,
+   "shallowest": -0.99,
+   "p5": -1.11,
+   "p10": -1.22,
+   "p25": -1.36,
+   "median": -1.58
+  },
+  "NE small bag": {
+   "n_px": 361,
+   "shallowest": -0.95,
+   "p5": -1.35,
+   "p10": -1.54,
+   "p25": -1.61,
+   "median": -1.75
+  },
+  "NE lobe": {
+   "n_px": 1795,
+   "shallowest": -0.88,
+   "p5": -1.04,
+   "p10": -1.13,
+   "p25": -1.25,
+   "median": -1.49
+  },
+  "south arm": {
+   "n_px": 6625,
+   "shallowest": -0.16,
+   "p5": -0.32,
+   "p10": -0.48,
+   "p25": -0.94,
+   "median": -1.35
+  }
+ },
+ "bed_plane": {
+  "z0": -1.783,
+  "dz_dx_per_m": -0.0131,
+  "dz_dy_per_m": 0.0098,
+  "resid_std_m": 0.078
+ },
+ "bed_at_reef_centroid_m_CD": -2.41,
+ "bed_relative_footprint": {
+  "+0.3 m above plane bed": {
+   "area_m2": 1247,
+   "alongshore_m": 67.8,
+   "crossshore_m": 63.0
+  },
+  "+0.5 m above plane bed": {
+   "area_m2": 1049,
+   "alongshore_m": 67.1,
+   "crossshore_m": 60.5
+  },
+  "+0.8 m above plane bed": {
+   "area_m2": 791,
+   "alongshore_m": 66.8,
+   "crossshore_m": 58.4
+  }
+ }
+}

@@ -1,0 +1,57 @@
+{
+  "slug": "israel-coastal-protection-audit-reports",
+  "name": "State Comptroller audits of Israeli Mediterranean cliff/coastal protection",
+  "place": "Israel (Hadera–Ashkelon cliffs)",
+  "country": "Israel",
+  "coordinates": { "lat_range": [31.6693, 32.4638], "lon_range": [34.5715, 34.9196], "note": "Ashkelon to Hadera cliff belt; not a single point site" },
+  "type": "audit reports / institutional program (not a built structure)",
+  "purpose": "national policy baseline: budgets allocated vs. spent, national cliff-protection company, failures and recommendations for coastal cliff erosion protection",
+  "status": "ongoing / unresolved as of report data through Sept 2026 (Company funded only to June 2026; land-protection funding framework still unagreed)",
+  "reports": {
+    "report_1_2010": { "covers": "2009 local-government fieldwork", "pages": "345-408", "trigger": "23 Mar 2005 Knesset committee request re: Ashkelon; 30 May 2009 Netanya fatality" },
+    "report_2_2020": { "date": "2020-07-15", "auditor": "Matanyahu Englman" },
+    "report_3_2024_followup": { "date": "2024-07", "type": "follow-up audit on 2020 report's deficiencies" }
+  },
+  "key_figures_nis": {
+    "land_protection_need_2022_est": 670500000,
+    "land_protection_allocated_phase_a": 90000000,
+    "sea_protection_phase_a": 360000000,
+    "sea_protection_spent_reported": 330000000,
+    "sea_protection_phase_b_ask": 360000000,
+    "finance_ministry_phase_b_offer_2024": 150000000,
+    "local_authority_assistance_budget_2019": 60000000,
+    "local_authority_drawdown_jul2023": 21000000,
+    "company_2013_2018_total_spend": 26000000,
+    "company_2013_2018_total_budget": 303000000,
+    "climate_damage_est_0.5m_per_yr": 700000000,
+    "climate_damage_est_1m_per_yr": 2450000000,
+    "bdo_infrastructure_damage_upper_est": 2500000000,
+    "note": "figures as reported across sources; some percentages (e.g. 2013-2018 utilization 8.6% vs 6.8%) disagree between sources - both cited in dossier"
+  },
+  "cliff_belt_km": 45,
+  "segments_total": 39,
+  "segments_land_protection_needed": 27,
+  "segments_land_protection_none_built_2023": 14,
+  "segments_sea_protection_needed": 18,
+  "sea_km_needed": 13,
+  "sea_km_built_by_2023": 5,
+  "implementing_body": "Government Company for the Protection of Mediterranean Sea Cliffs Ltd. (est. 2012-2013, HQ Netanya, CEO Ilan Lavi, Chair Shmuel Litov)",
+  "recent_collapses_post_2024_report": [
+    { "location": "Blue Bay, Netanya-Emek Hefer border", "date": "2024-12" },
+    { "location": "Sidna Ali Beach, Herzliya", "date": "2026-02-21", "note": "date disagreement: one source says Feb 2025 for apparently same event" },
+    { "location": "Herzliya (second collapse same month)", "date": "2026-02 (undated, rain-triggered)" },
+    { "location": "Sharon region, 3 collapses in one week (Neot Afeka, Emek Hefer, Netanya)", "date": "undated, post-2024" }
+  ],
+  "priority": 1,
+  "dossier_md": "02_research/israel/israel-coastal-protection-audit-reports.md",
+  "references_count": 19,
+  "reviews_count_named_individuals": 9,
+  "key_open_gaps": [
+    "full Hebrew-language body of the 2024 report beyond the English abstract",
+    "Minister Idit Silman's quoted reaction to the Sidna Ali collapse (blocked, israelhayom 403)",
+    "Maariv coverage of Sidna Ali collapse (blocked, 403)",
+    "MCCP company press-archive page (found, not fetched)",
+    "confirmed standalone YouTube/Vimeo video leads",
+    "exact date of the Sharon 3-collapses-in-a-week Ynet story"
+  ]
+}

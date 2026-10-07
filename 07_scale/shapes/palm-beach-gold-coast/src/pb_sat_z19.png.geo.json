@@ -1,0 +1,24 @@
+{
+  "image": "pb_sat_z19.png",
+  "width": 1519,
+  "height": 1519,
+  "bounds": {
+    "north": -28.105546214795343,
+    "south": -28.109139996691585,
+    "east": 153.47298234701157,
+    "west": 153.46890807151794
+  },
+  "zoom": 19,
+  "m_per_px_center": 0.26336930444168954,
+  "tile_template": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+  "wayback_release": null,
+  "center": {
+    "lat": -28.1073424,
+    "lon": 153.4709462
+  },
+  "radius_m": 200.0,
+  "attribution": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+  "retrieved": "2026-10-04",
+  "capture_date": "2025-12-01",
+  "capture_date_field": "DATE (YYYYMMDD)"
+}

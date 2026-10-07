@@ -1,0 +1,66 @@
+{
+  "slug": "icm-queensland-sandbag-cliff",
+  "name": "Queensland clay-cliff \"rock-look\" sandbag wall (ICM transcript) vs. Scarborough Cliffs Stabilisation Project (candidate site)",
+  "place": "Thread A (ICM transcript): unnamed site, Queensland. Thread B (candidate): Scarborough, Redcliffe Peninsula, Moreton Bay Region, Queensland",
+  "country": "Australia",
+  "lat_lon": {
+    "value": "not found (precise coordinates not published for either thread)",
+    "confidence": "none"
+  },
+  "year_built": {
+    "value": "Thread A: not stated. Thread B (candidate site): construction completed March 2020",
+    "note": "Thread A site is unidentified; Scarborough is the best-available published candidate but its material description (shotcrete) directly contradicts the transcript's '5-ton sandbags' claim",
+    "refs": ["R1", "R3"]
+  },
+  "type_materials": "MISMATCH FLAGGED: ICM's own conference talk (Thread A, unnamed site) describes a rock-look wall actually built from 5-ton sandbags. The only published ICM Queensland clay-cliff project (Thread B, Scarborough) is documented in two independent sources (company case study + peer-reviewed ICCE paper) as a GFRP-reinforced shotcrete wall with soil nails; a rock armour revetment was considered and rejected; sandbags are not mentioned in either Scarborough source.",
+  "dimensions": {
+    "thread_a_sandbags": "not stated (no bag count, wall length, or footprint given)",
+    "thread_b_scarborough_cliff_length_m": 320,
+    "thread_b_scarborough_notch_depth_m": "up to 1.6",
+    "refs": ["R1", "R3"]
+  },
+  "designer": "ICM (International Coastal Management), Gold Coast, Australia — Thread B jointly with Moreton Bay Regional Council (MBRC) engineers; paper authors Sam King, Martin Mulcahy, Bobbie Corbett, L. Angus Jackson (ICM)",
+  "contractor": "Thread A: not stated. Thread B: Australian Marine & Civil Pty Ltd (tender awarded by MBRC)",
+  "cost": {
+    "amount_aud": null,
+    "amount_usd_rough": null,
+    "year": null,
+    "note": "not disclosed in any source found for either thread",
+    "refs": ["R2", "R3"]
+  },
+  "financed_by": "Thread A: not stated (implied local-government/community-requested). Thread B: Moreton Bay Regional Council (MBRC), which initiated the project",
+  "purpose": "Cliff erosion protection at a popular, walkable public beach; both threads describe the same twin goal of stopping erosion while preserving public amenity/walkability, though the chosen material differs",
+  "current_status": "Thread A: implied success, refurbished once in kind (sandbags again) at community request, no failure described. Thread B: post-construction monitoring through Feb 2022 storm events reports the shotcrete wall performing well and successfully preventing further cliff retreat; monitoring ongoing",
+  "outcome_summary": {
+    "thread_a": "No numeric outcome data given in transcript (no longevity figure, no storm-survival count)",
+    "thread_b": "Shotcrete wall reported intact and effective after Dec 2020 and Feb 2022 storm events; no ecological follow-up study found beyond a design-stage claim that the textured surface would support mollusc habitat",
+    "refs": ["R1", "R2", "R3"]
+  },
+  "priority": 2,
+  "kind": "reef",
+  "dossier_md": "02_research/reefs/icm-queensland-sandbag-cliff.md",
+  "reviews_count": 0,
+  "references_count": 9,
+  "image_leads": [
+    "https://www.coastalmanagement.com.au/coastal-cliff-stabilisation-using-innovative-aesthetic-matching-solution-scarborough-australia",
+    "https://icce-ojs-tamu.tdl.org/icce/article/view/13022",
+    "https://icce-ojs-tamu.tdl.org/icce/article/download/13022/12295/39265",
+    "https://en.wikipedia.org/wiki/Scarborough,_Queensland",
+    "https://www.coastalmanagement.com.au/munna-point-groynes",
+    "https://www.coastalmanagement.com.au/maroochydore-groynes-seawall"
+  ],
+  "video_leads": [
+    "https://www.youtube.com/watch/Gi6wNNP6OKE"
+  ],
+  "lior_source_notes_matched": [
+    "01_source_notes/transcript_goldcoast_reef_company.md"
+  ],
+  "open_questions": [
+    "Identify the true location of the '5-ton sandbags' clay-cliff project described in the ICM transcript — Scarborough's two published accounts both describe shotcrete, not sandbags, so Scarborough should NOT be assumed to be the same site without further verification",
+    "Watch/re-review the original YouTube talk (https://www.youtube.com/watch/Gi6wNNP6OKE) for on-screen slide images that might show the actual sandbag-wall location",
+    "Find cost figures for the Scarborough project (not disclosed in either available source)",
+    "Find precise lat/lon for the Scarborough cliff section",
+    "Find independent local/journalist/resident reviews or news coverage of the Scarborough works (web-search budget exhausted before this could be completed)",
+    "Check Moreton Bay Regional Council's own project/news pages directly (attempted URLs 404'd in this pass) for cost, contractor payment, and community-consultation detail"
+  ]
+}

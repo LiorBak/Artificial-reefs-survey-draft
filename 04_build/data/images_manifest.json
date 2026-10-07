@@ -1,0 +1,6556 @@
+{
+"3d/borth-coastal-defence-reef/annotated/A10_navionics_nautical_z18_reef_outline": {
+"res": {
+"bytes": 70383,
+"h": 775,
+"scale": 1.0,
+"src_h": 775,
+"src_w": 982,
+"w": 982,
+"web": "3d/borth-coastal-defence-reef/annotated/A10_navionics_nautical_z18_reef_outline.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\3d\\annotated\\A10_navionics_nautical_z18_reef_outline.png",
+70383,
+1791321959,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/borth-coastal-defence-reef/annotated/A1_fig2_contours_read": {
+"res": {
+"bytes": 217316,
+"h": 581,
+"scale": 0.70671,
+"src_h": 822,
+"src_w": 1698,
+"w": 1200,
+"web": "3d/borth-coastal-defence-reef/annotated/A1_fig2_contours_read.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\3d\\annotated\\A1_fig2_contours_read.png",
+549058,
+1791322825,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/borth-coastal-defence-reef/annotated/A2_drg1020_rings_and_sop_read": {
+"res": {
+"bytes": 198789,
+"h": 1051,
+"scale": 0.57999,
+"src_h": 1812,
+"src_w": 2069,
+"w": 1200,
+"web": "3d/borth-coastal-defence-reef/annotated/A2_drg1020_rings_and_sop_read.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\3d\\annotated\\A2_drg1020_rings_and_sop_read.png",
+415660,
+1791321516,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/borth-coastal-defence-reef/annotated/A3_drg1021_sections_read": {
+"res": {
+"bytes": 298583,
+"h": 1094,
+"scale": 0.43924,
+"src_h": 2490,
+"src_w": 2732,
+"w": 1200,
+"web": "3d/borth-coastal-defence-reef/annotated/A3_drg1021_sections_read.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\3d\\annotated\\A3_drg1021_sections_read.png",
+897051,
+1791321517,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/borth-coastal-defence-reef/annotated/A4_drg1022_sections_read": {
+"res": {
+"bytes": 250314,
+"h": 1034,
+"scale": 0.43924,
+"src_h": 2355,
+"src_w": 2732,
+"w": 1200,
+"web": "3d/borth-coastal-defence-reef/annotated/A4_drg1022_sections_read.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\3d\\annotated\\A4_drg1022_sections_read.png",
+767180,
+1791321555,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/borth-coastal-defence-reef/annotated/A5_drg1023_sections_read": {
+"res": {
+"bytes": 241740,
+"h": 1046,
+"scale": 0.43924,
+"src_h": 2382,
+"src_w": 2732,
+"w": 1200,
+"web": "3d/borth-coastal-defence-reef/annotated/A5_drg1023_sections_read.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\3d\\annotated\\A5_drg1023_sections_read.png",
+736630,
+1791322319,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/borth-coastal-defence-reef/annotated/A6_lidar_crest_check": {
+"res": {
+"bytes": 98408,
+"h": 740,
+"scale": 0.7571,
+"src_h": 977,
+"src_w": 1585,
+"w": 1200,
+"web": "3d/borth-coastal-defence-reef/annotated/A6_lidar_crest_check.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\3d\\annotated\\A6_lidar_crest_check.png",
+250225,
+1791321670,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/borth-coastal-defence-reef/annotated/A7_lidar_beach_vs_fig2": {
+"res": {
+"bytes": 101645,
+"h": 509,
+"scale": 0.80107,
+"src_h": 635,
+"src_w": 1498,
+"w": 1200,
+"web": "3d/borth-coastal-defence-reef/annotated/A7_lidar_beach_vs_fig2.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\3d\\annotated\\A7_lidar_beach_vs_fig2.png",
+190981,
+1791321670,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/borth-coastal-defence-reef/annotated/A8_seabed_source_zones": {
+"res": {
+"bytes": 232759,
+"h": 855,
+"scale": 1.0,
+"src_h": 855,
+"src_w": 1194,
+"w": 1194,
+"web": "3d/borth-coastal-defence-reef/annotated/A8_seabed_source_zones.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\3d\\annotated\\A8_seabed_source_zones.png",
+223945,
+1791321644,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/borth-coastal-defence-reef/annotated/A9_navionics_sonarchart_z17_annotated": {
+"res": {
+"bytes": 139126,
+"h": 935,
+"scale": 0.611,
+"src_h": 1530,
+"src_w": 1964,
+"w": 1200,
+"web": "3d/borth-coastal-defence-reef/annotated/A9_navionics_sonarchart_z17_annotated.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\3d\\annotated\\A9_navionics_sonarchart_z17_annotated.png",
+373020,
+1791321958,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/borth-coastal-defence-reef/poster": {
+"res": {
+"bytes": 81486,
+"h": 579,
+"scale": 0.64286,
+"src_h": 900,
+"src_w": 1400,
+"w": 900,
+"web": "3d/borth-coastal-defence-reef/poster.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\3d\\preview_oblique.png",
+399770,
+1791322525,
+900,
+400,
+false,
+400000,
+false,
+true
+]
+},
+"3d/boscombe-surf-reef/annotated/cco_profile_lines_plan": {
+"res": {
+"bytes": 105787,
+"h": 884,
+"scale": 1.0,
+"src_h": 884,
+"src_w": 1040,
+"w": 1040,
+"web": "3d/boscombe-surf-reef/annotated/cco_profile_lines_plan.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\cco_profile_lines_plan.png",
+100676,
+1791321216,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/boscombe-surf-reef/annotated/cco_profiles_cross_sections": {
+"res": {
+"bytes": 147464,
+"h": 676,
+"scale": 1.0,
+"src_h": 676,
+"src_w": 1170,
+"w": 1170,
+"web": "3d/boscombe-surf-reef/annotated/cco_profiles_cross_sections.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\cco_profiles_cross_sections.png",
+139558,
+1791321216,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/boscombe-surf-reef/annotated/datum_check_emodnet": {
+"res": {
+"bytes": 177456,
+"h": 655,
+"scale": 0.99174,
+"src_h": 660,
+"src_w": 1210,
+"w": 1200,
+"web": "3d/boscombe-surf-reef/annotated/datum_check_emodnet.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\datum_check_emodnet.png",
+90928,
+1791196772,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/boscombe-surf-reef/annotated/fig9_depth_read_map": {
+"res": {
+"bytes": 145873,
+"h": 406,
+"scale": 0.6012,
+"src_h": 676,
+"src_w": 1996,
+"w": 1200,
+"web": "3d/boscombe-surf-reef/annotated/fig9_depth_read_map.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\fig9_depth_read_map.png",
+793202,
+1791196680,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/boscombe-surf-reef/annotated/fig9_profiles_read": {
+"res": {
+"bytes": 156940,
+"h": 446,
+"scale": 0.39973,
+"src_h": 1116,
+"src_w": 3002,
+"w": 1200,
+"web": "3d/boscombe-surf-reef/annotated/fig9_profiles_read.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\fig9_profiles_read.png",
+1131923,
+1791196681,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/boscombe-surf-reef/annotated/mead_fig3a_design_read": {
+"res": {
+"bytes": 278401,
+"h": 904,
+"scale": 0.86145,
+"src_h": 1049,
+"src_w": 1393,
+"w": 1200,
+"web": "3d/boscombe-surf-reef/annotated/mead_fig3a_design_read.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\mead_fig3a_design_read.png",
+201948,
+1791196761,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/boscombe-surf-reef/annotated/navionics_nauticalchart_z16_nearshore_vs_model_annotated": {
+"res": {
+"bytes": 288226,
+"h": 1001,
+"scale": 1.0,
+"src_h": 1001,
+"src_w": 1144,
+"w": 1144,
+"web": "3d/boscombe-surf-reef/annotated/navionics_nauticalchart_z16_nearshore_vs_model_annotated.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\navionics_nauticalchart_z16_nearshore_vs_model_annotated.png",
+295696,
+1791321097,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/boscombe-surf-reef/annotated/navionics_nauticalchart_z16_offshore_soundings_annotated": {
+"res": {
+"bytes": 179586,
+"h": 356,
+"scale": 0.5,
+"src_h": 713,
+"src_w": 2400,
+"w": 1200,
+"web": "3d/boscombe-surf-reef/annotated/navionics_nauticalchart_z16_offshore_soundings_annotated.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\navionics_nauticalchart_z16_offshore_soundings_annotated.png",
+402486,
+1791321607,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/boscombe-surf-reef/annotated/navionics_nauticalchart_z17_soundings_annotated": {
+"res": {
+"bytes": 174463,
+"h": 682,
+"scale": 0.85714,
+"src_h": 796,
+"src_w": 1400,
+"w": 1200,
+"web": "3d/boscombe-surf-reef/annotated/navionics_nauticalchart_z17_soundings_annotated.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\navionics_nauticalchart_z17_soundings_annotated.png",
+286605,
+1791200745,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/boscombe-surf-reef/annotated/navionics_nauticalchart_z18_annotated": {
+"res": {
+"bytes": 252186,
+"h": 1084,
+"scale": 1.0,
+"src_h": 1084,
+"src_w": 1152,
+"w": 1152,
+"web": "3d/boscombe-surf-reef/annotated/navionics_nauticalchart_z18_annotated.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\navionics_nauticalchart_z18_annotated.png",
+255648,
+1791200745,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/boscombe-surf-reef/annotated/navionics_sonarchart_z18_annotated": {
+"res": {
+"bytes": 147198,
+"h": 1120,
+"scale": 1.0,
+"src_h": 1120,
+"src_w": 1152,
+"w": 1152,
+"web": "3d/boscombe-surf-reef/annotated/navionics_sonarchart_z18_annotated.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\navionics_sonarchart_z18_annotated.png",
+351479,
+1791200744,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/boscombe-surf-reef/annotated/sat2011_model_frame": {
+"res": {
+"bytes": 693487,
+"h": 1200,
+"scale": 0.99917,
+"src_h": 1201,
+"src_w": 1016,
+"w": 1015,
+"web": "3d/boscombe-surf-reef/annotated/sat2011_model_frame.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\sat2011_model_frame.png",
+1255386,
+1791196745,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/boscombe-surf-reef/annotated/seabed_zone_map": {
+"res": {
+"bytes": 134773,
+"h": 1200,
+"scale": 0.96154,
+"src_h": 1248,
+"src_w": 858,
+"w": 825,
+"web": "3d/boscombe-surf-reef/annotated/seabed_zone_map.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\seabed_zone_map.png",
+63421,
+1791321216,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/boscombe-surf-reef/annotated/text_mead2010_p1_tide_gauge": {
+"res": {
+"bytes": 164172,
+"h": 319,
+"scale": 0.89087,
+"src_h": 358,
+"src_w": 1347,
+"w": 1200,
+"web": "3d/boscombe-surf-reef/annotated/text_mead2010_p1_tide_gauge.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\text_mead2010_p1_tide_gauge.png",
+94165,
+1791196815,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/boscombe-surf-reef/annotated/text_mead2010_p2_table1_and_crest": {
+"res": {
+"bytes": 131469,
+"h": 1100,
+"scale": 0.89087,
+"src_h": 1235,
+"src_w": 1347,
+"w": 1200,
+"web": "3d/boscombe-surf-reef/annotated/text_mead2010_p2_table1_and_crest.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\text_mead2010_p2_table1_and_crest.png",
+196947,
+1791196815,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/boscombe-surf-reef/annotated/text_mead2010_p3_design_depth": {
+"res": {
+"bytes": 93503,
+"h": 232,
+"scale": 0.89087,
+"src_h": 260,
+"src_w": 1347,
+"w": 1200,
+"web": "3d/boscombe-surf-reef/annotated/text_mead2010_p3_design_depth.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\text_mead2010_p3_design_depth.png",
+52084,
+1791196815,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/boscombe-surf-reef/annotated/text_rendle2012_datum_sentence": {
+"res": {
+"bytes": 258136,
+"h": 415,
+"scale": 0.91603,
+"src_h": 453,
+"src_w": 1310,
+"w": 1200,
+"web": "3d/boscombe-surf-reef/annotated/text_rendle2012_datum_sentence.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\text_rendle2012_datum_sentence.png",
+138133,
+1791196815,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/boscombe-surf-reef/annotated/text_rendle2012_depth_tides": {
+"res": {
+"bytes": 265394,
+"h": 463,
+"scale": 0.91603,
+"src_h": 505,
+"src_w": 1310,
+"w": 1200,
+"web": "3d/boscombe-surf-reef/annotated/text_rendle2012_depth_tides.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\text_rendle2012_depth_tides.png",
+144523,
+1791196815,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/boscombe-surf-reef/poster": {
+"res": {
+"bytes": 120888,
+"h": 579,
+"scale": 0.64286,
+"src_h": 900,
+"src_w": 1400,
+"w": 900,
+"web": "3d/boscombe-surf-reef/poster.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\preview_oblique.png",
+315028,
+1791321659,
+900,
+400,
+false,
+400000,
+false,
+true
+]
+},
+"3d/bunbury-airwave/annotated/N1_navionics_sonarchart_contours_transects": {
+"res": {
+"bytes": 169877,
+"h": 1043,
+"scale": 0.83916,
+"src_h": 1243,
+"src_w": 1430,
+"w": 1200,
+"web": "3d/bunbury-airwave/annotated/N1_navionics_sonarchart_contours_transects.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\bunbury-airwave\\3d\\annotated\\N1_navionics_sonarchart_contours_transects.png",
+405237,
+1791217289,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/bunbury-airwave/annotated/N2_navionics_datum_rms_test": {
+"res": {
+"bytes": 213598,
+"h": 549,
+"scale": 0.77922,
+"src_h": 704,
+"src_w": 1540,
+"w": 1200,
+"web": "3d/bunbury-airwave/annotated/N2_navionics_datum_rms_test.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\bunbury-airwave\\3d\\annotated\\N2_navionics_datum_rms_test.png",
+163300,
+1791217289,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/bunbury-airwave/annotated/N3_navionics_nautical_soundings": {
+"res": {
+"bytes": 101394,
+"h": 1036,
+"scale": 0.99174,
+"src_h": 1045,
+"src_w": 1210,
+"w": 1200,
+"web": "3d/bunbury-airwave/annotated/N3_navionics_nautical_soundings.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\bunbury-airwave\\3d\\annotated\\N3_navionics_nautical_soundings.png",
+189522,
+1791217290,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/bunbury-airwave/annotated/N4_navionics_reef_site_zoom_no_structure": {
+"res": {
+"bytes": 233940,
+"h": 835,
+"scale": 0.94862,
+"src_h": 880,
+"src_w": 1265,
+"w": 1200,
+"web": "3d/bunbury-airwave/annotated/N4_navionics_reef_site_zoom_no_structure.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\bunbury-airwave\\3d\\annotated\\N4_navionics_reef_site_zoom_no_structure.png",
+162263,
+1791217290,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/bunbury-airwave/annotated/img1_trace_axes_scale": {
+"res": {
+"bytes": 264844,
+"h": 587,
+"scale": 1.0,
+"src_h": 587,
+"src_w": 956,
+"w": 956,
+"web": "3d/bunbury-airwave/annotated/img1_trace_axes_scale.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\bunbury-airwave\\3d\\annotated\\img1_trace_axes_scale.png",
+699651,
+1791175262,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/bunbury-airwave/annotated/lidar_cells_at_reef": {
+"res": {
+"bytes": 105771,
+"h": 726,
+"scale": 1.0,
+"src_h": 726,
+"src_w": 1100,
+"w": 1100,
+"web": "3d/bunbury-airwave/annotated/lidar_cells_at_reef.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\bunbury-airwave\\3d\\annotated\\lidar_cells_at_reef.png",
+98543,
+1791175261,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/bunbury-airwave/annotated/lidar_contours_on_satellite": {
+"res": {
+"bytes": 460950,
+"h": 1003,
+"scale": 0.99174,
+"src_h": 1011,
+"src_w": 1210,
+"w": 1200,
+"web": "3d/bunbury-airwave/annotated/lidar_contours_on_satellite.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\bunbury-airwave\\3d\\annotated\\lidar_contours_on_satellite.png",
+1233404,
+1791175261,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/bunbury-airwave/annotated/seabed_profile_with_tides": {
+"res": {
+"bytes": 218291,
+"h": 611,
+"scale": 0.99174,
+"src_h": 616,
+"src_w": 1210,
+"w": 1200,
+"web": "3d/bunbury-airwave/annotated/seabed_profile_with_tides.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\bunbury-airwave\\3d\\annotated\\seabed_profile_with_tides.png",
+109891,
+1791175262,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/bunbury-airwave/poster": {
+"res": {
+"bytes": 82926,
+"h": 579,
+"scale": 0.64286,
+"src_h": 900,
+"src_w": 1400,
+"w": 900,
+"web": "3d/bunbury-airwave/poster.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\bunbury-airwave\\3d\\preview_oblique.png",
+207812,
+1791217350,
+900,
+400,
+false,
+400000,
+false,
+true
+]
+},
+"3d/mount-maunganui-reef/annotated/mmr_model_checks": {
+"res": {
+"bytes": 115875,
+"h": 831,
+"scale": 0.83916,
+"src_h": 990,
+"src_w": 1430,
+"w": 1200,
+"web": "3d/mount-maunganui-reef/annotated/mmr_model_checks.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\mount-maunganui-reef\\3d\\annotated\\mmr_model_checks.png",
+258155,
+1791305910,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/mount-maunganui-reef/annotated/nav_datum_test": {
+"res": {
+"bytes": 115719,
+"h": 598,
+"scale": 1.0,
+"src_h": 598,
+"src_w": 1105,
+"w": 1105,
+"web": "3d/mount-maunganui-reef/annotated/nav_datum_test.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\mount-maunganui-reef\\3d\\annotated\\nav_datum_test.png",
+107623,
+1791305124,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/mount-maunganui-reef/annotated/nav_naut_z17_check": {
+"res": {
+"bytes": 44100,
+"h": 725,
+"scale": 1.0,
+"src_h": 725,
+"src_w": 982,
+"w": 982,
+"web": "3d/mount-maunganui-reef/annotated/nav_naut_z17_check.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\mount-maunganui-reef\\3d\\annotated\\nav_naut_z17_check.png",
+46091,
+1791305123,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/mount-maunganui-reef/annotated/nav_sonar_z17_profile": {
+"res": {
+"bytes": 86628,
+"h": 785,
+"scale": 1.0,
+"src_h": 785,
+"src_w": 982,
+"w": 982,
+"web": "3d/mount-maunganui-reef/annotated/nav_sonar_z17_profile.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\mount-maunganui-reef\\3d\\annotated\\nav_sonar_z17_profile.png",
+90911,
+1791305123,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/mount-maunganui-reef/poster": {
+"res": {
+"bytes": 113533,
+"h": 579,
+"scale": 0.64286,
+"src_h": 900,
+"src_w": 1400,
+"w": 900,
+"web": "3d/mount-maunganui-reef/poster.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\mount-maunganui-reef\\3d\\preview_oblique.png",
+311336,
+1791321457,
+900,
+400,
+false,
+400000,
+false,
+true
+]
+},
+"3d/palm-beach-gold-coast/annotated/model_sections": {
+"res": {
+"bytes": 247358,
+"h": 950,
+"scale": 0.90909,
+"src_h": 1045,
+"src_w": 1320,
+"w": 1200,
+"web": "3d/palm-beach-gold-coast/annotated/model_sections.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\3d\\annotated\\model_sections.png",
+142182,
+1791217315,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/palm-beach-gold-coast/annotated/mortensen2015_fig3_slopes_crest_read": {
+"res": {
+"bytes": 195400,
+"h": 862,
+"scale": 0.66335,
+"src_h": 1299,
+"src_w": 1809,
+"w": 1200,
+"web": "3d/palm-beach-gold-coast/annotated/mortensen2015_fig3_slopes_crest_read.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\3d\\annotated\\mortensen2015_fig3_slopes_crest_read.png",
+884808,
+1791217315,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/palm-beach-gold-coast/annotated/msq_tidal_planes_2026_gold_coast_seaway": {
+"res": {
+"bytes": 158011,
+"h": 848,
+"scale": 0.6476,
+"src_h": 1310,
+"src_w": 1853,
+"w": 1200,
+"web": "3d/palm-beach-gold-coast/annotated/msq_tidal_planes_2026_gold_coast_seaway.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\3d\\annotated\\msq_tidal_planes_2026_gold_coast_seaway.png",
+371068,
+1791217315,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/palm-beach-gold-coast/annotated/nav_isolines_and_datum_test": {
+"res": {
+"bytes": 158224,
+"h": 578,
+"scale": 0.70588,
+"src_h": 819,
+"src_w": 1700,
+"w": 1200,
+"web": "3d/palm-beach-gold-coast/annotated/nav_isolines_and_datum_test.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\3d\\annotated\\nav_isolines_and_datum_test.png",
+136269,
+1791217315,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/palm-beach-gold-coast/annotated/nav_nautical_z18_fish_haven_label": {
+"res": {
+"bytes": 211879,
+"h": 800,
+"scale": 0.611,
+"src_h": 1310,
+"src_w": 1964,
+"w": 1200,
+"web": "3d/palm-beach-gold-coast/annotated/nav_nautical_z18_fish_haven_label.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\3d\\annotated\\nav_nautical_z18_fish_haven_label.png",
+179556,
+1791217315,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/palm-beach-gold-coast/annotated/nav_sonar_z18_labels_read_with_reef_outline": {
+"res": {
+"bytes": 178370,
+"h": 800,
+"scale": 0.611,
+"src_h": 1310,
+"src_w": 1964,
+"w": 1200,
+"web": "3d/palm-beach-gold-coast/annotated/nav_sonar_z18_labels_read_with_reef_outline.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\3d\\annotated\\nav_sonar_z18_labels_read_with_reef_outline.png",
+367538,
+1791217315,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/palm-beach-gold-coast/annotated/s4_icce_fig1_distance_and_icon": {
+"res": {
+"bytes": 391365,
+"h": 639,
+"scale": 0.82248,
+"src_h": 777,
+"src_w": 1459,
+"w": 1200,
+"web": "3d/palm-beach-gold-coast/annotated/s4_icce_fig1_distance_and_icon.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\3d\\annotated\\s4_icce_fig1_distance_and_icon.png",
+1401485,
+1791217316,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/palm-beach-gold-coast/annotated/s5_icce_fig4_qualitative_only": {
+"res": {
+"bytes": 127085,
+"h": 501,
+"scale": 1.0,
+"src_h": 501,
+"src_w": 1029,
+"w": 1029,
+"web": "3d/palm-beach-gold-coast/annotated/s5_icce_fig4_qualitative_only.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\3d\\annotated\\s5_icce_fig4_qualitative_only.png",
+404504,
+1791217316,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/palm-beach-gold-coast/annotated/s7_contours_ranked_elevations": {
+"res": {
+"bytes": 705884,
+"h": 800,
+"scale": 0.5772,
+"src_h": 1386,
+"src_w": 2079,
+"w": 1200,
+"web": "3d/palm-beach-gold-coast/annotated/s7_contours_ranked_elevations.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\3d\\annotated\\s7_contours_ranked_elevations.png",
+3986110,
+1791217314,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/palm-beach-gold-coast/annotated/s7_side_slopes_from_line_spacing": {
+"res": {
+"bytes": 715699,
+"h": 800,
+"scale": 0.5772,
+"src_h": 1386,
+"src_w": 2079,
+"w": 1200,
+"web": "3d/palm-beach-gold-coast/annotated/s7_side_slopes_from_line_spacing.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\3d\\annotated\\s7_side_slopes_from_line_spacing.png",
+4040279,
+1791217314,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/palm-beach-gold-coast/annotated/s7_toe_depth_from_contour_rank": {
+"res": {
+"bytes": 707237,
+"h": 800,
+"scale": 0.5772,
+"src_h": 1386,
+"src_w": 2079,
+"w": 1200,
+"web": "3d/palm-beach-gold-coast/annotated/s7_toe_depth_from_contour_rank.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\3d\\annotated\\s7_toe_depth_from_contour_rank.png",
+3979497,
+1791217314,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/palm-beach-gold-coast/annotated/s8_epw2020_text_used": {
+"res": {
+"bytes": 314798,
+"h": 848,
+"scale": 0.86083,
+"src_h": 985,
+"src_w": 1394,
+"w": 1200,
+"web": "3d/palm-beach-gold-coast/annotated/s8_epw2020_text_used.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\3d\\annotated\\s8_epw2020_text_used.png",
+1041594,
+1791217315,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/palm-beach-gold-coast/poster": {
+"res": {
+"bytes": 73184,
+"h": 579,
+"scale": 0.64286,
+"src_h": 900,
+"src_w": 1400,
+"w": 900,
+"web": "3d/palm-beach-gold-coast/poster.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\3d\\preview_oblique.png",
+404248,
+1791217768,
+900,
+400,
+false,
+400000,
+false,
+true
+]
+},
+"3d/prattes-reef-el-segundo/annotated/A10_navionics_nautical_chart_soundings": {
+"res": {
+"bytes": 70302,
+"h": 933,
+"scale": 1.0,
+"src_h": 933,
+"src_w": 985,
+"w": 985,
+"web": "3d/prattes-reef-el-segundo/annotated/A10_navionics_nautical_chart_soundings.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A10_navionics_nautical_chart_soundings.png",
+73244,
+1791217390,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/prattes-reef-el-segundo/annotated/A11_navionics_vs_noaa_dem_profile": {
+"res": {
+"bytes": 201347,
+"h": 480,
+"scale": 0.77922,
+"src_h": 616,
+"src_w": 1540,
+"w": 1200,
+"web": "3d/prattes-reef-el-segundo/annotated/A11_navionics_vs_noaa_dem_profile.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A11_navionics_vs_noaa_dem_profile.png",
+131325,
+1791217390,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/prattes-reef-el-segundo/annotated/A12_bn2003_p1-3_text_highlighted": {
+"res": {
+"bytes": 174750,
+"h": 640,
+"scale": 0.48368,
+"src_h": 1323,
+"src_w": 2481,
+"w": 1200,
+"web": "3d/prattes-reef-el-segundo/annotated/A12_bn2003_p1-3_text_highlighted.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A12_bn2003_p1-3_text_highlighted.png",
+1168303,
+1791217391,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/prattes-reef-el-segundo/annotated/A13_bn2003_fig4_vs_skelly_img1": {
+"res": {
+"bytes": 197551,
+"h": 828,
+"scale": 0.52957,
+"src_h": 1564,
+"src_w": 2266,
+"w": 1200,
+"web": "3d/prattes-reef-el-segundo/annotated/A13_bn2003_fig4_vs_skelly_img1.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A13_bn2003_fig4_vs_skelly_img1.png",
+952932,
+1791217391,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/prattes-reef-el-segundo/annotated/A14_bn2003_fig2_aerial_position": {
+"res": {
+"bytes": 486422,
+"h": 871,
+"scale": 0.92593,
+"src_h": 941,
+"src_w": 1296,
+"w": 1200,
+"web": "3d/prattes-reef-el-segundo/annotated/A14_bn2003_fig2_aerial_position.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A14_bn2003_fig2_aerial_position.png",
+1069862,
+1791217392,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/prattes-reef-el-segundo/annotated/A15_bn2003_fig5-8_reef_profiles_digitised": {
+"res": {
+"bytes": 296576,
+"h": 760,
+"scale": 0.72727,
+"src_h": 1045,
+"src_w": 1650,
+"w": 1200,
+"web": "3d/prattes-reef-el-segundo/annotated/A15_bn2003_fig5-8_reef_profiles_digitised.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A15_bn2003_fig5-8_reef_profiles_digitised.png",
+206049,
+1791217392,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/prattes-reef-el-segundo/annotated/A16_bn2003_fig9_bathymetry_utm": {
+"res": {
+"bytes": 242903,
+"h": 576,
+"scale": 0.72727,
+"src_h": 792,
+"src_w": 1650,
+"w": 1200,
+"web": "3d/prattes-reef-el-segundo/annotated/A16_bn2003_fig9_bathymetry_utm.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A16_bn2003_fig9_bathymetry_utm.png",
+215186,
+1791217392,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/prattes-reef-el-segundo/annotated/A17_bn2003_p14_p16_text_highlighted": {
+"res": {
+"bytes": 209297,
+"h": 932,
+"scale": 0.72551,
+"src_h": 1285,
+"src_w": 1654,
+"w": 1200,
+"web": "3d/prattes-reef-el-segundo/annotated/A17_bn2003_p14_p16_text_highlighted.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A17_bn2003_p14_p16_text_highlighted.png",
+500209,
+1791217392,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/prattes-reef-el-segundo/annotated/A1_skelly_drawing_crest_labels_and_scale": {
+"res": {
+"bytes": 185310,
+"h": 1200,
+"scale": 0.68966,
+"src_h": 1740,
+"src_w": 1232,
+"w": 850,
+"web": "3d/prattes-reef-el-segundo/annotated/A1_skelly_drawing_crest_labels_and_scale.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A1_skelly_drawing_crest_labels_and_scale.png",
+547715,
+1791217386,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/prattes-reef-el-segundo/annotated/A2_ccc_exhibit2_profile_datums": {
+"res": {
+"bytes": 133617,
+"h": 1200,
+"scale": 0.64171,
+"src_h": 1870,
+"src_w": 1276,
+"w": 819,
+"web": "3d/prattes-reef-el-segundo/annotated/A2_ccc_exhibit2_profile_datums.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A2_ccc_exhibit2_profile_datums.png",
+370151,
+1791217387,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/prattes-reef-el-segundo/annotated/A3_ccc_exhibit3_contours_section_AA": {
+"res": {
+"bytes": 129970,
+"h": 1179,
+"scale": 1.0,
+"src_h": 1179,
+"src_w": 1177,
+"w": 1177,
+"web": "3d/prattes-reef-el-segundo/annotated/A3_ccc_exhibit3_contours_section_AA.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A3_ccc_exhibit3_contours_section_AA.png",
+313254,
+1791217387,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/prattes-reef-el-segundo/annotated/A4_icce2010_p7_pratte_text_highlighted": {
+"res": {
+"bytes": 200980,
+"h": 1200,
+"scale": 0.77121,
+"src_h": 1556,
+"src_w": 992,
+"w": 765,
+"web": "3d/prattes-reef-el-segundo/annotated/A4_icce2010_p7_pratte_text_highlighted.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A4_icce2010_p7_pratte_text_highlighted.png",
+425324,
+1791217387,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/prattes-reef-el-segundo/annotated/A5_icce2010_fig1_pratte_bag_size": {
+"res": {
+"bytes": 97174,
+"h": 583,
+"scale": 1.0,
+"src_h": 583,
+"src_w": 973,
+"w": 973,
+"web": "3d/prattes-reef-el-segundo/annotated/A5_icce2010_fig1_pratte_bag_size.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A5_icce2010_fig1_pratte_bag_size.png",
+98460,
+1791217387,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/prattes-reef-el-segundo/annotated/A6_ccc_p11_project_description_highlighted": {
+"res": {
+"bytes": 241225,
+"h": 1200,
+"scale": 0.83624,
+"src_h": 1435,
+"src_w": 1020,
+"w": 853,
+"web": "3d/prattes-reef-el-segundo/annotated/A6_ccc_p11_project_description_highlighted.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A6_ccc_p11_project_description_highlighted.png",
+607725,
+1791217388,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/prattes-reef-el-segundo/annotated/A7_noaa_dem_map_and_seabed_profile": {
+"res": {
+"bytes": 124969,
+"h": 655,
+"scale": 0.72727,
+"src_h": 901,
+"src_w": 1650,
+"w": 1200,
+"web": "3d/prattes-reef-el-segundo/annotated/A7_noaa_dem_map_and_seabed_profile.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A7_noaa_dem_map_and_seabed_profile.png",
+350637,
+1791218388,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/prattes-reef-el-segundo/annotated/A8_noaa_tidal_datums_and_crest_states": {
+"res": {
+"bytes": 87003,
+"h": 715,
+"scale": 1.0,
+"src_h": 715,
+"src_w": 990,
+"w": 990,
+"web": "3d/prattes-reef-el-segundo/annotated/A8_noaa_tidal_datums_and_crest_states.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A8_noaa_tidal_datums_and_crest_states.png",
+74612,
+1791218395,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/prattes-reef-el-segundo/annotated/A9_navionics_sonarchart_contours_transect": {
+"res": {
+"bytes": 142104,
+"h": 1113,
+"scale": 1.0,
+"src_h": 1113,
+"src_w": 985,
+"w": 985,
+"web": "3d/prattes-reef-el-segundo/annotated/A9_navionics_sonarchart_contours_transect.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A9_navionics_sonarchart_contours_transect.png",
+147203,
+1791217390,
+1200,
+400,
+false,
+null,
+true,
+false
+]
+},
+"3d/prattes-reef-el-segundo/poster": {
+"res": {
+"bytes": 117644,
+"h": 579,
+"scale": 0.64286,
+"src_h": 900,
+"src_w": 1400,
+"w": 900,
+"web": "3d/prattes-reef-el-segundo/poster.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\preview_oblique.png",
+266960,
+1791217933,
+900,
+400,
+false,
+400000,
+false,
+true
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-03": {
+"res": {
+"bytes": 246918,
+"h": 1067,
+"scale": 1.0,
+"src_h": 1067,
+"src_w": 1600,
+"th": 267,
+"thumb": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-03_400.jpg",
+"tw": 400,
+"w": 1600,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-03.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\03_images\\reefs\\borth-coastal-defence-reef\\borth-coastal-defence-reef_building-the-reef_2011-08.jpg",
+290161,
+1791235426,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-08": {
+"res": {
+"bytes": 334923,
+"h": 1540,
+"scale": 1.0,
+"src_h": 1540,
+"src_w": 1540,
+"th": 400,
+"thumb": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-08_400.jpg",
+"tw": 400,
+"w": 1540,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-08.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\src\\borth_esri_2024-09-17_z19.png",
+2037742,
+1791128802,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-08_ann1": {
+"res": {
+"bytes": 354968,
+"h": 1540,
+"scale": 1.0,
+"src_h": 1540,
+"src_w": 1540,
+"w": 1540,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-08_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\overlays\\verify_trace_sat2024.png",
+2101828,
+1791271724,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-08_ann2": {
+"res": {
+"bytes": 395365,
+"h": 1540,
+"scale": 1.0,
+"src_h": 1540,
+"src_w": 1540,
+"w": 1540,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-08_ann2.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\overlays\\verify_design_lidar_vs_trace_sat2024.png",
+2012343,
+1791271609,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-09": {
+"res": {
+"bytes": 510708,
+"h": 1540,
+"scale": 1.0,
+"src_h": 1540,
+"src_w": 1540,
+"th": 400,
+"thumb": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-09_400.jpg",
+"tw": 400,
+"w": 1540,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-09.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\src\\borth_esri_2022-08-25_z19.png",
+3433160,
+1791128834,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-09_ann1": {
+"res": {
+"bytes": 526494,
+"h": 1540,
+"scale": 1.0,
+"src_h": 1540,
+"src_w": 1540,
+"w": 1540,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-09_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\overlays\\verify_trace_sat2022.png",
+3469801,
+1791271724,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-10": {
+"res": {
+"bytes": 165789,
+"h": 1540,
+"scale": 1.0,
+"src_h": 1540,
+"src_w": 1540,
+"th": 400,
+"thumb": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-10_400.jpg",
+"tw": 400,
+"w": 1540,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-10.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\src\\borth_esri_2012-10-27_z19.png",
+1240129,
+1791128908,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-10_ann1": {
+"res": {
+"bytes": 190228,
+"h": 1540,
+"scale": 1.0,
+"src_h": 1540,
+"src_w": 1540,
+"w": 1540,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-10_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\overlays\\verify_trace_sat2012.png",
+1325216,
+1791271724,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-12": {
+"res": {
+"bytes": 441327,
+"h": 1600,
+"scale": 0.41558,
+"src_h": 3849,
+"src_w": 3850,
+"th": 400,
+"thumb": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-12_400.jpg",
+"tw": 400,
+"w": 1600,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-12.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\src\\borth_shoreline_z19.png",
+13817386,
+1791102142,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-12_ann1": {
+"res": {
+"bytes": 164364,
+"h": 900,
+"scale": 1.0,
+"src_h": 900,
+"src_w": 850,
+"w": 850,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-12_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\overlays\\zoom7_shoreline.png",
+668481,
+1791102070,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-12_ann2": {
+"res": {
+"bytes": 334274,
+"h": 750,
+"scale": 1.0,
+"src_h": 750,
+"src_w": 750,
+"w": 750,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-12_ann2.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\overlays\\zoom8_prom.png",
+350383,
+1791102169,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-12_ann3": {
+"res": {
+"bytes": 136431,
+"h": 1170,
+"scale": 1.0,
+"src_h": 1170,
+"src_w": 650,
+"w": 650,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-12_ann3.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\overlays\\zoom9_prom2.png",
+735057,
+1791102176,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-12_ann4": {
+"res": {
+"bytes": 195724,
+"h": 500,
+"scale": 1.0,
+"src_h": 500,
+"src_w": 750,
+"w": 750,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-12_ann4.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\overlays\\zoom10_edge.png",
+207754,
+1791102193,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-14": {
+"res": {
+"bytes": 128799,
+"h": 1176,
+"scale": 0.94118,
+"src_h": 1250,
+"src_w": 1700,
+"th": 294,
+"thumb": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-14_400.jpg",
+"tw": 400,
+"w": 1600,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-14.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\bathymetry\\emodnet\\viewer\\borth-coastal-defence-reef_viewer_dtm_raw.png",
+1219644,
+1791236399,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-14_ann1": {
+"res": {
+"bytes": 204565,
+"h": 1062,
+"scale": 0.94118,
+"src_h": 1128,
+"src_w": 1700,
+"w": 1600,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-14_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\bathymetry\\emodnet\\viewer\\borth-coastal-defence-reef_viewer_dtm_annotated.png",
+1213759,
+1791252426,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-15": {
+"res": {
+"bytes": 153050,
+"h": 1176,
+"scale": 0.94118,
+"src_h": 1250,
+"src_w": 1700,
+"th": 294,
+"thumb": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-15_400.jpg",
+"tw": 400,
+"w": 1600,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-15.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\bathymetry\\emodnet\\viewer\\borth-coastal-defence-reef_viewer_sources_raw.png",
+1378506,
+1791236439,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-15_ann1": {
+"res": {
+"bytes": 239829,
+"h": 1062,
+"scale": 0.94118,
+"src_h": 1128,
+"src_w": 1700,
+"w": 1600,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-15_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\bathymetry\\emodnet\\viewer\\borth-coastal-defence-reef_viewer_sources_annotated.png",
+1362682,
+1791252427,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-16": {
+"res": {
+"bytes": 216470,
+"h": 1050,
+"scale": 0.85333,
+"src_h": 1230,
+"src_w": 1875,
+"th": 262,
+"thumb": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-16_400.jpg",
+"tw": 400,
+"w": 1600,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-16.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\bathymetry\\emodnet\\figures\\borth-coastal-defence-reef_profile_emodnet.png",
+112655,
+1791252418,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-17": {
+"res": {
+"bytes": 178814,
+"h": 349,
+"scale": 1.0,
+"src_h": 349,
+"src_w": 849,
+"th": 164,
+"thumb": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-17_400.jpg",
+"tw": 400,
+"w": 849,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-17.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\03_images\\reefs\\borth-coastal-defence-reef\\borth-coastal-defence-reef_hrpp576-fig2-layout-contours_2013.png",
+86233,
+1791271725,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-17_ann1": {
+"res": {
+"bytes": 198796,
+"h": 775,
+"scale": 0.94229,
+"src_h": 822,
+"src_w": 1698,
+"w": 1600,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-17_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\3d\\annotated\\A1_fig2_contours_read.png",
+549058,
+1791322825,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-17_ann2": {
+"res": {
+"bytes": 199581,
+"h": 635,
+"scale": 1.0,
+"src_h": 635,
+"src_w": 1498,
+"w": 1498,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-17_ann2.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\3d\\annotated\\A7_lidar_beach_vs_fig2.png",
+190981,
+1791321670,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-18": {
+"res": {
+"bytes": 71962,
+"h": 507,
+"scale": 1.0,
+"src_h": 507,
+"src_w": 862,
+"th": 235,
+"thumb": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-18_400.jpg",
+"tw": 400,
+"w": 862,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-18.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\03_images\\reefs\\borth-coastal-defence-reef\\borth-coastal-defence-reef_hrpp576-fig3-initial-north-reef_2013.png",
+58968,
+1791271725,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-19": {
+"res": {
+"bytes": 198189,
+"h": 1130,
+"scale": 0.4392,
+"src_h": 2573,
+"src_w": 3643,
+"th": 283,
+"thumb": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-19_400.jpg",
+"tw": 400,
+"w": 1600,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-19.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\src\\borth_rh-drg-9V5090-1001_general-arrangement_2010.png",
+1306500,
+1791271725,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-20": {
+"res": {
+"bytes": 156429,
+"h": 1130,
+"scale": 0.4392,
+"src_h": 2573,
+"src_w": 3643,
+"th": 283,
+"thumb": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-20_400.jpg",
+"tw": 400,
+"w": 1600,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-20.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\src\\borth_rh-drg-9V5090-1020_multipurpose-reef-plan_2010.png",
+907270,
+1791271725,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-20_ann1": {
+"res": {
+"bytes": 395365,
+"h": 1540,
+"scale": 1.0,
+"src_h": 1540,
+"src_w": 1540,
+"w": 1540,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-20_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\overlays\\verify_design_lidar_vs_trace_sat2024.png",
+2012343,
+1791271609,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-20_ann2": {
+"res": {
+"bytes": 278534,
+"h": 1401,
+"scale": 0.77332,
+"src_h": 1812,
+"src_w": 2069,
+"w": 1600,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-20_ann2.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\3d\\annotated\\A2_drg1020_rings_and_sop_read.png",
+415660,
+1791321516,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-21": {
+"res": {
+"bytes": 228194,
+"h": 1130,
+"scale": 0.4392,
+"src_h": 2573,
+"src_w": 3643,
+"th": 283,
+"thumb": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-21_400.jpg",
+"tw": 400,
+"w": 1600,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-21.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\src\\borth_rh-drg-9V5090-1021_northern-reef-sections-1_2010.png",
+476658,
+1791271725,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-21_ann1": {
+"res": {
+"bytes": 192977,
+"h": 1458,
+"scale": 0.58565,
+"src_h": 2490,
+"src_w": 2732,
+"w": 1600,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-21_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\3d\\annotated\\A3_drg1021_sections_read.png",
+897051,
+1791321517,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-22": {
+"res": {
+"bytes": 205843,
+"h": 1130,
+"scale": 0.4392,
+"src_h": 2573,
+"src_w": 3643,
+"th": 283,
+"thumb": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-22_400.jpg",
+"tw": 400,
+"w": 1600,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-22.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\src\\borth_rh-drg-9V5090-1022_northern-reef-sections-2_2010.png",
+442809,
+1791271725,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-22_ann1": {
+"res": {
+"bytes": 379965,
+"h": 1379,
+"scale": 0.58565,
+"src_h": 2355,
+"src_w": 2732,
+"w": 1600,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-22_ann1.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\3d\\annotated\\A4_drg1022_sections_read.png",
+767180,
+1791321555,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-23": {
+"res": {
+"bytes": 194724,
+"h": 1130,
+"scale": 0.4392,
+"src_h": 2573,
+"src_w": 3643,
+"th": 283,
+"thumb": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-23_400.jpg",
+"tw": 400,
+"w": 1600,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-23.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\src\\borth_rh-drg-9V5090-1023_southern-reef-sections_2010.png",
+422812,
+1791271725,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-23_ann1": {
+"res": {
+"bytes": 365282,
+"h": 1395,
+"scale": 0.58565,
+"src_h": 2382,
+"src_w": 2732,
+"w": 1600,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-23_ann1.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\3d\\annotated\\A5_drg1023_sections_read.png",
+736630,
+1791322319,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-24": {
+"res": {
+"bytes": 151206,
+"h": 768,
+"scale": 0.9697,
+"src_h": 792,
+"src_w": 1650,
+"th": 192,
+"thumb": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-24_400.jpg",
+"tw": 400,
+"w": 1600,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-24.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\overlays\\verify_lidar_dsm_2022-03-19_sections.png",
+336419,
+1791271662,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-24_ann1": {
+"res": {
+"bytes": 271229,
+"h": 977,
+"scale": 1.0,
+"src_h": 977,
+"src_w": 1585,
+"w": 1585,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-24_ann1.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\3d\\annotated\\A6_lidar_crest_check.png",
+250225,
+1791321670,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-25": {
+"res": {
+"bytes": 395365,
+"h": 1540,
+"scale": 1.0,
+"src_h": 1540,
+"src_w": 1540,
+"th": 400,
+"thumb": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-25_400.jpg",
+"tw": 400,
+"w": 1540,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-25.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\overlays\\verify_design_lidar_vs_trace_sat2024.png",
+2012343,
+1791271609,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-26": {
+"res": {
+"bytes": 25856,
+"h": 655,
+"scale": 1.0,
+"src_h": 655,
+"src_w": 982,
+"th": 267,
+"thumb": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-26_400.jpg",
+"tw": 400,
+"w": 982,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-26.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\3d\\src\\navionics\\sonar_z17_shade00.0.png",
+25889,
+1791321407,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-26_ann1": {
+"res": {
+"bytes": 256122,
+"h": 1246,
+"scale": 0.81466,
+"src_h": 1530,
+"src_w": 1964,
+"w": 1600,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-26_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\3d\\annotated\\A9_navionics_sonarchart_z17_annotated.png",
+373020,
+1791321958,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-27": {
+"res": {
+"bytes": 19752,
+"h": 655,
+"scale": 1.0,
+"src_h": 655,
+"src_w": 982,
+"th": 267,
+"thumb": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-27_400.jpg",
+"tw": 400,
+"w": 982,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-27.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\3d\\src\\navionics\\sonar_z18_shade00.0.png",
+19615,
+1791321344,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-28": {
+"res": {
+"bytes": 24189,
+"h": 655,
+"scale": 1.0,
+"src_h": 655,
+"src_w": 982,
+"th": 267,
+"thumb": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-28_400.jpg",
+"tw": 400,
+"w": 982,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-28.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\3d\\src\\navionics\\naut_z17_shade00.0.png",
+24149,
+1791321537,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-29": {
+"res": {
+"bytes": 17515,
+"h": 655,
+"scale": 1.0,
+"src_h": 655,
+"src_w": 982,
+"th": 267,
+"thumb": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-29_400.jpg",
+"tw": 400,
+"w": 982,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-29.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\3d\\src\\navionics\\naut_z18_shade00.0.png",
+17184,
+1791321474,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-29_ann1": {
+"res": {
+"bytes": 70383,
+"h": 775,
+"scale": 1.0,
+"src_h": 775,
+"src_w": 982,
+"w": 982,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-29_ann1.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\3d\\annotated\\A10_navionics_nautical_z18_reef_outline.png",
+70383,
+1791321959,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-30": {
+"res": {
+"bytes": 232759,
+"h": 855,
+"scale": 1.0,
+"src_h": 855,
+"src_w": 1194,
+"th": 286,
+"thumb": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-30_400.jpg",
+"tw": 400,
+"w": 1194,
+"web": "assets/images/borth-coastal-defence-reef/borth-coastal-defence-reef-img-30.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\borth-coastal-defence-reef\\3d\\annotated\\A8_seabed_source_zones.png",
+223945,
+1791321644,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-02": {
+"res": {
+"bytes": 91721,
+"h": 800,
+"scale": 1.0,
+"src_h": 800,
+"src_w": 1200,
+"th": 267,
+"thumb": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-02_400.jpg",
+"tw": 400,
+"w": 1200,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-02.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\03_images\\reefs\\boscombe-surf-reef\\boscombe-surf-reef_aerial-from-pier_unknown-date.jpg",
+87599,
+1791235670,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-03": {
+"res": {
+"bytes": 94889,
+"h": 800,
+"scale": 1.0,
+"src_h": 800,
+"src_w": 1200,
+"th": 267,
+"thumb": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-03_400.jpg",
+"tw": 400,
+"w": 1200,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-03.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\03_images\\reefs\\boscombe-surf-reef\\boscombe-surf-reef_bags-exposed_unknown-date.jpg",
+91108,
+1791235671,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-08": {
+"res": {
+"bytes": 406234,
+"h": 1600,
+"scale": 0.75614,
+"src_h": 2116,
+"src_w": 2116,
+"th": 400,
+"thumb": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-08_400.jpg",
+"tw": 400,
+"w": 1600,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-08.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\src\\esri_wayback10_2011-09-28_z18_wide.png",
+5781691,
+1791101960,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-08_ann1": {
+"res": {
+"bytes": 206171,
+"h": 1201,
+"scale": 1.0,
+"src_h": 1201,
+"src_w": 1016,
+"w": 1016,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-08_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\sat2011_model_frame.png",
+1255386,
+1791196745,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-08_ann2": {
+"res": {
+"bytes": 81958,
+"h": 1040,
+"scale": 1.0,
+"src_h": 1040,
+"src_w": 600,
+"w": 600,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-08_ann2.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\overlays\\img1_trace_context.png",
+719642,
+1791157814,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-08_ann3": {
+"res": {
+"bytes": 165352,
+"h": 1120,
+"scale": 1.0,
+"src_h": 1120,
+"src_w": 980,
+"w": 980,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-08_ann3.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\overlays\\img1_trace_closeup.png",
+1323311,
+1791157814,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-08_ann4": {
+"res": {
+"bytes": 337947,
+"h": 894,
+"scale": 1.0,
+"src_h": 894,
+"src_w": 1530,
+"w": 1530,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-08_ann4.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\overlays\\img1_verify_closeup.png",
+1304138,
+1791174901,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-08_ann5": {
+"res": {
+"bytes": 80725,
+"h": 880,
+"scale": 1.0,
+"src_h": 880,
+"src_w": 990,
+"w": 990,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-08_ann5.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\overlays\\canonical_comparison.png",
+75054,
+1791157815,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-09": {
+"res": {
+"bytes": 83986,
+"h": 580,
+"scale": 1.0,
+"src_h": 580,
+"src_w": 998,
+"th": 232,
+"thumb": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-09_400.jpg",
+"tw": 400,
+"w": 998,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-09.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\src\\rendle_davidson_2012_fig9_bathymetry_apr2011_native.png",
+461090,
+1791157040,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-09_ann1": {
+"res": {
+"bytes": 158143,
+"h": 595,
+"scale": 0.53298,
+"src_h": 1116,
+"src_w": 3002,
+"w": 1600,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-09_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\fig9_profiles_read.png",
+1131923,
+1791196681,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-09_ann2": {
+"res": {
+"bytes": 165305,
+"h": 542,
+"scale": 0.8016,
+"src_h": 676,
+"src_w": 1996,
+"w": 1600,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-09_ann2.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\fig9_depth_read_map.png",
+793202,
+1791196680,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-10": {
+"res": {
+"bytes": 155713,
+"h": 432,
+"scale": 1.0,
+"src_h": 432,
+"src_w": 420,
+"th": 400,
+"thumb": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-10_400.jpg",
+"tw": 389,
+"w": 420,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-10.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\src\\rendle_davidson_2012_fig9_left_isotropic.png",
+165880,
+1791157040,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-10_ann1": {
+"res": {
+"bytes": 165305,
+"h": 542,
+"scale": 0.8016,
+"src_h": 676,
+"src_w": 1996,
+"w": 1600,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-10_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\fig9_depth_read_map.png",
+793202,
+1791196680,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-10_ann2": {
+"res": {
+"bytes": 79945,
+"h": 920,
+"scale": 1.0,
+"src_h": 920,
+"src_w": 880,
+"w": 880,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-10_ann2.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\overlays\\img2_trace.png",
+534893,
+1791157814,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-10_ann3": {
+"res": {
+"bytes": 107712,
+"h": 941,
+"scale": 0.95238,
+"src_h": 988,
+"src_w": 1680,
+"w": 1600,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-10_ann3.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\overlays\\img1_outline_on_img2_survey.png",
+806488,
+1791157815,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-11": {
+"res": {
+"bytes": 17313,
+"h": 617,
+"scale": 1.0,
+"src_h": 617,
+"src_w": 871,
+"th": 283,
+"thumb": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-11_400.jpg",
+"tw": 400,
+"w": 871,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-11.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\src\\mead_et_al_2010_fig3a_design_bathymetry.png",
+22278,
+1791157352,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-11_ann1": {
+"res": {
+"bytes": 201948,
+"h": 1049,
+"scale": 1.0,
+"src_h": 1049,
+"src_w": 1393,
+"w": 1393,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-11_ann1.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\mead_fig3a_design_read.png",
+201948,
+1791196761,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-11_ann2": {
+"res": {
+"bytes": 147796,
+"h": 910,
+"scale": 1.0,
+"src_h": 910,
+"src_w": 1120,
+"w": 1120,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-11_ann2.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\overlays\\img3_trace.png",
+153166,
+1791157814,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-11_ann3": {
+"res": {
+"bytes": 30559,
+"h": 673,
+"scale": 1.0,
+"src_h": 673,
+"src_w": 871,
+"w": 871,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-11_ann3.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\overlays\\img3_relief_footprint_verify.png",
+31606,
+1791174916,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-13": {
+"res": {
+"bytes": 141586,
+"h": 900,
+"scale": 1.0,
+"src_h": 900,
+"src_w": 1400,
+"th": 257,
+"thumb": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-13_400.jpg",
+"tw": 400,
+"w": 1400,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-13.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\src\\navionics_garmin_map_options_2026-10-05.png",
+142552,
+1791200473,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-14": {
+"res": {
+"bytes": 103931,
+"h": 900,
+"scale": 1.0,
+"src_h": 900,
+"src_w": 1400,
+"th": 257,
+"thumb": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-14_400.jpg",
+"tw": 400,
+"w": 1400,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-14.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\src\\navionics_garmin_nauticalchart_z16_2026-10-05.png",
+106538,
+1791200473,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-14_ann1": {
+"res": {
+"bytes": 288226,
+"h": 1001,
+"scale": 1.0,
+"src_h": 1001,
+"src_w": 1144,
+"w": 1144,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-14_ann1.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\navionics_nauticalchart_z16_nearshore_vs_model_annotated.png",
+295696,
+1791321097,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-14_ann2": {
+"res": {
+"bytes": 270352,
+"h": 475,
+"scale": 0.66667,
+"src_h": 713,
+"src_w": 2400,
+"w": 1600,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-14_ann2.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\navionics_nauticalchart_z16_offshore_soundings_annotated.png",
+402486,
+1791321607,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-15": {
+"res": {
+"bytes": 103141,
+"h": 900,
+"scale": 1.0,
+"src_h": 900,
+"src_w": 1400,
+"th": 257,
+"thumb": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-15_400.jpg",
+"tw": 400,
+"w": 1400,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-15.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\src\\navionics_garmin_nauticalchart_z17_2026-10-05.png",
+106492,
+1791200473,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-15_ann1": {
+"res": {
+"bytes": 284289,
+"h": 796,
+"scale": 1.0,
+"src_h": 796,
+"src_w": 1400,
+"w": 1400,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-15_ann1.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\navionics_nauticalchart_z17_soundings_annotated.png",
+286605,
+1791200745,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-16": {
+"res": {
+"bytes": 95577,
+"h": 900,
+"scale": 1.0,
+"src_h": 900,
+"src_w": 1400,
+"th": 257,
+"thumb": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-16_400.jpg",
+"tw": 400,
+"w": 1400,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-16.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\src\\navionics_garmin_nauticalchart_z18_2026-10-05.png",
+98241,
+1791200473,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-16_ann1": {
+"res": {
+"bytes": 252186,
+"h": 1084,
+"scale": 1.0,
+"src_h": 1084,
+"src_w": 1152,
+"w": 1152,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-16_ann1.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\navionics_nauticalchart_z18_annotated.png",
+255648,
+1791200745,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-17": {
+"res": {
+"bytes": 107288,
+"h": 900,
+"scale": 1.0,
+"src_h": 900,
+"src_w": 1400,
+"th": 257,
+"thumb": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-17_400.jpg",
+"tw": 400,
+"w": 1400,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-17.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\src\\navionics_garmin_sonarchart_z17_2026-10-05.png",
+111496,
+1791200473,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-18": {
+"res": {
+"bytes": 99200,
+"h": 900,
+"scale": 1.0,
+"src_h": 900,
+"src_w": 1400,
+"th": 257,
+"thumb": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-18_400.jpg",
+"tw": 400,
+"w": 1400,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-18.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\src\\navionics_garmin_sonarchart_z18_2026-10-05.png",
+102907,
+1791200473,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-18_ann1": {
+"res": {
+"bytes": 347919,
+"h": 1120,
+"scale": 1.0,
+"src_h": 1120,
+"src_w": 1152,
+"w": 1152,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-18_ann1.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\navionics_sonarchart_z18_annotated.png",
+351479,
+1791200744,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-19": {
+"res": {
+"bytes": 94165,
+"h": 358,
+"scale": 1.0,
+"src_h": 358,
+"src_w": 1347,
+"th": 106,
+"thumb": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-19_400.jpg",
+"tw": 400,
+"w": 1347,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-19.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\text_mead2010_p1_tide_gauge.png",
+94165,
+1791196815,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-20": {
+"res": {
+"bytes": 196947,
+"h": 1235,
+"scale": 1.0,
+"src_h": 1235,
+"src_w": 1347,
+"th": 367,
+"thumb": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-20_400.jpg",
+"tw": 400,
+"w": 1347,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-20.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\text_mead2010_p2_table1_and_crest.png",
+196947,
+1791196815,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-21": {
+"res": {
+"bytes": 52084,
+"h": 260,
+"scale": 1.0,
+"src_h": 260,
+"src_w": 1347,
+"th": 77,
+"thumb": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-21_400.jpg",
+"tw": 400,
+"w": 1347,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-21.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\text_mead2010_p3_design_depth.png",
+52084,
+1791196815,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-22": {
+"res": {
+"bytes": 144523,
+"h": 505,
+"scale": 1.0,
+"src_h": 505,
+"src_w": 1310,
+"th": 154,
+"thumb": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-22_400.jpg",
+"tw": 400,
+"w": 1310,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-22.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\text_rendle2012_depth_tides.png",
+144523,
+1791196815,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-23": {
+"res": {
+"bytes": 138133,
+"h": 453,
+"scale": 1.0,
+"src_h": 453,
+"src_w": 1310,
+"th": 138,
+"thumb": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-23_400.jpg",
+"tw": 400,
+"w": 1310,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-23.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\text_rendle2012_datum_sentence.png",
+138133,
+1791196815,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-24": {
+"res": {
+"bytes": 100909,
+"h": 660,
+"scale": 1.0,
+"src_h": 660,
+"src_w": 1210,
+"th": 218,
+"thumb": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-24_400.jpg",
+"tw": 400,
+"w": 1210,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-24.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\datum_check_emodnet.png",
+90928,
+1791196772,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-25": {
+"res": {
+"bytes": 161698,
+"h": 1176,
+"scale": 0.94118,
+"src_h": 1250,
+"src_w": 1700,
+"th": 294,
+"thumb": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-25_400.jpg",
+"tw": 400,
+"w": 1600,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-25.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\bathymetry\\emodnet\\viewer\\boscombe-surf-reef_viewer_dtm_raw.png",
+1517903,
+1791236319,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-25_ann1": {
+"res": {
+"bytes": 211768,
+"h": 1062,
+"scale": 0.94118,
+"src_h": 1128,
+"src_w": 1700,
+"w": 1600,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-25_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\bathymetry\\emodnet\\viewer\\boscombe-surf-reef_viewer_dtm_annotated.png",
+1499507,
+1791252425,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-26": {
+"res": {
+"bytes": 191094,
+"h": 1176,
+"scale": 0.94118,
+"src_h": 1250,
+"src_w": 1700,
+"th": 294,
+"thumb": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-26_400.jpg",
+"tw": 400,
+"w": 1600,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-26.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\bathymetry\\emodnet\\viewer\\boscombe-surf-reef_viewer_sources_raw.png",
+1659249,
+1791236359,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-26_ann1": {
+"res": {
+"bytes": 241921,
+"h": 1062,
+"scale": 0.94118,
+"src_h": 1128,
+"src_w": 1700,
+"w": 1600,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-26_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\bathymetry\\emodnet\\viewer\\boscombe-surf-reef_viewer_sources_annotated.png",
+1648412,
+1791252425,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-27": {
+"res": {
+"bytes": 299712,
+"h": 819,
+"scale": 0.85333,
+"src_h": 960,
+"src_w": 1875,
+"th": 205,
+"thumb": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-27_400.jpg",
+"tw": 400,
+"w": 1600,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-27.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\bathymetry\\emodnet\\figures\\boscombe-surf-reef_profile_emodnet_vs_model.png",
+167500,
+1791252417,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-28": {
+"res": {
+"bytes": 72914,
+"h": 720,
+"scale": 1.0,
+"src_h": 720,
+"src_w": 1500,
+"th": 192,
+"thumb": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-28_400.jpg",
+"tw": 400,
+"w": 1500,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-28.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\bathymetry\\emodnet\\figures\\boscombe-surf-reef_cells_emodnet_vs_model.png",
+62688,
+1791252417,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-29": {
+"res": {
+"bytes": 102752,
+"h": 690,
+"scale": 1.0,
+"src_h": 690,
+"src_w": 1275,
+"th": 216,
+"thumb": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-29_400.jpg",
+"tw": 400,
+"w": 1275,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-29.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\bathymetry\\emodnet\\figures\\boscombe-surf-reef_dtm_release_history.png",
+93864,
+1791252417,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-30": {
+"res": {
+"bytes": 105787,
+"h": 884,
+"scale": 1.0,
+"src_h": 884,
+"src_w": 1040,
+"th": 340,
+"thumb": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-30_400.jpg",
+"tw": 400,
+"w": 1040,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-30.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\cco_profile_lines_plan.png",
+100676,
+1791321216,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-31": {
+"res": {
+"bytes": 147464,
+"h": 676,
+"scale": 1.0,
+"src_h": 676,
+"src_w": 1170,
+"th": 231,
+"thumb": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-31_400.jpg",
+"tw": 400,
+"w": 1170,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-31.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\cco_profiles_cross_sections.png",
+139558,
+1791321216,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/boscombe-surf-reef/boscombe-surf-reef-img-32": {
+"res": {
+"bytes": 68646,
+"h": 1248,
+"scale": 1.0,
+"src_h": 1248,
+"src_w": 858,
+"th": 400,
+"thumb": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-32_400.jpg",
+"tw": 275,
+"w": 858,
+"web": "assets/images/boscombe-surf-reef/boscombe-surf-reef-img-32.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\boscombe-surf-reef\\3d\\annotated\\seabed_zone_map.png",
+63421,
+1791321216,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/bunbury-airwave/bunbury-airwave-img-06": {
+"res": {
+"bytes": 42849,
+"h": 587,
+"scale": 1.0,
+"src_h": 587,
+"src_w": 956,
+"th": 246,
+"thumb": "assets/images/bunbury-airwave/bunbury-airwave-img-06_400.jpg",
+"tw": 400,
+"w": 956,
+"web": "assets/images/bunbury-airwave/bunbury-airwave-img-06.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\bunbury-airwave\\src\\img1_airwave-from-above.jpg",
+426580,
+1791101671,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/bunbury-airwave/bunbury-airwave-img-06_ann1": {
+"res": {
+"bytes": 58435,
+"h": 587,
+"scale": 1.0,
+"src_h": 587,
+"src_w": 956,
+"w": 956,
+"web": "assets/images/bunbury-airwave/bunbury-airwave-img-06_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\bunbury-airwave\\3d\\annotated\\img1_trace_axes_scale.png",
+699651,
+1791175262,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/bunbury-airwave/bunbury-airwave-img-06_ann2": {
+"res": {
+"bytes": 77329,
+"h": 587,
+"scale": 1.0,
+"src_h": 587,
+"src_w": 956,
+"w": 956,
+"web": "assets/images/bunbury-airwave/bunbury-airwave-img-06_ann2.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\bunbury-airwave\\overlays\\img1.png",
+692154,
+1791156626,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/bunbury-airwave/bunbury-airwave-img-08": {
+"res": {
+"bytes": 52604,
+"h": 576,
+"scale": 1.0,
+"src_h": 576,
+"src_w": 1024,
+"th": 225,
+"thumb": "assets/images/bunbury-airwave/bunbury-airwave-img-08_400.jpg",
+"tw": 400,
+"w": 1024,
+"web": "assets/images/bunbury-airwave/bunbury-airwave-img-08.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\03_images\\video_frames\\bunbury-airwave\\11804314_0005.jpg",
+59818,
+1790283087,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/bunbury-airwave/bunbury-airwave-img-08_ann1": {
+"res": {
+"bytes": 85809,
+"h": 576,
+"scale": 1.0,
+"src_h": 576,
+"src_w": 1024,
+"w": 1024,
+"web": "assets/images/bunbury-airwave/bunbury-airwave-img-08_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\bunbury-airwave\\overlays\\img4.png",
+460139,
+1791157006,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/bunbury-airwave/bunbury-airwave-img-10": {
+"res": {
+"bytes": 140523,
+"h": 794,
+"scale": 1.0,
+"src_h": 794,
+"src_w": 1433,
+"th": 222,
+"thumb": "assets/images/bunbury-airwave/bunbury-airwave-img-10_400.jpg",
+"tw": 400,
+"w": 1433,
+"web": "assets/images/bunbury-airwave/bunbury-airwave-img-10.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\bunbury-airwave\\src\\img5_reef-top-view.png",
+1261809,
+1791156900,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/bunbury-airwave/bunbury-airwave-img-10_ann1": {
+"res": {
+"bytes": 183107,
+"h": 794,
+"scale": 1.0,
+"src_h": 794,
+"src_w": 1433,
+"w": 1433,
+"web": "assets/images/bunbury-airwave/bunbury-airwave-img-10_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\bunbury-airwave\\overlays\\img5.png",
+1203032,
+1791156921,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/bunbury-airwave/bunbury-airwave-img-12": {
+"res": {
+"bytes": 534810,
+"h": 1599,
+"scale": 0.99751,
+"src_h": 1603,
+"src_w": 1604,
+"th": 400,
+"thumb": "assets/images/bunbury-airwave/bunbury-airwave-img-12_400.jpg",
+"tw": 400,
+"w": 1600,
+"web": "assets/images/bunbury-airwave/bunbury-airwave-img-12.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\bunbury-airwave\\src\\sat_backbeach_current.png",
+3694783,
+1791101818,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/bunbury-airwave/bunbury-airwave-img-12_ann1": {
+"res": {
+"bytes": 200048,
+"h": 1011,
+"scale": 1.0,
+"src_h": 1011,
+"src_w": 1210,
+"w": 1210,
+"web": "assets/images/bunbury-airwave/bunbury-airwave-img-12_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\bunbury-airwave\\3d\\annotated\\lidar_contours_on_satellite.png",
+1233404,
+1791175261,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/bunbury-airwave/bunbury-airwave-img-13": {
+"res": {
+"bytes": 130643,
+"h": 1000,
+"scale": 1.0,
+"src_h": 1000,
+"src_w": 1400,
+"th": 286,
+"thumb": "assets/images/bunbury-airwave/bunbury-airwave-img-13_400.jpg",
+"tw": 400,
+"w": 1400,
+"web": "assets/images/bunbury-airwave/bunbury-airwave-img-13.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\bunbury-airwave\\3d\\src\\navionics\\app_options_sonarchart_meters.png",
+131302,
+1791216553,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/bunbury-airwave/bunbury-airwave-img-14": {
+"res": {
+"bytes": 40894,
+"h": 851,
+"scale": 1.0,
+"src_h": 851,
+"src_w": 985,
+"th": 346,
+"thumb": "assets/images/bunbury-airwave/bunbury-airwave-img-14_400.jpg",
+"tw": 400,
+"w": 985,
+"web": "assets/images/bunbury-airwave/bunbury-airwave-img-14.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\bunbury-airwave\\3d\\src\\navionics\\sonar_m_z17_dpr1.png",
+42355,
+1791216576,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/bunbury-airwave/bunbury-airwave-img-15": {
+"res": {
+"bytes": 36912,
+"h": 851,
+"scale": 1.0,
+"src_h": 851,
+"src_w": 985,
+"th": 346,
+"thumb": "assets/images/bunbury-airwave/bunbury-airwave-img-15_400.jpg",
+"tw": 400,
+"w": 985,
+"web": "assets/images/bunbury-airwave/bunbury-airwave-img-15.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\bunbury-airwave\\3d\\src\\navionics\\sonar_m_z18_dpr1.png",
+38667,
+1791216562,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/bunbury-airwave/bunbury-airwave-img-16": {
+"res": {
+"bytes": 362369,
+"h": 1382,
+"scale": 0.81218,
+"src_h": 1702,
+"src_w": 1970,
+"th": 346,
+"thumb": "assets/images/bunbury-airwave/bunbury-airwave-img-16_400.jpg",
+"tw": 400,
+"w": 1600,
+"web": "assets/images/bunbury-airwave/bunbury-airwave-img-16.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\bunbury-airwave\\3d\\src\\navionics\\sonar_m_z18_dpr2.png",
+161959,
+1791216569,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/bunbury-airwave/bunbury-airwave-img-16_ann1": {
+"res": {
+"bytes": 204183,
+"h": 1243,
+"scale": 1.0,
+"src_h": 1243,
+"src_w": 1430,
+"w": 1430,
+"web": "assets/images/bunbury-airwave/bunbury-airwave-img-16_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\bunbury-airwave\\3d\\annotated\\N1_navionics_sonarchart_contours_transects.png",
+405237,
+1791217289,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/bunbury-airwave/bunbury-airwave-img-16_ann2": {
+"res": {
+"bytes": 172536,
+"h": 880,
+"scale": 1.0,
+"src_h": 880,
+"src_w": 1265,
+"w": 1265,
+"web": "assets/images/bunbury-airwave/bunbury-airwave-img-16_ann2.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\bunbury-airwave\\3d\\annotated\\N4_navionics_reef_site_zoom_no_structure.png",
+162263,
+1791217290,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/bunbury-airwave/bunbury-airwave-img-17": {
+"res": {
+"bytes": 30027,
+"h": 851,
+"scale": 1.0,
+"src_h": 851,
+"src_w": 985,
+"th": 346,
+"thumb": "assets/images/bunbury-airwave/bunbury-airwave-img-17_400.jpg",
+"tw": 400,
+"w": 985,
+"web": "assets/images/bunbury-airwave/bunbury-airwave-img-17.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\bunbury-airwave\\3d\\src\\navionics\\nautical_m_z17_dpr1.png",
+30469,
+1791216596,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/bunbury-airwave/bunbury-airwave-img-17_ann1": {
+"res": {
+"bytes": 196377,
+"h": 1045,
+"scale": 1.0,
+"src_h": 1045,
+"src_w": 1210,
+"w": 1210,
+"web": "assets/images/bunbury-airwave/bunbury-airwave-img-17_ann1.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\bunbury-airwave\\3d\\annotated\\N3_navionics_nautical_soundings.png",
+189522,
+1791217290,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/bunbury-airwave/bunbury-airwave-img-18": {
+"res": {
+"bytes": 167082,
+"h": 1382,
+"scale": 0.81218,
+"src_h": 1702,
+"src_w": 1970,
+"th": 346,
+"thumb": "assets/images/bunbury-airwave/bunbury-airwave-img-18_400.jpg",
+"tw": 400,
+"w": 1600,
+"web": "assets/images/bunbury-airwave/bunbury-airwave-img-18.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\bunbury-airwave\\3d\\src\\navionics\\nautical_m_z18_dpr2.png",
+120408,
+1791216588,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/bunbury-airwave/bunbury-airwave-img-18_ann1": {
+"res": {
+"bytes": 196377,
+"h": 1045,
+"scale": 1.0,
+"src_h": 1045,
+"src_w": 1210,
+"w": 1210,
+"web": "assets/images/bunbury-airwave/bunbury-airwave-img-18_ann1.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\bunbury-airwave\\3d\\annotated\\N3_navionics_nautical_soundings.png",
+189522,
+1791217290,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/bunbury-airwave/bunbury-airwave-img-19": {
+"res": {
+"bytes": 105771,
+"h": 726,
+"scale": 1.0,
+"src_h": 726,
+"src_w": 1100,
+"th": 264,
+"thumb": "assets/images/bunbury-airwave/bunbury-airwave-img-19_400.jpg",
+"tw": 400,
+"w": 1100,
+"web": "assets/images/bunbury-airwave/bunbury-airwave-img-19.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\bunbury-airwave\\3d\\annotated\\lidar_cells_at_reef.png",
+98543,
+1791175261,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/bunbury-airwave/bunbury-airwave-img-20": {
+"res": {
+"bytes": 120999,
+"h": 616,
+"scale": 1.0,
+"src_h": 616,
+"src_w": 1210,
+"th": 204,
+"thumb": "assets/images/bunbury-airwave/bunbury-airwave-img-20_400.jpg",
+"tw": 400,
+"w": 1210,
+"web": "assets/images/bunbury-airwave/bunbury-airwave-img-20.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\bunbury-airwave\\3d\\annotated\\seabed_profile_with_tides.png",
+109891,
+1791175262,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/bunbury-airwave/bunbury-airwave-img-21": {
+"res": {
+"bytes": 177388,
+"h": 704,
+"scale": 1.0,
+"src_h": 704,
+"src_w": 1540,
+"th": 183,
+"thumb": "assets/images/bunbury-airwave/bunbury-airwave-img-21_400.jpg",
+"tw": 400,
+"w": 1540,
+"web": "assets/images/bunbury-airwave/bunbury-airwave-img-21.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\bunbury-airwave\\3d\\annotated\\N2_navionics_datum_rms_test.png",
+163300,
+1791217289,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/mount-maunganui-reef/mount-maunganui-reef-img-04": {
+"res": {
+"bytes": 64611,
+"h": 752,
+"scale": 1.0,
+"src_h": 752,
+"src_w": 1299,
+"th": 232,
+"thumb": "assets/images/mount-maunganui-reef/mount-maunganui-reef-img-04_400.jpg",
+"tw": 400,
+"w": 1299,
+"web": "assets/images/mount-maunganui-reef/mount-maunganui-reef-img-04.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\03_images\\reefs\\mount-maunganui-reef\\mount-maunganui-reef_boprc-fig5-multibeam-2013_2013.png",
+681725,
+1791235988,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/mount-maunganui-reef/mount-maunganui-reef-img-04_ann1": {
+"res": {
+"bytes": 137870,
+"h": 1080,
+"scale": 1.0,
+"src_h": 1080,
+"src_w": 1140,
+"w": 1140,
+"web": "assets/images/mount-maunganui-reef/mount-maunganui-reef-img-04_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\mount-maunganui-reef\\overlays\\verify_fig5_crosscheck_2013.png",
+832400,
+1791253983,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/mount-maunganui-reef/mount-maunganui-reef-img-04_ann2": {
+"res": {
+"bytes": 274781,
+"h": 990,
+"scale": 1.0,
+"src_h": 990,
+"src_w": 1430,
+"w": 1430,
+"web": "assets/images/mount-maunganui-reef/mount-maunganui-reef-img-04_ann2.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\mount-maunganui-reef\\3d\\annotated\\mmr_model_checks.png",
+258155,
+1791305910,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/mount-maunganui-reef/mount-maunganui-reef-img-08": {
+"res": {
+"bytes": 117119,
+"h": 1064,
+"scale": 1.0,
+"src_h": 1064,
+"src_w": 900,
+"th": 400,
+"thumb": "assets/images/mount-maunganui-reef/mount-maunganui-reef-img-08_400.jpg",
+"tw": 338,
+"w": 900,
+"web": "assets/images/mount-maunganui-reef/mount-maunganui-reef-img-08.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\mount-maunganui-reef\\src\\boprc_fig3_2013_survey.png",
+658788,
+1791157878,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/mount-maunganui-reef/mount-maunganui-reef-img-08_ann1": {
+"res": {
+"bytes": 129412,
+"h": 880,
+"scale": 1.0,
+"src_h": 880,
+"src_w": 1000,
+"w": 1000,
+"web": "assets/images/mount-maunganui-reef/mount-maunganui-reef-img-08_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\mount-maunganui-reef\\overlays\\img1_boprc_fig3_2013.png",
+806479,
+1791253987,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/mount-maunganui-reef/mount-maunganui-reef-img-09": {
+"res": {
+"bytes": 99073,
+"h": 1100,
+"scale": 1.0,
+"src_h": 1100,
+"src_w": 1100,
+"th": 400,
+"thumb": "assets/images/mount-maunganui-reef/mount-maunganui-reef-img-09_400.jpg",
+"tw": 400,
+"w": 1100,
+"web": "assets/images/mount-maunganui-reef/mount-maunganui-reef-img-09.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\mount-maunganui-reef\\src\\linz_aerial_2010-11_BD37_1000_1314_crop.png",
+1324901,
+1791218259,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/mount-maunganui-reef/mount-maunganui-reef-img-09_ann1": {
+"res": {
+"bytes": 239987,
+"h": 975,
+"scale": 1.0,
+"src_h": 975,
+"src_w": 975,
+"w": 975,
+"web": "assets/images/mount-maunganui-reef/mount-maunganui-reef-img-09_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\mount-maunganui-reef\\overlays\\img2_linz_aerial_2010-11.png",
+1666527,
+1791253988,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/mount-maunganui-reef/mount-maunganui-reef-img-10": {
+"res": {
+"bytes": 31366,
+"h": 519,
+"scale": 1.0,
+"src_h": 519,
+"src_w": 570,
+"th": 364,
+"thumb": "assets/images/mount-maunganui-reef/mount-maunganui-reef-img-10_400.jpg",
+"tw": 400,
+"w": 570,
+"web": "assets/images/mount-maunganui-reef/mount-maunganui-reef-img-10.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\mount-maunganui-reef\\src\\mount-reef-installed.jpg",
+195598,
+1791101655,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/mount-maunganui-reef/mount-maunganui-reef-img-10_ann1": {
+"res": {
+"bytes": 118664,
+"h": 1038,
+"scale": 1.0,
+"src_h": 1038,
+"src_w": 1140,
+"w": 1140,
+"web": "assets/images/mount-maunganui-reef/mount-maunganui-reef-img-10_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\mount-maunganui-reef\\overlays\\img3_asr_installed.png",
+781263,
+1791253988,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/mount-maunganui-reef/mount-maunganui-reef-img-19": {
+"res": {
+"bytes": 31391,
+"h": 655,
+"scale": 1.0,
+"src_h": 655,
+"src_w": 982,
+"th": 267,
+"thumb": "assets/images/mount-maunganui-reef/mount-maunganui-reef-img-19_400.jpg",
+"tw": 400,
+"w": 982,
+"web": "assets/images/mount-maunganui-reef/mount-maunganui-reef-img-19.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\mount-maunganui-reef\\src\\navionics\\sonar_z17_shade00.0.png",
+34772,
+1791272722,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/mount-maunganui-reef/mount-maunganui-reef-img-19_ann1": {
+"res": {
+"bytes": 86628,
+"h": 785,
+"scale": 1.0,
+"src_h": 785,
+"src_w": 982,
+"w": 982,
+"web": "assets/images/mount-maunganui-reef/mount-maunganui-reef-img-19_ann1.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\mount-maunganui-reef\\3d\\annotated\\nav_sonar_z17_profile.png",
+90911,
+1791305123,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/mount-maunganui-reef/mount-maunganui-reef-img-19_ann2": {
+"res": {
+"bytes": 115719,
+"h": 598,
+"scale": 1.0,
+"src_h": 598,
+"src_w": 1105,
+"w": 1105,
+"web": "assets/images/mount-maunganui-reef/mount-maunganui-reef-img-19_ann2.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\mount-maunganui-reef\\3d\\annotated\\nav_datum_test.png",
+107623,
+1791305124,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/mount-maunganui-reef/mount-maunganui-reef-img-20": {
+"res": {
+"bytes": 22490,
+"h": 655,
+"scale": 1.0,
+"src_h": 655,
+"src_w": 982,
+"th": 267,
+"thumb": "assets/images/mount-maunganui-reef/mount-maunganui-reef-img-20_400.jpg",
+"tw": 400,
+"w": 982,
+"web": "assets/images/mount-maunganui-reef/mount-maunganui-reef-img-20.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\mount-maunganui-reef\\src\\navionics\\sonar_z18_shade00.0.png",
+26129,
+1791272660,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/mount-maunganui-reef/mount-maunganui-reef-img-21": {
+"res": {
+"bytes": 19217,
+"h": 655,
+"scale": 1.0,
+"src_h": 655,
+"src_w": 982,
+"th": 267,
+"thumb": "assets/images/mount-maunganui-reef/mount-maunganui-reef-img-21_400.jpg",
+"tw": 400,
+"w": 982,
+"web": "assets/images/mount-maunganui-reef/mount-maunganui-reef-img-21.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\mount-maunganui-reef\\src\\navionics\\naut_z17_shade00.0.png",
+20519,
+1791272853,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/mount-maunganui-reef/mount-maunganui-reef-img-21_ann1": {
+"res": {
+"bytes": 44100,
+"h": 725,
+"scale": 1.0,
+"src_h": 725,
+"src_w": 982,
+"w": 982,
+"web": "assets/images/mount-maunganui-reef/mount-maunganui-reef-img-21_ann1.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\mount-maunganui-reef\\3d\\annotated\\nav_naut_z17_check.png",
+46091,
+1791305123,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/mount-maunganui-reef/mount-maunganui-reef-img-22": {
+"res": {
+"bytes": 14950,
+"h": 655,
+"scale": 1.0,
+"src_h": 655,
+"src_w": 982,
+"th": 267,
+"thumb": "assets/images/mount-maunganui-reef/mount-maunganui-reef-img-22_400.jpg",
+"tw": 400,
+"w": 982,
+"web": "assets/images/mount-maunganui-reef/mount-maunganui-reef-img-22.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\mount-maunganui-reef\\src\\navionics\\naut_z18_shade00.0.png",
+15476,
+1791272790,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-02": {
+"res": {
+"bytes": 18732,
+"h": 266,
+"scale": 1.0,
+"src_h": 266,
+"src_w": 400,
+"th": 266,
+"thumb": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-02_400.jpg",
+"tw": 400,
+"w": 400,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-02.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\src\\gov\\palm-beach-gold-coast_hunt2022_fig3_backhoe_dredger_at_reef_aerial_2019_native.jpeg",
+17868,
+1791235377,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-03": {
+"res": {
+"bytes": 92141,
+"h": 465,
+"scale": 1.0,
+"src_h": 465,
+"src_w": 698,
+"th": 266,
+"thumb": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-03_400.jpg",
+"tw": 400,
+"w": 698,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-03.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\src\\gov\\palm-beach-gold-coast_hunt2022_fig5_wave_breaking_on_reef_native.jpeg",
+182667,
+1791235377,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-04": {
+"res": {
+"bytes": 27936,
+"h": 227,
+"scale": 1.0,
+"src_h": 227,
+"src_w": 634,
+"th": 143,
+"thumb": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-04_400.jpg",
+"tw": 400,
+"w": 634,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-04.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\src\\gov\\palm-beach-gold-coast_prenzler2022_fig1_cctv_camera_view_of_reef_native.jpeg",
+26778,
+1791235377,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-05": {
+"res": {
+"bytes": 29493,
+"h": 554,
+"scale": 1.0,
+"src_h": 554,
+"src_w": 496,
+"th": 400,
+"thumb": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-05_400.jpg",
+"tw": 358,
+"w": 496,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-05.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\src\\gov\\palm-beach-gold-coast_daniels2022_fig1_buoy_locations_natural_reef_outline_2016_native.jpeg",
+28446,
+1791235377,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-09": {
+"res": {
+"bytes": 50129,
+"h": 379,
+"scale": 1.0,
+"src_h": 379,
+"src_w": 625,
+"th": 243,
+"thumb": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-09_400.jpg",
+"tw": 400,
+"w": 625,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-09.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\src\\gov\\palm-beach-gold-coast_mortensen2015_fig6a_baseline_bathymetry_contours_no_scs_native.jpeg",
+48307,
+1791235377,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-09_ann1": {
+"res": {
+"bytes": 289287,
+"h": 1158,
+"scale": 0.85333,
+"src_h": 1357,
+"src_w": 1875,
+"w": 1600,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-09_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\bathymetry\\gold_coast\\annotated\\palm_beach_mortensen2015_fig6a_depth_contours_read_along_y3050.png",
+1398291,
+1791235508,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-10": {
+"res": {
+"bytes": 50970,
+"h": 379,
+"scale": 1.0,
+"src_h": 379,
+"src_w": 625,
+"th": 243,
+"thumb": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-10_400.jpg",
+"tw": 400,
+"w": 625,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-10.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\src\\gov\\palm-beach-gold-coast_mortensen2015_fig6b_bathymetry_contours_with_concept_scs_native.jpeg",
+49050,
+1791235377,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-11": {
+"res": {
+"bytes": 645372,
+"h": 1600,
+"scale": 0.60196,
+"src_h": 2658,
+"src_w": 2658,
+"th": 400,
+"thumb": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-11_400.jpg",
+"tw": 400,
+"w": 1600,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-11.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\bathymetry\\gold_coast\\annotated\\q1_palm_beach_dtm_source_coverage_on_esri.png",
+9948011,
+1791234896,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-12": {
+"res": {
+"bytes": 98679,
+"h": 725,
+"scale": 1.0,
+"src_h": 725,
+"src_w": 1088,
+"th": 267,
+"thumb": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-12_400.jpg",
+"tw": 400,
+"w": 1088,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-12.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\src\\gov\\palm-beach-gold-coast_cogc_brochure2020_p10_oblique_aerial_with_reef_natural_reef_benefit_area_labels_native.jpeg",
+72883,
+1791235784,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-13": {
+"res": {
+"bytes": 687140,
+"h": 1600,
+"scale": 0.60675,
+"src_h": 2637,
+"src_w": 2637,
+"th": 400,
+"thumb": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-13_400.jpg",
+"tw": 400,
+"w": 1600,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-13.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\src\\gov\\palm-beach-gold-coast_cogc_brochure2020_p11_plan_aerial_with_reef_icon_270m_native.jpeg",
+717711,
+1791235784,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-14": {
+"res": {
+"bytes": 80352,
+"h": 302,
+"scale": 1.0,
+"src_h": 302,
+"src_w": 1135,
+"th": 106,
+"thumb": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-14_400.jpg",
+"tw": 400,
+"w": 1135,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-14.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\src\\gov\\palm-beach-gold-coast_cogc_brochure2020_p11_section_view_crest_1.5m_below_average_water_level_200dpi_crop.png",
+79439,
+1791235784,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-15": {
+"res": {
+"bytes": 47667,
+"h": 528,
+"scale": 1.0,
+"src_h": 528,
+"src_w": 828,
+"th": 255,
+"thumb": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-15_400.jpg",
+"tw": 400,
+"w": 828,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-15.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\03_images\\reefs\\palm-beach-gold-coast\\palm-beach-gold-coast_satellite_pair_reef_and_inshore_sandbank_icm_post2019.jpg",
+97179,
+1791235872,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-16": {
+"res": {
+"bytes": 170591,
+"h": 800,
+"scale": 1.0,
+"src_h": 800,
+"src_w": 1200,
+"th": 267,
+"thumb": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-16_400.jpg",
+"tw": 400,
+"w": 1200,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-16.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\03_images\\reefs\\palm-beach-gold-coast\\palm-beach-gold-coast_abc-dredger-over-reef-aerial_2019.jpg",
+235477,
+1791252958,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-18": {
+"res": {
+"bytes": 39905,
+"h": 454,
+"scale": 1.0,
+"src_h": 454,
+"src_w": 567,
+"th": 320,
+"thumb": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-18_400.jpg",
+"tw": 400,
+"w": 567,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-18.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\03_images\\reefs\\palm-beach-gold-coast\\palm-beach-gold-coast_cru-schematic-270m_2019-10.jpg",
+41302,
+1791252962,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-20": {
+"res": {
+"bytes": 346036,
+"h": 1067,
+"scale": 0.7696,
+"src_h": 1386,
+"src_w": 2079,
+"th": 267,
+"thumb": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-20_400.jpg",
+"tw": 400,
+"w": 1600,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-20.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\src\\bluecoast_AR_aerial_Nearmaps.jpg",
+629199,
+1791157015,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-20_ann1": {
+"res": {
+"bytes": 416185,
+"h": 1067,
+"scale": 0.7696,
+"src_h": 1386,
+"src_w": 2079,
+"w": 1600,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-20_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\3d\\annotated\\s7_contours_ranked_elevations.png",
+3986110,
+1791217314,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-20_ann2": {
+"res": {
+"bytes": 395332,
+"h": 1067,
+"scale": 0.7696,
+"src_h": 1386,
+"src_w": 2079,
+"w": 1600,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-20_ann2.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\3d\\annotated\\s7_side_slopes_from_line_spacing.png",
+4040279,
+1791217314,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-20_ann3": {
+"res": {
+"bytes": 389445,
+"h": 1067,
+"scale": 0.7696,
+"src_h": 1386,
+"src_w": 2079,
+"w": 1600,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-20_ann3.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\3d\\annotated\\s7_toe_depth_from_contour_rank.png",
+3979497,
+1791217314,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-20_ann4": {
+"res": {
+"bytes": 377518,
+"h": 1067,
+"scale": 0.7696,
+"src_h": 1386,
+"src_w": 2079,
+"w": 1600,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-20_ann4.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\overlays\\s7_bluecoast_aerial_trace.png",
+4054459,
+1791157403,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-20_ann5": {
+"res": {
+"bytes": 387569,
+"h": 1067,
+"scale": 0.7696,
+"src_h": 1386,
+"src_w": 2079,
+"w": 1600,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-20_ann5.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\overlays\\composite_s7_aerial_with_council_polygon_yellow_and_esri_visible_rock_red.png",
+3960320,
+1791175052,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-21": {
+"res": {
+"bytes": 306631,
+"h": 985,
+"scale": 1.0,
+"src_h": 985,
+"src_w": 1394,
+"th": 283,
+"thumb": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-21_400.jpg",
+"tw": 400,
+"w": 1394,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-21.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\src\\bluecoast_EPW2020_pages50-51.png",
+716146,
+1791157015,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-21_ann1": {
+"res": {
+"bytes": 318987,
+"h": 985,
+"scale": 1.0,
+"src_h": 985,
+"src_w": 1394,
+"w": 1394,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-21_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\3d\\annotated\\s8_epw2020_text_used.png",
+1041594,
+1791217315,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-22": {
+"res": {
+"bytes": 624362,
+"h": 1600,
+"scale": 0.60196,
+"src_h": 2658,
+"src_w": 2658,
+"th": 400,
+"thumb": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-22_400.jpg",
+"tw": 400,
+"w": 1600,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-22.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\src\\pb_context_z18.png",
+10660851,
+1791101852,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-23": {
+"res": {
+"bytes": 182753,
+"h": 1519,
+"scale": 1.0,
+"src_h": 1519,
+"src_w": 1519,
+"th": 400,
+"thumb": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-23_400.jpg",
+"tw": 400,
+"w": 1519,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-23.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\src\\pb_sat_z19.png",
+1583316,
+1791101734,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-23_ann1": {
+"res": {
+"bytes": 135850,
+"h": 700,
+"scale": 1.0,
+"src_h": 700,
+"src_w": 1000,
+"w": 1000,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-23_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\overlays\\s2_esri_z19_visible_patch_red_vs_council_cyan.png",
+702408,
+1791175052,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-24": {
+"res": {
+"bytes": 167194,
+"h": 777,
+"scale": 1.0,
+"src_h": 777,
+"src_w": 1459,
+"th": 213,
+"thumb": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-24_400.jpg",
+"tw": 400,
+"w": 1459,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-24.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\src\\icce13024_fig1_location_orientation.jpeg",
+318011,
+1791156934,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-24_ann1": {
+"res": {
+"bytes": 195539,
+"h": 777,
+"scale": 1.0,
+"src_h": 777,
+"src_w": 1459,
+"w": 1459,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-24_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\3d\\annotated\\s4_icce_fig1_distance_and_icon.png",
+1401485,
+1791217316,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-24_ann2": {
+"res": {
+"bytes": 212926,
+"h": 777,
+"scale": 1.0,
+"src_h": 777,
+"src_w": 1459,
+"w": 1459,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-24_ann2.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\overlays\\s4_icce_fig1_icon_trace.png",
+1451963,
+1791157708,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-25": {
+"res": {
+"bytes": 362291,
+"h": 501,
+"scale": 1.0,
+"src_h": 501,
+"src_w": 1029,
+"th": 195,
+"thumb": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-25_400.jpg",
+"tw": 400,
+"w": 1029,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-25.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\src\\icce13024_fig4_final_survey.png",
+698937,
+1791156934,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-25_ann1": {
+"res": {
+"bytes": 383189,
+"h": 501,
+"scale": 1.0,
+"src_h": 501,
+"src_w": 1029,
+"w": 1029,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-25_ann1.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\3d\\annotated\\s5_icce_fig4_qualitative_only.png",
+404504,
+1791217316,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-26": {
+"res": {
+"bytes": 162070,
+"h": 433,
+"scale": 1.0,
+"src_h": 433,
+"src_w": 603,
+"th": 287,
+"thumb": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-26_400.jpg",
+"tw": 400,
+"w": 603,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-26.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\src\\mortensen2015_fig3_concept_SCS_B.png",
+220137,
+1791156934,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-26_ann1": {
+"res": {
+"bytes": 133726,
+"h": 1149,
+"scale": 0.88447,
+"src_h": 1299,
+"src_w": 1809,
+"w": 1600,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-26_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\3d\\annotated\\mortensen2015_fig3_slopes_crest_read.png",
+884808,
+1791217315,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-28": {
+"res": {
+"bytes": 25761,
+"h": 655,
+"scale": 1.0,
+"src_h": 655,
+"src_w": 982,
+"th": 267,
+"thumb": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-28_400.jpg",
+"tw": 400,
+"w": 982,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-28.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\src\\navionics\\naut_z17_shade00.0.png",
+26950,
+1791217706,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-29": {
+"res": {
+"bytes": 17910,
+"h": 655,
+"scale": 1.0,
+"src_h": 655,
+"src_w": 982,
+"th": 267,
+"thumb": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-29_400.jpg",
+"tw": 400,
+"w": 982,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-29.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\src\\navionics\\naut_z18_shade00.0.png",
+18699,
+1791217700,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-29_ann1": {
+"res": {
+"bytes": 319109,
+"h": 1067,
+"scale": 0.81466,
+"src_h": 1310,
+"src_w": 1964,
+"w": 1600,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-29_ann1.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\3d\\annotated\\nav_nautical_z18_fish_haven_label.png",
+179556,
+1791217315,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-30": {
+"res": {
+"bytes": 47322,
+"h": 655,
+"scale": 1.0,
+"src_h": 655,
+"src_w": 982,
+"th": 267,
+"thumb": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-30_400.jpg",
+"tw": 400,
+"w": 982,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-30.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\src\\navionics\\sonar_z17_shade00.0.png",
+49556,
+1791217690,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-31": {
+"res": {
+"bytes": 28947,
+"h": 655,
+"scale": 1.0,
+"src_h": 655,
+"src_w": 982,
+"th": 267,
+"thumb": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-31_400.jpg",
+"tw": 400,
+"w": 982,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-31.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\src\\navionics\\sonar_z18_shade00.0.png",
+31797,
+1791217684,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-31_ann1": {
+"res": {
+"bytes": 217178,
+"h": 1067,
+"scale": 0.81466,
+"src_h": 1310,
+"src_w": 1964,
+"w": 1600,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-31_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\3d\\annotated\\nav_sonar_z18_labels_read_with_reef_outline.png",
+367538,
+1791217315,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-32": {
+"res": {
+"bytes": 156126,
+"h": 1045,
+"scale": 1.0,
+"src_h": 1045,
+"src_w": 1320,
+"th": 317,
+"thumb": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-32_400.jpg",
+"tw": 400,
+"w": 1320,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-32.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\3d\\annotated\\model_sections.png",
+142182,
+1791217315,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-33": {
+"res": {
+"bytes": 311799,
+"h": 1131,
+"scale": 0.86346,
+"src_h": 1310,
+"src_w": 1853,
+"th": 283,
+"thumb": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-33_400.jpg",
+"tw": 400,
+"w": 1600,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-33.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\3d\\annotated\\msq_tidal_planes_2026_gold_coast_seaway.png",
+371068,
+1791217315,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-34": {
+"res": {
+"bytes": 226367,
+"h": 771,
+"scale": 0.94118,
+"src_h": 819,
+"src_w": 1700,
+"th": 193,
+"thumb": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-34_400.jpg",
+"tw": 400,
+"w": 1600,
+"web": "assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-34.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\palm-beach-gold-coast\\3d\\annotated\\nav_isolines_and_datum_test.png",
+136269,
+1791217315,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-04": {
+"res": {
+"bytes": 38116,
+"h": 385,
+"scale": 1.0,
+"src_h": 385,
+"src_w": 308,
+"th": 385,
+"thumb": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-04_400.jpg",
+"tw": 308,
+"w": 308,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-04.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\src\\img1_skelly_diagram.png",
+35931,
+1791101630,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-04_ann1": {
+"res": {
+"bytes": 155304,
+"h": 1600,
+"scale": 0.91954,
+"src_h": 1740,
+"src_w": 1232,
+"w": 1133,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-04_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A1_skelly_drawing_crest_labels_and_scale.png",
+547715,
+1791217386,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-04_ann2": {
+"res": {
+"bytes": 120735,
+"h": 1540,
+"scale": 1.0,
+"src_h": 1540,
+"src_w": 1232,
+"w": 1232,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-04_ann2.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\overlays\\img1_final.png",
+503233,
+1791175562,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-04_ann3": {
+"res": {
+"bytes": 128883,
+"h": 1540,
+"scale": 1.0,
+"src_h": 1540,
+"src_w": 1232,
+"w": 1232,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-04_ann3.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\overlays\\img1_correction_red_new_cyan_old.png",
+519760,
+1791175562,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-04_ann4": {
+"res": {
+"bytes": 123141,
+"h": 1540,
+"scale": 1.0,
+"src_h": 1540,
+"src_w": 1232,
+"w": 1232,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-04_ann4.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\overlays\\_pre_verification\\img1_final.png",
+514732,
+1791175561,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-05": {
+"res": {
+"bytes": 33865,
+"h": 450,
+"scale": 1.0,
+"src_h": 450,
+"src_w": 640,
+"th": 281,
+"thumb": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-05_400.jpg",
+"tw": 400,
+"w": 640,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-05.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\src\\img2_bag_size.jpg",
+35408,
+1791101631,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-06": {
+"res": {
+"bytes": 65534,
+"h": 472,
+"scale": 1.0,
+"src_h": 472,
+"src_w": 720,
+"th": 262,
+"thumb": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-06_400.jpg",
+"tw": 400,
+"w": 720,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-06.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\src\\img3_building.jpg",
+79141,
+1791101632,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-08": {
+"res": {
+"bytes": 61619,
+"h": 420,
+"scale": 1.0,
+"src_h": 420,
+"src_w": 371,
+"th": 400,
+"thumb": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-08_400.jpg",
+"tw": 353,
+"w": 371,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-08.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\src\\img5_henriquez_fig2-10_raster.png",
+50161,
+1791156846,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-08_ann1": {
+"res": {
+"bytes": 107635,
+"h": 1600,
+"scale": 0.95238,
+"src_h": 1680,
+"src_w": 1484,
+"w": 1413,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-08_ann1.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\overlays\\img5_final.png",
+483841,
+1791175562,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-08_ann2": {
+"res": {
+"bytes": 335227,
+"h": 1260,
+"scale": 1.0,
+"src_h": 1260,
+"src_w": 1113,
+"w": 1113,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-08_ann2.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\overlays\\_pre_verification\\img5_final.png",
+332710,
+1791175561,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-09": {
+"res": {
+"bytes": 386439,
+"h": 1304,
+"scale": 0.67969,
+"src_h": 1919,
+"src_w": 2354,
+"th": 326,
+"thumb": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-09_400.jpg",
+"tw": 400,
+"w": 1600,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-09.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\src\\img6_ccc_exhibit3_concept_plan.png",
+60895,
+1791156846,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-09_ann1": {
+"res": {
+"bytes": 312581,
+"h": 1179,
+"scale": 1.0,
+"src_h": 1179,
+"src_w": 1177,
+"w": 1177,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-09_ann1.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A3_ccc_exhibit3_contours_section_AA.png",
+313254,
+1791217387,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-09_ann2": {
+"res": {
+"bytes": 97623,
+"h": 528,
+"scale": 1.0,
+"src_h": 528,
+"src_w": 564,
+"w": 564,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-09_ann2.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\overlays\\img6_final.png",
+97162,
+1791157725,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-09_ann3": {
+"res": {
+"bytes": 97623,
+"h": 528,
+"scale": 1.0,
+"src_h": 528,
+"src_w": 564,
+"w": 564,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-09_ann3.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\overlays\\_pre_verification\\img6_final.png",
+97162,
+1791175561,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-10": {
+"res": {
+"bytes": 220431,
+"h": 900,
+"scale": 1.0,
+"src_h": 900,
+"src_w": 1400,
+"th": 257,
+"thumb": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-10_400.jpg",
+"tw": 400,
+"w": 1400,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-10.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\src\\navionics\\app_options_sonarchart_feet.png",
+222480,
+1791216615,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-11": {
+"res": {
+"bytes": 50013,
+"h": 751,
+"scale": 1.0,
+"src_h": 751,
+"src_w": 985,
+"th": 305,
+"thumb": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-11_400.jpg",
+"tw": 400,
+"w": 985,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-11.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\src\\navionics\\sonar_ft_z17_map.png",
+53345,
+1791216614,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-12": {
+"res": {
+"bytes": 41969,
+"h": 751,
+"scale": 1.0,
+"src_h": 751,
+"src_w": 985,
+"th": 305,
+"thumb": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-12_400.jpg",
+"tw": 400,
+"w": 985,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-12.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\src\\navionics\\sonar_ft_z18_map.png",
+46744,
+1791216614,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-12_ann1": {
+"res": {
+"bytes": 142104,
+"h": 1113,
+"scale": 1.0,
+"src_h": 1113,
+"src_w": 985,
+"w": 985,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-12_ann1.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A9_navionics_sonarchart_contours_transect.png",
+147203,
+1791217390,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-13": {
+"res": {
+"bytes": 30768,
+"h": 751,
+"scale": 1.0,
+"src_h": 751,
+"src_w": 985,
+"th": 305,
+"thumb": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-13_400.jpg",
+"tw": 400,
+"w": 985,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-13.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\src\\navionics\\nautical_ft_z17_map.png",
+32915,
+1791216614,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-14": {
+"res": {
+"bytes": 27296,
+"h": 751,
+"scale": 1.0,
+"src_h": 751,
+"src_w": 985,
+"th": 305,
+"thumb": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-14_400.jpg",
+"tw": 400,
+"w": 985,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-14.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\src\\navionics\\nautical_ft_z18_map.png",
+29932,
+1791216614,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-14_ann1": {
+"res": {
+"bytes": 70302,
+"h": 933,
+"scale": 1.0,
+"src_h": 933,
+"src_w": 985,
+"w": 985,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-14_ann1.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A10_navionics_nautical_chart_soundings.png",
+73244,
+1791217390,
+1600,
+400,
+false,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-15": {
+"res": {
+"bytes": 133156,
+"h": 900,
+"scale": 1.0,
+"src_h": 900,
+"src_w": 1400,
+"th": 257,
+"thumb": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-15_400.jpg",
+"tw": 400,
+"w": 1400,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-15.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\src\\navionics\\hint1_33.9188_-118.4324\\app_options_sonarchart_feet.png",
+133402,
+1791216614,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-16": {
+"res": {
+"bytes": 53322,
+"h": 751,
+"scale": 1.0,
+"src_h": 751,
+"src_w": 985,
+"th": 305,
+"thumb": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-16_400.jpg",
+"tw": 400,
+"w": 985,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-16.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\src\\navionics\\hint1_33.9188_-118.4324\\sonar_ft_z17_map.png",
+57078,
+1791216614,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-17": {
+"res": {
+"bytes": 46422,
+"h": 751,
+"scale": 1.0,
+"src_h": 751,
+"src_w": 985,
+"th": 305,
+"thumb": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-17_400.jpg",
+"tw": 400,
+"w": 985,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-17.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\src\\navionics\\hint1_33.9188_-118.4324\\sonar_ft_z18_map.png",
+50805,
+1791216614,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-18": {
+"res": {
+"bytes": 34583,
+"h": 751,
+"scale": 1.0,
+"src_h": 751,
+"src_w": 985,
+"th": 305,
+"thumb": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-18_400.jpg",
+"tw": 400,
+"w": 985,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-18.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\src\\navionics\\hint1_33.9188_-118.4324\\nautical_ft_z17_map.png",
+36776,
+1791216614,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-19": {
+"res": {
+"bytes": 32409,
+"h": 751,
+"scale": 1.0,
+"src_h": 751,
+"src_w": 985,
+"th": 305,
+"thumb": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-19_400.jpg",
+"tw": 400,
+"w": 985,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-19.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\src\\navionics\\hint1_33.9188_-118.4324\\nautical_ft_z18_map.png",
+34661,
+1791216614,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-20": {
+"res": {
+"bytes": 205824,
+"h": 1600,
+"scale": 0.85561,
+"src_h": 1870,
+"src_w": 1276,
+"th": 400,
+"thumb": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-20_400.jpg",
+"tw": 273,
+"w": 1092,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-20.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A2_ccc_exhibit2_profile_datums.png",
+370151,
+1791217387,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-21": {
+"res": {
+"bytes": 314257,
+"h": 1556,
+"scale": 1.0,
+"src_h": 1556,
+"src_w": 992,
+"th": 400,
+"thumb": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-21_400.jpg",
+"tw": 255,
+"w": 992,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-21.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A4_icce2010_p7_pratte_text_highlighted.png",
+425324,
+1791217387,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-22": {
+"res": {
+"bytes": 97174,
+"h": 583,
+"scale": 1.0,
+"src_h": 583,
+"src_w": 973,
+"th": 240,
+"thumb": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-22_400.jpg",
+"tw": 400,
+"w": 973,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-22.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A5_icce2010_fig1_pratte_bag_size.png",
+98460,
+1791217387,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-23": {
+"res": {
+"bytes": 287855,
+"h": 1435,
+"scale": 1.0,
+"src_h": 1435,
+"src_w": 1020,
+"th": 400,
+"thumb": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-23_400.jpg",
+"tw": 284,
+"w": 1020,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-23.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A6_ccc_p11_project_description_highlighted.png",
+607725,
+1791217388,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-24": {
+"res": {
+"bytes": 208188,
+"h": 874,
+"scale": 0.9697,
+"src_h": 901,
+"src_w": 1650,
+"th": 218,
+"thumb": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-24_400.jpg",
+"tw": 400,
+"w": 1600,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-24.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A7_noaa_dem_map_and_seabed_profile.png",
+350637,
+1791218388,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-25": {
+"res": {
+"bytes": 87003,
+"h": 715,
+"scale": 1.0,
+"src_h": 715,
+"src_w": 990,
+"th": 289,
+"thumb": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-25_400.jpg",
+"tw": 400,
+"w": 990,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-25.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A8_noaa_tidal_datums_and_crest_states.png",
+74612,
+1791218395,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-26": {
+"res": {
+"bytes": 153944,
+"h": 616,
+"scale": 1.0,
+"src_h": 616,
+"src_w": 1540,
+"th": 160,
+"thumb": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-26_400.jpg",
+"tw": 400,
+"w": 1540,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-26.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A11_navionics_vs_noaa_dem_profile.png",
+131325,
+1791217390,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-27": {
+"res": {
+"bytes": 234749,
+"h": 853,
+"scale": 0.6449,
+"src_h": 1323,
+"src_w": 2481,
+"th": 213,
+"thumb": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-27_400.jpg",
+"tw": 400,
+"w": 1600,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-27.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A12_bn2003_p1-3_text_highlighted.png",
+1168303,
+1791217391,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-28": {
+"res": {
+"bytes": 168076,
+"h": 1104,
+"scale": 0.70609,
+"src_h": 1564,
+"src_w": 2266,
+"th": 276,
+"thumb": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-28_400.jpg",
+"tw": 400,
+"w": 1600,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-28.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A13_bn2003_fig4_vs_skelly_img1.png",
+952932,
+1791217391,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-29": {
+"res": {
+"bytes": 224045,
+"h": 941,
+"scale": 1.0,
+"src_h": 941,
+"src_w": 1296,
+"th": 290,
+"thumb": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-29_400.jpg",
+"tw": 400,
+"w": 1296,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-29.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A14_bn2003_fig2_aerial_position.png",
+1069862,
+1791217392,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-30": {
+"res": {
+"bytes": 198878,
+"h": 1013,
+"scale": 0.9697,
+"src_h": 1045,
+"src_w": 1650,
+"th": 253,
+"thumb": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-30_400.jpg",
+"tw": 400,
+"w": 1600,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-30.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A15_bn2003_fig5-8_reef_profiles_digitised.png",
+206049,
+1791217392,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-31": {
+"res": {
+"bytes": 360905,
+"h": 768,
+"scale": 0.9697,
+"src_h": 792,
+"src_w": 1650,
+"th": 192,
+"thumb": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-31_400.jpg",
+"tw": 400,
+"w": 1600,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-31.png"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A16_bn2003_fig9_bathymetry_utm.png",
+215186,
+1791217392,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+},
+"assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-32": {
+"res": {
+"bytes": 325502,
+"h": 1243,
+"scale": 0.96735,
+"src_h": 1285,
+"src_w": 1654,
+"th": 311,
+"thumb": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-32_400.jpg",
+"tw": 400,
+"w": 1600,
+"web": "assets/images/prattes-reef-el-segundo/prattes-reef-el-segundo-img-32.jpg"
+},
+"sig": [
+"C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\07_scale\\shapes\\prattes-reef-el-segundo\\3d\\annotated\\A17_bn2003_p14_p16_text_highlighted.png",
+500209,
+1791217392,
+1600,
+400,
+true,
+400000,
+false,
+false
+]
+}
+}

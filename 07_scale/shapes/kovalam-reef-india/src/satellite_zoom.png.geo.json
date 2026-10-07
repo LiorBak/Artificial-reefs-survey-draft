@@ -1,0 +1,24 @@
+{
+  "image": "satellite_zoom.png",
+  "width": 2370,
+  "height": 2370,
+  "bounds": {
+    "north": 8.389543972612895,
+    "south": 8.383255111010797,
+    "east": 76.97747826576233,
+    "west": 76.97112143039703
+  },
+  "zoom": 19,
+  "m_per_px_center": 0.2953893969434888,
+  "tile_template": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+  "wayback_release": null,
+  "center": {
+    "lat": 8.3864,
+    "lon": 76.9743
+  },
+  "radius_m": 350.0,
+  "attribution": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+  "retrieved": "2026-10-04",
+  "capture_date": "2026-01-23",
+  "capture_date_field": "DATE (YYYYMMDD)"
+}

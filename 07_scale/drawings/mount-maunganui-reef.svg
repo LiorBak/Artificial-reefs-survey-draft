@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="419" viewBox="0 0 300 419" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="8" y="16" font-weight="600" font-size="13" fill="#1b1f24">Mount Maunganui Beach Reef ("Mount Reef")</text>
+<text x="8" y="32" fill="#5a626d">68 × 73 m · 2,497 m² · medium confidence</text>
+<g transform="translate(0,40)">
+<rect x="0" y="0" width="182" height="321.3" fill="#e6f1f7"/>
+<rect x="0" y="321.3" width="182" height="24" fill="#efe3c4"/>
+<line x1="0" x2="182" y1="321.3" y2="321.3" stroke="#7a6a45" stroke-width="1.5"/>
+<text x="166" y="336.3" text-anchor="end" fill="#5a626d">beach · shoreline (y = 0)</text>
+<line x1="20" x2="20" y1="317.3" y2="281.3" stroke="#3d5a73" stroke-width="1.5"/><path d="M16 285.3l4 -7l4 7z" fill="#3d5a73"/>
+<text x="16" y="18" fill="#5a626d">↑ offshore (sea)</text>
+<g fill="#9b1c1c" fill-opacity=".9" stroke="#1b1f24" stroke-width="1" stroke-linejoin="round"><path d="M65.7 59.2L118.5 45.0L124.9 69.2L72.1 83.4L65.7 59.2Z"/><path d="M80.7 67.0L96.0 109.3L72.5 117.9L57.1 75.6L80.7 67.0Z"/></g>
+<line x1="72.5" x2="72.5" y1="321.3" y2="117.9" stroke="#3d5a73" stroke-dasharray="3 3"/><text x="76.5" y="223.6" fill="#1b1f24">203 m</text>
+<rect x="66.0" y="362" width="50.0" height="5" fill="#1b1f24"/><rect x="116.0" y="362" width="50.0" height="5" fill="#ffffff" stroke="#1b1f24" stroke-width=".8"/><text x="66.0" y="358" fill="#1b1f24">0</text><text x="166" y="358" text-anchor="end" fill="#1b1f24">100 m</text>
+<text x="16" y="372" fill="#5a626d">1 px = 1 m</text>
+</g>
+</svg>

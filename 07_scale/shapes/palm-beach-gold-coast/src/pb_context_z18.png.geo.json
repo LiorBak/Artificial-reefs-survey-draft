@@ -1,0 +1,24 @@
+{
+  "image": "pb_context_z18.png",
+  "width": 2658,
+  "height": 2658,
+  "bounds": {
+    "north": -28.101512234566236,
+    "south": -28.114089234568628,
+    "east": 153.47312986850739,
+    "west": 153.45887124538422
+  },
+  "zoom": 18,
+  "m_per_px_center": 0.526736361917215,
+  "tile_template": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+  "wayback_release": null,
+  "center": {
+    "lat": -28.1078,
+    "lon": 153.466
+  },
+  "radius_m": 700.0,
+  "attribution": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+  "retrieved": "2026-10-04",
+  "capture_date": "2025-12-01",
+  "capture_date_field": "DATE (YYYYMMDD)"
+}

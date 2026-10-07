@@ -1,0 +1,214 @@
+{
+ "updated": "2026-10-07 09:05",
+ "sig": {
+  "models": {
+   "borth-coastal-defence-reef": {
+    "viewer": "867c5e7cc16cfe26",
+    "model.js": "cac59596f051eb94",
+    "annotated": "0a0510b8b4f00a3a",
+    "shape.json": "e93aa9df4b66fca2",
+    "registry": "d7d06a5e9b1e2e82",
+    "card": "40c17c55df1bb4ce",
+    "config": "2450866ca854f8f9"
+   },
+   "boscombe-surf-reef": {
+    "viewer": "852fc4a4694d2dbe",
+    "model.js": "c9861120fb9045c7",
+    "annotated": "da159c02ffd04535",
+    "shape.json": "b6b5a73f1edb3bb3",
+    "registry": "7f418b01a570527f",
+    "card": "cb6d4f12b45a54fa",
+    "config": "0d41e6d42122f005"
+   },
+   "bunbury-airwave": {
+    "viewer": "5c12c267d2f00f91",
+    "model.js": "1895211668613000",
+    "annotated": "6f46188da55d114c",
+    "shape.json": "f78f81e31007f34e",
+    "registry": "5b81179d65f3abd3",
+    "card": "93a0e60c9449647a",
+    "config": "30a18b5efbc83d0b"
+   },
+   "mount-maunganui-reef": {
+    "viewer": "b9de8364493b088f",
+    "model.js": "42860ea45fbf54b2",
+    "annotated": "9059e371a227efa9",
+    "shape.json": "503941b10795c22d",
+    "registry": "9a4d017aaf1fae56",
+    "card": "3b72ac72353b2095",
+    "config": "688689c7b98d7503"
+   },
+   "palm-beach-gold-coast": {
+    "viewer": "3811e3d6d4caa5fe",
+    "model.js": "0ab22fe8e7b0710d",
+    "annotated": "a4f1c2f523565aab",
+    "shape.json": "9d74d332271d31bb",
+    "registry": "ef70a84962615af7",
+    "card": "ce501df9e7b36401",
+    "config": "08d80b1bf7d60e45"
+   },
+   "prattes-reef-el-segundo": {
+    "viewer": "1b23230d2ecbf6f7",
+    "model.js": "39b9a34a88b79b48",
+    "annotated": "40609f4deb584b6e",
+    "shape.json": "caf79e64c4de25f0",
+    "registry": "b5cec27e7ef7914c",
+    "card": "326ef4bb8e12e8d6",
+    "config": "036d108ce91351d3"
+   }
+  },
+  "hold": "498ea894054eb75f",
+  "src": "08467b728bb719f1"
+ },
+ "snapshot": {
+  "borth-coastal-defence-reef": {
+   "default_version": "lidar_2022",
+   "versions": {
+    "lidar_2022": {
+     "area_m2": 8675.0,
+     "volume_m3": 31336.0
+    },
+    "design_1020": {
+     "area_m2": 6989.0,
+     "volume_m3": 30091.0
+    },
+    "sat_2024": {
+     "area_m2": 5743.0,
+     "volume_m3": 26400.0
+    }
+   },
+   "key_numbers": {
+    "Footprint (plan outline)": "8,675 m2 laser-survey edge (default, about -2.3 mODN); 6,989 m2 design rock foot; 5,743 m2 visible rock in the 2024 photo",
+    "Rock volume": "31,336 m3 (laser edge, default); 30,091 m3 (design foot); 26,400 m3 (photo edge); +-4,600 m3 for a bed error of 0.4 m",
+    "Crest levels": "north arm +0.50 mODN (+0.19 m MSL), tail +1.00, head edge +0.00 rising to +0.50; oval breakwater +1.50 mODN (+1.19 m MSL)",
+    "Height above the seabed": "north arm about 4.5 m, oval about 5.5 m (+-0.5 m)",
+    "Seabed under the rock": "north foot -4.04 mODN mean (-4.72 to -2.51); oval -3.95 (-4.21 to -3.62)",
+    "Seabed seaward of the reef (y > 335 m)": "0.89 m deeper than the HRPP576 Fig 2 -4.0 m contour (sd 0.14 m, n = 13)",
+    "Datum and tides": "z = 0 at mean sea level = +0.31 mODN (+-0.15 m, a 4-level mean); tide slider LAT to MHWS (+2.25 m MSL)",
+    "Length of the oval breakwater": "38 m between the crest ends (setting-out table of drawing 1020)",
+    "Distance offshore": "centroid of both mounds 330.5 m offshore (nearest edge 257 m, farthest 397 m)"
+   },
+   "pictures": 22,
+   "match_buttons": 8,
+   "combined": {
+    "status": "ok",
+    "ok": true,
+    "area_m2": 11922.0,
+    "crest_z_m": 1.5
+   }
+  },
+  "boscombe-surf-reef": {
+   "default_version": "",
+   "versions": {},
+   "key_numbers": {
+    "Crest level": "flat +0.5 m ACD = -0.90 m MSL; stands 0.56 m above LAT (dry at LAT)",
+    "Seabed depth at the reef": "-1.4 m (y 100 m) to -4.8 m (y 300 m) in the survey datum (ACD); under the outline mean -3.56 m ACD",
+    "Seabed extent (shoreline to offshore, since 2026-10-07)": "grid 161 x 359 cells of 2 m: x -160..160 m, y -66..650 m, so the beach and the shoreline are inside the model; beach and nearshore from CCO ",
+    "Reef height above the seabed": "mean 3.2 m inside the outline (surveyed median 2.3 m, maximum 4.1 m after damage)",
+    "Side slopes": "1:3 (run : rise), +-30 %",
+    "Footprint": "4,042 m2 (25 vertices; minimum rotated rectangle 121.1 x 45.0 m)",
+    "Volume": "13,119 m3 (loft)"
+   },
+   "pictures": 26,
+   "match_buttons": 6,
+   "combined": {
+    "status": "ok",
+    "ok": true,
+    "area_m2": 4868.0,
+    "crest_z_m": -0.8999999761581421
+   }
+  },
+  "bunbury-airwave": {
+   "default_version": "",
+   "versions": {},
+   "key_numbers": {
+    "Crest depth at low tide": "0.38 m (H = 2.0 m) to 0.78 m (H = 1.6 m) below MLLW at the default position; Monte Carlo 0.69 +- 0.66 m",
+    "Seabed depth at the reef centre (y = 37.5 m)": "-2.58 m AHD (lidar 2009) = -2.68 m MSL",
+    "Reef height above the seabed": "2.0 m default (range 1.6-2.0 m)",
+    "Side slopes / profile": "symmetric spherical cap (stand-in); rim angle 36.9 deg at VE 1; bed 1:24.5",
+    "Footprint": "circle D = 12.0 m, 112.1 m2 (29-vertex trace)",
+    "Volume (cap) vs fill": "cap 92.6-117.3 m3 (H = 1.6-2.0 m)"
+   },
+   "pictures": 13,
+   "match_buttons": 1,
+   "combined": {
+    "status": "ok",
+    "ok": true,
+    "area_m2": 111.97799657793803,
+    "crest_z_m": -0.6502518057823181
+   }
+  },
+  "mount-maunganui-reef": {
+   "default_version": "multibeam_2013_m2p0",
+   "versions": {
+    "multibeam_2013_m2p0": {
+     "area_m2": 1071.0,
+     "volume_m3": 3620.0
+    },
+    "asr_installed_toe_2008": {
+     "area_m2": 1423.8,
+     "volume_m3": 3212.0
+    }
+   },
+   "key_numbers": {
+    "Footprint (plan outline)": "1,071 m2 default (67.9 x 60.4 m, 5 bag polygons, -2.0 m CD contour of the 2013 survey); 1,424 m2 as-built toe (73.9 x 62.5 m)",
+    "Reef volume versus bed level": "3,620 m3 default / 3,212 m3 toe loft at the default bed -4.0 m CD",
+    "As-built bed at the reef centre (ASSUMPTION)": "-4.0 m CD = -5.13 m MSL (selector: -3.0, -3.5, -4.0, -4.5 m CD)",
+    "Crest level": "-0.9 m CD = -2.03 m MSL (selector -0.8 / -1.0 m CD)",
+    "Reef height above the bed": "maximum 3.25 m (default version, crest to bed at the default bed)",
+    "Distance from the shoreline": "reef centroid 307.7 m from the wet/dry-sand shoreline (Esri 2011-01-15)",
+    "Vertical datum": "z = 0 at present mean sea level = Chart Datum + 1.13 m (LINZ Tauranga); Chart Datum = z -1.13 m; MVD-53 = z -0.168 m"
+   },
+   "pictures": 8,
+   "match_buttons": 7,
+   "combined": {
+    "status": "ok",
+    "ok": true,
+    "area_m2": 1903.5,
+    "crest_z_m": -2.0149998664855957
+   }
+  },
+  "palm-beach-gold-coast": {
+   "default_version": "",
+   "versions": {},
+   "key_numbers": {
+    "Crest level": "-1.5 m MSL = 0.62 m below LAT (59.2 x 5.9 m slot)",
+    "Toe / seabed depth": "toe -4.0 (landward end) to -7.0 m MSL (seaward end, +-0.5 m); seabed from the Navionics SonarChart",
+    "Reef height above the seabed": "3.89 m at the crest (3.51 m Navionics-only seabed); maximum 4.17 m",
+    "Side slopes": "1:12 (north flank, outer east end), 1:4.9 (south flank), 1:25 (near-crest platform, east end)",
+    "Footprint": "toe 11,972 m2 (162.3 x 91.3 m; 11,989 m2 on the 1 m grid)",
+    "Volume (rock envelope)": "22,000 m3 (22,020; voids included)"
+   },
+   "pictures": 27,
+   "match_buttons": 6,
+   "combined": {
+    "status": "ok",
+    "ok": true,
+    "area_m2": 12536.999955090345,
+    "crest_z_m": -1.4299999475479126
+   }
+  },
+  "prattes-reef-el-segundo": {
+   "default_version": "",
+   "versions": {},
+   "key_numbers": {
+    "Crest, apex face (state B, default)": "-2.678 m MSL = 1.83 m below MLLW = 1.21 m below LAT",
+    "Crest, arm tips (state B)": "-1.784 m MSL = 0.32 m below LAT",
+    "Crest, alternative state A (design level)": "-1.829 m MSL, level = 0.36 m below LAT",
+    "Seabed at the reef centre (y = 91.44 m from the MSL waterline)": "-3.67 m MSL (apex -4.03, tips -3.13); slope 1:32.0",
+    "Reef height": "1.35 m (state B: 1.12 bag courses; A: 1.3 m tips, 2.2 m apex)",
+    "Side slopes": "1 H : 1 V (assumed; range 0.5-2.5 H per 1 V)",
+    "Footprint": "435.2 m2, 58.0 x 28.6 m (76 vertices)",
+    "Volume": "443 m3 (state B); 550 m3 (state A)"
+   },
+   "pictures": 28,
+   "match_buttons": 2,
+   "combined": {
+    "status": "ok",
+    "ok": true,
+    "area_m2": 478.2399520849692,
+    "crest_z_m": -1.818428874015808
+   }
+  }
+ }
+}

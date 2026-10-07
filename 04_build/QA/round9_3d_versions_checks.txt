@@ -1,0 +1,29 @@
+PASS check.py [3D] block passes on the sandbox
+PASS check.py versions contract was exercised (1 model with versions)
+PASS synthetic model discovered (slug not in reefs.json)
+PASS model without versions has no version bar
+PASS toggle shows 3 buttons with names and dates
+PASS default version (b) is pressed on load
+PASS key numbers show the default version rows
+PASS version-specific curated row hidden for default (row 'versions: [a]')
+PASS iframe src carries #version=<default>
+PASS viewer applied the initial version
+PASS full-screen link carries the hash
+PASS toggle: pressed state follows the click
+PASS key numbers follow the toggle (version a rows + 'design only' row appear)
+PASS iframe was told: postMessage reached the viewer
+PASS iframe was told: hash navigation reached the viewer
+PASS iframe src follows (#version=a)
+PASS by_version override applied for version c
+PASS version c without volume: no volume row
+PASS (i) opens the versions dialog
+PASS dialog shows versions_info (both paragraphs, italic rendered)
+PASS dialog table: name | date | source | footprint | volume, 3 rows
+PASS dialog table cells filled (areas, volumes, dates, sources)
+PASS Escape closes the dialog
+PASS focus returns to the (i) button
+PASS automatic caveat rows for the version differences (2 other versions x area + volume where known = 3)
+PASS version caveat row text names both versions and the difference
+shot  round9_3d_versions_toggle_viewer.png
+shot  round9_3d_versions_dialog.png
+shot  round9_3d_versions_caveats.png

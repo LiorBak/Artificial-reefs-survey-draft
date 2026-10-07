@@ -1,0 +1,1705 @@
+{
+ "_about": "'Match this photo' transforms (src/photo_match.py, round 11). pictures.<registry id>: to_canonical = [a, b, tx, c, d, ty] with x = a*px + b*py + tx, y = c*px + d*py + ty (px, py = pixel of the ORIGINAL image, y down; x, y = canonical metres = the model.js frame); center_m / up_m / width_m / height_m = the picture's ground footprint (up_m = direction of the picture's top edge); residual = RMS boundary distance of the transformed trace to the canonical outline. viewers.<slug>.scene_map maps canonical (x, y) to the viewer's scene ground (X, Z).",
+ "version": 1,
+ "tolerance": {
+  "rms_m": 2.0,
+  "small_reef_rule": "reefs < 40 m long: 10 % of the longest dimension",
+  "min_iou": 0.5
+ },
+ "viewers": {
+  "borth-coastal-defence-reef": {
+   "scene_map": [
+    [
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0
+    ]
+   ],
+   "scene_map_note": "scene X = x, Z = y (viewer frame note)",
+   "frame_check": {
+    "iou_canonical_vs_model_outline": 0.662,
+    "centroid_offset_canonical_to_model_m": [
+     3.09,
+     0.14
+    ],
+    "note": "model.js default outline vs shape.json canonical outline (different edge definitions are expected for Borth / Mount Maunganui versions); an offset > 3 m means the viewer frame is shifted against the canonical frame"
+   },
+   "tolerance_m": 2.0,
+   "canon_to_model_shift_m": [
+    0.0,
+    0.0
+   ],
+   "geo_fit": {
+    "rms_m": 0.005,
+    "max_m": 0.01,
+    "scale": 1.000001,
+    "vertices": 79
+   }
+  },
+  "boscombe-surf-reef": {
+   "scene_map": [
+    [
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0
+    ]
+   ],
+   "scene_map_note": "scene X = x, Z = y (viewer frame note)",
+   "frame_check": {
+    "iou_canonical_vs_model_outline": 1.0,
+    "centroid_offset_canonical_to_model_m": [
+     0.0,
+     0.0
+    ],
+    "note": "model.js default outline vs shape.json canonical outline (different edge definitions are expected for Borth / Mount Maunganui versions); an offset > 3 m means the viewer frame is shifted against the canonical frame"
+   },
+   "tolerance_m": 2.0,
+   "canon_to_model_shift_m": [
+    0.0,
+    0.0
+   ],
+   "geo_fit": {
+    "rms_m": 0.006,
+    "max_m": 0.011,
+    "scale": 0.999976,
+    "vertices": 25
+   }
+  },
+  "bunbury-airwave": {
+   "scene_map": [
+    [
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     -1.0
+    ]
+   ],
+   "scene_map_note": "scene X = x, Z = -y (viewer frame note, Bunbury)",
+   "frame_check": {
+    "iou_canonical_vs_model_outline": 0.0,
+    "centroid_offset_canonical_to_model_m": [
+     0.0,
+     37.5
+    ],
+    "note": "model.js default outline vs shape.json canonical outline (different edge definitions are expected for Borth / Mount Maunganui versions); an offset > 3 m means the viewer frame is shifted against the canonical frame"
+   },
+   "tolerance_m": 1.22,
+   "canon_to_model_shift_m": [
+    0.0,
+    37.5
+   ]
+  },
+  "mount-maunganui-reef": {
+   "scene_map": [
+    [
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0
+    ]
+   ],
+   "scene_map_note": "scene X = x, Z = y (viewer frame note)",
+   "frame_check": {
+    "iou_canonical_vs_model_outline": 1.0,
+    "centroid_offset_canonical_to_model_m": [
+     0.0,
+     0.0
+    ],
+    "note": "model.js default outline vs shape.json canonical outline (different edge definitions are expected for Borth / Mount Maunganui versions); an offset > 3 m means the viewer frame is shifted against the canonical frame"
+   },
+   "tolerance_m": 2.0,
+   "canon_to_model_shift_m": [
+    0.0,
+    0.0
+   ],
+   "geo_fit": {
+    "rms_m": 0.05,
+    "max_m": 0.09,
+    "scale": 0.999295,
+    "vertices": 228
+   }
+  },
+  "palm-beach-gold-coast": {
+   "scene_map": [
+    [
+     -0.43365908,
+     0.90107702
+    ],
+    [
+     -0.90107702,
+     -0.43365908
+    ]
+   ],
+   "scene_map_note": "scene X = E = x sin(bx) + y sin(by), Z = -N = -(x cos(bx) + y cos(by)) (viewer toT())",
+   "frame_check": {
+    "iou_canonical_vs_model_outline": 1.0,
+    "centroid_offset_canonical_to_model_m": [
+     0.0,
+     0.0
+    ],
+    "note": "model.js default outline vs shape.json canonical outline (different edge definitions are expected for Borth / Mount Maunganui versions); an offset > 3 m means the viewer frame is shifted against the canonical frame"
+   },
+   "tolerance_m": 2.0,
+   "canon_to_model_shift_m": [
+    0.0,
+    0.0
+   ],
+   "geo_fit": {
+    "rms_m": 0.152,
+    "max_m": 0.203,
+    "scale": 0.999301,
+    "vertices": 47
+   }
+  },
+  "prattes-reef-el-segundo": {
+   "scene_map": [
+    [
+     1.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0
+    ]
+   ],
+   "scene_map_note": "scene X = x, Z = y (viewer frame note)",
+   "frame_check": {
+    "iou_canonical_vs_model_outline": 1.0,
+    "centroid_offset_canonical_to_model_m": [
+     0.0,
+     0.0
+    ],
+    "note": "model.js default outline vs shape.json canonical outline (different edge definitions are expected for Borth / Mount Maunganui versions); an offset > 3 m means the viewer frame is shifted against the canonical frame"
+   },
+   "tolerance_m": 2.0,
+   "canon_to_model_shift_m": [
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "pictures": {
+  "borth-coastal-defence-reef-img-08": {
+   "slug": "borth-coastal-defence-reef",
+   "source_id": "sat2024",
+   "registry_id": "borth-coastal-defence-reef-img-08",
+   "kind": "trace",
+   "method": "georef",
+   "note": "pixel -> Web-Mercator bounds of the image (Esri World Imagery (current layer)) -> canonical via the geo <-> canonical fit (rms 0.005 m, scale 1.00000)",
+   "reference": "canonical outline (shape.json, traced on this picture)",
+   "to_canonical": [
+    0.001371494,
+    0.181829402,
+    -112.911716443,
+    -0.181829403,
+    0.001371493,
+    469.337681779
+   ],
+   "image_px": [
+    1540,
+    1540
+   ],
+   "residual": {
+    "rms_m": 0.003,
+    "p95_m": 0.005,
+    "max_m": 0.007,
+    "iou": 1.0,
+    "rings_trace": 2,
+    "rings_trace_compared": 2,
+    "rings_canonical": 2,
+    "rings_canonical_compared": 2
+   },
+   "tolerance_m": 4.0,
+   "traced": "outer edge of the bare/wet light-grey rock of each mound (rock meets the dark shadow/water halo); N mound 42 vertices, S mound 37 vertices",
+   "image_role": "primary",
+   "center_m": [
+    28.153,
+    330.385
+   ],
+   "up_m": [
+    -0.999972,
+    -0.007543
+   ],
+   "rotation_deg": -179.568,
+   "width_m": 280.025,
+   "height_m": 280.025,
+   "m_per_px": 0.181835,
+   "mirror": true,
+   "m_per_px_stated": 0.181835,
+   "scale_vs_stated_pct": 0.0,
+   "viewer_consistent": true
+  },
+  "borth-coastal-defence-reef-img-09": {
+   "slug": "borth-coastal-defence-reef",
+   "source_id": "sat2022",
+   "registry_id": "borth-coastal-defence-reef-img-09",
+   "kind": "trace",
+   "method": "georef",
+   "note": "pixel -> Web-Mercator bounds of the image (Esri World Imagery (Wayback release 34007)) -> canonical via the geo <-> canonical fit (rms 0.005 m, scale 1.00000)",
+   "reference": "canonical outline (shape.json)",
+   "to_canonical": [
+    0.001371494,
+    0.181829402,
+    -112.911716443,
+    -0.181829403,
+    0.001371493,
+    469.337681779
+   ],
+   "image_px": [
+    1540,
+    1540
+   ],
+   "residual": {
+    "rms_m": 2.196,
+    "p95_m": 3.741,
+    "max_m": 5.498,
+    "iou": 0.842,
+    "rings_trace": 2,
+    "rings_trace_compared": 2,
+    "rings_canonical": 2,
+    "rings_canonical_compared": 2
+   },
+   "tolerance_m": 4.0,
+   "traced": "outer edge of bare rock plus breaking-foam fringe; N 42 vertices, S 37 vertices",
+   "image_role": "cross_check",
+   "center_m": [
+    28.153,
+    330.385
+   ],
+   "up_m": [
+    -0.999972,
+    -0.007543
+   ],
+   "rotation_deg": -179.568,
+   "width_m": 280.025,
+   "height_m": 280.025,
+   "m_per_px": 0.181835,
+   "mirror": true,
+   "m_per_px_stated": 0.181835,
+   "scale_vs_stated_pct": 0.0,
+   "viewer_consistent": true
+  },
+  "borth-coastal-defence-reef-img-10": {
+   "slug": "borth-coastal-defence-reef",
+   "source_id": "sat2012",
+   "registry_id": "borth-coastal-defence-reef-img-10",
+   "kind": "trace",
+   "method": "georef",
+   "note": "pixel -> Web-Mercator bounds of the image (Esri World Imagery (Wayback release 18358)) -> canonical via the geo <-> canonical fit (rms 0.005 m, scale 1.00000)",
+   "reference": "canonical outline (shape.json)",
+   "to_canonical": [
+    0.001371494,
+    0.181829402,
+    -112.911716443,
+    -0.181829403,
+    0.001371493,
+    469.337681779
+   ],
+   "image_px": [
+    1540,
+    1540
+   ],
+   "residual": {
+    "rms_m": 3.25,
+    "p95_m": 5.321,
+    "max_m": 6.45,
+    "iou": 0.782,
+    "rings_trace": 2,
+    "rings_trace_compared": 2,
+    "rings_canonical": 2,
+    "rings_canonical_compared": 2
+   },
+   "tolerance_m": 4.0,
+   "traced": "pale-green algal rock mound versus darker water; soft outline; N 42 vertices, S 29 vertices",
+   "image_role": "cross_check",
+   "center_m": [
+    28.153,
+    330.385
+   ],
+   "up_m": [
+    -0.999972,
+    -0.007543
+   ],
+   "rotation_deg": -179.568,
+   "width_m": 280.025,
+   "height_m": 280.025,
+   "m_per_px": 0.181835,
+   "mirror": true,
+   "m_per_px_stated": 0.181835,
+   "scale_vs_stated_pct": 0.0,
+   "viewer_consistent": true
+  },
+  "borth-coastal-defence-reef-img-20": {
+   "slug": "borth-coastal-defence-reef",
+   "source_id": "drg1020",
+   "registry_id": "borth-coastal-defence-reef-img-20",
+   "kind": "trace",
+   "method": "direct",
+   "note": "vertex-for-vertex Umeyama fit of 2 traced ring(s) onto the outline version design_1020 (vertex rms 0.078 m)",
+   "reference": "outline version design_1020",
+   "to_canonical": [
+    -0.115332275,
+    -0.002476846,
+    220.951325875,
+    0.002476846,
+    -0.115332275,
+    457.259773125
+   ],
+   "image_px": [
+    3643,
+    2573
+   ],
+   "residual": {
+    "rms_m": 0.133,
+    "p95_m": 0.298,
+    "max_m": 0.498,
+    "iou": 0.997,
+    "rings_trace": 2,
+    "rings_trace_compared": 2,
+    "rings_canonical": 2,
+    "rings_canonical_compared": 2
+   },
+   "tolerance_m": 2.0,
+   "traced": "vector rings of the plan read from the PDF, not traced by eye: [0] northern reef foot of the Type 4 armour slope, [1] northern reef outer seabed edge of the toe apron, [2] southern reef armour foot, [3] southern reef outer seabed edge",
+   "image_role": "cross_check",
+   "center_m": [
+    7.687,
+    313.396
+   ],
+   "up_m": [
+    0.021471,
+    0.999769
+   ],
+   "rotation_deg": 88.77,
+   "width_m": 420.252,
+   "height_m": 296.818,
+   "m_per_px": 0.115359,
+   "mirror": true,
+   "m_per_px_stated": 0.115447,
+   "scale_vs_stated_pct": -0.08,
+   "viewer_consistent": true
+  },
+  "borth-coastal-defence-reef-img-26": {
+   "slug": "borth-coastal-defence-reef",
+   "source_id": "sonar_z17_shade00.0.png",
+   "registry_id": "borth-coastal-defence-reef-img-26",
+   "kind": "navionics",
+   "method": "web_mercator_capture_log",
+   "note": "north-up Web-Mercator screenshot, zoom 17, centred on 52.483453, -4.056205 (07_scale/shapes/borth-coastal-defence-reef/3d/src/navionics/capture_log.json (reef_latlon) + nav_geometry.json (clip 982 x 655, centre pixel 491,327)); canonical via the geo <-> canonical fit",
+   "to_canonical": [
+    0.005485973,
+    0.727317614,
+    -240.900467767,
+    -0.727317613,
+    0.005485972,
+    685.822025231
+   ],
+   "image_px": [
+    982,
+    655
+   ],
+   "crop_frac": null,
+   "zoom": 17,
+   "residual": {
+    "rms_m": 0.005,
+    "max_m": 0.01,
+    "note": "geo <-> canonical fit only; the chart's own positional accuracy is not assessed"
+   },
+   "tolerance_m": 2.0,
+   "traced": "",
+   "image_role": "chart",
+   "center_m": [
+    -0.01,
+    330.506
+   ],
+   "up_m": [
+    -0.999972,
+    -0.007543
+   ],
+   "rotation_deg": -179.568,
+   "width_m": 714.246,
+   "height_m": 476.407,
+   "m_per_px": 0.727338,
+   "mirror": true
+  },
+  "borth-coastal-defence-reef-img-27": {
+   "slug": "borth-coastal-defence-reef",
+   "source_id": "sonar_z18_shade00.0.png",
+   "registry_id": "borth-coastal-defence-reef-img-27",
+   "kind": "navionics",
+   "method": "web_mercator_capture_log",
+   "note": "north-up Web-Mercator screenshot, zoom 18, centred on 52.483453, -4.056205 (07_scale/shapes/borth-coastal-defence-reef/3d/src/navionics/capture_log.json (reef_latlon) + nav_geometry.json (clip 982 x 655, centre pixel 491,327)); canonical via the geo <-> canonical fit",
+   "to_canonical": [
+    0.002742986,
+    0.363658806,
+    -120.455402455,
+    -0.363658807,
+    0.002742986,
+    508.163879191
+   ],
+   "image_px": [
+    982,
+    655
+   ],
+   "crop_frac": null,
+   "zoom": 18,
+   "residual": {
+    "rms_m": 0.005,
+    "max_m": 0.01,
+    "note": "geo <-> canonical fit only; the chart's own positional accuracy is not assessed"
+   },
+   "tolerance_m": 2.0,
+   "traced": "",
+   "image_role": "chart",
+   "center_m": [
+    -0.01,
+    330.506
+   ],
+   "up_m": [
+    -0.999972,
+    -0.007543
+   ],
+   "rotation_deg": -179.568,
+   "width_m": 357.123,
+   "height_m": 238.203,
+   "m_per_px": 0.363669,
+   "mirror": true
+  },
+  "borth-coastal-defence-reef-img-28": {
+   "slug": "borth-coastal-defence-reef",
+   "source_id": "naut_z17_shade00.0.png",
+   "registry_id": "borth-coastal-defence-reef-img-28",
+   "kind": "navionics",
+   "method": "web_mercator_capture_log",
+   "note": "north-up Web-Mercator screenshot, zoom 17, centred on 52.483453, -4.056205 (07_scale/shapes/borth-coastal-defence-reef/3d/src/navionics/capture_log.json (reef_latlon) + nav_geometry.json (clip 982 x 655, centre pixel 491,327)); canonical via the geo <-> canonical fit",
+   "to_canonical": [
+    0.005485973,
+    0.727317614,
+    -240.900467767,
+    -0.727317613,
+    0.005485972,
+    685.822025231
+   ],
+   "image_px": [
+    982,
+    655
+   ],
+   "crop_frac": null,
+   "zoom": 17,
+   "residual": {
+    "rms_m": 0.005,
+    "max_m": 0.01,
+    "note": "geo <-> canonical fit only; the chart's own positional accuracy is not assessed"
+   },
+   "tolerance_m": 2.0,
+   "traced": "",
+   "image_role": "chart",
+   "center_m": [
+    -0.01,
+    330.506
+   ],
+   "up_m": [
+    -0.999972,
+    -0.007543
+   ],
+   "rotation_deg": -179.568,
+   "width_m": 714.246,
+   "height_m": 476.407,
+   "m_per_px": 0.727338,
+   "mirror": true
+  },
+  "borth-coastal-defence-reef-img-29": {
+   "slug": "borth-coastal-defence-reef",
+   "source_id": "naut_z18_shade00.0.png",
+   "registry_id": "borth-coastal-defence-reef-img-29",
+   "kind": "navionics",
+   "method": "web_mercator_capture_log",
+   "note": "north-up Web-Mercator screenshot, zoom 18, centred on 52.483453, -4.056205 (07_scale/shapes/borth-coastal-defence-reef/3d/src/navionics/capture_log.json (reef_latlon) + nav_geometry.json (clip 982 x 655, centre pixel 491,327)); canonical via the geo <-> canonical fit",
+   "to_canonical": [
+    0.002742986,
+    0.363658806,
+    -120.455402455,
+    -0.363658807,
+    0.002742986,
+    508.163879191
+   ],
+   "image_px": [
+    982,
+    655
+   ],
+   "crop_frac": null,
+   "zoom": 18,
+   "residual": {
+    "rms_m": 0.005,
+    "max_m": 0.01,
+    "note": "geo <-> canonical fit only; the chart's own positional accuracy is not assessed"
+   },
+   "tolerance_m": 2.0,
+   "traced": "",
+   "image_role": "chart",
+   "center_m": [
+    -0.01,
+    330.506
+   ],
+   "up_m": [
+    -0.999972,
+    -0.007543
+   ],
+   "rotation_deg": -179.568,
+   "width_m": 357.123,
+   "height_m": 238.203,
+   "m_per_px": 0.363669,
+   "mirror": true
+  },
+  "boscombe-surf-reef-img-08": {
+   "slug": "boscombe-surf-reef",
+   "source_id": "img1",
+   "registry_id": "boscombe-surf-reef-img-08",
+   "kind": "trace",
+   "method": "georef",
+   "note": "pixel -> Web-Mercator bounds of the image (Esri World Imagery (Wayback release 10)) -> canonical via the geo <-> canonical fit (rms 0.006 m, scale 0.99998)",
+   "reference": "canonical outline (shape.json, traced on this picture)",
+   "to_canonical": [
+    0.375582311,
+    -0.043399623,
+    -534.562680118,
+    0.043399623,
+    0.37558231,
+    -346.367138627
+   ],
+   "image_px": [
+    2116,
+    2116
+   ],
+   "residual": {
+    "rms_m": 0.004,
+    "p95_m": 0.006,
+    "max_m": 0.007,
+    "iou": 1.0,
+    "rings_trace": 1,
+    "rings_trace_compared": 1,
+    "rings_canonical": 1,
+    "rings_canonical_compared": 1
+   },
+   "tolerance_m": 4.0,
+   "traced": "Outer edge of the dark striped bag field (all visible geotextile-container rows) seen through the water on 2011-09-28. The pale patch between the two northern prongs (about x1600-1626, y1244-1287; roughly 10 x 16 m) is left inside the outline - it may be the collapsed/damaged container but that is not established.",
+   "image_role": "primary",
+   "center_m": [
+    -183.113,
+    96.916
+   ],
+   "up_m": [
+    0.114789,
+    -0.99339
+   ],
+   "rotation_deg": -83.409,
+   "width_m": 800.02,
+   "height_m": 800.02,
+   "m_per_px": 0.378081,
+   "mirror": true,
+   "m_per_px_stated": 0.378086,
+   "scale_vs_stated_pct": -0.0,
+   "viewer_consistent": true
+  },
+  "boscombe-surf-reef-img-14": {
+   "slug": "boscombe-surf-reef",
+   "source_id": "navionics_garmin_nauticalchart_z16_2026-10-05.png",
+   "registry_id": "boscombe-surf-reef-img-14",
+   "kind": "navionics",
+   "method": "web_mercator_capture_log",
+   "note": "north-up Web-Mercator screenshot, zoom 16, centred on 50.71753, -1.83891 (07_scale/shapes/boscombe-surf-reef/src/navionics_garmin_screenshots.provenance.json (map centred on 50.71753 N, 1.83891 W by Leaflet setView; 1400 x 900 screenshot, map pane x 400..1400, y 113..864)); canonical via the geo <-> canonical fit",
+   "to_canonical": [
+    1.502329242,
+    -0.173598493,
+    -1267.355873351,
+    0.173598493,
+    1.502329244,
+    -663.527233167
+   ],
+   "image_px": [
+    1400,
+    900
+   ],
+   "crop_frac": [
+    0.2857142857142857,
+    0.12555555555555556,
+    0.7142857142857143,
+    0.8344444444444444
+   ],
+   "zoom": 16,
+   "residual": {
+    "rms_m": 0.006,
+    "max_m": 0.011,
+    "note": "geo <-> canonical fit only; the chart's own positional accuracy is not assessed"
+   },
+   "tolerance_m": 2.0,
+   "traced": "",
+   "image_role": "chart",
+   "center_m": [
+    -0.062,
+    226.599
+   ],
+   "up_m": [
+    0.114789,
+    -0.99339
+   ],
+   "rotation_deg": -83.409,
+   "width_m": 1512.326,
+   "height_m": 1135.757,
+   "m_per_px": 1.512326,
+   "mirror": true
+  },
+  "boscombe-surf-reef-img-15": {
+   "slug": "boscombe-surf-reef",
+   "source_id": "navionics_garmin_nauticalchart_z17_2026-10-05.png",
+   "registry_id": "boscombe-surf-reef-img-15",
+   "kind": "navionics",
+   "method": "web_mercator_capture_log",
+   "note": "north-up Web-Mercator screenshot, zoom 17, centred on 50.71753, -1.83891 (07_scale/shapes/boscombe-surf-reef/src/navionics_garmin_screenshots.provenance.json (map centred on 50.71753 N, 1.83891 W by Leaflet setView; 1400 x 900 screenshot, map pane x 400..1400, y 113..864)); canonical via the geo <-> canonical fit",
+   "to_canonical": [
+    0.751164621,
+    -0.086799246,
+    -633.709146348,
+    0.086799247,
+    0.75116462,
+    -218.46399393
+   ],
+   "image_px": [
+    1400,
+    900
+   ],
+   "crop_frac": [
+    0.2857142857142857,
+    0.12555555555555556,
+    0.7142857142857143,
+    0.8344444444444444
+   ],
+   "zoom": 17,
+   "residual": {
+    "rms_m": 0.006,
+    "max_m": 0.011,
+    "note": "geo <-> canonical fit only; the chart's own positional accuracy is not assessed"
+   },
+   "tolerance_m": 2.0,
+   "traced": "",
+   "image_role": "chart",
+   "center_m": [
+    -0.062,
+    226.599
+   ],
+   "up_m": [
+    0.114789,
+    -0.99339
+   ],
+   "rotation_deg": -83.409,
+   "width_m": 756.163,
+   "height_m": 567.878,
+   "m_per_px": 0.756163,
+   "mirror": true
+  },
+  "boscombe-surf-reef-img-16": {
+   "slug": "boscombe-surf-reef",
+   "source_id": "navionics_garmin_nauticalchart_z18_2026-10-05.png",
+   "registry_id": "boscombe-surf-reef-img-16",
+   "kind": "navionics",
+   "method": "web_mercator_capture_log",
+   "note": "north-up Web-Mercator screenshot, zoom 18, centred on 50.71753, -1.83891 (07_scale/shapes/boscombe-surf-reef/src/navionics_garmin_screenshots.provenance.json (map centred on 50.71753 N, 1.83891 W by Leaflet setView; 1400 x 900 screenshot, map pane x 400..1400, y 113..864)); canonical via the geo <-> canonical fit",
+   "to_canonical": [
+    0.37558231,
+    -0.043399623,
+    -316.885782846,
+    0.043399623,
+    0.37558231,
+    4.067625689
+   ],
+   "image_px": [
+    1400,
+    900
+   ],
+   "crop_frac": [
+    0.2857142857142857,
+    0.12555555555555556,
+    0.7142857142857143,
+    0.8344444444444444
+   ],
+   "zoom": 18,
+   "residual": {
+    "rms_m": 0.006,
+    "max_m": 0.011,
+    "note": "geo <-> canonical fit only; the chart's own positional accuracy is not assessed"
+   },
+   "tolerance_m": 2.0,
+   "traced": "",
+   "image_role": "chart",
+   "center_m": [
+    -0.062,
+    226.599
+   ],
+   "up_m": [
+    0.114789,
+    -0.99339
+   ],
+   "rotation_deg": -83.409,
+   "width_m": 378.081,
+   "height_m": 283.939,
+   "m_per_px": 0.378081,
+   "mirror": true
+  },
+  "boscombe-surf-reef-img-17": {
+   "slug": "boscombe-surf-reef",
+   "source_id": "navionics_garmin_sonarchart_z17_2026-10-05.png",
+   "registry_id": "boscombe-surf-reef-img-17",
+   "kind": "navionics",
+   "method": "web_mercator_capture_log",
+   "note": "north-up Web-Mercator screenshot, zoom 17, centred on 50.71753, -1.83891 (07_scale/shapes/boscombe-surf-reef/src/navionics_garmin_screenshots.provenance.json (map centred on 50.71753 N, 1.83891 W by Leaflet setView; 1400 x 900 screenshot, map pane x 400..1400, y 113..864)); canonical via the geo <-> canonical fit",
+   "to_canonical": [
+    0.751164621,
+    -0.086799246,
+    -633.709146348,
+    0.086799247,
+    0.75116462,
+    -218.46399393
+   ],
+   "image_px": [
+    1400,
+    900
+   ],
+   "crop_frac": [
+    0.2857142857142857,
+    0.12555555555555556,
+    0.7142857142857143,
+    0.8344444444444444
+   ],
+   "zoom": 17,
+   "residual": {
+    "rms_m": 0.006,
+    "max_m": 0.011,
+    "note": "geo <-> canonical fit only; the chart's own positional accuracy is not assessed"
+   },
+   "tolerance_m": 2.0,
+   "traced": "",
+   "image_role": "chart",
+   "center_m": [
+    -0.062,
+    226.599
+   ],
+   "up_m": [
+    0.114789,
+    -0.99339
+   ],
+   "rotation_deg": -83.409,
+   "width_m": 756.163,
+   "height_m": 567.878,
+   "m_per_px": 0.756163,
+   "mirror": true
+  },
+  "boscombe-surf-reef-img-18": {
+   "slug": "boscombe-surf-reef",
+   "source_id": "navionics_garmin_sonarchart_z18_2026-10-05.png",
+   "registry_id": "boscombe-surf-reef-img-18",
+   "kind": "navionics",
+   "method": "web_mercator_capture_log",
+   "note": "north-up Web-Mercator screenshot, zoom 18, centred on 50.71753, -1.83891 (07_scale/shapes/boscombe-surf-reef/src/navionics_garmin_screenshots.provenance.json (map centred on 50.71753 N, 1.83891 W by Leaflet setView; 1400 x 900 screenshot, map pane x 400..1400, y 113..864)); canonical via the geo <-> canonical fit",
+   "to_canonical": [
+    0.37558231,
+    -0.043399623,
+    -316.885782846,
+    0.043399623,
+    0.37558231,
+    4.067625689
+   ],
+   "image_px": [
+    1400,
+    900
+   ],
+   "crop_frac": [
+    0.2857142857142857,
+    0.12555555555555556,
+    0.7142857142857143,
+    0.8344444444444444
+   ],
+   "zoom": 18,
+   "residual": {
+    "rms_m": 0.006,
+    "max_m": 0.011,
+    "note": "geo <-> canonical fit only; the chart's own positional accuracy is not assessed"
+   },
+   "tolerance_m": 2.0,
+   "traced": "",
+   "image_role": "chart",
+   "center_m": [
+    -0.062,
+    226.599
+   ],
+   "up_m": [
+    0.114789,
+    -0.99339
+   ],
+   "rotation_deg": -83.409,
+   "width_m": 378.081,
+   "height_m": 283.939,
+   "m_per_px": 0.378081,
+   "mirror": true
+  },
+  "bunbury-airwave-img-06": {
+   "slug": "bunbury-airwave",
+   "source_id": "img1",
+   "registry_id": "bunbury-airwave-img-06",
+   "kind": "trace",
+   "method": "direct",
+   "note": "vertex-for-vertex Umeyama fit of 1 traced ring(s) onto the canonical outline (shape.json, traced on this picture) (vertex rms 0.332 m)",
+   "reference": "canonical outline (shape.json, traced on this picture)",
+   "to_canonical": [
+    -0.037566147,
+    -0.016681418,
+    22.340008325,
+    -0.016681418,
+    0.037566147,
+    -5.118934451
+   ],
+   "image_px": [
+    956,
+    587
+   ],
+   "residual": {
+    "rms_m": 0.234,
+    "p95_m": 0.349,
+    "max_m": 0.367,
+    "iou": 0.932,
+    "rings_trace": 1,
+    "rings_trace_compared": 1,
+    "rings_canonical": 1,
+    "rings_canonical_compared": 1
+   },
+   "tolerance_m": 1.22,
+   "traced": "outer edge of the pale disc as seen from above (where the pale sand/bladder meets green water), including the paler crescent on the upper-left rim where the dome wall shows; 29 vertices read by eye off an overlay.py zoom grid",
+   "image_role": "primary",
+   "center_m": [
+    -0.513,
+    -2.067
+   ],
+   "up_m": [
+    0.405841,
+    -0.913944
+   ],
+   "rotation_deg": -66.056,
+   "width_m": 39.295,
+   "height_m": 24.128,
+   "m_per_px": 0.041103,
+   "mirror": false,
+   "m_per_px_stated": 0.039078,
+   "scale_vs_stated_pct": 5.18,
+   "viewer_consistent": true
+  },
+  "mount-maunganui-reef-img-08": {
+   "slug": "mount-maunganui-reef",
+   "source_id": "img1",
+   "registry_id": "mount-maunganui-reef-img-08",
+   "kind": "trace",
+   "method": "georef",
+   "note": "pixel -> Web-Mercator bounds of the image (NZGD2000 Bay of Plenty Circuit 2000 (EPSG:2106) axis tick la) -> canonical via the geo <-> canonical fit (rms 0.050 m, scale 0.99930)",
+   "reference": "canonical outline (shape.json, traced on this picture)",
+   "to_canonical": [
+    -0.1271032,
+    -0.132796424,
+    127.463023629,
+    0.132357849,
+    -0.127524363,
+    314.748493753
+   ],
+   "image_px": [
+    900,
+    1064
+   ],
+   "residual": {
+    "rms_m": 0.153,
+    "p95_m": 0.256,
+    "max_m": 0.285,
+    "iou": 0.969,
+    "rings_trace": 5,
+    "rings_trace_compared": 5,
+    "rings_canonical": 5,
+    "rings_canonical_compared": 5
+   },
+   "tolerance_m": 4.0,
+   "traced": "-2.0 m Chart Datum contour of the bag field: nearest-legend-colour classification of the native raster (26 swatches), mask = shallower than -2.0 m, closing x2 + hole fill, components > 300 px, contour at the mask edge, Douglas-Peucker 1 px. Five polygons: west (northern) arm 3-bag block 467.1 m2, mid-top bag 61.0, NE small bag 20.5, NE lobe (2 bags) 107.5, south (long) arm 415.0 m2.",
+   "image_role": "primary",
+   "center_m": [
+    -0.381,
+    306.467
+   ],
+   "up_m": [
+    0.721279,
+    0.692644
+   ],
+   "rotation_deg": 43.84,
+   "width_m": 165.154,
+   "height_m": 195.896,
+   "m_per_px": 0.183808,
+   "mirror": true,
+   "m_per_px_stated": 0.183486,
+   "scale_vs_stated_pct": 0.18,
+   "viewer_consistent": true
+  },
+  "mount-maunganui-reef-img-09": {
+   "slug": "mount-maunganui-reef",
+   "source_id": "img2",
+   "registry_id": "mount-maunganui-reef-img-09",
+   "kind": "trace",
+   "method": "georef",
+   "note": "pixel -> Web-Mercator bounds of the image (LINZ Bay of Plenty 0.125m Urban Aerial Photos (2010-2011), N) -> canonical via the geo <-> canonical fit (rms 0.050 m, scale 0.99930)",
+   "reference": "canonical outline (shape.json)",
+   "to_canonical": [
+    -0.08918485,
+    -0.093292441,
+    100.470957641,
+    0.092871895,
+    -0.089588702,
+    305.436233561
+   ],
+   "image_px": [
+    1100,
+    1100
+   ],
+   "residual": {
+    "rms_m": 0.77,
+    "p95_m": 1.521,
+    "max_m": 1.931,
+    "iou": 0.811,
+    "rings_trace": 5,
+    "rings_trace_compared": 5,
+    "rings_canonical": 5,
+    "rings_canonical_compared": 5
+   },
+   "tolerance_m": 4.0,
+   "traced": "NOT an independent hand trace: the img1 -2.0 m outlines projected onto the aerial (BOPTM -> NZTM) to test them. The reef shows as a dark red-brown \"7\"; separately an automatic visible-mass outline (red-excess threshold) gives 1723 m2, 71.3 x 64.9 m alongshore x cross-shore, used as an upper bound (aerial edges are soft and include shadow).",
+   "image_role": "cross_check",
+   "center_m": [
+    0.108,
+    307.242
+   ],
+   "up_m": [
+    0.721279,
+    0.692644
+   ],
+   "rotation_deg": 43.84,
+   "width_m": 141.636,
+   "height_m": 142.277,
+   "m_per_px": 0.129051,
+   "mirror": true,
+   "m_per_px_stated": 0.125,
+   "scale_vs_stated_pct": 3.24,
+   "viewer_consistent": true
+  },
+  "mount-maunganui-reef-img-10": {
+   "slug": "mount-maunganui-reef",
+   "source_id": "img3",
+   "registry_id": "mount-maunganui-reef-img-10",
+   "kind": "trace",
+   "method": "direct",
+   "note": "vertex-for-vertex Umeyama fit of 3 traced ring(s) onto the outline version asr_installed_toe_2008 (vertex rms 0.008 m)",
+   "reference": "outline version asr_installed_toe_2008",
+   "to_canonical": [
+    -0.118723609,
+    0.118634409,
+    -2.763076882,
+    -0.118634409,
+    -0.118723609,
+    366.507872423
+   ],
+   "image_px": [
+    570,
+    519
+   ],
+   "residual": {
+    "rms_m": 0.018,
+    "p95_m": 0.012,
+    "max_m": 0.228,
+    "iou": 0.999,
+    "rings_trace": 3,
+    "rings_trace_compared": 3,
+    "rings_canonical": 3,
+    "rings_canonical_compared": 3
+   },
+   "tolerance_m": 2.0,
+   "traced": "toe-level outline of the completed reef: registered mask of depth shallower than -4.2 m (legend units), 3 polygons, 1424 m2 (original image pixel frame; north is to the LEFT in this image).",
+   "image_role": "cross_check",
+   "center_m": [
+    -5.814,
+    301.888
+   ],
+   "up_m": [
+    -0.706841,
+    0.707372
+   ],
+   "rotation_deg": 134.978,
+   "width_m": 95.667,
+   "height_m": 87.108,
+   "m_per_px": 0.167837,
+   "mirror": true,
+   "m_per_px_stated": 0.167842,
+   "scale_vs_stated_pct": -0.0,
+   "viewer_consistent": true
+  },
+  "mount-maunganui-reef-img-19": {
+   "slug": "mount-maunganui-reef",
+   "source_id": "sonar_z17_shade00.0.png",
+   "registry_id": "mount-maunganui-reef-img-19",
+   "kind": "navionics",
+   "method": "web_mercator_capture_log",
+   "note": "north-up Web-Mercator screenshot, zoom 17, centred on -37.6447833, 176.2025908 (07_scale/shapes/mount-maunganui-reef/3d/navionics_capture.py (REEF = shape.json geo.centroid_latlon, CLIP x400 y113 982 x 655, Leaflet setView)); canonical via the geo <-> canonical fit",
+   "to_canonical": [
+    -0.654561318,
+    -0.681621926,
+    544.613129588,
+    0.681621928,
+    -0.654561318,
+    187.409130508
+   ],
+   "image_px": [
+    982,
+    655
+   ],
+   "crop_frac": null,
+   "zoom": 17,
+   "residual": {
+    "rms_m": 0.05,
+    "max_m": 0.09,
+    "note": "geo <-> canonical fit only; the chart's own positional accuracy is not assessed"
+   },
+   "tolerance_m": 2.0,
+   "traced": "",
+   "image_role": "chart",
+   "center_m": [
+    -0.008,
+    307.717
+   ],
+   "up_m": [
+    0.721279,
+    0.692644
+   ],
+   "rotation_deg": 43.84,
+   "width_m": 928.008,
+   "height_m": 618.987,
+   "m_per_px": 0.945018,
+   "mirror": true
+  },
+  "mount-maunganui-reef-img-20": {
+   "slug": "mount-maunganui-reef",
+   "source_id": "sonar_z18_shade00.0.png",
+   "registry_id": "mount-maunganui-reef-img-20",
+   "kind": "navionics",
+   "method": "web_mercator_capture_log",
+   "note": "north-up Web-Mercator screenshot, zoom 18, centred on -37.6447833, 176.2025908 (07_scale/shapes/mount-maunganui-reef/3d/navionics_capture.py (REEF = shape.json geo.centroid_latlon, CLIP x400 y113 982 x 655, Leaflet setView)); canonical via the geo <-> canonical fit",
+   "to_canonical": [
+    -0.327280657,
+    -0.340810962,
+    272.302735269,
+    0.340810962,
+    -0.327280659,
+    247.562897619
+   ],
+   "image_px": [
+    982,
+    655
+   ],
+   "crop_frac": null,
+   "zoom": 18,
+   "residual": {
+    "rms_m": 0.05,
+    "max_m": 0.09,
+    "note": "geo <-> canonical fit only; the chart's own positional accuracy is not assessed"
+   },
+   "tolerance_m": 2.0,
+   "traced": "",
+   "image_role": "chart",
+   "center_m": [
+    -0.008,
+    307.717
+   ],
+   "up_m": [
+    0.721279,
+    0.692644
+   ],
+   "rotation_deg": 43.84,
+   "width_m": 464.004,
+   "height_m": 309.493,
+   "m_per_px": 0.472509,
+   "mirror": true
+  },
+  "mount-maunganui-reef-img-21": {
+   "slug": "mount-maunganui-reef",
+   "source_id": "naut_z17_shade00.0.png",
+   "registry_id": "mount-maunganui-reef-img-21",
+   "kind": "navionics",
+   "method": "web_mercator_capture_log",
+   "note": "north-up Web-Mercator screenshot, zoom 17, centred on -37.6447833, 176.2025908 (07_scale/shapes/mount-maunganui-reef/3d/navionics_capture.py (REEF = shape.json geo.centroid_latlon, CLIP x400 y113 982 x 655, Leaflet setView)); canonical via the geo <-> canonical fit",
+   "to_canonical": [
+    -0.654561318,
+    -0.681621926,
+    544.613129588,
+    0.681621928,
+    -0.654561318,
+    187.409130508
+   ],
+   "image_px": [
+    982,
+    655
+   ],
+   "crop_frac": null,
+   "zoom": 17,
+   "residual": {
+    "rms_m": 0.05,
+    "max_m": 0.09,
+    "note": "geo <-> canonical fit only; the chart's own positional accuracy is not assessed"
+   },
+   "tolerance_m": 2.0,
+   "traced": "",
+   "image_role": "chart",
+   "center_m": [
+    -0.008,
+    307.717
+   ],
+   "up_m": [
+    0.721279,
+    0.692644
+   ],
+   "rotation_deg": 43.84,
+   "width_m": 928.008,
+   "height_m": 618.987,
+   "m_per_px": 0.945018,
+   "mirror": true
+  },
+  "mount-maunganui-reef-img-22": {
+   "slug": "mount-maunganui-reef",
+   "source_id": "naut_z18_shade00.0.png",
+   "registry_id": "mount-maunganui-reef-img-22",
+   "kind": "navionics",
+   "method": "web_mercator_capture_log",
+   "note": "north-up Web-Mercator screenshot, zoom 18, centred on -37.6447833, 176.2025908 (07_scale/shapes/mount-maunganui-reef/3d/navionics_capture.py (REEF = shape.json geo.centroid_latlon, CLIP x400 y113 982 x 655, Leaflet setView)); canonical via the geo <-> canonical fit",
+   "to_canonical": [
+    -0.327280657,
+    -0.340810962,
+    272.302735269,
+    0.340810962,
+    -0.327280659,
+    247.562897619
+   ],
+   "image_px": [
+    982,
+    655
+   ],
+   "crop_frac": null,
+   "zoom": 18,
+   "residual": {
+    "rms_m": 0.05,
+    "max_m": 0.09,
+    "note": "geo <-> canonical fit only; the chart's own positional accuracy is not assessed"
+   },
+   "tolerance_m": 2.0,
+   "traced": "",
+   "image_role": "chart",
+   "center_m": [
+    -0.008,
+    307.717
+   ],
+   "up_m": [
+    0.721279,
+    0.692644
+   ],
+   "rotation_deg": 43.84,
+   "width_m": 464.004,
+   "height_m": 309.493,
+   "m_per_px": 0.472509,
+   "mirror": true
+  },
+  "palm-beach-gold-coast-img-24": {
+   "slug": "palm-beach-gold-coast",
+   "source_id": "s4",
+   "registry_id": "palm-beach-gold-coast-img-24",
+   "kind": "trace",
+   "method": "icp",
+   "note": "trace registered onto the canonical outline (shape.json) (raster correlation over rotation, trimmed ICP); scale = the stated 0.984 px/m",
+   "reference": "canonical outline (shape.json)",
+   "to_canonical": [
+    -0.445784471,
+    -0.91326936,
+    725.135304699,
+    0.91326936,
+    -0.445784471,
+    -158.131823682
+   ],
+   "image_px": [
+    1459,
+    777
+   ],
+   "residual": {
+    "rms_m": 1.107,
+    "p95_m": 2.292,
+    "max_m": 3.55,
+    "iou": 0.973,
+    "rings_trace": 1,
+    "rings_trace_compared": 1,
+    "rings_canonical": 1,
+    "rings_canonical_compared": 1
+   },
+   "tolerance_m": 2.0,
+   "traced": "polygon 1 = outer outline of the schematic reef icon (32 vertices, read from 5x zoom grids); polygon 2 = the pale band inside it (the schematic crest, 11 vertices). The icon is a drawn symbol over an aerial photo, not a survey.",
+   "image_role": "cross_check",
+   "center_m": [
+    45.13,
+    334.911
+   ],
+   "up_m": [
+    0.898657,
+    0.438652
+   ],
+   "rotation_deg": 26.018,
+   "width_m": 1482.724,
+   "height_m": 789.634,
+   "m_per_px": 1.01626,
+   "mirror": true,
+   "m_per_px_stated": 1.01626,
+   "scale_vs_stated_pct": -0.0,
+   "viewer_consistent": true
+  },
+  "palm-beach-gold-coast-img-20": {
+   "slug": "palm-beach-gold-coast",
+   "source_id": "s7",
+   "registry_id": "palm-beach-gold-coast-img-20",
+   "kind": "trace",
+   "method": "direct",
+   "note": "vertex-for-vertex Umeyama fit of 1 traced ring(s) onto the canonical outline (shape.json, traced on this picture) (vertex rms 0.004 m)",
+   "reference": "canonical outline (shape.json, traced on this picture)",
+   "to_canonical": [
+    -0.051015867,
+    -0.106010226,
+    139.303602908,
+    0.106010226,
+    -0.051015867,
+    215.978201044
+   ],
+   "image_px": [
+    2079,
+    1386
+   ],
+   "residual": {
+    "rms_m": 0.003,
+    "p95_m": 0.005,
+    "max_m": 0.007,
+    "iou": 1.0,
+    "rings_trace": 1,
+    "rings_trace_compared": 1,
+    "rings_canonical": 1,
+    "rings_canonical_compared": 1
+   },
+   "tolerance_m": 2.0,
+   "traced": "polygon 1 = OUTER survey contour line (toe footprint), 47 vertices, found by top-hat line extraction + ray casting; polygon 2 = innermost contour (a 59 x 6 m rounded slot), 8 vertices read by hand",
+   "image_role": "primary",
+   "center_m": [
+    12.808,
+    290.822
+   ],
+   "up_m": [
+    0.901088,
+    0.433636
+   ],
+   "rotation_deg": 25.699,
+   "width_m": 244.588,
+   "height_m": 163.059,
+   "m_per_px": 0.117647,
+   "mirror": true,
+   "m_per_px_stated": 0.117647,
+   "scale_vs_stated_pct": -0.0,
+   "viewer_consistent": true
+  },
+  "palm-beach-gold-coast-img-28": {
+   "slug": "palm-beach-gold-coast",
+   "source_id": "naut_z17_shade00.0.png",
+   "registry_id": "palm-beach-gold-coast-img-28",
+   "kind": "navionics",
+   "method": "web_mercator_capture_log",
+   "note": "north-up Web-Mercator screenshot, zoom 17, centred on -28.107334, 153.470913 (07_scale/shapes/palm-beach-gold-coast/3d/navionics_capture.py (REEF = council polygon centroid = shape.json geo.centroid_latlon, CLIP 982 x 655, Leaflet setView)); canonical via the geo <-> canonical fit",
+   "to_canonical": [
+    -0.455962978,
+    -0.948873892,
+    534.602375716,
+    0.948873892,
+    -0.455962976,
+    -11.902654087
+   ],
+   "image_px": [
+    982,
+    655
+   ],
+   "crop_frac": null,
+   "zoom": 17,
+   "residual": {
+    "rms_m": 0.152,
+    "max_m": 0.203,
+    "note": "geo <-> canonical fit only; the chart's own positional accuracy is not assessed"
+   },
+   "tolerance_m": 2.0,
+   "traced": "",
+   "image_role": "chart",
+   "center_m": [
+    -0.032,
+    304.667
+   ],
+   "up_m": [
+    0.901336,
+    0.43312
+   ],
+   "rotation_deg": 25.666,
+   "width_m": 1033.792,
+   "height_m": 689.545,
+   "m_per_px": 1.052741,
+   "mirror": true
+  },
+  "palm-beach-gold-coast-img-29": {
+   "slug": "palm-beach-gold-coast",
+   "source_id": "naut_z18_shade00.0.png",
+   "registry_id": "palm-beach-gold-coast-img-29",
+   "kind": "navionics",
+   "method": "web_mercator_capture_log",
+   "note": "north-up Web-Mercator screenshot, zoom 18, centred on -28.107334, 153.470913 (07_scale/shapes/palm-beach-gold-coast/3d/navionics_capture.py (REEF = council polygon centroid = shape.json geo.centroid_latlon, CLIP 982 x 655, Leaflet setView)); canonical via the geo <-> canonical fit",
+   "to_canonical": [
+    -0.227981489,
+    -0.474436948,
+    267.285364874,
+    0.474436942,
+    -0.227981487,
+    146.381948799
+   ],
+   "image_px": [
+    982,
+    655
+   ],
+   "crop_frac": null,
+   "zoom": 18,
+   "residual": {
+    "rms_m": 0.152,
+    "max_m": 0.203,
+    "note": "geo <-> canonical fit only; the chart's own positional accuracy is not assessed"
+   },
+   "tolerance_m": 2.0,
+   "traced": "",
+   "image_role": "chart",
+   "center_m": [
+    -0.032,
+    304.667
+   ],
+   "up_m": [
+    0.901336,
+    0.43312
+   ],
+   "rotation_deg": 25.666,
+   "width_m": 516.896,
+   "height_m": 344.773,
+   "m_per_px": 0.526371,
+   "mirror": true
+  },
+  "palm-beach-gold-coast-img-30": {
+   "slug": "palm-beach-gold-coast",
+   "source_id": "sonar_z17_shade00.0.png",
+   "registry_id": "palm-beach-gold-coast-img-30",
+   "kind": "navionics",
+   "method": "web_mercator_capture_log",
+   "note": "north-up Web-Mercator screenshot, zoom 17, centred on -28.107334, 153.470913 (07_scale/shapes/palm-beach-gold-coast/3d/navionics_capture.py (REEF = council polygon centroid = shape.json geo.centroid_latlon, CLIP 982 x 655, Leaflet setView)); canonical via the geo <-> canonical fit",
+   "to_canonical": [
+    -0.455962978,
+    -0.948873892,
+    534.602375716,
+    0.948873892,
+    -0.455962976,
+    -11.902654087
+   ],
+   "image_px": [
+    982,
+    655
+   ],
+   "crop_frac": null,
+   "zoom": 17,
+   "residual": {
+    "rms_m": 0.152,
+    "max_m": 0.203,
+    "note": "geo <-> canonical fit only; the chart's own positional accuracy is not assessed"
+   },
+   "tolerance_m": 2.0,
+   "traced": "",
+   "image_role": "chart",
+   "center_m": [
+    -0.032,
+    304.667
+   ],
+   "up_m": [
+    0.901336,
+    0.43312
+   ],
+   "rotation_deg": 25.666,
+   "width_m": 1033.792,
+   "height_m": 689.545,
+   "m_per_px": 1.052741,
+   "mirror": true
+  },
+  "palm-beach-gold-coast-img-31": {
+   "slug": "palm-beach-gold-coast",
+   "source_id": "sonar_z18_shade00.0.png",
+   "registry_id": "palm-beach-gold-coast-img-31",
+   "kind": "navionics",
+   "method": "web_mercator_capture_log",
+   "note": "north-up Web-Mercator screenshot, zoom 18, centred on -28.107334, 153.470913 (07_scale/shapes/palm-beach-gold-coast/3d/navionics_capture.py (REEF = council polygon centroid = shape.json geo.centroid_latlon, CLIP 982 x 655, Leaflet setView)); canonical via the geo <-> canonical fit",
+   "to_canonical": [
+    -0.227981489,
+    -0.474436948,
+    267.285364874,
+    0.474436942,
+    -0.227981487,
+    146.381948799
+   ],
+   "image_px": [
+    982,
+    655
+   ],
+   "crop_frac": null,
+   "zoom": 18,
+   "residual": {
+    "rms_m": 0.152,
+    "max_m": 0.203,
+    "note": "geo <-> canonical fit only; the chart's own positional accuracy is not assessed"
+   },
+   "tolerance_m": 2.0,
+   "traced": "",
+   "image_role": "chart",
+   "center_m": [
+    -0.032,
+    304.667
+   ],
+   "up_m": [
+    0.901336,
+    0.43312
+   ],
+   "rotation_deg": 25.666,
+   "width_m": 516.896,
+   "height_m": 344.773,
+   "m_per_px": 0.526371,
+   "mirror": true
+  },
+  "prattes-reef-el-segundo-img-04": {
+   "slug": "prattes-reef-el-segundo",
+   "source_id": "img1",
+   "registry_id": "prattes-reef-el-segundo-img-04",
+   "kind": "trace",
+   "method": "direct",
+   "note": "vertex-for-vertex Umeyama fit of 1 traced ring(s) onto the canonical outline (shape.json, traced on this picture) (vertex rms 0.004 m)",
+   "reference": "canonical outline (shape.json, traced on this picture)",
+   "to_canonical": [
+    -8.51e-07,
+    0.193987531,
+    -30.301095506,
+    -0.193987531,
+    -8.51e-07,
+    121.922494283
+   ],
+   "image_px": [
+    308,
+    385
+   ],
+   "residual": {
+    "rms_m": 0.003,
+    "p95_m": 0.005,
+    "max_m": 0.007,
+    "iou": 0.999,
+    "rings_trace": 1,
+    "rings_trace_compared": 1,
+    "rings_canonical": 1,
+    "rings_canonical_compared": 1
+   },
+   "tolerance_m": 2.0,
+   "traced": "Outer boundary (outline centre-line) of the SOLID-outlined bags only = the 110 Phase I bags: the 5 x 5 spine block plus both 45-degree bag arms. The 30 dashed-outline 'optional bags' (outer two rows beside each elbow and the spine's left column) are excluded on both arms and on the spine.",
+   "image_role": "primary",
+   "center_m": [
+    7.041,
+    92.048
+   ],
+   "up_m": [
+    -1.0,
+    4e-06
+   ],
+   "rotation_deg": 180.0,
+   "width_m": 59.748,
+   "height_m": 74.685,
+   "m_per_px": 0.193988,
+   "mirror": true,
+   "m_per_px_stated": 0.19399,
+   "scale_vs_stated_pct": -0.0,
+   "viewer_consistent": true
+  },
+  "prattes-reef-el-segundo-img-08": {
+   "slug": "prattes-reef-el-segundo",
+   "source_id": "img5",
+   "registry_id": "prattes-reef-el-segundo-img-08",
+   "kind": "trace",
+   "method": "icp",
+   "note": "trace registered onto the canonical outline (shape.json) (raster correlation over rotation, trimmed ICP); scale = the stated 5.8689 px/m",
+   "reference": "canonical outline (shape.json)",
+   "to_canonical": [
+    0.000403721,
+    0.170389203,
+    -32.741317093,
+    -0.170389203,
+    0.000403721,
+    123.478336747
+   ],
+   "image_px": [
+    371,
+    420
+   ],
+   "residual": {
+    "rms_m": 0.192,
+    "p95_m": 0.372,
+    "max_m": 0.539,
+    "iou": 0.954,
+    "rings_trace": 1,
+    "rings_trace_compared": 1,
+    "rings_canonical": 1,
+    "rings_canonical_compared": 1
+   },
+   "tolerance_m": 2.0,
+   "traced": "Outer boundary of the solid-outlined bags (same rule as img1). The same drawing as img1, redrawn cleaner at higher resolution - NOT an independent survey.",
+   "image_role": "cross_check",
+   "center_m": [
+    3.115,
+    91.956
+   ],
+   "up_m": [
+    -0.999997,
+    -0.002369
+   ],
+   "rotation_deg": -179.864,
+   "width_m": 63.215,
+   "height_m": 71.564,
+   "m_per_px": 0.17039,
+   "mirror": true,
+   "m_per_px_stated": 0.17039,
+   "scale_vs_stated_pct": 0.0,
+   "viewer_consistent": true
+  }
+ },
+ "excluded": [
+  {
+   "slug": "boscombe-surf-reef",
+   "source_id": "img2",
+   "registry_id": "boscombe-surf-reef-img-10",
+   "method": "icp",
+   "reason": "residual 4.62 m (IoU 0.80) > tolerance 2.0 m (vs canonical outline (shape.json))",
+   "residual": {
+    "rms_m": 4.618,
+    "p95_m": 10.546,
+    "max_m": 13.522,
+    "iou": 0.8,
+    "rings_trace": 1,
+    "rings_trace_compared": 1,
+    "rings_canonical": 1,
+    "rings_canonical_compared": 1
+   }
+  },
+  {
+   "slug": "boscombe-surf-reef",
+   "source_id": "img3",
+   "registry_id": "boscombe-surf-reef-img-11",
+   "method": "icp",
+   "reason": "residual 5.02 m (IoU 0.76) > tolerance 2.0 m (vs canonical outline (shape.json))",
+   "residual": {
+    "rms_m": 5.02,
+    "p95_m": 9.517,
+    "max_m": 16.526,
+    "iou": 0.765,
+    "rings_trace": 1,
+    "rings_trace_compared": 1,
+    "rings_canonical": 1,
+    "rings_canonical_compared": 1
+   }
+  },
+  {
+   "slug": "bunbury-airwave",
+   "source_id": "img4",
+   "registry_id": "bunbury-airwave-img-08",
+   "reason": "oblique picture (no plan-view button; human alignment is enough)"
+  },
+  {
+   "slug": "bunbury-airwave",
+   "source_id": "img5",
+   "registry_id": "bunbury-airwave-img-10",
+   "reason": "picture not calibrated (no px/m, no georeference, no vertex correspondence): scale would only be fitted to the outline"
+  },
+  {
+   "slug": "bunbury-airwave",
+   "source_id": "navionics",
+   "reason": "Navionics/Garmin screenshots (6) not offered: no geo (lat/lon <-> canonical) in shape.json"
+  },
+  {
+   "slug": "palm-beach-gold-coast",
+   "source_id": "s2",
+   "registry_id": "palm-beach-gold-coast-img-23",
+   "method": "georef",
+   "reason": "residual 27.81 m (IoU 0.29) > tolerance 4.0 m (vs canonical outline (shape.json))",
+   "residual": {
+    "rms_m": 27.808,
+    "p95_m": 45.584,
+    "max_m": 46.588,
+    "iou": 0.288,
+    "rings_trace": 1,
+    "rings_trace_compared": 1,
+    "rings_canonical": 1,
+    "rings_canonical_compared": 1
+   }
+  },
+  {
+   "slug": "prattes-reef-el-segundo",
+   "source_id": "img6",
+   "registry_id": "prattes-reef-el-segundo-img-09",
+   "method": "icp",
+   "reason": "residual 4.03 m (IoU 0.42) > tolerance 2.0 m (vs canonical outline (shape.json))",
+   "residual": {
+    "rms_m": 4.031,
+    "p95_m": 6.896,
+    "max_m": 8.806,
+    "iou": 0.416,
+    "rings_trace": 1,
+    "rings_trace_compared": 1,
+    "rings_canonical": 1,
+    "rings_canonical_compared": 1
+   }
+  },
+  {
+   "slug": "prattes-reef-el-segundo",
+   "source_id": "navionics",
+   "reason": "Navionics/Garmin screenshots (10) not offered: no geo (lat/lon <-> canonical) in shape.json"
+  }
+ ],
+ "summary": {
+  "eligible_images": 30,
+  "per_model": {
+   "borth-coastal-defence-reef": 8,
+   "boscombe-surf-reef": 6,
+   "bunbury-airwave": 1,
+   "mount-maunganui-reef": 7,
+   "palm-beach-gold-coast": 6,
+   "prattes-reef-el-segundo": 2
+  },
+  "max_residual_m": 3.25,
+  "max_residual_m_all_kinds": 3.25
+ },
+ "signature": "1db312e0324528b81db7"
+}

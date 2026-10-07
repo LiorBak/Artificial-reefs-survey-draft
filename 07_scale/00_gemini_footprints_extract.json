@@ -1,0 +1,299 @@
+{
+  "purpose": "READ-ONLY extraction of Gemini's (another AI's) reef footprint/scale-comparison candidates, for verification before any of it enters our own files.",
+  "source_files_read": [
+    "C:\\Users\\lior\\Documents\\Gemini\\AG\\artifical reef\\02_world_reefs_data\\reef_footprints.json",
+    "C:\\Users\\lior\\Documents\\Gemini\\AG\\artifical reef\\02_world_reefs_data\\reef_footprint_scale_analysis.md",
+    "C:\\Users\\lior\\Documents\\Gemini\\AG\\artifical reef\\02_world_reefs_data\\scale_sketch_photo_alignment_audit.md",
+    "C:\\Users\\lior\\Documents\\Gemini\\AG\\artifical reef\\02_world_reefs_data\\burkitts-reef-bargara.md",
+    "C:\\Users\\lior\\Documents\\Gemini\\AG\\artifical reef\\02_world_reefs_data\\xala-reef-mexico.md",
+    "C:\\Users\\lior\\Documents\\Gemini\\AG\\artifical reef\\05_web_build\\images\\scale\\master_overlay.png",
+    "C:\\Users\\lior\\Documents\\Gemini\\AG\\artifical reef\\05_web_build\\images\\scale\\narrowneck.png",
+    "C:\\Users\\lior\\Documents\\Gemini\\AG\\artifical reef\\05_web_build\\images\\scale\\opunake.png",
+    "C:\\Users\\lior\\Documents\\Gemini\\AG\\artifical reef\\05_web_build\\images\\scale\\palm_beach.png",
+    "C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\03_images\\from_lior\\goldcoast_pptx\\image26.png"
+  ],
+  "reefs": [
+    {
+      "our_slug": "narrowneck-gold-coast",
+      "gemini_id": "narrowneck",
+      "gemini_slug": "narrowneck-gold-coast",
+      "shape_type": "Dual-Arm Elongated Lobed Chevron (2 separate lobes: inshore + offshore)",
+      "length_m": 400.0,
+      "width_m": 220.0,
+      "area_m2": 75000.0,
+      "crest_depth_m": 2.2,
+      "distance_offshore_m": 180.0,
+      "orientation": "Lobes angled slightly to incoming ESE swell (090-120 deg); shoreline at y=0, alongshore centered x=0",
+      "gemini_sources": [
+        "Black, K. & Mead, S. (2001). Design of the Gold Coast Reef. J. Coast. Res. 115-130.",
+        "Jackson, L., Tomlinson, R. et al. (2012). Long Term Performance of Narrowneck. Coast. Eng. Proc. 1:54.",
+        "ICM Case Study & Webinar (Aaron Salyer, 2025)."
+      ],
+      "how_drawn": "Two hand-digitized closed polygons (Inshore Lobe ~11 vertices, Offshore Lobe ~11 vertices) in Gemini's normalized coord frame; Gemini's own audit computed net lobe area = 42,650 m^2 vs the stated 75,000 m^2 gross envelope, and flagged that distance_offshore_m=180 labels only the inshore lobe crest while the outer ridge crest sits at y~300m and outer toe at y~380m.",
+      "suspicious": [
+        "Gemini's OWN audit doc (scale_sketch_photo_alignment_audit.md) already flags this: '180m offshore' is ambiguous - only true for the inshore lobe; real offshore extent runs to ~380m.",
+        "Gross footprint area (75,000 m^2) is nearly 2x the net polygon area Gemini itself computed (42,650 m^2) - no clear indication in the JSON which one the dossier's headline 75,000 m^2 / 75 dunam figure means.",
+        "Our own verified card (narrowneck-gold-coast.md) gives CONFLICTING footprint figures from real sources: 350m x 600m (R9) vs 450m x 250m (R8), sited 200m offshore - none of these three published figures matches Gemini's clean 400m x 220m / 180m used here, and Gemini cites no single source for the 400x220 numbers (its 3 sources are general design/performance papers, not this specific figure)."
+      ]
+    },
+    {
+      "our_slug": "cables-reef-wa",
+      "gemini_id": "cables",
+      "gemini_slug": "cables-reef-wa",
+      "shape_type": "Asymmetric Polygonal Wedge (single-arm right-hand peeler)",
+      "length_m": 115.0,
+      "width_m": 75.0,
+      "area_m2": 6200.0,
+      "crest_depth_m": 1.8,
+      "distance_offshore_m": 170.0,
+      "orientation": "Apex faces incoming WSW swell (240-270 deg), trailing right-hand peel shoulder",
+      "gemini_sources": [
+        "Pattiaratchi, C. (2000). Physical oceanographic aspects of Cables Reef. UWA Report.",
+        "Raised Water Research: Cables Reef dossier (2024).",
+        "Department of Transport WA Coastal Engineering Records."
+      ],
+      "how_drawn": "Single hand-digitized 9-vertex polygon; Gemini's audit reports net polygon area 5,222 m^2 vs stated 6,200 m^2 and centroid y=170.6m matching stated 170m offshore -- internally consistent.",
+      "suspicious": [
+        "Our verified card gives length ~140m x max width ~70m (from real sources R2/R5), noticeably longer than Gemini's 115m x 75m; Gemini gives no citation tying its own 115x75 figure to any of its 3 listed sources (which are general reports, not scale drawings)."
+      ]
+    },
+    {
+      "our_slug": "mount-maunganui-reef",
+      "gemini_id": "mount_maunganui",
+      "gemini_slug": "mount-maunganui-reef",
+      "shape_type": "Swept-Wing Inverted Y / Chevron with Central Ridge",
+      "length_m": 95.0,
+      "width_m": 75.0,
+      "area_m2": 4800.0,
+      "crest_depth_m": 2.2,
+      "distance_offshore_m": 250.0,
+      "orientation": "Central stem apex points seaward into NNE-NE swell (020-060 deg), two arms sweep landward",
+      "gemini_sources": [
+        "Black, S.M. & Kerry, A. (1999). Multipurpose Artificial Reef. Coastal Manag. 27:355-365.",
+        "Mead, S. et al. (2007). Mount Maunganui Reef Monitoring Report. ASR Ltd.",
+        "Tauranga City Council: Tay Street Reef Removal Dossier (2014)."
+      ],
+      "how_drawn": "Single 10-vertex polygon; Gemini's own audit computes net arm-only area 2,455 m^2 vs stated 4,800 m^2 'gross bounding box' -- a >2x gross/net gap the audit flags as needing explicit gross-vs-net labeling.",
+      "suspicious": [
+        "Gross footprint (4,800 m^2) is essentially double the net placed-bag area Gemini itself measured (2,455 m^2) from the same polygon; the dossier text does not make this distinction anywhere except the internal audit file.",
+        "Our verified card gives TWO conflicting real-source footprints: '50m wide x 100m long' (R2) vs an earlier 'V-shaped, two 70m x 30m arms, 240m offshore' account (R8) -- neither matches Gemini's 95m x 75m / 250m offshore, and Gemini cites no specific source for its own numbers."
+      ]
+    },
+    {
+      "our_slug": "prattes-reef-el-segundo",
+      "gemini_id": "prattes_reef",
+      "gemini_slug": "prattes-reef-el-segundo",
+      "shape_type": "Micro V-Shape / Chevron Geobag Array",
+      "length_m": 40.0,
+      "width_m": 20.0,
+      "area_m2": 650.0,
+      "crest_depth_m": 1.8,
+      "distance_offshore_m": 95.0,
+      "orientation": "Apex faces open Pacific W-WNW swell (260-280 deg)",
+      "gemini_sources": [
+        "Henriquez, M. (2005). Artificial Surf Reefs. MSc Thesis, TU Delft.",
+        "Surfrider Foundation: Pratte's Reef Decommissioning Assessment (2008).",
+        "Borrero, J. & Nelsen, C. (2003). Results of Pratte's Reef Monitoring."
+      ],
+      "how_drawn": "Small 9-vertex V-shaped polygon, cross-checked directly against Lior's image26.png (Raised Water Research comparative graphic) per Gemini's own audit note citing that exact file as evidence.",
+      "suspicious": [
+        "This is the one reef where Gemini explicitly cross-references Lior's own image26.png in its audit text ('Historic Reference... Matches Raised Water Research archival specifications') -- plausible, but still not a URL-level citation for the 40m x 20m figure itself.",
+        "Our verified card's real-source dimensions differ: proposed 1997 filing ~3,800 m^3 sand in bags (not matched to a length x width); built ~200 bags each 14t (R4) or ~6.3t (R7), crest depth disputed between -0.9m MLLW (R4) and ~2.4m (R7) -- our sources never state a clean 40m x 20m footprint the way Gemini does."
+      ]
+    },
+    {
+      "our_slug": "boscombe-surf-reef",
+      "gemini_id": "boscombe",
+      "gemini_slug": "boscombe-surf-reef",
+      "shape_type": "Asymmetric Triangular Delta / Right-Hand Peeler",
+      "length_m": 100.0,
+      "width_m": 55.0,
+      "area_m2": 5200.0,
+      "crest_depth_m": 1.5,
+      "distance_offshore_m": 220.0,
+      "orientation": "Seaward apex points toward SSW-SW swell window (200-230 deg)",
+      "gemini_sources": [
+        "Bournemouth Borough Council: Boscombe Reef Review (2012).",
+        "Raised Water Research: Boscombe Surf Reef Dossier (2024).",
+        "Halcrow Group Ltd: Independent Engineering Audit of Boscombe Reef (2011)."
+      ],
+      "how_drawn": "8-vertex polygon; Gemini's audit reports net 'consolidated bag core' area 3,070 m^2 vs stated gross 5,200 m^2 'perimeter scour envelope' -- again a large gross/net gap flagged only in the audit, not the main dossier or JSON.",
+      "suspicious": [
+        "Distance offshore (220m) matches our verified card's real-source figure (220m from seawall, R4/R7) -- one of the few numbers that lines up.",
+        "But footprint area is inconsistent: our card cites 'footprint ~1 hectare (2.5 acres)' i.e. ~10,000 m^2 from R4/R7, roughly DOUBLE Gemini's stated 5,200 m^2 gross envelope (and nearly 3x its 3,070 m^2 net core) -- worth flagging as a real discrepancy against a sourced number, not just an internal gross/net split."
+      ]
+    },
+    {
+      "our_slug": "opunake-reef",
+      "gemini_id": "opunake",
+      "gemini_slug": "opunake-reef",
+      "shape_type": "Single-Arm Triangular Wedge (Incomplete V) -- built as ONE headland arm only",
+      "length_m": "80.0 (per dimensions table; CONTRADICTS the polygon itself, see suspicious)",
+      "width_m": "30.0 (per dimensions table; CONTRADICTS the polygon, see suspicious)",
+      "area_m2": 2100.0,
+      "crest_depth_m": 1.4,
+      "distance_offshore_m": 150.0,
+      "orientation": "Cove headland alignment: arm projects cross-shore/seaward along northern rocky headland rather than running alongshore",
+      "gemini_sources": [
+        "Mead, S. & Black, K. (2007). Opunake Artificial Reef Design Dossier.",
+        "Taranaki Regional Council Environmental Monitoring Records (2010)."
+      ],
+      "how_drawn": "7-vertex polygon actually spans X=[-15,15] (30m alongshore) x Y=[128,195] (67m cross-shore) -- i.e. the DRAWN shape is 30m x 67m, not the 80m x 30m stated in reef_footprints.json's own 'dimensions' block.",
+      "suspicious": [
+        "CRITICAL, Gemini's own audit (scale_sketch_photo_alignment_audit.md) explicitly flags this as the single 'ACTION REQUIRED' item across all 15 structures: the alongshore_length_m/cross_shore_width_m fields (80.0 x 30.0) are INVERTED relative to the actual CAD polygon (30m alongshore x 67m cross-shore), because the reef sits in a cove and the audit's own recommended fix (relabel to 30m x 67m) was never applied to reef_footprints.json.",
+        "The per-reef scale image (opunake.png) reproduces the WRONG dimensions text box ('Length: 80m | Width: 30m') even though the polygon drawn beside it is visibly the narrow, ~30m-wide x ~67m-tall shape -- the picture and its own caption disagree.",
+        "Our verified card gives yet a THIRD figure from real sources: ~90m long x 20m wide (north reef only, R2/R3/R4) -- none of Gemini's three numbers (80x30 label, 30x67 polygon, or its own area 2,100 m^2) matches our sourced 90x20 (~1,800 m^2)."
+      ]
+    },
+    {
+      "our_slug": "kovalam-reef-india",
+      "gemini_id": "kovalam",
+      "gemini_slug": "kovalam-reef-india",
+      "shape_type": "Curved Crescent / Delta Wedge",
+      "length_m": 95.0,
+      "width_m": 48.0,
+      "area_m2": 3800.0,
+      "crest_depth_m": 1.6,
+      "distance_offshore_m": 150.0,
+      "orientation": "Convex apex points SSW into Arabian Sea monsoon groundswell (200-240 deg)",
+      "gemini_sources": [
+        "Harbour Engineering Department, Government of Kerala: Kovalam Project Report (2011).",
+        "Thomas, K.V. et al. (2012). Performance Assessment of Kovalam Multipurpose Reef."
+      ],
+      "how_drawn": "9-vertex crescent polygon; Gemini's audit centroid (y=150.1m) matches stated 150m offshore exactly, net area 2,245 m^2 vs stated gross 3,800 m^2.",
+      "suspicious": [
+        "Volume (4,800 m^3) matches our verified card's as-built total volume (4,800 m^3, up from an initial 3,000 m^3 plan) almost exactly -- a rare case of good alignment. Length/width/area are plausible but our card gives no explicit length x width to cross-check them against."
+      ]
+    },
+    {
+      "our_slug": "borth-coastal-defence-reef",
+      "gemini_id": "borth",
+      "gemini_slug": "borth-coastal-defence-reef",
+      "shape_type": "Submerged Rock Berm with Tapered Flanks",
+      "length_m": 200.0,
+      "width_m": 65.0,
+      "area_m2": 12500.0,
+      "crest_depth_m": 1.2,
+      "distance_offshore_m": 200.0,
+      "orientation": "Berm parallel to depth contours, facing SW-WSW swell (230-260 deg)",
+      "gemini_sources": [
+        "Ceredigion County Council: Borth Coastal Defense Scheme Final Review (2013).",
+        "BAM Nuttall Project Case Study: Borth Coastal Defense (2012).",
+        "Coflein National Monuments Record of Wales: Craig y Delyn Reef (2015)."
+      ],
+      "how_drawn": "9-vertex polygon; audit net area 9,700 m^2 vs stated gross 12,500 m^2, centroid y=194.5m close to stated 200m.",
+      "suspicious": [
+        "Distance offshore is the biggest red flag here: Gemini states 200m, but our verified card (from the SAME contractor/heritage sources Gemini claims to cite) reports the reef sited 'c.400m offshore' per the contractor's 2011 account (R1) or '300m off the coast' per local/heritage sources (R2/R3) -- i.e. our sourced figures are 1.5x to 2x further offshore than Gemini's number, and Gemini gives no page/quote pinning 200m to any of its 3 listed sources.",
+        "Width and crest depth are also uncited in our own research ('reef width, crest depth... not found') so Gemini's 65m width and 1.2m crest depth cannot be checked against a source at all; treat as unverified estimates."
+      ]
+    },
+    {
+      "our_slug": "bunbury-airwave",
+      "gemini_id": "bunbury",
+      "gemini_slug": "bunbury-airwave",
+      "shape_type": "Hemispherical Circular Dome (single inflatable bladder)",
+      "length_m": 12.0,
+      "width_m": 12.0,
+      "area_m2": 113.0,
+      "crest_depth_m": 1.8,
+      "distance_offshore_m": 38.0,
+      "orientation": "Radially symmetric dome, no directional orientation",
+      "gemini_sources": [
+        "Bottegal, T. (2019). The Airwave Artificial Reef Project Brief.",
+        "Surfer Magazine: The Bunbury Airwave Trial Review (2020)."
+      ],
+      "how_drawn": "Perfect circle generated mathematically (R=6.0m, ~24 vertices) rather than hand-digitized from a photo -- exact match to formula area (112 m^2 vs stated 113 m^2).",
+      "suspicious": [
+        "Diameter (12m) and height (2.0m) match our verified card's real-source figures well (12m / 2m, most sources) -- one of the better-matched reefs. Crest depth of 1.8m submerged and distance offshore 38m are plausible but not directly checkable against our card's sourced text in this pass."
+      ]
+    },
+    {
+      "our_slug": "palm-beach-gold-coast",
+      "gemini_id": "palm_beach",
+      "gemini_slug": "palm-beach-gold-coast",
+      "shape_type": "Sculptured Asymmetric Rock Chevron / Trapezoid",
+      "length_m": 160.0,
+      "width_m": 80.0,
+      "area_m2": 12800.0,
+      "crest_depth_m": 1.5,
+      "distance_offshore_m": 270.0,
+      "orientation": "Asymmetric apex points seaward, tuned for E-ENE swell (090-110 deg)",
+      "gemini_sources": [
+        "City of Gold Coast: Palm Beach Shoreline Project Monitoring (2021).",
+        "Royal HaskoningDHV: Palm Beach Artificial Reef Design Summary (2019).",
+        "Swellnet: Palm Beach Reef Surfing Evaluation (2020)."
+      ],
+      "how_drawn": "9-vertex polygon; audit net area 9,100 m^2 vs stated gross 12,800 m^2, centroid y=267.8m vs stated 270m offshore -- good internal consistency.",
+      "suspicious": [
+        "This is the best-matched reef overall: our verified card independently confirms 160m x 80m 'core' (R2/R4/R6/R7/R9, though Royal HaskoningDHV's own page gives 144m wide, R5), volume ~25,000 m^3 (matches Gemini exactly), crest freeboard 1.5m below MSL (matches Gemini exactly). Low suspicion; only the width has a minor published disagreement (80m vs 144m) that Gemini silently resolved by picking the majority figure without flagging the R5 outlier."
+      ]
+    },
+    {
+      "our_slug": "southern-ocean-surf-reef-albany",
+      "gemini_id": "albany",
+      "gemini_slug": "southern-ocean-surf-reef-albany",
+      "shape_type": "Engineered Multi-Tiered Granite Boomerang / Wedge",
+      "length_m": 165.0,
+      "width_m": 110.0,
+      "area_m2": 13500.0,
+      "crest_depth_m": 1.0,
+      "distance_offshore_m": 140.0,
+      "orientation": "Apex faces SSE-S swell (160-190 deg) entering King George Sound",
+      "gemini_sources": [
+        "Bluecoast Consulting Engineers: Albany Artificial Surf Reef Design Report (2020).",
+        "City of Albany: Middleton Beach Surf Reef Post-Construction Monitoring (2022).",
+        "Raised Water Research: Albany Southern Ocean Surf Reef Review (2023)."
+      ],
+      "how_drawn": "9-vertex polygon; audit net area 12,363 m^2 vs stated gross 13,500 m^2, centroid y=141.9m vs stated 140m -- good internal consistency.",
+      "suspicious": [
+        "Excellent match to our verified card: length 165m, width up to 110m, crest -1.0m AHD, and even the exact tonnage breakdown (62,800 t total; belly/core/armor D50 layers) are IDENTICAL to our card's sourced numbers (R3). This is the single best-verified reef in Gemini's dataset -- essentially no suspicion, likely because Gemini's own R3 source is the same primary source our card cites."
+      ]
+    },
+    {
+      "our_slug": "burkitts-reef-bargara",
+      "gemini_id": null,
+      "gemini_slug": "burkitts-reef-bargara (Gemini has NO entry in reef_footprints.json / no CAD polygon / no scale PNG for this reef)",
+      "shape_type": "N/A in Gemini's CAD database -- only a qualitative text description in Gemini's burkitts-reef-bargara.md",
+      "length_m": "80 (per Gemini's own md Quick-facts table: 'operates over an 80m x 40m intertidal basalt flat' -- NOT a length/width of a built structure, just the natural flat it sits on)",
+      "width_m": "40 (see length_m note)",
+      "area_m2": "not computed by Gemini (no polygon exists)",
+      "crest_depth_m": "0.2-2.5 (Gemini text: water depths fluctuate 0.2m dry to 2.5m drowned -- not a single crest depth)",
+      "distance_offshore_m": "not stated (in-situ shoreline rock modification, not an offshore structure)",
+      "orientation": "N/A",
+      "gemini_sources": [
+        "ABC News Australia (2024-01-21)",
+        "The Inertia (2021)",
+        "Swellnet Australia (2022)",
+        "Tracks Magazine (2023)"
+      ],
+      "how_drawn": "Not drawn at all -- Gemini produced no scale figure or polygon for Burkitts; the '80m x 40m' figure appears only as prose in the Quick-facts table with no inline citation to any of the 4 listed references.",
+      "suspicious": [
+        "Our OWN verified card explicitly states 'No footprint length/width figure found -- not found' after a full source sweep, yet Gemini's md confidently states '80m x 40m intertidal basalt flat' with no [R#]-style citation pinning that number to a source -- this looks like an unsourced/estimated figure Gemini should not present as fact.",
+        "Because Gemini never built a CAD entry for this reef, it is excluded from Gemini's master_overlay.png / reef_footprints.json entirely -- so there is no shape/scale comparison to audit here, only the prose dimension claim above."
+      ]
+    },
+    {
+      "our_slug": "mexico-reef-2026-unnamed",
+      "gemini_id": null,
+      "gemini_slug": "xala-reef-mexico (Gemini has NO entry in reef_footprints.json / no CAD polygon / no scale PNG for this reef)",
+      "shape_type": "N/A in Gemini's CAD database -- only a qualitative text description in Gemini's xala-reef-mexico.md",
+      "length_m": "~140 (Gemini md: 'Dimensions: Length ~140 m, Width ~75 m at base' -- explicitly hedged with '~', no polygon)",
+      "width_m": "~75",
+      "area_m2": "not computed by Gemini (no polygon exists)",
+      "crest_depth_m": "~1.0-1.5 (Gemini md: 'submerged crest calibrated ~1.0-1.5 m below MSL')",
+      "distance_offshore_m": "~180-250 (Gemini md: '~180-250 m from the high-tide shoreline')",
+      "orientation": "N/A (no polygon/orientation given, only 'Non-linear Boussinesq refraction wedge concentrating incident Pacific groundswells into peeling left and right shoulders')",
+      "gemini_sources": [
+        "Indelicato, P. (2026-03-31) Raised Water Research",
+        "Romeyn, K. (2025-04-22) The Hollywood Reporter",
+        "Hospitality Net (2026)",
+        "Mortensen, S.B. (2026) DHI Seaport"
+      ],
+      "how_drawn": "Not drawn at all -- no CAD polygon, no scale image; the '~140m x ~75m' figures are prose estimates in the Key Technical Specifications section with no inline [R#] tying the specific numbers to any of the 4 references (none of which is an engineering drawing).",
+      "suspicious": [
+        "Our own verified card for this reef (mexico-reef-2026-unnamed.md) explicitly states 'Dimensions... Not found -- no length, width, crest depth, or rock/fill volume disclosed in any source located this sweep' -- directly contradicting Gemini's confident '~140m x ~75m' estimate, which appears to be Gemini's own inference/guess rather than something read out of a source.",
+        "All of Gemini's dimension numbers for this reef carry a tilde ('~') suggesting Gemini itself knew these were estimates, but nowhere does Gemini's md say HOW it estimated them (e.g. by analogy to Palm Beach, since the same designer Simon Brandi Mortensen worked on both) -- this should not enter our files as anything but a flagged, unverified guess."
+      ]
+    }
+  ]
+}

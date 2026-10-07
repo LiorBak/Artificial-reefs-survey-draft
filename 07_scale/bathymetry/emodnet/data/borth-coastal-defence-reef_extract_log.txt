@@ -1,0 +1,13 @@
+== borth-coastal-defence-reef: reef centre canonical 0.0,330.5 -> lat/lon 52.483453,-4.056205; shoreline bearing 359.57
+cell size at 52.483 N: 115.8 m (N-S) x 70.6 m (E-W)
+ERDDAP https://erddap.emodnet.eu/erddap/griddap/bathymetry_dtm_2024.csv?elevation[(52.479687):(52.486979)][(-4.065104):(-4.046354)],value_count[(52... 200 10552 bytes
+ERDDAP cells 152, valid (sea) 104, masked (land / outside) 48
+WCS emodnet__mean_2016 200 1429 bytes
+WCS emodnet__mean_2018 200 2469 bytes
+WCS emodnet__mean_2020 200 2460 bytes
+WCS emodnet__mean_2022 200 2448 bytes
+WCS emodnet__mean 200 2448 bytes
+WCS alignment vs ERDDAP (mean abs diff, ki_top, kj_left, n): (np.float64(4.5258200709264426e-08), 35986, 30658, 84)
+points written: 16
+2024 source patches in 3 km box: [{'release': '2024', 'edmo_id': 2607, 'identifier': '115084', 'type': 'CDI', 'device': None, 'metadata_url': 'https://cdi-bathymetry.seadatanet.org/report/edmo/2607/115084'}]
+CDI polygons: [('1981385', 'CARDIGAN BAY', 'OceanWise Limited')]

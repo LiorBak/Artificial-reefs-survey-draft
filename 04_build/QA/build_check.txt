@@ -1,0 +1,183 @@
+PASS file size 1908 KB < 3 MB
+PASS HTML parses with balanced tags (errors=[], unclosed=[])
+PASS title is 'Artificial Surf Reefs Survey'
+PASS data has exactly the 13 slugs (missing=set(), extra=set())
+PASS all 13 slugs appear in the HTML
+PASS 277 referenced assets/ paths exist on disk (missing=[])
+PASS no unreferenced files in assets/ (341 files; unused=[])
+PASS every [R#] token resolves to its reef's references (unresolved=[])
+PASS source pop-up #ref-pop exists inside the reef <dialog> (renders in the top layer)
+PASS markers are rendered as pop-up buttons (ref-mark / data-ref / aria-controls=ref-pop, openPop, positionPop)
+PASS every one of 2113 [R#] markers has a pop-up target with citation text (missing=[])
+INFO references without a URL (pop-up shows 'internal note — no URL'): 30
+PASS every review has a source link or a reference pop-up (none=[])
+PASS no videos_rejected content rendered (6 rejected ids/urls/titles checked; leaked=[])
+PASS Burkitts shows 0 videos (videos=0, hero=https://live-production.wcms.abc-cdn.net.au/a6112bacdcff4864)
+INFO items tagged with an origin (e.g. via Gemini survey, verified): 31 [('burkitts-reef-bargara', 'S1'), ('cables-reef-wa', 'S1'), ('cables-reef-wa', 'S2'), ('prattes-reef-el-segundo', '"evan"'), ('prattes-reef-el-segundo', 'S1'), ('prattes-reef-el-segundo', 'S2'), ('prattes-reef-el-segundo', 'S3'), ('prattes-reef-el-segundo', 'S4'), ('prattes-reef-el-segundo', 'S5'), ('mount-maunganui-reef', 'S1'), ('mount-maunganui-reef', 'S2'), ('mount-maunganui-reef', 'S3'), ('mount-maunganui-reef', 'S4'), ('opunake-reef', 'S1'), ('boscombe-surf-reef', 'Dr Mark Davidson'), ('boscombe-surf-reef', 'S1'), ('kovalam-reef-india', 'S1'), ('kovalam-reef-india', 'S2'), ('kovalam-reef-india', 'S3'), ('kovalam-reef-india', 'S4'), ('borth-coastal-defence-reef', 'S1'), ('borth-coastal-defence-reef', 'S2'), ('bunbury-airwave', 'R9'), ('bunbury-airwave', 'R15'), ('bunbury-airwave', 'R21'), ('bunbury-airwave', 'R22'), ('bunbury-airwave', 'R23'), ('bunbury-airwave', 'R24'), ('palm-beach-gold-coast', 'Stab Magazine'), ('palm-beach-gold-coast', 'S1'), ('southern-ocean-surf-reef-albany', 'R18')]
+PASS 13 footprints present (missing=[])
+PASS every footprint polygon is closed (not closed=[])
+PASS every polygon's computed area is within 15 % of area_m2 (outside=[])
+INFO area burkitts-reef-bargara: computed 2,480 vs area_m2 2,480 (0.0 %)
+INFO area cables-reef-wa: computed 2,299 vs area_m2 2,299 (0.0 %)
+INFO area narrowneck-gold-coast: computed 114,950 vs area_m2 114,950 (0.0 %)
+INFO area prattes-reef-el-segundo: computed 324 vs area_m2 324 (0.0 %)
+INFO area mount-maunganui-reef: computed 2,497 vs area_m2 2,497 (0.0 %)
+INFO area opunake-reef: computed 900 vs area_m2 900 (0.0 %)
+INFO area boscombe-surf-reef: computed 10,862 vs area_m2 10,862 (0.0 %)
+INFO area kovalam-reef-india: computed 1,083 vs area_m2 1,084 (0.0 %)
+INFO area borth-coastal-defence-reef: computed 3,785 vs area_m2 3,785 (0.0 %)
+INFO area bunbury-airwave: computed 112 vs area_m2 113 (1.1 %)
+INFO area palm-beach-gold-coast: computed 9,678 vs area_m2 9,678 (0.0 %)
+INFO area southern-ocean-surf-reef-albany: computed 9,720 vs area_m2 9,720 (0.0 %)
+INFO area mexico-reef-2026-unnamed: computed 11,200 vs area_m2 11,200 (0.0 %)
+PASS every one of 75 R#/S# ids used in footprint derivations has a pop-up target (missing=[])
+PASS provenance md for every footprint copied to docs/scale/ (missing=[])
+INFO Scale tab removed per configuration
+PASS every image with a 'shows' verdict carries a caption label (missing=[])
+PASS site-only videos render as link-only with their label (bad=[])
+PASS hero image prefers structure visible > reef effect > site context (bad=[])
+PASS no images_rejected URL rendered anywhere, incl. the Scale tab (16 checked; leaked=[])
+PASS every reef has a hero image (null=[])
+INFO not plotted on map: ['burkitts-reef-bargara (card coordinates (24.8205, 152.4625) fail a hemisphere check (Australia lies south of the equator) — not plotted)', 'mount-maunganui-reef (no coordinates in the card)', 'palm-beach-gold-coast (no coordinates in the card)', 'mexico-reef-2026-unnamed (no coordinates in the card)']
+INFO total documented cost ~US$48,932,000 (range 47,406,500-50,457,500) of 12 with cost data
+INFO static external resources in HTML: ['https://fonts.googleapis.com', 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Noto+Color+Emoji&display=swap', 'https://fonts.gstatic.com']
+PASS [3D] data3d JSON present in the page
+PASS [3D] 3D tab button, view section and script are in the page
+PASS [3D] every discovered model has a section: disk ['boscombe-surf-reef', 'bunbury-airwave', 'mount-maunganui-reef', 'palm-beach-gold-coast', 'prattes-reef-el-segundo'] vs page ['boscombe-surf-reef', 'bunbury-airwave', 'mount-maunganui-reef', 'palm-beach-gold-coast', 'prattes-reef-el-segundo'] (held, not built: ['borth-coastal-defence-reef'])
+PASS [3D] every reef with only a FEASIBILITY.md has a 'not modelled' card ([])
+PASS [3D] boscombe-surf-reef: viewer copy 3d/boscombe-surf-reef/index.html + model.js exist
+PASS [3D] boscombe-surf-reef: poster 3d/boscombe-surf-reef/poster.jpg exists
+PASS [3D] bunbury-airwave: viewer copy 3d/bunbury-airwave/index.html + model.js exist
+PASS [3D] bunbury-airwave: poster 3d/bunbury-airwave/poster.jpg exists
+PASS [3D] mount-maunganui-reef: viewer copy 3d/mount-maunganui-reef/index.html + model.js exist
+PASS [3D] mount-maunganui-reef: poster 3d/mount-maunganui-reef/poster.jpg exists
+PASS [3D] palm-beach-gold-coast: viewer copy 3d/palm-beach-gold-coast/index.html + model.js exist
+PASS [3D] palm-beach-gold-coast: poster 3d/palm-beach-gold-coast/poster.jpg exists
+PASS [3D] prattes-reef-el-segundo: viewer copy 3d/prattes-reef-el-segundo/index.html + model.js exist
+PASS [3D] prattes-reef-el-segundo: poster 3d/prattes-reef-el-segundo/poster.jpg exists
+PASS [3D] vendored three.js present (['three.module.js', 'three.bundle.js', 'OrbitControls.js']; vendor holds 6 files)
+PASS [3D] no copied viewer uses a CDN / import map and every script it loads exists (bad=[])
+PASS [3D] all gallery files exist on disk (102 pictures; web copy, thumbnail, annotated copies; missing=[])
+PASS [3D] every gallery picture has a non-empty how_used + citation for its tooltip and a group (bad=[])
+PASS [3D] every model has confidence badge data, state, vertical-exaggeration note, key numbers, caveats and references (bad=[])
+PASS [3D] mandated caveat rows present (lacking=[])
+PASS [3D] merged reference list: 87 entries, each with id and text
+PASS [3D] curated quotes / evidence snippets verified against the documents at build time (113 checked, failed=[])
+PASS [3D] project-wide methods text rendered
+PASS [3D] every relied-on quotation is <= 25 words
+PASS [3D] outline-version contract for the 1 model(s) with versions (bad=[])
+INFO [3D] 5 models ['boscombe-surf-reef - medium', 'bunbury-airwave - medium', 'mount-maunganui-reef - medium', 'palm-beach-gold-coast - medium', 'prattes-reef-el-segundo - low']; pictures 102; caveat rows 34; references 87; with versions 1; not yet modelled ['burkitts-reef-bargara', 'cables-reef-wa', 'narrowneck-gold-coast', 'opunake-reef', 'kovalam-reef-india', 'borth-coastal-defence-reef', 'southern-ocean-surf-reef-albany', 'mexico-reef-2026-unnamed']
+PASS [3D] sticky top navigation (#topnav) holds the view buttons and comes before the site header
+PASS [3D] back-to-top control present
+PASS [3D] every copied viewer (and the combined viewer) has the injected 'Back to the page' bar, hidden when framed (missing=[])
+PASS [3D] combined 'All (compare)' data block present in models3d.json
+PASS [3D] combined viewer 3d/combined/index.html exists and uses no CDN / import map
+PASS [3D] every script of the combined viewer exists (missing=[])
+PASS [3D] every exported model has its data file and is loaded by the combined viewer (['boscombe-surf-reef', 'bunbury-airwave', 'mount-maunganui-reef', 'palm-beach-gold-coast', 'prattes-reef-el-segundo'])
+PASS [3D] every model is either in the comparison or listed as 'not in comparison' with a reason ([])
+PASS [3D] combined export boscombe-surf-reef: footprint area vs model.js toe polygon: err 0.204 relative (tolerance 0.25)
+PASS [3D] combined export boscombe-surf-reef: footprint centroid vs polygon centroid: err 0.257 m (tolerance 6)
+PASS [3D] combined export boscombe-surf-reef: crest level vs model.js: err 2.38e-08 m (tolerance 0.2)
+PASS [3D] combined export boscombe-surf-reef: seabed falls away offshore (+z): err 3.73 deg (tolerance 20)
+PASS [3D] combined export boscombe-surf-reef: seabed at the shoreline is near 0 m MSL: err 0.168 m (tolerance 1.5)
+PASS [3D] combined export bunbury-airwave: footprint area vs model.js toe polygon: err 0.000749 relative (tolerance 0.25)
+PASS [3D] combined export bunbury-airwave: footprint centroid vs polygon centroid: err 0.000513 m (tolerance 6)
+PASS [3D] combined export bunbury-airwave: crest level vs model.js: err 0.145 m (tolerance 0.2)
+PASS [3D] combined export bunbury-airwave: seabed falls away offshore (+z): err 1.27 deg (tolerance 20)
+PASS [3D] combined export bunbury-airwave: seabed at the shoreline is near 0 m MSL: err 0.387 m (tolerance 1.5)
+PASS [3D] combined export mount-maunganui-reef: footprint area vs model.js footprint at the bed (the default version has a 1:1 skirt from the -2.0 m contour to the bed): err 0.0646 relative (tolerance 0.25)
+PASS [3D] combined export mount-maunganui-reef: footprint centroid vs polygon centroid: err 3.3 m (tolerance 6)
+PASS [3D] combined export mount-maunganui-reef: crest level vs model.js: err 0.015 m (tolerance 0.2)
+PASS [3D] combined export mount-maunganui-reef: seabed falls away offshore (+z): err 2.28e-16 deg (tolerance 20)
+PASS [3D] combined export mount-maunganui-reef: seabed at the shoreline is near 0 m MSL: err 0.143 m (tolerance 1.5)
+PASS [3D] combined export palm-beach-gold-coast: footprint area vs model.js toe polygon: err 0.0472 relative (tolerance 0.25)
+PASS [3D] combined export palm-beach-gold-coast: footprint centroid vs polygon centroid: err 0.0742 m (tolerance 6)
+PASS [3D] combined export palm-beach-gold-coast: crest level vs model.js: err 0.07 m (tolerance 0.2)
+PASS [3D] combined export palm-beach-gold-coast: seabed falls away offshore (+z): err 1.62 deg (tolerance 20)
+PASS [3D] combined export palm-beach-gold-coast: seabed at the shoreline is near 0 m MSL: err 0.131 m (tolerance 1.5)
+PASS [3D] combined export prattes-reef-el-segundo: footprint area vs model.js toe polygon: err 0.099 relative (tolerance 0.25)
+PASS [3D] combined export prattes-reef-el-segundo: footprint centroid vs polygon centroid: err 0.267 m (tolerance 6)
+PASS [3D] combined export prattes-reef-el-segundo: crest level vs model.js: err 0.0344 m (tolerance 0.2)
+PASS [3D] combined export prattes-reef-el-segundo: seabed falls away offshore (+z): err 7.94e-16 deg (tolerance 20)
+PASS [3D] combined export prattes-reef-el-segundo: seabed at the shoreline is near 0 m MSL: err 0.438 m (tolerance 1.5)
+INFO [3D] combined scene: boscombe-surf-reef ok; bunbury-airwave ok; mount-maunganui-reef ok; palm-beach-gold-coast ok; prattes-reef-el-segundo ok; tolerances {'area_rel': 0.25, 'crest_m': 0.2, 'centroid_m': 6.0, 'shore_m': 1.5, 'offshore_deg': 20}
+INFO [3D] folder sizes: assets/images 37.1 MB, 3d/ 23.0 MB (page itself 1.86 MB)
+PASS [3D] DOM: tab is the visible view
+PASS [3D] DOM: URL hash follows the selector: default = first built model
+PASS [3D] DOM: selector has one button per model + 'All (compare)' (6), exactly one pressed
+PASS [3D] DOM: selector buttons show the 3D-confidence dot of each reef
+PASS [3D] DOM: ONE model section visible (one at a time)
+PASS [3D] DOM: 5 model sections rendered (others hidden)
+PASS [3D] DOM: 102 thumbnails rendered (one per selected picture)
+PASS [3D] DOM: header: badge + one-line reason + state + vertical-exaggeration note
+PASS [3D] DOM: every model has the full vertical-exaggeration text behind its (i)
+PASS [3D] DOM: text at the top is short: tab intro <= 260 chars, page intro <= 260 chars (the rest sits behind (i))
+PASS [3D] DOM: site header (long text) is collapsed on this tab
+PASS [3D] DOM: key-numbers table in every model
+PASS [3D] DOM: caveats table rows
+PASS [3D] DOM: references list entries
+PASS [3D] DOM: appendix (methods, texts relied on, caveats, references) is at the bottom of the tab and reachable by link
+PASS [3D] DOM: viewer of the selected model starts by itself (iframe present, only for the visible model)
+PASS [3D] DOM: desktop: viewer and photo panel are side by side (same top, viewer ~60 %)
+PASS [3D] DOM: desktop: key numbers are BELOW the viewer + photos
+PASS [3D] DOM: photo panel shows a large picture (loaded) and a thumbnail strip grouped by role
+PASS [3D] DOM: viewer from file:// ran (iframe has a canvas or is opaque-origin)
+PASS [3D] DOM: clicking a thumbnail shows it in the panel next to the 3D model (no modal)
+PASS [3D] DOM: clicked thumbnail is marked (aria-pressed) and the caption names the picture
+PASS [3D] DOM: next-picture arrow steps through the strip
+PASS [3D] DOM: hover on a thumbnail shows the tooltip with 'How it was used' and 'Source'
+PASS [3D] DOM: tooltip hides when the pointer leaves
+PASS [3D] DOM: keyboard focus on a thumbnail shows the tooltip
+PASS [3D] DOM: annotated-version toggle in the panel switches the picture next to the model
+PASS [3D] DOM: 'Enlarge' opens the lightbox with citation, licence, rights note
+PASS [3D] DOM: lightbox has a visible Close button (top-right and in the footer)
+PASS [3D] DOM: Close button closes the lightbox
+PASS [3D] DOM: Escape closes the lightbox
+PASS [3D] DOM: (i) opens a pop-over with the full text; pinned by click
+PASS [3D] DOM: Escape closes the (i) pop-over
+PASS [3D] DOM: (i) also opens on hover
+PASS [3D] DOM: (i) opens on keyboard focus
+PASS [3D] DOM: selector switches the model: hash follows, the other section is hidden
+PASS [3D] DOM: switching unloads the previous viewer (one live iframe, in the visible model)
+PASS [3D] DOM: browser Back returns to the previous model
+PASS [3D] DOM: selector is keyboard operable (Enter on a focused button selects it)
+PASS [3D] DOM: methods link in the caveats table selects its model, opens the lazy document and scrolls to the heading
+PASS [3D] DOM: no console errors
+PASS [3D] DOM: Full screen: the stage (viewer + photo panel) goes full screen
+PASS [3D] DOM: Full screen: a visible 'Exit full screen' button sits top-right, on top
+PASS [3D] DOM: Full screen: viewer and photo panel are both inside it
+PASS [3D] DOM: Full screen: the toolbar button reads 'Exit full screen'
+PASS [3D] DOM: Exit button leaves full screen; the page is intact (selector, model, viewer)
+PASS [3D] DOM: Full screen fallback (no Fullscreen API): CSS full-screen layout with the Exit button
+PASS [3D] DOM: Esc leaves the full-screen fallback
+PASS [3D] DOM: sticky navigation stays visible after scrolling down (top of the window, view buttons reachable)
+PASS [3D] DOM: reef selector stays visible under the navigation while scrolling the model
+PASS [3D] DOM: 'Top' button appears on long views and returns to the top
+PASS [3D] DOM: 'Top' button scrolls to the top
+PASS [3D] DOM: from deep inside the tab one click on 'Gallery' shows the main page from its top
+PASS [3D] DOM: leaving the tab frees the viewers (no iframe left)
+PASS [3D] DOM: tabs switch from every view (Table -> 3D models) and the tab re-opens on its model
+PASS [3D] DOM: brand link 'Surf reefs survey' returns to the main page (Gallery)
+PASS [3D] DOM: the gallery's page intro is 2 short lines with an (i)
+PASS [3D] DOM: no console errors (navigation session)
+PASS [3D] DOM: 'All (compare)' selects the combined section (hash #view/models3d/all, one section visible)
+PASS [3D] DOM: combined viewer starts in its stage; comparison panel lists every model with its check result
+PASS [3D] DOM: comparison panel: footprint and crest read back from the meshes, all checks pass
+PASS [3D] DOM: method + check table of the combined scene are on the page
+PASS [3D] DOM: combined viewer (standalone, file://) renders a frame without errors
+PASS [3D] DOM: combined scene holds all 5 exported reefs, each with seabed + reef mesh
+PASS [3D] DOM: combined: every reef is positioned side by side at one scale (no overlap of the seabed patches)
+PASS [3D] DOM: combined: z = 0 is each site's own MSL (water plane at y = 0; the exported crest level is the reef mesh's top)
+PASS [3D] DOM: combined: vertical exaggeration is always shown, default 1x
+PASS [3D] DOM: combined: controls for water, seabed, metre grid, scale bars, outlines, labels, plan / oblique / side presets, overlay
+PASS [3D] DOM: combined: the VE slider scales every reef together (y scale 3, chip says 3x)
+PASS [3D] DOM: combined overlay: every reef is centred on one origin (footprint centroids at 0, 0)
+PASS [3D] DOM: combined: switching back to side by side restores the layout
+PASS [3D] DOM: standalone viewer page has a slim top bar (visible) with '<- Back to the page' and the main tabs
+PASS [3D] DOM: the bar does not cover the viewer (content starts below it)
+PASS [3D] DOM: '<- Back to the page' returns to the survey page on that model
+PASS [3D] DOM: the back bar is hidden when the viewer is framed by the page
+PASS [3D] DOM: mobile: no horizontal page scroll
+PASS [3D] DOM: mobile: navigation and reef selector are visible and operable
+PASS [3D] DOM: mobile: photos sit directly under the viewer (stacked, no side-by-side)
+PASS [3D] DOM: mobile: tapping a thumbnail shows it in the panel

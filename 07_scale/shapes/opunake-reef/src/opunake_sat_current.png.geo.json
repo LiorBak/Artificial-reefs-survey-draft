@@ -1,0 +1,24 @@
+{
+  "image": "opunake_sat_current.png",
+  "width": 3470,
+  "height": 3470,
+  "bounds": {
+    "north": -39.45640639160995,
+    "south": -39.4635922376581,
+    "east": 173.86465340852737,
+    "west": 173.8553461432457
+  },
+  "zoom": 19,
+  "m_per_px_center": 0.2305258548578804,
+  "tile_template": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+  "wayback_release": null,
+  "center": {
+    "lat": -39.46,
+    "lon": 173.86
+  },
+  "radius_m": 400.0,
+  "attribution": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+  "retrieved": "2026-10-04",
+  "capture_date": "2025-01-16",
+  "capture_date_field": "DATE (YYYYMMDD)"
+}

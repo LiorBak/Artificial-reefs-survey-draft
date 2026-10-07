@@ -1,0 +1,127 @@
+{
+  "slug": "bunbury-airwave",
+  "checked_on": "2026-09-25",
+  "method": "Each accepted image was downloaded to a temp scratchpad with curl -L -A Mozilla/5.0, viewed directly, classified against the rubric using the dossier's description of the structure (12 m dome-shaped white/pale inflatable Hypalon rubber bladder, sited 30-45 m offshore in ~1 m water at low tide, orange marker buoy and tether line, diver-assisted install, seam tore during Dec 2019 install), and cross-checked against the source page's caption/depicts text in the card. Scratch copies were deleted after viewing. The one accepted video was not downloaded; its videos.json entry, manual shot-log transcript (11804314_notes.txt), and the two saved frame files were read/viewed instead.",
+  "images": [
+    {
+      "url": "https://live-production.wcms.abc-cdn.net.au/cc84b43142e4cdd5abcbae122250f275",
+      "card_depicts": "The torn seam in the Airwave inflatable bladder, photographed after it ripped during the December 2019 installation attempt",
+      "classification": "structure_visible",
+      "confidence": "high",
+      "what_i_saw": "Underwater close-up: pale/white inflatable bladder material with a visible seam/fold line running through the frame, sandy seabed and a mooring line visible; consistent with a torn seam on the bladder underwater.",
+      "agree_with_card": true,
+      "notes": "Matches caption; genuine structure/damage shot, not a beach or unrelated scene."
+    },
+    {
+      "url": "https://live-production.wcms.abc-cdn.net.au/1a68756faf1cc30ccfdfad69bc4ad197",
+      "card_depicts": "Design/technology graphic of the Airwave device showing how it is meant to build on natural swell using air to create bigger waves",
+      "classification": "structure_visible",
+      "confidence": "high",
+      "note_on_type": "This is a computer-generated concept render/diagram of the dome bladder and the swell it is meant to lift, not a photograph of the real installed structure. Classified as structure_visible because it clearly shows the reef's shape/design as built (dome, base on seabed), but flagged: it is illustrative, not photographic evidence that the real Bunbury unit ever looked/worked exactly like this.",
+      "classification_detail": "design_render_of_structure",
+      "agree_with_card": true,
+      "notes": "Card correctly describes it as a design/technology graphic, not a real photo; no discrepancy."
+    },
+    {
+      "url": "https://live-production.wcms.abc-cdn.net.au/0db449946b7b75c45d5bd9c51901a510",
+      "card_depicts": "Aerial view of Bunbury's Back Beach, the intended installation site, just south of the Bunbury Surf Life Saving Club",
+      "classification": "site_context_only",
+      "confidence": "high",
+      "what_i_saw": "Aerial/drone photo of a sandy beach with dark reef-rock/seaweed patches and dune vegetation; no bladder, buoy, diver, or any inflatable structure visible; taken pre-installation (companion June 2019 article, before the December 2019 install attempt).",
+      "agree_with_card": true,
+      "notes": "Card already labels this as a site photo (not the structure itself); classification matches the card's own framing. No fix needed, but confirms this image alone cannot serve as evidence of the reef itself and should not become the hero image."
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/12/Airwave-from-Above.jpg?v=1576553483",
+      "card_depicts": "Aerial/drone photo of the Airwave bladder in the water off Bunbury Back Beach during the December 2019 installation",
+      "classification": "structure_visible",
+      "confidence": "high",
+      "what_i_saw": "Aerial shot of a pale circular submerged dome/bladder in shallow turquoise water with an orange marker buoy and a tether line running to it; matches the ABC video's aerial frame almost exactly (same buoy position and bladder shape).",
+      "agree_with_card": true
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/12/Airwave-Tear.jpg?v=1576553654",
+      "card_depicts": "Close-up/photo documenting the torn seam of the Airwave bladder after the December 2019 installation failure",
+      "classification": "structure_visible",
+      "confidence": "high",
+      "what_i_saw": "Underwater shot of the pale bladder surface with a raised seam ridge running through the frame and mooring lines visible; consistent with the described seam/tear location, though the tear itself is not sharply resolved in this frame.",
+      "agree_with_card": true
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/09/AirwaveDiagram2.jpg?v=1568073278",
+      "card_depicts": "Waveco's own technical diagram of the Airwave inflatable bladder design intended for Bunbury Back Beach",
+      "classification": "structure_visible",
+      "confidence": "high",
+      "classification_detail": "design_render_of_structure",
+      "what_i_saw": "3D rendering of a dome-shaped bladder on the seabed with a stylised breaking wave peeling over it, labelled as a design diagram; not a photo of the real site.",
+      "agree_with_card": true,
+      "notes": "Card correctly labels this a diagram; no discrepancy."
+    }
+  ],
+  "images_rejected_recheck": [
+    {
+      "url": "https://www.google.com/maps/@-33.31,115.64,17z",
+      "classification": "could_not_load",
+      "agree_with_card": true,
+      "notes": "Confirmed: this is a Maps web-app URL, not a fetchable image; correctly excluded from accepted images."
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.abc.net.au/news/2019-12-16/11804314",
+      "title": "Dream on hold for Bunbury surfers",
+      "classification": "about_the_reef",
+      "best_timestamp_seconds": 3,
+      "evidence": "Shot log in 11804314_notes.txt: '00:00-00:08 — Aerial/drone shot over turquoise water off Bunbury Back Beach showing the inflated white Airwave bladder sitting on the seabed, a diver near it, and an orange marker buoy nearby.' Frame 11804314_0005.jpg (viewed) confirms an aerial shot of the pale submerged bladder with buoy and tether line, matching the Airwave-from-Above.jpg image almost exactly. The rest of the 35s clip is a vox-pop with a named surfer reacting to the reef's installation failure, and the video's title/topic (ABC News coverage of the Dec 2019 tear) is squarely about the reef, not incidental beach surfing.",
+      "agree_with_card": true,
+      "notes": "This is NOT one of the two videos Lior flagged as showing surfing-at-the-beach-only; those two (YouTube live-cam and podcast) are already marked 'unavailable'/excluded in videos.json and never entered the accepted card. Only this one ABC video is in the accepted card, and it does show the structure."
+    }
+  ],
+  "videos_excluded_confirmed": [
+    {
+      "url": "https://www.youtube.com/watch?v=K2DQ-C7OR0U",
+      "title": "Live Surf Cam Bunbury, WA, Australia Airwave by Waveco",
+      "status_confirmed": "unavailable (yt-dlp: Video unavailable; thumbnail 404)",
+      "agree_with_card": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=hfz92plwENs",
+      "title": "Airwave, The World's First Inflatable Surf Reef — Digital Hitmen Podcast [Episode 6]",
+      "status_confirmed": "unavailable (yt-dlp: video unavailable; thumbnail 404); likely audio-only podcast anyway",
+      "agree_with_card": true
+    }
+  ],
+  "frames": [
+    {
+      "path": "03_images/video_frames/bunbury-airwave/11804314_0005.jpg",
+      "classification": "structure_visible",
+      "confidence": "high",
+      "what_i_saw": "Aerial drone shot with ABC News watermark: pale circular submerged bladder in shallow turquoise water, orange marker buoy just above/right of it, faint tether line visible, a diver's shadow near the bladder edge.",
+      "agree_with_card": true
+    },
+    {
+      "path": "03_images/video_frames/bunbury-airwave/11804314_0010.jpg",
+      "classification": "site_context_only",
+      "confidence": "high",
+      "what_i_saw": "Beachfront interview shot of Camille-Audrey Perron at the Back Beach access point (surf-club mural, 'NO ACCESS BEYOND THIS POINT' sign); no reef structure, water, or bladder visible in frame.",
+      "agree_with_card": true,
+      "notes": "Legitimate as a supporting/context frame (identifies the on-record reaction quoted in R1) but not itself evidence of the reef; should not be used alone or as hero image."
+    }
+  ],
+  "summary": {
+    "total_accepted_images_checked": 6,
+    "structure_visible": 5,
+    "reef_effect_visible": 0,
+    "site_context_only": 1,
+    "unrelated_or_wrong_site": 0,
+    "could_not_load": 0,
+    "videos_checked": 1,
+    "videos_about_the_reef": 1,
+    "frames_checked": 2,
+    "frames_structure_visible": 1,
+    "frames_site_context_only": 1,
+    "problems_found": "None matching Lior's 'surfing at the beach, never the reef' pattern. All 5 structure_visible images and the accepted video genuinely show the bladder/seam/tear or its installation; the one site_context_only image (pre-install aerial of the beach) and one site_context_only frame (interview) are already correctly understood in the card as site/context material, not reef-evidence, so no fix to the card is required. This reef's accepted media set appears clean.",
+    "recommended_hero_image": "https://raisedwaterresearch.com/wp-content/uploads/2019/12/Airwave-from-Above.jpg?v=1576553483",
+    "hero_rationale": "Clearest, highest-resolution, unambiguous aerial photo of the actual bladder in the water (buoy + tether + dome clearly visible), independently corroborated by the ABC video's near-identical aerial frame (11804314_0005.jpg) — two independent sources agree on the structure's appearance in situ."
+  }
+}

@@ -1,0 +1,13 @@
+combined: borth-coastal-defence-reef: cached (ok)
+combined: boscombe-surf-reef: cached (ok)
+combined: bunbury-airwave: cached (ok)
+combined: mount-maunganui-reef: cached (ok)
+combined: palm-beach-gold-coast: cached (ok)
+combined: prattes-reef-el-segundo: cached (ok)
+models3d: 6 models, 0 feasibility, 7 not yet; pictures {'borth-coastal-defence-reef': 22, 'boscombe-surf-reef': 26, 'bunbury-airwave': 13, 'mount-maunganui-reef': 8, 'palm-beach-gold-coast': 27, 'prattes-reef-el-segundo': 28}; 95 references (from 136); caveat rows 47; verify 119 checked, 0 failed; json 1011 KB; 1.1s
+wrote C:\Users\lior\Documents\Gemini\AG\Artificial reef - to upload to git\04_build\artificial_reefs.html (2111 KB)
+reefs: 13; with USD cost: 12; total ~US$47,406,500-50,457,500
+NOTE: burkitts-reef-bargara: not on map — card coordinates (24.8205, 152.4625) fail a hemisphere check (Australia lies south of the equator) — not plotted
+NOTE: mount-maunganui-reef: not on map — no coordinates in the card
+NOTE: palm-beach-gold-coast: not on map — no coordinates in the card
+NOTE: mexico-reef-2026-unnamed: not on map — no coordinates in the card

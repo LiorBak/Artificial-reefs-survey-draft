@@ -1,0 +1,40 @@
+{
+  "slug": "japanese-artificial-reef-program",
+  "name": "Japanese 人工リーフ (artificial reef) submerged breakwater programme",
+  "place": "Multiple sites nationwide (documented examples: Niigata Coast; Sugihama Coast, Mihama-cho, Fukui; Iburi Coast, Tomakomai/Shiraoi, Hokkaido)",
+  "country": "Japan",
+  "kind": "reef",
+  "type": "submerged breakwater (wide-crested, trapezoidal rubble-mound), programme/class not a single site",
+  "purpose": "coastal protection (storm-surge and wave protection, beach-erosion control); secondary aesthetic goal of preserving sea view vs. an emergent breakwater",
+  "year_built": "ongoing, decades-old practice; Niigata's reef+breakwater programme active since ~FY1977 [R3]; national policy formalised by the 1999 Coastal Law revision [R1]",
+  "priority": 2,
+  "status": "ongoing nationwide practice; Iburi Coast example re-evaluated and continuing as of the FY2022/Jan-2023 national public-works review [R9]",
+  "dimensions": {
+    "crest_width_m": "defining threshold ≥30-50m distinguishes 'artificial reef' from plain submerged breakwater [R6]; worked design examples cite 50m (block-covered) and 124m (breakwater-block) [R12]; another source gives 40-60m typical [R13]",
+    "crest_water_depth_m": "commonly 0-2m (range -0.5 to 4m reported) [R13]; Niigata example ~2m [R14]",
+    "cross_section": "trapezoidal, natural stone/crushed rock with armor layer, historically concrete blocks [R1][R2][R6]",
+    "source": "R6, R12, R13, R14"
+  },
+  "cost": "no programme-wide national total found; Iburi Coast example (bundled with seawalls, not reef alone): construction ¥148.8bn + maintenance ¥0.25bn ≈ ¥149.1bn total (FY2022 evaluation), roughly USD 1.0bn at ~¥150/USD (rough 2023 conversion, labelled) [R9]",
+  "designer": "no single designer; JSCE design guidance and a national ministerial technical-standards ordinance (2004, Heisei 16) govern the type [R1][R8]",
+  "contractor": "not applicable at programme level; Iburi Coast example executed directly by Hokkaido Development Bureau (MLIT) [R9]",
+  "financed_by": "national government via MLIT public-works budget (直轄事業 / directly-managed project funding, cost-shared with affected prefecture) [R9]",
+  "motivation": "1999 Coastal Law revision shifted national policy from single emergent seawalls ('linear defense') to submerged wide-crested reef + sloped seawall ('areal defense'), explicitly to reduce overtopping/erosion while preserving the sea view [R1][R2]; Niigata driver was direct: ~350m max shoreline retreat since the Meiji era from river management + port development + Sea-of-Japan storms [R7]",
+  "outcome": "Iburi Coast FY2022 national evaluation states the artificial reef stabilised beach topography and regenerated the sand beach (official quoted finding) [R9]; Niigata's programme credited by a local civil-engineering society with 'beach recovery' [R3]; a 1989 JSCE paper's existence indicates subsidence was serious enough at Niigata reefs to warrant a dedicated study, though its findings were not accessed [R15]",
+  "relation_to_master_list": "seeded from 02_research/00_master_list.md brief-vs-Lior's-files gap note: 'any Basque/Brazilian/Japanese/Dutch project' flagged as absent from all 8 of Lior's source notes; this dossier is built entirely from fresh web research, not Lior's files",
+  "possible_duplicate": "none identified; this is a class/programme entry distinct from any single named world-reef row in the master list",
+  "dossier_md": "02_research/reefs/japanese-artificial-reef-program.md",
+  "reviews_found": 2,
+  "references_count": 18,
+  "image_leads": [
+    "https://www.pref.fukui.lg.jp/doc/sabo/kaigansisetuyakuwari.html",
+    "https://www.jepoc.or.jp/tecinfo/library.php?_w=Library&_x=detail&library_id=56",
+    "https://jsce-niigata.com/introduction/article/026/art026.html"
+  ],
+  "video_leads": [
+    "https://www.youtube.com/watch?v=CKYfzNZk_U4",
+    "https://www.youtube.com/watch?v=2VIlc3OuWEE",
+    "https://www.youtube.com/watch?v=1EQJNUoFimY"
+  ],
+  "last_updated": "2026-09-24"
+}

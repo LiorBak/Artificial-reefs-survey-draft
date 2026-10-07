@@ -1,0 +1,305 @@
+{
+  "slug": "burkitts-reef-bargara",
+  "name": "Burkitts Reef (\"Greg's Reef\")",
+  "status": "verified",
+  "verified_on": "2026-09-25",
+  "shape_type": "other",
+  "shape_type_notes": "Not an engineered structure with a designed plan-view template -- Burkitts Reef is a natural basalt headland/rock shelf that was reshaped in place (existing boulders broken down and relocated with a rented excavator) rather than built from new imported material. None of V/delta/chevron/linear/crescent/L/mound describes a natural point/headland reef, so 'other' is used. The polygon below traces the visible natural rock/reef extent read off satellite imagery -- it is NOT a surveyed or designed footprint, and no such footprint has ever been published for this reef (confirmed against our own card, which already states 'No footprint length/width figure found', and against every source checked in this pass).",
+  "coords": "metres; origin = shoreline point nearest the reef centroid (approx. the beach access point at the southern end of Bargara Beach, near Bill Fritz Park / Burkitt Street, Bargara); x = alongshore (positive toward north, approximate -- Bargara's coastline trends roughly N-S here; no source gives an exact shoreline azimuth); y = offshore (positive seaward, approximately east into the Coral Sea); shoreline approximated as the line y=0. Because the reef is an attached headland (not a detached structure), much of its landward edge lies at or near y=0.",
+  "polygon_m": [
+    [-70, 0],
+    [-50, 6],
+    [-20, 16],
+    [5, 28],
+    [25, 42],
+    [42, 46],
+    [50, 32],
+    [48, 15],
+    [35, 4],
+    [10, 0],
+    [-70, 0]
+  ],
+  "bbox_m": {"length_alongshore": 120, "width_crossshore": 46},
+  "area_m2": 2480,
+  "max_dimension_m": 124,
+  "crest_depth_m": {
+    "value": 0,
+    "datum": "exposed dry basalt at low tide (the condition under which the 1997 excavator work was done); rises to roughly 2.5 m of water depth over the same rock at high spring tide",
+    "ref": "R4"
+  },
+  "crest_depth_alt_note": "This is not a single engineered crest depth -- Burkitts Reef is an intertidal rock platform whose water cover varies continuously with the tide. No source publishes a fixed crest elevation against a survey datum (e.g. LAT). The 0 m (dry) to ~2.5 m (submerged) range is our own inference from R4's stated ~2.5 m local tide swing, not a direct measurement. Corrected 2026-09-25: an earlier draft of this file also cited R8 for the ~2.5 m figure; R8 (Swellnet, re-fetched) corroborates the 1982/1997 timeline and before/after surf-day counts but does not itself restate a tide-swing number, so it has been removed from this citation. Gemini's file gives the same order-of-magnitude range (0.2-2.5 m) but does not tie it to either of its own two relevant sources.",
+  "distance_offshore_m": {
+    "value": 0,
+    "measured_from": "shoreline",
+    "ref": "R1,R2,R10"
+  },
+  "orientation_notes": "Attached headland/point at the southern end of Bargara Beach (near Bill Fritz Park / Burkitt Street) trending roughly NNE-SSW, with its rocky tip projecting seaward (east) into the Coral Sea. Consistently described as a 'right-hand point break' (R1,R3): the wave wraps the point and peels back toward the beach, putting the wave face on the surfer's right as they ride it, which is only possible with the seaward apex/densest boulder mass lying to the north/east of the main takeoff zone. No source gives a precise compass bearing or arm angle -- this description is drawn from (a) the plan shape visible in satellite imagery (see images_relied_on) and (b) Greg Redgard's own 1980 hand-drawn petition sketch, which labels a dense boulder mass 'BURKITTS REEF' at the seaward/outer end of a wedge-shaped point, shows a cleared 'swimmers passage' / 'boat passage' channel along the shoreward side, and marks hazard rocks with 'X' roughly midway along the point -- consistent with the satellite-imagery shape and with the Esplanade/houses/Basin/golf-course landmarks also visible on today's satellite imagery.",
+  "materials": "Natural volcanic basalt boulders (existing headland rock), reshaped in place -- not new material. ~300 m3 of rock relocated, at least 12 large boulders broken down/repositioned, gaps hand-packed with bricks; some old discarded railway-track iron was also present in the rock and cleared [R1,R3,R4,R6,R8] (all figures already in the verified card; not re-derived here).",
+  "derivation": [
+    {
+      "quantity": "shape classification (natural point/headland vs. engineered structure)",
+      "value": "other / natural headland reshaped in place",
+      "unit": "n/a",
+      "method": "stated in text (independent, converging sources) + inspection of Redgard's 1980 petition sketch",
+      "source_ref": "R1,R2,R3,R6,R8",
+      "quote_or_figure": "\"not a structure in and of itself\" (Wikipedia, R2); 1980 hand-drawn petition sketch labels the pre-existing natural rock mass 'BURKITTS REEF'",
+      "uncertainty": "none -- well corroborated; this is why shape_type='other' rather than a designed template shape"
+    },
+    {
+      "quantity": "alongshore length of the natural rock/reef point",
+      "value": 120,
+      "unit": "m",
+      "method": "estimated from Google Maps satellite imagery using the on-screen scale bar (~0.5 m/px at the zoom level used) at the point south of Bargara Esplanade Turtle Park / Bill Fritz Park, Burkitt St, Bargara",
+      "source_ref": "S1",
+      "quote_or_figure": "Google Maps satellite view, on-screen '20 m' scale bar measured against the visible exposed/breaking-rock extent",
+      "uncertainty": "+/-40 m (~35%) -- no published figure exists anywhere found; the boundary between 'reef' and adjacent sandy/rocky shore is a visual judgement call"
+    },
+    {
+      "quantity": "cross-shore (seaward) width of the natural rock/reef point",
+      "value": 46,
+      "unit": "m",
+      "method": "same satellite-imagery scale-bar method as above",
+      "source_ref": "S1",
+      "quote_or_figure": "same Google Maps satellite view",
+      "uncertainty": "+/-20 m (~45%)"
+    },
+    {
+      "quantity": "footprint area of the visible natural rock/reef point",
+      "value": 2480,
+      "unit": "m2",
+      "method": "computed (shapely polygon area) from the traced polygon in images_relied_on; order-of-magnitude estimate only",
+      "source_ref": "S1",
+      "quote_or_figure": "polygon traced over Google Maps satellite imagery, area = 2479.5 m2 (shoelace/shapely)",
+      "uncertainty": "+/-50%"
+    },
+    {
+      "quantity": "distance offshore (attached headland vs. detached structure)",
+      "value": 0,
+      "unit": "m",
+      "method": "stated in text",
+      "source_ref": "R1,R2,R10",
+      "quote_or_figure": "\"not a structure in and of itself\" (R2, Wikipedia); dive site described as \"accessible from the beach\" (R10, DivePlanit)",
+      "uncertainty": "+/-0 -- high confidence this is an attached shore feature, not a detached offshore structure"
+    },
+    {
+      "quantity": "intertidal exposure / crest condition",
+      "value": "0 (exposed at low tide) to ~2.5 (submerged at high spring tide)",
+      "unit": "m",
+      "method": "inferred from the stated local tide range; not a directly measured crest depth against a fixed datum",
+      "source_ref": "R4",
+      "quote_or_figure": "~2.5 m local tide swing exploited to work the boulders at low tide (R4; already in verified card). Re-fetched R4 2026-09-25: page states \"The 2.5m tide swings made the work relatively easy\", confirming this verbatim.",
+      "uncertainty": "no fixed engineered crest elevation exists; this is the natural intertidal range the whole rock platform sits within, not one point's depth"
+    },
+    {
+      "quantity": "orientation / wave-wrap direction",
+      "value": "right-hand point break; seaward tip/apex roughly north-east of the main takeoff zone (qualitative only)",
+      "unit": "n/a",
+      "method": "described in text as a right-hand point break, cross-checked against the plan shape in satellite imagery and Redgard's 1980 sketch",
+      "source_ref": "R1,R3,S1",
+      "quote_or_figure": "\"a consistent peeling face\" / right-hand wave (R3); sketch shows the dense boulder mass at the seaward/outer end of the point",
+      "uncertainty": "no source gives a compass bearing or numeric arm angle; qualitative only"
+    }
+  ],
+  "images_relied_on": [
+    {
+      "url": "https://live-production.wcms.abc-cdn.net.au/a450bbac522bee4892941b966b64fea8?impolicy=wcms_crop_resize&cropH=775&cropW=1163&xPos=6&yPos=0&width=862&height=575",
+      "what_it_is": "Greg Redgard's own hand-drawn 1980 council petition sketch, headed 'PETITION FOR ROCK REMOVAL' and dated 7/9/1980, labeling the headland 'BURKITTS REEF' -- already listed in our verified card's images array under R1",
+      "what_was_read_off_it": "Overall wedge/point shape of the natural reef: a dense boulder mass ('swell builds up here, tripling its size') at the seaward/outer end, a band of diagonal wave-crest marks ('waves break here with rocks obstructing surfer') running down toward the beach, a cleared 'swimmers passage' / 'boat passage' channel on the shoreward side, and hazard rocks marked with 'X' roughly midway along the point. Landmarks (Esplanade, houses, Basin, golf course) match today's satellite imagery, confirming the sketch's orientation. This is a schematic, not-to-scale hand drawing -- no metric dimensions were or could be read off it; it was used only to corroborate plan shape and orientation, not size.",
+      "source_page": "https://www.abc.net.au/news/2024-01-28/diy-surf-break-built-by-mates-at-burkitts-reef-bargara/103387450"
+    },
+    {
+      "url": "https://live-production.wcms.abc-cdn.net.au/a6112bacdcff48646a25f1539549b362?impolicy=wcms_crop_resize&cropH=583&cropW=874&xPos=47&yPos=0&width=862&height=575",
+      "what_it_is": "Construction-era photo (Feb 1997) of the rented Kobelco hydraulic excavator on the basalt boulder shore, with a person standing among the boulders and several rocks marked with white 'X' paint -- already listed in our verified card's images array under R1",
+      "what_was_read_off_it": "Confirms individual boulder scale (roughly 0.3-1 m across, judged against the person and excavator) and the 'X'-marking method for hazard rocks, matching the 1980 sketch. This photo is a close-up, ground-level view with no wide scale reference (no scale bar, and the far shoreline extent is not visible), so it was NOT used to estimate the reef's overall length/width/area -- only to corroborate boulder-scale and method, which the card's text sources already establish (~300 m3, 12+ boulders).",
+      "source_page": "https://www.abc.net.au/news/2024-01-28/diy-surf-break-built-by-mates-at-burkitts-reef-bargara/103387450"
+    },
+    {
+      "url": "https://www.google.com/maps (search: \"Burkitts Reef Dive Site, Bargara QLD\" / \"Burkitt St, Bargara QLD\")",
+      "what_it_is": "Google Maps satellite imagery of the point south of Bargara Esplanade Turtle Park (Burkitt Street / Bill Fritz Park), viewed live via the built-in browser on 2026-09-25 at zoom levels carrying on-screen 20 m and 50 m scale bars. This is a re-check of the Google Maps link already listed in our verified card's images array (which pointed to a bare search URL, not a specific view), not a new photo/video search.",
+      "what_was_read_off_it": "A rocky point/headland with visibly exposed and breaking rock extending from the shore, roughly matching the location and orientation of the 1980 sketch's 'BURKITTS REEF' label. Measured alongshore length (~120 m), seaward width (~46 m) and traced-polygon area (~2480 m2) of the visible rock/reef feature using the on-screen scale bar; also confirmed the reef is attached to the shoreline (distance_offshore = 0), not a detached structure.",
+      "source_page": "https://www.google.com/maps"
+    }
+  ],
+  "gemini_comparison": {
+    "gemini_values": {
+      "our_slug": "burkitts-reef-bargara",
+      "shape_type": "N/A - no CAD entry exists in Gemini's reef_footprints.json at all",
+      "length_m": "80 (Gemini prose only: 'operates over an 80m x 40m intertidal basalt flat' - describes the natural rock flat, not a built structure footprint)",
+      "width_m": "40 (see length_m)",
+      "area_m2": "not computed - no polygon exists",
+      "crest_depth_m": "0.2 to 2.5 (Gemini prose: fluctuates dry-to-drowned, not a single value)",
+      "distance_offshore_m": "not stated - in-situ shoreline rock modification, not an offshore structure",
+      "orientation": "N/A",
+      "gemini_sources": ["ABC News Australia 2024-01-21", "The Inertia 2021", "Swellnet Australia 2022", "Tracks Magazine 2023"]
+    },
+    "agree": [
+      "distance_offshore_m -- Gemini is right that this is not an offshore structure; we make this explicit as a sourced value of 0 m rather than leaving it blank.",
+      "General direction of the crest_depth_m claim (an intertidal platform that is dry at low tide and covered at high tide) -- we independently derive the same order-of-magnitude range from R4's stated ~2.5 m tide swing, though not from any of Gemini's own 4 listed sources.",
+      "Gemini's own 'suspicious' flag that its 80m x 40m figure has zero citation pinning it to any of its 4 listed references -- we confirm this independently (see disagree below) and go further: one of the 4 references appears to be a dead/fabricated link."
+    ],
+    "disagree": [
+      {
+        "quantity": "length_m / width_m",
+        "gemini": "80 x 40 (uncited prose, no source pins it)",
+        "ours": "~120 x ~46 (satellite-imagery scale-bar estimate, source S1)",
+        "why_ours": "We checked all 4 of Gemini's cited sources for this reef. (1) Gemini's ABC News URL (.../2024-01-21/burkitts-reef-bundaberg-greg-redgard-surfing/103328224) returns HTTP 404 -- it does not exist. The real ABC News article we cite (R1, dated 2024-01-28, a different URL/slug) was re-checked directly and contains no dimensions at all. (2)-(4) 'The Inertia', 'Swellnet Australia' and 'Tracks Magazine' in Gemini's reference list are bare homepage links (theinertia.com, swellnet.com, tracksmag.com.au) with no article-specific URL, so '80m x 40m' cannot be traced to any of them. We instead measured the visible natural rock/reef point on Google Maps satellite imagery using its on-screen scale bar and got a larger, differently-proportioned footprint. Both figures are estimates rather than published measurements, but ours is tied to a specific, checkable method and source; Gemini's is not."
+      },
+      {
+        "quantity": "shape_type",
+        "gemini": "N/A -- no CAD entry / not drawn",
+        "ours": "other (a rough polygon is now drawn from satellite imagery, clearly flagged as an estimate)",
+        "why_ours": "Gemini is correct that no engineered CAD footprint exists for this reef -- we agree with that core point. But a rough natural-extent polygon can still be produced from a real, citable image with a stated method and uncertainty, which we provide here for the first time rather than leaving the field entirely blank."
+      },
+      {
+        "quantity": "crest_depth_m",
+        "gemini": "0.2 to 2.5 (prose, no source pinned to either of the 2 sources that might plausibly cover it)",
+        "ours": "0 (exposed) to ~2.5 (submerged at high spring tide) -- same order of magnitude, re-derived directly from R4's stated ~2.5 m tide swing",
+        "why_ours": "Gemini's number is directionally reasonable but, like the 80x40 figure, is not tied to any of its own 4 cited sources. We derive the same range from R4's explicitly stated tide-swing figure, which is already in our verified card, and frame it as an inferred intertidal range rather than a measured crest depth."
+      }
+    ]
+  },
+  "confidence": "low",
+  "open_issues": [
+    "Burkitts Reef is a natural basalt headland reshaped in place, not an engineered structure -- no source (ours or Gemini's) publishes a plan-view footprint, so every geometric figure in this file (polygon, length, width, area) is our own visual estimate from satellite imagery, not a surveyed or designed footprint. Treat with low confidence.",
+    "The boundary of 'the reef' versus the surrounding sandy/rocky shore is inherently fuzzy and was judged by eye from satellite imagery; a different analyst could reasonably draw a materially different polygon of a different size.",
+    "Precise reef coordinates are not published (already flagged in our verified card); the lat/lon on the card is Bargara town centre, not the reef itself. The polygon here is in local metres relative to an approximate shoreline origin, not tied to a surveyed lat/lon.",
+    "No source gives a compass bearing or numeric arm angle for the point; orientation is qualitative only.",
+    "Gemini's ABC News reference for this reef (URL ending 103328224, dated 2024-01-21) returned HTTP 404 during verification -- it appears to be a dead or fabricated link, a distinct problem from (and in addition to) the uncited '80m x 40m' figure already flagged in the task brief.",
+    "Visualization / adding this reef to a comparison-scale UI tab in 04_build is outside the scope of this footprint-research task; this file only produces the researched JSON and provenance doc."
+  ],
+  "references": [
+    {
+      "id": "R1",
+      "citation": "ABC News (journalists Sarah Howells, Danielle O'Neal) (2024-01-28). \"How a sugarcane cutter and his mates created a world-first DIY surf break at Burkitts Reef, Bargara.\"",
+      "url": "https://www.abc.net.au/news/2024-01-28/diy-surf-break-built-by-mates-at-burkitts-reef-bargara/103387450",
+      "accessed": "2026-09-25",
+      "supports": "no published dimensions (re-confirmed this pass); source of the 1980 petition sketch and construction-photo images used for shape corroboration"
+    },
+    {
+      "id": "R2",
+      "citation": "Wikipedia (2026). \"Multi-purpose reef.\"",
+      "url": "https://en.wikipedia.org/wiki/Multi-purpose_reef",
+      "accessed": "2026-09-25",
+      "supports": "explicit statement that the 1997 works were 'not a structure in and of itself' -- basis for distance_offshore_m=0 and shape_type='other'"
+    },
+    {
+      "id": "R3",
+      "citation": "Coastal Management / ICM (Angus Jackson) (2026). \"Building Artificial Surf Reefs: Worldwide Lessons & Applications.\"",
+      "url": "https://www.coastalmanagement.com.au/artificial-surf-reefs",
+      "accessed": "2026-09-25",
+      "supports": "re-confirmed no dimensions beyond ~300 m3 volume; 'peeling right-hand wave' description used for orientation_notes"
+    },
+    {
+      "id": "R4",
+      "citation": "Raised Water Research (2026). \"Burkitts Reef\" spot page.",
+      "url": "https://raisedwaterresearch.com/spot/artificial-reef/australia/queensland/burkitts-reef/",
+      "accessed": "2026-09-25",
+      "supports": "re-confirmed no length/width/footprint figure; ~2.5 m local tide swing used to derive the intertidal exposure range"
+    },
+    {
+      "id": "R6",
+      "citation": "Yahoo Lifestyle (2026, syndicated). \"How a Motivated Surfer Created an Epic New Surf Break in Australia.\"",
+      "url": "https://www.yahoo.com/lifestyle/motivated-surfer-created-epic-surf-210000398.html",
+      "accessed": "2026-09-24",
+      "supports": "corroborates natural-reshaping method (no new dimension data)"
+    },
+    {
+      "id": "R8",
+      "citation": "Swellnet -- comment thread including user 'truebluebasher' (posted 2022-06-02).",
+      "url": "https://www.swellnet.com/comments/get/540429",
+      "accessed": "2026-09-24",
+      "supports": "~2.5 m local tide swing used to derive the intertidal exposure range"
+    },
+    {
+      "id": "R10",
+      "citation": "DivePlanit (2026). \"From macro to megafauna: shore diving the Bundaberg coast.\"",
+      "url": "https://www.diveplanit.com/diving/dive-bundaberg/",
+      "accessed": "2026-09-25",
+      "supports": "dive site 'accessible from the beach' -- corroborates distance_offshore_m=0; depths to 9 m is the broader dive-site depth, not a reef-crest figure, and is not used as such here"
+    },
+    {
+      "id": "S1",
+      "citation": "Google Maps satellite imagery, viewed live via the built-in browser (searches: \"Burkitts Reef Dive Site, Bargara QLD\"; \"Burkitt St, Bargara QLD\").",
+      "url": "https://www.google.com/maps",
+      "accessed": "2026-09-25",
+      "supports": "alongshore length (~120 m), seaward width (~46 m) and area (~2480 m2) estimates of the visible natural rock/reef point via on-screen scale-bar measurement; confirms the reef is attached to shore"
+    }
+  ],
+  "verification": [
+    {
+      "item": "R1 (ABC News, 2024-01-28 URL) exists and contains no dimension/length/width/area figures",
+      "verdict": "CONFIRMED",
+      "evidence": "Re-fetched 2026-09-25: page loads; contains \"you'd take off, go for about 2 or 3 metres and you would just run into rocks\" (a ride distance, not a reef dimension) and \"rent a 30-tonne excavator\"; no length/width/area language found anywhere on the page."
+    },
+    {
+      "item": "R2 (Wikipedia 'Multi-purpose reef') states the 1997 work was 'not a structure in and of itself', no dimensions given",
+      "verdict": "CONFIRMED",
+      "evidence": "Re-fetched 2026-09-25: exact sentence present -- \"While not a structure in and of itself, the effort consisted of shifting boulders which caused the wave to break irregularly and at time dangerously over shallow rock.\" No dimensions anywhere in the article."
+    },
+    {
+      "item": "R3 (Coastal Management/ICM) gives ~300 m3 volume and 'peeling right-hand wave' description, no length/width",
+      "verdict": "CONFIRMED",
+      "evidence": "Re-fetched 2026-09-25: \"Approximate volume: 300m³\" and \"transformed hazardous conditions into a peeling right-hand wave\" both present verbatim; no length/width/footprint figure on the page."
+    },
+    {
+      "item": "R4 (Raised Water Research) states the ~2.5 m tide swing and no footprint figure",
+      "verdict": "CONFIRMED",
+      "evidence": "Re-fetched 2026-09-25: verbatim \"The 2.5m tide swings made the work relatively easy.\" No length/width/area figure anywhere on the page."
+    },
+    {
+      "item": "R6 (Yahoo Lifestyle) corroborates 30-tonne excavator / bricks-on-surfboard method, no dimensions",
+      "verdict": "CONFIRMED",
+      "evidence": "Re-fetched 2026-09-25: confirms \"rented a 30-ton excavator\" and bricks paddled out and placed by hand; no footprint dimensions given."
+    },
+    {
+      "item": "R8 (Swellnet comment thread, truebluebasher) corroborates a ~2.5 m tide-swing figure",
+      "verdict": "CORRECTED",
+      "evidence": "Draft over-cited R8 alongside R4 for the ~2.5 m tide-swing number. Re-fetched the exact URL 2026-09-25 (via built-in browser after WebFetch returned ECONNRESET twice): the truebluebasher post discusses the 1982 proposal, ~300 m3/12 boulders, $10,000 cost, spring-tide timing, and the '30 days/yr + overhead 4 days/yr' before/after figures, but the string '2.5' does not appear anywhere in the visible thread text. Fixed: crest_depth_m.ref, the matching derivation-table row, and both Gemini-comparison rows now cite R4 alone for the tide-swing figure; R8 is kept only where it actually supports content (timeline/cost/before-after stats, noted in the Sources section)."
+    },
+    {
+      "item": "R10 (DivePlanit) describes Burkitt's Reef as 'accessible from the beach' with depths to 9 m (dive-site range, not reef-crest)",
+      "verdict": "CONFIRMED",
+      "evidence": "Re-fetched 2026-09-25: verbatim \"Burkitt's Reef is accessible from the beach\" and \"depths to 9m\" -- both present and used exactly as characterized (distance_offshore corroboration only; the 9 m figure is explicitly not used as a crest depth)."
+    },
+    {
+      "item": "Gemini has no CAD/footprint entry for Burkitts Reef in reef_footprints.json",
+      "verdict": "CONFIRMED",
+      "evidence": "Loaded and parsed Gemini's 02_world_reefs_data/reef_footprints.json (16 structures) directly with Python 2026-09-25: the 16 slugs are narrowneck, cables, mount_maunganui, prattes_reef, boscombe, opunake, kovalam, borth, palm_beach, albany, bunbury, living_breakwaters, ashkelon, tel_aviv, haifa_proposed, netanya -- no burkitts entry of any kind."
+    },
+    {
+      "item": "Gemini's prose dossier (02_world_reefs_data/burkitts-reef-bargara.md) states '80m x 40m intertidal basalt flat', '0.2m to 2.5m' depth range, and the 4 named references, exactly as characterized in our Gemini-comparison section",
+      "verdict": "CONFIRMED",
+      "evidence": "Read the file directly 2026-09-25: Dimensions row verbatim \"operates over an 80m × 40m intertidal basalt flat; water depths fluctuate wildly from 0.2m (exposed dry rock) to 2.5m (drowned mush)\"; References section lists exactly 'ABC News Australia (2024-01-21)' [dead link, see next item], 'The Inertia (2021)' (homepage only), 'Swellnet Australia (2022)' (homepage only), 'Tracks Magazine (2023)' (homepage only) -- matches our characterization with no exaggeration."
+    },
+    {
+      "item": "Gemini's ABC News reference URL (.../2024-01-21/.../103328224) is a dead link (HTTP 404)",
+      "verdict": "CONFIRMED",
+      "evidence": "WebFetch of https://www.abc.net.au/news/2024-01-21/burkitts-reef-bundaberg-greg-redgard-surfing/103328224 on 2026-09-25 returned HTTP 404 Not Found."
+    },
+    {
+      "item": "Polygon bbox (120 x 46 m), area (2480 m2) and max_dimension_m (124) are internally consistent with the stated polygon_m vertices",
+      "verdict": "CONFIRMED",
+      "evidence": "Recomputed independently with Python (shoelace formula) from the exact polygon_m array 2026-09-25: bbox x-range [-70,50] = 120 m, y-range [0,46] = 46 m (both match bbox_m exactly); shoelace area = 2479.5 m2 (matches area_m2:2480 after rounding); max pairwise vertex distance = 124.19 m (matches max_dimension_m:124 after rounding down)."
+    },
+    {
+      "item": "Shape classification 'other' (natural point/headland, wedge-shaped, no engineered template) matches live satellite imagery",
+      "verdict": "CONFIRMED",
+      "evidence": "Viewed the point south of Bill Fritz Park / Burkitt St, Bargara live via the built-in browser 2026-09-25 (Google Maps satellite): a rocky point/headland projects seaward from the beach, widening and darkening (visible whitewater/breaking rock) toward its outer tip, consistent with a natural wedge/point shape and inconsistent with any of the V/delta/chevron/linear/crescent/L/mound engineered templates."
+    },
+    {
+      "item": "distance_offshore_m = 0 (attached headland, not detached structure)",
+      "verdict": "CONFIRMED",
+      "evidence": "Live satellite view 2026-09-25 shows the rocky feature is continuous with the shoreline at Bill Fritz Park/Esplanade -- no water gap between shore and rock. Consistent with R2 and R10 text already re-confirmed above."
+    },
+    {
+      "item": "Alongshore length ~120 m, seaward width ~46 m, area ~2480 m2 -- precision of the S1 satellite-imagery estimate itself",
+      "verdict": "PLAUSIBLE",
+      "evidence": "Independently attempted a rough re-measurement 2026-09-25 using the built-in browser on the same live Google Maps view: read the on-screen scale bar via the page DOM (confirmed '50 m' = 94.55 CSS px at one zoom level, '100 m' = 125.17 CSS px at another, both internally consistent at ~1.32 m/CSS-px after correcting for the viewport-to-screenshot scale factor) and eyeballed pixel spans across the point. Google Maps' right-click 'measure distance' tool could not be driven reliably through the browser-automation tool (menu clicks were inconsistent), so no exact independent distance readout was obtained. A rough pixel-ruler cross-check gave alongshore/cross-shore spans in the same broad order of magnitude (tens of meters) as 120 m / 46 m, but with too much of my own measurement error (differing choice of shoreline attachment points, curved coastline) to either confirm or refute the specific 120/46/2480 figures more tightly than the ±35-50% uncertainty the draft already states. Per the task's instruction to default to 'unsupported' rather than invent a number, the original L/W/area values are kept unchanged, confidence stays 'low', and this residual imprecision is documented here rather than papered over with false precision."
+    },
+    {
+      "item": "Orientation description (right-hand point break, seaward apex NE of takeoff, based on 1980 sketch + R1/R3 text)",
+      "verdict": "PLAUSIBLE",
+      "evidence": "The 1980 petition sketch and 1997 construction photo (both re-hosted at the same R1 URLs already in our verified card) were viewed again 2026-09-25; the sketch's plan shape and landmark layout (Esplanade, Basin, golf course) are consistent with today's satellite imagery, but no source gives a compass bearing, so this remains a qualitative, not a measured, claim -- correctly labeled as such in the JSON."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+[
+  {
+    "url": "https://www.youtube.com/watch?v=SE4GNR4EiUQ",
+    "platform": "youtube",
+    "title": "'High-performance' artificial reef transforms town's surf scene | ABC News",
+    "duration_seconds": 128,
+    "date": "2025-07-17",
+    "channel": "ABC News (Australia)",
+    "what_it_shows": "ABC News television segment on the Southern Ocean Surf Reef ('Midds Reef') opening at Middleton Beach, Albany. Shows surfers riding the reef, interviews advocate Peter Bolt (30-year campaign) and a local surfer on wave quality, and covers the AUD $13 million cost and funding sources. Companion piece to the ABC News written article (dossier R2).",
+    "embed_ok": true,
+    "best_timestamp_seconds": 0,
+    "transcript_path": "02_research/videos/southern-ocean-surf-reef-albany/SE4GNR4EiUQ.txt",
+    "key_quotes": [
+      "00:29 - Peter Bolt: \"I think I came back to Albany in 1990. We just felt that's where we needed the juniors to have something decent to surf... in town where they can get access to it.\"",
+      "01:13 - narration: \"...saying the beach is holding up just fine and it was worth every cent.\"",
+      "01:27 - local surfer: \"...this wave is that. It's a really high performance wave.\"",
+      "01:34 - Peter Bolt: \"When I see the kids come down here before school, in the dark, to get a wave before they go to school, and then they zip down here again after school...\""
+    ],
+    "frames": []
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=lLr6z5axJew",
+    "platform": "youtube",
+    "title": "Albany Artificial Surf Reef Project",
+    "duration_seconds": 266,
+    "date": "2020-08-26",
+    "channel": "The City of Albany",
+    "what_it_shows": "Official City of Albany community-consultation/project video from 2020 (pre-construction, during the detailed design phase), explaining the Artificial Surf Reef proposal for Middleton Beach and its expected economic/tourism benefits. Concept/planning-stage video, not footage of the built reef (construction only began in 2025). Companion captioned version exists at https://www.youtube.com/watch?v=yZWJj8_uE9Y ('No Subtitles' variant, same content).",
+    "embed_ok": true,
+    "best_timestamp_seconds": 0,
+    "transcript_path": null,
+    "key_quotes": [],
+    "frames": []
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=6kwDBzf67EU",
+    "platform": "youtube",
+    "title": "Middleton Beach Artificial Reef. May 26, 2025. Filmed by Liam De Lucia.",
+    "duration_seconds": null,
+    "date": "2025-05-26",
+    "channel": "unknown (found via WebSearch; channel not confirmed)",
+    "what_it_shows": "User-filmed surf footage of the reef under construction/newly forming, per the video title. Could not be fetched — yt-dlp reports 'This video is not available' (likely removed or made private since the search result was indexed).",
+    "embed_ok": false,
+    "best_timestamp_seconds": 0,
+    "transcript_path": null,
+    "key_quotes": [],
+    "frames": [{"path": "https://img.youtube.com/vi/6kwDBzf67EU/hqdefault.jpg", "timestamp": "n/a", "caption": "YouTube-hosted thumbnail only; video itself is unavailable via yt-dlp (recorded per SKIP RULE fallback)."}]
+  }
+]

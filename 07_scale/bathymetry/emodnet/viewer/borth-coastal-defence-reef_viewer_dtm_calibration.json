@@ -1,0 +1,24 @@
+{
+ "cal": [
+  0.9956259202044784,
+  450359.82456988614,
+  -0.9952584375339784,
+  6856011.86880857
+ ],
+ "spread": [
+  0.4372589456465903,
+  0.9483802944610034
+ ],
+ "rect": [
+  0,
+  60,
+  1700,
+  1190
+ ],
+ "url": "https://emodnet.ec.europa.eu/geoviewer/?layers=14159&basemap=esri-imagery&bounds=-452338.54,6887474.90,-450630.80,6888558.66&filters=&projection=EPSG:3857",
+ "n_tiles": 600,
+ "tile_requests": [
+  "https://emodnet.ec.europa.eu/geoviewer/proxy//https://tiles.emodnet-bathymetry.eu/latest/mean_atlas_land/web_mercator/12/2001/1343.png",
+  "https://emodnet.ec.europa.eu/geoviewer/proxy//https://tiles.emodnet-bathymetry.eu/latest/mean_atlas_land/web_mercator/12/2001/1344.png"
+ ]
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "mexico-reef-2026-unnamed",
+  "recheck_date": "2026-09-25",
+  "images": [
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2026/03/Reef2.jpg",
+      "shows": "site_context_only",
+      "what_i_saw": "Surfer in a barreling wave, open Pacific setting, no reef structure, no rock/boulder feature, no aerial view of a fixed break location visible.",
+      "confidence": "medium",
+      "rationale": "This is the article's generic header/lead image. The card's own 'depicts' note calls it only 'consistent with the Xala reef story' — the source page does not caption it as showing the reef itself or its specific location, unlike the second image. Per the rubric, a photo needs the caption/source page to explicitly place it at the reef for reef_effect_visible; this one does not, so it is downgraded to site_context_only (surfing photo, no verifiable link to the Xala reef location)."
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2026/04/Reef1-1024x573.jpg",
+      "shows": "reef_effect_visible",
+      "what_i_saw": "Aerial/drone shot of a clean, peeling left-hand wave breaking consistently in the same spot with a surfer riding down the line; a helicopter/drone visible in frame; the underlying reef structure itself (rock/boulder) is not visible (consistent with a submerged rock reef).",
+      "confidence": "high",
+      "rationale": "Source page (raisedwaterresearch.com/unveiling-the-new-reef-in-mexico/) explicitly captions this image 'Mexico's first artificial surf reef at Xala' [R1], i.e. the article places this exact photo at the reef site. The dossier describes the reef as a submerged rock/boulder structure engineered for a consistent break, not a visible-at-surface feature, so a clean peeling wave at the named location, with the reef named in the caption, satisfies reef_effect_visible per rubric (wave breaking/peeling at the reef's location, caption ties it to the reef)."
+    }
+  ],
+  "videos": [],
+  "frames": [],
+  "hero_recommendation": "https://raisedwaterresearch.com/wp-content/uploads/2026/04/Reef1-1024x573.jpg",
+  "notes": [
+    "No videos exist for this reef: 02_research/videos/mexico-reef-2026-unnamed/videos.json is an empty array and the reef card's videos[] field is also empty. Nothing to reclassify.",
+    "No video_frames folder exists for this slug under 03_images/video_frames/ — none to check.",
+    "Only 2 accepted images exist on the card (images[]); both were downloaded, viewed, and classified above. One rejected image (a Google Maps link, not a photo) was already correctly excluded and needs no change.",
+    "Recommendation: demote Reef2.jpg (the article's generic header photo, no explicit caption placing it at the reef) from its current 'depicts ... consistent with the Xala reef story' framing to a site_context_only label if/when compile_data.py or the card copy is updated — it should not be used as a claim of 'this shows the reef.' Reef1-1024x573.jpg is the only image on this card that the source itself ties to the reef and should remain (and be promoted to) the hero."
+  ]
+}

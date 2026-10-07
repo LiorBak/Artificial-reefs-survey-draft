@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Artificial Surf Reefs Survey</title>
+<meta name="description" content="Survey of 13 built artificial surf reefs worldwide (1997–2025): what was built, what it cost, how it ended. Every fact linked to a source, shown in a pop-up next to the claim. Includes a Scale view comparing every reef footprint at one common scale.">
+<meta name="color-scheme" content="light dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Noto+Color+Emoji&display=swap">
+<style>
+/*__CSS__*/
+/*__M3D_CSS__*/
+</style>
+</head>
+<body>
+<a class="skip" href="#survey">Skip to the reefs</a>
+
+<nav class="topnav" id="topnav" aria-label="Page navigation">
+  <div class="wrap topnav-in">
+    <a class="topnav-brand" href="#" data-home title="Back to the main page (Gallery)">Surf reefs survey</a>
+    <div class="views" role="group" aria-label="View">
+      <button type="button" data-view="gallery" aria-pressed="true">Gallery</button>
+      <button type="button" data-view="table" aria-pressed="false">Table</button>
+      <button type="button" data-view="models3d" aria-pressed="false">3D models</button>
+    </div>
+  </div>
+</nav>
+<button type="button" class="to-top" id="to-top" aria-label="Back to the top of the page" hidden>&uarr; Top</button>
+
+<header class="site-head">
+  <div class="wrap">
+    <p class="kicker">Section 1 · World artificial surf reefs</p>
+    <h1>Artificial surf reefs around the world — what was built, what it cost, how it ended</h1>
+    <p class="intro" id="intro"></p>
+    <dl class="summary" id="summary" aria-label="Summary"></dl>
+  </div>
+</header>
+
+<main id="survey" class="wrap">
+  <section class="controls" aria-label="Filter and sort">
+    <div class="controls-row">
+      <label class="search">
+        <span class="sr">Filter reefs by text</span>
+        <input id="q" type="search" placeholder="Filter by name, place, material, outcome…" autocomplete="off">
+      </label>
+      <label class="sort">
+        <span>Sort</span>
+        <select id="sort">
+          <option value="year:1">Year (oldest first)</option>
+          <option value="year:-1">Year (newest first)</option>
+          <option value="cost:-1">Cost (highest first)</option>
+          <option value="cost:1">Cost (lowest first)</option>
+          <option value="name:1">Name (A–Z)</option>
+        </select>
+      </label>
+    </div>
+    <div class="chips" id="chips"></div>
+    <p class="count" id="count" aria-live="polite"></p>
+  </section>
+
+  <p class="notice" id="notice" hidden></p>
+
+  <section id="view-gallery" class="view" aria-label="Gallery">
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="view-table" class="view" aria-label="Table" hidden>
+    <div class="table-wrap"><table class="data" id="table"></table></div>
+  </section>
+
+  <section id="view-models3d" class="view" aria-label="3D models of the built reefs" hidden>
+    <div id="m3d-root"></div>
+  </section>
+
+  <p class="empty" id="empty" hidden>No reef matches these filters. <button type="button" class="linkish" data-clear>Clear filters</button></p>
+
+  <section class="later" id="section-2" aria-labelledby="h-s2">
+    <p class="kicker">Section 2</p>
+    <h2 id="h-s2">Sediment transfer in Israel — in preparation</h2>
+    <p>This section is being researched and verified. It will be added to this page when its sources have been checked.</p>
+  </section>
+  <section class="later" id="section-3" aria-labelledby="h-s3">
+    <p class="kicker">Section 3</p>
+    <h2 id="h-s3">Conclusions for Haifa — in preparation</h2>
+    <p>This section will draw on Sections 1 and 2 once both are complete.</p>
+  </section>
+
+  <section class="refindex" id="references" aria-labelledby="h-refs">
+    <h2 id="h-refs">References index</h2>
+    <p class="muted">Every reference cited on this page, grouped by reef. Numbers (R1, R2…) are per reef and match the superscripts in each reef's detail view.</p>
+    <div id="refindex"></div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap" id="footer"></div>
+</footer>
+
+<div id="print-all" class="print-only" aria-hidden="true"></div>
+
+<dialog id="reef-dialog" class="reef-dialog" aria-labelledby="dlg-title">
+  <div class="dlg-inner">
+    <button type="button" class="dlg-close" data-close aria-label="Close">×</button>
+    <div id="dlg-body"></div>
+  </div>
+  <div id="ref-pop" class="ref-pop" role="dialog" aria-modal="false" aria-labelledby="ref-pop-title" tabindex="-1" hidden></div>
+</dialog>
+
+<dialog id="lightbox" class="lightbox" aria-label="Enlarged image">
+  <div class="lb-inner">
+    <button type="button" class="dlg-close" data-close aria-label="Close image">×</button>
+    <div class="lb-media" id="lb-media"></div>
+    <p class="lb-cap" id="lb-cap"></p>
+  </div>
+</dialog>
+
+<script id="data" type="application/json">__DATA__</script>
+<script id="data3d" type="application/json">__DATA3D__</script>
+<script>
+/*__M3D_JS__*/
+</script>
+<script>
+/*__JS__*/
+</script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+{
+ "slug": "boscombe-surf-reef",
+ "reef_centre_xy": [
+  -0.0019369476319057242,
+  226.38710424115268
+ ],
+ "reef_centre_ll": [
+  50.71753041383625,
+  -1.8389095881835478
+ ],
+ "frame": {
+  "lat0": 50.719552,
+  "lon0": -1.839278,
+  "bx": 83.4,
+  "by": 173.4
+ },
+ "cell_size_m": {
+  "NS": 115.7634375,
+  "EW": 73.41833183273177
+ },
+ "erddap_url": "https://erddap.emodnet.eu/erddap/griddap/bathymetry_dtm_2024.csv?elevation[(50.710938):(50.723438)][(-1.844271):(-1.833854)],value_count[(50.710938):(50.723438)][(-1.844271):(-1.833854)],cdi_index[(50.710938):(50.723438)][(-1.844271):(-1.833854)],interpolation_flag[(50.710938):(50.723438)][(-1.844271):(-1.833854)],elevation_min[(50.710938):(50.723438)][(-1.844271):(-1.833854)],elevation_max[(50.710938):(50.723438)][(-1.844271):(-1.833854)],stdev[(50.710938):(50.723438)][(-1.844271):(-1.833854)]",
+ "qi_history": [
+  {
+   "release": "2022",
+   "edmo_id": 2607,
+   "identifier": "117452",
+   "type": "CDI",
+   "combined": 84.61539,
+   "horizontal": 3,
+   "vertical": 4,
+   "age": 1,
+   "purpose": 3
+  },
+  {
+   "release": "2024",
+   "edmo_id": 2607,
+   "identifier": "117452",
+   "type": "CDI",
+   "combined": 84.61539,
+   "horizontal": 3,
+   "vertical": 4,
+   "age": 1,
+   "purpose": 3
+  },
+  {
+   "release": "2020",
+   "edmo_id": 2607,
+   "identifier": "117452",
+   "type": "CDI",
+   "combined": 92.30769,
+   "horizontal": 3,
+   "vertical": 4,
+   "age": 2,
+   "purpose": 3
+  },
+  {
+   "release": "2018",
+   "edmo_id": 2607,
+   "identifier": "117452",
+   "type": "CDI",
+   "combined": 92.31,
+   "horizontal": 3,
+   "vertical": 4,
+   "age": 2,
+   "purpose": 3
+  }
+ ],
+ "source_ref_history": [
+  {
+   "release": "2022",
+   "date_start": "2022-12-31Z",
+   "edmo_id": 2607,
+   "identifier": "117452",
+   "type": "CDI"
+  },
+  {
+   "release": "2024",
+   "date_start": "2024-12-31Z",
+   "edmo_id": 2607,
+   "identifier": "117452",
+   "type": "CDI"
+  },
+  {
+   "release": "2020",
+   "date_start": "2020-12-31Z",
+   "edmo_id": 2607,
+   "identifier": "117452",
+   "type": "CDI"
+  },
+  {
+   "release": "2018",
+   "date_start": "2018-12-31Z",
+   "edmo_id": 2607,
+   "identifier": "117452",
+   "type": "CDI"
+  },
+  {
+   "release": "2016",
+   "date_start": "2016-08-31Z",
+   "edmo_id": 2607,
+   "identifier": "117452",
+   "type": "CDI"
+  },
+  {
+   "release": "2015",
+   "date_start": "2015-08-31Z",
+   "edmo_id": 2607,
+   "identifier": "117452",
+   "type": "CDI"
+  },
+  {
+   "release": "2014",
+   "date_start": "2014-08-31Z",
+   "edmo_id": 2607,
+   "identifier": "117452",
+   "type": "CDI"
+  }
+ ],
+ "patches_2024_3km": [
+  {
+   "release": "2024",
+   "edmo_id": 2607,
+   "identifier": "117452",
+   "type": "CDI",
+   "device": null,
+   "metadata_url": "https://cdi-bathymetry.seadatanet.org/report/edmo/2607/117452"
+  },
+  {
+   "release": "2024",
+   "edmo_id": 2607,
+   "identifier": "117450",
+   "type": "CDI",
+   "device": null,
+   "metadata_url": "https://cdi-bathymetry.seadatanet.org/report/edmo/2607/117450"
+  }
+ ],
+ "qi_2024_3km": [
+  {
+   "release": "2024",
+   "edmo_id": 2607,
+   "identifier": "117452",
+   "type": "CDI",
+   "combined": 84.61539,
+   "horizontal": 3,
+   "vertical": 4,
+   "age": 1,
+   "purpose": 3
+  },
+  {
+   "release": "2024",
+   "edmo_id": 2607,
+   "identifier": "117450",
+   "type": "CDI",
+   "combined": 84.61539,
+   "horizontal": 3,
+   "vertical": 4,
+   "age": 1,
+   "purpose": 3
+  }
+ ],
+ "cdi_polygons": [
+  {
+   "n_code": "3042292",
+   "dataname": "Isle of Wight, Western Approaches to the Solent, Christchurch Bay",
+   "c_author_edmo": "OceanWise Limited",
+   "measuring_area_type_l02": "6",
+   "detail_url": "https://cdi-bathymetry.seadatanet.org/report/3042292"
+  },
+  {
+   "n_code": "1981354",
+   "dataname": "Western Approaches to the Solent",
+   "c_author_edmo": "OceanWise Limited",
+   "measuring_area_type_l02": "6",
+   "detail_url": "https://cdi-bathymetry.seadatanet.org/report/1981354"
+  },
+  {
+   "n_code": "1982228",
+   "dataname": "Poole Bay, Block 12",
+   "c_author_edmo": "OceanWise Limited",
+   "measuring_area_type_l02": "6",
+   "detail_url": "https://cdi-bathymetry.seadatanet.org/report/1982228"
+  },
+  {
+   "n_code": "1982230",
+   "dataname": "Poole Bay, Blocks 14-17",
+   "c_author_edmo": "OceanWise Limited",
+   "measuring_area_type_l02": "6",
+   "detail_url": "https://cdi-bathymetry.seadatanet.org/report/1982230"
+  }
+ ],
+ "cdi_points_n": 0,
+ "cdi_tracks_n": 0,
+ "hr_nearest": [
+  {
+   "id": "DTM_1-128_Manche",
+   "edmo": 540,
+   "res_arcmin_1_over": 128,
+   "release": 2018,
+   "bbox": [
+    -2.114,
+    49.332,
+    -1.883,
+    49.766
+   ],
+   "dist_km": 105.9,
+   "meta": "https://emodnet.ec.europa.eu/geonetwork/srv/eng/catalog.search#/metadata/SDN_CPRD_540_DTM_1-128_Manche/"
+  },
+  {
+   "id": "DTM_1-128_Manche",
+   "edmo": 540,
+   "res_arcmin_1_over": 128,
+   "release": 2018,
+   "bbox": [
+    -1.937,
+    49.752,
+    -1.928,
+    49.758
+   ],
+   "dist_km": 107.0,
+   "meta": "https://emodnet.ec.europa.eu/geonetwork/srv/eng/catalog.search#/metadata/SDN_CPRD_540_DTM_1-128_Manche/"
+  },
+  {
+   "id": "DTM_1-128_Manche",
+   "edmo": 540,
+   "res_arcmin_1_over": 128,
+   "release": 2018,
+   "bbox": [
+    -1.825,
+    49.342,
+    -1.787,
+    49.374
+   ],
+   "dist_km": 149.5,
+   "meta": "https://emodnet.ec.europa.eu/geonetwork/srv/eng/catalog.search#/metadata/SDN_CPRD_540_DTM_1-128_Manche/"
+  },
+  {
+   "id": "DTM_1-64_Armor",
+   "edmo": 540,
+   "res_arcmin_1_over": 64,
+   "release": 2018,
+   "bbox": [
+    -3.098,
+    48.692,
+    -1.943,
+    49.306
+   ],
+   "dist_km": 157.3,
+   "meta": "https://emodnet.ec.europa.eu/geonetwork/srv/eng/catalog.search#/metadata/SDN_CPRD_540_DTM_1-64_Armor/"
+  },
+  {
+   "id": "cDTM_SaintMountsBay",
+   "edmo": 2607,
+   "res_arcmin_1_over": 64,
+   "release": 2018,
+   "bbox": [
+    -5.731,
+    49.756,
+    -5.21,
+    50.12
+   ],
+   "dist_km": 246.8,
+   "meta": "https://emodnet.ec.europa.eu/geonetwork/srv/eng/catalog.search#/metadata/SDN_CPRD_2607_cDTM_SaintMountsBay/"
+  }
+ ]
+}

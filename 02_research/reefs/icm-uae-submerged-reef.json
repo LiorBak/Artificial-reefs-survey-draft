@@ -1,0 +1,40 @@
+{
+  "slug": "icm-uae-submerged-reef",
+  "name": "Fairmont Ajman Beach Stabilisation (ICM submerged reef)",
+  "name_seed": "ICM UAE submerged reef (unnamed; candidate site Fairmont Ajman)",
+  "place": "Ajman",
+  "country": "United Arab Emirates",
+  "kind": "reef",
+  "type": "submerged breakwater/reef + geotextile terminal seawall + beach nourishment (hybrid system)",
+  "purpose": "coastal protection (shamal storm erosion) while preserving sea view",
+  "year_built": "2015 [R1]",
+  "priority": 2,
+  "status": "presented by ICM as successful / guarantee achieved; no independent verification found [R1]",
+  "identity_confirmed": true,
+  "identity_confirmation_basis": "ICM's own case study quote ('a guaranteed stable beach guarantee for 8 years while maintaining clear, uninterrupted views out oi the Arabian Gulf. This was achieved successfully' [R1]) matches the conference-transcript quote ('an 8-year stable beach guarantee behind this submerged structure' [R2]) almost verbatim, and the case study's quoted engineer 'Aaron Salyer' matches the transcript's phonetic presenter name 'Aaron'/'Aron Sailor' [R2]",
+  "dimensions": {
+    "note": "not found; no length, width, crest depth, or volume figures in any source reached"
+  },
+  "cost": "not found in any source reached",
+  "designer": "International Coastal Management (ICM), Gold Coast, Australia; project lead Aaron Salyer [R1]",
+  "contractor": "not stated",
+  "financed_by": "not stated; client named as Fairmont Ajman resort itself [R1]",
+  "client": "Fairmont Ajman (5-star resort) [R1]",
+  "motivation": "prior low-crested rubble breakwater + nourishment failed under shamal-storm erosion; 14-week deadline before resort grand opening; client wanted 8-year stable-beach guarantee with unobstructed Arabian Gulf views [R1]",
+  "outcome": "ICM states the 8-year guarantee was 'achieved successfully'; no independent post-construction survey or monitoring data found [R1]",
+  "relation_to_master_list": "seeded from 02_research/00_master_list.md row icm-uae-submerged-reef, sourced to 01_source_notes/transcript_goldcoast_reef_company.md (ICM conference talk, ~00:38:13-00:40:11)",
+  "dossier_md": "02_research/reefs/icm-uae-submerged-reef.md",
+  "reviews_found": 0,
+  "references_count": 7,
+  "image_leads": [
+    "https://www.coastalmanagement.com.au/fairmont-ajman-beach-stabilisation",
+    "https://www.coastalmanagement.com.au/middle-east",
+    "https://www.fairmont.com/ajman/",
+    "https://www.linkedin.com/company/international-coastal-management/",
+    "https://www.youtube.com/@coastalmanagement/videos"
+  ],
+  "video_leads": [
+    "https://www.youtube.com/watch?v=Gi6wNNP6OKE"
+  ],
+  "last_updated": "2026-09-24"
+}

@@ -1,0 +1,57 @@
+{
+  "report_path": "C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\05_qa\\reef\\prattes-reef-el-segundo_media_recheck.md",
+  "verdicts_json_path": "C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\05_qa\\reef\\prattes-reef-el-segundo_media_recheck.json",
+  "images": [
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/07/Building-Prattes-Reef.jpg",
+      "shows": "structure_visible",
+      "what_i_saw": "Crane on a barge hoisting a large light-tan sand-filled geotextile bag mid-air out of the water; El Segundo power-station red/white smokestacks and DWP building visible onshore behind Dockweiler State Beach",
+      "confidence": "high"
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/07/Diving-Prattes-Reef.jpg",
+      "shows": "structure_visible",
+      "what_i_saw": "Underwater photo of a long ribbed/segmented sand-filled bag lying on a sandy seabed, sunlight from surface above, diver's fin visible bottom-left",
+      "confidence": "high"
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/07/Prattes-Reef-Bag-Size.jpg",
+      "shows": "structure_visible",
+      "what_i_saw": "Scale-comparison diagram: a single Pratte's Reef bag (3 m x 1.2 m) drawn beside a VW camper, a city bus, and a Mount Reef bag (20-60 m) for size comparison",
+      "confidence": "high"
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/07/Prattes-Removal.jpg",
+      "shows": "site_context_only",
+      "what_i_saw": "Sepia beach photo: workboat/tug offshore, a bulldozer and two workers on the sand, an orange traffic cone; no bag or reef structure visible in the frame itself, only removal-day equipment/logistics",
+      "confidence": "medium"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/5aa570aaf8370ab26ce4e06d/1551132211199-7XU6TJEQKRO74B6CZO38/Pulling+Bag+Ashore.JPG",
+      "shows": "structure_visible",
+      "what_i_saw": "Worker in a red shirt pulling a flattened, discolored/stained fabric bag up the beach by ropes; tug/workboat visible offshore; source page captions it 'Pulling Bag Ashore'",
+      "confidence": "high"
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/07/Pratts-Reef-Diagram.png",
+      "shows": "structure_visible",
+      "what_i_saw": "Skelly Engineering plan-view CAD diagram: V/chevron rows of bag outlines at 45 degrees to labeled 'WAVE DIRECTION', titled 'PRATTE'S REEF', bag count 110, scale bar, engineer's stamp",
+      "confidence": "high"
+    },
+    {
+      "url": "https://www.google.com/maps/@33.915123,-118.432624,17z/data=!3m1!1e3",
+      "shows": "could_not_load",
+      "what_i_saw": "Live Google Maps satellite view, not a static hotlinkable image file; not downloaded/checked as an image per dossier's own gaps note",
+      "confidence": "high"
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=mCOc7Knhdwc",
+      "about": "about_the_reef",
+      "evidence": "Transcript mCOc7Knhdwc.txt: designer Dave Skelly explains the design on camera — '[00:18:36] My concept is to put out gigantic sand bags... Geotextile fabrics... will last probably at least two decades' and '[00:19:04] ...The formation... is a chevron shape formation, or v-shaped...'; entire ~30-min documentary is about this project's origin/design/mitigation history, not generic surf footage of the beach"
+    }
+  ],
+  "frames": [],
+  "hero_recommendation": "https://raisedwaterresearch.com/wp-content/uploads/2019/07/Building-Prattes-Reef.jpg"
+}

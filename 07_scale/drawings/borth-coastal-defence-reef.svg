@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="511" viewBox="0 0 300 511" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="8" y="16" font-weight="600" font-size="13" fill="#1b1f24">Borth coastal defence reef (incl. Wallog headland)</text>
+<text x="8" y="32" fill="#5a626d">145 × 73 m · 3,785 m² · low confidence</text>
+<g transform="translate(0,40)">
+<rect x="0" y="0" width="207" height="413.0" fill="#e6f1f7"/>
+<rect x="0" y="413.0" width="207" height="24" fill="#efe3c4"/>
+<line x1="0" x2="207" y1="413.0" y2="413.0" stroke="#7a6a45" stroke-width="1.5"/>
+<text x="191" y="428.0" text-anchor="end" fill="#5a626d">beach · shoreline (y = 0)</text>
+<line x1="20" x2="20" y1="409.0" y2="373.0" stroke="#3d5a73" stroke-width="1.5"/><path d="M16 377.0l4 -7l4 7z" fill="#3d5a73"/>
+<text x="16" y="18" fill="#5a626d">↑ offshore (sea)</text>
+<g fill="#c98a12" fill-opacity=".9" stroke="#1b1f24" stroke-width="1" stroke-linejoin="round"><path d="M95.0 78.0L92.6 73.8L85.6 70.2L75.2 67.8L63.0 67.0L50.8 67.8L40.4 70.2L33.4 73.8L31.0 78.0L33.4 82.2L40.4 85.8L50.8 88.2L63.0 89.0L75.2 88.2L85.6 85.8L92.6 82.2L95.0 78.0Z"/><path d="M103.0 113.0L143.0 118.0L168.0 108.0L176.0 83.0L163.0 58.0L128.0 45.0L128.0 58.0L146.0 61.0L153.0 73.0L143.0 83.0L118.0 83.0L103.0 113.0Z"/></g>
+<line x1="143.0" x2="143.0" y1="413.0" y2="118.0" stroke="#3d5a73" stroke-dasharray="3 3"/><text x="147.0" y="269.5" fill="#1b1f24">295 m</text>
+<rect x="91.0" y="454" width="50.0" height="5" fill="#1b1f24"/><rect x="141.0" y="454" width="50.0" height="5" fill="#ffffff" stroke="#1b1f24" stroke-width=".8"/><text x="91.0" y="450" fill="#1b1f24">0</text><text x="191" y="450" text-anchor="end" fill="#1b1f24">100 m</text>
+<text x="16" y="464" fill="#5a626d">1 px = 1 m</text>
+</g>
+</svg>

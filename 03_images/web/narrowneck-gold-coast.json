@@ -1,0 +1,56 @@
+[
+  {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/North_Narrowneck_Beach%2C_Main_Beach%2C_Queensland%2C_2026.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:North_Narrowneck_Beach,_Main_Beach,_Queensland,_2026.jpg",
+    "credit": "Chris Olszewski (User:Kgbo), Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "depicts": "North Narrowneck Beach at Main Beach, QLD, photographed 25 July 2026 at 27°59'13.86\"S 153°25'49.13\"E — directly adjacent to/above the submerged reef footprint (reef centred ~27°59'11\"S 153°25'47\"E). Shows the beach/coastline the reef protects, not the submerged structure itself (verified via WebFetch of the Commons file page).",
+    "date": "2026-07-25",
+    "kind": "photo"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/97fa2b_f659d48522734f379fcf1a8bf0db6496~mv2.jpg/v1/fill/w_980,h_603,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/97fa2b_f659d48522734f379fcf1a8bf0db6496~mv2.jpg",
+    "source_page": "https://www.coastalmanagement.com.au/artificial-surf-reefs",
+    "credit": "International Coastal Management (ICM)",
+    "license": "© ICM, company website — link-only, not for reproduction (not downloaded into project)",
+    "depicts": "\"The Narrowneck Artificial Headland jutting out into the sea beyond the rest of the coastline, with no accessible beach at high tides (before the artificial reef and NGBPS).\" A before/pre-reef photo of the Narrowneck headland, captioned by ICM (the firm credited with leading the reef's design) on their case-study page for this exact project.",
+    "date": null,
+    "kind": "photo"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/97fa2b_25f1b26178af4d1d9fadb7f07b437abf~mv2.jpg/v1/fill/w_980,h_309,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/97fa2b_25f1b26178af4d1d9fadb7f07b437abf~mv2.jpg",
+    "source_page": "https://www.coastalmanagement.com.au/artificial-surf-reefs",
+    "credit": "International Coastal Management (ICM)",
+    "license": "© ICM, company website — link-only, not for reproduction (not downloaded into project)",
+    "depicts": "Before/after comparison: \"Narrowneck 'beach' before the artificial reef (NGBPS) vs 25 years on, with stabilised beach and manmade dune system in lee of the reef.\" Directly documents the shoreline outcome of this reef.",
+    "date": null,
+    "kind": "photo"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/164422_c1704d0a67bc488d8365e6fe2bd50708~mv2.jpg/v1/fill/w_960,h_697,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/164422_c1704d0a67bc488d8365e6fe2bd50708~mv2.jpg",
+    "source_page": "https://www.coastalmanagement.com.au/artificial-surf-reefs",
+    "credit": "International Coastal Management (ICM)",
+    "license": "© ICM, company website — link-only, not for reproduction (not downloaded into project)",
+    "depicts": "\"Marine life on Narrowneck Artificial Reef\" — underwater photo of the colonised reef structure/geotextile bags, captioned specifically for this reef on ICM's case-study page.",
+    "date": null,
+    "kind": "photo"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/164422_8b3239d82ee84d159668f47acabd0dc2~mv2.png/v1/fill/w_1920,h_1080,al_c,q_95,enc_auto/164422_8b3239d82ee84d159668f47acabd0dc2~mv2.png",
+    "source_page": "https://www.coastalmanagement.com.au/artificial-surf-reefs",
+    "credit": "International Coastal Management (ICM)",
+    "license": "© ICM, company website — link-only, not for reproduction (not downloaded into project)",
+    "depicts": "\"Filling mega sand-filled geotextile containers for the Narrowneck Artificial Reef\" — construction-phase photo of the geotextile container fabrication for this reef.",
+    "date": null,
+    "kind": "photo"
+  },
+  {
+    "url": "https://www.google.com/maps/@-27.986639,153.429722,17z/data=!3m1!1e3",
+    "source_page": "https://www.google.com/maps/@-27.986639,153.429722,17z/data=!3m1!1e3",
+    "credit": "Google Maps / satellite imagery providers",
+    "license": "© Google — link-only, not for reproduction",
+    "depicts": "Satellite view centred on 27°59'11\"S 153°25'47\"E, the reported coordinates of the Narrowneck Reef offshore of Narrowneck isthmus, Gold Coast, QLD (per Wikipedia R9 cited in the dossier). The submerged sand-bag reef is not necessarily visible as a distinct shape from standard satellite imagery, but the offshore location and surf pattern near the isthmus can be inspected here.",
+    "date": null,
+    "kind": "map"
+  }
+]

@@ -1,0 +1,13 @@
+Source: Gemini survey (UNVERIFIED) - C:\Users\lior\Documents\Gemini\AG\artifical reef\05_web_build\reef_videos.json (key "southern-ocean-surf-reef-albany", first entry)
+
+NOTE (added by this extract, 2026-10-04): Word-for-word the same as OUR OWN transcript/key_quotes for this video at
+02_research/videos/southern-ocean-surf-reef-albany/SE4GNR4EiUQ.txt and our own videos.json entry. Not independent - copied here verbatim per brief instructions, not as a new finding.
+
+Title: ABC News — "'High-performance' artificial reef transforms town's surf scene"
+URL: https://www.youtube.com/watch?v=SE4GNR4EiUQ
+
+Quotes (as stored in Gemini's reef_videos.json):
+00:29 — Peter Bolt: "I think I came back to Albany in 1990. We just felt that's where we needed the juniors to have something decent to surf... in town where they can get access to it."
+01:13 — narration: "...saying the beach is holding up just fine and it was worth every cent."
+01:27 — local surfer: "...this wave is that. It's a really high performance wave."
+01:34 — Peter Bolt: "When I see the kids come down here before school, in the dark, to get a wave before they go to school, and then they zip down here again after school..."

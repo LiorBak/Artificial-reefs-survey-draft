@@ -1,0 +1,61 @@
+[
+  {
+    "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/12/Kovalam-Geomat-1024x543.jpg",
+    "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/asia/india/kovalam/",
+    "credit": "Raised Water Research (spot page: \"Kovalam\")",
+    "license": "No explicit license stated on page; used link-only per project rule (not downloaded into project folder)",
+    "depicts": "The Kovalam reef's geotextile bag/mat material (\"Kovalam-Geomat\") — construction-material documentation shot for this exact ASR Ltd structure",
+    "date": "Page dated 2019-12 (upload path); depicts the 2009-10 as-built reef material, exact photo date not stated",
+    "kind": "photo",
+    "verified_http": "200 image/jpeg (curl -sI, 2026-09-24)"
+  },
+  {
+    "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/12/Kovalam-Reef-Underwater1.jpg",
+    "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/asia/india/kovalam/",
+    "credit": "Raised Water Research (spot page: \"Kovalam\")",
+    "license": "No explicit license stated on page; used link-only per project rule (not downloaded into project folder)",
+    "depicts": "Underwater view of the Kovalam artificial reef structure itself (geotextile containers on the seabed)",
+    "date": "Page dated 2019-12 (upload path); exact photo date not stated",
+    "kind": "photo",
+    "verified_http": "200 image/jpeg (curl -sI, 2026-09-24)"
+  },
+  {
+    "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/12/Kovalam-Reef-Underwater2.jpg",
+    "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/asia/india/kovalam/",
+    "credit": "Raised Water Research (spot page: \"Kovalam\")",
+    "license": "No explicit license stated on page; used link-only per project rule (not downloaded into project folder)",
+    "depicts": "Second underwater view of the Kovalam artificial reef structure (companion image to Underwater1)",
+    "date": "Page dated 2019-12 (upload path); exact photo date not stated",
+    "kind": "photo",
+    "verified_http": "200 image/jpeg (curl -sI, 2026-09-24)"
+  },
+  {
+    "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/12/ASR-beach-widening-1024x784.jpg",
+    "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/asia/india/kovalam/",
+    "credit": "Raised Water Research, credited to ASR Ltd (\"ASR-beach-widening\")",
+    "license": "No explicit license stated on page; used link-only per project rule (not downloaded into project folder)",
+    "depicts": "ASR Ltd's own before/after documentation of beach widening at Kovalam Lighthouse Beach attributed to the reef, matching the dossier's cited beach-widening monitoring claim",
+    "date": "Page dated 2019-12 (upload path); underlying ASR monitoring photo likely 2010-era, exact date not stated",
+    "kind": "photo",
+    "verified_http": "200 image/jpeg (curl -sI, 2026-09-24)"
+  },
+  {
+    "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/12/Kovalam-Overview-Good-1024x512.jpg",
+    "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/asia/india/kovalam/",
+    "credit": "Raised Water Research (spot page: \"Kovalam\")",
+    "license": "No explicit license stated on page; used link-only per project rule (not downloaded into project folder)",
+    "depicts": "Overview shot of Kovalam/Lighthouse Beach and the wave/reef zone from the shore or a vantage point",
+    "date": "Page dated 2019-12 (upload path); exact photo date not stated",
+    "kind": "photo",
+    "verified_http": "200 image/jpeg (curl -sI, 2026-09-24)"
+  },
+  {
+    "url": "https://www.google.com/maps/@8.4003,76.9786,17z",
+    "source_page": "https://www.google.com/maps/@8.4003,76.9786,17z",
+    "credit": "Google Maps / satellite imagery",
+    "license": "Google Maps terms of use (link-only, not downloaded)",
+    "depicts": "Satellite/map view centered near Kovalam Lighthouse Beach, Thiruvananthapuram district, Kerala (general Kovalam coordinates 8°24'01\"N 76°58'43\"E per Wikipedia; no separate lat/lon is pinned to the reef structure itself in any source found, so this centers on Lighthouse Beach, the reef's reported location)",
+    "date": "current",
+    "kind": "map"
+  }
+]

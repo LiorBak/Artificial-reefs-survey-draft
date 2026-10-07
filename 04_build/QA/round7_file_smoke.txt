@@ -1,0 +1,29 @@
+browser: C:\Program Files\Google\Chrome\Application\chrome.exe
+url: file:///C:/Users/lior/Documents/Claude/Projects/Artificial%20reef/04_build/artificial_reefs.html
+PASS  dom dumped
+PASS  intro rendered
+PASS  summary rendered
+PASS  gallery tiles rendered
+PASS  references index rendered
+PASS  footer rendered
+PASS  all 13 reefs appear
+PASS  scale: scale view is the visible view
+PASS  scale: 13 per-reef scale drawings (svg.sc-svg)
+PASS  scale: 13 reef polygons groups in the drawings
+PASS  scale: overlay svg rendered
+PASS  scale: overlay has 13 reef outlines
+PASS  scale: 13 'How we drew this' blocks
+PASS  scale: comparison table has 13 rows
+PASS  scale: source markers rendered in the Scale view
+PASS  screenshot round7_desktop.png (149681 B)
+PASS  screenshot round7_desktop_full.png (1193116 B)
+PASS  screenshot round7_mobile.png (85825 B)
+PASS  screenshot round7_scale.png (149466 B)
+PASS  screenshot round7_scale_full.png (1526959 B)
+PASS  screenshot round7_scale_mobile.png (223343 B)
+PASS  screenshot round7_detail.png (207677 B)
+PASS  screenshot round7_detail_ref.png (241160 B)
+PASS  screenshot round7_detail_mobile.png (107768 B)
+PASS  screenshot round7_scale_detail_S1.png (262243 B)
+RESULT: PASS
+note: headless shots use the OS colour scheme; dark-mode shots still need a manual check.

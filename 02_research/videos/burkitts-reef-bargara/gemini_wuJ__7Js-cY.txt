@@ -1,0 +1,11 @@
+Source: Gemini survey (UNVERIFIED) - C:\Users\lior\Documents\Gemini\AG\artifical reef\05_web_build\reef_videos.json (key "burkitts-reef-bargara", first entry)
+
+FLAG (added by this extract, 2026-10-04): Lior already REJECTED this exact video on 2026-09-25 ("video does not show the artificial reef") - see videos_rejected[0] in 02_research/reefs/burkitts-reef-bargara.json. Do not resurrect. Copied here only because the brief asked to capture any transcript text Gemini has verbatim; this is not a new finding and the frame captions below are identical to our own (already-rejected) frame captions, not an independent transcript (no spoken dialogue was transcribed by Gemini or by us).
+
+Title: Diving Bargara, Burkitt's Reef Marine Park
+Channel: Black Beard Diving — uploaded 2021-03-27
+URL: https://www.youtube.com/watch?v=wuJ__7Js-cY
+
+"Quotes" (actually frame captions, as stored in Gemini's reef_videos.json):
+`03_images/video_frames/burkitts-reef-bargara/wuJ__7Js-cY_0025.jpg` (00:25) — a striped bubble/moon snail on the sandy bottom.
+`03_images/video_frames/burkitts-reef-bargara/wuJ__7Js-cY_0205.jpg` (02:05) — school of reef fish over hard coral bommies.

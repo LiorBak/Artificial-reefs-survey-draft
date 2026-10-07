@@ -1,0 +1,232 @@
+{
+ "provenance": [
+  {
+   "parameter": "Plan outline (toe polygon, 47 vertices)",
+   "value": "11,972 m2; 162.3 x 91.3 m; long axis 109.6 deg true",
+   "unit": "",
+   "source_id": "s7 + s1",
+   "method": "traced on the scaled Bluecoast/Nearmap aerial (8.50 px/m, north arrow) and equal to the City of Gold Coast asset polygon (IoU 0.995, Hausdorff 0.55 m)",
+   "uncertainty": "+-1-2 m",
+   "estimated": false
+  },
+  {
+   "parameter": "Crest outline (slot)",
+   "value": "59.2 x 5.9 m, axis 104.8 deg",
+   "unit": "",
+   "source_id": "s7",
+   "method": "innermost contour line, 8 vertices read by hand on 3x zooms; equals the concept crest (60 m at 105 deg, s6)",
+   "uncertainty": "+-0.5 m",
+   "estimated": false
+  },
+  {
+   "parameter": "Crest level",
+   "value": -1.5,
+   "unit": "m vs MSL",
+   "source_id": "p1; s8; p2",
+   "method": "\"The crest of the reef is 1.5m below mean sea level\"; \"1.5 metres below the average water level at its highest point\"; \"minimum freeboard of 1.5m at mean sea level, equating to 60cm at the lowest astronomical low tide\"",
+   "uncertainty": "+-0.2 m (rounded figure; MSL vs AHD differ by about 0.1 m); applied uniformly over the 59 x 6 m crest, apex/arm variation not published",
+   "estimated": false
+  },
+  {
+   "parameter": "Crest depth below LAT",
+   "value": -0.62,
+   "unit": "m (negative = below LAT)",
+   "source_id": "p1; t1",
+   "method": "z_LAT = z_MSL + (MSL - LAT) = -1.5 + 0.88; the Swellnet pair gives 0.60 m below LAT (MSL - LAT = 0.90)",
+   "uncertainty": "+-0.22 m (sqrt(0.2^2 + 0.1^2))",
+   "estimated": false
+  },
+  {
+   "parameter": "Tide planes at the Gold Coast Seaway (MSL = 0)",
+   "value": "LAT -0.88, MLWS -0.66, MLWN -0.37, MHWN +0.36, MHWS +0.65, HAT +1.15",
+   "unit": "m vs MSL",
+   "source_id": "t1",
+   "method": "MSQ Semidiurnal Tidal Planes 2026 (epoch 2010-2029), row Gold Coast Seaway standard port: MHWS 1.53, MHWN 1.24, MLWN 0.51, MLWS 0.22, MSL 0.88, HAT 2.03 m above LAT; heights minus 0.88; ocean beaches Jumpinpin to Snapper Rocks tide 20 min earlier than the Seaway",
+   "uncertainty": "+-0.1 m (Palm Beach is not a listed place)",
+   "estimated": false
+  },
+  {
+   "parameter": "Contour interval of the aerial's survey lines",
+   "value": 0.5,
+   "unit": "m per line",
+   "source_id": "s7; n1; s6",
+   "method": "NOT labelled in the source. Assumed 0.5 m (A3): Navionics seabed at the toe implies 0.46 m (bands 0.65 / 0.51 / 0.43); the spacing then gives the concept design slopes 1:12 and 1:5; 1.0 m would put the seaward toe at -12.5 m",
+   "uncertainty": "+-0.05 m per line (+-10 %): +-0.5 m at the seaward toe (10 lines)",
+   "estimated": true
+  },
+  {
+   "parameter": "Side slopes",
+   "value": "1:12 (N flank and outer E end), 1:5 (S flank), 1:25 near-crest platform at the E end",
+   "unit": "",
+   "source_id": "s7; s6",
+   "method": "perpendicular spacing of the traced lines (6.0, 2.47, 12.3 m) / 0.5 m; the concept figure labels 1/12 and 1/5",
+   "uncertainty": "+-10 % (interval)",
+   "estimated": true
+  },
+  {
+   "parameter": "Toe elevation of the rock",
+   "value": "-4.0 (landward end) to -7.0 (seaward end)",
+   "unit": "m vs MSL",
+   "source_id": "s7",
+   "method": "z = -1.5 - 0.5 (K + f) on the toe outline (A4); the next-level fraction f is the outline's relative position between lines",
+   "uncertainty": "+-0.5 m",
+   "estimated": true
+  },
+  {
+   "parameter": "Seabed around and under the reef",
+   "value": "toe -4.3 to -7.0; far field 1 m to 10 m below LAT (z = -d - 0.88)",
+   "unit": "m vs MSL",
+   "source_id": "n1; s7",
+   "method": "thin-plate-spline surface through the SonarChart 1 m iso-lines (outside a 25 m buffer) plus the toe elevations; chart datum = LAT (A5, tested by RMS: LAT 0.61, MSL 1.28 m)",
+   "uncertainty": "+-0.5 m under the reef (datum +-0.25, interpolation +-0.35, line quantisation +-0.15)",
+   "estimated": true
+  },
+  {
+   "parameter": "Navionics seabed vs toe elevations",
+   "value": "-0.27 (sd 0.55)",
+   "unit": "m (toe - chart seabed)",
+   "source_id": "n1; s7",
+   "method": "independent check: 427 points on the toe outline; rock toe lies 0.27 m deeper than the chart seabed on average (scour/apron or interpolation under the reef)",
+   "uncertainty": "",
+   "estimated": false
+  },
+  {
+   "parameter": "Reef height at the crest above the seabed",
+   "value": 3.89,
+   "unit": "m",
+   "source_id": "n1; s7",
+   "method": "crest -1.5 m minus the model seabed under the crest slot (-5.39 m); with the Navionics-only seabed 3.51 m",
+   "uncertainty": "+-0.54 m (sqrt(0.2^2 + 0.5^2)); council HEIGHT_M = 5 (unit/reference not stated) is 1.1 m higher",
+   "estimated": true
+  },
+  {
+   "parameter": "Maximum reef height",
+   "value": 4.17,
+   "unit": "m",
+   "source_id": "n1; s7",
+   "method": "maximum of (reef surface - seabed) on the 1 m grid, at x, y = -8, 291 m",
+   "uncertainty": "+-0.6 m",
+   "estimated": true
+  },
+  {
+   "parameter": "Rock envelope volume",
+   "value": 22000.0,
+   "unit": "m3",
+   "source_id": "n1; s7",
+   "method": "integral of (reef surface - seabed) over the toe outline, 1 m grid; Navionics-only seabed 16358 m3; a seabed 1.0 m deeper gives 34004 m3; council VOLUME = 33,000 (units not stated), card 25,000 m3, 60,000 t",
+   "uncertainty": "+-6,000 m3 per +-0.5 m of seabed level; 33 % below the register",
+   "estimated": true
+  },
+  {
+   "parameter": "Reef visible in the SonarChart?",
+   "value": "yes, as a seaward bulge of the 4-6 m contours",
+   "unit": "",
+   "source_id": "n1",
+   "method": "max deviation from the chord: 4 m line +65 m, 5 m +81 m, 6 m +47 m; touches the toe outline; no contour closes over the crest",
+   "uncertainty": "",
+   "estimated": false
+  },
+  {
+   "parameter": "Charted crest depth (\"FISH HAVEN 1.5MT\")",
+   "value": 1.5,
+   "unit": "m below chart datum",
+   "source_id": "n2",
+   "method": "label on the nautical chart; design crest = 0.62 m below LAT; difference 0.88 m if the datum is LAT (A5); equals the design number if read as MSL",
+   "uncertainty": "datum not stated by the app",
+   "estimated": true
+  },
+  {
+   "parameter": "Waterline (y = 0) = MSL",
+   "value": 0.0,
+   "unit": "m",
+   "source_id": "s3",
+   "method": "waterline fitted to Esri World Imagery 2025-12-01; tide stage of the image unknown (A7); beach face landward of it is a visual 1:15 slope, not surveyed",
+   "uncertainty": "+-0.3 m",
+   "estimated": true
+  },
+  {
+   "parameter": "GEBCO check",
+   "value": "-13 (450 m cell at y = 534 m)",
+   "unit": "m",
+   "source_id": "g1",
+   "method": "GetFeatureInfo; Navionics seabed there is -11.9 m MSL (1.1 m apart); not used",
+   "uncertainty": "cell too coarse",
+   "estimated": false
+  },
+  {
+   "parameter": "Rock layers",
+   "value": "core 300-1000 kg; armour 1-8 t, crest 6-8 t",
+   "unit": "",
+   "source_id": "s8; p1",
+   "method": "text only; layer thicknesses not published, so one rock surface is drawn",
+   "uncertainty": "",
+   "estimated": false
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "citation": "City of Gold Coast (2026) Artificial Reef feature layer, OBJECTID 4638. City of Gold Coast Open Data (ArcGIS Hub), CC BY 3.0. https://data-goldcoast.opendata.arcgis.com/datasets/c9d0b521374740cc9e9561b04c453736_0. Accessed 2026-10-05.",
+   "used_for": "plan outline; HEIGHT_M / VOLUME cross-check"
+  },
+  {
+   "id": "s3",
+   "citation": "Esri (2025) World Imagery (Maxar), zoom 18, capture 2025-12-01, fetched 2026-10-04. https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9",
+   "used_for": "waterline, shoreline bearing, state check"
+  },
+  {
+   "id": "s4",
+   "citation": "Hunt, S., Britton, G., Messiter, D., Prenzler, P., Knight, S. and Watterson, E. (2022) Palm Beach Shoreline Project: Innovative Coastal Management Solution. Coastal Engineering Proceedings 37, DOI 10.9753/icce.v37.management.66 (CC BY 4.0).",
+   "used_for": "plan cross-check (Fig 1), construction 2019, survey (Fig 4 qualitative)"
+  },
+  {
+   "id": "s6",
+   "citation": "Mortensen, S.B., Hibberd, S., Kaergaard, K., Kristensen, S.E., Deigaard, R. and Hunt, S. (2015) Concept design of a multipurpose submerged control structure for Palm Beach, Gold Coast. Australasian Coasts & Ports Conference 2015. https://www.dhigroup.com/upload/publications/coastsea/Mortensen_2015.pdf",
+   "used_for": "concept slopes 1/12, 1/5, crest orientation 105 deg, 60 m crest (context; the concept was NOT built)"
+  },
+  {
+   "id": "s7",
+   "citation": "Bluecoast Consulting Engineers (c. 2020) Palm Beach artificial reef, Nearmap aerial with survey contour lines (AR_aerial_Nearmaps.jpg). https://www.bluecoastconsulting.com.au/artificialreefs (private research copy; reuse rights unchecked).",
+   "used_for": "plan outline, crest slot, contour lines (reef surface)"
+  },
+  {
+   "id": "s8",
+   "citation": "Engineering for Public Works (2020) Issue 19, September, IPWEAQ, pp. 50-51, Palm Beach Artificial Reef (page image hosted by Bluecoast).",
+   "used_for": "crest 1.5 m below average water level; rock classes; 60,000 t"
+  },
+  {
+   "id": "p1",
+   "citation": "Prenzler, P. et al. (2022) Monitoring of the Palm Beach Artificial Reef. Coastal Engineering Proceedings 37 (abstract 12921). https://icce-ojs-tamu.tdl.org/icce/article/view/12921",
+   "used_for": "crest 1.5 m below mean sea level, 6-8 t rocks, stable (no settlement)"
+  },
+  {
+   "id": "p2",
+   "citation": "Nettle, S. (2019) First impressions at the Palm Beach Artificial Reef. Swellnet, 29 July 2019. https://www.swellnet.com/news/swellnet-dispatch/2019/07/29/first-impressions-palm-beach-artificial-reef",
+   "used_for": "freeboard 1.5 m at MSL = 60 cm at LAT"
+  },
+  {
+   "id": "t1",
+   "citation": "Maritime Safety Queensland (2026) Semidiurnal Tidal Planes - 2026, height above Queensland Port Datum (LAT 1992). https://www.msq.qld.gov.au/_/media/tmronline/msqinternet/msqfiles/home/tides/tidal-planes/2026-semidiurnal-tidal-planes.pdf. Accessed 2026-10-05.",
+   "used_for": "MSL, LAT, MHWS, MHWN, MLWN, MLWS, HAT"
+  },
+  {
+   "id": "n1",
+   "citation": "Garmin Navionics (2026) SonarChart Maps, web viewer https://maps.garmin.com/en-US/marine, depth units metres, zoom 17-18, accessed 2026-10-05 14:22-14:35 local. Not for navigation; private research copy; datum not stated by the app (assumed LAT, tested by RMS).",
+   "used_for": "natural seabed (iso-depth lines 1-10 m), reef signature"
+  },
+  {
+   "id": "n2",
+   "citation": "Garmin Navionics (2026) Nautical Charts layer, same viewer and date; label \"FISH HAVEN 1.5MT\". Not for navigation; private research copy.",
+   "used_for": "charted crest depth cross-check"
+  },
+  {
+   "id": "g1",
+   "citation": "GEBCO Compilation Group (2024) GEBCO 2024 Grid, WMS GetFeatureInfo https://wms.gebco.net/mapserv (GEBCO_LATEST_2), queried 2026-10-05.",
+   "used_for": "coarse check of the offshore depth (not used)"
+  }
+ ],
+ "confidence_3d": {
+  "level": "medium",
+  "reason": "Plan, crest level (-1.5 m MSL) and tide planes are sourced; seabed depth and reef height are inferred (no surveyed value read) from the Garmin Navionics chart and the aerial's unlabelled contour lines, which agree to 0.27 m on average (sd 0.55 m) - but the council register gives a taller reef (5 m, 33,000 m3) than the model (3.9 m, 22000 m3)."
+ }
+}

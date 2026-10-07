@@ -1,0 +1,742 @@
+
+=== PAGE 1
+Australasian Coasts & Ports 2023 Conference – Sunshine Coast, QLD, 15 – 18 August 2023 
+Narrowneck Artificial Reef Renewal 
+Bobbie B. Corbett, Martin G. Mulcahy, Zoe Elliott-Perkins and Shannon Hunt 
+Narrowneck Artificial Reef Renewal 
+Bobbie B. Corbett1, Martin G. Mulcahy1, Zoe Elliott-Perkins2 and Shannon Hunt2  
+1 International Coastal Management, Gold Coast, Australia; b.corbett@coastalmanagement.com.au  
+2 City of Gold Coast, Gold Coast, Australia 
+Abstract 
+The Narrowneck Artificial Reef was constructed by the City of Gold Coast in 1999-2000 as a key component 
+of the Northern Gold Coast Beach Protection Strategy.  While primarily intended to enhance coastal protection, 
+its secondary objective was to improve surfing.  It was constructed out of approximately 400 mega Geotextile 
+Sand Containers using innovative filling and placement methods. Extensive performance monitoring and 
+condition assessments were undertaken over subsequent years, but only minor maintenance was undertaken. 
+Almost 20 years later, the City of Gold Coast undertook the Narrowneck Artificial Reef Renewal.  This resulted 
+in an additional 84 Geotextile Sand Containers being added to reinstate and optimise performance while 
+extending the service life of the structure.  The design phase included consideration of two design options - 
+the previous design shape and an amended shape intended to enhance performance against project 
+objectives, including coastal protection, surfing amenity and safety. The “for construction” designs were tested 
+in a physical model which allowed the final construction design to be optimised and performance expectations 
+to be evaluated under a range of conditions.   
+The works were undertaken as a Design and Construct delivery model with provisional construction quantities.  
+This allowed significant Contractor input, facilitating safe and efficient construction in what is a very challenging 
+environment.  It also allowed flexibility to consider alternate designs and to revise the construction design in 
+response to changes in seabed levels, actual placement locations and available budget.  The works including 
+design, physical modelling, material supply and construction, were successfully delivered within a 6 month 
+timeframe.  
+This paper provides a summary of the Narrowneck artificial reef renewal, including design investigations, 
+project delivery model and ongoing monitoring.  
+Keywords: coastal protection, submerged, reef, Narrowneck 
+1. 
+Introduction 
+The Narrowneck Artificial Reef (Figure 1) was 
+constructed in 1999-2000 as a key component of 
+the Northern Gold Coast Beach Protection Strategy.   
+While primarily intended to enhance coastal 
+protection along a narrow and vulnerable section of 
+coast, its secondary objective was to improve 
+surfing.  It was constructed out of approximately 400 
+mega Geotextile Sand Containers (GSC) using 
+custom plant and innovative filling and placement 
+methods.  
+Figure 1  Narrowneck Artificial Reef (2001) on Gold Coast 
+coastline.   
+The Narrowneck Artificial Reef was a prototype 
+structure. Extensive performance monitoring (refer 
+Section 4.1) showed that the reef has been effective 
+in widening and increasing the resilience of 
+Narrowneck beach in response to storm events, 
+providing additional surfing opportunities and 
+providing a substrate that supports a diverse marine 
+habitat. 
+Condition assessments and minor maintenance 
+were undertaken up to 2007.  After almost 20 years 
+since construction, the reef has been subject to 
+significant seabed changes which has resulted in 
+burial of sections of the original structure as well as 
+the damage and subsequent loss of individual 
+GSCs. This has resulted in a reduction of the 
+effective reef crest level which reduced its 
+performance as a coastal protection structure and 
+reduced surfing amenity.  
+Renewal of the reef was undertaken by the City of 
+Gold Coast (City) in 2017-2018 to reinstate and 
+optimise performance while extending the service 
+life of the structure.   
+663
+Downloaded from search.informit.org/doi/10.3316/informit.477067242341136. on 10/07/2026 08:28 AM AEST; UTC+10:00. © Australasian Coasts & Ports 2023 Conference , 2023.
+=== PAGE 2
+Australasian Coasts & Ports 2023 Conference – Sunshine Coast, QLD, 15 – 18 August 2023 
+Narrowneck Artificial Reef Renewal 
+Bobbie B. Corbett, Martin G. Mulcahy, Zoe Elliott-Perkins and Shannon Hunt 
+2. 
+Project objectives and constraints 
+The objectives of the Narrowneck Reef Renewal 
+project (ICM 2017) were: 
+• 
+Renewal of the reef, consistent with the original 
+design intent and statutory approvals. 
+• 
+Making use of the latest geotextile fabrics in the 
+construction of the GSCs to ensure durability. 
+• 
+Optimisation of the placement of the GSCs to 
+work with the existing structure to promote local 
+and global stability, maximise the service life of 
+the structure and maintain coastal protection, 
+with consideration of surfing amenity. 
+• 
+Ensuring the works are in accordance with 
+Safety in Design legislation considering all 
+aspects 
+of 
+the 
+asset 
+lifecycle 
+(design, 
+construction, 
+operation, 
+maintenance 
+and 
+decommissioning). 
+The existing development approvals required the 
+renewal design to be within the originally approved 
+footprint, profile and construction material. The 
+renewal works also needed to be delivered within 
+the available budget.  Constructability was also 
+critical.   
+3. 
+Delivery model 
+The 
+project 
+presented 
+a 
+very 
+challenging 
+construction environment.  Given the open coast 
+wave climate, shallow crest and variable seabed, 
+designs needed to enable safe, practical, and 
+efficient construction by the Contractor.  Timing was 
+also critical to allow design to be complete ready for 
+works to be undertaken during periods when calmer 
+conditions where expected.  
+A Design and Construct delivery model with a 
+performance-based scope was adopted to facilitate 
+successful project delivery.   
+The scope was not constrained by a specific 
+reference design but focussed on project objectives 
+and performance outcomes. An initial desktop 
+design stage allowed for the development of two 
+renewal options and subsequent physical modelling 
+enabled the selection of a preferred option based on 
+Key Performance Indicators. This delivery model 
+allowed the design process to consider in detail 
+relevant budget constraints and detailed input from 
+the construction contractor to ensure that it could be 
+successfully installed, while achieving project 
+objectives. As the design was not known at the time 
+of Contract Award, the construction scope provided 
+provisional quantities of three different sizes of 
+GSC, corresponding to sizes adopted for the 
+original construction of the reef. 
+The works were undertaken by dredging contractor 
+McQuade Marine in conjunction with design by 
+International Coastal Management and physical 
+modelling 
+by 
+the 
+Queensland 
+Government 
+Hydraulics Laboratory. 
+4. 
+Renewal design 
+The renewal design considered the following 
+scenarios:   
+• 
+Existing reef with lower crest due to loss of crest 
+containers – condition of reef prior to renewal 
+works. 
+• 
+Renewal Option 1 based on 2004 modified 
+design. 
+• 
+Renewal Option 2 based on 2017 modified 
+design (developed as part of these works).  
+The 
+desktop 
+design 
+included 
+review 
+and 
+development of the concept shape as well as 
+detailed construction designs for both renewal 
+options (ICM 2017).   
+Physical modelling was undertaken of all three 
+scenarios to establish performance under a range 
+of conditions and allow selection of the preferred 
+Renewal Option to be constructed (ICM 2017 and 
+QGHL 2018).  
+4.1 
+Desktop design 
+As part of the desktop design development, the 
+following was formally reviewed and summarised: 
+• 
+Original design (ICM 1998) 
+• 
+Formal monitoring of the structure during the 
+period when it was regularly maintained at the 
+design crest height (GCCM 2004, 2007 and 
+2011). 
+• 
+Published works summarising independent 
+monitoring undertaken, including Jackson et al. 
+(2001, 2007, 2010 & 2012), Tomlinson et al. 
+(2008) and Strauss et al. (2017). 
+• 
+Available literature, particularly that published 
+since the development of the 2004 modified 
+design, including works relating to shoreline 
+response (Ranasinghe et al. 2006 and 2010) 
+and safety (Corbett et al. 2005 and MacMahan 
+et al. 2011). 
+• 
+Project objectives and constraints (Section 2). 
+• 
+Constructability constraints for placement of 
+GSC using nominated split-hull hopper barge. 
+A modified design developed in 2004 was reviewed 
+and considered to be suitable for adoption as 
+Renewal Option 1 (Figure 2), including: 
+• 
+Crest level of -2.5m AHD (-1.5m LAT). 
+• 
+Cross-shore extent of crest matches approval 
+or previously placed GSCs. 
+• 
+Alongshore reef width of 120m. 
+• 
+Crest planform shape including flared shape of 
+north and south reefs with lower bridge across 
+30m paddle channel (Figure 2).   
+664
+Downloaded from search.informit.org/doi/10.3316/informit.477067242341136. on 10/07/2026 08:28 AM AEST; UTC+10:00. © Australasian Coasts & Ports 2023 Conference , 2023.
+=== PAGE 3
+Australasian Coasts & Ports 2023 Conference – Sunshine Coast, QLD, 15 – 18 August 2023 
+Narrowneck Artificial Reef Renewal 
+Bobbie B. Corbett, Martin G. Mulcahy, Zoe Elliott-Perkins and Shannon Hunt 
+The 2017 modified design was developed as part of 
+this project for adoption as Renewal Option 2 
+(Figure 2), including: 
+• 
+Crest level of -2.5m AHD (-1.5m LAT) as this 
+still appropriate to achieve the project’s safety 
+objectives (Corbett et al. 2005) and construction 
+constraints of nominated plant. 
+• 
+20m seaward shift of crest to enhance coastal 
+protection and surfing amenity.   
+• 
+Alongshore reef width of 120m. 
+• 
+Crest planform generally similar in configuration 
+with shape mildly changed, including 5º rotation 
+of southern reef (Figure 2). 
+Figure 2  Concept Design for Renewal Option 1 (left) and 
+Renewal Option 2 (right).  Note Renewal Option 2 is 
+located further seaward with slight realignment compared 
+to Renewal Option 1 (shown in shaded grey for 
+comparison). Source: ICM 2017 
+Detailed design was undertaken for both Renewal 
+Options, including a GSC placement layout based 
+on the pre-works multi-beam survey (Figure 3).  The 
+multi-beam 
+survey 
+provided 
+an 
+accurate 
+representation of the existing GSC and provided a 
+valuable tool to inform the detailed design process.  
+This provided a high level of confidence compared 
+with previous maintenance campaigns which were 
+necessarily based on traditional single-beam 
+hydrographic surveys validated using underwater 
+site inspection and physical measurement.   
+Figure 3  Pre-works multi-beam survey providing accurate 
+representation of the existing reef, despite the complexity 
+of the structure shape. Source: ICM 2017 
+The detailed design also considered the filled 
+container geometry, flexibility of the containers 
+when placed on a variable seabed and construction 
+constraints including available water depth and 
+placement orientation relative to predominant swell 
+direction. 
+The detailed designs were developed considering 
+the constraints of the available budget to achieve 
+the concept design shape as far as possible.  The 
+north reef design shape was almost fully achieved 
+for both renewal options, however only partial 
+completion of the south reef and the bridge was 
+achievable for Renewal Option 2 within the 
+available budget. 
+As maintenance requirements are largely driven by 
+individual GSC damage from anchors and knives, a 
+more durable and robust geotextile was very 
+desirable to reduce whole of life costs for the 
+structure.  Unfortunately, a review of commercially 
+available products and correspondence with 
+manufacturers did not identify any significant 
+advances in this regard.  As a result, the renewal 
+works necessarily adopted products developed 
+during the original construction of the Narrowneck 
+Reef (Jackson and Corbett 2019).   
+4.2 
+Physical modelling  
+Physical modelling was undertaken in a 12m x 14m 
+basin at Queensland Government Hydraulics 
+Laboratory (QGHL 2018).  A length scale of 1:43 
+was adopted.  The general bathymetry was 
+constructed using standard techniques; however 
+the 
+existing 
+reef 
+was 
+Computer 
+Numerical 
+Controlled (CNC) router machined out of high 
+density polystyrene foam to achieve the pre-works 
+multi-beam survey with a 1mm model accuracy 
+(Figure 4).  The renewal designs were constructed 
+using specially fabricated and filled GSC (Figure 5). 
+Preliminary model runs were undertaken as a final 
+design tool prior to the commencement of formal 
+physical model testing.  This allowed the detailed 
+design to be optimised through minor amendments 
+to the container layout in response to observed 
+performance. 
+Figure 4  CNC machined high density polystyrene foam 
+replicates existing reef bathymetry with 1mm model 
+accuracy.  Individual containers are clearly apparent.  
+Note model water level lowered to allow model setup.  
+Source: ICM 2017 
+665
+Downloaded from search.informit.org/doi/10.3316/informit.477067242341136. on 10/07/2026 08:28 AM AEST; UTC+10:00. © Australasian Coasts & Ports 2023 Conference , 2023.
+=== PAGE 4
+Australasian Coasts & Ports 2023 Conference – Sunshine Coast, QLD, 15 – 18 August 2023 
+Narrowneck Artificial Reef Renewal 
+Bobbie B. Corbett, Martin G. Mulcahy, Zoe Elliott-Perkins and Shannon Hunt 
+Figure 5  Renewal Option 1 constructed using scaled 
+geotextile sand containers placed over existing reef.  
+Source: ICM 2017 
+The 14 model runs for each of the 3 scenarios 
+included a range of irregular and monochromatic 
+wave heights between 1 - 3m and 2 different water 
+levels.  The monochromatic conditions allowed for 
+evaluation of performance over a range of incident 
+wave conditions and enabled direct comparison of 
+the performance between the renewal options, 
+particularly with regards to surfing performance and 
+safety.  Larger wave heights were not tested as 
+coastal 
+protection 
+benefits 
+were 
+established 
+reasonably well from monitoring of the existing 
+structure (WRL 2019) and the larger wave heights 
+would have required a significant reduction in the 
+model scale within the basin, which would have 
+made assessment of many aspects difficult.     
+The following Key Performance Indicators were 
+considered: 
+• 
+Frequency of wave breaking (during irregular 
+wave conditions) 
+• 
+Transmitted wave height in the lee of the reef 
+• 
+Breaking wave height 
+• 
+Breaker type  
+• 
+Ride length  
+• 
+Peel angle  
+• 
+Water depth over reef during drawdown 
+• 
+Wave-induced currents 
+• 
+Shorebreak characteristics 
+4.2.1 Frequency of wave breaking 
+Breaking was observed on the existing reef at 
+higher wave heights and lower tides only.  As 
+expected, both renewal options (with the crest 
+reinstated to the design height) experienced wave 
+breaking in a broader range of wave heights.  During 
+average wave conditions at low tide, frequency of 
+wave breaking was increased by ~30%. 
+4.2.2 Breaker Type 
+Breaker type was classified broadly as spilling, 
+plunging or surging. This was assessed visually 
+during each model run, supported by oblique video 
+recordings and photographs. Both Renewal Options 
+experienced breaker types that were suitable for 
+surfing (generally plunging). (ICM 2017) 
+4.2.3 Ride Length and Peel Angle 
+Peel angle and ride length was determined based 
+on aerial video recordings (Figure 7) and generally 
+extended from the break point probe to the 
+intersection with the beach break (ICM 2017).   
+Ride lengths were similar for south reef, however for 
+north reef (where the full design shape was able to 
+be achieved within the budget for both Renewal 
+Options), Renewal Option 2  (Table 4-1) was 
+characterised by significantly longer ride lengths 
+(35-90m compared to 35-128m, being 40% higher 
+on average).   
+Table 4-1. Physical modelling results for peel angle and 
+ride length for Renewal Option 2 
+Peel angles (Figure 7) varied depending on 
+conditions but were similar on average between 
+both options and were within the surfable range for 
+all tests (Table 4-1).  Ride lengths and peel angles 
+are expected to be variable in response to changes 
+in adjacent sand bars that affect the bathymetry 
+surrounding the reef. 
+Figure 6  Annotated aerial image of physical modelling of 
+for Renewal Option 2 including measurement of ride 
+length and peel angle.  Source: ICM 2017 
+4.2.4 Water Depth over Reef 
+The point of minimum water depth over the reef was 
+determined visually (or by physical measurement) 
+during the calibration model run. The minimum 
+water level required the manual relocation of 
+individual “north drawdown” and “south drawdown” 
+666
+Downloaded from search.informit.org/doi/10.3316/informit.477067242341136. on 10/07/2026 08:28 AM AEST; UTC+10:00. © Australasian Coasts & Ports 2023 Conference , 2023.
+=== PAGE 5
+Australasian Coasts & Ports 2023 Conference – Sunshine Coast, QLD, 15 – 18 August 2023 
+Narrowneck Artificial Reef Renewal 
+Bobbie B. Corbett, Martin G. Mulcahy, Zoe Elliott-Perkins and Shannon Hunt 
+wave probes for each model run.  The minimum 
+water depth was then determined by the difference 
+between the level of the reef structure (scanned 
+prior to the model runs) and the minimum water 
+level recorded by the relevant probe.   
+In moderate wave conditions (circa Hs = 1-2m, in a 
+typical optimal surfing range), water depths greater 
+than 0.5m were observed.  For wave heights of 3m 
+at LAT, critical flow was observed during drawdown 
+over containers with crest height at RL -2.5m AHD.  
+Containers with crest levels of -2.2m AHD were 
+observed to “suck dry” in these conditions. 
+4.2.5 Shorebreak Characteristics 
+The wave field in the lee of the reef was assessed 
+primarily on the presence of a peeling shore break.  
+While close-out conditions (simultaneous breaking 
+along the wave crest with no evidence of peeling) 
+was observed for the existing reef configuration due 
+to uniformity of the bathymetry, peeling shore 
+breaks were observed for both Renewal Option 1 & 
+2 in smaller conditions when breaking on the reef 
+was not observed.   
+4.2.6 Summary 
+As 
+expected, 
+both 
+renewal 
+options 
+were 
+significantly superior to the existing reef in terms of 
+energy dissipation, frequency of wave breaking and 
+surfing amenity.  This emphasises the importance 
+of the crest section of the structure in achieving the 
+performance objectives and the need for the design 
+crest height to be achieved and maintained. 
+Where the theoretical design shape was largely 
+achieved by the container placement (i.e. north 
+reef), Renewal Option 2 provided consistently and 
+significantly improved surfing amenity on north reef 
+compared with Renewal Option 1, including more 
+frequent, better quality breaks and considerably 
+longer ride lengths (up to 128m with the break 
+extending landward of the structure as shown in 
+Figure 7).  Where the theoretical design shape was 
+only partially achieved (i.e. south reef), similar 
+surfing amenity was achieved between the two 
+renewal options. 
+As a result, construction of works proceeded based 
+on the Renewal Option 2 layout. 
+5. 
+Construction 
+Construction of the renewal works was undertaken 
+using the methodology and plant developed for the 
+initial reef construction. A Trailing Suction Split-Hull 
+Hopper Dredger fills GSCs laid out in the hopper by 
+dredging sand and pumping it directly into the GSC. 
+The dredger is positioned with the hopper directly 
+over the design GSC location using accurate on-
+board navigation systems and the GSC is placed by 
+opening the hopper (Figure 8).   
+The construction was closely monitored throughout 
+the works, with underwater visual inspection and 
+RTK GPS staff survey of individual GSC undertaken 
+every few days to evaluate compliance, determine 
+water depths and final location to ensure safe and 
+appropriate placement of adjacent GSC.   
+The delivery model provided flexibility that allowed 
+rapid and effective revisions to design GSC 
+locations in response to changes in the seabed 
+levels due to storm events, achieved position and 
+levels of adjacent GSC throughout construction and 
+increases 
+to 
+the 
+available 
+budget, 
+with 
+consideration of both design performance and 
+constructability. 
+The works, including design, physical modelling, 
+material supply and construction, were successfully 
+delivered in a 6 month timeframe and within budget.  
+The available budget and detailed design ultimately 
+resulted in the placement of an additional 84 GSC 
+to the reef structure. 
+Figure 7 Trailing Suction Split-Hull Hopper Dredger at the 
+Narrowneck Artificial Reef site prior to placing a GSC.  
+The filled GSC can be seen in the hopper. 
+6. 
+Monitoring 
+6.1 
+Coastal protection 
+While seasonal variability in beach width is high 
+(approximately 40m), detailed analysis of shorelines 
+has previously shown a salient feature about 100m 
+to the north as well as a small groyne effect 
+associated with the structure. 
+Beach widths in 2009 (when the reef was last 
+maintained) were around 50 – 70m at Narrowneck 
+(ETA 67 & ETA 68) (Jackson 2012). More recent 
+analysis of beach width (September 2018 to March 
+2019) is showing beach widths of 70 – 95m (WRL 
+2019). It is noted that this is only 8 months after the 
+renewal of the reef and as such the shoreline may 
+not have reached equilibrium after construction. It is 
+also possible that there may be influences from 
+massive mega nourishment of Gold Coast Beaches 
+although placement did not extend as far north as 
+Narrowneck. 
+667
+Downloaded from search.informit.org/doi/10.3316/informit.477067242341136. on 10/07/2026 08:28 AM AEST; UTC+10:00. © Australasian Coasts & Ports 2023 Conference , 2023.
+=== PAGE 6
+Australasian Coasts & Ports 2023 Conference – Sunshine Coast, QLD, 15 – 18 August 2023 
+Narrowneck Artificial Reef Renewal 
+Bobbie B. Corbett, Martin G. Mulcahy, Zoe Elliott-Perkins and Shannon Hunt 
+6.2 
+Surfing 
+The surfing amenity provided by Narrowneck Reef 
+is provided by:  
+• 
+Direct breaking of incident waves across the 
+reef itself, typically during lower tide conditions 
+and suitable swell height (Hs > 1 – 2m).   
+• 
+Focusing of unbroken waves across the reef 
+can often result in a more peaky, powerful 
+beach break in the lee of the reef.  
+• 
+Influence of the reef structure on the alignment 
+of adjacent sand bars can often extend the reef 
+break and/or enhance the quality of breaks in 
+the lee of the reef and/or on the adjacent bars.  
+Monitoring of wave breaking on the reef through the 
+ARGUS coastal imaging cameras (WRL 2019) 
+indicates that (Figure 9): 
+• 
+Before the reef renewal (with lower crest due to 
+loss and/or damage of crest containers), waves 
+would only break on the reef regularly when the 
+RMS wave height was greater than ~0.8 m at 
+low tide and ~1.2 m at high tide. 
+• 
+Following the reef renewal, waves break on the 
+reef regularly when the RMS wave height is 
+greater than ~0.5 m at low tide and 0.8 m at high 
+tide. 
+Figure 8  Comparison of wave and water level conditions 
+where most waves were breaking on the reef before and 
+after the reef renewal, based on coastal imaging data 
+analysis (Source: WRL 2019) 
+Surfing amenity on the reef itself has been 
+evaluated on an ad-hoc basis using surfer reporting, 
+GPS tracking and photo and video capture.  Wave 
+breaking characteristics remain variable depending 
+on prevailing conditions, including tide level, wave 
+height and direction and wind speed and direction.  
+The reef has been observed to provide high quality 
+waves for surfing when conditions are suitable 
+(Figure 10). 
+Optimal conditions on 6th July 2018 (soon after 
+completion of the reef) resulted in a powerful and 
+plunging break (Figure 10) with ride lengths up to 
+122m and 19 seconds with maximum speeds of 
+30.5kph recorded.  Surf tracks commenced up to 
+62m seaward of tracks previously recorded (Figure 
+12).  This is comparable to the results of physical 
+modelling. 
+Conditions on 6th July 2018: 
+• 
+Hs = 1.6m; Hmax = 3.0m 
+• 
+Tp = 9s 
+• 
+Wave direction = 85 degrees 
+• 
+Wind = 10 knots (NW) (offshore) 
+• 
+Tide = 0.4m LAT 
+Narrowneck Reef still provides enhanced surf 
+quality in the lee of the reef (Figure 12) and 
+opportunities for a wide range of surf craft, including 
+longboards, SUPs and kite boards (Jackson, 2001). 
+More recently, hydrofoil surfing (Figure 11) has 
+become popular at Narrowneck Reef as they are 
+able to make use of the unbroken and re-forming 
+waves, shoaling across the reef in conditions that 
+are not optimal for typical shortboard surfing.  
+Figure 9  Surfer on Narrowneck artificial reef 6/7/2018 
+Figure 10  Hydrofoil Surfer at Narrowneck on 24/03/2023.   
+Figure 11  GPS surf tracks in the vicinity of the reef before 
+and after renewal works. Recent surf tracks on the reef 
+commence up to 62m further seaward than previously, 
+enhancing surfing amenity. 
+668
+Downloaded from search.informit.org/doi/10.3316/informit.477067242341136. on 10/07/2026 08:28 AM AEST; UTC+10:00. © Australasian Coasts & Ports 2023 Conference , 2023.
+=== PAGE 7
+Australasian Coasts & Ports 2023 Conference – Sunshine Coast, QLD, 15 – 18 August 2023 
+Narrowneck Artificial Reef Renewal 
+Bobbie B. Corbett, Martin G. Mulcahy, Zoe Elliott-Perkins and Shannon Hunt 
+6.3 
+Safety 
+The original construction of the Narrowneck Reef 
+resulted in improved safety outcomes in the form of 
+reduced frequency of rescues by surf life savers.  In 
+the 5 years since the Renewal was completed, the 
+average 
+number 
+of 
+rescues 
+has 
+remained 
+reasonably similar.  Given the variability in the data, 
+a more detailed long-term assessment would be 
+beneficial. 
+7. 
+Summary 
+The Narrowneck Reef was a novel prototype design 
+that has proven the concept of multi-functional reef 
+structures, with the lessons learned incorporated in 
+the Narrowneck Reef Renewal. 
+The Narrowneck artificial reef renewal restored the 
+crest levels and made slight modifications to its 
+shape to reinstate and optimise coastal protection 
+performance, surfing amenity and safety while 
+extending the service life of the structure. 
+The Design and Construct delivery model achieved 
+an optimised performance-based design validated 
+through comprehensive physical modelling with 
+contractor input ensuring safe, practical, and 
+efficient construction in what is a very challenging 
+construction environment.  It also facilitated 
+successful delivery of the project (including design, 
+physical modelling, material supply and placement 
+of 84 containers) within 6 months.  
+Monitoring of wave breaking on the reef has shown 
+waves break more often and in a wider range of 
+conditions, providing more surfing opportunities.  
+Ad-hoc monitoring of surfing amenity indicates that 
+while the surf quality is naturally variable depending 
+on prevailing conditions, the reef performs well 
+when conditions are suitable, with performance 
+consistent with physical modelling.   
+8. 
+Acknowledgements  
+The authors would like to acknowledge Sam Knight 
+for his contribution to the Narrowneck Reef Renewal 
+Project.  
+9. 
+References  
+Corbett, B.B., Tomlinson, R.B. and Jackson, L.A. (2005). 
+Reef Breakwaters for Coastal Protection Safety Aspects 
+and Tolerances. 17th Australasian Conference on 
+Coastal and Ocean Engineering, Adelaide; 01/2005 
+Griffith Centre for Coastal Management. 2004. Northern 
+Gold Coast Beach Protection Strategy. Baseline Data 
+Assessment Volume 4: Summary of Narrowneck Reef 
+Monitoring to June 2004. Report 38 prepared by 
+Tomlinson, Jackson and Corbett for City of Gold Coast 
+Griffith Centre for Coastal Management. (2007). Northern 
+Gold Coast Beach Protection Strategy. Environmental 
+Monitoring Program Baseline Data Assessment. Volume 
+5: Summary of Narrowneck Reef Monitoring to 2007. 
+Report prepared by Tomlinson, Jackson and Corbett for 
+City of Gold Coast 
+Griffith Centre for Coastal Management. (2011). GCSMP 
+Implementation Plan Activities 2011/12 – Summary of 
+Narrowneck Reef Monitoring to June 2011. Report 123.2 
+prepared by Brown, Corbett and Strauss for City of Gold 
+Coast 
+International Coastal Management. (2017). Renewal 
+Works at Narrowneck Artificial Reef Design Report. 
+prepared for City of Gold Coast 
+International Coastal Management. (1998). Northern 
+Gold Coast Beach Protection Strategy. Final Report.  
+Prepared for Gold Coast City Council 
+Jackson, L.A. and Corbett, B.B. (2019). Sand Filled 
+Geotextile Containers in Australia – Is There a Future?  
+Proceedings of the Coasts and Ports Conference 2019 
+Jackson, L.A., Tomlinson, R, Corbett, B. and Struss, D. 
+(2012). Long Terms Performance of a Submerged 
+Coastal Control Structure: A Case Study of the 
+Narrowneck Multi-Functional Artificial Reef. Proceedings 
+of the 33rd International Conference on Coastal 
+Engineering 
+Jackson, L.A., Corbett, B.B. and Evans, T. (2010) 
+Narrowneck Reef Monitoring and Lessons – 10 years on. 
+Proceedings of the International Surfing Reef Symposium 
+Jackson, L.A., Corbett, B., Tomlinson, R., McGrath, J. and 
+Stewart, G. (2007). Narrowneck Reef: Review of 7 years 
+of Monitoring Results 
+Jackson, L.A. (2001). Combining Surfing and Coastal 
+Protection: What is the Perfect Surf? Proceedings of the 
+Coasts and Ports Conference 2001 
+MacMahan, J. Reniers, A. Brown, J. Brander, R. 
+Thornton, E. Stanton, T. Brown, J and Carey, W. (2011). 
+An Introduction to Rip Currents Based on Field 
+Observations. Journal of Coastal Research: Volume 27, 
+Issue 4 
+Queensland Government Hydraulics Laboratory. (2018). 
+Narrowneck Reef Renewal Physical Model Investigation. 
+Prepared for McQuade Marine and City of Gold Coast. 
+Ranasinghe, R., and Turner, I.L. (2006). Shoreline 
+response to submerged structures: A review. Coastal 
+Engineering 53, 65–79. 
+Ranasinghe, R., Larson, M. and Savioli, J. (2010). 
+‘Shoreline response to a single shore-parallel submerged 
+breakwater’ Coastal Engineering. 57, pp1006-1017 
+Strauss, D. Murray, T. Harry, M. and Todd, D. (2017). 
+Coastal Data Collection and Profile Surveys on the Gold 
+Coast: 50 years on. Coasts and Ports 2017 Conference 
+Tomlinson, R., Jackson, L.A. and Corbett, B. (2008). 
+Narrowneck Multi-Functional Artificial Reef: Performance 
+Evaluation of Design, Construction and Maintenance. 
+Proceedings of the International Conference on Coastal 
+Engineering 
+Water Research Laboratory (WRL) (2019), Gold Coast 
+Northern Beach’s Coastal Imaging Summary Report, May 
+2019, Prepared for City of Golf Coast.  
+669
+Downloaded from search.informit.org/doi/10.3316/informit.477067242341136. on 10/07/2026 08:28 AM AEST; UTC+10:00. © Australasian Coasts & Ports 2023 Conference , 2023.

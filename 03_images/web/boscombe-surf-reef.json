@@ -1,0 +1,61 @@
+[
+  {
+    "url": "https://wavelengthmag.com/wp-content/uploads/2016/11/bournemouth-surf-reef.jpg",
+    "source_page": "https://wavelengthmag.com/last-bid-rescue-bournemouths-reef-sinks/",
+    "credit": "Flickr user \"cornerhouse\" (Karen), via Wavelength Surf Magazine article \"Last bid to rescue Bournemouth's reef sinks\" (8 Nov 2016)",
+    "license": "Original Flickr source (https://www.flickr.com/photos/cornerhouse/4756033698/) is CC BY 2.0; republished by Wavelength Surf Magazine with caption \"Sinking Sand: Bournemouth council ploughed £3million straight into the ocean\" — link-only, not verified as re-licensed by Wavelength itself",
+    "depicts": "Aerial/elevated view of the submerged sand-filled geotextile bag structure of Boscombe Surf Reef in the water off Boscombe beach",
+    "date": "2009-07-28 (photo taken per Flickr metadata; article published 2016-11-08)",
+    "kind": "photo",
+    "verified": "curl -sI 200 OK, content-type image/jpeg (checked 2026-09-24)"
+  },
+  {
+    "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Boscombe-Arial-1024x683.jpg",
+    "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/europe/united-kingdom/boscombe-surf-reef/",
+    "credit": "Bournemouth Echo (via Raised Water Research spot page, captioned \"Boscombe Arial\")",
+    "license": "Link-only; no explicit reuse license stated on the page — credited to Bournemouth Echo",
+    "depicts": "Aerial view of Boscombe Surf Reef structure in the sea off Boscombe beach",
+    "date": "not stated on page",
+    "kind": "photo",
+    "verified": "curl -sI 200 OK, content-type image/jpeg (checked 2026-09-24)"
+  },
+  {
+    "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Boscombe-Exposed-1024x683.jpg",
+    "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/europe/united-kingdom/boscombe-surf-reef/",
+    "credit": "Bournemouth Echo (via Raised Water Research spot page, captioned \"Boscombe Exposed\")",
+    "license": "Link-only; no explicit reuse license stated on the page — credited to Bournemouth Echo",
+    "depicts": "The reef's geotextile bag structure exposed/visible at low tide off Boscombe beach",
+    "date": "not stated on page",
+    "kind": "photo",
+    "verified": "curl -sI 200 OK, content-type image/jpeg (checked 2026-09-24)"
+  },
+  {
+    "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Boscombe-Propeller-Damage-1024x768.jpg",
+    "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/europe/united-kingdom/boscombe-surf-reef/",
+    "credit": "Bournemouth Echo (via Raised Water Research spot page, captioned \"Boscombe Propeller Damage\")",
+    "license": "Link-only; no explicit reuse license stated on the page — credited to Bournemouth Echo",
+    "depicts": "Documented damage to the reef's geotextile containers, consistent with the boat-propeller strike cited in R1/R9 of the dossier",
+    "date": "not stated on page",
+    "kind": "photo",
+    "verified": "curl -sI 200 OK, content-type image/jpeg (checked 2026-09-24)"
+  },
+  {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Boscombe_Surf_Reef.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Boscombe_Surf_Reef.jpg",
+    "credit": "Phil Whiston, via Wikimedia Commons",
+    "license": "Dual CC BY-SA 3.0 Unported / GNU Free Documentation License v1.2+",
+    "depicts": "Diagram/sketch showing the layout of the geotextile bags forming Boscombe Surf Reef (NOT a photograph — Wikipedia captions this file \"Diagram showing layout of the geotextile bags\"). Included as a Commons-licensed schematic since no free-licensed real photo of the reef itself was found on Commons.",
+    "date": "2010-04-02 (upload date)",
+    "kind": "diagram",
+    "verified": "curl -sI 200 OK, content-type image/jpeg (checked 2026-09-24)"
+  },
+  {
+    "url": "https://www.google.com/maps/@50.7185,-1.8417,17z/data=!3m1!1e3",
+    "source_page": "https://www.google.com/maps/@50.7185,-1.8417,17z",
+    "credit": "Google Maps satellite imagery",
+    "license": "Google Maps Terms of Service — viewing/embedding only, not for redistribution",
+    "depicts": "Satellite view of the approximate Boscombe Surf Reef site location (~50.7185N, -1.8417W), offshore/east of Boscombe Pier",
+    "date": "current satellite imagery (accessed 2026-09-24)",
+    "kind": "map"
+  }
+]

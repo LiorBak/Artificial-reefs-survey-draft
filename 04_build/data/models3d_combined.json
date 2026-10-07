@@ -1,0 +1,93 @@
+{
+  "_comment": "Config of the combined 'All (compare)' scene (src/export_combined.py). Per slug: how to read the model's own viewer. JS expressions are evaluated in the loaded viewer page with M = window.REEF_MODEL. offshore_scene_xz = the direction 'offshore' in the viewer's three.js scene (X, Z), taken from the model's frame note (see 'frame_note'); hand = +1 if the model's canonical (x along the shore, y offshore) turns clockwise on a north-up map (then combined X = x), -1 otherwise (combined X = -x). Every value is re-checked against the exported meshes; a mismatch fails the check and the reef is shown as 'not in comparison'. Round 11: optional 'area_ref_expr' (+ 'area_ref_label') = a model.js footprint number that includes the flank skirt, used instead of the polygon area as the reference of the area check; 'polygon' may return one ring or a list of rings. Round 11: optional 'shore_mode': 'crossing' replaces the 'seabed near 0 m MSL along y = 0' check for a model whose frame origin is not the shoreline (Borth: defence line at about +5 m). Round 11: optional 'sublabels' [{xy: expression -> [x, y] in the model frame, text: expression -> string}] = extra labels inside a model, drawn in the combined view when the camera is within about 500 m.",
+  "tolerance": {
+    "area_rel": 0.25,
+    "crest_m": 0.2,
+    "centroid_m": 6.0,
+    "shore_m": 1.5,
+    "offshore_deg": 20
+  },
+  "models": {
+    "prattes-reef-el-segundo": {
+      "frame_note": "model.js frame: x alongshore toward 155 deg, y offshore toward 245 deg (x turned 90 deg clockwise); viewer maps (X = x, Y = z, Z = y)",
+      "offshore_scene_xz": [
+        0,
+        1
+      ],
+      "hand": 1,
+      "polygon": "M.reef.toe_polygon_xy_m",
+      "crest_z": "(function(){var s=M.reef.states.filter(function(x){return x.id===M.reef.default_state;})[0];return Math.max(s.top_z_apex_msl_m,s.top_z_tips_msl_m);})()",
+      "crest_note": "default state B: max of top_z_apex_msl_m and top_z_tips_msl_m (the top is parallel to the bed)"
+    },
+    "boscombe-surf-reef": {
+      "frame_note": "model.js frame: x alongshore bearing 83.4, y offshore bearing 173.4 (x turned 90 deg clockwise); viewer maps (X = x, Y = z, Z = y); default reef mode 'idealised'",
+      "offshore_scene_xz": [
+        0,
+        1
+      ],
+      "hand": 1,
+      "polygon": "M.reef.toe_polygon_xyzz.map(function(p){return [p[0],p[1]];})",
+      "crest_z": "M.reef.design.crest_msl_m",
+      "crest_note": "design crest +0.5 m ACD = -0.9 m MSL (reef.design.crest_msl_m)"
+    },
+    "bunbury-airwave": {
+      "frame_note": "model.js frame: x alongshore bearing 12.3, y seaward bearing 282.3 (x turned 90 deg anticlockwise); viewer maps (X = x, Y = z, Z = -y)",
+      "offshore_scene_xz": [
+        0,
+        -1
+      ],
+      "hand": -1,
+      "polygon": "M.reef.toe_polygon_m.map(function(p){return [p[0]+M.reef.centre_default[0],p[1]+M.reef.centre_default[1]];})",
+      "crest_z": "(function(){var S=M.seabed,x=M.reef.centre_default[0],y=M.reef.centre_default[1],fx=(x-S.x0)/S.dx,fy=(y-S.y0)/S.dy,i=Math.floor(fx),j=Math.floor(fy),tx=fx-i,ty=fy-j;function g(a,b){return S.z[b][a];}var zb=(g(i,j)*(1-tx)+g(i+1,j)*tx)*(1-ty)+(g(i,j+1)*(1-tx)+g(i+1,j+1)*tx)*ty;return zb-(M.frame.msl_ahd||0)+M.reef.height_default_m;})()",
+      "crest_note": "no stored crest level: seabed grid (z in AHD, bilinear at the reef centre) minus MSL-AHD offset 0.1 m, plus height_default_m (2.0 m)"
+    },
+    "palm-beach-gold-coast": {
+      "frame_note": "model.js frame: x alongshore toward 334.3, y offshore toward 64.3 (x turned 90 deg clockwise); viewer converts to east/north/up: scene (X = E, Y = up, Z = -N)",
+      "offshore_scene_xz": [
+        0.9011,
+        -0.4337
+      ],
+      "hand": 1,
+      "polygon": "M.reef.toe_polygon",
+      "crest_z": "M.reef.crest_z",
+      "crest_note": "reef.crest_z (-1.5 m MSL, council design level)"
+    },
+    "mount-maunganui-reef": {
+      "frame_note": "model.js frame: x alongshore bearing 316.15, y offshore bearing 46.15 (x turned 90 deg clockwise, y = x + 90 deg); viewer maps (X = x, Y = z, Z = y); default outline version (survey -2.0 m CD contour), default bed from model.js",
+      "offshore_scene_xz": [
+        0,
+        1
+      ],
+      "hand": 1,
+      "polygon": "M.versions.filter(function(v){return v.id===M.default_version;})[0].polygons_m",
+      "area_ref_expr": "M.versions.filter(function(v){return v.id===M.default_version;})[0].footprint_at_bed_m2_default",
+      "area_ref_label": "footprint area vs model.js footprint at the bed (the default version has a 1:1 skirt from the -2.0 m contour to the bed)",
+      "crest_z": "M.reef.crest_cd.default - M.datum.msl_above_cd_m",
+      "crest_note": "crest -0.9 m CD (reef.crest_cd.default) minus MSL above CD 1.13 m = -2.03 m MSL; the bed under the reef is read from model.js at build time (seabed.bed_default_cd)"
+    },
+    "borth-coastal-defence-reef": {
+      "frame_note": "model.js frame: x alongshore toward SOUTH (bearing 179.57), y offshore toward WEST (bearing 269.57) (x turned 90 deg clockwise); viewer maps (X = x, Y = z, Z = y); default outline version (laser survey, LiDAR 2022)",
+      "offshore_scene_xz": [
+        0,
+        1
+      ],
+      "hand": 1,
+      "polygon": "M.versions.filter(function(v){return v.id===M.default_version;})[0].outline_m",
+      "area_ref_expr": "M.versions.filter(function(v){return v.id===M.default_version;})[0].area_incl_toe_m2",
+      "area_ref_label": "footprint area vs model.js area including the toe berm and blanket (the mesh includes them)",
+      "crest_z": "M.validation.stats.dsm_crestS_p90 - M.datum.msl_mODN",
+      "crest_note": "LiDAR p90 of the oval crest strip (+1.75 mODN) minus MSL (+0.31 mODN) = +1.44 m MSL; the default version is the laser-survey surface, the mesh maximum is its highest 1 m cell (design crest +1.50 mODN = +1.19 m MSL)",
+      "shore_mode": "crossing",
+      "sublabels": [
+        {
+          "xy": "M.roles.south.centroid",
+          "text": "M.roles.south.label"
+        },
+        {
+          "xy": "M.roles.north.centroid",
+          "text": "M.roles.north.label"
+        }
+      ]
+    }
+  }
+}

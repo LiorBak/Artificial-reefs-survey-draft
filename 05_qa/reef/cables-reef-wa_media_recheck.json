@@ -1,0 +1,39 @@
+{
+  "report_path": "C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\05_qa\\reef\\cables-reef-wa_media_recheck.md",
+  "verdicts_json_path": "C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\05_qa\\reef\\cables-reef-wa_media_recheck.json",
+  "images": [
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Cables-Reef.jpg",
+      "shows": "reef_effect_visible",
+      "what_i_saw": "Clean peeling left-hand wave breaking with ~8 surfers in the lineup, overcast light",
+      "confidence": "high"
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/cabletopturn.jpg",
+      "shows": "reef_effect_visible",
+      "what_i_saw": "Surfer performing a top turn on a clean wave face, one surfer sitting in the water nearby",
+      "confidence": "high"
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Cables-Side-View.jpg",
+      "shows": "structure_visible",
+      "what_i_saw": "Hand-drawn engineering cross-section labelled 'Existing Sea Bed' and 'Proposed Enhancement', showing rock fill raising the seabed profile",
+      "confidence": "high"
+    },
+    {
+      "url": "https://surfingdownsouth.com.au/wp-content/uploads/2023/03/1948-Surfing-Cable-Station-Cottesloe.-water-pic-by-Don-Bancroft-Cropped.jpg",
+      "shows": "site_context_only",
+      "what_i_saw": "1948 black-and-white water photo of three riders on paddleboard/toothpick boards at the natural (pre-1999) Cable Station reef break, boat bow in foreground",
+      "confidence": "high"
+    },
+    {
+      "url": "https://i0.wp.com/surfingdownsouth.com.au/wp-content/uploads/2023/03/1957-City-Beach-BC-crew-Morris-10-heading-to-Cable-Stn-BC-pic.jpg",
+      "shows": "site_context_only",
+      "what_i_saw": "1957 black-and-white beach photo of five young men posing with paddles and a car; no water or wave visible",
+      "confidence": "high"
+    }
+  ],
+  "videos": [],
+  "frames": [],
+  "hero_recommendation": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Cables-Reef.jpg"
+}

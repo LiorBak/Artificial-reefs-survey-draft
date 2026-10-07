@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boscombe Surf Reef - 3D model</title>
+<style>
+  :root { --bg:#0e1a24; --panel:#14232f; --panel2:#1b2f3e; --ink:#e6eef4; --mute:#93a9b8; --acc:#3fb6c9; --warn:#f2b84b; --bad:#e8715f; --line:#2b4457; }
+  * { box-sizing:border-box; }
+  html,body { margin:0; height:100%; background:var(--bg); color:var(--ink); font:13px/1.4 system-ui,Segoe UI,Arial,sans-serif; overflow:hidden; }
+  #app { display:grid; grid-template-columns: 290px minmax(0,1fr) 420px; grid-template-rows: auto minmax(0,1fr); height:100vh; }
+  #top { grid-column:1 / 4; display:flex; align-items:center; gap:12px; padding:6px 12px; background:var(--panel); border-bottom:1px solid var(--line); }
+  #top h1 { font-size:15px; margin:0; font-weight:600; white-space:nowrap; }
+  #badge { padding:2px 8px; border-radius:10px; font-weight:700; font-size:12px; white-space:nowrap; }
+  .lvl-medium { background:#f2b84b; color:#2a1d00; } .lvl-high { background:#5cc489; color:#06240f; } .lvl-low { background:#e8715f; color:#2b0600; }
+  #reason { color:var(--mute); font-size:12px; flex:1; min-width:0; }
+  #app.wide { grid-template-columns: 250px minmax(0,1fr) min(62vw, 980px); }
+  #wideBtn { margin-left:auto; }
+  #left { background:var(--panel); border-right:1px solid var(--line); overflow:auto; padding:8px 10px 20px; min-height:0; }
+  #right { background:var(--panel); border-left:1px solid var(--line); display:flex; flex-direction:column; min-width:0; min-height:0; }
+  #stage { position:relative; overflow:hidden; background:linear-gradient(#25455c,#0e1a24 70%); }
+  #wrap { position:absolute; left:0; top:0; width:100%; height:100%; }
+  #photo { position:absolute; left:0; top:0; width:100%; height:100%; object-fit:fill; display:none; pointer-events:none; }
+  canvas#gl { position:absolute; left:0; top:0; width:100%; height:100%; display:block; }
+  h3 { font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--acc); margin:12px 0 4px; }
+  label { display:block; margin:2px 0; }
+  .row { display:flex; align-items:center; gap:6px; margin:3px 0; }
+  .row > span { color:var(--mute); min-width:84px; }
+  input[type=range] { flex:1; min-width:0; }
+  input[type=number], select { background:var(--panel2); color:var(--ink); border:1px solid var(--line); border-radius:3px; padding:2px 4px; width:78px; }
+  select { width:auto; }
+  button { background:var(--panel2); color:var(--ink); border:1px solid var(--line); border-radius:4px; padding:3px 8px; cursor:pointer; font:inherit; }
+  button:hover { border-color:var(--acc); } button.on { background:#1f5a66; border-color:var(--acc); }
+  .btns { display:flex; flex-wrap:wrap; gap:4px; margin:4px 0; }
+  .mono { font-family:Consolas,Menlo,monospace; font-size:12px; }
+  #hud { position:absolute; left:8px; bottom:8px; background:rgba(14,26,36,.82); padding:6px 9px; border-radius:6px; border:1px solid var(--line); pointer-events:none; line-height:1.5; }
+  #hud b { color:var(--warn); }
+  #compass { position:absolute; right:10px; top:10px; width:64px; height:64px; pointer-events:none; }
+  #caption { position:absolute; left:8px; top:8px; max-width:62%; background:rgba(14,26,36,.86); border:1px solid var(--line); border-radius:6px; padding:5px 9px; font-size:11.5px; line-height:1.35; color:var(--ink); }
+  #caption b { color:var(--warn); } #caption .mut { color:var(--mute); } #caption a { cursor:pointer; }
+  #exag { position:absolute; right:10px; bottom:8px; background:rgba(14,26,36,.82); border:1px solid var(--line); border-radius:6px; padding:4px 10px; font-weight:700; font-size:15px; color:var(--warn); pointer-events:none; }
+  #tabs { display:flex; border-bottom:1px solid var(--line); }
+  #tabs button { flex:1; border:0; border-radius:0; padding:7px 4px; background:transparent; border-bottom:2px solid transparent; }
+  #tabs button.on { border-bottom-color:var(--acc); background:var(--panel2); }
+  .pane { display:none; overflow:auto; padding:8px 10px 24px; flex:1; min-height:0; } .pane.on { display:block; }
+  table { border-collapse:collapse; width:100%; font-size:12px; margin:6px 0; }
+  th, td { border:1px solid var(--line); padding:3px 5px; vertical-align:top; text-align:left; }
+  th { background:var(--panel2); }
+  .est { color:var(--warn); } .meas { color:#7fd8a1; }
+  .doc h1 { font-size:17px; } .doc h2 { font-size:15px; color:var(--acc); margin-top:18px; } .doc h3 { font-size:13px; text-transform:none; letter-spacing:0; color:var(--ink); }
+  .doc p, .doc li { line-height:1.5; } .doc code { background:var(--panel2); padding:0 3px; border-radius:3px; font-family:Consolas,monospace; }
+  .doc pre { background:#0b141c; border:1px solid var(--line); padding:6px 8px; overflow:auto; font-size:12px; }
+  .doc blockquote { border-left:3px solid var(--acc); margin:6px 0; padding:2px 10px; color:var(--mute); }
+  a { color:var(--acc); }
+  .note { color:var(--mute); font-size:12px; }
+  #photoMsg { color:var(--warn); }
+  textarea { width:100%; height:92px; background:#0b141c; color:var(--ink); border:1px solid var(--line); font:12px Consolas,monospace; }
+  .tide { display:flex; justify-content:space-between; font-size:10px; color:var(--mute); margin:0 4px; }
+  @media (max-width:1100px) { #app { grid-template-columns: 250px minmax(0,1fr) 320px; } }
+</style>
+<script type="importmap">
+{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+               "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/" } }
+</script>
+<script src="model.js"></script>
+<script src="docs.js"></script>
+</head>
+<body>
+<div id="app">
+  <div id="top">
+    <h1>Boscombe Surf Reef - 3D model</h1>
+    <span id="badge" class="lvl-medium">3D confidence: ?</span>
+    <span id="reason"></span>
+    <button id="wideBtn" title="Make the right-hand panel wide (for the tables in Methods &amp; sources)">wide side panel</button>
+  </div>
+
+  <div id="left">
+    <h3>Water level</h3>
+    <div class="row"><input id="wl" type="range" min="-1.46" max="1.19" step="0.01" value="0"><span id="wlv" class="mono" style="min-width:64px;text-align:right"></span></div>
+    <div class="tide"><span>LAT</span><span>MLWS</span><span>MLWN</span><span>MSL</span><span>MHWN</span><span>MHWS</span><span>HAT</span></div>
+    <div class="btns" id="tideBtns"></div>
+    <div id="wlInfo" class="note mono"></div>
+
+    <h3>Display</h3>
+    <div class="row"><span>Vert. exagg.</span><input id="vex" type="range" min="1" max="5" step="0.5" value="1"><span id="vexv" class="mono" style="min-width:32px">1x</span></div>
+    <label><input type="checkbox" id="tWater" checked> water surface</label>
+    <label><input type="checkbox" id="tSeabed" checked> seabed</label>
+    <label><input type="checkbox" id="tReef" checked> reef</label>
+    <label><input type="checkbox" id="tLabels" checked> labels, scale bars, north</label>
+    <label><input type="checkbox" id="tGrid" checked> metre grid (10 m / 50 m)</label>
+    <label><input type="checkbox" id="tCrest"> crest zones (-1 / -0.5 / 0 m ACD, survey)</label>
+    <label><input type="checkbox" id="tToe"> reef outline (verified plan, 2011-09-28 image)</label>
+    <label><input type="checkbox" id="tSurvey"> area of the depth survey</label>
+    <label><input type="checkbox" id="tNav"> Garmin Navionics SonarChart shoal (drying / 0.5 m / 1 m, 2026)</label>
+    <label><input type="checkbox" id="tBands"> 1 m depth bands</label>
+    <label><input type="checkbox" id="tTint" checked> grey tint where there is no local data (extrapolated / interpolated)</label>
+    <label><input type="checkbox" id="tSrc"> colour the seabed by data SOURCE (zones, see legend below)</label>
+    <div id="zoneLegend" class="note"></div>
+    <label><input type="checkbox" id="tWire"> wireframe</label>
+    <div class="row"><span>Reef surface</span>
+      <select id="reefMode" title="As-built 2009 = idealised loft of the verified outline with the design crest +0.5 m ACD. April 2011 survey surface = DGPS plot read from Rendle and Davidson Fig. 9 (after the container failure); evidence only, not a second state."><option value="idealised">AS-BUILT 2009 (intact loft)</option><option value="surveyed">April 2011 survey surface (evidence)</option></select></div>
+    <div class="row"><span>Survey datum</span>
+      <select id="datum"><option value="cd">Chart Datum (default)</option><option value="odn">ODN ~ MSL (alternative)</option></select></div>
+    <div class="note">Datum switch moves the whole surveyed seabed + reef up by 1.40 m against the water (see Methods A3); the CCO beach profiles are referenced to ODN independently and do NOT move (the beach then no longer joins the survey: evidence for chart datum). The Navionics shoal lines do NOT move: with the switch on, the survey no longer matches them (evidence for chart datum).</div>
+
+    <h3>Camera</h3>
+    <div class="btns" id="presets">
+      <button data-v="oblique">Oblique</button><button data-v="plan">Plan</button><button data-v="along">Along crest</button><button data-v="beach">From the beach 1.7 m</button><button data-v="side">Side on</button>
+    </div>
+    <div class="row"><span>Field of view</span><input id="fov" type="range" min="15" max="100" step="1" value="45"><span id="fovv" class="mono" style="min-width:34px">45</span></div>
+    <div id="camRead" class="mono note"></div>
+  </div>
+
+  <div id="stage"><div id="wrap"><img id="photo" alt=""><canvas id="gl"></canvas></div>
+    <div id="caption"></div>
+    <div id="hud" class="mono"></div>
+    <canvas id="compass" width="128" height="128"></canvas>
+    <div id="exag">vertical exaggeration 1x</div>
+  </div>
+
+  <div id="right">
+    <div id="tabs"><button data-p="pModel" class="on">Model data</button><button data-p="pDocs">Methods &amp; sources</button><button data-p="pPhoto">Photo match</button></div>
+    <div id="pModel" class="pane on"></div>
+    <div id="pDocs" class="pane doc"></div>
+    <div id="pPhoto" class="pane">
+      <div class="note">Load a local photo, then line the model up with it. The photo stays on your computer (nothing is uploaded). Vertical exaggeration is forced to 1x while this tab is active. Orbit controls are off: use the sliders / number boxes.</div>
+      <div class="row"><input type="file" id="photoFile" accept="image/*"></div>
+      <div id="photoMsg" class="note"></div>
+      <div class="row"><span>Model opacity</span><input id="pOpa" type="range" min="0.1" max="1" step="0.05" value="0.6"></div>
+      <div class="row"><span>Photo dim</span><input id="pDim" type="range" min="0.2" max="1" step="0.05" value="1"></div>
+      <label><input type="checkbox" id="pLock" checked> canvas takes the photo's aspect ratio</label>
+      <label><input type="checkbox" id="pOutline"> show model as wireframe</label>
+      <div class="btns"><button id="pFromView">Copy current view into sliders</button><button id="pOff">Leave photo mode</button></div>
+      <table>
+        <tr><td>x (m, alongshore)</td><td><input type="range" id="sx" min="-250" max="250" step="0.5"></td><td><input type="number" id="nx" step="0.5"></td></tr>
+        <tr><td>y (m, offshore)</td><td><input type="range" id="sy" min="-120" max="500" step="0.5"></td><td><input type="number" id="ny" step="0.5"></td></tr>
+        <tr><td>z (m above MSL)</td><td><input type="range" id="sz" min="-2" max="150" step="0.1"></td><td><input type="number" id="nz" step="0.1"></td></tr>
+        <tr><td>heading (deg true)</td><td><input type="range" id="sh" min="0" max="360" step="0.1"></td><td><input type="number" id="nh" step="0.1"></td></tr>
+        <tr><td>pitch (deg, + up)</td><td><input type="range" id="sp" min="-90" max="45" step="0.1"></td><td><input type="number" id="np" step="0.1"></td></tr>
+        <tr><td>roll (deg)</td><td><input type="range" id="sr" min="-15" max="15" step="0.1"></td><td><input type="number" id="nr" step="0.1"></td></tr>
+        <tr><td>vertical FOV (deg)</td><td><input type="range" id="sf" min="10" max="100" step="0.1"></td><td><input type="number" id="nf" step="0.1"></td></tr>
+      </table>
+      <div id="pDerived" class="mono note"></div>
+      <div class="btns"><button id="pCopy">Copy camera parameters</button></div>
+      <textarea id="pOut" readonly></textarea>
+      <div class="note">Heading is a TRUE compass bearing (north = 0, east = 90). The canonical x axis has bearing 83.4 deg. Position is in the model frame (origin on the 28 Sep 2011 surf line, x alongshore, y offshore). The result is for later alignment work only: this model's heights carry the uncertainties listed under Model data.</div>
+    </div>
+  </div>
+</div>
+
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+const M = window.REEF_MODEL;
+const DOCS = window.REEF_DOCS || {};
+if (!M) { document.body.innerHTML = '<p style="padding:20px">model.js did not load.</p>'; throw new Error('no model'); }
+const $ = id => document.getElementById(id);
+const DEG = Math.PI / 180;
+const BX = M.frame.bearing_x_deg;                    // 83.4
+const NODATA = M.reef.grid.nodata;
+const ALT_SHIFT = M.datum.alt_datum.shift_to_add_to_all_survey_heights_m;   // +1.40
+const st = { level: 0, exag: 1, datumShift: 0, mode: M.default_reef_mode || 'idealised', photo: false, view: 'oblique' };
+$('reefMode').value = st.mode;
+
+// ------------------------------------------------------------------ header
+const conf = M.confidence_3d;
+$('badge').textContent = '3D confidence: ' + conf.level.toUpperCase();
+$('badge').className = 'lvl-' + conf.level;
+$('reason').textContent = conf.reason;
+
+// ------------------------------------------------------------------ renderer / scene / camera
+const canvas = $('gl');
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, preserveDrawingBuffer: true });
+renderer.setClearColor(0x000000, 0);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(45, 1, 0.5, 4000);
+const controls = new OrbitControls(camera, canvas);
+controls.enableDamping = false; controls.maxPolarAngle = Math.PI * 0.995; controls.screenSpacePanning = true;
+scene.add(new THREE.HemisphereLight(0xcfe8ff, 0x203040, 1.05));
+const sun = new THREE.DirectionalLight(0xfff2dd, 1.15); sun.position.set(-150, 260, 120); scene.add(sun);
+
+const V = (x, y, z) => new THREE.Vector3(x, z, y);            // canonical (x,y,z) -> three
+const groups = {};
+for (const k of ['seabed', 'reef', 'water', 'labels', 'grid', 'crest', 'toe', 'survey', 'nav']) { groups[k] = new THREE.Group(); scene.add(groups[k]); }
+const surveyGroups = [groups.seabed, groups.reef, groups.crest, groups.toe];   // move with the datum switch
+
+// ------------------------------------------------------------------ colours
+function lerp3(a, b, t) { return [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t, a[2] + (b[2] - a[2]) * t]; }
+const RAMP = [[1.5, [0.86, 0.80, 0.62]], [0.2, [0.80, 0.78, 0.62]], [-0.3, [0.55, 0.80, 0.74]], [-1.5, [0.35, 0.70, 0.72]], [-3, [0.20, 0.52, 0.64]], [-5, [0.10, 0.30, 0.52]], [-8, [0.04, 0.12, 0.30]]];
+function ramp(z, banded) {
+  if (banded) z = Math.round(z * 1) ;
+  if (z >= RAMP[0][0]) return RAMP[0][1];
+  for (let i = 1; i < RAMP.length; i++) if (z >= RAMP[i][0]) { const t = (z - RAMP[i][0]) / (RAMP[i - 1][0] - RAMP[i][0]); return lerp3(RAMP[i][1], RAMP[i - 1][1], t); }
+  return RAMP[RAMP.length - 1][1];
+}
+
+// ------------------------------------------------------------------ seabed mesh
+const sb = M.seabed;
+const seabedZ = Float32Array.from(sb.z_cm, v => v / 100);
+const seabedW = new Float32Array(seabedZ.length); for (let k = 0; k < seabedW.length; k++) seabedW[k] = sb.datum_w ? (sb.datum_w.charCodeAt(k) - 48) / 10 : 1;   // fraction of the datum switch that applies (CCO beach = 0)
+const seabedEff = Float32Array.from(seabedZ);                  // height as displayed (datum switch applied), metres above MSL
+const ZONE_COL = { 0: [0.20, 0.42, 0.90], 1: [0.62, 0.62, 0.62], 2: [0.62, 0.30, 0.78], 3: [0.96, 0.58, 0.08], 4: [0.98, 0.86, 0.30], 5: [0.20, 0.66, 0.46] };
+const ZONE_NAME = { 0: 'survey (Fig. 9, Apr 2011)', 1: 'extrapolated (spline, Navionics-checked)', 2: 'interpolated under the reef', 3: 'CCO beach profiles (Apr 2010)', 4: 'interpolation CCO <-> survey', 5: 'EMODnet slope extrapolation' };
+let seabedMesh;
+function buildSeabed() {
+  const nx = sb.nx, ny = sb.ny, n = nx * ny;
+  const pos = new Float32Array(n * 3), col = new Float32Array(n * 3);
+  const banded = $('tBands').checked, tint = $('tTint').checked, srcCol = $('tSrc').checked;
+  for (let j = 0; j < ny; j++) for (let i = 0; i < nx; i++) {
+    const k = j * nx + i, z = seabedZ[k];
+    const zE = z + st.datumShift * seabedW[k]; seabedEff[k] = zE;      // displayed height: the group is lifted by datumShift, so the vertex is lowered by the part that does not apply
+    pos[k * 3] = sb.x0 + i * sb.dx; pos[k * 3 + 1] = zE - st.datumShift; pos[k * 3 + 2] = sb.y0 + j * sb.dy;
+    let c = ramp(zE, banded); const code = sb.code.charCodeAt(k) - 48;
+    if (tint && (code === 1 || code === 4 || code === 5)) { const g = (c[0] + c[1] + c[2]) / 3; c = lerp3(c, [g * 0.9 + 0.08, g * 0.85 + 0.08, g * 0.85 + 0.12], 0.72); }
+    if (srcCol) c = lerp3(c, ZONE_COL[code] || [1, 1, 1], 0.72);
+    col[k * 3] = c[0]; col[k * 3 + 1] = c[1]; col[k * 3 + 2] = c[2];
+  }
+  const idx = [];
+  for (let j = 0; j < ny - 1; j++) for (let i = 0; i < nx - 1; i++) {
+    const a = j * nx + i, b = a + 1, c = a + nx, d = c + 1;
+    idx.push(a, c, b, b, c, d);
+  }
+  const g = new THREE.BufferGeometry();
+  g.setAttribute('position', new THREE.BufferAttribute(pos, 3)); g.setAttribute('color', new THREE.BufferAttribute(col, 3));
+  g.setIndex(idx); g.computeVertexNormals();
+  if (seabedMesh) { groups.seabed.remove(seabedMesh); seabedMesh.geometry.dispose(); }
+  seabedMesh = new THREE.Mesh(g, new THREE.MeshLambertMaterial({ vertexColors: true, wireframe: $('tWire').checked }));
+  groups.seabed.add(seabedMesh);
+  if (typeof updateDrape === 'function') updateDrape();
+}
+
+// ------------------------------------------------------------------ reef mesh
+const rg = M.reef.grid;
+const rZ = { surveyed: Float32Array.from(rg.surveyed_z_cm, v => v === NODATA ? NaN : v / 100), idealised: Float32Array.from(rg.idealised_z_cm, v => v === NODATA ? NaN : v / 100) };
+const rBase = Float32Array.from(rg.seabed_under_z_cm, v => v / 100);
+const rRamp = Float32Array.from(rg.idealised_ramp_cm, v => v === NODATA ? NaN : v / 100);
+const CREST_MSL = M.reef.design.crest_msl_m;     // design crest is stated in chart datum by the designers, so it does NOT move with the survey-datum switch
+let reefMesh;
+function buildReef() {
+  const nx = rg.nx, ny = rg.ny, n = nx * ny;
+  let Z = rZ[st.mode];
+  if (st.mode === 'idealised') {                                // loft: crest cap re-applied on the (possibly datum-shifted) seabed
+    Z = new Float32Array(n);
+    for (let k = 0; k < n; k++) { const S = rBase[k] + st.datumShift, r = Math.min(Math.max(rRamp[k], 0), Math.max(CREST_MSL - S, 0)); Z[k] = (isNaN(rRamp[k]) || r <= 0.10) ? NaN : S + r; }
+  }
+  const pos = new Float32Array(n * 3), col = new Float32Array(n * 3);
+  for (let j = 0; j < ny; j++) for (let i = 0; i < nx; i++) {
+    const k = j * nx + i, v = Z[k], has = !isNaN(v), z = has ? v : rBase[k] + (st.mode === 'idealised' ? st.datumShift : 0);
+    pos[k * 3] = rg.x0 + i * rg.dx; pos[k * 3 + 1] = z + 0.0; pos[k * 3 + 2] = rg.y0 + j * rg.dy;
+    const rel = has ? Math.min(Math.max(v - rBase[k] - (st.mode === 'idealised' ? st.datumShift : 0), 0) / 4.5, 1) : 0;
+    const c = has ? lerp3([0.50, 0.40, 0.27], [0.86, 0.74, 0.52], rel) : [0.5, 0.4, 0.3];
+    col[k * 3] = c[0]; col[k * 3 + 1] = c[1]; col[k * 3 + 2] = c[2];
+  }
+  const idx = [];
+  for (let j = 0; j < ny - 1; j++) for (let i = 0; i < nx - 1; i++) {
+    const a = j * nx + i, b = a + 1, c = a + nx, d = c + 1;
+    if (isNaN(Z[a]) && isNaN(Z[b]) && isNaN(Z[c]) && isNaN(Z[d])) continue;
+    idx.push(a, c, b, b, c, d);
+  }
+  const g = new THREE.BufferGeometry();
+  g.setAttribute('position', new THREE.BufferAttribute(pos, 3)); g.setAttribute('color', new THREE.BufferAttribute(col, 3));
+  g.setIndex(idx); g.computeVertexNormals();
+  if (reefMesh) { groups.reef.remove(reefMesh); reefMesh.geometry.dispose(); }
+  reefMesh = new THREE.Mesh(g, new THREE.MeshLambertMaterial({ vertexColors: true, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2, wireframe: $('tWire').checked }));
+  groups.reef.add(reefMesh);
+}
+
+// ------------------------------------------------------------------ crest zones, toe outline, survey extent
+function lineLoop(points, color, onTop) {
+  const g = new THREE.BufferGeometry().setFromPoints(points);
+  const l = new THREE.LineLoop(g, new THREE.LineBasicMaterial({ color, depthTest: !onTop, transparent: !!onTop }));
+  if (onTop) l.renderOrder = 5;
+  return l;
+}
+const zoneCols = { '-1': 0xffe45c, '-0.5': 0xff9a3c, '0': 0xff3b3b };
+for (const z of M.reef.crest_zones) for (const loop of z.loops)
+  groups.crest.add(lineLoop(loop.map(p => V(p[0], p[1], z.level_msl + 0.06)), zoneCols[String(z.level_acd)] || 0xffffff, true));
+let toeLine;
+function buildToe() {                                         // outline sits on the surface of the drawn reef: surveyed surface, or seabed + 1 m (loft rule)
+  if (toeLine) { groups.toe.remove(toeLine); toeLine.geometry.dispose(); }
+  toeLine = lineLoop(M.reef.toe_polygon_xyzz.map(p => V(p[0], p[1], (st.mode === 'surveyed' ? p[3] : p[2] + 1.0) + 0.1)), 0xff4df0, true);
+  groups.toe.add(toeLine);
+}
+buildToe();
+// Garmin Navionics SonarChart shoal outlines (chart datum; drawn at z_MSL = -depth - 1.40, NOT moved by the survey-datum switch)
+{
+  const N = M.navionics.outlines_xy, off = -M.datum.msl_above_cd_m;
+  for (const [key, depth, col] of [['sonar|drying', 0, 0x1f7a1f], ['sonar|depth_lt_0.5m', 0.5, 0x1e5bd0], ['sonar|depth_lt_1m', 1.0, 0x6cc4ff]])
+    groups.nav.add(lineLoop(N[key].map(p => V(p[0], p[1], off - depth + 0.08)), col, true));
+}
+{ const pts = M.survey_extent.map(p => V(p[0], p[1], 0)); groups.survey.add(lineLoop(pts, 0xffd23c)); }
+function fixSurveyOutline() {                                    // follow the seabed height at the outline vertices
+  const l = groups.survey.children[0], a = l.geometry.attributes.position;
+  M.survey_extent.forEach((p, i) => { const ii = Math.round((p[0] - sb.x0) / sb.dx), jj = Math.round((p[1] - sb.y0) / sb.dy); a.setY(i, seabedZ[jj * sb.nx + ii] + 0.15); });
+  a.needsUpdate = true;
+}
+fixSurveyOutline();
+
+// ------------------------------------------------------------------ water, grid, labels
+const SBX0 = sb.x0, SBX1 = sb.x0 + (sb.nx - 1) * sb.dx, SBY0 = sb.y0, SBY1 = sb.y0 + (sb.ny - 1) * sb.dy;      // grid extent (since 2026-10-07: y -66 .. 650 m)
+const WX0 = SBX0 - 10, WX1 = SBX1 + 10, WY0 = SBY0 - 4, WY1 = SBY1 + 4;
+const water = new THREE.Mesh(new THREE.PlaneGeometry(WX1 - WX0, WY1 - WY0).rotateX(-Math.PI / 2).translate((WX0 + WX1) / 2, 0, (WY0 + WY1) / 2),
+  new THREE.MeshBasicMaterial({ color: 0x2f86b8, transparent: true, opacity: 0.38, side: THREE.DoubleSide, depthWrite: false }));
+groups.water.add(water);
+
+const gridGeom = (() => {
+  const p = [];
+  for (let x = -160; x <= 160; x += 10) p.push(x, 0, SBY0, x, 0, SBY1);
+  for (let y = -60; y <= SBY1; y += 10) p.push(-160, 0, y, 160, 0, y);
+  const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.Float32BufferAttribute(p, 3)); return g;
+})();
+const gridMajor = (() => {
+  const p = [];
+  for (let x = -150; x <= 150; x += 50) p.push(x, 0, SBY0, x, 0, SBY1);
+  for (let y = -50; y <= SBY1; y += 50) p.push(-160, 0, y, 160, 0, y);
+  const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.Float32BufferAttribute(p, 3)); return g;
+})();
+groups.grid.add(new THREE.LineSegments(gridGeom, new THREE.LineBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.13 })));
+groups.grid.add(new THREE.LineSegments(gridMajor, new THREE.LineBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.42 })));
+
+function sprite(text, w, color = '#ffffff', bg = 'rgba(10,20,30,0.65)') {
+  const c = document.createElement('canvas'); c.width = 512; c.height = 96; const g = c.getContext('2d');
+  let fs = 44; g.font = 'bold ' + fs + 'px Arial'; let tw = g.measureText(text).width;
+  if (tw > 470) { fs = Math.floor(fs * 470 / tw); g.font = 'bold ' + fs + 'px Arial'; tw = g.measureText(text).width; }
+  g.fillStyle = bg; g.fillRect(256 - tw / 2 - 12, 14, tw + 24, 68);
+  g.fillStyle = color; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText(text, 256, 49);
+  const t = new THREE.CanvasTexture(c); t.anisotropy = 4;
+  const s = new THREE.Sprite(new THREE.SpriteMaterial({ map: t, depthTest: false, transparent: true }));
+  s.scale.set(w, w * 96 / 512, 1); s.renderOrder = 10; return s;
+}
+const lab = []; const follow = [];
+function addLabel(text, x, y, z, w, color, bg) { const s = sprite(text, w, color, bg); s.position.copy(V(x, y, z)); groups.labels.add(s); lab.push(s); return s; }
+for (let x = -150; x <= 150; x += 50) addLabel('x ' + x, x, SBY0 - 3, 0, 16);
+for (let y = -50; y <= SBY1; y += 50) addLabel('y ' + y, -170, y, 0, 16);
+const reefLabel = addLabel('Boscombe Surf Reef', M.reef.axis.centre_xy[0], M.reef.axis.centre_xy[1], 8, 40, '#ffe9a8');
+const shoreLabel = addLabel('y = 0  surf line, 28 Sep 2011', 0, -16, 0, 120, '#bff3ff');
+const zoneLabels = [
+  addLabel('BEACH: CCO profiles', 100, -40, 0, 100, '#ffd08a'),
+  addLabel('interpolated', 100, 62, 0, 80, '#ffe9a0'),
+  addLabel('DEPTH SURVEY', -100, 205, 0, 90, '#a8c8ff'),
+  addLabel('extrapolated', 100, 345, 0, 80, '#d8d8d8'),
+  addLabel('EMODnet slope', 100, 510, 0, 100, '#a8f0c8'),
+];
+// scale bars (canonical x direction), placed at y = 262 / 245 (offshore of the reef's shoreward end, left of the reef)
+function scaleBar(x0, y0, len, label) {
+  const g = new THREE.Group();
+  const m = new THREE.MeshBasicMaterial({ color: 0xffffff });
+  const bar = new THREE.Mesh(new THREE.BoxGeometry(len, 0.6, 1.0), m); bar.position.copy(V(x0 + len / 2, y0, 0.3)); g.add(bar);
+  for (const xx of [x0, x0 + len]) { const t = new THREE.Mesh(new THREE.BoxGeometry(0.8, 0.6, 5), m); t.position.copy(V(xx, y0, 0.3)); g.add(t); }
+  const s = sprite(label, Math.max(len * 0.9, 20)); s.position.copy(V(x0 + len / 2, y0 - 7, 0.3)); g.add(s);
+  groups.labels.add(g); follow.push(g); return g;
+}
+scaleBar(-150, 262, 50, '50 m'); scaleBar(-150, 245, 10, '10 m');
+// north arrow
+const nvec = M.north.dir_xy;
+const north = new THREE.ArrowHelper(new THREE.Vector3(nvec[0], 0, nvec[1]).normalize(), V(-140, 60, 0.5), 34, 0xff5252, 9, 6);
+groups.labels.add(north); follow.push(north);
+{ const s = sprite('N', 14, '#ff8a8a'); s.position.copy(V(-140 + nvec[0] * 44, 60 + nvec[1] * 44, 0.5)); groups.labels.add(s); lab.push(s); }
+// shoreline
+// ---- shoreline y = 0 (surf line of the 2011-09-28 image) draped on the displayed seabed; zone boundary lines; waterline of the selected level
+function effZ(x, y) {                                           // bilinear height of the displayed seabed
+  const fx = (x - sb.x0) / sb.dx, fy = (y - sb.y0) / sb.dy;
+  const i = Math.max(0, Math.min(sb.nx - 2, Math.floor(fx))), j = Math.max(0, Math.min(sb.ny - 2, Math.floor(fy)));
+  const tx = Math.min(1, Math.max(0, fx - i)), ty = Math.min(1, Math.max(0, fy - j));
+  const a = seabedEff[j * sb.nx + i], b = seabedEff[j * sb.nx + i + 1], c = seabedEff[(j + 1) * sb.nx + i], d = seabedEff[(j + 1) * sb.nx + i + 1];
+  return (a * (1 - tx) + b * tx) * (1 - ty) + (c * (1 - tx) + d * tx) * ty;
+}
+const drapePts = {};                                            // name -> [[x, y], ...] canonical
+{
+  const xr = M.shoreline.x_range, pts = [];
+  for (let x = xr[0]; x <= xr[1] + 1e-6; x += 4) pts.push([x, 0]);
+  drapePts.shore = pts; drapePts.shoreA = pts.map(q => [q[0], q[1] - 0.8]); drapePts.shoreB = pts.map(q => [q[0], q[1] + 0.8]);
+  const ext = sb.extension;
+  if (ext && ext.cco_end_y_by_x) {
+    const ye = ext.cco_end_y_by_x.y_end, x0 = ext.cco_end_y_by_x.x0, dx = ext.cco_end_y_by_x.dx;
+    drapePts.ccoEnd = ye.map((y, i) => [x0 + i * dx, y]);
+    drapePts.blendEnd = ye.map((y, i) => [x0 + i * dx, y + ext.cco_blend_m]);
+    drapePts.surveyStart = null;
+    drapePts.emo = [[SBX0, 380], [SBX1, 380]];
+  }
+}
+const drapeStyle = { shore: 0x66f0ff, shoreA: 0x66f0ff, shoreB: 0x66f0ff, ccoEnd: 0xffb347, blendEnd: 0xffe08a, emo: 0x7be0a8 };
+const drapeObjs = {};
+for (const k of Object.keys(drapePts)) {
+  if (!drapePts[k] || !drapeStyle[k]) continue;
+  const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.BufferAttribute(new Float32Array(drapePts[k].length * 3), 3));
+  const o = new THREE.Line(g, new THREE.LineBasicMaterial({ color: drapeStyle[k], transparent: k.indexOf('shore') !== 0, opacity: k.indexOf('shore') === 0 ? 1 : 0.85 }));
+  o.frustumCulled = false; groups.labels.add(o); drapeObjs[k] = o;
+}
+const shoreLine = drapeObjs.shore;
+function updateDrape() {
+  const e = st.photo ? 1 : st.exag;
+  for (const k of Object.keys(drapeObjs)) {
+    const a = drapeObjs[k].geometry.attributes.position, P = drapePts[k];
+    P.forEach((q, i) => { a.setXYZ(i, q[0], (effZ(q[0], q[1]) + (k.indexOf('shore') === 0 ? 0.12 : 0.08)) * e, q[1]); });
+    a.needsUpdate = true;
+  }
+}
+const wlGeom = new THREE.BufferGeometry(); wlGeom.setAttribute('position', new THREE.BufferAttribute(new Float32Array(3 * 2 * 4000 * 3), 3)); wlGeom.setDrawRange(0, 0);
+const waterLine = new THREE.LineSegments(wlGeom, new THREE.LineBasicMaterial({ color: 0xffffff })); waterLine.frustumCulled = false; groups.water.add(waterLine);
+function updateWaterline() {                                    // contour of the displayed seabed at the water level (marching squares), beach strip y < 130 m
+  const L = st.level, nx = sb.nx, a = wlGeom.attributes.position; let n = 0;
+  const j1 = Math.min(sb.ny - 2, Math.round((130 - sb.y0) / sb.dy));
+  for (let j = 0; j < j1; j++) for (let i = 0; i < nx - 1; i++) {
+    const k = j * nx + i, v = [seabedEff[k] - L, seabedEff[k + 1] - L, seabedEff[k + nx + 1] - L, seabedEff[k + nx] - L];
+    const X = [sb.x0 + i * sb.dx, sb.x0 + (i + 1) * sb.dx, sb.x0 + (i + 1) * sb.dx, sb.x0 + i * sb.dx], Y = [sb.y0 + j * sb.dy, sb.y0 + j * sb.dy, sb.y0 + (j + 1) * sb.dy, sb.y0 + (j + 1) * sb.dy];
+    const pts = [];
+    for (let m = 0; m < 4; m++) { const q = (m + 1) % 4; if ((v[m] < 0) !== (v[q] < 0)) { const f = v[m] / (v[m] - v[q]); pts.push([X[m] + f * (X[q] - X[m]), Y[m] + f * (Y[q] - Y[m])]); } }
+    if (pts.length === 2 && n < 11900) for (const o of [-0.5, 0, 0.5]) { a.setXYZ(2 * n, pts[0][0], 0.12, pts[0][1] + o); a.setXYZ(2 * n + 1, pts[1][0], 0.12, pts[1][1] + o); n++; }
+  }
+  a.needsUpdate = true; wlGeom.setDrawRange(0, 2 * n);
+}
+
+// ------------------------------------------------------------------ state application
+const dl = M.water_levels;                       // sorted high -> low
+const lvlOf = k => dl.find(d => d.key === k).z;
+function applyLevel() {
+  const L = st.level, e = st.exag;
+  groups.water.position.y = L * e; groups.grid.position.y = L * e;
+  updateWaterline(); for (const g of follow) g.position.y = L * e; for (const s of lab) { if (s.userData.y0 === undefined) s.userData.y0 = s.position.y; s.position.y = s.userData.y0 * e + L * e; }
+  $('wlv').textContent = (L >= 0 ? '+' : '') + L.toFixed(2) + ' m';
+  const acd = L + M.datum.msl_above_cd_m;
+  const crestMax = M.stats.crest_max.z_acd + st.datumShift;     // survey datum (ACD)
+  const crestMsl = crestMax - M.datum.msl_above_cd_m;
+  const over = L - crestMsl;
+  let near = dl.reduce((a, b) => Math.abs(b.z - L) < Math.abs(a.z - L) ? b : a);
+  $('wlInfo').innerHTML = 'water level = ' + (acd >= 0 ? '+' : '') + acd.toFixed(2) + ' m ACD  (nearest datum: ' + near.key + ' ' + (near.z >= 0 ? '+' : '') + near.z.toFixed(2) + ')<br>' +
+    'highest point of the April 2011 survey surface ' + (crestMax >= 0 ? '+' : '') + crestMax.toFixed(2) + ' m ACD (2011): ' + (over >= 0 ? 'covered by ' + over.toFixed(2) + ' m' : '<b style="color:#f2b84b">emerged by ' + (-over).toFixed(2) + ' m</b>') +
+    '<br>AS-BUILT crest +0.50 m ACD (design; Oct 2009 survey +0.45..+0.65): ' + (L - (M.reef.design.crest_acd_m - M.datum.msl_above_cd_m) >= 0 ? 'covered by ' + (L - (M.reef.design.crest_acd_m - M.datum.msl_above_cd_m)).toFixed(2) + ' m' : 'emerged by ' + ((M.reef.design.crest_acd_m - M.datum.msl_above_cd_m) - L).toFixed(2) + ' m');
+}
+function applyExag() {
+  const e = st.photo ? 1 : st.exag;
+  for (const k of ['seabed', 'reef', 'crest', 'toe', 'survey', 'nav']) { groups[k].scale.y = e; }
+  for (const g of surveyGroups) g.position.y = st.datumShift * e;
+  if (st.mode === 'idealised') groups.reef.position.y = 0;      // loft already built on the shifted seabed
+  groups.survey.position.y = st.datumShift * e;
+  groups.labels.scale.y = 1; updateDrape(); applyLevel();
+  $('vexv').textContent = e + 'x'; $('exag').textContent = 'vertical exaggeration ' + e + 'x' + (e === 1 ? ' (true scale)' : '  (heights x' + e + ')');
+  $('exag').style.color = e === 1 ? '#7fd8a1' : '#f2b84b';
+}
+function applyToggles() {
+  groups.water.visible = $('tWater').checked; groups.seabed.visible = $('tSeabed').checked; groups.reef.visible = $('tReef').checked;
+  groups.labels.visible = $('tLabels').checked; groups.grid.visible = $('tGrid').checked; groups.crest.visible = $('tCrest').checked;
+  groups.toe.visible = $('tToe').checked; groups.survey.visible = $('tSurvey').checked; groups.nav.visible = $('tNav').checked;
+  if (seabedMesh) seabedMesh.material.wireframe = $('tWire').checked || $('pOutline').checked;
+  if (reefMesh) reefMesh.material.wireframe = $('tWire').checked || $('pOutline').checked;
+}
+for (const id of ['tWater', 'tSeabed', 'tReef', 'tLabels', 'tGrid', 'tCrest', 'tToe', 'tSurvey', 'tNav', 'tWire']) $(id).addEventListener('change', applyToggles);
+for (const id of ['tBands', 'tTint', 'tSrc']) $(id).addEventListener('change', () => { buildSeabed(); applyToggles(); });
+$('wl').addEventListener('input', () => { st.level = +$('wl').value; applyLevel(); });
+$('vex').addEventListener('input', () => { st.exag = +$('vex').value; applyExag(); });
+$('reefMode').addEventListener('change', () => { st.mode = $('reefMode').value; buildReef(); buildToe(); applyExag(); applyToggles(); });
+$('datum').addEventListener('change', () => { st.datumShift = $('datum').value === 'odn' ? ALT_SHIFT : 0; buildSeabed(); buildReef(); applyToggles(); applyExag(); });
+const tb = $('tideBtns');
+for (const d of [...dl].sort((a, b) => b.z - a.z)) {
+  const b = document.createElement('button'); b.textContent = d.key + ' ' + (d.z >= 0 ? '+' : '') + d.z.toFixed(2); b.title = d.label + ' (' + d.acd.toFixed(2) + ' m ACD) - ' + d.note;
+  b.addEventListener('click', () => { st.level = d.z; $('wl').value = d.z; applyLevel(); }); tb.appendChild(b);
+}
+$('fov').addEventListener('input', () => { camera.fov = +$('fov').value; camera.updateProjectionMatrix(); $('fovv').textContent = camera.fov; });
+
+// ------------------------------------------------------------------ camera presets
+const C0 = M.reef.axis.centre_xy;           // reef centre (canonical x,y)
+function setView(name, noHash) {
+  st.view = name; controls.enabled = true;
+  const cz = -3.0;                          // look at the seabed under the reef
+  let pos, tgt = V(C0[0], C0[1], cz);
+  if (name === 'plan') { pos = V(C0[0], 570, 0); pos.set(C0[0] + 10, 570, 112); tgt = V(C0[0] + 10, 112, 0); camera.fov = 38; }          // from above: shoreline (y = 0) and reef both in view
+  else if (name === 'along') { const a = M.reef.axis.unit_xy_offshore_end; pos = V(C0[0] + a[0] * 120, C0[1] + a[1] * 120, 9); tgt = V(C0[0] - a[0] * 40, C0[1] - a[1] * 40, -1.5); camera.fov = 50; }
+  else if (name === 'beach') {                                     // standing at the waterline of the chosen level on the shore-normal through the origin, eye 1.7 m above the water
+    const i0 = Math.round((0 - sb.x0) / sb.dx); let yw = -6;
+    for (let j = 0; j < sb.ny; j++) if (seabedEff[j * sb.nx + i0] <= st.level) { yw = j === 0 ? -6 : sb.y0 + j * sb.dy - 4; break; }
+    pos = V(0, yw, st.level + 1.7); tgt = V(C0[0], C0[1], st.level + 0.3); camera.fov = 40; }
+  else if (name === 'side') { pos = V(C0[0] - 240, C0[1] - 20, 22); tgt = V(C0[0], C0[1], -2); camera.fov = 35; }
+  else { pos = V(-90, 400, 85); tgt = V(5, 120, -2); camera.fov = 45; name = 'oblique'; }                   // default: reef in the middle, beach and shoreline behind it
+  camera.position.copy(pos); controls.target.copy(tgt); camera.updateProjectionMatrix(); controls.update();
+  $('fov').value = camera.fov; $('fovv').textContent = camera.fov;
+  for (const b of document.querySelectorAll('#presets button')) b.classList.toggle('on', b.dataset.v === name);
+}
+for (const b of document.querySelectorAll('#presets button')) b.addEventListener('click', () => { if (st.photo) leavePhoto(); setView(b.dataset.v); });
+
+// ------------------------------------------------------------------ camera readout and conversions
+function camState() {
+  const f = new THREE.Vector3(); camera.getWorldDirection(f);
+  const dx = f.x, dy = f.z, dz = f.y;
+  const heading = ((BX + Math.atan2(dy, dx) / DEG) % 360 + 360) % 360;
+  const pitch = Math.asin(Math.max(-1, Math.min(1, dz))) / DEG;
+  const e = st.photo ? 1 : st.exag;
+  const x = camera.position.x, y = camera.position.z, z = (camera.position.y - 0) / e;
+  const aspect = camera.aspect, vfov = camera.fov, hfov = 2 * Math.atan(Math.tan(vfov * DEG / 2) * aspect) / DEG;
+  return { x, y, z, heading, pitch, vfov, hfov, aspect };
+}
+function setCamFromParams(p) {
+  const e = 1;
+  camera.position.copy(V(p.x, p.y, p.z));
+  const a = (p.heading - BX) * DEG, pi = p.pitch * DEG;
+  const dir = new THREE.Vector3(Math.cos(a) * Math.cos(pi), Math.sin(pi), Math.sin(a) * Math.cos(pi));
+  camera.up.set(0, 1, 0);
+  camera.lookAt(camera.position.clone().add(dir));
+  if (p.roll) camera.rotateZ(p.roll * DEG);
+  camera.fov = p.vfov; camera.updateProjectionMatrix();
+}
+function compassDraw() {
+  const c = $('compass'), g = c.getContext('2d'); g.clearRect(0, 0, 128, 128);
+  const s = camState(), nb = (-s.heading) * DEG;            // screen angle of north relative to view direction (0 = up)
+  g.strokeStyle = 'rgba(255,255,255,.5)'; g.lineWidth = 2; g.beginPath(); g.arc(64, 64, 52, 0, 7); g.stroke();
+  g.fillStyle = 'rgba(14,26,36,.7)'; g.beginPath(); g.arc(64, 64, 52, 0, 7); g.fill();
+  g.save(); g.translate(64, 64); g.rotate(nb);
+  g.fillStyle = '#ff5252'; g.beginPath(); g.moveTo(0, -46); g.lineTo(9, 4); g.lineTo(-9, 4); g.closePath(); g.fill();
+  g.fillStyle = '#cfd8dc'; g.beginPath(); g.moveTo(0, 46); g.lineTo(9, -4); g.lineTo(-9, -4); g.closePath(); g.fill();
+  g.fillStyle = '#fff'; g.font = 'bold 18px Arial'; g.textAlign = 'center'; g.fillText('N', 0, -30);
+  g.restore();
+  g.fillStyle = '#9fc'; g.font = '12px Arial'; g.textAlign = 'center'; g.fillText(Math.round(s.heading) + '°', 64, 122);
+}
+let lastRead = '';
+function updateReadouts() {
+  const s = camState();
+  const txt = 'camera  x ' + s.x.toFixed(1) + '  y ' + s.y.toFixed(1) + '  z ' + s.z.toFixed(1) + ' m (MSL)\nheading ' + s.heading.toFixed(1) + '° true   pitch ' + s.pitch.toFixed(1) + '°\nvertical FOV ' + s.vfov.toFixed(1) + '°   horizontal ' + s.hfov.toFixed(1) + '°';
+  if (txt !== lastRead) { lastRead = txt; $('camRead').textContent = txt; $('hud').innerHTML = txt.replace(/\n/g, '<br>').replace(/(x [-\d.]+|y [-\d.]+|z [-\d.]+)/g, '<b>$1</b>'); }
+  compassDraw();
+  if (st.photo) derived(s);
+}
+
+// ------------------------------------------------------------------ photo match
+const sliders = { x: ['sx', 'nx'], y: ['sy', 'ny'], z: ['sz', 'nz'], heading: ['sh', 'nh'], pitch: ['sp', 'np'], roll: ['sr', 'nr'], vfov: ['sf', 'nf'] };
+let photoRoll = 0;
+function pushSliders(s) {
+  const vals = { x: s.x, y: s.y, z: s.z, heading: s.heading, pitch: s.pitch, roll: photoRoll, vfov: s.vfov };
+  for (const [k, [a, b]] of Object.entries(sliders)) {
+    const el = $(a); if (vals[k] < +el.min) el.min = Math.floor(vals[k] - 10); if (vals[k] > +el.max) el.max = Math.ceil(vals[k] + 10);
+    el.value = vals[k]; $(b).value = (+vals[k]).toFixed(2);
+  }
+}
+function readSliders() {
+  const p = {}; for (const [k, [a]] of Object.entries(sliders)) p[k] = +$(a).value; return p;
+}
+function applyPhotoParams() { const p = readSliders(); photoRoll = p.roll; setCamFromParams(p); }
+for (const [k, [a, b]] of Object.entries(sliders)) {
+  $(a).addEventListener('input', () => { $(b).value = (+$(a).value).toFixed(2); applyPhotoParams(); });
+  $(b).addEventListener('change', () => { $(a).value = $(b).value; applyPhotoParams(); });
+}
+function derived(s) {
+  const f35 = 18 / Math.tan(s.hfov * DEG / 2);
+  $('pDerived').textContent = 'horizontal FOV ' + s.hfov.toFixed(1) + '° | 35 mm-equivalent focal length ' + f35.toFixed(1) + ' mm | aspect ' + s.aspect.toFixed(3) + ' | water level ' + st.level.toFixed(2) + ' m MSL';
+}
+function enterPhoto() {
+  if (st.photo) return; st.photo = true; controls.enabled = false; $('vex').disabled = true; applyExag();
+  const s = camState(); camera.up.set(0, 1, 0); pushSliders(s); applyPhotoParams(); $('exag').textContent = 'photo-match mode: true scale (1x)';
+}
+function leavePhoto() { if (!st.photo) return; st.photo = false; controls.enabled = true; $('vex').disabled = false; const t = camera.position.clone().add(camera.getWorldDirection(new THREE.Vector3()).multiplyScalar(150)); controls.target.copy(t); controls.update(); applyExag(); resize(); }
+$('pFromView').addEventListener('click', () => { const s = camState(); camera.up.set(0, 1, 0); photoRoll = 0; pushSliders(s); });
+$('pOff').addEventListener('click', leavePhoto);
+$('photoFile').addEventListener('change', e => {
+  const f = e.target.files[0]; if (!f) return;
+  const url = URL.createObjectURL(f), img = $('photo');
+  img.onload = () => { img.style.display = 'block'; $('photoMsg').textContent = f.name + ' (' + img.naturalWidth + ' x ' + img.naturalHeight + ')'; enterPhoto(); resize(); };
+  img.src = url;
+});
+function photoStyle() { $('photo').style.filter = 'brightness(' + $('pDim').value + ')'; canvas.style.opacity = $('pOpa').value; }
+$('pOpa').addEventListener('input', photoStyle); $('pDim').addEventListener('input', photoStyle); $('pLock').addEventListener('change', resize);
+$('pOutline').addEventListener('change', applyToggles);
+$('pCopy').addEventListener('click', () => {
+  const s = camState(), p = { slug: M.slug, model_built: M.built, camera: { x_m: +s.x.toFixed(2), y_m: +s.y.toFixed(2), z_m_above_MSL: +s.z.toFixed(2), z_m_above_chart_datum: +(s.z + M.datum.msl_above_cd_m).toFixed(2), heading_deg_true: +s.heading.toFixed(2), pitch_deg: +s.pitch.toFixed(2), roll_deg: +photoRoll.toFixed(2), vertical_fov_deg: +s.vfov.toFixed(2), horizontal_fov_deg: +s.hfov.toFixed(2), aspect: +s.aspect.toFixed(4), equiv_35mm_focal_mm: +(18 / Math.tan(s.hfov * DEG / 2)).toFixed(1) }, water_level_m_MSL: st.level, survey_datum: $('datum').value === 'odn' ? 'ODN (alt)' : 'chart datum', frame: 'x alongshore (bearing 83.4), y offshore, z up from MSL; origin on the 28 Sep 2011 surf line', model_confidence: M.confidence_3d.level };
+  p.hash = '#cam=' + [s.x.toFixed(1), s.y.toFixed(1), s.z.toFixed(1), s.heading.toFixed(1), s.pitch.toFixed(1), photoRoll.toFixed(1), s.vfov.toFixed(1)].join(',') + '&level=' + st.level;
+  const txt = JSON.stringify(p, null, 1); $('pOut').value = txt; try { navigator.clipboard.writeText(txt).catch(() => $('pOut').select()); } catch (e) { $('pOut').select(); }
+});
+
+// ------------------------------------------------------------------ panels (model data, docs)
+function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+function buildCaption() {
+  $('caption').innerHTML = '<b>State shown: AS-BUILT 2009 (intact).</b> <span class="mut">' + esc(M.caption.replace(/^AS-BUILT 2009 state \(intact reef\)\. /, '')) + '</span>';
+}
+function buildModelPane() {
+  let h = '<div class="note">Model frame: x alongshore (bearing ' + BX + '° true), y offshore (' + M.frame.bearing_y_deg + '°), z up from mean sea level. State drawn: ' + esc(M.state_drawn) + '.</div>';
+  h += '<h3>Confidence (3D)</h3><p><span class="lvl-' + conf.level + '" style="padding:1px 7px;border-radius:9px;font-weight:700">' + conf.level.toUpperCase() + '</span> ' + esc(conf.reason) + '</p>';
+  h += '<h3>History after the state drawn (dated, sourced)</h3><table><tr><th>date</th><th>event</th><th>src</th></tr>';
+  for (const e of M.history) h += '<tr><td>' + esc(e.date) + '</td><td>' + esc(e.event) + '</td><td>' + esc(e.source_id) + '</td></tr>';
+  h += '</table>';
+  { const c = M.navionics.comparison, a = c.area_m2;
+    h += '<h3>Garmin Navionics cross-check (2026-10-05)</h3><div class="note">The structure still shows as a shoal on both Navionics layers (damaged, not removed). Datum not stated by the viewer: assumed chart datum. Areas in m2, Navionics vs April 2011 survey (Fig. 9):</div><table><tr><th>level</th><th>survey</th><th>SonarChart</th><th>Nautical</th></tr>' +
+      '<tr><td>drying / above 0 m ACD</td><td>' + a.drying_above_0m_acd.survey_april2011 + '</td><td>' + a.drying_above_0m_acd.sonarchart + '</td><td>' + a.drying_above_0m_acd.nautical_chart + '</td></tr>' +
+      '<tr><td>shallower than 0.5 m</td><td>' + a['shallower_than_0.5m'].survey_april2011 + '</td><td>' + a['shallower_than_0.5m'].sonarchart + '</td><td>-</td></tr>' +
+      '<tr><td>shallower than 1 m</td><td>' + a.shallower_than_1m.survey_april2011 + '</td><td>' + a.shallower_than_1m.sonarchart + '</td><td>' + a.shallower_than_1m.nautical_chart + '</td></tr></table>' +
+      '<div class="note">Spot soundings (' + c.soundings_all.n + ' on the seabed inside the model grid): model minus Navionics mean ' + c.soundings_all.mean.toFixed(2) + ' m, sd ' + c.soundings_all.sd.toFixed(2) + ' m (survey area n=' + c.soundings_in_survey_area.n + ', extrapolated area n=' + c.soundings_in_extrapolated_area.n + ').</div>'; }
+  h += '<h3>Water levels (model frame, z=0 at MSL)</h3><table><tr><th>level</th><th>z (m MSL)</th><th>m ACD</th><th>source</th></tr>';
+  for (const d of dl) h += '<tr><td>' + d.key + '</td><td>' + d.z.toFixed(2) + '</td><td>' + d.acd.toFixed(2) + '</td><td title="' + esc(d.note) + '">' + d.source_id + '</td></tr>';
+  h += '</table><h3>Provenance of every parameter</h3><table><tr><th>parameter</th><th>value</th><th>src</th><th>method</th><th>uncertainty</th></tr>';
+  for (const p of M.provenance) h += '<tr><td>' + esc(p.parameter) + (p.estimated ? ' <span class="est">(estimated)</span>' : ' <span class="meas">(read from source)</span>') + '</td><td>' + esc(p.value) + (p.unit && p.unit !== '-' ? ' ' + esc(p.unit) : '') + '</td><td>' + esc(p.source_id) + '</td><td>' + esc(p.method) + '</td><td>' + esc(p.uncertainty) + '</td></tr>';
+  h += '</table><h3>Sources</h3><table>';
+  for (const s of M.sources) h += '<tr><td>' + s.id + '</td><td>' + esc(s.citation) + '</td></tr>';
+  h += '</table><h3>Reef numbers (from the survey grid)</h3><div class="mono note">' + esc(JSON.stringify(M.stats, null, 1)) + '</div>';
+  h += '<h3>Seabed grid legend (source zones)</h3><div class="note">Grid ' + sb.nx + ' x ' + sb.ny + ' cells of 2 m: x ' + SBX0 + ' to ' + SBX1 + ' m, y ' + SBY0 + ' to ' + SBY1 + ' m (extended 2026-10-07 from y 0..380).</div><table>';
+  for (const c of [3, 4, 0, 2, 1, 5]) { const q = ZONE_COL[c].map(v => Math.round(v * 255)); h += '<tr><td style="width:18px;background:rgb(' + q.join(',') + ')"></td><td><b>' + c + '</b> ' + esc(M.seabed.code_key[String(c)]) + '</td></tr>'; }
+  h += '</table><div class="note">' + esc(M.seabed.datum_w_key) + '</div>';
+  $('pModel').innerHTML = h;
+}
+// tiny markdown renderer
+function md(src) {
+  const lines = src.replace(/\r/g, '').split('\n'); let out = [], i = 0;
+  const inline = t => esc(t).replace(/`([^`]+)`/g, '<code>$1</code>').replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>').replace(/(^|[^*])\*([^*\s][^*]*)\*/g, '$1<i>$2</i>').replace(/\[([^\]]+)\]\((https?:[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>').replace(/(^|[\s(])(https?:\/\/[^\s)<]+)/g, '$1<a href="$2" target="_blank" rel="noopener">$2</a>');
+  while (i < lines.length) {
+    let l = lines[i];
+    if (/^```/.test(l)) { let b = []; i++; while (i < lines.length && !/^```/.test(lines[i])) b.push(lines[i++]); i++; out.push('<pre>' + esc(b.join('\n')) + '</pre>'); continue; }
+    if (/^\s*\|/.test(l) && i + 1 < lines.length && /^\s*\|?\s*:?-{2,}/.test(lines[i + 1])) {
+      const cells = r => r.trim().replace(/^\||\|$/g, '').split('|').map(c => c.trim());
+      let t = '<table><tr>' + cells(l).map(c => '<th>' + inline(c) + '</th>').join('') + '</tr>'; i += 2;
+      while (i < lines.length && /^\s*\|/.test(lines[i])) { t += '<tr>' + cells(lines[i]).map(c => '<td>' + inline(c) + '</td>').join('') + '</tr>'; i++; }
+      out.push(t + '</table>'); continue;
+    }
+    let m;
+    if ((m = /^(#{1,4})\s+(.*)/.exec(l))) { out.push('<h' + m[1].length + '>' + inline(m[2]) + '</h' + m[1].length + '>'); i++; continue; }
+    if (/^\s*[-*]\s+/.test(l)) { let b = []; while (i < lines.length && /^\s*[-*]\s+/.test(lines[i])) { b.push('<li>' + inline(lines[i].replace(/^\s*[-*]\s+/, '')) + '</li>'); i++; } out.push('<ul>' + b.join('') + '</ul>'); continue; }
+    if (/^\s*\d+[.)]\s+/.test(l)) { const first = parseInt(l.trim(), 10); let b = []; while (i < lines.length && /^\s*\d+[.)]\s+/.test(lines[i])) { b.push('<li>' + inline(lines[i].replace(/^\s*\d+[.)]\s+/, '')) + '</li>'); i++; } out.push('<ol start="' + first + '">' + b.join('') + '</ol>'); continue; }
+    if (/^>\s?/.test(l)) { let b = []; while (i < lines.length && /^>\s?/.test(lines[i])) b.push(lines[i++].replace(/^>\s?/, '')); out.push('<blockquote>' + inline(b.join(' ')) + '</blockquote>'); continue; }
+    if (/^\s*---+\s*$/.test(l)) { out.push('<hr>'); i++; continue; }
+    if (/^\s*$/.test(l)) { i++; continue; }
+    let b = []; while (i < lines.length && !/^\s*$/.test(lines[i]) && !/^(#{1,4}\s|```|\s*[-*]\s|\s*\d+[.)]\s|>|\s*\|)/.test(lines[i])) b.push(lines[i++]);
+    if (!b.length) { b = [lines[i++]]; }
+    out.push('<p>' + inline(b.join(' ')) + '</p>');
+  }
+  return out.join('\n');
+}
+function buildDocsPane() {
+  let h = '';
+  if (DOCS.methods_md) h += '<div class="note">Methods note (METHODS_3D.md), built ' + esc(DOCS.built || '') + '. Requests for Lior and the source log (SOURCES_3D.md) follow below.</div>' + md(DOCS.methods_md);
+  else h += '<p>docs.js not found (run build_3d.py).</p>';
+  if (DOCS.requests_md) h += '<hr><h2>Requests for Lior (REQUESTS_FOR_LIOR.md)</h2>' + md(DOCS.requests_md);
+  if (DOCS.sources_md) h += '<hr><h2>Source log (SOURCES_3D.md)</h2>' + md(DOCS.sources_md);
+  $('pDocs').innerHTML = h;
+}
+for (const b of document.querySelectorAll('#tabs button')) b.addEventListener('click', () => {
+  for (const x of document.querySelectorAll('#tabs button')) x.classList.toggle('on', x === b);
+  for (const p of document.querySelectorAll('.pane')) p.classList.toggle('on', p.id === b.dataset.p);
+  if (b.dataset.p === 'pPhoto' && $('photo').style.display === 'block') enterPhoto();
+});
+
+// ------------------------------------------------------------------ resize / loop
+function resize() {
+  const stage = $('stage'); let w = stage.clientWidth, h = stage.clientHeight; const wrap = $('wrap');
+  if (st.photo && $('pLock').checked && $('photo').naturalWidth) {
+    const ar = $('photo').naturalWidth / $('photo').naturalHeight; let ww = w, hh = w / ar; if (hh > h) { hh = h; ww = h * ar; }
+    wrap.style.cssText = 'left:' + ((w - ww) / 2) + 'px;top:' + ((h - hh) / 2) + 'px;width:' + ww + 'px;height:' + hh + 'px'; w = ww; h = hh;
+  } else wrap.style.cssText = 'left:0;top:0;width:100%;height:100%';
+  renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix();
+}
+window.addEventListener('resize', resize);
+$('wideBtn').addEventListener('click', () => { $('app').classList.toggle('wide'); $('wideBtn').classList.toggle('on'); resize(); });
+function loop() { if (!st.photo) controls.update(); renderer.render(scene, camera); updateReadouts(); requestAnimationFrame(loop); }
+
+// ------------------------------------------------------------------ init + URL hash (view=..., level=..., exag=..., mode=..., cam=x,y,z,h,p,r,fov, tab=docs)
+buildSeabed(); buildReef(); buildModelPane(); buildDocsPane(); buildCaption(); applyToggles();
+$('zoneLegend').innerHTML = [3, 4, 0, 2, 1, 5].map(c => '<span style="display:inline-block;width:10px;height:10px;background:rgb(' + ZONE_COL[c].map(v => Math.round(v * 255)).join(',') + ');margin-right:4px"></span>' + ZONE_NAME[c]).join('<br>');
+resize();
+const H = Object.fromEntries(location.hash.replace(/^#/, '').split('&').filter(Boolean).map(s => s.split('=')));
+if (H.level !== undefined) { st.level = +H.level; $('wl').value = st.level; }
+if (H.exag) { st.exag = +H.exag; $('vex').value = st.exag; }
+if (H.mode) { st.mode = H.mode; $('reefMode').value = H.mode; buildReef(); buildToe(); }
+if (H.datum === 'odn') { $('datum').value = 'odn'; st.datumShift = ALT_SHIFT; buildSeabed(); buildReef(); }
+for (const [k, id] of [['crest', 'tCrest'], ['toe', 'tToe'], ['survey', 'tSurvey'], ['nav', 'tNav'], ['bands', 'tBands'], ['src', 'tSrc'], ['wire', 'tWire'], ['labels', 'tLabels'], ['grid', 'tGrid']]) if (H[k] !== undefined) $(id).checked = H[k] === '1';
+buildSeabed(); applyToggles(); applyExag();
+setView(H.view || 'oblique');
+if (H.cam) { const c = H.cam.split(',').map(Number); st.photo = false; enterPhoto(); setCamFromParams({ x: c[0], y: c[1], z: c[2], heading: c[3], pitch: c[4], roll: c[5] || 0, vfov: c[6] || 45 }); photoRoll = c[5] || 0; pushSliders(camState()); }
+if (H.wide === '1') $('wideBtn').click();
+if (H.tab === 'docs') document.querySelector('#tabs button[data-p=pDocs]').click();
+window.__ready = true;
+loop();
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+[
+  {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/%D7%91%D7%AA_%D7%92%D7%9C%D7%99%D7%9D_-_%D7%A9%D7%95%D7%91%D7%A8%D7%99_%D7%94%D7%92%D7%9C%D7%99%D7%9D.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:%D7%91%D7%AA_%D7%92%D7%9C%D7%99%D7%9D_-_%D7%A9%D7%95%D7%91%D7%A8%D7%99_%D7%94%D7%92%D7%9C%D7%99%D7%9D.jpg",
+    "credit": "Arkamor / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "date": "2018-09-27 (Wiki Loves Monuments 2018)",
+    "depicts": "Wave breakers (שוברי הגלים) at Bat Galim, the Haifa neighbourhood/beach adjacent to the Shikmona coast used as the wave-climate/tidal reference site for this dossier",
+    "kind": "photo",
+    "verified": "curl -sI 200 image/jpeg (checked 2026-09-24)"
+  },
+  {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Bat_Galim_Sea_Shore.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Bat_Galim_Sea_Shore.jpg",
+    "credit": "MrSerious / Wikimedia Commons",
+    "license": "CC BY 3.0",
+    "date": "2011-04-24 (upload)",
+    "depicts": "Bat Galim shore, Haifa — the beach/coastline adjacent to the Shikmona buoy and Tel Shikmona area referenced in this dossier",
+    "kind": "photo",
+    "verified": "curl -sI 200 image/jpeg (checked 2026-09-24)"
+  },
+  {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/%D7%98%D7%99%D7%99%D7%9C%D7%AA_%D7%97%D7%95%D7%A3_%D7%A9%D7%A7%D7%9E%D7%95%D7%A0%D7%94%2C_%D7%97%D7%99%D7%A4%D7%94%2C_2024.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:%D7%98%D7%99%D7%99%D7%9C%D7%AA_%D7%97%D7%95%D7%A3_%D7%A9%D7%A7%D7%9E%D7%95%D7%A0%D7%94%2C_%D7%97%D7%99%D7%A4%D7%94%2C_2024.jpg",
+    "credit": "Hadar Leonzini / Wikimedia Commons",
+    "license": "CC BY 4.0",
+    "date": "2024 (photo); uploaded 2025-12-30",
+    "depicts": "Shikmona beach promenade, Haifa — the shoreline directly by Tel Shikmona / the IOLR marine research campus where the Shikmona buoy data used in this dossier is collected",
+    "kind": "photo",
+    "verified": "confirmed via Commons file page (WebFetch, 2026-09-24); direct-URL curl HEAD check hit Wikimedia's shared-IP rate limit (HTTP 429, retry-after 600s) at check time, could not get a clean 200 in-session"
+  },
+  {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/%D7%AA%D7%9C_%D7%A9%D7%A7%D7%9E%D7%95%D7%A0%D7%94_%D7%91%D7%97%D7%99%D7%A4%D7%94%2C_%D7%97%D7%95%D7%A3_%D7%94%D7%99%D7%9D_%D7%9C%D7%99%D7%93%D7%95_%D7%95%D7%90%D7%96%D7%95%D7%A8_%D7%94%D7%A4%D7%A1%D7%99%D7%A4%D7%A1%D7%99%D7%9D%2C_%D7%9C%D7%99%D7%93_%D7%94%D7%9E%D7%9B%D7%95%D7%9F_%D7%9C%D7%97%D7%A7%D7%A8_%D7%94%D7%99%D7%9E%D7%99%D7%9D_%D7%95%D7%94%D7%90%D7%92%D7%9E%D7%99%D7%9D%2C_%D7%A4%D7%91%D7%A8%D7%95%D7%90%D7%A8_2025_01.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:%D7%AA%D7%9C_%D7%A9%D7%A7%D7%9E%D7%95%D7%A0%D7%94_%D7%91%D7%97%D7%99%D7%A4%D7%94,_%D7%97%D7%95%D7%A3_%D7%94%D7%99%D7%9D_%D7%9C%D7%99%D7%93%D7%95_%D7%95%D7%90%D7%96%D7%95%D7%A8_%D7%94%D7%A4%D7%A1%D7%99%D7%A4%D7%A1%D7%99%D7%9D,_%D7%9C%D7%99%D7%93_%D7%94%D7%9E%D7%9B%D7%95%D7%9F_%D7%9C%D7%97%D7%A7%D7%A8_%D7%94%D7%99%D7%9E%D7%99%D7%9D_%D7%95%D7%94%D7%90%D7%92%D7%9E%D7%99%D7%9D,_%D7%A4%D7%91%D7%A8%D7%95%D7%90%D7%A8_2025_01.jpg",
+    "credit": "Hanay / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "date": "2025-02-07",
+    "depicts": "Tel Shikmona, Haifa, with the adjacent seashore, right next to the Institute for Marine and Freshwater (Limnological) Research campus that operates the Shikmona wave buoy cited throughout this dossier",
+    "kind": "photo",
+    "verified": "confirmed via Commons file page (WebFetch, 2026-09-24); direct-URL curl HEAD check hit Wikimedia's shared-IP rate limit (HTTP 429) at check time, could not get a clean 200 in-session"
+  },
+  {
+    "url": "https://www.google.com/maps?q=32.8249372,34.9552572",
+    "source_page": "https://en.wikipedia.org/wiki/Tel_Shikmona",
+    "credit": "Google Maps (satellite/map view)",
+    "license": "Google Maps terms of use — link only, not for redistribution",
+    "date": "n/a (live map)",
+    "depicts": "Map/satellite view centered on Tel Shikmona / Shikmona beach, Haifa (32°49'30\"N 34°57'19\"E per Wikipedia), the shoreline area where the Shikmona buoy and IOLR marine research station sit",
+    "kind": "map",
+    "verified": "coordinates taken from Wikipedia \"Tel Shikmona\" infobox, not invented"
+  },
+  {
+    "url": "https://img.youtube.com/vi/M5A2xbuh4AM/hqdefault.jpg",
+    "source_page": "https://www.youtube.com/watch?v=M5A2xbuh4AM",
+    "credit": "Aquazoom Amir Weizman (YouTube channel) — thumbnail only",
+    "license": "YouTube thumbnail — link/embed only, not for redistribution",
+    "date": "unknown upload date",
+    "depicts": "YouTube thumbnail for \"Wave surfing in Bat Galim Haifa Israel by AQUAZOOM\" — video itself could not be downloaded by yt-dlp ('This video is not available'); title and channel confirmed via YouTube oEmbed API",
+    "kind": "video_thumbnail",
+    "verified": "curl -sI 200 image/jpeg (checked 2026-09-24); recorded per SKIP/fallback rule for a video yt-dlp cannot fetch"
+  }
+]

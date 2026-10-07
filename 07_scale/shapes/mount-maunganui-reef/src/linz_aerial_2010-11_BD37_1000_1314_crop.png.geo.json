@@ -1,0 +1,25 @@
+{
+ "image": "linz_aerial_2010-11_BD37_1000_1314_crop.png",
+ "width": 1100,
+ "height": 1100,
+ "crs": "EPSG:2193 (NZGD2000 / NZTM 2000)",
+ "pixel_size_m": 0.125,
+ "top_left_nztm": [
+  1882498.375,
+  5828838.125
+ ],
+ "note": "pixel (i,j) centre-corner: E = top_left_E + i*0.125 ; N = top_left_N - j*0.125 (upper-left corner of pixel; GeoTIFF PixelIsArea)",
+ "source_tiff": "https://nz-imagery.s3.ap-southeast-2.amazonaws.com/bay-of-plenty/bay-of-plenty_2010-2011_0.125m/rgb/2193/BD37_1000_1314.tiff",
+ "source_tile_origin_nztm": [
+  1882240.0,
+  5829360.0
+ ],
+ "crop_offset_px": [
+  2067,
+  4175
+ ],
+ "capture_window": [
+  "2010-12-28",
+  "2011-03-31"
+ ]
+}

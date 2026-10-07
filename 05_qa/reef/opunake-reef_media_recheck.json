@@ -1,0 +1,82 @@
+{
+  "slug": "opunake-reef",
+  "checked_on": "2026-09-25",
+  "rubric": "structure_visible | reef_effect_visible | site_context_only | unrelated_or_wrong_site | could_not_load",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Opunake_Beach.JPG",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Opunake_Beach.JPG",
+      "classification": "site_context_only",
+      "evidence": "Downloaded via curl (200, image/jpeg, 172,721 bytes matching the server's Content-Length exactly, 2013-10-06 Last-Modified). On attempting to VIEW the downloaded bytes with the Read tool, the image rendered was NOT a photo consistent with Wikimedia's file: it showed an aerial view of a dredge working off a Gold-Coast-style city beach, with EXIF metadata reporting 'Apple iPhone 17 Pro Max', captured 2026-07-25 -- a date and camera that cannot correspond to a Wikimedia file with a 2013 last-modified date. This is treated as a Read-tool/viewer artifact in this environment, not evidence about the real file, so the classification below is based on the file's verified identity (URL, Commons page title/caption, license, matching byte-for-byte Content-Length) rather than on that corrupted view. Commons captions this file as a picnic shelter on the grassed foreshore overlooking the Opunake Beach cove; it is a genuine general site photo and does not show the reef structure, which is offshore. Flagging for a human/second re-view since the pixel content could not be independently confirmed here.",
+      "note": "Anomalous viewer read -- classification relies on verified file identity/metadata, not on the rendered pixels. Recommend a second check if pixel-level confirmation is needed."
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Opunake-Artist-Rendition.jpg?v=1572994857",
+      "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/opunake/",
+      "classification": "unrelated_or_wrong_site",
+      "evidence": "Downloaded via curl (200, image/jpeg, 110,059 bytes, matches server Content-Length exactly, 862x575, dimensions/size consistent with the live server file, no anomalous EXIF). The actual photo shows a wire security fence with a red-and-white 'Construction Operations KEEP OUT' sign in front of a pebble/shingle beach with timber groynes and a rock revetment under construction -- British-style signage and shingle beach, not a match for Opunake's sand beach in Taranaki, NZ. This directly contradicts the card's prior 'depicts' text (surfers riding waves with the Opunake Surf Life Saving Club clubhouse visible). The filename on raisedwaterresearch.com is misleading; the actual image file behind it is not of Opunake at all.",
+      "note": "Card's prior description of this image was written without viewing the actual bytes and should be removed/corrected."
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Opunake-Location.jpg?v=1572994855",
+      "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/opunake/",
+      "classification": "unrelated_or_wrong_site",
+      "evidence": "Downloaded via curl (200, image/jpeg, 38,468 bytes, matches server Content-Length exactly, 862x575). The photo shows three yellow excavators building a rock revetment/breakwater at the sea's edge on an overcast day -- heavy-plant rock construction, not a 'rocky Opunake foreshore with marker buoys' as previously described, and not consistent with Opunake's structure (submerged sand-filled geotextile bags, never capped with rock per the dossier). No caption on the source page ties this specific frame to Opunake; it appears to be a stock/mislabeled image reused on the raisedwaterresearch.com template.",
+      "note": "Card's prior description of this image was written without viewing the actual bytes and should be removed/corrected."
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Opunake-Reef-Flat.jpg?v=1573000303",
+      "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/opunake/",
+      "classification": "unrelated_or_wrong_site",
+      "evidence": "Downloaded via curl (200, image/jpeg, 26,544 bytes, matches server Content-Length exactly, 862x575). The photo shows a dump truck and excavators working the same rock-revetment construction site as the 'Location' image above (same lighting, same machines, same rock pile), not a 'view across Opunake bay towards the surf break' as previously described. This is the same misattributed stock construction scene, not Opunake, and not any recognizable view of a sand-bag reef.",
+      "note": "Card's prior description of this image was written without viewing the actual bytes and should be removed/corrected."
+    },
+    {
+      "url": "https://www.google.com/maps/@-39.46,173.86,17z/data=!3m1!1e3",
+      "source_page": "https://www.google.com/maps/@-39.46,173.86,17z/data=!3m1!1e3",
+      "classification": "could_not_load",
+      "evidence": "Google Maps satellite tiles are a live, interactive view, not a static downloadable image; per the license note on the card this is view/link-only, not for download or redistribution, so it was not fetched or classified against the visual rubric. Left as a reference link only.",
+      "note": "Not re-checked visually; excluded from hero-image consideration."
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=-xWlsZlffZY",
+      "title": "Every Breaking Wave at OPUNAKE beach.",
+      "channel": "David McCallum",
+      "classification": "site_only",
+      "best_timestamp_seconds": null,
+      "evidence": "No transcript file exists (transcript_path is null, and none found under 02_research/videos/opunake-reef/). Title and the card's own 'what_it_shows' text describe a wordless scenic clip of waves breaking along Opunake Beach with no mention of the reef, ASR, geotextile bags, or any construction/engineering term. Nothing in the title, description, or extracted frame ties this footage to the reef itself; it documents the beach's natural surf only."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cfiQvzgdGn0",
+      "title": "Opunake Classic 2015",
+      "channel": "Opunake Surf",
+      "classification": "site_only",
+      "best_timestamp_seconds": null,
+      "evidence": "No transcript file exists. This is contest footage from the 2015 'Opunake Classic' surf event at Opunake Beach; title and description reference the contest and beach only, with no mention of the reef, ASR, or the sand-bag structure. Confirms local surf activity at the beach, not the reef's performance."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=GXYYCbZtz_s",
+      "title": "Opunake Beach - Taranaki NZ",
+      "channel": "Michael Herman",
+      "classification": "site_only",
+      "best_timestamp_seconds": null,
+      "evidence": "No transcript file exists. Card's own quoted uploader description -- 'a look at Opunake's beautifully appointed beach... great spot for safe swimming' -- is generic tourism/amenity framing with no reference to the reef, surfing quality, or the ASR project."
+    }
+  ],
+  "frames": [
+    {
+      "path": "03_images/video_frames/opunake-reef/-xWlsZlffZY_0005.jpg",
+      "classification": "site_context_only",
+      "evidence": "Viewed directly. Shows a wet-sand foreshore at low tide with a faint rainbow overhead and small lines of whitewater breaking well offshore in the distance; no reef structure, marker, or engineering feature visible anywhere in frame. Matches its existing honest caption."
+    },
+    {
+      "path": "03_images/video_frames/opunake-reef/cfiQvzgdGn0_0016.jpg",
+      "classification": "site_context_only",
+      "evidence": "Viewed directly. Shows a surfer in a red top dropping into a clean, well-formed breaking wave during the 2015 Opunake Classic contest. This is a natural beach-break wave shape (no telltale reef 'wedge'/peel signature described anywhere in the dossier), and nothing in the frame or its source video links it to the reef's location or effect. Matches its existing honest caption."
+    }
+  ],
+  "hero_recommendation": "none",
+  "hero_recommendation_note": "No accepted image or frame meets structure_visible or reef_effect_visible. The Wikimedia 'Opunake_Beach.JPG' photo is the only image with a clean, verifiable source/license and is the least-bad general site-context option if a placeholder hero is needed, but it should be captioned as a general site photo, not as reef evidence. The three raisedwaterresearch.com images should be removed from the card entirely (moved to images_rejected) -- their actual pixel content does not match either Opunake or their own prior captions."
+}

@@ -1,0 +1,16 @@
+ABC News video "Dream on hold for Bunbury surfers" (webpage title "Rip tears wave dream for surfers of Bunbury")
+Video ID: 11804314
+Source page: https://www.abc.net.au/news/2019-12-16/11804314
+Direct file used (fetched via yt-dlp "abc.net.au" extractor): https://abcmedia.akamaized.net/news/video/201912/airwave_high.mp4
+Duration confirmed by ffmpeg: 00:00:35.08
+
+NOTE ON THIS FILE: this ABC video carries no closed-caption/subtitle track (unlike YouTube uploads), so yt-dlp could not pull a .vtt transcript. The notes below are a timestamped shot-by-shot description from directly watching two extracted frames, cross-checked against the companion ABC News article text (which quotes the same segment) rather than a verbatim ASR transcript. No invented dialogue is included.
+
+Shot log (approx, from a 35s clip):
+- 00:00-00:08 — Aerial/drone shot over turquoise water off Bunbury Back Beach showing the inflated white Airwave bladder sitting on the seabed, a diver near it, and an orange marker buoy nearby. This matches frame 11804314_0005.jpg.
+- ~00:08-00:20 — Cuts to a beachfront vox-pop interview at the Back Beach access point (surf-club mural wall, "NO ACCESS BEYOND THIS POINT" sign visible), lower-third caption identifies the speaker as "CAMILLE-AUDREY PERRON, TOURING SURFER". This matches the ABC article's (R1) quoted "tourist Perron" reacting to the reef tearing. Matches frame 11804314_0010.jpg.
+- Remainder of clip (not frame-captured): further vox-pop and likely a shot of the torn bladder seam, consistent with R1's description of the tear photographed by a diver.
+
+Key quotes (sourced from the companion ABC News article R1, which reports on this same video segment — not re-transcribed from audio):
+- 00:08 (approx, on-screen speaker) Camille-Audrey Perron (touring surfer), reaction to the installation setback — see R1 for exact wording, not reproduced verbatim here per copyright limits.
+- Inventor Troy Bottegal on the cause: "We had a lot of undertow — a new swell came through that was a very deep swell that we weren't planning on, and it was pushing the undertow through the line-up." [R1]

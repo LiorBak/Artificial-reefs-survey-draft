@@ -1,0 +1,16 @@
+{
+ "files": [
+  "navionics_garmin_nauticalchart_z16_2026-10-05.png",
+  "navionics_garmin_nauticalchart_z17_2026-10-05.png",
+  "navionics_garmin_nauticalchart_z18_2026-10-05.png",
+  "navionics_garmin_sonarchart_z17_2026-10-05.png",
+  "navionics_garmin_sonarchart_z18_2026-10-05.png",
+  "navionics_garmin_map_options_2026-10-05.png"
+ ],
+ "source_page": "https://maps.garmin.com/en-US/marine?maps=another-brand&overlay=false  (webapp.navionics.com 301-redirects here; the old Navionics ChartViewer was decommissioned by Garmin in 2024)",
+ "page_title": "Garmin | Marine Maps (Leaflet viewer, 'Not to be used for navigation')",
+ "credit": "Garmin Navionics charts and SonarChart (c) Navionics / Garmin Ltd. Not for navigation. Private research copy only; reuse rights NOT cleared.",
+ "retrieved": "2026-10-05",
+ "how": "own headless Chrome (private profile, not the shared browser pane); no login, no CAPTCHA; Map Options set to Nautical Charts or SonarChart Maps, depth units Meters, shallow shading 1 m; map centred on 50.71753 N, 1.83891 W (reef centroid, shape.json) at Leaflet zoom 16/17/18 by calling the page's own Leaflet map.setView (the Google Places search box did not offer suggestions in headless mode). Screenshot 1400x900 px, map pane x 400..1400, y 113..864 of the screenshot; zoom z -> 156543.03392/2^z mercator-m per px, ground m/px = that x cos(lat) (z17 0.756, z18 0.378).",
+ "datum_stated_by_app": "none. Assumed chart datum (the UK chart-datum surface used by the underlying hydrographic-office chart; approx. LAT). Plausibility check in METHODS_3D.md."
+}

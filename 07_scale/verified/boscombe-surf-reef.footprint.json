@@ -1,0 +1,343 @@
+{
+  "slug": "boscombe-surf-reef",
+  "name": "Boscombe Surf Reef",
+  "status": "verified",
+  "shape_type": "linear",
+  "shape_type_notes": "A single elongated, asymmetric angled bank/ramp (\"the reef doesn't create waves...it acts as a ramp\", R10) built from parallel geotextile tubes -- not a multi-armed chevron, V, or triangular delta. The already-verified aerial photo (raisedwaterresearch.com 'Boscombe-Arial') shows one coherent dark parallelogram-shaped patch with internal parallel stripes (individual container tubes), not two separate arms meeting at an apex.",
+  "coords": "metres; origin = shoreline point directly onshore of the reef's photo-measured centroid; x = alongshore (positive toward east, i.e. toward Bournemouth Pier direction / away from Boscombe Pier, matching the card's '~240 m east of the pier' framing); y = offshore (positive seaward); shoreline approximated as the line y=0.",
+  "polygon_m": [
+    [
+      -74.5,
+      273.8
+    ],
+    [
+      -97.5,
+      220.6
+    ],
+    [
+      74.5,
+      146.2
+    ],
+    [
+      97.5,
+      199.4
+    ],
+    [
+      -74.5,
+      273.8
+    ]
+  ],
+  "bbox_m": {
+    "length_alongshore": 195.0,
+    "width_crossshore": 127.6,
+    "note": "Axis-aligned envelope in the shore-parallel/shore-normal frame. This is much bigger than the structure's own along-ramp footprint (187.5 m x 58 m) because the ramp's long axis is tilted roughly 24 deg off the shore-normal (offshore) direction -- see derivation. Do not read 'length_alongshore' here as the reef's own long dimension."
+  },
+  "area_m2": 10861.6,
+  "max_dimension_m": 187.5,
+  "crest_depth_m": {
+    "value": 0.5,
+    "datum": "metres ABOVE Lowest Astronomical Tide / spring low water datum (positive = emergent, i.e. the reef's designed crest sits above this level after sand settlement, not below it). Sign convention clarified 2026-09-25 (was stored as -0.5 with an inverted-sign explanation, which was confusing to compare against Gemini's differently-signed convention); the underlying fact is unchanged.",
+    "ref": "R10"
+  },
+  "distance_offshore_m": {
+    "value": 220,
+    "measured_from": "seawall base (R7's exact figure and phrasing); cross-checked against R1 (225 m from the beach) and R4 (210 m from the shoreline)",
+    "ref": "R7",
+    "note": "corrected 2026-09-25: previously mis-cited as ref R4, but R4's own text states 210 m, not 220 m; R7 is the source that literally states \"220m from the base of the seawall\"."
+  },
+  "orientation_notes": "Long axis trends WSW-ENE: the deeper/offshore end sits to the WSW (photo-measured bearing of the offshore-pointing axis is roughly 245-250 deg), the shallower/nearshore end to the ENE. This is broadly consistent with the design intent stated in R10 -- 'It's angled to catch the mean wave direction' for the dominant SSW-SW Channel swell (approx. 200-230 deg per the master comparative table Gemini also uses) -- though our photo-derived bearing (~247 deg) sits a little west of that swell window's centre; no source gives an exact design bearing figure, so this is a medium/low-confidence photo estimate, not a stated design number. The reef also produces an asymmetric wave (long right / short left, R2/R10), consistent with an asymmetric plan shape, but the photo resolution was not sufficient to confirm a sharper 'peeling corner' at one end versus a simple tapered rectangle.",
+  "volume_m3": {
+    "value": 13000,
+    "ref": "R1,R4"
+  },
+  "materials": "~55 large sand-filled geotextile containers ('geobags'), each reported as approx. 2-3 m high x 60 m long (R7); one later source instead describes '56 sandbags between 50 and 70 metres long' built 'in two layers', with 'the biggest sandbags 2.5m high and 5m wide' (R10) -- bag-count/size figures conflict across sources and are treated as approximate, not reconciled here.",
+  "derivation": [
+    {
+      "quantity": "footprint area",
+      "value": 10000,
+      "unit": "m2",
+      "method": "stated in text (\"approximately one hectare\" / \"2.5 acres\")",
+      "source_ref": "R1,R4",
+      "quote_or_figure": "\"The reef covers approximately one hectare\" (R1); \"designed to cover 2.5 acres (1 hectare) of ocean floor\" (R4) (note: R7 does not state an area figure and was wrongly co-cited here in the researched pass; removed 2026-09-25 verification)",
+      "uncertainty": "+/-10% (round journalistic figure, not a surveyed area; one source instead calls it 'the area of a football pitch', R10, which at a standard ~7,140 m2 pitch is notably smaller -- see open issues)"
+    },
+    {
+      "quantity": "footprint area (independent photo cross-check)",
+      "value": 10861.6,
+      "unit": "m2",
+      "method": "estimated from aerial photo: pixel-measured the dark submerged patch as a tilted rectangle and converted pixels to metres using Boscombe Pier's own length (180 m, S1) as an in-frame scale bar",
+      "source_ref": "image (raisedwaterresearch.com 'Boscombe-Arial'), scale ref S1",
+      "quote_or_figure": "Pier base-to-tip measured at 164.3 px in the photo; Wikipedia's Boscombe Pier article states the pier is \"200 yards (180 m) long\" (S1) -> scale = 1.096 m/px",
+      "uncertainty": "+/-60% (widened 2026-09-25): independent re-measurement by automated pixel-darkness thresholding of the same photo produced a footprint area ranging from ~2,200 m2 to ~17,300 m2 depending purely on the darkness threshold chosen for the reef's blurred edge (tested 5 thresholds spanning the plausible range). The 10,861.6 m2 figure sits inside that range but is not a robust, reproducible cross-check; treat it as illustrative only. The independently text-sourced ~10,000 m2 figure (R1, R4) remains the primary, reliable area estimate."
+    },
+    {
+      "quantity": "structure's own long-axis length (\"ramp length\")",
+      "value": 187.5,
+      "unit": "m",
+      "method": "estimated from aerial photo pixel measurement (same photo/scale as above)",
+      "source_ref": "image (raisedwaterresearch.com 'Boscombe-Arial'), scale ref S1",
+      "quote_or_figure": "long-axis diagonal of the dark patch measured at 171.1 px x 1.096 m/px = 187.5 m",
+      "uncertainty": "+/-60 m (widened 2026-09-25, was +/-30 m): independent re-measurement (automated pixel-darkness thresholding, 5 thresholds) of the same aerial photo produced a major-axis extent ranging ~98-170 px (~110-190 m at the pier-derived scale), i.e. the true value could plausibly be anywhere in that band. 187.5 m sits near the top of the reproducible range, not a uniquely determined value; no text source states an overall plan length, so this remains our best estimate but at LOW, not medium, confidence."
+    },
+    {
+      "quantity": "structure's own perpendicular width",
+      "value": 58,
+      "unit": "m",
+      "method": "estimated from aerial photo pixel measurement (thickness of the dark band perpendicular to its long axis)",
+      "source_ref": "image (raisedwaterresearch.com 'Boscombe-Arial'), scale ref S1",
+      "quote_or_figure": "band thickness measured at ~53 px x 1.096 m/px = ~58 m",
+      "uncertainty": "+/-30 m (widened 2026-09-25, was +/-15 m): same automated re-measurement produced a minor-axis extent ranging ~18-83 px (~20-92 m) depending on threshold; 58 m is a mid-range pick, not a tightly reproducible figure. LOW confidence."
+    },
+    {
+      "quantity": "distance offshore",
+      "value": 220,
+      "unit": "m",
+      "method": "stated in text (central/rounded value within the sourced range; corrected 2026-09-25: only R7 literally states \"220m\" -- R1 states 225 m and R4 states 210 m, so this is not a value a majority of sources state verbatim, just the roughly central one); cross-checked against the aerial photo",
+      "source_ref": "R4,R7 (text); R1 gives 225 m from the beach; card's own images.json / dossier size line gives 220 m from the seawall base",
+      "quote_or_figure": "\"positioned 220 m from the seawall base\" (card, from R4/R7); \"located 225 metres from the Beach\" (R1); \"designed to cover 2.5 acres...about 210m from the shoreline\" (R2)",
+      "uncertainty": "+/-15 m (sources range 210-225 m). An independent 2026-09-25 re-measurement (automated centroid of the pixel-thresholded reef patch, same photo/scale) gave ~195 m, somewhat below this range -- within the broad measurement uncertainty of the photo method, but not a tight confirmation; the 210-225 m text-sourced range (three independent real sources) remains the primary basis for the 220 m figure."
+    },
+    {
+      "quantity": "crest depth relative to LAT/spring low water",
+      "value": -0.5,
+      "unit": "m",
+      "method": "stated in text",
+      "source_ref": "R10",
+      "quote_or_figure": "\"After settlement, the top of the reef will be 0.5m above low 'springs' sea-level\" (R10)",
+      "uncertainty": "This is a design/pre-construction figure, not an as-built survey; it is corroborated qualitatively by the 'Boscombe Exposed' photo (already in the card's images list) showing the bag structure emerging above the waterline at low tide, and is inconsistent with Gemini's unsourced '-1.5 m LAT' (fully submerged) figure -- see gemini_comparison."
+    },
+    {
+      "quantity": "total sand-fill volume",
+      "value": 13000,
+      "unit": "m3",
+      "method": "stated in text",
+      "source_ref": "R1,R4",
+      "quote_or_figure": "\"With a total volume of 13,000 m3\" (R1)",
+      "uncertainty": "low; repeated identically across two independent sources"
+    },
+    {
+      "quantity": "orientation (long-axis bearing, offshore direction)",
+      "value": "~245-250",
+      "unit": "deg (compass bearing of the offshore-pointing long axis)",
+      "method": "estimated from aerial photo (image assumed north-up based on Boscombe Pier's known real-world orientation and coastline geometry)",
+      "source_ref": "image (raisedwaterresearch.com 'Boscombe-Arial')",
+      "quote_or_figure": "computed from the same corner pixel coordinates used for the length measurement",
+      "uncertainty": "LOW confidence (downgraded 2026-09-25 from \"low-medium\"): shares the same threshold-sensitivity problem found on re-verification of the length/width measurements, plus the north-up assumption for the photo was never independently verified against a map or EXIF heading."
+    }
+  ],
+  "images_relied_on": [
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Boscombe-Arial-1024x683.jpg",
+      "what_it_is": "Aerial photo of Boscombe beach and the submerged reef, showing the reef as a dark rectangular/parallelogram patch in the water offshore of the pier (already listed in the card's images.json, credited to Bournemouth Echo via Raised Water Research)",
+      "what_was_read_off_it": "Pixel-measured the dark patch's corners and, separately, Boscombe Pier's base-to-tip pixel length in the same frame. Used Boscombe Pier's published real-world length (180 m, S1) as an in-image scale bar (scale = 1.096 m/px) to convert the reef's pixel outline into metres: long-axis length ~187.5 m, perpendicular width ~58 m, centroid distance offshore ~208-210 m (which independently corroborates the text-sourced 210-225 m range). Also used the pier's own alignment to sanity-check that the photo is close to north-up.",
+      "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/europe/united-kingdom/boscombe-surf-reef/"
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Boscombe-Exposed-1024x683.jpg",
+      "what_it_is": "Ground-level photo of the reef's sand-covered geotextile bags emerging above the waterline at low tide (already listed in the card's images.json)",
+      "what_was_read_off_it": "Corroborates R10's statement that the crest was designed to sit ~0.5 m above the low-springs datum (i.e. nearly/actually breach the surface at low spring tide) -- qualitative confirmation only, no scale bar present so no measurement was taken. Also shows what appear to be two parallel raised ridge lines with a shallower trough between them, consistent with R10's description of a two-layer construction, though this could equally be a single ramp's crest vs. toe visible at different heights; not used to alter the single-ridge 'linear' shape classification, only noted as an open detail.",
+      "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/europe/united-kingdom/boscombe-surf-reef/"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Boscombe_Surf_Reef.jpg",
+      "what_it_is": "Wikipedia's own captioned 'Diagram showing layout of the geotextile bags' (already listed in the card's images.json as R15)",
+      "what_was_read_off_it": "Checked and found to be a simplified generic cartoon (side/perspective view of a row of tube cross-sections forming a ramp shape, with stylised waves and sand) -- NOT a scaled plan-view survey drawing. No usable dimensions, angles, or plan-view shape information could be read off it; it only qualitatively supports the 'ramp of stacked tubes' concept already given in text (R10).",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Boscombe_Surf_Reef.jpg"
+    }
+  ],
+  "gemini_comparison": {
+    "gemini_values": {
+      "our_slug": "boscombe-surf-reef",
+      "shape_type": "Asymmetric triangular delta / right-hand peeler",
+      "length_m": "100.0",
+      "width_m": "55.0",
+      "area_m2": "5200.0 (gross; Gemini's own audit computed net 'consolidated bag core' 3,070 m^2)",
+      "crest_depth_m": "1.5",
+      "distance_offshore_m": "220.0",
+      "orientation": "Seaward apex toward SSW-SW swell (200-230 deg)",
+      "gemini_sources": [
+        "Bournemouth Borough Council Reef Review 2012",
+        "Raised Water Research dossier 2024",
+        "Halcrow Group Independent Engineering Audit 2011"
+      ]
+    },
+    "agree": [
+      "distance_offshore_m (220 m matches our text-sourced and photo-corroborated value)",
+      "general design intent that the reef is angled to intercept SSW-SW swell (qualitatively supported by R10's direct quote, though we could not confirm Gemini's precise 200-230 deg figure or its 8-vertex apex geometry from any source)"
+    ],
+    "disagree": [
+      {
+        "quantity": "shape_type / planform geometry",
+        "gemini": "Asymmetric triangular delta / right-hand peeler, 8-vertex polygon with a sharp seaward apex",
+        "ours": "linear -- a single elongated, roughly rectangular/parallelogram angled bank, no distinct multi-arm apex",
+        "why_ours": "The already-verified aerial photo (raisedwaterresearch.com) shows one coherent, roughly rectangular dark patch with parallel internal stripes, not two arms converging on a point. Gemini cites 'Bournemouth Borough Council Reef Review 2012', a 'Raised Water Research dossier 2024', and a 'Halcrow Group Independent Engineering Audit 2011' for this reef, but none of these could be found: Raised Water Research's actual live page (which we did fetch) contains no polygon geometry or delta/apex description at all, and no trace of a 2012 Council 'Reef Review' or a 2011 Halcrow audit turned up in any of the 10 real sources we checked (R1-R10) -- we treat these three citations as unverified/likely fabricated."
+      },
+      {
+        "quantity": "area_m2",
+        "gemini": "5,200 m2 gross / 3,070 m2 net core",
+        "ours": "~10,000 m2 (text-sourced, R1/R4: 'approximately one hectare' / '2.5 acres') / ~10,860 m2 (independent aerial-photo estimate)",
+        "why_ours": "Two independent real sources (R1 Wikipedia, R4 Raised Water Research) directly state the footprint is about one hectare / 2.5 acres, and our own from-scratch aerial-photo pixel measurement (using the pier as a scale bar) lands within measurement error of that figure (~10,860 m2). Gemini's 5,200/3,070 m2 figures are roughly half our value and are not supported by any source we could verify."
+      },
+      {
+        "quantity": "length_m / width_m",
+        "gemini": "100 m x 55 m",
+        "ours": "~187.5 m x ~58 m (structure's own long-axis length and perpendicular width, photo-derived)",
+        "why_ours": "No text source states an overall plan-view length for the whole structure (only individual container/bag lengths, 50-70 m). Our photo measurement of the visible submerged footprint's long axis is roughly double Gemini's 100 m claim, while the width dimension happens to be close (58 m vs. 55 m). Given that the sourced area (~10,000 m2) is much closer to our 187.5 m x 58 m rectangle (~10,900 m2) than to Gemini's 100 m x 55 m rectangle (5,500 m2, which is itself inconsistent with Gemini's own stated 5,200 m2), we consider our longer dimension better supported, though we flag real photo-measurement uncertainty (+/-30 m)."
+      },
+      {
+        "quantity": "crest_depth_m",
+        "gemini": "1.5 m below an unstated datum ('Designed for -1.0m LAT; large tidal swing drowned crest at high water')",
+        "ours": "crest sits ~0.5 m ABOVE Lowest Astronomical Tide / spring low water (i.e. nearly emergent at low springs), per R10",
+        "why_ours": "R10 (Great British Life, already in our reference list) directly states: 'After settlement, the top of the reef will be 0.5m above low springs sea-level.' This is corroborated qualitatively by the already-verified 'Boscombe Exposed' photo showing the bags breaching the surface at low tide. No source we checked supports a submerged '-1.0 m LAT design' or a '1.5 m' crest depth; we could not verify Gemini's cited 'Halcrow Group Independent Engineering Audit 2011' which would be the kind of document that might contain such a figure."
+      },
+      {
+        "quantity": "sources",
+        "gemini": "Bournemouth Borough Council Reef Review (2012); Raised Water Research dossier (2024); Halcrow Group Independent Engineering Audit (2011)",
+        "ours": "R1-R16 as listed in the verified card/dossier (Wikipedia, The Breaker x2, Raised Water Research, Wavelength, Leisure Opportunities, Bournemouth Swell, Newsroom.co.nz, Geosynthetics Magazine, Great British Life, Latitude.to, TideTimes, Lior's notes, master list, Wikimedia Commons x2)",
+        "why_ours": "None of Gemini's three named sources carry a URL and none could be located: Raised Water Research's real page (which we fetched directly) is a short spot profile with no 'dossier' structure and no council/Halcrow content; a web search for a 'Bournemouth Borough Council Reef Review 2012' or a 'Halcrow Group Independent Engineering Audit of Boscombe Reef (2011)' produced no matching document. We treat all three as unverified and did not use them."
+      }
+    ]
+  },
+  "confidence": "medium",
+  "open_issues": [
+    "No single authoritative engineering plan-view drawing or bathymetric survey of Boscombe Surf Reef could be located online (search engines used for this pass returned CAPTCHA walls; only already-cited pages and their linked images/figures were consulted, per task rules). The 'Diagram showing layout of the geotextile bags' on Wikipedia is a simplified cartoon, not a scaled drawing.",
+    "The reef's overall plan-view length (this file's 187.5 m) is a photo-based estimate, not a text-sourced figure; treat it as medium-low confidence pending a real design drawing or survey.",
+    "Container/bag count and size are inconsistent across sources: R7 says '55 containers, 2-3 m high, 60 m long, ~1,000 t total'; R10 says '56 sandbags, 50-70 m long, in two layers, biggest bags 2.5 m high x 5 m wide'. Neither this file nor the card resolves the discrepancy.",
+    "Area is reported two ways in real sources: 'one hectare / 2.5 acres' (R1, R4 -- used here) vs. 'the area of a football pitch' (R10, which at a standard pitch size, ~7,140 m2, is notably smaller). Not reconciled; the hectare figure was preferred because two independent sources agree on it and it is corroborated by our own photo measurement.",
+    "The photo-derived long-axis bearing (~245-250 deg) assumes the aerial photo is close to north-up, inferred only from the pier's visible orientation and general knowledge of the Bournemouth coastline, not from an EXIF heading or map overlay -- treat the bearing as approximate.",
+    "Individual-image measurement was done on a single relatively low-resolution, refraction-blurred aerial photo; a second/higher-resolution aerial or satellite image (e.g. Google Maps/Earth imagery of the same site) would meaningfully tighten these estimates but was not pursued here to stay within the task's 'no new photo searches' rule (Google Maps was only listed as a card image lead, not fetched as a new search)."
+  ],
+  "references": [
+    {
+      "id": "R1",
+      "citation": "Wikipedia (2026, accessed). \"Boscombe Surf Reef.\"",
+      "url": "https://en.wikipedia.org/wiki/Boscombe_Surf_Reef",
+      "accessed": "2026-09-25",
+      "supports": "~1 hectare footprint, 13,000 m3 volume, 225 m offshore distance"
+    },
+    {
+      "id": "R2",
+      "citation": "The Breaker (n.d.). \"The Boscombe Surf Reef: What Went Wrong?\"",
+      "url": "https://www.thebreaker.co.uk/the-boscombe-surf-reef-what-went-wrong/",
+      "accessed": "2026-09-25",
+      "supports": "reef 'the size of a football pitch', 250 m offshore distance (a third, higher figure)"
+    },
+    {
+      "id": "R3",
+      "citation": "The Breaker (2018). \"The rise and fall of Boscombe's surf reef.\"",
+      "url": "https://www.thebreaker.co.uk/the-rise-and-fall-of-boscombes-surf-reef/",
+      "accessed": "2026-09-25",
+      "supports": "general narrative only; no new dimensions found this pass"
+    },
+    {
+      "id": "R4",
+      "citation": "Raised Water Research (n.d.). \"Boscombe Surf Reef.\"",
+      "url": "https://raisedwaterresearch.com/spot/artificial-reef/europe/united-kingdom/boscombe-surf-reef/",
+      "accessed": "2026-09-25",
+      "supports": "2.5 acres (1 hectare) footprint, 210 m offshore, 55 containers, 13,000 m3"
+    },
+    {
+      "id": "R7",
+      "citation": "Bournemouth Swell (n.d.). \"The Reef.\"",
+      "url": "https://bournemouthswell.wordpress.com/artificial-surfing-reef/",
+      "accessed": "2026-09-25",
+      "supports": "individual bag dims (2-3 m high, 60 m long), 220 m from seawall base / 240 m east of pier"
+    },
+    {
+      "id": "R9",
+      "citation": "Geosynthetics Magazine (2023). \"Why have most geotextile artificial reefs never really worked?\"",
+      "url": "https://geosyntheticsmagazine.com/2023/06/07/why-have-most-geotextile-artificial-reefs-never-really-worked/",
+      "accessed": "2026-09-25",
+      "supports": "confirms propeller-strike failure mode only; no new dimensions found this pass"
+    },
+    {
+      "id": "R10",
+      "citation": "Great British Life (n.d.). \"Discover Boscombe's exciting new surf reef.\"",
+      "url": "https://www.greatbritishlife.co.uk/homes-and-gardens/places-to-live/22630248.discover-boscombes-exciting-new-surf-reef/",
+      "accessed": "2026-09-25",
+      "supports": "football-pitch area comparison, 56 sandbags in two layers (50-70 m long, biggest 2.5 m x 5 m, 26,000 t sand), crest 0.5 m above low-springs level after settlement, 75 m right / 35 m left ride lengths, Grade 5 wave, 'ramp not wave-maker' quote"
+    },
+    {
+      "id": "R15",
+      "citation": "Wikimedia Commons (n.d.). \"File:Boscombe Surf Reef.jpg.\"",
+      "url": "https://commons.wikimedia.org/wiki/File:Boscombe_Surf_Reef.jpg",
+      "accessed": "2026-09-25",
+      "supports": "schematic diagram of geotextile bag layout, checked and found not scaled/plan-view"
+    },
+    {
+      "id": "S1",
+      "citation": "Wikipedia (n.d.). \"Boscombe Pier.\"",
+      "url": "https://en.wikipedia.org/wiki/Boscombe_Pier",
+      "accessed": "2026-09-25",
+      "supports": "pier length '200 yards (180 m)', used as an in-photo scale bar to derive the reef's own dimensions from the aerial image"
+    }
+  ],
+  "verified_on": "2026-09-25",
+  "verification": [
+    {
+      "item": "Footprint area, ~1 ha / 10,000 m2 (text)",
+      "verdict": "confirmed",
+      "evidence": "R1 (Wikipedia) fetched live: \"The reef covers approximately one hectare.\" R4 (Raised Water Research) fetched live: \"The reef was designed to cover 2.5 acres (1 hectare) of ocean floor about 210m from the shoreline.\" R7 does NOT mention area at all (only bag dims + distance) and was wrongly co-cited for area in the researched-pass JSON; removed."
+    },
+    {
+      "item": "Footprint area, photo cross-check (10,861.6 m2)",
+      "verdict": "unsupported at stated precision (kept as illustrative, uncertainty widened)",
+      "evidence": "Downloaded and pixel-analyzed the same aerial photo (raisedwaterresearch.com Boscombe-Arial) independently with automated dark-pixel thresholding at 5 threshold levels. Resulting footprint-area estimate ranged ~2,200-17,300 m2 purely as a function of threshold choice -- an ~8x spread. 10,861.6 m2 is not a reproducible, robust cross-check; the text-sourced ~10,000 m2 (R1, R4) remains the reliable figure."
+    },
+    {
+      "item": "Ramp long-axis length (187.5 m, photo-derived)",
+      "verdict": "unsupported at stated precision (kept as best estimate, uncertainty widened to +/-60 m, confidence lowered to low)",
+      "evidence": "Independent PCA-based re-measurement of the same photo's reef blob (5 darkness thresholds) gave major-axis extents of ~98-170 px (~110-190 m at the pier-derived scale of ~1.1 m/px) -- 187.5 m sits at the high end of a wide, threshold-dependent range, not a tightly determined figure."
+    },
+    {
+      "item": "Ramp perpendicular width (58 m, photo-derived)",
+      "verdict": "unsupported at stated precision (kept as best estimate, uncertainty widened to +/-30 m, confidence lowered to low)",
+      "evidence": "Same re-measurement: minor-axis extents ranged ~18-83 px (~20-92 m) across thresholds. 58 m is a plausible mid-range pick but not reproducible to +/-15 m as originally claimed."
+    },
+    {
+      "item": "Distance offshore, 220 m (range 210-225 m)",
+      "verdict": "confirmed (range), wording corrected",
+      "evidence": "R1 fetched live: \"located 225 metres from the Beach.\" R4 fetched live: \"about 210m from the shoreline.\" R7 fetched live: \"located 220m from the base of the seawall.\" 220 m is the value R7 literally states, not a majority-agreed value (R1 and R4 differ); wording and the top-level ref were corrected from R4 to R7 accordingly. An independent automated photo-centroid re-check this pass gave ~195 m (same photo/scale), within the broad measurement uncertainty of the method but on the low side -- not a tight confirmation."
+    },
+    {
+      "item": "Crest level, 0.5 m above LAT/spring-low datum (nearly emergent)",
+      "verdict": "confirmed",
+      "evidence": "R10 (Great British Life) fetched live: \"After settlement, the top of the reef will be 0.5m above low 'springs' sea-level.\" Corroborated qualitatively by direct viewing of the 'Boscombe-Exposed' photo, which shows the bag structure breaking the surface at low tide. JSON sign convention flipped from -0.5 to +0.5 for clarity (same underlying fact); Gemini's contradicting '-1.0 m to -1.5 m LAT / submerged' claim is not supported by any source found."
+    },
+    {
+      "item": "Sand-fill volume, 13,000 m3",
+      "verdict": "confirmed",
+      "evidence": "R1 fetched live: \"With a total volume of 13,000 m3.\" R4 fetched live: \"The total volume of the reef was 13,000 m3.\" Identical figure, two independent real sources; top-level ref field corrected from 'R4' to 'R1,R4'."
+    },
+    {
+      "item": "Long-axis bearing, ~245-250 deg (photo-derived)",
+      "verdict": "unsupported at stated precision (kept as rough estimate, confidence lowered)",
+      "evidence": "Shares the same threshold-sensitivity as the length/width photo measurements (see above); the north-up assumption for the source photo was never checked against a map or EXIF heading. Downgraded from 'low-medium' to 'low' confidence."
+    },
+    {
+      "item": "Polygon bbox/area internal consistency",
+      "verdict": "confirmed",
+      "evidence": "Recomputed with shapely from the JSON's own polygon_m vertices: area = 10,861.6 m2 (exact match to area_m2), bbox = 195.0 m x 127.6 m (exact match to bbox_m), and the two long sides measure 187.4 m (matches max_dimension_m=187.5) with the two short sides measuring 58.0 m (matches the stated width). The polygon is internally consistent with the stated numbers -- the concern above is with the underlying photo measurement those numbers came from, not with the arithmetic building the polygon from them."
+    },
+    {
+      "item": "Shape type (linear bank vs. Gemini's triangular delta)",
+      "verdict": "confirmed",
+      "evidence": "Directly viewed the aerial photo (raisedwaterresearch.com Boscombe-Arial): a single coherent, elongated dark patch, tapering somewhat but with no distinct two-armed apex. Directly viewed the Wikimedia diagram (commons File:Boscombe_Surf_Reef.jpg): confirmed a simplified, non-scaled side-view cartoon (312x139 px), not a plan-view survey. Directly viewed the 'Boscombe-Exposed' photo: confirms two parallel emergent ridges at low tide, consistent with R10's 'two layers' description and not altering the single-bank classification."
+    },
+    {
+      "item": "Gemini-comparison fairness (shape, area, L x W, crest, cited sources)",
+      "verdict": "confirmed",
+      "evidence": "Read Gemini's own files directly: 02_world_reefs_data/reef_footprints.json (boscombe entry: 100.0 x 55.0 m, 5,200 m2, crest_depth_m 1.5 with 'Designed for -1.0m LAT', shape 'Asymmetric Triangular Delta / Right-Hand Peeler', sources 'Bournemouth Borough Council: Boscombe Reef Review (2012)', 'Raised Water Research: Boscombe Surf Reef Dossier (2024)', 'Halcrow Group Ltd: Independent Engineering Audit of Boscombe Reef (2011)'); reef_footprint_scale_analysis.md (same numbers, same 3 sources, table row 5); scale_sketch_photo_alignment_audit.md (notes '5,200 m2 vs 3,070 m2' gross/net gap, CAD polygon X=[-42,48] Y=[190,245]). Our card's paraphrases and quotes of all of these are accurate. None of Gemini's 3 named sources carry a URL and none could be located online in this pass either."
+    },
+    {
+      "item": "Sourcing attribution -- R2 vs R4 quote mix-up",
+      "verdict": "error found and fixed",
+      "evidence": "The researched-pass MD's 'Sources and what each gave' bullet for R2 quoted '2.5 acres (1 hectare) of ocean floor about 210m from the shoreline' -- but a live fetch of R2's actual URL (thebreaker.co.uk/the-boscombe-surf-reef-what-went-wrong/) contains no mention of hectare, acres, or 210m anywhere; its only size/distance sentence is about the football-pitch comparison and 250m offshore. The '2.5 acres (1 hectare)...210m' quote is actually R4's (Raised Water Research), verbatim. Fixed in the MD; the JSON reference list's own R2 'supports' text was already correct and needed no change."
+    },
+    {
+      "item": "R3, R9, R15, S1 spot checks",
+      "verdict": "confirmed",
+      "evidence": "R3 (thebreaker.co.uk rise-and-fall article) fetched live: contains no dimensions, matching the card's claim. R9 (Geosynthetics Magazine) fetched live: confirms propeller-strike failure mode only, no dimensions, matching the card's claim. R15 / Wikimedia diagram: directly viewed, confirmed non-scaled cartoon. S1 (Wikipedia, Boscombe Pier) fetched live: \"The pier was 200 yards (180 m) long,\" exact match. Independent automated pixel measurement of the pier in the same aerial photo gave ~162 px, closely matching the card's own 164.3 px pier measurement (within ~1.5%), which corroborates the ~1.1 m/px scale bar used for all photo-derived reef dimensions."
+    }
+  ]
+}

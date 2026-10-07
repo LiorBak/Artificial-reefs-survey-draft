@@ -1,0 +1,38 @@
+{
+  "_comment": "Config of the combined 'All (compare)' scene (src/export_combined.py). Per slug: how to read the model's own viewer. JS expressions are evaluated in the loaded viewer page with M = window.REEF_MODEL. offshore_scene_xz = the direction 'offshore' in the viewer's three.js scene (X, Z), taken from the model's frame note (see 'frame_note'); hand = +1 if the model's canonical (x along the shore, y offshore) turns clockwise on a north-up map (then combined X = x), -1 otherwise (combined X = -x). Every value is re-checked against the exported meshes; a mismatch fails the check and the reef is shown as 'not in comparison'.",
+  "tolerance": {"area_rel": 0.25, "crest_m": 0.2, "centroid_m": 6.0, "shore_m": 1.5, "offshore_deg": 20},
+  "models": {
+    "prattes-reef-el-segundo": {
+      "frame_note": "model.js frame: x alongshore toward 155 deg, y offshore toward 245 deg (x turned 90 deg clockwise); viewer maps (X = x, Y = z, Z = y)",
+      "offshore_scene_xz": [0, 1],
+      "hand": 1,
+      "polygon": "M.reef.toe_polygon_xy_m",
+      "crest_z": "(function(){var s=M.reef.states.filter(function(x){return x.id===M.reef.default_state;})[0];return Math.max(s.top_z_apex_msl_m,s.top_z_tips_msl_m);})()",
+      "crest_note": "default state B: max of top_z_apex_msl_m and top_z_tips_msl_m (the top is parallel to the bed)"
+    },
+    "boscombe-surf-reef": {
+      "frame_note": "model.js frame: x alongshore bearing 83.4, y offshore bearing 173.4 (x turned 90 deg clockwise); viewer maps (X = x, Y = z, Z = y); default reef mode 'idealised'",
+      "offshore_scene_xz": [0, 1],
+      "hand": 1,
+      "polygon": "M.reef.toe_polygon_xyzz.map(function(p){return [p[0],p[1]];})",
+      "crest_z": "M.reef.design.crest_msl_m",
+      "crest_note": "design crest +0.5 m ACD = -0.9 m MSL (reef.design.crest_msl_m)"
+    },
+    "bunbury-airwave": {
+      "frame_note": "model.js frame: x alongshore bearing 12.3, y seaward bearing 282.3 (x turned 90 deg anticlockwise); viewer maps (X = x, Y = z, Z = -y)",
+      "offshore_scene_xz": [0, -1],
+      "hand": -1,
+      "polygon": "M.reef.toe_polygon_m.map(function(p){return [p[0]+M.reef.centre_default[0],p[1]+M.reef.centre_default[1]];})",
+      "crest_z": "(function(){var S=M.seabed,x=M.reef.centre_default[0],y=M.reef.centre_default[1],fx=(x-S.x0)/S.dx,fy=(y-S.y0)/S.dy,i=Math.floor(fx),j=Math.floor(fy),tx=fx-i,ty=fy-j;function g(a,b){return S.z[b][a];}var zb=(g(i,j)*(1-tx)+g(i+1,j)*tx)*(1-ty)+(g(i,j+1)*(1-tx)+g(i+1,j+1)*tx)*ty;return zb-(M.frame.msl_ahd||0)+M.reef.height_default_m;})()",
+      "crest_note": "no stored crest level: seabed grid (z in AHD, bilinear at the reef centre) minus MSL-AHD offset 0.1 m, plus height_default_m (2.0 m)"
+    },
+    "palm-beach-gold-coast": {
+      "frame_note": "model.js frame: x alongshore toward 334.3, y offshore toward 64.3 (x turned 90 deg clockwise); viewer converts to east/north/up: scene (X = E, Y = up, Z = -N)",
+      "offshore_scene_xz": [0.9011, -0.4337],
+      "hand": 1,
+      "polygon": "M.reef.toe_polygon",
+      "crest_z": "M.reef.crest_z",
+      "crest_note": "reef.crest_z (-1.5 m MSL, council design level)"
+    }
+  }
+}

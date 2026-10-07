@@ -1,0 +1,59 @@
+{
+  "slug": "mount-maunganui-reef",
+  "checked_on": "2026-09-25",
+  "images": [
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Mount-Reef-Arial-1024x575.jpg?v=1573519132",
+      "shows": "structure_visible",
+      "confidence": "medium",
+      "what_i_saw": "Aerial photo of Mauao headland and Mount Maunganui Beach. An overlaid white arrow points to a dark, elongated, angular shadow/patch under the water surface roughly 250-300 m offshore, matching the shape and rough position of the submerged geotextile-container reef. Zoomed crop confirms a distinct dark submerged shape at the arrow tip, consistent with structure visible through shallow, clear water rather than just a location marker over open sea."
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Mount-Reef-Installed.jpg",
+      "shows": "structure_visible",
+      "confidence": "high",
+      "what_i_saw": "Not a conventional photo despite the filename: a yellow/olive/blue false-colour bathymetric or sonar-style depth map (matches the card's own 'depicts' text, 'bathymetric/sonar-style image'). Shows several elongated tube shapes (the sand-filled geotextile containers) laid out in an angular arrangement consistent with the dossier's described V/L-shaped container layout, with a depth colour scale (-1.8 to -7.4) confirming this is a submerged-structure survey render, not a surface photo."
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Mount-Reef-Right-2-Mead-Borrero.jpg",
+      "shows": "reef_effect_visible",
+      "confidence": "high",
+      "what_i_saw": "A warm-toned sunset surf photo: a clean right-hand wave peeling with a surfer visible on the face, plus another wave and a person in the water in the foreground. No structure is visible (water is opaque, low sun angle) but the source page capton attributes this to Mead/Borrero and the card's own caption identifies it as 'a wave breaking right on the Mount Reef' -- i.e. the source explicitly places this wave at the reef, satisfying the reef_effect_visible test (structure submerged, but its effect -- a peeling right-hander -- is shown and captioned as being at the reef)."
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Mount-Reef-Multibean-2007.jpg",
+      "shows": "structure_visible",
+      "confidence": "high",
+      "what_i_saw": "Rainbow-coloured (yellow/orange/green/blue) multibeam depth-survey render with a north arrow and two grey arrows pointing at a gap between two of the elongated container arms. Clearly shows the reef's angular, multi-arm submerged footprint from directly above, matching the card's caption about a 2007 multibeam survey showing the structure's shape and 'a missing bag' (the gap the arrows indicate)."
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Mount-Reef-Deflated-Bag.jpg",
+      "shows": "structure_visible",
+      "confidence": "medium",
+      "what_i_saw": "CORRECTION TO CARD: this is NOT a photograph of a deflated bag as the card's 'kind: photo' and caption claim -- it is another false-colour bathymetric/survey render (green/yellow/orange terrain-style), very similar in style to the 2007 multibeam image, with a white arrow pointing into a gap at the reef's apex where a container is missing/deflated. It legitimately shows the reef's structure and the gap the caption describes, so the location classification (structure_visible) still holds, but the card's 'kind' field is wrong and should be corrected from 'photo' to 'diagram/survey image' to match what the file actually is."
+    },
+    {
+      "url": "https://www.google.com/maps/@-37.6471741,176.1986412,17z",
+      "shows": "could_not_load",
+      "confidence": "high",
+      "what_i_saw": "A live interactive Google Maps coordinate link, not a static image file -- there is nothing fixed to download or view (it renders whatever the current default satellite tile/zoom is when opened, and is not stable content). Per the rubric this is treated as could_not_load / not independently verifiable as a fixed 'image'; it functions only as a general location reference, not reef-specific evidence, and should not be relied on for scale/structure claims."
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=QsyH6FEzDx4",
+      "about": "about_the_reef",
+      "evidence": "Title 'MOUNT REEF DREAM TURNS INTO REALITY!', uploaded 2006-10-21, four days after the second (right) half of the geotextile structure was installed (4 Oct 2006) per the dossier's construction timeline. Uploader's own YouTube description (the only text track available -- yt-dlp confirms no captions/subtitles exist for this video: 'There are no subtitles for the requested languages'): a small 1.5 m north-easterly swell produced 'fast hollow right hand barrels and up to 50 metre rides on both left and right hand breaks,' explicitly describing waves breaking on the newly-completed reef structure, and the description links to the reef project's own (now defunct) site mountreef.co.nz. No transcript exists to quote further; classification rests on title + upload-date match + uploader description, all of which are internally consistent and specific to this structure (not just 'Mount Maunganui surfing' in general).",
+      "best_timestamp_seconds": 85
+    }
+  ],
+  "frames": [
+    {
+      "path": "03_images/video_frames/mount-maunganui-reef/QsyH6FEzDx4_0125.jpg",
+      "shows": "reef_effect_visible",
+      "what_i_saw": "Low-resolution (428x240 source) frame: a small, clean wave breaking left-to-right with a surfer/swimmer figure sitting just past the peak, plain ocean horizon, overcast sky, no coastline or landmark visible in frame. The wave shape (a short, peeling crest with no visible reef material) is consistent with the card's caption and the video's own framing (explicitly a shot of the partially-built reef at the point when the second half had just gone in) placing this wave at the reef's location -- the frame alone (with no coastline/landmark) could not independently prove the site, so this rests on the video's title/description/timeline match rather than the frame content itself."
+    }
+  ],
+  "hero_recommendation": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Mount-Reef-Multibean-2007.jpg",
+  "hero_rationale": "Best single image for illustrating this reef: it directly shows the actual as-built submerged structure's angular multi-arm shape from directly above (verifiable structure_visible, highest classification), it is dated/sourced (2007 multibeam survey, credited to Scarf 2009 via Raised Water Research), and it visually supports the dossier's central 'as-built vs design' story (arrows mark a missing/gap container). The aerial photo (Mount-Reef-Arial) is a reasonable second choice for a wide establishing shot of the town/beach, but the reef itself is only a faint dark shadow in it, which is weaker evidence than the multibeam render."
+}

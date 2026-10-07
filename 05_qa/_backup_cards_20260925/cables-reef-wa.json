@@ -1,0 +1,164 @@
+{
+  "slug": "cables-reef-wa",
+  "kind": "reef",
+  "verified_on": "2026-09-24",
+  "enriched_on": "2026-09-25",
+  "name": "Cable Station Reef (Cables Reef)",
+  "place": "Leighton / Cottesloe, Perth, Western Australia",
+  "country": "Australia",
+  "lat": -32.00,
+  "lon": 115.74,
+  "year": "1999 (construction Feb-Dec 1999; site studies from 1988; design/feasibility report to WA govt 1994) [R2][R5]",
+  "type": "Granite boulders (over 10,000 tons, boulders up to 3 m) placed on existing natural limestone reef/bedrock; one source (ICM) and another (The Inertia, quoting the Committee) instead describe the placed rock as limestone rather than granite — sources disagree [R1][R2][R4][R5][R6]",
+  "purpose": "Surf-only enhancement: create a more consistent, higher-quality surfing spot with left- and right-hand waves and a 'gently barreling' face for intermediate surfers, for swells 0.5-3.5 m at a peel angle of ~45°; not designed as a coastal-protection structure [R1][R2][R5]",
+  "size": "Length ~140 m (north-south), max width ~70 m, ~275 m offshore, water depth 3-6 m, reef crest 1-3 m below average tide (~1.5 m below lowest tide per a 2009 review); volume of rock ~3,500 m3 per Wikipedia vs ~5,000 m3 per Coastal Management (ICM) - sources disagree [R1][R2][R4][R5]",
+  "cost": "Approximately AUD $2 million for study, design and construction combined [R2][R5]",
+  "cost_usd_approx": "Roughly US$1.3-1.4 million; this is the agent's own arithmetic conversion using a typical 1999 AUD/USD rate of ~0.63-0.67, not a figure taken from any cited source",
+  "financed_by": "Western Australia Department of Sport and Recreation [R2]",
+  "motivation": "The site was a natural point break, Cable Station reef, surfed since the late 1940s and regarded highly through the 1950s-1980s, which local surfers (per Len Dibben) believed had been degraded by nearby coastal engineering works (Cottesloe Groyne, Dutch Inn Groyne and others) [R3]. This fed the WA Surf Rider Association's 1975 'Build a Reef' campaign (surfers John Balgarnie and Geoff Berry), carried through to the 1999 build by Cottesloe surfers John Balgarnie and Keith Campbell working with the Perth Artificial Surfing Reef Committee [R3][R6], with site-selection (M. Crawford, 1988) and a 1994 engineering feasibility report to the WA government preceding construction [R2][R5]",
+  "designer": "Client/advocacy body: Perth Artificial Surfing Reef Committee, driven by Cottesloe surfers John Balgarnie and Keith Campbell [R3][R6]. Site selection: M. Crawford (1988) [R2]. Design sketches enabling funding: Andrew Pitt, founder of SurfingRamps.com.au [R2]. Engineering studies: WA Department of Marine and Harbours and the University of Western Australia, reporting to the WA government in 1994 [R5]. Physical-model design work (random-wave flume, 1:40-scale model in a 40 m x 40 m wave basin, optimum bed slope 1:20, final 'boomerang-shaped' reef) documented in Hutt et al., 'Design Studies for an Artificial Surfing Reef: Cable Station, Western Australia' [R8]",
+  "contractor": "WA Limestone, using a barge-based cycle of transporting and placing the granite boulders onto the limestone bedrock [R2][R5]",
+  "status_now": "No removal or dismantling reported in any source found; the granite/limestone construction is repeatedly described as structurally durable ('stood the test of time,' better shape-retention than geotextile-bag reefs elsewhere) as of the most recent sources reviewed (2023-2024) [R2][R3][R5]. Wave-frequency consistency remains disputed among surfers",
+  "verdict": "mixed",
+  "hover_text": "A 140 m x 70 m granite-boulder reef built in 1999 for about AUD $2 million (state-government funded) to improve surfing off Cottesloe/Leighton, Perth; it proved structurally durable (unlike sand-filled geotextile-bag reefs elsewhere) but its wave frequency remains disputed, with a 2009 assessment finding only a handful of good surf days per month against the original design target [R1][R2][R5].",
+  "design_as_planned": "The Perth Artificial Surfing Reef Committee's design goal was a reef generating consistent left- and right-hand waves with a 'gently barreling' face, working across a 0.5-3.5 m swell range at a ~45° peel angle suited to intermediate surfers [R1][R2][R5]. Physical-model testing (random-wave flume; 1:40-scale model in a 40 m x 40 m wave basin) found an optimum bottom slope of 1:20 (matching the site's natural bed slope and slopes recorded at many surf breaks worldwide); several reef shapes were tested and a 'boomerang-shaped' form that minimised fill volume and merged with the existing natural reef was selected as final [R8]. Placing rock directly on the existing limestone bedrock (rather than a sand-filled geotextile-bag structure on sand) was explicitly meant to avoid sinking and remove the need for sand cover [R2][R5]",
+  "as_built_vs_design": "Construction began February 1999, reached ~90% completion by May 1999, but was not fully finished until December 1999 [R2][R5]. WA Limestone used a cyclical barge-transport-and-placement process, placing over 10,000 tons of quarried granite boulders (up to 3 m across) on the limestone bedrock [R2][R5]. One documented mid-project change: once it became clear the rock-on-bedrock method needed no sand cover and prevented sinking, that realisation 'led to an extension of the reef's southern end' beyond the original footprint [R5] — a design-to-built change, though no source gives a size or cost figure for the extension. No cost-overrun figure was found in any source reviewed",
+  "outcome": "Early academic monitoring was positive: Stacey Bancroft's 1999 study found peel angles closely matched the ~45° design target and surfable days exceeded predicted values across three measurement methods [R2][R5][R9]; Charitha Pattiaratchi's 1999-2001 monitoring concluded the reef was 'performing according to its design and... as well or better than predicted,' citing roughly four to six months of good conditions in 2000-2001, though the paper itself notes this 'has been disputed by some members of the local surfing population' [R9][R2]. A 2009 assessment by Andrew Pitt found the reef 'only provides a \"few surfable days per month\"' and does not reliably break chest-high waves, attributing this to the crest depth (~1.5 m below lowest tide) and the site's position in the swell shadow of Rottnest Island and other outer reefs, which block a significant share of incoming wave energy [R2][R5]. Wikipedia similarly notes performance is 'hampered by the presence of offshore islands and reefs which block a significant fraction of the wave energy' [R1]. Two conflicting headline frequency figures exist across sources: some describe ~150 rideable days per year, others (Pitt, 2009) describe only a handful of good days per month — this dossier could not resolve which is more current [R2][R5][R6]. Structurally the reef has proven durable, with better shape-retention than geotextile-bag reefs built elsewhere in the same era [R2][R5]. No coastal-protection outcome (beach widening/salient formation) was reported, consistent with the reef never being designed for that purpose [R2]",
+  "why_worked_or_failed": "Cable Station Reef is repeatedly cited (with Burkitts Reef and Palm Beach Reef) as one of the few artificial surf reefs built from solid rock rather than sand-filled geotextile bags, and one of the few that did not structurally fail [R6][R7]. Surf scientist Shaw Mead told Newsroom (NZ) that 'while the structures have failed (except for Cable Station (limestone), Borth (rock), Palm Beach (rock) and Narrowneck (sandbags maintained)), all have created surfing waves that have replicated the designs' [R7]. The engineering logic: geotextile sand-filled containers fail because losing sand from even one bag changes the whole structure's shape, whereas rock placed directly on hard limestone bedrock does not sink, needs no sand cover, and keeps its shape under wave attack [R2][R5][R6]. It under-delivers on wave frequency because (1) the reef crest sits too deep for smaller/moderate swells to break reliably, against a 0.5 m minimum-swell design target [R2][R5]; and (2) the site lies in the lee of Rottnest Island and other offshore reefs which absorb/block a meaningful share of incoming swell energy [R1][R2][R5]",
+  "unexpected_results": "Access to the site has caused dune erosion, as surfers cross the cliff face on foot to reach the break [R2][R5]. Positively, Bancroft's monitoring found significant biological recolonisation of the placed rock surfaces, an ecological benefit not central to the original surf-only design brief [R2][R5]. No reports of increased fishing pressure, dangerous rips, drowning incidents, or litigation tied specifically to Cable Station Reef were found in the sources reviewed",
+  "could_be_better": "Andrew Pitt's 2009 assessment recommended making the reef shallower and extending its seaward 'nose' further offshore, to intercept more swell before it is blocked by Rottnest Island and the outer reefs, and to allow smaller swells to break as originally designed [R2][R5]. Surfers' recurring complaint across sources is consistency, not quality — they 'appreciate the quality of the wave when it breaks' but see 'lack of frequency as the biggest problem' [R1][R2][R5][R6]",
+  "relevance_to_israel": "Cable Station's core engineering lesson — build in solid rock placed directly on hard substrate rather than sand-filled geotextile bags on a sandy bed — removes tide-driven sand-burial risk as a failure mode, directly relevant to any Israeli reef design [R2][R5][R6]. Its real-world problem was insufficient swell energy reaching too-deep a crest, not excess swell [R1][R2][R5]; Lior's own field measurements at the Shikmona buoy off Haifa define the 'minimum surfable wave' window there as 0.45-0.6 m significant wave height (0.6-0.8 m maximum), with swell approach ~284-294 deg (WNW) and peak periods ~5.7-6.2 s — a substantially smaller, more marginal wave climate than Cable Station's 0.5-3.5 m design range [R15]. The transferable lesson is that a low-energy site like Haifa/Shikmona faces exactly Cable Station's failure mode (crest set too deep to reliably break the smaller end of the local swell range) if the crest is not kept shallow — the same design lever Pitt recommended for Cable Station, and the same one Lior's own 'Light Construction' concept sketch addresses by placing its crest near the natural Wave Breaking Depth line [R15]. A government/community-driven, surfer-advocated funding model (WA Dept of Sport and Recreation, after a 24-year advocacy campaign from 1975-1999) is also a plausible funding-model precedent for an Israeli project pursued via local surfer/NGO advocacy [R2][R3]",
+  "reviews": [
+    {
+      "who": "Len Dibben",
+      "role": "described as a 'WA Surf Industry legend'",
+      "quote_or_summary": "\"Cable Station reef used to break really good, a great right hander\" — attributing the natural break's later decline to nearby groyne construction (Dibben's own opinion as reported by the outlet, not an independently verified engineering finding)",
+      "outlet": "Surfing Down South",
+      "date": "2023-06-14",
+      "url": "https://surfingdownsouth.com.au/2023/06/14/cable-station-reef-since-the-1940s/"
+    },
+    {
+      "who": "Andrew Pitt",
+      "role": "surfer and founder of SurfingRamps.com.au; provided the original design sketches that helped secure funding",
+      "quote_or_summary": "His 2009 assessment found the reef 'only provides a \"few surfable days per month\"', blaming crest depth and Rottnest Island's swell-blocking effect; recommended shallowing the reef and extending its seaward nose",
+      "outlet": "Raised Water Research (\"Cables Reef\" spot page)",
+      "date": "undated",
+      "url": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/cables-reef/"
+    },
+    {
+      "who": "Shaw Mead",
+      "role": "surf scientist, co-founder of reef-design firm ASR",
+      "quote_or_summary": "\"except for Cable Station (limestone), Borth (rock), Palm Beach (rock) and Narrowneck (sandbags maintained)... all have created surfing waves that have replicated the designs (numerical and physical modelling)\" — naming Cable Station as one of the few reefs whose rock structure did not fail",
+      "outlet": "Newsroom (New Zealand)",
+      "date": "2021-12-06",
+      "url": "https://newsroom.co.nz/2021/12/06/the-kiwi-scientist-and-the-failed-surf-breaks/"
+    },
+    {
+      "who": "The Inertia (staff)",
+      "role": "surf outlet, byline not shown on the fetched page",
+      "quote_or_summary": "\"None of these locations were transformed into a world-class break, but each one had modest, measurable improvements in the quality of waves\" — on Cable Station, Burkitts and Palm Beach as the rare rock-built successes",
+      "outlet": "The Inertia",
+      "date": "publish date not visible on the fetched page",
+      "url": "https://www.theinertia.com/surf/why-have-most-artificial-reefs-never-really-worked/"
+    },
+    {
+      "who": "John Balgarnie and Keith Campbell",
+      "role": "Cottesloe surfers, driving local advocates for the 1999 build",
+      "quote_or_summary": "Named as the prime movers behind the 1999 construction; no direct quotes from either found in the sources reviewed",
+      "outlet": "Surfing Down South",
+      "date": "2023-06-14",
+      "url": "https://surfingdownsouth.com.au/2023/06/14/cable-station-reef-since-the-1940s/"
+    }
+  ],
+  "images": [
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Cables-Reef.jpg",
+      "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/cables-reef/",
+      "credit": "Raised Water Research — \"Cables Reef\" spot page",
+      "license": "Unknown / all rights reserved — link only, not downloaded into the project",
+      "depicts": "Main photo on the site's dedicated Cables Reef page: a breaking wave with several surfers in the lineup",
+      "kind": "photo",
+      "hotlink_ok": true
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/cabletopturn.jpg",
+      "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/cables-reef/",
+      "credit": "Raised Water Research — \"Cables Reef\" spot page",
+      "license": "Unknown / all rights reserved — link only, not downloaded into the project",
+      "depicts": "A surfer performing a top turn on a wave breaking at Cables Reef",
+      "kind": "photo",
+      "hotlink_ok": true
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Cables-Side-View.jpg",
+      "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/cables-reef/",
+      "credit": "Raised Water Research — \"Cables Reef\" spot page",
+      "license": "Unknown / all rights reserved — link only, not downloaded into the project",
+      "depicts": "Cross-sectional side-view engineering diagram of the reef structure, captioned \"Side view of Cables Reef\" on the page",
+      "kind": "diagram",
+      "hotlink_ok": true
+    },
+    {
+      "url": "https://surfingdownsouth.com.au/wp-content/uploads/2023/03/1948-Surfing-Cable-Station-Cottesloe.-water-pic-by-Don-Bancroft-Cropped.jpg",
+      "source_page": "https://surfingdownsouth.com.au/2023/06/14/cable-station-reef-since-the-1940s/",
+      "credit": "Don Bancroft (water photographer), via Surfing Down South",
+      "license": "Unknown / all rights reserved (historical amateur photo republished by Surfing Down South) — link only, not downloaded into the project",
+      "depicts": "1948 surfers riding canvas-covered stand-up boards and a toothpick surfboard at the natural Cable Station reef break, the pre-1999 natural reef at the same site",
+      "kind": "photo",
+      "hotlink_ok": true
+    },
+    {
+      "url": "https://i0.wp.com/surfingdownsouth.com.au/wp-content/uploads/2023/03/1957-City-Beach-BC-crew-Morris-10-heading-to-Cable-Stn-BC-pic.jpg",
+      "source_page": "https://surfingdownsouth.com.au/2023/06/14/cable-station-reef-since-the-1940s/",
+      "credit": "Via Surfing Down South, captioned \"1957 Brian Cole and his City Beach surfing mates heading to Cable Station reef\"",
+      "license": "Unknown / all rights reserved (historical amateur photo republished by Surfing Down South) — link only, not downloaded into the project",
+      "depicts": "1957 photo of surfers heading to the Cable Station reef break, pre-dating the 1999 artificial reef construction",
+      "kind": "photo",
+      "hotlink_ok": true
+    }
+  ],
+  "images_rejected": [
+    {
+      "url": "https://www.google.com/maps/@-32.0157,115.7497,17z/data=!3m1!1e3",
+      "reason": "Not a static image asset — this is a live Google Maps HTML page (Content-Type: text/html, not image/*), so it fails the download/content-type test outright. Even as a map lead, the reef structure is submerged and not clearly resolvable in satellite imagery, per the dossier's own caveat."
+    }
+  ],
+  "videos": [],
+  "lior_images": [
+    {
+      "path": "03_images/from_lior/goldcoast_pptx/image26.png",
+      "caption": "4-panel satellite comparison graphic (Narrowneck / Cables / Mount Reef / Pratte's Reef) from Lior's Gold Coast PPTX, originally sourced from raisedwaterresearch.com. Its 'bags falling apart' caption describes the sand-filled geotextile-bag reefs (Narrowneck, Mount Reef, Pratte's) and does NOT apply to Cables, which was built from granite/limestone rock, not bags — included here only as a location panel, with this correction attached [R13][R1][R2][R4][R5]. Flagged in Lior's own index as third-party/copyrighted; confirm reuse rights before publishing."
+    }
+  ],
+  "references": [
+    { "id": "R1", "citation": "Wikipedia contributors. \"Multi-purpose reef.\"", "url": "https://en.wikipedia.org/wiki/Multi-purpose_reef", "accessed": "2026-09-24", "supports": "1999 construction year, granite boulders on limestone, ~3,500 m3 volume, performance hampered by offshore islands/reefs blocking wave energy" },
+    { "id": "R2", "citation": "Raised Water Research. \"Cables Reef.\"", "url": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/cables-reef/", "accessed": "2026-09-24", "supports": "construction dates, dimensions, cost, financier, design-team names, Pitt's 2009 critique, ecological recolonisation, dune erosion, no salient formation" },
+    { "id": "R3", "citation": "Surfing Down South. \"Cable Station reef since the 1940s.\" 2023-06-14.", "url": "https://surfingdownsouth.com.au/2023/06/14/cable-station-reef-since-the-1940s/", "accessed": "2026-09-24", "supports": "pre-reef surf history, Len Dibben quote, groyne-driven decline, 1975 'Build a Reef' campaign, Balgarnie and Campbell as 1999 advocates" },
+    { "id": "R4", "citation": "Coastal Management (ICM). \"Artificial surf reefs\" comparison page.", "url": "https://www.coastalmanagement.com.au/artificial-surf-reefs", "accessed": "2026-09-24", "supports": "alternate material description ('limestone rock'), ~5,000 m3 volume figure" },
+    { "id": "R5", "citation": "SurferToday. \"The history of artificial surf reefs.\" (BLOCKED — Cloudflare 403 live and in Wayback)", "url": "https://www.surfertoday.com/surfing/the-history-of-artificial-surf-reefs", "accessed": "2026-09-24", "supports": "construction narrative, cost, funding body, durability vs. geotextile reefs — all independently corroborated via R2" },
+    { "id": "R6", "citation": "The Inertia. \"Why Have Most Artificial Reefs Never Really Worked?\"", "url": "https://www.theinertia.com/surf/why-have-most-artificial-reefs-never-really-worked/", "accessed": "2026-09-24", "supports": "framing of Cable Station/Burkitts/Palm Beach as rock-built non-failures, Committee credited with the project, 'modest, measurable improvements' quote" },
+    { "id": "R7", "citation": "Reid, M. & Sumner, B. \"The Kiwi scientist and the failed surf breaks.\" Newsroom (New Zealand), 2021-12-06.", "url": "https://newsroom.co.nz/2021/12/06/the-kiwi-scientist-and-the-failed-surf-breaks/", "accessed": "2026-09-24", "supports": "Shaw Mead's quote naming Cable Station as a structurally successful reef" },
+    { "id": "R8", "citation": "ResearchGate (listing/abstract). Hutt et al., \"Design Studies for an Artificial Surfing Reef: Cable Station, Western Australia.\"", "url": "https://www.researchgate.net/publication/264880547_Design_Studies_for_an_Artificial_Surfing_Reef_Cable_Station_Western_Australia", "accessed": "2026-09-24", "supports": "physical-model design process (random wave flume, 1:40-scale 40x40m basin, 1:20 slope, boomerang-shaped final design)" },
+    { "id": "R9", "citation": "ResearchGate (listing/abstract). Pattiaratchi, C. et al., \"Performance of an artificial surfing reef: Cable Station, Western Australia,\" COPEDEC VI, 2003.", "url": "https://www.researchgate.net/publication/235223428_Performance_of_an_artificial_surfing_reef_Cable_Station_Western_Australia", "accessed": "2026-09-24", "supports": "reef 'performing as well, or better, than expected', ~4-6 months conducive conditions 2000-2001" },
+    { "id": "R10", "citation": "surf-forecast.com. \"Cable Station Reef.\"", "url": "https://www.surf-forecast.com/breaks/Cable-Station-Reef", "accessed": "2026-09-24", "supports": "approximate coordinates, note that 'Artificial Reef' is a separate nearby break" },
+    { "id": "R11", "citation": "Wikipedia contributors. \"Fremantle.\"", "url": "https://en.wikipedia.org/wiki/Fremantle", "accessed": "2026-09-24", "supports": "Mediterranean climate classification and 'Fremantle Doctor' sea breeze, used for Israel-relevance comparison" },
+    { "id": "R12", "citation": "Wikipedia contributors. \"Tide.\"", "url": "https://en.wikipedia.org/wiki/Tide", "accessed": "2026-09-24", "supports": "general explanation of why Mediterranean Sea tides are small" },
+    { "id": "R13", "citation": "Lior's notes, 01_source_notes/pptx_goldcoast_swells_people_photos.md", "url": "", "accessed": "2026-09-24", "supports": "the 4-panel Narrowneck/Cables/Mount Reef/Pratte's Reef comparison graphic and its 'bags falling apart' caption, used to explain why that caption does not apply to Cables' rock construction" },
+    { "id": "R14", "citation": "Wikimedia Commons search results for \"Leighton Beach, Fremantle.\"", "url": "https://commons.wikimedia.org/", "accessed": "2026-09-24", "supports": "existence of general-area Leighton Beach/Fremantle photos; none found specifically depicting the reef structure itself" },
+    { "id": "R15", "citation": "Lior's notes, 01_source_notes/lior_suggestions_and_swell_heights.md", "url": "", "accessed": "2026-09-24", "supports": "Haifa/Shikmona minimum-surfable-wave definition and Lior's own crest-depth design intent, used in the Israel-relevance comparison" },
+    { "id": "R16", "citation": "Project research team, 02_research/00_master_list.md and 01_targets.md", "url": "", "accessed": "2026-09-24", "supports": "identification of this target and the flagged 1998-vs-1999 date discrepancy across sources" }
+  ],
+  "blocked_sources": [
+    "R5 (SurferToday) — HTTP 403 Cloudflare live, and the Wayback snapshot is itself a Cloudflare block page — could not be recovered by any method available; all facts independently corroborated via R2 except the 'WA Ministry of Sport and Recreation' naming variant (dropped) and one direct quote (de-quoted, marked pending)",
+    "R8 and R9 (ResearchGate) — HTTP 403 on direct fetch, but recovered via web-search snippets of the abstracts, so kept as corroborated rather than marked pending",
+    "https://www.researchgate.net/figure/Location-of-the-Cables-Artificial-Surfing-Reef-together-with-wave-and-water-level_fig2_235223428 — HTTP 403 on WebFetch during the media stage; relevant location/wave-data figure could not be retrieved"
+  ],
+  "gaps": [
+    "No source gives a surveyed/precise lat-lon for the reef structure itself; the coordinates used here are generic surf-forecast coordinates for the break, not a surveyed structure position [R10]",
+    "No source gives the exact dimensions or cost of the documented southern-end extension made during construction",
+    "No cost-overrun figure found in any source reviewed",
+    "No specific numeric tidal range (in meters) found for Fremantle/Cable Station or for Haifa/Israel from any fetched source",
+    "The granite-vs-limestone and ~3,500 m3-vs-~5,000 m3 volume discrepancies across sources could not be resolved and are presented as unresolved disagreements",
+    "No video content found for this site (0 videos, 0 frames) despite a search attempt during research"
+  ]
+}

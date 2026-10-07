@@ -1,0 +1,47 @@
+[
+  {
+    "url": "https://live-production.wcms.abc-cdn.net.au/45b719e6a29fdb237a75b4f095d83fbf",
+    "source_page": "https://www.abc.net.au/news/2022-09-03/gold-coast-no-stranger-to-beach-erosion/101381812",
+    "credit": "Supplied: City of Gold Coast (via ABC News Australia)",
+    "license": "link-only / all-rights-reserved news use — official council-supplied photo, embed/link only, do not redistribute",
+    "depicts": "Aerial view of the completed Palm Beach Reef, described in the ABC caption as \"made up of 60,000 tonnes of boulders\" with a boat visible for scale; confirmed HTTP 200 image/jpeg",
+    "date": "published 2022-09-03 (photo likely dates to reef's 2019 completion or shortly after)",
+    "kind": "photo"
+  },
+  {
+    "url": "https://www.crucollective.com.au/wp-content/uploads/2019/10/Palm-Beach-Artificial-Reef-Completion.jpg",
+    "source_page": "https://www.crucollective.com.au/blog/palm-beach-artificial-reef-completion/",
+    "credit": "Cru Collective (blog post \"Palm Beach Artificial Reef Completion\")",
+    "license": "link-only / all-rights-reserved — no explicit open license found on page",
+    "depicts": "Aerial view of the area benefited by the Palm Beach artificial reef, per the page's own caption; confirmed HTTP 200 image/jpeg",
+    "date": "page published/updated 2019-10 (filename path .../2019/10/...)",
+    "kind": "photo"
+  },
+  {
+    "url": "https://www.crucollective.com.au/wp-content/uploads/2019/10/Palm-Beach-Artificial-Reef-Completion2.jpg",
+    "source_page": "https://www.crucollective.com.au/blog/palm-beach-artificial-reef-completion/",
+    "credit": "Cru Collective (blog post \"Palm Beach Artificial Reef Completion\")",
+    "license": "link-only / all-rights-reserved — no explicit open license found on page",
+    "depicts": "Section-view diagram/photo of the artificial reef showing rock sizes, per the page's own caption; confirmed HTTP 200 image/jpeg",
+    "date": "page published/updated 2019-10 (filename path .../2019/10/...)",
+    "kind": "photo"
+  },
+  {
+    "url": "https://images.squarespace-cdn.com/content/v1/5bfcd059e2ccd1869cf36e40/1600916522672-D4UT1B7FEQEBOCBBOQRI/image-asset.jpeg",
+    "source_page": "https://www.bluecoastconsulting.com.au/artificialreefs",
+    "credit": "Bluecoast Consulting Engineers (linking to a Swellnet article on Palm Beach sand nourishment)",
+    "license": "link-only / all-rights-reserved — no explicit open license found on page",
+    "depicts": "Palm Beach nourishment/sandbar activity from the 2017 companion sand-placement phase of the shoreline project, per the surrounding page text (\"mass nourishment in 2017 which created exceptional sand bars for surfing at Palm Beach\"); confirmed HTTP 200 image/jpeg",
+    "date": "page text references 2017 nourishment event; page itself dated 2020-07-20",
+    "kind": "photo"
+  },
+  {
+    "url": "https://www.google.com/maps?q=-28.1120958,153.4567092",
+    "source_page": "https://www.google.com/maps?q=-28.1120958,153.4567092",
+    "credit": "Google Maps / satellite imagery",
+    "license": "Google Maps terms of use — link/embed only",
+    "depicts": "Map centered near 19th Avenue, Palm Beach, Gold Coast (beachfront approx. coordinates) — the reef itself sits ~270-330 m offshore from this point per the dossier; no precise reef lat/lon was found in any source, so this pin is an approximation of the onshore reference point, not the submerged structure",
+    "date": "current satellite imagery (accessed 2026-09-24)",
+    "kind": "map"
+  }
+]

@@ -1,0 +1,20 @@
+browser: C:\Program Files\Google\Chrome\Application\chrome.exe
+url: file:///C:/Users/lior/Documents/Gemini/AG/Artificial%20reef%20-%20to%20upload%20to%20git/04_build/artificial_reefs.html
+PASS  dom dumped
+PASS  intro rendered
+PASS  summary rendered
+PASS  gallery tiles rendered
+PASS  references index rendered
+PASS  footer rendered
+PASS  all 13 reefs appear
+PASS  screenshot round_final_desktop.png (201962 B)
+PASS  screenshot round_final_desktop_full.png (1382622 B)
+PASS  screenshot round_final_mobile.png (73203 B)
+PASS  screenshot round_final_table.png (149063 B)
+PASS  screenshot round_final_models3d.png (423761 B)
+PASS  screenshot round_final_detail.png (232017 B)
+PASS  screenshot round_final_detail_ref.png (271379 B)
+PASS  screenshot round_final_detail_mobile.png (102596 B)
+PASS  screenshot round_final_scale_detail_S1.png (286467 B)
+RESULT: PASS
+note: headless shots use the OS colour scheme; dark-mode shots still need a manual check.

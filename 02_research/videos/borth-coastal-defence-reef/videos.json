@@ -1,0 +1,78 @@
+[
+  {
+    "url": "https://www.youtube.com/watch?v=c4J6hfvynr4",
+    "video_id": "c4J6hfvynr4",
+    "platform": "YouTube",
+    "title": "Borth Sea Defenses Video 3 Feb 2011",
+    "channel": "BorthSeaDefense",
+    "date": "2011-02-27",
+    "duration_seconds": 238,
+    "what_it_shows": "Silent amateur b-roll from a dedicated 'BorthSeaDefense' channel, filming the coastal-defence/reef construction site at Borth in February 2011, early in the works.",
+    "embed_ok": true,
+    "best_timestamp_seconds": null,
+    "transcript_path": null,
+    "key_quotes": [],
+    "frames": [],
+    "notes": "No spoken narration or captions (silent construction b-roll); no automatic captions available on YouTube for this video."
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=AJXnUqQObJM",
+    "video_id": "AJXnUqQObJM",
+    "platform": "YouTube",
+    "title": "Borth sea defences and reef",
+    "channel": "binsurf66",
+    "date": "2011-09-13",
+    "duration_seconds": 54,
+    "what_it_shows": "Short amateur clip of two excavators working on the offshore rock reef at Borth's southern end, filmed from the beach, September 2011.",
+    "embed_ok": true,
+    "best_timestamp_seconds": null,
+    "transcript_path": null,
+    "key_quotes": [],
+    "frames": [
+      {
+        "path": "C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\03_images\\video_frames\\borth-coastal-defence-reef\\AJXnUqQObJM_0015.jpg",
+        "timestamp": "00:15",
+        "caption": "Two excavators building the offshore rock reef at Borth's southern end, seen from the beach; waves breaking on the sand in the foreground. Confirmed by viewing the frame."
+      }
+    ],
+    "notes": "No dialogue/captions; silent b-roll. Frame viewed and confirmed to match the dossier's description of diggers building the reef."
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=QUB6s_F9dZc",
+    "video_id": "QUB6s_F9dZc",
+    "platform": "YouTube",
+    "title": "Borth Beach Sea Defence Works August 2011",
+    "channel": "Stephen Willcox",
+    "date": "2015-06-12 (upload date; footage itself is captioned August 2011)",
+    "duration_seconds": 77,
+    "what_it_shows": "Amateur clip along Borth's seafront showing houses on the beach road, construction plant and large stockpiled rock/shingle piles from the coastal-defence works, August 2011.",
+    "embed_ok": true,
+    "best_timestamp_seconds": null,
+    "transcript_path": null,
+    "key_quotes": [],
+    "frames": [
+      {
+        "path": "C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\03_images\\video_frames\\borth-coastal-defence-reef\\QUB6s_F9dZc_0007.jpg",
+        "timestamp": "00:07",
+        "caption": "Borth seafront houses beside the beach, with excavators, dump trucks and a large stockpile of rock/quarried material for the coastal-defence works in the foreground. Confirmed by viewing the frame."
+      }
+    ],
+    "notes": "No dialogue/captions; silent b-roll. Frame viewed and confirmed."
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=dQieZVQUDEI",
+    "video_id": "dQieZVQUDEI",
+    "platform": "YouTube",
+    "title": "borth sea defence 2012",
+    "channel": "eirian jones",
+    "date": "2012-03-24",
+    "duration_seconds": 543,
+    "what_it_shows": "Longer amateur video, description 'komatsu 450 separating rock and shingle', showing heavy plant sorting/grading rock and shingle material as part of the Borth coastal-defence works, into 2012 (matches the dossier's March 2012 completion date for the reef/coastal-defence works).",
+    "embed_ok": false,
+    "best_timestamp_seconds": 60,
+    "transcript_path": null,
+    "key_quotes": [],
+    "frames": [],
+    "notes": "Duration (543 s) exceeds the 480 s embed threshold, so link with timestamp per Lior's preference rather than embed. No captions available."
+  }
+]

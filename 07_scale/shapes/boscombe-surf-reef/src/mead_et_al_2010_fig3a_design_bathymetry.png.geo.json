@@ -1,0 +1,7 @@
+{
+  "image": "mead_et_al_2010_fig3a_design_bathymetry.png",
+  "derived_from": "Figure 3(a) of Mead, Blenkinsopp, Moores & Borrero (2010), 'Design and construction of the Boscombe multi-purpose reef', Coastal Engineering 2010 (ICCE), p.3; embedded image 871x617 extracted from the PDF (PyMuPDF xref 28)",
+  "calibration": "plot-box edges: left x=98 px (model x=140 m), right x=728 px (460 m): 1.969 px/m; top y=40 px (y=560 m), bottom y=510 px (y=320 m): 1.958 px/m; axis tick 160 m at x=137 px. Printed scale bar '0.05 km' (5 boxes, 10..107 px) = 1.94 px/m. Adopted 1.9635 px/m (0.5093 m/px), +/-1.5%.",
+  "frame": "design model frame (not geo-referenced): depth contours rise toward +x (shore side at right); reading with Mead Fig.3c (north-up Google Earth overlay of the same design footprint) gives model +x = shoreward (about north), model +y = westward",
+  "px_per_m": 1.9635
+}

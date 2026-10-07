@@ -1,0 +1,2999 @@
+{
+  "slug": "narrowneck-gold-coast",
+  "name": "Narrowneck Reef (Gold Coast, Queensland)",
+  "status": "traced",
+  "updated": "2026-10-06",
+  "sources": [
+    {
+      "id": "s3",
+      "kind": "satellite",
+      "title": "Esri World Imagery Wayback release 9812, z19, 2020-08-08 (post-renewal)",
+      "url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/9812/{z}/{y}/{x}",
+      "source_page": "Esri Wayback (release 9812)",
+      "page_or_figure": "z19 tiles, 1517x1517 px crop, centre -27.98665/153.43455",
+      "image_date": "2020-08-08 (Esri identify SRC_DATE2)",
+      "credit": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+      "license": "Esri imagery terms; private research copy only",
+      "local_file": "07_scale/shapes/narrowneck-gold-coast/src/wayback/nn_wayback_2020-08-08_r9812_z19.png",
+      "image_size": [
+        1517,
+        1517
+      ],
+      "registry_id": "narrowneck-gold-coast-img-45",
+      "georef": {
+        "provider": "Esri World Imagery Wayback",
+        "zoom": 19,
+        "bounds": {
+          "north": -27.98485407660333,
+          "south": -27.988447156812324,
+          "east": 153.43658477067947,
+          "west": 153.43251585960388
+        },
+        "tile_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/{release}/{z}/{y}/{x}",
+        "imagery_date": "2020-08-08",
+        "attribution": "Esri, Maxar, Earthstar Geographics, and the GIS User Community"
+      },
+      "scale": {
+        "px_per_m": 3.7926909464849445,
+        "m_per_px": 0.26366503733366337,
+        "method": "georeferenced",
+        "evidence": "Web-Mercator z19 tile grid at the site latitude -27.9867: 0.2637 m/px (sidecar m_per_px_center). Scale is not read from the image content; cross-checked against the 20 m container length (container patches 60-80 px long) and against Jackson et al. 2007 Fig 13 scale bar (see METHOD.md).",
+        "uncertainty_pct": 2
+      },
+      "pixel_polygons": [
+        [
+          [
+            379,
+            605
+          ],
+          [
+            394,
+            613
+          ],
+          [
+            421,
+            614
+          ],
+          [
+            440,
+            634
+          ],
+          [
+            440,
+            656
+          ],
+          [
+            456,
+            677
+          ],
+          [
+            447,
+            701
+          ],
+          [
+            447,
+            716
+          ],
+          [
+            459,
+            729
+          ],
+          [
+            455,
+            752
+          ],
+          [
+            473,
+            743
+          ],
+          [
+            486,
+            723
+          ],
+          [
+            499,
+            716
+          ],
+          [
+            515,
+            722
+          ],
+          [
+            536,
+            720
+          ],
+          [
+            548,
+            732
+          ],
+          [
+            591,
+            740
+          ],
+          [
+            601,
+            746
+          ],
+          [
+            664,
+            733
+          ],
+          [
+            673,
+            736
+          ],
+          [
+            682,
+            748
+          ],
+          [
+            733,
+            747
+          ],
+          [
+            754,
+            773
+          ],
+          [
+            759,
+            772
+          ],
+          [
+            759,
+            748
+          ],
+          [
+            772,
+            738
+          ],
+          [
+            793,
+            738
+          ],
+          [
+            813,
+            748
+          ],
+          [
+            833,
+            741
+          ],
+          [
+            851,
+            749
+          ],
+          [
+            867,
+            748
+          ],
+          [
+            879,
+            738
+          ],
+          [
+            879,
+            730
+          ],
+          [
+            852,
+            725
+          ],
+          [
+            843,
+            701
+          ],
+          [
+            832,
+            697
+          ],
+          [
+            825,
+            684
+          ],
+          [
+            801,
+            684
+          ],
+          [
+            792,
+            676
+          ],
+          [
+            790,
+            665
+          ],
+          [
+            774,
+            663
+          ],
+          [
+            768,
+            654
+          ],
+          [
+            771,
+            640
+          ],
+          [
+            759,
+            632
+          ],
+          [
+            743,
+            644
+          ],
+          [
+            717,
+            642
+          ],
+          [
+            706,
+            635
+          ],
+          [
+            696,
+            620
+          ],
+          [
+            671,
+            615
+          ],
+          [
+            658,
+            605
+          ],
+          [
+            638,
+            601
+          ],
+          [
+            628,
+            592
+          ],
+          [
+            599,
+            580
+          ],
+          [
+            584,
+            581
+          ],
+          [
+            563,
+            575
+          ],
+          [
+            541,
+            560
+          ],
+          [
+            532,
+            563
+          ],
+          [
+            526,
+            577
+          ],
+          [
+            513,
+            581
+          ],
+          [
+            509,
+            600
+          ],
+          [
+            494,
+            608
+          ],
+          [
+            473,
+            597
+          ],
+          [
+            465,
+            586
+          ],
+          [
+            468,
+            574
+          ],
+          [
+            486,
+            565
+          ],
+          [
+            454,
+            547
+          ],
+          [
+            436,
+            549
+          ],
+          [
+            429,
+            558
+          ],
+          [
+            431,
+            571
+          ],
+          [
+            412,
+            592
+          ],
+          [
+            397,
+            594
+          ]
+        ],
+        [
+          [
+            364,
+            921
+          ],
+          [
+            393,
+            931
+          ],
+          [
+            402,
+            939
+          ],
+          [
+            400,
+            960
+          ],
+          [
+            385,
+            974
+          ],
+          [
+            386,
+            982
+          ],
+          [
+            416,
+            959
+          ],
+          [
+            458,
+            958
+          ],
+          [
+            475,
+            950
+          ],
+          [
+            497,
+            958
+          ],
+          [
+            557,
+            942
+          ],
+          [
+            570,
+            948
+          ],
+          [
+            589,
+            944
+          ],
+          [
+            602,
+            959
+          ],
+          [
+            613,
+            960
+          ],
+          [
+            638,
+            944
+          ],
+          [
+            615,
+            931
+          ],
+          [
+            614,
+            922
+          ],
+          [
+            621,
+            912
+          ],
+          [
+            658,
+            907
+          ],
+          [
+            698,
+            913
+          ],
+          [
+            712,
+            904
+          ],
+          [
+            745,
+            899
+          ],
+          [
+            759,
+            877
+          ],
+          [
+            784,
+            870
+          ],
+          [
+            748,
+            863
+          ],
+          [
+            715,
+            866
+          ],
+          [
+            701,
+            862
+          ],
+          [
+            683,
+            866
+          ],
+          [
+            674,
+            863
+          ],
+          [
+            666,
+            850
+          ],
+          [
+            657,
+            845
+          ],
+          [
+            643,
+            848
+          ],
+          [
+            599,
+            843
+          ],
+          [
+            591,
+            856
+          ],
+          [
+            565,
+            861
+          ],
+          [
+            551,
+            852
+          ],
+          [
+            548,
+            834
+          ],
+          [
+            517,
+            833
+          ],
+          [
+            503,
+            841
+          ],
+          [
+            472,
+            847
+          ],
+          [
+            463,
+            844
+          ],
+          [
+            457,
+            832
+          ],
+          [
+            427,
+            827
+          ],
+          [
+            419,
+            831
+          ],
+          [
+            419,
+            842
+          ],
+          [
+            404,
+            870
+          ],
+          [
+            383,
+            877
+          ],
+          [
+            382,
+            885
+          ],
+          [
+            372,
+            894
+          ],
+          [
+            372,
+            911
+          ]
+        ],
+        [
+          [
+            403,
+            578
+          ],
+          [
+            383,
+            578
+          ],
+          [
+            367,
+            569
+          ],
+          [
+            347,
+            566
+          ],
+          [
+            336,
+            574
+          ],
+          [
+            321,
+            569
+          ],
+          [
+            306,
+            580
+          ],
+          [
+            274,
+            570
+          ],
+          [
+            271,
+            582
+          ],
+          [
+            289,
+            595
+          ],
+          [
+            311,
+            586
+          ],
+          [
+            349,
+            594
+          ],
+          [
+            363,
+            583
+          ],
+          [
+            397,
+            582
+          ]
+        ],
+        [
+          [
+            365,
+            649
+          ],
+          [
+            350,
+            640
+          ],
+          [
+            346,
+            627
+          ],
+          [
+            336,
+            623
+          ],
+          [
+            331,
+            625
+          ],
+          [
+            337,
+            640
+          ],
+          [
+            331,
+            658
+          ],
+          [
+            318,
+            659
+          ],
+          [
+            309,
+            652
+          ],
+          [
+            298,
+            656
+          ],
+          [
+            290,
+            666
+          ],
+          [
+            333,
+            678
+          ]
+        ],
+        [
+          [
+            426,
+            767
+          ],
+          [
+            488,
+            772
+          ],
+          [
+            485,
+            776
+          ],
+          [
+            455,
+            777
+          ],
+          [
+            429,
+            773
+          ]
+        ],
+        [
+          [
+            421,
+            790
+          ],
+          [
+            430,
+            786
+          ],
+          [
+            448,
+            787
+          ],
+          [
+            455,
+            788
+          ],
+          [
+            470,
+            787
+          ],
+          [
+            472,
+            791
+          ],
+          [
+            462,
+            793
+          ],
+          [
+            440,
+            793
+          ],
+          [
+            425,
+            793
+          ]
+        ],
+        [
+          [
+            452,
+            808
+          ],
+          [
+            460,
+            806
+          ],
+          [
+            468,
+            806
+          ],
+          [
+            478,
+            810
+          ],
+          [
+            490,
+            812
+          ],
+          [
+            488,
+            815
+          ],
+          [
+            475,
+            813
+          ],
+          [
+            462,
+            813
+          ],
+          [
+            452,
+            811
+          ]
+        ]
+      ],
+      "polygon_labels": [
+        "north arm - envelope of the visible container field (closing radius 3.7 m around the thresholded dark patches; includes the 20 m container along the seaward tip and the south-pointing leg at the shoreward end)",
+        "south arm - envelope of the visible container field (same method; includes the SW container and the container below the arm)",
+        "north-west shoreward patch A (isolated containers on the north side of the north wing)",
+        "north-west shoreward patch B (isolated containers on the south side of the north wing)",
+        "channel container 1 (solid dark, 16 m long, E-W, at the shoreward mouth of the channel; identity unresolved: not the N-S weir containers of Jackson 2012 Figs 4/7, which are not visible in 2020)",
+        "channel container 2 (FAINT, read by eye; identity unresolved)",
+        "channel container 3 (FAINT, read by eye; identity unresolved)"
+      ],
+      "traced_what": "visible container patches of the north and south arm (dark 20 m geotextile containers on pale water): thresholded green channel (<49 after sigma 1 px blur), morphological closing, Douglas-Peucker 3 px; weir containers and shoreward patches read by eye",
+      "extras_not_in_polygons": {
+        "sea_patch_1": [
+          [
+            823,
+            542
+          ],
+          [
+            818,
+            539
+          ],
+          [
+            814,
+            544
+          ],
+          [
+            800,
+            542
+          ],
+          [
+            786,
+            551
+          ],
+          [
+            783,
+            549
+          ],
+          [
+            784,
+            542
+          ],
+          [
+            781,
+            541
+          ],
+          [
+            778,
+            547
+          ],
+          [
+            773,
+            547
+          ],
+          [
+            773,
+            556
+          ],
+          [
+            767,
+            560
+          ],
+          [
+            767,
+            565
+          ],
+          [
+            778,
+            565
+          ],
+          [
+            786,
+            570
+          ],
+          [
+            799,
+            568
+          ],
+          [
+            812,
+            557
+          ],
+          [
+            815,
+            548
+          ],
+          [
+            821,
+            547
+          ]
+        ],
+        "sea_patch_7": [
+          [
+            873,
+            612
+          ],
+          [
+            867,
+            608
+          ],
+          [
+            860,
+            608
+          ],
+          [
+            850,
+            617
+          ],
+          [
+            841,
+            620
+          ],
+          [
+            834,
+            612
+          ],
+          [
+            822,
+            614
+          ],
+          [
+            817,
+            625
+          ],
+          [
+            809,
+            631
+          ],
+          [
+            805,
+            644
+          ],
+          [
+            819,
+            646
+          ],
+          [
+            825,
+            641
+          ],
+          [
+            823,
+            646
+          ],
+          [
+            827,
+            661
+          ],
+          [
+            838,
+            663
+          ],
+          [
+            856,
+            639
+          ],
+          [
+            869,
+            632
+          ]
+        ],
+        "sea_patch_9": [
+          [
+            874,
+            641
+          ],
+          [
+            870,
+            645
+          ],
+          [
+            869,
+            656
+          ],
+          [
+            876,
+            663
+          ],
+          [
+            879,
+            659
+          ],
+          [
+            879,
+            647
+          ],
+          [
+            875,
+            645
+          ],
+          [
+            879,
+            642
+          ]
+        ]
+      },
+      "match_notes": "Cross-checked on s4 (independent 2022-11 tile set: offset 0.17 m E, 0.10 m N by phase correlation) and s5 (2019-06-18, by eye).",
+      "role": "primary"
+    },
+    {
+      "id": "s4",
+      "kind": "satellite",
+      "title": "Esri Wayback release 47963 (identify 2022-11-06; byte-identical tiles in releases 12428, 20512)",
+      "url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/47963/{z}/{y}/{x}",
+      "source_page": "Esri Wayback (release 47963)",
+      "page_or_figure": "z19",
+      "image_date": "2022-11-06 or later",
+      "credit": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+      "license": "Esri imagery terms; private research copy only",
+      "local_file": "07_scale/shapes/narrowneck-gold-coast/src/wayback/nn_wayback_2022-11-06_r47963_z19.png",
+      "image_size": [
+        1517,
+        1517
+      ],
+      "georef": {
+        "provider": "Esri World Imagery Wayback",
+        "zoom": 19,
+        "bounds": {
+          "north": -27.98485407660333,
+          "south": -27.988447156812324,
+          "east": 153.43658477067947,
+          "west": 153.43251585960388
+        },
+        "tile_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/{release}/{z}/{y}/{x}",
+        "imagery_date": "2022-11-06 or later",
+        "attribution": "Esri, Maxar, Earthstar Geographics, and the GIS User Community"
+      },
+      "scale": {
+        "px_per_m": 3.7926909464849445,
+        "method": "georeferenced",
+        "evidence": "same tile grid and crop as s3",
+        "uncertainty_pct": 2
+      },
+      "pixel_polygons": null,
+      "traced_what": null,
+      "match_notes": "s3 trace laid on it unchanged follows both arms; phase-correlation shift vs s3 0.17 m E, 0.10 m N; NW patch B and channel container 1 not visible",
+      "role": "cross_check",
+      "registry_id": "narrowneck-gold-coast-img-46"
+    },
+    {
+      "id": "s5",
+      "kind": "satellite",
+      "title": "Esri Wayback release 21485 (2019-06-18), first imagery after the June 2018 renewal",
+      "url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/21485/{z}/{y}/{x}",
+      "source_page": "Esri Wayback (release 21485)",
+      "page_or_figure": "z19",
+      "image_date": "2019-06-18",
+      "credit": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+      "license": "Esri imagery terms; private research copy only",
+      "local_file": "07_scale/shapes/narrowneck-gold-coast/src/wayback/nn_wayback_2019-06-18_r21485_z19.png",
+      "image_size": [
+        1517,
+        1517
+      ],
+      "georef": {
+        "provider": "Esri World Imagery Wayback",
+        "zoom": 19,
+        "bounds": {
+          "north": -27.98485407660333,
+          "south": -27.988447156812324,
+          "east": 153.43658477067947,
+          "west": 153.43251585960388
+        },
+        "tile_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/{release}/{z}/{y}/{x}",
+        "imagery_date": "2019-06-18",
+        "attribution": "Esri, Maxar, Earthstar Geographics, and the GIS User Community"
+      },
+      "scale": {
+        "px_per_m": 3.7926909464849445,
+        "method": "georeferenced",
+        "evidence": "same tile grid and crop as s3",
+        "uncertainty_pct": 2
+      },
+      "pixel_polygons": null,
+      "traced_what": null,
+      "match_notes": "blurrier than s3; arms in the same place by eye (+-3-4 m)",
+      "role": "cross_check",
+      "registry_id": "narrowneck-gold-coast-img-47"
+    },
+    {
+      "id": "s6",
+      "kind": "satellite",
+      "title": "Esri Wayback release 23264 (2016-07-01), PRE-renewal",
+      "url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/23264/{z}/{y}/{x}",
+      "source_page": "Esri Wayback (release 23264)",
+      "page_or_figure": "z19",
+      "image_date": "2016-07-01",
+      "credit": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+      "license": "Esri imagery terms; private research copy only",
+      "local_file": "07_scale/shapes/narrowneck-gold-coast/src/wayback/nn_wayback_2016-07-01_r23264_z19.png",
+      "image_size": [
+        1517,
+        1517
+      ],
+      "georef": {
+        "provider": "Esri World Imagery Wayback",
+        "zoom": 19,
+        "bounds": {
+          "north": -27.98485407660333,
+          "south": -27.988447156812324,
+          "east": 153.43658477067947,
+          "west": 153.43251585960388
+        },
+        "tile_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/{release}/{z}/{y}/{x}",
+        "imagery_date": "2016-07-01",
+        "attribution": "Esri, Maxar, Earthstar Geographics, and the GIS User Community"
+      },
+      "scale": {
+        "px_per_m": 3.7926909464849445,
+        "method": "georeferenced",
+        "evidence": "same tile grid and crop as s3",
+        "uncertainty_pct": 2
+      },
+      "pixel_polygons": null,
+      "traced_what": null,
+      "match_notes": "murky; north-arm field already reaches the same seaward limit as in 2020",
+      "role": "context",
+      "registry_id": "narrowneck-gold-coast-img-48"
+    },
+    {
+      "id": "s7",
+      "kind": "satellite",
+      "title": "Esri Wayback release 9812, z17, 3 km square (shoreline context)",
+      "url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/9812/{z}/{y}/{x}",
+      "image_date": "2020-08-08",
+      "local_file": "07_scale/shapes/narrowneck-gold-coast/src/wayback/nn_wayback_2020-08-08_r9812_z17_shoreline_context.png",
+      "image_size": [
+        2845,
+        2844
+      ],
+      "role": "context",
+      "traced_what": "waterline (285 rows) -> shoreline bearing 356.2 deg",
+      "scale": {
+        "method": "georeferenced",
+        "px_per_m": 0.9481727366212361
+      },
+      "registry_id": "narrowneck-gold-coast-img-49"
+    },
+    {
+      "id": "s1",
+      "kind": "other",
+      "title": "City of Gold Coast Open Data 'Artificial Reef' layer, OBJECTID 4637 (Narrowneck)",
+      "url": "https://services.arcgis.com/3vStCH7NDoBOZ5zn/arcgis/rest/services/Artificial_Reef/FeatureServer/0",
+      "source_page": "https://data-goldcoast.opendata.arcgis.com/datasets/c9d0b521374740cc9e9561b04c453736_0",
+      "image_date": "undated",
+      "credit": "City of Gold Coast",
+      "license": "CC-BY-3.0 (to re-check)",
+      "local_file": "07_scale/shapes/narrowneck-gold-coast/src/gc_opendata_artificial_reef_raw_4326.geojson",
+      "role": "cross_check",
+      "match_notes": "loose envelope: 172 x 262 m (alongshore x cross-shore) in our frame, 34565 m2; contains 100% of the traced reef; attributes HEIGHT 3 m, LENGTH 256, WIDTH 151, TOP_REDUCED_LEVEL -2.5; VOLUME 7,668 unreliable"
+    },
+    {
+      "id": "s2",
+      "kind": "satellite",
+      "title": "Esri World Imagery current z19 crop (2025-10-10)",
+      "local_file": "07_scale/shapes/narrowneck-gold-coast/src/nn_esri_z19_current.png",
+      "image_date": "2025-10-10",
+      "role": "context",
+      "match_notes": "reef almost invisible (dark water): not traced",
+      "registry_id": "narrowneck-gold-coast-img-44"
+    },
+    {
+      "id": "s8",
+      "kind": "paper_figure",
+      "title": "Jackson et al. 2012 Fig 7: July 2011 aerial + 2004 design contours + maintenance containers",
+      "page_or_figure": "p.5 Fig 7",
+      "local_file": "07_scale/shapes/narrowneck-gold-coast/src/gov/narrowneck-gold-coast_jackson2012_fig7_overlay_2011-07_aerial_with_design_contours_and_containers_native.jpeg",
+      "role": "cross_check",
+      "match_notes": "DESIGN PRIOR: placed on s3 (design_registration.py): Fig 7 = 0.21 m/px +-10 %, ends +-15 m",
+      "registry_id": "narrowneck-gold-coast-img-10"
+    },
+    {
+      "id": "s9",
+      "kind": "paper_figure",
+      "title": "Jackson et al. 2012 Fig 6b: July 2011 aerial",
+      "page_or_figure": "p.5 Fig 6",
+      "local_file": "07_scale/shapes/narrowneck-gold-coast/src/gov/narrowneck-gold-coast_jackson2012_fig6b_aerial_2011-07_native.jpeg",
+      "role": "cross_check",
+      "match_notes": "same photo as s8, 1.75x coarser; 0.3675 m/px",
+      "registry_id": "narrowneck-gold-coast-img-09"
+    },
+    {
+      "id": "s10",
+      "kind": "paper_figure",
+      "title": "Jackson et al. 2007 Fig 13: surf tracks on the revised design contours, 100 m bar",
+      "page_or_figure": "Fig 13",
+      "local_file": "07_scale/shapes/narrowneck-gold-coast/src/gov/narrowneck-gold-coast_jackson2007_fig13_recorded_surf_tracks_on_revised_design_contours_scale_100m_300dpi_crop.png",
+      "role": "cross_check",
+      "match_notes": "scale 4.275 px/m (bar black segments 154-241 and 325-407 px = 20 m each)",
+      "registry_id": "narrowneck-gold-coast-img-27"
+    },
+    {
+      "id": "s11",
+      "kind": "paper_figure",
+      "title": "Jackson et al. 2012 Fig 2 right: revised (2004) design levels",
+      "page_or_figure": "p.3 Fig 2",
+      "local_file": "07_scale/shapes/narrowneck-gold-coast/src/gov/narrowneck-gold-coast_jackson2012_fig2_reef_levels_original_and_revised_design_300dpi_crop.png",
+      "role": "context",
+      "match_notes": "labelled contour levels -2.50 ... -8.00",
+      "registry_id": "narrowneck-gold-coast-img-04"
+    },
+    {
+      "id": "s12",
+      "kind": "other",
+      "title": "Garmin Navionics SonarChart / Nautical Chart screenshots (z17, z18, shading 0-8 m)",
+      "url": "https://maps.garmin.com/en-US/marine",
+      "image_date": "chart state 2026-10-06",
+      "local_file": "07_scale/shapes/narrowneck-gold-coast/src/navionics/",
+      "role": "cross_check",
+      "match_notes": "s3 arms fall on the 4.0/4.5 m shoal loops; datum not stated (LAT assumed)",
+      "registry_id": "narrowneck-gold-coast-img-50..53"
+    }
+  ],
+  "canonical": {
+    "frame": "metres; origin = waterline point (2020-08-08) nearest the area-weighted reef centroid, s3 px (-517.9, 821.7); +x alongshore toward bearing 356.2 deg (north); +y offshore (bearing 86.2 deg)",
+    "derived_from": "s3",
+    "polygons_m": [
+      [
+        [
+          41.398551455897795,
+          239.73961518400046
+        ],
+        [
+          39.03255319696411,
+          243.5465977215671
+        ],
+        [
+          38.29914907624193,
+          250.63258193631006
+        ],
+        [
+          32.7064063745625,
+          255.28289157954532
+        ],
+        [
+          26.918448135914293,
+          254.89967186038828
+        ],
+        [
+          21.11487365781771,
+          258.7432953929371
+        ],
+        [
+          14.957509100765721,
+          255.95743641986425
+        ],
+        [
+          11.011173938051035,
+          255.69615024771173
+        ],
+        [
+          7.381987859309627,
+          258.62677036201796
+        ],
+        [
+          1.4006169223877747,
+          257.1737755213269
+        ],
+        [
+          3.45487461343357,
+          262.066149419876
+        ],
+        [
+          8.490206814520974,
+          265.83468812376543
+        ],
+        [
+          10.10538187458898,
+          269.37677881178934
+        ],
+        [
+          8.248142559207096,
+          273.48168851649064
+        ],
+        [
+          8.408519939888865,
+          279.04139590057815
+        ],
+        [
+          5.042422871995102,
+          281.9894350930279
+        ],
+        [
+          2.188690425043391,
+          293.1629099343287
+        ],
+        [
+          0.43596557852250706,
+          295.6892855739442
+        ],
+        [
+          2.758720796501342,
+          312.4903412732113
+        ],
+        [
+          1.8126820606668945,
+          314.80588513640964
+        ],
+        [
+          -1.5011577727963685,
+          316.9646572963165
+        ],
+        [
+          -2.1264417472672754,
+          330.39961592768987
+        ],
+        [
+          -9.332556670319589,
+          335.4715891237595
+        ],
+        [
+          -9.156563050189446,
+          336.8044532561412
+        ],
+        [
+          -2.842426789845945,
+          337.2225111315852
+        ],
+        [
+          -0.4379846972350015,
+          340.8168590540396
+        ],
+        [
+          -0.8037853382485227,
+          346.3417282818401
+        ],
+        [
+          -3.783057009594999,
+          351.42931771735806
+        ],
+        [
+          -2.2898154965315007,
+          356.8130314813155
+        ],
+        [
+          -4.708070989895683,
+          361.4092810514251
+        ],
+        [
+          -4.723687229344056,
+          365.63612430313094
+        ],
+        [
+          -2.3018260585896093,
+          368.9673832147377
+        ],
+        [
+          -0.1971139718084398,
+          369.10673583988574
+        ],
+        [
+          1.5886461923043158,
+          362.09042793771675
+        ],
+        [
+          8.059554155939324,
+          360.140684715532
+        ],
+        [
+          9.303520058908418,
+          357.31638190878186
+        ],
+        [
+          12.845610746932323,
+          355.7012068487139
+        ],
+        [
+          13.263668622376349,
+          349.38707058837036
+        ],
+        [
+          15.525152412449025,
+          347.1586221158896
+        ],
+        [
+          18.453969688060134,
+          346.82405395377276
+        ],
+        [
+          19.25885296005144,
+          342.64946793649744
+        ],
+        [
+          21.731168526541254,
+          341.22770557470307
+        ],
+        [
+          25.362157443977793,
+          342.26083970125507
+        ],
+        [
+          27.67589846848097,
+          339.2431241962313
+        ],
+        [
+          24.797535588605236,
+          334.82467108494694
+        ],
+        [
+          25.776609642031556,
+          328.01919495919515
+        ],
+        [
+          27.80984257754359,
+          325.2471493868756
+        ],
+        [
+          31.93036852169329,
+          322.8775454505516
+        ],
+        [
+          33.68129052951904,
+          316.387415570078
+        ],
+        [
+          36.53862865386101,
+          313.14144921049353
+        ],
+        [
+          37.93936626012161,
+          307.9493453061147
+        ],
+        [
+          40.48135813918544,
+          305.4752269009298
+        ],
+        [
+          44.143579535518725,
+          298.05467452407004
+        ],
+        [
+          44.14177669682359,
+          294.0909202832118
+        ],
+        [
+          46.08611140292299,
+          288.6705655242723
+        ],
+        [
+          50.4156662847947,
+          283.14389345777664
+        ],
+        [
+          49.78317095554327,
+          280.72383512571724
+        ],
+        [
+          46.20443927253723,
+          278.90143396662233
+        ],
+        [
+          45.37853124501216,
+          275.411600513029
+        ],
+        [
+          40.449516351480895,
+          274.02828198491187
+        ],
+        [
+          38.606090436852234,
+          269.94259419704923
+        ],
+        [
+          41.865870197189864,
+          264.6093348288272
+        ],
+        [
+          44.89920194166198,
+          262.6962326016245
+        ],
+        [
+          48.00401283740322,
+          263.69452857188946
+        ],
+        [
+          50.058270528449015,
+          268.5869024704386
+        ],
+        [
+          55.351283224298676,
+          260.48159752989693
+        ],
+        [
+          55.1386486091864,
+          255.71115717835235
+        ],
+        [
+          52.892781058562086,
+          253.71276239912726
+        ],
+        [
+          49.437785761255704,
+          254.01249240495704
+        ],
+        [
+          44.24387901818166,
+          248.64800055783826
+        ],
+        [
+          43.97898716863888,
+          244.66682723883656
+        ]
+      ],
+      [
+        [
+          -41.47628979980578,
+          230.28885132793943
+        ],
+        [
+          -44.61233317444376,
+          237.74424186108618
+        ],
+        [
+          -46.87381696451644,
+          239.97269033356696
+        ],
+        [
+          -52.36384803603,
+          239.08071167085814
+        ],
+        [
+          -55.785808015744536,
+          234.89050941413444
+        ],
+        [
+          -57.907939180669196,
+          235.01424579983407
+        ],
+        [
+          -52.37946427547837,
+          243.30755492256398
+        ],
+        [
+          -52.84797654665777,
+          254.3747124563086
+        ],
+        [
+          -51.039388788316124,
+          258.9865782658666
+        ],
+        [
+          -53.52732059425431,
+          264.63518387936676
+        ],
+        [
+          -50.363041109302024,
+          280.6992297805216
+        ],
+        [
+          -52.16802319025342,
+          284.0148724526799
+        ],
+        [
+          -51.44662963158935,
+          289.0832399713592
+        ],
+        [
+          -55.619412810169564,
+          292.24211094022604
+        ],
+        [
+          -56.074111680595706,
+          295.1186709814067
+        ],
+        [
+          -52.300164460620906,
+          301.97460150289385
+        ],
+        [
+          -48.47936852230099,
+          296.1500022692635
+        ],
+        [
+          -46.09414834652868,
+          296.04368496170736
+        ],
+        [
+          -43.58519178505672,
+          298.0594988190759
+        ],
+        [
+          -42.914252622128025,
+          307.88088761115625
+        ],
+        [
+          -45.18954981295395,
+          318.2999335762011
+        ],
+        [
+          -43.06561580933415,
+          322.13995143135963
+        ],
+        [
+          -42.325000333831454,
+          330.90898418004946
+        ],
+        [
+          -36.78090918919226,
+          334.97545005107355
+        ],
+        [
+          -35.374763066846256,
+          341.6746088692692
+        ],
+        [
+          -32.9060531777467,
+          332.3253380257585
+        ],
+        [
+          -33.120490631554105,
+          323.5911434333556
+        ],
+        [
+          -31.824267494154515,
+          319.9775735940626
+        ],
+        [
+          -32.56308013096208,
+          315.172295086231
+        ],
+        [
+          -31.61704139512763,
+          312.85675122303275
+        ],
+        [
+          -28.057531628960223,
+          310.97848715211705
+        ],
+        [
+          -26.585314871430487,
+          308.69778144520575
+        ],
+        [
+          -27.13071480996441,
+          304.96227805890817
+        ],
+        [
+          -25.048830317412136,
+          293.47345697232925
+        ],
+        [
+          -28.329634833283528,
+          291.1422968696825
+        ],
+        [
+          -29.19218385579073,
+          284.21488719692627
+        ],
+        [
+          -26.5805156641529,
+          280.68841274835074
+        ],
+        [
+          -21.792656234464776,
+          280.2126891223908
+        ],
+        [
+          -20.9895758011686,
+          272.0743488642573
+        ],
+        [
+          -22.850420793940753,
+          268.25175008724227
+        ],
+        [
+          -23.88896343657809,
+          259.99147628210426
+        ],
+        [
+          -22.94292470074365,
+          257.675932418906
+        ],
+        [
+          -19.681342101710896,
+          256.3064272915421
+        ],
+        [
+          -17.843324703167635,
+          248.50085235683022
+        ],
+        [
+          -18.756328121410206,
+          246.32646395747506
+        ],
+        [
+          -21.650307240734314,
+          246.13485409789655
+        ],
+        [
+          -28.75551337231588,
+          241.7007847471638
+        ],
+        [
+          -30.231335807235883,
+          236.05398197235874
+        ],
+        [
+          -32.318628815873545,
+          235.65154033636313
+        ],
+        [
+          -34.51223913206735,
+          232.86387852459512
+        ],
+        [
+          -38.984752316477326,
+          232.56775419615562
+        ]
+      ],
+      [
+        [
+          48.0838968733402,
+          246.52406655421848
+        ],
+        [
+          48.43227843621022,
+          241.26228633726555
+        ],
+        [
+          51.07878478413506,
+          237.20963386699472
+        ],
+        [
+          52.21643337954801,
+          232.00011088447232
+        ],
+        [
+          50.30333115234536,
+          228.9667791400002
+        ],
+        [
+          51.880062378736106,
+          225.107539368003
+        ],
+        [
+          49.247369431564515,
+          220.96959434570982
+        ],
+        [
+          52.435670040633,
+          212.7249367800202
+        ],
+        [
+          49.330859144891754,
+          211.72664080975522
+        ],
+        [
+          45.59715859728934,
+          216.23579498914734
+        ],
+        [
+          47.58173997576114,
+          222.18052493108706
+        ],
+        [
+          44.81510291952693,
+          232.03855471814958
+        ],
+        [
+          47.465214944842025,
+          235.91341072959514
+        ],
+        [
+          47.136055298810625,
+          244.87585617655859
+        ]
+      ],
+      [
+        [
+          30.06650207261039,
+          235.28992959381935
+        ],
+        [
+          32.69558934239171,
+          231.5003661343962
+        ],
+        [
+          36.18542279598511,
+          230.6744581068711
+        ],
+        [
+          37.41196962081071,
+          228.11324431096867
+        ],
+        [
+          36.97288698983292,
+          226.76296110044345
+        ],
+        [
+          32.92203735825723,
+          228.08020899337677
+        ],
+        [
+          28.29094963186061,
+          226.1881315217079
+        ],
+        [
+          28.25430863687848,
+          222.75055530254497
+        ],
+        [
+          30.252703416103508,
+          220.50468775192067
+        ],
+        [
+          29.391957232291436,
+          217.54103232002257
+        ],
+        [
+          26.900419748962985,
+          215.2621294518064
+        ],
+        [
+          22.994331258620694,
+          226.36592798053317
+        ]
+      ],
+      [
+        [
+          -2.040564974165381,
+          249.28290803459262
+        ],
+        [
+          -4.435992873300674,
+          265.50733131642914
+        ],
+        [
+          -5.436091682260753,
+          264.6483879713122
+        ],
+        [
+          -5.176608348803371,
+          256.7382985677393
+        ],
+        [
+          -3.67135627368176,
+          249.96766059827456
+        ]
+      ],
+      [
+        [
+          -8.004516832943732,
+          247.56682418305388
+        ],
+        [
+          -7.108932492844656,
+          250.0043015932567
+        ],
+        [
+          -7.68556491027532,
+          254.72248471037082
+        ],
+        [
+          -8.070587468127474,
+          256.5466887081608
+        ],
+        [
+          -8.06878462943234,
+          260.510442949019
+        ],
+        [
+          -9.155978829109927,
+          260.96694465814033
+        ],
+        [
+          -9.507966069370209,
+          258.3012163933769
+        ],
+        [
+          -9.124746350213185,
+          252.51325815472865
+        ],
+        [
+          -8.863460178060674,
+          248.56692299201399
+        ]
+      ],
+      [
+        [
+          -13.280110450649886,
+          255.4090401127479
+        ],
+        [
+          -12.893285054102602,
+          257.54859035581603
+        ],
+        [
+          -13.032637679250609,
+          259.65330244259724
+        ],
+        [
+          -14.259184504076206,
+          262.2145162384997
+        ],
+        [
+          -14.994391463493509,
+          265.3367462123844
+        ],
+        [
+          -15.748820339749445,
+          264.75831095625864
+        ],
+        [
+          -14.996194302188638,
+          261.37299197152623
+        ],
+        [
+          -14.769746286323125,
+          257.95283483050684
+        ],
+        [
+          -14.069377483192824,
+          255.35678287831738
+        ]
+      ]
+    ],
+    "area_m2": 6239.109541734856,
+    "bbox_m": {
+      "alongshore": 113.25922240496787,
+      "crossshore": 157.38009503013052
+    },
+    "max_dim_m": 165.55330122687974,
+    "distance_offshore_m": 369.10673583988574,
+    "shore_normal_bearing_deg": 86.2,
+    "polygon_labels": [
+      "north arm - envelope of the visible container field (closing radius 3.7 m around the thresholded dark patches; includes the 20 m container along the seaward tip and the south-pointing leg at the shoreward end)",
+      "south arm - envelope of the visible container field (same method; includes the SW container and the container below the arm)",
+      "north-west shoreward patch A (isolated containers on the north side of the north wing)",
+      "north-west shoreward patch B (isolated containers on the south side of the north wing)",
+      "channel container 1 (solid dark, 16 m long, E-W, at the shoreward mouth of the channel; identity unresolved: not the N-S weir containers of Jackson 2012 Figs 4/7, which are not visible in 2020)",
+      "channel container 2 (FAINT, read by eye; identity unresolved)",
+      "channel container 3 (FAINT, read by eye; identity unresolved)"
+    ],
+    "area_arms_m2": 5947.5,
+    "bbox_arms_m": {
+      "alongshore": 113.3,
+      "crossshore": 138.8
+    },
+    "arm_gap_min_m": 20.7,
+    "per_polygon": {
+      "north_arm": {
+        "area_m2": 3678.4,
+        "axis_bearing_deg": 104.0,
+        "axis_to_shoreline_deg": 72.2,
+        "length_along_axis_m": 135.6,
+        "width_perp_axis_m": 54.1,
+        "centroid_xy_m": [
+          20.9,
+          300.0
+        ],
+        "bbox_xy_m": [
+          -9.3,
+          239.7,
+          55.4,
+          369.1
+        ]
+      },
+      "south_arm": {
+        "area_m2": 2269.1,
+        "axis_bearing_deg": 86.2,
+        "axis_to_shoreline_deg": 90.0,
+        "length_along_axis_m": 110.5,
+        "width_perp_axis_m": 39.0,
+        "centroid_xy_m": [
+          -37.8,
+          276.3
+        ],
+        "bbox_xy_m": [
+          -57.9,
+          230.3,
+          -17.8,
+          341.7
+        ]
+      },
+      "wing_patch_NW_a": {
+        "area_m2": 128.9,
+        "axis_bearing_deg": 87.4,
+        "axis_to_shoreline_deg": 88.8,
+        "length_along_axis_m": 33.6,
+        "width_perp_axis_m": 6.6,
+        "centroid_xy_m": [
+          48.7,
+          227.1
+        ],
+        "bbox_xy_m": [
+          44.8,
+          211.7,
+          52.4,
+          246.5
+        ]
+      },
+      "wing_patch_NW_b": {
+        "area_m2": 105.4,
+        "axis_bearing_deg": 61.3,
+        "axis_to_shoreline_deg": 65.1,
+        "length_along_axis_m": 18.5,
+        "width_perp_axis_m": 12.0,
+        "centroid_xy_m": [
+          28.9,
+          226.3
+        ],
+        "bbox_xy_m": [
+          23.0,
+          215.3,
+          37.4,
+          235.3
+        ]
+      },
+      "weir_1": {
+        "area_m2": 25.6,
+        "axis_bearing_deg": 93.5,
+        "axis_to_shoreline_deg": 82.7,
+        "length_along_axis_m": 15.6,
+        "width_perp_axis_m": 2.0,
+        "centroid_xy_m": [
+          -4.0,
+          257.0
+        ],
+        "bbox_xy_m": [
+          -5.4,
+          249.3,
+          -2.0,
+          265.5
+        ]
+      },
+      "weir_2_faint": {
+        "area_m2": 19.1,
+        "axis_bearing_deg": 90.5,
+        "axis_to_shoreline_deg": 85.8,
+        "length_along_axis_m": 12.5,
+        "width_perp_axis_m": 1.6,
+        "centroid_xy_m": [
+          -8.4,
+          254.1
+        ],
+        "bbox_xy_m": [
+          -9.5,
+          247.6,
+          -7.1,
+          261.0
+        ]
+      },
+      "weir_3_faint": {
+        "area_m2": 12.7,
+        "axis_bearing_deg": 97.3,
+        "axis_to_shoreline_deg": 79.0,
+        "length_along_axis_m": 9.2,
+        "width_perp_axis_m": 1.8,
+        "centroid_xy_m": [
+          -14.2,
+          259.8
+        ],
+        "bbox_xy_m": [
+          -15.7,
+          255.4,
+          -12.9,
+          265.3
+        ]
+      }
+    },
+    "note": "polygons_m[0]=north arm, [1]=south arm (the two main bodies), [2],[3]=shoreward patches NW of the north arm, [4..6]=channel containers at the shoreward mouth of the channel (5 and 6 faint; possibly displaced weir containers). Untraced seaward dark patches are in sources s3 extras_not_in_polygons."
+  },
+  "confidence": {
+    "level": "medium",
+    "reason": "The visible container field of both arms is traced on sharp, georeferenced 2020 imagery (edges good to about 1 m, confirmed on a second tile set and on the Navionics shoal contours), but the deeper seaward toe is not resolved, three channel containers are faint, and the built renewal option is unverified.",
+    "factors": [
+      "+ both arms resolve into individual 20 m containers on the 2020-08-08 Esri Wayback image (s3); s4 (2022 tile set) agrees to 0.2 m",
+      "+ position confirmed independently: the arms fall on the 4.0 / 4.5 m shoal contours of the Garmin Navionics SonarChart (within ~20 m)",
+      "+ arm length 134 m (N) vs the design drawing's 121 m to the -6 m contour (Jackson 2007 Fig 13 bar): within 10 %",
+      "- the visible field ends at about the -6 m contour; the deeper toe to -8 m is not visible, so the footprint is a lower bound",
+      "- channel containers (3, two faint) have an unresolved identity (the 2004 weir containers are N-S oriented and not visible in 2020)",
+      "- published envelope sizes (350 x 600, 450 x 250, 256 x 151 m) describe the design footprint or an asset envelope, not the container field",
+      "- which of Corbett et al. 2023's two renewal shapes was built is unverified; the drawn state is what is visible after June 2018"
+    ]
+  },
+  "design_version": {
+    "drawn": "The RENEWED reef as left after the June 2018 renewal (84 containers added around the existing 2004 revised-design structure; the City says 'minor changes to the shape'), as visible on Esri Wayback 2020-08-08",
+    "why_this_one": "Lior's rule (2026-10-06): model the latest as-built state. Post-renewal imagery shows the containers clearly (s3), so the outline is the visible container field, not a design drawing; the 2004 revised design (Jackson 2012 Fig 2/7) is only a prior.",
+    "alternatives_seen": [
+      {
+        "what": "1998-2000 original design: two separate tapered arms ('split V'), no weir, no flares, arms much longer to -10 m",
+        "source_id": "registry img-26 (Jackson 2007 Fig 2)",
+        "why_not_used": "history; the built shape was truncated and modified from 2002/2004 on"
+      },
+      {
+        "what": "2004 revised design: submerged weir (2 containers) in the central channel + flared wings; ~450 containers by 2006",
+        "source_id": "s8, s9, s11 (Jackson 2012 Figs 2, 4, 6, 7)",
+        "why_not_used": "design prior; superseded by the 2018 renewal; used only as a cross-check (design outer contour vs visible field within +-15 m)"
+      },
+      {
+        "what": "2017 renewal Option 1 'previous design shape' (crest -2.5 m AHD) vs Option 2 'amended shape' further seaward (~20 m, unverified)",
+        "source_id": "Corbett et al. 2023 abstract via search summaries; City of Gold Coast 2020 page",
+        "why_not_used": "paper not obtainable; the City states the built reef is the amended shape; we trace what is visible, which is within the +-15 m tolerance of both"
+      },
+      {
+        "what": "Gemini: two stacked cross-shore lobes (inshore/offshore), 400 x 220 m",
+        "source_id": "07_scale/00_gemini_footprints_extract.json",
+        "why_not_used": "wrong topology and dimensions (METHOD Step 4)"
+      }
+    ]
+  },
+  "geo": {
+    "polygons_latlon": [
+      [
+        [
+          -27.9862871,
+          153.4335324
+        ],
+        [
+          -27.986306,
+          153.4335726
+        ],
+        [
+          -27.9863084,
+          153.4336451
+        ],
+        [
+          -27.9863557,
+          153.433696
+        ],
+        [
+          -27.9864079,
+          153.433696
+        ],
+        [
+          -27.9864576,
+          153.4337389
+        ],
+        [
+          -27.9865144,
+          153.4337148
+        ],
+        [
+          -27.98655,
+          153.4337148
+        ],
+        [
+          -27.9865808,
+          153.433747
+        ],
+        [
+          -27.9866352,
+          153.4337363
+        ],
+        [
+          -27.9866139,
+          153.4337845
+        ],
+        [
+          -27.9865665,
+          153.4338194
+        ],
+        [
+          -27.98655,
+          153.4338543
+        ],
+        [
+          -27.9865642,
+          153.4338972
+        ],
+        [
+          -27.9865594,
+          153.4339535
+        ],
+        [
+          -27.9865879,
+          153.4339857
+        ],
+        [
+          -27.9866068,
+          153.434101
+        ],
+        [
+          -27.986621,
+          153.4341279
+        ],
+        [
+          -27.9865902,
+          153.4342968
+        ],
+        [
+          -27.9865973,
+          153.434321
+        ],
+        [
+          -27.9866258,
+          153.4343451
+        ],
+        [
+          -27.9866234,
+          153.4344819
+        ],
+        [
+          -27.986685,
+          153.4345382
+        ],
+        [
+          -27.9866826,
+          153.4345517
+        ],
+        [
+          -27.9866258,
+          153.4345517
+        ],
+        [
+          -27.9866021,
+          153.4345865
+        ],
+        [
+          -27.9866021,
+          153.4346429
+        ],
+        [
+          -27.9866258,
+          153.4346965
+        ],
+        [
+          -27.9866092,
+          153.4347501
+        ],
+        [
+          -27.9866281,
+          153.4347984
+        ],
+        [
+          -27.9866258,
+          153.4348413
+        ],
+        [
+          -27.9866021,
+          153.4348735
+        ],
+        [
+          -27.9865831,
+          153.4348735
+        ],
+        [
+          -27.9865713,
+          153.4348011
+        ],
+        [
+          -27.9865144,
+          153.434777
+        ],
+        [
+          -27.986505,
+          153.4347475
+        ],
+        [
+          -27.9864742,
+          153.4347287
+        ],
+        [
+          -27.9864742,
+          153.4346643
+        ],
+        [
+          -27.9864552,
+          153.4346402
+        ],
+        [
+          -27.9864292,
+          153.4346348
+        ],
+        [
+          -27.9864244,
+          153.4345919
+        ],
+        [
+          -27.9864031,
+          153.4345758
+        ],
+        [
+          -27.98637,
+          153.4345838
+        ],
+        [
+          -27.986351,
+          153.4345517
+        ],
+        [
+          -27.9863794,
+          153.4345087
+        ],
+        [
+          -27.9863747,
+          153.434439
+        ],
+        [
+          -27.9863581,
+          153.4344095
+        ],
+        [
+          -27.9863226,
+          153.4343827
+        ],
+        [
+          -27.9863107,
+          153.4343156
+        ],
+        [
+          -27.9862871,
+          153.4342808
+        ],
+        [
+          -27.9862776,
+          153.4342271
+        ],
+        [
+          -27.9862563,
+          153.4342003
+        ],
+        [
+          -27.9862278,
+          153.4341225
+        ],
+        [
+          -27.9862302,
+          153.4340823
+        ],
+        [
+          -27.986216,
+          153.4340259
+        ],
+        [
+          -27.9861805,
+          153.4339669
+        ],
+        [
+          -27.9861876,
+          153.4339428
+        ],
+        [
+          -27.9862207,
+          153.4339267
+        ],
+        [
+          -27.9862302,
+          153.4338918
+        ],
+        [
+          -27.9862752,
+          153.4338811
+        ],
+        [
+          -27.9862942,
+          153.4338409
+        ],
+        [
+          -27.9862681,
+          153.4337845
+        ],
+        [
+          -27.9862421,
+          153.4337631
+        ],
+        [
+          -27.9862136,
+          153.4337711
+        ],
+        [
+          -27.9861923,
+          153.4338194
+        ],
+        [
+          -27.9861497,
+          153.4337336
+        ],
+        [
+          -27.9861544,
+          153.4336853
+        ],
+        [
+          -27.9861757,
+          153.4336665
+        ],
+        [
+          -27.9862065,
+          153.4336719
+        ],
+        [
+          -27.9862563,
+          153.4336209
+        ],
+        [
+          -27.986261,
+          153.4335807
+        ]
+      ],
+      [
+        [
+          -27.9870355,
+          153.4334922
+        ],
+        [
+          -27.9870592,
+          153.43357
+        ],
+        [
+          -27.9870782,
+          153.4335941
+        ],
+        [
+          -27.9871279,
+          153.4335887
+        ],
+        [
+          -27.9871611,
+          153.4335485
+        ],
+        [
+          -27.98718,
+          153.4335512
+        ],
+        [
+          -27.9871255,
+          153.4336317
+        ],
+        [
+          -27.9871232,
+          153.4337443
+        ],
+        [
+          -27.9871042,
+          153.4337899
+        ],
+        [
+          -27.9871232,
+          153.4338489
+        ],
+        [
+          -27.9870853,
+          153.4340099
+        ],
+        [
+          -27.9870995,
+          153.4340447
+        ],
+        [
+          -27.98709,
+          153.4340957
+        ],
+        [
+          -27.9871255,
+          153.4341305
+        ],
+        [
+          -27.9871279,
+          153.4341601
+        ],
+        [
+          -27.98709,
+          153.4342271
+        ],
+        [
+          -27.9870592,
+          153.4341654
+        ],
+        [
+          -27.9870379,
+          153.4341627
+        ],
+        [
+          -27.9870142,
+          153.4341815
+        ],
+        [
+          -27.9870024,
+          153.4342808
+        ],
+        [
+          -27.9870166,
+          153.434388
+        ],
+        [
+          -27.9869953,
+          153.4344256
+        ],
+        [
+          -27.9869834,
+          153.4345141
+        ],
+        [
+          -27.9869313,
+          153.4345517
+        ],
+        [
+          -27.9869147,
+          153.4346187
+        ],
+        [
+          -27.9868981,
+          153.4345222
+        ],
+        [
+          -27.9869052,
+          153.4344336
+        ],
+        [
+          -27.9868958,
+          153.4343961
+        ],
+        [
+          -27.9869052,
+          153.4343478
+        ],
+        [
+          -27.9868981,
+          153.4343237
+        ],
+        [
+          -27.9868674,
+          153.4343022
+        ],
+        [
+          -27.9868555,
+          153.4342781
+        ],
+        [
+          -27.9868626,
+          153.4342405
+        ],
+        [
+          -27.9868508,
+          153.4341225
+        ],
+        [
+          -27.9868816,
+          153.434101
+        ],
+        [
+          -27.9868934,
+          153.4340313
+        ],
+        [
+          -27.9868721,
+          153.4339938
+        ],
+        [
+          -27.9868295,
+          153.4339857
+        ],
+        [
+          -27.9868271,
+          153.4339026
+        ],
+        [
+          -27.986846,
+          153.433865
+        ],
+        [
+          -27.9868602,
+          153.4337819
+        ],
+        [
+          -27.9868531,
+          153.4337577
+        ],
+        [
+          -27.9868247,
+          153.4337416
+        ],
+        [
+          -27.9868129,
+          153.4336612
+        ],
+        [
+          -27.9868224,
+          153.4336397
+        ],
+        [
+          -27.9868484,
+          153.4336397
+        ],
+        [
+          -27.9869147,
+          153.4335995
+        ],
+        [
+          -27.9869313,
+          153.4335431
+        ],
+        [
+          -27.9869503,
+          153.4335405
+        ],
+        [
+          -27.9869716,
+          153.4335136
+        ],
+        [
+          -27.9870118,
+          153.4335136
+        ]
+      ],
+      [
+        [
+          -27.9862231,
+          153.4335968
+        ],
+        [
+          -27.9862231,
+          153.4335431
+        ],
+        [
+          -27.9862018,
+          153.4335002
+        ],
+        [
+          -27.9861947,
+          153.4334466
+        ],
+        [
+          -27.9862136,
+          153.4334171
+        ],
+        [
+          -27.9862018,
+          153.4333768
+        ],
+        [
+          -27.9862278,
+          153.4333366
+        ],
+        [
+          -27.9862042,
+          153.4332508
+        ],
+        [
+          -27.9862326,
+          153.4332427
+        ],
+        [
+          -27.9862634,
+          153.433291
+        ],
+        [
+          -27.9862421,
+          153.43335
+        ],
+        [
+          -27.986261,
+          153.433452
+        ],
+        [
+          -27.986235,
+          153.4334895
+        ],
+        [
+          -27.9862326,
+          153.4335807
+        ]
+      ],
+      [
+        [
+          -27.9863913,
+          153.4334949
+        ],
+        [
+          -27.98637,
+          153.4334546
+        ],
+        [
+          -27.9863392,
+          153.4334439
+        ],
+        [
+          -27.9863297,
+          153.4334171
+        ],
+        [
+          -27.9863344,
+          153.4334037
+        ],
+        [
+          -27.98637,
+          153.4334198
+        ],
+        [
+          -27.9864126,
+          153.4334037
+        ],
+        [
+          -27.986415,
+          153.4333688
+        ],
+        [
+          -27.9863984,
+          153.4333447
+        ],
+        [
+          -27.9864079,
+          153.4333152
+        ],
+        [
+          -27.9864315,
+          153.4332937
+        ],
+        [
+          -27.98646,
+          153.433409
+        ]
+      ],
+      [
+        [
+          -27.9866708,
+          153.4336585
+        ],
+        [
+          -27.9866826,
+          153.4338248
+        ],
+        [
+          -27.9866921,
+          153.4338167
+        ],
+        [
+          -27.9866944,
+          153.4337363
+        ],
+        [
+          -27.986685,
+          153.4336665
+        ]
+      ],
+      [
+        [
+          -27.9867252,
+          153.4336451
+        ],
+        [
+          -27.9867158,
+          153.4336692
+        ],
+        [
+          -27.9867181,
+          153.4337175
+        ],
+        [
+          -27.9867205,
+          153.4337363
+        ],
+        [
+          -27.9867181,
+          153.4337765
+        ],
+        [
+          -27.9867276,
+          153.4337819
+        ],
+        [
+          -27.9867323,
+          153.433755
+        ],
+        [
+          -27.9867323,
+          153.433696
+        ],
+        [
+          -27.9867323,
+          153.4336558
+        ]
+      ],
+      [
+        [
+          -27.9867679,
+          153.4337282
+        ],
+        [
+          -27.9867631,
+          153.4337497
+        ],
+        [
+          -27.9867631,
+          153.4337711
+        ],
+        [
+          -27.9867726,
+          153.433798
+        ],
+        [
+          -27.9867773,
+          153.4338301
+        ],
+        [
+          -27.9867845,
+          153.4338248
+        ],
+        [
+          -27.9867797,
+          153.4337899
+        ],
+        [
+          -27.9867797,
+          153.433755
+        ],
+        [
+          -27.986775,
+          153.4337282
+        ]
+      ]
+    ],
+    "polygon_labels": [
+      "north arm - envelope of the visible container field (closing radius 3.7 m around the thresholded dark patches; includes the 20 m container along the seaward tip and the south-pointing leg at the shoreward end)",
+      "south arm - envelope of the visible container field (same method; includes the SW container and the container below the arm)",
+      "north-west shoreward patch A (isolated containers on the north side of the north wing)",
+      "north-west shoreward patch B (isolated containers on the south side of the north wing)",
+      "channel container 1 (solid dark, 16 m long, E-W, at the shoreward mouth of the channel; identity unresolved: not the N-S weir containers of Jackson 2012 Figs 4/7, which are not visible in 2020)",
+      "channel container 2 (FAINT, read by eye; identity unresolved)",
+      "channel container 3 (FAINT, read by eye; identity unresolved)"
+    ],
+    "shoreline_bearing_deg": 356.2,
+    "method": "pixel -> lat/lon with the Web-Mercator bounds of s3 (satellite.py pix2ll); shoreline bearing from a least-squares waterline fit to s7 (285 rows)",
+    "source_id": "s3",
+    "centroid_latlon": [
+      -27.986629,
+      153.434052
+    ]
+  },
+  "angles": [
+    {
+      "what": "shoreline bearing (north-heading), 2020-08-08 waterline fit",
+      "deg": 356.2,
+      "method": "s7 waterline, rows +-1.5 km (a=0.0662); the +-800 m window gives 356.5"
+    },
+    {
+      "what": "shore-normal (seaward) bearing",
+      "deg": 86.2,
+      "method": "shoreline + 90"
+    },
+    {
+      "what": "north arm long axis, bearing",
+      "deg": 104.0,
+      "method": "area-weighted PCA of the polygon; minimum rotated rectangle long side gives 94.0"
+    },
+    {
+      "what": "north arm axis vs shoreline (acute)",
+      "deg": 72.2,
+      "method": "geom.angle_to_shoreline; minimum-rectangle value 82.2"
+    },
+    {
+      "what": "south arm long axis, bearing",
+      "deg": 86.2,
+      "method": "PCA; minimum rectangle 84.5"
+    },
+    {
+      "what": "south arm axis vs shoreline (acute)",
+      "deg": 90.0,
+      "method": "geom.angle_to_shoreline; minimum-rectangle value 88.3"
+    },
+    {
+      "what": "angle between the two arm axes (arms converge seaward)",
+      "deg": 17.8,
+      "method": "difference of PCA bearings; uncertainty +-5 deg (ragged outlines)"
+    }
+  ],
+  "dimensions_check": [
+    {
+      "quantity": "overall footprint (alongshore x cross-shore)",
+      "text_value": "350 x 600 m (Wikipedia, axes unassigned); 450 x 250 m (boatgoldcoast); envelope 200-350 x 400-500 m (Jackson & Hornsey 2002 via Vieira 2021 AM p.5)",
+      "text_ref": "card R9 / R8; footprint S1",
+      "drawing_value": "113.3 x 157.4 m (all polygons); arms only 113.3 x 138.8 m",
+      "diff_pct": null,
+      "comment": "the published figures describe the design footprint to about -10 m or an asset envelope; the visible container field is far smaller. Not comparable."
+    },
+    {
+      "quantity": "council asset polygon",
+      "text_value": "256 x 151 m, 34,409 m2 (OBJECTID 4637)",
+      "text_ref": "s1",
+      "drawing_value": "172 x 262 m, 34565 m2 in our frame; traced reef inside it 100%",
+      "diff_pct": null,
+      "comment": "loose envelope; its centroid is 10 m south and 30 m seaward of the arms' centroid; the traced area is 18 % of it"
+    },
+    {
+      "quantity": "earlier text-derived schematic",
+      "text_value": "600 x 350 m, 114,950 m2, offshore 200 m, chevron",
+      "text_ref": "07_scale/reefs/narrowneck-gold-coast.footprint.json",
+      "drawing_value": "113 x 157 m, 6,239 m2, nearest edge 212 m, centroid 288 m offshore",
+      "diff_pct": -95,
+      "comment": "schematic was built on the envelope numbers; superseded"
+    },
+    {
+      "quantity": "arm length (cross-shore) to the design -6 m contour",
+      "text_value": "about 121 m (north arm, Jackson 2007 Fig 13: 4.275 px/m)",
+      "text_ref": "s10",
+      "drawing_value": "134 m (N arm, minimum rectangle) / 136 m (PCA); S arm 111-112 m",
+      "diff_pct": 10.7,
+      "comment": "agrees within about 10 %"
+    },
+    {
+      "quantity": "container length",
+      "text_value": "20 m, diameter 3-4.5 m",
+      "text_ref": "Jackson 2007 p.4",
+      "drawing_value": "tip containers 16-22 m long x 3-6 m wide in s3",
+      "diff_pct": null,
+      "comment": "consistent"
+    },
+    {
+      "quantity": "channel width between arms",
+      "text_value": "design: channel wall length about 33 m at Fig 13 scale",
+      "text_ref": "s10",
+      "drawing_value": "20.7 m minimum gap between the arm polygons",
+      "diff_pct": -37,
+      "comment": "design channel walls vs actual container edges; the renewal added containers around the channel sides"
+    },
+    {
+      "quantity": "distance offshore",
+      "text_value": "~200 m (card); take-off about 300 m offshore (Jackson 2007)",
+      "text_ref": "card R9; Jackson 2007",
+      "drawing_value": "212 m nearest (shoreward wing patches), 240 m arm bodies, centroid 288 m, tips 342-369 m from the 2020-08-08 waterline",
+      "diff_pct": null,
+      "comment": "consistent; depends on tide/beach state"
+    },
+    {
+      "quantity": "container count",
+      "text_value": "~450 by 2006; +84 in 2018",
+      "text_ref": "Jackson 2012 p.3; City 2020",
+      "drawing_value": "visible footprint ~70-80 containers",
+      "diff_pct": null,
+      "comment": "most containers are stacked (2 layers at the crest, Jackson 2012 Fig 9) or deeper than the visible limit"
+    }
+  ],
+  "design_prior": {
+    "source_ids": [
+      "s8",
+      "s9",
+      "s10"
+    ],
+    "fig7_px_to_s3_px_affine": [
+      [
+        0.7964348845826179,
+        0.006950381941700742,
+        133.6929273877961
+      ],
+      [
+        -0.006950381941700742,
+        0.7964348845826179,
+        479.5921040514347
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "mpp_fig7": 0.21,
+    "mpp_fig7_uncertainty_pct": 10,
+    "ratio_fig7_over_fig6b": 1.75,
+    "ncc_corr": 0.567,
+    "placement_uncertainty_m": "+-15 at the arm ends (scale +-10 %, translation +-12 m)",
+    "comparison_canonical_m": {
+      "north_arm": {
+        "design_outer_contour_y": [
+          217.2,
+          354.1
+        ],
+        "traced_y": [
+          239.7,
+          369.1
+        ]
+      },
+      "south_arm": {
+        "design_outer_contour_y": [
+          207.8,
+          345.8
+        ],
+        "traced_y": [
+          230.3,
+          341.7
+        ]
+      }
+    },
+    "reading": "traced field ends 15 m seaward of the 2004 outer contour at the north tip, 4 m inside it at the south tip; starts about 22 m seaward of the design shoreward wall; both inside the registration tolerance, so the unverified '20 m seaward' shift is neither confirmed nor excluded. The design -2.5 m crest loops cover only the shoreward ~60 m of each arm."
+  },
+  "gemini": {
+    "values": {
+      "shape": "two stacked cross-shore lobes (inshore/offshore)",
+      "length_m": 400,
+      "width_m": 220,
+      "area_m2": "75,000 gross / 42,650 net",
+      "crest_depth_m": 2.2,
+      "distance_offshore_m": 180
+    },
+    "sources_used": [
+      {
+        "url": "Black & Mead (2001) J. Coastal Res. SI 29, 115-130 (search snippet only)",
+        "what_gemini_said": "design of the Gold Coast Reef (title without SI)",
+        "our_check": "unverifiable",
+        "evidence": "paywalled; bibliographic data confirmed by web search; no figure/dimension seen"
+      },
+      {
+        "url": "https://icce-ojs-tamu.tdl.org/icce/article/view/6956",
+        "what_gemini_said": "Jackson et al. 2012 long-term performance (two lobes, 400 x 220 m)",
+        "our_check": "wrong_design_version",
+        "evidence": "Figs 2, 4, 6, 7 show two alongshore-adjacent arms with channel, weir and flared wings; no 400 x 220 m figure in the paper"
+      },
+      {
+        "url": "https://www.coastalmanagement.com.au (ICM case study / webinar, Salyer 2025)",
+        "what_gemini_said": "ICM case study",
+        "our_check": "dimension_not_in_source",
+        "evidence": "images only, no planform or levels (REPORT.md 6.5)"
+      },
+      {
+        "url": "Swellnet, Nettle 2017-11-07 'Narrowneck artificial reef nears completion'",
+        "what_gemini_said": "crest/depth",
+        "our_check": "correct",
+        "evidence": "'depths at low tide ... 2.5 m to 2.6 m' (REPORT.md 6.5); Gemini's crest 2.2 m matches Vieira 2021 AM p.5 instead"
+      }
+    ],
+    "summary": "Gemini's topology (inshore + offshore lobes) and dimensions (400 x 220 m, 75,000 m2) are not supported by any source; the reef is two alongshore-adjacent arms with a channel, 113 x 157 m of visible container field."
+  },
+  "no_source": null,
+  "references": [
+    {
+      "id": "R-J2012",
+      "citation": "Jackson, A., Tomlinson, R., Corbett, B. and Strauss, D. (2012) Long term performance of a submerged coastal control structure: Narrowneck. Coastal Engineering Proceedings 33, structures.54",
+      "url": "https://icce-ojs-tamu.tdl.org/icce/article/view/6956",
+      "accessed": "2026-10-05",
+      "supports": "topology, Figs 2/4/6/7, container counts, settlement"
+    },
+    {
+      "id": "R-J2007",
+      "citation": "Jackson, L.A., Corbett, B., McGrath, J., Tomlinson, R. and Stuart, G. (2007) Narrowneck Reef: review of seven years of monitoring. Shore & Beach 75(4)",
+      "url": "http://hdl.handle.net/10072/17995",
+      "accessed": "2026-10-06",
+      "supports": "Fig 13 scale bar; container size; crest levels"
+    },
+    {
+      "id": "R-V2021",
+      "citation": "Vieira da Silva, G., Hamilton, D., Strauss, D., Murray, T., Tomlinson, R. (2021) Sediment pathways and morphodynamic response to a multi-purpose artificial reef. Coastal Engineering 171, 104027 (accepted manuscript)",
+      "url": "http://hdl.handle.net/10072/409362",
+      "accessed": "2026-10-06",
+      "supports": "crest -2.2 m AHD (p.5); seabed Fig 3"
+    },
+    {
+      "id": "R-COGC",
+      "citation": "City of Gold Coast (2020) Narrowneck Reef Renewal (archived 2020-08-04)",
+      "url": "http://web.archive.org/web/20200804025419/https://www.goldcoast.qld.gov.au/narrowneck-reef-renewal-39934.html",
+      "accessed": "2026-10-06",
+      "supports": "amended shape, 84 containers"
+    },
+    {
+      "id": "R-MSQ",
+      "citation": "Maritime Safety Queensland (2014, 2026) Standard port datum levels; Semidiurnal tidal planes 2026",
+      "url": "https://www.msq.qld.gov.au",
+      "accessed": "2026-10-06",
+      "supports": "AHD = LAT + 0.760; MSL 0.88; HAT 2.03 (Gold Coast Seaway)"
+    },
+    {
+      "id": "R-REPORT",
+      "citation": "07_scale/bathymetry/gold_coast/REPORT.md sections 3, 6",
+      "url": "",
+      "accessed": "2026-10-06",
+      "supports": "summary of the above and their pages"
+    }
+  ],
+  "verified_on": null,
+  "verification": []
+}

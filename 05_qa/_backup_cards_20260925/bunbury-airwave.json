@@ -1,0 +1,188 @@
+{
+  "slug": "bunbury-airwave",
+  "kind": "reef",
+  "verified_on": "2026-09-24",
+  "name": "Bunbury Airwave",
+  "place": "Bunbury Back Beach, Western Australia",
+  "country": "Australia",
+  "lat": -33.31,
+  "lon": 115.64,
+  "year": "Installation attempted December 2019 (failed during install); concept development began ~2008-2009 [R2]",
+  "type": "Inflatable dome-shaped rubber (Hypalon) 'air bladder' artificial surf reef, anchored with sand ballast and filled with air/sand, glued (not welded) seams [R3][R9][R8]",
+  "purpose": "Create a reliable, rideable wave at a beach with swell but poor bathymetry ('closeouts'); position Bunbury as a surfing destination alternative to nearby Margaret River, attract competitions/tourism, give local surfers a place to progress [R1][R2][R6]",
+  "size": "Base diameter 12 m (≈40 ft) [R1][R2][R3][R6]; height above seabed given as 2 m in most sources but 1.6 m at its highest point in one dedicated preview article [R1][R2][R3][R6][R9]; sited ~30–45 m offshore in ~1 m of water at low tide [R2][R3][R9]; filled with washed coarse beach sand (140 tonnes) plus air [R9][R8]",
+  "cost": "City of Bunbury committed A$75,000 as a council sponsorship (approved June 2019) [R1][R2]; total project cost reported as ~US$400,000 including installation by one source and ~US$350,000 by another — sources disagree on the total figure [R3][R10]",
+  "cost_usd_approx": "~350,000–400,000 (total project, disputed between sources); A$75,000 (~US$50,000) of that was the confirmed City of Bunbury contribution [R1][R2][R3][R10]",
+  "financed_by": "City of Bunbury council sponsorship (A$75,000, approved June 2019) [R1][R2]; an August 2018 Kickstarter crowdfunding campaign by Waveco failed to raise enough [R3]; remainder via Waveco/Bottegal investors [R5]",
+  "motivation": "Bunbury sits near Margaret River, a premier surf destination, but Back Beach had swell without the bathymetry to shape it into rideable waves [R1][R2][R6]. Waveco founder Troy Bottegal had spent roughly a decade developing the inflatable-bladder concept and wanted a real-world test site [R2][R10]; the City of Bunbury under Mayor Gary Brennan saw it as a low-cost way to brand the town as a surfing destination and draw competitions and tourism [R2].",
+  "designer": "Troy Bottegal, inventor and sole patent holder, director of Waveco Pty Ltd (Dunsborough, WA); conceived the idea after watching a dome-shaped ('oyster') light fitting create ripples in a bathtub [R6][R10]",
+  "contractor": "Waveco Pty Ltd; installation used three divers and a boat [R9]; fabrication was originally overseas, later moved to a Western Australian manufacturer after the 2019 failure [R5][R8]",
+  "status_now": "Torn along a glued seam during installation, ~90% complete, mid-December 2019; the partially-inflated bladder was removed from the water within about three days per most sources, though one source (Bottegal, 2020-07-09) separately says it was removed in half a day — the two figures conflict [R1][R5][R8][R18]. A second Airwave prototype install, needing a further ~A$300,000, was being planned for December 2020 [R18]; no source confirms whether it happened or succeeded. A 2022-03-22 article quotes Bottegal saying the Airwave would be 'back in the water in time for Summer, 2024' after relocating fabrication to a WA manufacturer [R8]. A Waveco Instagram post from June 2024 shows an active Bunbury Back Beach surf-cam [R11]. By September 2025, Waveco's own site/Instagram show its active Bunbury proposal has shifted to a 'granite artificial reef' (rock) design at a dedicated project site (bunburyartificialreef.info), framed around coastal-erosion protection rather than surf amenity [R20] — no source confirms the original inflatable Airwave was ever successfully reinstalled; status as of research date is unconfirmed for the inflatable Airwave specifically, and Waveco's current Bunbury-facing project appears to be a different (granite) technology [R8][R11][R18][R20]",
+  "verdict": "failed",
+  "hover_text": "A 12 m inflatable rubber 'air bladder' surf reef costing roughly A$75,000 in council funding (total project ~US$350–400,000, disputed) that tore along a glued seam during its December 2019 installation off Bunbury Back Beach, WA, was pulled from the water days later, and, after a planned 2020 second attempt and a promised 2024 relaunch, appears to have been superseded by a different (granite/rock) reef design by 2025 [R1][R3][R8][R18][R20].",
+  "design_as_planned": "A 12 m-diameter, dome-shaped inflatable rubber bladder anchored to the seabed with sand ballast, filled with air/sand/water, sited ~30–45 m offshore in ~1 m of water at low tide [R2][R3][R9]. It was meant to 'lift, peak, and hold the swell to create a concave, tapered wall of water that retains its shape as it peels toward the beach' [R19], producing an A-frame peak with left and right breaks where there had previously only been closeouts [R3]. Bottegal modelled the intended wave on Thunderbomb, a wave in Nicaragua [R4]. It was designed to work across roughly 2–8 ft swell, with expected ride length ~40 m / 26 seconds, over an estimated 150 rideable-swell days per year [R2][R3][R9]. A hard-wired webcam and a planned 12-month University of Western Australia scientific study were part of the design [R9]. The reversibility/removability of the inflatable design (not ecological habitat creation) was the explicit environmental/cost pitch — 'if they don't do what you want them to do... they take half a day to move' [R10].",
+  "as_built_vs_design": "Construction was reported 'halfway complete' in October 2019 against a November 2019 install target [R4]; installation slipped to December 2019, and divers/boat crew got the bladder to ~90% complete (deployed but not fully anchored) when an unexpectedly large, deep offshore swell drove strong undertow through the line-up during the final fill/anchoring phase, tearing a glued seam [R1][R5][R6]. The tear was along the seam, not the rubber itself [R1]; the underlying cause was the choice of Hypalon rubber, which could not be welded and so had to be glued — a joint that could not withstand pump pressure during the final fill [R8]. The bladder was removed within about three days (one conflicting account says half a day) [R1][R5][R8][R18]. The reef therefore was never completed to its designed, fully-anchored, surfable state.",
+  "outcome": "Installation was not completed: the bladder tore and was pulled from the water, unsurfable in its intended form [R1][R5][R8]. During the brief period it was partially in the water, Bottegal later reported that 'a wave did break on it... peeled nearly all the way to the beach... created a 0.75 metre wave' — the only quantified wave-performance data found, describing a small, uncontrolled result rather than a validated trial [R8]. No formal UWA study results were found; the planned 12-month study appears never to have started [R9]. A second prototype installation was being planned for December 2020 with a further A$300,000 [R18], but no source confirms it happened or succeeded. A 2022 article promised a Summer 2024 relaunch after moving fabrication to WA [R8]; a June 2024 Instagram post shows an active surf-cam [R11]; but by September 2025 Waveco's active Bunbury-facing project had shifted to a different, granite (rock) reef design aimed at coastal-erosion protection [R20]. No source found confirms the inflatable Airwave was ever successfully completed and operating as a surf reef at Bunbury.",
+  "why_worked_or_failed": "Failure mechanism (installation, Dec 2019): an unexpectedly deep offshore swell during the final anchoring/fill phase generated strong undertow that flexed the bladder, concentrating stress on a glued seam [R1][R5][R6]. The underlying materials cause was the use of Hypalon rubber, which cannot be welded; the glued seams used instead could not withstand pressure reached during the final pump/fill stage [R8]. This was a materials/fabrication-method failure compounded by an installation-timing/weather-window problem, rather than a wave-performance or siting failure — the reef never reached a state where its surf-shaping performance could be properly judged.",
+  "unexpected_results": "The one recorded moment of the Airwave functioning — before the tear forced its removal — reportedly produced a wave that 'peeled nearly all the way to the beach' and reached about 0.75 m, an unplanned, brief glimpse of the concept working, per Bottegal's later account [R8]. No sources document fishing-pressure effects, ecological colonization, rip-current changes, safety incidents, or litigation connected to this installation — plausible given the structure was never operational for an extended period. Local news noted reputational 'deflation' for Bunbury when the trial failed on a high-profile install day [R1].",
+  "could_be_better": "From Waveco/the designer's own account: the identified fix was materials and fabrication method — move away from glued Hypalon seams (relocating manufacture to a WA-based manufacturer) and secure fresh investment before re-attempting installation [R8]. Bottegal framed the setback as a timing/weather issue (an unplanned deep swell during the vulnerable, partially-anchored install phase) rather than a fundamental design flaw, maintaining '100 percent' confidence the concept would work [R6]. Detailed surfer/commentator critique was not found in the sources successfully retrieved for this research [see dossier for blocked forum sources].",
+  "relevance_to_israel": "Bunbury sits on a microtidal WA coast (tidal range roughly ~1 m or less) [R13], broadly comparable in scale to the Mediterranean's small tidal range at Haifa — not itself a factor implicated in the Bunbury failure, but relevant to sizing an Israeli pilot in a similarly low-tide setting. Wave climate differs in kind: Bunbury/SW WA faces Southern Ocean groundswell (~150 rideable-swell days/year) [R9], far more energetic than the Eastern Mediterranean's short-period, wind-driven seas off Haifa. What transfers: (1) the low-cost, rapidly-removable inflatable concept is attractive for a wave-poor, low-tidal-range coast like Israel's, avoiding large capital commitment before wave performance is proven; (2) the documented failure mode — glued (not welded) seam material failing under dynamic swell/undertow loading during the vulnerable partially-anchored installation phase — is a fabrication/installation-window risk any Israeli inflatable-reef pilot would need to solve first, independent of local wave/tide conditions; (3) because Israel's swell energy is much lower than SW Australia's, a device sized for Bunbury's 2–8 ft face range may be oversized for Haifa's smaller everyday waves and would need dedicated re-sizing/modelling, not found in any source reviewed here.",
+  "reviews": [
+    {
+      "who": "Camille-Audrey Perron",
+      "role": "Touring surfer / tourist at Bunbury Back Beach",
+      "quote_or_summary": "Said the reef 'would have been good for the city' and that she was willing to wait for repairs",
+      "outlet": "ABC News",
+      "date": "2019-12-16",
+      "url": "https://www.abc.net.au/news/2019-12-16/word-first-surf-reef-tears-during-installation/11803228"
+    },
+    {
+      "who": "Mal Osborne",
+      "role": "City of Bunbury Chief Executive",
+      "quote_or_summary": "Called the near-complete install attempt 'no mean feat'",
+      "outlet": "ABC News",
+      "date": "2019-12-16",
+      "url": "https://www.abc.net.au/news/2019-12-16/word-first-surf-reef-tears-during-installation/11803228"
+    },
+    {
+      "who": "Gary Brennan",
+      "role": "Bunbury Mayor",
+      "quote_or_summary": "'The Bunbury benefit will be attracting surfing competitions and more business coming here'",
+      "outlet": "ABC News",
+      "date": "2019-06-13",
+      "url": "https://www.abc.net.au/news/2019-06-13/world-first-artificial-surf-reef-to-be-installed-at-bunbury/11204280"
+    },
+    {
+      "who": "Troy Bottegal",
+      "role": "Inventor / director, Waveco Pty Ltd",
+      "quote_or_summary": "On the tear: 'It's torn along the seam — it hasn't torn the actual rubber, which is very strong'; on confidence: '100 percent' confident it would be completed; on removability: 'they take half a day to move'; on the social case: 'If you have a surf culture in your town, there's less depression, there's additional fit and happy humans'",
+      "outlet": "ABC News / The Inertia / Bunbury Mail",
+      "date": "2019-12 to 2022-03-22",
+      "url": "https://www.abc.net.au/news/2019-12-16/word-first-surf-reef-tears-during-installation/11803228"
+    }
+  ],
+  "images": [
+    {
+      "url": "https://live-production.wcms.abc-cdn.net.au/cc84b43142e4cdd5abcbae122250f275",
+      "source_page": "https://www.abc.net.au/news/2019-12-16/word-first-surf-reef-tears-during-installation/11803228",
+      "credit": "ABC South West WA",
+      "license": "Copyright ABC News (Australian Broadcasting Corporation) — link only, not for redistribution/reuse beyond linking",
+      "depicts": "The torn seam in the Airwave inflatable bladder, photographed after it ripped during the December 2019 installation attempt at Bunbury Back Beach",
+      "kind": "photo",
+      "hotlink_ok": true
+    },
+    {
+      "url": "https://live-production.wcms.abc-cdn.net.au/1a68756faf1cc30ccfdfad69bc4ad197",
+      "source_page": "https://www.abc.net.au/news/2019-12-16/word-first-surf-reef-tears-during-installation/11803228",
+      "credit": "Instagram: airwavesurfreef (via ABC News)",
+      "license": "Copyright — link only, not for redistribution/reuse beyond linking",
+      "depicts": "Design/technology graphic of the Airwave device showing how it is meant to build on natural swell using air to create bigger waves at Bunbury Back Beach",
+      "kind": "photo",
+      "hotlink_ok": true
+    },
+    {
+      "url": "https://live-production.wcms.abc-cdn.net.au/0db449946b7b75c45d5bd9c51901a510",
+      "source_page": "https://www.abc.net.au/news/2019-06-13/world-first-artificial-surf-reef-to-be-installed-at-bunbury/11204280",
+      "credit": "ABC South West: Gian De Poloni",
+      "license": "Copyright ABC News — link only, not for redistribution/reuse beyond linking",
+      "depicts": "Aerial view of Bunbury's Back Beach, the intended installation site for the Airwave reef, just south of the Bunbury Surf Life Saving Club",
+      "kind": "photo",
+      "hotlink_ok": true
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/12/Airwave-from-Above.jpg?v=1576553483",
+      "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/bunbury-airwave/",
+      "credit": "Raised Water Research (image source not separately credited on page)",
+      "license": "Copyright Raised Water Research — link only, not for redistribution/reuse beyond linking",
+      "depicts": "Aerial/drone photo of the Airwave bladder in the water off Bunbury Back Beach during the December 2019 installation",
+      "kind": "photo",
+      "hotlink_ok": true
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/12/Airwave-Tear.jpg?v=1576553654",
+      "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/bunbury-airwave/",
+      "credit": "Raised Water Research",
+      "license": "Copyright Raised Water Research — link only, not for redistribution/reuse beyond linking",
+      "depicts": "Close-up/photo documenting the torn seam of the Airwave bladder after the December 2019 installation failure at Bunbury Back Beach",
+      "kind": "photo",
+      "hotlink_ok": true
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/09/AirwaveDiagram2.jpg?v=1568073278",
+      "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/bunbury-airwave/",
+      "credit": "Waveco (via Raised Water Research)",
+      "license": "Copyright Waveco — link only, not for redistribution/reuse beyond linking",
+      "depicts": "Waveco's own technical diagram of the Airwave inflatable bladder design intended for Bunbury Back Beach",
+      "kind": "photo",
+      "hotlink_ok": true
+    }
+  ],
+  "images_rejected": [
+    {
+      "url": "https://www.google.com/maps/@-33.31,115.64,17z",
+      "reason": "Not a fetchable image file: curl returned HTTP 200 but content-type text/html (Google Maps web app shell), not image/*. No image to view or verify."
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.abc.net.au/news/2019-12-16/11804314",
+      "platform": "abc.net.au",
+      "video_id": "11804314",
+      "title": "Dream on hold for Bunbury surfers",
+      "channel": "ABC News (Australia)",
+      "duration_seconds": 35,
+      "date": "2019-12-16",
+      "embed_ok": true,
+      "best_timestamp_seconds": 3,
+      "what_it_shows": "ABC News video segment on the Airwave inflatable surf reef tearing during its December 2019 installation attempt at Bunbury Back Beach: an aerial/drone shot of the inflated bladder sitting on the seabed with a diver and marker buoy nearby, then a beachfront vox-pop interview with touring surfer Camille-Audrey Perron at the Back Beach access point. Confirmed via yt-dlp metadata (title match) and by cross-matching both extracted frames against the companion web image and article.",
+      "transcript_path": "02_research/videos/bunbury-airwave/11804314_notes.txt",
+      "key_quotes": [
+        "00:03 — aerial shot shows the inflated Airwave bladder on the seabed off Bunbury Back Beach with a diver alongside it",
+        "00:12 (approx) — on-screen lower third identifies interviewee 'Camille-Audrey Perron, Touring Surfer'",
+        "Bottegal (installer/inventor), on cause per companion article: \"We had a lot of undertow — a new swell came through that was a very deep swell that we weren't planning on, and it was pushing the undertow through the line-up.\""
+      ],
+      "frames": [
+        {
+          "path": "03_images/video_frames/bunbury-airwave/11804314_0005.jpg",
+          "timestamp": "00:05",
+          "caption": "Aerial drone shot with ABC News watermark: circular pale Airwave bladder just under the surface with orange marker buoy and tether line, matching web image Airwave-from-Above.jpg almost pixel-for-pixel"
+        },
+        {
+          "path": "03_images/video_frames/bunbury-airwave/11804314_0010.jpg",
+          "timestamp": "00:10",
+          "caption": "Interview shot of Camille-Audrey Perron, Touring Surfer, at a beach access point with surf-themed mural and 'NO ACCESS BEYOND THIS POINT' signage"
+        }
+      ]
+    }
+  ],
+  "lior_images": [],
+  "references": [
+    {"id": "R1", "citation": "ABC News (2019-12-16/17). \"Bunbury's Back Beach surfers deflated as artificial reef, Airwave, tears during installation.\"", "url": "https://www.abc.net.au/news/2019-12-16/word-first-surf-reef-tears-during-installation/11803228", "accessed": "2026-09-24", "supports": "tear during installation, 90% complete, A$75,000 council investment, cause (undertow/deep swell), quotes from Bottegal, CEO Osborne, tourist Perron, no-cost-to-ratepayers repair commitment"},
+    {"id": "R2", "citation": "ABC News (2019-06-13). \"'World-first' inflatable surf reef to be installed at beach in Western Australia.\"", "url": "https://www.abc.net.au/news/2019-06-13/world-first-artificial-surf-reef-to-be-installed-at-bunbury/11204280", "accessed": "2026-09-24", "supports": "design/dimensions, 10-year development timeline, A$75,000 council sponsorship approval, motivation, Mayor Brennan quote, wave-size-scaling claim"},
+    {"id": "R3", "citation": "Raised Water Research. \"Bunbury Airwave\" (site profile page).", "url": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/bunbury-airwave/", "accessed": "2026-09-24", "supports": "dimensions, material, cost (~US$400,000 incl. installation), 2018 Kickstarter, timeline, wave specs, left/right breaks"},
+    {"id": "R4", "citation": "Raised Water Research (2019-10-14). \"Progress Update on the Bunbury Airwave.\"", "url": "https://raisedwaterresearch.com/progress-update-on-the-bunbury-airwave/", "accessed": "2026-09-24", "supports": "construction halfway complete as of Oct 2019, Nov 2019 install target, Thunderbomb (Nicaragua) comparison"},
+    {"id": "R5", "citation": "Raised Water Research (2019-12-16). \"The Bunbury Airwave Artificial Surf Reef Tears During Installation.\"", "url": "https://raisedwaterresearch.com/the-bunbury-airwave-artificial-reef-tears-during-installation/", "accessed": "2026-09-24", "supports": "tear mechanics/quotes, 90% complete, undertow cause, no-cost-to-ratepayers, planned investor meeting"},
+    {"id": "R6", "citation": "The Inertia (2019-12). \"The World's First Inflatable Reef Tore During Installation.\"", "url": "https://www.theinertia.com/surf/airwave-worlds-first-inflatable-reef-tore-during-installation/", "accessed": "2026-09-24", "supports": "imperial dimensions, purpose framing, $75,000 city investment, Bottegal '100 percent' confidence quote, bathtub/dome-light origin story"},
+    {"id": "R7", "citation": "SurferToday (2019-12). \"Ripped seam puts world's first inflatable surf reef on hold.\"", "url": "https://www.surfertoday.com/surfing/ripped-seam-puts-worlds-first-inflatable-surf-reef-on-hold", "accessed": "2026-09-24", "supports": "'90 percent complete' quote, expected 30-day delay if replacement needed"},
+    {"id": "R8", "citation": "Bunbury Mail (2022-03-22). \"Airwave founder Troy Bottegal moves towards making Bunbury...\" (story id 7667604).", "url": "https://www.bunburymail.com.au/story/7667604/bunbury-still-set-to-become-surfing-destination/", "accessed": "2026-09-24", "supports": "Hypalon rubber/glued-seam failure cause, 0.75m wave quote, removal timing, WA manufacturer relocation, Summer 2024 target, surf-culture quote, 'not a failure' quote, 140 tonnes of sand"},
+    {"id": "R9", "citation": "SurferToday preview article on Airwave trial (2019).", "url": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/bunbury-airwave/", "accessed": "2026-09-24", "supports": "height 1.6m at highest point, 45m offshore, sand+air fill, 3 divers/1 boat, 150 days/yr, UWA 12-month study, webcam"},
+    {"id": "R10", "citation": "Stab Magazine / The Inertia coverage of Airwave origin and cost.", "url": "https://www.theinertia.com/surf/airwave-worlds-first-inflatable-reef-tore-during-installation/", "accessed": "2026-09-24", "supports": "cost ~US$350,000 (1/20th conventional), 'half a day to move', bathtub-origin story, Kickstarter"},
+    {"id": "R11", "citation": "Waveco Instagram post.", "url": "https://www.instagram.com/p/C8mAt1qva3D/", "accessed": "2026-09-24", "supports": "active Bunbury Back Beach surf-cam post, June 2024"},
+    {"id": "R13", "citation": "Tide data for Bunbury, sample day.", "url": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/bunbury-airwave/", "accessed": "2026-09-24", "supports": "tide heights 0.0–1.2m, sample day 0.4/0.7/0.3/0.6m"},
+    {"id": "R18", "citation": "South Western Times (2020-07-09). \"Airwave back for second wave of Bunbury surf.\"", "url": "https://www.swtimes.com.au/news/south-western-times/airwave-back-for-second-wave-of-bunbury-surf-ng-b881601738z", "accessed": "2026-09-24", "supports": "second Airwave prototype installation planned for December 2020, further A$300,000 needed, 'removed in half a day' quote"},
+    {"id": "R19", "citation": "SurferToday (2018-08-31). \"Inflatable surf reef may be installed in Western Australia.\"", "url": "https://www.surfertoday.com/surfing/inflatable-surf-reef-may-be-installed-in-western-australia", "accessed": "2026-09-24", "supports": "'lift, peak, and hold the swell...concave, tapered wall' design-intent quote"},
+    {"id": "R20", "citation": "Waveco Pty Ltd website / Instagram (2025-09-10).", "url": "https://www.waveco.com.au/", "accessed": "2026-09-24", "supports": "current Bunbury-facing project has shifted to a 'granite artificial reef' (rock) design for coastal-erosion protection, distinct from the original inflatable Airwave"}
+  ],
+  "blocked_sources": [
+    "R15 Swellnet Surf Forums thread (https://www.swellnet.com/comment/625653) - direct fetch times out/fails and no web.archive.org snapshot exists for this URL",
+    "https://www.youtube.com/watch?v=K2DQ-C7OR0U (Live Surf Cam Bunbury Airwave by Waveco) - yt-dlp: Video unavailable; thumbnail endpoint also 404s, no image fallback possible",
+    "https://www.youtube.com/watch?v=hfz92plwENs (Digital Hitmen Podcast Ep.6 on Airwave) - yt-dlp: video unavailable; thumbnail also 404s"
+  ],
+  "gaps": [
+    "Exact lat/lon of the reef not found in any source; coordinates given (-33.31, 115.64) are the Bunbury Surf Club Back Beach area from Google Maps, not a precise site-verified installation point",
+    "No source confirms whether the planned December 2020 second Airwave prototype installation actually took place or succeeded",
+    "No source confirms whether the inflatable Airwave was ever successfully reinstalled/operating after Dec 2019; by 2025 Waveco's public Bunbury project appears to be a different (granite) design",
+    "No formal University of Western Australia study results found; the planned 12-month scientific study appears never to have started",
+    "Total project cost figure disputed between sources (~US$350,000 vs ~US$400,000); only the A$75,000 council contribution is independently corroborated"
+  ]
+}

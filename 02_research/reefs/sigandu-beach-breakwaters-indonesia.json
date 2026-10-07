@@ -1,0 +1,31 @@
+{
+  "slug": "sigandu-beach-breakwaters-indonesia",
+  "name": "Sigandu Beach low-crested breakwaters",
+  "place": "Sigandu Beach, Klidang Lor village, Batang Regency, Central Java",
+  "country": "Indonesia",
+  "kind": "reef",
+  "type": "low-crested breakwater, geotextile tube (geotube)",
+  "purpose": "beach-profile / erosion control",
+  "year_built": "not a specific date; intervention 'commenced September 2014' per the source paper's abstract [R1]; paper published 2015 [R1][R2]",
+  "priority": 2,
+  "status": "not stated beyond short-term (~1 month post-installation) result: rapid sedimentation, salients and tombolos formed [R1]",
+  "dimensions": "not found (no segment count, tube length/diameter, crest height/depth, offshore distance, or volume located; full paper paywalled/bot-blocked)",
+  "cost": "not found",
+  "designer": "not stated (paper authors Sulaiman, Bachtiar, Taufiq, Hermanto appear to be researchers monitoring the project, not necessarily its designer) [R1][R2]",
+  "contractor": "not found",
+  "financed_by": "not stated as a specific budget line; abstract attributes initiation to Batang District local government via its Marine and Fisheries Affair (Dinas Kelautan dan Perikanan) [R1]",
+  "motivation": "erosion of a coastal tourism beach caused by the Batang Commercial Port jetty disturbing longshore sediment transport equilibrium [R1]",
+  "outcome": "abstract reports rapid sedimentation (salients/tombolos) one month after tube installation; no long-term or 2020s-era status found [R1]",
+  "relation_to_master_list": "seeded from 02_research/00_master_list.md row sigandu-beach-breakwaters-indonesia, citing Sulaiman, D.M. et al. 2015, Procedia Eng. 116:510-519",
+  "access_note": "ScienceDirect full text (article and PDF) returned HTTP 403 to WebFetch and an automated bot-check/CAPTCHA page in an interactive browser attempt; only the abstract (via Semantic Scholar's API record) was retrievable in this research pass",
+  "dossier_md": "02_research/reefs/sigandu-beach-breakwaters-indonesia.md",
+  "reviews_found": 0,
+  "references_count": 10,
+  "image_leads": [
+    "https://www.sciencedirect.com/science/article/pii/S187770581501975X",
+    "https://www.sciencedirect.com/science/article/pii/S187770581501975X/pdf",
+    "https://id.wikipedia.org/wiki/Pantai_Sigandu"
+  ],
+  "video_leads": [],
+  "last_updated": "2026-09-24"
+}

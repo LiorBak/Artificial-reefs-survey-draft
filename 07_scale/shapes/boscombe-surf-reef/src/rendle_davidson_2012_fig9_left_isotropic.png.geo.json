@@ -1,0 +1,12 @@
+{
+  "image": "rendle_davidson_2012_fig9_left_isotropic.png",
+  "derived_from": "rendle_davidson_2012_fig9_bathymetry_apr2011_native.png (figure extracted from the ICCE paper PDF, page 7, embedded image 998x580); left panel cropped x60-480,y15-262 then y stretched by 1.7491 to make the axes isotropic",
+  "calibration": "gridlines read from the plot: vertical at native x=147.3 (E 411400) and x=433.5 (E 411550); horizontal at native y=39,104,126,192,235 = N 91000,90940,90920,90860,90820 (linear fit). Native scales: 1.9080 px/m in x, 1.0909 px/m in y",
+  "crs": "OSGB36 / British National Grid (axes labelled Eastings/Northings in m; EPSG:27700)",
+  "width": 420,
+  "height": 432,
+  "px_per_m": 1.908,
+  "E_of_px": "E = 411400 + (x + 60 - 147.3)/1.9080",
+  "N_of_px": "native_y = 15 + y/1.7491 ; N = (native_y - 99306.5244)/-1.09085",
+  "survey": "April 2011 DGPS/bathymetry survey, Channel Coast Observatory via Bournemouth Borough Council, plotted in Rendle & Davidson 2012 Fig. 9 (left panel)"
+}

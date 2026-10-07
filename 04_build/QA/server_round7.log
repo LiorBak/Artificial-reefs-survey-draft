@@ -1,0 +1,7 @@
+::1 - - [25/Sep/2026 05:51:18] "GET /artificial_reefs.html HTTP/1.1" 200 -
+::1 - - [25/Sep/2026 05:51:18] code 404, message File not found
+::1 - - [25/Sep/2026 05:51:18] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [25/Sep/2026 05:51:23] code 404, message File not found
+::1 - - [25/Sep/2026 05:51:23] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [25/Sep/2026 05:51:53] code 404, message File not found
+::1 - - [25/Sep/2026 05:51:53] "GET /favicon.ico HTTP/1.1" 404 -

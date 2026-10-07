@@ -1,0 +1,38 @@
+[
+  {
+    "url": "https://www.abc.net.au/news/2019-12-16/11804314",
+    "platform": "abc.net.au",
+    "title": "Dream on hold for Bunbury surfers",
+    "channel": "ABC News (Australia)",
+    "date": "2019-12-16",
+    "duration_seconds": 35,
+    "what_it_shows": "ABC News video segment on the Airwave inflatable surf reef tearing during its December 2019 installation attempt at Bunbury Back Beach: an aerial/drone shot of the inflated bladder sitting on the seabed with a diver and marker buoy nearby, then a beachfront vox-pop interview with touring surfer Camille-Audrey Perron at the Back Beach access point. Confirmed on-site (Bunbury Back Beach) by the visible surf-club mural and access-point signage matching other Back Beach photos, and by the named interviewee matching the companion ABC article [R1].",
+    "embed_ok": true,
+    "best_timestamp_seconds": 3,
+    "transcript_path": "11804314_notes.txt",
+    "key_quotes": [
+      "00:03 — aerial shot shows the inflated Airwave bladder on the seabed off Bunbury Back Beach with a diver alongside it",
+      "00:12 (approx) — on-screen lower third identifies interviewee 'Camille-Audrey Perron, Touring Surfer', consistent with the 'tourist Perron' quoted in the companion ABC article [R1]",
+      "Bottegal (installer/inventor), on cause per companion article: \"We had a lot of undertow — a new swell came through that was a very deep swell that we weren't planning on, and it was pushing the undertow through the line-up.\" [R1]"
+    ],
+    "frames": [
+      "..\\..\\..\\03_images\\video_frames\\bunbury-airwave\\11804314_0005.jpg",
+      "..\\..\\..\\03_images\\video_frames\\bunbury-airwave\\11804314_0010.jpg"
+    ],
+    "notes": "Not a YouTube video, so no auto-generated subtitle track existed; transcript file above is a manual shot log cross-checked against the companion ABC article text, not a verbatim ASR transcript. Direct media file (for reference, not for redistribution): https://abcmedia.akamaized.net/news/video/201912/airwave_high.mp4"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=K2DQ-C7OR0U",
+    "platform": "youtube",
+    "title": "Live Surf Cam Bunbury, WA, Australia Airwave by Waveco",
+    "status": "unavailable",
+    "notes": "Found via WebSearch as Waveco's live surf-cam stream for the Bunbury Airwave site. yt-dlp returned 'Video unavailable' and the YouTube thumbnail endpoint (hqdefault.jpg) also 404s, meaning the video/stream has been taken down entirely — no image fallback could be produced. Listed for completeness only; not included as a usable media entry."
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=hfz92plwENs",
+    "platform": "youtube",
+    "title": "Airwave, The World's First Inflatable Surf Reef — Digital Hitmen Podcast [Episode 6]",
+    "status": "unavailable",
+    "notes": "Podcast interview about Airwave (2019). yt-dlp returned 'This video is unavailable' and its thumbnail also 404s. Also likely audio-only content (podcast), not site footage. Not included as a usable media entry."
+  }
+]

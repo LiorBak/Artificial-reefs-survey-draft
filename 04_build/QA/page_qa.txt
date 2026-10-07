@@ -1,0 +1,28 @@
+Page QA — artificial_reefs.html (built 2026-09-25)
+Test method: headless Chrome 1280x900 / 375x812, driven over the DevTools protocol, page opened from file://.
+Screenshots: QA/screens/*.png. Static checks: QA/build_check.txt (run src/check.py).
+
+PASS  13 tiles render; 13/13 hero images loaded from their hotlink URLs; no JS exceptions or console errors
+PASS  no horizontal scroll at 1280 px or 375 px (page or dialog); grid is 1 column at 375 px and 4 at 1280 px
+PASS  keyboard focus on a tile shows the size/cost/year/outcome overlay (02_tile_focus_overlay.png)
+PASS  a real mouse click on a tile opens the dialog; hash becomes #reef/<slug>; focus moves to Close
+PASS  #reef/<slug> opens that reef on load; #reef/<slug>/R# opens it, scrolls to and highlights the reference
+PASS  a [R#] click inside the dialog highlights ref-R# and keeps the dialog open
+PASS  Esc closes the dialog and clears the hash; iframes are destroyed (0 left); focus returns to the tile
+PASS  with a real click on an image, the first Esc closes only the enlarged image and the second closes the dialog
+PASS  clicking the backdrop closes the dialog
+PASS  all 13 dialogs: 0 raw [R# tokens outside superscripts, 0 dead reference links, all reviews/images/videos listed
+PASS  YouTube iframes are created only for embed_ok videos, and not for the one flagged "UNCERTAIN -- link only" (Narrowneck xCLnKjvJ9r4, shown as an unverified lead)
+PASS  table: sorting by column works (cost highest first: Borth, Palm Beach, Albany, ...); a row click opens the dialog
+PASS  map (Leaflet 1.9.4 from cdnjs): 9 markers; popup mini tile -> "Open details" opens the dialog; 4 reefs listed as not on the map, with the reason
+PASS  with cdnjs blocked, clicking Map shows a notice and falls back to the gallery
+PASS  filters: Failed chip -> 5 of 13; text "geotextile" -> 4 (within Failed)
+PASS  dark mode (prefers-color-scheme) renders correctly (13_*, 14_*, 15_* screenshots)
+PASS  print media: with a dialog open only that reef prints; otherwise all visible reefs print expanded (13 details), controls/map/table hidden, no iframes
+NOTE  Page.printToPDF timed out in headless mode (it waits for about 70 hotlinked images); the print layout itself was checked by emulating print media (18_print_media_all.png)
+
+Data notes that come up on the page
+- burkitts-reef-bargara: card lat is +24.8205 (Bargara is at about 24.8 S). The pin fails the hemisphere check and is left off the map, with the reason shown. The card's own gaps note also says the coordinates are the town centre.
+- mount-maunganui-reef, palm-beach-gold-coast, mexico-reef-2026-unnamed: no lat/lon in the card, so no map pin.
+- The USD total (about US$49M, range 47.4–50.5M, 12 of 13 reefs) is transcribed per reef in build.py from each card's cost_usd_approx text. build.py checks that each number still appears in the card. Most of these conversions are marked in the cards as rough and unsourced.
+- Tile cost text for Borth and Bunbury is overridden in build.py, because the compiler's cost_short paired a headline and a USD figure with different scopes.

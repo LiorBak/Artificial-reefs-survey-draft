@@ -1,0 +1,60 @@
+[
+  {
+    "url": "https://www.youtube.com/watch?v=2cC2YXwbPMY",
+    "platform": "YouTube",
+    "video_id": "2cC2YXwbPMY",
+    "title": "SURFING PERTH’S ARTIFICIAL REEF, IS IT GOOD? [FULL POV]",
+    "channel": "Ben Scott",
+    "duration_seconds": 247,
+    "upload_date": "2025-08-16",
+    "origin": "new_search",
+    "relevance": "shows_the_reef",
+    "relevance_evidence": "Uploader description: 'SUPER FUN SESSION AT THE ARTIFICIAL REEF ( Cables ), WAS ALMOST AS GOOD AS IT GETS'; title names Perth's artificial reef. No narration: Whisper found only 'Go Jack!' at 03:28 (probably wind/music otherwise). Content is a water-level POV surf session; whether the rock structure or its outline is ever visible has NOT been checked (no frames extracted).",
+    "segments": [
+      {
+        "start_s": 0,
+        "end_s": 247,
+        "what": "Whole video: first-person (POV) surf session on the Cables artificial reef, per uploader description; no commentary, so sub-segments cannot be located from the transcript",
+        "quote": "SUPER FUN SESSION AT THE ARTIFICIAL REEF ( Cables )"
+      },
+      {
+        "start_s": 208,
+        "end_s": 212,
+        "what": "Only speech in the video: a surfer in the line-up is cheered on (confirms other surfers present; no reef content)",
+        "quote": "Go Jack!"
+      }
+    ],
+    "transcript_path": "02_research/videos/cables-reef-wa/2cC2YXwbPMY.txt",
+    "transcript_source": "local Whisper small (speech-to-text, may contain errors); no YouTube captions exist; essentially no speech (1 line)",
+    "gemini_claims": [],
+    "embed_ok": true,
+    "thumbnail": "https://img.youtube.com/vi/2cC2YXwbPMY/hqdefault.jpg",
+    "review_status": "pending_lior"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=drsWb3RWIhE",
+    "platform": "YouTube",
+    "video_id": "drsWb3RWIhE",
+    "title": "Artificial Reef Perth WA 2nd August 2019 2",
+    "channel": "Nicholas Bombardieri",
+    "duration_seconds": 111,
+    "upload_date": "2019-08-02",
+    "origin": "new_search",
+    "relevance": "shows_the_reef",
+    "relevance_evidence": "MEDIUM confidence. Title says 'Artificial Reef Perth WA'; description and tags are empty; Whisper transcript is empty (no speech). One viewer comment (2023, @darrenstanleysmith5207): 'Pretty much the story at cables reef. Lots of waiting' identifies it as Cables, and Cables is Perth's artificial surfing reef. Visual content not inspected (no frames extracted); the '2' in the title suggests part 2 of a series by this uploader.",
+    "segments": [
+      {
+        "start_s": 0,
+        "end_s": 111,
+        "what": "Whole video: surf footage at 'Artificial Reef Perth WA' on 2 Aug 2019 (identified as Cables only by a viewer comment); no commentary",
+        "quote": "Pretty much the story at cables reef. Lots of waiting (viewer comment, not speech)"
+      }
+    ],
+    "transcript_path": "02_research/videos/cables-reef-wa/drsWb3RWIhE.txt",
+    "transcript_source": "local Whisper small (speech-to-text, may contain errors); no YouTube captions exist; transcript empty (no speech)",
+    "gemini_claims": [],
+    "embed_ok": true,
+    "thumbnail": "https://img.youtube.com/vi/drsWb3RWIhE/hqdefault.jpg",
+    "review_status": "pending_lior"
+  }
+]

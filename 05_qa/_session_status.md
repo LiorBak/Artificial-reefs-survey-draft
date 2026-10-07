@@ -1,0 +1,4 @@
+
+## 2026-09-24 — paused by user
+User said to stop work on everything except the (world) artificial-reef batch — specifically pausing the Israel batch and the "3rd batch" — due to approaching token limits. The reef-batch wrap-up task (13 items: narrowneck-gold-coast, cables-reef-wa, prattes-reef-el-segundo, mount-maunganui-reef, opunake-reef, boscombe-surf-reef, kovalam-reef-india, borth-coastal-defence-reef, palm-beach-gold-coast, southern-ocean-surf-reef-albany, burkitts-reef-bargara, bunbury-airwave, mexico-reef-2026-unnamed) was NOT started — no blocked-sources scan, no 02_cards_overview.md update, no JSON sanity check, no README update. Resume later when told.
+Existing blocked-sources file: 05_qa/blocked_sources.md (already lists items needing manual download/what's needed/how to save).

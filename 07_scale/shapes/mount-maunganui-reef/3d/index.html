@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mount Maunganui Reef - 3D reef model</title>
+<style>
+  :root { --bg:#10181f; --panel:rgba(16,24,31,.93); --ink:#e8eef2; --dim:#9db0bd; --acc:#ffb347; --line:#2b3a46; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; height:100%; background:var(--bg); color:var(--ink); font:13px/1.35 system-ui, "Segoe UI", Roboto, sans-serif; overflow:hidden; }
+  #app { display:flex; height:100%; }
+  #main { position:relative; flex:1; min-width:0; background:#0b1117; display:flex; align-items:center; justify-content:center; }
+  #stage { position:relative; z-index:1; width:100%; height:100%; overflow:hidden; background:#bcd7e6; }
+  #stage canvas { display:block; }
+  #labels { position:absolute; inset:0; pointer-events:none; overflow:hidden; }
+  #photo { position:absolute; inset:0; width:100%; height:100%; object-fit:fill; pointer-events:none; opacity:.5; display:none; }
+  .lbl { color:#fff; background:rgba(10,20,30,.72); padding:1px 5px; border-radius:3px; font-size:11px; white-space:nowrap; text-shadow:0 0 2px #000; }
+  .lbl.reef { background:rgba(200,40,160,.88); font-weight:600; }
+  .lbl.shore { background:rgba(210,60,40,.85); }
+  .lbl.cont { background:rgba(30,90,140,.8); font-size:10px; }
+  .lbl.bar { background:rgba(255,255,255,.92); color:#000; text-shadow:none; font-weight:600; }
+  .lbl.north { background:rgba(255,255,255,.95); color:#000; text-shadow:none; font-weight:700; }
+  .lbl.mvd { background:rgba(180,40,200,.9); font-size:10px; } .lbl.cd { background:rgba(20,130,150,.92); font-size:10px; }
+  .lbl.tide { background:rgba(255,255,255,.9); color:#123; text-shadow:none; font-size:10px; }
+  .lbl.srv { background:rgba(60,60,120,.85); }
+  #caption { position:absolute; left:316px; right:310px; top:8px; z-index:4; background:rgba(10,20,30,.82); border:1px solid var(--line); border-radius:6px; padding:5px 10px; font-size:11.5px; line-height:1.3; max-height:112px; overflow:auto; }
+  #caption b { color:var(--acc); }
+  #ctrl { position:absolute; left:8px; top:8px; width:300px; max-height:calc(100% - 16px); overflow:auto; background:var(--panel); border:1px solid var(--line); border-radius:6px; padding:8px 10px; z-index:5; }
+  #ctrl h3 { margin:8px 0 4px; font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--acc); }
+  #ctrl h3:first-child { margin-top:0; }
+  .row { display:flex; align-items:center; gap:6px; margin:3px 0; }
+  .row label { flex:0 0 112px; color:var(--dim); }
+  .row input[type=range] { flex:1; min-width:0; }
+  .row output { flex:0 0 62px; text-align:right; font-variant-numeric:tabular-nums; }
+  .chk { display:inline-flex; align-items:center; gap:4px; margin-right:8px; white-space:nowrap; }
+  .row .chk { white-space:normal; align-items:flex-start; }
+  button, select, input[type=number], input[type=file] { background:#1d2b36; color:var(--ink); border:1px solid #38505f; border-radius:4px; padding:3px 7px; font:inherit; }
+  button { cursor:pointer; } button:hover { background:#27404f; }
+  .ibtn { width:20px; height:20px; padding:0; border-radius:50%; font-weight:700; font-style:italic; font-family:Georgia,serif; line-height:18px; text-align:center; vertical-align:middle; background:#2a4a63; border-color:#6aa6cf; }
+  .btns { display:flex; flex-wrap:wrap; gap:4px; margin:3px 0; }
+  .btns button { padding:3px 6px; font-size:12px; }
+  #hud { position:absolute; left:316px; right:236px; bottom:8px; z-index:4; background:var(--panel); border:1px solid var(--line); border-radius:6px; padding:6px 10px; font-variant-numeric:tabular-nums; }
+  #hud b { color:var(--acc); }
+  #ve { position:absolute; right:10px; top:8px; z-index:4; background:rgba(0,0,0,.7); color:#fff; padding:5px 10px; border-radius:6px; font-size:15px; font-weight:700; letter-spacing:.02em; }
+  #legend { position:absolute; right:10px; bottom:8px; z-index:4; background:var(--panel); border:1px solid var(--line); border-radius:6px; padding:6px 9px; font-size:11px; }
+  #legend .bar { width:200px; height:10px; border-radius:2px; margin:3px 0; }
+  #legend .tk { display:flex; justify-content:space-between; color:var(--dim); }
+  #side { width:400px; flex:0 0 400px; background:var(--panel); border-left:1px solid var(--line); display:flex; flex-direction:column; min-height:0; }
+  #confbox { padding:8px 10px 6px; border-bottom:1px solid var(--line); }
+  #confbox .conf { border-left:4px solid; padding:4px 8px; background:#16222b; border-radius:0 4px 4px 0; }
+  .conf.medium { border-color:#e6b422; } .conf.high { border-color:#3fb950; } .conf.low { border-color:#e5534b; }
+  .badge { display:inline-block; padding:0 7px; border-radius:9px; font-weight:700; font-size:11px; color:#10181f; margin-right:6px; }
+  .badge.low { background:#e5534b; } .badge.medium { background:#e6b422; } .badge.high { background:#3fb950; }
+  #tabs { display:flex; border-bottom:1px solid var(--line); }
+  #tabs button { flex:1; border:0; border-radius:0; padding:7px 4px; background:transparent; border-bottom:2px solid transparent; }
+  #tabs button.on { border-bottom-color:var(--acc); background:#16222b; }
+  .pane { display:none; overflow:auto; padding:10px 12px; flex:1; min-height:0; }
+  .pane.on { display:block; }
+  #side h2 { margin:0 0 6px; font-size:15px; }
+  #side h3 { margin:12px 0 4px; font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--acc); }
+  table { border-collapse:collapse; width:100%; font-size:11.5px; margin:4px 0; }
+  td, th { border-top:1px solid var(--line); padding:3px 4px; vertical-align:top; text-align:left; }
+  th { color:var(--dim); font-weight:600; }
+  .est { color:#ffb347; font-weight:600; }
+  a { color:#7cc4ff; }
+  .sm { font-size:11px; color:var(--dim); }
+  code { background:#0b1117; padding:0 3px; border-radius:3px; font-family:ui-monospace, Consolas, monospace; font-size:11.5px; }
+  pre { background:#0b1117; padding:6px 8px; border-radius:4px; overflow:auto; font-family:ui-monospace, Consolas, monospace; font-size:11.5px; line-height:1.35; }
+  #readout { white-space:pre; font-family:ui-monospace, Consolas, monospace; font-size:11.5px; background:#0b1117; padding:6px; border-radius:4px; }
+  #err { position:absolute; inset:0; display:none; align-items:center; justify-content:center; text-align:center; padding:30px; z-index:20; background:#10181f; color:#ffd6d6; font-size:15px; }
+  #xsec { width:100%; height:200px; background:#0b1117; border-radius:4px; display:block; }
+  #vmodal { position:absolute; inset:0; z-index:30; display:none; align-items:center; justify-content:center; background:rgba(0,0,0,.55); }
+  #vmodal .box { width:min(880px, 92%); max-height:88%; overflow:auto; background:#13202a; border:1px solid #6aa6cf; border-radius:8px; padding:14px 18px; box-shadow:0 8px 40px rgba(0,0,0,.6); }
+  #vmodal h2 { margin:0 0 6px; font-size:15px; } #vmodal .x { float:right; }
+  #vmodal td, #vmodal th { font-size:12px; }
+  .md h1 { font-size:16px; margin:4px 0 8px; } .md h2 { font-size:14px; margin:16px 0 4px; color:var(--acc); } .md h3 { font-size:12.5px; margin:12px 0 3px; color:#cfe3f0; text-transform:none; letter-spacing:0; }
+  .md p { margin:5px 0; } .md ul, .md ol { margin:4px 0 4px 18px; padding:0; } .md li { margin:2px 0; }
+  .md .tw { overflow-x:auto; } .md table { font-size:11px; } .md td, .md th { min-width:60px; }
+  .subtabs { display:flex; flex-wrap:wrap; gap:4px; margin:0 0 8px; }
+  .subtabs button.on { background:#38505f; border-color:var(--acc); }
+  body.nopanel #side { display:none; }
+  body.noui #ctrl, body.noui #hud, body.noui #legend { display:none; }
+  body.noctrl #ctrl { display:none; }
+  body.noctrl #hud { left:8px; }
+  body.noctrl #caption { left:8px; }
+  body.nocap #caption { display:none; }
+  body.docs #caption, body.docs #hud { display:none; }
+  .photo-only { display:none; } body.photo .photo-only { display:block; }
+</style>
+<script type="importmap">
+{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+               "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/" } }
+</script>
+<script src="model.js"></script>
+<script src="docs.js"></script>
+<script>
+window.addEventListener('error', function (ev) { var e = document.getElementById('err'); if (e) { e.style.display = 'flex'; e.textContent = 'Script error: ' + ev.message + ' (' + (ev.filename || '').split('/').pop() + ':' + ev.lineno + ')'; } });
+window.addEventListener('unhandledrejection', function (ev) { var e = document.getElementById('err'); if (e) { e.style.display = 'flex'; e.textContent = 'Error: ' + (ev.reason && ev.reason.message ? ev.reason.message : ev.reason); } });
+</script>
+</head>
+<body>
+<div id="app">
+  <div id="main">
+    <div id="stage"><div id="labels"></div><img id="photo" alt="photo overlay"></div>
+    <div id="err"></div>
+    <div id="caption"></div>
+
+    <div id="ctrl">
+      <h3>View</h3>
+      <div class="btns" id="views"></div>
+      <div class="row"><label>Field of view</label><input id="fov" type="range" min="15" max="110" step="1" value="50"><output id="fovO"></output></div>
+      <div class="row"><label>Vert. exaggeration</label><input id="ve-in" type="range" min="1" max="5" step="0.5" value="1"><output id="veO"></output></div>
+
+      <h3>Outline version <button id="vinfoBtn" class="ibtn" title="What are the outline versions? (name, date, source, footprint, volume)">i</button></h3>
+      <select id="vsel" style="width:100%"></select>
+      <div class="sm" id="vnote"></div>
+      <div class="row" id="runRow"><label>Skirt run (H:V)</label><input id="run" type="range" min="0.25" max="2" step="0.25" value="1"><output id="runO"></output></div>
+
+      <h3>Water level (tide datum)</h3>
+      <div class="row"><label>Level</label><input id="wl" type="range" min="0" max="6" step="1" value="3"><output id="wlO"></output></div>
+      <div class="btns" id="wlbtns"></div>
+      <div class="sm" id="wlNote"></div>
+
+      <h3>Reef and seabed (uncertain inputs)</h3>
+      <div class="row"><label>Bed at the reef (CD)</label><select id="bed" style="flex:1"></select></div>
+      <div class="row"><label>Crest (m CD)</label><select id="crest" style="flex:1"></select></div>
+      <div class="sm">Bed = seabed elevation at the reef centre in as-built 2008-09. Decision -4.0 m CD (range -3.0 to -4.5); every later source reads shallower (2013 survey -2.4 to -3.3, Navionics 2026 -2.76). The stated 2,800 m3 matches a bed of about -3.5 to -3.7 m CD. See the Methods tab.</div>
+
+      <h3>Show</h3>
+      <div>
+        <span class="chk"><input type="checkbox" id="t-water" checked><label for="t-water">water</label></span>
+        <span class="chk"><input type="checkbox" id="t-seabed" checked><label for="t-seabed">seabed</label></span>
+        <span class="chk"><input type="checkbox" id="t-reef" checked><label for="t-reef">reef</label></span>
+        <span class="chk"><input type="checkbox" id="t-labels" checked><label for="t-labels">labels</label></span>
+        <span class="chk"><input type="checkbox" id="t-cont" checked><label for="t-cont">depth contours</label></span>
+        <span class="chk"><input type="checkbox" id="t-grid" checked><label for="t-grid">metre grid</label></span>
+        <span class="chk"><input type="checkbox" id="t-out" checked><label for="t-out">outline lines</label></span>
+        <span class="chk"><input type="checkbox" id="t-datum" checked><label for="t-datum">tide staff + datum lines (MVD-53, CD)</label></span>
+        <span class="chk"><input type="checkbox" id="t-srv"><label for="t-srv">2013 survey surface (evidence)</label></span>
+      </div>
+
+      <h3>Camera - photo match</h3>
+      <div class="row"><span class="chk"><input type="checkbox" id="t-photo"><label for="t-photo">photo-match mode (sliders drive the camera; VE forced to 1x)</label></span></div>
+      <div class="photo-only">
+        <div class="row"><label>Photo file</label><input id="pfile" type="file" accept="image/*" style="width:150px"></div>
+        <div class="row"><label>Photo opacity</label><input id="popa" type="range" min="0" max="1" step="0.05" value="0.5"><output id="popaO"></output></div>
+        <div class="row"><label>x (alongshore)</label><input id="cx" type="range" min="-300" max="300" step="0.5"><input id="cxN" type="number" step="0.5" style="width:66px"></div>
+        <div class="row"><label>y (seaward)</label><input id="cy" type="range" min="-150" max="600" step="0.5"><input id="cyN" type="number" step="0.5" style="width:66px"></div>
+        <div class="row"><label>z (height, m MSL)</label><input id="cz" type="range" min="-8" max="150" step="0.1"><input id="czN" type="number" step="0.1" style="width:66px"></div>
+        <div class="row"><label>Heading (true)</label><input id="ch" type="range" min="0" max="360" step="0.5"><input id="chN" type="number" step="0.5" style="width:66px"></div>
+        <div class="row"><label>Pitch (+ up)</label><input id="cp" type="range" min="-90" max="60" step="0.5"><input id="cpN" type="number" step="0.5" style="width:66px"></div>
+        <div class="row"><label>Roll</label><input id="cr" type="range" min="-30" max="30" step="0.25"><input id="crN" type="number" step="0.25" style="width:66px"></div>
+        <div class="sm">Vertical FOV is the slider under View. The canvas takes the photo's aspect ratio when a photo is loaded. The reef was removed in 2014, so match the as-built photos (2007-2013) to the model; the shore, Mauao and the beach are not modelled.</div>
+      </div>
+      <div class="btns"><button id="copyCam">Copy camera parameters (JSON)</button></div>
+      <textarea id="camjson" rows="5" style="display:none;width:100%;background:#0b1117;color:#e8eef2;border:1px solid #38505f;font:11px ui-monospace,Consolas,monospace"></textarea>
+    </div>
+
+    <div id="ve">Vertical exaggeration: 1x</div>
+    <div id="hud"></div>
+    <div id="legend">
+      <div><b>Seabed elevation</b> (m rel. MSL; CD = MSL - 1.13)</div>
+      <div class="bar" id="legbar"></div>
+      <div class="tk"><span>+2</span><span>0</span><span>-2</span><span>-4</span><span>-6</span><span>-8</span></div>
+    </div>
+    <div id="vmodal"><div class="box"><button class="x" id="vclose">close</button><div id="vbody"></div></div></div>
+  </div>
+
+  <div id="side">
+    <div id="confbox"></div>
+    <div id="tabs"><button data-p="pModel" class="on">Model data</button><button data-p="pDocs">Methods &amp; sources</button></div>
+    <div class="pane on" id="pModel"></div>
+    <div class="pane" id="pDocs">
+      <div class="subtabs" id="subtabs"></div>
+      <div class="md" id="docbody"></div>
+    </div>
+  </div>
+</div>
+
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
+
+const $ = id => document.getElementById(id);
+const M = window.REEF_MODEL, DOCS = window.REEF_DOCS || {};
+if (!M) { const e = $('err'); e.style.display = 'flex'; e.textContent = 'model.js did not load (REEF_MODEL missing).'; throw new Error('no model'); }
+
+const RAD = Math.PI / 180, DEG = 180 / Math.PI;
+const BX = M.frame.bearing_x_deg, BY = M.frame.bearing_y_deg;
+const MSL = M.datum.msl_above_cd_m, MVDZ = M.datum.mvd53_z, CDZ = M.datum.cd_z;
+const SB = M.seabed, R = M.reef, GR = R.grid, ZC = R.zc_cd, YC = SB.y_ref;
+const P = new URLSearchParams(location.hash.slice(1));
+for (const [k, c] of [['panel', 'nopanel'], ['ui', 'noui'], ['ctrl', 'noctrl'], ['cap', 'nocap']]) if (P.get(k) === '0') document.body.classList.add(c);
+
+// ---------------------------------------------------------------- model (x alongshore, y offshore, z up) -> three (X = x, Y = z, Z = y); mirror-free
+const m2t = (x, y, z) => new THREE.Vector3(x, z, y);
+const t2m = v => ({ x: v.x, y: v.z, z: v.y });
+const fmt = (v, d = 2) => (v >= 0 ? '+' : '−') + Math.abs(v).toFixed(d);
+const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+function headingTrue(dx, dy) { const E = dx * Math.sin(BX * RAD) + dy * Math.sin(BY * RAD), N = dx * Math.cos(BX * RAD) + dy * Math.cos(BY * RAD); return (Math.atan2(E, N) * DEG + 360) % 360; }
+
+// ---------------------------------------------------------------- state
+const wl = M.water_levels, VERS = M.versions;
+const state = { wlIdx: Math.max(0, wl.findIndex(w => w.id === M.water_default)), ve: 1, ver: M.default_version, bed: SB.bed_default_cd, crest: R.crest_cd.default, run: 1, fov: 50, photo: false, sx: -18 };
+if (P.get('wl')) { const k = wl.findIndex(w => w.id === P.get('wl')); if (k >= 0) state.wlIdx = k; }
+if (P.get('ve')) state.ve = clamp(+P.get('ve'), 1, 5);
+if (P.get('version') && VERS.some(v => v.id === P.get('version'))) state.ver = P.get('version');
+if (P.get('bed')) state.bed = P.get('bed') === 'nav' ? 'nav' : +P.get('bed');
+if (P.get('crest')) state.crest = +P.get('crest');
+if (P.get('run')) state.run = clamp(+P.get('run'), 0.25, 2);
+if (P.get('fov')) state.fov = +P.get('fov');
+if (P.get('sx')) state.sx = +P.get('sx');
+const wlZ = () => wl[state.wlIdx].z;
+const verObj = id => VERS.find(v => v.id === (id || state.ver));
+
+// ---------------------------------------------------------------- seabed rule  S(y) = Pnav(y) + (bed - Pnav(y_ref)) * w(y)   (m CD)
+const KY = SB.knots_cd.map(k => k[0]), KZ = SB.knots_cd.map(k => k[1]);
+function pnav(y) {
+  if (y < 0) return MSL - y / SB.beach_run_per_rise;
+  const n = KY.length;
+  if (y >= KY[n - 1]) return KZ[n - 1] + (y - KY[n - 1]) * (KZ[n - 1] - KZ[n - 2]) / (KY[n - 1] - KY[n - 2]);
+  let i = 0; while (KY[i + 1] < y) i++;
+  return KZ[i] + (y - KY[i]) / (KY[i + 1] - KY[i]) * (KZ[i + 1] - KZ[i]);
+}
+const ZREF = pnav(YC);
+function bedCD(y, bed = state.bed) { const b = pnav(y); if (bed === 'nav') return b; return b + (bed - ZREF) * clamp((y - SB.w_y0) / (YC - SB.w_y0), 0, 1); }
+const bedZ = y => bedCD(y) - MSL;                 // m MSL
+
+// ---------------------------------------------------------------- renderer / scene
+const stage = $('stage');
+const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+stage.insertBefore(renderer.domElement, stage.firstChild);
+const labelRenderer = new CSS2DRenderer({ element: $('labels') });
+const scene = new THREE.Scene();
+scene.background = new THREE.Color('#aecbdb');
+const camera = new THREE.PerspectiveCamera(state.fov, 1.6, 0.2, 4000);
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = false; controls.maxPolarAngle = Math.PI * 0.499 + 0.07; controls.minDistance = 3; controls.maxDistance = 1200;
+scene.add(new THREE.HemisphereLight('#ffffff', '#5b7a8c', 0.9));
+const sun = new THREE.DirectionalLight('#fff4dd', 1.1); sun.position.set(-80, 140, 60); scene.add(sun);
+const world = new THREE.Group(); scene.add(world);          // scaled in Y for vertical exaggeration
+const labelObjs = [];
+function addLabel(text, pos, cls, parent = world) {
+  const d = document.createElement('div'); d.className = 'lbl ' + (cls || ''); d.textContent = text;
+  const o = new CSS2DObject(d); o.position.copy(pos); parent.add(o); labelObjs.push(o); return o;
+}
+
+// ---------------------------------------------------------------- seabed mesh (alongshore uniform)
+const STOPS = [[3.0, [232, 218, 176]], [0.3, [216, 201, 156]], [-1.0, [176, 196, 164]], [-3.0, [116, 170, 176]], [-5.0, [67, 127, 158]], [-7.0, [42, 90, 140]], [-9.0, [27, 60, 112]], [-12, [20, 46, 96]]];
+function colourFor(z) {
+  for (let i = 0; i < STOPS.length - 1; i++) {
+    const [a0, c0] = STOPS[i], [a1, c1] = STOPS[i + 1];
+    if (z <= a0 && z >= a1) { const t = (a0 - z) / (a0 - a1); return c0.map((v, k) => (v + (c1[k] - v) * t) / 255); }
+  }
+  return (z > STOPS[0][0] ? STOPS[0][1] : STOPS[STOPS.length - 1][1]).map(v => v / 255);
+}
+$('legbar').style.background = 'linear-gradient(90deg,' + [2, 0, -2, -4, -6, -8, -10].map((z, i, a) => { const c = colourFor(z).map(v => Math.round(v * 255)); return `rgb(${c}) ${(i / (a.length - 1) * 100).toFixed(0)}%`; }).join(',') + ')';
+const XMIN = SB.extent.x[0], XMAX = SB.extent.x[1], YMIN = SB.extent.y[0], YMAX = SB.extent.y[1];
+const GX = 20;
+const NXs = Math.round((XMAX - XMIN) / GX) + 1;
+const YN = (() => { const s = new Set(); for (let y = YMIN; y <= YMAX + 1e-6; y += 5) s.add(+y.toFixed(3)); SB.knots_cd.forEach(k => { if (k[0] >= YMIN && k[0] <= YMAX) s.add(k[0]); }); s.add(SB.w_y0); s.add(YC); s.add(0); return [...s].sort((a, b) => a - b); })();
+const NYs = YN.length;
+const seabedGroup = new THREE.Group(); world.add(seabedGroup);
+let seabedMesh = null, skirtMesh = null;
+function buildSeabed() {
+  if (seabedMesh) { seabedGroup.remove(seabedMesh); seabedMesh.geometry.dispose(); }
+  if (skirtMesh) { seabedGroup.remove(skirtMesh); skirtMesh.geometry.dispose(); }
+  const pos = new Float32Array(NXs * NYs * 3), col = new Float32Array(NXs * NYs * 3), idx = [];
+  for (let j = 0; j < NYs; j++) for (let i = 0; i < NXs; i++) {
+    const k = j * NXs + i, x = XMIN + i * GX, y = YN[j], z = bedZ(y);
+    pos[3 * k] = x; pos[3 * k + 1] = z; pos[3 * k + 2] = y;
+    const c = colourFor(z); col[3 * k] = c[0]; col[3 * k + 1] = c[1]; col[3 * k + 2] = c[2];
+  }
+  for (let j = 0; j < NYs - 1; j++) for (let i = 0; i < NXs - 1; i++) { const a = j * NXs + i, b = a + 1, c = a + NXs, d = c + 1; idx.push(a, c, b, b, c, d); }
+  const g = new THREE.BufferGeometry();
+  g.setAttribute('position', new THREE.BufferAttribute(pos, 3)); g.setAttribute('color', new THREE.BufferAttribute(col, 3));
+  g.setIndex(idx); g.computeVertexNormals();
+  seabedMesh = new THREE.Mesh(g, new THREE.MeshLambertMaterial({ vertexColors: true, side: THREE.DoubleSide }));
+  seabedGroup.add(seabedMesh);
+  const floor = -12, sp = [], si = [], edge = [];
+  for (let i = 0; i < NXs; i++) edge.push([XMIN + i * GX, YMIN]);
+  for (let j = 0; j < NYs; j++) edge.push([XMAX, YN[j]]);
+  for (let i = NXs - 1; i >= 0; i--) edge.push([XMIN + i * GX, YMAX]);
+  for (let j = NYs - 1; j >= 0; j--) edge.push([XMIN, YN[j]]);
+  edge.forEach((e, k) => { sp.push(e[0], bedZ(e[1]), e[1], e[0], floor, e[1]); if (k < edge.length - 1) { const a = 2 * k; si.push(a, a + 1, a + 2, a + 1, a + 3, a + 2); } });
+  const sg = new THREE.BufferGeometry(); sg.setAttribute('position', new THREE.Float32BufferAttribute(sp, 3)); sg.setIndex(si);
+  skirtMesh = new THREE.Mesh(sg, new THREE.MeshBasicMaterial({ color: '#2c3c46', side: THREE.DoubleSide }));
+  seabedGroup.add(skirtMesh);
+}
+const contourGroup = new THREE.Group(); world.add(contourGroup);
+function buildContours() {
+  while (contourGroup.children.length) { const o = contourGroup.children.pop(); if (o.geometry) o.geometry.dispose(); }
+  labelObjs.splice(0, labelObjs.length, ...labelObjs.filter(o => !o.userData.cont));
+  for (let zc = -8; zc <= 1; zc++) {                           // contours of z in m CD
+    for (let k = 0; k < YN.length - 1; k++) {
+      const z0 = bedCD(YN[k]), z1 = bedCD(YN[k + 1]);
+      if ((z0 - zc) * (z1 - zc) <= 0 && z0 !== z1) {
+        const y = YN[k] + (zc - z0) / (z1 - z0) * (YN[k + 1] - YN[k]);
+        const g = new THREE.BufferGeometry().setFromPoints([m2t(XMIN, y, zc - MSL + 0.05), m2t(XMAX, y, zc - MSL + 0.05)]);
+        contourGroup.add(new THREE.Line(g, new THREE.LineBasicMaterial({ color: zc === 0 ? '#ff6a4d' : '#ffffff', transparent: true, opacity: zc === 0 ? 0.9 : 0.45 })));
+        if (zc <= 0) { const o = addLabel((zc === 0 ? 'CD 0' : zc) + ' m', m2t(XMIN + 20, y, zc - MSL + 0.1), 'cont', contourGroup); o.userData.cont = true; }
+        break;
+      }
+    }
+  }
+}
+
+// ---------------------------------------------------------------- water, grid, shoreline, scale bars, north arrow, tide staff, datum lines
+const waterGroup = new THREE.Group(); world.add(waterGroup);
+const waterMesh = new THREE.Mesh(new THREE.PlaneGeometry(XMAX - XMIN, YMAX - YMIN),
+  new THREE.MeshPhongMaterial({ color: '#2f8fb8', transparent: true, opacity: 0.30, depthWrite: false, side: THREE.DoubleSide, shininess: 80, specular: '#99ccee' }));
+waterMesh.rotation.x = -Math.PI / 2; waterMesh.position.set((XMIN + XMAX) / 2, 0, (YMIN + YMAX) / 2);
+waterGroup.add(waterMesh);
+const gridGroup = new THREE.Group(); world.add(gridGroup);
+{
+  const minor = [], major = [];
+  for (let x = Math.ceil(XMIN / 10) * 10; x <= XMAX; x += 10) (x % 50 === 0 ? major : minor).push(x, 0, YMIN, x, 0, YMAX);
+  for (let y = Math.ceil(YMIN / 10) * 10; y <= YMAX; y += 10) (y % 50 === 0 ? major : minor).push(XMIN, 0, y, XMAX, 0, y);
+  const mk = (arr, op) => { const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.Float32BufferAttribute(arr, 3)); return new THREE.LineSegments(g, new THREE.LineBasicMaterial({ color: '#ffffff', transparent: true, opacity: op, depthWrite: false })); };
+  gridGroup.add(mk(minor, 0.16)); gridGroup.add(mk(major, 0.6));
+  for (let x = -150; x <= 150; x += 50) addLabel('x ' + x, m2t(x, YMIN, 0), 'cont', gridGroup);
+  for (let y = 0; y <= 550; y += 50) addLabel('y ' + y + ' m', m2t(XMIN, y, 0), 'cont', gridGroup);
+}
+const shoreGroup = new THREE.Group(); world.add(shoreGroup);
+{
+  const pts = []; for (let x = XMIN; x <= XMAX; x += 5) pts.push(m2t(x, 0, bedZ(0) + 0.1));
+  shoreGroup.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts), new THREE.LineBasicMaterial({ color: '#ff5a3c' })));
+  addLabel('shoreline y = 0 (wet/dry sand, Esri 2011-01-15)', m2t(XMIN + 110, 0, 0.6), 'shore', shoreGroup);
+}
+const barGroup = new THREE.Group(); world.add(barGroup);
+function bar(x0, y0, len, label, thick) {
+  const mat = new THREE.MeshBasicMaterial({ color: '#ffffff' });
+  const m = new THREE.Mesh(new THREE.BoxGeometry(len, thick, thick), mat); m.position.set(x0 + len / 2, 0, y0); barGroup.add(m);
+  const t1 = new THREE.Mesh(new THREE.BoxGeometry(thick, thick * 3, thick * 3), mat); t1.position.set(x0, 0, y0); barGroup.add(t1);
+  const t2 = t1.clone(); t2.position.set(x0 + len, 0, y0); barGroup.add(t2);
+  addLabel(label, new THREE.Vector3(x0 + len / 2, 0.8, y0), 'bar', barGroup);
+}
+bar(-60, YC - 55, 10, '10 m', 0.25); bar(-60, YC - 64, 50, '50 m', 0.25);
+const northGroup = new THREE.Group(); world.add(northGroup);
+{
+  const n = M.north.dir_xy, o = m2t(70, YC - 50, 0), d = m2t(n[0], n[1], 0).normalize();
+  northGroup.add(new THREE.ArrowHelper(d, o, 22, 0xffffff, 6, 3.5));
+  addLabel('N (true)', o.clone().addScaledVector(d, 27), 'north', northGroup);
+}
+// tide staff + labelled datum lines (MVD-53, CD)
+const datumGroup = new THREE.Group(); world.add(datumGroup);
+{
+  const SXs = 56, SYs = YC - 12;
+  datumGroup.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([m2t(SXs, SYs, bedZ(SYs)), m2t(SXs, SYs, 2.0)]), new THREE.LineBasicMaterial({ color: '#ffffff' })));
+  const tick = (z, txt, cls, side) => {
+    datumGroup.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([m2t(SXs - 1.2, SYs, z), m2t(SXs + 1.2, SYs, z)]), new THREE.LineBasicMaterial({ color: '#ffffff' })));
+    const o = addLabel(txt, m2t(SXs + side * 1.8, SYs, z), cls, datumGroup); o.element.style.transform = side < 0 ? 'translate(-100%, 0)' : 'none'; return o;
+  };
+  wl.forEach(w => tick(w.z, `${w.id} ${fmt(w.z, 2)}`, 'tide', 1));
+  M.datum_lines.forEach(d => tick(d.z, `${d.id} ${fmt(d.z, 2)}`, d.id === 'CD' ? 'cd' : 'mvd', -1));
+  const loop = (z, col) => { const a = [m2t(-70, 255, z), m2t(70, 255, z), m2t(70, 370, z), m2t(-70, 370, z), m2t(-70, 255, z)]; const g = new THREE.BufferGeometry().setFromPoints(a); const l = new THREE.Line(g, new THREE.LineDashedMaterial({ color: col, dashSize: 2, gapSize: 1.5 })); l.computeLineDistances(); return l; };
+  datumGroup.add(loop(MVDZ, '#c040e0')); datumGroup.add(loop(CDZ, '#18a3b8'));
+  addLabel('MVD-53 datum line', m2t(-70, 370, MVDZ), 'mvd', datumGroup); addLabel('Chart Datum (CD) line', m2t(-70, 255, CDZ), 'cd', datumGroup);
+  addLabel('tide staff (z in m MSL)', m2t(SXs, SYs, 2.6), 'tide', datumGroup);
+}
+
+// ---------------------------------------------------------------- reef: height field per version rule, rebuilt on every input change
+const NXR = GR.nx, NYR = GR.ny, DXR = GR.dx, RX0 = GR.x0, RY0 = GR.y0;
+const INNER = R.inner_per_mille;
+const reefGroup = new THREE.Group(); world.add(reefGroup);
+let reefMesh = null, reefLines = null, reefLabel = null, reefH = null, reefZ = null, reefInfo = null;
+const reefMat = new THREE.MeshStandardMaterial({ vertexColors: true, roughness: 0.85, metalness: 0.0, side: THREE.DoubleSide });
+function computeField(verId, bed, crest, run) {         // returns {Z (m CD, per cell), H (m above the local bed), Sbed row array}
+  const v = verObj(verId), F = v.flank, Z = new Float32Array(NXR * NYR), H = new Float32Array(NXR * NYR);
+  let vol = 0, hmax = 0, area = 0, hsum = 0;
+  for (let j = 0; j < NYR; j++) {
+    const y = RY0 + j * DXR, S = bedCD(y, bed);
+    for (let i = 0; i < NXR; i++) {
+      const k = j * NXR + i, r = INNER[k]; let z = S;
+      if (r >= 0) z = ZC + r / 1000 * (crest - ZC);
+      else { const f = F[k]; if (f >= 0) { z = v.rule === 'skirt' ? Math.max(S, ZC - f / 100 / run) : Math.max(S, S + (ZC - S) * f / 1000); } }
+      const h = Math.max(0, z - S); Z[k] = z; H[k] = h; vol += h; if (h > hmax) hmax = h; if (h > 0.02) { area++; hsum += h; }
+    }
+  }
+  return { Z, H, vol: vol * DXR * DXR, hmax, area: area * DXR * DXR, hmean: area ? hsum / area : 0 };
+}
+function volumeOnly(verId, bed, crest, run) { return computeField(verId, bed, crest, run).vol; }
+function bedFor(verId, target, crest, run) { let lo = -6, hi = -2; for (let n = 0; n < 30; n++) { const mid = (lo + hi) / 2; if (volumeOnly(verId, mid, crest, run) > target) lo = mid; else hi = mid; } return (lo + hi) / 2; }
+function buildReef() {
+  if (reefMesh) { reefGroup.remove(reefMesh); reefMesh.geometry.dispose(); }
+  if (reefLines) { reefGroup.remove(reefLines); reefLines.traverse(o => { if (o.geometry) o.geometry.dispose(); }); }
+  const v = verObj(), f = computeField(state.ver, state.bed, state.crest, state.run);
+  const pos = new Float32Array(NXR * NYR * 3), col = new Float32Array(NXR * NYR * 3), idx = [];
+  for (let j = 0; j < NYR; j++) for (let i = 0; i < NXR; i++) {
+    const k = j * NXR + i, h = f.H[k], t = clamp(h / Math.max(f.hmax, 0.01), 0, 1);
+    pos[3 * k] = RX0 + i * DXR; pos[3 * k + 1] = f.Z[k] - MSL + (h > 0 ? 0.015 : 0.0); pos[3 * k + 2] = RY0 + j * DXR;
+    const a = [0.46, 0.40, 0.30], b = [0.90, 0.82, 0.64]; col[3 * k] = a[0] + (b[0] - a[0]) * t; col[3 * k + 1] = a[1] + (b[1] - a[1]) * t; col[3 * k + 2] = a[2] + (b[2] - a[2]) * t;
+  }
+  for (let j = 0; j < NYR - 1; j++) for (let i = 0; i < NXR - 1; i++) {
+    const a = j * NXR + i, b = a + 1, c = a + NXR, d = c + 1;
+    if (f.H[a] > 0.005 || f.H[b] > 0.005 || f.H[c] > 0.005 || f.H[d] > 0.005) idx.push(a, c, b, b, c, d);
+  }
+  const g = new THREE.BufferGeometry();
+  g.setAttribute('position', new THREE.BufferAttribute(pos, 3)); g.setAttribute('color', new THREE.BufferAttribute(col, 3)); g.setIndex(idx); g.computeVertexNormals();
+  reefMesh = new THREE.Mesh(g, reefMat); reefGroup.add(reefMesh);
+  // outline lines: -2.0 m contour of the 2013 survey (yellow) and, for the toe version, the toe (orange, at the bed)
+  reefLines = new THREE.Group();
+  const loopLine = (poly, zf, col) => { const pts = poly.map(p => m2t(p[0], p[1], zf(p) )); pts.push(pts[0].clone()); return new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts), new THREE.LineBasicMaterial({ color: col })); };
+  const ov = VERS[0].polygons_m;                          // the -2.0 polygons are stored with the first (survey) version
+  ov.forEach(p => reefLines.add(loopLine(p, () => ZC - MSL + 0.05, '#ffd24a')));
+  if (v.rule === 'loft') v.polygons_m.forEach(p => reefLines.add(loopLine(p, q => bedZ(q[1]) + 0.05, '#ff8a00')));
+  reefGroup.add(reefLines);
+  reefH = f.H; reefZ = f.Z;
+  const bedC = bedCD(YC);
+  reefInfo = { vol: f.vol, hmax: f.hmax, area: f.area, hmean: f.hmean, bedC, crestH: state.crest - bedC };
+  if (!reefLabel) reefLabel = addLabel('Mount Reef (as built 2008)', new THREE.Vector3(), 'reef', reefGroup);
+  reefLabel.position.copy(m2t(-2, YC + 4, state.crest - MSL + 1.6));
+  updateStats(); applyToggles(); drawXsec();
+}
+
+// ---------------------------------------------------------------- 2013 survey surface (evidence layer, hue-decoded DEM; hidden by default)
+const SV = M.survey2013, SG = SV.grid, srvGroup = new THREE.Group(); world.add(srvGroup);
+{
+  const pos = new Float32Array(SG.nx * SG.ny * 3), col = new Float32Array(SG.nx * SG.ny * 3), idx = [];
+  for (let j = 0; j < SG.ny; j++) for (let i = 0; i < SG.nx; i++) {
+    const k = j * SG.nx + i, c = SV.z_msl_cm[k], z = c === SV.nodata ? 0 : c / 100, cc = colourFor(z - 0.4);
+    pos[3 * k] = SG.x0 + i * SG.dx; pos[3 * k + 1] = z; pos[3 * k + 2] = SG.y0 + j * SG.dx;
+    col[3 * k] = cc[0] * 0.8 + 0.2; col[3 * k + 1] = cc[1] * 0.7; col[3 * k + 2] = cc[2] * 0.7;
+  }
+  for (let j = 0; j < SG.ny - 1; j++) for (let i = 0; i < SG.nx - 1; i++) {
+    const a = j * SG.nx + i, b = a + 1, c = a + SG.nx, d = c + 1;
+    if ([a, b, c, d].every(q => SV.z_msl_cm[q] !== SV.nodata)) idx.push(a, c, b, b, c, d);
+  }
+  const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.BufferAttribute(pos, 3)); g.setAttribute('color', new THREE.BufferAttribute(col, 3)); g.setIndex(idx); g.computeVertexNormals();
+  srvGroup.add(new THREE.Mesh(g, new THREE.MeshLambertMaterial({ vertexColors: true, side: THREE.DoubleSide, transparent: true, opacity: 0.88 })));
+  addLabel('18 Jul 2013 multibeam surface (evidence; deflated apex, bed 1.2 m shallower)', m2t(-40, 255, -3.2), 'srv', srvGroup);
+}
+function surveyAt(x, y) {          // m MSL or null
+  const fi = (x - SG.x0) / SG.dx, fj = (y - SG.y0) / SG.dx, i = Math.round(fi), j = Math.round(fj);
+  if (i < 0 || j < 0 || i >= SG.nx || j >= SG.ny) return null; const c = SV.z_msl_cm[j * SG.nx + i]; return c === SV.nodata ? null : c / 100;
+}
+
+function updateWaterLevel() {
+  const z = wlZ();
+  [waterGroup, gridGroup, barGroup].forEach(g => g.position.y = z + (g === gridGroup ? 0.01 : 0));
+  const w = wl[state.wlIdx];
+  $('wlO').textContent = w.id;
+  $('wlNote').textContent = `${w.label}: z = ${fmt(w.z, 2)} m rel. MSL = ${fmt(w.above_cd, 2)} m rel. CD = ${fmt(w.z - MVDZ, 2)} m rel. MVD-53.`;
+  document.querySelectorAll('#wlbtns button').forEach((b, i) => b.style.outline = i === state.wlIdx ? '2px solid #ffb347' : 'none');
+  if (reefInfo) { updateStats(); drawXsec(); }
+}
+function applyToggles() {
+  waterGroup.visible = $('t-water').checked; seabedGroup.visible = $('t-seabed').checked; reefGroup.visible = $('t-reef').checked;
+  contourGroup.visible = $('t-cont').checked; gridGroup.visible = $('t-grid').checked; datumGroup.visible = $('t-datum').checked; srvGroup.visible = $('t-srv').checked;
+  if (reefLines) reefLines.visible = $('t-out').checked;
+  const lab = $('t-labels').checked; $('labels').style.display = lab ? 'block' : 'none';
+  [seabedGroup, contourGroup, gridGroup, reefGroup, waterGroup, datumGroup, srvGroup, shoreGroup, barGroup, northGroup].forEach(g => g.traverse(o => { if (o.isCSS2DObject) o.visible = g.visible && lab; }));
+}
+function setVE(v) {
+  state.ve = v; world.scale.set(1, v, 1);
+  $('ve').textContent = `Vertical exaggeration: ${v}x` + (v === 1 ? ' (true scale)' : ' (heights stretched)');
+  $('veO').textContent = v + 'x'; $('ve-in').value = v; drawXsec();
+}
+
+// ---------------------------------------------------------------- live values + cross-section
+const stated = M.stated_volume_m3;
+function updateStats() {
+  const r = reefInfo, v = verObj(), w = wlZ(), crestZ = state.crest - MSL;
+  const row = (k, val) => `<tr><td>${k}</td><td>${val}</td></tr>`;
+  const bedTxt = state.bed === 'nav' ? `Navionics profile as it is (${bedCD(YC).toFixed(2)} m CD)` : `${state.bed.toFixed(1)} m CD at the reef centre`;
+  const b2800 = bedFor(state.ver, stated, state.crest, state.run);
+  $('liveStats').innerHTML =
+    row('Outline version', `<b>${v.name}</b>`) +
+    row('Bed at the reef centre', `${bedTxt} = ${fmt(bedCD(YC) - MSL, 2)} m MSL`) +
+    row('Crest', `${state.crest.toFixed(1)} m CD = ${fmt(crestZ, 2)} m MSL`) +
+    row('Crest relative to datums', `${fmt(crestZ - MVDZ, 2)} m MVD-53; below LAT ${(wl.find(x => x.id === 'LAT').z - crestZ).toFixed(2)} m; below MSL ${(0 - crestZ).toFixed(2)} m`) +
+    row('Height above the bed', `centre ${r.crestH.toFixed(2)} m; max ${r.hmax.toFixed(2)} m (seaward bags sit on a deeper bed); mean over the footprint ${r.hmean.toFixed(2)} m`) +
+    row('Water over the crest now', `${(w - crestZ).toFixed(2)} m (${wl[state.wlIdx].id})`) +
+    row('Footprint at the bed', `${r.area.toFixed(0)} m2 (outline of this version: ${v.area_m2} m2)`) +
+    row('Model volume', `<b>${r.vol.toFixed(0)} m3</b> vs ${stated.toFixed(0)} m3 stated (${fmt((r.vol / stated - 1) * 100, 0)} %)`) +
+    row('Bed that gives 2,800 m3', `<b>${b2800.toFixed(2)} m CD</b> at this crest${v.rule === 'skirt' ? ' and skirt run ' + state.run : ''}`);
+  drawXsec();
+}
+function drawXsec() {
+  const cv = $('xsec'); if (!cv || !reefH) return;
+  const dpr = Math.min(window.devicePixelRatio || 1, 2), W = cv.clientWidth, Hh = cv.clientHeight; if (!W) return; cv.width = W * dpr; cv.height = Hh * dpr;
+  const g = cv.getContext('2d'); g.scale(dpr, dpr); g.clearRect(0, 0, W, Hh);
+  const y0 = 262, y1 = 360, z0 = -6.5, z1 = 1.0, px = y => 34 + (y - y0) / (y1 - y0) * (W - 44), pz = z => 8 + (z1 - z) / (z1 - z0) * (Hh - 30);
+  g.font = '10px sans-serif'; g.fillStyle = '#9db0bd'; g.strokeStyle = '#2b3a46'; g.lineWidth = 1;
+  for (let z = -6; z <= 1; z += 1) { g.beginPath(); g.moveTo(34, pz(z)); g.lineTo(W - 10, pz(z)); g.stroke(); g.fillText(z + '', 10, pz(z) + 3); }
+  for (let y = 270; y <= 350; y += 20) g.fillText(y + '', px(y) - 8, Hh - 4);
+  g.fillStyle = 'rgba(47,143,184,.28)'; g.fillRect(34, pz(wlZ()), W - 44, pz(z0) - pz(wlZ()));
+  const dl = (z, col, lab, dash) => { g.strokeStyle = col; g.setLineDash(dash || [3, 3]); g.beginPath(); g.moveTo(34, pz(z)); g.lineTo(W - 10, pz(z)); g.stroke(); g.setLineDash([]); g.fillStyle = col; g.fillText(lab, W - 58, pz(z) - 2); };
+  dl(MVDZ, '#d070f0', 'MVD-53'); dl(CDZ, '#2cc4d8', 'CD'); dl(0, '#ffffff', 'MSL');
+  const sx = state.sx, i0 = Math.round((sx - RX0) / DXR);
+  // navionics as-is (dashed green), selected bed (white), 2013 survey at this x (blue-grey dots)
+  g.strokeStyle = '#5fcf80'; g.setLineDash([4, 3]); g.beginPath(); for (let y = y0; y <= y1; y += 2) { const z = bedCD(y, 'nav') - MSL; y === y0 ? g.moveTo(px(y), pz(z)) : g.lineTo(px(y), pz(z)); } g.stroke(); g.setLineDash([]);
+  g.strokeStyle = '#ffffff'; g.lineWidth = 2; g.beginPath(); for (let y = y0; y <= y1; y += 2) { const z = bedZ(y); y === y0 ? g.moveTo(px(y), pz(z)) : g.lineTo(px(y), pz(z)); } g.stroke(); g.lineWidth = 1;
+  g.fillStyle = '#7e93ff'; for (let y = y0; y <= y1; y += 1) { const z = surveyAt(sx, y); if (z !== null) g.fillRect(px(y) - 1, pz(z) - 1, 2, 2); }
+  if (i0 >= 0 && i0 < NXR) {
+    g.beginPath(); let started = false;
+    for (let j = 0; j < NYR; j++) { const h = reefH[j * NXR + i0], y = RY0 + j * DXR; if (h > 0.005) { const z = reefZ[j * NXR + i0] - MSL; if (!started) { g.moveTo(px(y), pz(bedZ(y))); started = true; } g.lineTo(px(y), pz(z)); } }
+    for (let j = NYR - 1; j >= 0; j--) { const h = reefH[j * NXR + i0], y = RY0 + j * DXR; if (h > 0.005) g.lineTo(px(y), pz(bedZ(y))); }
+    g.closePath(); g.fillStyle = 'rgba(230,220,190,.95)'; g.fill(); g.strokeStyle = '#ff8a00'; g.stroke();
+  }
+  g.fillStyle = '#e8eef2'; g.fillText('y (m offshore) →', 40, 10);
+  g.fillStyle = '#9db0bd'; g.fillText(`section x = ${sx} m; white = bed used, green dashed = Navionics 2026, blue dots = 2013 survey`, 40, 22);
+}
+
+// ---------------------------------------------------------------- camera
+function cameraPose() {
+  const p = t2m(camera.position), d = new THREE.Vector3(); camera.getWorldDirection(d);
+  p.z /= state.ve;
+  const dm = { x: d.x, y: d.z, z: d.y / state.ve }; const hl = Math.hypot(dm.x, dm.y);
+  return { x: p.x, y: p.y, z: p.z, heading: headingTrue(dm.x, dm.y), pitch: Math.atan2(dm.z, hl) * DEG, fov: camera.fov };
+}
+function setCamera(pos, target) {
+  camera.position.copy(m2t(pos[0], pos[1], pos[2] * state.ve));
+  const t = m2t(target[0], target[1], target[2] * state.ve);
+  controls.target.copy(t); camera.up.set(0, 1, 0); camera.lookAt(t); controls.update();
+}
+const ARMS = M.arms_xy;
+const VIEWS = {
+  oblique: { label: 'Oblique (from sea)', fov: 50, f: () => [[38, YC + 50, 15], [-4, YC + 2, -4.2]] },
+  plan: { label: 'Plan (top-down; sea at top)', fov: 40, f: () => { const w = $('main').clientWidth, h = $('main').clientHeight, ov = document.body.classList.contains('noctrl') ? 0 : 316, aw = Math.max(200, w - ov), ah = Math.max(200, h - 150), tn = Math.tan(20 * RAD), Hm = 1.03 * Math.max(80 * h / ah, 90 * h / aw), z = Hm / (2 * tn), sx = (ov / 2) / (h / Hm); return [[-2 + sx, YC - 0.6, z], [-2 + sx, YC, 0]]; } },
+  along: { label: 'Along the south arm (crest)', fov: 55, f: () => { const a = ARMS.south_arm[0], b = ARMS.south_arm[1], dx = a[0] - b[0], dy = a[1] - b[1], L = Math.hypot(dx, dy); return [[b[0] - dx / L * 22, b[1] - dy / L * 22, wlZ() + 2.5], [a[0], a[1], state.crest - MSL]]; } },
+  beach: { label: 'From beach, eye 1.7 m', fov: 40, f: () => { const gy = -6; return [[-2, gy, bedZ(gy) + 1.7], [-2, YC, wlZ() - 0.5]]; } },
+  sea: { label: 'From sea, low', fov: 60, f: () => [[-2, YC + 70, wlZ() + 3.0], [-2, YC - 10, wlZ() - 1.0]] },
+  under: { label: 'Underwater (above the bed)', fov: 60, f: () => [[-45, YC + 25, bedZ(YC + 25) + 3.5], [-6, YC, bedZ(YC) + 1.0]] },
+  wide: { label: 'Wide', fov: 50, f: () => [[-230, -60, 190], [0, 300, -4]] },
+};
+function gotoView(name) {
+  const v = VIEWS[name]; if (!v) return;
+  if (state.photo) { $('t-photo').checked = false; setPhoto(false); }
+  const [p, t] = v.f(); setCamera(p, t);
+  state.fov = v.fov; camera.fov = state.fov; camera.updateProjectionMatrix(); $('fov').value = state.fov; $('fovO').textContent = state.fov + '°';
+}
+const vb = $('views');
+Object.keys(VIEWS).forEach(k => { const b = document.createElement('button'); b.textContent = VIEWS[k].label; b.onclick = () => gotoView(k); vb.appendChild(b); });
+
+// ---------------------------------------------------------------- photo match (VE forced to 1)
+const photoEl = $('photo');
+function setPhoto(on) {
+  state.photo = on; document.body.classList.toggle('photo', on); controls.enabled = !on;
+  if (on) { if (state.ve !== 1) { camera.position.y /= state.ve; controls.target.y /= state.ve; setVE(1); } syncSlidersFromCamera(); }
+  else { const d = new THREE.Vector3(); camera.getWorldDirection(d); controls.target.copy(camera.position).addScaledVector(d, 60); controls.update(); }
+  resize();
+}
+function syncSlidersFromCamera() { const c = cameraPose(); [['cx', c.x], ['cy', c.y], ['cz', c.z], ['ch', c.heading], ['cp', c.pitch], ['cr', 0]].forEach(([id, v]) => { $(id).value = v; $(id + 'N').value = (+v).toFixed(2); }); }
+function applyPhotoCamera() {
+  const x = +$('cx').value, y = +$('cy').value, z = +$('cz').value, h = +$('ch').value, p = +$('cp').value, r = +$('cr').value;
+  const fx = Math.cos(p * RAD) * Math.cos((h - BX) * RAD), fy = Math.cos(p * RAD) * Math.cos((h - BY) * RAD), fz = Math.sin(p * RAD);
+  camera.position.copy(m2t(x, y, z * state.ve));
+  const fwd = new THREE.Vector3(fx, fz * state.ve, fy).normalize();
+  camera.up.set(0, 1, 0); camera.lookAt(camera.position.clone().add(fwd)); camera.rotateZ(-r * RAD);
+}
+['cx', 'cy', 'cz', 'ch', 'cp', 'cr'].forEach(id => {
+  $(id).addEventListener('input', () => { $(id + 'N').value = (+$(id).value).toFixed(2); applyPhotoCamera(); });
+  $(id + 'N').addEventListener('input', () => { $(id).value = $(id + 'N').value; applyPhotoCamera(); });
+});
+$('t-photo').addEventListener('change', e => setPhoto(e.target.checked));
+$('pfile').addEventListener('change', e => { const f = e.target.files[0]; if (!f) return; const url = URL.createObjectURL(f); photoEl.onload = () => { photoEl.style.display = 'block'; resize(); }; photoEl.src = url; });
+$('popa').addEventListener('input', e => { photoEl.style.opacity = e.target.value; $('popaO').textContent = (+e.target.value).toFixed(2); });
+$('copyCam').addEventListener('click', () => {
+  const c = state.photo ? { x: +$('cx').value, y: +$('cy').value, z: +$('cz').value, heading: +$('ch').value, pitch: +$('cp').value, fov: state.fov } : cameraPose();
+  const out = {
+    slug: M.slug, frame: 'mount-maunganui-reef model frame (x alongshore toward 316.15 deg true, y offshore toward 046.15 deg true, z up from present MSL = CD + 1.13 m; heading = true compass bearing)',
+    position_m: [+c.x.toFixed(2), +c.y.toFixed(2), +c.z.toFixed(2)], heading_true_deg: +(+c.heading).toFixed(2), pitch_deg: +(+c.pitch).toFixed(2),
+    roll_deg: state.photo ? +$('cr').value : 0, vertical_fov_deg: +(+c.fov).toFixed(2), aspect: +(camera.aspect).toFixed(4),
+    water_level: wl[state.wlIdx].id, vertical_exaggeration: state.ve, outline_version: state.ver, bed_cd: state.bed, crest_cd: state.crest, skirt_run: state.run,
+    origin_latlon_wgs84: M.frame.origin_latlon_wgs84, reef_centroid_latlon_wgs84: M.frame.reef_centroid_latlon_wgs84, photo: state.photo && photoEl.src ? 'loaded' : 'none',
+  };
+  const txt = JSON.stringify(out, null, 1), ta = $('camjson'); ta.style.display = 'block'; ta.value = txt; ta.select();
+  if (navigator.clipboard) navigator.clipboard.writeText(txt).catch(() => {});
+});
+
+// ---------------------------------------------------------------- UI wiring
+function resize() {
+  let w = $('main').clientWidth, h = $('main').clientHeight;
+  if (state.photo && photoEl.naturalWidth) {
+    const asp = photoEl.naturalWidth / photoEl.naturalHeight; let sw = w, sh = w / asp; if (sh > h) { sh = h; sw = h * asp; }
+    stage.style.width = sw + 'px'; stage.style.height = sh + 'px'; w = sw; h = sh;
+  } else { stage.style.width = '100%'; stage.style.height = '100%'; }
+  renderer.setSize(w, h); labelRenderer.setSize(w, h);
+  camera.aspect = w / h; camera.updateProjectionMatrix();
+  photoEl.style.display = (photoEl.src && photoEl.naturalWidth) ? 'block' : 'none';
+  drawXsec();
+}
+new ResizeObserver(resize).observe($('main'));
+$('fov').addEventListener('input', e => { state.fov = +e.target.value; camera.fov = state.fov; camera.updateProjectionMatrix(); $('fovO').textContent = state.fov + '°'; });
+$('ve-in').addEventListener('input', e => {
+  const old = state.ve, v = +e.target.value;
+  if (state.photo) { $('ve-in').value = 1; return; }
+  camera.position.y *= v / old; controls.target.y *= v / old; setVE(v); controls.update();
+});
+$('wl').min = 0; $('wl').max = wl.length - 1; $('wl').value = state.wlIdx;
+$('wl').addEventListener('input', e => { state.wlIdx = +e.target.value; updateWaterLevel(); });
+const wb = $('wlbtns');
+wl.forEach((w, i) => { const b = document.createElement('button'); b.textContent = w.id; b.title = w.label + '  (' + w.source + ')'; b.onclick = () => { state.wlIdx = i; $('wl').value = i; updateWaterLevel(); }; wb.appendChild(b); });
+['t-water', 't-seabed', 't-reef', 't-labels', 't-cont', 't-grid', 't-out', 't-datum', 't-srv'].forEach(id => $(id).addEventListener('change', applyToggles));
+if (P.get('survey') === '1') $('t-srv').checked = true;
+if (P.get('hide')) P.get('hide').split(',').forEach(n => { const e = $('t-' + n); if (e) e.checked = false; });
+// version selector + info pop-up
+const vsel = $('vsel'); VERS.forEach(v => { const o = document.createElement('option'); o.value = v.id; o.textContent = v.name + (v.id === M.default_version ? '  [default]' : ''); vsel.appendChild(o); });
+vsel.value = state.ver;
+function showVersionNote() { const v = verObj(); $('vnote').textContent = `${v.date}; ${v.area_m2} m2 (${v.bbox_m[0]} x ${v.bbox_m[1]} m). ` + (v.rule === 'skirt' ? 'Flanks: skirt from the -2.0 m contour down to the bed at the run set below (assumption).' : 'Flanks: lofted from the toe at the bed to the -2.0 m contour.'); $('runRow').style.display = v.rule === 'skirt' ? 'flex' : 'none'; }
+vsel.addEventListener('change', e => { state.ver = e.target.value; showVersionNote(); buildReef(); history.replaceState(null, '', '#' + hashNow()); });
+$('run').value = state.run; $('runO').textContent = state.run.toFixed(2);
+$('run').addEventListener('input', e => { state.run = +e.target.value; $('runO').textContent = state.run.toFixed(2); buildReef(); });
+function hashNow() { const q = new URLSearchParams(location.hash.slice(1)); q.set('version', state.ver); return q.toString(); }
+function srcName(id) { const s = (M.sources || []).find(x => x.id === id); return s ? `${id}: ${s.short || s.citation.slice(0, 80)}` : id; }
+function openInfo() {
+  const rows = VERS.map(v => {
+    const f = computeField(v.id, state.bed, state.crest, state.run);
+    return `<tr><td><b>${v.name}</b>${v.id === M.default_version ? ' <span class="sm">(default)</span>' : ''}</td><td>${v.date}</td><td>${v.source_ids.map(srcName).join('<br>')}</td><td>${v.area_m2.toLocaleString()} m2<br>${v.bbox_m[0]} x ${v.bbox_m[1]} m</td><td><b>${f.vol.toFixed(0)} m3</b> (${fmt((f.vol / stated - 1) * 100, 0)} % vs ${stated} stated)<br><span class="sm">bed ${state.bed === 'nav' ? 'Navionics' : state.bed + ' m CD'}, crest ${state.crest} m CD${v.rule === 'skirt' ? ', skirt run ' + state.run : ''}; reproduces 2,800 m3 at bed ${v.bed_for_2800_m3} m CD</span></td></tr>`;
+  }).join('') + (M.versions_optional || []).map(v => `<tr><td>${v.name} <span class="sm">(optional, not drawn)</span></td><td>${v.date}</td><td>${v.source_ids.map(srcName).join('<br>')}</td><td>${v.area_m2.toLocaleString()} m2<br>${v.bbox_m[0]} x ${v.bbox_m[1]} m</td><td class="sm">not built (area only)</td></tr>`).join('');
+  $('vbody').innerHTML = `<h2>Outline versions of the reef</h2><p>${M.versions_info}</p><table><tr><th>name</th><th>date</th><th>source</th><th>footprint</th><th>volume (live)</th></tr>${rows}</table>` +
+    `<p class="sm">Volumes follow the selected bed level and crest. The stated built volume is about 2,800 m3 (RWR; BoPRC p28). Select a version with the list, or open this page with <code>#version=&lt;id&gt;</code> (ids: ${VERS.map(v => v.id).join(', ')}).</p>`;
+  $('vmodal').style.display = 'flex';
+}
+$('vinfoBtn').addEventListener('click', openInfo); $('vclose').addEventListener('click', () => { $('vmodal').style.display = 'none'; });
+$('vmodal').addEventListener('click', e => { if (e.target === $('vmodal')) $('vmodal').style.display = 'none'; });
+// bed + crest
+const bs = $('bed'); [...SB.bed_options_cd, 'nav'].forEach(b => { const o = document.createElement('option'); o.value = b; o.textContent = b === 'nav' ? `Navionics 2026 as it is (${ZREF.toFixed(2)})` : (b.toFixed(1) + (b === SB.bed_default_cd ? '  [decision]' : '')); bs.appendChild(o); });
+bs.value = state.bed;
+bs.addEventListener('change', e => { state.bed = e.target.value === 'nav' ? 'nav' : +e.target.value; buildSeabed(); buildContours(); buildReef(); applyToggles(); });
+const cs = $('crest'); R.crest_cd.options.forEach(c => { const o = document.createElement('option'); o.value = c; o.textContent = c.toFixed(1) + (c === R.crest_cd.default ? '  [decision]' : ''); cs.appendChild(o); });
+cs.value = state.crest; cs.addEventListener('change', e => { state.crest = +e.target.value; buildReef(); });
+
+// ---------------------------------------------------------------- side panel: confidence (always visible), model data, methods & sources
+(function buildSide() {
+  const C = M.confidence_3d, I = M.inputs_status;
+  $('confbox').innerHTML = `<div class="conf ${C.level}"><span class="badge ${C.level}">${C.level.toUpperCase()} confidence (3D)</span> ${C.reason_short}</div>`;
+  let h = `<h2>${M.name}</h2><div class="sm">${M.state_label}</div>`;
+  h += `<h3>Why this confidence</h3><div class="sm">${C.reason}</div>`;
+  h += `<h3>Inputs</h3><table>${Object.entries(I).map(([k, v]) => `<tr><td><b>${k}</b></td><td>${v}</td></tr>`).join('')}</table>`;
+  h += `<h3>Selected values (live)</h3><table id="liveStats"></table>`;
+  h += `<h3>Cross-shore section (live)</h3><div class="row"><label style="flex:0 0 70px">section x</label><input id="sxr" type="range" min="-40" max="36" step="1" value="${state.sx}"><output id="sxO" style="flex:0 0 40px">${state.sx}</output></div><canvas id="xsec"></canvas><div class="sm">orange outline = reef section; white = seabed in use; green dashed = Navionics 2026 as it is; blue dots = 2013 multibeam surface (evidence); light blue = water level; magenta = MVD-53, cyan = CD.</div>`;
+  h += `<h3>Datum levels (LINZ Tauranga)</h3><table><tr><th>level</th><th>z (MSL = 0)</th><th>m rel. CD</th><th>m rel. MVD-53</th></tr>${wl.map(w => `<tr><td>${w.id}</td><td>${fmt(w.z, 2)}</td><td>${fmt(w.above_cd, 2)}</td><td>${fmt(w.z - MVDZ, 2)}</td></tr>`).join('')}${M.datum_lines.map(d => `<tr><td>${d.id}</td><td>${fmt(d.z, 3)}</td><td>${fmt(d.above_cd, 3)}</td><td>${fmt(d.z - MVDZ, 3)}</td></tr>`).join('')}</table>`;
+  h += `<h3>Chronology (what is modelled)</h3><table>${M.history.map(e => `<tr><td>${e.date}</td><td>${e.event} <span class="sm">[${e.source}]</span></td></tr>`).join('')}</table>`;
+  h += `<h3>Provenance (every parameter)</h3><table><tr><th>parameter</th><th>value</th><th>source / method / uncertainty</th></tr>${M.provenance.map(p =>
+    `<tr><td>${p.parameter}${p.estimated ? ' <span class="est">[est.]</span>' : ''}</td><td>${p.value} ${p.unit}</td><td><span class="sm">${p.source_id}.</span> ${p.method}. <i>${p.uncertainty}</i></td></tr>`).join('')}</table>`;
+  h += `<h3>Sources</h3><table>${M.sources.map(s => `<tr><td><b>${s.id}</b></td><td>${s.citation}<br><a href="${/^http/.test(s.url) ? s.url : '#'}" target="_blank" rel="noreferrer">${s.url.length > 70 ? s.url.slice(0, 70) + '...' : s.url}</a></td></tr>`).join('')}</table>`;
+  h += `<h3>Camera readout</h3><div id="readout"></div>`;
+  h += `<p class="sm">Source images are not embedded here (private research copies; reuse not cleared). Annotated versions are in <code>annotated/</code> (list under Methods &amp; sources). Navionics: Garmin, not for navigation.</p>`;
+  $('pModel').innerHTML = h;
+  $('sxr').addEventListener('input', e => { state.sx = +e.target.value; $('sxO').textContent = state.sx; drawXsec(); });
+})();
+$('caption').innerHTML = `<b>Modelled state and later history</b><br>${M.caption}`;
+
+// minimal markdown -> HTML
+function md(src) {
+  const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  const inline = s => {
+    const keep = [];
+    s = s.replace(/`([^`]+)`/g, (m, c) => { keep.push('<code>' + esc(c) + '</code>'); return '\u0001' + (keep.length - 1) + '\u0001'; });
+    s = esc(s);
+    s = s.replace(/\[([^\]]+)\]\((https?:[^)\s]+)\)/g, (m, t, u) => { keep.push('<a href="' + u + '" target="_blank" rel="noreferrer">' + t + '</a>'); return '\u0001' + (keep.length - 1) + '\u0001'; });
+    s = s.replace(/(https?:\/\/[^\s<>)|]+[^\s<>).,;|])/g, (m, u) => { keep.push('<a href="' + u + '" target="_blank" rel="noreferrer">' + (u.length > 60 ? u.slice(0, 58) + '...' : u) + '</a>'); return '\u0001' + (keep.length - 1) + '\u0001'; });
+    s = s.replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>').replace(/(^|[^*\w])\*([^*\s][^*]*?)\*(?!\w)/g, '$1<i>$2</i>');
+    return s.replace(/\u0001(\d+)\u0001/g, (m, i) => keep[+i]);
+  };
+  const L = src.replace(/\r/g, '').split('\n'), out = []; let i = 0;
+  const cells = l => l.trim().replace(/^\|/, '').replace(/\|$/, '').split('|').map(c => c.trim());
+  while (i < L.length) {
+    const l = L[i];
+    if (/^```/.test(l)) { const buf = []; i++; while (i < L.length && !/^```/.test(L[i])) buf.push(L[i++]); i++; out.push('<pre>' + esc(buf.join('\n')) + '</pre>'); continue; }
+    let m;
+    if ((m = /^(#{1,4})\s+(.*)$/.exec(l))) { out.push(`<h${m[1].length}>${inline(m[2])}</h${m[1].length}>`); i++; continue; }
+    if (/^\s*\|.*\|\s*$/.test(l) && i + 1 < L.length && /^\s*\|[\s:|-]+\|\s*$/.test(L[i + 1])) {
+      let t = '<div class="tw"><table><tr>' + cells(l).map(c => '<th>' + inline(c) + '</th>').join('') + '</tr>'; i += 2;
+      while (i < L.length && /^\s*\|.*\|\s*$/.test(L[i])) { t += '<tr>' + cells(L[i]).map(c => '<td>' + inline(c) + '</td>').join('') + '</tr>'; i++; }
+      out.push(t + '</table></div>'); continue;
+    }
+    if (/^\s*([-*]|\d+\.)\s+/.test(l)) {
+      const ord = /^\s*\d+\./.test(l); let t = ord ? '<ol>' : '<ul>';
+      while (i < L.length && /^\s*([-*]|\d+\.)\s+/.test(L[i])) {
+        let item = L[i].replace(/^\s*([-*]|\d+\.)\s+/, ''); i++;
+        while (i < L.length && /^\s{2,}\S/.test(L[i])) { item += ' ' + L[i].trim(); i++; }
+        t += '<li>' + inline(item) + '</li>';
+      }
+      out.push(t + (ord ? '</ol>' : '</ul>')); continue;
+    }
+    if (/^---+\s*$/.test(l)) { out.push('<hr>'); i++; continue; }
+    if (!l.trim()) { i++; continue; }
+    const buf = [l]; i++;
+    while (i < L.length && L[i].trim() && !/^(#{1,4}\s|```|\s*\|.*\||\s*([-*]|\d+\.)\s)/.test(L[i])) buf.push(L[i++]);
+    out.push('<p>' + inline(buf.join(' ')) + '</p>');
+  }
+  return out.join('\n');
+}
+const docTabs = [['methods_md', 'Methods'], ['sources_md', 'Sources log'], ['requests_md', 'Requests for Lior'], ['figs', 'Annotated figures']];
+function showDoc(key) {
+  document.querySelectorAll('#subtabs button').forEach(b => b.classList.toggle('on', b.dataset.k === key));
+  if (key === 'figs') {
+    $('docbody').innerHTML = '<h2>Annotated source images</h2><p class="sm">Private research copies of the sources with what was read marked on them. Stored next to this page in <code>annotated/</code>; not embedded. Reuse not cleared.</p><ul>' +
+      (DOCS.annotated || []).map(f => `<li><a href="annotated/${f}" target="_blank">${f}</a></li>`).join('') + '</ul>';
+  } else { $('docbody').innerHTML = md(DOCS[key] || '(not available)'); }
+  $('pDocs').scrollTop = 0;
+}
+docTabs.forEach(([k, lab]) => { const b = document.createElement('button'); b.textContent = lab; b.dataset.k = k; b.onclick = () => showDoc(k); $('subtabs').appendChild(b); });
+document.querySelectorAll('#tabs button').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('#tabs button').forEach(x => x.classList.toggle('on', x === b));
+  document.querySelectorAll('.pane').forEach(p => p.classList.toggle('on', p.id === b.dataset.p));
+  document.body.classList.toggle('docs', b.dataset.p === 'pDocs');
+  $('side').style.width = $('side').style.flexBasis = b.dataset.p === 'pDocs' ? Math.min(820, Math.round(window.innerWidth * 0.55)) + 'px' : '400px';
+  if (b.dataset.p === 'pDocs' && !$('docbody').innerHTML) showDoc('methods_md');
+  resize();
+}));
+
+// ---------------------------------------------------------------- loop
+function hud() {
+  const c = state.photo ? { x: +$('cx').value, y: +$('cy').value, z: +$('cz').value, heading: +$('ch').value, pitch: +$('cp').value, fov: state.fov } : cameraPose();
+  const w = wl[state.wlIdx];
+  $('hud').innerHTML = `cam x ${c.x.toFixed(1)}  y ${c.y.toFixed(1)}  z ${c.z.toFixed(1)} m   heading ${((c.heading % 360) + 360) % 360 | 0}° true   pitch ${c.pitch.toFixed(1)}°   FOV ${(+c.fov).toFixed(0)}°   water <b>${w.id}</b> ${fmt(w.z, 2)} m MSL   VE <b>${state.ve}x</b>`;
+  const r = $('readout'); if (r) r.textContent = `x ${c.x.toFixed(2)}  y ${c.y.toFixed(2)}  z ${c.z.toFixed(2)}  (m, model frame, z from present MSL)\nheading ${c.heading.toFixed(1)} deg true\npitch ${c.pitch.toFixed(1)} deg\nvertical FOV ${(+c.fov).toFixed(1)} deg\naspect ${camera.aspect.toFixed(3)}`;
+}
+let tick = 0;
+function loop() {
+  requestAnimationFrame(loop);
+  if (!state.photo) controls.update();
+  renderer.render(scene, camera); labelRenderer.render(scene, camera);
+  if ((tick++ % 6) === 0) hud();
+}
+
+// ---------------------------------------------------------------- init
+buildSeabed(); buildContours();
+$('popaO').textContent = '0.50';
+showVersionNote(); buildReef(); updateWaterLevel(); setVE(state.ve);
+$('fov').value = state.fov; $('fovO').textContent = state.fov + '°';
+resize();
+gotoView(P.get('view') || 'oblique');
+if (P.get('fov')) { state.fov = +P.get('fov'); camera.fov = state.fov; camera.updateProjectionMatrix(); $('fov').value = state.fov; $('fovO').textContent = state.fov + '°'; }
+if (P.get('photo')) { photoEl.onload = () => { photoEl.style.display = 'block'; resize(); }; photoEl.src = P.get('photo'); photoEl.style.opacity = P.get('popa') || 0.5; }
+if (P.get('cam')) {   // cam=x,y,z,heading,pitch (model frame, true heading)
+  const q = P.get('cam').split(',').map(Number);
+  $('t-photo').checked = true; setPhoto(true);
+  ['cx', 'cy', 'cz', 'ch', 'cp'].forEach((id, i) => { $(id).value = q[i]; $(id + 'N').value = q[i]; }); $('cr').value = 0; $('crN').value = 0; applyPhotoCamera();
+}
+applyToggles();
+if (P.get('tab') === 'docs') { document.querySelector('#tabs button[data-p=pDocs]').click(); if (P.get('doc')) showDoc(P.get('doc')); if (P.get('find')) { const hh = [...document.querySelectorAll('#docbody h2, #docbody h3')].find(e => e.textContent.includes(P.get('find'))); if (hh) hh.scrollIntoView(); } }
+if (P.get('info') === '1') openInfo();
+loop();
+renderer.render(scene, camera); labelRenderer.render(scene, camera); hud();
+window.__reefReady = true;
+window.__state = state; window.__camPose = cameraPose;
+</script>
+</body>
+</html>

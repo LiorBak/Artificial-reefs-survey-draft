@@ -1,0 +1,295 @@
+{
+  "slug": "mount-maunganui-reef",
+  "name": "Mount Maunganui Beach Reef (\"Mount Reef\")",
+  "status": "verified",
+  "verified_on": "2026-09-25",
+  "shape_type": "chevron",
+  "coords": "metres; origin = shoreline point (Tay St / Marine Parade waterline) nearest the reef centroid; x = alongshore (positive toward north, matching the sourced \"northern arm\" / \"southern arm\" naming in S1/Mead 2011 - exact compass bearing of this axis is not stated in any source, only the relative north/south naming of the two arms); y = offshore (positive seaward); shoreline approximated as the line y=0",
+  "polygons_m": [
+    [[-3.2, 262.1], [49.6, 276.3], [56.0, 252.1], [3.2, 237.9], [-3.2, 262.1]],
+    [[11.8, 254.3], [27.1, 212.0], [3.6, 203.4], [-11.8, 245.7], [11.8, 254.3]]
+  ],
+  "bbox_m": {
+    "length_alongshore": 67.8,
+    "width_crossshore": 72.9
+  },
+  "area_m2": 2497,
+  "max_dimension_m": 86,
+  "crest_depth_m": {
+    "value": 0.9,
+    "datum": "below Chart Datum (~ Lowest Astronomical Tide, LAT); DESIGN target was 0.4 m below LAT/Chart Datum; the most recent surveys (to 2013) found the MAJORITY of the as-built crest at 0.8-1.0 m below Chart Datum. S1 s2.1 separately states that 'at its highest point, the reef is approximately 0.2 m below chart datum, or approximately 0.1 m below the lowest astronomical tide' -- this is ONE point expressed in two datums (not a 0.1-0.2 m range), and S1's text does NOT say which arm it is on [CORRECTED 2026-09-25 verification pass: the original text here wrongly attributed this point to 'the northern arm crest', a detail invented by the prior pass and not present in S1's own text]. S1 s4.3.2.1 separately, and explicitly, states an isolated shallow spot on the SOUTHERN arm at 0.2-0.4 m below Chart Datum (July 2013 survey) -- given the similar depth and shared 'most recent survey' framing, this may be the same feature as the unattributed s2.1 point, but S1 never states this equivalence, so both are kept as separate, uncombined source statements. The single 0.9 m value here is our own midpoint of the reported 0.8-1.0 m 'majority of the reef' figure, not itself a directly quoted number.",
+    "ref": "S1"
+  },
+  "distance_offshore_m": {
+    "value": 250,
+    "measured_from": "shoreline (Tay St / Marine Parade waterline)",
+    "ref": "R12",
+    "notes": "Convergent across five independent-ish accounts: R12 (NZ Herald 2023) states 250 m directly; S1 (BoPRC consent-application text) gives 250-300 m; S4 (NZ Geographic 2006, quoting designer Kerry Black) gives 250 m; R2 (raisedwaterresearch.com) explains the reef was DESIGNED for 300 m but built ~50 m closer due to Port of Tauranga dredge-disposal-area constraints, i.e. ~250 m as sited; R8 (NZ Herald, Nov 2005, pre-completion) gives 240 m. We treat 250 m as the best-supported as-sited figure and 300 m as the superseded original design target."
+  },
+  "orientation_notes": "DESIGN intent (S4, NZ Geographic 2006, quoting designer Kerry Black): 'the apex of the V points seaward and the structure thickens towards the base' - i.e. a symmetric, seaward-pointing V/delta-wing widening toward the shore. AS-BUILT (per S1's multibeam survey figures, Jan 2007 at 70% complete and July 2013): the realised structure is NOT a clean symmetric V - it is a bent, asymmetric two-arm shape (a 'northern arm' and a 'southern arm' meeting near a central apex/focus point, per S1's own terminology, e.g. 'the focus structure at the apex'), with the northern arm's containers rendered as a roughly shore-parallel band and the southern arm's containers rendered as a roughly cross-shore band, meeting at an angle visually closer to ~90 degrees than to the narrow symmetric V shown in the ASR/raisedwaterresearch.com CAD rendering (R2's 'Mount Reef' design image). This asymmetry is consistent with, and likely a direct consequence of, the well-documented staged/incomplete construction (western/northern side built and surfable from Nov 2005-Mar 2006; eastern/southern side still 'nearly to specifications' by Oct 2006; final completion not until mid-2008) and the ~47% volume shortfall. The polygon in this file models the AS-BUILT bent shape (two separate arm rectangles under polygons_m), not the idealised symmetric design V.",
+  "volume_m3": {
+    "value": 2800,
+    "ref": "S1",
+    "notes": "As-built volume, per Mead (2011) as cited in S1 and independently corroborated by R2 (2,800 m3). Design volume was 6,000 m3 per S1/S4 (R2 and R1 separately give 6,000 and ~5,000 m3 respectively for the design target - sources disagree on the exact design figure, see card)."
+  },
+  "materials": "Sand-filled non-woven geotextile 'megacontainers' on a securing mesh/web lattice pulled to the seabed [R2][R8][S1][S4]. Design called for up to 24 large cylindrical bags [S4] (the largest 3.5 m high x 50 m long, holding 660 m3 each [S4]; alternatively described elsewhere as bags 'up to 60 m long x 5 m diameter' [R2] - these two bag-size descriptions do not match each other and neither source reconciles the difference, see open_issues). As-built, S1 (citing Mead 2011) instead describes 6 containers per arm (3 large crest containers + 3 smaller base containers per side, 12 total design, with the as-built base containers substituted for shorter units) - a third, different container-count description that also does not reconcile with S4's '24 bags' figure.",
+  "derivation": [
+    {
+      "quantity": "as-built overall footprint bounding envelope (shore-parallel length x cross-shore width)",
+      "value": "80 x 70",
+      "unit": "m",
+      "method": "stated in text (official council-commissioned assessment report)",
+      "source_ref": "S1",
+      "quote_or_figure": "\"As finally built, the structure is approximately 80 m in shore-parallel length and about 70 m in cross-shore width.\" (Bay of Plenty Regional Council / Focus Resource Management Group, \"Mount Maunganui Reef - Assessment of Management Options\", s2.1)",
+      "uncertainty": "stated as \"approximately\"; independently cross-checked below against Scarfe (2008)"
+    },
+    {
+      "quantity": "as-built overall footprint bounding envelope, independent academic cross-check",
+      "value": "79 x 67",
+      "unit": "m",
+      "method": "stated in text, footnoted in S1 as citing an independent academic thesis survey",
+      "source_ref": "S2",
+      "quote_or_figure": "S1 footnote 1: \"Scarfe (2008, p271) gives the reef dimensions as 79 m by 67 m.\" (Scarfe's PhD thesis itself was not independently accessed by us; cited only via S1's footnote)",
+      "uncertainty": "as stated in S1's footnote; within ~1-4% of S1's own 80x70 rounded figure, i.e. the two figures corroborate each other closely"
+    },
+    {
+      "quantity": "DESIGN-stage (\"delta-wing\", pre-construction-shortfall) overall dimensions - apex-to-base (cross-shore) x across-base (alongshore)",
+      "value": "75 x ~100",
+      "unit": "m",
+      "method": "stated in text (magazine feature quoting the reef's designer)",
+      "source_ref": "S4",
+      "quote_or_figure": "\"In total, the reef will use 6000 m3 of sand and will measure 75 m from apex to base and almost 100 m across the base.\" (Andrew Moores, New Zealand Geographic, Issue 078, Mar-Apr 2006)",
+      "uncertainty": "explicitly a forward-looking DESIGN/construction-target figure (\"will measure\"), not a post-construction survey; superseded by the smaller as-built S1/S2 figures above once the volume shortfall and asymmetric construction played out"
+    },
+    {
+      "quantity": "original (pre-2005, superseded) \"wedge\" design dimensions",
+      "value": "50 (width) x <100 (length)",
+      "unit": "m",
+      "method": "stated in text",
+      "source_ref": "S1",
+      "quote_or_figure": "\"The original proposed dimensions were approximately 50 m in width (shore parallel measure) and just less than 100 m in length (perpendicular to shore).\" (S1, s2.1) - matches the card's existing R2 citation of the same 50x100 figure, now confirmed by S1 to be the SUPERSEDED pre-2005 concept, not the final delta-wing design or as-built structure",
+      "uncertainty": "n/a - historical/superseded design stage, not used in this file's polygon"
+    },
+    {
+      "quantity": "pre-completion (Nov 2005) per-arm dimensions, two arms",
+      "value": "70 (length) x 30 (width) each",
+      "unit": "m",
+      "method": "stated in text (contemporary news account, written at/around the time of the wedge-to-delta-wing design change)",
+      "source_ref": "R8",
+      "quote_or_figure": "\"The V-shaped reef, with two 70m by 30m arms\" (NZ Herald, \"Reef company making waves worldwide\", Nov 2005)",
+      "uncertainty": "pre-completion estimate. [CORRECTED 2026-09-25 verification pass: the original text here claimed this figure 'does not by itself reconcile arithmetically with S1's later as-built 80x70 bounding envelope under a simple symmetric-V geometry' and that 'no single symmetric half-angle satisfies both' -- this was checked by direct computation (python, sweeping the half-angle) and is WRONG: a symmetric V with two 70x30 m arms at a half-angle of approximately 22 degrees from the shore-normal axis produces an 80.05 x 70.54 m bounding envelope, matching S1's stated 80x70 m almost exactly. The 70x30 (R8) and 80x70 (S1) figures are therefore geometrically compatible with a SYMMETRIC design and do not, by themselves, prove asymmetry.] The AS-BUILT asymmetry conclusion used elsewhere in this file rests on independent visual evidence -- the bent, non-mirror-image shape directly visible in S1's own multibeam survey figures (Figure 3, July 2013; Figure 4, Jan 2007) and in R2's 'Mount Reef Installed' bathymetric image -- not on any arithmetic mismatch between the 70x30 and 80x70 figures, and that conclusion is unaffected by this correction."
+    },
+    {
+      "quantity": "as-built arm topology / bend angle / asymmetry",
+      "value": "two arms (northern, southern) meeting near a central apex at an angle visually closer to ~90 degrees than a narrow V; northern arm visually longer/more complete than southern arm",
+      "unit": "qualitative",
+      "method": "estimated from a figure - read directly off a georeferenced multibeam bathymetric survey plan-view figure in a PDF report",
+      "source_ref": "S1",
+      "quote_or_figure": "S1 Figure 3 (\"Most recent survey of Mount Reef conducted on 18 July 2013\", surveyed by University of Waikato & Discovery Marine Ltd, NZ grid coordinates on axes) and Figure 4 (\"View of the Mount Reef from a multibeam survey conducted in January 2007, when the reef was 70% complete\", with a north arrow) - both downloaded to scratchpad from the PDF, viewed as page images, and deleted",
+      "uncertainty": "high - we could not reliably calibrate the exact metres-per-pixel scale from the rendered PDF page image (the axis tick labels did not extract cleanly for pixel-level measurement), so the ~90 degree bend angle and the specific arm-length split (55 m northern / 45 m southern) used to build the polygons_m coordinates below are our own proportional estimate from the figure's visual layout, fitted to match S1's independently-stated 80x70 m overall bounding envelope - NOT independently measured in metres from the figure itself. Treat individual arm lengths as +/-15 m uncertain; the overall bounding envelope (from S1's own stated 80x70 m) is much more reliable than our specific vertex placement."
+    },
+    {
+      "quantity": "as-built volume",
+      "value": 2800,
+      "unit": "m3",
+      "method": "stated in text",
+      "source_ref": "S1",
+      "quote_or_figure": "\"the crest level generally being 0.5-1m lower than design ... and the 'as built' reef volume (2,800 m3) significantly less than the design volume (6,500 m3).\" (S1, summary section) - NOTE: this is a THIRD distinct design-volume figure (6,500 m3), differing from R2's 6,000 m3 and R1's ~5,000 m3; see card gap, now with three disagreeing sources instead of two",
+      "uncertainty": "as stated, high-confidence (official report figure, matches R2 independently)"
+    },
+    {
+      "quantity": "crest depth, design target",
+      "value": 0.4,
+      "unit": "m below LAT/Chart Datum",
+      "method": "stated in text",
+      "source_ref": "S1",
+      "quote_or_figure": "\"The maximum proposed design height of the Reef was about 0.4 m depth (below lowest astronomical tide, which is approximately equivalent to Chart Datum).\" (S1, s2.1). Independently corroborated qualitatively by S4: \"water depth over the reef will be less than a metre\" at low tide.",
+      "uncertainty": "low - directly stated design figure, doubly corroborated"
+    },
+    {
+      "quantity": "crest depth, as-built (majority of reef)",
+      "value": "0.8-1.0",
+      "unit": "m below Chart Datum",
+      "method": "stated in text (survey-based)",
+      "source_ref": "S1",
+      "quote_or_figure": "\"Crest elevations over the majority of the reef are approximately 1.0 m below chart datum.\" and (July 2013 survey specifically) \"the shallowest areas of the reef are most typically in the range of 0.8-1 m below Chart Datum\" (S1, s2.1 and s4.3.2.1)",
+      "uncertainty": "range as stated; excludes the isolated shallower/deeper anomaly points noted separately"
+    },
+    {
+      "quantity": "ambient (pre-reef) water depth at the site",
+      "value": "3.7-4.6 (consent application) / 3-5 (Scarfe survey) / 4.5 (NZ Geographic)",
+      "unit": "m",
+      "method": "stated in text",
+      "source_ref": "S1",
+      "quote_or_figure": "\"the structure would be located in an area with (pre-reef) water depths of 3.7-4.6 m ... Scarfe (2008) ... an area with (pre-reef) depths of approximately 3-5 m\" (S1, s2.1); \"anchored to the sandy sea-floor 250 m off the beach in 4.5 m of water\" (S4)",
+      "uncertainty": "three consistent, overlapping figures; not itself a crest depth, but corroborates the ~250 m offshore siting distance and CONTRADICTS Gemini's claimed 6.2 m ambient depth (see gemini_comparison)"
+    },
+    {
+      "quantity": "net footprint area of the two as-built arms (from this file's own polygons_m)",
+      "value": 2497,
+      "unit": "m2",
+      "method": "estimated from aerial/figure - computed directly (shoelace formula) from the polygons_m coordinates in this file, which are themselves an estimate (see the topology/bend-angle row above)",
+      "source_ref": "S1",
+      "quote_or_figure": "derived, not directly sourced - shoelace area of the two quadrilaterals defined in polygons_m",
+      "uncertainty": "inherits the +/-15 m per-arm-length uncertainty above; coincidentally close to Gemini's own independently-claimed net arm area of 2,455 m2 (see gemini_comparison), though derived by an entirely different method from different assumed bounding dimensions"
+    }
+  ],
+  "images_relied_on": [
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Mount-Reef.jpg",
+      "what_it_is": "ASR-credited plan-view/3D CAD rendering of the DESIGN geometry, a figure on the already-cited R2 (raisedwaterresearch.com) page; downloaded to scratchpad, viewed, then deleted",
+      "what_was_read_off_it": "Confirms the DESIGN shape is a symmetric two-arm V/chevron made of parallel cylindrical tube-shaped containers, interleaved/crossing at a shared apex (matching S4's 'securing mesh' / R8's 'web lattice' descriptions and R2's own text). It is a 3D perspective artist's render with a wood-grain seabed texture and no scale bar or axis labels, so it was used only to confirm shape TOPOLOGY (symmetric V, two arms, interleaved apex), not for any dimension or angle measurement.",
+      "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/mount-maunganui/"
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Mount-Reef-Installed.jpg",
+      "what_it_is": "Photo already in the card's images list (bathymetric/sonar-style image, credited to ASR via R2); downloaded to scratchpad, viewed, then deleted",
+      "what_was_read_off_it": "A colour-coded depth survey (legend approx -1.8 m to -7.4 m) of the AS-BUILT structure showing an asymmetric, bent (\"F\"-shaped) layout rather than a symmetric V - one long diagonal arm plus a shorter perpendicular arm, with a dark (deeper) scour area between/behind them. Confirms the as-built asymmetry independently of S1's own survey figures (likely from a similar or the same underlying multibeam dataset). No axis labels or scale bar visible, so used only qualitatively.",
+      "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/mount-maunganui/"
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Mount-Reef-Arial-1024x575.jpg?v=1573519132",
+      "what_it_is": "Aerial photo already in the card's images list (\"Mount-Reef-Arial\"); re-downloaded to scratchpad, viewed, then deleted",
+      "what_was_read_off_it": "Shows the Mauao headland, harbour entrance and ocean beach with an arrow marking the reef's offshore location; the reef itself is only a faint, very small darker patch in the water at the arrow tip, far too small in this wide-area photo (covering several km of coastline) to extract any reliable dimension or shape detail. Used only to confirm the reef's general offshore position relative to the beach, consistent with the ~250 m offshore figure.",
+      "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/mount-maunganui/"
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Mount-Reef-Depth-and-Currents.jpg",
+      "what_it_is": "A hydrodynamic model velocity-vector figure, a figure on the already-cited R2 page; downloaded to scratchpad, viewed, then deleted",
+      "what_was_read_off_it": "Shows modelled current velocity vectors around the reef with a 0.1 km scale bar and a 0.2 m/s vector-length key, but the reef's own outline is not drawn on this figure (only the current-convergence hot spot is visible) - contributed no usable shape or dimension information; not used in this file's derivation beyond confirming the reef's general offshore siting.",
+      "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/mount-maunganui/"
+    },
+    {
+      "what_it_is": "S1 (BoPRC 'Assessment of Management Options' PDF report) Figure 1, p8: 'Aerial view of Mount Reef (arrowed). Photo supplied by BoPRC.'",
+      "what_was_read_off_it": "A wide-area aerial photo similar in kind to the raisedwaterresearch.com aerial above; confirms the reef's offshore position off Tay St/Marine Parade but the structure itself is too small/indistinct in this photo for shape or dimension measurement.",
+      "source_page": "https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf (page 8 of the PDF)"
+    },
+    {
+      "what_it_is": "S1 Figure 3, p23: 'Most recent survey of Mount Reef conducted on 18 July 2013' - a georeferenced colour-coded multibeam bathymetric survey plan-view with NZ grid-coordinate axes (easting/northing tick labels) and a depth legend (0.0 to -5.0 m, referred to Chart Datum)",
+      "what_was_read_off_it": "The PRIMARY figure used for this file's shape/topology conclusions: shows the as-built structure as a bent, asymmetric two-arm shape (not a symmetric V), with a clearly visible central scour depression on the landward side, matching the text's own description of 'severe scour immediately landward of the structure'. We attempted to calibrate an exact metres-per-pixel scale from the printed grid-line labels for precise vertex measurement but could not extract the tick-label positions reliably from the rendered PDF page image; the figure was therefore used for shape/topology and relative arm-length proportions only, with the polygons_m absolute dimensions instead anchored to S1's own separately-stated 80x70 m bounding-envelope text.",
+      "source_page": "https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf (page 23 of the PDF)"
+    },
+    {
+      "what_it_is": "S1 Figure 4, p26: 'View of the Mount Reef from a multibeam survey conducted in January 2007, when the reef was 70% complete (from Scarfe, 2009)' - an oblique-shaded relief render with a north arrow",
+      "what_was_read_off_it": "Confirms the 'northern arm' (per the figure caption, showing 'the (then) missing bag ... clearly visible on the northern arm') runs as the more shore-parallel-looking band and shows a distinct, separately-oriented second arm; also shows a large scour hole on the landward side of the structure (marked with a dashed circle). Used to assign which arm is 'northern' vs 'southern' in this file's coordinate convention, and to corroborate the asymmetric/bent topology at an earlier (70%-complete) construction stage.",
+      "source_page": "https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf (page 26 of the PDF)"
+    }
+  ],
+  "gemini_comparison": {
+    "gemini_values": {
+      "shape_type": "Swept-Wing Inverted Y / Chevron with Central Ridge",
+      "alongshore_length_m": 95.0,
+      "cross_shore_width_m": 75.0,
+      "area_m2": "4800.0 gross (Gemini's own audit separately computes a net arm area of 2,455 m2)",
+      "crest_depth_m": 2.2,
+      "distance_offshore_m": 250.0,
+      "ambient_seabed_depth_m": 6.2,
+      "sources_cited_by_gemini": ["Black, S.M. & Kerry, A. (1999). Coastal Manag. 27:355-365.", "Mead, S. et al. (2007). Mount Maunganui Reef Monitoring Report. ASR Ltd.", "Tauranga City Council: Tay Street Reef Removal Dossier (2014)."]
+    },
+    "agree": [
+      "Distance offshore (~250 m): matches our own best-supported figure exactly, and both are independently corroborated by multiple sources on our side (R12, S1, S4, R2's derivation) - genuine agreement, not coincidence.",
+      "General shape family ('chevron' / V-with-two-arms): Gemini's 'chevron' classification and our own (also 'chevron', built from two named arms) agree at the topology level, even though the specific polygon coordinates and gross/net dimensions disagree substantially (see below).",
+      "Net footprint/arm area (~2,455 m2 Gemini vs our 2,497 m2): close numerical agreement, though reached by very different methods and starting bounding dimensions - we treat this as a loose corroboration at best, not confirmation, given how differently each figure was derived.",
+      "Design crest depth in the same ballpark: Gemini's own footprint-notes mention 'Designed for -0.5m LAT', close to our sourced 0.4 m below LAT design target [S1] - a genuine partial match on the DESIGN figure specifically."
+    ],
+    "disagree": [
+      {
+        "quantity": "overall gross bounding dimensions (alongshore x cross-shore)",
+        "gemini": "95 m x 75 m (gross 4,800 m2 bounding envelope)",
+        "ours": "80 m x 70 m as-built [S1, directly stated], cross-checked at 79 m x 67 m by an independent academic thesis [S2, via S1's footnote]",
+        "why_ours": "S1 is an official Bay of Plenty Regional Council-commissioned engineering assessment report that gives this figure as a direct, plainly-stated measurement ('As finally built, the structure is approximately 80 m in shore-parallel length and about 70 m in cross-shore width'), independently cross-checked against an academic PhD thesis survey (Scarfe 2008, 79x67 m) cited in the same report's own footnote. Gemini's 95x75 m has no source we could locate that states it directly; its own cited 'Mead et al. 2007 Mount Maunganui Reef Monitoring Report' could not be found by us anywhere (see open_issues) - the real, analogous document we found and read in full is Mead's 2011 assessment, cited via S1, which does NOT contain a 95x75 figure anywhere in the text we extracted. Gemini's 95x75 is closer to the DESIGN-stage target reported in S4 (75 m apex-to-base x ~100 m across the base) than to the as-built figure, which raises the possibility Gemini's number is a garbled/rounded version of the design figure rather than an as-built measurement - but even then, its own axis labels (95 alongshore, 75 cross-shore) have length and width swapped relative to S4's apex-to-base(75, i.e. cross-shore)/across-base(~100, i.e. alongshore) framing."
+      },
+      {
+        "quantity": "crest depth (as-built)",
+        "gemini": "2.2 m (with the underlying reef_footprints.json giving a range of -1.8 to -2.4 m LAT for the 'constructed' crest)",
+        "ours": "0.8-1.0 m below Chart Datum for the majority of the as-built crest, with an isolated point at 0.1-0.2 m [S1, directly stated from bathymetric survey data through 2013]",
+        "why_ours": "S1 is the only source either of us appears to have found that gives a specific as-built crest-depth range, and it is a directly-quoted figure from an official survey-based assessment report, not an estimate. Gemini's 1.8-2.4 m figure would mean the crest sits roughly 1-1.5 m deeper than what S1's own bathymetric surveys (2008 and 2013) actually record; we could not find Gemini's cited 'Mead et al. 2007' monitoring report anywhere to check where this number might have come from, and it directly contradicts the one authoritative source we could locate and read in full."
+      },
+      {
+        "quantity": "ambient (pre-reef) seabed depth at the site",
+        "gemini": "6.2 m",
+        "ours": "3.7-4.6 m (consent application) / 3-5 m (Scarfe 2008 survey) / 4.5 m (NZ Geographic, quoting the designer) [S1, S4]",
+        "why_ours": "Three broadly consistent figures from two independent primary-ish sources (an official council report citing the original consent application and an academic thesis survey, plus a magazine feature directly quoting the designer) versus Gemini's single unsourced 6.2 m, which is 30-70% deeper than any of our three figures."
+      },
+      {
+        "quantity": "shape topology (\"inverted Y\" vs bent two-arm chevron)",
+        "gemini": "\"Swept-Wing Inverted Y / Chevron with Central Ridge\" - implying three distinct members (a central ridge/stem plus two swept wings) and a broadly symmetric layout, per Gemini's own 10-vertex polygon",
+        "ours": "Two arms only (northern, southern per S1/Mead 2011's own naming), no separate central ridge/stem member, meeting at a single apex/focus point at a bend that visual inspection of S1's own survey figures puts closer to ~90 degrees than to a narrow symmetric V or a three-limbed Y",
+        "why_ours": "S1 (an official report directly describing the physical structure from diver inspections and repeated multibeam surveys) consistently describes exactly TWO arms (\"6 geotextile containers on each side\", \"the northern arm\", \"the southern arm\") plus a single shared \"apex\" - never a third, separate \"central ridge\" component. We could not find any source describing a distinct central-ridge member, and Gemini's own reef_footprints.json gives no image or figure citation for this specific claim beyond its own hand-built polygon."
+      }
+    ]
+  },
+  "confidence": "medium",
+  "open_issues": [
+    "The polygons_m vertex coordinates are our own estimate: the overall bounding envelope (80x70 m / 67.8x72.9 m as modelled) is well-sourced [S1, cross-checked by S2], but the specific bend angle (~90 degrees) and the arm-length split (55 m northern / 45 m southern) used to place individual vertices were read qualitatively off S1's survey figures, not measured to a calibrated scale - we could not extract a reliable metres-per-pixel scale from the rendered PDF page images for Figure 3. Treat individual vertex positions as +/-15 m uncertain even though the overall envelope is high-confidence.",
+    "Three different, mutually inconsistent design-volume figures now exist across sources: ~5,000 m3 [R1], 6,000 m3 [R2, S4], and 6,500 m3 [S1] - none of the sources reconciles this with the others; all describe the same 'design' stage, not different stages.",
+    "Two different, mutually inconsistent container/bag-size and bag-count descriptions exist: S4 describes 24 bags total, the largest 3.5 m high x 50 m long holding 660 m3 each; R2 describes bags 'up to 60 m long and 5 m in diameter'; S1 (via Mead 2011) instead describes 6 containers per arm (12 total in the base design: 3 large crest + 3 smaller base containers per side). No source reconciles these three accounts, and it is unclear whether they describe the same design stage, different design revisions, or a reporting error.",
+    "Gemini's three cited sources ('Black, S.M. & Kerry, A. 1999' - already in our own reference list as R13/design-paper citation; 'Mead, S. et al. 2007 Mount Maunganui Reef Monitoring Report, ASR Ltd'; 'Tauranga City Council: Tay Street Reef Removal Dossier 2014') could not be independently located by us. The 1999 design paper is the same one our card already cites via Lior's notes [R13] and we did not find an accessible copy of it either (a design paper WITH plan-view figures and precise original design dimensions, if locatable, would likely be the single best remaining source to check against both our and Gemini's numbers - flagged for a possible future pass, not pursued further here as it is not yet in either project's accessible reference set).",
+    "Exact real-world compass bearing of the shoreline / the alongshore (x) axis at Mount Maunganui Beach is not stated in any source we accessed; we used the sourced 'northern arm' / 'southern arm' naming [S1] to fix positive-x = north, which is better-grounded than a fully arbitrary convention but still does not give an exact bearing in degrees.",
+    "The as-built shape shown in S1's July 2013 survey (5 years after 2008 completion, after documented bag deflation/sand-leakage damage 'near the apex of the structure') may itself have degraded/settled somewhat from the as-completed-in-2008 geometry; we did not find an earlier, immediately-post-completion (2008) survey figure to check against, only the January 2007 (70%-complete) and July 2013 figures.",
+    "Crest_depth_m.value (0.9 m) is our own midpoint of a stated 0.8-1.0 m range, not itself a directly quoted single figure - see the derivation table row and the crest_depth_m field's own notes.",
+    "[ADDED 2026-09-25 verification pass] A direct pixel-level zoom into S1's Figure 3 (July 2013 survey) shows a small, separate reddish-orange (shallow) blob near the apex/junction of the two arms, detached from both main limbs by a deeper (blue) gap. No source text names a distinct third feature here - S1/Mead 2011 consistently describe exactly two arms plus a shared apex - so this is recorded only as our own unsourced visual observation, of uncertain origin (possibly the repaired/replaced T4 bag documented near the apex, a small isolated remnant, or bathymetric noise), not as a basis for revising shape_type. It is noted here only because it is the one respect in which Gemini's 'with Central Ridge' framing is not obviously wrong, even though Gemini's own specific description (a swept-back three-limbed Y) does not match what is visible either."
+  ],
+  "references": [
+    {"id": "R1", "citation": "Wikipedia (2026). \"Multi-purpose reef.\"", "url": "https://en.wikipedia.org/wiki/Multi-purpose_reef", "accessed": "2026-09-24", "supports": "reused from card - design volume ~5,000 m3 (one of three disagreeing design-volume figures, see open_issues)"},
+    {"id": "R2", "citation": "Raised Water Research. \"Mount Maunganui.\"", "url": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/mount-maunganui/", "accessed": "2026-09-25 (re-fetched in full this pass, several times, for additional depth of quotation beyond the card's original use of this source)", "supports": "original 'wedge' design (50x100 m, superseded), the 2005 pre-construction change to a 'delta-wing' design, 6,000 m3 design volume, 2,800 m3 as-built volume, design crest depth (0.4 m below lowest tide), offshore siting (300 m design, built ~50 m closer i.e. ~250 m), bag size (60 m x 5 m diameter, conflicting with S4's bag-size figure), and the four images downloaded/viewed/deleted in images_relied_on"},
+    {"id": "R8", "citation": "NZ Herald. \"Reef company making waves worldwide.\"", "url": "https://www.nzherald.co.nz/business/reef-company-making-waves-worldwide/LGTUQJEFRKUCKQNFLMRPCCXMHY/", "accessed": "2026-09-24 (reused from card)", "supports": "pre-completion (Nov 2005) description of a 'V-shaped reef, with two 70m by 30m arms' sited 240 m offshore"},
+    {"id": "R12", "citation": "NZ Herald (Bay of Plenty Times). \"Artificial reef washes ashore at Mount Maunganui.\"", "url": "https://www.nzherald.co.nz/bay-of-plenty-times/news/artificial-reef-washes-ashore-at-mount-maunganui/JXHBBAPHYNHWBONKL2Q7NHZP44/", "accessed": "2026-09-24 (reused from card)", "supports": "reef location restated as 250 m offshore, Tay St/Marine Parade"},
+    {"id": "S1", "citation": "Focus Resource Management Group, for Bay of Plenty Regional Council (2014). \"Mount Maunganui Reef - Assessment of Management Options.\" BoPRC technical report, 49 pp., citing Mead (2011) and Scarfe (2008) throughout.", "url": "https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf", "accessed": "2026-09-25", "supports": "as-built overall dimensions (80x70 m), original wedge design (50x100 m), design crest depth (0.4 m below LAT/CD) and as-built crest depth (0.8-1.0 m majority, 0.1-0.4 m isolated points), design vs as-built volume (6,500 vs 2,800 m3), ambient pre-reef water depth (3.7-4.6 m / 3-5 m), 6 containers per arm (12 total design), northern-arm/southern-arm naming and apex/focus-point terminology, Figures 1/3/4 (aerial photo and two georeferenced multibeam survey plan-views) used for shape/topology"},
+    {"id": "S2", "citation": "Scarfe, B.E. (2008). PhD thesis, University of Waikato (site investigation and bathymetric survey data for Mount Maunganui reef) - cited via S1's footnote 1 (p7) and via S1's Figure 4 caption (attributing a January 2007 multibeam survey to \"Scarfe, 2009\"). Not independently accessed by us.", "url": "", "accessed": "not independently accessed - cited only via S1", "supports": "independent academic cross-check of as-built dimensions: 79 m x 67 m (S1's footnote); August 2004 baseline bathymetric survey and January 2007 (70%-complete) multibeam survey data"},
+    {"id": "S3", "citation": "Mead, S.T. (2011). Reef condition/as-built assessment referenced extensively throughout S1 (exact report title and publisher not given in S1's own text). Not independently accessed by us.", "url": "", "accessed": "not independently accessed - cited only via S1", "supports": "as-built vs design dimension differences, container specification (6 per arm: 3 large crest + 3 smaller base containers), bag T4 damage/removal, no evidence of ongoing subsidence since 2010 - all as relayed by S1"},
+    {"id": "S4", "citation": "Andrew Moores, New Zealand Geographic, Issue 078 (Mar-Apr 2006). \"Artificial surf reefs - coming to a beach near you.\"", "url": "https://www.nzgeo.com/stories/artificial-surf-reefs-coming-to-a-beach-near-you/", "accessed": "2026-09-25 (fetched in full via curl with a browser user-agent, since a plain WebFetch 403's on this domain)", "supports": "DESIGN-stage shape description ('apex of the V points seaward and the structure thickens towards the base', 'a cross between a heavy-limbed V and a delta wing'), design dimensions (75 m apex-to-base x ~100 m across the base), design volume (6,000 m3), bag count/size (24 bags, largest 3.5 m high x 50 m long, 660 m3 each), offshore siting (250 m in 4.5 m of water), design crest-depth implication ('water depth over the reef will be less than a metre' at low tide), two-directional wave/50-surfer/50 m ride design targets - directly quoted by us from the designer (Kerry Black)"}
+  ],
+  "verification": [
+    {
+      "item": "S1 (BoPRC 2014 report) -- every quoted figure",
+      "verdict": "confirmed",
+      "evidence": "Downloaded the actual PDF (curl, browser user-agent; WebFetch itself got a TLS cert error on this host) and extracted full text with PyMuPDF (fitz). Verbatim-confirmed on the live document: 'As finally built, the structure is approximately 80 m in shore-parallel length and about 70 m in cross-shore width' (p6); footnote 'Scarfe (2008, p271) gives the reef dimensions as 79 m by 67 m' (p7); original 'wedge' dimensions 'approximately 50 m in width ... and just less than 100 m in length' (p6); consent-application siting 'approximately 250-300 metres from the shoreline' and pre-reef depth '3.7-4.6 m' (p6); Scarfe's baseline survey depth 'approximately 3-5 m' (p6); design crest '0.4 m depth (below lowest astronomical tide ... equivalent to Chart Datum)' (p6); July 2013 survey 'shallowest areas ... most typically in the range of 0.8-1 m below Chart Datum ... isolated area on the southern arm ... as shallow as 0.2-0.4 m below Chart Datum' (p22, s4.3.2.1); as-built vs design volume '2,800 m3 ... significantly less than the design volume (6,500 m3)' (p29); 6 geotextile containers per side, 3 large crest + 3 smaller base containers (p7)."
+    },
+    {
+      "item": "S1 Figure 3 (p23) and Figure 4 (p26) -- shape/topology, arm naming, section/page numbers",
+      "verdict": "confirmed",
+      "evidence": "Rendered both PDF pages directly to PNG with PyMuPDF (no internet re-fetch of a third-party image needed) and viewed them. Figure 3 is exactly as described: a georeferenced NZ-grid-coordinate multibeam plan view (easting 376680-376820, northing 812820-812960), depth legend 0.0 to -5.0 m 'referred to Chart Datum', captioned 'Most recent survey of Mount Reef conducted on 18 July 2013' and 'Surveyed ... by University of Waikato & Discovery Marine Ltd'. It shows a bent, asymmetric two-limb structure (one roughly shore-parallel/horizontal limb, one roughly cross-shore/vertical limb, meeting near a point at an angle visually close to 90 degrees), not a symmetric V. Figure 4 (an oblique shaded-relief render with a north arrow, captioned 'January 2007, when the reef was 70% complete') independently shows the same bent two-limb topology and its caption explicitly labels the shore-parallel/horizontal limb as 'the northern arm' (missing-bag callout) -- confirming the file's northern-arm=alongshore / southern-arm=cross-shore convention directly from the source, not merely inferred."
+    },
+    {
+      "item": "R2 (raisedwaterresearch.com) and its 4 images",
+      "verdict": "confirmed",
+      "evidence": "Re-fetched the live page and re-downloaded all 4 images (Mount-Reef.jpg, Mount-Reef-Installed.jpg, Mount-Reef-Arial, Mount-Reef-Depth-and-Currents.jpg) directly and viewed each. Page text verbatim-confirms the 50x100 m original wedge design, the 2005 delta-wing change, 6,000 m3 design / 2,800 m3 as-built volume, 0.4 m design crest depth, and the 300 m design / ~250 m as-built offshore siting via the Port of Tauranga dredge-disposal-area constraint. The CAD render image is confirmed to show a symmetric, interleaved-apex two-arm V with no scale bar (topology only). The 'Installed' image is confirmed to be a colour-coded bathymetric plot (legend -1.8 to -7.4 m, no scale bar) showing the same bent/asymmetric two-limb shape independently corroborating S1's own survey figures. The aerial photo is confirmed to show only a faint, too-small-to-measure dark patch. The current-vectors image is confirmed to carry a 0.1 km scale bar and 0.2 m/s key but no reef outline."
+    },
+    {
+      "item": "R8 (NZ Herald Nov 2005), R12 (NZ Herald 2023), S4 (NZ Geographic 2006)",
+      "verdict": "confirmed",
+      "evidence": "Re-fetched all three live. R8: 'The V-shaped reef, with two 70m by 30m arms' sited '240m off the beach'. R12: 'about 250m offshore from the corner of Tay St and Marine Parade'. S4 (fetched via curl with a browser user-agent, since WebFetch also gets a TLS/403 issue on nzgeo.com): the Kerry Black quote is exact, including 'the apex of the V points seaward and the structure thickens towards the base', '75 m from apex to base and almost 100 m across the base', '6000 m3 of sand', '24 huge cylindrical bags', 'anchored ... 250 m off the beach in 4.5 m of water', 'water depth over the reef will be less than a metre' at low tide."
+    },
+    {
+      "item": "R1 (Wikipedia) design volume ~5,000 m3",
+      "verdict": "confirmed",
+      "evidence": "Re-fetched live: 'The reef design called for a total volume of approximately 5,000 m3 to be contained in an arrangement of large sand-filled geotextile containers.'"
+    },
+    {
+      "item": "Polygon geometry: bbox, area, max_dimension, validity",
+      "verdict": "confirmed",
+      "evidence": "Independently recomputed from the file's own polygons_m with plain Python (shoelace) and shapely: total area 2496.815 m2 (file states 2497), bbox 67.8 x 72.9 m (file states 67.8 x 72.9), max pairwise vertex distance 86.1998 m (file states 86), and both rings are shapely-valid and simple (non-self-intersecting). No discrepancy found."
+    },
+    {
+      "item": "Crest-depth isolated-point arm attribution (0.1-0.2 m point)",
+      "verdict": "CORRECTED",
+      "evidence": "The pre-verification JSON attributed the isolated 0.1-0.2 m shallow point (S1 s2.1, 'at its highest point, the reef is approximately 0.2 m below chart datum, or approximately 0.1 m below the lowest astronomical tide') to 'the northern arm crest'. Re-reading S1's full extracted text: this sentence does NOT name an arm at all -- the arm attribution was an unsupported addition not present in the source. Corrected in crest_depth_m.notes to remove the invented attribution and clarify this is one point in two datums, not a range; also flagged that it may (unconfirmed) be the same feature as S1 s4.3.2.1's explicitly-named 'isolated area on the southern arm ... 0.2-0.4 m below Chart Datum'."
+    },
+    {
+      "item": "70x30 m (R8) vs 80x70 m (S1) 'does not reconcile under a symmetric geometry' claim",
+      "verdict": "CORRECTED",
+      "evidence": "The pre-verification JSON asserted 'no single symmetric half-angle satisfies both the 70x30 per-arm figures and the 80x70 overall envelope simultaneously'. This was checked by direct computation (Python, sweeping the half-angle from 0-90 degrees in 0.01-degree steps): a symmetric V with two 70x30 m arms at a half-angle of ~21.9 degrees from the shore-normal axis produces an 80.05 x 70.54 m bounding envelope -- matching S1's stated 80x70 m almost exactly. The original claim was mathematically wrong and has been corrected in the derivation table's uncertainty field. This does NOT overturn the file's as-built-asymmetry conclusion, which rests on independent, directly-viewed visual evidence (S1 Figures 3 and 4; R2's 'Mount Reef Installed' bathymetric image), not on this arithmetic argument."
+    },
+    {
+      "item": "Gemini comparison table -- fairness of Gemini's own numbers as represented",
+      "verdict": "confirmed",
+      "evidence": "Read Gemini's own reef_footprints.json 'mount_maunganui' entry, reef_footprint_scale_analysis.md, and scale_sketch_photo_alignment_audit.md directly. Every Gemini figure attributed to it in this file's gemini_comparison (95x75 m, 4,800 m2 gross / 2,455 m2 net, crest_depth_m 2.2 / '-1.8 to -2.4m LAT' / 'Designed for -0.5m LAT', ambient_seabed_depth_m 6.2, shape_typology 'Swept-Wing Inverted Y / Chevron with Central Ridge', the three named sources, and Gemini's own audit note flagging the gross-vs-net area gap) is an accurate, unedited representation of what Gemini's files actually contain. No unfairness found."
+    },
+    {
+      "item": "Shape topology vs Gemini's 'Inverted Y / Chevron with Central Ridge' (3-member claim)",
+      "verdict": "PLAUSIBLE nuance noted, verdict unchanged",
+      "evidence": "Direct pixel-level zoom into S1 Figure 3 shows a small, separate reddish-orange blob near the apex/junction, detached from the two main limbs by a blue (deeper) gap -- visually consistent with a third, smaller high point. Its origin is NOT established (could be a repaired/replaced bag near the documented apex damage, a small isolated remnant, or bathymetric noise) and NO source text describes a distinct third 'central ridge' member; S1/Mead 2011 consistently describe exactly two arms plus a shared apex/focus point. This is recorded as an open issue (this file's own independent visual observation, not sourced to any text) rather than a basis for changing the two-arm shape_type or agreeing with Gemini's specific 3-member topology."
+    }
+  ]
+}

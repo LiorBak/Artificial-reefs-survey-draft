@@ -1,0 +1,203 @@
+PASS  tab is the visible view
+PASS  URL hash follows the selector: default = first built model
+PASS  selector has one button per model + 'All (compare)' (7), exactly one pressed
+PASS  selector buttons show the 3D-confidence dot of each reef
+PASS  ONE model section visible (one at a time)
+PASS  6 model sections rendered (others hidden)
+PASS  124 thumbnails rendered (one per selected picture)
+PASS  header: badge + one-line reason + state + vertical-exaggeration note
+PASS  every model has the full vertical-exaggeration text behind its (i)
+PASS  text at the top is short: tab intro <= 260 chars, page intro <= 260 chars (the rest sits behind (i))
+PASS  site header (long text) is collapsed on this tab
+PASS  key-numbers table in every model
+PASS  caveats table rows
+PASS  references list entries
+PASS  appendix (methods, texts relied on, caveats, references) is at the bottom of the tab and reachable by link
+PASS  viewer of the selected model starts by itself (iframe present, only for the visible model)
+PASS  desktop: viewer and photo panel are side by side (same top, viewer ~60 %)
+PASS  desktop: key numbers are BELOW the viewer + photos
+PASS  photo panel shows a large picture (loaded) and a thumbnail strip grouped by role
+PASS  viewer from file:// ran (iframe has a canvas or is opaque-origin)
+PASS  clicking a thumbnail shows it in the panel next to the 3D model (no modal)
+PASS  clicked thumbnail is marked (aria-pressed) and the caption names the picture
+PASS  next-picture arrow steps through the strip
+PASS  hover on a thumbnail shows the tooltip with 'How it was used' and 'Source'
+PASS  tooltip hides when the pointer leaves
+PASS  keyboard focus on a thumbnail shows the tooltip
+PASS  annotated-version toggle in the panel switches the picture next to the model
+PASS  'Enlarge' opens the lightbox with citation, licence, rights note
+PASS  lightbox has a visible Close button (top-right and in the footer)
+PASS  Close button closes the lightbox
+PASS  Escape closes the lightbox
+PASS  (i) opens a pop-over with the full text; pinned by click
+PASS  Escape closes the (i) pop-over
+PASS  (i) also opens on hover
+PASS  (i) opens on keyboard focus
+PASS  selector switches the model: hash follows, the other section is hidden
+PASS  switching unloads the previous viewer (one live iframe, in the visible model)
+PASS  browser Back returns to the previous model
+PASS  selector is keyboard operable (Enter on a focused button selects it)
+PASS  methods link in the caveats table selects its model, opens the lazy document and scrolls to the heading
+PASS  no console errors
+PASS  Full screen: the stage (viewer + photo panel) goes full screen
+PASS  Full screen: a visible 'Exit full screen' button sits top-right, on top
+PASS  Full screen: viewer and photo panel are both inside it
+PASS  Full screen: the toolbar button reads 'Exit full screen'
+PASS  Exit button leaves full screen; the page is intact (selector, model, viewer)
+PASS  Full screen fallback (no Fullscreen API): CSS full-screen layout with the Exit button
+PASS  Esc leaves the full-screen fallback
+PASS  sticky navigation stays visible after scrolling down (top of the window, view buttons reachable)
+PASS  reef selector stays visible under the navigation while scrolling the model
+PASS  'Top' button appears on long views and returns to the top
+PASS  'Top' button scrolls to the top
+PASS  from deep inside the tab one click on 'Gallery' shows the main page from its top
+PASS  leaving the tab frees the viewers (no iframe left)
+PASS  tabs switch from every view (Map -> 3D models) and the tab re-opens on its model
+PASS  brand link 'Surf reefs survey' returns to the main page (Gallery)
+PASS  the gallery's page intro is 2 short lines with an (i)
+PASS  no console errors (navigation session)
+PASS  'All (compare)' selects the combined section (hash #view/models3d/all, one section visible)
+PASS  combined viewer starts in its stage; comparison panel lists every model with its check result
+PASS  comparison panel: footprint and crest read back from the meshes, all checks pass
+PASS  method + check table of the combined scene are on the page
+PASS  combined viewer (standalone, file://) renders a frame without errors
+PASS  combined scene holds all 6 exported reefs, each with seabed + reef mesh
+PASS  combined: every reef is positioned side by side at one scale (no overlap of the seabed patches)
+PASS  combined: z = 0 is each site's own MSL (water plane at y = 0; the exported crest level is the reef mesh's top)
+PASS  combined: vertical exaggeration is always shown, default 1x
+PASS  combined: controls for water, seabed, metre grid, scale bars, outlines, labels, plan / oblique / side presets, overlay
+PASS  combined: the VE slider scales every reef together (y scale 3, chip says 3x)
+PASS  combined overlay: every reef is centred on one origin (footprint centroids at 0, 0)
+PASS  combined: switching back to side by side restores the layout
+PASS  standalone viewer page has a slim top bar (visible) with '<- Back to the page' and the main tabs
+PASS  the bar does not cover the viewer (content starts below it)
+PASS  '<- Back to the page' returns to the survey page on that model
+PASS  the back bar is hidden when the viewer is framed by the page
+PASS  mobile: no horizontal page scroll
+PASS  mobile: navigation and reef selector are visible and operable
+PASS  mobile: photos sit directly under the viewer (stacked, no side-by-side)
+PASS  mobile: tapping a thumbnail shows it in the panel
+PASS  combined: Boscombe seabed reaches the beach (y from about -66 m, land above MSL) and offshore (y to 650 m)
+PASS  combined: Boscombe is in the scene (all exported models present)
+PASS  combined 1440x900 oblique: reef labels do not overlap and sit inside the canvas, clear of the panel (6 labels)
+PASS  combined 1440x900 oblique: exactly one scale bar (one label '100 m')
+PASS  combined 1440x900 plan: reef labels do not overlap and sit inside the canvas, clear of the panel (6 labels)
+PASS  combined 1440x900 plan: exactly one scale bar (one label '100 m')
+PASS  combined overlay: labels do not overlap, inside the canvas, one scale bar
+PASS  combined panel: open by default (Hide button visible, Layout button hidden)
+PASS  combined panel: Hide collapses the panel and shows a labelled 'Layout' button at the bottom-left edge
+PASS  combined panel collapsed: labels still do not overlap and stay inside
+PASS  combined panel: the Layout button opens it again
+PASS  combined: no page errors
+PASS  combined 1000x700 oblique: reef labels do not overlap and sit inside the canvas, clear of the panel (6 labels)
+PASS  combined 1000x700 oblique: exactly one scale bar (one label '100 m')
+PASS  combined 1000x700 plan: reef labels do not overlap and sit inside the canvas, clear of the panel (6 labels)
+PASS  combined 1000x700 plan: exactly one scale bar (one label '100 m')
+PASS  page panel (All): open by default, 'Hide' in the panel, 'Reefs' button hidden
+PASS  full screen (All): the stage is full screen with the reefs panel and the viewer's layout panel both open
+PASS  full screen (All): 'Hide' collapses the right-hand panel; a 'Reefs' button appears; the viewer fills the width
+PASS  full screen (All): the layout panel can be collapsed too (both panels hidden: the model is unobstructed)
+PASS  leaving full screen keeps both panels collapsed (state survives)
+PASS  the 'Reefs' button opens the right-hand panel again
+PASS  borth-coastal-defence-reef: viewer's right panel is open by default and collapsible; the canvas then uses the full width; 'Controls' button at the edge
+PASS  boscombe-surf-reef: viewer's left panel is open by default and collapsible; the canvas then uses the full width; 'Layout' button at the edge
+PASS  bunbury-airwave: viewer's left panel is open by default and collapsible; the canvas then uses the full width; 'Layout' button at the edge
+PASS  mount-maunganui-reef: viewer's left panel is open by default and collapsible; the canvas then uses the full width; 'Layout' button at the edge
+PASS  palm-beach-gold-coast: viewer's left panel is open by default and collapsible; the canvas then uses the full width; 'Layout' button at the edge
+PASS  prattes-reef-el-segundo: viewer's left panel is open by default and collapsible; the canvas then uses the full width; 'Layout' button at the edge
+PASS  page: no errors while exercising panels
+PASS  borth-coastal-defence-reef: default version 'lidar_2022' is pressed on load, 3 versions offered
+PASS  borth-coastal-defence-reef: version 'design_1020' is really applied in the 3D viewer (its own version selector reads it after the switch)
+PASS  borth-coastal-defence-reef: version 'design_1020' -> iframe hash, pressed state, 'Showing' line and key-number rows follow
+PASS  borth-coastal-defence-reef: version 'sat_2024' is really applied in the 3D viewer (its own version selector reads it after the switch)
+PASS  borth-coastal-defence-reef: version 'sat_2024' -> iframe hash, pressed state, 'Showing' line and key-number rows follow
+PASS  borth-coastal-defence-reef: the versions (i) dialog opens and lists every version
+PASS  mount-maunganui-reef: default version 'multibeam_2013_m2p0' is pressed on load, 2 versions offered
+PASS  mount-maunganui-reef: version 'asr_installed_toe_2008' is really applied in the 3D viewer (its own version selector reads it after the switch)
+PASS  mount-maunganui-reef: version 'asr_installed_toe_2008' -> iframe hash, pressed state, 'Showing' line and key-number rows follow
+PASS  mount-maunganui-reef: the versions (i) dialog opens and lists every version
+PASS  page: no errors while exercising versions
+PASS  borth-coastal-defence-reef: every eligible picture of photo_match.json that is in the picture panel carries its transform (8 of 8; 0 not in the panel)
+PASS  borth-coastal-defence-reef: 'Match this photo' button appears on an eligible picture
+PASS  borth-coastal-defence-reef: no button on a picture without a documented plan-view transform
+PASS  borth-coastal-defence-reef: pressing the button sets a top-down camera, shows the overlay, and the panel offers the opacity slider + Reset view
+PASS  borth-coastal-defence-reef: the opacity slider changes the overlay opacity
+PASS  borth-coastal-defence-reef: Reset view restores the viewer (no overlay, camera back, panels back)
+PASS  borth-coastal-defence-reef: overlay corners = the picture corners projected by the viewer's camera, all 8 pictures within 3 px (rotation / mirror / scale / centre)
+PASS  boscombe-surf-reef: every eligible picture of photo_match.json that is in the picture panel carries its transform (6 of 6; 0 not in the panel)
+PASS  boscombe-surf-reef: 'Match this photo' button appears on an eligible picture
+PASS  boscombe-surf-reef: no button on a picture without a documented plan-view transform
+PASS  boscombe-surf-reef: pressing the button sets a top-down camera, shows the overlay, and the panel offers the opacity slider + Reset view
+PASS  boscombe-surf-reef: the opacity slider changes the overlay opacity
+PASS  boscombe-surf-reef: Reset view restores the viewer (no overlay, camera back, panels back)
+PASS  boscombe-surf-reef: overlay corners = the picture corners projected by the viewer's camera, all 6 pictures within 3 px (rotation / mirror / scale / centre)
+PASS  bunbury-airwave: every eligible picture of photo_match.json that is in the picture panel carries its transform (1 of 1; 0 not in the panel)
+PASS  bunbury-airwave: 'Match this photo' button appears on an eligible picture
+PASS  bunbury-airwave: no button on a picture without a documented plan-view transform
+PASS  bunbury-airwave: pressing the button sets a top-down camera, shows the overlay, and the panel offers the opacity slider + Reset view
+PASS  bunbury-airwave: the opacity slider changes the overlay opacity
+PASS  bunbury-airwave: Reset view restores the viewer (no overlay, camera back, panels back)
+PASS  bunbury-airwave: overlay corners = the picture corners projected by the viewer's camera, all 1 pictures within 3 px (rotation / mirror / scale / centre)
+PASS  mount-maunganui-reef: every eligible picture of photo_match.json that is in the picture panel carries its transform (7 of 7; 0 not in the panel)
+PASS  mount-maunganui-reef: 'Match this photo' button appears on an eligible picture
+PASS  mount-maunganui-reef: no button on a picture without a documented plan-view transform
+PASS  mount-maunganui-reef: pressing the button sets a top-down camera, shows the overlay, and the panel offers the opacity slider + Reset view
+PASS  mount-maunganui-reef: the opacity slider changes the overlay opacity
+PASS  mount-maunganui-reef: Reset view restores the viewer (no overlay, camera back, panels back)
+PASS  mount-maunganui-reef: overlay corners = the picture corners projected by the viewer's camera, all 7 pictures within 3 px (rotation / mirror / scale / centre)
+PASS  palm-beach-gold-coast: every eligible picture of photo_match.json that is in the picture panel carries its transform (6 of 6; 0 not in the panel)
+PASS  palm-beach-gold-coast: 'Match this photo' button appears on an eligible picture
+PASS  palm-beach-gold-coast: no button on a picture without a documented plan-view transform
+PASS  palm-beach-gold-coast: pressing the button sets a top-down camera, shows the overlay, and the panel offers the opacity slider + Reset view
+PASS  palm-beach-gold-coast: the opacity slider changes the overlay opacity
+PASS  palm-beach-gold-coast: Reset view restores the viewer (no overlay, camera back, panels back)
+PASS  palm-beach-gold-coast: overlay corners = the picture corners projected by the viewer's camera, all 6 pictures within 3 px (rotation / mirror / scale / centre)
+PASS  prattes-reef-el-segundo: every eligible picture of photo_match.json that is in the picture panel carries its transform (2 of 2; 0 not in the panel)
+PASS  prattes-reef-el-segundo: 'Match this photo' button appears on an eligible picture
+PASS  prattes-reef-el-segundo: no button on a picture without a documented plan-view transform
+PASS  prattes-reef-el-segundo: pressing the button sets a top-down camera, shows the overlay, and the panel offers the opacity slider + Reset view
+PASS  prattes-reef-el-segundo: the opacity slider changes the overlay opacity
+PASS  prattes-reef-el-segundo: Reset view restores the viewer (no overlay, camera back, panels back)
+PASS  prattes-reef-el-segundo: overlay corners = the picture corners projected by the viewer's camera, all 2 pictures within 3 px (rotation / mirror / scale / centre)
+PASS  page: no errors while matching photos
+shot  round11_3d_overview.png
+shot  round11_3d_model_with_photos.png
+shot  round11_3d_thumb_tooltip.png
+shot  round11_3d_panel_annotated.png
+shot  round11_3d_lightbox.png
+shot  round11_3d_info_popover.png
+shot  round11_3d_caveats.png
+shot  round11_3d_methods.png
+shot  round11_3d_fullscreen.png
+shot  round11_3d_sticky_nav.png
+shot  round11_3d_gallery_header.png
+shot  round11_3d_all_stage.png
+shot  round11_3d_all_method.png
+shot  round11_3d_combined_oblique.png
+shot  round11_3d_combined_plan.png
+shot  round11_3d_combined_overlay.png
+shot  round11_3d_combined_overlay_side.png
+shot  round11_3d_standalone_bar.png
+shot  round11_3d_mobile.png
+shot  round11_3d_dark.png
+shot  round11_3d_combined_oblique.png
+shot  round11_3d_combined_plan.png
+shot  round11_3d_combined_overlay.png
+shot  round11_3d_combined_panel_hidden.png
+shot  round11_3d_fullscreen_panels_open.png
+shot  round11_3d_fullscreen_panels_hidden.png
+shot  round11_3d_viewer_panel_hidden_borth.png
+shot  round11_3d_versions_borth_default.png
+shot  round11_3d_versions_borth_design_1020.png
+shot  round11_3d_versions_borth_sat_2024.png
+shot  round11_3d_versions_borth_dialog.png
+shot  round11_3d_versions_mount_default.png
+shot  round11_3d_versions_mount_asr_installe.png
+shot  round11_3d_versions_mount_dialog.png
+shot  round11_3d_photomatch_borth.png
+shot  round11_3d_photomatch_boscombe.png
+shot  round11_3d_photomatch_bunbury.png
+shot  round11_3d_photomatch_mount.png
+shot  round11_3d_photomatch_palm.png
+shot  round11_3d_photomatch_prattes.png
+RESULT: PASS

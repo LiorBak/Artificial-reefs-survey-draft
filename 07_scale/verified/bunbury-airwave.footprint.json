@@ -1,0 +1,369 @@
+{
+  "slug": "bunbury-airwave",
+  "name": "Bunbury Airwave",
+  "status": "verified",
+  "verified_on": "2026-09-25",
+  "shape_type": "mound",
+  "shape_type_notes": "Not a V/delta/chevron/linear/crescent/L shape -- a single circular inflatable dome ('mound') with no arms or directional geometry.",
+  "coords": "metres; origin = shoreline point nearest the reef centroid; x = alongshore (positive toward north, approximate -- Back Beach's coastline trends roughly N-S; no source gives an exact shoreline azimuth); y = offshore (positive seaward); shoreline approximated as the line y=0. Orientation is moot for a circle.",
+  "polygon_m": [
+    [
+      6.0,
+      37.5
+    ],
+    [
+      5.7956,
+      39.0529
+    ],
+    [
+      5.1962,
+      40.5
+    ],
+    [
+      4.2426,
+      41.7426
+    ],
+    [
+      3.0,
+      42.6962
+    ],
+    [
+      1.5529,
+      43.2956
+    ],
+    [
+      0.0,
+      43.5
+    ],
+    [
+      -1.5529,
+      43.2956
+    ],
+    [
+      -3.0,
+      42.6962
+    ],
+    [
+      -4.2426,
+      41.7426
+    ],
+    [
+      -5.1962,
+      40.5
+    ],
+    [
+      -5.7956,
+      39.0529
+    ],
+    [
+      -6.0,
+      37.5
+    ],
+    [
+      -5.7956,
+      35.9471
+    ],
+    [
+      -5.1962,
+      34.5
+    ],
+    [
+      -4.2426,
+      33.2574
+    ],
+    [
+      -3.0,
+      32.3038
+    ],
+    [
+      -1.5529,
+      31.7044
+    ],
+    [
+      -0.0,
+      31.5
+    ],
+    [
+      1.5529,
+      31.7044
+    ],
+    [
+      3.0,
+      32.3038
+    ],
+    [
+      4.2426,
+      33.2574
+    ],
+    [
+      5.1962,
+      34.5
+    ],
+    [
+      5.7956,
+      35.9471
+    ],
+    [
+      6.0,
+      37.5
+    ]
+  ],
+  "bbox_m": {
+    "length_alongshore": 12.0,
+    "width_crossshore": 12.0
+  },
+  "area_m2": 113.1,
+  "max_dimension_m": 12.0,
+  "crest_depth_m": {
+    "value": 1.0,
+    "datum": "below the water surface at low tide (LAT, approximate)",
+    "ref": "R3"
+  },
+  "crest_depth_alt_note": "Structure height above seabed is reported as 2 m in most contemporaneous sources (R1,R2,R3,R6) but as 1.6 m in one 2022 retrospective (R8); the 1.0 m crest-depth figure is a directly stated quote independent of which height figure is used.",
+  "distance_offshore_m": {
+    "value": 37.5,
+    "measured_from": "shoreline (design target range 30-45 m; 37.5 m is the midpoint)",
+    "ref": "R3"
+  },
+  "orientation_notes": "None -- the reef is a radially symmetric circular dome (12 m diameter in all directions), so it has no arms, apex, or preferred alongshore/offshore axis.",
+  "volume_m3": {
+    "value": 117.3,
+    "method": "estimated (not published): spherical-cap geometry V=(pi*h/6)*(3a^2+h^2) with base radius a=6 m, height h=2 m",
+    "ref": "derived",
+    "uncertainty": "+/-20%; cross-checked for plausibility against the stated 140-tonne sand fill (R8): 140 t / 117.3 m3 ~ 1.2 t/m3, a plausible bulk density for saturated sand+air fill"
+  },
+  "materials": "Dome-shaped inflatable rubber (Hypalon, 5 mm thick) bladder with glued (not welded) seams; anchored to the seabed by partially filling it with sand, the rest of the bladder filled with water and air (R3: \"The bladder is anchored to the seabed by partially filling it with sand. The rest of the bladder is filled with water and air.\"); total sand fill 140 tonnes (R8). Corrected 2026-09-25: an earlier draft quoted this as \"washed, coarse beach sand\" and omitted the water component -- that exact phrase does not appear on the R3 page and has been replaced with the verbatim quote.",
+  "derivation": [
+    {
+      "quantity": "base diameter (= length = width)",
+      "value": 12.0,
+      "unit": "m",
+      "method": "stated in text",
+      "source_ref": "R1,R3,R6,R8",
+      "quote_or_figure": "two-metre-high, 12-metre-wide, dome-like bladder (R1); The bladder is 12m (40 feet) in diameter on the sea floor (R3); Width: 12 metres (R8)",
+      "uncertainty": "+/-0 (repeated identically across 4 independently re-verified sources; R2 was re-checked 2026-09-25 and does NOT state a diameter/width figure at all -- dropped from this citation list)"
+    },
+    {
+      "quantity": "height above seabed",
+      "value": 2.0,
+      "unit": "m",
+      "method": "stated in text (majority figure; one later source gives 1.6 m instead)",
+      "source_ref": "R1,R2,R3",
+      "quote_or_figure": "two-metre-high...dome-like bladder (R1); a 2-metre high, dome-shaped bladder (R2); rises about 2m (6.5 feet) off the sea floor at its highest point (R3)",
+      "uncertainty": "conflicting alt. value 1.6 m in R8 (2022 retrospective). R6 (The Inertia) was re-fetched 2026-09-25 via a Wayback Machine snapshot (live site returns HTTP 403) and actually reads \"about 7-feet high and 40-feet wide\" -- an approximate, rounded imperial paraphrase (7 ft = 2.13 m), not the precise \"6.5 feet\" conversion of 2.0 m an earlier draft of this file incorrectly attributed to it. R6 is therefore downgraded from a precise cross-check to a loose corroboration and removed from this row's primary source_ref (kept for diameter, where 40 ft = 12.19 m rounds cleanly to 12 m)."
+    },
+    {
+      "quantity": "footprint area",
+      "value": 113.1,
+      "unit": "m2",
+      "method": "computed: pi*(12/2)^2 from stated diameter, shape confirmed circular via aerial photo",
+      "source_ref": "R1,R3,R6 + image (Airwave-from-Above.jpg)",
+      "quote_or_figure": "12 m diameter (text) + near-perfect circular footprint visible in aerial drone photo",
+      "uncertainty": "+/-5% (assumes true circle); recomputed 2026-09-25 with python: pi*6^2 = 113.097 m2, rounds to 113.1 -- confirmed correct"
+    },
+    {
+      "quantity": "crest depth at low tide",
+      "value": 1.0,
+      "unit": "m",
+      "method": "stated in text",
+      "source_ref": "R3",
+      "quote_or_figure": "at low tide, the shallow point is about 1m under the surface of the water",
+      "uncertainty": "+/-0.2 m (about 1m); design condition, never verified as-installed"
+    },
+    {
+      "quantity": "distance offshore",
+      "value": 37.5,
+      "unit": "m",
+      "method": "stated in text as a range (30-45 m); 37.5 m = midpoint",
+      "source_ref": "R3",
+      "quote_or_figure": "designed to be installed 30-45 meters off the beach",
+      "uncertainty": "+/-7.5 m (half the stated range); as-installed position never surveyed. R2 was re-fetched 2026-09-25 and confirmed to NOT mention any offshore-distance figure at all -- dropped from this citation (an earlier draft of this file wrongly cited R2 alongside R3 for this number)."
+    },
+    {
+      "quantity": "orientation",
+      "value": "none (radially symmetric)",
+      "unit": "n/a",
+      "method": "inferred from circular plan shape",
+      "source_ref": "R1,R3,R6 + image (Airwave-from-Above.jpg)",
+      "quote_or_figure": "single diameter figure (not length x width) + circular aerial photo",
+      "uncertainty": "high confidence"
+    }
+  ],
+  "images_relied_on": [
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/12/Airwave-from-Above.jpg?v=1576553483",
+      "what_it_is": "Aerial/drone photo of the inflated Airwave bladder just under the water surface off Bunbury Back Beach, Dec 2019 (already listed in our card's images array)",
+      "what_was_read_off_it": "Confirmed the plan-view footprint is a near-perfect circle (not oval/rectangular), corroborating the text's single-diameter (12 m) description. No scale bar present; size was not pixel-measured from this image, only shape.",
+      "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/bunbury-airwave/"
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/09/AirwaveDiagram2.jpg?v=1568073278",
+      "what_it_is": "Waveco's 3D perspective concept rendering of the dome and the wave it is meant to shape (already listed in our card's images array)",
+      "what_was_read_off_it": "Confirmed the general dome cross-section concept only; explicitly NOT used for any measurement since it is an oblique illustrative sketch with no scale bar or plan-view projection, so perspective would distort any length/angle read from it.",
+      "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/bunbury-airwave/"
+    }
+  ],
+  "gemini_comparison": {
+    "gemini_values": {
+      "shape_type": "Hemispherical circular dome",
+      "length_m": 12.0,
+      "width_m": 12.0,
+      "area_m2": 113.0,
+      "crest_depth_m": 1.8,
+      "distance_offshore_m": 38.0,
+      "orientation": "Radially symmetric, no directional orientation",
+      "gemini_sources": [
+        "Bottegal 2019 Project Brief",
+        "Surfer Magazine Trial Review 2020"
+      ]
+    },
+    "agree": [
+      "shape_type",
+      "length_m",
+      "width_m",
+      "area_m2",
+      "orientation"
+    ],
+    "disagree": [
+      {
+        "quantity": "crest_depth_m",
+        "gemini": 1.8,
+        "ours": 1.0,
+        "why_ours": "R3 (raisedwaterresearch.com, re-fetched 2026-09-25) states directly: 'at low tide, the shallow point is about 1m under the surface of the water.' No source supports 1.8 m. Traced Gemini's own working: its `reef_footprints.json` gives `coastal_context.ambient_seabed_depth_m = 3.8` and `crest_depth_m = 1.8` with the note 'Dome inflated to 2m height; crest submerged 1.8m' -- i.e. Gemini computed 3.8 - 2.0 = 1.8, but the 3.8 m 'ambient seabed depth' input is not sourced anywhere in Gemini's own files or ours; it appears to be an assumed/invented figure, not a cited one. Gemini's own two cited sources for this reef (a 2019 'project brief' and a 2020 Surfer Magazine review) do not appear anywhere in our reference list or in the pages we located, so they could not be independently checked."
+      },
+      {
+        "quantity": "distance_offshore_m",
+        "gemini": 38.0,
+        "ours": 37.5,
+        "why_ours": "R3 states a 30-45 m design-target range, not a single figure; R2 was re-checked 2026-09-25 and does not mention any offshore distance at all (an earlier draft of this file incorrectly cited R2 alongside R3 for this number). Gemini's 38 m happens to fall inside R3's range but is not itself sourced anywhere we could find (Gemini's own polygon in `reef_footprints.json` is simply centered at y=38, matching its stated value with no separate citation); we report the documented range's midpoint (37.5 m) instead of an unsourced point estimate."
+      }
+    ]
+  },
+  "confidence": "medium",
+  "open_issues": [
+    "The reef was never completed (installation reached ~90% before a glued seam tore and the bladder was removed within days); every figure here is an as-designed value, not an as-installed/as-surveyed one.",
+    "Height above seabed is inconsistently reported: 2 m (R1,R2,R3 contemporaneous) vs 1.6 m (1 later retrospective, R8); R6's imperial 'about 7-feet' is an approximate corroboration only, not an independent precise measurement.",
+    "R3 and R9 in the verified card cite the same raisedwaterresearch.com URL under two different reference ids -- likely a minor duplication in the card, noted here but not corrected (out of scope for this footprint-only task).",
+    "No exact installed lat/lon or surveyed offshore distance exists; 30-45 m is the pre-installation design target, sourced to R3 only (R2 does not mention offshore distance).",
+    "Volume (117.3 m3) is our own geometric estimate, not a published figure; offered only as a sand-tonnage plausibility check.",
+    "Gemini's two cited sources for this reef ('Bottegal 2019 Project Brief', 'Surfer Magazine Trial Review 2020') could not be located or verified; treat Gemini's crest-depth and offshore-distance figures as unverified. Traced the specific mechanism of Gemini's 1.8 m crest-depth figure: it equals Gemini's own (unsourced) 3.8 m 'ambient seabed depth' input minus the 2.0 m height -- an internally consistent but externally unsupported calculation.",
+    "Attribution note: the earlier draft of this file's claim that Bunbury 'matches the flag already in Gemini's own suspicious notes' was imprecisely worded -- that 'suspicious' annotation ('one of the better-matched reefs') actually lives in OUR project's own intermediate extract file (07_scale/00_gemini_footprints_extract.json), not inside the Gemini folder itself. Gemini's own self-audit file (scale_sketch_photo_alignment_audit.md, row 11) independently marks Bunbury 'VERIFIED' with no discrepancy flagged. Both statements are substantively accurate; only the attribution of which file the note lives in has been corrected here.",
+    "Three citation errors found and fixed during 2026-09-25 adversarial verification: (1) R2 (ABC 2019-06-13) was wrongly cited alongside R3 for the 12 m diameter and the 30-45 m offshore distance -- re-fetched twice with targeted prompts and confirmed R2 states ONLY the 2 m height, nothing else; (2) R1's diameter quote was wrongly given the '(40 feet)' parenthetical that actually belongs to R3 -- R1's real text is metric-only ('two-metre-high, 12-metre-wide'); (3) R6 (The Inertia) was quoted as giving a precise '6.5 feet' height when the actual (Wayback-Machine-verified, since the live URL 403s) text says 'about 7-feet high' -- a looser rounding. None of these fixes changed any headline number (12 m, 2 m, 1.0 m, 30-45 m all still hold on corrected citations), but the reference attributions have been corrected throughout. A fourth fix: the fill-material quote 'washed, coarse beach sand' was not actually found on the R3 page and has been replaced with the verbatim R3 quote (sand + water + air)."
+  ],
+  "references": [
+    {
+      "id": "R1",
+      "citation": "ABC News (2019-12-16/17). Bunbury's Back Beach surfers deflated as artificial reef, Airwave, tears during installation.",
+      "url": "https://www.abc.net.au/news/2019-12-16/word-first-surf-reef-tears-during-installation/11803228",
+      "accessed": "2026-09-25",
+      "supports": "\"two-metre-high, 12-metre-wide, dome-like bladder\" (12 m diameter AND 2 m height, directly and jointly), tear during installation, ~90% complete. Corrected 2026-09-25: an earlier draft of this file quoted R1 as saying '12m (40 feet) in diameter' -- that parenthetical imperial conversion is actually R3's phrasing, not R1's; R1 uses metric only."
+    },
+    {
+      "id": "R2",
+      "citation": "ABC News (2019-06-13). 'World-first' inflatable surf reef to be installed at beach in Western Australia.",
+      "url": "https://www.abc.net.au/news/2019-06-13/world-first-artificial-surf-reef-to-be-installed-at-bunbury/11204280",
+      "accessed": "2026-09-25",
+      "supports": "2 m height ONLY. Corrected 2026-09-25: this article does not state a diameter/width figure or any offshore-distance figure -- re-fetched and checked twice with targeted prompts; an earlier draft of this file wrongly cited R2 for both. Removed from those citations."
+    },
+    {
+      "id": "R3",
+      "citation": "Raised Water Research. Bunbury Airwave (site profile page).",
+      "url": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/bunbury-airwave/",
+      "accessed": "2026-09-25",
+      "supports": "12 m diameter, 2 m height, 1 m crest depth at low tide, 30-45 m offshore distance"
+    },
+    {
+      "id": "R6",
+      "citation": "The Inertia (2019-12). The World's First Inflatable Reef Tore During Installation.",
+      "url": "https://www.theinertia.com/surf/airwave-worlds-first-inflatable-reef-tore-during-installation/",
+      "accessed": "2026-09-25",
+      "supports": "diameter cross-check only: \"about 7-feet high and 40-feet wide\" (40 ft = 12.19 m, rounds to the stated 12 m diameter). Corrected 2026-09-25: live URL returns HTTP 403; re-verified via Wayback Machine snapshot (web.archive.org/web/20260117215631/...). The actual text says \"about 7-feet high,\" not \"6.5 feet\" as an earlier draft of this file claimed -- 7 ft (2.13 m) is a loose rounding, not a precise conversion of 2.0 m, so this source is downgraded to a diameter-only corroboration and no longer double-counted as an independent height confirmation."
+    },
+    {
+      "id": "R8",
+      "citation": "Bunbury Mail (2022-03-22). Airwave founder Troy Bottegal moves towards making Bunbury... (story id 7667604).",
+      "url": "https://www.bunburymail.com.au/story/7667604/bunbury-still-set-to-become-surfing-destination/",
+      "accessed": "2026-09-25",
+      "supports": "alt. height 1.6 m, 140 tonnes sand fill"
+    },
+    {
+      "id": "R9",
+      "citation": "SurferToday preview article on Airwave trial (2019) [same URL as R3 in card].",
+      "url": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/bunbury-airwave/",
+      "accessed": "2026-09-25",
+      "supports": "duplicate of R3 content per card"
+    }
+  ],
+  "verification": [
+    {
+      "item": "Base diameter 12.0 m",
+      "verdict": "CONFIRMED",
+      "evidence": "Re-fetched R1 (WebFetch, 2026-09-25): \"two-metre-high, 12-metre-wide, dome-like bladder.\" Re-fetched R3: \"The bladder is 12m (40 feet) in diameter on the sea floor.\" R8 (webfetch): \"Width: 12-metre wide.\" R6 (Wayback snapshot): \"about ... 40-feet wide\" (=12.19 m, rounds to 12 m). R2 re-checked and does NOT state a diameter -- removed from this citation."
+    },
+    {
+      "item": "Height above seabed 2.0 m (primary)",
+      "verdict": "CONFIRMED",
+      "evidence": "Re-fetched R1: \"two-metre-high...\"; R2: \"a 2-metre high, dome-shaped bladder\"; R3: \"rises about 2m (6.5 feet) off the sea floor at its highest point.\" R6 (Wayback snapshot) gives an approximate \"about 7-feet high\" (2.13 m) -- a loose corroboration, not a precise cross-check as an earlier draft claimed; R8 gives a conflicting alt. value of 1.6 m (kept as noted alternate, not averaged)."
+    },
+    {
+      "item": "Footprint shape = circle (not oval/rectangle)",
+      "verdict": "CONFIRMED",
+      "evidence": "Single-diameter figure in all text sources (no separate length x width ever given) plus direct visual inspection of Airwave-from-Above.jpg (downloaded and viewed 2026-09-25): shows a clean, near-perfect circular footprint underwater, no scale bar present so used for shape only, not size."
+    },
+    {
+      "item": "Footprint area 113.1 m2",
+      "verdict": "CONFIRMED",
+      "evidence": "Recomputed with python: pi*6.0^2 = 113.0973... rounds to 113.1. Polygon bbox computed from polygon_m: x in [-6.0,6.0] (12.0 m), y in [31.5,43.5] (12.0 m) -- exactly matches stated 12x12 m. Shoelace area of the 24-gon = 111.81 m2 (shapely: is_valid=True, is_simple=True), ~1.1% below the exact-circle figure, consistent with the stated polygonal-discretization explanation."
+    },
+    {
+      "item": "Crest depth 1.0 m below low-tide surface",
+      "verdict": "CONFIRMED",
+      "evidence": "Re-fetched R3 (2026-09-25), exact quote: \"at low tide, the shallow point is about 1m under the surface of the water.\" No other source gives a conflicting figure."
+    },
+    {
+      "item": "Distance offshore 30-45 m design range (midpoint 37.5 m)",
+      "verdict": "CONFIRMED, citation corrected",
+      "evidence": "Re-fetched R3: \"designed to be installed 30-45 meters off the beach.\" Re-checked R2 twice with a targeted prompt (\"does this article mention a distance offshore?\") -- confirmed R2 does NOT mention any offshore distance. Reference corrected from [R2,R3] to [R3] only in the JSON's derivation row and distance_offshore_m.ref field (previously miscited as R2)."
+    },
+    {
+      "item": "Orientation: none (radially symmetric)",
+      "verdict": "CONFIRMED",
+      "evidence": "A circle has no principal axis by definition; corroborated by the aerial photo showing no elongation. Citation list corrected to drop R2 (which supports neither the diameter nor the single-figure basis for this inference)."
+    },
+    {
+      "item": "Volume estimate 117.3 m3 (spherical cap)",
+      "verdict": "CONFIRMED as a correctly-computed, explicitly-labeled estimate (not a published figure)",
+      "evidence": "Recomputed with python: V=(pi*h/6)*(3a^2+h^2), a=6, h=2 => V=117.29, rounds to 117.3. Correctly labeled 'estimated (not published)' with method and ref='derived' -- no fix needed, default-unsupported rule does not apply since an explicit estimation method is already given per the task rules."
+    },
+    {
+      "item": "Fill material description",
+      "verdict": "CORRECTED",
+      "evidence": "The exact phrase 'washed, coarse beach sand' does not appear on the R3 page (checked directly, 2026-09-25). R3's actual text: \"The bladder is anchored to the seabed by partially filling it with sand. The rest of the bladder is filled with water and air.\" R8 corroborates: \"filled with water, air and 140 tonnes of sand.\" Materials field rewritten with the verbatim quote; water added (was previously omitted)."
+    },
+    {
+      "item": "Polygon geometry validity",
+      "verdict": "CONFIRMED",
+      "evidence": "shapely.geometry.Polygon(polygon_m): is_valid=True, exterior.is_simple=True (closed, non-self-intersecting, 25 coordinate pairs incl. repeated first/last vertex)."
+    },
+    {
+      "item": "Gemini comparison values (shape, 12x12 m, area 113.0, orientation)",
+      "verdict": "CONFIRMED accurate against Gemini's actual files",
+      "evidence": "Read Gemini's 02_world_reefs_data/reef_footprints.json (id 'bunbury') and scale_sketch_photo_alignment_audit.md (row 11, 'VERIFIED') directly, 2026-09-25: shape_typology 'Hemispherical Circular Dome', 12.0x12.0 m, footprint_area_m2 113.0, orientation 'radially symmetric' -- matches our card's Agree row. Gemini's own sources field ['Bottegal, T. (2019)...', 'Surfer Magazine...(2020)'] read verbatim and confirmed to match what our earlier draft quoted; still unlocatable independently."
+    },
+    {
+      "item": "Gemini crest depth 1.8 m -- disagree verdict",
+      "verdict": "CONFIRMED disagree, mechanism traced",
+      "evidence": "Gemini's reef_footprints.json gives coastal_context.ambient_seabed_depth_m=3.8 and crest_depth_m=1.8 with note 'Dome inflated to 2m height; crest submerged 1.8m' (3.8-2.0=1.8). The 3.8 m figure has no citation anywhere in Gemini's own files; our sourced R3 quote (1.0 m) stands."
+    },
+    {
+      "item": "Gemini offshore distance 38 m -- disagree verdict",
+      "verdict": "CONFIRMED disagree",
+      "evidence": "Gemini's polygon is centered at y=38 with no separate citation for that number beyond its two unlocatable sources; falls inside our sourced 30-45 m range (R3) but is not itself independently sourced."
+    },
+    {
+      "item": "\"Gemini's own suspicious notes\" attribution",
+      "verdict": "CORRECTED (attribution only; substance accurate)",
+      "evidence": "Searched the entire read-only Gemini folder (grep -rli suspicious) 2026-09-25: no file there contains the word 'suspicious'. The quoted annotation ('one of the better-matched reefs') actually lives in OUR OWN 07_scale/00_gemini_footprints_extract.json (a prior-stage extract of Gemini's numbers with our own annotations), not inside the Gemini folder. Wording corrected in the md; Gemini's own self-audit independently marks Bunbury 'VERIFIED' with no discrepancy in scale_sketch_photo_alignment_audit.md row 11."
+    }
+  ]
+}

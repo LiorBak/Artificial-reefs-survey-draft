@@ -1,0 +1,24 @@
+8 PalmBeach_reef_window_1.5km [{'attributes': {'zmin': 0, 'zmax': 8, 'n': 718}}]
+8 Narrowneck_window [{'attributes': {'zmin': 0, 'zmax': 9, 'n': 697}}]
+8 whole_extent [{'attributes': {'zmin': -32, 'zmax': 1172, 'n': 630194}}]
+8 Seaway_to_Palm_offshore_strip [{'attributes': {'zmin': 0, 'zmax': 126, 'n': 14076}}]
+7 PalmBeach_reef_window_1.5km [{'attributes': {'zmin': 0, 'zmax': 5, 'n': 121}}]
+7 Narrowneck_window [{'attributes': {'zmin': 0, 'zmax': 5, 'n': 86}}]
+7 whole_extent [{'attributes': {'zmin': -30, 'zmax': 1170, 'n': 120760}}]
+7 Seaway_to_Palm_offshore_strip [{'attributes': {'zmin': 0, 'zmax': 125, 'n': 2273}}]
+2 PalmBeach_reef_window_1.5km [{'attributes': {'zmin': 0, 'zmax': 0, 'n': 9}}]
+2 Narrowneck_window [{'attributes': {'zmin': 0, 'zmax': 0, 'n': 15}}]
+2 whole_extent [{'attributes': {'zmin': -30, 'zmax': 1170, 'n': 58793}}]
+2 Seaway_to_Palm_offshore_strip [{'attributes': {'zmin': 0, 'zmax': 120, 'n': 749}}]
+1 PalmBeach_reef_window_1.5km [{'attributes': {'zmin': 0, 'zmax': 0, 'n': 9}}]
+1 Narrowneck_window [{'attributes': {'zmin': 0, 'zmax': 0, 'n': 15}}]
+1 whole_extent [{'attributes': {'zmin': 0, 'zmax': 1150, 'n': 14225}}]
+1 Seaway_to_Palm_offshore_strip [{'attributes': {'zmin': 0, 'zmax': 100, 'n': 199}}]
+8 negative contours extent {'xmin': 524891.5734999999, 'ymin': 6889957.1702, 'xmax': 542155.8317, 'ymax': 6931640.2258, 'spatialReference': {'wkid': 28356, 'latestWkid': 28356}}
+ count {'count': 226}
+7 negative contours extent {'xmin': 524907.0674, 'ymin': 6889957.9501, 'xmax': 542153.0859000003, 'ymax': 6931631.3576, 'spatialReference': {'wkid': 28356, 'latestWkid': 28356}}
+ count {'count': 33}
+8 east_of_x543500 {'count': 0}
+8 east_of_x546000_Palm {'count': 0}
+7 east_of_x543500 {'count': 0}
+7 east_of_x546000_Palm {'count': 0}

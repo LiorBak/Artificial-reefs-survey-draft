@@ -1,0 +1,342 @@
+{
+ "method": "median over transects x = (-100, -50, 0, 50, 100) m of the y where the SonarChart z17 shade-v edge (= v-m contour) crosses the line x = const; contours extracted by nav_isolines.py",
+ "datum_assumed": "chart datum (CD); the viewer states no datum",
+ "access": "2026-10-06",
+ "contours": {
+  "1": {
+   "depth_m": 1,
+   "transects": {
+    "-100": 166.4,
+    "-50": 130.9,
+    "0": 111.2,
+    "50": 103.1,
+    "100": 103.3
+   },
+   "z18": {
+    "0": 111.1,
+    "50": 103.6,
+    "100": 104.8
+   },
+   "n": 5,
+   "y_median_m": 111.2,
+   "y_at_x0_m": 111.2,
+   "z18_median_m": 104.8
+  },
+  "2": {
+   "depth_m": 2,
+   "transects": {
+    "-100": 264.4,
+    "-50": 247.6,
+    "0": 235.2,
+    "50": 235.1,
+    "100": 241.8
+   },
+   "z18": {
+    "-100": 264.6,
+    "-50": 250.1,
+    "0": 237.4,
+    "50": 236.3,
+    "100": 241.5
+   },
+   "n": 5,
+   "y_median_m": 241.8,
+   "y_at_x0_m": 235.2,
+   "z18_median_m": 241.5
+  },
+  "3": {
+   "depth_m": 3,
+   "transects": {
+    "-100": 329.0,
+    "-50": 327.2,
+    "0": 338.6,
+    "50": 345.6,
+    "100": 327.7
+   },
+   "z18": {
+    "-100": 329.2,
+    "-50": 327.5,
+    "0": 339.9,
+    "50": 348.4,
+    "100": 330.4
+   },
+   "n": 5,
+   "y_median_m": 329.0,
+   "y_at_x0_m": 338.6,
+   "z18_median_m": 330.4
+  },
+  "4": {
+   "depth_m": 4,
+   "transects": {
+    "-100": 393.7,
+    "-50": 395.3,
+    "0": 401.7,
+    "50": 405.8,
+    "100": 399.4
+   },
+   "z18": {
+    "-100": 393.5,
+    "-50": 395.3,
+    "0": 402.5,
+    "50": 406.0,
+    "100": 401.5
+   },
+   "n": 5,
+   "y_median_m": 399.4,
+   "y_at_x0_m": 401.7,
+   "z18_median_m": 401.5
+  },
+  "5": {
+   "depth_m": 5,
+   "transects": {
+    "-100": 462.6,
+    "-50": 459.5,
+    "0": 463.1,
+    "50": 466.0,
+    "100": 462.9
+   },
+   "z18": {
+    "-100": 464.5,
+    "-50": 461.3,
+    "0": 463.1,
+    "50": 467.2
+   },
+   "n": 5,
+   "y_median_m": 462.9,
+   "y_at_x0_m": 463.1,
+   "z18_median_m": 463.8
+  },
+  "6": {
+   "depth_m": 6,
+   "transects": {
+    "-100": 552.8,
+    "-50": 547.7,
+    "0": 546.0,
+    "50": 545.5,
+    "100": 543.7
+   },
+   "z18": {
+    "-50": 549.8
+   },
+   "n": 5,
+   "y_median_m": 546.0,
+   "y_at_x0_m": 546.0,
+   "z18_median_m": 549.8
+  },
+  "7": {
+   "depth_m": 7,
+   "transects": {
+    "-100": 643.1,
+    "-50": 640.6,
+    "0": 642.2,
+    "50": 642.4
+   },
+   "z18": {},
+   "n": 4,
+   "y_median_m": 642.3,
+   "y_at_x0_m": 642.2,
+   "z18_median_m": null
+  },
+  "8": {
+   "depth_m": 8,
+   "transects": {
+    "-100": 725.3,
+    "-50": 728.0,
+    "0": 730.7
+   },
+   "z18": {},
+   "n": 3,
+   "y_median_m": 728.0,
+   "y_at_x0_m": 730.7,
+   "z18_median_m": null
+  },
+  "9": {
+   "depth_m": 9,
+   "transects": {
+    "-100": 797.9
+   },
+   "z18": {},
+   "n": 1,
+   "y_median_m": 797.9,
+   "y_at_x0_m": null,
+   "z18_median_m": null
+  }
+ },
+ "profile_y_zCD": [
+  [
+   0.0,
+   1.13
+  ],
+  [
+   111.2,
+   -1.0
+  ],
+  [
+   241.8,
+   -2.0
+  ],
+  [
+   329.0,
+   -3.0
+  ],
+  [
+   399.4,
+   -4.0
+  ],
+  [
+   462.9,
+   -5.0
+  ],
+  [
+   546.0,
+   -6.0
+  ],
+  [
+   642.3,
+   -7.0
+  ],
+  [
+   728.0,
+   -8.0
+  ]
+ ],
+ "run_per_rise_m": [
+  52.0,
+  131.0,
+  87.0,
+  70.0,
+  64.0,
+  83.0,
+  96.0,
+  86.0
+ ],
+ "reef_centroid_xy": [
+  0.0,
+  307.71
+ ],
+ "z_cd_at_reef_centroid": -2.76,
+ "nautical_chart": {
+  "contours_y_by_transect": {
+   "2": {
+    "-100": [
+     268.2
+    ],
+    "-50": [
+     265.1
+    ],
+    "0": [
+     265.9
+    ],
+    "50": [
+     266.2
+    ],
+    "100": [
+     270.0
+    ]
+   },
+   "5": {
+    "-100": [
+     491.9
+    ],
+    "-50": [
+     484.3
+    ],
+    "0": [
+     489.4
+    ],
+    "50": [
+     493.4
+    ],
+    "100": [
+     491.1
+    ]
+   }
+  },
+  "sounding_2.4": {
+   "label": "2.4",
+   "pixel_z17": [
+    493,
+    273
+   ],
+   "xy": [
+    35.8,
+    344.7
+   ],
+   "sonar_profile_depth_m_there": 3.22,
+   "distance_to_toe_outline_m": 31.8
+  },
+  "note": "Nautical Charts z17 show only the 2 m and 5 m contours (coarse); the 2.4 sounding lies at the NE (seaward) tip of the reef footprint; SonarChart interpolation there is 3.22 m"
+ },
+ "datum_test_vs_2013_dem": {
+  "cells": "Fig 5 DEM 1 m grid, x -80..105, y 245..400, valid and outside the convex hull of the reef + toe buffered by 12 m (no reef, no scour hole)",
+  "results": {
+   "CD (as read)": {
+    "shift_m": 0.0,
+    "n": 12874,
+    "mean_diff_m": 0.21,
+    "rms_m": 0.3
+   },
+   "LAT (z_CD = z_LAT - 0.03)": {
+    "shift_m": -0.03,
+    "n": 12874,
+    "mean_diff_m": 0.24,
+    "rms_m": 0.32
+   },
+   "MVD-53 (z_CD = z_MVD + 0.9622)": {
+    "shift_m": 0.9622,
+    "n": 12874,
+    "mean_diff_m": -0.75,
+    "rms_m": 0.78
+   },
+   "MSL (z_CD = z_MSL + 1.13)": {
+    "shift_m": 1.13,
+    "n": 12874,
+    "mean_diff_m": -0.92,
+    "rms_m": 0.95
+   }
+  },
+  "by_y_band": [
+   {
+    "y_from": 250,
+    "y_to": 275,
+    "n": 1717,
+    "dem_2013_zCD_median": -2.47,
+    "nav_zCD": -2.28
+   },
+   {
+    "y_from": 275,
+    "y_to": 300,
+    "n": 1691,
+    "dem_2013_zCD_median": -2.21,
+    "nav_zCD": -2.52
+   },
+   {
+    "y_from": 300,
+    "y_to": 325,
+    "n": 2092,
+    "dem_2013_zCD_median": -2.4,
+    "nav_zCD": -2.82
+   },
+   {
+    "y_from": 325,
+    "y_to": 350,
+    "n": 2777,
+    "dem_2013_zCD_median": -2.85,
+    "nav_zCD": -3.13
+   },
+   {
+    "y_from": 350,
+    "y_to": 375,
+    "n": 3276,
+    "dem_2013_zCD_median": -3.28,
+    "nav_zCD": -3.47
+   },
+   {
+    "y_from": 375,
+    "y_to": 400,
+    "n": 1320,
+    "dem_2013_zCD_median": -3.62,
+    "nav_zCD": -3.74
+   }
+  ]
+ }
+}

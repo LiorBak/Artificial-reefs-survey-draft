@@ -1,0 +1,358 @@
+{
+  "slug": "kovalam-reef-india",
+  "name": "Kovalam Reef (Lighthouse Beach)",
+  "status": "verified",
+  "verified_on": "2026-09-25",
+  "shape_type": "chevron",
+  "shape_type_notes": "As-built structure appears to be an echelon/fan array of individual ~30 m geotextile bag units radiating from a focus near the rocky headland, producing a stepped/zigzag breaking line — NOT a single smooth curved crescent or delta wedge. Based on two independent photographic sources (S1/S2 ASR Ltd's own construction-phase aerial photo, and S3 Raised Water Research's traced wave-break outline). Medium confidence on typology; the exact number/angles of units is a schematic reconstruction (low confidence).",
+  "coords": "metres; origin = shoreline point nearest the reef centroid (approximated at the base of the rocky headland/‘Lighthouse Point’ immediately updrift of the reef); x = alongshore, positive toward the southeast (from the headland toward the main Lighthouse Beach hotel frontage, matching the sense of ASR Ltd's own construction-phase aerial photo, S2) — the true compass bearing of this alongshore direction was not found in any source and this sense is inferred from photo geometry only; y = offshore, positive seaward; shoreline approximated as the line y=0",
+  "polygon_m": [
+    [
+      -13.1,
+      44.31
+    ],
+    [
+      -43.1,
+      34.31
+    ],
+    [
+      -46.9,
+      45.69
+    ],
+    [
+      -17.52,
+      55.48
+    ],
+    [
+      6.91,
+      70.14
+    ],
+    [
+      10.0,
+      65.0
+    ],
+    [
+      9.01,
+      70.92
+    ],
+    [
+      39.01,
+      75.92
+    ],
+    [
+      40.99,
+      64.08
+    ],
+    [
+      12.11,
+      59.27
+    ],
+    [
+      -11.91,
+      44.86
+    ],
+    [
+      -15.0,
+      50.0
+    ],
+    [
+      -13.1,
+      44.31
+    ]
+  ],
+  "polygon_notes": "SCHEMATIC RECONSTRUCTION, not an as-built survey polygon — no engineering drawing or GPS as-built survey of the Kovalam reef was found in any source (ours or Gemini's). Constructed as three ~30 m geotextile-tube units (matching the sourced '30 m units' fact, R1/R2/R10) chained in a staggered/echelon 'staircase' with a 12 m tube width (width itself not sourced for Kovalam; borrowed by analogy from comparable ASR Ltd geobag reef crest widths, e.g. Gold Coast/Mt Maunganui-family designs, and from Gemini's own unsourced 12 m crest-width assumption, which is plausible but likewise unverified). Verified closed and non-self-intersecting with shapely (is_valid=True, is_simple=True, first vertex == last vertex).",
+  "bbox_m": {
+    "length_alongshore": 87.9,
+    "width_crossshore": 41.6
+  },
+  "area_m2": 1083.5,
+  "area_m2_notes": "This is the footprint of the geobag tubes themselves (slender fan, ~12 m wide), not a filled solid wedge — substantially smaller than Gemini's candidate (3,800 m² gross / 2,245 m² by their own polygon-area audit) because we model the structure as an open fan of narrow tubes, consistent with the photographic evidence in S2, rather than a solid crescent/delta mass. Low confidence — order-of-magnitude estimate only.",
+  "max_dimension_m": 92.1,
+  "crest_depth_m": {
+    "value": null,
+    "datum": "not found",
+    "ref": null,
+    "notes": "No source (ours, Gemini's cited sources, or this pass's independent search) states a crest/submergence depth for the as-built Kovalam reef. Gemini's 1.6 m value traces to two citations ('Kerala Harbour Engineering Dept Project Report 2011' and 'Thomas et al. 2012 Performance Assessment of Kovalam Multipurpose Reef') that could not be located or confirmed to exist under those titles/years in this pass's search (see gemini_comparison). By loose analogy, comparable ASR Ltd geotextile multi-purpose reefs (Mount Maunganui, Narrowneck) sit roughly 1.5–2.5 m below chart datum, but this is a generic analogy, not a Kovalam-specific figure, and is not asserted as fact."
+  },
+  "distance_offshore_m": {
+    "value": 55,
+    "measured_from": "shoreline (schematic y=0 baseline)",
+    "ref": null,
+    "notes": "Not published in any source. Our schematic polygon's inner edge sits ~34 m and outer edge ~76 m from the shoreline baseline (centroid ~55 m); this range is a low-confidence visual impression from the ASR Ltd construction-phase aerial photo (S2), where swimmers/snorkellers are shown very close to both the shore and the reef, suggesting a near-shore siting broadly compatible with, but not confirming, Gemini's specific 150 m figure. Gemini's 150 m could not be verified against any accessible source either."
+  },
+  "orientation_notes": "The unit fan appears to originate from a focus close to the rocky headland ('Eve's/Lighthouse Point' area) immediately updrift of Lighthouse Beach, with the geotextile-tube units fanning alongshore toward the main hotel-fronted beach and outward to sea (per S2's aerial photo, where a labelled 'Reef' shows several dark parallel/sub-parallel submerged tube-rows radiating from near the point). No compass bearing for the arms, the shoreline, or the incident swell was found specifically sourced for Kovalam; Gemini's swell-direction figure (200–240° SSW) is a generically plausible Arabian Sea SW-monsoon swell window but is not independently confirmed for this exact site in any source read this pass.",
+  "volume_m3": {
+    "value": 4800,
+    "ref": "R1"
+  },
+  "materials": "Non-woven geotextile sand-filled containers ('Geotubes'/bags), built in ~30 m-long units [R1][R10]. R2 (Geosynthetics Magazine) discusses Kovalam only as an example of geotextile-bag failure (\"debris strikes (Kovalam)\") and does not itself state the 30 m unit length -- removed from this citation on re-verification (2026-09-25).",
+  "derivation": [
+    {
+      "quantity": "individual bag-unit length",
+      "value": 30,
+      "unit": "m",
+      "method": "stated in text",
+      "source_ref": "R1 / R10 (R2 does NOT state a unit length for Kovalam -- re-verified 2026-09-25, removed from this citation)",
+      "quote_or_figure": "R1 (Raised Water Research, re-fetched 2026-09-25): \"The bags measured 30m in length.\" R10 (Coastal Management, re-fetched 2026-09-25): \"Geotextile sandbags (30m long).\"",
+      "uncertainty": "as stated in R1/R10; not independently re-derived"
+    },
+    {
+      "quantity": "as-built total volume",
+      "value": 4800,
+      "unit": "m3",
+      "method": "stated in text",
+      "source_ref": "R1 / R10",
+      "quote_or_figure": "\"Approximate volume: 4,800m³\" (Raised Water Research, R1)",
+      "uncertainty": "as stated"
+    },
+    {
+      "quantity": "number of chained units in our schematic reconstruction",
+      "value": 3,
+      "unit": "units",
+      "method": "estimated from figure (photo interpretation, re-verified 2026-09-25) + cross-section sanity check",
+      "source_ref": "S2 (ASR Ltd aerial photo showing ~4 dark parallel/sub-parallel submerged rows) cross-checked against volume/typical-cross-section arithmetic (4,800 m3 / ~55 m2 typical trapezoidal cross-section for comparable ASR geobag reefs ≈ 87 m of total tube length ≈ 3 × 30 m units)",
+      "quote_or_figure": "S2 aerial photo, 'Reef' label: on re-inspection (2026-09-25, zoomed crop) at least 2 clearly discernible darker, elongated submerged bands are visible (one with whitewater breaking along its seaward edge), with additional diffuse texture that image compression/glare make impossible to confidently subdivide into more bands; the original draft's '~4 visible rows' reading of this same photo is an overstatement of what is actually resolvable. The '3 units' figure itself rests primarily on the independent volume/cross-section arithmetic, not on a confident visual count.",
+      "uncertainty": "±1-2 units; cross-section-area assumption itself is an analogy, not sourced for Kovalam; photographic count downgraded on re-verification from '~4 rows' to 'at least 2, possibly more'"
+    },
+    {
+      "quantity": "alongshore length (bbox)",
+      "value": 87.9,
+      "unit": "m",
+      "method": "computed from schematic reconstruction polygon (see polygon_notes)",
+      "source_ref": "derived, not independently sourced",
+      "quote_or_figure": "shapely bounding box of the reconstructed fan polygon",
+      "uncertainty": "±25-30% — low confidence, schematic only"
+    },
+    {
+      "quantity": "cross-shore width (bbox)",
+      "value": 41.6,
+      "unit": "m",
+      "method": "computed from schematic reconstruction polygon",
+      "source_ref": "derived, not independently sourced",
+      "quote_or_figure": "shapely bounding box of the reconstructed fan polygon",
+      "uncertainty": "±30% — low confidence, schematic only"
+    },
+    {
+      "quantity": "footprint area",
+      "value": 1083.5,
+      "unit": "m2",
+      "method": "computed: three 30 m x 12 m tube-strip buffers, unioned, via shapely",
+      "source_ref": "derived, not independently sourced",
+      "quote_or_figure": "shapely polygon.area of the unioned buffer",
+      "uncertainty": "±40% — depends heavily on the unsourced 12 m tube-width assumption"
+    },
+    {
+      "quantity": "shape typology (chevron/fan vs. crescent)",
+      "value": "chevron/echelon fan",
+      "unit": "n/a",
+      "method": "read from figure / photo",
+      "source_ref": "S2, S3",
+      "quote_or_figure": "S2: ASR Ltd aerial photo, several dark parallel submerged stripes fanning from a point near the headland; S3: Raised Water Research 'Kovalam Outline' image, a hand-traced stepped/zigzag line over a breaking-wave photo captioned 'Monsoon swell breaks across Kovalam Reef'",
+      "uncertainty": "medium confidence — two independent photographic sources agree with each other and disagree with Gemini's smooth-crescent typology"
+    }
+  ],
+  "images_relied_on": [
+    {
+      "url": "http://web.archive.org/web/20111106035249/http://www.asrltd.com/media/project-pdf/kovalam-coastal-protection.pdf",
+      "what_it_is": "ASR Ltd's own official project brochure/PDF for the Kovalam Multi-Purpose Reef (2 pages), archived via Wayback Machine from ASR Ltd's own now-defunct project page (asrltd.com)",
+      "what_was_read_off_it": "An aerial photo (captioned 'Reef') showing ~4 dark parallel/sub-parallel submerged tube-rows fanning seaward from a focus near the rocky headland, with red marker buoys and swimmers close to both shore and the structure; also 'Reef' vs 'No Reef' wave-height/current model panels (too coarse in resolution to extract numeric crest depth or exact footprint) and a before/after beach-widening photo pair",
+      "source_page": "http://www.asrltd.com/projects/kovalam-coastal-protection.php (via Wayback Machine snapshot 2011-11-06)"
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/12/Kovalam-Outline.jpg",
+      "what_it_is": "A photo of monsoon swell breaking over the reef, with a hand-drawn line overlaid tracing the visible break/crest line, captioned 'Monsoon swell breaks across Kovalam Reef' — hosted on the same Raised Water Research page already cited as R1, but this specific image was not previously catalogued in the card's images list",
+      "what_was_read_off_it": "The traced line is a stepped/zigzag polyline (not a smooth curve), consistent with a staggered/echelon arrangement of several straight units rather than a continuous curved crescent",
+      "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/asia/india/kovalam/ (R1)"
+    }
+  ],
+  "gemini_comparison": {
+    "gemini_values": {
+      "shape_type": "Curved crescent / delta wedge",
+      "length_m": 95.0,
+      "width_m": 48.0,
+      "area_m2": "3800.0 (gross; their own audit computed 2,245 m2 net from the actual polygon)",
+      "crest_depth_m": 1.6,
+      "distance_offshore_m": 150.0,
+      "orientation": "Convex apex points SSW into monsoon swell (200-240 deg)",
+      "cited_sources": [
+        "Kerala Harbour Engineering Dept Project Report 2011",
+        "Thomas et al. 2012 Performance Assessment"
+      ]
+    },
+    "agree": [
+      "General order of magnitude for alongshore length/width (tens of metres, roughly 40-100 m range) is plausible and overlaps our own range, though for different structural reasons.",
+      "A generically SW-monsoon-driven swell climate at this coast is directionally plausible (not Kovalam-specific verified, but consistent with regional knowledge)."
+    ],
+    "disagree": [
+      {
+        "quantity": "shape_type",
+        "gemini": "Curved crescent / delta wedge (smooth continuous curve, 9-vertex polygon)",
+        "ours": "Chevron / echelon fan of ~30 m straight tube units producing a stepped break line",
+        "why_ours": "Two independent photographic sources (ASR Ltd's own construction-phase aerial photo, S2; Raised Water Research's traced wave-break outline, S3) both show straight-segment/staggered structure, not a smooth curve. Gemini's own methodology note ('9-vertex crescent polygon... centroid y=150.1m matches stated 150m exactly') shows the shape was drawn to fit an assumed 150 m distance, not read off any image or drawing — no image/drawing citation is given for the crescent shape itself."
+      },
+      {
+        "quantity": "area_m2",
+        "gemini": "3,800 m2 (stated in reef_footprints.json) vs 2,245 m2 (computed from their own polygon per their own audit doc)",
+        "ours": "1,083.5 m2 (schematic fan-of-tubes reconstruction)",
+        "why_ours": "Gemini's own two files disagree with each other by ~70% (3,800 vs 2,245) with no reconciliation — an internal inconsistency, not just an unverified figure. Our lower figure reflects a slender-tube-fan interpretation, consistent with the photographic evidence, rather than a filled solid wedge."
+      },
+      {
+        "quantity": "crest_depth_m",
+        "gemini": "1.6 m, cited to 'Kerala Harbour Engineering Dept Project Report 2011' and 'Thomas et al. 2012 Performance Assessment of Kovalam Multipurpose Reef'",
+        "ours": "not found (null)",
+        "why_ours": "Neither cited document could be located or confirmed to exist under those exact titles/years in this pass's web search. The closest real, confirmable documents are: (a) ASR Ltd's own project brochure (client: 'Harbour Engineering Department, Government of Kerala' — plausibly the source of Gemini's garbled report title, but it contains no crest-depth figure); and (b) Mead, S.T. and Borrero, J.C. (2011) 'Multi-Purpose Reefs – A Decade of Application' (20th Australasian Coasts & Ports Conference) and a 2015 Ng/Thomas/Phillips et al. paper 'Multifunctional artificial reefs for small islands' (Ocean & Coastal Management) — neither of which could be read in full this pass (paywalled/gated), so neither could be confirmed to contain a Kovalam crest-depth figure either. Gemini's 1.6 m should be treated as unverified pending access to one of these real papers. Additionally (found on re-verification 2026-09-25): Gemini's own reef_footprints.json is internally inconsistent about this same number -- the top-level field states crest_depth_m=1.6, but the adjacent crest_depth_notes field for the same record says \"crest at -1.5m CD\" (1.6 vs 1.5), a small but real self-contradiction never reconciled in Gemini's own file."
+      },
+      {
+        "quantity": "distance_offshore_m",
+        "gemini": "150.0 m, described as confirmed because 'centroid y=150.1m matches stated 150m exactly'",
+        "ours": "~55 m (range ~34-76 m), low confidence",
+        "why_ours": "Gemini's own justification is circular: they drew the polygon so its centroid would equal their assumed 150 m, then cited that match as verification. No source (Gemini's or ours) independently states a distance-offshore figure. Our estimate is likewise unconfirmed, but is grounded in the visual impression of a near-shore siting in ASR Ltd's own aerial photo, not in a self-referential drawing exercise."
+      },
+      {
+        "quantity": "cited sources (existence)",
+        "gemini": "'Kerala Harbour Engineering Dept Project Report 2011'; 'Thomas et al. 2012 Performance Assessment of Kovalam Multipurpose Reef'",
+        "ours": "not found / cannot confirm either document exists under these titles",
+        "why_ours": "Targeted web searches for both titles/authors returned no matching document; the only closely-related real, confirmable items are the ASR Ltd brochure (client-only match, no report) and the Mead & Borrero (2011) / Ng-Thomas et al. (2015) papers noted above, whose titles and years do not match Gemini's citations. This should be treated as an unverified/likely-fabricated citation pair unless a future pass with direct database access can locate them."
+      },
+      {
+        "quantity": "shape verification method (Gemini's own self-audit)",
+        "gemini": "scale_sketch_photo_alignment_audit.md, row 7: marks Kovalam \"VERIFIED\", \"Discrepancy/Recommendation: None\", justified by \"Photo Alignment: The crescent wings explain the observed 22m sand salient and the A-frame peeling wave captured in surf school photos.\" Cites three of its own photos: kovalam-reef-india.jpg, _gallery1.jpg, _gallery2.jpg.",
+        "ours": "Re-verified 2026-09-25 by opening all three of Gemini's own cited photos directly: kovalam-reef-india.jpg is a shoreline view of the lighthouse and headland (no water/reef visible at all); _gallery1.jpg and _gallery2.jpg are silhouette/sunset surfer photos with no visible submerged structure, outline, or aerial perspective. None of the three photos Gemini cites as its \"Photo Alignment\" evidence shows the reef's footprint, outline, or shape in any way.",
+        "why_ours": "Gemini's own \"VERIFIED\" / \"well-aligned with field evidence\" verdict for Kovalam's shape is not actually supported by the photographic evidence it cites -- none of the three photos named in its own audit show the submerged structure's outline. This is a second, independent demonstration (alongside the centroid-matches-150m circularity already noted for distance_offshore_m) that Gemini's internal \"audit\" process marks entries VERIFIED without the cited evidence actually bearing on the claim being checked."
+      }
+    ]
+  },
+  "confidence": "low",
+  "open_issues": [
+    "No engineering drawing, GPS as-built survey, or dimensioned figure for the Kovalam reef was found in this pass (ours or Gemini's) — all footprint numbers here (ours and Gemini's) are estimates of varying rigor, not sourced as-built dimensions.",
+    "Gemini's two cited sources for crest depth/dimensions ('Kerala Harbour Engineering Dept Project Report 2011', 'Thomas et al. 2012') could not be located; they may be fabricated, badly mis-cited, or simply inaccessible online — flagged, not resolved.",
+    "Mead, S.T. and Borrero, J.C. (2011) 'Multi-Purpose Reefs – A Decade of Application' is very likely the actual technical source behind Raised Water Research's uncredited 'Mead and Borrero (2011)' reference and may contain real Kovalam performance/dimension data, but it sits behind ResearchGate/eCoast gates (eCoast requires an email-gated download) and could not be read this pass.",
+    "The 12 m tube/crest-width assumption used in our area estimate is not sourced for Kovalam specifically — borrowed by analogy from other ASR Ltd geobag reefs and from Gemini's own (also unsourced) assumption.",
+    "The compass bearing of the shoreline/alongshore direction and of the incident swell was not confirmed for this exact site in any source read this pass.",
+    "The 'Kovalam-Outline.jpg' hand-traced line could represent either the structure's crest outline or simply the visible foam/break-line pattern at one moment of one swell — sources do not label which, so its use here as shape evidence carries residual uncertainty.",
+    "Re-verification pass (2026-09-25) also opened three more images already hosted on the already-cited R1 page but not previously catalogued -- Kovalam-Geomat.jpg (a construction-beach photo of a large woven/mesh fabric sheet being hauled ashore with orange floats, headland visible offshore) and Kovalam-Reef-Underwater1.jpg / -Underwater2.jpg (close-range underwater shots of a smooth rounded mound with small fish, no scale reference) -- plus Gemini's own three cited photos (kovalam-reef-india.jpg, _gallery1.jpg, _gallery2.jpg). None of these six images contributed any new dimension or changed any number: the Geomat photo's exact role (base filter mat vs. the bag fabric itself) is not captioned or explained anywhere and is left unresolved; the underwater shots corroborate a smooth single-mound/tube-like structure at close range but carry no scale bar; Gemini's own three cited photos show no reef outline at all (see gemini_comparison, new finding)."
+  ],
+  "references": [
+    {
+      "id": "R1",
+      "citation": "Raised Water Research (n.d., copyright 2020 per page footer). \"Kovalam.\"",
+      "url": "https://raisedwaterresearch.com/spot/artificial-reef/asia/india/kovalam/",
+      "accessed": "2026-09-25",
+      "supports": "volume (4,800 m3), 30 m units, general reef description; also source of the 'Kovalam-Outline.jpg' image (S3) used for shape evidence"
+    },
+    {
+      "id": "R2",
+      "citation": "Geosynthetics Magazine (2023-06-07). \"Why Have Most Geotextile Artificial Reefs Never Really Worked?\"",
+      "url": "https://geosyntheticsmagazine.com/2023/06/07/why-have-most-geotextile-artificial-reefs-never-really-worked/",
+      "accessed": "2026-09-25",
+      "supports": "general geotextile-bag/container fragility and Kovalam-specific failure mode (\"debris strikes (Kovalam)\"); re-verified 2026-09-25 to confirm it does NOT itself state a 30 m unit length or any Kovalam dimension -- that citation (previously attached here) was removed from the bag-unit-length and materials fields"
+    },
+    {
+      "id": "R10",
+      "citation": "Coastal Management (ICM). \"Building Artificial Surf Reefs: Worldwide Lessons & Applications.\"",
+      "url": "https://www.coastalmanagement.com.au/artificial-surf-reefs",
+      "accessed": "2026-09-25",
+      "supports": "30 m bag units, 4,800 m3 volume, 100 m wave"
+    },
+    {
+      "id": "S1",
+      "citation": "ASR Ltd. \"Kovalam Coastal Protection\" (project page).",
+      "url": "http://web.archive.org/web/20111106035249/http://www.asrltd.com/projects/kovalam-coastal-protection.php",
+      "accessed": "2026-09-25",
+      "supports": "client name (Harbour Engineering Department, Government of Kerala), completion month (February 2010), link to the project PDF brochure (S2)"
+    },
+    {
+      "id": "S2",
+      "citation": "ASR Ltd. \"Multi-Purpose Reef Design and Construction, Kovalam, India\" (project PDF brochure).",
+      "url": "http://web.archive.org/web/20111106035249/http://www.asrltd.com/media/project-pdf/kovalam-coastal-protection.pdf",
+      "accessed": "2026-09-25",
+      "supports": "aerial photo showing the fan/echelon arrangement of submerged tube-units (primary shape evidence), 'Reef'/'No Reef' wave model comparison, beach-widening before/after photo pair"
+    },
+    {
+      "id": "S3",
+      "citation": "Raised Water Research. \"Kovalam-Outline.jpg\" (image on the Kovalam spot page, R1).",
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/12/Kovalam-Outline.jpg",
+      "accessed": "2026-09-25",
+      "supports": "hand-traced stepped/zigzag break-line sketch, secondary shape evidence corroborating S2's chevron/fan typology"
+    },
+    {
+      "id": "S4",
+      "citation": "Mead, S.T. and Borrero, J.C. (2011). \"Multi-Purpose Reefs – A Decade of Application.\" Proceedings of the 20th Australasian Coasts and Ports Conference, Perth, Australia, 27-30 September 2011.",
+      "url": "https://www.researchgate.net/publication/258472598_Multi-Purpose_Reefs_-_A_Decade_of_Application",
+      "accessed": "2026-09-25",
+      "supports": "existence and title only — full text gated/paywalled, could not be read this pass; very likely the real source behind Raised Water Research's uncredited 'Mead and Borrero (2011)' citation for Kovalam beach-width monitoring"
+    }
+  ],
+  "verification": [
+    {
+      "item": "Bag-unit length 30 m",
+      "verdict": "CONFIRMED, citation corrected",
+      "evidence": "Re-fetched R1 (raisedwaterresearch.com, 2026-09-25): \"The bags measured 30m in length.\" Re-fetched R10 (coastalmanagement.com.au): \"Geotextile sandbags (30m long).\" Re-fetched R2 (geosyntheticsmagazine.com) and searched its full text for \"Kovalam\": it appears twice, once listing Kovalam among ASR's reefs and once as \"debris strikes (Kovalam)\" among failure causes -- R2 states NO unit length or dimension for Kovalam. R2 removed from the bag-unit-length citation (was wrongly co-cited) and from the materials field; kept only for the general fragility/failure-mode point it actually supports."
+    },
+    {
+      "item": "As-built volume 4,800 m3",
+      "verdict": "CONFIRMED",
+      "evidence": "Re-fetched R1: \"Approximate volume: 4,800m3.\" Re-fetched R10: \"Approximate volume: 4,800m3\" (near-identical wording to R1, possibly a shared/copied source text, noted but not a red flag for the number itself)."
+    },
+    {
+      "item": "Number of chained units = 3 (schematic reconstruction)",
+      "verdict": "PARTIALLY CONFIRMED, photographic support downgraded",
+      "evidence": "The volume/cross-section arithmetic checks out independently: 4800 m3 / 55 m2 assumed cross-section = 87.3 m of total tube length = 2.9 (~3) x 30 m units -- confirmed by recomputation. However, the claimed photographic corroboration (\"S2 aerial photo shows ~4 visible dark parallel/sub-parallel submerged rows\") is an overstatement: the PDF's aerial photo was downloaded and zoomed to high resolution (kovalam_page0_hires.png, 400 dpi) and at most 2 clearly discernible darker elongated submerged bands are visible (one with whitewater breaking along its seaward edge); the rest of the water shows diffuse texture that image compression and surface glare make impossible to confidently subdivide into 3 or 4 distinct bands. Wording corrected in the derivation table; the '3 units' conclusion itself is retained because it is primarily supported by the (disclosed, analogy-based) volume arithmetic, not by the photo count."
+    },
+    {
+      "item": "Alongshore length (bbox) 87.9 m",
+      "verdict": "CONFIRMED",
+      "evidence": "Recomputed independently with python/shapely from the stored polygon_m vertices: bbox x-span = 87.89 m, rounds to 87.9 m. Exact match."
+    },
+    {
+      "item": "Cross-shore width (bbox) 41.6 m",
+      "verdict": "CONFIRMED",
+      "evidence": "Recomputed independently: bbox y-span = 41.61 m, rounds to 41.6 m. Exact match."
+    },
+    {
+      "item": "Footprint area 1,083.5 m2",
+      "verdict": "CONFIRMED (minor rounding noise)",
+      "evidence": "shapely.geometry.Polygon(polygon_m).area = 1083.31 m2 (vs. the stated 1083.5 m2, a 0.02% difference attributable to the stored vertices being rounded to 2 decimals rather than the original unrounded buffered-union polygon). Sanity cross-check: 3 tube segments x 30 m x 12 m = 1080 m2 (a flat-rectangle approximation) is consistent with the actual buffered/mitred-join polygon area of ~1083 m2. is_valid=True, exterior.is_simple=True, first vertex==last vertex (closed) -- all independently confirmed."
+    },
+    {
+      "item": "max_dimension_m = 97.4",
+      "verdict": "CORRECTED",
+      "evidence": "Recomputed independently: the true maximum pairwise vertex-to-vertex distance within the actual (non-rectangular) polygon is 92.05 m (between vertices [-43.1, 34.31] and [39.01, 75.92]), not 97.4 m. The stated 97.4 m turns out to be the diagonal of the bounding BOX (sqrt(87.9^2 + 41.6^2) = 97.2-97.4 depending on rounding) -- a quantity the polygon's own vertices never actually reach, since the bbox's far corners are empty space outside the fan shape. Checked the convention used by sibling verified/researched footprint files (e.g. opunake, southern-ocean-surf-reef-albany, borth): max_dimension_m in every other file is the true max pairwise vertex distance of the actual polygon (<= bbox diagonal), never the bbox diagonal itself. Corrected to 92.1 m for consistency and accuracy."
+    },
+    {
+      "item": "Shape typology: chevron / echelon fan (not smooth crescent)",
+      "verdict": "CONFIRMED",
+      "evidence": "S3 (Kovalam-Outline.jpg) re-downloaded and viewed directly (2026-09-25): the hand-traced line is unambiguously a stepped zigzag polyline with at least 4 straight segments meeting at 3 sharp-angle vertices -- a staircase pattern, not a smooth curve. This is strong, clear, independently-viewed evidence for a staggered/chevron structure. S2 (ASR aerial photo) independently re-viewed at high resolution: shows a single elongated, gently-curved-to-irregular dark submerged patch with whitewater along its leading edge and at least 2 discernible darker bands (see 'number of chained units' item above) -- weaker support than originally claimed for '4 parallel rows fanning from the headland,' but still consistent with a non-smooth, multi-part structure rather than one continuous uniform crescent arc. Overall chevron/fan-over-crescent verdict CONFIRMED, resting primarily on S3, with S2 as weaker corroboration than the original draft implied."
+    },
+    {
+      "item": "Crest depth: not found (null)",
+      "verdict": "CONFIRMED",
+      "evidence": "R1, R2, R10, S1, S2 re-checked/re-fetched: none states a crest or submergence depth for Kovalam. Targeted web searches for Gemini's two cited sources (\"Kerala Harbour Engineering Dept Project Report 2011\", \"Thomas et al. 2012 Performance Assessment of Kovalam Multipurpose Reef\") returned no matching document under either title. A real 2015 paper by Ng, Thomas, Phillips et al. (\"Multifunctional artificial reefs for small islands\", Ocean & Coastal Management) does exist and does include a real author named Thomas -- a plausible source of the citation confusion -- but its title, year, and subject (small islands, not Kovalam-specific) do not match Gemini's citation, and it was not accessible to confirm or deny a Kovalam depth figure. Default-to-unsupported correctly applied; value remains null."
+    },
+    {
+      "item": "Distance offshore ~55 m (range 34-76 m)",
+      "verdict": "CONFIRMED as an internally-consistent, disclosed low-confidence estimate",
+      "evidence": "Recomputed from the polygon_m vertices: y-range = 34.3-75.9 m, centroid y = 56.5 m -- matches the stated range and midpoint. No published source gives this figure (correctly disclosed as a visual impression, not a citation)."
+    },
+    {
+      "item": "Polygon geometry validity",
+      "verdict": "CONFIRMED",
+      "evidence": "shapely 2.x: Polygon(polygon_m).is_valid=True, .exterior.is_simple=True, first vertex == last vertex (closed 13-point ring)."
+    },
+    {
+      "item": "Gemini's shape/dimensions/area/depth/offshore values as quoted in our card",
+      "verdict": "CONFIRMED accurate against Gemini's actual files",
+      "evidence": "Read Gemini's 02_world_reefs_data/reef_footprints.json (id 'kovalam') and reef_footprint_scale_analysis.md (section 3.7) and scale_sketch_photo_alignment_audit.md (row 7) directly, 2026-09-25: shape 'Curved Crescent / Delta Wedge', 95.0x48.0 m, footprint_area_m2=3800.0, crest_depth_m=1.6, distance_offshore_m=150, orientation 200-240 deg SSW -- all match our card's paraphrase. Gemini's own bounding_polygon, recomputed independently with shapely, gives area=2245.0 m2 exactly (not just 'per their own audit doc' -- independently reproduced) and centroid y=151.9 m (close to, not exactly, their claimed 'y=150.1m'), confirming both the internal 3800-vs-2245 area inconsistency and the circular centroid-matches-distance reasoning are real, not misquoted."
+    },
+    {
+      "item": "Gemini's cited sources (existence)",
+      "verdict": "CONFIRMED unconfirmable / likely mis-cited",
+      "evidence": "Web search for both exact titles/authors/years returned no matching document. Mead, S.T. and Borrero, J.C. (2011) 'Multi-Purpose Reefs - A Decade of Application' (our S4) IS confirmed to exist (ResearchGate listing, gated 403 on fetch) but is a different paper. A real 2015 paper co-authored by a 'Thomas' (Kiat Ng, Tony Thomas, Michael R. Phillips et al., 'Multifunctional artificial reefs for small islands') also exists but does not match Gemini's 'Thomas et al. 2012' title/year/subject. Treated as unverified/likely-fabricated or badly-garbled, consistent with the original draft's conclusion."
+    },
+    {
+      "item": "Gemini's own self-audit 'VERIFIED' / 'Photo Alignment: None (discrepancy)' claim for Kovalam shape",
+      "verdict": "NEW FINDING: disagree, added this pass",
+      "evidence": "Opened all three photos Gemini's own audit cites as its shape evidence (05_web_build/images/photos/kovalam-reef-india.jpg, _gallery1.jpg, _gallery2.jpg): a shoreline/lighthouse view and two backlit surfer-silhouette photos, none showing the submerged structure's outline at all. Gemini's 'VERIFIED, well-aligned with field evidence' verdict for Kovalam's crescent shape is not actually supported by the photographic evidence its own audit names."
+    }
+  ]
+}

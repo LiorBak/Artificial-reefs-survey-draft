@@ -1,0 +1,17 @@
+browser: C:\Program Files\Google\Chrome\Application\chrome.exe
+url: file:///C:/Users/lior/Documents/Claude/Projects/Artificial%20reef/04_build/artificial_reefs.html
+PASS  dom dumped
+PASS  intro rendered
+PASS  summary rendered
+PASS  gallery tiles rendered
+PASS  references index rendered
+PASS  footer rendered
+PASS  all 13 reefs appear
+PASS  screenshot round4_desktop.png (148722 B)
+PASS  screenshot round4_desktop_full.png (806908 B)
+PASS  screenshot round4_mobile.png (85825 B)
+PASS  screenshot round4_detail.png (148722 B)
+PASS  screenshot round4_detail_ref.png (148722 B)
+PASS  screenshot round4_detail_mobile.png (85825 B)
+RESULT: PASS
+note: headless shots use the OS colour scheme; dark-mode shots still need a manual check.

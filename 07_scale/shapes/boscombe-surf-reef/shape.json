@@ -1,0 +1,1372 @@
+{
+ "slug": "boscombe-surf-reef",
+ "name": "Boscombe Surf Reef",
+ "status": "verified",
+ "updated": "2026-10-05",
+ "confidence": {
+  "level": "medium",
+  "reason": "The bag field is clearly visible on a geo-referenced 2011 satellite image and its outline matches an April 2011 survey and the designers' own plan, so shape and position are well supported. But its area (0.40 ha) is only 40% of the roughly 1 hectare quoted by Wikipedia, Raised Water Research and a 2017 journal paper, and the rating scale asks for agreement within about 10%, so it is rated medium; the 13,000 m3 of sand fits 0.4-0.5 ha, which suggests the 1 ha figure is a loose envelope, but no source defines it.",
+  "factors": [
+   "Structure clearly visible in Esri/Maxar imagery of 2011-09-28 (two years after completion, about five months after the first container failure) with the individual bag rows resolvable; re-checked with an independent per-channel stretch: outline within 1-3 px (0.4-1.1 m) on the W, E and S edges, up to ~4 px at the fuzzy north edge",
+   "Geo-referencing verified two ways: the outline converted to OSGB (E 411,435-411,514, N 90,838-90,937) lands on the reef in the geo-referenced April 2011 survey plot (IoU 0.77, centroids 8.5 m apart, 0.82 after a 5.6 m shift); the pier length measured on the image is 168-180 m against the stated 180 m",
+   "Independent April 2011 DGPS bathymetry plot (Rendle & Davidson 2012 Fig. 9) traced separately: 3,372 m2 (the faint deeper southern toe is excluded)",
+   "Designers' numerical design shape (Mead et al. 2010 Fig. 3a) traced: 4,217 m2, 110 x 49 m rotated rectangle vs satellite 4,042 m2, 121 x 45 m; the design relief footprint (>0.5 m above ambient seabed, measured by the verifier) is 5,255 m2 and holds 11,540 m3 of sand against the 13,000 m3 stated",
+   "Shore-normal bearing measured on the image (173.4 deg) equals the 173 deg the Plymouth paper uses; reef west edge 242 m east of the pier head vs 'about 240 m' in the text",
+   "Why not high: rubric requires dimensions within ~10% of the text. Text areas: about 1 ha (Wikipedia, Raised Water Research, Herbert et al. 2017 - unreferenced), 'football pitch', 45,000 m2 (Rendle & Davidson), 50 x 70 m (unverified snippet). Drawn bag field 4,042 m2 is -60% against 1 ha; the shore-aligned bounding box (88 x 94 m = 0.83 ha) is -17%",
+   "Why the drawing is probably right and the 1 ha probably loose: 13,000 m3 over 4,042 m2 is 3.2 m mean thickness (two container layers, 4.5-5.5 m relief), over 1 ha it would be 1.3 m; three independent plan-view sources give 3,400-4,200 m2",
+   "Edges are visible-edge traces through 2-5 m of turbid water: +/- 3 px (about 1 m) at the clear W/E/S edges, softer at the north edge and the south toe; the true toe of the sand-filled bags is a few metres outside the visible edge (a 5 m skirt would give 5,573 m2)"
+  ]
+ },
+ "design_version": {
+  "drawn": "As-built outer envelope of the two-layer geotextile-container reef (construction finished Sept-2 Oct 2009), as imaged on 2011-09-28: i.e. after the April 2011 damage (one 70 m container emptied, about 80 t of sand lost, 4 m gap, 2 m crest dip) and while the contractor's repair crew was back on site (from mid-Aug 2011); the planned Dec 2010 extension is not documented as built (Rendle & Davidson, Aug 2012: no works took place). The traced line is the outer edge of all visible bag rows.",
+  "why_this_one": "It is the built structure seen directly: a post-construction satellite image of known date (capture date checked at four points of the Wayback metadata layer), confirmed by the April 2011 survey. No later redesign or rebuild exists: the reef closed on 31 March 2011; the council announced ASR's return on 12 Aug 2011 (repair of two upper-layer containers; improvement money redirected to repair) and said on 24 Oct 2011 that repairs would continue into spring 2012, but Rendle & Davidson (Aug 2012) state that neither works nor repairs took place; ASR was liquidated in Sept 2012 and the council then repurposed the reef as a dive/activity site without enhancing it. Repairs concern containers inside the envelope, so the plan outline is the same either way. A satellite image or survey of the built reef outranks the designers' drawing.",
+  "alternatives_seen": [
+   {
+    "what": "Designers' numerical design shape (focus section + wedge section), pre-construction",
+    "source_id": "img3",
+    "why_not_used": "Design, not as-built; but it was traced as a cross-check and matches the built outline in size (4217 vs 4042 m2) and orientation"
+   },
+   {
+    "what": "April 2011 bathymetry (after the first container failure)",
+    "source_id": "img2",
+    "why_not_used": "Coarse (interpolated, depth colours) and omits the faint deep southern toe; used as the independent cross-check, not as the outline"
+   },
+   {
+    "what": "Planned modification announced Dec 2010: four extra bags at the south-east corner and three pillow bags between sections, to lengthen the right-hand ride to 65 m",
+    "source_id": null,
+    "why_not_used": "Not documented as built: in Aug 2011 the council redirected the improvement funds to repairs, Rendle & Davidson (Aug 2012) say neither works nor repairs took place, ASR was liquidated in Sept 2012 and the council ruled out money for surfing in Nov 2013 (Wikipedia 'Boscombe Surf Reef' Construction section; council press releases 12 Aug and 24 Oct 2011; RWR page '65m planned'). The images cannot rule out a few bags placed at the south end in Aug-Sep 2011, but the April 2011 survey (made before any 2011 work) already shows the south block, as a faint cyan toe, at the same place."
+   },
+   {
+    "what": "Repair works Aug-Oct 2011 (replacement of damaged upper-layer containers)",
+    "source_id": null,
+    "why_not_used": "Within the envelope; council says they were under way, Rendle & Davidson say none took place; the 2011-09-28 image is taken during this period, so a replaced container may or may not be in place - no effect on the outline"
+   },
+   {
+    "what": "Early text-derived rectangle 187.5 x 58 m (07_scale/reefs/boscombe-surf-reef.footprint.json, from an oblique press photo)",
+    "source_id": null,
+    "why_not_used": "Superseded: it came from threshold measurements on an oblique photo and was flagged low confidence; the plan-view images give 121 x 45 m"
+   },
+   {
+    "what": "Gemini's 'asymmetric triangular delta', 100 x 55 m / 5,200 m2 (and a 171 x 88 m, 9,180 m2 quadrilateral in its JSON)",
+    "source_id": null,
+    "why_not_used": "No source image; neither shape nor size matches any plan-view evidence"
+   },
+   {
+    "what": "Esri imagery of 2017-2023 and 2025",
+    "source_id": "img4",
+    "why_not_used": "2017-2023 show nothing traceable; the 2025 blurred patch has the same outline as 2011 (no change) but no bag detail"
+   }
+  ],
+  "closure_note": "Closed to the public 31 March 2011 (BBC; council inspection of 23 March); Rendle & Davidson write 'April 2011'."
+ },
+ "sources": [
+  {
+   "id": "img1",
+   "kind": "satellite",
+   "title": "Esri World Imagery Wayback (release 10), Boscombe wide crop incl. pier and groynes",
+   "url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/{release}/{z}/{y}/{x}",
+   "source_page": "https://livingatlas.arcgis.com/wayback/",
+   "page_or_figure": "z18 tiles stitched by 07_scale/tools/satellite.py; centre 50.7185 N 1.8417 W; 800 m box",
+   "image_date": "2011-09-28 (SRC_DATE2 of the release-10 metadata layer at the crop centre)",
+   "credit": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+   "license": "Esri/Maxar imagery terms - private research copy only; clear reuse rights before any public release",
+   "local_file": "07_scale/shapes/boscombe-surf-reef/src/esri_wayback10_2011-09-28_z18_wide.png",
+   "image_size": [
+    2116,
+    2116
+   ],
+   "georef": {
+    "provider": "Esri World Imagery (Wayback release 10)",
+    "zoom": 18,
+    "bounds": {
+     "north": 50.72209175590611,
+     "south": 50.71490501722472,
+     "east": -1.8360257148742676,
+     "west": -1.847376823425293
+    },
+    "tile_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/{release}/{z}/{y}/{x}",
+    "imagery_date": "2011-09-28",
+    "attribution": "Esri, Maxar, Earthstar Geographics, and the GIS User Community"
+   },
+   "scale": {
+    "px_per_m": 2.6449,
+    "method": "georeferenced",
+    "evidence": "Web-Mercator tiles at z18: 156543.03 x cos(50.7185 deg) / 2^18 = 0.3781 m/px. Checks: Boscombe Pier (Wikipedia 200 yd = 180 m) measures 443 px (root at the pier-approach building) to 471 px (root at the promenade) = 167-178 m; the traced outline converted to OSGB lands on the reef in the geo-referenced April 2011 survey plot (img2).",
+    "uncertainty_pct": 3
+   },
+   "pixel_polygons": [
+    [
+     [
+      1582,
+      1222
+     ],
+     [
+      1608,
+      1219
+     ],
+     [
+      1650,
+      1219
+     ],
+     [
+      1697,
+      1228
+     ],
+     [
+      1698,
+      1234
+     ],
+     [
+      1683,
+      1250
+     ],
+     [
+      1672,
+      1272
+     ],
+     [
+      1660,
+      1292
+     ],
+     [
+      1658,
+      1306
+     ],
+     [
+      1644,
+      1333
+     ],
+     [
+      1634,
+      1353
+     ],
+     [
+      1626,
+      1373
+     ],
+     [
+      1611,
+      1388
+     ],
+     [
+      1595,
+      1398
+     ],
+     [
+      1581,
+      1415
+     ],
+     [
+      1579,
+      1461
+     ],
+     [
+      1549,
+      1477
+     ],
+     [
+      1491,
+      1481
+     ],
+     [
+      1490,
+      1427
+     ],
+     [
+      1491,
+      1373
+     ],
+     [
+      1514,
+      1350
+     ],
+     [
+      1520,
+      1324
+     ],
+     [
+      1537,
+      1304
+     ],
+     [
+      1560,
+      1273
+     ],
+     [
+      1577,
+      1239
+     ]
+    ]
+   ],
+   "traced_what": "Outer edge of the dark striped bag field (all visible geotextile-container rows) seen through the water on 2011-09-28. The pale patch between the two northern prongs (about x1600-1626, y1244-1287; roughly 10 x 16 m) is left inside the outline - it may be the collapsed/damaged container but that is not established.",
+   "match_notes": "Checked on a 3.5x contrast-stretched view: the outline follows the W, E and S edges to about 2-3 px (~1 m); the N (shoreward) edge is fuzzier (+/-3 px). The visible dark edge slightly under-states the true toe (bags are 2-5 m high, slopes extend a few metres). The same outline projected by lat/lon onto the 2025 image (img4) fits the blurred patch there. Verifier: independently re-rendered with a per-channel 1-99.5 percentile stretch (overlays/img1_verify_closeup.png): same result, offsets 1-3 px, <=4 px at the north edge, a faint reddish fringe of <=5 px (~2 m) just outside the lower east side.",
+   "derived": {
+    "area_m2": 4042.2,
+    "min_rotated_rectangle_m": [
+     121.1,
+     45.0
+    ],
+    "long_axis_line_bearing_deg": 28.1,
+    "centroid_latlon": [
+     50.717532,
+     -1.838909
+    ]
+   },
+   "role": "primary"
+  },
+  {
+   "id": "img2",
+   "kind": "paper_figure",
+   "title": "Rendle & Davidson (2012), Fig. 9 left: April 2011 bathymetry of the Boscombe ASR (OSGB36 Eastings/Northings axes)",
+   "url": "https://icce-ojs-tamu.tdl.org/icce/article/download/6794/pdf_441/27535",
+   "source_page": "https://icce-ojs-tamu.tdl.org/icce/article/view/6794",
+   "page_or_figure": "PDF p.7, Figure 9 (left panel, embedded image 998x580); cropped x60-480,y15-262 and y stretched x1.749 to equal axis scales",
+   "image_date": "survey April 2011 (Channel Coast Observatory / Bournemouth Borough Council DGPS bathymetry)",
+   "credit": "Rendle E. & Davidson M., University of Plymouth, Coastal Engineering 2012; survey data CCO / Bournemouth Borough Council",
+   "license": "Conference paper (open PDF); figure copyright of the authors - research copy only",
+   "local_file": "07_scale/shapes/boscombe-surf-reef/src/rendle_davidson_2012_fig9_left_isotropic.png",
+   "image_size": [
+    420,
+    432
+   ],
+   "georef": {
+    "provider": "none (axes of the plot)",
+    "crs": "OSGB36 / British National Grid (EPSG:27700)",
+    "calibration": "gridlines: vertical x=147.3 px = E 411400 and x=433.5 px = E 411550 (native image); horizontal y=39,104,126,192,235 px = N 91000,90940,90920,90860,90820; see src/rendle_davidson_2012_fig9_left_isotropic.png.geo.json"
+   },
+   "scale": {
+    "px_per_m": 1.908,
+    "method": "georeferenced",
+    "evidence": "Plot gridlines (labelled in metres): 1.908 px/m in x and 1.0909 px/m in y in the native figure; the derived copy has y stretched x1.749 so both axes are 1.908 px/m (0.524 m/px)",
+    "uncertainty_pct": 3
+   },
+   "pixel_polygons": [
+    [
+     [
+      226,
+      161
+     ],
+     [
+      242,
+      158
+     ],
+     [
+      264,
+      158
+     ],
+     [
+      288,
+      163
+     ],
+     [
+      299,
+      168
+     ],
+     [
+      294,
+      176
+     ],
+     [
+      288,
+      188
+     ],
+     [
+      281,
+      203
+     ],
+     [
+      274,
+      217
+     ],
+     [
+      268,
+      231
+     ],
+     [
+      261,
+      246
+     ],
+     [
+      251,
+      261
+     ],
+     [
+      240,
+      275
+     ],
+     [
+      231,
+      287
+     ],
+     [
+      224,
+      298
+     ],
+     [
+      221,
+      312
+     ],
+     [
+      222,
+      320
+     ],
+     [
+      196,
+      322
+     ],
+     [
+      172,
+      312
+     ],
+     [
+      160,
+      292
+     ],
+     [
+      156,
+      276
+     ],
+     [
+      170,
+      258
+     ],
+     [
+      184,
+      230
+     ],
+     [
+      196,
+      204
+     ],
+     [
+      214,
+      176
+     ]
+    ]
+   ],
+   "traced_what": "Boundary of the reef where the colour passes from yellow (about -2 m) to cyan (about -3 m), i.e. the shallow bag field above the surrounding seabed (seabed -4 to -5 m); the faint cyan southern toe below y=322 (iso px) is excluded.",
+   "match_notes": "Compared in OSGB metres with the img1 outline: IoU 0.78, centroids 8.2 m apart, minimum rotated rectangle 98 x 41 m (img1: 121 x 45 m), area 3372 m2 (img1: 4045 m2).",
+   "derived": {
+    "area_m2": 3372.1,
+    "min_rotated_rectangle_m": [
+     97.8,
+     41.4
+    ],
+    "iou_with_img1": 0.78
+   },
+   "role": "cross_check"
+  },
+  {
+   "id": "img3",
+   "kind": "design_drawing",
+   "title": "Mead, Blenkinsopp, Moores & Borrero (2010), Fig. 3(a): numerical design shape of the Boscombe Multipurpose Reef (depth plan)",
+   "url": "https://icce-ojs-tamu.tdl.org/icce/index.php/icce/article/download/1352/pdf_106/",
+   "source_page": "https://icce-ojs-tamu.tdl.org/icce/ (Coastal Engineering Proceedings 2010, article 1352)",
+   "page_or_figure": "PDF p.3, Figure 3(a) (embedded image 871x617); 3(b) layout schematic and 3(c) Google-Earth overlay not traced",
+   "image_date": "design stage (designed 2006-2008; paper 2010)",
+   "credit": "Mead S., Blenkinsopp C., Moores A., Borrero J. (ASR Ltd; UNSW Water Research Laboratory)",
+   "license": "Conference paper (open PDF); figure copyright of the authors - research copy only",
+   "local_file": "07_scale/shapes/boscombe-surf-reef/src/mead_et_al_2010_fig3a_design_bathymetry.png",
+   "image_size": [
+    871,
+    617
+   ],
+   "georef": null,
+   "scale": {
+    "px_per_m": 1.9635,
+    "method": "scale bar",
+    "evidence": "Axes in metres: plot box x 98..728 px = 140..460 m (1.969 px/m), y 40..510 px = 560..320 m (1.958 px/m); printed bar '0.05 km' (5 boxes) = 97 px = 1.94 px/m. Adopted 1.9635 px/m.",
+    "uncertainty_pct": 2
+   },
+   "pixel_polygons": [
+    [
+     [
+      349,
+      221
+     ],
+     [
+      366,
+      217
+     ],
+     [
+      400,
+      213
+     ],
+     [
+      423,
+      211
+     ],
+     [
+      440,
+      214
+     ],
+     [
+      457,
+      224
+     ],
+     [
+      480,
+      239
+     ],
+     [
+      506,
+      257
+     ],
+     [
+      526,
+      279
+     ],
+     [
+      544,
+      297
+     ],
+     [
+      550,
+      307
+     ],
+     [
+      546,
+      317
+     ],
+     [
+      537,
+      329
+     ],
+     [
+      523,
+      343
+     ],
+     [
+      506,
+      357
+     ],
+     [
+      491,
+      363
+     ],
+     [
+      480,
+      357
+     ],
+     [
+      463,
+      343
+     ],
+     [
+      446,
+      329
+     ],
+     [
+      426,
+      316
+     ],
+     [
+      406,
+      306
+     ],
+     [
+      389,
+      294
+     ],
+     [
+      380,
+      283
+     ],
+     [
+      377,
+      269
+     ],
+     [
+      380,
+      254
+     ],
+     [
+      374,
+      243
+     ],
+     [
+      363,
+      237
+     ],
+     [
+      351,
+      231
+     ]
+    ]
+   ],
+   "traced_what": "Footprint of the design shape at the orange/yellow edge (about the -2.5 m model contour; crest 0 m, seabed -4 to -5 m): dark-red wedge section plus the shallower focus lobe at its seaward end.",
+   "match_notes": "Model frame is not geo-referenced; depth rises toward +x, so +x is shoreward (checked against Fig. 3c, a north-up overlay of the same footprint). Rotated into the canonical frame, the design long axis and the as-built long axis lie on the same side of the shore normal. Design area 4217 m2 vs as-built 4042 m2 (+4%); rotated rectangle 110 x 49 m vs 121 x 45 m.",
+   "derived": {
+    "area_m2": 4217.3,
+    "min_rotated_rectangle_m": [
+     110.4,
+     49.5
+    ]
+   },
+   "role": "cross_check"
+  },
+  {
+   "id": "img4",
+   "kind": "satellite",
+   "title": "Esri World Imagery current, Boscombe, zoom 19",
+   "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+   "source_page": "Esri World Imagery",
+   "page_or_figure": "z19 tiles stitched by satellite.py; centre 50.7175 N 1.8388 W; 400 m box",
+   "image_date": "2025-06-15 (DATE field of identify)",
+   "credit": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+   "license": "Esri/Maxar imagery terms - private research copy only",
+   "local_file": "07_scale/shapes/boscombe-surf-reef/src/esri_current_2025-06-15_z19.png",
+   "image_size": [
+    2116,
+    2116
+   ],
+   "georef": {
+    "provider": "Esri World Imagery",
+    "zoom": 19,
+    "bounds": {
+     "north": 50.71929666667343,
+     "south": 50.715703220771,
+     "east": -1.8359613418579102,
+     "west": -1.8416368961334229
+    },
+    "tile_template": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "imagery_date": "2025-06-15",
+    "attribution": "Esri, Maxar, Earthstar Geographics, and the GIS User Community"
+   },
+   "scale": {
+    "px_per_m": 5.2897,
+    "method": "georeferenced",
+    "evidence": "Web-Mercator z19: 0.189 m/px",
+    "uncertainty_pct": 3
+   },
+   "pixel_polygons": [],
+   "traced_what": "not independently traced - bag rows are no longer resolvable; the img1 outline projected by lat/lon (overlays/img1_outline_on_2025.png) follows the edges of the blurred dark patch",
+   "match_notes": "Shows the footprint is unchanged in outline 14 years later (no bags removed from the envelope). Verifier re-check (Gaussian-smoothed, per-channel stretch, whole outline in frame): the 2025 dark block has the same W, E and N edges within ~2-3 m, the NW flank is 2-3 m wider, the south end merges into dark water and cannot be confirmed.",
+   "role": "context"
+  }
+ ],
+ "canonical": {
+  "frame": "metres; origin = point on the 2011-09-28 waterline (surf line) nearest the reef centroid; +x alongshore toward bearing 83.4 deg (ENE); +y offshore, bearing 173.4 deg",
+  "derived_from": "img1",
+  "polygons_m": [
+   [
+    [
+     6.58,
+     181.25
+    ],
+    [
+     16.47,
+     181.25
+    ],
+    [
+     32.25,
+     183.08
+    ],
+    [
+     49.51,
+     188.5
+    ],
+    [
+     49.62,
+     190.79
+    ],
+    [
+     43.29,
+     196.15
+    ],
+    [
+     38.21,
+     203.94
+    ],
+    [
+     32.83,
+     210.93
+    ],
+    [
+     31.47,
+     216.1
+    ],
+    [
+     25.04,
+     225.63
+    ],
+    [
+     20.42,
+     232.71
+    ],
+    [
+     16.55,
+     239.87
+    ],
+    [
+     10.26,
+     244.86
+    ],
+    [
+     3.82,
+     247.92
+    ],
+    [
+     -2.18,
+     253.7
+    ],
+    [
+     -4.92,
+     270.89
+    ],
+    [
+     -16.89,
+     275.59
+    ],
+    [
+     -38.84,
+     274.58
+    ],
+    [
+     -36.88,
+     254.25
+    ],
+    [
+     -34.16,
+     234.02
+    ],
+    [
+     -24.52,
+     226.38
+    ],
+    [
+     -21.14,
+     216.87
+    ],
+    [
+     -13.88,
+     210.1
+    ],
+    [
+     -3.9,
+     199.45
+    ],
+    [
+     3.96,
+     187.42
+    ]
+   ]
+  ],
+  "area_m2": 4042.2,
+  "bbox_m": {
+   "alongshore": 88.5,
+   "crossshore": 94.3
+  },
+  "max_dim_m": 123.4,
+  "distance_offshore_m": 181.3,
+  "shore_normal_bearing_deg": 173.4,
+  "distance_offshore_note": "Nearest reef edge to the surf line along the shore normal (181 m), at the imagery tide; centroid 226 m, far edge 276 m. Measured from the seawall base (back of beach, 60 m landward of the surf line at this tide) instead: nearest edge 241 m, centroid 286 m, far edge 336 m.",
+  "origin_px_img1": [
+   1509.7,
+   747.8
+  ],
+  "min_rotated_rectangle_m": [
+   121.1,
+   45.0
+  ],
+  "cross_check_polygons_m": {
+   "img2_april_2011_survey": [
+    [
+     [
+      9.36,
+      180.19
+     ],
+     [
+      17.86,
+      179.61
+     ],
+     [
+      29.29,
+      180.95
+     ],
+     [
+      41.46,
+      185.03
+     ],
+     [
+      46.87,
+      188.31
+     ],
+     [
+      43.78,
+      192.17
+     ],
+     [
+      39.92,
+      198.05
+     ],
+     [
+      35.36,
+      205.44
+     ],
+     [
+      30.87,
+      212.31
+     ],
+     [
+      26.89,
+      219.23
+     ],
+     [
+      22.33,
+      226.62
+     ],
+     [
+      16.22,
+      233.83
+     ],
+     [
+      9.64,
+      240.45
+     ],
+     [
+      4.23,
+      246.15
+     ],
+     [
+      -0.08,
+      251.45
+     ],
+     [
+      -2.5,
+      258.56
+     ],
+     [
+      -2.47,
+      262.79
+     ],
+     [
+      -16.11,
+      262.24
+     ],
+     [
+      -27.97,
+      255.57
+     ],
+     [
+      -32.97,
+      244.41
+     ],
+     [
+      -34.07,
+      235.83
+     ],
+     [
+      -25.69,
+      227.31
+     ],
+     [
+      -16.7,
+      213.57
+     ],
+     [
+      -8.87,
+      200.76
+     ],
+     [
+      2.2,
+      187.27
+     ]
+    ]
+   ],
+   "img3_design_shape_rotated_to_canonical_and_centroid_aligned_to_img1_not_georeferenced": [
+    [
+     [
+      -30.23,
+      275.62
+     ],
+     [
+      -32.27,
+      266.97
+     ],
+     [
+      -34.3,
+      249.65
+     ],
+     [
+      -35.32,
+      237.94
+     ],
+     [
+      -33.8,
+      229.28
+     ],
+     [
+      -28.7,
+      220.62
+     ],
+     [
+      -21.06,
+      208.91
+     ],
+     [
+      -11.9,
+      195.66
+     ],
+     [
+      -0.69,
+      185.48
+     ],
+     [
+      8.48,
+      176.31
+     ],
+     [
+      13.57,
+      173.26
+     ],
+     [
+      18.66,
+      175.29
+     ],
+     [
+      24.77,
+      179.88
+     ],
+     [
+      31.9,
+      187.01
+     ],
+     [
+      39.03,
+      195.66
+     ],
+     [
+      42.09,
+      203.3
+     ],
+     [
+      39.03,
+      208.91
+     ],
+     [
+      31.9,
+      217.56
+     ],
+     [
+      24.77,
+      226.22
+     ],
+     [
+      18.15,
+      236.41
+     ],
+     [
+      13.06,
+      246.59
+     ],
+     [
+      6.95,
+      255.25
+     ],
+     [
+      1.35,
+      259.84
+     ],
+     [
+      -5.78,
+      261.36
+     ],
+     [
+      -13.42,
+      259.84
+     ],
+     [
+      -19.03,
+      262.89
+     ],
+     [
+      -22.08,
+      268.49
+     ],
+     [
+      -25.14,
+      274.61
+     ]
+    ]
+   ]
+  }
+ },
+ "geo": {
+  "polygons_latlon": [
+   [
+    [
+     50.7179415,
+     -1.8388903
+    ],
+    [
+     50.7179517,
+     -1.8387508
+    ],
+    [
+     50.7179517,
+     -1.8385255
+    ],
+    [
+     50.7179211,
+     -1.8382734
+    ],
+    [
+     50.7179008,
+     -1.838268
+    ],
+    [
+     50.7178464,
+     -1.8383485
+    ],
+    [
+     50.7177717,
+     -1.8384075
+    ],
+    [
+     50.7177038,
+     -1.8384719
+    ],
+    [
+     50.7176562,
+     -1.8384826
+    ],
+    [
+     50.7175645,
+     -1.8385577
+    ],
+    [
+     50.7174966,
+     -1.8386114
+    ],
+    [
+     50.7174287,
+     -1.8386543
+    ],
+    [
+     50.7173777,
+     -1.8387347
+    ],
+    [
+     50.7173437,
+     -1.8388206
+    ],
+    [
+     50.717286,
+     -1.8388957
+    ],
+    [
+     50.7171298,
+     -1.8389064
+    ],
+    [
+     50.7170754,
+     -1.8390673
+    ],
+    [
+     50.7170618,
+     -1.8393785
+    ],
+    [
+     50.7172452,
+     -1.8393838
+    ],
+    [
+     50.7174287,
+     -1.8393785
+    ],
+    [
+     50.7175068,
+     -1.8392551
+    ],
+    [
+     50.7175951,
+     -1.8392229
+    ],
+    [
+     50.717663,
+     -1.8391317
+    ],
+    [
+     50.7177683,
+     -1.8390083
+    ],
+    [
+     50.7178838,
+     -1.8389171
+    ]
+   ]
+  ],
+  "shoreline_bearing_deg": 83.4,
+  "method": "pixel vertices of img1 converted with satellite.pix2ll (Web-Mercator bounds of the .geo.json sidecar). Shoreline = surf line drawn on img1 between px (1300,772) and (1750,720); the seawall base between (1300,610) and (1750,565) has bearing 84.3 deg.",
+  "source_id": "img1",
+  "centroid_latlon": [
+   50.717532,
+   -1.838909
+  ],
+  "osgb36_bounds": {
+   "E": [
+    411435,
+    411514
+   ],
+   "N": [
+    90838,
+    90937
+   ]
+  }
+ },
+ "angles": [
+  {
+   "what": "reef envelope long axis vs shoreline",
+   "deg": 55.3,
+   "method": "minimum rotated rectangle of the img1 outline: long side 121 m, line bearing 28.1 deg; shoreline bearing 83.4 deg (surf line); acute angle"
+  },
+  {
+   "what": "reef envelope long axis vs shore normal",
+   "deg": 34.7,
+   "method": "same long axis vs shore-normal bearing 173.4 deg"
+  },
+  {
+   "what": "east edge of the northern two-thirds vs shoreline",
+   "deg": 56.0,
+   "method": "line from outline vertex 4 (NE tip) to vertex 11 in img1: bearing 27.4 deg"
+  },
+  {
+   "what": "west edge of the northern half vs shoreline",
+   "deg": 53.8,
+   "method": "line from vertex 24 to vertex 20 in img1: bearing 29.6 deg"
+  },
+  {
+   "what": "bag (container) stripe direction vs shoreline",
+   "deg": 48,
+   "method": "dominant stripe orientation inside the outline by image structure tensor (R, G, B channels, sigma 1.5-3.5 px): bearing 28-38 deg, two clear stripes in the NE prong read at ~38 deg; angle to the shoreline 45-55 deg (uncertainty +/- 8 deg)"
+  },
+  {
+   "what": "southern block west edge vs shore normal",
+   "deg": 6.6,
+   "method": "edge from vertex 17 to 19 (bearing 0.0 deg) vs shore normal 173.4 deg: the seaward block is almost shore-normal"
+  },
+  {
+   "what": "southern (seaward) edge vs shoreline",
+   "deg": 2.6,
+   "method": "edge from vertex 17 to 16 (bearing 86.1 deg) vs shoreline"
+  },
+  {
+   "what": "northern (shoreward) edge vs shoreline",
+   "deg": 6.6,
+   "method": "edge from vertex 1 to 2 (bearing 90.0 deg); the NE end edge 2-3 is 17.4 deg from the shoreline"
+  },
+  {
+   "what": "reef long axis vs wave-crest line of the 191 deg design swell (geometry-only peel-angle estimate)",
+   "deg": 72.9,
+   "method": "crest-line bearing 101 deg (perpendicular to 191 deg, Mead et al. 2010 design direction) vs the long axis 28.1 deg; ignores refraction, so only indicative (design peel angle 50-70 deg)"
+  }
+ ],
+ "dimensions_check": [
+  {
+   "quantity": "footprint area",
+   "text_value": "about 10,000 m2 (1 ha / 2.5 acres)",
+   "text_ref": "Wikipedia R1, Raised Water Research R4, Herbert et al. 2017 PLoS ONE (unreferenced); card R1/R4; footprint S1",
+   "drawing_value": "4042 m2 bag field (5451 m2 for the 121 x 45 m bounding rectangle)",
+   "diff_pct": -59.6,
+   "comment": "FAILS the rubric (-60%). The only plan-view evidence (satellite 4,042; April 2011 survey 3,372; designers' design shape 4,217 m2; design relief footprint incl. sloping toes 5,255 m2) agrees within about 30%. The 13,000 m3 of sand is 3.2 m mean thickness over 4,042 m2 but 1.3 m over 1 ha, which does not fit a two-layer reef with 4.5-5.5 m of relief. Possible reconciliation (hypothesis): 'about 1 ha' is a rounded envelope - the shore-aligned bounding box is 88 x 94 m = 0.83 ha. No source defines the 1 ha."
+  },
+  {
+   "quantity": "footprint area incl. sloping toes (designers' model, measured by verifier)",
+   "text_value": "13,000 m3 sand (Wikipedia, RWR, Mead abstract)",
+   "text_ref": "Mead et al. 2010 Fig. 3a depth plan, colour bar 0 to -7.3 m",
+   "drawing_value": "5,255 m2 where the design is >0.5 m above the fitted ambient seabed, holding 11,540 m3 (4,730 m2 at >1 m, 3,945 m2 at >1.5 m); the -2.5 m contour trace used for the cross-check is 4,217 m2",
+   "diff_pct": -11.2,
+   "comment": "Volume check: the design relief holds 11,540 m3 vs 13,000 m3 stated (-11%), so the 13,000 m3 is accounted for by a footprint of about 5,300 m2, 0.53 of 1 ha. Colour-to-depth by nearest colour on the printed bar (+-0.2 m), ambient seabed by per-column linear fit; indicative only (overlays/img3_relief_footprint_verify.png)."
+  },
+  {
+   "quantity": "footprint area (Plymouth paper)",
+   "text_value": "45,000 m2",
+   "text_ref": "Rendle & Davidson 2012 p.3 ('the footprint covers 45,000 m2')",
+   "drawing_value": "4042 m2",
+   "diff_pct": -91.0,
+   "comment": "10x the drawn field. A dropped digit (4,500 m2) would match the drawing within about 10%; otherwise it must include the scour/influence zone. Cannot tell which; flagged, not used. Verifier: the coloured survey plot in the same paper's Fig. 9 covers only about 25,000 m2, so 45,000 m2 is not the plot area either; unexplained."
+  },
+  {
+   "quantity": "size 'football pitch'",
+   "text_value": "'the size of a football pitch' (reef); 'first base section approximately the size of a football pitch' (one section of the three-part base mat)",
+   "text_ref": "video F0PslWKkbf4 02:43; video 7xMwL09a1TI 00:41; R2/R3 The Breaker; R10 Great British Life",
+   "drawing_value": "bounding rectangle 121 x 45 m = 5451 m2; bag field 4042 m2",
+   "diff_pct": null,
+   "comment": "A UK/FIFA pitch is about 7,000 m2 (105 x 68 m) but many fields are 100 x 50 m = 5,000 m2, which matches the rotated bounding rectangle (5451 m2) of the reef. Reconciliation: the whole reef is about a small pitch in extent. 'The first of three base sections is a football pitch' cannot hold literally for each of three sections (3 pitches = 15,000-21,000 m2): the mat sections overlap or the narrator is speaking loosely, and the filled bags cover less than the mat."
+  },
+  {
+   "quantity": "length (long axis)",
+   "text_value": "no text gives an overall plan length; our earlier oblique-photo estimate of 187.5 m (+-60 m) is superseded; containers up to 70 m long; main right-hand ride about 70 m",
+   "text_ref": "footprint S1 (our earlier schematic); Mead 2010; video F0PslWKkbf4 02:22",
+   "drawing_value": "121 m (long side of the rotated rectangle; maximum vertex distance 123 m)",
+   "diff_pct": null,
+   "comment": "Not a text comparison: 187.5 m was our own threshold measurement on an oblique press photo (flagged +-60 m on 2026-09-25) and is superseded. Plan-view lengths: satellite 121 m, April 2011 survey 98 m, design 110 m. 70 m containers are consistent with a 121 m envelope of overlapping rows."
+  },
+  {
+   "quantity": "width (short axis)",
+   "text_value": "58 m (earlier schematic); 'basal area 50 x 70 m' (search snippet of an abstract, not verified); largest bags 6 m wide, 5 m diameter",
+   "text_ref": "footprint S1; unverified snippet; video F0PslWKkbf4 02:22",
+   "drawing_value": "45 m",
+   "diff_pct": -22.4,
+   "comment": "Satellite 45 m, survey 41 m, design 49 m: all 41-49 m. A 50 m width matches; a 70 m side would match neither the width nor, alone, the length. The 50 x 70 m figure is only an unverified search snippet, so this comparison is weak evidence."
+  },
+  {
+   "quantity": "distance offshore",
+   "text_value": "220 m from the base of the seawall (R7); 225 m from the beach (Wikipedia R1, Rendle & Davidson); 210 m from the shoreline (R4); 250 m offshore (videos, The Breaker); '280 m offshore and east of the pier' (Mead 2010 caption); 220 m offshore and 210 m east of the pier (Herbert et al. 2017)",
+   "text_ref": "card R1, R4, R7; Breaker R2; videos 7xMwL09a1TI 01:04, F0PslWKkbf4 02:46; Mead Fig.3c",
+   "drawing_value": "nearest edge 241 m from the seawall base, 181 m from the surf line (2011 image tide); centroid 286 / 226 m",
+   "diff_pct": 9.6,
+   "comment": "The 210-225 m text values fit the nearest edge (181 m from the surf line, 241 m from the seawall base; the beach was about 60 m wide at the image tide). 250 m fits the near edge measured to the seawall; 280 m fits the centre (centroid to seawall 286 m). The sources measure to different parts of the reef from different baselines."
+  },
+  {
+   "quantity": "distance east of the pier",
+   "text_value": "about 240 m east of Boscombe Pier; first section deployed 'just east of the pier'",
+   "text_ref": "card R7 Bournemouth Swell; video F0PslWKkbf4 01:57",
+   "drawing_value": "242 m (reef's westernmost point to the pier head tip); centroid 275 m",
+   "diff_pct": 0.7,
+   "comment": "Agrees: R7's 240 m is the gap between the pier head and the reef's west side."
+  },
+  {
+   "quantity": "shore-normal bearing",
+   "text_value": "173 deg",
+   "text_ref": "Rendle & Davidson 2012 p.10-11 (model 'angle of approach is shore normal, 173 deg')",
+   "drawing_value": "173.4 deg",
+   "diff_pct": 0.2,
+   "comment": "Independent agreement (our value comes from the surf line, groynes and pier on img1)."
+  },
+  {
+   "quantity": "number of containers",
+   "text_value": "32 (Rendle & Davidson) / 54 (Mead et al.) / 55 (R4, R7) / 56 (R10)",
+   "text_ref": "papers and card",
+   "drawing_value": "not countable from the images",
+   "diff_pct": null,
+   "comment": "The conflict is between sources and cannot be resolved with these images; the bag rows visible in the NE part are about 6-8 stripes wide, i.e. 6 m bags side by side."
+  }
+ ],
+ "gemini": {
+  "values": {
+   "extract_00_gemini_footprints": {
+    "shape_type": "Asymmetric Triangular Delta / Right-Hand Peeler",
+    "length_m": 100,
+    "width_m": 55,
+    "area_m2": 5200,
+    "net_core_area_m2": 3070,
+    "distance_offshore_m": 220,
+    "crest_depth_m": 1.5,
+    "coordinates": "50.7183 N, 1.8412 W (reef_footprints.json)",
+    "polygon": "8-vertex (extract)"
+   },
+   "reef_footprints.json": {
+    "alongshore_length_m": 171.2,
+    "cross_shore_width_m": 87.7,
+    "footprint_area_m2": 9180,
+    "bounding_polygon_m": [
+     [
+      -12.9,
+      164.6
+     ],
+     [
+      78.2,
+      166.8
+     ],
+     [
+      27.7,
+      252.3
+     ],
+     [
+      -93.0,
+      249.0
+     ]
+    ],
+    "polygon_area_m2": 9176,
+    "note": "internally inconsistent with the 100 x 55 m / 5,200 m2 of the extract and the dossier"
+   }
+  },
+  "sources_used": [
+   {
+    "url": "(no URL) Bournemouth Borough Council: Boscombe Reef Review (2012)",
+    "what_gemini_said": "listed as source of the delta shape/dimensions",
+    "our_check": "unverifiable",
+    "evidence": "No URL given; web searches found no such document. The only council documents located are minutes mentioning the failed reef."
+   },
+   {
+    "url": "(no URL) Raised Water Research: Boscombe Surf Reef Dossier (2024)",
+    "what_gemini_said": "listed as source of dimensions",
+    "our_check": "dimension_not_in_source",
+    "evidence": "The real RWR page https://raisedwaterresearch.com/spot/artificial-reef/europe/united-kingdom/boscombe-surf-reef/ is a short spot profile: '2.5 acres (1 hectare)', '210 m from the shoreline', photo gallery - no 100 x 55 m, 5,200 m2 or delta shape. Re-fetched 2026-10-05: also states '65m' planned right-hand ride; still no 100 x 55 m, 5,200 m2, 'delta' or 'dossier'."
+   },
+   {
+    "url": "(no URL) Halcrow Group Ltd: Independent Engineering Audit of Boscombe Reef (2011)",
+    "what_gemini_said": "listed as source",
+    "our_check": "unverifiable",
+    "evidence": "No such audit found (Halcrow only appears as author of a 2004 Poole Bay beach-management report). The real assessments are Davidson (Plymouth, 2010 six-month interim report) and the 2009 post-construction survey report by Richards cited by Rendle & Davidson."
+   },
+   {
+    "url": "Davidson, M.A. (2010) 'Boscombe Artificial Surf Reef Final Performance Report', Plymouth Univ. (Gemini IMAGE_PROVENANCE.md / images_provenance.json)",
+    "what_gemini_said": "source of the boscombe.png scale figure",
+    "our_check": "dimension_not_in_source",
+    "evidence": "The real report is the '6-month interim report: Performance of Boscombe surfing reef' (Davidson 2010, for Bournemouth BC); it assesses surf quality (ride lengths 20 m / 40 m) and, as far as found, carries no plan-view footprint of 100 x 55 m. Gemini's title ('Final') is wrong. Re-searched: the literature cites only 'Davidson (2010) 6-month interim report: Performance of Boscombe surfing reef' (Bournemouth BC / Plymouth); no 'Final' report found."
+   },
+   {
+    "url": "'Harrow et al. 2012 / Plymouth University post-mortem multibeam survey' (Gemini scale_sketch_photo_alignment_audit.md)",
+    "what_gemini_said": "paper figure behind boscombe.png",
+    "our_check": "unverifiable",
+    "evidence": "No such paper found. The real Plymouth 2012 paper is Rendle & Davidson (ICCE 2012) and uses DGPS bathymetry (not multibeam); its Fig. 9 plan was traced here as img2."
+   },
+   {
+    "url": "https://www.geograph.org.uk/photo/1322892",
+    "what_gemini_said": "'Boscombe reef construction works with offshore deployment buoys ... derrick barge pumping sand slurry into 55 geotextile containers located 225 m offshore ... diver positioning errors, severe bag overlap'",
+    "our_check": "dimension_not_in_source",
+    "evidence": "Real page (Chris Downer, 25 May 2009, CC BY-SA 2.0, 'Boscombe: reef construction works'): buoys and sand stockpiles at the work site - correct photo of the right site, but it states no container count, distance or positioning errors. Re-fetched 2026-10-05: description is only 'work continues to construct an artificial surf reef ... buoys ... mountain of sand'."
+   }
+  ],
+  "summary": "Gemini's Boscombe shape is an 'asymmetric triangular delta' of 100 x 55 m / 5,200 m2 (net 3,070 m2), with a second, inconsistent quadrilateral of 9176 m2 (171 x 88 m) in its JSON; its three named sources have no URLs and could not be found, and the one real photo it cites does not support its claims. Our traced bag field is a 121 x 45 m elongated band of 4042 m2 whose long axis lies 55 deg from the shoreline; Gemini's 220 m offshore is the only number that fits. Verification 2026-10-05: all six verdicts re-checked and confirmed; Gemini's own reef_footprints.json text calls its 9,180 m2 the 'full calibrated GSC ramp envelope (~1.0 ha / 2.5 acres)', i.e. fitted to the 1 ha text, and 5,200 / 3,070 m2 come from its own CAD sketch ('Original Hydrodynamic & Bathymetric Synthesis')."
+ },
+ "no_source": null,
+ "references": [
+  {
+   "id": "R-Mead2010",
+   "citation": "Mead S., Blenkinsopp C., Moores A., Borrero J. (2010) Design and construction of the Boscombe multi-purpose reef. Coastal Engineering 2010 (ICCE), article 1352.",
+   "url": "https://icce-ojs-tamu.tdl.org/icce/index.php/icce/article/download/1352/pdf_106/",
+   "accessed": "2026-10-05",
+   "supports": "design shape img3; 54 containers 15-70 m; sections of up to 14 containers; crest +0.5 m; 191 deg design waves; '280 m offshore and east of the pier'"
+  },
+  {
+   "id": "R-Rendle2012",
+   "citation": "Rendle E. & Davidson M. (2012) An evaluation of the physical impact and structural integrity of a geotextile surf reef. Coastal Engineering 2012 (ICCE), article 6794.",
+   "url": "https://icce-ojs-tamu.tdl.org/icce/article/view/6794",
+   "accessed": "2026-10-05",
+   "supports": "April 2011 bathymetry img2; 32 containers in two layers; 225 m offshore, 2.7-5 m depth; footprint '45,000 m2'; shore normal 173 deg; container failures April 2011 / 2012"
+  },
+  {
+   "id": "R-EsriWayback",
+   "citation": "Esri World Imagery Wayback, release 10, capture date 2011-09-28 (Esri, Maxar, Earthstar Geographics, GIS User Community).",
+   "url": "https://livingatlas.arcgis.com/wayback/",
+   "accessed": "2026-10-04",
+   "supports": "img1 primary trace"
+  },
+  {
+   "id": "R-Pier",
+   "citation": "Wikipedia, Boscombe Pier: 'The pier was 200 yards (180 m) long'.",
+   "url": "https://en.wikipedia.org/wiki/Boscombe_Pier",
+   "accessed": "2026-09-25 (via footprint S1)",
+   "supports": "pier-length check of the img1 scale"
+  },
+  {
+   "id": "R-Video-7xMwL09a1TI",
+   "citation": "BoscombeReef channel, 'Boscombe Surf Reef the construction story so far', 2009-07-08, 00:41-01:06.",
+   "url": "https://www.youtube.com/watch?v=7xMwL09a1TI",
+   "accessed": "2026-10-05 (transcript in 02_research/videos)",
+   "supports": "'first section of the reef base layer is approximately the size of a football pitch'; 'just 250 m from Boscombe beach shoreline'"
+  },
+  {
+   "id": "R-Video-F0PslWKkbf4",
+   "citation": "BoscombeReef channel, 'Boscombe Surf Reef - The Story', 2010-02-25, 01:57-02:46.",
+   "url": "https://www.youtube.com/watch?v=F0PslWKkbf4",
+   "accessed": "2026-10-05 (transcript in 02_research/videos)",
+   "supports": "first section 'just east of Boscombe Pier'; largest bags 70 m long, 2 m high, 6 m wide; reef 'the size of a football pitch ... 250 m offshore'"
+  },
+  {
+   "id": "R-Video-0Oi6D6Xp0oY",
+   "citation": "BoscombeReef channel, 'Aerial view of Boscombe Reef' (2009).",
+   "url": "https://www.youtube.com/watch?v=0Oi6D6Xp0oY",
+   "accessed": "2026-10-05 (thumbnail + oEmbed only)",
+   "supports": "oblique aerial view; context only"
+  },
+  {
+   "id": "R-Geograph",
+   "citation": "Chris Downer, 'Boscombe: reef construction works', Geograph 1322892, 25 May 2009, CC BY-SA 2.0.",
+   "url": "https://www.geograph.org.uk/photo/1322892",
+   "accessed": "2026-10-05",
+   "supports": "Gemini check"
+  },
+  {
+   "id": "R-Rendle2015",
+   "citation": "Rendle E.J. (2015) The Environmental, Social and Economic Impacts of an Artificial Surf Reef - The UK Experience. PhD thesis, Plymouth University.",
+   "url": "https://pearl.plymouth.ac.uk/bms-theses/412/",
+   "accessed": "not fetched (PEARL download blocked by a Cloudflare bot check on 2026-10-05; not bypassed)",
+   "supports": "possible later refinement: reported to contain the bag-layout plan"
+  },
+  {
+   "id": "R-Herbert2017",
+   "citation": "Herbert R.J.H., Collins K., Mallinson J., Hall A.E., Pegg J., Ross K., Clarke L., Clements T. (2017) Epibenthic and mobile species colonisation of a geotextile artificial surf reef on the south coast of England. PLoS ONE 12(9): e0184100.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5604948/",
+   "accessed": "2026-10-05",
+   "supports": "text value 'covers approximately 1 ha of the sea bed' (unreferenced); 54 bags; 220 m offshore, 210 m east of the pier; propeller strike March 2011, bag lost and not replaced"
+  },
+  {
+   "id": "R-WikiBoscombe",
+   "citation": "Wikipedia, Boscombe Surf Reef (raw wikitext fetched 2026-10-05): one hectare; Dec 2010 planned modification; closure 31 Mar 2011; ASR repair from mid-Aug 2011; Oct 2011 update; liquidation Sept 2012.",
+   "url": "https://en.wikipedia.org/wiki/Boscombe_Surf_Reef",
+   "accessed": "2026-10-05",
+   "supports": "text area 1 ha; timeline; unbuilt extension"
+  },
+  {
+   "id": "R-RWR",
+   "citation": "Raised Water Research, Boscombe Surf Reef spot page.",
+   "url": "https://raisedwaterresearch.com/spot/artificial-reef/europe/united-kingdom/boscombe-surf-reef/",
+   "accessed": "2026-10-05",
+   "supports": "2.5 acres (1 hectare); 210 m; 55 containers; 13,000 m3; 65 m planned ride"
+  },
+  {
+   "id": "R-Council2011a",
+   "citation": "Bournemouth Borough Council, 'ASR are back', 12 Aug 2011 (archived copy, web.archive.org 2013-11-01).",
+   "url": "https://web.archive.org/web/20131101134642/http://www.bournemouth.gov.uk/NewsEvents/News/2011/August2011/ASRareback.aspx",
+   "accessed": "2026-10-05",
+   "supports": "repairs to two upper-layer containers; improvement funds used for repair"
+  },
+  {
+   "id": "R-Council2011b",
+   "citation": "Bournemouth Council, 'Reef update - Work continues on surf reef', 24 Oct 2011 (archived copy).",
+   "url": "https://web.archive.org/web/20131101134502/http://www.bournemouth.gov.uk/NewsEvents/News/2011/October2011/Reef-update---Work-continues-on-surf-reef.aspx",
+   "accessed": "2026-10-05",
+   "supports": "repairs to continue; priority to prepare the reef for winter"
+  },
+  {
+   "id": "R-BBC2011-08",
+   "citation": "BBC News, 'Boscombe 3.2m surf reef being repaired after boat damage', 15 Aug 2011.",
+   "url": "https://www.bbc.co.uk/news/uk-england-dorset-14526212",
+   "accessed": "2026-10-05",
+   "supports": "ASR to renew the second of two detached sand bags; 55 bags 225 m out; refinement works only planned"
+  }
+ ],
+ "verified_on": "2026-10-04",
+ "verification": [
+  {
+   "check": "1 overlays",
+   "verdict": "good",
+   "evidence": "Viewed all 7 tracer overlays and re-rendered img1/img2/img3 from shape.json with overlay.py plus an independent per-channel stretch (overlays/img1_verify_closeup.png): outline within 1-3 px (0.4-1.1 m) of the bag block on W, E and S edges, <=4 px at the north edge; the blotch 35 m north and the SW streaks are correctly excluded. 2025 overlay redone (overlays/img1_outline_on_2025.png): same envelope, south end not confirmable."
+  },
+  {
+   "check": "2 design version",
+   "verdict": "confirmed with wording corrections",
+   "evidence": "Drawn state = 2009 as-built reef as damaged in April 2011, imaged 2011-09-28 (capture date re-queried at 4 points). A Dec 2010 modification (4 SE-corner bags + 3 pillow bags) was never built; repairs from Aug 2011 concern upper-layer containers inside the envelope (council says under way, Rendle & Davidson say not done). Closure date corrected to 31 March 2011. No later extension, removal or redesign found; 2025 image shows the same envelope."
+  },
+  {
+   "check": "3 scale, area, bbox, angles",
+   "verdict": "confirmed",
+   "evidence": "0.37808 m/px re-derived from the sidecar bounds (Web-Mercator); pier 168-180 m vs 180 m; area 28,277.5 px2 -> 4,042.2 m2; max dimension 123.35 m; rotated rectangle 121.07 x 45.02 m, 28.1 deg; angles reproduce to 0.1 deg. Canonical polygon recomputed with an explicit rotation and with the FIXED geom.py make-canonical: max difference 0.017 / 0.015 m; one known point checked by hand (vertex 17 -> -38.84, 274.58 m). OSGB overlay on the Fig. 9 survey: IoU 0.77, centroids 8.5 m apart."
+  },
+  {
+   "check": "4 dimensions vs text",
+   "verdict": "area fails the 10% tolerance",
+   "evidence": "Area 4,042 m2 vs ~10,000 m2 text (-60%): Wikipedia, RWR and Herbert et al. 2017 all say ~1 ha. Position (+0.7%), shore normal (+0.2%) and offshore distance (+9.6% from the seawall base) agree. Sand volume (3.2 m vs 1.3 m mean thickness) and the designers' model (5,255 m2 incl. toes holds 11,540 m3) support 0.4-0.5 ha, not 1 ha; the 1 ha is not defined by any source."
+  },
+  {
+   "check": "5 provenance",
+   "verdict": "complete",
+   "evidence": "All four sources carry url, page/figure, date, credit, licence and local file; every number in METHOD.md traced to a source or a measurement; wording errors (closure date, repair statement) fixed; references extended (Herbert 2017, Wikipedia, RWR, council releases, BBC)."
+  },
+  {
+   "check": "6 Gemini",
+   "verdict": "all tracer verdicts confirmed",
+   "evidence": "Council review 2012, Halcrow audit 2011, Harrow et al. 2012: not found (unverifiable). RWR page re-fetched: 1 ha / 210 m / 55 containers, no 100 x 55 m or delta. Davidson 2010 is a 6-month interim report, not a final report. Geograph 1322892 re-fetched: real photo, claimed details not on the page. Nothing from Gemini used."
+  },
+  {
+   "check": "7 confidence",
+   "verdict": "changed high -> medium",
+   "evidence": "Outline and position meet the 'high' wording (visible on geo-referenced imagery + survey), but the rating scale also requires dimensions within ~10% of the text and the headline area is -60% against a repeated 1 ha figure; no 10-25% band applies, so the next level down, medium, is used. The reason on the page says the drawing itself is well supported and the 1 ha is probably a loose envelope."
+  }
+ ]
+}

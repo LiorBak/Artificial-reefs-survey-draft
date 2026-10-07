@@ -1,0 +1,289 @@
+{
+  "extract_date": "2026-09-25",
+  "method": "Read each Gemini <slug>.md dossier + world_reefs_master.json entry for the 13 mapped reefs, diffed against our verified <slug>.json cards. A sample of Gemini's candidate quotes/facts were independently re-fetched via WebSearch/WebFetch in this session (no subagent-spawning tool was available in this environment, so verification was done directly rather than via separate spawned agents) to confirm they are real before being offered as trustworthy. Items that could not be independently confirmed, or that were contradicted by the real source, are marked verified:false / verified:\"contradicted\" and must NOT be used without further checking.",
+  "per_reef": [
+    {
+      "our_slug": "narrowneck-gold-coast",
+      "gemini_slug": "narrowneck-gold-coast",
+      "candidate_reviews": [],
+      "candidate_refs": [],
+      "candidate_facts": [
+        {
+          "field": "cost_total_lifecycle",
+          "value": "Gemini's dossier adds a rolled-up figure not in our card: 'Total lifecycle expenditure ~AUD $4.5M+' (original build AUD $2.3M + 2018 renewal AUD $2M). This is just Gemini's own addition of two figures already in our card, not an independently sourced new fact.",
+          "url": "https://www.coastalmanagement.com.au/artificial-surf-reefs",
+          "verified": false,
+          "note": "Arithmetic derived, not a new sourced fact -- not worth adding."
+        }
+      ],
+      "contradictions": [
+        {
+          "field": "1971 study author",
+          "ours": "1971 Delft University of Technology report",
+          "gemini": "1971 study by Delft Hydraulics Laboratory (Netherlands)",
+          "gemini_url": "https://en.wikipedia.org/wiki/Narrow_Neck,_Queensland",
+          "note": "Minor institution-name mismatch (Delft Hydraulics Laboratory vs Delft University of Technology) -- low value, not independently re-verified."
+        }
+      ],
+      "notes": "Our existing card is already extremely thorough for this reef (looks like it was already reconciled against Gemini-style material once). All of Gemini's surfer/official reviews (linez, stunet, warddy, Fish Face, the-spleen_2, Tom Tate) are already present in our card, several verbatim. Nothing new survives scrutiny."
+    },
+    {
+      "our_slug": "cables-reef-wa",
+      "gemini_slug": "cables-reef-wa",
+      "candidate_reviews": [
+        {
+          "who": "Prof. Charitha Pattiaratchi",
+          "role": "University of Western Australia coastal oceanographer",
+          "quote": "The reef is performing according to its design and it's performing as well or better than predicted... The wave peel angles closely match the design target.",
+          "outlet": "Pattiaratchi 2000 design/monitoring report (1999-2001 monitoring), as summarized",
+          "date": "2001 (per Gemini); monitoring covered 1999-2001",
+          "url": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/cables-reef/",
+          "stance": "positive",
+          "verified": true,
+          "verify_note": "WebSearch independently confirmed a Raised Water Research page attributes this same substance ('performing as well or better than predicted') to a Pattiaratchi monitoring report for Cables/Cottesloe reef. Not in our card, which currently has no Pattiaratchi quote."
+        },
+        {
+          "who": "Local Perth surfer",
+          "role": "Swellnet forum commenter (name not given)",
+          "quote": "The problem with Cables isn't the shape... it's the swell shadow. Rottnest eats the swell. It needs a solid 6 to 8 foot swell out at Rottnest just to get a waist-to-chest high wave at Cables.",
+          "outlet": "Swellnet forum",
+          "date": "undated",
+          "url": "",
+          "stance": "mixed",
+          "verified": false,
+          "verify_note": "Gemini gives no name and no URL, only 'Swellnet forum' -- cannot be verified or sourced. Excluded from recommended use; listed only for completeness."
+        }
+      ],
+      "candidate_refs": [],
+      "candidate_facts": [],
+      "contradictions": [],
+      "notes": "The Pattiaratchi quote is the one solid addition here."
+    },
+    {
+      "our_slug": "prattes-reef-el-segundo",
+      "gemini_slug": "prattes-reef-el-segundo",
+      "candidate_reviews": [
+        {
+          "who": "evan",
+          "role": "local surfer, Surfline comment-thread commenter",
+          "quote": "Sounds like Surfrider should hire a new team of engineers, not a bunch of pencil pushers that don't know the first thing about surfing slabs.",
+          "outlet": "Surfline comment thread",
+          "date": "2008",
+          "url": "https://www.surfline.com",
+          "stance": "negative",
+          "verified": false,
+          "verify_note": "Gemini gives only the generic surfline.com homepage as the URL (same underlying Fontaine 2008-10-11 Surfline dispatch our card already cites for other commenters), not a working link to the specific comment. Not independently re-fetched; treat as low-confidence until someone finds the actual comment thread."
+        }
+      ],
+      "candidate_refs": [],
+      "candidate_facts": [],
+      "contradictions": [],
+      "notes": "Our card already has 8 reviews for this reef (Nelsen, Andrew, Randy Wright, Ryan Vick, wayne, 'prattes is a joke', JohnnyAM, Fontaine) covering the same Surfline thread. 'evan' is the only name in Gemini's set not already present, but is unverifiable given the URL Gemini supplied."
+    },
+    {
+      "our_slug": "mount-maunganui-reef",
+      "gemini_slug": "mount-maunganui-reef",
+      "candidate_reviews": [],
+      "candidate_refs": [],
+      "candidate_facts": [],
+      "contradictions": [],
+      "notes": "All 5 of Gemini's quotes (Derek Winter, Shaw Mead, Eddie Grogan, lifeguard-service spokesperson, Trudy Richards) match reviews already in our card, several near-verbatim. Nothing new."
+    },
+    {
+      "our_slug": "opunake-reef",
+      "gemini_slug": "opunake-reef",
+      "candidate_reviews": [
+        {
+          "who": "Ross Dunlop",
+          "role": "Mayor, South Taranaki District Council",
+          "quote": "The council's stance has been that it would not put any more funds into the project... We have written off the $400,000 loan as unrecoverable. It is a very disappointing outcome for our community.",
+          "outlet": "unspecified (Gemini gives no citation number for this exact quote)",
+          "date": "2011",
+          "url": "",
+          "verified": false,
+          "verify_note": "WebSearch could not locate this exact verbatim quote in any indexed source; our card already covers Ross Dunlop's loan write-off as a paraphrase, not a verbatim quote. Do not add verbatim text without a working source link."
+        }
+      ],
+      "candidate_refs": [],
+      "candidate_facts": [],
+      "contradictions": [
+        {
+          "field": "Shaw Mead quote re: Opunake sandbags",
+          "ours": "\"I understand it went over budget and no more funds were available, not a rare story for construction projects.\" (Newsroom NZ, 2021-12-06)",
+          "gemini": "\"The sandbags were an evolutionary dead-end... We tried to get funding to cap the Opunake bags with rock to make it work, but the funding never came through.\"",
+          "gemini_url": "https://www.newsroom.co.nz",
+          "note": "I fetched the real Newsroom NZ article ('The Kiwi scientist and the failed surf breaks', https://newsroom.co.nz/the-kiwi-scientist-and-the-failed-surf-breaks) directly. It contains the quote our card already uses, but does NOT contain the 'evolutionary dead-end' phrase or the rock-capping-funding-fell-through quote Gemini attributes to Mead. Likely a fabricated or misattributed quote by Gemini -- do not use."
+        },
+        {
+          "field": "Jim Moriarty quote",
+          "ours": "\"Today I heard an update on two of the recent failures...\" (grouping Opunake with Bournemouth)",
+          "gemini": "\"Ocean-based artificial reef attempts as a class have had absolutely horrible results. Millions of dollars have been poured into the ocean with virtually nothing to show for it...\"",
+          "gemini_url": "",
+          "note": "Gemini cites this as from 'a global retrospective citing Opunake (2012)' with no URL. The Newsroom NZ article I fetched (Gemini's apparent implied source given the surrounding context) contains no Jim Moriarty quote at all. Treat Gemini's version as unverified/likely fabricated."
+        }
+      ],
+      "notes": "This reef is the clearest case where Gemini's material should NOT be trusted at face value: two of its four surfer/official quotes for Opunake do not appear in the article that, per its own citation pattern, should contain them. Recommend NOT importing any of Gemini's Opunake quotes beyond what our card already independently sourced."
+    },
+    {
+      "our_slug": "boscombe-surf-reef",
+      "gemini_slug": "boscombe-surf-reef",
+      "candidate_reviews": [
+        {
+          "who": "Dr. Mark Davidson",
+          "role": "University of Plymouth Marine Institute",
+          "quote": "The wave length is rather too intense and challenging, and it is not quite as consistent as it should be... It met only 4 of the 11 design objectives.",
+          "outlet": "official evaluation report",
+          "date": "May 2010",
+          "url": "",
+          "verified": false,
+          "verify_note": "Gemini's own reference list cites 'Davidson, M., Reeve, D., & Medina, R. (2010). Boscombe Surf Reef: Post-Construction Performance Evaluation... University of Plymouth' with no URL. Could not verify this quote independently in the time available; the '4 of 11 design objectives' figure is specific enough to be worth a follow-up literature search before use."
+        }
+      ],
+      "candidate_refs": [],
+      "candidate_facts": [
+        {
+          "field": "design objectives met",
+          "value": "Boscombe reef reportedly met only 4 of 11 original design objectives, per the University of Plymouth post-construction evaluation (Davidson, Reeve & Medina 2010).",
+          "url": "",
+          "verified": false
+        }
+      ],
+      "contradictions": [
+        {
+          "field": "Attribution of 'nearest thing to an Atlantic roller' quote",
+          "ours": "Attributed to Paul Clark (promotional framing before/around opening)",
+          "gemini": "Attributed to 'Carve Surfing Magazine editorial retrospective', no named person",
+          "gemini_url": "",
+          "note": "Same phrase, two different attributions and no URL from Gemini for its version. Not independently resolved -- flagging so whoever verifies it checks both possibilities."
+        }
+      ],
+      "notes": "Everything else Gemini has (Skone-Roberts x2, Ben Grower, Shaw Mead) is already in our card. The Davidson '4 of 11 objectives' figure is the one item worth a follow-up if the underlying Plymouth report can be located online."
+    },
+    {
+      "our_slug": "kovalam-reef-india",
+      "gemini_slug": "kovalam-reef-india",
+      "candidate_reviews": [
+        {
+          "who": "unnamed Kovalam artisanal fisherman",
+          "role": "local fisherman",
+          "quote": "We were told the reef would bring thousands of fish. Instead, our nets are torn to pieces on the plastic bags. We pull up shredded black plastic instead of fish.",
+          "outlet": "local Malayalam news report",
+          "date": "2012",
+          "url": "",
+          "verified": false,
+          "verify_note": "No URL and no named outlet given by Gemini -- cannot be checked. Our card already has a similar but not identical fisherman characterization ('reported recovering damaged portions of the reef rather than more fish')."
+        }
+      ],
+      "candidate_refs": [],
+      "candidate_facts": [],
+      "contradictions": [],
+      "notes": "Jelle Rigole and Sean Collins quotes both already covered by our card (different verbatim wording for Rigole, same underlying claim -- not treated as a material contradiction)."
+    },
+    {
+      "our_slug": "borth-coastal-defence-reef",
+      "gemini_slug": "borth-coastal-defence-reef",
+      "candidate_reviews": [],
+      "candidate_refs": [],
+      "candidate_facts": [],
+      "contradictions": [],
+      "notes": "All 4 named quotes (Ray Quant, Rhodri Llwyd, Alice Johnson, Ray Jones) already in our card. The one 'new' quote ('Local Welsh surfer comment, Magicseaweed/Surf-Forecast') has no name and no URL, so it is not offered as a candidate."
+    },
+    {
+      "our_slug": "palm-beach-gold-coast",
+      "gemini_slug": "palm-beach-gold-coast",
+      "candidate_reviews": [
+        {
+          "who": "Stab Magazine",
+          "role": "surf media outlet, field report",
+          "quote": "The reef is causing long ocean lines to converge on themselves and create a defined peak, which is ultimately what you need to create a quality break.",
+          "outlet": "Stab Magazine",
+          "date": "2019-08-28",
+          "url": "https://stabmag.com/news/this-artificial-reef-on-the-gold-coast-is-showing-serious-potential/",
+          "stance": "positive",
+          "verified": true,
+          "verify_note": "I fetched this article directly. Gemini's quoted text ('You can take off behind the peak, pull straight into a legitimate barrel...It's the real deal') does NOT appear verbatim in the real article -- Gemini paraphrased/invented the exact wording. The quote above is the real article's actual language, substituted in place of Gemini's version. Title and date corrected from Gemini's 'August 2019' to the real 2019-08-28 date."
+        }
+      ],
+      "candidate_refs": [
+        {
+          "citation": "Stab Magazine (2019-08-28). \"This Artificial Reef On The Gold Coast Is Half Finished And Looks Pretty Fun.\"",
+          "url": "https://stabmag.com/news/this-artificial-reef-on-the-gold-coast-is-showing-serious-potential/",
+          "supports": "First surf-test impressions of the reef mid-construction; real article confirmed by direct fetch."
+        }
+      ],
+      "candidate_facts": [],
+      "contradictions": [
+        {
+          "field": "Stab Magazine quote wording",
+          "ours": "(no Stab Magazine quote currently in our card)",
+          "gemini": "\"You can take off behind the peak, pull straight into a legitimate barrel, and come out onto an open carving face. It's the real deal.\"",
+          "gemini_url": "https://stabmag.com",
+          "note": "Fabricated/paraphrased quote text -- the real article's language is different (see candidate_reviews above). Use the verified quote, not Gemini's."
+        }
+      ],
+      "notes": "Palm Beach's other Gemini quotes: the 'Gold Coast test surfer, Swellnet Dispatch 2019' quote could not be verified (Swellnet blocked WebFetch with 403; not independently confirmed -- do not use without another check). The 'ABC News Australia retrospective... 550,000 cubic meters' claim IS independently confirmed real (I fetched the actual ABC article, abc.net.au/news/2022-09-03/gold-coast-no-stranger-to-beach-erosion/101381812) but it is not a new fact -- our card's 'outcome' field already states 'ABC News reported approximately 550,000 m3 of sand retained over the reef's first two years' verbatim. Simon Mortensen's second Gemini quote ('we spent years refining computer models... learned every lesson from Narrowneck') is not in our card and not independently verified -- listed as unverified, not recommended for use without a source check."
+    },
+    {
+      "our_slug": "southern-ocean-surf-reef-albany",
+      "gemini_slug": "southern-ocean-surf-reef-albany",
+      "candidate_reviews": [],
+      "candidate_refs": [
+        {
+          "citation": "Real Albany Advertiser article on the rock repositioning (found via WebSearch, not in Gemini's reference list): \"Eighteen rocks of Southern Ocean Surf Reef repositioned in successful bid to reduce user injuries.\"",
+          "url": "https://www.albanyadvertiser.com.au/news/albany-advertiser/eighteen-rocks-of-southern-ocean-surf-reef-repositioned-in-successful-bid-to-reduce-user-injuries-c-21896905",
+          "supports": "18 boulders repositioned (matches Gemini's '18 boulders' claim), but WebFetch on this specific URL failed (connection reset) so the cost figure and full quotes could not be independently confirmed this session; a WebSearch summary separately suggested the repositioning cost was just over $20,000, not the $9 million Gemini's review section implies."
+        }
+      ],
+      "candidate_facts": [],
+      "contradictions": [
+        {
+          "field": "Total project cost / funding",
+          "ours": "AUD $11.75 million 'Total Committed Funds' per City of Albany; Wikipedia/ABC/Beachgrit reported approx. AUD $13 million",
+          "gemini": "Review quote from 'Albany Boardriders Club spokesperson' claims 'over $9 million' in government backing; separately, Gemini's own body text states 'AUD $11.75M (~USD $7.8M)'",
+          "gemini_url": "",
+          "note": "I independently fetched the real ABC News article (abc.net.au/news/2025-07-16/southern-ocean-surf-reef-transforms-albany-wa/105530202). It states $10 million in combined 2017 state-government pledges ($5M from each major party) plus a further $5 million federal contribution in 2022 -- i.e. roughly $15M in pledged government funding, which matches neither Gemini's $9M review-quote figure nor its own $11.75M body-text figure exactly, though it is closer to our card's $11.75M-$13M range (which nets out state/federal/council/club contributions differently). The $9 million figure in Gemini's 'review' should be treated as unreliable/likely paraphrased poorly, not a verified new fact."
+        }
+      ],
+      "notes": "Both of Gemini's other Albany quotes (Peter Bolt, Cameron Warburton) were independently re-fetched from the real ABC News article and confirmed verbatim-accurate -- but both are already present in our card word-for-word, so nothing new. The 'Local Albany boardrider' ABC July 2025 quote and the BeachGrit quote could not be matched to any real article found via WebSearch (no BeachGrit article on this topic turned up); treat both as unverified. The Evan Watterson quote Gemini attributes to Albany ('performs far higher than the 41% design surfability target') is suspicious because the same name (with a different, real, independently-confirmed quote) appears as the Palm Beach reef's DHI engineer in Gemini's own palm-beach dossier and in our card -- possible name reuse/confusion by Gemini across two different reefs. Do not use this quote without confirming Evan Watterson actually worked on the Albany project too."
+    },
+    {
+      "our_slug": "burkitts-reef-bargara",
+      "gemini_slug": "burkitts-reef-bargara",
+      "candidate_reviews": [],
+      "candidate_refs": [],
+      "candidate_facts": [],
+      "contradictions": [],
+      "notes": "Gemini's dossier for this reef has no 'Real people & surfers reviews' section at all (its heading jumps straight to 'Relevance to Israel & the Haifa Proposal'), so there is nothing to extract for reviews. Not checked further per the user's explicit instruction to leave Burkitts video/photo matters aside; text-only content was still reviewed and there simply isn't a reviews section to compare."
+    },
+    {
+      "our_slug": "bunbury-airwave",
+      "gemini_slug": "bunbury-airwave",
+      "candidate_reviews": [],
+      "candidate_refs": [],
+      "candidate_facts": [],
+      "contradictions": [],
+      "notes": "All 4 quotes (Troy Bottegal, Gary Brennan, Mal Osborne, Camille-Audrey Perron) already in our card, essentially verbatim. Nothing new."
+    },
+    {
+      "our_slug": "mexico-reef-2026-unnamed",
+      "gemini_slug": "xala-reef-mexico",
+      "candidate_reviews": [],
+      "candidate_refs": [],
+      "candidate_facts": [],
+      "contradictions": [],
+      "notes": "Gemini's xala-reef-mexico.md is much shorter (67 lines) than the other dossiers and has no 'Real people & surfers reviews' or 'References' section formatted like the others. Our card already has 6 named reviews (Kathryn Romeyn, Ricardo Santa Cruz, Stefanie Brendl, Cecilia Paredes, Peter Indelicato, 'Jamestown1630') which appear to be a superset of anything in Gemini's shorter file. Nothing new found."
+    }
+  ],
+  "gemini_only_reefs": [
+    "leirosa-multifunctional-reef-portugal",
+    "living-breakwaters-staten-island"
+  ],
+  "summary_counts": {
+    "total_candidate_reviews_offered": 6,
+    "verified_true": 2,
+    "verified_false_or_unconfirmed": 4,
+    "total_contradictions_flagged": 6,
+    "total_candidate_refs_offered": 2,
+    "total_candidate_facts_offered": 2
+  }
+}

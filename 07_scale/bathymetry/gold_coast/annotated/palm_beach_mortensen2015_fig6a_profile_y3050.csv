@@ -1,0 +1,22 @@
+# Depth labels read from Mortensen et al. (2015) Fig 6 (top panel), pre-construction seabed contours, Palm Beach concept site (private research copy; see annotated/palm_beach_mortensen2015_fig6a_depth_contours_read_along_y3050.png)
+# Read along the model line y = 3050 m; x = model metres (figure axes, 100 m ticks); depth = contour label (m below an UNSTATED datum; AHD assumed because the same paper states the crest as -1.5 m AHD)
+# position uncertainty +-5 m in x (reading by eye on a 625 px wide raster), label as printed. Land edge (green polygon) at x about 255 m.
+x_model_m,depth_m_below_datum
+394,2.0
+406,2.5
+425,3.0
+443,3.5
+540,4.5
+572,5.0
+596,5.5
+620,6.0
+639,6.5
+660,7.0
+718,8.0
+730,8.5
+767,9.5
+782,10.0
+800,10.5
+836,11.5
+852,12.0
+# checks against the paper's text/Table 2 (concept SCS B): offshore toe 11.4 m (figure: x about 815-836), nearshore toe 6.6 m (figure: x about 645-660)

@@ -1,0 +1,50 @@
+{
+  "slug": "icm-california-headlands-unnamed",
+  "name": "Living Speed Bumps (RE:BEACH Oceanside pilot) — likely match for California short rounded headlands / small nearshore breakwater (unnamed, ICM)",
+  "place": "South Oceanside (Tyson Street Park / Wisconsin Avenue), San Diego County, California",
+  "country": "USA",
+  "kind": "reef",
+  "type": "two rounded onshore headlands + one offshore artificial reef + beach/nearshore sand nourishment",
+  "purpose": "sand retention / coastal erosion protection while preserving longshore transport and surf amenity",
+  "year_built": "not built yet as of 2026-09-24; competition won Jan 2024, sites approved Nov 2024, CEQA review Oct-Nov 2025, construction targeted fall 2027 / early 2028 [R11][R12][R15]",
+  "priority": 2,
+  "status": "in detailed design, wave-basin testing, and CEQA environmental review; not constructed",
+  "dimensions": {
+    "reef_offshore_distance_ft": 900,
+    "reef_water_depth_ft": "15-20",
+    "footprint_acres": 166.81,
+    "initial_nourishment_cy": 900000,
+    "renourishment_cy_per_3_5yr": "up to 500000",
+    "headland_reef_length_width_crest_depth": "not stated in any source found",
+    "source": "R9, R11, R12, R15"
+  },
+  "designer": "International Coastal Management (ICM), Gold Coast, Australia (winning design); detailed design lead GHD [R3][R8][R9]",
+  "contractor": "not stated - construction not started [R11]",
+  "cost": {
+    "project_estimate_usd": "above $60,000,000 (Oceanside's own RE:BEACH estimate) [R13]",
+    "alt_breakdown_usd": "sand $25-30M + construction ~$30M [R15]",
+    "unrelated_federal_alternative_usd": "$243,500,000 (separate Army Corps annual-nourishment plan, NOT this project) [R13][R14]",
+    "coastal_commission_grant_usd": "1,800,000 (April 2025, for monitoring/evaluation only) [R5][R11]"
+  },
+  "financed_by": "City of Oceanside (lead); California Coastal Commission grant; SANDAG regional pilot designation; construction funding not fully secured [R5][R11][R13]",
+  "motivation": "1942 Camp Pendleton Harbor jetty construction blocked longshore sand supply; federal government admitted fault in 1953; Army Corps federal fix (26 years overdue as of 2026, $243.5M, decades to deliver) prompted city to self-fund a faster nature-based alternative [R13][R14]",
+  "outcome": "not applicable - not yet built; wave-basin testing (Oregon State University, 1:35 scale) completed/ongoing but detailed test results not found in accessible sources [R6][R9][R12]",
+  "relation_to_master_list": "seeded from 02_research/00_master_list.md row california-headlands-unnamed, citing ICM conference talk transcript ~01:01:51-01:02:28 in 01_source_notes/transcript_goldcoast_reef_company.md",
+  "identification_confidence": "inferential, not confirmed - ICM's Living Speed Bumps / RE:BEACH Oceanside is the best-fitting current California ICM headland project found; the transcript's separate 'smaller nearshore breakwater' element was not separately identified",
+  "dossier_md": "02_research/reefs/icm-california-headlands-unnamed.md",
+  "reviews_found": 8,
+  "references_count": 19,
+  "image_leads": [
+    "https://www.coastalmanagement.com.au/living-speed-bumps-oceanside",
+    "https://www.coastalmanagement.com.au/living-speed-bumps-rebeach-oceanside",
+    "https://www.rebeach.org",
+    "https://ceqanet.lci.ca.gov/2025100834",
+    "https://www.10news.com/news/local-news/oceanside-turns-to-artificial-reef-to-save-its-disappearing-beach",
+    "https://www.sandiegouniontribune.com/2026/05/03/butterfly-shaped-reef-proposed-for-oceanside-sand-retention-project/"
+  ],
+  "video_leads": [
+    "https://www.youtube.com/watch?v=XH1qE7bLl34",
+    "https://www.youtube.com/watch/Gi6wNNP6OKE"
+  ],
+  "last_updated": "2026-09-24"
+}

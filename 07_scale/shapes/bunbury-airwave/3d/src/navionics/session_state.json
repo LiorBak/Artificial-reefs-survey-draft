@@ -1,0 +1,119 @@
+{
+ "href": "https://maps.garmin.com/en-US/marine/?maps=another-brand&overlay=false&key=qd44rhyh9",
+ "site": [
+  -33.3276,
+  115.6284
+ ],
+ "geohash": "qd44rhyh9",
+ "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+ "title": "Garmin | Marine Maps",
+ "utc": "2026-10-05T16:09:56+00:00",
+ "options": "Depth units = Meters; SonarChart Maps then Nautical Charts; Seabed areas = Hide (default); shallow shading 1 m (default for metres)",
+ "captures": {
+  "sonar_m_z18_dpr1.png": {
+   "centre": {
+    "lat": -33.3276,
+    "lng": 115.6284
+   },
+   "zoom": 18,
+   "size": {
+    "x": 985,
+    "y": 851
+   },
+   "bounds": {
+    "_southWest": {
+     "lat": -33.329506335591155,
+     "lng": 115.62576055526735
+    },
+    "_northEast": {
+     "lat": -33.3256919826497,
+     "lng": 115.63104450702667
+    }
+   }
+  },
+  "sonar_m_z18_dpr2.png": {
+   "centre": {
+    "lat": -33.327599179992674,
+    "lng": 115.62840253114702
+   },
+   "zoom": 18,
+   "size": {
+    "x": 985,
+    "y": 851
+   },
+   "bounds": {
+    "_southWest": {
+     "lat": -33.329506335591155,
+     "lng": 115.62576055526735
+    },
+    "_northEast": {
+     "lat": -33.3256919826497,
+     "lng": 115.63104450702667
+    }
+   }
+  },
+  "sonar_m_z17_dpr1.png": {
+   "centre": {
+    "lat": -33.3276,
+    "lng": 115.6284
+   },
+   "zoom": 17,
+   "size": {
+    "x": 985,
+    "y": 851
+   },
+   "bounds": {
+    "_southWest": {
+     "lat": -33.33141569044626,
+     "lng": 115.6231212615967
+    },
+    "_northEast": {
+     "lat": -33.32378698476196,
+     "lng": 115.63368916511537
+    }
+   }
+  },
+  "nautical_m_z18_dpr2.png": {
+   "centre": {
+    "lat": -33.3276,
+    "lng": 115.6284
+   },
+   "zoom": 18,
+   "size": {
+    "x": 985,
+    "y": 851
+   },
+   "bounds": {
+    "_southWest": {
+     "lat": -33.329506335591155,
+     "lng": 115.62576055526735
+    },
+    "_northEast": {
+     "lat": -33.3256919826497,
+     "lng": 115.63104450702667
+    }
+   }
+  },
+  "nautical_m_z17_dpr1.png": {
+   "centre": {
+    "lat": -33.3276,
+    "lng": 115.6284
+   },
+   "zoom": 17,
+   "size": {
+    "x": 985,
+    "y": 851
+   },
+   "bounds": {
+    "_southWest": {
+     "lat": -33.33141569044626,
+     "lng": 115.6231212615967
+    },
+    "_northEast": {
+     "lat": -33.32378698476196,
+     "lng": 115.63368916511537
+    }
+   }
+  }
+ }
+}

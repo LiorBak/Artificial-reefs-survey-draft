@@ -1,0 +1,65 @@
+[
+  {
+    "url": "https://live-production.wcms.abc-cdn.net.au/1acef1f70b0ceb5b17916201362c656d?impolicy=wcms_crop_resize&cropH=1557&cropW=2768&xPos=0&yPos=250&width=862&height=485",
+    "source_page": "https://www.abc.net.au/news/2025-07-16/southern-ocean-surf-reef-transforms-albany-wa/105530202",
+    "credit": "ABC News (photographer not individually credited on page) — \"The Albany surf reef is already gaining a formidable reputation.\"",
+    "license": "All rights reserved / news editorial use — link only, do not redistribute (ABC News copyright)",
+    "depicts": "Southern Ocean Surf Reef, Middleton Beach, Albany — wide shot of the reef with surfers, from the ABC News feature published on opening week (15-16 Jul 2025)",
+    "date": "2025-07-15",
+    "kind": "photo"
+  },
+  {
+    "url": "https://live-production.wcms.abc-cdn.net.au/1927a3b21137e3775326b744d308276e?impolicy=wcms_crop_resize&cropH=2827&cropW=4240&xPos=0&yPos=3&width=862&height=575",
+    "source_page": "https://www.abc.net.au/news/2025-07-16/southern-ocean-surf-reef-transforms-albany-wa/105530202",
+    "credit": "ABC News — caption \"A clean wave breaks on the Albany surf reef.\"",
+    "license": "All rights reserved / news editorial use — link only, do not redistribute (ABC News copyright)",
+    "depicts": "A wave breaking cleanly over the reef at Middleton Beach, Albany — in-water/beach-level shot showing the wave shape the reef produces",
+    "date": "2025-07-15",
+    "kind": "photo"
+  },
+  {
+    "url": "https://live-production.wcms.abc-cdn.net.au/8ffae200f1ff9606775f71f627b5dc7e?impolicy=wcms_crop_resize&cropH=2268&cropW=3402&xPos=315&yPos=0&width=862&height=575",
+    "source_page": "https://www.abc.net.au/news/2025-07-16/southern-ocean-surf-reef-transforms-albany-wa/105530202",
+    "credit": "ABC News — caption \"Specialised vessels came from around the world to build the Albany surf reef.\"",
+    "license": "All rights reserved / news editorial use — link only, do not redistribute (ABC News copyright)",
+    "depicts": "Construction of the Southern Ocean Surf Reef — marine plant/vessel placing rock at the Middleton Beach site",
+    "date": "2025-07-15",
+    "kind": "photo"
+  },
+  {
+    "url": "https://raisedwaterresearch.com/wp-content/uploads/2025/05/Southern-Ocean-Surf-Reef-Surfing-Waves-Artificial-Reef.png",
+    "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/albany-artificial-surf-reef/",
+    "credit": "Raised Water Research — \"Southern Ocean Surf Reef, aka Midds Reef\" spot page (image sourced/credited by RWR; no third-party attribution given on page)",
+    "license": "Copyright Raised Water Research — link only, do not redistribute",
+    "depicts": "Surfers riding waves breaking over the Southern Ocean Surf Reef / Midds Reef, Middleton Beach, Albany",
+    "date": "2025-05",
+    "kind": "photo"
+  },
+  {
+    "url": "https://raisedwaterresearch.com/wp-content/uploads/2025/05/Southern-Ocean-Surf-Reef-Albany-artificial-surf-reef-construction-overview.jpg",
+    "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/albany-artificial-surf-reef/",
+    "credit": "Raised Water Research — construction overview image on the Midds Reef spot page",
+    "license": "Copyright Raised Water Research — link only, do not redistribute",
+    "depicts": "Overview of the Southern Ocean Surf Reef construction site at Middleton Beach, Albany, during the Jan-Mar 2025 rock-placement phase",
+    "date": "2025-05",
+    "kind": "photo"
+  },
+  {
+    "url": "https://www.albany.wa.gov.au/Profiles/albany/Assets/ClientData/Surf_Reef/design.jpg",
+    "source_page": "https://www.albany.wa.gov.au/council/projects/completed-projects/southern-ocean-surf-reef-sosr.aspx",
+    "credit": "City of Albany — official Southern Ocean Surf Reef (SOSR) project page",
+    "license": "City of Albany (local government) — link only, do not redistribute",
+    "depicts": "Official design diagram/plan of the Southern Ocean Surf Reef, Middleton Beach, Albany, as published on the City of Albany's completed-projects page",
+    "date": null,
+    "kind": "diagram"
+  },
+  {
+    "url": "https://www.google.com/maps/@-35.0236,117.9136,17z/data=!3m1!1e3",
+    "source_page": "https://www.google.com/maps/@-35.0236,117.9136,17z/data=!3m1!1e3",
+    "credit": "Google Maps / satellite imagery providers",
+    "license": "Google Maps terms of use — link only",
+    "depicts": "Satellite view of Middleton Beach, Albany, WA at approx. 35°01'25\"S 117°54'49\"E, showing the beach and nearshore area where the Southern Ocean Surf Reef sits ~140 m offshore",
+    "date": null,
+    "kind": "map"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "image": "borth_esri_2013-06-04_z19.png",
+  "width": 1540,
+  "height": 1540,
+  "bounds": {
+    "north": 52.48445775849749,
+    "south": 52.48194224662727,
+    "east": -4.054134786128998,
+    "west": -4.058265388011932
+  },
+  "zoom": 19,
+  "m_per_px_center": 0.18183474064462743,
+  "tile_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/{release}/{z}/{y}/{x}",
+  "wayback_release": "11351",
+  "center": {
+    "lat": 52.4832,
+    "lon": -4.0562
+  },
+  "radius_m": 140.0,
+  "attribution": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+  "retrieved": "2026-10-04",
+  "capture_date": "2013-06-04",
+  "capture_date_field": "SRC_DATE2"
+}

@@ -1,0 +1,61 @@
+[
+  {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/A_bigger_splash%2C_Borth_sea_defences_-_geograph.org.uk_-_2366565.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:A_bigger_splash,_Borth_sea_defences_-_geograph.org.uk_-_2366565.jpg",
+    "credit": "Chris Denny, via Geograph Britain and Ireland / Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "depicts": "Wave breaking against the newly built Borth sea-defence/reef rock structure, spray thrown up ('A bigger splash: Borth sea defences')",
+    "date": "2011-04-19",
+    "kind": "photo",
+    "verified_http": "200 image/jpeg"
+  },
+  {
+    "url": "https://s0.geograph.org.uk/geophotos/02/55/47/2554717_ca5fc76b.jpg",
+    "source_page": "https://www.geograph.org.uk/photo/2554717",
+    "credit": "Phil Champion, via Geograph Britain and Ireland",
+    "license": "CC BY-SA 2.0",
+    "depicts": "Borth coastal-protection works in progress; beach partly closed to public during summer 2011 construction",
+    "date": "2011-07-10",
+    "kind": "photo",
+    "verified_http": "200 image/jpeg"
+  },
+  {
+    "url": "https://s0.geograph.org.uk/geophotos/02/57/55/2575564_e576dfb2.jpg",
+    "source_page": "https://www.geograph.org.uk/photo/2575564",
+    "credit": "Chris Denny, via Geograph Britain and Ireland",
+    "license": "CC BY-SA 2.0",
+    "depicts": "Diggers building the offshore multi-purpose reef at Borth's southern end via a temporary rock causeway, evening low-tide working ('Building the reef: Borth sea defences'); same photo already cited as R9 in the dossier",
+    "date": "2011-08-03",
+    "kind": "photo",
+    "verified_http": "200 image/jpeg"
+  },
+  {
+    "url": "https://borthcommunity.info/images/stories/BamNuttall/20110818-100400.jpg",
+    "source_page": "https://borthcommunity.info/index.php/progress-pictures/326-coastal-defence-progress-pictures-august-2011",
+    "credit": "BAM Nuttall / Borth Community website (Ceredigion County Council community site)",
+    "license": "unknown — community/council progress-photo page, contractor-supplied images, no explicit license statement found",
+    "depicts": "Construction of the northern & southern multi-purpose reef at Borth, August 2011 (official project progress photo)",
+    "date": "2011-08-18",
+    "kind": "photo",
+    "verified_http": "200 image/jpeg"
+  },
+  {
+    "url": "https://borthcommunity.info/images/stories/BamNuttall/20110818-101454.jpg",
+    "source_page": "https://borthcommunity.info/index.php/progress-pictures/326-coastal-defence-progress-pictures-august-2011",
+    "credit": "BAM Nuttall / Borth Community website (Ceredigion County Council community site)",
+    "license": "unknown — community/council progress-photo page, contractor-supplied images, no explicit license statement found",
+    "depicts": "Construction of the northern & southern multi-purpose reef at Borth, August 2011 (official project progress photo)",
+    "date": "2011-08-18",
+    "kind": "photo",
+    "verified_http": "200 image/jpeg"
+  },
+  {
+    "url": "https://www.google.com/maps?q=52.4690,-4.0681&z=17&t=k",
+    "source_page": "https://www.google.com/maps?q=52.4690,-4.0681&z=17&t=k",
+    "credit": "Google Maps / satellite imagery providers",
+    "license": "Google Maps terms of use (view-only reference link, not for reproduction)",
+    "depicts": "Satellite view centred on the Craig y Delyn cliffs south end of Borth beach where the multi-purpose reef sits, c.300–400 m offshore",
+    "date": "current satellite imagery (access date 2026-09-24)",
+    "kind": "map"
+  }
+]

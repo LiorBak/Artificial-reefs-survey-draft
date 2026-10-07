@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>All reefs compared - 3D</title>
+<!-- Combined "All (compare)" viewer of the 3D models tab. Template: 04_build/src/combined_viewer.html; compile_models3d.py writes
+     04_build/3d/combined/index.html (adds the data scripts + the standalone top bar). Geometry: 3d/combined/<slug>.js, exported at build time
+     from each model's own viewer by src/export_combined.py (never redrawn from model.js). Works from file:// (classic scripts, no fetch). -->
+<style>
+  :root { --bg:#10181f; --panel:rgba(16,24,31,.94); --ink:#e8eef2; --dim:#9db0bd; --acc:#ffb347; --line:#2b3a46; --blue:#7cc4ff; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; height:100%; background:var(--bg); color:var(--ink); font:13px/1.35 system-ui, "Segoe UI", Roboto, sans-serif; overflow:hidden; }
+  #app { position:relative; width:100%; height:100%; }
+  #stage { position:absolute; inset:0; background:linear-gradient(#26475e, #0d151c 75%); overflow:hidden; }
+  #stage canvas { display:block; }
+  #labels { position:absolute; inset:0; pointer-events:none; overflow:hidden; }
+  .lbl { pointer-events:auto; cursor:pointer; color:#fff; background:rgba(10,20,30,.82); border:1px solid #3a4a58; padding:2px 7px; border-radius:4px; font-size:12px; white-space:nowrap; text-shadow:0 0 2px #000; }
+  .lbl:hover { border-color:var(--acc); }
+  .lbl small { color:#c5d3de; margin-left:4px; }
+  .lbl .sw { display:inline-block; width:10px; height:10px; border-radius:2px; margin-right:5px; border:1px solid rgba(255,255,255,.7); vertical-align:baseline; }
+  .lbl .dot, .dot { display:inline-block; width:9px; height:9px; border-radius:50%; margin-right:5px; vertical-align:baseline; background:#6b7280; }
+  .c-high { background:#3fb950 !important; } .c-medium { background:#e6b422 !important; } .c-low { background:#e5534b !important; }
+  .bar { pointer-events:none; color:#000; background:rgba(255,255,255,.92); border-radius:3px; padding:0 5px; font-size:11px; font-weight:600; }
+  #ctrl { position:absolute; left:8px; top:8px; width:262px; max-height:calc(100% - 16px); overflow:auto; background:var(--panel); border:1px solid var(--line); border-radius:6px; padding:8px 10px 10px; z-index:5; }
+  #ctrl h3 { margin:10px 0 4px; font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--acc); }
+  #ctrl h3:first-child { margin-top:0; }
+  .btns { display:flex; flex-wrap:wrap; gap:4px; margin:3px 0; }
+  button { background:#1d2b36; color:var(--ink); border:1px solid #38505f; border-radius:4px; padding:4px 9px; font:inherit; cursor:pointer; }
+  button:hover { background:#27404f; }
+  button[aria-pressed="true"] { background:#38505f; border-color:var(--acc); }
+  button:focus-visible, input:focus-visible { outline:2px solid #ffd479; outline-offset:1px; }
+  .row { display:flex; align-items:center; gap:6px; margin:3px 0; }
+  .row label { flex:0 0 auto; color:var(--dim); }
+  .row input[type=range] { flex:1; min-width:0; }
+  .row output { flex:0 0 40px; text-align:right; font-variant-numeric:tabular-nums; }
+  .chk { display:flex; align-items:center; gap:6px; margin:3px 0; }
+  .reefs { margin:4px 0; padding:0; list-style:none; }
+  .reefs li { display:flex; align-items:center; gap:6px; margin:4px 0; }
+  .reefs .sw { width:12px; height:12px; border-radius:3px; flex:0 0 auto; border:1px solid rgba(255,255,255,.5); }
+  .reefs button.nm { flex:1; text-align:left; background:none; border:0; padding:1px 2px; color:var(--blue); text-decoration:underline; }
+  .reefs small { color:var(--dim); }
+  .ramp { height:10px; border-radius:2px; margin:3px 0 1px; }
+  .tk { display:flex; justify-content:space-between; color:var(--dim); font-size:11px; }
+  .small { font-size:11px; color:var(--dim); }
+  #ve-chip { position:absolute; right:10px; top:8px; z-index:4; background:rgba(0,0,0,.72); color:#fff; padding:5px 10px; border-radius:6px; font-size:15px; font-weight:700; letter-spacing:.02em; }
+  #hud { position:absolute; left:278px; right:10px; bottom:8px; z-index:4; background:var(--panel); border:1px solid var(--line); border-radius:6px; padding:5px 10px; font-size:12px; pointer-events:none; }
+  #hud b { color:var(--acc); }
+  #ctrlToggle { position:absolute; left:8px; top:8px; z-index:6; display:none; }
+  #err { position:absolute; inset:0; display:none; align-items:center; justify-content:center; text-align:center; padding:30px; z-index:20; background:#10181f; color:#ffd6d6; font-size:15px; }
+  body.noctrl #ctrl { display:none; } body.noctrl #hud { left:10px; }
+  @media (max-width: 820px) { #ctrl { width:230px; } #hud { left:10px; font-size:11px; } #ve-chip { font-size:13px; } body:not(.showctrl) #ctrl { display:none; } body:not(.showctrl) #ctrlToggle { display:block; } body.showctrl #ctrlToggle { display:none; } }
+</style>
+<style id="m3d-bar-css">
+/* injected by 04_build/src/compile_models3d.py (round 10); the original viewer is in 07_scale and is untouched */
+html:not(.m3d-embedded) { position: relative; top: 34px; height: calc(100% - 34px); }
+html:not(.m3d-embedded) #app { height: 100% !important; }
+.m3d-topbar { position: fixed; top: 0; left: 0; right: 0; height: 34px; z-index: 2147483000; display: flex; align-items: center; gap: 6px; padding: 0 10px; background: #0b1117; border-bottom: 1px solid #2b3a46; font: 600 13px/1 system-ui, "Segoe UI", Roboto, sans-serif; white-space: nowrap; overflow-x: auto; }
+.m3d-topbar a { color: #cfe6f5; text-decoration: none; padding: 6px 11px; border-radius: 6px; border: 1px solid #2b3a46; background: #16222b; }
+.m3d-topbar a.back { background: #0b6b9e; border-color: #0b6b9e; color: #fff; }
+.m3d-topbar a:hover { border-color: #7cc4ff; }
+.m3d-topbar a:focus-visible { outline: 2px solid #ffd479; outline-offset: 1px; }
+.m3d-topbar .sp { flex: 1 1 8px; }
+.m3d-topbar .tt { color: #8fa3b1; font-weight: 400; }
+html.m3d-embedded .m3d-topbar { display: none; }
+@media (max-width: 1099px) {   /* framed next to the photo panel: side panels would squeeze the 3D canvas */
+  html.m3d-embedded #side, html.m3d-embedded #right, html.m3d-embedded #wideBtn, html.m3d-embedded #reason { display: none !important; }
+  html.m3d-embedded #app { grid-template-columns: 220px minmax(0, 1fr) !important; }
+  html.m3d-embedded #top { grid-column: 1 / 3; }
+  html.m3d-embedded #caption { right: 10px !important; }
+}
+@media (max-width: 599px) {    /* phones: the canvas first; the control column stays on the viewer's own page */
+  html.m3d-embedded #app { grid-template-columns: minmax(0, 1fr) !important; }
+  html.m3d-embedded #top { grid-column: 1 / 2; }
+  html.m3d-embedded #app > #left { display: none; }
+  html.m3d-embedded #ctrl { width: 190px; font-size: 11px; }
+}
+</style>
+<script>try { if (window.self !== window.top) document.documentElement.classList.add('m3d-embedded'); } catch (e) { document.documentElement.classList.add('m3d-embedded'); }</script>
+<script src="../vendor/three.bundle.js"></script>
+<script src="manifest.js"></script>
+<script src="boscombe-surf-reef.js"></script>
+<script src="bunbury-airwave.js"></script>
+<script src="palm-beach-gold-coast.js"></script>
+<script src="prattes-reef-el-segundo.js"></script>
+
+</head>
+<body>
+<nav class="m3d-topbar" aria-label="Back to the survey page"><a class="back" href="../../artificial_reefs.html#view/models3d/all">&larr; Back to the page</a><span class="sp"></span><span class="tt">All reefs compared</span><a href="../../artificial_reefs.html">Gallery</a><a href="../../artificial_reefs.html#view/map">Map</a><a href="../../artificial_reefs.html#view/table">Table</a><a href="../../artificial_reefs.html#view/scale">Scale</a><a href="../../artificial_reefs.html#view/models3d/all">3D models</a></nav>
+
+<div id="app">
+  <div id="stage"><div id="labels"></div></div>
+  <button id="ctrlToggle" type="button">Controls</button>
+  <div id="ctrl" role="region" aria-label="Controls of the combined 3D view">
+    <h3>Layout</h3>
+    <div class="btns" role="group" aria-label="Layout"><button type="button" data-mode="side" aria-pressed="true">Side by side</button><button type="button" data-mode="overlay" aria-pressed="false" title="Stack every reef on one origin to compare footprints">Overlay</button></div>
+    <h3>Camera</h3>
+    <div class="btns" role="group" aria-label="Camera preset"><button type="button" data-view="plan" aria-pressed="false">Plan (shore at top)</button><button type="button" data-view="oblique" aria-pressed="true">Oblique (from sea)</button><button type="button" data-view="side" aria-pressed="false">Cross-shore side</button><button type="button" data-view="reset">Fit all</button></div>
+    <h3>Vertical exaggeration</h3>
+    <div class="row"><label for="ve">VE</label><input type="range" id="ve" min="1" max="5" step="0.5" value="1"><output id="ve-out">1x</output></div>
+    <div class="small">Applies to every reef together (heights only, never plan distances). 1x = true scale.</div>
+    <h3>Show</h3>
+    <label class="chk"><input type="checkbox" id="t-water" checked> water surface (MSL)</label>
+    <label class="chk"><input type="checkbox" id="t-sea" checked> seabed</label>
+    <label class="chk"><input type="checkbox" id="t-grid" checked> metre grid (10 / 50 m)</label>
+    <label class="chk"><input type="checkbox" id="t-bars" checked> scale bars (50 m, 100 m)</label>
+    <label class="chk"><input type="checkbox" id="t-out" checked> footprint outlines (model.js toe polygon)</label>
+    <label class="chk"><input type="checkbox" id="t-lbl" checked> labels (name + 3D confidence)</label>
+    <h3>Reefs</h3>
+    <ul class="reefs" id="reefs"></ul>
+    <div class="small" id="notin"></div>
+    <h3>Seabed colour = height above / below the site's own MSL</h3>
+    <div class="ramp" id="ramp"></div>
+    <div class="tk"><span>+3 m</span><span>0</span><span>-5</span><span>-10</span><span>-15 m</span></div>
+  </div>
+  <div id="ve-chip" aria-live="polite">Vertical exaggeration 1x (true scale)</div>
+  <div id="hud"></div>
+  <div id="err" role="alert"></div>
+</div>
+<script>
+(function () {
+  'use strict';
+  var B = window.__THREE_BUNDLE, errBox = document.getElementById('err');
+  function fail(msg) { errBox.style.display = 'flex'; errBox.textContent = msg; }
+  if (!B) { fail('three.js bundle missing (3d/vendor/three.bundle.js)'); return; }
+  var THREE = B.THREE, OrbitControls = B.OrbitControls, CSS2DRenderer = B.CSS2DRenderer, CSS2DObject = B.CSS2DObject;
+  var META = window.M3D_COMBINED_META || [], DATA = window.M3D_COMBINED || {};
+  var HUES = ['#E69F00', '#56B4E9', '#CC79A7', '#F0E442', '#D55E00', '#0072B2', '#009E73', '#999999'];   // Okabe-Ito
+  var GAP = 40, items = [], notIn = [];
+  META.forEach(function (m, i) { if (m.status === 'ok' && DATA[m.slug]) items.push({ meta: m, d: DATA[m.slug], hue: HUES[items.length % HUES.length], visible: true }); else notIn.push(m); });
+  if (!items.length) { fail('No model could be exported for the combined view.'); return; }
+
+  var $ = function (id) { return document.getElementById(id); };
+  var stage = $('stage');
+  var renderer;
+  try { renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true }); } catch (e) { fail('WebGL is not available in this browser.'); return; }
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+  stage.insertBefore(renderer.domElement, $('labels'));
+  var labelR = new CSS2DRenderer({ element: $('labels') });
+  var scene = new THREE.Scene();
+  scene.background = new THREE.Color(0x1a3447);
+  var camera = new THREE.PerspectiveCamera(40, 1, 1, 14000);
+  var controls = new OrbitControls(camera, renderer.domElement);
+  controls.maxPolarAngle = Math.PI * 0.499; controls.minDistance = 15; controls.maxDistance = 9000; controls.screenSpacePanning = true;
+  scene.add(new THREE.HemisphereLight(0xdcecff, 0x4a5662, 1.0));
+  var sun = new THREE.DirectionalLight(0xffffff, 2.0); sun.position.set(-400, 700, 300); scene.add(sun);
+
+  // ---- depth colour ramp (one scale for every reef)
+  var STOPS = [[8, '#8c7a4e'], [3, '#b7a36a'], [0.001, '#e2d6a8'], [-0.001, '#a8e0e8'], [-2, '#5cc0da'], [-5, '#2f94c4'], [-9, '#2467a8'], [-14, '#173f78'], [-22, '#0f2650']].map(function (s) { return [s[0], new THREE.Color(s[1])]; });
+  var tmpC = new THREE.Color();
+  function ramp(y, out) {
+    if (y >= STOPS[0][0]) return out.copy(STOPS[0][1]);
+    for (var i = 1; i < STOPS.length; i++) { if (y >= STOPS[i][0]) { var a = STOPS[i - 1], b = STOPS[i], t = (a[0] - y) / (a[0] - b[0]); return out.copy(a[1]).lerp(b[1], t); } }
+    return out.copy(STOPS[STOPS.length - 1][1]);
+  }
+  (function () { var c = document.createElement('canvas'); c.width = 262; c.height = 1; var g = c.getContext('2d'), tc = new THREE.Color();
+    for (var x = 0; x < 262; x++) { var y = 3 - (18 * x / 261); ramp(y, tc); g.fillStyle = '#' + tc.getHexString(); g.fillRect(x, 0, 1, 1); }
+    $('ramp').style.backgroundImage = 'url(' + c.toDataURL() + ')'; $('ramp').style.backgroundSize = '100% 100%'; })();
+
+  // ---- decode the exported meshes
+  function u8(s) { var bin = atob(s), n = bin.length, a = new Uint8Array(n); for (var i = 0; i < n; i++) a[i] = bin.charCodeAt(i); return a; }
+  function decode(m) {
+    var q = new Uint16Array(u8(m.pos).buffer), pos = new Float32Array(m.n * 3);
+    for (var i = 0; i < m.n; i++) for (var k = 0; k < 3; k++) pos[3 * i + k] = m.o[k] + m.q[k] * q[3 * i + k];
+    var ib = u8(m.idx).buffer, idx = m.it === 16 ? new Uint16Array(ib) : new Uint32Array(ib);
+    var g = new THREE.BufferGeometry();
+    g.setAttribute('position', new THREE.BufferAttribute(pos, 3)); g.setIndex(new THREE.BufferAttribute(idx, 1));
+    return g;
+  }
+
+  var root = new THREE.Group(); scene.add(root);                    // VE scales this group's y
+  var gridObj = null, barsOverlay = null;
+  function mkLabel(html, cls) { var d = document.createElement('div'); d.className = cls; d.innerHTML = html; return new CSS2DObject(d); }
+  var BAR_MAT = new THREE.MeshBasicMaterial({ color: 0xffb347, depthTest: false, transparent: true });
+  function mkBar(len, z) {                                          // a flat orange bar of the true length (plan view and oblique)
+    var g = new THREE.Group(), bx = new THREE.Mesh(new THREE.BoxGeometry(len, 0.6, 2.4), BAR_MAT);
+    bx.position.set(len / 2, 0.5, z); bx.renderOrder = 20; g.add(bx);
+    [0, len].forEach(function (x) { var t = new THREE.Mesh(new THREE.BoxGeometry(1.2, 0.6, 7), BAR_MAT); t.position.set(x, 0.5, z); t.renderOrder = 20; g.add(t); });
+    var l = mkLabel(len + ' m', 'bar'); l.position.set(len / 2, 1, z - 4); g.add(l);
+    return g;
+  }
+
+  items.forEach(function (it, k) {
+    var d = it.d, b = d.bounds, g = new THREE.Group(); it.group = g; root.add(g);
+    // seabed (vertex colours from height)
+    var sg = decode(d.seabed), pos = sg.attributes.position, col = new Float32Array(pos.count * 3);
+    for (var i = 0; i < pos.count; i++) { ramp(pos.getY(i), tmpC); col[3 * i] = tmpC.r; col[3 * i + 1] = tmpC.g; col[3 * i + 2] = tmpC.b; }
+    sg.setAttribute('color', new THREE.BufferAttribute(col, 3)); sg.computeVertexNormals();
+    it.sea = new THREE.Mesh(sg, new THREE.MeshStandardMaterial({ vertexColors: true, roughness: 0.95, metalness: 0, side: THREE.DoubleSide }));
+    g.add(it.sea);
+    // reef (one hue per reef)
+    var rg = decode(d.reef); rg.computeVertexNormals();
+    it.reefMat = new THREE.MeshStandardMaterial({ color: new THREE.Color(it.hue), roughness: 0.7, metalness: 0, side: THREE.DoubleSide, emissive: new THREE.Color(it.hue), emissiveIntensity: 0.12 });
+    it.reef = new THREE.Mesh(rg, it.reefMat); g.add(it.reef);
+    // footprint outline at the water surface
+    var fp = d.footprint.map(function (p) { return new THREE.Vector3(p[0], 0.4, p[1]); });
+    it.outMat = new THREE.LineBasicMaterial({ color: new THREE.Color(it.hue), depthTest: false, transparent: true });
+    it.out = new THREE.LineLoop(new THREE.BufferGeometry().setFromPoints(fp), it.outMat); it.out.renderOrder = 15; g.add(it.out);
+    // water plane over the patch
+    var w = b[1] - b[0], dd = b[3] - b[2];
+    it.water = new THREE.Mesh(new THREE.PlaneGeometry(w, dd), new THREE.MeshBasicMaterial({ color: 0x3aa0c8, transparent: true, opacity: 0.3, depthWrite: false, side: THREE.DoubleSide }));
+    it.water.rotation.x = -Math.PI / 2; it.water.position.set((b[0] + b[1]) / 2, 0, (b[2] + b[3]) / 2); it.water.renderOrder = 5; g.add(it.water);
+    // label
+    var lvl = it.meta.level;
+    it.label = mkLabel('<span class="sw" style="background:' + it.hue + '"></span><span class="dot c-' + lvl + '"></span>' + it.meta.short + '<small>3D confidence: ' + lvl + '</small>', 'lbl');
+    it.label.element.title = it.meta.name + ' (click to fly to it)';
+    it.label.element.addEventListener('click', function () { flyTo(it); });
+    it.ytop = Math.max(d.crest_z, 0) + 4; it.label.position.set(d.centroid[0], it.ytop, d.centroid[1]); g.add(it.label);
+    // scale bars next to the shore of the patch
+    it.bars = new THREE.Group(); var b50 = mkBar(50, 16), b100 = mkBar(100, 36); it.bars.add(b50); it.bars.add(b100); it.bars.position.x = b[0] + 10; g.add(it.bars);
+  });
+
+  // ---- layout: side by side along the shared shoreline, or overlay on one origin
+  var state = { mode: 'side', view: 'oblique', ve: 1, anim: null };
+  var extent = { minX: 0, maxX: 0, minZ: 0, maxZ: 0 };
+  function layout() {
+    var cursor = 0, i;
+    if (state.mode === 'side') {
+      items.forEach(function (it) { var b = it.d.bounds; it.group.position.set(cursor - b[0], 0, 0); it.xOff = cursor - b[0]; cursor += (b[1] - b[0]) + GAP; });
+      extent = { minX: 0, maxX: cursor - GAP, minZ: Math.min.apply(null, items.map(function (it) { return it.d.bounds[2]; })), maxZ: Math.max.apply(null, items.map(function (it) { return it.d.bounds[3]; })) };
+    } else {
+      var half = 0;
+      items.forEach(function (it) { var r = it.d.bbox_reef; half = Math.max(half, (r[1] - r[0]) / 2, (r[3] - r[2]) / 2); });
+      items.forEach(function (it, k) { it.group.position.set(-it.d.centroid[0], 0, -it.d.centroid[1]); it.xOff = -it.d.centroid[0]; });
+      var R = Math.max(80, Math.ceil(half * 1.5 / 10) * 10);
+      extent = { minX: -R * 1.6, maxX: R * 1.6, minZ: -R, maxZ: R };
+    }
+    items.forEach(function (it, k) {
+      var ov = state.mode === 'overlay';
+      it.sea.visible = !ov && $('t-sea').checked; it.water.visible = !ov && $('t-water').checked;
+      it.bars.visible = !ov && $('t-bars').checked;
+      it.reefMat.transparent = ov; it.reefMat.opacity = ov ? 0.6 : 1; it.reefMat.depthWrite = !ov; it.reefMat.needsUpdate = true;
+      it.out.visible = $('t-out').checked;
+      it.group.visible = it.visible;
+      // in overlay the labels sit in a column right of the stack so they do not hide each other
+      if (ov) it.label.position.set(it.d.centroid[0] + extent.maxX * 0.45, it.ytop, it.d.centroid[1] - extent.maxZ * 0.8 + k * 16);
+      else it.label.position.set(it.d.centroid[0], it.ytop, it.d.centroid[1]);
+    });
+    buildGrid();
+    if (barsOverlay) { scene.remove(barsOverlay); barsOverlay = null; }
+    if (state.mode === 'overlay') { barsOverlay = new THREE.Group(); var a = mkBar(50, extent.maxZ - 30), b2 = mkBar(100, extent.maxZ - 12); a.position.x = extent.minX + 12; b2.position.x = extent.minX + 12; barsOverlay.add(a); barsOverlay.add(b2); barsOverlay.visible = $('t-bars').checked; scene.add(barsOverlay); }
+    $('hud').innerHTML = state.mode === 'side'
+      ? '<b>Side by side:</b> same scale, shared shoreline (z = 0, offshore towards the viewer in plan), each reef on its own seabed patch; heights are metres above each site\'s own mean sea level. Grid: 10 m cells, bold line every 50 m.'
+      : '<b>Overlay:</b> every reef centred on its own footprint centroid, shore-normal axis shared (offshore = down in plan); seabeds hidden, reefs translucent. Grid: 10 m cells, bold every 50 m.';
+  }
+  function buildGrid() {
+    if (gridObj) { scene.remove(gridObj); gridObj.traverse(function (o) { if (o.geometry) o.geometry.dispose(); }); }
+    var x0 = Math.floor((extent.minX - 20) / 10) * 10, x1 = Math.ceil((extent.maxX + 20) / 10) * 10, z0 = Math.floor((extent.minZ - 20) / 10) * 10, z1 = Math.ceil((extent.maxZ + 20) / 10) * 10;
+    var minor = [], major = [], x, z;
+    for (x = x0; x <= x1; x += 10) (x % 50 === 0 ? major : minor).push(x, 0.05, z0, x, 0.05, z1);
+    for (z = z0; z <= z1; z += 10) (z % 50 === 0 ? major : minor).push(x0, 0.05, z, x1, 0.05, z);
+    gridObj = new THREE.Group();
+    [[minor, 0x9fd0e8, 0.13], [major, 0xdff3ff, 0.5]].forEach(function (a) {
+      var g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.Float32BufferAttribute(a[0], 3));
+      gridObj.add(new THREE.LineSegments(g, new THREE.LineBasicMaterial({ color: a[1], transparent: true, opacity: a[2], depthWrite: false })));
+    });
+    gridObj.visible = $('t-grid').checked; scene.add(gridObj);
+  }
+
+  // ---- camera presets
+  function fitDist(w, d) {
+    var asp = camera.aspect || 1, f = Math.tan(THREE.MathUtils.degToRad(camera.fov / 2));
+    return Math.max(d / (2 * f), w / (2 * f * asp)) * 1.15;
+  }
+  function visExtent() {
+    var vis = items.filter(function (it) { return it.visible; }); if (!vis.length || state.mode === 'overlay') return extent;
+    var e = { minX: 1e9, maxX: -1e9, minZ: 1e9, maxZ: -1e9 };
+    vis.forEach(function (it) { var b = it.d.bounds; e.minX = Math.min(e.minX, it.xOff + b[0]); e.maxX = Math.max(e.maxX, it.xOff + b[1]); e.minZ = Math.min(e.minZ, b[2]); e.maxZ = Math.max(e.maxZ, b[3]); });
+    return e;
+  }
+  function setCam(target, pos, ms) {
+    var t0 = performance.now(), p0 = camera.position.clone(), c0 = controls.target.clone();
+    if (!ms) { camera.position.copy(pos); controls.target.copy(target); controls.update(); need = true; return; }
+    state.anim = function (now) {
+      var t = Math.min(1, (now - t0) / ms), e = t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+      camera.position.lerpVectors(p0, pos, e); controls.target.lerpVectors(c0, target, e); controls.update(); need = true;
+      if (t >= 1) state.anim = null;
+    };
+    need = true;
+  }
+  function setView(name, ms) {
+    if (name === 'reset') name = state.view;
+    state.view = name; var e = visExtent(), cx = (e.minX + e.maxX) / 2, cz = (e.minZ + e.maxZ) / 2, w = e.maxX - e.minX, d = e.maxZ - e.minZ, tg = new THREE.Vector3(cx, -2, cz), R, p;
+    if (name === 'plan') { R = fitDist(w, d); p = new THREE.Vector3(cx, R, cz + R * 0.002); }
+    else if (name === 'side') { R = fitDist(d, d * 0.6); p = new THREE.Vector3(cx - w / 2 - R, 6 * state.ve, cz); tg = new THREE.Vector3(cx, -3, cz); }
+    else { R = fitDist(w, d * 0.8) * 1.0; p = new THREE.Vector3(cx, R * 0.75, e.maxZ + R * 0.4); }
+    setCam(tg, p, ms === undefined ? 450 : ms);
+    $all('[data-view]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-view') === state.view)); });
+  }
+  function flyTo(it) {
+    if (state.mode === 'overlay') return;
+    var c = it.d.centroid, tg = new THREE.Vector3(it.xOff + c[0], -2, c[1]);
+    setCam(tg, new THREE.Vector3(tg.x - 40, 120, tg.z + 190), 700);
+    state.view = 'custom'; $all('[data-view]').forEach(function (b) { b.setAttribute('aria-pressed', 'false'); });
+  }
+  function $all(s) { return Array.prototype.slice.call(document.querySelectorAll(s)); }
+
+  // ---- UI
+  var need = true;
+  function setVE(v) {
+    state.ve = v; root.scale.y = v; $('ve-out').textContent = v + 'x'; $('ve').value = v;
+    $('ve-chip').textContent = 'Vertical exaggeration ' + v + 'x' + (v === 1 ? ' (true scale)' : ' (heights stretched, plan distances true)');
+    $('ve-chip').style.background = v === 1 ? 'rgba(0,0,0,.72)' : 'rgba(150,40,20,.9)';
+    need = true;
+  }
+  function setMode(m) {
+    state.mode = m; $all('[data-mode]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-mode') === m)); });
+    layout(); setView(m === 'overlay' ? 'plan' : state.view === 'custom' ? 'oblique' : state.view, 0); need = true;
+  }
+  $all('[data-mode]').forEach(function (b) { b.addEventListener('click', function () { setMode(b.getAttribute('data-mode')); }); });
+  $all('[data-view]').forEach(function (b) { b.addEventListener('click', function () { setView(b.getAttribute('data-view')); }); });
+  $('ve').addEventListener('input', function (e) { setVE(parseFloat(e.target.value)); });
+  ['t-water', 't-sea', 't-grid', 't-bars', 't-out', 't-lbl'].forEach(function (id) { $(id).addEventListener('change', function () { layout(); labelR.domElement.style.display = $('t-lbl').checked ? '' : 'none'; need = true; }); });
+  $('ctrlToggle').addEventListener('click', function () { document.body.classList.add('showctrl'); });
+  var ul = $('reefs');
+  items.forEach(function (it) {
+    var li = document.createElement('li');
+    li.innerHTML = '<input type="checkbox" checked aria-label="Show ' + it.meta.short + '"><span class="sw" style="background:' + it.hue + '"></span><button type="button" class="nm" title="Fly to this reef">' + it.meta.short + '</button><small><span class="dot c-' + it.meta.level + '"></span>' + it.meta.level + '</small>';
+    li.querySelector('input').addEventListener('change', function (e) { it.visible = e.target.checked; layout(); need = true; });
+    li.querySelector('button').addEventListener('click', function () { flyTo(it); });
+    ul.appendChild(li);
+  });
+  $('notin').innerHTML = notIn.length ? '<b>Not in comparison:</b> ' + notIn.map(function (m) { return (m.short || m.name) + ' (' + (m.reason || 'not exported') + ')'; }).join('; ') : '';
+  // close the narrow-screen controls on a click into the scene
+  renderer.domElement.addEventListener('pointerdown', function () { document.body.classList.remove('showctrl'); });
+
+  function resize() {
+    var w = stage.clientWidth || 800, h = stage.clientHeight || 600;
+    renderer.setSize(w, h); labelR.setSize(w, h); camera.aspect = w / h;
+    var panel = $('ctrl'), pw = (panel && panel.offsetParent !== null) ? panel.offsetWidth + 8 : 0;      // keep the scene clear of the control panel
+    if (pw > 0 && w > pw + 300) camera.setViewOffset(w, h, -pw / 2, 0, w, h); else camera.clearViewOffset();
+    camera.updateProjectionMatrix(); need = true;
+  }
+  new ResizeObserver(resize).observe(stage); window.addEventListener('resize', resize);
+  controls.addEventListener('change', function () { need = true; });
+  function loop(now) {
+    requestAnimationFrame(loop);
+    if (state.anim) state.anim(now);
+    if (need) { need = false; renderer.render(scene, camera); labelR.render(scene, camera); window.__combinedFrames = (window.__combinedFrames || 0) + 1; }
+  }
+  // initial state (+ hash options for QA / deep links: #mode=overlay&view=plan&ve=2&ctrl=0)
+  var H = {}; location.hash.replace(/^#/, '').split('&').forEach(function (s) { var p = s.split('='); if (p[0]) H[p[0]] = decodeURIComponent(p[1] || ''); });
+  if (H.ctrl === '0') document.body.classList.add('noctrl');
+  resize(); layout();
+  if (H.ve) setVE(parseFloat(H.ve) || 1); else setVE(1);
+  if (H.mode === 'overlay') setMode('overlay');
+  setView(H.view && /^(plan|oblique|side)$/.test(H.view) ? H.view : (state.mode === 'overlay' ? 'plan' : 'oblique'), 0);
+  requestAnimationFrame(loop);
+  window.__combined = { state: state, items: items, setMode: setMode, setView: setView, setVE: setVE, flyTo: flyTo, camera: camera, controls: controls, scene: scene, renderer: renderer, extent: function () { return extent; }, notIn: notIn };
+  window.__combinedReady = true;
+})();
+</script>
+</body>
+</html>

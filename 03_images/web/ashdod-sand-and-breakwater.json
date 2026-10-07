@@ -1,0 +1,56 @@
+[
+  {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/PortOfAshdod1962-2.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:PortOfAshdod1962-2.jpg",
+    "credit": "Israeli GPO photographer, Israel National Photo Collection (Government Press Office, digital ID D239-066)",
+    "license": "Public domain (Israel GPO)",
+    "depicts": "Construction of the main breakwater of Ashdod Port, 1 March 1962 — a worker on the partially-built rock/tetrapod breakwater during the port's original construction phase",
+    "date": "1962-03-01",
+    "kind": "photo"
+  },
+  {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/PortOfAshdod1962.png",
+    "source_page": "https://commons.wikimedia.org/wiki/File:PortOfAshdod1962.png",
+    "credit": "Israel National Photo Collection (photographer unknown; uploader User:FireSky)",
+    "license": "Public domain (Israel GPO / PD-old missing SDC copyright status)",
+    "depicts": "Casting of the 12.5-ton concrete tetrapods used to armor Ashdod Port's breakwaters, during original construction",
+    "date": "1962 (casting caption; upload dated 2014)",
+    "kind": "photo"
+  },
+  {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Ashdod_Port_Aerial_View.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Ashdod_Port_Aerial_View.jpg",
+    "credit": "Amos Meron (Wikimedia Commons user Meronim), retouched photo from WikiAir Flight IL-12-01",
+    "license": "CC BY-SA 3.0",
+    "depicts": "Aerial view of Ashdod Port showing the full breakwater layout, harbor basins and cargo terminals",
+    "date": "2012-12-29",
+    "kind": "photo"
+  },
+  {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/%D7%A9%D7%A7%D7%99%D7%A2%D7%94_%D7%A2%D7%9C_%D7%A9%D7%95%D7%91%D7%A8_%D7%94%D7%92%D7%9C%D7%99%D7%9D_%D7%A9%D7%9C_%D7%A0%D7%9E%D7%9C_%D7%90%D7%A9%D7%93%D7%95%D7%93%2C_%D7%90%D7%A4%D7%A8%D7%99%D7%9C_2024.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:%D7%A9%D7%A7%D7%99%D7%A2%D7%94_%D7%A2%D7%9C_%D7%A9%D7%95%D7%91%D7%A8_%D7%94%D7%92%D7%9C%D7%99%D7%9D_%D7%A9%D7%9C_%D7%A0%D7%9E%D7%9C_%D7%90%D7%A9%D7%93%D7%95%D7%93,_%D7%90%D7%A4%D7%A8%D7%99%D7%9C_2024.jpg",
+    "credit": "Wikimedia Commons user מקף-עברי (Alon Elay Latucha), own work",
+    "license": "CC BY-SA 4.0",
+    "depicts": "Sunset view of Ashdod port's breakwater and cranes as seen from Givat Yona, with the Lachish river mouth and coastal path in the foreground — verified by direct view: port lit up at dusk, breakwater extending into the sea, ships offshore",
+    "date": "2024-04-05",
+    "kind": "photo"
+  },
+  {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Graffiti-decorated_tetrapod_with_art_by_ONE_LOVE_%28Dudi_Shoval%29%2C_Oranim_Beach%2C_Ashdod%2C_November_2023_1.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Graffiti-decorated_tetrapod_with_art_by_ONE_LOVE_(Dudi_Shoval),_Oranim_Beach,_Ashdod,_November_2023_1.jpg",
+    "credit": "Wikimedia Commons uploader (CC0 self-published)",
+    "license": "CC0 1.0 (public domain dedication)",
+    "depicts": "Painted/graffiti-decorated leftover breakwater tetrapods on Oranim Beach, Ashdod — verified by direct view: two large concrete tetrapods on the sand painted with fish/mural art, Ashdod skyline in background. Same tetrapod-art phenomenon documented in the dossier's 2018 ynet coverage, photographed again in Nov 2023",
+    "date": "2023-11-20",
+    "kind": "photo"
+  },
+  {
+    "url": "https://www.google.com/maps/@31.8283,34.6367,15z/data=!3m1!1e3",
+    "source_page": "https://www.google.com/maps/@31.8283,34.6367,15z",
+    "credit": "Google Maps / satellite imagery providers",
+    "license": "Google Maps Terms of Service (view-only, not for redistribution)",
+    "depicts": "Satellite view of Ashdod Port's breakwaters and the accreted beach south of the port vs. the eroded beach north of it (coordinates centered near the port breakwater, ~31.83N 34.64E)",
+    "date": "current satellite imagery (date not fixed by Google)",
+    "kind": "map"
+  }
+]

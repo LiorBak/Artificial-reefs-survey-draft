@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="457" viewBox="0 0 300 457" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="8" y="16" font-weight="600" font-size="13" fill="#1b1f24">Cable Station Reef (Cables Reef)</text>
+<text x="8" y="32" fill="#5a626d">140 × 70 m · 2,299 m² · medium confidence</text>
+<g transform="translate(0,40)">
+<rect x="0" y="0" width="210" height="358.6" fill="#e6f1f7"/>
+<rect x="0" y="358.6" width="210" height="24" fill="#efe3c4"/>
+<line x1="0" x2="210" y1="358.6" y2="358.6" stroke="#7a6a45" stroke-width="1.5"/>
+<text x="194" y="373.6" text-anchor="end" fill="#5a626d">beach · shoreline (y = 0)</text>
+<line x1="20" x2="20" y1="354.6" y2="318.6" stroke="#3d5a73" stroke-width="1.5"/><path d="M16 322.6l4 -7l4 7z" fill="#3d5a73"/>
+<text x="16" y="18" fill="#5a626d">↑ offshore (sea)</text>
+<g fill="#c98a12" fill-opacity=".9" stroke="#1b1f24" stroke-width="1" stroke-linejoin="round"><path d="M86.9 61.4L172.2 122.1L179.2 112.3L84.5 45.0L31.0 113.5L40.4 120.9L86.9 61.4Z"/></g>
+<line x1="172.2" x2="172.2" y1="358.6" y2="122.1" stroke="#3d5a73" stroke-dasharray="3 3"/><text x="176.2" y="244.4" fill="#1b1f24">236 m</text>
+<rect x="94.0" y="400" width="50.0" height="5" fill="#1b1f24"/><rect x="144.0" y="400" width="50.0" height="5" fill="#ffffff" stroke="#1b1f24" stroke-width=".8"/><text x="94.0" y="396" fill="#1b1f24">0</text><text x="194" y="396" text-anchor="end" fill="#1b1f24">100 m</text>
+<text x="16" y="410" fill="#5a626d">1 px = 1 m</text>
+</g>
+</svg>

@@ -1,0 +1,253 @@
+{
+  "slug": "southern-ocean-surf-reef-albany",
+  "name": "Southern Ocean Surf Reef (\"Midds Reef\")",
+  "status": "verified",
+  "verified_on": "2026-09-25",
+  "shape_type": "crescent",
+  "coords": "metres; origin = shoreline point nearest the reef centroid (Middleton Beach, near the 'Surfer's Beach' car park); x = alongshore (positive toward north — assumed from the apparent north-up orientation of the Bluecoast/ASR design figure [R3], which shows dunes/land to the west and open water to the east, consistent with Middleton Beach's real north-south shoreline trend; no explicit north arrow is printed on the figure, so this is an inference, see open_issues); y = offshore (positive seaward); shoreline approximated as the line y=0",
+  "polygon_m": [
+    [-82.5, 145], [-45, 195], [-10, 235], [25, 250], [60, 220],
+    [82.5, 160], [55, 165], [15, 155], [-25, 148], [-55, 140], [-82.5, 145]
+  ],
+  "bbox_m": {"length_alongshore": 165.0, "width_crossshore": 110.0},
+  "area_m2": 9720.0,
+  "max_dimension_m": 165.7,
+  "crest_depth_m": {"value": 1.0, "datum": "below AHD (Australian Height Datum, ≈ mean sea level); ≈0.74 m below mean low water, ≈1.34 m below mean high water", "ref": "R3"},
+  "distance_offshore_m": {"value": 140, "measured_from": "shoreline / landward toe of the reef, per the Bluecoast/ASR concept-design table ('Cross-shore position: 140m from landward toe') reproduced on the City of Albany project page; our polygon's near (shoreward) tips sit at y=140-145 and its centroid sits at y≈189", "ref": "R3"},
+  "orientation_notes": "The Bluecoast/ASR 'Final Reef Design' table (reproduced as a figure on R3, filename design.jpg) specifies 'Crest orientation: Curved, 270°N-305°N... Maximises breaking and creates waves that peel evenly along the reef.' This is the bearing of the reef's own curved crest/wave-break line (a ~35 degree arc), not a stated swell-approach azimuth — no source we found gives a numeric swell-approach bearing (contrary to Gemini's invented '160-190 deg SSE-S', see gemini_comparison). The design table also specifies 'Surfing direction: Left-hander' and a 'Take-off area' at the more offshore, wider end of the reef (per the same figure), with the wave peeling toward the narrower, more shoreward end, matching R3's text 'the design provides surfing rides of up to 100m'. Our polygon therefore tapers to a point at its shoreward/updrift-adjacent end and bulges to its maximum ~110 m cross-shore width at the offshore 'take-off' end, per this figure — but the figure's own two dimension-arrow annotations (110 m and 140 m) do not share a consistent pixel scale (see derivation row 8), so this reading is topological/qualitative only, not a scaled tracing.",
+  "volume_m3": {"value": 34000, "ref": "R3"},
+  "materials": "Submerged rock-berm surf reef; ~62,800 t of layered granite in three graded layers — belly (D50 0.16 m, 12,400 t, 18%), core (D50 0.49 m, 23,600 t, 36%), Class 1 armour (D50 0.94 m, 26,800 t, 46%); no geotextile [R3]",
+  "derivation": [
+    {
+      "quantity": "alongshore length",
+      "value": 165,
+      "unit": "m",
+      "method": "stated in text",
+      "source_ref": "R3",
+      "quote_or_figure": "\"The reef measures 165m long\" — City of Albany, Southern Ocean Surf Reef (SOSR) project page, Design Aspects section",
+      "uncertainty": "±0 (single stated figure, matches card and Gemini)"
+    },
+    {
+      "quantity": "cross-shore width (max)",
+      "value": 110,
+      "unit": "m",
+      "method": "stated in text",
+      "source_ref": "R3",
+      "quote_or_figure": "\"...varies in width up to 110m\" — same page/section as above",
+      "uncertainty": "\"Up to\" implies this is a maximum, not a uniform cross-shore width — consistent with a tapered, non-rectangular footprint"
+    },
+    {
+      "quantity": "crest depth",
+      "value": 1.0,
+      "unit": "m below AHD",
+      "method": "stated in text",
+      "source_ref": "R3",
+      "quote_or_figure": "\"Shallowest crest level of -1.0m AHD which is approximately 0.74m below mean low water (MLLW) and 1.34m below mean high water (MHHW)\"",
+      "uncertainty": "±0, stated design/as-built spec"
+    },
+    {
+      "quantity": "distance offshore (to landward toe)",
+      "value": 140,
+      "unit": "m",
+      "method": "stated in text and in figure table",
+      "source_ref": "R3",
+      "quote_or_figure": "\"...approximately 140m offshore\" (page text); \"Cross-shore position: 140m from landward toe\" (Bluecoast/ASR design table, design.jpg)",
+      "uncertainty": "Card documents a range across sources: Wikipedia/R4 gives ~120 m, a 2023 City FAQ (R15) gives ~145 m; treated in the card as design evolution over time, not resolved to a single number. We use the current page's 140 m as the primary/as-built figure."
+    },
+    {
+      "quantity": "crest orientation (bearing of the wave-break/crest line)",
+      "value": "270-305",
+      "unit": "degrees N (curved arc)",
+      "method": "read from figure (table cell, not a scale drawing)",
+      "source_ref": "R3",
+      "quote_or_figure": "\"Crest orientation: Curved, 270°N-305°N — Maximises breaking and creates waves that peel evenly along the reef\" (Bluecoast/ASR 'Final Reef Design' table, design.jpg)",
+      "uncertainty": "This is a printed table value (high confidence as a design-table figure), but it is unclear whether it was carried unchanged from the earlier 'ASR Design' concept (the figure's own legend reads 'ASR Design') into the final Bluecoast as-built layout — no source states a swell-approach azimuth explicitly, so this bearing should not be read as one."
+    },
+    {
+      "quantity": "plan-view shape / taper direction",
+      "value": "crescent, narrow shoreward, broad/bulging at the offshore 'take-off' end",
+      "unit": "qualitative",
+      "method": "estimated from figure (non-scaled schematic) and two aerial construction photos",
+      "source_ref": "R3 / R10 / R2",
+      "quote_or_figure": "design.jpg plan sketch shows a curved, elongated rock mound with a curved fan of wave-peel lines emanating from a corner near the shoreward tip and sweeping across a 'Surfing area' / 'Take-off area' overlay; RaisedWaterResearch's May-2025 construction-overview aerial (R10) shows a dark, elongated, diagonally-oriented submerged rock shadow tapering toward its shoreward end, with a barge working the wider, offshore end; ABC's aerial dredge photo (R2) shows a similar dark elongated patch beneath vessels",
+      "uncertainty": "High. The design.jpg figure mixes the physical reef outline with an unrelated wave-refraction/peel-line fan (curved lines radiating from the take-off point across the surf/take-off zone overlays) — these curved lines are NOT the rock structure's edge and were excluded once recognised. The aerial construction photos are dated May 2025, mid-construction (per their own captions), so may show a partially-built extent rather than the final footprint. No true as-built survey or CAD outline was found."
+    },
+    {
+      "quantity": "reef volume (concept-stage)",
+      "value": 34000,
+      "unit": "m3",
+      "method": "read from figure (table cell)",
+      "source_ref": "R3",
+      "quote_or_figure": "\"Reef volume: 34,000m3 (based on 2017 bathymetry) — Development costs approx. $11m, maximising the project budget\" (Bluecoast/ASR design table, design.jpg)",
+      "uncertainty": "This is an earlier, 2017-bathymetry-based concept-design estimate (matches the $11m/$11.75m committed-funds figure already in the card), not necessarily the final as-built volume. It is broadly consistent with the final 62,800 t tonnage at a plausible placed-rock bulk density (~1.6-1.9 t/m3 including voids, vs ~2.6-2.7 t/m3 for solid granite), which would imply ~33,000-39,000 m3 — no contradiction, but not independently confirmed."
+    },
+    {
+      "quantity": "figure internal scale consistency (methodology note, not a reef dimension)",
+      "value": "mildly inconsistent (corrected 2026-09-25; supersedes an earlier mismeasurement)",
+      "unit": "px/m",
+      "method": "Re-measured 2026-09-25 by pixel-tracing both dimension-arrow endpoints on design.jpg at 8-20x zoom with a labelled pixel grid, then cross-validated against the figure's own printed scale bar (0 to 0.1 km), which was independently measured twice (0-0.05 km and 0.05-0.1 km) and found self-consistent at 0.815 px/m.",
+      "source_ref": "R3",
+      "quote_or_figure": "Scale bar: 0.815 px/m (self-consistent). '140m' dimension arrow: endpoints at pixel (660,127)-(753,172) in the original 1026x521 design.jpg, length ≈103.3 px = 0.738 px/m. '110m' dimension arrow: endpoints at pixel (793,125)-(863,163), length ≈79.6 px = 0.724 px/m.",
+      "uncertainty": "CORRECTED FINDING (2026-09-25 verification pass): the two dimension arrows are mutually consistent with each other (0.738 vs 0.724 px/m, only ~2% apart) — NOT a ~37% mismatch as an earlier draft of this file claimed (that figure, '2.73 px/m vs 1.99 px/m', could not be reproduced on careful re-measurement and appears to have been a pixel-identification error in the original pass). Both arrows do read a consistent ~10-12% shorter than the figure's own printed scale bar would predict for their labelled distances, which is more consistent with hand-placed/eyeballed dimension-line graphics than with a genuine internal scale contradiction. The figure is still not used for precise scaled-vertex tracing (out of caution, given this residual ~10% offset and the schematic nature of the annotations), but the polygon's 165x110 m envelope comes directly from the sourced text quotes, not from pixel tracing, so this correction does not change any reported dimension — only the methodology note."
+    },
+    {
+      "quantity": "net footprint area",
+      "value": 9720,
+      "unit": "m2",
+      "method": "estimated (shoelace area of the polygon above, itself fitted to the sourced 165x110 m bounding envelope and the qualitative crescent curvature)",
+      "source_ref": "derived, not independently published",
+      "quote_or_figure": "No source found (ours or, apparently, Gemini's) publishes a standalone surveyed area figure for this reef.",
+      "uncertainty": "±25-30% — entirely dependent on the assumed polygon shape, which is a qualitative estimate, not a measurement"
+    }
+  ],
+  "images_relied_on": [
+    {
+      "url": "https://www.albany.wa.gov.au/Profiles/albany/Assets/ClientData/Surf_Reef/design.jpg",
+      "what_it_is": "Bluecoast Consulting Engineers 'Final Reef Design' table + aerial plan diagram (legend: 'ASR Design'), overlaid on a satellite/aerial photo of Middleton Beach, already catalogued in the card's images list",
+      "what_was_read_off_it": "Design-table values (crest length/level/orientation, cross-shore/alongshore position, reef volume, surf amenity specs, quoted verbatim above); plan-view shape of the rock mound (a curved, elongated ridge tapering to a point at its shoreward end); location and shape of the 'Take-off area' (wider, more offshore) and 'Surfing area' (extends shoreward from it) functional-zone overlays, which were initially mistaken for — but on closer inspection are distinct from — a set of curved wave-peel/refraction lines fanning across both zones from a point near the shoreward tip; pixel-measurement of both printed dimension arrows (110 m and 140 m) cross-validated against the figure's own printed scale bar (2026-09-25 re-measurement): the two arrows are mutually consistent (~2% apart) and both read ~10-12% shorter than the scale bar predicts (see derivation row 'figure internal scale consistency' — this supersedes an earlier, non-reproducible '~37% mismatch' claim), so the figure is still used only for qualitative shape/taper direction, not for scaled vertex coordinates",
+      "source_page": "https://www.albany.wa.gov.au/council/projects/completed-projects/southern-ocean-surf-reef-sosr.aspx"
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2025/05/Southern-Ocean-Surf-Reef-Albany-artificial-surf-reef-construction-overview.jpg",
+      "what_it_is": "Aerial photo of the reef under construction, May 2025 (per the source's own EXIF caption), already catalogued in the card's images list",
+      "what_was_read_off_it": "A dark, elongated, diagonally-oriented submerged rock-berm shadow running from a narrow point near the shoreline out to a wider zone offshore where a dredge/crane barge is working — used to corroborate the design figure's shoreward-taper / offshore-bulge topology from a real photograph, not for scale (no object of known size was identifiable to calibrate pixels-to-metres, and the photo may show a partially-built, not final, extent)",
+      "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/albany-artificial-surf-reef/"
+    },
+    {
+      "url": "https://live-production.wcms.abc-cdn.net.au/8ffae200f1ff9606775f71f627b5dc7e?impolicy=wcms_crop_resize&cropH=2268&cropW=3402&xPos=315&yPos=0&width=862&height=575",
+      "what_it_is": "ABC News aerial/drone photo captioned 'Specialised vessels came from around the world to build the Albany surf reef', already catalogued in the card's images list",
+      "what_was_read_off_it": "A similar dark, turbid, elongated patch of disturbed/turbid water beneath and around the working barge, consistent in general orientation with the RaisedWaterResearch construction photo; too occluded by vessels and sediment plume to extract precise shape detail beyond this general corroboration",
+      "source_page": "https://www.abc.net.au/news/2025-07-16/southern-ocean-surf-reef-transforms-albany-wa/105530202"
+    }
+  ],
+  "gemini_comparison": {
+    "gemini_values": {
+      "shape_type": "Engineered multi-tiered granite boomerang / wedge",
+      "length_m": "165.0",
+      "width_m": "110.0",
+      "area_m2": "13500.0 (gross; audit net 12,363 m^2)",
+      "crest_depth_m": "1.0",
+      "distance_offshore_m": "140.0",
+      "orientation": "Apex faces SSE-S swell (160-190 deg) into King George Sound",
+      "gemini_sources": ["Bluecoast Consulting Engineers Design Report 2020", "City of Albany Post-Construction Monitoring 2022", "Raised Water Research Review 2023"]
+    },
+    "agree": [
+      "length_m = 165 m — matches R3's direct quote \"The reef measures 165m long\"",
+      "width_m = 110 m — matches R3's direct quote \"varies in width up to 110m\"",
+      "crest_depth_m = 1.0 m — matches R3's \"-1.0m AHD\"",
+      "distance_offshore_m = 140 m — matches R3's \"approximately 140m offshore\" / the Bluecoast table's \"140m from landward toe\"",
+      "general shape family (curved, tapered, 'boomerang'/crescent, not a straight rectangle or simple triangle) — our own reading of the design figure, independent of Gemini, also arrives at a curved/crescent taper"
+    ],
+    "disagree": [
+      {
+        "quantity": "area_m2",
+        "gemini": "13,500 m2 gross / 12,363 m2 'audit net', called 'VERIFIED'",
+        "ours": "9,720 m2, from our own independently-shaped estimated polygon",
+        "why_ours": "No source we found publishes a footprint area in m2 for this reef. Both Gemini's and our figures are geometric artifacts of two different hand-built polygons, not measured or cited data; Gemini's audit note ('centroid y=141.9m vs stated 140m, good internal consistency') only checks its own polygon against its own assumption, not against an external source, so its 'VERIFIED' label is a self-consistency check, not independent verification."
+      },
+      {
+        "quantity": "polygon y-range / landward toe position",
+        "gemini": "Its 9-vertex bounding_polygon spans y=92 to y=200 (i.e. an implied landward toe at only ~92 m offshore)",
+        "ours": "Our polygon spans y=140 to y=250, anchored to the 140 m landward-toe figure that is explicitly stated on the same R3 page Gemini itself used to source its length/width/crest-depth/offshore-distance fields",
+        "why_ours": "A ~92 m landward toe directly contradicts the '140m from landward toe' / '~140m offshore' text on Gemini's own cited primary source; we anchored to the explicit stated figure instead of an internally-inconsistent hand-drawn polygon."
+      },
+      {
+        "quantity": "designer names",
+        "gemini": "'Dr. Scott Baker, Craig Cowper' (Bluecoast Consulting Engineers), per reef_footprints.json (field 'designer') and reef_footprint_scale_analysis.md §3.10 ('Designers:'); verified verbatim against Gemini's own files on 2026-09-25",
+        "ours": "CORRECTED 2026-09-25: no individual designer name could be independently confirmed. R3's project page and R15's 2023 FAQ both list only the firm, 'Bluecoast Consulting Engineers,' as Detailed Design consultant. R16 (Bluecoast's own staff bio page for Evan Watterson) confirms he is a real principal engineer at that firm, but the page does not mention the Southern Ocean Surf Reef or Albany at all. R2 (ABC News), previously cited in this card as naming Evan Watterson, was re-fetched and searched in full for 'Watterson', 'Bluecoast' and 'engineer' — zero matches; its only relevant text is 'a specialist marine engineering crew from New Zealand'. The 'Evan Watterson' attribution in the pre-verification draft of this card was therefore itself unconfirmed (it appears to trace back to an uncredited quote in Gemini's own southern-ocean-surf-reef-albany.md dossier, not to an independent primary source) and has been downgraded to unsupported.",
+        "why_ours": "Gemini's specific named individuals ('Dr. Scott Baker', 'Craig Cowper') remain unsupported — neither name appears in any source we checked (R1-R18, plus R2 and R16 re-checked directly on 2026-09-25) — so that part of the original disagreement still stands. However, this card's own prior counter-claim naming 'Evan Watterson' as the confirmed alternative did not hold up under adversarial re-checking of its cited sources and has been withdrawn. The only firmly sourced fact is the firm name, Bluecoast Consulting Engineers (R3, R15); no individual designer is confirmed on either side."
+      },
+      {
+        "quantity": "orientation (swell-approach azimuth)",
+        "gemini": "'Apex faces SSE-S swell (160-190 deg) into King George Sound', presented as a specific citable figure",
+        "ours": "No source we found gives a numeric swell-approach bearing. The only sourced bearing is the reef's own curved CREST orientation (270-305 degrees N, per the Bluecoast/ASR design table) — a different quantity (the structure's own curvature) from the direction swell arrives from",
+        "why_ours": "Gemini's 160-190 degree figure is not traceable to any source we located and is not even geometrically consistent with the one sourced bearing we did find (perpendicular to a 270-305 degree crest would put an incoming-swell azimuth closer to 190-215 degrees, not 160-190)."
+      },
+      {
+        "quantity": "gemini_sources citation list",
+        "gemini": "['Bluecoast Consulting Engineers Design Report 2020', 'City of Albany Post-Construction Monitoring 2022', 'Raised Water Research Review 2023'] — generic, undated, URL-less",
+        "ours": "18 URL-linked, individually fetched references in the card (R1-R18), reused here",
+        "why_ours": "Our own dossier (17 refs checked, 2026-09-24/25) found no 'City of Albany Post-Construction Monitoring 2022' document anywhere; none of Gemini's three titles could be matched to an actual accessible page during this check."
+      }
+    ]
+  },
+  "confidence": "medium",
+  "open_issues": [
+    "No true as-built plan-view CAD drawing or bathymetric survey was found publicly. The only plan-view figure available (design.jpg, legend 'ASR Design') is a pre-final concept sketch whose own two printed dimension arrows (110 m and 140 m) scale inconsistently by ~37% when pixel-measured — it was therefore used only for qualitative shape/taper topology, never for scaled vertex coordinates.",
+    "The design.jpg figure combines the physical reef outline with a separate wave-refraction/peel-line fan; distinguishing the two required close visual inspection and there remains some residual uncertainty about exactly where the rock structure's own edge lies versus the illustrative wave lines.",
+    "The two real aerial construction photos (R10, R2) are both dated/captioned May 2025, i.e. mid-construction — they may show a partially-built extent rather than the completed footprint, so were used only to corroborate general taper direction, not final size.",
+    "Exact polygon vertices are a low-confidence synthetic estimate, constrained only by the sourced 165 m x 110 m bounding envelope and the qualitative crescent curvature described in the design table; treat the polygon as illustrative of shape family, not a precise outline.",
+    "area_m2 (9,720) is not a published figure — it is a geometric consequence of our assumed polygon and should be treated as low-confidence, same caveat as Gemini's own area figures.",
+    "The x-axis 'positive = north' convention is inferred from the apparent north-up orientation of the design figure (land west, water east, coast trending N-S) rather than from an explicit stated bearing or printed north arrow — flagged as an assumption.",
+    "Distance offshore has a documented range across sources (120 m per Wikipedia/R4, 140 m per the current R3 page, ~145 m per a 2023 FAQ/R15) reflecting design evolution over time; we used the current page's 140 m figure as primary, consistent with the card.",
+    "Reef volume (34,000 m3) comes from an earlier 2017-bathymetry concept-stage table on the same figure as the shape sketch and may not equal the final as-built volume; only the final tonnage (62,800 t) is well corroborated across sources.",
+    "R15 (City of Albany, May 2023 FAQ PDF), read in full during the 2026-09-25 verification pass, gives an earlier interim design of 'up to 100 metres in width' (vs the final 110 m) and an interim footprint of 'approximately 16,000m2' (vs our ~9,720 m2 estimate and Gemini's unsourced 13,500/12,363 m2) — consistent with the card's existing 'design evolution over time' framing for the offshore-distance figure, now shown to also apply to width and area. The current R3 page's 165/110/140 figures were kept as primary, per existing methodology (prefer the final/current page over superseded interim estimates).",
+    "No individual designer name could be independently confirmed for this project as of the 2026-09-25 verification pass (see gemini_comparison.disagree, 'designer names'). Only the firm, Bluecoast Consulting Engineers, is confirmed (R3, R15's consultant-team list); a prior draft's attribution of 'Evan Watterson' to this specific project did not hold up against its own cited sources and was withdrawn."
+  ],
+  "references": [
+    {"id": "R1", "citation": "Wikipedia, \"Southern Ocean Surf Reef\"", "url": "https://en.wikipedia.org/wiki/Southern_Ocean_Surf_Reef", "accessed": "2026-09-24", "supports": "construction timeline, materials, cost, opening date"},
+    {"id": "R2", "citation": "Daniel Mercer / ABC News, \"Artificial reef at Middleton Beach transforms Albany's surf scene\" (15-16 Jul 2025)", "url": "https://www.abc.net.au/news/2025-07-16/southern-ocean-surf-reef-transforms-albany-wa/105530202", "accessed": "2026-09-25 (image re-examined for footprint shape; full article text re-checked 2026-09-25 and found to name NO individual designer/engineer — a prior draft's claim that it named Evan Watterson did not hold up and was withdrawn)", "supports": "aerial/drone construction photo used for shape corroboration"},
+    {"id": "R3", "citation": "City of Albany, \"Southern Ocean Surf Reef (SOSR)\" project page (incl. Bluecoast/ASR 'Final Reef Design' table and plan figure, design.jpg)", "url": "https://www.albany.wa.gov.au/council/projects/completed-projects/southern-ocean-surf-reef-sosr.aspx", "accessed": "2026-09-25 (re-fetched for exact dimension quotes and the design figure)", "supports": "165 m length, up to 110 m width, -1.0 m AHD crest, 140 m offshore/landward-toe distance, crest bearing 270-305 deg N, 34,000 m3 concept volume, rock-layer tonnages"},
+    {"id": "R4", "citation": "Wikipedia, \"Middleton Beach, Western Australia\"", "url": "https://en.wikipedia.org/wiki/Middleton_Beach,_Western_Australia", "accessed": "2026-09-24", "supports": "alternative ~120 m offshore-distance figure"},
+    {"id": "R10", "citation": "Raised Water Research, \"Midds Reef\" spot page (incl. May-2025 construction-overview aerial photo)", "url": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/albany-artificial-surf-reef/", "accessed": "2026-09-25 (image re-examined for footprint shape)", "supports": "aerial construction photo used for shape corroboration; wave/ride characteristics"},
+    {"id": "R15", "citation": "City of Albany, \"Albany Artificial Surf Reef - Frequently Asked Questions\" (May 2023 PDF)", "url": "https://www.albany.wa.gov.au/documents/803/albany-artificial-surf-reef-community-update-and-faqs", "accessed": "2026-09-24", "supports": "alternative ~145 m offshore-distance figure (interim estimate)"},
+    {"id": "R16", "citation": "Bluecoast Consulting Engineers, staff bio page for Evan Watterson", "url": "https://www.bluecoastconsulting.com.au/evan", "accessed": "2026-09-25 (re-fetched: confirms he is a real principal engineer at Bluecoast, but the page does not mention the Southern Ocean Surf Reef or Albany at all, so it cannot confirm he personally designed THIS project)", "supports": "rules out one specific claim (does not itself confirm Gemini's 'Scott Baker'/'Craig Cowper' either, since neither name appears anywhere on the firm's site); does NOT independently confirm an alternative individual designer for this project"}
+  ],
+  "verification": [
+    {
+      "item": "Alongshore length 165 m",
+      "verdict": "confirmed",
+      "evidence": "R3 (City of Albany project page) re-fetched 2026-09-25; direct quote \"The reef measures 165m long\" confirmed verbatim."
+    },
+    {
+      "item": "Cross-shore width up to 110 m",
+      "verdict": "confirmed",
+      "evidence": "R3 direct quote \"...varies in width up to 110m\" confirmed verbatim. Note: R15 (2023 interim FAQ PDF, read in full 2026-09-25) gives an earlier interim figure of 'up to 100 metres in width' — consistent with documented design evolution; current page's 110 m used as primary, unchanged."
+    },
+    {
+      "item": "Crest depth -1.0 m AHD (0.74 m below MLW / 1.34 m below MHW)",
+      "verdict": "confirmed",
+      "evidence": "R3 direct quote confirmed verbatim, including both tidal-datum conversions."
+    },
+    {
+      "item": "Distance offshore 140 m to landward toe (primary), with 120 m (R4) / 145 m (R15) alternates",
+      "verdict": "confirmed",
+      "evidence": "R3 text + design.jpg table both state 140m (confirmed by direct image inspection). R4 (Wikipedia) re-fetched: \"...located around 120 metres offshore\" confirmed verbatim. R15 (2023 FAQ PDF) read in full: \"...located approximately 145 metres offshore from 'Surfers'\" confirmed verbatim."
+    },
+    {
+      "item": "Crest orientation 270-305 deg N (curved) and reef volume 34,000 m3 (concept stage)",
+      "verdict": "confirmed",
+      "evidence": "design.jpg downloaded and viewed directly at high zoom on 2026-09-25; both values read verbatim off the Bluecoast/ASR 'Final Reef Design' table cells, matching the card exactly."
+    },
+    {
+      "item": "Plan-view shape: crescent, narrow shoreward, broad at offshore 'take-off' end",
+      "verdict": "confirmed",
+      "evidence": "design.jpg plan sketch and the RaisedWaterResearch May-2025 construction aerial (both downloaded and viewed directly 2026-09-25) independently show a rock berm tapering to a point near shore and widening toward the offshore end where the construction barge sits. ABC's aerial (also viewed) is too occluded by vessels/turbidity to add shape detail, as already noted."
+    },
+    {
+      "item": "Figure internal scale consistency of the two design.jpg dimension arrows (110 m, 140 m)",
+      "verdict": "corrected",
+      "evidence": "A prior draft claimed a ~37% mismatch (2.73 vs 1.99 px/m) between the two arrows; this could not be reproduced. Careful re-measurement at 8-20x zoom, cross-validated against the figure's own printed scale bar (independently confirmed self-consistent at 0.815 px/m across two segments), gives 0.738 px/m (140m arrow) and 0.724 px/m (110m arrow) -- only ~2% apart from each other, though both ~10-12% below the scale bar's implied value. See the corrected derivation row for full pixel coordinates. This does not change any reported dimension (the 165x110 envelope comes from text quotes, not pixel tracing)."
+    },
+    {
+      "item": "Polygon bbox (165.0 x 110.0 m), area (9,720.0 m2), centroid, max pairwise vertex distance",
+      "verdict": "confirmed",
+      "evidence": "Recomputed independently with Shapely on 2026-09-25: polygon closed, is_valid=True, exterior.is_simple=True; bounds exactly (-82.5,140.0,82.5,250.0) i.e. 165.0 x 110.0 m; area=9720.0 m2 exactly; centroid=(5.08,189.19); max pairwise vertex distance=165.68 m. All match the card's stated values exactly."
+    },
+    {
+      "item": "Designer name attribution (Gemini's 'Scott Baker, Craig Cowper' vs this card's prior 'Evan Watterson')",
+      "verdict": "corrected",
+      "evidence": "Gemini's names remain unsupported (checked directly against reef_footprints.json and reef_footprint_scale_analysis.md 2026-09-25; not found in any of our sources). However, R2 (ABC News), previously cited as naming Evan Watterson, was re-fetched and full-text-searched for 'Watterson'/'Bluecoast'/'engineer' on 2026-09-25 with zero matches; R16 (Bluecoast's own bio page for him) does not mention this project. The 'Evan Watterson' attribution has been withdrawn as unconfirmed; only the firm name (Bluecoast Consulting Engineers) is confirmed, via R3 and R15's consultant-team listing."
+    },
+    {
+      "item": "Gemini-comparison quotes are a fair, accurate representation of Gemini's own files",
+      "verdict": "confirmed",
+      "evidence": "Directly re-checked 2026-09-25 against Gemini's reef_footprints.json (albany entry), reef_footprint_scale_analysis.md §3.10, and scale_sketch_photo_alignment_audit.md (row 10/§10). Area (13,500 / 12,363 m2), bounding_polygon y-range (92-200), incident swell direction (160-190 deg SSE-S), gemini_sources list, and designer names all match Gemini's source files verbatim."
+    },
+    {
+      "item": "Materials/tonnages (belly 12,400t, core 23,600t, armour 26,800t; total 62,800t)",
+      "verdict": "confirmed",
+      "evidence": "R3 direct quotes confirmed verbatim on re-fetch 2026-09-25."
+    }
+  ]
+}

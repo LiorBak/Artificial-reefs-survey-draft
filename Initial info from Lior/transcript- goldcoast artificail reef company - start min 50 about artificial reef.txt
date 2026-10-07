@@ -1,0 +1,642 @@
+# tactiq.io free youtube transcript
+# No title found
+# https://www.youtube.com/watch/Gi6wNNP6OKE
+
+00:00:49.760 Oktoar.
+00:01:18.380 [Music]
+00:01:35.520 Wearin
+00:01:42.159 again. Foreish.
+00:02:23.680 Australia.
+00:02:50.879 form
+00:03:33.920 Save the day.
+00:03:47.360 foreign.
+00:04:06.879 Fore!
+00:04:22.710 [Music] Foreign! Foreign!
+00:04:32.920 [Music]
+00:04:42.080 Right.
+00:04:57.919 Foreignech.
+00:05:27.680 foreign. [Music]
+00:06:09.600 forchech.
+00:06:48.800 Victoria.
+00:06:58.240 Special thanks in English to Aaron Sailor, engineer Aon Sailor, which is
+00:07:03.919 the director and principal engineer of ICM and he will talk about a framework for
+00:07:10.560 coastal resilience. [Music]
+00:07:34.319 for
+00:07:41.360 Victoria.
+00:07:59.199 Shalom Victoria.
+00:08:13.919 Fore! Foreign! Foreign!
+00:08:54.560 Foreign
+00:09:03.040 speech. Foreign speech. Foreign speech.
+00:09:33.200 Fore
+00:09:43.050 [Music]
+00:09:53.120 speech. for
+00:09:59.330 [Music]
+00:10:27.680 Fore! Foreign! Foreign!
+00:10:40.330 [Music]
+00:10:48.880 Foreington.
+00:11:09.200 Um,
+00:11:19.130 [Music]
+00:11:28.310 [Music]
+00:11:38.160 Charlie
+00:11:48.560 forchech.
+00:12:15.560 [Music] foreign.
+00:12:30.140 [Music]
+00:12:52.079 Erington.
+00:13:02.320 forchech.
+00:13:42.079 Fore!
+00:13:56.800 Foreign! Foreign!
+00:14:54.320 Fore!
+00:15:17.920 Foreign! Foreign!
+00:15:30.959 Foreign
+00:15:40.480 speech. Foreign speech. Foreign speech.
+00:16:10.720 Come upon me.
+00:16:51.279 Foreign
+00:17:01.759 speech. Foreign speech. Foreign speech.
+00:17:20.060 [Music]
+00:17:31.440 for
+00:18:00.799 speech.
+00:18:30.960 Fore! Foreign! Foreign!
+00:18:41.360 for
+00:19:11.120 for
+00:19:25.039 Charlan.
+00:19:50.559 Foreign
+00:20:08.480 speech. Foreign speech. Foreign speech.
+00:20:24.640 Dear Foreignch
+00:20:54.159 Fore! Foreign! Foreign!
+00:21:04.720 Foreign
+00:21:18.880 speech. Foreign speech. Foreign speech.
+00:21:36.720 Foreign speech. Foreign speech.
+00:22:01.360 Fore
+00:22:12.080 speech.
+00:22:21.600 forchech.
+00:22:54.159 Step to step by step.
+00:23:37.200 forch.
+00:24:06.960 foreign.
+00:24:49.760 Victoria. [Music]
+00:25:00.559 Okay.
+00:25:19.520 foreign
+00:25:52.559 We are gonna
+00:26:15.120 go on
+00:26:38.640 Michelle. Michelle. Okay.
+00:26:47.570 [Music]
+00:26:56.080 Joseph.
+00:27:45.440 Arlington. ington.
+00:27:57.220 [Music]
+00:28:31.760 to the Victoria. I'll switch to English now.
+00:28:37.200 We'll move now to our next speaker, Mr. Aon Sailor. He's the managing director
+00:28:44.159 of ICM and he will talk with us about framework for coastal resilience. This
+00:28:51.200 talk will be for 40 minutes including questions. Please Mr. Sailor.
+00:29:17.520 Hey, morning everyone. Thanks for having me. Um my name is Aaron from International Coastal Management. Um
+00:29:23.840 we're based here on the Gold Coast in Australia. That's a picture of the Gold Coast you can see. Um beautiful place um
+00:29:31.200 halfway up the east coast of Australia. So just a quick intro who we are. Um so
+00:29:38.159 we're called International Coastal Management ICM. Been around for nearly 45 years. Um even though we're based in
+00:29:44.960 Australia, we do projects kind of all over the world. um currently doing projects in
+00:29:50.720 Australia, California, Zanzibar, Tanzania, some around the Middle East,
+00:29:56.640 um something in Europe at the moment. So, we're going to get um around the world.
+00:30:03.200 Um just a little bit about what this talk is. I'm going to talk about our
+00:30:09.520 approach to coastal protection and resilience. And you know there's not one
+00:30:15.520 right or wrong answer of how to do the approach. This is just the way that we approach it. And I understand you know
+00:30:21.840 every site is different and there's no one solution that's perfect or fits every you know coastline. But um this is
+00:30:29.360 the kind of philosophy that we have when we approach it. We say it's kind of like working with nature but really it's not
+00:30:36.320 working against nature. And I'll go into that in a bit more detail in in in a little while.
+00:30:42.880 So basically people always come up and ask me like
+00:30:49.120 what's the solution and the easiest response generally is
+00:30:57.200 there's no one solution. Um, from what we found, it's a
+00:31:03.200 combination of solutions. And when you put all these different, you know, physical structures and strategies
+00:31:10.640 together, that's when things start working. So, for example, this image you're looking at is on the Gold Coast,
+00:31:17.279 and you say like, well, what's the solution here? But in reality, this
+00:31:22.720 coastline's like carefully curated and very heavily managed to look like this.
+00:31:29.360 Even though it looks relatively natural, um it's very much artificial and
+00:31:34.880 man-made. So, um the June system that you see there was actually put there.
+00:31:40.240 It's built um it's managed. There's a buried seaw wall that goes under the
+00:31:45.679 June system. We have various types of uh sand management strategies ensuring that
+00:31:52.159 the beach stays wide like this. We also use different types of structures like artificial reefs which I'll go into in
+00:32:00.080 in a little while too. But the the concept here is that you know it's not one thing that gets this end result.
+00:32:06.159 It's a series of things and not just physical things but also like layers of strategies that go in. So what what I'm
+00:32:14.159 talking about here in this talk is um the concept of resilience. And so,
+00:32:20.320 um, there's kind of been like an interest in the use of this word coastal resilience. And then when you think
+00:32:26.320 about what does resilient actually mean, you know, resilient means to be able to
+00:32:31.600 take a hit but bounce back. And so what we're saying here is, you know, we don't
+00:32:36.799 want to necessarily stop all erosion from happening. We don't necessarily
+00:32:42.559 want to keep all of the, you know, the coastal processes out from where our
+00:32:47.760 site is. We want to let the natural processes take place. We just want to reduce them down. But at the same time,
+00:32:54.320 we want to increase our ability to recover. So when we say coastal resilience, we're talking about being
+00:33:00.799 able to take a hit but actually bounce back rather than avoid the hit
+00:33:07.120 altogether. And we say this because I mean you most
+00:33:14.080 sandy coastlines naturally are fairly resistant by default. Um there's like a
+00:33:21.279 natural resilience element built into it where you know if you have like a sandune system you know during a storm
+00:33:28.320 event those sandunes might erode and then make their way back out into the storm bar. Then over time those stormb
+00:33:35.200 bars sort of work their way back into shore and the whole system sort of stays fairly dynamic. But we're just sort of
+00:33:42.399 highlighting here that you know left to its own devices natural sandy beaches
+00:33:48.399 can actually be quite resilient just by themselves.
+00:33:53.840 But it's when things start to change that um you know the whole condition
+00:33:59.360 starts to change. So you know we have environmental changes that um ultimately
+00:34:04.960 change that natural resilience process as well as you know human influence
+00:34:10.320 changes like the coastline doesn't matter if it goes back and forth but once you start putting structures in
+00:34:15.520 there then you have a hard line then it does matter if the coastline goes back and forth. So these are just saying like
+00:34:22.960 if you did if we left nature to do its thing you know it would not naturally sort of settle itself out but because
+00:34:29.440 the conditions are changing you know we have to take it from a different approach.
+00:34:35.760 Um this is just a term I'm not sure if you guys use it coastal squeeze
+00:34:42.719 but um it's basically meaning you know as we
+00:34:50.000 uh as society are building you know closer and closer to the shoreline um you know as sea level rise comes up
+00:34:57.440 we're basically getting this kind of squeezed in um effect happening all along the coastlines around the world.
+00:35:04.079 And this was actually what the Gold Coast um looked like some years ago.
+00:35:13.440 Um so, you know, not everywhere in Australia is doing the kinds of work
+00:35:19.280 that we're doing here on the Gold Coast. This example on the left is in the state
+00:35:24.400 of uh New South Wales, which is the state um south of where we are in Queensland. And it's just this slide is
+00:35:31.200 just highlighting that the difference between a kind of reactive approach
+00:35:36.560 rather than a proactive approach. So the example on the left here showing that
+00:35:41.920 the same stretch of coastline in 1978 looks the same as it does now because
+00:35:48.320 basically they wait till the storm season comes you know try to do some immediate you know emergency repair
+00:35:55.760 rather than the example on the right hand side which is where we are here on the Gold Coast which um basically has
+00:36:03.359 this proactive management of the coastline you know kind of staying ahead head of um you know the situation as
+00:36:11.839 storm levels increase and then as everything increases just being proactive to sort of stay ahead of it.
+00:36:18.079 And so the same co the two different coastlines you know 40 years apart look
+00:36:23.680 very different because of the way that they've been managed.
+00:36:31.119 Uh and then this is just talking a little bit about how I said you know the different approaches to managing the
+00:36:38.000 coastline of working you know in the natural world verse working sort of with
+00:36:46.160 the natural systems. And so when we talk about resilience like when we're saying
+00:36:51.839 we're not necessarily trying to avoid erosion or avoid natural processes from
+00:36:58.400 from happening. We're just trying to dampen those. So you can see like the
+00:37:04.000 you know the history of coastal engineering as a whole really came from
+00:37:09.200 civil engineering and which really came from you know ports and harbors where the aim of ports and harbors was really
+00:37:17.520 to keep the natural processes out so that you had this nice calm um waterway
+00:37:26.160 you know on the inside of your structures to so you could you know maintain travel and trade and and the
+00:37:33.040 functionality of ports. And then that sort of mindset then shifted to, you
+00:37:38.800 know, coastlines where can we take that same approach that we use in ports and harbors and try to control
+00:37:46.240 um or change the natural processes to get the shoreline to do what we want it to do. And then the the kind of approach
+00:37:54.400 that we've adopted here on the Gold Coast is you know another step ahead to
+00:38:00.400 saying like rather than um you know manipulate the coastal process can we
+00:38:05.839 actually just let the natural processes take place but just sort of reduce them and dampen them.
+00:38:13.440 Not to say that you know one of these is better or worse than the other. It really depends on the you know the
+00:38:19.920 outcome on the site and what you were trying to achieve what the goals of the project are. You know in some instances
+00:38:25.839 you know maybe groins and breakwateraters are you know the right option for that site. We're just saying
+00:38:31.359 here that you know these are some of the things that we've been doing um here on the Gold Coast and other places around
+00:38:36.640 the world. And just to give an example like this is one um stretch of coastline
+00:38:43.760 in the UAE where we did a project. So the example on the left
+00:38:49.760 is uh like an an emergent um breakwater. It's really just one long stretch. So
+00:38:57.760 there was a design that went in on this coastline. And you can see basically that's designed specifically to keep all
+00:39:05.599 of the wave energy out. is designed to make sure that that beach is, you know,
+00:39:11.119 doesn't move at all. Where, you know, on the very same stretch of coastline,
+00:39:18.079 we had a a client that wanted to have a stable beach, but also wanted to be able
+00:39:24.400 to look out to the sea and not have interrupted views. So, we did this
+00:39:29.680 submerged structure in front of the properties and basically were able to in
+00:39:36.960 this instant um you know through our design approach able to say like you could have a submerged structure and
+00:39:43.599 still have guaranteed beach stability behind it. And in this example, you know, I think in we we said something
+00:39:50.000 like an 8-year stable beach guarantee behind this submerged structure. Um so, we were able to do that and achieve
+00:39:56.400 that. I'm just just trying to highlight here that, you know, there's different ways that you can go about the same thing and try to like protect a
+00:40:03.599 coastline on the same stretch of coastline. Um either by, you know, keeping everything out or by, you know,
+00:40:11.839 letting things in but just in a dampened sort of approach.
+00:40:18.560 Um, and just to give you a little more context about how our approach really began and where things kicked off, it
+00:40:25.359 was here back in on the Gold Coast during the 60s and 70s. So these scenes
+00:40:31.040 that you're seeing on the right hand side, these are the scenes from the 60s and
+00:40:37.119 70s where we had a cyclone event come through and basically you know destroyed
+00:40:42.880 the coastline, houses falling in, um you know, roads falling into the sea. Um so
+00:40:50.560 the Gold Coast basically made a decision back then like we don't want to let this happen again. So what can we start doing
+00:40:57.920 to prevent you know this from you know occurring over and over again. So this is really where things on the go gold go
+00:41:05.119 co started to change and the mentality shifted into you know how can we be more proactive so that this doesn't happen
+00:41:12.400 again. Um but you can see like this image with the car like um people were
+00:41:19.599 dumping cars over the over the cliff to try to like stop erosion. So it was all
+00:41:25.760 just a bit chaotic. U and then just to give you sort of where the follow on from that is you
+00:41:32.240 know we had these significant storm events um during the 60s and 70s and
+00:41:38.960 then the first sort of point of call was to do mass nourishment and put all the sand back that had left. But once you
+00:41:48.000 try to just put sand on the beach um in a zone that's fairly active, like
+00:41:53.680 the sand didn't really stay. It didn't last. It just put sand up on top of the beach and the sand kind of washed out
+00:42:00.560 again. So then like the mentality had to shift again. Okay, what what can we do
+00:42:05.599 here that's a little bit different? And this is when, you know, the Gold
+00:42:10.800 Coast really started to come up with some innovative ways to try to mitigate,
+00:42:16.480 you know, that serious um nourishment loss. coming up with different ways to do dredging and nourishment. Coming up
+00:42:23.359 with new systems to pump sand, coming up with um you know new um breakwater types
+00:42:32.960 um such as you know multifunctional reefs and dune systems to try to retain
+00:42:38.319 the beach in the most natural way possible.
+00:42:44.640 And just to give you an example, so just a few months ago, we got hit by another
+00:42:52.400 cyclone of a similar magnitude to the one, you know, 50 or 60 years ago. Um,
+00:42:59.280 it was the first time in, you know, 50 years that the Gold Coast has been hit with a cyclone again since those 60s and
+00:43:06.240 70s ones. And you can see the difference, you know, between in the 60s
+00:43:11.520 where a cyclone came and, you know, houses and roads were falling into the sea and this time, you know, a cyclone
+00:43:18.720 came. We had 15 uh meter waves recorded offshore here on the Gold Coast just a
+00:43:24.880 few months ago. So 15 m is fairly significant. It's about as big as it's
+00:43:31.280 ever gotten here. And I guess what we're showing here is, you know, the beaches
+00:43:36.880 did see some erosion, yes. But those June systems that have been put in place
+00:43:42.319 and managed over the decades kind of did their job, you know, by taking the brunt
+00:43:48.640 of the storm event and stopping the erosion from coming all the way back and houses falling into the sea. But it's
+00:43:55.359 not just the June system. is like the you know the sand management practices that have been under undertaking for the
+00:44:01.119 last few decades etc etc. So all of the systems combined basically were you know
+00:44:07.599 put under this stress test just a few months ago and this is a you know a
+00:44:13.599 pretty good outcome I think um compared to you know the cyclone from you know 50
+00:44:18.960 60 years ago. So when we talk about um resilience,
+00:44:26.720 we're really talking about a framework here. And so our approach to, you know,
+00:44:32.160 a new site or a new project is we we try to break up into these three sort of
+00:44:37.599 main categories where we talk about, you know, the bottom of the beach. And by the bottom of the beach, I mean anything
+00:44:44.319 that you can't see. So, you know, when people talk about the beach, they generally think about, you know, the
+00:44:50.400 sand up on the top of beach that you see, but the beach actually goes out quite a long way. There's like an active
+00:44:56.560 system that goes out, you know, deep into the water. So, you really have to consider all the way out. Um, here on
+00:45:03.680 the Gold Coast, for example, we have a depth of closure at like minus 20 m. So,
+00:45:11.680 you know, there's active um sand movement when you're standing on the beach and you're looking out for, you
+00:45:17.599 know, 100 or so meters. There's still active sand all the way out there. So,
+00:45:23.040 when you're trying to do these kind of coastal resilience projects, like you can't not think about what's happening
+00:45:29.839 underwater all the way out in that active zone. Uh then we have the top of the beach. This is the area that you can
+00:45:36.640 see. Um, and then a big one, obviously we're here, we're talking about like the sediment supply or sand supply, like
+00:45:43.760 sand coming in and out of the system. Um, I think this is a really integral
+00:45:49.040 part of the puzzle that often gets overlooked. So, yeah, I'll go into these again bit more detail. So when we're
+00:45:56.720 talking about the top of the beach, you know, these are the kinds of things that we're talking about like nourishment,
+00:46:03.200 um, June restoration, but we're also talking about, you know, terminal structures. So structures that are
+00:46:10.720 actually permanently buried and really just a last line of defense in those kind of worst case cyclonic events. So
+00:46:18.720 for 99% of the time, you don't actually see them. You just know that they're there.
+00:46:24.720 Um, for example, you know, this is basically
+00:46:30.160 a cross-section of what we have here. So, we actually build these um boulder
+00:46:37.599 walls all the way down the coastline. Um, this is our last line of defense.
+00:46:43.680 This is, you know, what um is the emergency back stop and gives
+00:46:49.680 the city the confidence to be able to build skyscrapers and, you know, insurance companies the ability to, you
+00:46:57.280 know, put insurance against all of these buildings, but it's what happens in
+00:47:02.960 front of those seaw walls. So this is the the the dune system and the
+00:47:08.319 management of the June system and the constant you know monitoring and maintenance of those June systems that
+00:47:15.119 are really taking the hit of these cyclonic events. This is just an example
+00:47:20.240 of um like an artificial headland that's sticking out and um you can't see it
+00:47:27.920 nowadays for the most part because it's buried under the sand. Um, but it's just a way, you know, of manipulating that
+00:47:34.480 top of the beach. When we talk about the bottom of the beach, you know, every
+00:47:39.520 site's different and every depth of closure is different. Um, I'm not sure if the the term depth of closurees
+00:47:48.000 um, you know, really that well known, but the depth of closure basically means the depth at which, you know, the bottom
+00:47:55.520 of the beach stops being active. So it could be different for um you know the
+00:48:00.560 areas that you're talking about. But I said like here the depth of closure for us is way out. So you know we have to
+00:48:06.960 consider what's happening in the in the surf zone you know 100 meters off the beach.
+00:48:13.200 And this is where we do things like um you know nearshore nourishment which
+00:48:18.240 I'll talk a little bit about plus the artificial reefs.
+00:48:23.760 So this is a project um that was done here on the Gold Coast almost 20
+00:48:30.880 something years ago. So the purpose of this structure was
+00:48:37.920 really to be a twofold um one was to enhance you know coastal protection.
+00:48:45.520 one was to create um a surf destination and kind of a byproduct of that was
+00:48:52.079 actually like it became an ecological hotspot. So the concept here is that
+00:49:00.079 um you know by having a large footprint relatively you know shallow but still
+00:49:07.119 submerged at all times taking out you know a big chunk of that wave energy to
+00:49:12.400 reduce the wave impacts on shore but it actually acts um as a bit of an
+00:49:17.680 underwater sand trap. So for this example on the Gold Coast, we have uh a
+00:49:24.640 south to north long shore transport, a huge volume. So there's about half a million cubic meters of sand that makes
+00:49:31.200 its way up the Gold Coast every year. So this offshore structure, while it's
+00:49:36.559 submerged, it kind of acts like a bit of an underwater groin, almost like an underwater control structure. So it
+00:49:42.960 helps to build up sand on the um on the southern end and just create a bit of a
+00:49:48.960 wider buffer beach at that location. Um this particular reef, yeah, you can see
+00:49:57.680 you know the G coast is a long stretch of beach and you know the the the area
+00:50:03.839 of you know effectiveness of this reef is relatively small. The reason that it
+00:50:09.599 was put here in this specific location is because this is like a really
+00:50:14.720 vulnerable position right where the road comes um right out to the beach is
+00:50:20.480 called narrow neck. So this structure was actually built using large scale
+00:50:28.640 geoexile containers. So big geo tubes. So you can see the image on the bottom
+00:50:34.640 of the screen bottom left there. That's actually an image of the barge.
+00:50:40.640 So there's a basically called a split hopper barge. And inside of that split hopper, um we rolled out these large geo
+00:50:48.960 tubes. So they're about 20 m long, about 5 to 6 m wide, and they can fill up, you
+00:50:55.119 know, about 2 m high. So they're about about 300 ton when they're full of sand.
+00:51:00.800 And basically this barge was able to um you know maneuver, pick up the sand off the seabed, fill these sandbags, get to
+00:51:08.640 the location that it needed to with GPS and drop the sandbags on top of each other to create this, you know, big
+00:51:15.280 artificial structure. So you can see in the top picture there, basically what
+00:51:20.559 it's doing is just breaking waves slightly offshore to reduce that wave
+00:51:27.040 energy slightly by the time it comes and hits the coastline. Um, this particular reef, it was called
+00:51:35.119 a multi-purpose artificial reef. So, you know, a bit of design went into the way
+00:51:41.119 that the reef was actually shaped so that waves when waves broke across it,
+00:51:46.800 you could actually um surf on the reef itself. The Gold Coast has a really big
+00:51:53.040 surfing culture. And so, not um disrupting any kind of surfing practices
+00:52:00.720 along the coastline was a really important KPI for this project. And so the reefs actually um
+00:52:09.040 shaped differently than you would a traditional breakwater which is more shore um parallel. This is almost more
+00:52:15.680 shore perpendicular so that when the wave comes across it actually has time to break. So these um this material
+00:52:23.920 actually over time um you know created a ecological hot
+00:52:29.200 spot because of the geocontainers are relatively soft and they had this kind
+00:52:34.960 of furry um exterior. The furry exterior kind of acted like a almost like a Velcro for
+00:52:42.880 floating microorganisms. So any kind of microorganisms that were floating in the
+00:52:47.920 general area basically got stuck to it and yeah it created this kind of ecological hot spot which actually being
+00:52:56.640 ended up being a bit of a demise because it became too good of an ecological hot spot. There was too many fish going
+00:53:03.760 there and it attracted basically too many fishermen going and the the reef
+00:53:09.920 gets covered in fishermen on calm days and fishermen drop their anchors and they can actually um damage these
+00:53:17.200 containers. So this was basically the the first um of its kind of its scale
+00:53:24.480 and it was really sort of a the pilot project, the the the guinea pig which we learned a whole lot of lessons from here
+00:53:30.960 on the Gold Coast which then went into um like a a second um phase uh which was
+00:53:40.800 a smaller rock reef also built on the Gold Coast with a slightly different
+00:53:48.480 um KPI. This one was more surfing focused,
+00:53:53.839 but the idea being similar to sort of take out some of the wave energy offshore and to act as a underwater
+00:54:02.800 groin or underwater control structure to help um you know try to trap some of the
+00:54:08.640 long shore drift, some of the long shore sand that's moving up the coastline to create a bit of an offshore buffer.
+00:54:16.720 Um so two very different approaches here with different materials. You know,
+00:54:23.440 obviously building any kind of um structure out of rock is significantly more expensive, but it's also
+00:54:30.720 significantly more durable and stable. Um so it's a bit of a trade-off. Also,
+00:54:36.160 when you're surfing on it, the the geo tube reef, um, when you fall off, cuz
+00:54:42.800 you do fall off, um, which I've fallen off quite a few times and hit the reef,
+00:54:48.640 um, it's quite soft, so it's not not a bad place to land. So, there's a bit of
+00:54:53.920 public safety that comes into the equation, too. So somewhere between you
+00:54:59.680 know coastal structure, coastal amenity, environmental hotspot and um you know
+00:55:06.160 then you got public safety in there and cost obviously and constructibility. So it's a it's an interesting um mix. But
+00:55:14.960 you know obviously the thing to remember when you start to put a coastal control
+00:55:20.720 structure below the water line you get more wave energy going across it. So
+00:55:26.960 it's obviously not as effective as a fully emergent breakwater. So once you
+00:55:32.240 start getting submerged, then you get into the conversation of, you know,
+00:55:37.680 maintenance. How much sand do you need to, you know,
+00:55:43.599 maintain the system? Because you're not keeping all the wave energy out. You're sort of allowing some wave energy to
+00:55:49.599 come in. So you're assuming some kind of um erosion that's going to take place.
+00:55:55.520 And so what we're trying to do is create a balance between um you know usability cost capital cost versus maintenance
+00:56:02.799 cost of how much maintenance needs to be done where which is where this concept of
+00:56:09.359 nearshore nourishment comes in. So when we do um nourishment here on the Gold
+00:56:15.280 Coast for example, we do some nourishment we put up on the top of the beach which is the dry sand
+00:56:22.559 that you see. But a lot of most of the nourishment actually that we do we put
+00:56:27.760 into this nearshore zone which is you know the bottom of the beach or the area
+00:56:33.440 below the water. So the reason we do this is for a couple of um key key
+00:56:39.920 reasons. One is it's significantly cheaper to put sand um in the nearshore zone
+00:56:47.920 than it is to put it up onto the beach itself. um it's less disruptive to the beach
+00:56:55.760 users and um the quality of the sand that you put in that nearshore zone can actually
+00:57:02.400 be less. So the the theory here is when you put the sand in this nearshore zone,
+00:57:10.240 um the wave energy actually helps to push the sand onto the beach itself. And
+00:57:16.960 so the natural process is kind of doing the work for you. So you're essentially like recreating the stormb bar that
+00:57:22.960 would be there, but you're, you know, accelerating the natural processes and allowing that sort of natural storm bar
+00:57:29.359 to make its way back in onto the beach. So you're kind of nourishing it from the bottom rather than from the top. So it's
+00:57:36.240 not to say that you have to do one or the other, but we do these in conjunction. And it's just part of the
+00:57:41.359 way that the Gold Coast beaches have been managed and you know part of the reason that the you know the the sand
+00:57:47.760 system held up so well during you know cyclonic events. So
+00:57:53.680 which takes me into the last point which is you know talking about the sand sediment supply and the sentiment
+00:57:59.599 management. So, um, another thing that we kind of worked into our system here
+00:58:07.920 on the Gold Coast is something called a sand bypass and a sand backpass system.
+00:58:13.280 So as sand, you know, naturally makes its way in our case from south to north,
+00:58:20.960 we're able to, you know, manipulate it with a pipe network,
+00:58:26.079 um, which can, you know, pick up sand in one location and actually spit it across through permanent pipe system to another
+00:58:33.119 location. This gives us the ability to, you know, have a really good sand management
+00:58:39.280 system and um, you know, able to understand, you know, where the sand is
+00:58:45.040 moving and how we can move it back or forth depending on what we need. We also
+00:58:50.799 integrated a whole heap of, you know, sand management policies. This was
+00:58:56.000 really important back in the late 80s. for example like any kind of
+00:59:02.559 uh construction that's done within a you know I believe it's a
+00:59:08.400 100 meter or could could be 250 m you know distance of the beach any sand
+00:59:14.319 that's excavated to do you know put in a new building or you know do any kind of
+00:59:20.079 construction that sand you know by you know mandate has to go onto the beach
+00:59:26.880 obviously has to be screened first to make sure it's not contaminated, but any basically any development that happens
+00:59:33.040 along the coastline, if there's any excavation that's happening, that sand we use back onto the beach. So,
+00:59:38.720 integrating these kind of different policies um to really encourage, you know,
+00:59:45.440 building up the sand volume, managing the sand volume. Um that's what's really working here. Here's just an example of
+00:59:52.319 the bypassing system on the Gold Coast. So, this is right down the southern end.
+00:59:58.160 Um, if you're looking at the screen, we have sand that naturally sort of makes its way from the south and would have
+01:00:06.960 naturally come around that point. But since um the you know the river entrance
+01:00:13.839 built these big training walls, it basically blocked that sand from coming around and the sand on the northern end
+01:00:20.480 was starved and all of the beaches up the Gold Coast basically were starved of sand. So what you're seeing in the
+01:00:28.400 bottom right hand corner is a sand pumping station which is basically a
+01:00:35.119 um a long pier and it has a series of jet pumps on the end of it. And so as
+01:00:40.880 the sand naturally makes its way from south to north, the sand's picked up in those jet pumps and actually pumped
+01:00:47.359 across um the river entrance over to the beaches on the north to basically
+01:00:53.280 replicate what would have happened naturally if that river system um didn't
+01:00:58.720 have the big breakwater training walls in place. So it's, you know, using these
+01:01:04.640 kinds of um sand management strategies and technologies that's enabled the Gold
+01:01:10.799 Coast to be able to integrate this sort of holistic um approach. And then when
+01:01:16.559 you put put them all together, that's when you start getting the the outcomes that we have, you know, like integrating
+01:01:22.559 the sand source from, you know, pump networks. Um, putting in reef systems,
+01:01:28.720 um, building up the sand bars in the nearshore area with nearshore nourishment, and then putting the June
+01:01:34.960 system up on the top of the beach, but not just putting the dunes there, like actually monitoring, managing those June
+01:01:40.480 systems as well is when you really start to get things um, come together. Aon we
+01:01:46.319 have maybe one more minute and then we need to wrap and move on for some questions.
+01:01:51.839 Okay, great. So this is basically um you know the process of coastal resilience
+01:01:57.920 in a nutshell and I just got some really quick examples of you know some different
+01:02:04.000 things we're doing around the world. This is a place in California at the moment. you know, rather than a traditional groin field, we're looking
+01:02:11.040 at doing these short rounded sort of headlands. Um, so rather than groins
+01:02:17.200 which, you know, stop that natural process um going up, these allow the natural long shore transport to happen
+01:02:23.359 just in a slower sort of way. Um, this is just an example of like a
+01:02:28.640 nearshore break order that we did but on a really smaller scale rather than having large ones. So, you know, you can
+01:02:35.040 create um you know, small differences in the coastline rather than big extreme
+01:02:40.160 ones. Because you guys were talking about cliffs before I threw this in, this is just an example of um you know,
+01:02:47.200 a a cliff system here in Queensland. Um you know, as a claybased cliff that was
+01:02:53.359 falling into the sea. We we built this sort of um over uh shock creek wall down
+01:03:00.559 the bottom of it, just what you can see along the base. um just to stop that cliff erosion from
+01:03:06.160 going in. And these might look like a typical grind, but they're actually made out of
+01:03:12.720 um five ton sandbags. And the reason we did them at a 5 ton sandbags and not rock is because the um it's a really
+01:03:20.000 popular community beach and they like to sit and walk out on those sandbags and sit on them. Um this one actually we had
+01:03:28.559 to re um you know redo the the job at the end of the the project's lifespan and the community actually wanted to
+01:03:35.119 have the sandbags instead of rocks. So there's different things you can do. Here's just another example. or you know
+01:03:40.400 this is a a breakwater niche or breakwater using um geo tubes rather than rocks just because the the KPIs and
+01:03:47.760 you know the end result they wanted um the users to be able to like walk along it and and and um access them and that's
+01:03:55.200 basically it in a nutshell. There's just a couple of examples of you know some other things that that you can do.
+01:04:01.520 Thank you. Thank you very much. Um is there someone wants to ask our own
+01:04:06.960 questions?
+01:04:15.039 I would I have a question. Yeah, go ahead. I should I should go ahead. Okay. Yeah.
+01:04:22.480 Um I'm interested in the regulations. Uh Erin, if you could say a few words about
+01:04:29.119 maybe um when projects are
+01:04:34.240 uh approved, is there something that uh um makes the interpreneur, the project
+01:04:43.440 um owner do certain things in the future? For example, we also have the
+01:04:49.359 south to north sediment transport issue. And we've had like large marinas built
+01:04:54.480 that have um caused the accumulation of sand on on
+01:04:59.680 the southern side and the loss of sand in the north. And that has uh required
+01:05:05.200 the building of breakwaters. Yeah. And the the interpreter who built that,
+01:05:12.319 the proponent had absolutely no um um authority, no um requirement to make
+01:05:20.960 amends or to be involved in the protection of the northern beach. So I'm
+01:05:26.720 wondering what kind of regulations you have in with that with regard to the future of this um blocking of the sand
+01:05:35.200 over time. Yeah. Yeah, that's a great question. Um, we got pretty strict rules here in
+01:05:44.559 Australia and and we're doing, you know, the works in California at the moment, too. Um so just for example the the
+01:05:53.359 project in California it's a very similar situation where a huge um marina
+01:05:59.039 was put in back in the60s I believe and it basically created a
+01:06:04.640 whole heap of pro problems down drift. Um so you know we're going back now to
+01:06:11.200 try to you know fix problems that were created you know
+01:06:16.559 50 years ago. So there's no real way to, you know, completely eradicate the
+01:06:21.920 problem because the problem's already there now. So it's only a matter of like looking forward into the future unless
+01:06:27.680 you were to go back and, you know, fully remove the marina. Um, one of the things
+01:06:33.359 that's probably the easiest way in a situation like that where you know
+01:06:39.280 there's a a definite a unidirectional long shore transport and there's a significant you know
+01:06:45.920 man-made structure that's gone in and disrupting the natural processes is probably to have some kind of
+01:06:51.280 backpassing system um the pump pump system you know and I'm
+01:06:58.079 not too sure like who owns the marina who operates it But you know maybe it
+01:07:03.280 becomes the ownership of the you know that particular
+01:07:09.359 structure um you know if it's if it's known or if it's been able to show that you know because of this it's causing
+01:07:16.640 problems down here. Therefore you know to mitigate those problems we need to backpass sand that's you know being
+01:07:24.319 blocked or sorry bypass sand that's being blocked. And that's a really, you know, not a super complicated process
+01:07:31.119 because, you know, if the sand was naturally going from south to north and it's kind of getting blocked by a big
+01:07:36.240 structure, then by putting a pump system on the one side and essentially just pumping it across, then you're allowing
+01:07:42.640 that system to take place. But I'm not sure who like how you can say who would be responsible for that. Um because, you
+01:07:49.760 know, it's a kind of a historic um project rather than a new project. Right. Right. Yeah. No, I'm just
+01:07:55.680 wondering if the newer ones now if there's something in Australia at least that requires that uh responsibility
+01:08:01.520 over time but okay definitely basically we have to do any kind of
+01:08:07.119 coastal structure here you know that you you've got to do like environmental impacts and you know coastal studies and
+01:08:14.720 um yeah you essentially have to be able to prove that whatever the the structure or implementation that you're doing here
+01:08:20.719 is not going to have a negative effect down drift or If it is, how are you
+01:08:25.759 going to mitigate that? Um, so yeah, basically nothing here or you know in in
+01:08:32.880 California where we're doing the prote.
+01:08:37.920 So um yeah, 100% there's the regulation in place. Thank you.
+01:08:44.080 Okay, one quick more question from Mayan that voted very nice.
+01:08:51.679 Good morning. Thank you for uh the very interesting presentation. I'm interested uh to ask about the the quantity of
+01:09:00.319 sand. It seems like uh some of these solution require lots of sand and they
+01:09:05.359 require a maintenance of annual sand uh nourishment. So let's say for the go
+01:09:12.560 coast for 1 kilometer of coastline what is the quantity the annual quantity of
+01:09:19.600 sand required to maintain these solutions and where does it come from?
+01:09:25.520 What is the source? Uh so we have a couple of sources. One
+01:09:30.880 is like the the natural long shore transport that comes from the south to north. So like I said, we have about
+01:09:37.040 there's about half a million cubic meters of sand naturally coming into the system and basically going through the
+01:09:42.960 system every year. So we um able to
+01:09:48.560 basically take at the moment we pump back so from it goes from the south all
+01:09:54.080 the way to the north and we pump back about 80,000 cubes of that as needed.
+01:10:01.120 So, um, that's basically what the, you know, we've allowed as a as a as a
+01:10:09.760 coastal community to say like we're if we if we need it, we can pump back about 80,000 cubes, but we also have sand that
+01:10:17.360 comes from um offshore sources. So, we have offshore sand stock piles. We also
+01:10:23.360 have sand we have like this waterway system. Um it's like a sandy bed
+01:10:30.320 internal waterway system um that we take sand from because it gets infilled from
+01:10:35.600 the ocean every year. So we take it from that basically to do maintenance for like the river entrances and we use that
+01:10:42.400 as well. So for a 1 kilometer strip on the Gold Coast, what's the volume? I
+01:10:48.960 mean annually it depends on the location. like we have some areas that
+01:10:54.239 are hot spots and some areas that don't get maintained at all. So towards the
+01:10:59.840 northern end just because of the way our coastline's shaped and because that's where the main tourist destination is.
+01:11:06.480 Um I believe you know you're probably looking at somewhere around 40,000 cubes a year over a 5 km sort of space. So if
+01:11:15.120 you did that what's that? you know that that's the kind of numbers
+01:11:21.040 that we're talking about and that's without in that particular spot there's no actual structure. So that's just
+01:11:26.960 putting sand, you know, maintaining the system. The areas further down south with the
+01:11:33.600 structures um get a lot less. Thank you.
+01:11:39.920 Thank you very much everyone. Your details is on the screen now. So if
+01:11:45.040 everyone wants to get in touch. Yeah. Yeah. Thank you. Thank you for your
+01:11:50.400 presentation. Okay.
+01:12:02.980 [Music]
+01:12:09.970 [Music]
+01:12:15.520 of
+01:12:38.010 [Music]
+01:12:44.640 Uhchech.
+01:12:53.840 [Music]
+01:13:14.320 foreign.
+01:13:30.550 [Music]
+01:13:47.840 TV.
+01:14:02.400 foreign
+01:14:11.880 [Music]
+01:14:30.320 speech. [Music]
+01:14:42.000 form.
+01:15:38.290 [Music] Australia.
+01:16:11.040 foreign. [Music]
+01:16:40.960 Never mind.
+01:16:48.700 [Applause] forefront.
+01:17:42.080 for
+01:18:08.060 [Music]
+01:18:22.080 ongoing.
+01:18:29.540 [Music]
+01:18:38.320 Brazil 11.
+01:18:50.320 forch.
+01:19:20.400 Will are you here with us? I am. Good morning. This is you.
+01:19:25.520 All right. Good morning everybody and thank you John for the introduction. Um so building on what John has been
+01:19:31.280 talking about. Um I wanted to start by explaining one of Seaell's central objectives. Uh we as a company
+01:19:38.159 fundamentally want to build reefs that are as natural as possible. We certainly don't want to use concrete and we want
+01:19:43.520 to use as little steel as possible within our structures. So instead we set
+01:19:48.800 out to form a skeleton and then we use um natural mater materials where we can
+01:19:54.239 and also minerals available to us in the sea to build out the reefs and then ideally or ultimately what we're trying
+01:20:00.640 to do is encouraging reef building organisms like oysters, muscles um and ultimately corals to form the structure
+01:20:07.199 itself and then they then perform a lasting long-term solution.
+01:20:12.320 So as an example of some of the research that we're doing um this slide shows uh
+01:20:17.360 laboratory results and also some field trials we've been doing with Bath University here in the UK over the last
+01:20:23.280 couple of years where we've developed a technique to grow rock from minerals in the sea across bamboo. Okay. And just to
+01:20:31.360 explain a little bit how this works, I mean the bamboos receive some special sort of treatments which I won't go into, but we pass a small electrical
+01:20:38.560 current through the seawater and that causes the pH around the bamboo around
+01:20:43.600 the structure to increase. So it becomes more alkaline and that causes minerals that are in abundance in the ocean to
+01:20:49.199 crystallize out and form a rock. And if you if you do this for long enough and you do it in the right way, you can form
+01:20:54.560 a rock that's as hard as concrete. But this crucially that rock is also ideal for marine life and that's you know what
+01:21:01.440 we're we're we want to attach to our structures and then develop them forward. So next slide Jonathan.
+01:21:11.760 Now before um sorry now in this project this is um you know continuing with
+01:21:18.400 these sort of field trials um we installed just five units um about 10
+01:21:23.679 mters long about 100 meters offshore and you can see in the picture on the left we've installed bamboo around the outer
+01:21:30.159 edge around the ocean edge of these reefs and within literally a couple of
+01:21:35.199 weeks um and this photo is taken about a month afterwards you could see the direct impact that that those structures
+01:21:41.440 were having on the shoreline. So the area I've marked in red. Okay. And in the following months, you then saw that
+01:21:47.520 area in med sort of um broaden out and extend towards us in within that photograph. Now essentially what we've
+01:21:55.520 done is we've installed with just 10 mters of reef, we've enhanced about 200
+01:22:01.360 mters of shoreline and we could install those structures in an afternoon. Okay. It's a very fast process um of you know
+01:22:09.199 essentially achieving long-term um protection. Now next slide Jonathan.
+01:22:15.840 Now before we start um any project and the you know the last presenter to
+01:22:20.960 touched on this as well um you have to understand what the marine environment
+01:22:26.800 is doing. You know you need to understand what's what the waves and currents within any area are doing. So
+01:22:32.239 we always start any project with a thorough examination of of any available data. Obviously we need to understand
+01:22:38.560 the local beyimemetry and sort of historical changes but we also then collect all of the available wave and
+01:22:44.480 current data for a region and we build what we call a multivariate stochcastic model. So this con this looks at effects
+01:22:51.920 of wave height, wave direct uh sorry wave um height, wave period and
+01:22:56.960 direction simultaneously and it allows us to simulate um thousands even hundreds of thousands of
+01:23:03.360 years also taking into account things like hurricans and also climate change.
+01:23:08.800 Next slide John. And from each of those simulations, we
+01:23:16.159 build out in a sort of clever way, we then simulate the the local wave conditions or what we call wave induced
+01:23:22.159 currents. Um, now it's those currents that are affected or or essential for the movement of sediment around a
+01:23:28.239 shoreline. So, where you see um currents slowing down, you're likely to see sediment being deposited. If you see
+01:23:34.320 those currents moving offshore, they're going to take sand away from your beach and deposit deposited offshore. And it's
+01:23:40.800 managing those currents that um is essentially crucial to effective coastal management.
+01:23:47.840 Um now alongside that um we've invested a lot of time and e effort um with MCC
+01:23:55.520 support on this as well um to understand the direct effect of the individual
+01:24:01.280 reefs on the waves that are coming past. So this is laboratory testing that we did at Imperial College. Um and this is
+01:24:08.639 looking at the you know obviously the impact of the of the reef on the on the waves going past. This is an earlier
+01:24:14.639 reef design um that we used to use and on top of this simulation we
+01:24:20.480 superimposed the CFD results and you can see an almost I mean if you look at the surface there's an almost perfect
+01:24:26.080 correlation between the two which is which is which is important. Um but what the CFD allows us to understand is how
+01:24:32.560 the flow or the water is flowing around the structure but also allows us to calculate the pressures on the structure
+01:24:38.159 and this in turn allows us to then go back and optimize those structures numerically. Yeah. Um laboratory work is
+01:24:45.040 slow laborious and quite costly. Obviously if we can calibrate our CFD models we can then make a number of
+01:24:51.120 iterative improvements and that's really what's led to our sort of latest design. So the next next slide Jonathan.
+01:24:58.480 So, so we've taken our sort of CFD results
+01:25:04.480 and then we've coupled that with an FN model and we've looked at over the years
+01:25:09.920 probably about 50 different types of structures and it's almost became a game within the company to come up with a new
+01:25:15.440 structure every week. Okay. And we've we've finalized on what we're calling these hyperbolid structures. So, it's
+01:25:21.600 the the image you see on the right. Now, hyperboloids actually appear quite a lot in in engineering. Um they were first
+01:25:28.000 invented by the Ukrainians um for as a lighthouse tower, but you nowadays see
+01:25:33.199 them as the cooling towers for a lot of power stations. They also the the base of an awful lot of water towers. Um so
+01:25:39.679 once you look out for them, they appear all over the place. But what's clever about them is they are made up of straight elements. So all of those lines
+01:25:46.000 you see in that in that in that picture are all completely straight. So it means manufacturing becomes a lot easier. And
+01:25:52.719 I can also use a wide variety of different materials within these so long as they're broadly straight. And you
+01:25:59.360 know, taking the CFD results, we get the pressures out of there and we use that to actually model the deflections and
+01:26:04.880 the forces on that structure. And crucially, we also use it to model the um the the anchoring that's necessary
+01:26:11.760 for these structures when we first install them. Over time, these units are supposed to thicken out. They'll build
+01:26:17.440 up at rock, but they'll also then build out with an awful lot of marine life. So they their actual natural weight will
+01:26:22.880 hold them in position but initially you need some good anchoring to um funnel to
+01:26:28.560 to to survive. Uh final slide Jonathan.
+01:26:34.159 Um so this is really coming back to a picture that Jonathan showed earlier but this is the the latest reefs uh actually
+01:26:40.239 the largest reefs that we've installed to date um with MCC support. Um, and what we did here is we divided the reef
+01:26:46.719 into broadly sort of two sections, but you've you can see the sort of the three well there's four rings, but there's
+01:26:51.760 three sections going vertically. Now, we couldn't get bamboo in um in Israel. Um,
+01:26:58.960 so we've ended up using a willow material um similar to what they put around uh you might put around your
+01:27:04.000 garden to sort of protect against the wind. Um, and that's in the top two sections. In the bottom section, we
+01:27:10.239 deliberately leave that open because what we want to do a is to allow fish an area where they can come in and out. Um,
+01:27:16.960 in addition, we are worried about scour. So that bottom zone is actually left free. So you the water can near near the
+01:27:23.600 sea floor can move freely forward and backwards. Um, reducing any sort of effects of scour which again will I
+01:27:30.639 didn't catch the word uh for the two top layers. What did you say? It's not bamboo. What is it? We've used a willow.
+01:27:37.280 Willow. Okay. Thanks. I mean, we've been experimenting with different materials, but um bamboo and
+01:27:44.960 willow at the moment seem to like the best contenders, but it it doesn't have to be those materials. It could be other things. Um so, Jonathan, back to you to
+01:27:52.159 finish. Okay, thank you.
+01:28:05.920 forchech.
+01:28:42.430 [Music] But forale.
+01:29:03.530 [Music]
+01:29:25.360 Kevin
+01:30:14.880 forchech.
+01:30:21.970 [Music]
+01:30:55.040 Shooters. [Music]
+01:31:24.320 Yeah. [Music]
+01:31:37.520 [Music]
+01:31:43.760 Shal.
+01:32:01.280 Okay.
+01:32:07.280 Okay.
+01:32:23.120 Fore!
+01:32:29.520 Foreign! Foreign!
+01:32:39.520 forgot.
+01:33:05.679 foreign.
+01:33:28.260 [Applause]
+01:33:45.440 for
+01:34:25.120 for
+01:34:35.280 him. Shalom.
+01:34:45.760 for
+01:35:14.800 butch.
+01:35:27.679 I will ask in English for the benefit of the first speaker
+01:35:34.639 in regards to the Gold Coast which I also know uh the recent strong storm
+01:35:42.639 that uh occurred uh you claimed that uh you had uh some
+01:35:48.400 projects there. I believe I know uh many of uh the the uh constructions and uh
+01:35:56.960 protections there. But could you uh indicate us what is the effect uh on the
+01:36:04.000 sectors that uh your company uh made the protection means? Thank you.
+01:36:10.159 Okay. Um, so we do all kinds of stuff from,
+01:36:18.960 you know, all of the basically the seaw walls up and down the Gold Coast.
+01:36:25.760 So most of the seaw walls weren't exposed really. One of the the main things that happened
+01:36:31.920 was, you know, there was a loss of sand
+01:36:38.159 um in front of the main area at Surface Paradise, which is like the tourist um
+01:36:46.080 location. And for the most part of the Gold Coast, basically everything's constructed
+01:36:51.920 behind the seaw wall. So if you lose any of the um if you lose any of the June
+01:36:58.400 system basically nothing's really affected. So nothing structurally is affected. Um but there was this one
+01:37:06.400 section of surface paradise where they have built it out into the beach
+01:37:13.199 like a concrete platform. Um that became exposed
+01:37:19.280 during the cyclone. So, we went in for the local council and
+01:37:26.239 basically determined that it needed some sort of emergency protection
+01:37:31.280 um at the base because nobody nobody knew uh how deep the structure actually
+01:37:38.239 went. Is it like basically like a concrete vertical wall? Um so, we ended up putting in some um
+01:37:45.520 emergency scour protection along the base of that. I understand there was been very severe
+01:37:53.360 erosion all along the the Golden Coast uh area.
+01:38:00.800 Uh yes. So like I said in the image before you can see like a lot of the go
+01:38:07.199 so the go coast is like 45 km long. So we had this section up the northern
+01:38:12.800 end. Um it's probably about four kilometers that got um you know severely
+01:38:19.360 eroded right in front of where the tourist location is for the most part of the Gold Coast. Basically the June
+01:38:26.080 systems still in place. Um thank you.
+01:38:32.560 I would like to thank all of the PE all of the speakers. Thank you Victoria Aron
+01:38:38.880 Elan will Jonathan. We encourage everyone to keep in touch
+01:38:45.360 with us. And that's it.
+01:38:53.470 [Music]
+01:39:04.320 Thank

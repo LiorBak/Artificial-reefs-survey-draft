@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Borth coastal defence reef - 3D model</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{--bg:#10171e;--panel:#17212b;--ink:#e6edf3;--mut:#9fb0bf;--line:#2a3846;--acc:#4aa3df;--warn:#e0a030;--ok:#5fb878}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);font:13px/1.4 system-ui,Segoe UI,Arial,sans-serif;overflow:hidden}
+body{display:flex;flex-direction:column}
+#top{flex:0 0 auto;display:grid;grid-template-columns:auto minmax(0,auto) minmax(0,1fr);grid-template-areas:'h v c' 's s s';gap:3px 14px;align-items:center;padding:6px 10px;background:var(--panel);border-bottom:1px solid var(--line);min-width:0}
+#top h1{grid-area:h;font-size:15px;margin:0;white-space:nowrap}
+#state{grid-area:s;color:var(--mut);font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.badge{display:inline-block;padding:1px 8px;border-radius:10px;font-weight:600;font-size:12px;color:#10171e}
+.b-high{background:var(--ok)}.b-medium{background:var(--warn)}.b-low{background:#d9645a}
+#conf{grid-area:c;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+#verbox{grid-area:v;display:flex;align-items:center;gap:6px;min-width:0}
+#ver{min-width:0;max-width:min(520px,44vw);text-overflow:ellipsis}
+select,button,input{font:inherit;color:var(--ink)}
+select,button{background:#223140;border:1px solid var(--line);border-radius:4px;padding:3px 7px;cursor:pointer}
+button:hover{background:#2c4054}
+button.on{background:var(--acc);color:#07121b}
+#info{width:22px;height:22px;border-radius:50%;padding:0;font-weight:700;font-family:Georgia,serif}
+#app{flex:1 1 auto;min-height:0;display:grid;grid-template-columns:minmax(0,1fr) 390px}
+#view{position:relative;overflow:hidden;background:#0b1117}
+#wrap{position:absolute;inset:0;margin:auto}
+#c{position:absolute;inset:0;width:100%;height:100%;display:block}
+#photo{position:absolute;inset:0;width:100%;height:100%;opacity:.5;display:none;pointer-events:none}
+.lbl{position:absolute;left:0;top:0;white-space:nowrap;font-size:11px;padding:1px 5px;border-radius:3px;background:rgba(10,18,26,.72);border:1px solid rgba(255,255,255,.18);pointer-events:none;transform:translate(-50%,-120%);will-change:transform}
+.lbl.reef{border-color:#f0b050;color:#ffd9a0}.lbl.brk{border-color:#e07050;color:#ffc2ad;font-weight:700;letter-spacing:.3px}.lbl.water{border-color:#4aa3df;color:#bfe3fa}.lbl.dim{opacity:.8;font-size:10px}
+#hud{position:absolute;left:8px;bottom:8px;font:11px/1.35 ui-monospace,Consolas,monospace;background:rgba(10,18,26,.78);padding:5px 8px;border-radius:4px;border:1px solid var(--line);white-space:pre}
+#ve{position:absolute;right:10px;top:8px;background:rgba(10,18,26,.8);border:1px solid var(--line);padding:3px 9px;border-radius:4px;font-weight:600}
+#cap{position:absolute;left:8px;top:8px;max-width:46%;font-size:11px;background:rgba(10,18,26,.78);border:1px solid var(--line);padding:4px 8px;border-radius:4px}
+#side{background:var(--panel);border-left:1px solid var(--line);display:flex;flex-direction:column;min-height:0;min-width:0}
+#tabs{display:flex;border-bottom:1px solid var(--line)}
+#tabs button{flex:1;border-radius:0;border:0;border-right:1px solid var(--line);background:transparent;padding:7px 2px}
+#tabs button.on{background:#223140;color:var(--ink);box-shadow:inset 0 -2px var(--acc)}
+.tab{display:none;overflow:auto;padding:8px 10px;flex:1;min-height:0}.tab.on{display:block}
+.row{display:flex;align-items:center;gap:8px;margin:5px 0;flex-wrap:wrap}
+.row label{min-width:120px;color:var(--mut)}
+input[type=range]{flex:1;min-width:120px}
+h3{margin:10px 0 4px;font-size:13px;color:var(--acc)}
+.chips button{padding:2px 6px;font-size:11px;margin:1px}
+table{border-collapse:collapse;width:100%;font-size:11px}
+th,td{border:1px solid var(--line);padding:3px 5px;vertical-align:top;text-align:left}
+th{background:#1d2a37}
+.est{color:var(--warn)}
+#doc{font-size:12.5px}#doc h1{font-size:17px}#doc h2{font-size:15px;color:var(--acc);margin-top:16px}#doc h3{font-size:13px}
+#doc code{background:#0f1820;padding:0 3px;border-radius:3px;font-size:11.5px}
+#doc pre{background:#0f1820;padding:6px;overflow:auto;border-radius:4px}
+#doc blockquote{margin:6px 0;padding:2px 10px;border-left:3px solid var(--line);color:var(--mut)}
+#doc a{color:var(--acc)}
+#modal{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;align-items:center;justify-content:center;z-index:20}
+#modal .box{background:var(--panel);border:1px solid var(--line);border-radius:8px;max-width:920px;width:92%;max-height:86%;overflow:auto;padding:14px 18px}
+#modal h2{margin:0 0 8px;font-size:16px}
+.small{font-size:11px;color:var(--mut)}
+@media(max-width:900px){#app{grid-template-columns:minmax(0,1fr);grid-template-rows:58% 42%}#top{grid-template-columns:minmax(0,1fr);grid-template-areas:'h' 'v' 'c' 's'}#ver{max-width:100%}#conf,#state{white-space:normal}}
+</style>
+</head>
+<body>
+<nav class="m3d-topbar" aria-label="Back to the survey page"><a class="back" href="../../artificial_reefs.html#view/models3d/borth-coastal-defence-reef">&larr; Back to the page</a><span class="sp"></span><span class="tt">Borth coastal defence reef - 3D model</span><a href="../../artificial_reefs.html">Gallery</a><a href="../../artificial_reefs.html#view/table">Table</a><a href="../../artificial_reefs.html#view/models3d/borth-coastal-defence-reef">3D models</a></nav>
+
+<div id="top">
+  <h1>Borth coastal defence reef</h1>
+  <div id="verbox"><span class="small">Outline:</span><select id="ver"></select><button id="info" title="About the outline versions">i</button></div>
+  <div id="conf"></div>
+  <div id="state"></div>
+</div>
+<div id="app">
+  <div id="view"><div id="wrap"><canvas id="c"></canvas><img id="photo" alt=""><div id="labels"></div></div>
+    <div id="cap"></div><div id="ve"></div><div id="hud"></div></div>
+  <div id="side">
+    <div id="tabs"><button data-t="t1" class="on">Controls</button><button data-t="t2">Photo match</button><button data-t="t3">Sources</button><button data-t="t4">Methods</button></div>
+    <div id="t1" class="tab on"></div>
+    <div id="t2" class="tab"></div>
+    <div id="t3" class="tab"></div>
+    <div id="t4" class="tab"><div id="doc"></div></div>
+  </div>
+</div>
+<div id="modal"><div class="box"><div id="modalc"></div><p style="text-align:right"><button id="mclose">Close</button></p></div></div>
+
+<style id="m3d-bar-css">
+/* injected by 04_build/src/compile_models3d.py (round 10); the original viewer is in 07_scale and is untouched */
+html:not(.m3d-embedded) { position: relative; top: 34px; height: calc(100% - 34px); }
+html:not(.m3d-embedded) #app { height: 100% !important; }
+.m3d-topbar { position: fixed; top: 0; left: 0; right: 0; height: 34px; z-index: 2147483000; display: flex; align-items: center; gap: 6px; padding: 0 10px; background: #0b1117; border-bottom: 1px solid #2b3a46; font: 600 13px/1 system-ui, "Segoe UI", Roboto, sans-serif; white-space: nowrap; overflow-x: auto; }
+.m3d-topbar a { color: #cfe6f5; text-decoration: none; padding: 6px 11px; border-radius: 6px; border: 1px solid #2b3a46; background: #16222b; }
+.m3d-topbar a.back { background: #0b6b9e; border-color: #0b6b9e; color: #fff; }
+.m3d-topbar a:hover { border-color: #7cc4ff; }
+.m3d-topbar a:focus-visible { outline: 2px solid #ffd479; outline-offset: 1px; }
+.m3d-topbar .sp { flex: 1 1 8px; }
+.m3d-topbar .tt { color: #8fa3b1; font-weight: 400; }
+html.m3d-embedded .m3d-topbar { display: none; }
+html.m3d-embedded:not(.m3d-sidectl) #side, html.m3d-embedded #right, html.m3d-embedded #wideBtn, html.m3d-embedded #reason { display: none !important; }
+/* Borth: #side holds the controls (view, water level, toggles), so it stays when framed, narrower, and the header is compacted */
+html.m3d-sidectl.m3d-embedded #app { grid-template-columns: minmax(0, 1fr) 280px; }
+html.m3d-sidectl.m3d-embedded #conf, html.m3d-sidectl.m3d-embedded #state, html.m3d-sidectl.m3d-embedded #top h1 { display: none; }
+html.m3d-sidectl.m3d-embedded #top { padding: 3px 8px; grid-template-columns: minmax(0, 1fr); grid-template-areas: 'v'; }
+html.m3d-sidectl.m3d-embedded #cap { display: none; }
+html.m3d-sidectl.m3d-hide-right #app { grid-template-columns: minmax(0, 1fr) !important; grid-template-rows: minmax(0, 1fr) !important; }   /* stacked (narrow) layout: no empty row where the hidden panel was */
+html.m3d-sidectl #m3d-show-right { top: auto !important; bottom: 8px; }   /* framed: the page shows the same content next to / below the stage (round 11: at every width) */
+html.m3d-grid3.m3d-embedded #app { grid-template-columns: 220px minmax(0, 1fr) !important; }
+html.m3d-grid3.m3d-embedded #top { grid-column: 1 / 3; }
+html.m3d-embedded #caption { right: 10px !important; }
+@media (max-width: 1099px) {   /* framed next to the photo panel: side panels would squeeze the 3D canvas */
+  html.m3d-embedded #hud { right: 10px !important; }
+}
+@media (max-width: 599px) {    /* phones: the canvas first; the control column stays on the viewer's own page */
+  html.m3d-grid3.m3d-embedded #app { grid-template-columns: minmax(0, 1fr) !important; }
+  html.m3d-grid3.m3d-embedded #top { grid-column: 1 / 2; }
+  html.m3d-embedded #app > #left { display: none; }
+  html.m3d-sidectl.m3d-embedded #app { grid-template-columns: minmax(0, 1fr) !important; grid-template-rows: 58% 42%; }
+  html.m3d-embedded #ctrl { width: 190px; font-size: 11px; }
+}
+</style>
+<style id="m3d-panel-css">
+/* round 11: collapsible side panels (open by default; state kept in sessionStorage and while the viewer lives, so it survives full screen) */
+.m3d-pbtn { position: fixed; z-index: 2147482500; font: 600 12px/1 system-ui, "Segoe UI", Roboto, sans-serif; color: #e8eef2; background: #1d2b36; border: 1px solid #38505f; border-radius: 6px; padding: 7px 11px; cursor: pointer; box-shadow: 0 1px 6px rgba(0,0,0,.5); }
+.m3d-pbtn:hover { background: #27404f; border-color: #ffb347; }
+.m3d-pbtn:focus-visible, .m3d-phide:focus-visible { outline: 2px solid #ffd479; outline-offset: 1px; }
+.m3d-pbtn[hidden] { display: none !important; }
+#m3d-show-left { left: 8px; bottom: 8px; }
+#m3d-show-right { right: 8px; top: 8px; }
+html:not(.m3d-embedded) #m3d-show-right { top: 44px; }
+.m3d-phide { display: block; margin: 0 0 6px auto; font: 600 11px/1 system-ui, "Segoe UI", Roboto, sans-serif; color: #cfe6f5; background: #16222b; border: 1px solid #38505f; border-radius: 5px; padding: 4px 9px; cursor: pointer; }
+.m3d-phide:hover { border-color: #ffb347; }
+html.m3d-hide-left #left, html.m3d-hide-left #ctrl { display: none !important; }
+html.m3d-hide-right #right, html.m3d-hide-right #side { display: none !important; }
+html.m3d-hide-left #view { left: 0 !important; }
+html.m3d-hide-left #hud { left: 112px !important; }
+html.m3d-hide-left #caption { left: 8px !important; }
+html.m3d-grid3.m3d-hide-left #app > #stage { grid-column: 2; grid-row: 2; }   /* grid viewers place #stage / #right automatically: keep them in their own tracks when #left is gone */
+html.m3d-grid3.m3d-hide-left #app > #right { grid-column: 3; grid-row: 2; }
+html.m3d-grid3.m3d-hide-left.m3d-embedded #app { grid-template-columns: 0px minmax(0, 1fr) !important; }
+html.m3d-grid3.m3d-hide-left:not(.m3d-embedded) #app { grid-template-columns: 0px minmax(0, 1fr) 420px !important; }
+html.m3d-grid3.m3d-hide-right:not(.m3d-embedded) #app { grid-template-columns: 290px minmax(0, 1fr) 0px !important; }
+html.m3d-grid3.m3d-hide-left.m3d-hide-right:not(.m3d-embedded) #app { grid-template-columns: 0px minmax(0, 1fr) 0px !important; }
+@media (max-width: 1100px) {
+  html.m3d-grid3.m3d-hide-left:not(.m3d-embedded) #app { grid-template-columns: 0px minmax(0, 1fr) 320px !important; }
+  html.m3d-grid3.m3d-hide-right:not(.m3d-embedded) #app { grid-template-columns: 250px minmax(0, 1fr) 0px !important; }
+  html.m3d-grid3.m3d-hide-left.m3d-hide-right:not(.m3d-embedded) #app { grid-template-columns: 0px minmax(0, 1fr) 0px !important; }
+}
+</style>
+<script>(function () {
+  var root = document.documentElement, KEY = 'm3d-panels', st = { left: true, right: true };
+  try { var o = JSON.parse(sessionStorage.getItem(KEY) || 'null'); if (o) { st.left = o.left !== false; st.right = o.right !== false; } } catch (e) { /* no storage: stay open */ }
+  function save() { try { sessionStorage.setItem(KEY, JSON.stringify(st)); } catch (e) { /* ignore */ } }
+  function ready(f) { if (document.readyState !== 'loading') f(); else document.addEventListener('DOMContentLoaded', f); }
+  ready(function () {
+    if (document.getElementById('ctrlOpen')) return;   /* the combined viewer has its own native panel buttons */
+    var emb = root.classList.contains('m3d-embedded'), q = function (sels) { for (var i = 0; i < sels.length; i++) { var e = document.querySelector(sels[i]); if (e) return e; } return null; };
+    var side = { left: { el: q(['#left', '#ctrl']), label: 'Layout', hide: 'Hide ◂', what: 'layout and controls panel' }, right: (emb && !root.classList.contains('m3d-sidectl')) ? { el: null } : (root.classList.contains('m3d-sidectl') ? { el: q(['#side']), label: 'Controls', hide: 'Hide ▸', what: 'controls panel' } : { el: q(['#side', '#right']), label: 'Info', hide: 'Hide ▸', what: 'information panel' }) };
+    window.__m3dPanels = { state: st, set: set };
+    ['left', 'right'].forEach(function (k) {
+      var d = side[k]; if (!d.el) return;
+      var hb = document.createElement('button'); hb.type = 'button'; hb.className = 'm3d-phide'; hb.id = 'm3d-hide-' + k; hb.textContent = d.hide; hb.title = 'Hide the ' + d.what + ' (a "' + d.label + '" button stays at the edge)';
+      hb.setAttribute('aria-controls', d.el.id); hb.setAttribute('aria-expanded', 'true'); d.el.insertBefore(hb, d.el.firstChild);
+      var sb = document.createElement('button'); sb.type = 'button'; sb.className = 'm3d-pbtn'; sb.id = 'm3d-show-' + k; sb.hidden = true; sb.innerHTML = d.label + ' &#9656;'; sb.title = 'Show the ' + d.what;
+      sb.setAttribute('aria-controls', d.el.id); sb.setAttribute('aria-expanded', 'false'); document.body.appendChild(sb);
+      hb.addEventListener('click', function () { set(k, false); sb.focus(); });
+      sb.addEventListener('click', function () { set(k, true); hb.focus(); });
+    });
+    function set(k, open) {
+      if (!side[k] || !side[k].el) return;
+      st[k] = open; save(); root.classList.toggle('m3d-hide-' + k, !open);
+      var sb = document.getElementById('m3d-show-' + k), hb = document.getElementById('m3d-hide-' + k);
+      if (sb) { sb.hidden = open; sb.setAttribute('aria-expanded', String(open)); } if (hb) hb.setAttribute('aria-expanded', String(open));
+      try { window.dispatchEvent(new Event('resize')); setTimeout(function () { window.dispatchEvent(new Event('resize')); }, 120); } catch (e) { /* ignore */ }
+    }
+    ['left', 'right'].forEach(function (k) { if (side[k] && side[k].el && st[k] === false) set(k, false); });
+  });
+})();</script>
+<script>try { var _c = 'm3d-sidectl'; if (_c) _c.split(' ').forEach(function (x) { document.documentElement.classList.add(x); }); } catch (e) { /* ignore */ }</script>
+<script>try { if (window.self !== window.top) document.documentElement.classList.add('m3d-embedded'); } catch (e) { document.documentElement.classList.add('m3d-embedded'); }</script>
+<script src="../vendor/three.bundle.js"></script>
+<script src="model.js"></script>
+<script src="docs.js"></script>
+<script type="module">
+const THREE = window.__THREE_BUNDLE.THREE;
+const { OrbitControls } = window.__THREE_BUNDLE;
+const M = window.REEF_MODEL, DOCS = window.REEF_DOCS || {};
+const $ = id => document.getElementById(id);
+const D2R = Math.PI / 180;
+const ZODN = M.datum.msl_mODN;                       // z_ODN = z_MSL + 0.31
+const FR = M.frame, BX = FR.bearing_x_deg * D2R, BY = FR.bearing_y_deg * D2R;
+const fmt = (v, d = 2) => (v >= 0 ? '+' : '−') + Math.abs(v).toFixed(d);
+const m2s = (x, y, z) => new THREE.Vector3(x, z, y);          // canonical (x south, y offshore, z up) -> scene (X, Y, Z)
+const bearing = (dx, dy) => { const E = dx * Math.sin(BX) + dy * Math.sin(BY), N = dx * Math.cos(BX) + dy * Math.cos(BY); return (Math.atan2(E, N) / D2R + 360) % 360; };
+const dirFromBearing = h => { const E = Math.sin(h * D2R), N = Math.cos(h * D2R); return [E * Math.sin(BX) + N * Math.cos(BX), E * Math.sin(BY) + N * Math.cos(BY)]; };
+
+// ---------------------------------------------------------------------------------------------- state
+const state = { ver: M.default_version, wl: 0, ve: 1, show: { water: true, seabed: true, reef: true, labels: true, grid: true, outline: true }, photoMode: false };
+const hp = new URLSearchParams(location.hash.replace(/^#/, ''));
+if (hp.get('version') && M.versions.some(v => v.id === hp.get('version'))) state.ver = hp.get('version');
+const allLevels = [...M.levels, ...M.extra_levels];
+const wlMin = M.levels.find(l => l.id === M.slider.min_id).z, wlMax = M.levels.find(l => l.id === M.slider.max_id).z;
+if (hp.get('water')) { const lv = allLevels.find(l => l.id === hp.get('water')); state.wl = lv ? lv.z : parseFloat(hp.get('water')); }
+if (hp.get('ve')) state.ve = Math.min(5, Math.max(1, parseFloat(hp.get('ve')) || 1));
+const verObj = () => M.versions.find(v => v.id === state.ver);
+
+// ---------------------------------------------------------------------------------------------- renderer, camera
+const canvas = $('c');
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, preserveDrawingBuffer: true });
+renderer.setPixelRatio(Math.min(2, window.devicePixelRatio || 1));
+const scene = new THREE.Scene(); scene.background = new THREE.Color(0x0c1218);
+const camera = new THREE.PerspectiveCamera(45, 1, 0.3, 6000);
+const controls = new OrbitControls(camera, canvas);
+controls.enableDamping = false; controls.maxPolarAngle = Math.PI * 0.995; controls.maxDistance = 1400; controls.minDistance = 1.5;
+scene.add(new THREE.HemisphereLight(0xcfe3f2, 0x3a3226, 1.0));
+const sun = new THREE.DirectionalLight(0xfff2de, 1.6); sun.position.set(-200, 300, -100); scene.add(sun);
+const world = new THREE.Group(); scene.add(world);              // scaled in Y by the vertical exaggeration
+
+// ---------------------------------------------------------------------------------------------- seabed
+const SB = M.seabed;
+function seaAt(x, y) {                                          // bilinear seabed (m MSL)
+  const fx = Math.min(SB.nx - 1.001, Math.max(0, (x - SB.x0) / SB.step)), fy = Math.min(SB.ny - 1.001, Math.max(0, (y - SB.y0) / SB.step));
+  const i = Math.floor(fx), j = Math.floor(fy), tx = fx - i, ty = fy - j;
+  const z = SB.z; return z[j][i] * (1 - tx) * (1 - ty) + z[j][i + 1] * tx * (1 - ty) + z[j + 1][i] * (1 - tx) * ty + z[j + 1][i + 1] * tx * ty;
+}
+const ramp = [[-6.6, [28, 52, 70]], [-4.5, [44, 80, 98]], [-2.75, [78, 118, 125]], [-1.0, [150, 150, 118]], [1.0, [196, 176, 124]], [2.25, [214, 196, 146]], [3.0, [196, 190, 150]], [5.0, [150, 160, 112]], [7, [120, 140, 90]]];
+function colourFor(z) {
+  for (let k = 0; k < ramp.length - 1; k++) { const [z0, c0] = ramp[k], [z1, c1] = ramp[k + 1]; if (z >= z0 && z <= z1) { const t = (z - z0) / (z1 - z0); return c0.map((v, q) => (v + (c1[q] - v) * t) / 255); } }
+  return (z < ramp[0][0] ? ramp[0][1] : ramp[ramp.length - 1][1]).map(v => v / 255);
+}
+let seabedMesh;
+function buildSeabed() {
+  const n = SB.nx * SB.ny, pos = new Float32Array(n * 3), col = new Float32Array(n * 3), idx = [];
+  for (let j = 0; j < SB.ny; j++) for (let i = 0; i < SB.nx; i++) {
+    const k = j * SB.nx + i, z = SB.z[j][i]; pos.set([SB.x0 + i * SB.step, z, SB.y0 + j * SB.step], k * 3);
+    const c = colourFor(z); col.set(c, k * 3);
+    if (i < SB.nx - 1 && j < SB.ny - 1) { idx.push(k, k + SB.nx, k + 1, k + 1, k + SB.nx, k + SB.nx + 1); }
+  }
+  const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.BufferAttribute(pos, 3)); g.setAttribute('color', new THREE.BufferAttribute(col, 3)); g.setIndex(idx); g.computeVertexNormals();
+  seabedMesh = new THREE.Mesh(g, new THREE.MeshLambertMaterial({ vertexColors: true, side: THREE.DoubleSide })); seabedMesh.name = 'seabed'; world.add(seabedMesh);
+}
+buildSeabed();
+
+// ---------------------------------------------------------------------------------------------- reef (per version)
+const reefCache = {}; let reefMesh = null, outlineLine = null;
+const zoneCol = { 1: [0.60, 0.61, 0.62], 2: [0.40, 0.42, 0.44], 3: [0.42, 0.47, 0.34] };
+function b64ToBuf(b) { const s = atob(b); const u = new Uint8Array(s.length); for (let i = 0; i < s.length; i++) u[i] = s.charCodeAt(i); return u.buffer; }
+function buildReef(v) {
+  const G = v.grid, nx = G.nx, ny = G.ny, H = new Int16Array(b64ToBuf(G.h_cm_b64)), Zn = new Uint8Array(b64ToBuf(G.zone_b64));
+  const pos = new Float32Array(nx * ny * 3), col = new Float32Array(nx * ny * 3), idx = [];
+  for (let j = 0; j < ny; j++) for (let i = 0; i < nx; i++) {
+    const k = j * nx + i, x = G.x0 + i * G.step, y = G.y0 + j * G.step, hv = H[k];
+    const z = hv === -32768 ? seaAt(x, y) : hv / 100; pos.set([x, z, y], k * 3);
+    const zn = Zn[k] || 3, c = zoneCol[zn], h = 0.88 + 0.12 * (((i * 7919 + j * 104729) % 97) / 97) + (zn === 1 ? Math.min(0.12, Math.max(0, (z + 1.5) * 0.04)) : 0);
+    col.set([c[0] * h, c[1] * h, c[2] * h], k * 3);
+  }
+  for (let j = 0; j < ny - 1; j++) for (let i = 0; i < nx - 1; i++) {
+    const k = j * nx + i;
+    if (H[k] === -32768 && H[k + 1] === -32768 && H[k + nx] === -32768 && H[k + nx + 1] === -32768) continue;
+    idx.push(k, k + nx, k + 1, k + 1, k + nx, k + nx + 1);
+  }
+  const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.BufferAttribute(pos, 3)); g.setAttribute('color', new THREE.BufferAttribute(col, 3)); g.setIndex(idx); g.computeVertexNormals();
+  const mat = new THREE.MeshLambertMaterial({ vertexColors: true, side: THREE.DoubleSide, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 });
+  const mesh = new THREE.Mesh(g, mat); mesh.name = 'reef'; mesh.renderOrder = 1;
+  const pts = []; v.outline_m.forEach(ring => { for (let q = 0; q < ring.length; q++) { const a = ring[q], b = ring[(q + 1) % ring.length]; pts.push(a[0], v.edge_level_MSL + 0.08, a[1], b[0], v.edge_level_MSL + 0.08, b[1]); } });
+  const lg = new THREE.BufferGeometry(); lg.setAttribute('position', new THREE.Float32BufferAttribute(pts, 3));
+  const line = new THREE.LineSegments(lg, new THREE.LineBasicMaterial({ color: 0xffd060 }));
+  return { mesh, line };
+}
+function setVersion(id) {
+  state.ver = id; const v = verObj();
+  if (reefMesh) { world.remove(reefMesh); world.remove(outlineLine); }
+  if (!reefCache[id]) reefCache[id] = buildReef(v);
+  reefMesh = reefCache[id].mesh; outlineLine = reefCache[id].line; world.add(reefMesh); world.add(outlineLine);
+  $('ver').value = id; applyToggles(); updateInfoText(); writeHash();
+}
+
+// ---------------------------------------------------------------------------------------------- labels (HTML overlay)
+const labels = [];
+const PRIO = { reef: 1, north: 2, crest: 3, misc: 4, bar: 5, axis: 6 };
+function addLabel(text, posFn, cls = '', group = 'misc') {
+  const el = document.createElement('div'); el.className = 'lbl ' + cls; el.textContent = text; $('labels').appendChild(el); labels.push({ el, posFn, group, prio: PRIO[group] || 4 });
+  return el;
+}
+const wlz = () => state.wl;
+// ---------------------------------------------------------------------------------------------- water, grid, scale bars, north, shoreline
+const water = new THREE.Mesh(new THREE.PlaneGeometry(SB.nx * SB.step - SB.step, SB.ny * SB.step - SB.step),
+  new THREE.MeshPhongMaterial({ color: 0x2f7fb3, transparent: true, opacity: 0.38, side: THREE.DoubleSide, depthWrite: false, shininess: 80, specular: 0x88aacc }));
+water.rotation.x = -Math.PI / 2; water.position.set(SB.x0 + (SB.nx - 1) * SB.step / 2, 0, SB.y0 + (SB.ny - 1) * SB.step / 2); water.renderOrder = 2; world.add(water);
+const gridG = new THREE.Group(); world.add(gridG);
+(function mkGrid() {
+  const minor = [], major = [], x0 = -110, x1 = 150, y0 = 230, y1 = 430;
+  for (let x = x0; x <= x1; x += 10) (x % 50 === 0 ? major : minor).push(x, 0, y0, x, 0, y1);
+  for (let y = y0; y <= y1; y += 10) (y % 50 === 0 ? major : minor).push(x0, 0, y, x1, 0, y);
+  const mk = (a, op) => { const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.Float32BufferAttribute(a, 3)); return new THREE.LineSegments(g, new THREE.LineBasicMaterial({ color: 0xffffff, transparent: true, opacity: op, depthWrite: false })); };
+  gridG.add(mk(minor, 0.16)); gridG.add(mk(major, 0.42));
+})();
+const barG = new THREE.Group(); world.add(barG);
+function bar(x0, y0, len, text) {
+  const pts = [x0, 0.05, y0, x0 + len, 0.05, y0, x0, 0.05, y0 - 2, x0, 0.05, y0 + 2, x0 + len, 0.05, y0 - 2, x0 + len, 0.05, y0 + 2];
+  const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.Float32BufferAttribute(pts, 3));
+  barG.add(new THREE.LineSegments(g, new THREE.LineBasicMaterial({ color: 0xffee88 })));
+  addLabel(text, () => m2s(x0 + len / 2, y0, wlz()), 'dim', 'bar');
+}
+const northG = new THREE.Group(); world.add(northG);
+(function mkNorth() {
+  const nx_ = FR.north_xy[0], ny_ = FR.north_xy[1], o = [-150, 60];
+  northG.add(new THREE.ArrowHelper(new THREE.Vector3(nx_, 0, ny_).normalize(), new THREE.Vector3(o[0], 0.2, o[1]), 40, 0xff6644, 9, 6));
+  addLabel('N', () => m2s(o[0] + nx_ * 48, o[1] + ny_ * 48, wlz()), 'water', 'north');
+})();
+// shoreline = defence line y = 0
+(function mkShore() {
+  const pts = []; for (let x = SB.x0; x <= SB.x1; x += 5) pts.push(new THREE.Vector3(x, seaAt(x, 0) + 0.15, 0));
+  world.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts), new THREE.LineBasicMaterial({ color: 0xff5a4a })));
+})();
+
+addLabel('Defence line (y = 0, back of beach)', () => m2s(0, 0, seaAt(0, 0) + 1.0), 'dim', 'misc');
+addLabel('Sea / offshore', () => m2s(20, 480, wlz() + 1), 'water', 'misc');
+addLabel('Beach', () => m2s(20, 120, seaAt(20, 120) + 1), 'dim', 'misc');
+M.roles.north && addLabel(M.roles.north.label, () => m2s(M.roles.north.centroid[0], M.roles.north.centroid[1] + 20, 5), 'reef', 'reef');
+M.roles.south && addLabel(M.roles.south.label, () => m2s(M.roles.south.centroid[0], M.roles.south.centroid[1] + 14, 5), 'brk', 'reef');
+(M.crest_labels || []).forEach(c => addLabel(c.text, () => m2s(c.x, c.y, c.z + 0.2 * state.ve), 'reef dim', 'crest'));
+for (let v = -100; v <= 150; v += 50) addLabel('x ' + v, () => m2s(v, 230, wlz()), 'dim', 'axis');
+for (let v = 250; v <= 400; v += 50) addLabel('y ' + v, () => m2s(-110, v, wlz()), 'dim', 'axis');
+bar(100, 418, 50, '50 m'); bar(100, 408, 10, '10 m');
+const tmpV = new THREE.Vector3(); let lblFrame = 0;
+function updateLabels(w, h) {
+  const on = state.show.labels, cand = [];
+  for (const L of labels) {
+    L.el.style.display = 'none';
+    if (!on || (L.group === 'axis' && !state.show.grid) || (L.group === 'bar' && !state.show.grid)) continue;
+    const p = L.posFn(); tmpV.set(p.x, p.y * state.ve, p.z).project(camera);
+    if (tmpV.z > 1 || tmpV.z < -1 || Math.abs(tmpV.x) > 1.02 || Math.abs(tmpV.y) > 1.02) continue;
+    cand.push({ L, px: (tmpV.x * 0.5 + 0.5) * w, py: (-tmpV.y * 0.5 + 0.5) * h });
+  }
+  cand.sort((a, b) => a.L.prio - b.L.prio);
+  const placed = [];                                             // greedy declutter: lower priority labels yield to higher ones
+  for (const c of cand) {
+    const el = c.L.el; el.style.display = 'block';
+    const bw = el.offsetWidth + 4, bh = el.offsetHeight + 2, x0 = c.px - bw / 2, x1 = c.px + bw / 2, y0 = c.py - bh * 1.2, y1 = c.py - bh * 0.2;
+    if (placed.some(r => x0 < r[2] && x1 > r[0] && y0 < r[3] && y1 > r[1])) { el.style.display = 'none'; continue; }
+    placed.push([x0, y0, x1, y1]); el.style.transform = `translate(${c.px}px,${c.py}px) translate(-50%,-120%)`;
+  }
+}
+
+// ---------------------------------------------------------------------------------------------- toggles, VE, water level
+function applyToggles() {
+  water.visible = state.show.water; seabedMesh.visible = state.show.seabed; if (reefMesh) reefMesh.visible = state.show.reef;
+  gridG.visible = state.show.grid; barG.visible = state.show.grid; northG.visible = true; if (outlineLine) outlineLine.visible = state.show.outline;
+}
+function setWater(z) { state.wl = z; water.position.y = z; gridG.position.y = z; barG.position.y = z; northG.position.y = z; refreshWL(); writeHash(); }
+function setVE(v) { state.ve = v; world.scale.y = v; $('ve').textContent = 'Vertical exaggeration ×' + v.toFixed(1) + (v > 1 ? '  (heights stretched, plan true)' : '  (true scale)'); if ($('ve_s')) { $('ve_s').value = v; $('ve_o').textContent = '×' + v.toFixed(1); } writeHash(); }
+function refreshWL() {
+  const z = state.wl; if ($('wl')) { $('wl').value = z; }
+  if ($('wlo')) $('wlo').innerHTML = `<b>${fmt(z)} m MSL</b> = ${fmt(z + ZODN)} mODN = ${(z + ZODN + 2.44).toFixed(2)} m above LAT (chart datum)`;
+}
+function writeHash() {
+  const lv = allLevels.find(l => Math.abs(l.z - state.wl) < 0.004), p = new URLSearchParams();
+  p.set('version', state.ver); p.set('water', lv ? lv.id : state.wl.toFixed(2)); if (state.ve !== 1) p.set('ve', state.ve.toFixed(1)); if (curView) p.set('view', curView);
+  try { history.replaceState(null, '', '#' + p.toString()); } catch (e) { }
+}
+
+// ---------------------------------------------------------------------------------------------- views
+let curView = hp.get('view') || 'oblique';
+const T = m2s(-10, 330, -2);
+const axisH = M.axis_xy ? M.axis_xy.head : [-10, 380], axisT = M.axis_xy ? M.axis_xy.tail : [-60, 268];
+const VIEWS = {
+  oblique: { label: 'Oblique from sea', pos: () => m2s(150, 470, 60), tgt: () => m2s(10, 330, -2 * state.ve) },
+  plan: { label: 'Plan (north = left)', pos: () => m2s(-5, 332, 420), tgt: () => m2s(-5, 330, 0) },
+  crest: { label: 'Along the surf-reef crest', pos: () => { const d = [axisT[0] - axisH[0], axisT[1] - axisH[1]], L = Math.hypot(...d); return m2s(axisT[0] + d[0] / L * 25, axisT[1] + d[1] / L * 25, 2.5); }, tgt: () => m2s(axisH[0], axisH[1], 0) },
+  beach: { label: 'From the beach (eye 1.7 m)', pos: () => m2s(-35, 18, seaAt(-35, 18) + 1.7), tgt: () => m2s(-30, 330, 0) },
+  side: { label: 'Side view along shore', pos: () => m2s(-330, 330, 8), tgt: () => m2s(0, 330, -2) },
+};
+function gotoView(k) {
+  curView = k; const v = VIEWS[k]; const p = v.pos(), t = v.tgt();
+  camera.position.copy(p); if (k === 'plan') { camera.position.z += 1; }
+  controls.target.copy(t); camera.fov = 45; camera.updateProjectionMatrix(); controls.update(); writeHash();
+}
+
+// ---------------------------------------------------------------------------------------------- UI: controls tab
+function mkControls() {
+  const t = $('t1');
+  const lv = M.levels.map(l => `<button data-id="${l.id}" title="${l.name} - ${l.source}">${l.id}</button>`).join('') + M.extra_levels.map(l => `<button data-id="${l.id}" title="${l.name} - ${l.source}">${l.id === 'lidar_flight' ? 'LiDAR flight' : 'Photo 2024'}</button>`).join('');
+  t.innerHTML = `
+  <h3>Water level</h3>
+  <div class="row"><input type="range" id="wl" min="${wlMin}" max="${wlMax}" step="0.01"></div>
+  <div id="wlo" class="small"></div>
+  <div class="chips" id="wlb">${lv}</div>
+  <div class="row small" style="justify-content:space-between;margin:0"><span>LAT &minus;2.75 m</span><span>MHWS +2.25 m MSL</span></div>
+  <div class="small"><b>Why the slider stops at MHWS:</b> the highest astronomical tide (HAT) of Aberystwyth was not found at a primary source (the only HAT-like figure, 5.9 m chart datum, is a predicted maximum, not HAT). MHWS (+2.56 mODN) is the highest level with a published source (West of Wales SMP2 p.4C.3; also printed on drawing 9V5090/1021). Zero = MSL = +0.31 mODN (estimate, +-0.15 m).</div>
+  <h3>Vertical exaggeration</h3>
+  <div class="row"><input type="range" id="ve_s" min="1" max="5" step="0.5" value="1"><b id="ve_o">×1.0</b></div>
+  <h3>Show</h3>
+  <div class="row chips" id="tg"></div>
+  <h3>Camera</h3>
+  <div class="row chips" id="vb"></div>
+  <div class="small" id="camro"></div>
+  <h3>Legend</h3>
+  <div class="small">Rock: <span style="color:#9a9c9e">&#9632;</span> armour / surveyed surface (Type 4) &nbsp;<span style="color:#666">&#9632;</span> toe berm (Type 0) &nbsp;<span style="color:#6b7857">&#9632;</span> blanket (Type 6). Yellow line = outline of the selected version at its edge level. Red line = defence line (y = 0). Grid: 10 m (50 m bold), x alongshore (+ south), y offshore (west).</div>
+  <h3>Selected version</h3><div id="vinfo" class="small"></div>
+  <h3>Seabed in this model</h3>
+  <div class="small">Beach and foreshore: Welsh Government LiDAR (19 Mar 2022). Around and under the mounds: -4.0 mODN (north arm), -3.6 to -4.2 (oval), shallower toward the tail; HRPP576 Fig 2 contour -3.0. Beyond 335 m offshore: EMODnet gradient -1.1 %. Uncertainty +-0.4 m under the rock. <b>Known issue:</b> seaward of the reef (y > 335 m) the modelled sea floor is 0.9 m deeper than the HRPP576 Fig 2 -4.0 contour, and the Navionics chart and EMODnet are shallower still (METHODS 4.4); heights above the bed are unaffected under the rock.</div>`;
+  $('wl').oninput = e => setWater(parseFloat(e.target.value));
+  $('wlb').onclick = e => { const id = e.target.dataset && e.target.dataset.id; if (!id) return; const l = allLevels.find(x => x.id === id); setWater(Math.min(wlMax, Math.max(wlMin, l.z))); };
+  $('ve_s').oninput = e => setVE(parseFloat(e.target.value));
+  const tg = $('tg'); [['water', 'Water'], ['seabed', 'Seabed'], ['reef', 'Reef'], ['outline', 'Outline'], ['labels', 'Labels'], ['grid', 'Grid + scale']].forEach(([k, n]) => {
+    const b = document.createElement('button'); b.textContent = n; b.className = state.show[k] ? 'on' : ''; b.onclick = () => { state.show[k] = !state.show[k]; b.classList.toggle('on', state.show[k]); applyToggles(); }; tg.appendChild(b);
+  });
+  const vb = $('vb'); Object.keys(VIEWS).forEach(k => { const b = document.createElement('button'); b.textContent = VIEWS[k].label; b.onclick = () => gotoView(k); vb.appendChild(b); });
+  refreshWL(); setVE(state.ve);
+}
+function updateInfoText() {
+  const v = verObj();
+  $('vinfo').innerHTML = `<b>${v.name}</b><br>Footprint ${v.area_m2.toLocaleString()} m² (${v.bbox_m[0]} x ${v.bbox_m[1]} m bbox); rock volume ${v.volume_m3.toLocaleString()} m³ (about ${(v.tonnes_est / 1000).toFixed(0)} kt at ${M.density_t_m3} t/m³, ±${(v.volume_unc_m3 / 1000).toFixed(1)}k m³ from the bed level). Edge: ${v.level}. ${v.note}`;
+}
+
+// ---------------------------------------------------------------------------------------------- version selector, (i) pop-up
+M.versions.forEach(v => { const o = document.createElement('option'); o.value = v.id; o.textContent = v.name + (v.id === M.default_version ? '  [default]' : ''); $('ver').appendChild(o); });
+$('ver').onchange = e => setVersion(e.target.value);
+const SRCN = { lidar2022: 'Welsh Government LiDAR 1 m, 19 Mar 2022', drg1020: 'Royal Haskoning drawing 9V5090/1020 rev C1 (plan)', drg1021: 'drg 9V5090/1021 (sections)', drg1022: 'drg 9V5090/1022', drg1023: 'drg 9V5090/1023', sat2024: 'Esri World Imagery, 17 Sep 2024' };
+$('info').onclick = () => {
+  const rows = M.versions.map(v => `<tr><td><b>${v.name}</b>${v.id === M.default_version ? ' (default)' : ''}</td><td>${v.date}</td><td>${v.source_ids.map(i => SRCN[i] || i).join('; ')}</td><td>${v.area_m2.toLocaleString()} m²</td><td>${v.volume_m3.toLocaleString()} m³<br>≈ ${(v.tonnes_est / 1000).toFixed(1)} kt</td><td>${v.level}</td></tr>`).join('');
+  $('modalc').innerHTML = `<h2>Outline versions</h2><p>${M.versions_info}</p><table><tr><th>Name</th><th>Date</th><th>Source</th><th>Footprint</th><th>Volume (model)</th><th>Edge = </th></tr>${rows}</table>
+  <p class="small">Volumes are the model rock volume above the modelled seabed, both mounds, including toe berm and blanket; tonnes at ${M.density_t_m3} t/m³ (range 1.6-1.8). Version ids for the URL hash: ${M.versions.map(v => v.id).join(', ')}. No reef-only rock quantity is published; NCE gives 42,000 t of Type 4 rock for the whole Phase 1 (breakwaters, groynes and revetment included), an upper bound for the Type 4 layer here.</p>`;
+  $('modal').style.display = 'flex';
+};
+$('mclose').onclick = () => $('modal').style.display = 'none'; $('modal').onclick = e => { if (e.target === $('modal')) $('modal').style.display = 'none'; };
+
+// ---------------------------------------------------------------------------------------------- header: confidence and state
+const C = M.confidence_3d; $('conf').innerHTML = `<span class="badge b-${C.level}">3D confidence: ${C.level.toUpperCase()}</span> <span class="small">${C.reason.split('. ')[0]}.</span>`; $('conf').title = C.reason;
+$('state').textContent = M.state; $('state').title = M.state;
+$('cap').innerHTML = `<b>${M.name}</b><br>z = 0 at MSL (z_MSL = z_ODN − 0.31). Not for navigation.`;
+
+// ---------------------------------------------------------------------------------------------- sources tab
+(function mkSources() {
+  const rows = M.provenance.map(p => `<tr><td>${p.parameter}</td><td>${p.value} ${p.unit && p.unit !== '-' ? '' : ''}</td><td>${p.source_id}</td><td>${p.method}</td><td class="${p.estimated ? 'est' : ''}">${p.uncertainty}${p.estimated ? ' (estimated)' : ''}</td></tr>`).join('');
+  $('t3').innerHTML = `<h3>3D confidence: <span class="badge b-${C.level}">${C.level.toUpperCase()}</span></h3><p>${C.reason}</p>
+  <h3>Provenance (every model value)</h3><table><tr><th>Parameter</th><th>Value</th><th>Source</th><th>Method</th><th>Uncertainty</th></tr>${rows}</table>
+  <h3>Datum levels (mODN to model z)</h3><table><tr><th>Level</th><th>mODN</th><th>m MSL</th><th>Source</th></tr>${allLevels.map(l => `<tr><td>${l.name}</td><td>${fmt(l.z_ODN)}</td><td>${fmt(l.z)}</td><td class="${l.estimated ? 'est' : ''}">${l.source}</td></tr>`).join('')}</table>`;
+})();
+
+// ---------------------------------------------------------------------------------------------- docs tab (small markdown renderer)
+function esc(s) { return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+function inline(s) {
+  s = esc(s);
+  s = s.replace(/`([^`]+)`/g, '<code>$1</code>').replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>').replace(/(^|[^*])\*([^*\s][^*]*)\*/g, '$1<i>$2</i>');
+  s = s.replace(/\[([^\]]+)\]\((https?:[^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>').replace(/(^|[\s(])(https?:\/\/[^\s)<]+)/g, '$1<a href="$2" target="_blank" rel="noopener">$2</a>');
+  return s;
+}
+function md(src) {
+  const L = src.replace(/\r/g, '').split('\n'); let out = [], i = 0;
+  while (i < L.length) {
+    const l = L[i];
+    if (/^```/.test(l)) { let b = []; i++; while (i < L.length && !/^```/.test(L[i])) b.push(esc(L[i++])); i++; out.push('<pre>' + b.join('\n') + '</pre>'); continue; }
+    let m = l.match(/^(#{1,4})\s+(.*)$/); if (m) { out.push(`<h${m[1].length}>${inline(m[2])}</h${m[1].length}>`); i++; continue; }
+    if (/^\s*\|.*\|\s*$/.test(l) && i + 1 < L.length && /^\s*\|[\s:|-]+\|\s*$/.test(L[i + 1])) {
+      const cells = r => r.trim().replace(/^\||\|$/g, '').split('|').map(c => c.trim()); const hd = cells(l); i += 2; let rows = [];
+      while (i < L.length && /^\s*\|.*\|\s*$/.test(L[i])) rows.push(cells(L[i++]));
+      out.push('<table><tr>' + hd.map(c => `<th>${inline(c)}</th>`).join('') + '</tr>' + rows.map(r => '<tr>' + r.map(c => `<td>${inline(c)}</td>`).join('') + '</tr>').join('') + '</table>'); continue;
+    }
+    if (/^\s*[-*]\s+/.test(l)) { let b = []; while (i < L.length && /^\s*[-*]\s+/.test(L[i])) b.push('<li>' + inline(L[i++].replace(/^\s*[-*]\s+/, '')) + '</li>'); out.push('<ul>' + b.join('') + '</ul>'); continue; }
+    if (/^\s*\d+[.)]\s+/.test(l)) { let b = []; while (i < L.length && /^\s*\d+[.)]\s+/.test(L[i])) b.push('<li>' + inline(L[i++].replace(/^\s*\d+[.)]\s+/, '')) + '</li>'); out.push('<ol>' + b.join('') + '</ol>'); continue; }
+    if (/^>\s?/.test(l)) { let b = []; while (i < L.length && /^>\s?/.test(L[i])) b.push(inline(L[i++].replace(/^>\s?/, ''))); out.push('<blockquote>' + b.join('<br>') + '</blockquote>'); continue; }
+    if (/^---+\s*$/.test(l)) { out.push('<hr>'); i++; continue; }
+    if (!l.trim()) { i++; continue; }
+    let b = []; while (i < L.length && L[i].trim() && !/^(#{1,4}\s|```|\s*[-*]\s|\s*\d+[.)]\s|>|\s*\|)/.test(L[i])) b.push(inline(L[i++])); out.push('<p>' + b.join(' ') + '</p>');
+  }
+  return out.join('\n');
+}
+(function mkDoc() {
+  const d = $('doc'); const keys = [['methods_md', 'METHODS_3D.md'], ['sources_md', 'SOURCES_3D.md']].filter(k => DOCS[k[0]]);
+  d.innerHTML = '<div class="chips" id="dtabs"></div><div id="dbody"></div>';
+  const show = k => { $('dbody').innerHTML = md(DOCS[k]); [...$('dtabs').children].forEach(b => b.classList.toggle('on', b.dataset.k === k)); $('t4').scrollTop = 0; };
+  keys.forEach(([k, n]) => { const b = document.createElement('button'); b.textContent = n; b.dataset.k = k; b.onclick = () => show(k); $('dtabs').appendChild(b); });
+  if (keys.length) show(keys[0][0]); else $('dbody').textContent = 'No documentation loaded (docs.js).';
+})();
+
+// ---------------------------------------------------------------------------------------------- photo match
+const ph = { x: 0, y: 20, z: 1.7, h: 270, p: 0, fov: 60, op: 0.5, on: false };
+function mkPhoto() {
+  $('t2').innerHTML = `<div class="small">Align the model with a photo: load a local image (not uploaded anywhere), tick <i>Photo match</i>, then set camera position (canonical x, y, height above MSL), heading (true bearing), pitch and horizontal field of view until the rock outlines line up. <b>Copy camera</b> gives the parameters for later alignment work. Vertical exaggeration is forced to ×1.</div>
+  <div class="row"><input type="file" id="pfile" accept="image/*"></div>
+  <div class="row"><label><input type="checkbox" id="pon"> Photo match mode</label><button id="pcur">Use current camera</button><button id="pcopy">Copy camera</button></div>
+  <div class="row"><label>overlay opacity</label><input type="range" id="pop" min="0" max="1" step="0.05" value="0.5"><span id="popo">0.5</span></div>
+  ${[['x', 'x alongshore (+south) m', -300, 300, 0.5], ['y', 'y offshore (west) m', -50, 700, 0.5], ['z', 'height above MSL m', -2, 120, 0.1], ['h', 'heading (true bearing) °', 0, 360, 0.5], ['p', 'pitch ° (+ up)', -60, 60, 0.1], ['fov', 'horizontal FOV °', 10, 120, 0.5]].map(([k, n, a, b, s]) => `<div class="row"><label>${n}</label><input type="range" id="ps_${k}" min="${a}" max="${b}" step="${s}"><input type="number" id="pn_${k}" step="${s}" style="width:70px"></div>`).join('')}
+  <div class="small" id="pjson" style="white-space:pre-wrap;font-family:ui-monospace,Consolas,monospace"></div>
+  <div class="small">Beach preset: the reef is about 300 m offshore, so a phone photo shows it very small; use a telephoto crop or an elevated viewpoint (drone, hill). Photo FOV is usually 60-75° horizontal for a phone main camera.</div>`;
+  ['x', 'y', 'z', 'h', 'p', 'fov'].forEach(k => {
+    const s = $('ps_' + k), n = $('pn_' + k); const set = v => { ph[k] = v; s.value = v; n.value = v; applyPhotoCam(); };
+    s.oninput = () => set(parseFloat(s.value)); n.onchange = () => set(parseFloat(n.value)); s.value = ph[k]; n.value = ph[k];
+  });
+  $('pon').onchange = e => setPhotoMode(e.target.checked);
+  $('pcur').onclick = () => { syncFromCamera(); };
+  $('pop').oninput = e => { ph.op = parseFloat(e.target.value); $('photo').style.opacity = ph.op; $('popo').textContent = ph.op.toFixed(2); };
+  $('pcopy').onclick = () => { const j = camJSON(); const t = JSON.stringify(j, null, 1); if (navigator.clipboard) navigator.clipboard.writeText(t).catch(() => { }); $('pjson').textContent = t; };
+  $('pfile').onchange = e => { const f = e.target.files[0]; if (!f) return; const img = $('photo'); img.onload = () => { photoAspect = img.naturalWidth / img.naturalHeight; img.style.display = 'block'; img.style.opacity = ph.op; resize(); }; img.src = URL.createObjectURL(f); };
+}
+let photoAspect = 0;
+function camState() {
+  const d = new THREE.Vector3(); camera.getWorldDirection(d); const ve = state.ve;
+  const dt = new THREE.Vector3(d.x, d.y / ve, d.z).normalize();
+  const hdg = bearing(dt.x, dt.z), pitch = Math.asin(dt.y) / D2R;
+  const vfov = camera.fov, hfov = 2 * Math.atan(Math.tan(vfov * D2R / 2) * camera.aspect) / D2R;
+  return { x: camera.position.x, y: camera.position.z, z: camera.position.y / ve, hdg, pitch, vfov, hfov };
+}
+function camJSON() { const c = camState(); return { model: 'borth-coastal-defence-reef', version: state.ver, frame: 'canonical x south, y offshore (west), metres', x_m: +c.x.toFixed(2), y_m: +c.y.toFixed(2), z_m_MSL: +c.z.toFixed(2), z_mODN: +(c.z + ZODN).toFixed(2), heading_true_deg: +c.hdg.toFixed(1), pitch_deg: +c.pitch.toFixed(1), hfov_deg: +c.hfov.toFixed(1), vfov_deg: +c.vfov.toFixed(1), aspect: +camera.aspect.toFixed(3), water_level_m_MSL: state.wl, vertical_exaggeration: state.ve }; }
+function syncFromCamera() { const c = camState(); Object.assign(ph, { x: c.x, y: c.y, z: c.z, h: (c.hdg + 360) % 360, p: c.pitch, fov: c.hfov }); ['x', 'y', 'z', 'h', 'p', 'fov'].forEach(k => { $('ps_' + k).value = ph[k]; $('pn_' + k).value = +ph[k].toFixed(2); }); }
+function applyPhotoCam() {
+  if (!state.photoMode) return;
+  camera.position.set(ph.x, ph.z, ph.y);
+  const [dx, dy] = dirFromBearing(ph.h), cp = Math.cos(ph.p * D2R), sp = Math.sin(ph.p * D2R);
+  camera.lookAt(camera.position.x + dx * cp, camera.position.y + sp, camera.position.z + dy * cp);
+  camera.fov = 2 * Math.atan(Math.tan(ph.fov * D2R / 2) / camera.aspect) / D2R; camera.updateProjectionMatrix();
+}
+function setPhotoMode(on) {
+  state.photoMode = on; controls.enabled = !on;
+  if (on) { syncFromCamera(); setVE(1); } else { controls.target.copy(camera.position).addScaledVector(camera.getWorldDirection(new THREE.Vector3()), 80); controls.update(); }
+  applyPhotoCam(); resize();
+}
+
+// ---------------------------------------------------------------------------------------------- resize, HUD, cursor read-out, loop
+function resize() {
+  const v = $('view'), W = v.clientWidth, H = v.clientHeight, w = $('wrap');
+  let cw = W, ch = H;
+  if (photoAspect && state.photoMode) { if (W / H > photoAspect) { ch = H; cw = H * photoAspect; } else { cw = W; ch = W / photoAspect; } }
+  w.style.width = cw + 'px'; w.style.height = ch + 'px'; w.style.inset = 'auto'; w.style.left = (W - cw) / 2 + 'px'; w.style.top = (H - ch) / 2 + 'px';
+  renderer.setSize(cw, ch, false); camera.aspect = cw / ch; camera.updateProjectionMatrix(); applyPhotoCam();
+}
+window.addEventListener('resize', resize);
+$('tabs').onclick = e => { const t = e.target.dataset && e.target.dataset.t; if (!t) return; [...$('tabs').children].forEach(b => b.classList.toggle('on', b.dataset.t === t)); document.querySelectorAll('.tab').forEach(d => d.classList.toggle('on', d.id === t)); };
+const ray = new THREE.Raycaster(), mouse = new THREE.Vector2(); let curTxt = '';
+canvas.addEventListener('mousemove', e => {
+  const r = canvas.getBoundingClientRect(); mouse.set(((e.clientX - r.left) / r.width) * 2 - 1, -((e.clientY - r.top) / r.height) * 2 + 1);
+  ray.setFromCamera(mouse, camera); const objs = [reefMesh, seabedMesh].filter(Boolean); const h = ray.intersectObjects(objs, false)[0];
+  curTxt = h ? `cursor x ${h.point.x.toFixed(1)}  y ${h.point.z.toFixed(1)}  z ${fmt(h.point.y / state.ve)} m MSL = ${fmt(h.point.y / state.ve + ZODN)} mODN  (${(state.wl - h.point.y / state.ve).toFixed(2)} m below water)` : '';
+});
+function hud() {
+  const c = camState();
+  $('hud').textContent = `camera x ${c.x.toFixed(1)}  y ${c.y.toFixed(1)}  z ${fmt(c.z, 1)} m MSL (${fmt(c.z + ZODN, 1)} mODN)\nheading ${c.hdg.toFixed(0)}° (true)  pitch ${c.pitch.toFixed(0)}°  FOV ${c.vfov.toFixed(0)}° v / ${c.hfov.toFixed(0)}° h\n` + curTxt;
+  const cr = $('camro'); if (cr) cr.textContent = `view: ${VIEWS[curView] ? VIEWS[curView].label : 'free'}`;
+}
+function loop() {
+  requestAnimationFrame(loop); if (!state.photoMode) controls.update();
+  renderer.render(scene, camera); const w = $('wrap').clientWidth, h = $('wrap').clientHeight; updateLabels(w, h); hud();
+}
+mkControls(); mkPhoto(); setVersion(state.ver); setWater(state.wl); setVE(state.ve); resize(); gotoView(VIEWS[curView] ? curView : 'oblique'); loop();
+if (hp.get('tab')) { const b = document.querySelector('#tabs button[data-t="' + hp.get('tab') + '"]'); if (b) b.click(); }          // #tab=t1..t4
+if (hp.get('info')) $('info').click();           // #info=1 opens the version pop-up (used for the headless preview)
+window.__ready = true;
+
+/* "Match this photo" receiver (round 11). Injected by compile_models3d.inject_chrome at the END of each single-model viewer's module script, so it
+   sees the viewer's own `camera` and `controls` (module scope). It only listens to its parent page (e.source === window.parent).
+   Messages from the page:
+     {type:'m3d-camera', mode:'plan', center_m:[x,y], up_m:[ux,uy], width_m, height_m, crop_frac?, image?, opacity?}   canonical metres (the model.js frame)
+     {type:'m3d-camera', mode:'reset'}      restore the camera, FOV, limits and panels the viewer had before the first match
+     {type:'m3d-camera', mode:'opacity', opacity:0..1}
+   Answers: {type:'m3d-camera-state', matched:true|false, dragged?:true}.
+   CFG (filled at build time from data/photo_match.json): A = canonical (x, y) -> scene ground (X, Z); shift = canonical -> model frame offset (m). */
+;(function () {
+  try {
+    var CFG = {"A": [[1.0, 0.0], [0.0, 1.0]], "shift": [0.0, 0.0]};
+    if (!CFG || typeof camera === 'undefined' || typeof controls === 'undefined') return;
+    var home = null, spec = null, panelsWere = null, FOV = 8;
+    function canvasEl() {
+      var l = [].slice.call(document.querySelectorAll('canvas')).sort(function (a, b) { return b.clientWidth * b.clientHeight - a.clientWidth * a.clientHeight; });
+      return l[0];
+    }
+    function num(v) { return typeof v === 'number' && isFinite(v); }
+    function toScene(x, y) { x += CFG.shift[0]; y += CFG.shift[1]; return [CFG.A[0][0] * x + CFG.A[0][1] * y, CFG.A[1][0] * x + CFG.A[1][1] * y]; }
+    function dirScene(x, y) { return [CFG.A[0][0] * x + CFG.A[0][1] * y, CFG.A[1][0] * x + CFG.A[1][1] * y]; }
+    function stateFov() { return (typeof state !== 'undefined' && state && typeof state === 'object' && 'fov' in state) ? state : null; }
+    function tell(o) { try { window.parent.postMessage(Object.assign({ type: 'm3d-camera-state' }, o), '*'); } catch (e) { /* ignore */ } }
+    function saveHome() {
+      if (home) return;
+      var s = stateFov();
+      home = { pos: camera.position.clone(), up: camera.up.clone(), tgt: controls.target.clone(), fov: camera.fov, near: camera.near, far: camera.far,
+        minD: controls.minDistance, maxD: controls.maxDistance, minP: controls.minPolarAngle, maxP: controls.maxPolarAngle, sfov: s ? s.fov : null };
+    }
+    function overlayBox() {
+      var b = document.getElementById('m3d-pmo');
+      if (!b) {
+        b = document.createElement('div'); b.id = 'm3d-pmo'; b.setAttribute('aria-hidden', 'true');
+        b.style.cssText = 'position:fixed;pointer-events:none;overflow:hidden;z-index:6;display:none;outline:1px dashed rgba(255,255,255,.55)';
+        var im = document.createElement('img'); im.alt = ''; im.style.cssText = 'position:absolute;display:block;max-width:none';
+        b.appendChild(im); document.body.appendChild(b);
+      }
+      return b;
+    }
+    function layoutOverlay() {
+      var b = document.getElementById('m3d-pmo'); if (!b || !spec || !spec.image) return;
+      var el = canvasEl(), r = el.getBoundingClientRect(), s = r.height / spec._v;
+      var W = spec.width_m * s, H = spec.height_m * s, cr = spec.crop_frac || [0, 0, 1, 1];
+      b.style.left = (r.left + r.width / 2 - W / 2) + 'px'; b.style.top = (r.top + r.height / 2 - H / 2) + 'px';
+      b.style.width = W + 'px'; b.style.height = H + 'px';
+      var im = b.firstChild;
+      im.style.width = (W / cr[2]) + 'px'; im.style.height = (H / cr[3]) + 'px'; im.style.left = (-cr[0] * W / cr[2]) + 'px'; im.style.top = (-cr[1] * H / cr[3]) + 'px';
+      b.style.display = 'block';
+    }
+    function place() {
+      var d = spec, el = canvasEl(); if (!el || !el.clientWidth || !el.clientHeight) return false;
+      var c = toScene(d.center_m[0], d.center_m[1]), u = dirScene(d.up_m[0], d.up_m[1]), n = Math.hypot(u[0], u[1]); u = [u[0] / n, u[1] / n];
+      var cw = el.clientWidth, ch = el.clientHeight;
+      var v = Math.max(d.height_m, d.width_m * ch / cw);                // vertical ground extent that shows the whole picture
+      d._v = v;
+      var dist = (v / 2) / Math.tan(FOV * Math.PI / 360);
+      var s = stateFov(); if (s) s.fov = FOV;
+      camera.fov = FOV; camera.far = Math.max(home.far, dist * 4); camera.near = Math.min(home.near, dist / 200); camera.updateProjectionMatrix();
+      controls.minDistance = 0; controls.maxDistance = Infinity; controls.minPolarAngle = 0;
+      camera.up.set(0, 1, 0);
+      var eps = Math.max(dist * 0.0015, 0.05);                            // the camera sits a hair behind the picture's bottom edge: screen-up = the picture's up
+      camera.position.set(c[0] - u[0] * eps, dist, c[1] - u[1] * eps);
+      controls.target.set(c[0], 0, c[1]);
+      camera.lookAt(controls.target); controls.update();
+      layoutOverlay();
+      return true;
+    }
+    function match(d) {
+      if (!d || !d.center_m || !d.up_m || !num(d.width_m) || !num(d.height_m) || !num(d.center_m[0]) || !num(d.center_m[1]) || !num(d.up_m[0]) || !num(d.up_m[1])) return;
+      saveHome();
+      var P = window.__m3dPanels;                                         // an unobstructed canvas: fold the viewer's side panels while matching
+      if (P && !panelsWere) {
+        panelsWere = { left: P.state.left, right: P.state.right };
+        if (document.getElementById('m3d-hide-left')) P.set('left', false);
+        if (document.getElementById('m3d-hide-right')) P.set('right', false);
+      }
+      spec = { center_m: d.center_m, up_m: d.up_m, width_m: d.width_m, height_m: d.height_m, crop_frac: (d.crop_frac && d.crop_frac.length === 4) ? d.crop_frac : null,
+        image: (typeof d.image === 'string' && /^(file|https?|blob|data):/i.test(d.image)) ? d.image : '', opacity: num(d.opacity) ? d.opacity : 0.55 };
+      var b = overlayBox();
+      if (spec.image) { b.firstChild.src = spec.image; b.style.opacity = String(spec.opacity); } else b.style.display = 'none';
+      if (place()) tell({ matched: true });
+    }
+    function reset() {
+      if (!home) return;
+      spec = null;                                                         // first: restoring the panels fires 'resize', which would re-place the overlay
+      camera.position.copy(home.pos); camera.up.copy(home.up); controls.target.copy(home.tgt);
+      camera.fov = home.fov; camera.near = home.near; camera.far = home.far; camera.updateProjectionMatrix();
+      controls.minDistance = home.minD; controls.maxDistance = home.maxD; controls.minPolarAngle = home.minP; controls.maxPolarAngle = home.maxP;
+      var s = stateFov(); if (s && home.sfov !== null) s.fov = home.sfov;
+      camera.lookAt(controls.target); controls.update();
+      var b = document.getElementById('m3d-pmo'); if (b) b.style.display = 'none';
+      var P = window.__m3dPanels;
+      if (P && panelsWere) { if (panelsWere.left && document.getElementById('m3d-hide-left')) P.set('left', true); if (panelsWere.right && document.getElementById('m3d-hide-right')) P.set('right', true); }
+      panelsWere = null; home = null;
+      tell({ matched: false });
+    }
+    window.addEventListener('message', function (e) {
+      if (e.source !== window.parent) return;
+      var d = e.data; if (!d || typeof d !== 'object' || d.type !== 'm3d-camera') return;
+      if (d.mode === 'plan') match(d);
+      else if (d.mode === 'reset') reset();
+      else if (d.mode === 'opacity' && num(d.opacity)) { var b = document.getElementById('m3d-pmo'); if (b) b.style.opacity = String(Math.max(0, Math.min(1, d.opacity))); if (spec) spec.opacity = d.opacity; }
+    });
+    window.addEventListener('resize', function () { if (spec) place(); });
+    controls.addEventListener('start', function () {                     // the user moves the camera: the overlay no longer matches
+      if (!spec) return;
+      var b = document.getElementById('m3d-pmo'); if (b) b.style.display = 'none';
+      spec = null; tell({ matched: false, dragged: true });
+    });
+    function screenOf(x, y) {                                            // test hook: screen pixel (viewport of this document) of the canonical point (x, y) at ground level
+      var p = toScene(x, y), v = new camera.position.constructor(p[0], 0, p[1]), r = canvasEl().getBoundingClientRect();
+      camera.updateMatrixWorld(); v.project(camera);
+      return [r.left + (v.x + 1) / 2 * r.width, r.top + (1 - v.y) / 2 * r.height];
+    }
+    window.__m3dMatch = { match: match, reset: reset, active: function () { return !!spec; }, screenOf: screenOf };   // test hooks
+  } catch (err) { if (window.console) console.warn('photo-match receiver not installed', err); }
+})();
+
+</script>
+</body>
+</html>

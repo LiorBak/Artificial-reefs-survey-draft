@@ -1,0 +1,144 @@
+{
+ "M": {
+  "lidar_2022": {
+   "volume_m3": 31336,
+   "area_footprint_m2": 8675,
+   "area_incl_toe_m2": 11518,
+   "volume_type4_layer_m3": 21557,
+   "tonnes": 53271,
+   "tonnes_range": [
+    50137,
+    56404
+   ],
+   "tonnes_type4_layer": 36646,
+   "volume_unc_bed_m3": 4607,
+   "max_crest_mODN": 1.81
+  },
+  "design_1020": {
+   "volume_m3": 30091,
+   "area_footprint_m2": 6989,
+   "area_incl_toe_m2": 11491,
+   "volume_type4_layer_m3": 17990,
+   "tonnes": 51154,
+   "tonnes_range": [
+    48145,
+    54163
+   ],
+   "tonnes_type4_layer": 30583,
+   "volume_unc_bed_m3": 4596,
+   "max_crest_mODN": 1.5
+  },
+  "sat_2024": {
+   "volume_m3": 26400,
+   "area_footprint_m2": 5743,
+   "area_incl_toe_m2": 8979,
+   "volume_type4_layer_m3": 15369,
+   "tonnes": 44880,
+   "tonnes_range": [
+    42240,
+    47520
+   ],
+   "tonnes_type4_layer": 26128,
+   "volume_unc_bed_m3": 3592,
+   "max_crest_mODN": 1.81
+  }
+ },
+ "stats": {
+  "dsm_crestN_median": 0.58,
+  "dsm_crestN_p90": 0.91,
+  "dsm_crestS_median": 1.55,
+  "dsm_crestS_p90": 1.75,
+  "lidar_minus_design_mean_m": 0.14,
+  "lidar_minus_design_std_m": 0.28,
+  "seabed_under_N_foot_mean_mODN": -4.04,
+  "seabed_under_N_foot_min_max": [
+   -4.72,
+   -2.51
+  ],
+  "seabed_under_S_foot_mean_mODN": -3.95,
+  "seabed_under_S_foot_min_max": [
+   -4.21,
+   -3.62
+  ],
+  "model_seabed_at_y287_x-60_x85": [
+   -3.61,
+   -2.91
+  ],
+  "model_minus_fig2_-2": [
+   -0.14,
+   0.04,
+   24
+  ],
+  "model_minus_fig2_-3": [
+   -0.01,
+   0.03,
+   24
+  ],
+  "model_minus_fig2_-4": [
+   -0.89,
+   0.14,
+   13
+  ],
+  "emodnet_vs_model": {
+   "368": {
+    "emodnet_mODN": -2.84,
+    "model_mODN": -4.36
+   },
+   "440": {
+    "emodnet_mODN": -3.54,
+    "model_mODN": -5.16
+   },
+   "513": {
+    "emodnet_mODN": -4.35,
+    "model_mODN": -5.96
+   }
+  }
+ },
+ "fit_res": {
+  "anchor_335": {
+   "n": 6,
+   "rms": 0.0,
+   "mean": 0.0
+  },
+  "assumed_tail": {
+   "n": 6,
+   "rms": 0.0,
+   "mean": -0.0
+  },
+  "design_N3_arm": {
+   "n": 12,
+   "rms": 0.0,
+   "mean": -0.0
+  },
+  "design_N4": {
+   "n": 3,
+   "rms": 0.0,
+   "mean": 0.0
+  },
+  "design_S2_seaward": {
+   "n": 5,
+   "rms": 0.0,
+   "mean": -0.0
+  },
+  "design_S2_shoreward": {
+   "n": 5,
+   "rms": 0.0,
+   "mean": 0.0
+  },
+  "fig2_-3.0": {
+   "n": 12,
+   "rms": 0.0,
+   "mean": -0.0
+  },
+  "lidar_dtm_2022": {
+   "n": 3081,
+   "rms": 0.0,
+   "mean": -0.0
+  }
+ },
+ "nodes_n": 3130,
+ "frame_fit": {
+  "rms": 0.004805304730472981,
+  "max": 0.015316690809171973
+ }
+}

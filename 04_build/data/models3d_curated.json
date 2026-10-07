@@ -1,0 +1,696 @@
+{
+ "_about": "Curated per-model text for the 3D models tab (04_build/src/compile_models3d.py reads it). Written 2026-10-06 from each model's METHODS_3D.md / SOURCES_3D.md (and the bathymetry REPORT.md files). 'ev' / 'quote' strings are verified against those documents at build time (whitespace and quote-style insensitive); a snippet that is not found is listed in data/models3d.json meta.verify.failed and fails check.py. Models without an entry here get auto-extracted fallbacks (provenance rows, limitations table) and a 'not yet curated' note.",
+ "ve_generic": "Vertical exaggeration (VE, slider 1-5x, default 1x, always displayed in the viewer) multiplies every height (water, seabed, reef) and never a plan distance: tan(apparent angle) = VE x tan(true angle). Every number on this page is a true (1x) value. Photo-match mode forces VE = 1.",
+ "models": {
+  "prattes-reef-el-segundo": {
+   "state_short": "Phase I as built, 22 September 2000 (footprint = Skelly Engineering design layout; no as-built plan exists). Phase II (April 2001) and the removal (2008 / 2010) are not modelled.",
+   "ve_note": "At VE = 5 the 1:32.0 bed looks like 1:6.4 and the reef looks 6.8 m high at the apex.",
+   "ve_ev": [
+    "at VE = 5 the 1:32.0 bed looks like 1:6.4 and the reef looks 6.8 m high at the apex"
+   ],
+   "key_numbers": [
+    {
+     "q": "Crest, apex face (state B, default)",
+     "model": "-2.678 m MSL = 1.83 m below MLLW = 1.21 m below LAT",
+     "stated": "'approximately - 6 ft MLLW' = 1.829 m below MLLW (ICCE 2010 rounds it to 1.8 m)",
+     "diff": "0 (model input); ICCE rounding -0.029 m",
+     "ids": "S10 p.2; S2 p.7; S4",
+     "note": "The only as-built crest number; datum MLLW confirmed by the paper. Top follows the seabed at constant thickness (assumption A4).",
+     "ev": [
+      "Its elevation z_B = -2.678 m is the top of the reef at y = y_apex",
+      "Tops are then -2.678 m MSL at the apex (1.83 m below MLLW, 1.21 m below LAT)"
+     ]
+    },
+    {
+     "q": "Crest, arm tips (state B)",
+     "model": "-1.784 m MSL = 0.32 m below LAT",
+     "stated": "design label 'TOP OF BAG MIN DEPTH -6' MSL' = -1.829 m MSL (Skelly drawing, both arm tips)",
+     "diff": "+0.045 m (model 0.04 m shallower)",
+     "ids": "P1 (img1); S10",
+     "note": "Consistent within the uncertainty; not independent (both use the DEM bed).",
+     "ev": [
+      "-1.784 m at the arm tips (0.94 m below MLLW, 0.32 m below LAT)",
+      "state B's tip top -1.784 m is 0.04 m from it"
+     ]
+    },
+    {
+     "q": "Crest, alternative state A (design level)",
+     "model": "-1.829 m MSL, level = 0.36 m below LAT",
+     "stated": "same number (6 ft) but labelled MSL on the drawing and MLLW in the paper",
+     "diff": "A is 0.849 m shallower than B (= MSL - MLLW)",
+     "ids": "P1; S10; S4",
+     "note": "Selectable in the viewer; B is the default (as installed).",
+     "ev": [
+      "Level crest at z_A = -1.829 m MSL",
+      "Crest 0.36 m below LAT"
+     ]
+    },
+    {
+     "q": "Seabed at the reef centre (y = 91.44 m from the MSL waterline)",
+     "model": "-3.67 m MSL (apex -4.03, tips -3.13); slope 1:32.0",
+     "stated": "six estimates: CRM -2.92, Navionics -3.02, B&N Fig. 5 beds -3.73, CCC text '15 feet (MSL)' -4.57, RWR 'about 5 m deep' -5.00 m",
+     "diff": "-0.75 m vs CRM (deeper) ... +1.33 m vs RWR text (shallower); sample SD 0.83 m",
+     "ids": "S5 (NOAA DEM, primary); S6; S7; S1; S3; S10",
+     "note": "sigma_zb = +-0.8 m (position along y is the main driver: slope x 25 m = 0.78 m).",
+     "ev": [
+      "z(y = 91.44 m) = -3.67 m, z(tips, y = 74.65 m) = -3.13 m, z(apex, y = 103.28 m) = -4.03 m, slope 1:32.0 over the reef",
+      "sample SD of six estimates (0.83 m"
+     ]
+    },
+    {
+     "q": "Reef height",
+     "model": "1.35 m (state B: 1.12 bag courses; A: 1.3 m tips, 2.2 m apex)",
+     "stated": "bag height 1.2 m (4 ft); number of courses not stated anywhere; after Phase II (other state) relief 2.12 m",
+     "diff": "+0.15 m vs one course",
+     "ids": "S10 p.2; S2",
+     "note": "sigma_H = +-0.85 m, more than half the height: one reason for the LOW rating.",
+     "ev": [
+      "= 1.349 m vs bag height 1.2 m (1.12 courses)",
+      "sigma_H = sqrt( sigma_zc^2 + sigma_zb^2 ) = sqrt(0.3^2 + 0.8^2) = 0.85 m"
+     ]
+    },
+    {
+     "q": "Side slopes",
+     "model": "1 H : 1 V (assumed; range 0.5-2.5 H per 1 V)",
+     "stated": "none (no cross-section of the Phase I reef)",
+     "diff": "n/a",
+     "ids": "assumption A5",
+     "note": "Volume 316-514 m3 across that range (state B).",
+     "ev": [
+      "bag-stack side slope s = 1.0 (0.5-2.5)"
+     ]
+    },
+    {
+     "q": "Footprint",
+     "model": "435.2 m2, 58.0 x 28.6 m (76 vertices)",
+     "stated": "same design drawing (Skelly; Fig. 4 of the 2003 paper); 110 bags x 6.39 m2 = 703 m2 of bag footprint",
+     "diff": "0 vs the drawing; -268 m2 (-38 %) vs the bag footprint",
+     "ids": "P1; shape.json; S10",
+     "note": "Design layout, not an as-built plan.",
+     "ev": [
+      "435.2 m2, 58.0 x 28.6 m",
+      "110 bags x 6.39 m2 = 703 m2 of bag footprint vs 435.2 m2 outline"
+     ]
+    },
+    {
+     "q": "Volume",
+     "model": "443 m3 (state B); 550 m3 (state A)",
+     "stated": "110 bags: 869 m3 nominal (7.9 m3 each), 695-782 m3 at 80-90 % fill",
+     "diff": "-252 to -339 m3 vs filled; -426 m3 (-49 %) vs nominal",
+     "ids": "S10 pp.2-3; S2 p.7",
+     "note": "Unresolved discrepancy (V8/V9), not an uncertainty effect: it is still 2 sigma away.",
+     "ev": [
+      "110 bags: 869 m3 nominal, 695-782 m3 at 80-90 % fill; model B = 443 m3"
+     ]
+    }
+   ],
+   "relied": [
+    {
+     "quote": "After the initial installation, the depth at the outermost point of the reef was approximately - 6 ft MLLW",
+     "where": "Borrero & Nelsen (2003), p.2",
+     "supports": "Phase I crest level and its datum (MLLW)",
+     "url": "",
+     "link_note": "16-page PDF supplied by Lior; venue and year not printed in the file (see METHODS_3D section 2, S10)"
+    },
+    {
+     "quote": "to within 3ft of MLLW",
+     "where": "Borrero & Nelsen (2003), p.3",
+     "supports": "Phase II crest (not modelled)",
+     "url": ""
+    },
+    {
+     "quote": "approximately 1600 cubic meters of sand contained in 200 geotextile bags",
+     "where": "Borrero & Nelsen (2003), p.16",
+     "supports": "nominal volume used by the authors (200 x 7.9 m3), not fill-corrected",
+     "url": ""
+    },
+    {
+     "quote": "approximately 200 m south of the Hyperion Sewage Treatment Plant's 1-mile outfall",
+     "where": "Borrero & Nelsen (2003), p.1",
+     "supports": "position of the reef (+-100 m)",
+     "url": ""
+    },
+    {
+     "quote": "TOP OF BAG MIN DEPTH -6' MSL",
+     "where": "Skelly Engineering (c. 2000) design drawing, call-out at both arm tips",
+     "supports": "design crest level (state A)",
+     "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/07/Pratts-Reef-Diagram.png"
+    },
+    {
+     "quote": "maximum volume of 7.9 m3",
+     "where": "Borrero, Mead & Moores (2010), ICCE, p.7",
+     "supports": "bag volume; the same page says the bags were filled to 80-90 %",
+     "url": "https://doi.org/10.9753/icce.v32.structures.60"
+    },
+    {
+     "quote": "located in 15 feet of water (MSL)",
+     "where": "California Coastal Commission (1998), staff report W5a",
+     "supports": "seabed depth cross-check (-4.57 m MSL)",
+     "url": "https://documents.coastal.ca.gov/reports/1998/10/W5a-10-1998.pdf"
+    }
+   ]
+  },
+  "boscombe-surf-reef": {
+   "confidence_short": "Outline (2011 satellite), seabed (April 2011 DGPS plot) and the as-built crest (designers +0.5 m ACD; Oct 2009 profiles) are sourced and agree, and Navionics shows the same shoal; but the survey zero (chart datum) is assumed (+-1.4 m on absolute heights if wrong) and the flanks and flat crest are an idealised loft.",
+   "state_short": "As built, finished September-October 2009: idealised two-layer loft of the traced outline (2011-09-28 image) at the design crest +0.5 m ACD. The damaged April 2011 survey surface is an evidence layer only.",
+   "ve_note": "A 1:3 flank (18.4 deg) looks like 33.7 deg at VE = 2 and 59 deg at VE = 5.",
+   "ve_ev": [
+    "a 1:3 flank, 18.4 deg, looks like 33.7 deg at e = 2 and 59 deg at e = 5"
+   ],
+   "key_numbers": [
+    {
+     "q": "Crest level",
+     "model": "flat +0.5 m ACD = -0.90 m MSL; stands 0.56 m above LAT (dry at LAT)",
+     "stated": "designers 'crest height of 0.5 m above chart datum'; Oct 2009 profile tops +0.05 to +0.65 m ACD; April 2011 maximum +0.68 m ACD",
+     "diff": "0 vs the design; +-0.3 m vs the 2009 profile tops",
+     "ids": "S3 p.2; S2 Fig. 9",
+     "note": "Design value used as the as-built crest (A6). An unverified search snippet says the final crest was 0.5 m above design.",
+     "ev": [
+      "the Oct 2009 profile tops are +0.05 to +0.65 m",
+      "highest surveyed crest point in April 2011 is +0.68 m ACD",
+      "the crest stands 0.56 m above LAT"
+     ]
+    },
+    {
+     "q": "Seabed depth at the reef",
+     "model": "-1.4 m (y 100 m) to -4.8 m (y 300 m) in the survey datum (ACD); under the outline mean -3.56 m ACD",
+     "stated": "'225 m offshore in 2.7 to 5 m depth' (Rendle & Davidson); design 'set in water depths of 3-5 m (CD)' (Mead et al.); EMODnet DTM 1.8 +- 0.7 m deeper",
+     "diff": "inside the stated 2.7-5 m; EMODnet minus model -1.8 +- 0.7 m (7 cells)",
+     "ids": "S2 Fig. 9; S3; EMODnet report 6.1",
+     "note": "Beach (y < 100 m) and the ground under the reef are interpolated or extrapolated, not measured.",
+     "ev": [
+      "Seabed -1.4 m (y 100) to -4.8 m (y 300) in the survey datum",
+      "-1.8 +- 0.7 m over 7 cells"
+     ]
+    },
+    {
+     "q": "Seabed extent (shoreline to offshore, since 2026-10-07)",
+     "model": "grid 161 x 359 cells of 2 m: x -160..160 m, y -66..650 m, so the beach and the shoreline are inside the model; beach and nearshore from CCO profiles of 2010-04-20 (+-0.36 m), survey blend +-0.5 m, offshore y > 380 m = EMODnet slope only (+-1.2 m)",
+     "stated": "the 2011 survey (Fig. 9) ends at y about 312 m and has no beach; EMODnet DTM 2024 cells read 1.1-3.1 m deeper than the survey",
+     "diff": "reef and survey cells unchanged (0 of 4,295 + 1,580 cells differ from the previous model)",
+     "ids": "S13; S2",
+     "note": "Offshore y > 380 m is context only: it carries a known alongshore tilt (see the caveat)."
+    },
+    {
+     "q": "Reef height above the seabed",
+     "model": "mean 3.2 m inside the outline (surveyed median 2.3 m, maximum 4.1 m after damage)",
+     "stated": "two layers of containers, diameters 1-5 m, lengths 15-70 m; no single height stated",
+     "diff": "n/a",
+     "ids": "S3; S2",
+     "note": "sigma_H = +-0.47 m.",
+     "ev": [
+      "The flat crest plateau covers 1,780 m2; the mean relief inside the outline is 3.2 m",
+      "median surveyed relief 2.3 m, maximum 4.1 m"
+     ]
+    },
+    {
+     "q": "Side slopes",
+     "model": "1:3 (run : rise), +-30 %",
+     "stated": "survey SW flank 1:3 to 1:4 (steepest 2 m window 1:1.5); NE flank 1:5 to 1:7; map median 1:5.8",
+     "diff": "model flank within the steep-side range; steeper than the smoothed map median",
+     "ids": "S2 Fig. 9 sections",
+     "note": "Assumption A7.",
+     "ev": [
+      "rises 2.0 m over 6-8 m (1:3 to 1:4, steepest 2 m window 1:1.5); the NE side is 1:5 to 1:7; the smoothed map gives a median gradient of 1:5.8"
+     ]
+    },
+    {
+     "q": "Footprint",
+     "model": "4,042 m2 (25 vertices; minimum rotated rectangle 121.1 x 45.0 m)",
+     "stated": "literature 'about 1 ha' (10,000 m2)",
+     "diff": "-5,958 m2 (-60 %)",
+     "ids": "S7 (shape.json); S1",
+     "note": "Three plan-view sources agree with the traced outline; 1 ha would need 1.3 m mean thickness.",
+     "ev": [
+      "area 60 % below a repeated",
+      "The text \"about 1 ha\" would need 1.3 m of mean thickness"
+     ]
+    },
+    {
+     "q": "Volume",
+     "model": "13,119 m3 (loft)",
+     "stated": "about 13,000 m3 (Mead et al. 2010); April 2011 survey relief 9,573 m3 (damaged); design relief Fig. 3a 11,540 m3",
+     "diff": "+119 m3 (+0.9 %) vs the stated figure",
+     "ids": "S3; S2; project verification",
+     "note": "Agreement; the stated value is reproduced within the slope and crest ranges (12,161-14,184 m3 for slope 1:4 to 1:2).",
+     "ev": [
+      "loft 13,119 m3 against about 13,000 m3 stated (+0.9 %)",
+      "The April 2011 survey relief volume is 9,573 m3",
+      "The designers' Fig. 3a design relief gives 11,540 m3"
+     ]
+    }
+   ],
+   "relied": [
+    {
+     "quote": "The design has a crest height of 0.5 m above chart datum.",
+     "where": "Mead et al. (2010), ICCE, p.2",
+     "supports": "as-built crest level (+0.5 m ACD)",
+     "url": "https://icce-ojs-tamu.tdl.org/icce/article/view/1352"
+    },
+    {
+     "quote": "This design was set in water depths of 3-5 m (CD)",
+     "where": "Mead et al. (2010), ICCE, Fig. 3a",
+     "supports": "design depth; cross-check of the seabed and of the survey datum",
+     "url": "https://icce-ojs-tamu.tdl.org/icce/article/view/1352"
+    },
+    {
+     "quote": "The tidal range between MHWS and MLWS at Bournmouth is 1.76 m.",
+     "where": "Mead et al. (2010), ICCE, pp.1-3 (spelling as printed)",
+     "supports": "tide levels (Table 1, Bournemouth Pier gauge, m ACD)",
+     "url": "https://icce-ojs-tamu.tdl.org/icce/article/view/1352"
+    },
+    {
+     "quote": "Situated 225 m offshore in 2.7 to 5 m depth",
+     "where": "Rendle & Davidson (2012), ICCE, p.3",
+     "supports": "seabed depth and position",
+     "url": "https://icce-ojs-tamu.tdl.org/icce/article/view/6794"
+    },
+    {
+     "quote": "upper section is exposed on low spring tides",
+     "where": "Herbert et al. (2017), PLoS ONE 12(9): e0184100 (online article, no page numbers)",
+     "supports": "crest above low water springs; supports chart datum for the survey zero",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5604948/"
+    },
+    {
+     "quote": "Bournemouth -1.40m",
+     "where": "NTSLF, Chart datum and ordnance datum (table row)",
+     "supports": "z_MSL = z_ACD - 1.40",
+     "url": "https://ntslf.org/tides/datum"
+    },
+    {
+     "quote": "MSL is equivalent to Chart Datum, Newlyn",
+     "where": "Rendle & Davidson (2012), p.8 (garbled sentence, NOT used for any number)",
+     "supports": "shown because it is the source of the datum doubt",
+     "url": "https://icce-ojs-tamu.tdl.org/icce/article/view/6794"
+    }
+   ]
+  },
+  "bunbury-airwave": {
+   "state_short": "As installed, December 2019: 12 m sand-slurry bladder, torn along a glued seam before completion (card verdict FAILED). Geometry only; it never operated as a reef. Removal, redesign and the 2025 granite proposal are not modelled.",
+   "ve_note": "At VE = 5 the 1:24.5 bed looks like 1:4.9 and the 2.0 m cap looks 10.0 m high.",
+   "ve_ev": [
+    "at VE = 5 the 1:24.5 bed looks like 1:4.9 and the 2.0 m cap looks 10.0 m high"
+   ],
+   "key_numbers": [
+    {
+     "q": "Crest depth at low tide",
+     "model": "0.38 m (H = 2.0 m) to 0.78 m (H = 1.6 m) below MLLW at the default position; Monte Carlo 0.69 +- 0.66 m",
+     "stated": "'the shallow point is about 1m under the surface of the water' at low tide (RWR; 'low tide' undefined)",
+     "diff": "model 0.62 m shallower at H = 2.0 (0.9 sigma)",
+     "ids": "S_RWR; S_lidar; S_tide",
+     "note": "Consistent within the uncertainty (sigma 0.63 m).",
+     "ev": [
+      "At the default y = 37.5 m, H = 2.0 m the crest is 0.38 m below MLLW",
+      "crest depth below MLLW of 0.69 m with sd 0.66 m",
+      "0.38 m (H = 2.0) to 0.78 m (H = 1.6) below MLLW at the default position"
+     ]
+    },
+    {
+     "q": "Seabed depth at the reef centre (y = 37.5 m)",
+     "model": "-2.58 m AHD (lidar 2009) = -2.68 m MSL",
+     "stated": "text-implied seabed (MLLW - 1.0 m crest - H): -3.20 m AHD (H = 2.0) or -2.80 m AHD (H = 1.6)",
+     "diff": "model 0.62 m (H = 2.0) / 0.22 m (H = 1.6) shallower",
+     "ids": "S_lidar; S_RWR; S_Tracks19",
+     "note": "The lidar reaches -3.20 m at y = 50 m, inside the text range of 30-50 m offshore.",
+     "ev": [
+      "H = 2.0: -3.20 m AHD; H = 1.6: -2.80; lidar at the default y = 37.5 m: -2.58",
+      "differences at the default 0.62 m (H = 2.0) and 0.22 m (H = 1.6)"
+     ]
+    },
+    {
+     "q": "Reef height above the seabed",
+     "model": "2.0 m default (range 1.6-2.0 m)",
+     "stated": "2 m (ABC, RWR) vs 1.6 m 'at the highest point' (Tracks); all design figures given before installation",
+     "diff": "0 / +0.4 m",
+     "ids": "S_ABC19; S_RWR; S_Tracks19",
+     "note": "No as-installed measurement exists; the bladder was partly filled and torn.",
+     "ev": [
+      "height H = 2.0 m default (range 1.6-2.0 m)",
+      "ABC and RWR 2 m; Tracks 1.6 m"
+     ]
+    },
+    {
+     "q": "Side slopes / profile",
+     "model": "symmetric spherical cap (stand-in); rim angle 36.9 deg at VE 1; bed 1:24.5",
+     "stated": "none; Tracks (2021) calls the first bladder a 'skateboard ramp' profile",
+     "diff": "n/a",
+     "ids": "S_Tracks21; assumption A5",
+     "note": "Flank shape +-0.3 m locally.",
+     "ev": [
+      "rim angle 36.9 deg steepening to 75.1 deg"
+     ]
+    },
+    {
+     "q": "Footprint",
+     "model": "circle D = 12.0 m, 112.1 m2 (29-vertex trace)",
+     "stated": "12 m diameter (text) = 113.1 m2",
+     "diff": "-1.0 m2 (-0.9 %), by construction",
+     "ids": "S_shape; S_RWR; S_Tracks19",
+     "note": "The drone photo has no scale bar: the 12 m is the text value.",
+     "ev": [
+      "traced 112.1 m2 vs circle 113.1 m2 (-0.9 %)"
+     ]
+    },
+    {
+     "q": "Volume (cap) vs fill",
+     "model": "cap 92.6-117.3 m3 (H = 1.6-2.0 m)",
+     "stated": "sand 140-150 t (developer) = 70-94 m3 settled at 1.6-2.0 t/m3",
+     "diff": "sand fills 60-80 % of the H = 2.0 m cap",
+     "ids": "S_BunMail; S_Tracks19",
+     "note": "Credible; not used by the model.",
+     "ev": [
+      "volume 92.6-117.3 m3",
+      "140 t | 70-88 m3 | 60-75 %"
+     ]
+    }
+   ],
+   "relied": [
+    {
+     "quote": "at low tide, the shallow point is about 1m under the surface of the water",
+     "where": "Raised Water Research, Bunbury Airwave spot page (re-fetched 2026-10-05)",
+     "supports": "crest depth",
+     "url": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/bunbury-airwave/"
+    },
+    {
+     "quote": "rises about 2m (6.5 feet) off the sea floor at its highest point",
+     "where": "Raised Water Research, Bunbury Airwave spot page",
+     "supports": "height 2.0 m",
+     "url": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/bunbury-airwave/"
+    },
+    {
+     "quote": "twelve metres in diameter and 1.6m tall at the highest point",
+     "where": "Tracks Magazine (15 Nov 2019)",
+     "supports": "diameter 12 m and the lower height 1.6 m",
+     "url": "https://tracksmag.com.au/airwave-set-for-live-trial-at-bunbury-534049"
+    },
+    {
+     "quote": "approximately 45 metres off the low tide mark",
+     "where": "Tracks Magazine (15 Nov 2019)",
+     "supports": "offshore position (30-50 m)",
+     "url": "https://tracksmag.com.au/airwave-set-for-live-trial-at-bunbury-534049"
+    },
+    {
+     "quote": "maximum tidal range of 1.2 m",
+     "where": "GHD (2021), Tidal Inundation Monitoring and Modelling Report, Table 1 (Port of Bunbury)",
+     "supports": "tide planes",
+     "url": "https://www.epa.wa.gov.au/sites/default/files/PER_documentation2/App%20B%20-%20Tidal%20innudation%20report.pdf"
+    },
+    {
+     "quote": "In 2018, we deployed a 150-tonne sand-slurry bladder",
+     "where": "Waveco Pty Ltd (2025), About page (developer's own account; year contradicted by the dated 2019 reports)",
+     "supports": "shown to document the rejected '2018' date",
+     "url": "https://www.waveco.com.au/about/"
+    },
+    {
+     "quote": "The structure tore along a glued seam during installation",
+     "where": "Reef card verdict reason (2026-10-05)",
+     "supports": "state modelled and verdict FAILED",
+     "url": ""
+    }
+   ]
+  },
+  "palm-beach-gold-coast": {
+   "confidence_short": "Plan, crest level (-1.5 m MSL) and tide planes are sourced; seabed depth and reef height are inferred from the Navionics chart and the aerial's contour lines (they agree to 0.27 m), and the council register gives a taller, larger reef (5 m, 33,000 m3) than the model (3.9 m, 22,000 m3).",
+   "state_short": "As built, rock placed May-September 2019 (certified September 2019); no later works, damage or renewal found (searched 2026-10-05).",
+   "ve_note": "Apparent slope = atan(v tan beta): the 1:12 flank looks like 1:12/v; the apparent reef height is v x H.",
+   "ve_ev": [
+    "the apparent slope is `atan(v tan beta)`"
+   ],
+   "key_numbers": [
+    {
+     "q": "Crest level",
+     "model": "-1.5 m MSL = 0.62 m below LAT (59.2 x 5.9 m slot)",
+     "stated": "'The crest of the reef is 1.5m below mean sea level' (Prenzler et al. 2022); concept '-1.5 m AHD' (Mortensen 2015); chart label 'FISH HAVEN 1.5MT'",
+     "diff": "0 vs the text; AHD vs MSL 0.12 m; if the chart depth is below LAT the chart top is 0.88 m deeper than design",
+     "ids": "p1; s8; p2; t1; n2",
+     "note": "Four sources agree on the design number; the chart datum is not stated by the app.",
+     "ev": [
+      "crest level (-1.5 m below mean sea level)",
+      "the chart puts the top 0.88 m deeper than the design"
+     ]
+    },
+    {
+     "q": "Toe / seabed depth",
+     "model": "toe -4.0 (landward end) to -7.0 m MSL (seaward end, +-0.5 m); seabed from the Navionics SonarChart",
+     "stated": "no surveyed value read; Navionics seabed vs toe elevations -0.27 m (sd 0.55 m)",
+     "diff": "rock toe 0.27 m deeper than the chart seabed on average",
+     "ids": "n1; s7",
+     "note": "Seabed under the reef is a smooth interpolation, not a measurement. Concept-design depths (11.4 m at 560 m) belong to a different structure.",
+     "ev": [
+      "Mean -0.27 m (the rock toe is deeper than the chart seabed), sd 0.55 m",
+      "seaward toe (K = 10) -7.0 m +- 0.5 m (interval)"
+     ]
+    },
+    {
+     "q": "Reef height above the seabed",
+     "model": "3.89 m at the crest (3.51 m Navionics-only seabed); maximum 4.17 m",
+     "stated": "council register HEIGHT_M = 5 (unit and reference not stated)",
+     "diff": "-1.11 m (-22 %)",
+     "ids": "s1; n1; s7",
+     "note": "Unresolved (V4.7); register height needs a seabed about 1.1 m deeper under the crest.",
+     "ev": [
+      "crest height above the seabed 3.89 m (3.51 m with the Navionics-only seabed), maximum 4.17 m",
+      "Register: HEIGHT_M 5 and VOLUME 33,000"
+     ]
+    },
+    {
+     "q": "Side slopes",
+     "model": "1:12 (north flank, outer east end), 1:4.9 (south flank), 1:25 (near-crest platform, east end)",
+     "stated": "concept design figure labels 1/12 and 1/5 (Mortensen 2015 Fig. 3)",
+     "diff": "agree",
+     "ids": "s7; s6",
+     "note": "Derived from the aerial's contour-line spacing assuming a 0.5 m interval.",
+     "ev": [
+      "the concept figure's 1/12 and 1/5"
+     ]
+    },
+    {
+     "q": "Footprint",
+     "model": "toe 11,972 m2 (162.3 x 91.3 m; 11,989 m2 on the 1 m grid)",
+     "stated": "City: '160 metres long, 80 metres wide'; concept design 175 x 144 m, 21,394 m2 (not built)",
+     "diff": "model 2.3 m longer, 11.3 m wider than the round figure",
+     "ids": "s7; s1; Mortensen 2015",
+     "note": "Outline IoU 0.995 with the City polygon.",
+     "ev": [
+      "162 x 91 m, 11,989 m2 in the model grid",
+      "160 metres long, 80 metres wide",
+      "175 x 144 m, 53,319 m3"
+     ]
+    },
+    {
+     "q": "Volume (rock envelope)",
+     "model": "22,000 m3 (22,020; voids included)",
+     "stated": "council register VOLUME 33,000 (units not stated); 25,000 m3 'quarried rock' (ICM / Salyer 2024); concept design 53,319 m3 (not the built reef)",
+     "diff": "-11,000 m3 (-33 %) vs the register; sigma_V +-6,000 m3",
+     "ids": "s1; n1; Mortensen 2015",
+     "note": "60,000 t / 33,000 m3 = 1.82 t/m3 is a normal placed-rock density, so the register reads as an envelope.",
+     "ev": [
+      "The model envelope is 33 % below the register envelope.",
+      "60,000 t / 33,000 m3 = 1.82 t/m3"
+     ]
+    }
+   ],
+   "relied": [
+    {
+     "quote": "The crest of the reef is 1.5m below mean sea level and consists of 6 to 8 tonne rocks",
+     "where": "Prenzler et al. (2022), ICCE 37, p.1",
+     "supports": "crest level -1.5 m MSL",
+     "url": "https://icce-ojs-tamu.tdl.org/icce/article/view/12921"
+    },
+    {
+     "quote": "The crest level was chosen to be -1.5 m AHD",
+     "where": "Mortensen et al. (2015), Australasian Coasts & Ports, p.4 (concept design)",
+     "supports": "crest level (AHD label); concept is not the built reef",
+     "url": "https://www.dhigroup.com/upload/publications/coastsea/Mortensen_2015.pdf"
+    },
+    {
+     "quote": "1.5 metres below the average water level at its highest point",
+     "where": "City of Gold Coast (2020) brochure p.8 / Engineering for Public Works (2020)",
+     "supports": "crest level",
+     "url": "https://www.goldcoast.qld.gov.au/files/sharedassets/public/v/1/pdfs/environment/palm-beach-shoreline-project-brochure-a4.pdf"
+    },
+    {
+     "quote": "a minimum freeboard of 1.5m at mean sea level, equating to 60cm at the lowest astronomical low tide",
+     "where": "Nettle (2019), Swellnet, 29 July 2019",
+     "supports": "MSL - LAT about 0.9 m (cross-check of the MSQ 0.88 m)",
+     "url": "https://www.swellnet.com/news/swellnet-dispatch/2019/07/29/first-impressions-palm-beach-artificial-reef"
+    },
+    {
+     "quote": "Jumpinpin Bar to Snapper Rocks tides occur 20 mins earlier than Gold Coast Seaway",
+     "where": "Maritime Safety Queensland (2026), Semidiurnal Tidal Planes 2026",
+     "supports": "Seaway standard-port planes used for Palm Beach",
+     "url": "https://www.msq.qld.gov.au/_/media/tmronline/msqinternet/msqfiles/home/tides/tidal-planes/2026-semidiurnal-tidal-planes.pdf"
+    },
+    {
+     "quote": "FISH HAVEN 1.5MT",
+     "where": "Garmin Navionics Nautical Chart label at the reef (screenshot 2026-10-05)",
+     "supports": "charted crest depth, datum not stated",
+     "url": "https://maps.garmin.com/en-US/marine"
+    },
+    {
+     "quote": "insignificant movement or settlement",
+     "where": "Prenzler et al. (2022), ICCE 37",
+     "supports": "as-built state unchanged to 2023",
+     "url": "https://icce-ojs-tamu.tdl.org/icce/article/view/12921"
+    }
+   ]
+  },
+  "mount-maunganui-reef": {
+   "state_short": "As built, completed mid-2008: idealised loft of the verified outline (default: the -2.0 m CD contour of the 18 Jul 2013 multibeam survey; version 2: the 2008 as-built toe) on the 2026 Navionics seabed shifted to an ASSUMED as-built bed. The reef was removed in Sep-Nov 2014 and no longer exists.",
+   "ve_note": "At VE = 5 the 1:1 flank looks like 1:0.2 and the {{versions/multibeam_2013_m2p0/h_max_m_default|d2}} m maximum height looks {{= 5 * P('versions/multibeam_2013_m2p0/h_max_m_default') |d1}} m high.",
+   "key_numbers": [
+    {
+     "q": "Footprint (plan outline)",
+     "model": "{{versions/multibeam_2013_m2p0/area_m2|n0}} m2 default ({{versions/multibeam_2013_m2p0/bbox_m/0|d1}} x {{versions/multibeam_2013_m2p0/bbox_m/1|d1}} m, 5 bag polygons, -2.0 m CD contour of the 2013 survey); {{versions/asr_installed_toe_2008/area_m2|n0}} m2 as-built toe ({{versions/asr_installed_toe_2008/bbox_m/0|d1}} x {{versions/asr_installed_toe_2008/bbox_m/1|d1}} m)",
+     "stated": "'80 x 70 m' (BoPRC text); 79 x 67 m and 2,400 m2 at 70 % complete (Scarfe 2008, definition unstated)",
+     "diff": "longest side {{= (P('versions/multibeam_2013_m2p0/bbox_m/0') / 80 - 1) * 100 |s0}} % (default) / {{= (P('versions/asr_installed_toe_2008/bbox_m/0') / 80 - 1) * 100 |s0}} % (toe) vs 80 m",
+     "ids": "img1; img3; R1; R4",
+     "note": "Footprint is an edge definition, not a measurement of one fixed line: the -2.0 m contour is a lower bound. Use the version toggle."
+    },
+    {
+     "q": "Reef volume versus bed level",
+     "model": "{{versions/multibeam_2013_m2p0/volume_m3_default|n0}} m3 default / {{versions/asr_installed_toe_2008/volume_m3_default|n0}} m3 toe loft at the default bed {{seabed/bed_default_cd|d1}} m CD",
+     "stated": "2,800 m3 built volume (Raised Water Research, BoPRC p28); Installed-image grid check 2,835-2,861 m3",
+     "diff": "{{= (P('versions/multibeam_2013_m2p0/volume_m3_default') / P('stated_volume_m3') - 1) * 100 |s0}} % (default) / {{= (P('versions/asr_installed_toe_2008/volume_m3_default') / P('stated_volume_m3') - 1) * 100 |s0}} % (toe) vs 2,800 m3. 2,800 m3 is reproduced at a bed of {{versions/multibeam_2013_m2p0/bed_for_2800_m3|d2}} (default) / {{versions/asr_installed_toe_2008/bed_for_2800_m3|d2}} (toe) m CD",
+     "ids": "R3; R1; img3",
+     "note": "The key caveat of this model: the volume is the sum of crest-to-bed height, and the as-built bed is an ASSUMPTION (next row).",
+     "ev": [
+      "Stated as built 2,800 m3 (RWR / BoPRC p28); Installed-grid 2,835-2,861"
+     ]
+    },
+    {
+     "q": "As-built bed at the reef centre (ASSUMPTION)",
+     "model": "{{seabed/bed_default_cd|d1}} m CD = {{= P('seabed/bed_default_cd') - P('datum/msl_above_cd_m') |d2}} m MSL (selector: {{= ', '.join('%.1f' % v for v in P('seabed/bed_options_cd')) }} m CD)",
+     "stated": "BoPRC p23: bed beside the north arm 3.0-4.0 m in 2008; consent depth 3.7-4.6 m; design 4.5 m (Moores 2006); Scarfe 2007 about 2.8-3.0 m; 2013 survey 2.4-3.3 m; Navionics 2026 {{seabed/z_nav_at_reef_cd|d2}} m (all m CD)",
+     "diff": "{{= abs(P('seabed/bed_default_cd') - P('seabed/z_nav_at_reef_cd')) |d2}} m from the 2026 Navionics chart at the centre",
+     "ids": "R1; R4; R9; N1; img1; ctx9",
+     "note": "No survey of the 2008-09 bed at the reef was found; the default is a labelled assumption, set so that the stated volume is roughly reproduced. A 'later seabed' option shows the 2013 survey / Navionics 2026 bed."
+    },
+    {
+     "q": "Crest level",
+     "model": "{{reef/crest_cd/default|d1}} m CD = {{= P('reef/crest_cd/default') - P('datum/msl_above_cd_m') |d2}} m MSL (selector -0.8 / -1.0 m CD)",
+     "stated": "main bags 0.8-1.0 m below CD (BoPRC p6, p21); Fig 3 and Fig 5 confirm; deflated apex bags -2.0 to -2.4 m CD by 2013",
+     "diff": "0 vs the mid-range of the stated 0.8-1.0 m",
+     "ids": "R1; img1; ctx9",
+     "note": "BoPRC p23: the main-bag crest 'did not change significantly' 2008-2013. A crest change of 0.1 m moves the volume by about 2 %."
+    },
+    {
+     "q": "Reef height above the bed",
+     "model": "maximum {{versions/multibeam_2013_m2p0/h_max_m_default|d2}} m (default version, crest to bed at the default bed)",
+     "stated": "about 3 m (BoPRC text); 3.5 m = design maximum of the largest bags (Moores 2006, 'largest bags 3.5 m high x 50 m long')",
+     "diff": "follows the bed assumption: {{= P('versions/multibeam_2013_m2p0/h_max_m_default') - 3.5 |s2}} m vs the 3.5 m design maximum",
+     "ids": "R1; R9",
+     "note": "Not an as-built height measurement.",
+     "ev": [
+      "largest bags 3.5 m high x 50 m long (660 m3)"
+     ]
+    },
+    {
+     "q": "Distance from the shoreline",
+     "model": "reef centroid {{frame/reef_centroid_xy_m/1|d1}} m from the wet/dry-sand shoreline (Esri 2011-01-15)",
+     "stated": "257-324 m from the MSL line (Scarfe 2008, Table 8-3)",
+     "diff": "inside the stated range",
+     "ids": "ctx5; R4",
+     "note": "Shoreline bearing 136.15 deg (Scarfe quotes 132)."
+    },
+    {
+     "q": "Vertical datum",
+     "model": "z = 0 at present mean sea level = Chart Datum + 1.13 m (LINZ Tauranga); Chart Datum = z -1.13 m; MVD-53 = z -0.168 m",
+     "stated": "Scarfe / ASR heights are relative to MVD-53 ('MSL 1953') = CD + 0.9622 m (NIWA 2006)",
+     "diff": "present MSL is 0.17 m above MVD-53; stated heights were converted",
+     "ids": "R5; R6; R7",
+     "note": "Datum lines and the tide staff are drawn in the viewer."
+    }
+   ],
+   "relied": []
+  },
+  "borth-coastal-defence-reef": {
+   "state_short": "As built, Phase 1 completed 8 March 2012: the northern boot-shaped SURF REEF and the southern oval BREAKWATER (a shore-parallel breakwater, not a surf reef), rock mounds on the seabed. Default outline = the 2022 LiDAR laser-survey edge; two more outline versions are offered.",
+   "ve_note": "At VE = 5 a 1:4 flank looks like 1:0.8 and the arm's 4.5 m height looks 22.5 m high.",
+   "key_numbers": [
+    {
+     "q": "Footprint (plan outline)",
+     "model": "{{versions/lidar_2022/area_m2|n0}} m2 laser-survey edge (default, about -2.3 mODN); {{versions/design_1020/area_m2|n0}} m2 design rock foot; {{versions/sat_2024/area_m2|n0}} m2 visible rock in the 2024 photo",
+     "stated": "design drawing 9V5090/1020 rev C1: armour foot north 4,956 + south 2,033 m2 (outer seabed edge 7,883 + 3,605 m2)",
+     "diff": "three edge definitions of the same two mounds (photo -34 % and design -19 % against the laser edge)",
+     "ids": "lidar2022; drg1020; sat2024",
+     "note": "The area is an edge definition. Use the version toggle; the 2024 photo trace and the design foot agree with the drawing overlay to 0.3-4 m (IoU 0.79 / 0.86)."
+    },
+    {
+     "q": "Rock volume",
+     "model": "{{versions/lidar_2022/volume_m3|n0}} m3 (laser edge, default); {{versions/design_1020/volume_m3|n0}} m3 (design foot); {{versions/sat_2024/volume_m3|n0}} m3 (photo edge); +-4,600 m3 for a bed error of 0.4 m",
+     "stated": "no reef-only quantity at a primary source; 275,000 t rock for the whole Phase 1, Type 4 (6-10 t) 42,000 t (NCE)",
+     "diff": "Type 4 layer of the default version about 36,600 t, below the 42,000 t Type 4 of the whole Phase 1 (upper bound only)",
+     "ids": "lidar2022; drg1020; ref6",
+     "note": "Volume above the modelled seabed incl. toe berm and blanket; tonnes at 1.7 t/m3 (1.6-1.8)."
+    },
+    {
+     "q": "Crest levels",
+     "model": "north arm +0.50 mODN (+0.19 m MSL), tail +1.00, head edge +0.00 rising to +0.50; oval breakwater +1.50 mODN (+1.19 m MSL)",
+     "stated": "design drawings 1020-1023 rev C1; LiDAR DSM crest strips: north arm median +0.58, oval median +1.55 mODN",
+     "diff": "LiDAR minus design +0.14 +- 0.28 m",
+     "ids": "drg1020; drg1021; drg1022; lidar2022",
+     "note": "The oval is a shore-parallel BREAKWATER (crest +1.50), the boot-shaped northern mound is the surf reef (crest +0.50)."
+    },
+    {
+     "q": "Height above the seabed",
+     "model": "north arm about 4.5 m, oval about 5.5 m (+-0.5 m)",
+     "stated": "superseded two-geotube design: 4.0 m high (note only); no as-built height is stated",
+     "diff": "-",
+     "ids": "drg1020; drg1022",
+     "note": "Crest minus the modelled seabed; the bed under the rock is a design level."
+    },
+    {
+     "q": "Seabed under the rock",
+     "model": "north foot -4.04 mODN mean (-4.72 to -2.51); oval -3.95 (-4.21 to -3.62)",
+     "stated": "design bed -4.0 mODN (derived under the north arm); printed -3.6 to -4.2 under the oval",
+     "diff": "inside the design range",
+     "ids": "drg1021; drg1023; ref6",
+     "note": "The bed under the rock is pinned by design nodes, so the volumes do not depend on the offshore seabed issue below."
+    },
+    {
+     "q": "Seabed seaward of the reef (y > 335 m)",
+     "model": "0.89 m deeper than the HRPP576 Fig 2 -4.0 m contour (sd 0.14 m, n = 13)",
+     "stated": "Fig 2 -4.0 m contour at y 410-450 m; Navionics and EMODnet read the sea floor 0.6-1.5 m shallower",
+     "diff": "-0.89 m",
+     "ids": "hrpp576f2; N1",
+     "note": "Known issue (fix proposed: add the Fig 2 -4.0 m contour as nodes and start the EMODnet gradient from it); the page follows model.js once it is rebuilt.",
+     "ev": [
+      "0.89 m deeper than the -4"
+     ]
+    },
+    {
+     "q": "Datum and tides",
+     "model": "z = 0 at mean sea level = +0.31 mODN (+-0.15 m, a 4-level mean); tide slider LAT to MHWS (+2.25 m MSL)",
+     "stated": "West of Wales SMP2 (Aberystwyth): MHWS +2.56, MHWN +1.06, MLWN -0.64, MLWS -1.74 mODN; LAT -2.44 mODN (Barmouth, Fishguard)",
+     "diff": "HAT not found at a primary source, so the slider stops at MHWS",
+     "ids": "ref3; ref4",
+     "note": "LiDAR heights are taken as ODN (the datum is not stated).",
+     "ev": [
+      "HAT not found"
+     ]
+    },
+    {
+     "q": "Length of the oval breakwater",
+     "model": "38 m between the crest ends (setting-out table of drawing 1020)",
+     "stated": "46 m on drawing 1023 (23,000 + 23,000 mm between SOP R15 and R14)",
+     "diff": "-8 m, about 2 % of the oval volume",
+     "ids": "drg1020; drg1023",
+     "note": "Unresolved between two drawings; the plan strip measures 38 m.",
+     "ev": [
+      "23,000 + 23,000 mm between SOP R15 and R14 (46 m)"
+     ]
+    },
+    {
+     "q": "Distance offshore",
+     "model": "centroid of both mounds 330.5 m offshore (nearest edge 257 m, farthest 397 m)",
+     "stated": "about 300 m (Coflein), about 400 m (NCE)",
+     "diff": "between the two stated values",
+     "ids": "sat2024; ref6",
+     "note": "Esri position +-5 m."
+    }
+   ],
+   "relied": []
+  }
+ }
+}

@@ -1,0 +1,925 @@
+{
+ "slug": "bunbury-airwave",
+ "name": "Bunbury Airwave",
+ "status": "verified",
+ "updated": "2026-10-05",
+ "confidence": {
+  "level": "medium",
+  "reason": "The structure is clearly visible as a circle on a real near-nadir drone photo of the installed bladder (img1), and a second video frame from a different angle and the design plan graphic agree it is a circle. But no image has a scale bar or geo-reference and no satellite image can show it (it existed about a week in Dec 2019), so the 12 m size comes from news/site text rather than being measured, and the exact location is not traced.",
+  "factors": [
+   "structure clearly visible on a real near-nadir drone photo of the installed bladder, published with RWR's 16 Dec 2019 tear report (taken during the install week; exact day not stated)",
+   "outline is an ellipse to within 1.3% (img1) and 3.0% (img4) of radius: a circle seen at ~27 deg and ~48 deg tilt; design graphic img5 also draws a circle",
+   "size is calibrated from the text-stated 12 m diameter (ABC, Raised Water Research, Tracks, Bunbury Mail), so the 112 m2 vs 113 m2 agreement is by construction, not an independent check; the circular shape is the only image-derived result, good to about +-7% in axis ratio",
+   "no shoreline in img1, so no alongshore/offshore frame, no shoreline angles, and offshore distance comes from text (range 30-50 m across sources, unclear whether to centre or near edge)",
+   "no satellite imagery can show it: built and torn in Dec 2019, removed within days; nearest Wayback release at the site holds 2016 imagery; card lat/lon is wrong",
+   "main residual ambiguity: the outline includes a paler crescent on the upper-left rim (probably a slumped/damaged quadrant); excluding it would shrink the diameter by about 8% (about 11 m on the same calibration)",
+   "verification 2026-10-05: outline-to-edge offset measured on the 29 img1 vertices (mean 3.3 px = 0.13 m, 24 of 29 within 5 px); canonical polygon recomputed independently and reproduced to 0.0005 m"
+  ]
+ },
+ "design_version": {
+  "drawn": "The single installed Airwave bladder as it lay on the seabed during the Dec 2019 installation: base about 12 m in diameter, installation about 90% complete when a seam tore (diver spotted the tear on Friday 13 Dec 2019; ABC reported it Monday 16 Dec); removed within about three days. Photo img1 was published on 16 Dec 2019 and probably shows the bladder after or around the tear. The drawing is the PLAN OUTLINE (circular base) only; the as-built profile was not a symmetric hemisphere.",
+  "why_this_one": "It is the only full-size version ever installed. Searched 2026-10-05: ABC Listen 2022-10-06 (still working on an improved prototype), Bunbury Mail 2022-03-22 (back in the water targeted for summer 2024), RWR profile page (still 'Planning', 'examining repair options'), Waveco's own site (no Airwave listed). The planned redesign (Tracks, 8 Oct 2021: a stronger compound that can be welded, made in Australia, 'a more classic dome shape to better distribute internal pressure') has only been scale-tested in the Queensland hydraulic test tank, so no later plan outline exists. img5 and img2 are pre-install concept graphics of the same 12 m circular dome, not alternative designs.",
+  "alternatives_seen": [
+   {
+    "what": "Pre-install concept renders (plan-view circle img5; oblique 3D img2)",
+    "source_id": "img5, img2",
+    "why_not_used": "concept graphics, not to scale; used only to confirm design plan shape. The post-installation photo img1 is better evidence of what was built."
+   },
+   {
+    "what": "Bladder height quoted as 2 m (ABC, RWR) vs 1.6 m (Bunbury Mail 2022)",
+    "source_id": "text only",
+    "why_not_used": "height does not affect the plan outline; both recorded in the card"
+   },
+   {
+    "what": "Planned redesign ('Airwave 2.0': welded, more classic dome shape, valves relocated) - scale model tested in the Queensland hydraulic test tank only",
+    "source_id": "text only (Tracks 2021-10-08 = R9; Bunbury Mail 2022-03-22 = R8)",
+    "why_not_used": "never installed; no plan outline or dimensions published"
+   },
+   {
+    "what": "Profile of the as-built bladder: Bottegal (Tracks 2021) says the 2019 shape had 'a bit of a skateboard ramp type thing happening'; Tradie (2019-01) describes 'a very subtle, flattened dome with a steeply angled back' on a 'perfectly circular base'",
+    "source_id": "text only (R9, R10b)",
+    "why_not_used": "concerns the vertical profile, not the plan outline; the page must not describe the drawn bladder as a symmetric hemisphere"
+   }
+  ]
+ },
+ "sources": [
+  {
+   "id": "img1",
+   "kind": "aerial_photo",
+   "title": "Airwave-from-Above.jpg (drone photo, near-nadir, of the inflated Airwave bladder lying on the seabed off Bunbury Back Beach)",
+   "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/12/Airwave-from-Above.jpg?v=1576553483",
+   "source_page": "https://raisedwaterresearch.com/the-bunbury-airwave-artificial-reef-tears-during-installation/",
+   "page_or_figure": "header image of the RWR post 'The Bunbury Airwave Artificial Surf Reef Tears During Installation' (16 Dec 2019). NOT the image on the site-profile page: that page serves a different file, uploads/2019/09/Airwave-From-Above.jpg (700x467 oblique, bladder awash)",
+   "image_date": "Photo date not stated. Taken during the install week: installation 'started last week' (ABC, 16 Dec 2019), tear spotted Fri 13 Dec 2019; RWR post 16 Dec 2019; file upload timestamp ?v=1576553483 = 2019-12-17 03:31 UTC.",
+   "credit": "Raised Water Research (photographer not stated)",
+   "license": "not stated; reuse NOT cleared - private research copy only (common.md rule 3); check with Raised Water Research before any public use",
+   "local_file": "07_scale/shapes/bunbury-airwave/src/img1_airwave-from-above.jpg",
+   "image_size": [
+    956,
+    587
+   ],
+   "georef": null,
+   "scale": {
+    "px_per_m": 25.59,
+    "method": "known dimension",
+    "evidence": "No scale bar, no EXIF, no geo-reference. Ellipse fitted to the traced outline has semi-axes 153.6 px (major) and 137.4 px (minor); the major axis of an obliquely viewed circle is not foreshortened, so major axis 307.1 px = text-stated base diameter 12.0 m (ABC 2019-12-16 '12-metre-wide'; Raised Water Research '12m (40 feet) in diameter on the sea floor'; Tracks 2019 'twelve metres in diameter'; Bunbury Mail 2022 '12 metres wide') -> 25.59 px/m. Camera tilt from nadir ~ acos(137.4/153.6) = 26.5 deg. The scale is therefore text-calibrated, not measured on the photo.",
+    "uncertainty_pct": 15
+   },
+   "pixel_polygons": [
+    [
+     [
+      430,
+      194
+     ],
+     [
+      458,
+      197
+     ],
+     [
+      490,
+      204
+     ],
+     [
+      530,
+      226
+     ],
+     [
+      558,
+      250
+     ],
+     [
+      578,
+      278
+     ],
+     [
+      594,
+      310
+     ],
+     [
+      599,
+      342
+     ],
+     [
+      595,
+      374
+     ],
+     [
+      584,
+      404
+     ],
+     [
+      566,
+      428
+     ],
+     [
+      538,
+      450
+     ],
+     [
+      506,
+      466
+     ],
+     [
+      474,
+      474
+     ],
+     [
+      442,
+      475
+     ],
+     [
+      410,
+      470
+     ],
+     [
+      382,
+      459
+     ],
+     [
+      356,
+      442
+     ],
+     [
+      336,
+      422
+     ],
+     [
+      320,
+      394
+     ],
+     [
+      309,
+      370
+     ],
+     [
+      299,
+      346
+     ],
+     [
+      294,
+      322
+     ],
+     [
+      293,
+      302
+     ],
+     [
+      302,
+      278
+     ],
+     [
+      318,
+      252
+     ],
+     [
+      340,
+      228
+     ],
+     [
+      368,
+      210
+     ],
+     [
+      400,
+      199
+     ]
+    ]
+   ],
+   "traced_what": "outer edge of the pale disc as seen from above (where the pale sand/bladder meets green water), including the paler crescent on the upper-left rim where the dome wall shows; 29 vertices read by eye off an overlay.py zoom grid",
+   "match_notes": "Outline bbox 306 x 281 px, area 65,673 px2. Ellipse fit RMS deviation only 1.3% of radius (normalised radius 0.967-1.027) -> a circle seen at a mild tilt. After stretching the minor axis by 153.6/137.4 and scaling by 25.59 px/m the outline is 12.07 x 12.09 m, area 112.1 m2 (a perfect 12 m circle = 113.1 m2). Size agreement with the text is by construction (scale from text); the independent information is that the shape is a circle (the ring on the crown is flattened by about the same ratio as the disc, so circle to about +-7% in axis ratio). Verification: brightness-gradient test along the outline normal gave mean |offset| 3.3 px (0.13 m), 24 of 29 vertices within 5 px; 5 vertices (10-13, 18) sit 5-16 px outside the half-brightness edge on a soft fringe (using the half-max edge would shrink the diameter by about 2-3%). The outline deliberately includes the paler crescent on the upper-left rim (separated from the bright dome by a dark band); it also appears on the west side of the disc in img4, so it is not a one-camera artefact, but excluding it would make the disc about 8% narrower (about 11 m). Probably a slumped/damaged quadrant (interpretation only, no source says so about this photo). Overlay: overlays/img1.png (stored and re-rendered versions viewed 2026-10-05).",
+   "role": "primary"
+  },
+  {
+   "id": "img4",
+   "kind": "aerial_photo",
+   "title": "ABC News video frame 11804314_0005.jpg (frame at ~00:03-00:05 of 'Dream on hold for Bunbury surfers', drone shot, oblique)",
+   "url": "https://abcmedia.akamaized.net/news/video/201912/airwave_high.mp4",
+   "source_page": "https://www.abc.net.au/news/2019-12-16/11804314",
+   "page_or_figure": "video, ~00:03-00:05 (frame already in project at 03_images/video_frames/bunbury-airwave/11804314_0005.jpg, byte-identical)",
+   "image_date": "2019-12-16 (ABC publish date; ABC video file Last-Modified Mon 16 Dec 2019 05:40 GMT); frame at ~00:03-00:05, filming date not stated",
+   "credit": "ABC News (Australia)",
+   "license": "copyrighted news footage; reuse NOT cleared - private research copy only",
+   "local_file": "07_scale/shapes/bunbury-airwave/src/img4_abc-frame-11804314-0005.jpg",
+   "image_size": [
+    1024,
+    576
+   ],
+   "georef": null,
+   "scale": {
+    "px_per_m": null,
+    "method": "none - not calibrated",
+    "evidence": "Strongly oblique frame (camera ~48 deg off nadir from acos(52.6/78.8)), so one px/m figure does not exist. Plausibility only: a swimmer beside the disc spans ~17 px (arms/splash) while the disc is 157.8 px wide -> ~14-17 m if the span is 1.5-1.8 m (+-40%), which does not contradict the 12 m text value.",
+    "uncertainty_pct": null
+   },
+   "pixel_polygons": [
+    [
+     [
+      563.3,
+      353.3
+     ],
+     [
+      571.1,
+      335.6
+     ],
+     [
+      584.4,
+      324.4
+     ],
+     [
+      602.2,
+      316.7
+     ],
+     [
+      622.2,
+      313.3
+     ],
+     [
+      644.4,
+      312.2
+     ],
+     [
+      664.4,
+      312.9
+     ],
+     [
+      682.2,
+      317.8
+     ],
+     [
+      697.8,
+      327.8
+     ],
+     [
+      711.1,
+      341.1
+     ],
+     [
+      718.9,
+      355.6
+     ],
+     [
+      721.1,
+      373.3
+     ],
+     [
+      715.6,
+      388.9
+     ],
+     [
+      704.4,
+      401.1
+     ],
+     [
+      688.9,
+      412.2
+     ],
+     [
+      673.3,
+      417.8
+     ],
+     [
+      655.6,
+      419.6
+     ],
+     [
+      637.8,
+      415.6
+     ],
+     [
+      620.0,
+      410.0
+     ],
+     [
+      604.4,
+      402.2
+     ],
+     [
+      588.9,
+      393.3
+     ],
+     [
+      575.6,
+      381.1
+     ],
+     [
+      566.2,
+      367.8
+     ]
+    ]
+   ],
+   "traced_what": "outer edge of the pale disc, 23 vertices read off an overlay.py zoom grid",
+   "match_notes": "bbox 157.8 x 107.4 px (1.47:1), area 12,813 px2. Ellipse fit: semi-axes 78.8 / 52.6 px, RMS deviation 3.0% -> again a circle seen obliquely. Same buoy, tether line and ring/valve mark as img1, so the same scene as img1 from a different camera position (corroboration of shape, not an independent measurement of size). Overlay: overlays/img4.png. Verification 2026-10-05: gradient test mean |offset| 3.1 px, median -1.5 px, 3 outliers (vertices 4, 14, 20; 10-15 px) near soft edges and the swimmer's splash; the tilt makes edge reading less accurate than img1.",
+   "role": "cross_check"
+  },
+  {
+   "id": "img5",
+   "kind": "design_drawing",
+   "title": "ReefTopView.png (plan-view concept graphic: circular bladder with concentric seam rings over a stock beach aerial; arrow labelled '30m')",
+   "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/09/ReefTopView.png",
+   "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/bunbury-airwave/",
+   "page_or_figure": "gallery image on the site profile (also on /progress-update-on-the-bunbury-airwave/)",
+   "image_date": "2019-09-10 upload timestamp (?v=1568074661 = 2019-09-10 00:17 UTC); pre-install concept",
+   "credit": "The RWR profile page captions this image 'Image: Unofficial Networks' (the other diagrams there are captioned 'Image: Waveco'); original author not established",
+   "license": "not stated; reuse NOT cleared - private research copy only (RWR / Unofficial Networks / Waveco); check before any public use",
+   "local_file": "07_scale/shapes/bunbury-airwave/src/img5_reef-top-view.png",
+   "image_size": [
+    1433,
+    794
+   ],
+   "georef": null,
+   "scale": {
+    "px_per_m": null,
+    "method": "none - graphic is not to scale",
+    "evidence": "The '30m' arrow spans y=100..472 (372 px) but the circle is only 223 px wide; applying the arrow's scale would make the bladder ~18 m, not 12 m, so the arrow is a schematic annotation, not a scale. Not used for any length.",
+    "uncertainty_pct": null
+   },
+   "pixel_polygons": [
+    [
+     [
+      807.1,
+      594.0
+     ],
+     [
+      803.3,
+      623.2
+     ],
+     [
+      792.2,
+      650.5
+     ],
+     [
+      774.5,
+      673.9
+     ],
+     [
+      751.4,
+      691.9
+     ],
+     [
+      724.5,
+      703.1
+     ],
+     [
+      695.7,
+      707.0
+     ],
+     [
+      666.9,
+      703.1
+     ],
+     [
+      640.0,
+      691.9
+     ],
+     [
+      616.9,
+      673.9
+     ],
+     [
+      599.2,
+      650.5
+     ],
+     [
+      588.1,
+      623.2
+     ],
+     [
+      584.3,
+      594.0
+     ],
+     [
+      588.1,
+      564.8
+     ],
+     [
+      599.2,
+      537.5
+     ],
+     [
+      616.9,
+      514.1
+     ],
+     [
+      640.0,
+      496.1
+     ],
+     [
+      666.9,
+      484.9
+     ],
+     [
+      695.7,
+      481.0
+     ],
+     [
+      724.5,
+      484.9
+     ],
+     [
+      751.4,
+      496.1
+     ],
+     [
+      774.5,
+      514.1
+     ],
+     [
+      792.2,
+      537.5
+     ],
+     [
+      803.3,
+      564.8
+     ]
+    ]
+   ],
+   "traced_what": "outline of the drawn bladder: circle fitted to the four extreme points read off a zoom (x 584.3-807.1, y 481.0-707.0), centre (695.7, 594.0), radius ~112 px; 24 vertices",
+   "match_notes": "Shows the DESIGN plan shape: a regular circle (223 x 226 px) with concentric contour/seam rings. Consistent with img1/img4 and with every text source (single diameter, 'dome-like bladder'). Design intent shown: bladder ~30 m from the waterline. Overlay: overlays/img5.png.",
+   "role": "cross_check"
+  },
+  {
+   "id": "img2",
+   "kind": "design_drawing",
+   "title": "AirwaveDiagram2.jpg",
+   "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/09/AirwaveDiagram2.jpg?v=1568073278",
+   "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/bunbury-airwave/",
+   "page_or_figure": "standalone render",
+   "image_date": "2019-09-09 (upload timestamp; pre-install concept render)",
+   "credit": "Waveco (via Raised Water Research)",
+   "license": "not stated -- not cleared for public reuse (private research copy)",
+   "local_file": "07_scale/shapes/bunbury-airwave/src/img2_airwave-diagram2.jpg",
+   "image_size": [
+    622,
+    315
+   ],
+   "georef": null,
+   "scale": null,
+   "pixel_polygons": [],
+   "traced_what": "nothing -- oblique 3D perspective SketchUp-style concept sketch, no plan view, no scale bar; confirms the dome cross-section concept (smooth convex rotationally-symmetric mound) only",
+   "match_notes": "Not usable for any length/angle/plan-shape measurement -- perspective distortion in an oblique 3D render makes pixel measurement meaningless.",
+   "role": "context"
+  },
+  {
+   "id": "sat1",
+   "kind": "satellite",
+   "title": "Esri World Imagery at the reef card's stated coordinates (-33.31, 115.64)",
+   "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+   "source_page": "n/a",
+   "page_or_figure": "n/a",
+   "image_date": "2025-08-30 (Esri identify at center point)",
+   "credit": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+   "license": "Esri World Imagery terms",
+   "local_file": "07_scale/shapes/bunbury-airwave/src/sat_card_coords.png",
+   "image_size": [
+    802,
+    802
+   ],
+   "georef": {
+    "provider": "Esri World Imagery",
+    "zoom": 17,
+    "bounds": {
+     "north": -33.306402515837576,
+     "south": -33.3135934179855,
+     "east": 115.64429998397827,
+     "west": 115.6356954574585
+    },
+    "tile_template": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "imagery_date": "2025-08-30",
+    "attribution": "Esri, Maxar, Earthstar Geographics, and the GIS User Community"
+   },
+   "scale": null,
+   "pixel_polygons": [],
+   "traced_what": "nothing -- wrong location",
+   "match_notes": "The card's lat/lon (-33.31, 115.64) is NOT Back Beach -- it lands on the Bunbury boat-harbour south groyne / Koombana Bay marina entrance, about 2 km north of the real installation site. No beach, no surf, clearly a different part of the coast. This confirms the common.md warning pattern ('the card lat/lon may be wrong') for this reef too. Flagged as an open issue below; fixing the card itself is out of scope for this shape-tracing task.",
+   "role": "context"
+  },
+  {
+   "id": "sat2",
+   "kind": "satellite",
+   "title": "Esri World Imagery at Bunbury Back Beach Surf Life Saving Club (-33.327276, 115.629902)",
+   "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+   "source_page": "n/a",
+   "page_or_figure": "n/a",
+   "image_date": "2025-08-30 (Esri identify at center point)",
+   "credit": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+   "license": "Esri World Imagery terms",
+   "local_file": "07_scale/shapes/bunbury-airwave/src/sat_backbeach_current.png",
+   "image_size": [
+    1604,
+    1603
+   ],
+   "georef": {
+    "provider": "Esri World Imagery",
+    "zoom": 18,
+    "bounds": {
+     "north": -33.323683889570795,
+     "south": -33.33086888417676,
+     "east": 115.63420414924622,
+     "west": 115.62559962272644
+    },
+    "tile_template": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "imagery_date": "2025-08-30",
+    "attribution": "Esri, Maxar, Earthstar Geographics, and the GIS User Community"
+   },
+   "scale": null,
+   "pixel_polygons": [],
+   "traced_what": "nothing -- as expected (per the task note), the reef failed and was removed within days of the Dec 2019 install attempt, so no current satellite imagery can show it",
+   "match_notes": "Coordinates found via WebSearch (City of Bunbury Surf Life Saving Club, Lot 757 Ocean Drive) -- this is the real Back Beach: a straight sandy beach with natural dark rock/reef patches visible just offshore, matching the dossier's description of the site's natural 'closeout' bathymetry that motivated building the Airwave. No circular structure, scar, or anomaly visible anywhere near the described 30-45 m offshore zone.",
+   "role": "context"
+  }
+ ],
+ "canonical": {
+  "frame": "metres; origin = centre of the ellipse fitted to the img1 trace; +x along the fitted major axis of the oblique view, +y perpendicular (orientation arbitrary and possibly mirrored). No shoreline is visible in img1, so alongshore/offshore axes and north are undefined; the structure is circular so no reported dimension depends on this.",
+  "derived_from": "img1 (trace rectified for the oblique view: minor axis stretched by 153.6/137.4, then scaled by 25.59 px/m, i.e. major axis = 12.0 m text diameter)",
+  "polygons_m": [
+   [
+    [
+     2.814,
+     -5.335
+    ],
+    [
+     1.766,
+     -5.71
+    ],
+    [
+     0.512,
+     -5.996
+    ],
+    [
+     -1.265,
+     -5.825
+    ],
+    [
+     -2.645,
+     -5.361
+    ],
+    [
+     -3.803,
+     -4.597
+    ],
+    [
+     -4.88,
+     -3.602
+    ],
+    [
+     -5.565,
+     -2.412
+    ],
+    [
+     -5.928,
+     -1.064
+    ],
+    [
+     -6.01,
+     0.329
+    ],
+    [
+     -5.746,
+     1.605
+    ],
+    [
+     -5.093,
+     2.979
+    ],
+    [
+     -4.203,
+     4.183
+    ],
+    [
+     -3.186,
+     5.068
+    ],
+    [
+     -2.059,
+     5.674
+    ],
+    [
+     -0.836,
+     6.04
+    ],
+    [
+     0.338,
+     6.096
+    ],
+    [
+     1.536,
+     5.876
+    ],
+    [
+     2.567,
+     5.431
+    ],
+    [
+     3.582,
+     4.596
+    ],
+    [
+     4.354,
+     3.832
+    ],
+    [
+     5.091,
+     3.05
+    ],
+    [
+     5.649,
+     2.18
+    ],
+    [
+     6.001,
+     1.399
+    ],
+    [
+     6.059,
+     0.282
+    ],
+    [
+     5.899,
+     -1.04
+    ],
+    [
+     5.492,
+     -2.387
+    ],
+    [
+     4.776,
+     -3.601
+    ],
+    [
+     3.807,
+     -4.605
+    ]
+   ]
+  ],
+  "area_m2": 112.1,
+  "bbox_m": {
+   "alongshore": 12.07,
+   "crossshore": 12.09
+  },
+  "max_dim_m": 12.18,
+  "distance_offshore_m": 37.5,
+  "shore_normal_bearing_deg": null,
+  "notes": "Idealised footprint = circle, D = 12.0 m, area 113.1 m2. Traced polygon (29 vertices) is a slightly inscribed approximation (area 112.1 m2). Built with an explicit rotation/stretch (ellipse centre, rotate to the fitted axes, stretch minor axis by a/b, divide by px/m); geom.py make-canonical was NOT used, so its rotation-sign bug does not affect it. Verification: recomputed independently, all 29 vertices agree to 0.0005 m (axis orientation is arbitrary by construction); vertex 0 (430,194) checked by hand: offset from centre (-16.41,-140.87) px, dot major axis (-0.9144,-0.4047) = 72.0 px = 2.81 m; dot minor axis (-0.4047,0.9144) x 1.1176 = -136.6 px = -5.34 m. distance_offshore_m = 37.5 is the midpoint of the text range 30-50 m (RWR 30-45; Tracks 2019 'approximately 45 metres off the low tide mark'; SurferToday '50 meters from shore'); text only, not measurable from any image, and the sources do not say whether it is to the centre or the near edge."
+ },
+ "geo": null,
+ "angles": [],
+ "dimensions_check": [
+  {
+   "quantity": "base diameter",
+   "text_value": "12.0 m (ABC 2019-12-16 '12-metre-wide'; RWR '12m (40 feet) in diameter on the sea floor'; Tracks 2019-11-15 'twelve metres in diameter'; Bunbury Mail 2022 '12 metres wide'; Tradie 2019-01 '10-12 metre ... circular base')",
+   "text_ref": "card R1, R3, R8; 07_scale/reefs/bunbury-airwave.footprint.json",
+   "drawing_value": "12.07 x 12.09 m after rectifying img1 (scale taken FROM the text, so not independent); swimmer-based plausibility check on img4: ~14-17 m +-40%",
+   "diff_pct": 0.6,
+   "comment": "Agreement is by construction. What the images add is the shape: circular, with no flat edge, lobe or oval elongation. The 14-17 m swimmer figure is loose but excludes anything near 6 m or 25 m."
+  },
+  {
+   "quantity": "footprint area",
+   "text_value": "113.1 m2 (pi x 6.0^2)",
+   "text_ref": "07_scale/reefs/bunbury-airwave.footprint.json",
+   "drawing_value": "112.1 m2 (rectified img1 polygon)",
+   "diff_pct": -0.9,
+   "comment": "Same caveat: scale is text-calibrated. Without rectification the raw trace gives 100.3 m2 at 25.59 px/m (oblique foreshortening), which is why the oblique view must be corrected."
+  },
+  {
+   "quantity": "plan shape",
+   "text_value": "circular dome (ABC 'dome-like')",
+   "text_ref": "card R1",
+   "drawing_value": "ellipse fit residual 1.3% (img1), 3.0% (img4); img5 design graphic is a regular circle",
+   "diff_pct": null,
+   "comment": "Axis ratios 1.12 (img1) and 1.50 (img4) differ only because the camera tilts differ (~27 vs ~48 deg off nadir); both rectify to a circle. Plan only: the vertical profile of the as-built was asymmetric ('skateboard ramp', Bottegal 2021; 'steeply angled back', Tradie 2019), so it was not a symmetric hemisphere."
+  },
+  {
+   "quantity": "distance offshore",
+   "text_value": "30-50 m: RWR 30-45 m; Tracks 2019-11-15 'approximately 45 metres off the low tide mark, just to the south of Bunbury surf club'; SurferToday 2019-12-17 '50 meters from shore'; img5 graphic labels 30 m (not to scale); Gemini 38 m (unsourced)",
+   "text_ref": "07_scale/reefs/bunbury-airwave.footprint.json",
+   "drawing_value": "not measurable (no shoreline in img1/img4; img5 arrow not to scale)",
+   "diff_pct": null,
+   "comment": "Text-vs-text spread is 30-50 m. Carried forward as midpoint 37.5 m, text only; sources do not say whether to the centre or the near edge."
+  },
+  {
+   "quantity": "card lat/lon",
+   "text_value": "-33.31, 115.64 (card)",
+   "text_ref": "02_research/reefs/bunbury-airwave.json",
+   "drawing_value": "approx. -33.3276, 115.6284 (+-100 m), from text + Esri imagery of Back Beach (sat2)",
+   "diff_pct": null,
+   "comment": "Card coordinates fall on the Bunbury boat-harbour south groyne / Koombana Bay about 2.2 km NE of the real site (sat1). Gemini's -33.3362, 115.6261 is ~1 km south of the real site. Correcting the card is outside this task."
+  },
+  {
+   "quantity": "height",
+   "text_value": "2 m (ABC, RWR, SurferToday) vs 1.6 m (Tracks 2019, Bunbury Mail 2022)",
+   "text_ref": "card R1, R3, R8, R9",
+   "drawing_value": "not measurable (plan view)",
+   "diff_pct": null,
+   "comment": "Text sources disagree by 20% with each other; does not affect the plan outline. A 1.6-2 m dome shifts the silhouette in img1 by at most 0.7-0.9 m along the tilt direction, which does not change the major-axis scale."
+  }
+ ],
+ "gemini": {
+  "values": {
+   "shape_type": "Hemispherical Circular Dome",
+   "length_m": 12.0,
+   "width_m": 12.0,
+   "area_m2": 113.0,
+   "crest_depth_m": 1.8,
+   "distance_offshore_m": 38.0,
+   "sources_cited": [
+    "Bottegal, T. (2019). The Airwave Artificial Reef Project Brief.",
+    "Surfer Magazine: The Bunbury Airwave Trial Review (2020)."
+   ]
+  },
+  "sources_used": [
+   {
+    "url": "https://www.abc.net.au/news/2019-12-16/airwave-artificial-surf-reef-bursts-bunbury-back-beach/11802958",
+    "what_gemini_said": "(Gemini dossier bunbury-airwave.md) ABC video and photos of Bottegal and divers hauling the torn Hypalon bladder onto Back Beach",
+    "our_check": "wrong_site",
+    "evidence": "Re-fetched 2026-10-05: HTTP 200 but redirects to /listen/programs/worldtoday/townsville-residents-still-recovering-from-floods/11802958 (unrelated). The real article is .../word-first-surf-reef-tears-during-installation/11803228 (says 'two-metre-high, 12-metre-wide, dome-like bladder filled with air', 90 per cent complete, 'not completely anchored')."
+   },
+   {
+    "url": "https://www.abc.net.au/news/image/airwave-torn-bladder-bunbury-2019.jpg",
+    "what_gemini_said": "images_provenance.json / IMAGE_PROVENANCE.md: Troy Bottegal inspecting deflated Airwave bladder on beach, ABC News South West WA",
+    "our_check": "dead",
+    "evidence": "curl 2026-10-05 returns HTTP 404."
+   },
+   {
+    "url": "https://commons.wikimedia.org/wiki/File:Back_Beach,_Bunbury,_January_2021_01.jpg (also _02 and OIC_bunbury_back_beach_looking_N.jpg)",
+    "what_gemini_said": "photo of Back Beach where the 12 m dome was installed; anchor cables pinned into calcarenite limestone 38 m offshore",
+    "our_check": "dimension_not_in_source",
+    "evidence": "Re-fetched 2026-10-05: pages exist (HTTP 200). _01/_02: 'Back Beach, Bunbury, Western Australia', 25 Jan 2021, Calistemon, CC BY-SA 4.0. OIC_bunbury_back_beach_looking_N.jpg: 'looking north along the fence', 19 Oct 2006, Orderinchaos. None mentions Airwave, an inflatable, a 12 m dome, 38 m, anchors or limestone; they show no structure and give no dimension. (The first-pass note that all three were January 2021 was wrong for the OIC photo.)"
+   },
+   {
+    "url": "Bottegal, T. (2019). The Airwave Artificial Reef Project Brief. (no URL)",
+    "what_gemini_said": "cited for shape/crest depth/offshore distance",
+    "our_check": "unverifiable",
+    "evidence": "WebSearch 2026-10-05 for the exact title returns only ABC, RWR, SurferToday, SW Times, Weekend Leader; no such document exists online."
+   },
+   {
+    "url": "Surfer Magazine: The Bunbury Airwave Trial Review (2020). (no URL)",
+    "what_gemini_said": "cited for the trial result",
+    "our_check": "unverifiable",
+    "evidence": "WebSearch 2026-10-05 finds no Surfer Magazine trial review; the magazine was also on hiatus from 2020 to Aug 2024."
+   },
+   {
+    "url": "https://www.theinertia.com/ (Gemini: '2019-12-18, The Inflatable Artificial Reef in Australia Popped During Installation')",
+    "what_gemini_said": "cited reference",
+    "our_check": "unverifiable",
+    "evidence": "Site returns HTTP 403 (Cloudflare) to scripted fetches; the real Inertia article has a different title (card R6). Not used."
+   }
+  ],
+  "summary": "Gemini's bunbury shape (reef_footprints.json id 'bunbury') is a regular 24-gon circle R=6.0 m generated by formula, with a made-up local frame; its coordinates (-33.3362, 115.6261) are ~1 km south of the real site, and offshore 38 m and crest 1.8 m are unsourced. Every source it cites is dead, wrong-article or unverifiable (verdicts re-confirmed against the originals 2026-10-05), and none shows a plan outline. Several other Gemini claims are contradicted by fetched sources (see other_claims_checked). It happens to match the true plan shape (a 12 m circle) because 12 m is stated everywhere; nothing from it was used here.",
+  "other_claims_checked": [
+   {
+    "claim": "helical screw anchors",
+    "verdict": "unsupported",
+    "evidence": "no fetched source mentions them; Tradie/Tracks describe a sand-ballasted bladder ('self-anchoring', 140 t of sand)"
+   },
+   {
+    "claim": "membrane punctured within weeks, deflated and detached",
+    "verdict": "wrong",
+    "evidence": "seam tore during installation (spotted Fri 13 Dec 2019, reported 16 Dec); bladder removed within about three days (Bunbury Mail 2022)"
+   },
+   {
+    "claim": "Hemispherical dome",
+    "verdict": "wrong in profile, right in plan",
+    "evidence": "Bottegal (Tracks 2021): the 2019 shape had a 'skateboard ramp type' profile; base was circular"
+   },
+   {
+    "claim": "130 t sand",
+    "verdict": "wrong",
+    "evidence": "140 t (Bunbury Mail 2022, Tracks 2021)"
+   },
+   {
+    "claim": "crest depth 1.8 m",
+    "verdict": "unsupported",
+    "evidence": "RWR: shallowest point about 1 m below the surface at low tide"
+   },
+   {
+    "claim": "'Airwave Ltd'",
+    "verdict": "wrong",
+    "evidence": "the company is Waveco Pty Ltd"
+   },
+   {
+    "claim": "'zero effective refraction ... unrideable lump'",
+    "verdict": "contradicted",
+    "evidence": "Bunbury Mail 2022 reports a wave that 'peeled nearly all the way to the beach' (about 0.75 m) before the tear"
+   },
+   {
+    "claim": "footprint coordinates -33.3362, 115.6261",
+    "verdict": "wrong site",
+    "evidence": "about 1.0 km south of the surf club, on a residential strip (Esri view)"
+   }
+  ],
+  "footprint_check": "reef_footprints.json id 'bunbury' re-parsed 2026-10-05: 25-point closed ring, x -6..6, y 32..44, a regular 24-gon R = 6.0 m centred at (0, 38), area 111.8 m2; 'distance_offshore_m 38' is the centre offset in an invented local frame. Formula-generated, not traced; it agrees with our circle only because both use 12 m."
+ },
+ "no_source": null,
+ "references": [
+  {
+   "id": "R1",
+   "citation": "ABC News (2019-12-16/17). Bunbury's Back Beach surfers deflated as artificial reef, Airwave, tears during installation.",
+   "url": "https://www.abc.net.au/news/2019-12-16/word-first-surf-reef-tears-during-installation/11803228",
+   "accessed": "2026-10-05 (re-fetched: 'two-metre-high, 12-metre-wide, dome-like bladder filled with air')",
+   "supports": "12 m diameter, 2 m height, tear during installation"
+  },
+  {
+   "id": "R3",
+   "citation": "Raised Water Research. Bunbury Airwave (site profile page).",
+   "url": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/bunbury-airwave/",
+   "accessed": "2026-10-05 (re-fetched: 'The bladder is 12m (40 feet) in diameter on the sea floor')",
+   "supports": "12 m diameter, 2 m height, 1 m crest depth at low tide, 30-45 m offshore range; hosts img2 and img5 (img1 and the underwater tear close-up are on the tear post R5; the profile page's own hero image is a different file)"
+  },
+  {
+   "id": "R6",
+   "citation": "The Inertia (2019-12). The World's First Inflatable Reef Tore During Installation.",
+   "url": "https://www.theinertia.com/surf/airwave-worlds-first-inflatable-reef-tore-during-installation/",
+   "accessed": "2026-09-25 (not re-fetched 2026-10-05: site returns 403 to scripts; article title confirmed by search)",
+   "supports": "diameter cross-check (40 ft = 12.19 m)"
+  },
+  {
+   "id": "R8",
+   "citation": "Bunbury Mail (2022-03-22). Airwave founder Troy Bottegal moves towards making Bunbury a surfing destination.",
+   "url": "https://www.bunburymail.com.au/story/7667604/bunbury-still-set-to-become-surfing-destination/",
+   "accessed": "2026-10-05 (re-fetched: '1.6-metre high by 12-metre wide, dome-shaped bladder... 140 tonnes of sand')",
+   "supports": "alt. height 1.6 m, 140 t sand fill"
+  },
+  {
+   "id": "R20",
+   "citation": "City of Bunbury Surf Life Saving Club location (used to establish the correct Back Beach coordinates)",
+   "url": "https://wanderboat.ai/local-businesses/australia/bunbury/city-of-bunbury-surf-life-saving-club/2ZbNbtHfQv-hchbJuFf5Ew",
+   "accessed": "2026-10-04 (wanderboat is Cloudflare-blocked to scripts; not re-verified 2026-10-05). The same area is given by visitbunburygeographe.com.au (-33.329730, 115.629920, 65 Ocean Drive) and surf-forecast.com ('33.31 S 115.64 E', probably the origin of the card's rounded coordinates)",
+   "supports": "-33.327276, 115.629902 -- the real Back Beach site, used for sat2/sat3 fetches; shows the card's -33.31/115.64 is wrong"
+  },
+  {
+   "id": "R5",
+   "citation": "Raised Water Research (2019-12-16). The Bunbury Airwave Artificial Surf Reef Tears During Installation.",
+   "url": "https://raisedwaterresearch.com/the-bunbury-airwave-artificial-reef-tears-during-installation/",
+   "accessed": "2026-10-05 (header image = img1)",
+   "supports": "source page of img1; tear during installation"
+  },
+  {
+   "id": "R9",
+   "citation": "Kennedy, L. (2021-10-08). The Airwave Pumps Again. Tracks Magazine.",
+   "url": "https://tracksmag.com.au/the-airwave-pumps-again",
+   "accessed": "2026-10-05 (re-fetched)",
+   "supports": "'skateboard ramp type thing' profile of the 2019 bladder; redesign: stronger compound that can be welded, made in Australia, 'more classic dome shape'; scale model in the Queensland hydraulic test tank; pumping 'too heavily in one quadrant', 140 t of sand"
+  },
+  {
+   "id": "R10a",
+   "citation": "Tracks (2019-11-15). Airwave set for live trial at Bunbury.",
+   "url": "https://tracksmag.com.au/airwave-set-for-live-trial-at-bunbury-534049",
+   "accessed": "2026-10-05 (re-fetched)",
+   "supports": "'twelve metres in diameter and 1.6m tall at the highest point'; 'approximately 45 metres off the low tide mark, just to the south of Bunbury surf club'"
+  },
+  {
+   "id": "R10b",
+   "citation": "The Tradie Magazine (2019-01-31). Creating the Perfect Wave.",
+   "url": "https://www.tradiemagazine.com.au/creating-the-perfect-wave/",
+   "accessed": "2026-10-05 (quote seen in search-result text only; the page returns 403 to scripts)",
+   "supports": "'10-12 metre, perfectly circular base ... a very subtle, flattened dome with a steeply angled back ... rising to two metres'"
+  }
+ ],
+ "verified_on": "2026-10-04",
+ "verification": [
+  {
+   "check": "overlay_match",
+   "verdict": "good",
+   "evidence": "img1 29-vertex outline: mean |offset| 3.3 px (0.13 m), 24/29 vertices within 5 px of the steepest brightness edge; img4 mean 3.1 px; img5 circle exactly on the drawn circle; stored and re-rendered overlays viewed. Residual ambiguity: the paler upper-left crescent is included (about 8% of diameter)."
+  },
+  {
+   "check": "design_version",
+   "verdict": "correct state; three statements fixed",
+   "evidence": "Only one full-size install ever (ABC Listen 2022, Bunbury Mail 2022, RWR, Waveco site). Fixed: tear date 16 Dec -> spotted Fri 13 Dec 2019 (ABC re-fetched: 'spotted by a diver on Friday afternoon'); removed the unsourced 'welded PVC/polyurethane' (Tracks 2021 says only 'a stronger compound that can be welded'); added the asymmetric 'skateboard ramp' profile (plan circle unaffected)."
+  },
+  {
+   "check": "scale_and_geometry",
+   "verdict": "reproduces; scale is text-calibrated",
+   "evidence": "geom.py/numpy: img1 area 65,673 px2, canonical area 112.06 m2, bbox 12.069 x 12.092 m, max dim 12.18 m; ellipse refit a=153.6, b=137.4 px, tilt 26.5 deg, 25.59 px/m. No scale bar/EXIF/georef in any image, so uncertainty 15% kept. Canonical polygon built by explicit rotation (make-canonical not used, so its sign bug is irrelevant); all 29 vertices reproduced to 0.0005 m; vertex 0 hand-checked."
+  },
+  {
+   "check": "dimensions_vs_text",
+   "verdict": "agree (by construction)",
+   "evidence": "12 m diameter in ABC, RWR, Tracks, Bunbury Mail, Tradie; drawing 12.07 x 12.09 m, area -0.9%. Circle shape supported to about +-7% in axis ratio by the crown ring (img1 ring 1.16 vs disc 1.118; img4 ring ~1.4 vs disc 1.498). Height 2 vs 1.6 m and offshore 30-50 m are text-vs-text conflicts."
+  },
+  {
+   "check": "provenance",
+   "verdict": "two errors fixed",
+   "evidence": "All four image files re-downloaded and md5-matched. img1 source_page corrected to the RWR tear post (not the profile page); img5 credit corrected to 'Unofficial Networks' per the RWR caption; img1 'one day after the install attempt' corrected; reference R3 corrected, R5/R9/R10a/R10b added; offshore range corrected to 30-50 m."
+  },
+  {
+   "check": "gemini",
+   "verdict": "all tracer verdicts confirmed; details corrected",
+   "evidence": "ABC 11802958 wrong_site (redirects to a Townsville floods item); ABC image URL dead (404); Wikimedia pages dimension_not_in_source (the OIC photo is 2006, not 2021); Bottegal brief, Surfer review, Inertia 2019-12-18 title unverifiable; Gemini footprint = formula 24-gon R 6 m, coordinates ~1 km off. Eight further Gemini claims contradicted or unsupported. Nothing used."
+  },
+  {
+   "check": "confidence",
+   "verdict": "medium confirmed",
+   "evidence": "Rubric: high needs geo-referenced imagery or a scaled as-built; low means no image of the structure. The structure is clearly visible on a real photo but its size is text-calibrated and nothing is geo-referenced -> medium. Reason text rewritten to say so."
+  }
+ ],
+ "location_note": {
+  "approx_centre_latlon": [
+   -33.3276,
+   115.6284
+  ],
+  "uncertainty_m": 100,
+  "method": "NOT traced. ABC/RWR text puts the Airwave 30-45 m off the beach just south of the Bunbury surf club (Back Beach SLSC building at about -33.3271, 115.6298 on Esri imagery). Point = 45 m seaward of the waterline, about 50-100 m south of the SLSC building, read from src/sat_backbeach_current.png with satellite.py pix2ll. The 2019 drone photo cannot be georeferenced (no shoreline). Verification 2026-10-05: the surf club position is also given by visitbunburygeographe.com.au (-33.329730, 115.629920); the reef centre estimate is unchanged and remains NOT traced."
+ },
+ "angles_note": "None: a circle has no edges. Shoreline angles are undefined (no shoreline in img1, and a circle is symmetric)."
+}

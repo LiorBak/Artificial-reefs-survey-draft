@@ -1,0 +1,130 @@
+{
+  "@context": {
+    "adms": "http://www.w3.org/ns/adms#",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "cnt": "http://www.w3.org/2011/content#",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcatap": "http://data.europa.eu/r5r/",
+    "dcatus": "http://resources.data.gov/ontology/dcat-us#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dct": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "gsp": "http://www.opengis.net/ont/geosparql#",
+    "locn": "http://www.w3.org/ns/locn#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "schema1": "http://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "time1": "http://www.w3.org/2006/time",
+    "vann": "http://purl.org/vocab/vann/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "void": "http://rdfs.org/ns/void#",
+    "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://data.gov.au/dataset/3f1698d1-3789-4dc5-af9d-0fb08f800d77/resource/3c077953-539c-422a-b3ed-64e06978204c",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data.gov.au/data/dataset/3f1698d1-3789-4dc5-af9d-0fb08f800d77/resource/3c077953-539c-422a-b3ed-64e06978204c/download/dtm_metadata.zip"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "6257930"
+      },
+      "dcat:mediaType": "application/zip",
+      "dct:description": "Digital Terrain Model of the Gold Coast LGA, including bathymetry in certain areas.  This dataset has been created from multiple data sources and surveys, details of which can be found in the associated metadata dataset - DTM Metadata",
+      "dct:format": "zipped esri file geodatabase",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2020-10-14T22:09:49.357540"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-05-13T19:34:25.739953"
+      },
+      "dct:title": "Digital Elevation Terrain (DTM) Metadata"
+    },
+    {
+      "@id": "https://data.gov.au/dataset/3f1698d1-3789-4dc5-af9d-0fb08f800d77",
+      "@type": "dcat:Dataset",
+      "dcat:distribution": [
+        {
+          "@id": "https://data.gov.au/dataset/3f1698d1-3789-4dc5-af9d-0fb08f800d77/resource/3c077953-539c-422a-b3ed-64e06978204c"
+        },
+        {
+          "@id": "https://data.gov.au/dataset/3f1698d1-3789-4dc5-af9d-0fb08f800d77/resource/c86062f0-03d7-4030-9a5e-d47b2062315b"
+        }
+      ],
+      "dcat:keyword": [
+        "DET",
+        "Digital Elevation Model",
+        "GCCC",
+        "DEM",
+        "City of Gold Coast",
+        "Digital Elevation Terrain"
+      ],
+      "dct:description": "Digital Terrain Model of the Gold Coast LGA, including bathymetry in certain areas.  This dataset has been created from multiple data sources and surveys, details of which can be found in the associated metadata dataset - DTM Metadata\r\n\r\nDisclaimer: The Digital Elevation Model (DEM) is a digital topographical representation of the City of Gold Coast.  It was developed using Airborne Laser and bathymetric surveys of various accuracies and at different times.  Thus the DEM accuracy can differ by at least 15cm to actual ground survey information which means that it will not be fit for all purposes.\r\n",
+      "dct:identifier": "3f1698d1-3789-4dc5-af9d-0fb08f800d77",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2020-10-12T21:49:30.378714"
+      },
+      "dct:language": "English",
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-05-13T19:34:25.728830"
+      },
+      "dct:publisher": {
+        "@id": "https://data.gov.au/organization/c9301f4c-e741-44de-b4d4-33ac61e0eeba"
+      },
+      "dct:title": "Gold Coast DTM"
+    },
+    {
+      "@id": "https://data.gov.au/organization/c9301f4c-e741-44de-b4d4-33ac61e0eeba",
+      "@type": "foaf:Agent",
+      "foaf:mbox": "opendata@goldcoast.qld.gov.au",
+      "foaf:name": "City of Gold Coast"
+    },
+    {
+      "@id": "https://data.gov.au/dataset/3f1698d1-3789-4dc5-af9d-0fb08f800d77/resource/c86062f0-03d7-4030-9a5e-d47b2062315b",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data.gov.au/data/dataset/3f1698d1-3789-4dc5-af9d-0fb08f800d77/resource/c86062f0-03d7-4030-9a5e-d47b2062315b/download/dtm.zip"
+      },
+      "dcat:byteSize": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "4141282150"
+      },
+      "dcat:mediaType": "application/zip",
+      "dct:description": "Digital Terrain Model of the Gold Coast LGA, including bathymetry in certain areas.  This dataset has been created from multiple data sources and surveys, details of which can be found in the associated metadata dataset - DTM Metadata",
+      "dct:format": "zipped esri file geodatabase",
+      "dct:issued": {
+        "@type": "xsd:dateTime",
+        "@value": "2020-10-12T23:05:53.131679"
+      },
+      "dct:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2024-05-13T19:34:25.739842"
+      },
+      "dct:title": "Digital Elevation Terrain (DTM)"
+    }
+  ]
+}

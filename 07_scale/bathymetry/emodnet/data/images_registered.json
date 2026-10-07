@@ -1,0 +1,10 @@
+[
+ "boscombe-surf-reef-img-25 - 07_scale/bathymetry/emodnet/viewer/boscombe-surf-reef_viewer_dtm_raw.png - EMODnet Map Viewer at Boscombe: DTM 2024 mean depth over Esri imagery, with DTM cell grid, reef outline, point",
+ "boscombe-surf-reef-img-26 - 07_scale/bathymetry/emodnet/viewer/boscombe-surf-reef_viewer_sources_raw.png - EMODnet Map Viewer at Boscombe: 'Source references' layer (survey patch of the DTM) over Esri imagery with cel",
+ "boscombe-surf-reef-img-27 - 07_scale/bathymetry/emodnet/figures/boscombe-surf-reef_profile_emodnet_vs_model.png - Shore-normal depth profile through the Boscombe reef: EMODnet DTM 2024 cells vs the project model (seabed, as-",
+ "boscombe-surf-reef-img-28 - 07_scale/bathymetry/emodnet/figures/boscombe-surf-reef_cells_emodnet_vs_model.png - EMODnet DTM 2024 cell means vs the project model averaged over the same cell footprints at Boscombe (7 cells f",
+ "boscombe-surf-reef-img-29 - 07_scale/bathymetry/emodnet/figures/boscombe-surf-reef_dtm_release_history.png - EMODnet DTM cells along the Boscombe profile in the releases 2018, 2020, 2022 and 2024",
+ "borth-coastal-defence-reef-img-14 - 07_scale/bathymetry/emodnet/viewer/borth-coastal-defence-reef_viewer_dtm_raw.png - EMODnet Map Viewer at Borth: DTM 2024 mean depth over Esri imagery, with DTM cell grid, both reef mounds, poin",
+ "borth-coastal-defence-reef-img-15 - 07_scale/bathymetry/emodnet/viewer/borth-coastal-defence-reef_viewer_sources_raw.png - EMODnet Map Viewer at Borth: 'Source references' layer over Esri imagery with cell grid, reef outlines and pro",
+ "borth-coastal-defence-reef-img-16 - 07_scale/bathymetry/emodnet/figures/borth-coastal-defence-reef_profile_emodnet.png - Shore-normal depth profile through the Borth reef mounds from the EMODnet DTM 2024 cells (reef centre, norther"
+]

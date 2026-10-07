@@ -1,0 +1,34 @@
+{
+  "slug": "al-yasat-aali-island-uae",
+  "name": "Al Yasat Aali Island coastal works (ICM)",
+  "place": "Al Yasat / Aali Island",
+  "country": "United Arab Emirates",
+  "kind": "reef",
+  "type": "other (coastal works) - rock groynes, rock breakwaters, revetment walls, dredged lagoon and access channel, marina pontoon, jet-ski berths, timber walkway",
+  "purpose": "coastal protection - shoreline stabilisation, road protection, creation of a usable protected lagoon for a private residence",
+  "year_built": "completed 2008 [R1]",
+  "priority": 2,
+  "status": "completed / presented as functioning by designer (ICM); no independent post-2008 condition report found",
+  "dimensions": {
+    "note": "not stated in any source found (length, width, crest depth, volume, m3 rock/sand all unreferenced - needs source)"
+  },
+  "cost": "not stated - not found",
+  "designer": "International Coastal Management (ICM), Gold Coast, Australia [R1]",
+  "contractor": "not stated by name; client-side party named as Waagner Biro Gulf LLC / RTA [R1]",
+  "financed_by": "not stated by name; described as for a private residence [R2]",
+  "client": "Waagner Biro Gulf LLC / RTA [R1]",
+  "motivation": "transform a shallow, exposed shoreline into a stabilised, usable recreational area (swimming lagoon, small-craft berthing) and protect an access road [R1]",
+  "outcome": "ICM states the works stabilised the coast, created a swimming area, and small-craft berthing for private use; no independent verification, no measured/quantified outcome data, no post-2008 record found",
+  "relation_to_master_list": "seeded from 02_research/00_master_list.md's uae-submerged-reef-unnamed entry and 02_research/discovery_industry.md row 11 / 01_targets.md row al-yasat-aali-island-uae; distinct from the related but separate al-yasat-aali-island-reef-modules-uae (Safi fish restocking, 2012) target at the same harbour",
+  "possible_duplicate": "not the same project as the unconfirmed transcript 'UAE submerged reef, 8-year stable beach guarantee' project (best candidate for that one is Fairmont Ajman per discovery_industry.md row 13) - kept distinct",
+  "dossier_md": "02_research/reefs/al-yasat-aali-island-uae.md",
+  "reviews_found": 0,
+  "references_count": 9,
+  "image_leads": [
+    "https://www.coastalmanagement.com.au/al-yasat-aali-island",
+    "https://www.coastalmanagement.com.au/artificial-reef-modules-for-safi",
+    "https://www.coastalmanagement.com.au/middle-east"
+  ],
+  "video_leads": [],
+  "last_updated": "2026-09-24"
+}

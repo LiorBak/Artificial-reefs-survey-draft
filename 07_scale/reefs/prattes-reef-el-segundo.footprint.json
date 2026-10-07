@@ -1,0 +1,451 @@
+{
+  "slug": "prattes-reef-el-segundo",
+  "name": "Pratte's Reef (permit name: Chevron Reef)",
+  "status": "verified",
+  "shape_type": "V (asymmetric chevron)",
+  "coords": "metres; origin = shoreline point nearest the reef centroid; x = alongshore (positive toward the arm drawn 'up' in the Skelly Engineering plan-view drawing - no source gives a compass bearing or north arrow, so this is an arbitrary, stated-but-unverified convention, same limitation as the parallel cables-reef-wa.md file); y = offshore (positive seaward); shoreline approximated as the line y=0",
+  "polygon_m": [
+    [
+      -26.2,
+      82.9
+    ],
+    [
+      -28.8,
+      86.0
+    ],
+    [
+      5.2,
+      114.1
+    ],
+    [
+      6.5,
+      112.6
+    ],
+    [
+      8.0,
+      113.9
+    ],
+    [
+      29.0,
+      89.3
+    ],
+    [
+      26.0,
+      86.7
+    ],
+    [
+      9.0,
+      106.6
+    ],
+    [
+      8.8,
+      104.4
+    ],
+    [
+      2.8,
+      104.9
+    ],
+    [
+      3.0,
+      107.1
+    ],
+    [
+      -26.2,
+      82.9
+    ]
+  ],
+  "bbox_m": {
+    "length_alongshore": 57.8,
+    "width_crossshore": 31.2,
+    "length_alongshore_note": "raw drawing measurement recomputed to ~57 m in the 2026-09-25 verification pass (see derivation table); polygon bbox (57.8 m) unchanged",
+    "width_crossshore_note": "raw drawing measurement recomputed to ~29 m in the 2026-09-25 verification pass (see derivation table); polygon bbox (31.2 m) unchanged"
+  },
+  "area_m2": 324.1,
+  "max_dimension_m": 57.9,
+  "crest_depth_m": {
+    "value": 1.83,
+    "datum": "below MSL (design minimum, per the original Skelly Engineering plan-view drawing's own annotation 'TOP OF BAG MIN DEPTH -6' MSL' at both arm tips; 6 ft = 1.83 m). Card's other cited sources give two additional, conflicting as-surveyed/as-reported figures on different datums: -0.9 m MLLW (R4) and ~2.4 m/8 ft at zero tide (R7, Surfrider-sourced, quoted by a Surfline commenter) - not resolved here, likely partly a datum (MSL vs MLLW vs 'zero tide') difference.",
+    "ref": "R4"
+  },
+  "distance_offshore_m": {
+    "value": 95,
+    "measured_from": "shoreline (approximate; card's R1 states only '~100 yards/100 m off the beach', not a precise engineering survey; ~100 yards = 91.4 m)",
+    "ref": "R1"
+  },
+  "orientation_notes": "The reinforced central 'spine' block (where the two arms of bags converge) is the most-offshore point of the structure and faces the 'WAVE DIRECTION' arrow drawn on the Skelly Engineering plan view, i.e. the apex points seaward into the incident swell, consistent with the card's design narrative ('arms at roughly 45 degrees to the predominant swell, meant to focus and peel incoming waves'). The drawing's own 45-degree angle annotation (measured from a vertical reference line to one arm) and this file's pixel-geometry check (~92 degrees between the two arms, i.e. ~46 degrees each side of the wave-direction axis) agree closely. The two arms are markedly ASYMMETRIC: ~44 m from spine to one tip, ~33 m to the other (a ~25% difference) - a refinement on Gemini's near-symmetric 9-vertex polygon. No compass bearing for the wave-direction axis, and no indication of which arm points which alongshore (e.g. north vs south) direction, could be determined from the design drawing itself (no north arrow). Gemini's specific '260-280 deg, W-WNW' bearing is plausible for a Santa Monica Bay/El Segundo south-/west-facing beach but is not confirmed in any source in our card or found in this pass.",
+  "materials": "~200 sand-filled geotextile (described as polyester/black polypropylene) bags total, built in two phases: 110 bags fall 2000 (this drawing's exact bag count) + ~90 more bags spring 2001; individual bags ~14 tons (R4) or ~14,000 lb (R7) - sources disagree ~2x; bag footprint 3 m x 1.2 m per the Raised Water Research bag-size diagram (R4) [R1][R2][R4][R7].",
+  "derivation": [
+    {
+      "quantity": "bag count, Phase I (this drawing)",
+      "value": 110,
+      "unit": "bags",
+      "method": "stated on the figure itself",
+      "source_ref": "R4",
+      "quote_or_figure": "Skelly Engineering plan-view drawing, legend: 'BAG COUNT: 110' / 'OPTIONAL BAGS: 30'",
+      "uncertainty": "None - printed on the drawing; matches card's independently-sourced Phase I bag count (110, fall 2000) exactly [R1][R7]"
+    },
+    {
+      "quantity": "bag count, Phase II addition (not shown in this drawing)",
+      "value": 90,
+      "unit": "bags",
+      "method": "stated in text",
+      "source_ref": "R1, R7",
+      "quote_or_figure": "'~90 more bags added spring 2001... for roughly 200 bags total' (card, sourced to R1/R7)",
+      "uncertainty": "No plan-view drawing of the Phase II addition was found anywhere in our references or in this pass; where/how it enlarged the footprint shown here is unknown - flagged as an open issue"
+    },
+    {
+      "quantity": "engineering scale-bar calibration",
+      "value": 1.565,
+      "unit": "px/ft (in the 308x385 px scan of the drawing)",
+      "method": "measured from figure - linear regression of the 4 labelled tick-mark boundaries (15', 30', 60', 90') on the drawing's own printed 'SCALE: 1\"=30'' bar",
+      "source_ref": "R4",
+      "quote_or_figure": "Pratts-Reef-Diagram.png, bottom-left scale bar",
+      "uncertainty": "VERIFICATION 2026-09-25: this pass independently re-measured the same drawing's scale bar (5 tick boundaries at pixel x = 0, 20.5, 43.5, 91.5, 137.5 for 0/15/30/60/90 ft) and fit a line WITH an intercept, giving 1.565 px/ft with sub-pixel residuals (<1 px). The originally-reported 1.625 px/ft is NOT reproducible from the same 308x385 px image: under that constant, the same 4 tick positions show residuals of 4-9 px, not the '~2-3 px' claimed. Corrected to 1.565 px/ft here; downstream length/width/span figures below are recomputed from this corrected constant (previously-reported values noted in each row)."
+    },
+    {
+      "quantity": "arm 1 length (spine to tip)",
+      "value": 45.2,
+      "unit": "m",
+      "method": "measured from figure - pixel distance from the spine's outermost (most-offshore) point to the top-drawn arm's outer tip, converted via the scale-bar calibration above",
+      "source_ref": "R4",
+      "quote_or_figure": "Pratts-Reef-Diagram.png (pixel coordinates (94,194) to (244,17) in the original 308x385 scan)",
+      "uncertainty": "+/-10% (~4-5 m) - low-resolution scan, anti-aliased/rounded bag corners, and ambiguity in exactly where the 'spine' block's true outer face sits. VERIFICATION 2026-09-25: recomputed from the same pixel distance (232.0 px) using the corrected 1.565 px/ft calibration (previously reported as 44.1 m using the uncorrected 1.625 px/ft)."
+    },
+    {
+      "quantity": "arm 2 length (spine to other tip)",
+      "value": 33.6,
+      "unit": "m",
+      "method": "measured from figure - same method as arm 1, to the bottom-drawn arm's outer tip",
+      "source_ref": "R4",
+      "quote_or_figure": "Pratts-Reef-Diagram.png (pixel coordinates (94,194) to (225,306))",
+      "uncertainty": "+/-10% (~3-4 m), same caveats as arm 1. VERIFICATION 2026-09-25: recomputed from the same pixel distance (172.4 px) using the corrected 1.565 px/ft calibration (previously reported as 33.1 m)."
+    },
+    {
+      "quantity": "cross-shore width (spine to tip line)",
+      "value": 29,
+      "unit": "m",
+      "method": "measured from figure - pixel bounding-box width (cross-shore/x axis of the drawing, parallel to the 'WAVE DIRECTION' arrow) converted via the scale-bar calibration",
+      "source_ref": "R4",
+      "quote_or_figure": "Pratts-Reef-Diagram.png, pixel x-range 94-244 of 308",
+      "uncertainty": "+/-10% (~3 m). VERIFICATION 2026-09-25: recomputed from the same pixel span (150 px, x-range 94-244) using the corrected 1.565 px/ft calibration (previously reported as 28 m)."
+    },
+    {
+      "quantity": "alongshore span (tip to tip)",
+      "value": 57,
+      "unit": "m",
+      "method": "measured from figure - pixel bounding-box height (alongshore/y axis of the drawing) converted via the scale-bar calibration",
+      "source_ref": "R4",
+      "quote_or_figure": "Pratts-Reef-Diagram.png, pixel y-range 13-306 of 385",
+      "uncertainty": "+/-10% (~5-6 m). VERIFICATION 2026-09-25: recomputed from the same pixel span (293 px, y-range 13-306) using the corrected 1.565 px/ft calibration (previously reported as 55 m). This now closely matches this file's independently-constructed polygon bounding box (57.8 m) without needing the polygon's arm-width buffer to explain the gap - an internal-consistency improvement over the original (uncorrected) reading."
+    },
+    {
+      "quantity": "angle between the two arms",
+      "value": 92.4,
+      "unit": "degrees",
+      "method": "computed from the same pixel coordinates as the arm-length measurements (vector angle between spine-to-tip1 and spine-to-tip2)",
+      "source_ref": "R4",
+      "quote_or_figure": "derived from Pratts-Reef-Diagram.png pixel coordinates",
+      "uncertainty": "Cross-checks reasonably against the drawing's own printed '45 degree' angle annotation, but note (VERIFICATION 2026-09-25): only ONE '45 deg' annotation is actually printed on the drawing (measured from a vertical reference line to the top arm only); there is no second, independently printed 45 deg label for the bottom arm. Doubling it to 90 deg as an internal-consistency check for the ~92 deg pixel-measured angle is this file's own assumption of a symmetric design intent, not two separately confirmed printed angles - and sits in tension with this same file's finding that the two arms are markedly asymmetric in LENGTH (~44-45 m vs ~33-34 m). The pixel-geometry angle itself was independently reproduced in this pass (~91-92 deg from a rough re-reading of the same three key points), so the ~92 deg figure stands, but the '45 deg x2' framing has been softened. +/-5 degrees."
+    },
+    {
+      "quantity": "crest design-minimum depth",
+      "value": 1.83,
+      "unit": "m below MSL",
+      "method": "stated on the figure itself",
+      "source_ref": "R4",
+      "quote_or_figure": "'TOP OF BAG MIN DEPTH -6' MSL' (two call-outs, one at each arm tip)",
+      "uncertainty": "This is a DESIGN minimum, not necessarily the as-built/as-surveyed depth after bags settled into the sandy seabed (card documents bags 'moved, sunk, and were buried' post-construction)"
+    },
+    {
+      "quantity": "individual bag footprint",
+      "value": "3 x 1.2",
+      "unit": "m",
+      "method": "read from figure - Raised Water Research bag-size comparison diagram",
+      "source_ref": "R4",
+      "quote_or_figure": "Prattes-Reef-Bag-Size.jpg: 'A Pratte's Reef bag', dimensioned 3 m long x 1.2 m wide",
+      "uncertainty": "As labelled on the diagram; used only as a sanity-check for the net-area estimate below, not independently verified against a second source"
+    },
+    {
+      "quantity": "arm cross-section width (used to turn the drawing's bag-chain centrelines into a closed polygon)",
+      "value": 4,
+      "unit": "m",
+      "method": "estimated - no source states an arm width figure; inferred from the drawing showing each arm as ~2 solid rows of bags side by side (plus a dashed 'optional' third row), and the bag-size diagram's 1.2 m bag width",
+      "source_ref": "S5",
+      "quote_or_figure": "derived, not sourced - see Polygon construction",
+      "uncertainty": "Purely illustrative, +/-50%. No published arm-width figure exists for Pratte's Reef in any source found"
+    },
+    {
+      "quantity": "spine (reinforced junction) block size",
+      "value": "8 (along axis) x 6 (wide)",
+      "unit": "m",
+      "method": "estimated - visual read of the drawing's ~4-column x 5-row blocky bag grid at the point where the two arms converge, no source states a figure",
+      "source_ref": "S5",
+      "quote_or_figure": "derived, not sourced",
+      "uncertainty": "Purely illustrative, +/-50%"
+    },
+    {
+      "quantity": "plan-view net footprint area",
+      "value": 324.1,
+      "unit": "m2",
+      "method": "computed - shapely union of two 4 m-wide arm rectangles (spine to each tip) plus an 8x6 m spine rectangle, using the measured tip/spine coordinates above",
+      "source_ref": "S5",
+      "quote_or_figure": "derived, not sourced; see Polygon construction in the .md",
+      "uncertainty": "Low-medium confidence, sensitive to the unsourced arm-width/spine-size assumptions. Sanity-checks against a simple bag-count estimate: 110 bags (Phase I) x 3.6 m2/bag (3x1.2 m) = ~396 m2 before overlap/gaps - same order of magnitude"
+    },
+    {
+      "quantity": "image26.png Pratte's outline reading (secondary check, NOT used in headline numbers)",
+      "value": "~84 x ~42",
+      "unit": "m",
+      "method": "measured from figure - pixel outline of the small V-sketch overlaid on the Pratte's panel of Lior's image26.png (bbox independently re-measured this pass at ~86-90 px wide x ~42-43 px tall, x:645-735, y:413-455, consistent with the original 86x43 px reading), converted via that image's own '200 m' scale bar",
+      "source_ref": "S1",
+      "quote_or_figure": "image26.png, rightmost ('Pratte's Reef') panel, checkered white outline",
+      "uncertainty": "UNRELIABLE - see the Narrowneck cross-check entry below; STILL NOT USED in headline numbers. VERIFICATION 2026-09-25: the pixel OUTLINE measurement (86x43 px) was accurate, but the scale-bar CALIBRATION used to convert it was wrong. Independently re-measuring image26.png's own '200 m' bar gives 5 clean tick marks at pixel x = 299, 351, 402, 453, 504 (four equal ~51 px segments spanning 205 px total for 200 m), i.e. ~0.976 m/px - not the ~0.797 m/px (251 px for 200 m) originally claimed, which does not match any tick-to-tick span actually present in the image (it appears to have included the caption box's decorative left border, not the first tick, in the measured span). Recomputed with the corrected 0.976 m/px: 86x43 px -> ~84x42 m (previously reported as 68.5x34.3 m). Does not change the conclusion that image26.png is excluded from headline numbers (see Narrowneck cross-check)."
+    },
+    {
+      "quantity": "Narrowneck cross-check of image26.png's scale-bar transfer",
+      "value": "~135 (measured) vs ~400 (independently documented)",
+      "unit": "m",
+      "method": "measured from figure - the SAME corrected '200 m' scale bar (0.976 m/px, see verification note on the image26.png row above) applied to the Narrowneck panel (leftmost) of the same image26.png: outer-edge-to-outer-edge pixel span across both lobes (x = 55 to x = 193, i.e. 138 px), to test whether the single scale bar is valid across all 4 photo panels",
+      "source_ref": "S1",
+      "quote_or_figure": "image26.png, leftmost ('Narrowneck') panel outline, pixel-measured",
+      "uncertainty": "VERIFICATION 2026-09-25: re-measured with the corrected 0.976 m/px calibration (see image26.png row above): 138 px -> ~135 m (previously reported as ~125 m using the uncorrected 0.797 m/px calibration). The conclusion is UNCHANGED and, if anything, confirmed more cleanly: ~135 m is still only about a third of Narrowneck's well-documented ~400 m alongshore length, proving the 4 panels are not all at the same photo zoom/scale - the single visible scale bar (positioned under the Cables/Mount Reef boundary) cannot be reliably transferred to other panels, including Pratte's. This directly undercuts Gemini's own audit claim that image26.png 'VERIFIES' its 40x20 m figure for Pratte's."
+    },
+    {
+      "quantity": "distance offshore",
+      "value": 95,
+      "unit": "m",
+      "method": "stated in text (approximate)",
+      "source_ref": "R1",
+      "quote_or_figure": "card Quick facts: '~100 yards/100 m off the beach' (R1)",
+      "uncertainty": "±15-20 m ('~100 yards/100 m' is itself an approximate figure, not a surveyed distance to a specific edge/centroid of the structure)"
+    }
+  ],
+  "images_relied_on": [
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/07/Pratts-Reef-Diagram.png",
+      "what_it_is": "Skelly Engineering plan-view design drawing of Pratte's Reef (already in the verified card's images list), with an explicit engineering scale bar ('SCALE: 1\"=30'', tick marks at 0/15/30/60/90 ft), a 45-degree arm-angle annotation, a 'WAVE DIRECTION' arrow, 'TOP OF BAG MIN DEPTH -6' MSL' call-outs at both arm tips, and a legend stating 'BAG COUNT: 110 / OPTIONAL BAGS: 30'.",
+      "what_was_read_off_it": "Downloaded to scratchpad, viewed at 4x upscale, and pixel-measured (via a Python/PIL/numpy connected-component analysis) against the drawing's own scale bar: cross-shore width ~28 m, alongshore span ~55 m, two asymmetric arm lengths (~44 m and ~33 m) from the reinforced central 'spine' block to each tip, an inter-arm angle of ~92 degrees (matching the drawing's own printed 45-degree annotation doubled), and the '-6' MSL' (1.83 m) crest design-minimum-depth label. Deleted from scratchpad after use.",
+      "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/us/california/prattes-reef/"
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/07/Prattes-Reef-Bag-Size.jpg",
+      "what_it_is": "Scale-comparison diagram (already in the card's images list) labelled 'A Pratte's Reef bag' (3 m x 1.2 m), shown against a VW camper, a city bus, and a 'Mount Reef' bag (20-60 m x 3 m).",
+      "what_was_read_off_it": "Individual Pratte's-Reef bag footprint dimensions (3 m x 1.2 m = 3.6 m2/bag), used only to sanity-check the net polygon area (324.1 m2, this file) against a simple bag-count estimate (~110 bags x 3.6 m2 = ~396 m2) - same order of magnitude, supporting the polygon's plausibility. Deleted from scratchpad after use.",
+      "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/us/california/prattes-reef/"
+    },
+    {
+      "url": "(local file) 03_images/from_lior/goldcoast_pptx/image26.png",
+      "what_it_is": "Lior's own reference file (already listed in the card's lior_images array): a 4-panel satellite comparison graphic (Narrowneck / Cables / Mount Reef / Pratte's Reef), captioned 'Size wasn't the only problem...', with a single '200 m' scale bar positioned under the Cables/Mount Reef panel boundary, and a small white checkered-outline V/chevron sketch of Pratte's Reef overlaid on its own (4th, rightmost) panel. Third-party graphic, sourced from raisedwaterresearch.com per its own caption; used only for measurement, never republished.",
+      "what_was_read_off_it": "(1) Pixel-measured the Pratte's outline against the image's own '200 m' scale bar (calibrated at ~0.797 m/px), giving ~68.5 m x ~34.3 m - larger than both Gemini's 40x20 m claim and this file's own Skelly-drawing-based figures. (2) As a cross-check, applied the SAME scale bar to the Narrowneck panel and got only ~125 m for the alongshore separation between Narrowneck's two lobes, versus Narrowneck's well-documented ~400 m length - proving the 4 photo panels are not captured at a uniform zoom/scale, so the single visible scale bar cannot be reliably transferred across panels. Both readings are reported in the derivation table for completeness but are NOT used for this file's headline length/width/area (which instead come from the Skelly drawing, R4).",
+      "source_page": "local file; original graphic credited to raisedwaterresearch.com per its own on-image caption"
+    }
+  ],
+  "gemini_comparison": {
+    "gemini_values": {
+      "shape_type": "Micro V-Shape / Chevron Geobag Array",
+      "length_m": 40.0,
+      "width_m": 20.0,
+      "area_m2": 650.0,
+      "crest_depth_m": 1.8,
+      "distance_offshore_m": 95.0,
+      "orientation": "Apex faces W-WNW Pacific swell (260-280 deg)",
+      "gemini_sources": [
+        "Henriquez 2005 MSc Thesis TU Delft",
+        "Surfrider Foundation Decommissioning Assessment 2008",
+        "Borrero & Nelsen 2003 monitoring results"
+      ]
+    },
+    "agree": [
+      "Shape typology (V/chevron geobag array) is qualitatively correct - confirmed directly by the primary Skelly Engineering design drawing (R4), though our reading is a measurably ASYMMETRIC V (~44 m and ~33 m arms) rather than Gemini's implied near-symmetric 9-vertex polygon.",
+      "Crest depth (1.8 m) is very close to the '-6 ft MSL' (1.83 m) design-minimum-depth label we found directly on the original Skelly drawing (R4) - though Gemini did not cite that drawing (it cites Henriquez/Surfrider/Borrero-Nelsen instead, none of which we could confirm state this figure), this specific number checks out against a primary source we located.",
+      "Distance offshore (95 m) falls within our own card's approximate '~100 yards/100 m' range (R1) - reasonable agreement."
+    ],
+    "disagree": [
+      {
+        "quantity": "length_m x width_m",
+        "gemini": "40.0 x 20.0",
+        "ours": "~55-58 m (alongshore) x ~28-31 m (cross-shore)",
+        "why_ours": "Directly pixel-measured off the original Skelly Engineering plan-view design drawing (R4) using that drawing's own explicit engineering scale bar ('SCALE: 1\"=30''). Gemini's envelope is 30-45% smaller in both dimensions than what the primary design source shows; none of Gemini's three cited sources (Henriquez 2005 thesis, Surfrider Decommissioning Assessment 2008, Borrero & Nelsen 2003) were found by us to state a numeric 40x20 m footprint anywhere - the task brief's own suspicion is confirmed."
+      },
+      {
+        "quantity": "area_m2",
+        "gemini": 650.0,
+        "ours": "324.1 (net polygon, Phase I/110-bag configuration; illustrative, order-of-magnitude only)",
+        "why_ours": "Gemini gives no derivation for 650 m2 and it is not stated in any of Gemini's own cited sources as far as we could verify. Our figure is grounded in bag-count x bag-footprint arithmetic from the same primary drawing (110 bags x 3.6 m2/bag =~396 m2 before overlap, same order as our 324 m2 polygon). Gemini's larger 650 m2 is plausible only if it implicitly reflects the FINAL ~200-bag structure (after the undocumented Phase II addition) rather than the Phase I design shown in R4 - but Gemini does not say this, and no source describes the Phase II geometry, so this remains unresolved rather than confirmed."
+      },
+      {
+        "quantity": "shape symmetry / arm-length ratio",
+        "gemini": "Implied near-symmetric 9-vertex V (bounding polygon roughly mirror-symmetric about its centreline)",
+        "ours": "Clearly asymmetric: ~44 m and ~33 m arms (~25% difference), read directly off the design drawing's own pixel geometry",
+        "why_ours": "The Skelly drawing itself visibly draws one arm longer than the other; this is a refinement to Gemini's shape, not a full contradiction of the V/chevron typology."
+      },
+      {
+        "quantity": "'image26.png corroborates the 40x20 m figure' (Gemini's own audit claim, scale_sketch_photo_alignment_audit.md, row 4, status 'VERIFIED')",
+        "gemini": "CAD poly span X=[-20,20] (40 m) x Y=[82,105] (23 m) stated to align with the image26.png photo",
+        "ours": "Contradicted on two levels: (1) our own pixel measurement of the SAME image26.png outline, using its own visible 200 m scale bar, gives ~68.5 m x ~34.3 m for Pratte's - not 40x20/23 m; (2) a cross-check applying that same scale bar to the Narrowneck panel of the same image gives only ~125 m versus Narrowneck's well-documented ~400 m length, proving the image's 4 panels are not at a uniform photo scale, so NO reliable Pratte's measurement can be taken from image26.png at all (ours or Gemini's). Gemini's 'VERIFIED' status for this row is unsupported by the image itself.",
+        "why_ours": "Direct pixel measurement plus an internal-consistency cross-check (Narrowneck), both absent from Gemini's audit."
+      },
+      {
+        "quantity": "area_m2 (Gemini's own internal inconsistency)",
+        "gemini": "650.0 (reef_footprints.json / reef_footprint_scale_analysis.md) vs 496 (Net Poly Area column, same author's scale_sketch_photo_alignment_audit.md, Master Comparative Geometric Matrix, row 4)",
+        "ours": "324.1 (net polygon, Phase I only; illustrative; see verification note - a corrected scale-bar calibration on the Skelly drawing implies the true net area is likely modestly larger, order ~330-360 m2, still order-of-magnitude only)",
+        "why_ours": "VERIFICATION 2026-09-25 finding: Gemini's own audit document reports a second, lower 'Net Poly Area' of 496 m2 for Pratte's Reef in its Master Comparative Geometric Matrix (row 4), distinct from the 650 m2 'Published Area' figure used elsewhere in Gemini's own dataset - an internal inconsistency Gemini's audit flags explicitly for two OTHER reefs in the same table (Mount Maunganui, Boscombe: 'Gross vs Net Area... should have gross vs. net areas explicitly delineated') but does not flag for Pratte's itself. Neither 496 nor 650 is closer to our own bag-count-arithmetic-grounded figure."
+      }
+    ]
+  },
+  "confidence": "medium",
+  "open_issues": [
+    "This file's Skelly-drawing-based measurements (R4) describe the Phase I design only (110 bags + up to 30 'optional' bags = up to 140), matching the fall-2000 as-built count exactly. No plan-view drawing was found anywhere in our references for the spring-2001 Phase II addition (~90 more bags, bringing the total to ~200 built) - the FINAL as-built footprint (2001-2008) may have been somewhat larger than reported here, by an unknown amount.",
+    "The arm cross-section width (4 m) and spine-block size (8x6 m) used to turn the drawing's bag-chain centrelines into a closed polygon are this file's own estimate (from the bag-size diagram and visual inspection), not a published figure - area_m2 (324.1) should be read as order-of-magnitude only, not a precise footprint.",
+    "No compass bearing or north arrow appears on the Skelly drawing; this file's alongshore (x) axis direction is an arbitrary, stated-but-unverified convention (same limitation flagged in the parallel cables-reef-wa.md file for that reef).",
+    "The card's own two pre-existing crest-depth figures (-0.9 m MLLW per R4's text vs ~2.4 m/8 ft at zero tide per R7) remain unresolved; this file's new '-6 ft MSL' (1.83 m) reading from the drawing itself is a third data point, close to but not identical to either, plausibly a datum (MSL vs MLLW vs 'zero tide') difference rather than a genuine conflict - not resolved here.",
+    "image26.png's single '200 m' scale bar was shown (via the Narrowneck cross-check) not to transfer reliably across the graphic's 4 photo panels; its Pratte's-specific reading (~68.5x34.3 m) is reported for completeness in the derivation table only and is excluded from this file's headline/confidence-bearing numbers.",
+    "All pixel measurements come from a low-resolution (308x385 px) scanned engineering drawing; scale-bar tick-mark reading, bag-corner anti-aliasing, and line thickness contribute an estimated +/-10% uncertainty to every length/width/area figure derived from it."
+  ],
+  "references": [
+    {
+      "id": "R1",
+      "citation": "Wikipedia contributors (updated). \"Chevron Reef.\" Wikipedia.",
+      "url": "https://en.wikipedia.org/wiki/Chevron_Reef",
+      "accessed": "2026-09-24",
+      "supports": "distance offshore ('~100 yards/100 m'), Phase I/II bag counts and dates, general build/removal timeline (reused from card)"
+    },
+    {
+      "id": "R4",
+      "citation": "Raised Water Research. \"Pratte's Reef.\"",
+      "url": "https://raisedwaterresearch.com/spot/artificial-reef/us/california/prattes-reef/",
+      "accessed": "2026-09-25 (images re-downloaded and pixel-measured this pass)",
+      "supports": "the Skelly Engineering plan-view design drawing (bag count, scale bar, 45-degree angle, wave direction, crest design-minimum depth) and the bag-size comparison diagram (3x1.2 m bag footprint) - both already listed in the card's images array"
+    },
+    {
+      "id": "R7",
+      "citation": "Fontaine, Evan (2008-10-11). \"SANDBAGGED...\" Surfline.com.",
+      "url": "https://www.surfline.com/templates/article_html.cfm?n=2&id=19261&p=1",
+      "accessed": "2026-09-24",
+      "supports": "Phase I/II bag counts and dates, alternate crest-depth figure ('8 feet deep at zero tide') - reused from card"
+    },
+    {
+      "id": "S1",
+      "citation": "Lior's reference file 03_images/from_lior/goldcoast_pptx/image26.png (4-panel satellite comparison graphic, third-party, sourced from raisedwaterresearch.com per its own caption); already listed in the card's lior_images array.",
+      "url": "",
+      "accessed": "2026-09-25",
+      "supports": "secondary (unreliable, see Open issues) pixel measurement of the Pratte's outline and the Narrowneck cross-check that exposed the scale bar's non-transferability across panels"
+    },
+    {
+      "id": "S2",
+      "citation": "Gemini candidate dataset, 02_world_reefs_data/reef_footprints.json, entry id 'prattes_reef' (unverified).",
+      "url": "file:///C:/Users/lior/Documents/Gemini/AG/artifical reef/02_world_reefs_data/reef_footprints.json",
+      "accessed": "2026-09-25",
+      "supports": "the Gemini candidate values compared against in gemini_comparison"
+    },
+    {
+      "id": "S3",
+      "citation": "Gemini's own audit note, 02_world_reefs_data/scale_sketch_photo_alignment_audit.md, row/section 4 (Pratte's Reef).",
+      "url": "file:///C:/Users/lior/Documents/Gemini/AG/artifical reef/02_world_reefs_data/scale_sketch_photo_alignment_audit.md",
+      "accessed": "2026-09-25",
+      "supports": "Gemini's claim that image26.png 'VERIFIES' its 40x20 m figure - checked and contradicted in this file"
+    },
+    {
+      "id": "S4",
+      "citation": "Gemini's own analysis note, 02_world_reefs_data/reef_footprint_scale_analysis.md, section 3.4 (Pratte's Reef).",
+      "url": "file:///C:/Users/lior/Documents/Gemini/AG/artifical reef/02_world_reefs_data/reef_footprint_scale_analysis.md",
+      "accessed": "2026-09-25",
+      "supports": "Gemini's narrative framing (\"40-meter V-array\", \"Critical Mass Threshold\" comparison to Haifa) referenced in gemini_comparison"
+    },
+    {
+      "id": "S5",
+      "citation": "Claude's own geometric construction, this pass - not a published source. See derivation table and Polygon construction (in the .md) for method and uncertainty on the arm-width/spine-size assumptions and the resulting area_m2.",
+      "url": "",
+      "accessed": "2026-09-25",
+      "supports": "arm cross-section width and spine block size assumptions; polygon union construction and area calculation"
+    }
+  ],
+  "verified_on": "2026-09-25",
+  "verification": [
+    {
+      "item": "Shape typology (asymmetric V/chevron with a blocky reinforced central spine)",
+      "verdict": "CONFIRMED",
+      "evidence": "Downloaded and directly viewed https://raisedwaterresearch.com/wp-content/uploads/2019/07/Pratts-Reef-Diagram.png (308x385 px, matches the file's stated resolution). The drawing clearly shows a blocky ~4-column reinforced junction with two bag-chain arms of visibly different length radiating from it - confirms 'asymmetric V/chevron', contradicts Gemini's 'symmetrical V-shape' framing."
+    },
+    {
+      "item": "Bag count, Phase I = 110; Optional bags = 30",
+      "verdict": "CONFIRMED",
+      "evidence": "Read directly off the drawing's own legend text via a high-resolution crop: 'BAG COUNT: 110' / 'OPTIONAL BAGS: 30', both fully legible."
+    },
+    {
+      "item": "Bag count, Phase II addition ~90 bags, spring 2001",
+      "verdict": "CONFIRMED",
+      "evidence": "WebFetch of https://en.wikipedia.org/wiki/Chevron_Reef confirms: Phase 1 (Fall 2000) 110 bags; Phase 2 (Spring 2001) additional 90 bags; total 200 bags."
+    },
+    {
+      "item": "Crest design-minimum depth label ('TOP OF BAG MIN DEPTH -6 ft MSL') = 1.83 m below MSL",
+      "verdict": "CONFIRMED",
+      "evidence": "Read directly off the drawing via a high-resolution crop at both arm-tip call-outs; 6 ft = 1.8288 m, rounds to 1.83 m as stated."
+    },
+    {
+      "item": "Individual bag footprint 3 m x 1.2 m",
+      "verdict": "CONFIRMED",
+      "evidence": "Downloaded and directly viewed https://raisedwaterresearch.com/wp-content/uploads/2019/07/Prattes-Reef-Bag-Size.jpg; 'A Pratte's Reef bag' is printed with dimensions 3 m (length) x 1.2 m (width)."
+    },
+    {
+      "item": "Scale-bar calibration on the Skelly drawing (1.625 px/ft, residuals ~2-3 px)",
+      "verdict": "CORRECTED",
+      "evidence": "Independent pixel analysis of the same downloaded image found the 4 labelled tick boundaries at x=20.5/43.5/91.5/137.5 px for 15/30/60/90 ft. A least-squares fit WITH an intercept gives 1.565 px/ft with sub-pixel residuals (<1 px); the file's originally-reported 1.625 px/ft produces 4-9 px residuals against the same tick positions, not '~2-3 px'. Corrected; downstream arm-length/width/span figures recomputed (~+2 to +4%, still within the file's own +/-10% uncertainty band, and improves internal consistency with the independently-built polygon's 57.8 m bbox)."
+    },
+    {
+      "item": "Arm lengths (44.1 m / 33.1 m), cross-shore width (28 m), alongshore span (55 m)",
+      "verdict": "CORRECTED (recalibrated)",
+      "evidence": "Recomputed from the SAME pixel distances stated in the original derivation table (232.0 px, 172.4 px, 150 px, 293 px respectively) using the corrected 1.565 px/ft calibration: 45.2 m, 33.6 m, 29 m, 57 m. All changes are within the originally-stated +/-10% uncertainty; the corrected alongshore span (57 m) now closely matches the polygon's own bbox (57.8 m)."
+    },
+    {
+      "item": "Inter-arm angle ~92.4 degrees, said to match a printed '45 deg x 2' annotation",
+      "verdict": "PARTIALLY CONFIRMED",
+      "evidence": "Independently re-deriving the angle from a rough re-reading of the same three key points (spine, tip1, tip2) gives ~91-92 degrees, consistent. However only ONE '45 deg' annotation is actually printed on the drawing (top arm only, relative to a vertical reference line) - there is no second, independently printed 45 deg label for the bottom arm, so the 'x2' doubling used as a consistency check is this file's own symmetry assumption, not two confirmed printed angles. Language softened in the derivation table."
+    },
+    {
+      "item": "Distance offshore ~95 m",
+      "verdict": "CONFIRMED (as an approximation)",
+      "evidence": "WebFetch of Wikipedia 'Chevron Reef' confirms 'about 100 yards offshore... north of the El Segundo jetty' (100 yards = 91.4 m). 95 m is the file's own reasonable rounding of the card's '~100 yards/100 m' range, already flagged as approximate with a wide +/-15-20 m uncertainty; no source states '95 m' verbatim."
+    },
+    {
+      "item": "Alternate crest-depth figures (-0.9 m MLLW per R4 text; ~2.4 m/8 ft at zero tide per R7)",
+      "verdict": "CONFIRMED (R4) / UNVERIFIABLE THIS PASS (R7)",
+      "evidence": "WebFetch of raisedwaterresearch.com/spot/artificial-reef/us/california/prattes-reef/ confirms '-0.9m MLLW (roughly 1 meter below sea level at low tide)'. R7 (surfline.com) returned HTTP 403 to WebFetch this pass (consistent with the card's own blocked_sources note); the '8 feet at zero tide' figure is retained on the strength of the card's prior verified pass (verified_on 2026-09-24, read via browser pane per its blocked_sources note), not independently re-confirmed in this pass."
+    },
+    {
+      "item": "Polygon validity, bbox, area, max pairwise distance",
+      "verdict": "CONFIRMED",
+      "evidence": "Reconstructed the 12-vertex polygon in shapely: is_valid=True, exterior.is_simple=True, bounds=(-28.8, 82.9, 29.0, 114.1) -> bbox 57.8 x 31.2 m exactly as stated, area=324.11 m2 exactly as stated (324.1), max pairwise vertex distance=57.89 m exactly as stated (57.9). All internally consistent with the stated L x W and area_m2."
+    },
+    {
+      "item": "Bag-count x bag-footprint area sanity check (110 x 3.6 m2 ~= 396 m2)",
+      "verdict": "CONFIRMED",
+      "evidence": "110 x (3 x 1.2) = 110 x 3.6 = 396 m2, arithmetic checks out and is the same order of magnitude as the 324.1 m2 polygon estimate, as claimed."
+    },
+    {
+      "item": "image26.png Pratte's outline pixel measurement (86x43 px) and its '200 m' scale-bar calibration (0.797 m/px, 251 px span)",
+      "verdict": "PIXEL OUTLINE CONFIRMED; CALIBRATION CORRECTED",
+      "evidence": "Independently re-measured the checkered outline's bounding box at x:645-735, y:413-455 (~90x42 px), consistent with the original 86x43 px reading. But the scale bar's own 5 tick marks are precisely measurable at pixel x=299/351/402/453/504 (4 equal ~51 px segments = 205 px for the labelled '200 m'), giving ~0.976 m/px - not the claimed 251 px/0.797 m/px, which does not correspond to any tick-to-tick span actually present in the image. Corrected outline reading: ~84 x ~42 m (was 68.5 x 34.3 m). Still excluded from headline numbers per the Narrowneck cross-check (unchanged conclusion)."
+    },
+    {
+      "item": "Narrowneck cross-check of image26.png scale-bar transfer (~125 m measured vs ~400 m documented)",
+      "verdict": "CORRECTED (number), CONCLUSION UNCHANGED",
+      "evidence": "Independently measured the two Narrowneck lobes' outer-edge-to-outer-edge pixel span (x=55 to x=193 = 138 px) and applied the corrected 0.976 m/px calibration: ~135 m (was ~125 m under the uncorrected calibration). Still only about a third of Narrowneck's documented ~400 m alongshore length, so the file's central claim - that image26.png's one visible scale bar does not transfer across its 4 photo panels - is independently reproduced and stands."
+    },
+    {
+      "item": "Gemini's cited values for Pratte's Reef (40x20 m, 650 m2, 1.8 m crest, 95 m offshore, 260-280 deg)",
+      "verdict": "CONFIRMED as accurately quoted",
+      "evidence": "Directly read Gemini's 02_world_reefs_data/reef_footprints.json (entry id 'prattes_reef') and reef_footprint_scale_analysis.md section 3.4: figures match this file's gemini_comparison exactly."
+    },
+    {
+      "item": "Gemini's own audit 'VERIFIED' claim for Pratte's Reef via image26.png",
+      "verdict": "CONFIRMED as accurately quoted; audit's own verdict independently found unsupported",
+      "evidence": "Directly read scale_sketch_photo_alignment_audit.md row 4: master matrix lists status 'VERIFIED' with CAD Poly Span [-20,20]x[82,105]; the detailed section states 'Discrepancy/Recommendation: None. Matches Raised Water Research archival specifications.' This pass's own pixel measurements of the same image26.png (see above) contradict that verdict on two independent levels (wrong outline reading AND a scale bar that does not transfer to any other panel of the same graphic)."
+    },
+    {
+      "item": "Gemini's own internal area inconsistency (650 m2 vs 496 m2 'Net Poly Area')",
+      "verdict": "NEW FINDING, not previously in this file",
+      "evidence": "scale_sketch_photo_alignment_audit.md's Master Comparative Geometric Matrix row 4 lists 'Net Poly Area' = 496 m2 for Pratte's, distinct from the 650 m2 figure used elsewhere in Gemini's own dataset; the audit flags this gross-vs-net distinction explicitly for two other reefs (Mt Maunganui, Boscombe) but not for Pratte's. Added to gemini_comparison.disagree."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "image": "satellite_2014.png",
+  "width": 507,
+  "height": 508,
+  "bounds": {
+    "north": 8.391194450230898,
+    "south": 8.385802510250405,
+    "east": 76.9772207736969,
+    "west": 76.9717812538147
+  },
+  "zoom": 17,
+  "m_per_px_center": 1.1815512025584924,
+  "tile_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/{release}/{z}/{y}/{x}",
+  "wayback_release": "10",
+  "center": {
+    "lat": 8.3885,
+    "lon": 76.9745
+  },
+  "radius_m": 300.0,
+  "attribution": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+  "retrieved": "2026-10-04",
+  "capture_date": "2011-02-28",
+  "capture_date_field": "SRC_DATE2"
+}

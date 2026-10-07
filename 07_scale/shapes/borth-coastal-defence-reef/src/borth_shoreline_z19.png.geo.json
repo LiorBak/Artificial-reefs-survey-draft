@@ -1,0 +1,24 @@
+{
+  "image": "borth_shoreline_z19.png",
+  "width": 3850,
+  "height": 3849,
+  "bounds": {
+    "north": 52.486543564119955,
+    "south": 52.48025644648932,
+    "east": -4.04583603143692,
+    "west": -4.056162536144257
+  },
+  "zoom": 19,
+  "m_per_px_center": 0.18183391395843052,
+  "tile_template": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+  "wayback_release": null,
+  "center": {
+    "lat": 52.4834,
+    "lon": -4.051
+  },
+  "radius_m": 350.0,
+  "attribution": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+  "retrieved": "2026-10-04",
+  "capture_date": "2024-09-17",
+  "capture_date_field": "DATE (YYYYMMDD)"
+}

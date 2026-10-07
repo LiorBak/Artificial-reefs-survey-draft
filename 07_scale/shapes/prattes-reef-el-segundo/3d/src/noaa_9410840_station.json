@@ -1,0 +1,71 @@
+{
+  "count": 1,
+  "units": null,
+  "stations": [
+    {
+      "tidal": true,
+      "greatlakes": false,
+      "shefcode": "ICAC1",
+      "details": {
+        "self": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9410840/details.json"
+      },
+      "sensors": {
+        "self": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9410840/sensors.json"
+      },
+      "floodlevels": {
+        "self": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9410840/floodlevels.json"
+      },
+      "datums": {
+        "self": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9410840/datums.json"
+      },
+      "supersededdatums": {
+        "self": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9410840/supersededdatums.json"
+      },
+      "harmonicConstituents": {
+        "self": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9410840/harcon.json"
+      },
+      "benchmarks": {
+        "self": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9410840/benchmarks.json"
+      },
+      "tidePredOffsets": {
+        "self": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9410840/tidepredoffsets.json"
+      },
+      "ofsMapOffsets": {
+        "self": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9410840/ofsmapoffsets.json"
+      },
+      "state": "CA",
+      "timezone": "PST",
+      "timezonecorr": -8,
+      "observedst": true,
+      "stormsurge": false,
+      "nearby": {
+        "self": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9410840/nearby.json"
+      },
+      "forecast": false,
+      "outlook": true,
+      "HTFhistorical": true,
+      "HTFmonthly": true,
+      "nonNavigational": false,
+      "inundationdb": true,
+      "id": "9410840",
+      "name": "Santa Monica",
+      "lat": 34.0083,
+      "lng": -118.5,
+      "affiliations": "NWLON",
+      "portscode": null,
+      "products": {
+        "self": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9410840/products.json"
+      },
+      "disclaimers": {
+        "self": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9410840/disclaimers.json"
+      },
+      "notices": {
+        "self": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9410840/notices.json"
+      },
+      "self": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9410840.json",
+      "expand": "details,sensors,floodlevels,datums,harcon,tidepredoffsets,ofsmapoffsets,products,disclaimers,notices",
+      "tideType": "Mixed"
+    }
+  ],
+  "self": null
+}

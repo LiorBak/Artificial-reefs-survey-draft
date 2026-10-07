@@ -1,0 +1,113 @@
+{
+ "OFF_z_LAT_equals_z_MSL_plus": 1.46,
+ "cd_minus_msl": -1.4,
+ "lat_acd": -0.06,
+ "all_cells_y90plus": {
+  "n": 7,
+  "mean": -1.795755875843458,
+  "sd": 0.6567119370132813,
+  "min": -3.052555190230155,
+  "max": -1.1374683544303794
+ },
+ "reef_cells": [
+  {
+   "ki": 34288,
+   "kj": 32794,
+   "cell_x": -15.1,
+   "cell_y": 263.0,
+   "emodnet_mean": -5.62,
+   "emodnet_min": -6.21,
+   "emodnet_max": -4.87,
+   "model_seabed_mean": -4.227,
+   "model_asbuilt_mean": -3.101,
+   "model_asbuilt_max": 0.56,
+   "model_apr2011_mean": -3.513,
+   "model_apr2011_max": 0.27,
+   "delta_vs_seabed": -1.393,
+   "delta_vs_asbuilt": -2.519,
+   "delta_vs_apr2011": -2.107,
+   "reef_in_cell_frac": 0.366
+  },
+  {
+   "ki": 34289,
+   "kj": 32794,
+   "cell_x": -1.8,
+   "cell_y": 147.9,
+   "emodnet_mean": -3.99,
+   "emodnet_min": -4.66,
+   "emodnet_max": -2.8,
+   "model_seabed_mean": -2.388,
+   "model_asbuilt_mean": -2.088,
+   "model_asbuilt_max": 0.56,
+   "model_apr2011_mean": -2.096,
+   "model_apr2011_max": 0.69,
+   "delta_vs_seabed": -1.602,
+   "delta_vs_asbuilt": -1.902,
+   "delta_vs_apr2011": -1.894,
+   "reef_in_cell_frac": 0.106
+  },
+  {
+   "ki": 34289,
+   "kj": 32795,
+   "cell_x": 71.3,
+   "cell_y": 156.4,
+   "emodnet_mean": -4.03,
+   "emodnet_min": -4.34,
+   "emodnet_max": -3.87,
+   "model_seabed_mean": -1.907,
+   "model_asbuilt_mean": -1.813,
+   "model_asbuilt_max": 0.56,
+   "model_apr2011_mean": -1.812,
+   "model_apr2011_max": 0.24,
+   "delta_vs_seabed": -2.123,
+   "delta_vs_asbuilt": -2.217,
+   "delta_vs_apr2011": -2.218,
+   "reef_in_cell_frac": 0.045
+  }
+ ],
+ "non_reef_cells_delta": {
+  "n": 4,
+  "mean": -1.8630071012702119,
+  "sd": 0.8685045522761228,
+  "min": -3.052555190230155,
+  "max": -1.1374683544303794
+ },
+ "navionics": {
+  "n": 33,
+  "mean": -1.608181818181818,
+  "sd": 1.1317366482133073,
+  "min": -4.68,
+  "max": 0.05000000000000071
+ },
+ "navionics_by_code": {
+  "-1": {
+   "n": 16,
+   "mean": -1.34875,
+   "sd": 0.9236007434672917,
+   "min": -3.2,
+   "max": 0.05000000000000071
+  },
+  "0": {
+   "n": 4,
+   "mean": -2.075,
+   "sd": 1.1776954897878598,
+   "min": -3.3800000000000003,
+   "max": -0.5800000000000001
+  },
+  "1": {
+   "n": 12,
+   "mean": -1.5425000000000002,
+   "sd": 1.0699883176932357,
+   "min": -3.5300000000000002,
+   "max": -0.08999999999999986
+  },
+  "2": {
+   "n": 1,
+   "mean": -4.68,
+   "sd": null,
+   "min": -4.68,
+   "max": -4.68
+  }
+ },
+ "alt_datum_note": "if the survey zero were ODN the model seabed in the MSL frame rises by 1.40 m: Delta becomes Delta - 1.40"
+}

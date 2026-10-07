@@ -1,0 +1,15 @@
+Source: Gemini survey (UNVERIFIED) - C:\Users\lior\Documents\Gemini\AG\artifical reef\05_web_build\reef_videos.json (key "palm-beach-gold-coast", second entry)
+
+NOTE (added by this extract, 2026-10-04): Word-for-word the same as OUR OWN transcript/key_quotes for this video at
+02_research/videos/palm-beach-gold-coast/i6k6WN2GtWI.txt and our own videos.json entry. Not independent - copied here verbatim per brief instructions, not as a new finding. (Gemini's videos/ folder also contains our own local field-recorded file palm_beach_gold_coast.mp4, confirming this folder mirrors our own material rather than adding new footage.)
+
+Title: Palm Beach Artificial Reef — City of Gold Coast (official)
+URL: https://www.youtube.com/watch?v=i6k6WN2GtWI
+
+Quotes (as stored in Gemini's reef_videos.json):
+00:00 "in 2019 the city will be constructing an artificial reef as part of the Palm Beach shoreline project"
+00:26 "boulders weighing up to 8 tons each ... located approximately 270 meters offshore from 19th Avenue"
+00:30 "it will be 160 metres long and up to 80 metres wide"
+00:44 "the artificial reef at its highest point will sit one and a half metres below the average water level"
+02:07 "surfing has been kept in mind when designing the reef ... waves breaking on the reef suitable for intermediate surfers"
+03:07 "there will be an exclusion zone around the offshore construction area to keep the public safe"

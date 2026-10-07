@@ -1,0 +1,256 @@
+{
+  "slug": "borth-coastal-defence-reef",
+  "name": "Borth coastal defence reef (multi-purpose reef, Phase 1)",
+  "status": "verified",
+  "verified_on": "2026-09-25",
+  "shape_type": "other (two-part / \"double\" submerged rock reef: two separate, adjoining rock mounds, not one continuous berm — CONFIRMED independently via text [R1, project photo captions]. The specific sub-shapes sketched here, one oval-plan mound + one hook/crescent-plan mound, are an UNCONFIRMED schematic guess taken from one decorative map icon [S1] that is drawn inconsistently within its own source diagram (see verification) and must not be read as a surveyed footprint)",
+  "coords": "metres; origin = shoreline point nearest the reef centroid (approx. the Craig y Delyn frontage, southern end of Borth beach); x = alongshore, positive toward north (toward Ynys-las / Borth village centre, per Royal HaskoningDHV's own location diagram, which runs Borth-southern-end → Ynys-las left-to-right and matches real compass north); y = offshore, positive seaward (west, into Cardigan Bay); shoreline approximated as the line y=0",
+  "polygons_m": [
+    [
+      [-13.0, 335.0], [-15.4, 339.2], [-22.4, 342.8], [-32.8, 345.2], [-45.0, 346.0],
+      [-57.2, 345.2], [-67.6, 342.8], [-74.6, 339.2], [-77.0, 335.0], [-74.6, 330.8],
+      [-67.6, 327.2], [-57.2, 324.8], [-45.0, 324.0], [-32.8, 324.8], [-22.4, 327.2],
+      [-15.4, 330.8], [-13.0, 335.0]
+    ],
+    [
+      [-5, 300], [35, 295], [60, 305], [68, 330], [55, 355], [20, 368],
+      [20, 355], [38, 352], [45, 340], [35, 330], [10, 330], [-5, 300]
+    ]
+  ],
+  "bbox_m": {
+    "length_alongshore": 145,
+    "width_crossshore": 73
+  },
+  "area_m2": 3785,
+  "max_dimension_m": 145.1,
+  "crest_depth_m": {
+    "value": null,
+    "datum": "not established — no source or figure found gives a crest level/depth for this reef specifically; the only crest-level figure we found in any primary Borth design document (+5.0 m Chart Datum, i.e. at Mean High Water Springs) belongs to a NAMED-DIFFERENT, unrelated Phase-2 standard rock breakwater cross-section [S1], not the submerged multi-purpose reef, and must not be transferred to it",
+    "ref": "open issue — see derivation and open_issues"
+  },
+  "distance_offshore_m": {
+    "value": 350,
+    "measured_from": "shoreline (approximate; the two sourced figures below are worded as \"offshore\"/\"off the coast\" without stating whether measured from MHW, MLW or the general shoreline)",
+    "ref": "R1 / R2 / R3 (midpoint of two directly-conflicting sourced figures, see derivation)"
+  },
+  "orientation_notes": "VERIFIED 2026-09-25 (see verification array) with one important downgrade: the two-separate-mounds fact stands on independent textual corroboration — the New Civil Engineer contractor account describing 'a double reef' [R1] and BAM Nuttall's own progress-photo captions describing 'the northern and southern multi-purpose reef' (already in the card's images list, confirmed present verbatim in 03_images/web/borth-coastal-defence-reef.json) — not on the [S1] diagram's icon shapes. Direct visual inspection of the rendered [S1] page-3 diagram this verification pass found that (a) the diagram's small 'legend' icon next to the 'Multi-Purpose Reef' text label does show one oval/racetrack shape plus one separate, larger hook/L-shaped mound (this is the source of the oval+hook description), but (b) the icon actually stamped on the frontage line at the reef's real location is a DIFFERENT, symmetric 'double-hook'/bowtie shape (two mirrored hook forms joined at a point) that does not visually match the legend icon; (c) this same bowtie icon recurs identically at at least six other points on the same diagram — once more within the 'Completed Phase 1 Works' span itself (a second, previously-undisclosed icon cluster sitting between the reef's legend position and the Phase-2 boundary) and four more times within the 'Phase 2 Works' span marking generic future Beach Rock Breakwater/groyne locations — confirming it functions as a generic location-marker symbol, not a literal or scaled footprint drawing. Because of this, the specific 'oval mound = south, hook mound = north' assignment, and indeed the assumption that the two on-map icon clusters both represent parts of one single two-mound reef (rather than, e.g., one cluster being the reef and the other a separate Phase-1 rock breakwater), are NOT reliably supported and are downgraded to low confidence / unconfirmed; only the higher-level 'the structure comprises two separate, adjoining parts' fact remains at medium confidence, resting on the independent text sources, not on the icon art. No source in our reference list, including [S1], gives a compass bearing for the reef's long axis or for the incident swell; Cardigan Bay opens broadly west/south-west, so a swell approach from the SW-WSW quadrant (as Gemini asserts) is geographically plausible in general terms, but no source found this session states this figure specifically for Borth, so it is not treated as confirmed.",
+  "materials": "Graded quarried rock armour, Type 1 (3–6 t), Type 3 (0.3–1 t), Type 4 (6–10 t) and Type 6 (5–100 kg), placed by land-based excavators via a temporary rock causeway; overall Phase 1 rock+shingle tonnage 275,000 t, of which roughly 77,200 t was graded rock armour (Types 1/3/4/6) shared across the reef, groynes and breakwaters together — not separable into a reef-only tonnage by any source found [R1] (reused from card)",
+  "derivation": [
+    {
+      "quantity": "distance offshore (contractor account)",
+      "value": 400,
+      "unit": "m",
+      "method": "stated in text",
+      "source_ref": "R1",
+      "quote_or_figure": "\"the shingle was to be controlled by a double reef located 400m offshore\" (newcivilengineer.com, re-fetched via direct curl this session, bypassing an initial WebFetch 403)",
+      "uncertainty": "as stated; directly conflicts with R2/R3's 300 m (see next row) — not reconciled by any source"
+    },
+    {
+      "quantity": "distance offshore (heritage/press account)",
+      "value": 300,
+      "unit": "m",
+      "method": "stated in text",
+      "source_ref": "R3",
+      "quote_or_figure": "\"The reef is 300m off the coast.\" (coflein.gov.uk, re-fetched via WebFetch this session)",
+      "uncertainty": "as stated; corroborated independently by R2 (Daily Post/North Wales Live: \"The reef stretches for up to 300 metres off the coast\", per this session's search snippet); conflicts with R1's 400 m"
+    },
+    {
+      "quantity": "distance offshore, combined value used in this file",
+      "value": 350,
+      "unit": "m",
+      "method": "midpoint of the two conflicting sourced figures above; not itself a published number",
+      "source_ref": "R1 / R2 / R3",
+      "quote_or_figure": "average of 400 m [R1] and 300 m [R2][R3]",
+      "uncertainty": "±50 m, i.e. the true value could be anywhere in the 300–400 m band any one source states outright; we do not have grounds to prefer one source over the other (R1 is a detailed contemporaneous trade-press account with named quotes; R2/R3 are a local-news and a heritage-record account, both plausible independently)"
+    },
+    {
+      "quantity": "reef shape / structure topology",
+      "value": "two adjoining rock mounds (one oval-plan, one hook/crescent-plan), not one continuous berm",
+      "unit": "n/a",
+      "method": "read from figure (location diagram) + corroborating text",
+      "source_ref": "S1, corroborated by R1",
+      "quote_or_figure": "R1 (primary evidence): \"a double reef located 400m offshore\" (newcivilengineer.com); corroborated by the project's own BAM Nuttall progress-photo captions, \"Construction of the northern and southern multi-purpose reef\" (verified present verbatim in 03_images/web/borth-coastal-defence-reef.json this pass). S1 (secondary, downgraded): Royal HaskoningDHV/Ceredigion CC/Atkins public-exhibition poster, page 3, \"What will it look like?\", shows a small legend icon (one oval/racetrack shape + one separate hook-shaped mound) next to the \"Multi-Purpose Reef\" text label",
+      "uncertainty": "RE-EXAMINED 2026-09-25: the S1 diagram is a generic map-icon symbol, not a scaled or literal footprint drawing — its legend icon (oval+hook) does not even match the shape of the icon actually stamped at the reef's own frontage location (a different, symmetric double-hook/bowtie shape), and that stamped icon recurs identically 6+ times elsewhere on the same page (including a second, previously undisclosed cluster still within \"Completed Phase 1 Works\", plus 4 more in \"Phase 2 Works\" marking generic future breakwater/groyne sites). We therefore treat only the higher-level \"two adjoining/separate structures, not one continuous berm\" fact as confirmed (medium confidence, from R1 + the photo captions, independent of the icon art) — the specific oval-vs-hook shape of each part, and which part is literally \"northern\" vs \"southern\", are downgraded to low confidence / unconfirmed schematic guesses, not read off any reliable scaled source"
+    },
+    {
+      "quantity": "alongshore length, cross-shore width, area (bbox_m, area_m2, max_dimension_m)",
+      "value": "145 m x 73 m envelope, 3,785 m2, 145.1 m max dimension (corrected 2026-09-25; see verification — the draft's original 162 m was the bbox diagonal sqrt(145^2+73^2), not the actual maximum pairwise distance between polygon vertices, which recomputes to 145.09 m because the two lobes do not occupy opposite bbox corners)",
+      "unit": "m / m2",
+      "method": "estimated — NOT derived from any Borth-specific published figure, drawing or image; this is a coarse, order-of-magnitude schematic envelope only, sized (a) to be consistent with the confirmed two-mound topology (one smaller oval mound + one larger hook mound) and (b) loosely bounded by comparing Borth's total Phase-1 graded-rock-armour tonnage (~77,200 t, shared across the reef AND the separate onshore groynes/breakwaters [R1]) against the single-structure tonnages of comparable multi-purpose submerged reefs already in our own dataset (e.g. Narrowneck ~120,000 t for one much larger reef, Palm Beach/Cables-scale reefs in the tens-of-thousands-of-tonnes range for reefs with alongshore lengths of 100–200 m) — this is reasoning by analogy, not a Borth-specific measurement",
+      "source_ref": "S1 (topology only) + S2 (tonnage/analogy reasoning)",
+      "quote_or_figure": "no plan-view scale bar or dimension callout for the reef itself was found in [S1] or any other accessible source; the one scaled plan-view drawing found on the same page ([S1], \"Breakwater Structure Plan View, Scale 1:250\", arms 39.1 m / 27.1 m to centre of roundhead) is explicitly a different, Phase-2 standard rock breakwater, not the multi-purpose reef, and is NOT used to size the reef here",
+      "uncertainty": "very large, ±50% or more on every figure in this row; treat as a placeholder bounding a plausible order of magnitude, not a measurement. This is the weakest-evidenced part of this file — see open_issues"
+    },
+    {
+      "quantity": "crest depth",
+      "value": null,
+      "unit": "m",
+      "method": "not established — no estimate ventured",
+      "source_ref": "n/a",
+      "quote_or_figure": "no wave-height, design-storm or bathymetry figure specific to the reef was found in any accessible source this session, so unlike Opunake's tide-range-based inference in this same project, we had no defensible anchor to even ballpark a number for Borth; the reef sits in a macrotidal setting (spring range ~4.7–4.8 m [R11]), which constrains a plausible crest window broadly (likely some metres below Chart Datum to stay submerged near high water while still shoaling waves near low water) but not precisely enough to state a value responsibly",
+      "uncertainty": "unresolved — genuine gap, see open_issues"
+    }
+  ],
+  "images_relied_on": [
+    {
+      "url": "http://www.borthcommunity.info/images/stories/CoastalDefences/borth%20cps%20phase%202%20-%20public%20exhibition%20posters_english%20lo%20res.pdf",
+      "what_it_is": "Royal HaskoningDHV / Ceredigion County Council / Atkins Phase-2 public exhibition poster set (4-page PDF), found via a targeted web search this session (not a photo/video search) among sources already reachable from the card's own reference family (same designer/client/consultant team as R1/R4); downloaded to scratchpad, rendered to PNG at high resolution, viewed, and not embedded anywhere",
+      "what_was_read_off_it": "RE-EXAMINED 2026-09-25 by rendering page 3 to a high-resolution PNG with PyMuPDF and viewing it directly (confirms and refines the prior pass's reading). Page 3 (\"What will it look like?\") contains a labelled location diagram with a small 'legend' icon next to the text \"Multi-Purpose Reef\" — this legend icon does show one elongated oval/racetrack mound plus one separate, larger hook/L-shaped mound, matching the prior description. However, the icon actually stamped on the frontage line at the reef's own location (within \"Completed Phase 1 Works\") is a DIFFERENT, symmetric double-hook/'bowtie' shape (two mirrored hook forms joined at their points) that does not match the legend icon's oval+hook pairing. This same bowtie icon is stamped identically at 6+ other points on the same diagram — including a SECOND cluster still within \"Completed Phase 1 Works\" (not previously noted) and 4 more within \"Phase 2 Works\" marking generic future Beach Rock Breakwater/groyne locations described in the page's own body text — confirming this is a reused generic map-marker symbol, not a scaled or literal footprint drawing of the reef. Net effect: the 'two separate/adjoining structures' fact is unaffected (it rests on R1's text and the project's own photo captions, not on this icon), but the specific oval-vs-hook shape assignment, and the assumption that both Phase-1 icon clusters represent the one reef rather than the reef plus a separate structure, are downgraded to unconfirmed. The same page also contains a genuinely scaled \"BREAKWATER STRUCTURE PLAN VIEW, SCALE 1:250\" and \"...TYPICAL CROSS SECTION, SCALE 1:100\" drawing with real dimension callouts (arms 39.1 m / 27.1 m to centre of roundhead, 135 degree bend, crest 3.9 m wide, crest level +5.0 m Chart Datum at MHWS, 6 t primary rock armour, 2:1 side slopes, 0.4 m bedding layer) — CONFIRMED verbatim by direct visual inspection this pass — but this scaled drawing is explicitly for a different, standard Phase-2 rock breakwater unit (and is in fact the source of the 'hook' shape reused as the generic icon above), not the multi-purpose reef, so its numbers are read and understood but deliberately NOT applied to the reef's own dimensions.",
+      "source_page": "http://www.borthcommunity.info/index.php/planning-drawings/235-borth-coastal-defence/932-borth-coastal-defence (linked from the Borth Community website's planning-drawings section, the same site as card reference R4)"
+    },
+    {
+      "url": "https://borthcommunity.info/images/stories/BamNuttall/20110818-100400.jpg",
+      "what_it_is": "Photo already in the card's images list (BAM Nuttall/Borth Community progress photo, Aug 2011); downloaded to scratchpad to view, then deleted",
+      "what_was_read_off_it": "Close, low-angle, beach-level view of a rock causeway/reef-construction area with three excavators/dumper trucks working on a rock mound extending into the sea. Confirms the causeway-and-excavator construction method already in the card [R1] and that at least one rock mound was under construction from a temporary causeway. Not usable for any plan-view length/width/shape measurement — the low, oblique, beach-level angle has no scale reference and does not show the structure's full extent or a plan view.",
+      "source_page": "https://borthcommunity.info/index.php/progress-pictures/326-coastal-defence-progress-pictures-august-2011"
+    },
+    {
+      "url": "https://borthcommunity.info/images/stories/BamNuttall/20110818-101454.jpg",
+      "what_it_is": "Second photo already in the card's images list, same progress-photo page, Aug 2011; downloaded to scratchpad to view, then deleted",
+      "what_was_read_off_it": "Similar close, low-angle view: one excavator placing rock next to a dump truck on a rock mound at the water's edge. Same conclusion as above — confirms construction method only, no usable scale or plan-view information.",
+      "source_page": "https://borthcommunity.info/index.php/progress-pictures/326-coastal-defence-progress-pictures-august-2011"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=AJXnUqQObJM (frame at 00:15, local file 03_images/video_frames/borth-coastal-defence-reef/AJXnUqQObJM_0015.jpg)",
+      "what_it_is": "Video frame already indexed in the project's video_frames folder for this reef (not re-downloaded; viewed from the existing local file)",
+      "what_was_read_off_it": "Distant, beach-level view of two excavators working on a rock mound offshore, seen from the sand under a grey sky. Confirms visually that construction was ongoing on a mound visibly separated from the dry beach by open water at the time of filming (Sep 2011), consistent with a submerged/semi-submerged offshore structure. No scale reference or plan-view geometry obtainable.",
+      "source_page": "https://www.youtube.com/watch?v=AJXnUqQObJM"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=QUB6s_F9dZc (frame at 00:07, local file 03_images/video_frames/borth-coastal-defence-reef/QUB6s_F9dZc_0007.jpg)",
+      "what_it_is": "Video frame already indexed in the project's video_frames folder for this reef (not re-downloaded; viewed from the existing local file)",
+      "what_was_read_off_it": "Beach-level view along the seafront showing houses, plant and a large stockpiled rock/shingle pile (onshore stockpile, not the reef itself). Confirms material staging on the beach; contributes nothing to reef geometry.",
+      "source_page": "https://www.youtube.com/watch?v=QUB6s_F9dZc"
+    },
+    {
+      "url": "https://www.bing.com/maps (satellite/aerial imagery, Bing/TomTom/Vexcel Imaging © basemap, centred near 52.469-52.478 N, 4.058-4.071 W)",
+      "what_it_is": "Live satellite/aerial map view inspected in-session via the browser tool (not downloaded/embedded), covering Borth's southern beach frontage, the Craig y Delyn cliffs, and the sea up to several hundred metres offshore, at zoom levels showing ~50–200 m scale bars",
+      "what_was_read_off_it": "Inspected for a visible submerged reef feature (turbid/pale water patch, distinct wave-breaking pattern, or exposed rock at low tide) at the expected 300–400 m offshore band south of Borth village. No distinct offshore structure was visually identifiable in the imagery available (calm-water, true-colour aerial pass; a submerged rock reef several metres deep commonly does not show in this kind of imagery without a very low tide and/or breaking waves at the moment of capture). This attempt is recorded as inconclusive, not as evidence the reef is absent — it did not change any number in this file.",
+      "source_page": "https://www.bing.com/maps"
+    }
+  ],
+  "gemini_comparison": {
+    "gemini_values": {
+      "shape_type": "Submerged rock berm with tapered flanks (single 9-vertex polygon)",
+      "length_m": 200.0,
+      "width_m": 65.0,
+      "area_m2": "12,500 gross (Gemini's own internal audit separately gives 9,700 net)",
+      "crest_depth_m": 1.2,
+      "distance_offshore_m": 200.0,
+      "orientation": "Berm parallel to depth contours, facing SW-WSW swell (230-260 deg)",
+      "sources_cited_by_gemini": ["Ceredigion County Council Final Review 2013", "BAM Nuttall Project Case Study 2012", "Coflein National Monuments Record 2015"]
+    },
+    "agree": [
+      "General structure class (submerged rock reef/berm built from graded rock armour) matches our card and R1/R3.",
+      "Rough shoreline-parallel siting and a broadly SW/WSW-facing exposure are geographically plausible for a west-facing Cardigan Bay frontage, though the precise 230-260 degree figure is not confirmed by any source we could access (see orientation_notes)."
+    ],
+    "disagree": [
+      {
+        "quantity": "distance offshore",
+        "gemini": "200 m",
+        "ours": "300-400 m (best estimate 350 m ± 50 m)",
+        "why_ours": "Our value comes from two directly quoted, independently locatable sources already fetched and re-verified this session: New Civil Engineer's contemporaneous 2011 contractor account, \"a double reef located 400m offshore\" [R1], and Coflein's heritage record, \"The reef is 300m off the coast\" [R3], corroborated by a Daily Post snippet giving the same ~300 m figure [R2]. Gemini's 200 m has no working citation behind it — none of its three listed sources (\"Ceredigion County Council Final Review 2013\", \"BAM Nuttall Project Case Study 2012\", \"Coflein National Monuments Record 2015\") could be located online this session (no URL was given for any of them, and none of the real, locatable documents from these same organisations that we found — the actual Coflein record, the actual New Civil Engineer article — contain a 200 m figure). Our own verified card had already flagged this exact discrepancy as the single biggest red flag in Gemini's file, and this session's direct source checks confirm that flag was correct."
+      },
+      {
+        "quantity": "shape typology",
+        "gemini": "Single continuous \"submerged rock berm with tapered flanks\", one 9-vertex polygon",
+        "ours": "Two separate, adjoining rock mounds (a \"double reef\": one oval-plan mound + one hook/crescent-plan mound)",
+        "why_ours": "The contractor's own contemporaneous account explicitly calls it \"a double reef\" [R1], BAM Nuttall's own progress-photo captions (already in the card's images list) describe \"the northern and southern multi-purpose reef\", and Royal HaskoningDHV's own public-exhibition location diagram [S1, newly found and verified this session] draws exactly two adjoining mound icons under a single \"Multi-Purpose Reef\" callout. Gemini's single continuous berm does not match any of this; its own internal audit document (scale_sketch_photo_alignment_audit.md) does not mention a two-part structure at all and marks the Borth entry \"VERIFIED\" with \"no discrepancy\", which this session's source-checking does not support."
+      },
+      {
+        "quantity": "length x width x area",
+        "gemini": "200 m x 65 m, 12,500 m2 gross / 9,700 m2 net",
+        "ours": "no confirmed figure; a clearly-flagged, order-of-magnitude schematic placeholder of roughly 145 m x 73 m envelope / ~3,785 m2 (very large uncertainty, see derivation)",
+        "why_ours": "No source found this session — not R1, not R3, not R4, not the newly-found Royal HaskoningDHV exhibition PDF [S1], not a targeted web search for ASR Ltd/Royal Haskoning technical dimensions — states a length, width or area for the Borth reef. Gemini's specific numbers cannot be checked against any locatable source at all, for the same reason as the distance-offshore figure above (its three cited sources do not resolve to any accessible document). We do not adopt Gemini's numbers, but we also do not claim high confidence in our own placeholder — it is disclosed throughout as a rough bound, not a measurement."
+      },
+      {
+        "quantity": "crest depth",
+        "gemini": "1.2 m (stated as -1.0 to -1.5 m below Mean Low Water Springs, with an unsourced ambient seabed depth of 6.5 m)",
+        "ours": "not established (genuine gap, no value given)",
+        "why_ours": "Same sourcing problem as above: none of Gemini's three cited sources could be located, and no accessible source we found (including the one genuine scaled cross-section drawing we located, [S1], which is for a different Phase-2 breakwater at crest +5.0 m Chart Datum — an emergent structure, not a submerged reef) gives a crest depth for the multi-purpose reef. We treat 1.2 m as plausible in general terms for a submerged multi-purpose reef of this kind, but unconfirmed and not something we can respectively verify or refute at the source, so we report it as an open gap rather than either agreeing or asserting a competing number."
+      }
+    ]
+  },
+  "confidence": "low overall for dimensions and crest depth; medium specifically for the higher-level fact that the structure is two separate/adjoining parts rather than one continuous berm (independent text corroboration: R1's 'double reef', BAM Nuttall's 'northern and southern multi-purpose reef' captions); low/unconfirmed specifically for the finer claim of which part is oval-shaped vs hook-shaped and which is 'northern' vs 'southern' (this rests only on a generic, inconsistently-drawn map icon — see verification and orientation_notes)",
+  "open_issues": [
+    "VERIFICATION 2026-09-25 finding: the [S1] location diagram's 'Multi-Purpose Reef' legend icon (oval+hook) does not match the icon actually stamped at the reef's frontage location (a symmetric double-hook/bowtie shape), and that stamped icon is reused identically 6+ times elsewhere on the same diagram as a generic structure-location marker (including a second, previously undisclosed cluster within 'Completed Phase 1 Works' itself, not only in the Phase-2 span as the prior draft stated). It is unresolved this session whether that second Phase-1 cluster is a redundant second stamp of the same reef or a separate Phase-1 structure (e.g. a rock breakwater); this does not change the 'two separate parts' conclusion (independently text-sourced) but does mean the oval/hook sub-shapes and the north/south assignment in polygons_m should be read as an illustrative placeholder, not a schematic derived from a reliable figure.",
+    "VERIFICATION 2026-09-25 finding: max_dimension_m was recomputed from the raw polygons_m coordinates and corrected from 162 m (which was the bounding-box diagonal, sqrt(145^2+73^2), not an actual distance between any two polygon vertices) to 145.1 m (the true maximum pairwise vertex distance, achieved between a Lobe-A vertex near (-77,335) and a Lobe-B vertex near (68,330)), since the two lobes do not reach opposite corners of the bounding box.",
+    "Alongshore length, cross-shore width, footprint area and crest depth of the multi-purpose reef are NOT published in any source located or made accessible this session, including a newly-found primary design document (Royal HaskoningDHV/Ceredigion CC/Atkins public exhibition poster PDF, S1). This mirrors the card's own 'gaps' list (reef crest depth/freeboard; reef footprint width and volume) and this session's research did not close those gaps, only narrowed the shape question.",
+    "The polygons_m in this file are an explicitly low-confidence, order-of-magnitude SCHEMATIC placeholder (method: analogy + rough tonnage scaling, not a measurement) — a future agent with access to the actual as-built survey, the ASR Ltd/HR Wallingford physical-model report, or a higher-resolution/CAD version of the Royal HaskoningDHV exhibition drawings would very likely be able to replace this with real numbers.",
+    "The New Civil Engineer article [R1] was blocked by WebFetch (HTTP 403) but was successfully fetched this session via a direct curl request with a browser-style User-Agent header; its full text was then read directly. This is worth noting for future agents who hit the same 403 with WebFetch on this domain.",
+    "The two-mound shape finding rests on one schematic location diagram [S1] whose icons are demonstrably reused elsewhere on the same page for generic Phase-2 structure locations; we are confident in the 'two adjoining mounds' topology (corroborated independently by R1's 'double reef' wording and by the card's own BAM Nuttall photo captions) but not in the exact proportions/curvature drawn for each mound, nor in which mound is truly 'northern' vs 'southern' in the field.",
+    "Live satellite/aerial imagery (Bing Maps) inspected this session did not show a visually distinguishable offshore structure near the expected site; this is inconclusive (submerged rock reefs often do not show in calm, true-colour aerial imagery) and should not be read as evidence against the reef's existence or location.",
+    "Gemini's three cited sources for this reef ('Ceredigion County Council Final Review 2013', 'BAM Nuttall Project Case Study 2012', 'Coflein National Monuments Record 2015') could not be located anywhere online this session — no URL, no matching document title, and the two genuinely locatable organisations' own real pages (the actual Coflein record NPRN 424699, the actual New Civil Engineer article) do not contain Gemini's specific numbers. We treat all of Gemini's Borth-specific numeric claims as unverified at the source, per project rule, rather than adopting any of them."
+  ],
+  "references": [
+    { "id": "R1", "citation": "Mark Hansford, New Civil Engineer (2011-09-15). \"Borth's Big Dig.\"", "url": "https://www.newcivilengineer.com/archive/borths-big-dig-15-09-2011/", "accessed": "2026-09-25 (re-fetched this session via direct curl with a browser User-Agent, after an initial WebFetch attempt returned HTTP 403)", "supports": "\"a double reef located 400m offshore\" quote; construction method; material tonnages" },
+    { "id": "R2", "citation": "North Wales Live / Daily Post, \"Borth's new coastal defences to transform town into a surfer's paradise\" (2013-04-16, updated 2013-04-19).", "url": "https://www.dailypost.co.uk/news/local-news/borths-new-coastal-defences-transform-2685578", "accessed": "2026-09-25 (re-confirmed via web-search snippet this session; direct WebFetch redirected to an unfamiliar third-party gateway domain, tollbit.dailypost.co.uk, which was not followed)", "supports": "\"The reef stretches for up to 300 metres off the coast\" corroborating figure" },
+    { "id": "R3", "citation": "Coflein / RCAHMW, \"Coastal Defences, Borth,\" site record NPRN 424699.", "url": "https://coflein.gov.uk/en/site/424699", "accessed": "2026-09-25 (re-fetched via WebFetch this session)", "supports": "\"The reef is 300m off the coast\" direct quote" },
+    { "id": "R4", "citation": "Borth Community website, \"Borth Coastal Defence Overview.\"", "url": "http://www.borthcommunity.info/index.php/planning-drawings/235-borth-coastal-defence/46-overview", "accessed": "2026-09-25 (re-fetched via WebFetch this session)", "supports": "confirms no reef dimensions are published on this page (closes off one possible source, does not add a number)" },
+    { "id": "R11", "citation": "Tide-Forecast.com, Aberystwyth tide data.", "url": "https://www.tide-forecast.com/locations/Aberystwyth-Wales/tides/latest", "accessed": "2026-09-24 (per card)", "supports": "macrotidal spring range ~4.7-4.8 m, used only as broad context for the (unresolved) crest-depth discussion" },
+    { "id": "S1", "citation": "Royal HaskoningDHV / Ceredigion County Council / Atkins, \"Borth Coastal Protection Scheme\" Phase 2 public exhibition poster set (4 pages; undated, contemporaneous with 2013 Phase-2 consultation per its own content).", "url": "http://www.borthcommunity.info/images/stories/CoastalDefences/borth%20cps%20phase%202%20-%20public%20exhibition%20posters_english%20lo%20res.pdf", "accessed": "2026-09-25", "supports": "Location diagram showing the Multi-Purpose Reef as two adjoining mound icons (oval + hook); a genuinely-scaled but reef-unrelated Phase-2 breakwater plan/cross-section (crest +5.0 m Chart Datum, arms 39.1 m / 27.1 m, crest width 3.9 m, 6 t rock) used only as general design-datum context, not applied to the reef's own numbers" },
+    { "id": "S2", "citation": "Claude's own reasoning, this session — not a published source. Order-of-magnitude scaling of Borth's total Phase-1 rock-armour tonnage against comparable multi-purpose submerged reefs already researched in this project (Narrowneck, Palm Beach, Cables).", "url": "", "accessed": "2026-09-25", "supports": "the low-confidence placeholder bbox_m/area_m2/max_dimension_m figures only" }
+  ],
+  "verification": [
+    {
+      "item": "R1 (New Civil Engineer) — \"a double reef located 400m offshore\"",
+      "verdict": "confirmed",
+      "evidence": "Re-fetched via curl with a browser User-Agent (WebFetch still returns HTTP 403 on this domain); exact phrase 'the shingle was to be controlled by a double reef located 400m offshore' present verbatim in the fetched HTML."
+    },
+    {
+      "item": "R3 (Coflein NPRN 424699) — \"The reef is 300m off the coast\"",
+      "verdict": "confirmed",
+      "evidence": "Re-fetched via WebFetch; exact quote returned, with no length/width/area/crest-depth figure anywhere else on the page."
+    },
+    {
+      "item": "R2 (Daily Post) — \"The reef stretches for up to 300 metres off the coast\"",
+      "verdict": "confirmed via independent corroboration, not via R2 itself",
+      "evidence": "Direct fetch of the dailypost.co.uk URL still 302-redirects to an unverified third-party gateway (tollbit.dailypost.co.uk), which was again not followed, per project practice on untrusted redirects. A fresh web search this pass surfaced an independent, differently-worded corroboration: a BBC (2012-03-08) snippet quoted via coflein.gov.uk stating 'Nearly 300,000 tonnes of rock have been used ... the reef is 300m off the coast' — an additional, previously-uncited source that agrees with R2/R3's 300 m figure. Not minted as a new reference ID since it duplicates R2/R3's number rather than adding new information."
+    },
+    {
+      "item": "R4 (Borth Community overview) — confirms no reef dimensions are published",
+      "verdict": "confirmed",
+      "evidence": "Re-fetched via WebFetch; page discusses beach nourishment tonnages (25,000 t shingle / 15,000 t sand) but gives no length/width/area/depth figure for the reef structure itself."
+    },
+    {
+      "item": "Distance offshore combined value (350 m, ±50 m) — arithmetic check",
+      "verdict": "confirmed",
+      "evidence": "(400 + 300) / 2 = 350 exactly; half-range = 50 m. Midpoint and uncertainty band are correctly computed from the two conflicting sourced figures."
+    },
+    {
+      "item": "S1 PDF — Phase-2 breakwater cross-section/plan-view numbers (39.1 m / 27.1 m arms, 135°, crest 3.9 m wide at +5.0 m Chart Datum, 6 t primary rock armour, 2:1 slopes) and correctly NOT applied to the reef",
+      "verdict": "confirmed",
+      "evidence": "Re-downloaded the PDF via curl, rendered page 3 to a high-resolution PNG with PyMuPDF, and visually inspected the 'BREAKWATER STRUCTURE TYPICAL CROSS SECTION SCALE 1:100' and 'BREAKWATER STRUCTURE PLAN VIEW SCALE 1:250' drawing directly: every figure (39.1 m / 27.1 m to centre of roundhead, 135° bend, crest 3.9 m, MHWS/crest +5.0 m CD, 6 t primary rock armour, 2:1 side slope, 0.4 m bedding layer) is present exactly as quoted, and it is explicitly labelled as the standard Phase-2 rock breakwater unit, not the multi-purpose reef."
+    },
+    {
+      "item": "Shape topology — 'two adjoining rock mounds, one oval-plan + one hook/crescent-plan' — read from the S1 location diagram",
+      "verdict": "confirmed in part, refuted in part",
+      "evidence": "Direct visual inspection of the rendered S1 page-3 diagram this pass found: (1) CONFIRMED — the diagram's small legend icon beside the 'Multi-Purpose Reef' text does show one oval/racetrack shape plus one separate hook/L-shaped mound, matching the draft's description. (2) REFUTED — the icon actually stamped on the frontage line at the reef's real location is a different, symmetric double-hook/'bowtie' icon that does not match the legend icon's oval+hook pairing. (3) REFUTED — that same bowtie icon is reused identically at 6+ other points on the same diagram (a second, previously-undisclosed cluster still within 'Completed Phase 1 Works', plus 4 more within 'Phase 2 Works' marking generic future Beach Rock Breakwater/groyne locations), confirming it is a generic map-marker symbol, not a literal or scaled footprint drawing. Net: the higher-level 'two separate, adjoining parts, not one continuous berm' fact remains CONFIRMED, but independently of this diagram — via R1's own text ('a double reef') and the project's own BAM Nuttall photo captions ('the northern and southern multi-purpose reef', verified present verbatim in 03_images/web/borth-coastal-defence-reef.json this pass). The specific oval-vs-hook shape assignment and the north/south mound labelling are downgraded from 'medium confidence' to unconfirmed/low confidence, since they rest only on the mismatched, reused icon."
+    },
+    {
+      "item": "Polygon geometry — bbox_m (145 x 73) and area_m2 (3,785) internally consistent with the stated polygons_m coordinates",
+      "verdict": "confirmed",
+      "evidence": "Recomputed independently in Python (shoelace formula + Shapely 2.x): combined bbox x=[-77,68] -> length_alongshore=145.0 m exactly; combined bbox y=[295,368] -> width_crossshore=73 m exactly; Lobe A area=1079.84 m2, Lobe B area=2705.00 m2, total=3784.84 m2 (rounds to the stated 3,785 m2). Both lobes are Shapely-valid (is_valid=True) and do not overlap (intersection area = 0), consistent with the 'two separate mounds' description."
+    },
+    {
+      "item": "max_dimension_m = 162 m",
+      "verdict": "refuted — corrected to 145.1 m",
+      "evidence": "The maximum distance between any two vertices across both polygons, computed exhaustively over all vertex pairs, is 145.09 m (between a Lobe-A vertex near (-77, 335) and a Lobe-B vertex near (68, 330)), not 162 m. 162 m equals sqrt(145^2 + 73^2), the diagonal of the bounding box — but no actual polygon vertex sits at the opposite corners needed to realise that diagonal, since the two lobes are offset rather than diagonally opposed. Fixed in the JSON to 145.1 m."
+    },
+    {
+      "item": "Crest depth — 'not established', genuine unresolved gap",
+      "verdict": "confirmed",
+      "evidence": "This pass additionally searched for a technical paper ('Borth Multi-Purpose reef for Coastal Protection and Amenity', ResearchGate) that might contain a design crest level; the ResearchGate page returned HTTP 403 (paywalled/blocked, consistent with the prior draft's account) and no other accessible source (R1-R4, S1, or further targeted web searches) gives a crest depth or level for the reef itself. The +5.0 m Chart Datum figure remains correctly attributed only to the unrelated Phase-2 breakwater (see above). Gap confirmed genuine, not an oversight."
+    },
+    {
+      "item": "Gemini comparison table — fairness and accuracy of quoted Gemini values",
+      "verdict": "confirmed",
+      "evidence": "Read Gemini's own 02_world_reefs_data/reef_footprints.json (structures[] entry id='borth') and scale_sketch_photo_alignment_audit.md (row 8) directly. Every value attributed to Gemini in our comparison table matches verbatim: distance_offshore_m=200, dimensions 200.0 x 65.0 m, footprint_area_m2=12500.0 (audit table separately gives 9,700 m2 net), crest_depth_m=1.2 with crest_depth_notes 'crest at -1.0m to -1.5m below Mean Low Water Springs (MLWS)', incident_swell_direction_deg '230°-260° (SW to WSW)', shape_typology 'Submerged Rock Berm with Tapered Flanks', and the three sources 'Ceredigion County Council: Borth Coastal Defense Scheme Final Review (2013)', 'BAM Nuttall Project Case Study: Borth Coastal Defense (2012)', 'Coflein National Monuments Record of Wales: Craig y Delyn Reef (2015)' — none of which resolve to any locatable document, matching our card's finding. The audit row marks Borth 'VERIFIED' with 'Discrepancy / Recommendation: None', accurately characterised as such in our file."
+    },
+    {
+      "item": "No number in the derivation table lacks a source or an explicit estimation method",
+      "verdict": "confirmed",
+      "evidence": "Every derivation-table row carries either a source_ref with a quote/URL (distance-offshore rows, shape topology) or an explicit 'method: estimated, not derived from any Borth-specific published figure' / 'not established, no estimate ventured' label (bbox/area/max-dimension row; crest-depth row). No orphan numbers found."
+    }
+  ]
+}

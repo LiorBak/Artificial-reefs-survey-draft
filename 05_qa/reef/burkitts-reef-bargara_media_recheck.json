@@ -1,0 +1,94 @@
+{
+  "slug": "burkitts-reef-bargara",
+  "recheck_date": "2026-09-25",
+  "method": "Images downloaded to scratch temp dir with curl -L -A \"Mozilla/5.0\", viewed directly, classified, then scratch copies deleted. Videos not downloaded; classified from videos.json, uploader titles/descriptions, and already-extracted frame files. No new photo/video search performed.",
+  "images": [
+    {
+      "url": "https://live-production.wcms.abc-cdn.net.au/a450bbac522bee4892941b966b64fea8?impolicy=wcms_crop_resize&cropH=775&cropW=1163&xPos=6&yPos=0&width=862&height=575",
+      "card_depicts": "Greg Redgard's 1980 hand-drawn petition sketch labeling the headland 'BURKITTS REEF'",
+      "what_i_saw": "Hand-drawn diagram, 'PETITION FOR ROCK REMOVAL' dated 7/9/1980, headland explicitly labeled BURKITTS REEF, annotated with 'swell builds up here tripling its size' and 'waves break here with rocks obstructing surfer', rocks/houses/esplanade in plan view",
+      "classification": "structure_visible",
+      "confidence": "high",
+      "basis": "Planning sketch (not a photo) but explicitly names and diagrams the reef and hazard rocks; matches R1 (ABC News) as its origin"
+    },
+    {
+      "url": "https://live-production.wcms.abc-cdn.net.au/a6112bacdcff48646a25f1539549b362?impolicy=wcms_crop_resize&cropH=583&cropW=874&xPos=47&yPos=0&width=862&height=575",
+      "card_depicts": "Kobelco excavator and boulder-marked basalt shoreline during Feb 1997 construction",
+      "what_i_saw": "Yellow Kobelco hydraulic excavator on basalt boulder shoreline; man standing among rocks near waterline; several boulders marked with white paint X's",
+      "classification": "structure_visible",
+      "confidence": "high",
+      "basis": "Directly matches dossier's construction-method description (Kobelco excavator, boulder relocation) [R1][R4]"
+    },
+    {
+      "url": "https://live-production.wcms.abc-cdn.net.au/a315cc055a6a5d93d4c292c7857238d7?impolicy=wcms_crop_resize&cropH=1152&cropW=1728&xPos=160&yPos=0&width=862&height=575",
+      "card_depicts": "Greg Redgard surfing 'Greg's Reef' (Burkitts Reef) at Bargara",
+      "what_i_saw": "Surfer crouched on a surfboard riding a clean peeling green wave; no structure visible (submerged)",
+      "classification": "reef_effect_visible",
+      "confidence": "high",
+      "basis": "ABC source-page caption explicitly places this surfer at Burkitts Reef/Greg's Reef; wave shape matches dossier's described peeling face"
+    },
+    {
+      "url": "https://live-production.wcms.abc-cdn.net.au/8e0f6ec39a17f78926cbc31b5198e6be?impolicy=wcms_crop_resize&cropH=784&cropW=1176&xPos=570&yPos=247&width=862&height=575",
+      "card_depicts": "Surfer at Burkitts Reef, captioned 'The reef remains a popular surfing location in the Bundaberg region'",
+      "card_caption_is_source_of_placement": true,
+      "what_i_saw": "Backlit silhouette of surfer performing a top turn on a breaking wave",
+      "classification": "reef_effect_visible",
+      "confidence": "high",
+      "basis": "Source-page caption explicitly ties image to the reef location and its ongoing surf use"
+    },
+    {
+      "url": "https://live-production.wcms.abc-cdn.net.au/69d978b4bf6d26ef7a724e831db9ef5b?impolicy=wcms_crop_resize&cropH=2336&cropW=3504&xPos=0&yPos=0&width=862&height=575",
+      "card_depicts": "Tahlija Redgard surfing, captioned growing up surfing on Burkitts Reef",
+      "what_i_saw": "Surfer deep inside a large green barrel/tube, wave curling overhead",
+      "classification": "reef_effect_visible",
+      "confidence": "high",
+      "basis": "Source-page caption explicitly attributes this to Burkitts Reef; barrel matches dossier's 'occasionally barrels' outcome description"
+    },
+    {
+      "url": "https://www.google.com/maps/search/?api=1&query=Burkitts+Reef+Bargara+QLD+Australia",
+      "card_depicts": "Map/satellite search for Burkitts Reef, approximate place-name link",
+      "what_i_saw": "Not a photo; a Google Maps text-search URL, not a pinned coordinate, not viewable as an image",
+      "classification": "site_context_only",
+      "confidence": "high",
+      "basis": "Location pointer only; correctly labeled 'map' kind in the card, carries no independent structural evidence"
+    }
+  ],
+  "videos": [
+    {
+      "video_id": "wuJ__7Js-cY",
+      "url": "https://www.youtube.com/watch?v=wuJ__7Js-cY",
+      "title": "Diving Bargara, Burkitt's Reef Marine Park",
+      "classification": "site_only",
+      "best_timestamp_seconds": null,
+      "evidence": "Uploader description covers a GoPro shore dive at 'Burkitts Reef Marine Park' (sandy/rocky bottom, coral bommies, reef fish, per description also sea snakes/moray eels/gummy sharks). No mention of Greg Redgard, the 1997 excavator reshaping, or the surf break. Both extracted frames (0025, 0205) show generic dive-site marine life (a bubble snail on sand; fish over coral) with no link to the artificial/reshaped structure or its surf effect. Already correctly moved to rejected/ subfolder by a prior pass; re-viewed and confirmed correct."
+    },
+    {
+      "video_id": "O3bEn8029XQ",
+      "url": "https://www.youtube.com/watch?v=O3bEn8029XQ",
+      "title": "Surfing at Bargara Beach, QLD",
+      "classification": "site_only",
+      "best_timestamp_seconds": null,
+      "evidence": "Card's own what_it_shows already flags this as generic Bargara Beach surf-tourism footage; title/description/metadata mention only 'Bargara Beach', not Burkitts Reef, Greg Redgard, or the point break; embed_ok:false. Matches Lior's flagged failure pattern (surfing at the beach, not at/about the reef). Already correctly hedged as an unconfirmed lead, not asserted as reef evidence."
+    }
+  ],
+  "frames": [
+    {
+      "path": "03_images/video_frames/burkitts-reef-bargara/rejected/wuJ__7Js-cY_0025.jpg",
+      "shows": "A striped bubble/moon snail on the sandy reef bottom (dive footage)",
+      "classification": "site_only",
+      "note": "Already in rejected/ subfolder from a prior pass; re-viewed and confirmed correctly excluded. No frame files exist outside rejected/ for this reef."
+    },
+    {
+      "path": "03_images/video_frames/burkitts-reef-bargara/rejected/wuJ__7Js-cY_0205.jpg",
+      "shows": "A school of reef fish over hard coral bommies (dive footage)",
+      "classification": "site_only",
+      "note": "Already in rejected/ subfolder from a prior pass; re-viewed and confirmed correctly excluded."
+    }
+  ],
+  "hero_recommendation": {
+    "url": "https://live-production.wcms.abc-cdn.net.au/a6112bacdcff48646a25f1539549b362?impolicy=wcms_crop_resize&cropH=583&cropW=874&xPos=47&yPos=0&width=862&height=575",
+    "reason": "Clearest, most unambiguous structure_visible shot (Kobelco excavator + marked boulders during the Feb 1997 construction) — directly documents the reef-reshaping work this reef's story is about, unlike the wave-riding shots which could be confused with generic surf photography.",
+    "runner_up": "https://live-production.wcms.abc-cdn.net.au/a315cc055a6a5d93d4c292c7857238d7?impolicy=wcms_crop_resize&cropH=1152&cropW=1728&xPos=160&yPos=0&width=862&height=575"
+  },
+  "changes_to_card": "None required. All 5 accepted photos hold up under re-check (each has a direct source-page caption or clear content match to the dossier); the map entry was already honestly labeled as a map link, not a photo. The two indexed videos in videos.json were already correctly hedged/excluded from the card's own (empty) videos[] list, matching the exact 'surfing at the beach, not the reef' failure pattern Lior flagged for other reefs. Both extracted video frames were already correctly rejected in a prior pass. This is a confirmation pass, not a correction."
+}

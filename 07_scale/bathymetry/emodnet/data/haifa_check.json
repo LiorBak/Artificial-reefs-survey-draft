@@ -1,0 +1,108 @@
+{
+ "Haifa Bay shore (32.80N 35.00E)": {
+  "status": 200,
+  "body": {
+   "avg": 209.65764,
+   "elementarySurfaces": 1,
+   "interpolationType": false,
+   "smoothed": 194.3339,
+   "smoothedOffset": 15.323746,
+   "reference": {}
+  },
+  "erddap": [
+   "32.79947916665218,34.999479166643184,NaN,NaN,NaN,NaN",
+   "32.79947916665218,35.00052083330985,NaN,NaN,NaN,NaN"
+  ]
+ },
+ "off Haifa 1 km (32.83N 34.96E)": {
+  "status": 200,
+  "body": {
+   "avg": -14.9,
+   "elementarySurfaces": 1,
+   "interpolationType": true,
+   "smoothed": -3.8374996,
+   "smoothedOffset": 11.0625,
+   "reference": {
+    "organisation_id": 3005,
+    "identifier": "JOINT_ISRAEL_NBS_QUARTMIN_GEO",
+    "type": "DTM",
+    "metadata_url": "https://sextant.ifremer.fr/record/SDN_CPRD_3005_JOINT_ISRAEL_NBS_QUARTMIN_GEO"
+   }
+  },
+  "erddap": [
+   "32.82968749998549,34.959895833309886,-14.9,1,1,19419",
+   "32.82968749998549,34.96093749997655,-4.9765625,3,1,17267"
+  ]
+ },
+ "off Haifa 10 km (32.83N 34.85E)": {
+  "status": 200,
+  "body": {
+   "min": -122.82294,
+   "max": -122.82294,
+   "avg": -122.82294,
+   "stdev": 0.0,
+   "elementarySurfaces": 1,
+   "interpolationType": false,
+   "smoothed": -123.23723,
+   "smoothedOffset": 0.41429138,
+   "reference": {
+    "organisation_id": 963,
+    "identifier": "IOLR-GEO-EEZ-2012-1",
+    "type": "CDI",
+    "metadata_url": "https://cdi-bathymetry.seadatanet.org/report/edmo/963/IOLR-GEO-EEZ-2012-1"
+   }
+  },
+  "erddap": [
+   "32.82968749998549,34.84947916664332,-130.05971,1,0,19419",
+   "32.82968749998549,34.850520833309986,-123.83277,1,0,19419"
+  ]
+ },
+ "nearest_HR": [
+  {
+   "id": "Crete0001",
+   "res": 64,
+   "dist_km": 899.6,
+   "bbox": [
+    25.72,
+    35.24,
+    25.77,
+    35.33
+   ]
+  },
+  {
+   "id": "Crete0001",
+   "res": 64,
+   "dist_km": 900.8,
+   "bbox": [
+    25.76,
+    35.25,
+    25.76,
+    35.25
+   ]
+  },
+  {
+   "id": "Crete0001",
+   "res": 64,
+   "dist_km": 901.0,
+   "bbox": [
+    25.75,
+    35.26,
+    25.76,
+    35.27
+   ]
+  }
+ ],
+ "QI_2024_off_Haifa_1km": [
+  {
+   "release": "2024",
+   "edmo_id": 963,
+   "identifier": "IOLR-GEO-EEZ-2012-1",
+   "type": "CDI",
+   "combined": 61.53846,
+   "horizontal": 3,
+   "vertical": 2,
+   "age": 1,
+   "purpose": 2
+  }
+ ]
+}

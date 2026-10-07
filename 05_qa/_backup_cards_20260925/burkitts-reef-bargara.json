@@ -1,0 +1,310 @@
+{
+  "slug": "burkitts-reef-bargara",
+  "kind": "reef",
+  "verified_on": "2026-09-24",
+  "name": "Burkitts Reef (\"Greg's Reef\")",
+  "place": "Bargara, near Bundaberg, Queensland",
+  "country": "Australia",
+  "lat": 24.8205,
+  "lon": 152.4625,
+  "year": "Construction Feb 1997 (2 days on-reef excavator work); first council application 1982 [R4][R8][R1][R6]",
+  "type": "Existing natural basalt boulder headland reef, reshaped in place — boulders broken down/relocated with a rented excavator, not a new engineered structure [R1][R3][R4][R6][R8]",
+  "purpose": "Surfing only — remove/relocate hazardous boulders and old rail-track debris that made the point break dangerous and largely unsurfable [R1][R3][R6]",
+  "size": "~300 m3 of rock moved; at least 12 large basalt boulders relocated/broken down; ~2.5 m local tide swing exploited to work at low tide [R4][R8]",
+  "cost": "~AUD $10,000 (excavator rental) [R1][R4][R8]",
+  "cost_usd_approx": "~USD $6,500-7,500 (rough 1997 FX estimate, not sourced from an FX reference)",
+  "financed_by": "Greg Redgard personally, who mortgaged his house; approvals only (no funding) from the Beach Protection Authority of Queensland and Burnett Shire Council [R1][R6]",
+  "motivation": "One local surfer's grassroots push, not a council/tourism/erosion program: Greg Redgard, a Bargara Boardriders Association member, first applied in 1982 and spent over a decade lobbying before approval landed in 1997 [R1][R3][R4][R6][R8]",
+  "designer": "Greg Redgard, a local sugarcane cutter with no engineering background or formal reef modelling/scale testing [R1][R4][R6]",
+  "contractor": "None named as a firm — Redgard and his mates did the work themselves using a rented Kobelco hydraulic excavator [R1][R4][R6]",
+  "status_now": "Still standing and still surfed as of the most recent (2024) coverage, known locally as \"Greg's Reef\"; no reported repair, damage, or removal in nearly three decades [R1][R5]",
+  "verdict": "worked",
+  "hover_text": "A Bargara sugarcane cutter spent AUD $10,000 of his own money (mortgaging his house) to have an excavator reshape a natural basalt reef in 1997, after a 15-year fight for approval — surfable days rose from a handful a year to about 30, and the reef still works, unrepaired, almost three decades later [R1][R4][R6][R8].",
+  "design_as_planned": "No formal engineering design, wave model, or scale test — Redgard designed and built it by instinct, telling ABC \"Not rocket science, really, when you think about it.\" The plan was simply to break down/relocate the boulders and discarded railway-track debris blocking the takeoff zone so a wave could \"break over it,\" turning a hazard-strewn stretch into a rideable right-hand point break. No modelled promises about wave height, beach width, or ecological effect were made [R1][R5][R6][R8].",
+  "as_built_vs_design": "Because there was no formal design, sources report little planned-vs-built gap: construction (completed February 1997) matched Redgard's simple intent. A Kobelco hydraulic excavator worked at low tide (using the ~2.5 m local tide range) to break down and reposition at least 12 large boulders, clearing a deep gutter that had split the wave into two disconnected sections, with gaps filled partly by hand — reportedly including carrying bricks out on a surfboard. Construction duration is reported two ways: R4/R8 describe the on-reef excavator work as \"two days (~8 hours),\" while ABC News (R1) describes the whole job as completed \"within weeks\" of approval — a genuine, unresolved cross-source discrepancy the dossier flags rather than silently resolving. Some of the large rocks removed from the takeoff zone were relocated to the shoreline rather than discarded, where locals still use them for fishing [R1][R4][R5][R6][R8].",
+  "outcome": "Surfable days rose from \"a handful\" per year before the works to roughly 30 days a year afterward, with overhead (4+ ft) conditions on the order of 4 days a year, per researcher Andrew Pitt (SurfingRamps.com.au), cited independently via Raised Water Research and a Swellnet forum comment. Wave face height is reported at 2-6 ft (0.5-2 m), period 7-10 seconds, described as a consistent peeling face that occasionally barrels. Best swell window is November-April. The modification has held for nearly three decades with no reported maintenance, storm damage, or re-work. No coastal-protection outcome or ecological impact study was found (not a stated goal) [R1][R3][R4][R6][R8].",
+  "why_worked_or_failed": "By the consensus of every source found, this is treated as a rare unambiguous success among artificial/enhanced surf reefs: (1) it reshaped an existing natural reef rather than importing new structure, unlike sandbag/geotextile reefs that must create a wholly new bathymetric feature; (2) it was a simple, low-risk intervention — removing hazards and gap-filling rather than engineering a specific wave shape, so there was little to go wrong structurally, unlike geotextile-bag reefs whose fabric tore, shifted, or sank; (3) a large natural tide range (~2.5 m) made the boulders workable at low tide with ordinary excavation equipment, without marine plant or diving contractors; (4) rock/boulder material is inherently more durable than sand-filled geotextile bags. No source reports a failure mode for this reef [R3][R4].",
+  "unexpected_results": "Boulders cleared from the takeoff zone were relocated to the shoreline, where locals now use them as a fishing spot — an unplanned secondary benefit. The project was picked up by TIME magazine (per ABC) as the \"world's first surf enhancement project\" and resurfaced in Australian national media in January 2024 as a good-news/DIY-hero story. The same reef is independently marketed as a scuba/snorkel attraction (\"Burkitts Reef Dive Site\"), an example of one enhanced natural reef serving two recreational audiences. Redgard's daughter Tahlija, who grew up surfing the reef, became a professional surfer and credits it directly. No litigation, safety incident, localism/crowding conflict, or negative unexpected consequence was found in any source [R1][R5][R6][R10][R13].",
+  "could_be_better": "None of the sources reviewed (including comparison pages that do critique other reefs' bag sizes, crest depths, and funding models) offer a specific critique of Burkitts Reef's execution — it is consistently used as the positive contrast case rather than a subject of critique. No critical surfer commentary was found. Sources suggest very little \"could have been done better\": if anything, some note it did not create \"a world-class surf spot,\" only a modest, locally valued improvement — offered as a realistic-expectations lesson rather than a criticism [R3][R4][R8].",
+  "relevance_to_israel": "Bargara's ~2.5 m tide swing is far larger than the Israeli Mediterranean coast's tide range (well under 0.5 m, micro-tidal) — Burkitts' construction method assumed tidal exposure that a Haifa-area site would not get, so similar reshaping there would likely need different plant (barge/crane, diver-assisted work) rather than simple low-tide excavator access. Bargara's 2-6 ft, 7-10 s point-break wave comes from a defined Coral Sea/Pacific swell season (Nov-Apr); Israeli Mediterranean wave climate is generally smaller and more wind-swell dominated with shorter period. The core transferable lesson is procedural/economic rather than technical: a modest, self-funded, reshape-what's-already-there approach (relocating existing boulders rather than importing new engineered material) achieved a multi-decade, apparently maintenance-free improvement for roughly AUD $10,000, in contrast to far more expensive professionally engineered geotextile-bag reefs elsewhere that have frequently failed or required costly renewal. For any Haifa/Israel natural reef or rock outcrop with existing hazards, a similarly minimal clear/reshape approach is the direct analogy worth testing, if geology and permitting allow [R4][R1].",
+  "reviews": [
+    {
+      "who": "Greg Redgard",
+      "role": "builder, Bargara Boardriders Association member, sugarcane cutter",
+      "quote_or_summary": "You really couldn't surf it, because you'd take off, go for about 2 or 3 metres and you would just run into rocks.",
+      "outlet": "ABC News",
+      "date": "2024-01-28",
+      "url": "https://www.abc.net.au/news/2024-01-28/diy-surf-break-built-by-mates-at-burkitts-reef-bargara/103387450"
+    },
+    {
+      "who": "Greg Redgard",
+      "role": "builder",
+      "quote_or_summary": "The wave could break over it. Not rocket science, really, when you think about it.",
+      "outlet": "ABC Radio, \"The Bright Side\"",
+      "date": "2024",
+      "url": "https://www.abc.net.au/listen/programs/the-bright-side/mates-surf-break-still-going-strong/103068400"
+    },
+    {
+      "who": "Tahlija Redgard",
+      "role": "Greg's daughter, professional surfer",
+      "quote_or_summary": "He took Burkitts Reef, redefined what was possible and made what was once unrideable an absolute playground.",
+      "outlet": "ABC News",
+      "date": "2024-01-28",
+      "url": "https://www.abc.net.au/news/2024-01-28/diy-surf-break-built-by-mates-at-burkitts-reef-bargara/103387450"
+    },
+    {
+      "who": "Andrew Pitt",
+      "role": "surf-break researcher, SurfingRamps.com.au",
+      "quote_or_summary": "Assessed the reef's before/after performance: surfable days rose from \"a handful... every year\" to about 30/year, with the wave changing from a hazard-split break into a smooth peeling lip with some barrel action.",
+      "outlet": "Raised Water Research spot page / Swellnet forum comment",
+      "date": "2026 (page)",
+      "url": "https://raisedwaterresearch.com/spot/artificial-reef/australia/queensland/burkitts-reef/"
+    },
+    {
+      "who": "\"truebluebasher\"",
+      "role": "Swellnet forum user",
+      "quote_or_summary": "Prior wave broke a few days/yr, now 30 days/yr plus overhead 4 days/yr — explicitly contrasted with failed professionally-designed reefs.",
+      "outlet": "Swellnet forum comment",
+      "date": "2022-06-02",
+      "url": "https://www.swellnet.com/comments/get/540429"
+    },
+    {
+      "who": "ABC Sport (@abcsport, official account)",
+      "role": "news outlet social account",
+      "quote_or_summary": "The surf break of Burkitts Reef at Bargara, in Queensland's Bundaberg region, was previously obstructed by large rocks. Then Greg Redgard and his mates turned the 'unrideable' beach into a surfers' playground.",
+      "outlet": "X (Twitter)",
+      "date": "2024-01-27",
+      "url": "https://x.com/abcsport/status/1751370066221051992"
+    }
+  ],
+  "images": [
+    {
+      "url": "https://live-production.wcms.abc-cdn.net.au/a450bbac522bee4892941b966b64fea8?impolicy=wcms_crop_resize&cropH=775&cropW=1163&xPos=6&yPos=0&width=862&height=575",
+      "source_page": "https://www.abc.net.au/news/2024-01-28/diy-surf-break-built-by-mates-at-burkitts-reef-bargara/103387450",
+      "credit": "Supplied: Greg Redgard, via ABC News",
+      "license": "link-only (news photo, ABC News/Supplied — no reuse license found; link and credit only)",
+      "depicts": "Greg Redgard's original hand-drawn 1980 council submission sketch, headed 'PETITION FOR ROCK REMOVAL,' labeling the headland 'BURKITTS REEF' [R1]",
+      "kind": "photo",
+      "hotlink_ok": true
+    },
+    {
+      "url": "https://live-production.wcms.abc-cdn.net.au/a6112bacdcff48646a25f1539549b362?impolicy=wcms_crop_resize&cropH=583&cropW=874&xPos=47&yPos=0&width=862&height=575",
+      "source_page": "https://www.abc.net.au/news/2024-01-28/diy-surf-break-built-by-mates-at-burkitts-reef-bargara/103387450",
+      "credit": "Supplied: Greg Redgard, via ABC News",
+      "license": "link-only (news photo, ABC News/Supplied — no reuse license found; link and credit only)",
+      "depicts": "Kobelco hydraulic excavator and boulder-marked basalt shoreline during the February 1997 construction [R1]",
+      "kind": "photo",
+      "hotlink_ok": true
+    },
+    {
+      "url": "https://live-production.wcms.abc-cdn.net.au/a315cc055a6a5d93d4c292c7857238d7?impolicy=wcms_crop_resize&cropH=1152&cropW=1728&xPos=160&yPos=0&width=862&height=575",
+      "source_page": "https://www.abc.net.au/news/2024-01-28/diy-surf-break-built-by-mates-at-burkitts-reef-bargara/103387450",
+      "credit": "Supplied: Jimmy Scaboo, via ABC News",
+      "license": "link-only (news photo, ABC News/Supplied — no reuse license found; link and credit only)",
+      "depicts": "Greg Redgard surfing 'Greg's Reef' (Burkitts Reef) at Bargara [R1]",
+      "kind": "photo",
+      "hotlink_ok": true
+    },
+    {
+      "url": "https://live-production.wcms.abc-cdn.net.au/8e0f6ec39a17f78926cbc31b5198e6be?impolicy=wcms_crop_resize&cropH=784&cropW=1176&xPos=570&yPos=247&width=862&height=575",
+      "source_page": "https://www.abc.net.au/news/2024-01-28/diy-surf-break-built-by-mates-at-burkitts-reef-bargara/103387450",
+      "credit": "Supplied: Jimmy Scaboo, via ABC News",
+      "license": "link-only (news photo, ABC News/Supplied — no reuse license found; link and credit only)",
+      "depicts": "A surfer riding a wave at Burkitts Reef, captioned 'The reef remains a popular surfing location in the Bundaberg region' [R1]",
+      "kind": "photo",
+      "hotlink_ok": true
+    },
+    {
+      "url": "https://live-production.wcms.abc-cdn.net.au/69d978b4bf6d26ef7a724e831db9ef5b?impolicy=wcms_crop_resize&cropH=2336&cropW=3504&xPos=0&yPos=0&width=862&height=575",
+      "source_page": "https://www.abc.net.au/news/2024-01-28/diy-surf-break-built-by-mates-at-burkitts-reef-bargara/103387450",
+      "credit": "Supplied: Tahlija Redgard, via ABC News",
+      "license": "link-only (news photo, ABC News/Supplied — no reuse license found; link and credit only)",
+      "depicts": "Tahlija Redgard (Greg's daughter, pro surfer) surfing, captioned 'After growing up surfing on Burkitts Reef, Greg's daughter Tahlija Redgard surfs the pro circuit' [R1]",
+      "kind": "photo",
+      "hotlink_ok": true
+    },
+    {
+      "url": "https://www.google.com/maps/search/?api=1&query=Burkitts+Reef+Bargara+QLD+Australia",
+      "source_page": "https://www.google.com/maps/search/?api=1&query=Burkitts+Reef+Bargara+QLD+Australia",
+      "credit": "Google Maps",
+      "license": "Google Maps terms of use (link only, not downloaded)",
+      "depicts": "Map/satellite search for Burkitts Reef at the southern end of Bargara Beach off Burkitt Street, Bargara, QLD — approximate place-name link, not a pinned exact-coordinate marker",
+      "kind": "map",
+      "hotlink_ok": true
+    }
+  ],
+  "images_rejected": [],
+  "videos": [],
+  "lior_images": [],
+  "references": [
+    {
+      "id": "R1",
+      "citation": "ABC News (journalists Sarah Howells, Danielle O'Neal) (2024-01-28). \"How a sugarcane cutter and his mates created a world-first DIY surf break at Burkitts Reef, Bargara.\"",
+      "url": "https://www.abc.net.au/news/2024-01-28/diy-surf-break-built-by-mates-at-burkitts-reef-bargara/103387450",
+      "accessed": "2026-09-24",
+      "supports": "builder identity, 1997 approval after decade-plus of applications, mortgage financing, construction method, quotes, TIME magazine feature, daughter Tahlija quote, current status"
+    },
+    {
+      "id": "R2",
+      "citation": "Wikipedia (2026). \"Multi-purpose reef.\"",
+      "url": "https://en.wikipedia.org/wiki/Multi-purpose_reef",
+      "accessed": "2026-09-24",
+      "supports": "1997 date, 'shifting boulders' description, comparison context with Cable Station Reef and Narrowneck"
+    },
+    {
+      "id": "R3",
+      "citation": "Coastal Management / ICM (Angus Jackson) (2026). \"Building Artificial Surf Reefs: Worldwide Lessons & Applications.\"",
+      "url": "https://www.coastalmanagement.com.au/artificial-surf-reefs",
+      "accessed": "2026-09-24",
+      "supports": "1997 date, basalt boulder material, excavator-at-low-tide method, ~300 m3 volume, surf-only objective, wave description"
+    },
+    {
+      "id": "R4",
+      "citation": "Raised Water Research (2026). \"Burkitts Reef\" spot page.",
+      "url": "https://raisedwaterresearch.com/spot/artificial-reef/australia/queensland/burkitts-reef/",
+      "accessed": "2026-09-24",
+      "supports": "1982 initial application / Feb 1997 completion timeline, ~12 boulders / ~300 m3, ~AUD $10,000 cost, wave face height/period, before/after surfable-days figures, 2.5 m tide swing, designer, Kobelco excavator brand, approving authorities"
+    },
+    {
+      "id": "R5",
+      "citation": "ABC Radio, \"The Bright Side\" (2024). \"Mates' surf break still going strong.\"",
+      "url": "https://www.abc.net.au/listen/programs/the-bright-side/mates-surf-break-still-going-strong/103068400",
+      "accessed": "2026-09-24",
+      "supports": "'Greg's Reef' nickname, quotes, boulders relocated to shoreline now used for fishing, Andrew Pitt evaluation, Redgard still surfing at 61"
+    },
+    {
+      "id": "R6",
+      "citation": "Yahoo Lifestyle (2026, syndicated). \"How a Motivated Surfer Created an Epic New Surf Break in Australia.\"",
+      "url": "https://www.yahoo.com/lifestyle/motivated-surfer-created-epic-surf-210000398.html",
+      "accessed": "2026-09-24",
+      "supports": "'unrideable' quote, decade-plus of council persuasion, ~AUD $10,000 cost, rented 30-tonne excavator, bricks carried out on a surfboard"
+    },
+    {
+      "id": "R7",
+      "citation": "Ground News (2026). \"The surfer who mortgaged his house to create a public surf break\" (aggregator page).",
+      "url": "https://ground.news/article/the-surfer-who-mortgaged-his-house-to-create-a-public-surf-break",
+      "accessed": "2026-09-24",
+      "supports": "confirms ABC News as originating report; coverage-breadth context"
+    },
+    {
+      "id": "R8",
+      "citation": "Swellnet — comment thread including user 'truebluebasher' (posted 2022-06-02).",
+      "url": "https://www.swellnet.com/comments/get/540429",
+      "accessed": "2026-09-24",
+      "supports": "1982 Bargara Boardriders proposal, $10,000 cost, 1997 completion, before/after performance figures, contrast with failed professionally-designed reefs"
+    },
+    {
+      "id": "R9",
+      "citation": "Swellnet Forums — thread 'An actual functioning man-made reef. Burkitts Reef, Bargara,' started by user Dicky Roberts. (BLOCKED: HTTP 403, title/framing only)",
+      "url": "https://www.swellnet.com/forums/surfing-reef-designs/577692",
+      "accessed": "2026-09-24",
+      "supports": "existence of a positive surfer-community discussion thread about the reef"
+    },
+    {
+      "id": "R10",
+      "citation": "DivePlanit (2026). \"From macro to megafauna: shore diving the Bundaberg coast.\"",
+      "url": "https://www.diveplanit.com/diving/dive-bundaberg/",
+      "accessed": "2026-09-24",
+      "supports": "Burkitt's Reef dive-site description, depth to ~9 m, coral gardens/small bommies, marine-life list"
+    },
+    {
+      "id": "R11",
+      "citation": "Wikipedia (2026). \"Bargara, Queensland.\"",
+      "url": "https://en.wikipedia.org/wiki/Bargara,_Queensland",
+      "accessed": "2026-09-24",
+      "supports": "Bargara town coordinates, Burkitt Street place-name near the boat ramp"
+    },
+    {
+      "id": "R13",
+      "citation": "X (Twitter), @abcsport (2024-01-27). Post with photo and summary of the ABC News story. (BLOCKED: HTTP 402/paywall)",
+      "url": "https://x.com/abcsport/status/1751370066221051992",
+      "accessed": "2026-09-24",
+      "supports": "journalist byline, restates core facts, image lead — quote retained via R14 corroboration"
+    },
+    {
+      "id": "R14",
+      "citation": "Instagram, @abcbrisbane, post C2n6UcWvcGV (2024-01-27/28).",
+      "url": "https://www.instagram.com/abcbrisbane/p/C2n6UcWvcGV/",
+      "accessed": "2026-09-24",
+      "supports": "image/video lead for the same ABC News story; corroborates R13's quote text"
+    },
+    {
+      "id": "R15",
+      "citation": "Queensland.com (2026). \"Burkitts Reef Dive Site\" attraction listing.",
+      "url": "https://www.queensland.com/au/en/things-to-do/attractions/p-56b265852cbcbe7073adf59d-burkitts-reef-dive-site",
+      "accessed": "2026-09-24",
+      "supports": "image lead (page title/existence only)"
+    },
+    {
+      "id": "R16",
+      "citation": "YouTube (2026). \"Diving Bargara, Burkitt's Reef Marine Park.\"",
+      "url": "https://www.youtube.com/watch?v=wuJ__7Js-cY",
+      "accessed": "2026-09-24",
+      "supports": "video lead (dive footage of the same reef)"
+    },
+    {
+      "id": "R17",
+      "citation": "YouTube (2026). \"Surfing at Bargara Beach, QLD.\"",
+      "url": "https://www.youtube.com/watch?v=O3bEn8029XQ",
+      "accessed": "2026-09-24",
+      "supports": "video lead (general Bargara surf content, not confirmed to show Burkitts Reef specifically)"
+    }
+  ],
+  "blocked_sources": [
+    "R9 - https://www.swellnet.com/forums/surfing-reef-designs/577692 - HTTP 403",
+    "R13 - https://x.com/abcsport/status/1751370066221051992 - HTTP 402"
+  ],
+  "gaps": [
+    "Precise reef coordinates (lat/lon used here is Bargara town centre, not the reef itself) — not found",
+    "Construction duration conflict: '2 days/~8 hours' (R4/R8) vs 'within weeks' (R1) — left as an open discrepancy, not resolved",
+    "1982-vs-'over a decade' framing conflict between R4/R8 (specific year) and R1/R6 (vaguer duration) — left as an open discrepancy",
+    "No ecological impact study found for the 1997 boulder-moving's effect on the reef",
+    "No coastal-protection outcome data (not a stated goal)",
+    "Jackson and Corbett's 2007 'Review of Existing Multi-Functional Artificial Reefs' could not be fetched directly (access blocked)"
+  ],
+  "videos_rejected": [
+    {
+      "url": "https://www.youtube.com/watch?v=wuJ__7Js-cY",
+      "platform": "youtube",
+      "video_id": "wuJ__7Js-cY",
+      "title": "Diving Bargara, Burkitt's Reef Marine Park",
+      "channel": "Black Beard Diving",
+      "duration_seconds": 286,
+      "date": "2021-03-27",
+      "embed_ok": true,
+      "best_timestamp_seconds": 205,
+      "what_it_shows": "GoPro-style shore dive footage filmed at Burkitts Reef Marine Park off the Bargara esplanade: sandy/rocky reef bottom, hard coral bommies, reef fish schools, and (per the uploader's description) sea snakes, moray eels and small gummy sharks [R10][R16]",
+      "transcript_path": null,
+      "key_quotes": [],
+      "frames": [
+        {
+          "path": "03_images/video_frames/burkitts-reef-bargara/rejected/wuJ__7Js-cY_0025.jpg",
+          "timestamp": "00:25",
+          "caption": "A striped bubble/moon snail (Hydatina sp. or similar) on the sandy reef bottom at Burkitts Reef Marine Park."
+        },
+        {
+          "path": "03_images/video_frames/burkitts-reef-bargara/rejected/wuJ__7Js-cY_0205.jpg",
+          "timestamp": "02:05",
+          "caption": "A school of reef fish over hard coral bommies and coral gardens at Burkitts Reef, matching the dossier's description of the dive site [R10]."
+        }
+      ],
+      "reason": "Lior 2026-09-25: video does not show the artificial reef"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=O3bEn8029XQ",
+      "platform": "youtube",
+      "video_id": "O3bEn8029XQ",
+      "title": "Surfing at Bargara Beach, QLD",
+      "channel": "Campr",
+      "duration_seconds": 79,
+      "date": "2018-02-20",
+      "embed_ok": false,
+      "best_timestamp_seconds": null,
+      "what_it_shows": "General tourism/promo footage of surfing conditions at Bargara Beach. NOT confirmed to show Burkitts Reef specifically — title, description and metadata only say 'Bargara Beach' with no mention of Burkitts Reef, Greg Redgard, or the reshaped point break. Downgraded to uncertain/link-only per the default-to-uncertain rule [R17]",
+      "transcript_path": null,
+      "key_quotes": [],
+      "frames": [],
+      "reason": "Lior 2026-09-25: video does not show the artificial reef"
+    }
+  ]
+}

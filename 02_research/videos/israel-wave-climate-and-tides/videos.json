@@ -1,0 +1,53 @@
+[
+  {
+    "url": "https://www.youtube.com/watch?v=rZ7CNaKz9Ns",
+    "platform": "youtube",
+    "title": "BackDoor, Bat Galim Haifa, Israeli Surfing",
+    "channel": "Zeev D",
+    "date": "2015-01-04",
+    "duration_seconds": 52,
+    "what_it_shows": "Short black-and-white clip of a surfer riding a wave at 'Backdoor,' the reef break at Bat Galim, Haifa, that SurferToday describes as working well with the Med's most powerful swells and offshore winds in winter — a direct visual of the low-swell, wind-swell-dominated conditions this dossier's wave-climate figures describe.",
+    "embed_ok": true,
+    "transcript_path": null,
+    "key_quotes": [],
+    "frames": [
+      {
+        "path": "03_images/video_frames/israel-wave-climate-and-tides/rZ7CNaKz9Ns_0017.jpg",
+        "timestamp": "00:17",
+        "caption": "Surfer dropping into a small, steep wave at Backdoor, Bat Galim, Haifa, with a jetty/breakwater visible at the right edge of frame — consistent with the reef-break description in the dossier's surf-spot sources."
+      }
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=DhUt9TGKnEg",
+    "platform": "youtube",
+    "title": "Israel Surfers 2022 Haifa Bat Galim Beach",
+    "channel": "MyLife Film Production - Home Studio",
+    "date": "2022-01-29",
+    "duration_seconds": 146,
+    "what_it_shows": "Colour footage at Bat Galim beach, Haifa, showing a kite/windsurfer rigging up on the sand with breaking waves and the rocky breakwater in the foreground and anchored ships of Haifa Bay visible on the horizon — grounds the dossier's WNW-NW wave-direction and modest-height (0.5-1.0 m mean SWH) figures in an actual on-site view, including the wind-driven chop typical of this coast.",
+    "embed_ok": true,
+    "transcript_path": null,
+    "key_quotes": [],
+    "frames": [
+      {
+        "path": "03_images/video_frames/israel-wave-climate-and-tides/DhUt9TGKnEg_0042.jpg",
+        "timestamp": "00:42",
+        "caption": "Kite/windsurfer kneeling on the sand at Bat Galim beach, Haifa, facing breaking waves with rocky breakwater to the right and Haifa Bay's anchored ships visible offshore."
+      }
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=M5A2xbuh4AM",
+    "platform": "youtube",
+    "title": "Wave surfing in Bat Galim Haifa Israel by AQUAZOOM",
+    "channel": "Aquazoom Amir Weizman",
+    "date": "unknown (yt-dlp could not extract full metadata)",
+    "duration_seconds": 0,
+    "what_it_shows": "Per its title and oEmbed metadata (confirmed via YouTube oEmbed API — https://www.youtube.com/oembed?url=...&format=json), this shows wave surfing at Bat Galim, Haifa. yt-dlp could not download it ('This video is not available' via the extractor) so it is recorded as an image entry (thumbnail) only.",
+    "embed_ok": false,
+    "transcript_path": null,
+    "key_quotes": [],
+    "frames": []
+  }
+]

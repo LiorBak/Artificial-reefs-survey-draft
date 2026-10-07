@@ -1,0 +1,87 @@
+{
+  "slug": "boscombe-surf-reef",
+  "recheck_date": "2026-09-25",
+  "method": "Downloaded each accepted image to a scratch temp dir with curl -A Mozilla/5.0, viewed it directly, classified against the dossier's structure description (submerged geotextile sand-bag reef, ~1 ha, 55 bags, 220-240m offshore of the pier/seawall, sometimes exposed at low tide, damaged/torn bags after 2011 propeller strike), and cross-checked ambiguous cases against the source page caption. Scratch copies deleted after viewing. Videos were not downloaded: classified from videos.json, the two saved .txt transcripts (full text read), and yt-dlp --dump-single-json metadata (title+description) for the two untranscribed videos. Frames were viewed directly as image files (not the rejected/ subfolder, which is empty of relevance here).",
+  "images": [
+    {
+      "url": "https://wavelengthmag.com/wp-content/uploads/2016/11/bournemouth-surf-reef.jpg",
+      "classification": "structure_visible",
+      "confidence": "high",
+      "evidence": "Viewed image: large sand-covered mound exposed above the waterline behind a beach safety fence, with the site's permanent yellow/blue 'Surf reef' safety sign in the foreground listing flag-colour and coastguard rules. Matches dossier's description of the reef mound exposed at extreme low tide; site-specific signage confirms location.",
+      "reference": "Card field images[0]; dossier 'size'/'type' fields (sand-filled geotextile mound); source page https://wavelengthmag.com/last-bid-rescue-bournemouths-reef-sinks/"
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Boscombe-Arial-1024x683.jpg",
+      "classification": "structure_visible",
+      "confidence": "high",
+      "evidence": "Viewed image: aerial shot of Boscombe Pier and seafront with a distinct dark rectangular submerged shape visible offshore in the turquoise water, matching the dossier's stated ~1 hectare footprint positioned ~220-240m from the seawall/pier. The rectangular outline is consistent with the geotextile-bag mound seen through shallow water, not just a shadow or kelp patch (regular straight edges, positioned at the correct offshore distance from the pier).",
+      "reference": "Card field images[1]; dossier 'size' field (~1 ha footprint, 220m from seawall, 240m east of pier); source page https://raisedwaterresearch.com/spot/artificial-reef/europe/united-kingdom/boscombe-surf-reef/ (captioned 'Boscombe Arial')"
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Boscombe-Exposed-1024x683.jpg",
+      "classification": "structure_visible",
+      "confidence": "high",
+      "evidence": "Viewed image: close aerial/drone shot directly over the water showing two parallel rows of dark, rounded, sausage-like humps breaking the surface with whitewater around them - an unmistakable match to the dossier's description of individual geotextile sand-filled bags (~2-3m high, ~60m long) forming the reef, visible at a tide/swell state that exposes their tops.",
+      "reference": "Card field images[2]; dossier 'type'/'size' fields (55 geotextile containers, 2-3m high, 60m long); source page https://raisedwaterresearch.com/spot/artificial-reef/europe/united-kingdom/boscombe-surf-reef/ (captioned 'Boscombe Exposed')"
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Boscombe-Propeller-Damage-1024x768.jpg",
+      "classification": "structure_visible",
+      "confidence": "high",
+      "evidence": "Viewed image: close-up, fisheye GoPro-style shot of a diver's/snorkeler's gloved hand touching a torn, frayed edge of light-tan geotextile fabric sticking up out of shallow water, with a darker fouled/algae-covered bag surface underneath. This directly matches the dossier's documented 2011 boat-propeller strike and torn-fabric damage narrative (R1, R9).",
+      "reference": "Card field images[3]; dossier 'outcome'/'why_worked_or_failed' fields (propeller strike, torn container, cascading shape change); source page https://raisedwaterresearch.com/spot/artificial-reef/europe/united-kingdom/boscombe-surf-reef/ (captioned 'Boscombe Propeller Damage')"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Boscombe_Surf_Reef.jpg",
+      "classification": "structure_visible",
+      "confidence": "high",
+      "evidence": "Viewed image: simple flat-colour cross-section diagram (not a photo) showing a row of grey cylindrical bags stacked into an angled ramp on the seabed, with blue wave symbols breaking over it - a schematic match to the dossier's 'design_as_planned' description of a submerged angled ramp of stacked geotextile containers.",
+      "reference": "Card field images[4]; dossier 'design_as_planned' field (angled ramp of stacked containers); source page https://commons.wikimedia.org/wiki/File:Boscombe_Surf_Reef.jpg"
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=F0PslWKkbf4",
+      "classification": "about_the_reef",
+      "best_timestamp_seconds": 83,
+      "evidence": "Full transcript read (F0PslWKkbf4.txt). Extensive, detailed narration of the reef's construction method and physical form: 'The Reef is made from a base layer a top layer and a ramp which points seawards... a webbing base and huge geotextile bags... the largest bags were 70m long 2m high and 6m wide' and the wave-mechanism quote at 02:59 'it does not work like a wave machine... it mimics a natural reef by acting as a ramp, pushing existing waves upwards.' This is squarely about the reef structure and mechanism, not just the beach."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=HeiYPXt85LM",
+      "classification": "mentions_reef_briefly",
+      "best_timestamp_seconds": 128,
+      "evidence": "Full transcript read (HeiYPXt85LM.txt). This video is an interview piece about Boscombe's broader seafront regeneration (rundown history, Overstrand development, beach pods, pier refit, local business impact) with the reef repeatedly named as the funding/PR catalyst - e.g. at ~02:08 'it was a catalyst for all of this investment' - but it never describes or shows the reef's structure, performance, or location; it is about the town, not the structure. Reclassified from the card's implicit 'about the reef' framing down to 'mentions_reef_briefly' for this strict recheck."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=7xMwL09a1TI",
+      "classification": "about_the_reef",
+      "best_timestamp_seconds": 0,
+      "evidence": "Not transcribed (no saved transcript). Confirmed via yt-dlp --dump-single-json metadata: title 'Boscombe Surf Reef the construction story so far', description empty. Title directly identifies the video as a construction-progress update on this reef (mid-2009, pre-opening), consistent with the card's existing what_it_shows note. Classification rests on title alone since no transcript/description text and no frames were extracted for this video; confidence is medium, not verified frame-by-frame."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=eceOTU06Dts",
+      "classification": "about_the_reef",
+      "best_timestamp_seconds": 8,
+      "evidence": "Not transcribed (action footage, no speech). Confirmed via yt-dlp --dump-single-json metadata description: 'A few clips of the Bournemouth Surf Reef being used by body boarders one day after the official press launch... one of the biggest fiascos ever embarked on by Bournemouth Council... wasting millions on a white elephant.' Description explicitly places the footage at the reef (body boarders using it, one day after launch), and the saved frame (see frames table) shows a wave breaking beside a marker buoy consistent with the reef's known marker."
+    }
+  ],
+  "frames": [
+    {
+      "path": "03_images/video_frames/boscombe-surf-reef/F0PslWKkbf4_0045.jpg",
+      "classification": "site_context_only",
+      "evidence": "Viewed image directly: a grainy 'Before' title card from the documentary's before/after sequence, shot near the pier pilings showing one surfer sitting in calm water with a small unremarkable wave passing - this is explicitly the PRE-reef baseline shot (captioned 'Before' on screen), so by definition it does not show the reef or its effect. It shows generic pre-reef surfing at the pier only.",
+      "note": "Card's existing caption ('surfer in the water, wave breaking') is accurate as a literal description but did not flag that the on-screen 'Before' label makes this a pre-reef comparison frame, not reef-effect evidence. Recommend the card caption be updated to note this is the pre-reef 'Before' frame."
+    },
+    {
+      "path": "03_images/video_frames/boscombe-surf-reef/eceOTU06Dts_0018.jpg",
+      "classification": "reef_effect_visible",
+      "evidence": "Viewed image directly: a wave breaking left-to-right with two figures in the water (one near a pink marker, one near a yellow marker buoy) roughly where the reef's known marker buoys sit. Video description (via yt-dlp) explicitly states this is 'the Bournemouth Surf Reef being used by body boarders one day after the official press launch,' which ties this specific footage to the reef location.",
+      "confidence": "medium - the frame alone (just a wave and two buoys) would not be identifiable as the reef without the video's own description explicitly placing it there; classified as reef_effect_visible on the strength of that source description, not on visual landmarks in the frame itself."
+    }
+  ],
+  "hero_recommendation": {
+    "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Boscombe-Arial-1024x683.jpg",
+    "reason": "Best single image for a reader unfamiliar with the site: shows the pier, beach, town and the reef's rectangular submerged footprint all in one aerial frame at the correct scale and offshore distance, directly illustrating the dossier's stated size/position. Boscombe-Exposed (close-up bag rows) is a strong second choice for readers who want to see the physical bags themselves."
+  },
+  "summary_of_findings": "All 5 accepted images independently confirmed as structure_visible; no mis-tagged or off-site images found among the still photos. Of the 4 accepted videos, 1 (F0PslWKkbf4) is squarely about_the_reef with detailed construction/mechanism narration; 1 (HeiYPXt85LM) was downgraded from an implicit 'about the reef' framing to mentions_reef_briefly, since on a full-transcript read it is really about the town's regeneration and only credits the reef as catalyst, without describing the structure itself; the other 2 (7xMwL09a1TI, eceOTU06Dts) remain about_the_reef but on metadata alone (title/description), since neither was transcribed and neither has extracted frames beyond the single eceOTU06Dts frame reviewed here - flagged as medium confidence. Of the 2 accepted frames, 1 (F0PslWKkbf4_0045) is reclassified down to site_context_only because it is explicitly the pre-reef 'Before' comparison shot near the pier, not reef-effect evidence, and should have its card caption corrected; the other (eceOTU06Dts_0018) is reef_effect_visible but only on the strength of the video's own description tying it to the reef, not on visible landmarks in the frame."
+}

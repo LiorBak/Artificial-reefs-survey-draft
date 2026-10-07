@@ -1,0 +1,65 @@
+[
+  {
+    "url": "https://live-production.wcms.abc-cdn.net.au/cc84b43142e4cdd5abcbae122250f275",
+    "source_page": "https://www.abc.net.au/news/2019-12-16/word-first-surf-reef-tears-during-installation/11803228",
+    "credit": "ABC South West WA",
+    "license": "Copyright ABC News (Australian Broadcasting Corporation) — link only, not for redistribution/reuse beyond linking",
+    "depicts": "The torn seam in the Airwave inflatable bladder, photographed after it ripped during the December 2019 installation attempt at Bunbury Back Beach",
+    "date": "2019-12-16",
+    "kind": "photo"
+  },
+  {
+    "url": "https://live-production.wcms.abc-cdn.net.au/1a68756faf1cc30ccfdfad69bc4ad197",
+    "source_page": "https://www.abc.net.au/news/2019-12-16/word-first-surf-reef-tears-during-installation/11803228",
+    "credit": "Instagram: airwavesurfreef (via ABC News)",
+    "license": "Copyright — link only, not for redistribution/reuse beyond linking",
+    "depicts": "Design/technology graphic of the Airwave device showing how it is meant to build on natural swell using air to create bigger waves at Bunbury Back Beach",
+    "date": "2019 (undated design graphic)",
+    "kind": "photo"
+  },
+  {
+    "url": "https://live-production.wcms.abc-cdn.net.au/0db449946b7b75c45d5bd9c51901a510",
+    "source_page": "https://www.abc.net.au/news/2019-06-13/world-first-artificial-surf-reef-to-be-installed-at-bunbury/11204280",
+    "credit": "ABC South West: Gian De Poloni",
+    "license": "Copyright ABC News — link only, not for redistribution/reuse beyond linking",
+    "depicts": "Aerial view of Bunbury's Back Beach, the intended installation site for the Airwave reef, just south of the Bunbury Surf Life Saving Club",
+    "date": "2019-06-13",
+    "kind": "photo"
+  },
+  {
+    "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/12/Airwave-from-Above.jpg?v=1576553483",
+    "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/bunbury-airwave/",
+    "credit": "Raised Water Research (image source not separately credited on page)",
+    "license": "Copyright Raised Water Research — link only, not for redistribution/reuse beyond linking",
+    "depicts": "Aerial/drone photo of the Airwave bladder in the water off Bunbury Back Beach during the December 2019 installation",
+    "date": "2019-12",
+    "kind": "photo"
+  },
+  {
+    "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/12/Airwave-Tear.jpg?v=1576553654",
+    "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/bunbury-airwave/",
+    "credit": "Raised Water Research",
+    "license": "Copyright Raised Water Research — link only, not for redistribution/reuse beyond linking",
+    "depicts": "Close-up/photo documenting the torn seam of the Airwave bladder after the December 2019 installation failure at Bunbury Back Beach",
+    "date": "2019-12",
+    "kind": "photo"
+  },
+  {
+    "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/09/AirwaveDiagram2.jpg?v=1568073278",
+    "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/bunbury-airwave/",
+    "credit": "Waveco (via Raised Water Research)",
+    "license": "Copyright Waveco — link only, not for redistribution/reuse beyond linking",
+    "depicts": "Waveco's own technical diagram of the Airwave inflatable bladder design intended for Bunbury Back Beach",
+    "date": "2019 (undated diagram)",
+    "kind": "photo"
+  },
+  {
+    "url": "https://www.google.com/maps/@-33.31,115.64,17z",
+    "source_page": "https://www.google.com/maps/@-33.31,115.64,17z",
+    "credit": "Google Maps / satellite imagery",
+    "license": "Google Maps terms of use — link only",
+    "depicts": "Satellite/map view of Bunbury Back Beach at approx. -33.31, 115.64 (Bunbury Surf Club Backbeach), the Airwave installation site south of the Bunbury Surf Life Saving Club",
+    "date": "current satellite imagery",
+    "kind": "map"
+  }
+]

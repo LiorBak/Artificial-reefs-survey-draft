@@ -1,0 +1,10 @@
+{
+ "s": 1.0932236961363504,
+ "theta_deg": 0.9628926495729624,
+ "tx": 220.29088135611568,
+ "ty": 305.5314047817568,
+ "corr": 0.9230543621469742,
+ "iou": 0.8073497947146244,
+ "installed_px_per_m": 5.95806914394311,
+ "note": "p3 = R(theta) p_I / s + t ; p_I in 90deg-CW-rotated Installed pixel coords; p3 in Fig 3 native px (5.45 px/m)"
+}

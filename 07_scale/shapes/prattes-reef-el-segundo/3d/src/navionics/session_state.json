@@ -1,0 +1,31 @@
+{
+ "href": "https://maps.garmin.com/en-US/marine/?maps=another-brand&overlay=false&key=9q5bcn8pm",
+ "center": {
+  "lat": 33.92058,
+  "lng": -118.43335
+ },
+ "zoom": 17,
+ "bounds": {
+  "_southWest": {
+   "lat": 33.91723286951009,
+   "lng": -118.43863606452943
+  },
+  "_northEast": {
+   "lat": 33.92391895958187,
+   "lng": -118.42806816101076
+  }
+ },
+ "size": {
+  "x": 985,
+  "y": 751
+ },
+ "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+ "title": "Garmin | Marine Maps",
+ "date": "2026-10-05T16:09:43.819Z",
+ "port_note": "own Chrome, random port, fresh profile",
+ "note": "screenshots sonar_*/nautical_* z18 and z17 all centred on this point (set with Leaflet setView before each capture); state recorded after the last capture",
+ "capture_centre": {
+  "lat": 33.92058,
+  "lng": -118.43335
+ }
+}

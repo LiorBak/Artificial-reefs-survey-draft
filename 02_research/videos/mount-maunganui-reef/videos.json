@@ -1,0 +1,46 @@
+[
+  {
+    "url": "https://www.youtube.com/watch?v=QsyH6FEzDx4",
+    "platform": "YouTube",
+    "video_id": "QsyH6FEzDx4",
+    "title": "MOUNT REEF DREAM TURNS INTO REALITY!",
+    "channel": "fjsoto1",
+    "duration_seconds": 346,
+    "upload_date": "2006-10-21",
+    "origin": "ours",
+    "relevance": "shows_the_reef",
+    "relevance_evidence": "Music-only surf clip (no captions, Whisper small produced an empty transcript); relevance rests on metadata: title 'Mount Reef', uploader description dated 4 Oct 2006 (two weeks after the second half was installed) linking to the project site mountreef.co.nz, and a saved frame at 01:25 of a clean wave peeling past a surfer. The frame has no coastline, so location rests on title/description, not pixels. Not 'about' the reef in the spoken sense: no narration, no engineer/design talk.",
+    "segments": [
+      {
+        "start_s": 0,
+        "end_s": 346,
+        "what": "Whole clip: music-only amateur surf footage of the partially built reef (second half installed, 4 Oct 2006) per the uploader's description; clip was not watched end to end in this pass, so shot-by-shot content is unverified.",
+        "quote": "fast hollow right hand barrels and up to 50 metre rides on both left and right hand breaks"
+      },
+      {
+        "start_s": 80,
+        "end_s": 90,
+        "what": "Wave peeling left to right over the reef with a surfer/swimmer past the peak (earlier frame grab at 01:25; low-res 428x240 source).",
+        "quote": ""
+      }
+    ],
+    "transcript_path": "02_research/videos/mount-maunganui-reef/QsyH6FEzDx4.txt",
+    "transcript_source": "local Whisper small (speech-to-text) -> empty: no speech in the video (music only); YouTube captions: none (manual and auto both absent)",
+    "gemini_claims": "Gemini has no video for this reef (per_reef['mount-maunganui-reef'].new_videos is empty); QsyH6FEzDx4 is not in Gemini's list. Nothing to compare.",
+    "embed_ok": true,
+    "thumbnail": "https://img.youtube.com/vi/QsyH6FEzDx4/hqdefault.jpg",
+    "review_status": "pending_lior",
+    "date": "2006-10-21",
+    "about": "about the reef",
+    "what_it_shows": "Amateur surf footage of the partially-completed Mount Reef filmed shortly after the second half of the geotextile structure was installed (4 October 2006). Uploader description: a small 1.5 m north-easterly swell produced 'fast hollow right hand barrels and up to 50 metre rides on both left and right hand breaks.' Links to the now-defunct official project site mountreef.co.nz.",
+    "best_timestamp_seconds": 85,
+    "key_quotes": [],
+    "frames": [
+      {
+        "path": "03_images/video_frames/mount-maunganui-reef/QsyH6FEzDx4_0125.jpg",
+        "timestamp": "01:25",
+        "caption": "Low-resolution frame (source video 428x240) showing a wave breaking on the reef offshore with one surfer waiting in the lineup."
+      }
+    ]
+  }
+]

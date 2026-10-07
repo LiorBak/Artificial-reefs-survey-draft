@@ -1,0 +1,293 @@
+{
+ "interval_fit": {
+  "s_nav_m": 0.4587733874777849,
+  "by_datum": {
+   "LAT": {
+    "s_m": 0.4587733874777849,
+    "se_m": 0.002720747150056588,
+    "rms_m": 0.492894290411863
+   },
+   "MSL": {
+    "s_m": 0.36112533959630116,
+    "se_m": 0.002097291618370863,
+    "rms_m": 0.3799482300301789
+   }
+  },
+  "by_rank_band": {
+   "4-6": {
+    "n": 53,
+    "mean_rank": 5.362885415898149,
+    "s_m": 0.6453589972380626
+   },
+   "6-8": {
+    "n": 87,
+    "mean_rank": 6.475704197670624,
+    "s_m": 0.5121679379295062
+   },
+   "8-11": {
+    "n": 215,
+    "mean_rank": 9.352074902349887,
+    "s_m": 0.4303017375203113
+   }
+  },
+  "assumed_m": 0.5,
+  "e_toe_if_1m_interval": -12.5
+ },
+ "datum_test": {
+  "LAT": {
+   "offset_above_LAT_m": 0.0,
+   "mean_m": -0.2738064704958406,
+   "rms_m": 0.61146231385248
+  },
+  "MLWS": {
+   "offset_above_LAT_m": 0.22,
+   "mean_m": -0.4938064704958403,
+   "rms_m": 0.736723155791915
+  },
+  "MLWN": {
+   "offset_above_LAT_m": 0.51,
+   "mean_m": -0.7838064704958404,
+   "rms_m": 0.9556509619979388
+  },
+  "AHD (0.76, unverified)": {
+   "offset_above_LAT_m": 0.76,
+   "mean_m": -1.0338064704958405,
+   "rms_m": 1.169475094397271
+  },
+  "MSL": {
+   "offset_above_LAT_m": 0.88,
+   "mean_m": -1.1538064704958406,
+   "rms_m": 1.2767871981401238
+  },
+  "MHWN": {
+   "offset_above_LAT_m": 1.24,
+   "mean_m": -1.513806470495841,
+   "rms_m": 1.6095111705395255
+  },
+  "MHWS": {
+   "offset_above_LAT_m": 1.53,
+   "mean_m": -1.8038064704958408,
+   "rms_m": 1.8848432192039482
+  },
+  "HAT": {
+   "offset_above_LAT_m": 2.03,
+   "mean_m": -2.3038064704958403,
+   "rms_m": 2.3677923117273063
+  }
+ },
+ "datum_rms_minimum_offset_above_LAT_m": -0.26999999999999935,
+ "toe_residual_by_sector": {
+  "W end (x < -40)": {
+   "n": 106,
+   "mean_m": -0.7181313069837965,
+   "sd_m": 0.1436661882099727
+  },
+  "E end (y > 340)": {
+   "n": 128,
+   "mean_m": -0.5077852728531983,
+   "sd_m": 0.21819971996730758
+  },
+  "N flank (x > 20, y < 300)": {
+   "n": 106,
+   "mean_m": 0.38636611563496365,
+   "sd_m": 0.5889117289511518
+  },
+  "S flank": {
+   "n": 100,
+   "mean_m": -0.6549032732749948,
+   "sd_m": 0.25543645829082795
+  }
+ },
+ "east_axis_spacing_m": [
+  12.29,
+  12.24,
+  12.29,
+  5.94,
+  5.94,
+  6.0,
+  6.0,
+  6.0,
+  6.06,
+  6.0,
+  3.94
+ ],
+ "gebco": {
+  "value_m": -13.0,
+  "cell_centre_canonical": [
+   23.0,
+   534.0
+  ],
+  "navionics_z_msl": -11.877798696922866,
+  "diff_m": -1.1222013030771336
+ },
+ "frame_check": {
+  "vertex0_canonical_m": [
+   -27.98,
+   373.92
+  ],
+  "vertex0_latlon_from_frame": [
+   -28.1072903,
+   153.4716713
+  ],
+  "vertex0_latlon_in_shape_json": [
+   -28.1072904,
+   153.4716713
+  ],
+  "n_vertices": 47,
+  "max_err_m": 0.024,
+  "mean_err_m": 0.016,
+  "mirrored_x_mean_err_m": 82.4,
+  "x_bearing_deg": 334.3,
+  "y_bearing_deg": 64.30000000000001,
+  "handedness": "canonical (x, y, z up) is left-handed; ENU (E = x sin bx + y sin by, N = x cos bx + y cos by, U = z) is right-handed"
+ },
+ "volume_envelope_m3": 22020.00385439201,
+ "volume_blended_m3": 21965.985270480764,
+ "area_m2": 11989.0,
+ "mean_height_m": 1.8366839481518067,
+ "max_height_m": 4.171259645770707,
+ "max_height_at_xy": [
+  -8.0,
+  291.0
+ ],
+ "crest_mean_bed_z": -5.386127118681612,
+ "height_at_crest_m": 3.886127118681612,
+ "navionics_only": {
+  "crest_mean_bed_z": -5.0134174621928675,
+  "height_at_crest_m": 3.5134174621928675,
+  "volume_envelope_m3": 16357.91187813603
+ },
+ "volume_sensitivity_by_seabed_offset_m": {
+  "-1.0": 34004.14806581657,
+  "-0.5": 28009.648065816567,
+  "-0.25": 25012.856068690664,
+  "0.25": 19157.966672060968,
+  "0.5": 16536.69863458322,
+  "1.0": 11957.379182211651
+ },
+ "toe_depth_range_m": [
+  -7.0,
+  -4.0
+ ],
+ "crest_below_LAT_m": -0.62,
+ "toe_vs_navionics": {
+  "mean_m": -0.2738064704958406,
+  "sd_m": 0.5467322726677464,
+  "fraction_toe_below_seabed": 0.7775175644028103,
+  "mean_if_chart_datum_were_MSL_m": -1.1538064704958406,
+  "n": 427
+ },
+ "contour_plane_fit": {
+  "a0": -0.23469787644501988,
+  "g": -0.018504513236062038,
+  "rms": 0.13251952629293537,
+  "n": 399,
+  "n_all": 427
+ },
+ "navionics_fit": {
+  "n_points_iso": 1041,
+  "n_points_anchor": 25,
+  "n_points_toe": 0,
+  "rms_residual_m": 0.08216761369166167,
+  "max_abs_residual_m": 1.006073398124835,
+  "kernel": "thin_plate_spline",
+  "smoothing": 1.0,
+  "buffer_m": 25.0
+ },
+ "hybrid_fit": {
+  "n_points_iso": 1041,
+  "n_points_anchor": 25,
+  "n_points_toe": 107,
+  "rms_residual_m": 0.08216763071242848,
+  "max_abs_residual_m": 1.0060733940917999,
+  "kernel": "thin_plate_spline",
+  "smoothing": 1.0,
+  "buffer_m": 25.0
+ },
+ "side_slope_spacing_m": {
+  "N flank (long side, 6 m spacing)": [
+   6.0,
+   6.0,
+   6.0,
+   6.0,
+   6.0,
+   6.0
+  ],
+  "S flank (short side)": [
+   2.47,
+   2.47,
+   2.47,
+   2.47
+  ]
+ },
+ "anchors": {
+  "navionics_reef_signature": {
+   "lines": {
+    "1": {
+     "max_dev_m": -10.528442688885107,
+     "min_dist_to_toe_m": 157.9160716963286
+    },
+    "2": {
+     "max_dev_m": -3.432338463999997,
+     "min_dist_to_toe_m": 86.36063281380005
+    },
+    "3": {
+     "max_dev_m": 2.0621210974589985,
+     "min_dist_to_toe_m": 44.44130061103073
+    },
+    "4": {
+     "max_dev_m": 65.21712594277446,
+     "min_dist_to_toe_m": 1.5524098239727138
+    },
+    "5": {
+     "max_dev_m": 81.00803404272511,
+     "min_dist_to_toe_m": 0.3525039139622881
+    },
+    "6": {
+     "max_dev_m": 46.52096420954655,
+     "min_dist_to_toe_m": 9.274276252085638
+    },
+    "7": {
+     "max_dev_m": 30.943263784194528,
+     "min_dist_to_toe_m": 32.42929653419269
+    },
+    "8": {
+     "max_dev_m": 26.7893461341763,
+     "min_dist_to_toe_m": 67.92279882337002
+    },
+    "9": {
+     "max_dev_m": 22.628303054317882,
+     "min_dist_to_toe_m": 96.01501393011404
+    },
+    "10": {
+     "max_dev_m": 9.595240396518363,
+     "min_dist_to_toe_m": 125.39078514787278
+    }
+   },
+   "shallowest_iso_line_within_40m_of_toe_m": 4.0
+  },
+  "sonar_depth_below_LAT_at_y_(mean of x=+-150 m)": {
+   "150": 2.22,
+   "225": 3.86,
+   "260": 4.39,
+   "300": 4.93,
+   "340": 5.58,
+   "374": 6.31,
+   "450": 8.81
+  }
+ },
+ "stated": {
+  "register_volume_m3": 33000,
+  "register_height_m": 5,
+  "card_volume_m3": 25000,
+  "rock_tonnes": 60000,
+  "bulk_density_t_m3_if_33000": 1.8181818181818181,
+  "solid_density_t_m3_if_25000": 2.4,
+  "volume_model_over_register": 0.6672728440724851
+ },
+ "fish_haven": {
+  "charted_least_depth_m": 1.5,
+  "crest_depth_below_LAT_m": 0.62,
+  "difference_m": 0.88
+ }
+}

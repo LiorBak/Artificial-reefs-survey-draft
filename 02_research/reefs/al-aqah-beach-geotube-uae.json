@@ -1,0 +1,39 @@
+{
+  "slug": "al-aqah-beach-geotube-uae",
+  "name": "Al Aqah Beach Geotube beach nourishment",
+  "place": "Al Aqah Beach, Fujairah",
+  "country": "United Arab Emirates",
+  "kind": "reef",
+  "type": "geotextile tube (anti-U groin + submerged breakwater)",
+  "purpose": "beach nourishment / erosion control",
+  "year_built": "not stated precisely; case-study timeline 2010-2014 [R1]; papers published 2013 [R3] and 2014 [R2]",
+  "priority": 2,
+  "status": "not stated",
+  "dimensions": {
+    "arm_length_m": 200,
+    "safe_zone_m": "228 x 225",
+    "tube_circumference_m": "8.6-17.2",
+    "tube_length_m": "52-77",
+    "source": "R1"
+  },
+  "cost": "not stated for the structure; a separate $2M hotel beach-amenity spend (2008) is NOT this structure's cost [R5]",
+  "designer": "ACE Geosynthetics (Taiwan) [R1][R2][R3]",
+  "contractor": "not stated",
+  "financed_by": "not stated; client named as Le Meridien Hotel [R1]",
+  "client": "Le Meridien Hotel (Le Meridien Al Aqah Beach Resort) [R1]",
+  "motivation": "existing rubble groins failed under wave/cyclone loading; erosion worsened after cyclone Gonu (2007) [R1][R2][R3]",
+  "outcome": "manufacturer states erosion 'well-controlled' and beach 'successfully restored'; no independent verification found [R1]",
+  "relation_to_master_list": "seeded from 02_research/00_master_list.md row al-aqah-beach-geotube-uae, citing Chien, A. et al. 2014, Int. J. Environ. Sci. Dev. 5:506-509",
+  "possible_duplicate": "unconfirmed link to unnamed 'UAE coastline project' (emergent vs submerged breakwater, '8-year stable beach guarantee') in 01_source_notes/transcript_goldcoast_reef_company.md [R10]",
+  "dossier_md": "02_research/reefs/al-aqah-beach-geotube-uae.md",
+  "reviews_found": 0,
+  "references_count": 10,
+  "image_leads": [
+    "https://www.geoace.com/case/Marine-and-Coastal-Structures-Construction/Beach-Nourishment,-Fujarah,-UAE",
+    "https://www.researchgate.net/publication/269839545_Geotextile_Tubes_Application_on_Beach_Nourishment_in_UAE",
+    "https://www.researchgate.net/figure/Implementation-cases-of-geotextile-tubes-photos-copyright-by-ACE-Geosynthetics_fig1_367345426",
+    "https://www.witpress.com/elibrary/wit-transactions-on-ecology-and-the-environment/169/24252"
+  ],
+  "video_leads": [],
+  "last_updated": "2026-09-24"
+}

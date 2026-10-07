@@ -1,0 +1,53 @@
+{
+  "slug": "walkable-geotube-breakwater-unnamed",
+  "name": "Walkable geotube breakwater (unnamed, ICM)",
+  "place": "not stated",
+  "country": "not stated (ICM operates across Australia/California/Middle East/Europe)",
+  "lat": null,
+  "lon": null,
+  "year_built": "not stated",
+  "closed": "not stated",
+  "type": "geotube (sand-filled geotextile tube) breakwater/groyne, explicitly chosen over rock",
+  "purpose": "coastal protection + deliberate public walkability/access (material choice driven by accessibility, not surf or ecology)",
+  "dimensions": "not stated",
+  "designer": "International Coastal Management (ICM) — inferred from the talk's presenter, not independently confirmed for this specific structure",
+  "contractor": "not stated",
+  "cost": "not stated",
+  "financed_by": "not stated",
+  "outcome_one_liner": "Mentioned only as a one-sentence illustrative example in a conference talk (~01:03:40-01:03:55); no location, year, cost, or outcome data exists in the source material; a prior research pass already searched and reported it unidentified",
+  "priority": 3,
+  "kind": "reef",
+  "dossier_md": "02_research/reefs/walkable-geotube-breakwater-unnamed.md",
+  "references_count": 8,
+  "reviews_found": 0,
+  "candidate_matches_not_confirmed": [
+    {
+      "name": "Munna Point Groynes",
+      "place": "Noosaville, Queensland",
+      "country": "Australia",
+      "why_candidate": "ICM-designed geotextile groynes explicitly described by ICM as 'accessible, user-friendly' and chosen to preserve public beach access",
+      "url": "https://www.coastalmanagement.com.au/post/munna-point-groynes"
+    },
+    {
+      "name": "Maroochydore Groynes and Seawall",
+      "place": "Maroochydore, Sunshine Coast, Queensland",
+      "country": "Australia",
+      "why_candidate": "ICM-designed geotextile groynes where a 2017 community consultation explicitly chose to keep geotextile over rock 'prioritising user-friendliness and accessibility' — near-identical wording to the transcript quote",
+      "url": "https://www.coastalmanagement.com.au/maroochydore-groynes-seawall"
+    }
+  ],
+  "seed_urls_status": {
+    "https://www.coastalmanagement.com.au/artificial-surf-reefs": "fetched ok; does not mention this project by name"
+  },
+  "other_urls_fetched": {
+    "https://www.coastalmanagement.com.au/": "fetched ok",
+    "https://www.coastalmanagement.com.au/post/munna-point-groynes": "fetched ok",
+    "https://www.coastalmanagement.com.au/blog/categories/projects": "fetched ok",
+    "https://www.coastalmanagement.com.au/maroochydore-groynes-seawall": "fetched ok",
+    "https://www.coastalmanagement.com.au/post/maroochydore-groynes-seawall": "fetched ok",
+    "https://www.noosa.qld.gov.au/munna-point-groynes": "HTTP 404",
+    "https://www.sunshinecoast.qld.gov.au/things-to-do-and-see/beaches/coastal-management/maroochydore-groynes": "HTTP 404",
+    "https://www.coastalmanagement.com.au/projects": "HTTP 404"
+  },
+  "note": "WebSearch budget was exhausted session-wide (200/200) partway through this research pass; only WebFetch (direct URLs) was available afterward. A future agent with search budget should try to positively identify this structure."
+}

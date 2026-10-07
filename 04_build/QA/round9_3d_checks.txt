@@ -1,0 +1,34 @@
+PASS  tab is the visible view
+PASS  4 model sections rendered
+PASS  93 gallery tiles rendered (one per selected picture)
+PASS  confidence badge + reason visible in every model
+PASS  vertical-exaggeration note in every model
+PASS  no iframe exists before 'Load 3D model' is clicked (lazy)
+PASS  every model has an 'Open full screen' link to its viewer
+PASS  key-numbers table in every model
+PASS  caveats table rows
+PASS  references list entries
+PASS  no console errors on load
+PASS  hover on a picture shows the tooltip with 'How it was used' and 'Source'
+PASS  tooltip hides when the pointer leaves
+PASS  keyboard focus shows the tooltip
+PASS  click opens the lightbox with citation, licence, rights note
+PASS  lightbox image loaded
+PASS  Escape closes the lightbox
+PASS  annotated-version toggle switches the lightbox image
+PASS  clicking 'Load 3D model' creates the iframe
+PASS  viewer from file:// ran (iframe has a canvas or is opaque-origin)
+PASS  never more than 2 live viewers
+PASS  methods link opens the lazy document and scrolls to the heading
+PASS  mobile: no horizontal page scroll
+shot  round9_3d_overview.png
+shot  round9_3d_keynumbers.png
+shot  round9_3d_gallery_tooltip.png
+shot  round9_3d_lightbox.png
+shot  round9_3d_lightbox_annotated.png
+shot  round9_3d_viewer_loaded.png
+shot  round9_3d_caveats.png
+shot  round9_3d_methods.png
+shot  round9_3d_mobile.png
+shot  round9_3d_dark.png
+RESULT: PASS

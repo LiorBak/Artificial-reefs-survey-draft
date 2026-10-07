@@ -1,0 +1,296 @@
+{
+  "slug": "narrowneck-gold-coast",
+  "name": "Narrowneck Reef (Gold Coast Reef)",
+  "status": "verified",
+  "verified_on": "2026-09-25",
+  "shape_type": "chevron",
+  "shape_type_notes": "Dual-arm split-V / chevron: two separate wishbone-shaped reef units ('north arm' and 'south arm' in this report's own labelling) set side by side alongshore, joined by a narrow central channel across which a small submerged weir (two containers) was added in 2004. Confirmed by text and four plan-view figures in the primary monitoring paper (Jackson et al. 2012, [R4]). This is NOT an inshore/offshore concentric-lobe arrangement (see gemini_comparison).",
+  "coords": "metres; origin = shoreline point nearest the reef centroid; x = alongshore (positive toward north -- the Narrowneck isthmus trends roughly N-S per general regional geography, no source gives an exact shoreline azimuth); y = offshore (positive seaward); shoreline approximated as the line y=0.",
+  "polygons_m": [
+    [
+      [50, 260], [100, 225], [220, 205], [300, 200], [300, 260], [230, 275],
+      [140, 300], [140, 360], [230, 400], [300, 430], [300, 550], [210, 540],
+      [110, 505], [50, 460], [50, 260]
+    ],
+    [
+      [-50, 260], [-100, 225], [-220, 205], [-300, 200], [-300, 260], [-230, 275],
+      [-140, 300], [-140, 360], [-230, 400], [-300, 430], [-300, 550], [-210, 540],
+      [-110, 505], [-50, 460], [-50, 260]
+    ]
+  ],
+  "polygon_components_notes": "polygons_m[0] = north arm (x>0), polygons_m[1] = south arm (x<0, mirror image of the north arm in x). Both closed and non-self-intersecting (checked with shapely: is_valid=True, is_simple=True for both). No solid polygon is given for the central channel/waist (x approx -50 to 50) since it is open water crossed only by a small 2-container weir added in 2004, not a filled structure -- see md derivation/'Polygon construction'.",
+  "bbox_m": {
+    "length_alongshore": 600,
+    "width_crossshore": 350
+  },
+  "bbox_alt_note": "A second source [R8] gives a conflicting 450 m (long) x 250 m (wide) for this same reef; not reconciled with the 600x350 [R9] figure used for this file's bounding box and polygon scaffold. Both are retained per the project reference rule.",
+  "area_m2": 114950,
+  "area_m2_notes": "Net area of the two schematic arm polygons above (shoelace formula: 57,475 m^2 each), NOT a published or surveyed figure -- it is a geometric consequence of this report's own illustrative vertex placement (see md 'Polygon construction'). Gross bounding-box area (600x350) = 210,000 m^2. Not directly comparable to Gemini's gross (75,000) or net (42,650) figures since Gemini's underlying shape (inshore/offshore lobes) differs from the alongshore-split shape used here.",
+  "max_dimension_m": 600,
+  "crest_depth_m": {
+    "value": 1.5,
+    "datum": "below low tide waterline (approx. LAT), as stated in sources -- design/2012 value",
+    "ref": "R4"
+  },
+  "crest_depth_alt_note": "Crest depth is time-varying and this single value should not be used without noting its date: as designed/1999 and as of the 2012 primary-source survey, crest was 'about 1-1.5m below low tide' [R4 p.13, also R2][R3]; by 2017, before the 2018 renewal, it had settled to 2.5-2.6 m below low tide [R2]; the 2018 renewal added 84 containers to raise the crest again but no source gives a specific post-renewal number.",
+  "distance_offshore_m": {
+    "value": 200,
+    "measured_from": "shoreline -- treated as the reef's shoreward/inner edge; no source specifies exactly which point 'X m offshore' is measured to",
+    "ref": "R9"
+  },
+  "orientation_notes": "Two arms (north/south) run alongshore either side of a central channel/weir, matching the card's pre-existing 'split V shape... paddling channel between the arms' language [R3][R9]. The reef is understood to face the Gold Coast's predominant E-ESE swell (general regional geography, open east-facing coast), consistent with (though not independently confirmed to the same precision as) Gemini's claimed 090-120 deg incident swell direction -- no source found by either this report or Gemini states a precise degree figure. Alongshore axis 'north' is this report's own convention, not a sourced compass bearing.",
+  "volume_m3": {
+    "value": 70000,
+    "ref": "R1"
+  },
+  "materials": "Sand-filled non-woven geotextile containers ('mega sandbags'), approx. 450 placed by 1999-2006 (arithmetic per [R4] p.3/Fig.4: ~408 from the original 1999-2000 construction + top-up, plus 42 in three later maintenance campaigns 2002-2006 [Fig.4 table: 10+15+17=42] = 450 total; R9 separately and independently gives a rounded 'more than 400' for the original build, consistent with ~408 but not an exact match to a card-invented '400') + 84 more added June 2018 [R9][R14]; each container approx. 20 m long, 3.0-4.8 m diameter [R1/R9 exact figure; corrected this pass from an earlier '3-4.5 m' rounding].",
+  "derivation": [
+    {
+      "quantity": "overall topology (two arms + central channel/weir)",
+      "value": "dual-arm split-V, joined by channel",
+      "unit": "n/a",
+      "method": "read from text and 4 plan-view figures in the primary monitoring paper (already-cited [R4])",
+      "source_ref": "R4",
+      "quote_or_figure": "\"establishment of a submerged weir between the two arms of the reef as well [as] flared wings\" (p.3); Figs. 2, 4, 5, 7 (plan-view sketches/aerial overlay)",
+      "uncertainty": "low -- corroborated across text + 4 independent figures, matches card's pre-existing [R3][R9] 'split V / paddling channel' language"
+    },
+    {
+      "quantity": "alongshore length",
+      "value": 600,
+      "unit": "m",
+      "method": "magnitude stated in text; AXIS ASSIGNMENT (that 600, not 350, is the alongshore figure) is this report's own inference, not explicit in R9",
+      "source_ref": "R9",
+      "quote_or_figure": "verbatim R9 text (re-fetched and confirmed this pass): 'The 350 x 600 m V-shaped artificial reef is located 200 m offshore and deflects the waves to the left and to the right of its tip.' -- Wikipedia does NOT state which of the two numbers is alongshore vs cross-shore; this report assigns 600=alongshore/350=cross-shore by analogy to the card's other L-before-W conventions and because it produces the higher-aspect-ratio 'split V' plan shape a wave-splitting chevron implies, but this is an assumption, not a sourced fact",
+      "uncertainty": "medium-high for the axis assignment specifically (unsourced inference); the two magnitudes 350 and 600 themselves are directly and exactly quoted from R9. Also disagrees with [R8]'s 450 m alternate; +/-100-150 m"
+    },
+    {
+      "quantity": "cross-shore width",
+      "value": 350,
+      "unit": "m",
+      "method": "magnitude stated in text; axis assignment inferred (see alongshore length row's caveat -- same issue applies symmetrically)",
+      "source_ref": "R9",
+      "quote_or_figure": "same source and same axis-assignment caveat as alongshore length above",
+      "uncertainty": "medium-high for the axis assignment; disagrees with [R8]'s 250 m alternate; +/-100-150 m"
+    },
+    {
+      "quantity": "alternate length x width",
+      "value": "450 x 250",
+      "unit": "m",
+      "method": "stated in text (disagreeing source)",
+      "source_ref": "R8",
+      "quote_or_figure": "\"measures 450 meters long by 250 meters wide\"",
+      "uncertainty": "not reconciled with R9; kept per reference rule"
+    },
+    {
+      "quantity": "distance offshore",
+      "value": 200,
+      "unit": "m",
+      "method": "stated in text",
+      "source_ref": "R9",
+      "quote_or_figure": "\"sited 200 m offshore\" (Wikipedia paraphrase)",
+      "uncertainty": "medium; not stated which edge/point is meant; treated here as the shoreward/inner edge"
+    },
+    {
+      "quantity": "crest depth (design / 2012 primary-source value)",
+      "value": "1.0-1.5",
+      "unit": "m below low tide",
+      "method": "stated in text, primary source",
+      "source_ref": "R4",
+      "quote_or_figure": "\"The crest height of about 1 - 1.5m below low tide has proven to be suitable for prevention of injuries but has not optimised the surf quality\" (p.13)",
+      "uncertainty": "low for the 2012 value; but time-varying, see crest_depth_alt_note"
+    },
+    {
+      "quantity": "crest depth (2017, pre-2018-renewal, settled)",
+      "value": "2.5-2.6",
+      "unit": "m below low tide",
+      "method": "stated in text",
+      "source_ref": "R2",
+      "quote_or_figure": "card's existing figure, re-confirmed this pass, not re-quoted verbatim here",
+      "uncertainty": "medium; a settled/degraded state, not the design value"
+    },
+    {
+      "quantity": "central channel width (used to space the two schematic arm polygons)",
+      "value": 100,
+      "unit": "m",
+      "method": "estimated -- not stated in any source; chosen only to make the schematic two-arm polygon geometrically plausible within the 600 m total alongshore span",
+      "source_ref": "derived",
+      "quote_or_figure": "n/a",
+      "uncertainty": "high, +/-50%; a construction choice, not a measurement"
+    },
+    {
+      "quantity": "container count (pre-2018)",
+      "value": 450,
+      "unit": "containers",
+      "method": "stated in text, primary source",
+      "source_ref": "R4",
+      "quote_or_figure": "\"some 450 containers have been placed to form the reef since 1999\" (p.3), \"Of those, 42 have been placed in three maintenance campaigns\" (p.3), confirmed by Fig.4's table (2002-2003: 10, 2004: 15, 2006: 17, Total: 42). CORRECTED this pass: 450-42=~408 from the original construction/initial top-up, NOT 400 as an earlier pass's arithmetic implied (400+42=442, which does not equal the stated 450)",
+      "uncertainty": "low for the 450 total and the 42-maintenance figure (both explicit in R4); the ~408 original-construction figure is this report's own subtraction, not itself independently stated"
+    },
+    {
+      "quantity": "net polygon area (both arms)",
+      "value": 114950,
+      "unit": "m2",
+      "method": "computed (shoelace formula) from this report's own schematic polygon vertices",
+      "source_ref": "derived",
+      "quote_or_figure": "n/a -- not a published figure",
+      "uncertainty": "very high; entirely a function of this report's own illustrative vertex placement, see md Polygon construction"
+    }
+  ],
+  "images_relied_on": [
+    {
+      "url": "https://icce-ojs-tamu.tdl.org/icce/article/download/6956/pdf/28593",
+      "what_it_is": "Full PDF of the primary monitoring paper (Jackson et al. 2012, already-cited [R4]); obtained via WebFetch of the journal article page to find the download link, then curl to scratchpad, then read in full (13 pages).",
+      "what_was_read_off_it": "Figs. 2, 4, 5, 7: all four show the reef as two separate wishbone/chevron lobes joined by a narrow waist/channel -- confirms the dual-arm-plus-channel topology used in this file. No figure carries a legible metric scale bar or compass rose in this reproduction, so no precise metre dimension could be measured off them; only the qualitative topology and relative proportions (lobe-width:waist-width roughly 3:1, from Fig. 5) were used.",
+      "source_page": "https://icce-ojs-tamu.tdl.org/icce/article/view/6956"
+    },
+    {
+      "url": "https://www.coastalmanagement.com.au/artificial-surf-reefs",
+      "what_it_is": "ICM company case-study page, already cited as [R3] in the card.",
+      "what_was_read_off_it": "Re-checked via WebFetch specifically for a scaled plan-view diagram; confirmed (as the card's dossier already found) that the page has only oblique/aerial photos and a before/after comparison, no plan drawing with dimensions. No length/width/offshore-distance figure obtained from this page beyond what the card already had (V-shape, 1.5 m crest depth, ~70,000 m3).",
+      "source_page": "https://www.coastalmanagement.com.au/artificial-surf-reefs"
+    }
+  ],
+  "gemini_comparison": {
+    "gemini_values": {
+      "shape_type": "Dual-arm elongated lobed chevron (2 separate polygons: 'Inshore Lobe' and 'Offshore Lobe', stacked cross-shore at the same alongshore position)",
+      "length_m": 400.0,
+      "width_m": 220.0,
+      "area_m2": "75000.0 gross (Gemini's own audit separately computes 42650 net for the same shape)",
+      "crest_depth_m": 2.2,
+      "distance_offshore_m": "180.0 (inshore lobe only, per Gemini's own audit; outer ridge reaches ~300-380m)",
+      "orientation": "Lobes angled to ESE swell (090-120 deg)"
+    },
+    "agree": [
+      "general shape family (dual-arm chevron with 2 polygon components)",
+      "qualitative orientation (facing incoming E-ESE swell) -- precise degrees unverified by either party"
+    ],
+    "disagree": [
+      {
+        "quantity": "shape_type / polygon topology",
+        "gemini": "Inshore Lobe + Offshore Lobe stacked cross-shore (same alongshore position, different offshore distances)",
+        "ours": "North arm + South arm split alongshore (same offshore-distance range, different alongshore positions), joined by a central channel/weir",
+        "why_ours": "The primary monitoring paper (Jackson et al. 2012, [R4]) explicitly states a weir was built 'between the two arms of the reef' and shows this in 4 separate plan-view figures (Figs. 2,4,5,7), consistently depicting two side-by-side wishbone lobes joined by a narrow waist -- not a near-shore ring and a further-offshore ring. This directly matches the card's own pre-existing 'split V shape... paddling channel between the arms' language [R3][R9]. Gemini's own audit already senses something is off (it flags the '180m offshore' label as ambiguous) but never revisits the underlying inshore/offshore-lobe topology itself, which this report identifies as the actual root issue."
+      },
+      {
+        "quantity": "length_m / width_m",
+        "gemini": "400 x 220",
+        "ours": "600 x 350 (per R9; alternate 450x250 per R8)",
+        "why_ours": "Gemini's clean 400x220 matches neither of our two sourced figures and no citation ties it to a specific page in Gemini's own 3 listed sources; this report could not find '400' or '220' stated anywhere in the primary paper obtained, nor on the ICM webpage (re-checked, no plan dimensions present)."
+      },
+      {
+        "quantity": "area_m2",
+        "gemini": "75000 gross / 42650 net (internally inconsistent per Gemini's own audit)",
+        "ours": "210000 gross (600x350) / ~114950 net (this report's own schematic polygon)",
+        "why_ours": "Gemini's own audit already flags its gross/net inconsistency without resolving it; our figures come from a different (alongshore-split) shape and are not directly comparable to Gemini's."
+      },
+      {
+        "quantity": "crest_depth_m",
+        "gemini": 2.2,
+        "ours": "1.0-1.5 (2012 design value, R4) or 2.5-2.6 (2017 settled value, R2) depending on date",
+        "why_ours": "No source found supports exactly 2.2 m. The primary paper states 1.0-1.5m as of 2012 [R4 p.13]; [R2] separately gives 2.5-2.6m for the settled, pre-2018-renewal (2017) state. 2.2 sits between these but is not derivable from either without an unstated averaging assumption; Gemini's own audit note cites three different numbers (-1.0m design, -2.5m settled, -1.5m post-2018-refurbishment), none of which is 2.2m either."
+      },
+      {
+        "quantity": "distance_offshore_m",
+        "gemini": "180 (inshore lobe) / ~300 (offshore ridge) / 380 (outer toe) -- tiered framing",
+        "ours": "200 (single figure, treated as the shoreward edge of the whole two-arm structure)",
+        "why_ours": "Gemini's tiered offshore-distance framing is a direct consequence of the rejected inshore/offshore-lobe topology. With the alongshore-split topology used here, there is no separate 'outer ridge' 300-380m out; the reef's full cross-shore extent (200-550m in this report's schematic) comes from each arm's own outer horn, not a second, more-offshore reef ring."
+      }
+    ]
+  },
+  "confidence": "medium",
+  "open_issues": [
+    "No plan-view figure with a legible printed scale bar was found for this reef in any source consulted (primary paper, ICM webpage, or the card's image list); the polygon vertices in this file are a documented schematic, not a survey-grade digitization.",
+    "The card's own pre-existing footprint disagreement (350x600m [R9] vs. 450x250m [R8]) remains unreconciled; no third, tie-breaking source was found.",
+    "This report assumes north/south mirror symmetry between the two arms for the schematic polygon; Jackson et al. 2012 Fig. 4 suggests the two arms may not be perfectly identical, but source resolution does not support characterizing the actual asymmetry.",
+    "The exact shoreline azimuth at Narrowneck (to convert 'alongshore = positive north' into a true compass bearing) was not found in any source consulted; the isthmus's roughly N-S trend is inferred from general regional geography, not a stated figure.",
+    "Crest depth is genuinely time-varying (~1.0-1.5m as designed/2012 -> ~2.5-2.6m by 2017 settled -> an unstated, presumably shallower figure after the 2018 renewal); any single crest-depth number used elsewhere for this reef should specify which date/state it refers to.",
+    "The central channel's width (~100m, used to space the two arms in the schematic polygon) is this report's own unsourced assumption, not a published figure.",
+    "(Added 2026-09-25 verification pass) R9's exact text is an unordered pair '350 x 600 m' with no stated axis; this file's 600=alongshore/350=cross-shore assignment (used in bbox_m and the polygon construction) is this report's own inference, not sourced."
+  ],
+  "references": [
+    {"id": "R1", "citation": "Wikipedia contributors (accessed 2026-09-24). \"Multi-purpose reef.\" Wikipedia.", "url": "https://en.wikipedia.org/wiki/Multi-purpose_reef", "accessed": "2026-09-24", "supports": "1999 build year, 70,000 m3 size, geotextile container material, ~20 m beach-widening figure."},
+    {"id": "R2", "citation": "Nettle, Stu (\"stunet\") (2017-11-07). \"Narrowneck artificial reef nears completion (updated).\" Swellnet Dispatch.", "url": "https://www.swellnet.com/news/swellnet-dispatch/2017/11/07/narrowneck-artificial-reef-nears-completion-updated", "accessed": "2026-09-24 (live URL returned HTTP 202/blocked on re-check 2026-09-25; re-verified via Wayback Machine snapshot 2025-05-16 of the same URL instead)", "supports": "crest-lowering decision, 2017 settled depth 2.5-2.6m; verbatim quote re-confirmed 2026-09-25: 'some of the depths at low tide on the reef are 2.5m to 2.6m'."},
+    {"id": "R3", "citation": "International Coastal Management (accessed 2026-09-24, re-checked via WebFetch 2026-09-25). \"Building Artificial Surf Reefs: Worldwide Lessons & Applications.\" coastalmanagement.com.au.", "url": "https://www.coastalmanagement.com.au/artificial-surf-reefs", "accessed": "2026-09-25", "supports": "crest depth lowered 1 m to 1.5m below low tide, volume ~70,000 m3, split-V shape; re-checked this pass and confirmed to have NO scaled plan-view diagram."},
+    {"id": "R4", "citation": "Jackson, A., Tomlinson, R., Corbett, B. & Strauss, D. (2012). \"Long Term Performance of a Submerged Coastal Control Structure: A Case Study of the Narrowneck Multi-Functional Artificial Reef.\" Coastal Engineering Proceedings, ICCE 2012.", "url": "https://icce-ojs-tamu.tdl.org/icce/article/view/6956", "pdf_url": "https://icce-ojs-tamu.tdl.org/icce/article/download/6956/pdf/28593", "accessed": "2026-09-25 (full PDF obtained and read this pass, not just the journal abstract page)", "supports": "two-arm-plus-channel/weir topology, crest depth 1.0-1.5m (2012), settlement detail, ~450 container count, Figs. 2/4/5/7 plan views."},
+    {"id": "R8", "citation": "Muurmans, Maggie, Griffith Centre for Coastal Management (accessed 2026-09-24). \"How Narrowneck Copied Nature.\" boatgoldcoast.com.au.", "url": "https://boatgoldcoast.com.au/how-narrowneck-copied-nature/", "accessed": "2026-09-24", "supports": "alternate footprint 450m x 250m."},
+    {"id": "R9", "citation": "Wikipedia contributors (accessed 2026-09-24). \"Narrow Neck, Queensland.\" Wikipedia.", "url": "https://en.wikipedia.org/wiki/Narrow_Neck,_Queensland", "accessed": "2026-09-24", "supports": "dimensions 350x600 m, split V shape, 200 m offshore, containers 1-10 m below sea level, 84 containers added June 2018."},
+    {"id": "R14", "citation": "Nettle, Stu (\"stunet\") (2019-08-19). \"Narrowneck renewal deemed a success.\" Swellnet Analysis.", "url": "https://www.swellnet.com/news/swellnet-analysis/2019/08/19/narrowneck-renewal-deemed-success", "accessed": "2026-09-24 (live URL returned HTTP 403 on re-check 2026-09-25; re-verified via curl with browser user-agent instead)", "supports": "84-container 2018 renewal detail; re-confirmed 2026-09-25 ('2017-2018 ... 84 bags' in the page's cost-breakdown table), also independently corroborated by R9's own 'In June 2018 ... 84 additional mega sand containers were placed'."}
+  ],
+  "verification": [
+    {
+      "item": "Overall topology: two arms (north/south) joined by a central channel with a 2004 weir, per R4",
+      "verdict": "confirmed, strengthened",
+      "evidence": "R4 PDF re-fetched and re-read in full. p.3 verbatim: 'the establishment of a submerged weir between the two arms of the reef as well flared wings.' New corroboration found this pass: p.7 also refers to 'the slumping on the north reef', an independent second textual reference to a named 'north reef' sub-structure, reinforcing the alongshore-split reading against Gemini's inshore/offshore-lobe reading."
+    },
+    {
+      "item": "Crest depth 1.0-1.5 m below low tide, 2012 primary-source value",
+      "verdict": "confirmed",
+      "evidence": "R4 p.13 verbatim re-confirmed: 'The crest height of about 1 - 1.5m below low tide has proven to be suitable for prevention of injuries but has not optimised the surf quality (Corbett et al 2005).'"
+    },
+    {
+      "item": "Crest depth 2.5-2.6 m below low tide, settled by 2017 (pre-2018-renewal)",
+      "verdict": "confirmed",
+      "evidence": "R2's live URL returned HTTP 202 (blocked) to both WebFetch and curl on re-check; retrieved instead via Wayback Machine snapshot (2025-05-16) of the same URL. Verbatim: 'Currently, some of the depths at low tide on the reef are 2.5m to 2.6m and a second layer of bags is yet to be laid on top of that.'"
+    },
+    {
+      "item": "Settlement of 2004 weir containers: lowering up to 2m, present levels ~1.5m below design",
+      "verdict": "confirmed",
+      "evidence": "R4 p.6 verbatim re-confirmed: 'Since placement, these containers have experienced lowering of up to 2m, resulting in present levels some 1.5m below design.'"
+    },
+    {
+      "item": "Bounding-box magnitudes 350 m and 600 m, distance offshore 200 m, container depth 1-10 m below sea level, split-V shape",
+      "verdict": "confirmed",
+      "evidence": "R9 re-fetched fresh (2026-09-25), verbatim: 'The 350 x 600 m V-shaped artificial reef is located 200 m offshore and deflects the waves to the left and to the right of its tip... built from more than 400 mega sand containers placed between 1 and 10 m below the mean sea level.'"
+    },
+    {
+      "item": "Axis assignment (600 m = alongshore, 350 m = cross-shore)",
+      "verdict": "unsupported as an explicit source statement -- corrected to flag as this report's own inference",
+      "evidence": "R9's exact text gives an unordered pair '350 x 600 m' and never states which number is alongshore vs cross-shore. The prior version of this file presented the assignment as if paraphrased from R9; corrected this pass in both md and json to explicitly label it an inference with its own (medium-high) uncertainty, separate from the (confirmed, exact) magnitudes."
+    },
+    {
+      "item": "Alternate footprint 450 m x 250 m, split-V formation (R8)",
+      "verdict": "confirmed",
+      "evidence": "boatgoldcoast.com.au re-fetched fresh, verbatim: 'measures 450 meters long by 250 meters wide', 'split \"v\" formation'."
+    },
+    {
+      "item": "R3 (ICM page): crest 1.5m below low tide, volume ~70,000 m3, split-V shape, NO scaled plan-view diagram present",
+      "verdict": "confirmed",
+      "evidence": "coastalmanagement.com.au/artificial-surf-reefs re-fetched fresh 2026-09-25 independently of the prior pass; confirms crest depth 1.5m below low tide, volume 70,000 m3, V-shape 'split in the V', and independently confirms no scaled/dimensioned plan-view diagram exists on the page."
+    },
+    {
+      "item": "R1: 1999 build year, 70,000 m3 volume, geotextile containers, ~20m beach widening",
+      "verdict": "confirmed",
+      "evidence": "en.wikipedia.org/wiki/Multi-purpose_reef re-fetched fresh; all four points verbatim confirmed."
+    },
+    {
+      "item": "84 containers added in June 2018 renewal (R9/R14)",
+      "verdict": "confirmed, now double-sourced",
+      "evidence": "R14's live URL returned HTTP 403; retrieved via curl with a browser user-agent instead, confirming '2017-2018 ... 84 bags' in the page's own cost table. Independently, R9 (re-fetched fresh) states verbatim: 'In June 2018, renewal works were completed in which 84 additional mega sand containers were placed on top of the reef from a split hull barge.'"
+    },
+    {
+      "item": "Container count ~450 total, with 42 in three maintenance campaigns (2002-2006), implying ~408 from original construction",
+      "verdict": "corrected -- prior version's '400 original' did not arithmetically match the source",
+      "evidence": "R4 p.3 verbatim: 'some 450 containers have been placed to form the reef since 1999... Of those, 42 have been placed in three maintenance campaigns', confirmed exactly by Fig.4's own table (10+15+17=42 containers across 2002-2003/2004/2006). 450-42=408, not 400 as the prior version of this file stated (400+42=442 does not equal 450, an internal inconsistency). Fixed in both md and json; R9's separate, independent, rounded 'more than 400' figure is noted as consistent with ~408 but not the source of the erroneous '400'."
+    },
+    {
+      "item": "Container dimensions: ~20m long, diameter",
+      "verdict": "corrected -- diameter was misquoted",
+      "evidence": "R1 and R9 (both re-fetched fresh) state verbatim '3.0-4.8 m in diameter', not the '~3-4.5 m' this file previously stated. Fixed in both md and json."
+    },
+    {
+      "item": "Polygon geometry: bbox 600x350 m, shoelace area 57,475 m2/arm (114,950 m2 total), north/south mirror symmetry, polygon validity",
+      "verdict": "confirmed by independent recomputation",
+      "evidence": "Recomputed from the raw polygons_m coordinates in Python/shapely, independent of the file's stated numbers: bbox exactly x=[-300,300] (600m) x y=[200,550] (350m); shoelace area exactly 57,475.0 m2 per polygon (114,950.0 m2 total); polygons_m[1] verified to be an exact algebraic mirror of polygons_m[0] in x (list equality after negating x); both polygons shapely-valid and simple. All match the file's own stated numbers exactly."
+    },
+    {
+      "item": "Gemini-comparison section: fairness of the 400x220m/75,000 m2/42,650 m2/2.2m/180m/090-120deg figures attributed to Gemini, and of the 'agree'/'disagree' framing",
+      "verdict": "confirmed fair and accurate",
+      "evidence": "Independently re-read Gemini's own reef_footprints.json ('id': 'narrowneck' record) and scale_sketch_photo_alignment_audit.md (not relying on the prior pass's summary). Every number this file attributes to Gemini matches Gemini's own files exactly, including Gemini's own internally-flagged 75,000-vs-42,650 gross/net inconsistency and its own 180m-vs-300-380m offshore-distance ambiguity flag. The 'agree' (shape family, qualitative ESE orientation) and 'disagree' (topology, dimensions, area, crest depth, offshore-distance framing) claims are all substantiated by Gemini's own files."
+    },
+    {
+      "item": "No number in the Derivation table lacks a source or an explicit estimation/inference method",
+      "verdict": "confirmed",
+      "evidence": "Every row checked carries a source_ref (R1/R2/R3/R4/R8/R9) or an explicit 'derived'/'estimated' method with its own uncertainty note; no row was found unsupported enough to require an 'unsupported' status downgrade."
+    }
+  ]
+}

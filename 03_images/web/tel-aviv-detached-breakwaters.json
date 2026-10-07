@@ -1,0 +1,31 @@
+[
+  {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/%D7%A9%D7%95%D7%91%D7%A8_%D7%94%D7%92%D7%9C%D7%99%D7%9D_%D7%91%D7%97%D7%95%D7%A3_%D7%92%D7%95%D7%A8%D7%93%D7%95%D7%9F_%D7%AA%D7%9C_%D7%90%D7%91%D7%99%D7%91.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:%D7%A9%D7%95%D7%91%D7%A8_%D7%94%D7%92%D7%9C%D7%99%D7%9D_%D7%91%D7%97%D7%95%D7%A3_%D7%92%D7%95%D7%A8%D7%93%D7%95%D7%9F_%D7%AA%D7%9C_%D7%90%D7%91%D7%99%D7%91.jpg",
+    "credit": "Ronavni, via Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "depicts": "Detached rubble-mound breakwater at Gordon Beach, Tel Aviv, viewed from the beach promenade -- shows the offshore rock structure and the calm lagoon it encloses.",
+    "date": "2022-01-04",
+    "kind": "photo",
+    "verified": "curl -sI returned HTTP 200, content-type image/jpeg; image visually confirmed (Read tool) to show a shore-parallel rock breakwater offshore with a sail boat beyond it -- 2026-09-24."
+  },
+  {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/%D7%97%D7%95%D7%A3_%D7%9E%D7%A6%D7%99%D7%A6%D7%99%D7%9D_%D7%9C%D7%90%D7%97%D7%A8_%D7%A9%D7%99%D7%A7%D7%95%D7%9D_%D7%A9%D7%95%D7%91%D7%A8_%D7%94%D7%92%D7%9C%D7%99%D7%9D_%D7%91%D7%A9%D7%A0%D7%AA_2023.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:%D7%97%D7%95%D7%A3_%D7%9E%D7%A6%D7%99%D7%A6%D7%99%D7%9D_%D7%9C%D7%90%D7%97%D7%A8_%D7%A9%D7%99%D7%A7%D7%95%D7%9D_%D7%A9%D7%95%D7%91%D7%A8_%D7%94%D7%92%D7%9C%D7%99%D7%9D_%D7%91%D7%A9%D7%A0%D7%AA_2023.jpg",
+    "credit": "Ronavni, via Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "depicts": "Metzitzim Beach (Tel Aviv), a rubble-mound detached breakwater visible offshore after its 2023 restoration, plus the swim-area rope line and shore-protection rock revetment near the breakwater's landward end.",
+    "date": "2023-11-13",
+    "kind": "photo",
+    "verified": "curl -sI returned HTTP 200, content-type image/jpeg; image visually confirmed (Read tool) to show a low offshore rubble-mound breakwater enclosing a swim area, with a swim buoy line and a rock groyne at the shore -- 2026-09-24."
+  },
+  {
+    "url": "https://www.google.com/maps/@32.0827,34.7676,650m/data=!3m1!1e3",
+    "source_page": "https://www.google.com/maps/@32.0827,34.7676,650m/data=!3m1!1e3",
+    "credit": "Google Maps / satellite imagery providers",
+    "license": "Google Maps terms of use (viewing/linking only, not for redistribution)",
+    "depicts": "Satellite view centered on Gordon Beach, Tel Aviv (~32.0827 N, 34.7676 E), showing the shore-parallel detached breakwater and the sand tombolo/salient it has built up against the coast.",
+    "date": "current (live satellite layer)",
+    "kind": "map"
+  }
+]

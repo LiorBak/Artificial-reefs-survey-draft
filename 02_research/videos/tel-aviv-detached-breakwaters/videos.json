@@ -1,0 +1,69 @@
+[
+  {
+    "url": "https://www.youtube.com/watch?v=TMFI2XvXPWo",
+    "platform": "youtube",
+    "video_id": "TMFI2XvXPWo",
+    "title": "אריאל פוקס מסביר כיצד שוברי הגלים מרחיבים את חופי הים של תל אביב [Ariel Fox explains how the breakwaters widen Tel Aviv's beaches]",
+    "channel": "מכללת גאיה (Gaia College)",
+    "date": "2014-04-19",
+    "duration_seconds": 118,
+    "what_it_shows": "A short Hebrew-language explainer, made with the YouTube video editor, in which a speaker (Ariel Fox) explains the mechanism by which the Tel Aviv detached breakwaters widen the adjacent beaches -- directly on-topic for the dossier's subject.",
+    "embed_ok": true,
+    "transcript_path": null,
+    "key_quotes": [],
+    "frames": [],
+    "notes": "No transcript available: yt-dlp --list-subs confirms this video has neither manual subtitles nor YouTube auto-captions in any language, so no timestamped quotes could be extracted. A frame grab was attempted (00:20-00:35 segment) but the frame captured only a blurry archival beach-wading clip embedded mid-video, not the breakwater itself, so it was discarded per the honesty rule."
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=7hC8wkQ-QaQ",
+    "platform": "youtube",
+    "video_id": "7hC8wkQ-QaQ",
+    "title": "חוף תל ברוך תל אביב [Tel Baruch Beach, Tel Aviv]",
+    "channel": "Ben Peretz - Drone",
+    "date": "2022-05-27",
+    "duration_seconds": 47,
+    "what_it_shows": "Aerial drone footage of Tel Baruch Beach -- the site of the first (1964-65) Tel Aviv detached breakwater [R1][R8] -- clearly showing the shore-parallel rubble-mound breakwater, the tombolo/sand accretion behind it, sunbathers, and the beachfront promenade.",
+    "embed_ok": true,
+    "transcript_path": null,
+    "key_quotes": [],
+    "frames": [
+      {
+        "path": "C:\\Users\\lior\\Documents\\Gemini\\AG\\Artificial reef - to upload to git\\03_images\\video_frames\\tel-aviv-detached-breakwaters\\7hC8wkQ-QaQ_0018.jpg",
+        "timestamp": "00:18",
+        "caption": "Aerial view of Tel Baruch Beach: the detached rubble-mound breakwater runs shore-parallel at upper right, enclosing a calm swim area marked by a buoy line, with the beach's wooden shade structures and promenade at lower left. Viewed and confirmed honestly -- clearly shows the breakwater structure itself."
+      }
+    ],
+    "notes": "No speech/narration (drone footage set to no dialogue); yt-dlp --list-subs confirms no subtitles or auto-captions exist for this video."
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=tlnZheTWa9U",
+    "platform": "youtube",
+    "video_id": "tlnZheTWa9U",
+    "title": "מרינה תל אביב ובריכת גורדון [Tel Aviv Marina and Gordon Pool]",
+    "channel": "Ben Peretz - Drone",
+    "date": "2023-07-29",
+    "duration_seconds": 152,
+    "what_it_shows": "Aerial drone footage over the Tel Aviv Marina and the Gordon (sea-water) swimming pool area, adjacent to Gordon Beach where a detached breakwater sits; likely shows the breakwater/tombolo in wider shots of the coastline, though this was not individually frame-verified this pass.",
+    "embed_ok": true,
+    "transcript_path": null,
+    "key_quotes": [],
+    "frames": [],
+    "notes": "No transcript (no subtitles/auto-captions per yt-dlp --list-subs; drone footage, no narration). A frame-grab attempt for this video hit a transient YouTube 403 (expired stream URL) before a still could be captured -- not independently confirmed to show the breakwater itself, so treat as a secondary/context lead rather than a primary source, pending a retry."
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=zJ7ya7jMpBo",
+    "platform": "youtube",
+    "video_id": "zJ7ya7jMpBo",
+    "title": "HILTON BEACH, Tel Aviv, Israel | 4K UHD Relaxing Virtual Walk | חוף הילטון, תל אביב, ישראל",
+    "channel": "Walk With Me",
+    "date": "2021-09-14",
+    "duration_seconds": 643,
+    "what_it_shows": "An 4K walking-tour video along Hilton Beach, Tel Aviv -- a beach described in secondary sources as having 'two jetties that protect the beach from incoming currents' [R12] -- likely passes the jetty/breakwater area during the walk, though the exact jetty-visible timestamp was not individually confirmed this pass.",
+    "embed_ok": false,
+    "best_timestamp_seconds": 60,
+    "transcript_path": null,
+    "key_quotes": [],
+    "frames": [],
+    "notes": "Duration (643s) exceeds the 480s embed threshold, so this is a link-with-timestamp lead only. No subtitles/auto-captions available. best_timestamp_seconds is a rough estimate (start of the walk, likely to pass the jetty within the first few minutes) rather than a verified jetty-visible moment -- flagged for a follow-up pass to pin down the exact jetty timestamp."
+  }
+]

@@ -1,0 +1,942 @@
+# Image registry - palm-beach-gold-coast
+
+Source of truth: `images.json` in this folder (convention: `_agent_briefs/image_registry.md`; overview: `03_images/reefs/README.md`). This file is generated from it.
+
+34 images registered, 34 with a file, 26 used for the model (any use other than context/not_used).
+
+## palm-beach-gold-coast-img-01 - Hunt et al. 2022 Fig 2: backhoe dredger and split hopper barge placing rock at the reef site (2019)
+
+![palm-beach-gold-coast-img-01](../../../07_scale/shapes/palm-beach-gold-coast/src/gov/palm-beach-gold-coast_hunt2022_fig2_backhoe_dredger_and_split_hopper_barge_placing_rock_2019_native.jpeg)
+
+- **file**: `07_scale/shapes/palm-beach-gold-coast/src/gov/palm-beach-gold-coast_hunt2022_fig2_backhoe_dredger_and_split_hopper_barge_placing_rock_2019_native.jpeg`
+- **kind**: report_photo
+- **shows**: Backhoe dredger with a rock-carrying split-hopper barge and tug offshore, seen from the dune; the reef is under construction (not visible).
+- **structure visible**: False
+- **state shown**: under construction (2019)
+- **image date**: May-September 2019 (construction)
+- **citation**: Hunt, S., Britton, G., Messiter, D., Prenzler, P., Knight, S. and Watterson, E. (2022). Palm Beach Shoreline Project: innovative coastal management solution. Coastal Engineering Proceedings 37 (ICCE 2022), management.66, doi:10.9753/icce.v37.management.66, Fig 2 (word/media/image2.jpeg of the docx). https://icce-ojs-tamu.tdl.org/icce/article/view/13024. Accessed 2026-10-06.
+- **image URL**: https://icce-ojs-tamu.tdl.org/icce/article/download/13024/12297
+- **source page**: https://icce-ojs-tamu.tdl.org/icce/article/view/13024
+- **page / figure**: Fig 2 (word/media/image2.jpeg of the docx)
+- **credit**: Hunt et al. (2022); photo credits not stated in the paper (City of Gold Coast project)
+- **licence**: CC BY 4.0 (article page, Copyright (c) 2023 the authors)
+- **retrieved**: 2026-10-06
+- **used for**: context
+- **How used for the model**: Context: construction method (backhoe dredger placing 6-8 t rock). No geometry.
+- **3D check pending**: no - None
+- **linked records**: 07_scale/bathymetry/gold_coast/SOURCES.md GC-P01; 07_scale/bathymetry/gold_coast/REPORT.md
+- **size**: 0.08 MB, 647x431 px
+- **sha256**: 4926d9298e7be1f9ea0b9b2e87fff2e8b50e9bc5371c044fa642bb258862bfeb
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: gold_coast_gov_reports_bathymetry, 2026-10-06
+
+## palm-beach-gold-coast-img-02 - Hunt et al. 2022 Fig 3: backhoe dredger at the reef during construction (oblique aerial, 2019)
+
+![palm-beach-gold-coast-img-02](../../../07_scale/shapes/palm-beach-gold-coast/src/gov/palm-beach-gold-coast_hunt2022_fig3_backhoe_dredger_at_reef_aerial_2019_native.jpeg)
+
+- **file**: `07_scale/shapes/palm-beach-gold-coast/src/gov/palm-beach-gold-coast_hunt2022_fig3_backhoe_dredger_at_reef_aerial_2019_native.jpeg`
+- **kind**: aerial
+- **shows**: Oblique aerial of the dredger and barge on the reef site a few hundred metres off the beach, looking north towards Burleigh Heads, with the surf break and beach visible.
+- **structure visible**: True
+- **state shown**: under construction (2019)
+- **image date**: May-September 2019 (construction)
+- **citation**: Hunt, S., Britton, G., Messiter, D., Prenzler, P., Knight, S. and Watterson, E. (2022). Palm Beach Shoreline Project: innovative coastal management solution. Coastal Engineering Proceedings 37 (ICCE 2022), management.66, doi:10.9753/icce.v37.management.66, Fig 3 (word/media/image3.jpeg). https://icce-ojs-tamu.tdl.org/icce/article/view/13024. Accessed 2026-10-06.
+- **image URL**: https://icce-ojs-tamu.tdl.org/icce/article/download/13024/12297
+- **source page**: https://icce-ojs-tamu.tdl.org/icce/article/view/13024
+- **page / figure**: Fig 3 (word/media/image3.jpeg)
+- **credit**: Hunt et al. (2022); photo credits not stated in the paper (City of Gold Coast project)
+- **licence**: CC BY 4.0 (article page, Copyright (c) 2023 the authors)
+- **retrieved**: 2026-10-06
+- **used for**: context; scale
+- **How used for the model**: Context: the dredger sits on the reef location a few hundred metres off the shoreline, consistent with 225-374 m off the waterline; no measurement taken.
+- **3D check pending**: no - None
+- **linked records**: 07_scale/bathymetry/gold_coast/SOURCES.md GC-P02; 07_scale/bathymetry/gold_coast/REPORT.md
+- **size**: 0.02 MB, 400x266 px
+- **sha256**: f09c0d7a3c2b9ab75f4cb8f620803aaedd822b2538f7ba1f3a16a643c14534ce
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: gold_coast_gov_reports_bathymetry, 2026-10-06
+
+## palm-beach-gold-coast-img-03 - Hunt et al. 2022 Fig 5: wave breaking and surf amenity on Palm Beach Reef
+
+![palm-beach-gold-coast-img-03](../../../07_scale/shapes/palm-beach-gold-coast/src/gov/palm-beach-gold-coast_hunt2022_fig5_wave_breaking_on_reef_native.jpeg)
+
+- **file**: `07_scale/shapes/palm-beach-gold-coast/src/gov/palm-beach-gold-coast_hunt2022_fig5_wave_breaking_on_reef_native.jpeg`
+- **kind**: photo
+- **shows**: Photograph of a wave breaking over the submerged rock reef from the beach side; the reef crest shows as the break line.
+- **structure visible**: True
+- **state shown**: as-built (after Sept 2019)
+- **image date**: after construction 2019 (date not stated)
+- **citation**: Hunt, S., Britton, G., Messiter, D., Prenzler, P., Knight, S. and Watterson, E. (2022). Palm Beach Shoreline Project: innovative coastal management solution. Coastal Engineering Proceedings 37 (ICCE 2022), management.66, doi:10.9753/icce.v37.management.66, Fig 5 (word/media/image5.jpeg). https://icce-ojs-tamu.tdl.org/icce/article/view/13024. Accessed 2026-10-06.
+- **image URL**: https://icce-ojs-tamu.tdl.org/icce/article/download/13024/12297
+- **source page**: https://icce-ojs-tamu.tdl.org/icce/article/view/13024
+- **page / figure**: Fig 5 (word/media/image5.jpeg)
+- **credit**: Hunt et al. (2022); photo credits not stated in the paper (City of Gold Coast project)
+- **licence**: CC BY 4.0 (article page, Copyright (c) 2023 the authors)
+- **retrieved**: 2026-10-06
+- **used for**: context; camera_match
+- **How used for the model**: Context and potential camera-match target for the 3D viewer; no value read.
+- **3D check pending**: YES - Compare the wave break position/line with the modelled crest outline (59 x 6 m crest slot at -1.5 m MSL) if the camera position can be inferred (values: crest_z, planform)
+- **linked records**: 07_scale/bathymetry/gold_coast/SOURCES.md GC-P03; 07_scale/bathymetry/gold_coast/REPORT.md
+- **size**: 0.17 MB, 698x465 px
+- **sha256**: 8dcab857073c8cfe86d03b0c668e515bded5b9d39599f70e7f571926f6007491
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: gold_coast_gov_reports_bathymetry, 2026-10-06
+
+## palm-beach-gold-coast-img-04 - Prenzler et al. 2022 Fig 1 (top): CCTV camera view of the reef with the camera field of view drawn on an aerial
+
+![palm-beach-gold-coast-img-04](../../../07_scale/shapes/palm-beach-gold-coast/src/gov/palm-beach-gold-coast_prenzler2022_fig1_cctv_camera_view_of_reef_native.jpeg)
+
+- **file**: `07_scale/shapes/palm-beach-gold-coast/src/gov/palm-beach-gold-coast_prenzler2022_fig1_cctv_camera_view_of_reef_native.jpeg`
+- **kind**: aerial
+- **shows**: Aerial of the beach, reef (dark patch) and the red wedge of the permanent shore-based CCTV camera, with the camera frame showing waves breaking over the reef.
+- **structure visible**: True
+- **state shown**: as-built (2020-2021)
+- **image date**: 2020-2021 (wave-peel tracking period; image date not stated)
+- **citation**: Prenzler, P., Hunt, S., Elliott-Perkins, Z., Hamilton, D., Messiter, D., Wharton, C. and Watterson, E. (2022). Monitoring of the Palm Beach artificial reef. Coastal Engineering Proceedings 37 (ICCE 2022), structures.65, doi:10.9753/icce.v37.structures.65, p.1, Fig 1 top (embedded raster). https://icce-ojs-tamu.tdl.org/icce/article/view/12921. Accessed 2026-10-06.
+- **image URL**: https://icce-ojs-tamu.tdl.org/icce/article/download/12921/12194
+- **source page**: https://icce-ojs-tamu.tdl.org/icce/article/view/12921
+- **page / figure**: p.1, Fig 1 top (embedded raster)
+- **credit**: Prenzler et al. (2022); City of Gold Coast CCTV / aerial base not credited separately
+- **licence**: CC BY 4.0 (article page, Copyright (c) 2023 the authors)
+- **retrieved**: 2026-10-06
+- **used for**: context; camera_match
+- **How used for the model**: Gives the camera wedge and one frame of the reef for camera_match; no geometry read.
+- **3D check pending**: YES - Camera-match the CCTV frame to the 3D model (apex of the wedge = camera; reef direction) (values: crest_z, planform)
+- **linked records**: 07_scale/bathymetry/gold_coast/SOURCES.md GC-P04; 07_scale/bathymetry/gold_coast/REPORT.md
+- **size**: 0.03 MB, 634x227 px
+- **sha256**: a0867830822d156f9c8504ea3d11a8de639e9748fa76432ba8a32e2781490c72
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: gold_coast_gov_reports_bathymetry, 2026-10-06
+
+## palm-beach-gold-coast-img-05 - Daniels et al. 2022 Fig 1: wave buoy locations PBO1-4 at the natural Palm Beach reef
+
+![palm-beach-gold-coast-img-05](../../../07_scale/shapes/palm-beach-gold-coast/src/gov/palm-beach-gold-coast_daniels2022_fig1_buoy_locations_natural_reef_outline_2016_native.jpeg)
+
+- **file**: `07_scale/shapes/palm-beach-gold-coast/src/gov/palm-beach-gold-coast_daniels2022_fig1_buoy_locations_natural_reef_outline_2016_native.jpeg`
+- **kind**: aerial
+- **shows**: Aerial with the natural Palm Beach reef outlined (dashed) and the four DWR-G4 buoys (PBO1-PBO4), scale bar 0-2 km and north arrow. The artificial reef (2019) does not exist yet.
+- **structure visible**: False
+- **state shown**: pre-construction (2016)
+- **image date**: buoys deployed 25 Feb - 31 Aug 2016; aerial undated, before the artificial reef
+- **citation**: Daniels, R., Metters, D. and Ryan, J. (2022). Wave transformation over Palm Beach reef. Coastal Engineering Proceedings 37 (ICCE 2022), papers.63, doi:10.9753/icce.v37.papers.63, p.1-2, Fig 1 (embedded raster). https://icce-ojs-tamu.tdl.org/icce/article/view/12702. Accessed 2026-10-06.
+- **image URL**: https://icce-ojs-tamu.tdl.org/icce/article/download/12702/11975
+- **source page**: https://icce-ojs-tamu.tdl.org/icce/article/view/12702
+- **page / figure**: p.1-2, Fig 1 (embedded raster)
+- **credit**: Daniels, Metters and Ryan (2022), Queensland Government Department of Environment and Science
+- **licence**: CC BY 4.0 (article page, Copyright (c) 2023 the authors)
+- **retrieved**: 2026-10-06
+- **used for**: 3d_seabed; context
+- **How used for the model**: The buoy depths in Table 1 (PBO1 11.33 m at 28.114007 S 153.479249 E; PBO2 11.29 m at 28.109683 S 153.474469 E; PBO3 11.75 m at 28.107191 S 153.473845 E; PBO4 23.80 m at 28.099271 S 153.474321 E; datum not stated) are depth points offshore of the reef; PBO3 is about 214 m seaward of the reef's offshore toe. Goes to REPORT.md section 5.
+- **3D check pending**: YES - Seabed seaward of the offshore toe: model depth at PBO3 (-28.107191, 153.473845) vs 11.75 m (datum unstated, probably below MSL/AHD) (values: seabed)
+- **linked records**: 07_scale/bathymetry/gold_coast/SOURCES.md GC-P05; 07_scale/bathymetry/gold_coast/REPORT.md
+- **size**: 0.03 MB, 496x554 px
+- **sha256**: 5ca46f6f33cd2534de55e3db113942c45ccf51fad5513f221581f9e149dd52bd
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: gold_coast_gov_reports_bathymetry, 2026-10-06
+
+## palm-beach-gold-coast-img-06 - Daniels et al. 2022 Fig 2: natural Palm Beach reef outlined on an aerial photograph
+
+![palm-beach-gold-coast-img-06](../../../07_scale/shapes/palm-beach-gold-coast/src/gov/palm-beach-gold-coast_daniels2022_fig2_natural_palm_beach_reef_outlined_aerial_native.jpeg)
+
+- **file**: `07_scale/shapes/palm-beach-gold-coast/src/gov/palm-beach-gold-coast_daniels2022_fig2_natural_palm_beach_reef_outlined_aerial_native.jpeg`
+- **kind**: aerial
+- **shows**: Aerial with the large natural rock reef outlined (dashed); water-colour contrast shows the reef's rock/sand; no artificial reef yet.
+- **structure visible**: False
+- **state shown**: pre-construction (undated)
+- **image date**: undated aerial (before 2019 construction)
+- **citation**: Daniels, R., Metters, D. and Ryan, J. (2022). Wave transformation over Palm Beach reef. Coastal Engineering Proceedings 37 (ICCE 2022), papers.63, doi:10.9753/icce.v37.papers.63, p.3, Fig 2 (embedded raster). https://icce-ojs-tamu.tdl.org/icce/article/view/12702. Accessed 2026-10-06.
+- **image URL**: https://icce-ojs-tamu.tdl.org/icce/article/download/12702/11975
+- **source page**: https://icce-ojs-tamu.tdl.org/icce/article/view/12702
+- **page / figure**: p.3, Fig 2 (embedded raster)
+- **credit**: Daniels, Metters and Ryan (2022), Queensland Government Department of Environment and Science
+- **licence**: CC BY 4.0 (article page, Copyright (c) 2023 the authors)
+- **retrieved**: 2026-10-06
+- **used for**: context
+- **How used for the model**: Context: the natural reef 500 m off the beach (10-16 m deep seaward edge, 5-9 m shore edge) that focuses wave energy on the artificial reef site.
+- **3D check pending**: no - None
+- **linked records**: 07_scale/bathymetry/gold_coast/SOURCES.md GC-P06; 07_scale/bathymetry/gold_coast/REPORT.md
+- **size**: 0.03 MB, 734x648 px
+- **sha256**: 022910bb1cace9667350a725cf6b7b398cc7da2f890595bdebfc9b52f498f042
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: gold_coast_gov_reports_bathymetry, 2026-10-06
+
+## palm-beach-gold-coast-img-07 - Mortensen et al. 2015 Fig 1: example of erosion at Palm Beach
+
+![palm-beach-gold-coast-img-07](../../../07_scale/shapes/palm-beach-gold-coast/src/gov/palm-beach-gold-coast_mortensen2015_fig1_erosion_at_palm_beach_native.jpeg)
+
+- **file**: `07_scale/shapes/palm-beach-gold-coast/src/gov/palm-beach-gold-coast_mortensen2015_fig1_erosion_at_palm_beach_native.jpeg`
+- **kind**: photo
+- **shows**: Photograph of a scarped dune and exposed rock wall at Palm Beach after a storm; shows the problem the reef addresses.
+- **structure visible**: False
+- **state shown**: pre-construction (c. 2013)
+- **image date**: not stated (storm erosion before 2014)
+- **citation**: Mortensen, S.B., Hibberd, W.J., Kaergaard, K., Kristensen, S.E., Deigaard, R. and Hunt, S. (2015). Concept design of a multipurpose submerged control structure for Palm Beach, Gold Coast Australia. Australasian Coasts & Ports Conference 2015, Auckland, p.1, Fig 1 (embedded raster). https://www.dhigroup.com/upload/publications/coastsea/Mortensen_2015.pdf. Accessed 2026-10-06.
+- **image URL**: https://www.dhigroup.com/upload/publications/coastsea/Mortensen_2015.pdf
+- **source page**: https://www.dhigroup.com/upload/publications/coastsea/Mortensen_2015.pdf
+- **page / figure**: p.1, Fig 1 (embedded raster)
+- **credit**: DHI Water & Environment / City of Gold Coast (Mortensen et al. 2015)
+- **licence**: not stated (conference paper hosted by DHI; copyright the authors / conference)
+- **retrieved**: 2026-10-06
+- **used for**: context
+- **How used for the model**: Context only.
+- **3D check pending**: no - None
+- **linked records**: 07_scale/bathymetry/gold_coast/SOURCES.md GC-P07; 07_scale/bathymetry/gold_coast/REPORT.md
+- **size**: 0.04 MB, 613x377 px
+- **sha256**: 79724898823c3f602b2df80c8f72f75484de60aee6d80281cfb8e1f85a46f9c3
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: gold_coast_gov_reports_bathymetry, 2026-10-06
+
+## palm-beach-gold-coast-img-08 - Mortensen et al. 2015 Fig 5: Boussinesq model waves breaking on the concept SCS (render)
+
+![palm-beach-gold-coast-img-08](../../../07_scale/shapes/palm-beach-gold-coast/src/gov/palm-beach-gold-coast_mortensen2015_fig5_boussinesq_model_waves_breaking_on_scs_render_native.jpeg)
+
+- **file**: `07_scale/shapes/palm-beach-gold-coast/src/gov/palm-beach-gold-coast_mortensen2015_fig5_boussinesq_model_waves_breaking_on_scs_render_native.jpeg`
+- **kind**: diagram
+- **shows**: 3-D render of modelled waves (Hs 1.7 m, Tp 12 s, 73 deg) breaking on the concept submerged structure in the lower left.
+- **structure visible**: False
+- **state shown**: design (concept 2014, not the built reef)
+- **image date**: 2014-2015 model output (concept, not built)
+- **citation**: Mortensen, S.B., Hibberd, W.J., Kaergaard, K., Kristensen, S.E., Deigaard, R. and Hunt, S. (2015). Concept design of a multipurpose submerged control structure for Palm Beach, Gold Coast Australia. Australasian Coasts & Ports Conference 2015, Auckland, p.6, Fig 5 (embedded raster). https://www.dhigroup.com/upload/publications/coastsea/Mortensen_2015.pdf. Accessed 2026-10-06.
+- **image URL**: https://www.dhigroup.com/upload/publications/coastsea/Mortensen_2015.pdf
+- **source page**: https://www.dhigroup.com/upload/publications/coastsea/Mortensen_2015.pdf
+- **page / figure**: p.6, Fig 5 (embedded raster)
+- **credit**: DHI Water & Environment / City of Gold Coast (Mortensen et al. 2015)
+- **licence**: not stated (conference paper hosted by DHI; copyright the authors / conference)
+- **retrieved**: 2026-10-06
+- **used for**: context
+- **How used for the model**: Context only (concept design, different position and size).
+- **3D check pending**: no - None
+- **linked records**: 07_scale/bathymetry/gold_coast/SOURCES.md GC-P08; 07_scale/bathymetry/gold_coast/REPORT.md
+- **size**: 0.02 MB, 666x332 px
+- **sha256**: ffe844da8244f8ff87185598b99851c31d4e4c250de798c0a6865ea846ac29c4
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: gold_coast_gov_reports_bathymetry, 2026-10-06
+
+## palm-beach-gold-coast-img-09 - Mortensen et al. 2015 Fig 6 (top): pre-construction seabed depth contours at the Palm Beach concept site (no structure)
+
+![palm-beach-gold-coast-img-09](../../../07_scale/shapes/palm-beach-gold-coast/src/gov/palm-beach-gold-coast_mortensen2015_fig6a_baseline_bathymetry_contours_no_scs_native.jpeg)
+
+- **file**: `07_scale/shapes/palm-beach-gold-coast/src/gov/palm-beach-gold-coast_mortensen2015_fig6a_baseline_bathymetry_contours_no_scs_native.jpeg`
+- **kind**: survey_plot
+- **shows**: Contour map of the natural seabed off 19th Avenue in model metres with depth labels 1.5 to 13.5 m every 0.5 m, the concept SCS footprint (grey) and OPTISURF surf-ride tracks. No datum given for the labels.
+- **structure visible**: True
+- **state shown**: pre-construction seabed (c. 2013-14)
+- **image date**: bathymetry from the City's survey before 2014 (date not stated); figure 2015
+- **citation**: Mortensen, S.B., Hibberd, W.J., Kaergaard, K., Kristensen, S.E., Deigaard, R. and Hunt, S. (2015). Concept design of a multipurpose submerged control structure for Palm Beach, Gold Coast Australia. Australasian Coasts & Ports Conference 2015, Auckland, p.6, Fig 6 top (embedded raster). https://www.dhigroup.com/upload/publications/coastsea/Mortensen_2015.pdf. Accessed 2026-10-06.
+- **image URL**: https://www.dhigroup.com/upload/publications/coastsea/Mortensen_2015.pdf
+- **source page**: https://www.dhigroup.com/upload/publications/coastsea/Mortensen_2015.pdf
+- **page / figure**: p.6, Fig 6 top (embedded raster)
+- **credit**: DHI Water & Environment / City of Gold Coast (Mortensen et al. 2015)
+- **licence**: not stated (conference paper hosted by DHI; copyright the authors / conference)
+- **retrieved**: 2026-10-06
+- **used for**: 3d_seabed; cross_check
+- **How used for the model**: Depth labels read along y = 3050 m (annotated copy): 2 m at x=394 ... 6.5 m at x=639, 8 m at x=718, 11.5 m at x=836 (model m; land edge x about 255). Reproduces the paper's concept toe depths 6.6 m and 11.4 m (Table 2). Goes to REPORT.md section 5 as the only labelled pre-construction seabed profile found. Compared with the 3D model's Navionics chart bed (depth below LAT converted to AHD with +0.76 m, MSQ 2014): RMS 0.29 m with no vertical adjustment (horizontal shift 316 m = waterline of the figure's x axis), 0.20 m with a 0.5 m offset (chart shallower than the 2013-14 survey, plausible after the 2017 nourishment); without the datum conversion RMS 0.52 m. Digitised profile: 07_scale/bathymetry/gold_coast/annotated/palm_beach_mortensen2015_fig6a_profile_y3050.csv; script tools/pb_profile_compare.py.
+- **3D check pending**: YES - Seabed datum and level: pre-reef City survey (2013-14, datum assumed AHD) agrees with the Navionics chart bed converted LAT->AHD (+0.76 m) to 0.29 m RMS; the chart bed is about 0.5 m shallower (nourishment 2017). Check that the model's seabed (chart datum = LAT) stays consistent; no change recommended unless the City supplies the as-built survey. (values: seabed, crest_z, height)
+- **annotated / overlay files**: `07_scale/bathymetry/gold_coast/annotated/palm_beach_mortensen2015_fig6a_depth_contours_read_along_y3050.png`
+- **linked records**: 07_scale/bathymetry/gold_coast/SOURCES.md GC-P09; 07_scale/bathymetry/gold_coast/REPORT.md
+- **size**: 0.05 MB, 625x379 px
+- **sha256**: 8dd6a6fa9ed4878447cf9696b37da055fa79d9f2809f0659847a3933c4175c43
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: gold_coast_gov_reports_bathymetry, 2026-10-06
+
+## palm-beach-gold-coast-img-10 - Mortensen et al. 2015 Fig 6 (bottom): seabed contours with the concept SCS in place
+
+![palm-beach-gold-coast-img-10](../../../07_scale/shapes/palm-beach-gold-coast/src/gov/palm-beach-gold-coast_mortensen2015_fig6b_bathymetry_contours_with_concept_scs_native.jpeg)
+
+- **file**: `07_scale/shapes/palm-beach-gold-coast/src/gov/palm-beach-gold-coast_mortensen2015_fig6b_bathymetry_contours_with_concept_scs_native.jpeg`
+- **kind**: survey_plot
+- **shows**: Same seabed contours as Fig 6 top with the concept structure's own contour set (grey, crest contours) drawn over it and coloured surf-ride tracks.
+- **structure visible**: True
+- **state shown**: design (concept 2014, not built)
+- **image date**: 2014-2015 model setup (concept, not built)
+- **citation**: Mortensen, S.B., Hibberd, W.J., Kaergaard, K., Kristensen, S.E., Deigaard, R. and Hunt, S. (2015). Concept design of a multipurpose submerged control structure for Palm Beach, Gold Coast Australia. Australasian Coasts & Ports Conference 2015, Auckland, p.6, Fig 6 bottom (embedded raster). https://www.dhigroup.com/upload/publications/coastsea/Mortensen_2015.pdf. Accessed 2026-10-06.
+- **image URL**: https://www.dhigroup.com/upload/publications/coastsea/Mortensen_2015.pdf
+- **source page**: https://www.dhigroup.com/upload/publications/coastsea/Mortensen_2015.pdf
+- **page / figure**: p.6, Fig 6 bottom (embedded raster)
+- **credit**: DHI Water & Environment / City of Gold Coast (Mortensen et al. 2015)
+- **licence**: not stated (conference paper hosted by DHI; copyright the authors / conference)
+- **retrieved**: 2026-10-06
+- **used for**: cross_check; context
+- **How used for the model**: Shows the concept structure's footprint on the seabed contours; no new values beyond Fig 6 top.
+- **3D check pending**: no - None (concept, not built)
+- **linked records**: 07_scale/bathymetry/gold_coast/SOURCES.md GC-P10; 07_scale/bathymetry/gold_coast/REPORT.md
+- **size**: 0.05 MB, 625x379 px
+- **sha256**: 1aeab0520f6692ee5ea44d1231e2ff8f9f8777c9c982991cdbc41dc42293178f
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: gold_coast_gov_reports_bathymetry, 2026-10-06
+
+## palm-beach-gold-coast-img-11 - Q1 evidence: City of Gold Coast DTM (source-ID raster) coverage and 1 m contours over Esri imagery at Palm Beach
+
+![palm-beach-gold-coast-img-11](../../../07_scale/bathymetry/gold_coast/annotated/q1_palm_beach_dtm_source_coverage_on_esri.png)
+
+- **file**: `07_scale/bathymetry/gold_coast/annotated/q1_palm_beach_dtm_source_coverage_on_esri.png`
+- **kind**: diagram
+- **shows**: Palm Beach artificial reef (dark rock mound) lies 225-374 m off the beach in a region where the City's DTM source raster has NO cell (cyan outlines); data blocks (yellow) stop at the beach edge; the 1 m contours have minimum elevation 0 m AHD (red 0 m line along the beach). The DTM therefore holds no depth at the reef.
+- **structure visible**: True
+- **state shown**: as-built, imagery 2025-12-01
+- **image date**: imagery 2025-12-01; DTM metadata raster modified 2024-05-13; overlay made 2026-10-06
+- **citation**: Gold Coast bathymetry search (2026). Overlay of (a) City of Gold Coast (2024) Gold Coast DTM Metadata raster (data.gov.au, CC BY 2.5 AU, zipped file geodatabase DTM_Metadata_Feb_2024_1m), (b) City of Gold Coast Contours MapServer, on (c) Esri World Imagery 2025-12-01 (private research copy). Accessed 2026-10-06. https://data.gov.au/data/dataset/digital-elevation-models-dem
+- **image URL**: https://data.gov.au/data/dataset/3f1698d1-3789-4dc5-af9d-0fb08f800d77/resource/3c077953-539c-422a-b3ed-64e06978204c/download/dtm_metadata.zip
+- **source page**: https://data.gov.au/data/dataset/digital-elevation-models-dem
+- **page / figure**: annotated overlay generated by 07_scale/bathymetry/gold_coast/q1_dtm_evidence/q1_overlay.py
+- **credit**: City of Gold Coast (DTM metadata, contours); Esri, Maxar, Earthstar Geographics (imagery); overlay by this project
+- **licence**: DTM metadata CC BY 2.5 AU; Esri imagery under Esri terms (private research copy)
+- **retrieved**: 2026-10-06
+- **used for**: cross_check; context
+- **How used for the model**: Answers Q1 for Palm Beach: block (row 370, col 238) at the reef centre is absent; so the Navionics-derived seabed in the 3D model cannot be replaced by the DTM (REQUESTS_FOR_LIOR C2 answered 'no'). Goes to REPORT.md section 2.
+- **3D check pending**: no - None: answers REQUESTS_FOR_LIOR C2 (the DTM has no Palm Beach nearshore soundings) (values: seabed)
+- **linked records**: 07_scale/bathymetry/gold_coast/SOURCES.md GC-Q1P; 07_scale/bathymetry/gold_coast/REPORT.md
+- **size**: 9.49 MB, 2658x2658 px
+- **sha256**: 3b6fa92f4ac663adff34e99c9d918b96d8e96592a8ce95bd4f12574c4153246a
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: gold_coast_gov_reports_bathymetry, 2026-10-06
+
+## palm-beach-gold-coast-img-12 - City of Gold Coast 2020 brochure p.8: oblique aerial of Palm Beach with the artificial reef, natural reef and benefit area labelled
+
+![palm-beach-gold-coast-img-12](../../../07_scale/shapes/palm-beach-gold-coast/src/gov/palm-beach-gold-coast_cogc_brochure2020_p10_oblique_aerial_with_reef_natural_reef_benefit_area_labels_native.jpeg)
+
+- **file**: `07_scale/shapes/palm-beach-gold-coast/src/gov/palm-beach-gold-coast_cogc_brochure2020_p10_oblique_aerial_with_reef_natural_reef_benefit_area_labels_native.jpeg`
+- **kind**: aerial
+- **shows**: Oblique aerial looking north from Currumbin Creek over Palm Beach: the artificial reef is only a grey icon (labelled), with the Palm Beach natural reef, 21st Avenue and 11th Avenue groynes, benefit area, Burleigh headland.
+- **structure visible**: False
+- **state shown**: pre-construction aerial with the design drawn in (design, 2019)
+- **image date**: photo undated (before 2019 construction: the artificial reef is drawn as a grey icon); brochure June 2020
+- **citation**: City of Gold Coast (2020). Palm Beach Shoreline Project - project overview (brochure, published June 2020, ref 19-TI-00753), brochure page 8 (PDF p.10), full-page aerial (embedded jpeg, native resolution). https://www.goldcoast.qld.gov.au/files/sharedassets/public/v/1/pdfs/environment/palm-beach-shoreline-project-brochure-a4.pdf (linked from https://www.goldcoast.qld.gov.au/Environment-sustainability/Protecting-our-environment/Managing-our-beaches/Seawalls-artificial-reefs). Accessed 2026-10-06.
+- **image URL**: https://www.goldcoast.qld.gov.au/files/sharedassets/public/v/1/pdfs/environment/palm-beach-shoreline-project-brochure-a4.pdf
+- **source page**: https://www.goldcoast.qld.gov.au/Environment-sustainability/Protecting-our-environment/Managing-our-beaches/Seawalls-artificial-reefs
+- **page / figure**: brochure page 8 (PDF p.10), full-page aerial (embedded jpeg, native resolution)
+- **credit**: City of Gold Coast (brochure; imagery credits not given on the pages used)
+- **licence**: not stated (City of Gold Coast publication; copyright City of Gold Coast)
+- **retrieved**: 2026-10-06
+- **used for**: context
+- **How used for the model**: Context and orientation (reef lies between the beach and the natural reef, north of the 21st Avenue groyne); the text on the page gives 160 m long x 80 m wide, 1.5 m below the average water level at its highest point, about 270 m offshore of Nineteenth Avenue.
+- **3D check pending**: YES - Council text vs model: footprint 160 x 80 m (model grid 162 x 91 m), crest 1.5 m below 'average water level' (model -1.5 m MSL), 270 m offshore (model 225-374 m from the waterline) (values: planform, crest_z)
+- **linked records**: 07_scale/bathymetry/gold_coast/SOURCES.md GC-P11; 07_scale/bathymetry/gold_coast/REPORT.md
+- **size**: 0.07 MB, 1088x725 px
+- **sha256**: 308de20f4430f0ab0ae8feabe40f01c58b07582881b27b94edfa63315eeeca77
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: gold_coast_gov_reports_bathymetry, 2026-10-06
+
+## palm-beach-gold-coast-img-13 - City of Gold Coast 2020 brochure p.9: plan aerial with the reef icon and the 270 m offshore distance
+
+![palm-beach-gold-coast-img-13](../../../07_scale/shapes/palm-beach-gold-coast/src/gov/palm-beach-gold-coast_cogc_brochure2020_p11_plan_aerial_with_reef_icon_270m_native.jpeg)
+
+- **file**: `07_scale/shapes/palm-beach-gold-coast/src/gov/palm-beach-gold-coast_cogc_brochure2020_p11_plan_aerial_with_reef_icon_270m_native.jpeg`
+- **kind**: aerial
+- **shows**: Vertical aerial of 17th-23rd Avenue, Palm Beach with the 21st Avenue groyne, Palm Beach natural reef and a grey icon of the artificial reef with an arrow 'Approx. 270 m' from the beach.
+- **structure visible**: False
+- **state shown**: pre-construction aerial with the design drawn in (design, 2019)
+- **image date**: aerial undated (before 2019 construction); brochure June 2020
+- **citation**: City of Gold Coast (2020). Palm Beach Shoreline Project - project overview (brochure, published June 2020, ref 19-TI-00753), brochure page 9 (PDF p.11), 'Location and shape of the artificial reef' (embedded jpeg, native resolution). https://www.goldcoast.qld.gov.au/files/sharedassets/public/v/1/pdfs/environment/palm-beach-shoreline-project-brochure-a4.pdf (linked from https://www.goldcoast.qld.gov.au/Environment-sustainability/Protecting-our-environment/Managing-our-beaches/Seawalls-artificial-reefs). Accessed 2026-10-06.
+- **image URL**: https://www.goldcoast.qld.gov.au/files/sharedassets/public/v/1/pdfs/environment/palm-beach-shoreline-project-brochure-a4.pdf
+- **source page**: https://www.goldcoast.qld.gov.au/Environment-sustainability/Protecting-our-environment/Managing-our-beaches/Seawalls-artificial-reefs
+- **page / figure**: brochure page 9 (PDF p.11), 'Location and shape of the artificial reef' (embedded jpeg, native resolution)
+- **credit**: City of Gold Coast (brochure; imagery credits not given on the pages used)
+- **licence**: not stated (City of Gold Coast publication; copyright City of Gold Coast)
+- **retrieved**: 2026-10-06
+- **used for**: plan_trace; cross_check; scale
+- **How used for the model**: Second council depiction of the reef planform (schematic icon, 2637 x 2637 px, no scale bar); the '270 m' arrow is council's distance reef to beach (to the reef's landward edge or centre not specified). Cross-check only: the verified shape comes from the council GIS polygon and the Bluecoast aerial.
+- **3D check pending**: YES - Offshore distance: council 'approx. 270 m' vs model 225 m (nearest) to 374 m (farthest) from the waterline (values: planform)
+- **linked records**: 07_scale/bathymetry/gold_coast/SOURCES.md GC-P12; 07_scale/bathymetry/gold_coast/REPORT.md
+- **size**: 0.68 MB, 2637x2637 px
+- **sha256**: 8960dd88cf84a4cde8884ee8b2db39807284d1b85466b5bc299795ee75c82347
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: gold_coast_gov_reports_bathymetry, 2026-10-06
+
+## palm-beach-gold-coast-img-14 - City of Gold Coast 2020 brochure p.9: section view of the artificial reef (not to scale), crest 1.5 m below average water level
+
+![palm-beach-gold-coast-img-14](../../../07_scale/shapes/palm-beach-gold-coast/src/gov/palm-beach-gold-coast_cogc_brochure2020_p11_section_view_crest_1.5m_below_average_water_level_200dpi_crop.png)
+
+- **file**: `07_scale/shapes/palm-beach-gold-coast/src/gov/palm-beach-gold-coast_cogc_brochure2020_p11_section_view_crest_1.5m_below_average_water_level_200dpi_crop.png`
+- **kind**: cross_section
+- **shows**: Schematic cross-section: core rock under armour rock; crest of 6-8 t armour (pink) with 5-6 t (blue) beside it, 4-6 t (yellow) on the long slopes, 1-4 t (green) at the toes; 'AVERAGE WATER LEVEL' dashed line with a 1.5 m dimension to the crest; beach 270 m to the left. The shoreward (left) slope is shorter and steeper than the seaward (right) slope.
+- **structure visible**: True
+- **state shown**: design (as-built per the City)
+- **image date**: design drawing 2019/2020 (not to scale)
+- **citation**: City of Gold Coast (2020). Palm Beach Shoreline Project - project overview (brochure, published June 2020, ref 19-TI-00753), brochure page 9 (PDF p.11), 'Section view of artificial reef' (vector figure rendered at 200 dpi and cropped). https://www.goldcoast.qld.gov.au/files/sharedassets/public/v/1/pdfs/environment/palm-beach-shoreline-project-brochure-a4.pdf (linked from https://www.goldcoast.qld.gov.au/Environment-sustainability/Protecting-our-environment/Managing-our-beaches/Seawalls-artificial-reefs). Accessed 2026-10-06.
+- **image URL**: https://www.goldcoast.qld.gov.au/files/sharedassets/public/v/1/pdfs/environment/palm-beach-shoreline-project-brochure-a4.pdf
+- **source page**: https://www.goldcoast.qld.gov.au/Environment-sustainability/Protecting-our-environment/Managing-our-beaches/Seawalls-artificial-reefs
+- **page / figure**: brochure page 9 (PDF p.11), 'Section view of artificial reef' (vector figure rendered at 200 dpi and cropped)
+- **credit**: City of Gold Coast (brochure; imagery credits not given on the pages used)
+- **licence**: not stated (City of Gold Coast publication; copyright City of Gold Coast)
+- **retrieved**: 2026-10-06
+- **used for**: 3d_crest; 3d_height_slopes; cross_check
+- **How used for the model**: Read: crest 1.5 m below the average water level; layers (core rock, armour); rock classes by zone; asymmetry of the slopes (not to scale, so no slope ratio taken). Corroborates the model crest -1.5 m MSL ('average water level' = MSL/AHD, to be confirmed). Goes to REPORT.md section 5.
+- **3D check pending**: YES - Crest depth 1.5 m below 'average water level' vs model -1.5 m MSL (and the chart label FISH HAVEN 1.5MT); rock-class zones for the surface texture; shoreward slope shorter and steeper than seaward (values: crest_z, height, slopes)
+- **linked records**: 07_scale/bathymetry/gold_coast/SOURCES.md GC-P13; 07_scale/bathymetry/gold_coast/REPORT.md
+- **size**: 0.08 MB, 1135x302 px
+- **sha256**: 808bbbea8062871b32e957fa1e8045a343503417a9bee5c3b854bcd45b795a5a
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: gold_coast_gov_reports_bathymetry, 2026-10-06
+
+## palm-beach-gold-coast-img-15 - Palm Beach reef and inshore sandbank: two satellite views (ICM 2023 article)
+
+![palm-beach-gold-coast-img-15](../../../03_images/reefs/palm-beach-gold-coast/palm-beach-gold-coast_satellite_pair_reef_and_inshore_sandbank_icm_post2019.jpg)
+
+- **file**: `03_images/reefs/palm-beach-gold-coast/palm-beach-gold-coast_satellite_pair_reef_and_inshore_sandbank_icm_post2019.jpg`
+- **kind**: satellite
+- **shows**: Two low-resolution satellite crops of Palm Beach with the artificial reef as a dark elongated mound offshore, the beach at left and a surf-zone sandbank forming inshore of the reef; also the natural reef at the top.
+- **structure visible**: True
+- **state shown**: as-built (post-2019, two dates not stated)
+- **image date**: not stated (after September 2019)
+- **citation**: International Coastal Management (2023). Artificial Reefs and Nearshore Nourishment on the Gold Coast: What the Monitoring Shows. ICM website article, published 2023-09-18, image wixstatic 97fa2b_89f98f... (828 x 528 px jpeg; alt text 'palm beach reef on Gold Coast Australia'). https://www.coastalmanagement.com.au/artificial-reefs-and-nearshore-nourishment-on-the-gold-coast-real-world-results. Accessed 2026-10-06.
+- **image URL**: https://static.wixstatic.com/media/97fa2b_89f98f3ec7d7457b90a35a81e660d0be~mv2.jpg
+- **source page**: https://www.coastalmanagement.com.au/artificial-reefs-and-nearshore-nourishment-on-the-gold-coast-real-world-results
+- **page / figure**: article image (captioned 'Aerial of sand build up and interruption around reef' on the page)
+- **credit**: International Coastal Management (ICM) / City of Gold Coast (the page captions some images 'Source: Gold Coast City'; photographer not named)
+- **licence**: not stated (ICM website image; copyright ICM / City of Gold Coast)
+- **retrieved**: 2026-10-06
+- **used for**: cross_check; context
+- **How used for the model**: Confirms the reef is still in place and the inshore sandbank formation after construction (no later damage visible); low resolution, no scale. Goes to REPORT.md section 5.
+- **3D check pending**: YES - No-later-change claim: reef still present after construction (2 satellite dates unknown); compare outline orientation with model (values: planform)
+- **linked records**: 07_scale/bathymetry/gold_coast/SOURCES.md GC-P14; 07_scale/bathymetry/gold_coast/REPORT.md
+- **size**: 0.09 MB, 828x528 px
+- **sha256**: baacd48adf4106bc8234f1ae613771d9e364a68ef14034c51361c98b73f4d13c
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: gold_coast_gov_reports_bathymetry, 2026-10-06
+
+## palm-beach-gold-coast-img-16 - Aerial of Palm Beach with a backhoe dredger working over the artificial reef (City of Gold Coast via ABC, 2019)
+
+![palm-beach-gold-coast-img-16](../../../03_images/reefs/palm-beach-gold-coast/palm-beach-gold-coast_abc-dredger-over-reef-aerial_2019.jpg)
+
+- **file**: `03_images/reefs/palm-beach-gold-coast/palm-beach-gold-coast_abc-dredger-over-reef-aerial_2019.jpg`
+- **kind**: aerial
+- **shows**: Oblique aerial of Palm Beach with the backhoe dredger working over a dark, disturbed-seabed patch (the reef) offshore; the beach, groynes and Burleigh headland behind.
+- **structure visible**: True
+- **state shown**: under construction (2019)
+- **image date**: 2019 inferred from the dredger at work (construction May-Sept 2019); photo date not stated
+- **citation**: Supplied: City of Gold Coast (photo undated; shows the reef construction, May-Sept 2019). Photo in: Cansdale, Dominic (2022-09-03). Millions spent to protect Gold Coast beaches, but climate change poses a huge challenge. ABC News, https://www.abc.net.au/news/2022-09-03/gold-coast-no-stranger-to-beach-erosion/101381812 (ABC caption: 'made up of 60,000 tonnes of boulders'). Image file https://live-production.wcms.abc-cdn.net.au/45b719e6a29fdb237a75b4f095d83fbf. Accessed 2026-10-06.
+- **image URL**: https://live-production.wcms.abc-cdn.net.au/45b719e6a29fdb237a75b4f095d83fbf
+- **source page**: https://www.abc.net.au/news/2022-09-03/gold-coast-no-stranger-to-beach-erosion/101381812
+- **page / figure**: article photo (1200 x 800 px)
+- **credit**: Supplied: City of Gold Coast (via ABC News)
+- **licence**: ABC News / council-supplied photo; no reuse licence - link/research copy only, NOT cleared
+- **retrieved**: 2026-10-06
+- **used for**: context; cross_check
+- **How used for the model**: Page illustration of the construction. Oblique: the dredger length gives a rough scale but it was not measured; shows the reef lies well offshore of the groynes. Council polygon (shape.json s1) and the Bluecoast aerial (s7) are the plan source; see sources.md.
+- **3D check pending**: YES - Planform/offshore position from this oblique aerial (landmark-based) vs shape.json (162 x 92 m, 225 m toe offshore, long axis 110.8 deg) and the vessel scale (backhoe dredger length) (values: planform, position)
+- **linked records**: 02_research/reefs/palm-beach-gold-coast.json images[0]; 05_qa/reef/palm-beach-gold-coast_media_recheck.json images[0]
+- **size**: 0.22 MB, 1200x800 px
+- **sha256**: b3d7906e5b0d6f02d41207c3fd1a19b485237bda3151f20b51e5cb9f6550807d
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: image-registry backfill, 2026-10-06
+
+## palm-beach-gold-coast-img-17 - Cru Collective: labelled aerial of Palm Beach - artificial reef, natural reef, groynes, benefit area, Currumbin Creek
+
+![palm-beach-gold-coast-img-17](../../../03_images/reefs/palm-beach-gold-coast/palm-beach-gold-coast_cru-aerial-benefit-area_2019-10.jpg)
+
+- **file**: `03_images/reefs/palm-beach-gold-coast/palm-beach-gold-coast_cru-aerial-benefit-area_2019-10.jpg`
+- **kind**: aerial
+- **shows**: Oblique aerial of Palm Beach and Currumbin Creek with text overlays 'ARTIFICIAL REEF' (arrow to an offshore location), 'PALM BEACH NATURAL REEF', 'BENEFIT AREA', the 11th and 21st Avenue groynes and Burleigh Headland.
+- **structure visible**: True
+- **state shown**: as-built (labelled position; the rock itself is not resolved)
+- **image date**: before 2019-10-04 (aerial photo undated; labels added by the blog)
+- **citation**: Cru Collective (2019-10-04). Palm Beach Artificial Reef Completion [blog post; caption 'Aerial view of the area benefited by the artificial reef']. https://www.crucollective.com.au/blog/palm-beach-artificial-reef-completion/. Image file https://www.crucollective.com.au/wp-content/uploads/2019/10/Palm-Beach-Artificial-Reef-Completion.jpg. Accessed 2026-10-06.
+- **image URL**: https://www.crucollective.com.au/wp-content/uploads/2019/10/Palm-Beach-Artificial-Reef-Completion.jpg
+- **source page**: https://www.crucollective.com.au/blog/palm-beach-artificial-reef-completion/
+- **page / figure**: blog image (791 x 664 px)
+- **credit**: Cru Collective (photo source not stated)
+- **licence**: no licence stated; all rights reserved - link/research copy only, NOT cleared
+- **retrieved**: 2026-10-06
+- **used for**: context
+- **How used for the model**: Page illustration (hero recommended by the recheck). The labels give the layout (reef offshore of the 19th-21st Avenue groynes, natural reef further out); no dimension read.
+- **3D check pending**: no - none: labelled oblique aerial, no scale
+- **linked records**: 02_research/reefs/palm-beach-gold-coast.json images[1]; 05_qa/reef/palm-beach-gold-coast_media_recheck.json images[1]
+- **size**: 0.10 MB, 791x664 px
+- **sha256**: 53be936a0415db6786aa11d1818ecc68fb02dae9f81e697ca79ae508e87b0c13
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: image-registry backfill, 2026-10-06
+
+## palm-beach-gold-coast-img-18 - Cru Collective: schematic overlay - reef about 270 m offshore of the 21st Avenue groyne
+
+![palm-beach-gold-coast-img-18](../../../03_images/reefs/palm-beach-gold-coast/palm-beach-gold-coast_cru-schematic-270m_2019-10.jpg)
+
+- **file**: `03_images/reefs/palm-beach-gold-coast/palm-beach-gold-coast_cru-schematic-270m_2019-10.jpg`
+- **kind**: plan_figure
+- **shows**: Satellite/aerial of Palm Beach with a drawn grey capsule shape labelled 'ARTIFICIAL REEF', an arrow 'Approx. 270m' from the Twenty First Avenue groyne and the 'PALM BEACH NATURAL REEF' further offshore.
+- **structure visible**: True
+- **state shown**: as-built (schematic position)
+- **image date**: before 2019-10-04
+- **citation**: Cru Collective (2019-10-04). Palm Beach Artificial Reef Completion [blog post; caption 'Section view of the artificial reef showing rock sizes' per the card]. https://www.crucollective.com.au/blog/palm-beach-artificial-reef-completion/. Image file https://www.crucollective.com.au/wp-content/uploads/2019/10/Palm-Beach-Artificial-Reef-Completion2.jpg. Accessed 2026-10-06.
+- **image URL**: https://www.crucollective.com.au/wp-content/uploads/2019/10/Palm-Beach-Artificial-Reef-Completion2.jpg
+- **source page**: https://www.crucollective.com.au/blog/palm-beach-artificial-reef-completion/
+- **page / figure**: blog image (567 x 454 px)
+- **credit**: Cru Collective (base imagery source not stated)
+- **licence**: no licence stated; all rights reserved - link/research copy only, NOT cleared
+- **retrieved**: 2026-10-06
+- **used for**: cross_check
+- **How used for the model**: The '270 m' is a text-quoted distance (also in the EPW 2020 text and the ICCE 2022 Fig 1); the drawn capsule is a cartoon, not a trace. The shape comes from the council polygon / Bluecoast aerial, not from this image.
+- **3D check pending**: no - none: schematic of a text value (270 m) already checked in shape.json
+- **linked records**: 02_research/reefs/palm-beach-gold-coast.json images[2]; 05_qa/reef/palm-beach-gold-coast_media_recheck.json images[2]
+- **size**: 0.04 MB, 567x454 px
+- **sha256**: a4b2913a84f8a27742dbbb6c678096137d15e27a575385d8bb408401c129a0fc
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: image-registry backfill, 2026-10-06
+
+## palm-beach-gold-coast-img-19 - Bluecoast page image: surfers on a beach-break wave (tied on the page to the 2017 sand nourishment)
+
+![palm-beach-gold-coast-img-19](../../../03_images/reefs/palm-beach-gold-coast/palm-beach-gold-coast_bluecoast-surfers-peak_2017.jpg)
+
+- **file**: `03_images/reefs/palm-beach-gold-coast/palm-beach-gold-coast_bluecoast-surfers-peak_2017.jpg`
+- **kind**: photo
+- **shows**: Telephoto beach-break photo of two surfers on a wave that peels into two peaks, others in the background and a wooden rail in the foreground; no reef or landmark visible.
+- **structure visible**: False
+- **state shown**: not applicable (surf context; pre-reef, 2017 nourishment era)
+- **image date**: 2017 (per the page text tying it to the sand-nourishment phase; photo date not stated)
+- **citation**: Bluecoast Consulting Engineers (n.d.; page about 2020). Artificial reefs for coastal protection and surfing [web page], gallery image (linked to a Swellnet article on the Palm Beach sand nourishment). https://www.bluecoastconsulting.com.au/artificialreefs. Image file https://images.squarespace-cdn.com/content/v1/5bfcd059e2ccd1869cf36e40/1600916522672-D4UT1B7FEQEBOCBBOQRI/image-asset.jpeg. Accessed 2026-10-06.
+- **image URL**: https://images.squarespace-cdn.com/content/v1/5bfcd059e2ccd1869cf36e40/1600916522672-D4UT1B7FEQEBOCBBOQRI/image-asset.jpeg
+- **source page**: https://www.bluecoastconsulting.com.au/artificialreefs
+- **page / figure**: page gallery image (2000 x 1333 px)
+- **credit**: Bluecoast Consulting Engineers (photographer not stated)
+- **licence**: not stated - (c) Bluecoast / Nearmap / photographers; link/research copy only, NOT cleared
+- **retrieved**: 2026-10-06
+- **used for**: context
+- **How used for the model**: Page illustration (site/surf context only). Nothing measured.
+- **3D check pending**: no - none: surf photo
+- **linked records**: 02_research/reefs/palm-beach-gold-coast.json images[3]; 05_qa/reef/palm-beach-gold-coast_media_recheck.json images[3]
+- **size**: 0.43 MB, 2000x1333 px
+- **sha256**: b0d4fca2cff773924cd3cd0ad332e5c43b8a0ac8dea3730316ba5cc601d2241f
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: image-registry backfill, 2026-10-06
+
+## palm-beach-gold-coast-img-20 - AR_aerial_Nearmaps.jpg: Palm Beach artificial reef, vertical Nearmap aerial with survey contour lines, north arrow and 0-25-50 m scale bar
+
+![palm-beach-gold-coast-img-20](../../../07_scale/shapes/palm-beach-gold-coast/src/bluecoast_AR_aerial_Nearmaps.jpg)
+
+- **file**: `07_scale/shapes/palm-beach-gold-coast/src/bluecoast_AR_aerial_Nearmaps.jpg`
+- **kind**: aerial
+- **shows**: Vertical aerial of the Palm Beach reef: about ten unlabelled grey survey contour lines inside the toe outline, a north arrow and a 0-25-50 m scale bar; the dark rock mound visible through the water.
+- **structure visible**: True
+- **state shown**: as-built (completed 2019, undated aerial; survey contours not labelled design or as-surveyed)
+- **image date**: undated (Nearmap capture after the rock was complete, Sept 2019 or later)
+- **citation**: Bluecoast Consulting Engineers / Nearmap (n.d.; Nearmap capture of the completed or near-completed reef, page about Sept 2020). AR_aerial_Nearmaps.jpg, gallery image on: Artificial reefs for coastal protection and surfing. https://www.bluecoastconsulting.com.au/artificialreefs. Image file https://images.squarespace-cdn.com/content/v1/5bfcd059e2ccd1869cf36e40/1600918806427-S6WYBPQYUR963346U8E9/AR_aerial_Nearmaps.jpg. Accessed 2026-10-05 (re-verified 2026-10-05: byte-different re-encode of the same image, mean abs diff 2.2/255).
+- **image URL**: https://images.squarespace-cdn.com/content/v1/5bfcd059e2ccd1869cf36e40/1600918806427-S6WYBPQYUR963346U8E9/AR_aerial_Nearmaps.jpg
+- **source page**: https://www.bluecoastconsulting.com.au/artificialreefs
+- **page / figure**: gallery image, no figure number (2079 x 1386 px; alt text = file name)
+- **credit**: Bluecoast Consulting Engineers (aerial base: Nearmap)
+- **licence**: not stated - (c) Bluecoast / Nearmap / photographers; link/research copy only, NOT cleared
+- **retrieved**: 2026-10-05
+- **used for**: plan_trace; scale; 3d_height_slopes; 3d_crest
+- **How used for the model**: PRIMARY plan source: scale 8.50 px/m re-measured from the scale-bar ticks, north-up confirmed against the council polygon (IoU 0.996, area 11,972 vs 11,942 m2); the contour lines were ray-cast into 29 polylines (contours_s7.json) giving slopes 1:12 (6.0 m per line), 1:5 (2.47 m) and 1:25 platform (12.3 m) with an assumed 0.5 m interval, and toe elevations used in the model (shape.json s7; model.js; SOURCES_3D steps 1-3).
+- **3D check pending**: no - none: image already used as a model source or is context only
+- **annotated / overlay files**: `07_scale/shapes/palm-beach-gold-coast/3d/annotated/s7_contours_ranked_elevations.png`; `07_scale/shapes/palm-beach-gold-coast/3d/annotated/s7_side_slopes_from_line_spacing.png`; `07_scale/shapes/palm-beach-gold-coast/3d/annotated/s7_toe_depth_from_contour_rank.png`; `07_scale/shapes/palm-beach-gold-coast/overlays/s7_bluecoast_aerial_trace.png`; `07_scale/shapes/palm-beach-gold-coast/overlays/composite_s7_aerial_with_council_polygon_yellow_and_esri_visible_rock_red.png`
+- **linked records**: 07_scale/shapes/palm-beach-gold-coast/sources.md s7; 07_scale/shapes/palm-beach-gold-coast/shape.json sources[s7]; 07_scale/shapes/palm-beach-gold-coast/METHOD.md; 07_scale/shapes/palm-beach-gold-coast/3d/SOURCES_3D.md (STEP 2 captions); 07_scale/shapes/palm-beach-gold-coast/3d/model.js
+- **size**: 0.60 MB, 2079x1386 px
+- **sha256**: 5fa821279dba4ffb4c20ed13e8eff373335fe2dc30a971fe4a17b5f3a84f811d
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: image-registry backfill, 2026-10-06
+
+## palm-beach-gold-coast-img-21 - Engineering for Public Works (IPWEAQ), Sept 2020, pp.50-51: 'Palm Beach Artificial Reef' article pages (Bluecoast-hosted image)
+
+![palm-beach-gold-coast-img-21](../../../07_scale/shapes/palm-beach-gold-coast/src/bluecoast_EPW2020_pages50-51.png)
+
+- **file**: `07_scale/shapes/palm-beach-gold-coast/src/bluecoast_EPW2020_pages50-51.png`
+- **kind**: report_photo
+- **shows**: Two magazine pages with an aerial of the dark reef patch (June 2020) and a dredger/backhoe photo, plus the article text on footprint, rock sizes and depths.
+- **structure visible**: True
+- **state shown**: as-built (June 2020) and construction
+- **image date**: 2020-09 (photo June 2020)
+- **citation**: Engineering for Public Works / IPWEAQ (2020-09). Palm Beach Artificial Reef [magazine article], Issue 19, pp.50-51 (photos 'Palm Beach Artificial Reef - June 2020' and construction). Issuu https://issuu.com/ipweaqld/docs/3660___epw_september_2020_final/50 (HTTP 404 on 2026-10-05); image of the pages hosted on https://www.bluecoastconsulting.com.au/artificialreefs as https://images.squarespace-cdn.com/content/v1/5bfcd059e2ccd1869cf36e40/1600915288822-89V2T6CKSW7PKEPCA0ZE/image-asset.png (byte-identical to our copy). Accessed 2026-10-05.
+- **image URL**: https://images.squarespace-cdn.com/content/v1/5bfcd059e2ccd1869cf36e40/1600915288822-89V2T6CKSW7PKEPCA0ZE/image-asset.png
+- **source page**: https://www.bluecoastconsulting.com.au/artificialreefs
+- **page / figure**: pp.50-51 (page image)
+- **credit**: IPWEAQ / Engineering for Public Works (Bluecoast page host)
+- **licence**: not stated; research copy only
+- **retrieved**: 2026-10-05
+- **used for**: 3d_crest; cross_check; scale
+- **How used for the model**: Text evidence: 'approximately 270 metres offshore from Nineteenth Avenue', 'reef footprint is 160 metres long, 80 metres wide, 1.5 m below average water level at highest point', rock classes 300-1000 kg core and 1-8 t armour (shape.json s8; crest -1.5 m MSL in model.js; SOURCES_3D annotated s8).
+- **3D check pending**: no - none: image already used as a model source or is context only
+- **annotated / overlay files**: `07_scale/shapes/palm-beach-gold-coast/3d/annotated/s8_epw2020_text_used.png`
+- **linked records**: 07_scale/shapes/palm-beach-gold-coast/sources.md s8; 07_scale/shapes/palm-beach-gold-coast/shape.json sources[s8]; 07_scale/shapes/palm-beach-gold-coast/3d/SOURCES_3D.md (STEP 2); 07_scale/shapes/palm-beach-gold-coast/3d/annotated/s8_epw2020_text_used.png
+- **size**: 0.68 MB, 1394x985 px
+- **sha256**: 8b056385cb74f59dd5a2197821ae0f02c9399088f4d75e5d5fed44a55adadd08
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: image-registry backfill, 2026-10-06
+
+## palm-beach-gold-coast-img-22 - Esri World Imagery z18 context crop, Palm Beach (1.4 km box, 2658 px, 0.527 m/px)
+
+![palm-beach-gold-coast-img-22](../../../07_scale/shapes/palm-beach-gold-coast/src/pb_context_z18.png)
+
+- **file**: `07_scale/shapes/palm-beach-gold-coast/src/pb_context_z18.png`
+- **kind**: satellite
+- **shows**: Palm Beach shoreline, groynes, the reef and the natural reef patch to the east.
+- **structure visible**: True
+- **state shown**: as-built, current (2025)
+- **image date**: 2025-12-01 (best effort)
+- **citation**: Esri, Maxar, Earthstar Geographics, and the GIS User Community (2025). World Imagery (current layer), image captured 2025-12-01. Esri World Imagery tile service, https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer. Accessed 2026-10-04.
+- **image URL**: https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}
+- **source page**: Esri World Imagery (identify DATE field, best effort)
+- **page / figure**: z18, sidecar pb_context_z18.png.geo.json; sources.md s3
+- **credit**: Esri, Maxar, Earthstar Geographics, and the GIS User Community
+- **licence**: Esri/Maxar imagery terms (not an open licence); private research copy only
+- **retrieved**: 2026-10-04
+- **used for**: context; scale
+- **How used for the model**: Context: shoreline direction (334.3 deg, re-measured 335.3 on this frame) and the 270/225 m offshore distance; control points for the ICCE Fig 1 scale (shape.json s3). Original is 10.2 MB; a <=3000 px JPEG is registered as other_resolutions.
+- **3D check pending**: no - none: image already used as a model source or is context only
+- **other resolutions**: `03_images/reefs/palm-beach-gold-coast/palm-beach-gold-coast_esri-context-z18-2025-12-01_3000px.jpg`
+- **linked records**: 07_scale/shapes/palm-beach-gold-coast/sources.md s3; 07_scale/shapes/palm-beach-gold-coast/shape.json sources[s3]
+- **size**: 10.17 MB, 2658x2658 px
+- **sha256**: 17061b8e6aacd70b3692c51bcc010530b0270dd2391b2629ad4303fd6228f408
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: image-registry backfill, 2026-10-06
+
+## palm-beach-gold-coast-img-23 - Esri World Imagery z19 crop around the Palm Beach reef (400 m box, 1519 px, 0.263 m/px)
+
+![palm-beach-gold-coast-img-23](../../../07_scale/shapes/palm-beach-gold-coast/src/pb_sat_z19.png)
+
+- **file**: `07_scale/shapes/palm-beach-gold-coast/src/pb_sat_z19.png`
+- **kind**: satellite
+- **shows**: Dark rock mound of the reef inside the council polygon; only 25-38% of the footprint (shoreward side) is visible as dark rock.
+- **structure visible**: True
+- **state shown**: as-built, current (2025)
+- **image date**: 2025-12-01 (best effort)
+- **citation**: Esri, Maxar, Earthstar Geographics, and the GIS User Community (2025). World Imagery (current layer), image captured 2025-12-01. Esri World Imagery tile service, https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer. Accessed 2026-10-04.
+- **image URL**: https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}
+- **source page**: Esri World Imagery (identify DATE field, best effort)
+- **page / figure**: z19, sidecar pb_sat_z19.png.geo.json; sources.md s2
+- **credit**: Esri, Maxar, Earthstar Geographics, and the GIS User Community
+- **licence**: Esri/Maxar imagery terms (not an open licence); private research copy only
+- **retrieved**: 2026-10-04
+- **used for**: cross_check; scale
+- **How used for the model**: Cross-check of the council polygon: visible dark rock 3,443 m2 (29%, 25-38% depending on the darkness threshold) inside the polygon; georeference check of the Bluecoast aerial (shape.json s2; overlay s2_esri_z19).
+- **3D check pending**: no - none: image already used as a model source or is context only
+- **annotated / overlay files**: `07_scale/shapes/palm-beach-gold-coast/overlays/s2_esri_z19_visible_patch_red_vs_council_cyan.png`
+- **linked records**: 07_scale/shapes/palm-beach-gold-coast/sources.md s2; 07_scale/shapes/palm-beach-gold-coast/shape.json sources[s2]
+- **size**: 1.51 MB, 1519x1519 px
+- **sha256**: eabddeacb9c1cfed3d227ae4d4df08fd7a06f59709c36857d218b3c32df24298
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: image-registry backfill, 2026-10-06
+
+## palm-beach-gold-coast-img-24 - Hunt et al. (2022) Fig. 1: location and orientation of the artificial reef (aerial photo with a schematic reef icon; north up)
+
+![palm-beach-gold-coast-img-24](../../../07_scale/shapes/palm-beach-gold-coast/src/icce13024_fig1_location_orientation.jpeg)
+
+- **file**: `07_scale/shapes/palm-beach-gold-coast/src/icce13024_fig1_location_orientation.jpeg`
+- **kind**: aerial
+- **shows**: Aerial of Palm Beach with the 21st Avenue groyne, the reef icon about 270 m offshore (arrow 'Approx. 270m') and the Palm Beach natural reef.
+- **structure visible**: True
+- **state shown**: design/as-built (icon over aerial)
+- **image date**: aerial undated (pre/at construction); paper ICCE 2022, published 2023
+- **citation**: Hunt, Britton, Messiter, Prenzler, Knight & Watterson (2022). Palm Beach Shoreline Project: Innovative Coastal Management Solution. Coastal Engineering Proceedings 37 (ICCE 2022), management.66, doi:10.9753/icce.v37.management.66, Figure 1 (image extracted from word/media/image1.jpeg of the paper docx). https://icce-ojs-tamu.tdl.org/icce/article/view/13024 (docx https://icce-ojs-tamu.tdl.org/icce/article/download/13024/12297). Accessed 2026-10-05.
+- **image URL**: https://icce-ojs-tamu.tdl.org/icce/article/download/13024/12297
+- **source page**: https://icce-ojs-tamu.tdl.org/icce/article/view/13024
+- **page / figure**: Figure 1
+- **credit**: Hunt, Britton, Messiter, Prenzler, Knight, Watterson / Coastal Engineering Proceedings; aerial base credit not given
+- **licence**: CC BY 4.0 (paper)
+- **retrieved**: 2026-10-05
+- **used for**: cross_check; scale
+- **How used for the model**: Independent drawing of the planform: the icon was traced and scaled with 4 landmarks (control-point scale 1.016 m/px): area 12,017 m2 (+0.6% vs council), 162 x 92 m, long axis 110.8 deg; offshore distance cross-check of the 270 m text (shape.json s4; SOURCES_3D annotated s4).
+- **3D check pending**: no - none: image already used as a model source or is context only
+- **annotated / overlay files**: `07_scale/shapes/palm-beach-gold-coast/3d/annotated/s4_icce_fig1_distance_and_icon.png`; `07_scale/shapes/palm-beach-gold-coast/overlays/s4_icce_fig1_icon_trace.png`
+- **linked records**: 07_scale/shapes/palm-beach-gold-coast/sources.md s4; 07_scale/shapes/palm-beach-gold-coast/shape.json sources[s4]; 07_scale/shapes/palm-beach-gold-coast/METHOD.md step 2d
+- **size**: 0.30 MB, 1459x777 px
+- **sha256**: adf9b9ebdfb6ea2bff8c04c688554f3583b7a5d19bd6bcf3c39d2ba591147105
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: image-registry backfill, 2026-10-06
+
+## palm-beach-gold-coast-img-25 - Hunt et al. (2022) Fig. 4: final survey of the completed reef structure (oblique 3D multibeam render, colour ramp, no scale)
+
+![palm-beach-gold-coast-img-25](../../../07_scale/shapes/palm-beach-gold-coast/src/icce13024_fig4_final_survey.png)
+
+- **file**: `07_scale/shapes/palm-beach-gold-coast/src/icce13024_fig4_final_survey.png`
+- **kind**: survey_plot
+- **shows**: Oblique multibeam render of the built reef: a rounded-rectangle mound, shallower (red/orange) at its shoreward side and deeper (yellow/green) seaward; no colour scale or axes.
+- **structure visible**: True
+- **state shown**: as-built (final survey 2019)
+- **image date**: after completion, 2019
+- **citation**: Hunt, Britton, Messiter, Prenzler, Knight & Watterson (2022). Palm Beach Shoreline Project: Innovative Coastal Management Solution. Coastal Engineering Proceedings 37 (ICCE 2022), management.66, doi:10.9753/icce.v37.management.66, Figure 4 (image extracted from word/media/image4.png of the paper docx). https://icce-ojs-tamu.tdl.org/icce/article/view/13024 (docx https://icce-ojs-tamu.tdl.org/icce/article/download/13024/12297). Accessed 2026-10-05.
+- **image URL**: https://icce-ojs-tamu.tdl.org/icce/article/download/13024/12297
+- **source page**: https://icce-ojs-tamu.tdl.org/icce/article/view/13024
+- **page / figure**: Figure 4
+- **credit**: Hunt, Britton, Messiter, Prenzler, Knight, Watterson / Coastal Engineering Proceedings
+- **licence**: CC BY 4.0 (paper)
+- **retrieved**: 2026-10-05
+- **used for**: cross_check
+- **How used for the model**: Qualitative only (no depth values can be read): the mound is shallowest on the shoreward side and deepens seaward, consistent with the contour reading (shape.json s5; SOURCES_3D annotated s5).
+- **3D check pending**: no - none: qualitative, used already
+- **annotated / overlay files**: `07_scale/shapes/palm-beach-gold-coast/3d/annotated/s5_icce_fig4_qualitative_only.png`
+- **linked records**: 07_scale/shapes/palm-beach-gold-coast/sources.md s5; 07_scale/shapes/palm-beach-gold-coast/shape.json sources[s5]; 07_scale/shapes/palm-beach-gold-coast/3d/annotated/s5_icce_fig4_qualitative_only.png
+- **size**: 0.67 MB, 1029x501 px
+- **sha256**: d7ce7e863925d15deced9b7f82e87d898d2db0474324a979cb77917471fe15ff
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: image-registry backfill, 2026-10-06
+
+## palm-beach-gold-coast-img-26 - Mortensen et al. (2015) Fig. 3: dimensions and form of the SCS - concept SCS B (oblique 3D render with slope labels 1/2, 1/5, 1/12, 1/15; crest -1.5 m; 53,319 m3)
+
+![palm-beach-gold-coast-img-26](../../../07_scale/shapes/palm-beach-gold-coast/src/mortensen2015_fig3_concept_SCS_B.png)
+
+- **file**: `07_scale/shapes/palm-beach-gold-coast/src/mortensen2015_fig3_concept_SCS_B.png`
+- **kind**: design_drawing
+- **shows**: Oblique render of the CONCEPT reef (not built): footprint 21,394 m2, 175 m x 144 m, crest -1.5 m, orientation 105 deg, volume 53,319 m3, side-slope labels 1/2, 1/5, 1/12, 1/15.
+- **structure visible**: True
+- **state shown**: design (alternative concept SCS B, not built)
+- **image date**: concept design autumn 2014; paper Sept 2015
+- **citation**: Mortensen et al. (2015). Concept Design of a Multipurpose Submerged Control Structure for Palm Beach. Australasian Coasts & Ports Conference 2015, Auckland (DHI), p.5, Figure 3 'Dimensions and form of the SCS'. https://www.dhigroup.com/upload/publications/coastsea/Mortensen_2015.pdf. Accessed 2026-10-05.
+- **image URL**: https://www.dhigroup.com/upload/publications/coastsea/Mortensen_2015.pdf
+- **source page**: https://www.dhigroup.com/upload/publications/coastsea/Mortensen_2015.pdf
+- **page / figure**: p.5, Figure 3 (concept SCS B)
+- **credit**: Mortensen et al. / DHI
+- **licence**: not stated on the PDF (copyright DHI/authors); research copy only
+- **retrieved**: 2026-10-05
+- **used for**: 3d_height_slopes; cross_check
+- **How used for the model**: Used to test the contour interval of the built reef: slopes 1:12 and 1:5 reproduced from the Bluecoast aerial contour spacing with a 0.5 m interval; also shows that the concept is larger than the built reef (shape.json s6; SOURCES_3D annotated mortensen2015_fig3).
+- **3D check pending**: no - none: concept design, already used for slope test
+- **annotated / overlay files**: `07_scale/shapes/palm-beach-gold-coast/3d/annotated/mortensen2015_fig3_slopes_crest_read.png`
+- **linked records**: 07_scale/shapes/palm-beach-gold-coast/sources.md s6; 07_scale/shapes/palm-beach-gold-coast/shape.json sources[s6]; 07_scale/shapes/palm-beach-gold-coast/3d/annotated/mortensen2015_fig3_slopes_crest_read.png
+- **size**: 0.21 MB, 603x433 px
+- **sha256**: 5ec10e9cf488c204664f9f6e2bd471c2cc72ed7ca23785cc41bd353ef405e4c7
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: image-registry backfill, 2026-10-06
+
+## palm-beach-gold-coast-img-27 - 'Palm Beach Artificial Surf Reef Design vs Constructed' - concept render (left) and multibeam survey of the built mound (right)
+
+![palm-beach-gold-coast-img-27](../../../07_scale/shapes/palm-beach-gold-coast/src/rwr_design_vs_constructed_641x187.jpg)
+
+- **file**: `07_scale/shapes/palm-beach-gold-coast/src/rwr_design_vs_constructed_641x187.jpg`
+- **kind**: plan_figure
+- **shows**: Left, the concept render (175 x 144 m footprint); right, the multibeam survey of the built mound.
+- **structure visible**: True
+- **state shown**: design (left) and as-built 2019 (right)
+- **image date**: posted Dec 2019 (concept 2014; survey 2019)
+- **citation**: Raised Water Research (2019-12). Palm Beach Reef [spot page]; figure 'Design on the left, results on the right'. https://raisedwaterresearch.com/spot/artificial-reef/australia/queensland/palm-beach-reef/. Image file https://raisedwaterresearch.com/wp-content/uploads/2019/12/Palm-Beach-Reef-Design-and-Constructed.jpg (our copy is the 641 x 187 px version). Accessed 2026-10-05.
+- **image URL**: https://raisedwaterresearch.com/wp-content/uploads/2019/12/Palm-Beach-Reef-Design-and-Constructed.jpg
+- **source page**: https://raisedwaterresearch.com/spot/artificial-reef/australia/queensland/palm-beach-reef/
+- **page / figure**: figure in the page text
+- **credit**: Raised Water Research page (lists sources City of Gold Coast, Swellnet, DHI, SurferToday); the figure itself is not credited
+- **licence**: not stated; research copy only
+- **retrieved**: 2026-10-05
+- **used for**: context
+- **How used for the model**: Context (shape.json s9): shows the concept is larger than the built mound; not traced.
+- **3D check pending**: no - none: image already used as a model source or is context only
+- **linked records**: 07_scale/shapes/palm-beach-gold-coast/sources.md s9; 07_scale/shapes/palm-beach-gold-coast/shape.json sources[s9]
+- **size**: 0.09 MB, 641x187 px
+- **sha256**: 7f35de6e7d2cacd182e84d94a83ab9373869959e90b1eaa6d12cbe693373a41d
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: image-registry backfill, 2026-10-06
+
+## palm-beach-gold-coast-img-28 - Garmin Navionics Nautical Charts, zoom 17, Palm Beach reef: shallow-shading series 0-10 m (11 files)
+
+![palm-beach-gold-coast-img-28](../../../07_scale/shapes/palm-beach-gold-coast/src/navionics/naut_z17_shade00.0.png)
+
+- **file**: `07_scale/shapes/palm-beach-gold-coast/src/navionics/naut_z17_shade00.0.png`
+- **kind**: chart_screenshot
+- **shows**: The chart around the Palm Beach reef at each shallow-shading value: spot soundings and coarse contours. The reef is not drawn as a feature (a 'FISH HAVEN 1.5MT' label sits at the west end of the crest on the nautical chart).
+- **structure visible**: False
+- **state shown**: seabed and charted shoal near the reef (data date unknown)
+- **image date**: chart data dates not shown by the viewer; screenshots 2026-10-05
+- **citation**: Garmin Ltd / Navionics (2026). Marine Maps viewer, Nautical Charts, depths in metres, zoom 17; series of 11 screenshots with 'Shallow shading' 0, 1, ... 10 m (centre -28.107334, 153.470913; page title 'Garmin | Marine Maps', 'Not to be used for navigation'). https://maps.garmin.com/en-US/marine?maps=another-brand&overlay=false&key=r7j0h74ngmnv (webapp.navionics.com redirects here). Captured 2026-10-05 14:22-14:35 local by navionics_capture.py. Accessed 2026-10-05.
+- **image URL**: https://maps.garmin.com/en-US/marine?maps=another-brand&overlay=false&key=r7j0h74ngmnv
+- **source page**: https://maps.garmin.com/en-US/marine?maps=another-brand&overlay=false&key=r7j0h74ngmnv
+- **page / figure**: Nautical Charts zoom 17 (0.756 m/px); files naut_z17_shade00.0 .. shade10.0 (the blue area is water shallower than the setting, so its edge is the chart contour of that depth)
+- **credit**: Garmin Navionics charts and SonarChart (c) Navionics / Garmin Ltd; screenshots by this project (own headless Chrome)
+- **licence**: Garmin/Navionics terms ('Not to be used for navigation'); no open licence; private research copy, reuse NOT cleared
+- **retrieved**: 2026-10-05
+- **used for**: 3d_seabed; 3d_crest; cross_check
+- **How used for the model**: Source of the Navionics seabed in the 3D model: the edge of the blue shading at each value gives the chart contour; contour lines extracted into navionics_isolines.json (427 toe points compared); datum test RMS LAT 0.61 m (best), MLWS 0.74, MLWN 0.96, AHD 1.17, MSL 1.28, MHWS 1.88 -> chart datum assumed LAT; 'FISH HAVEN 1.5MT' label vs the design crest (SOURCES_3D steps 1d, NAVIONICS paragraphs; model.js navionics).
+- **3D check pending**: no - none: seabed cross-check already done
+- **series files (11)**: `07_scale/shapes/palm-beach-gold-coast/src/navionics/naut_z17_shade00.0.png` .. `07_scale/shapes/palm-beach-gold-coast/src/navionics/naut_z17_shade10.0.png`
+- **linked records**: 07_scale/shapes/palm-beach-gold-coast/3d/SOURCES_3D.md (NAVIONICS capture, DATUM TEST, INTERVAL TEST); 07_scale/shapes/palm-beach-gold-coast/3d/navionics_capture.py; 07_scale/shapes/palm-beach-gold-coast/src/navionics/capture_log.json; 07_scale/shapes/palm-beach-gold-coast/3d/model.js (navionics iso-lines)
+- **size**: 0.03 MB, 982x655 px
+- **sha256**: 96d2b0f1b15c321bb894f63076a90cd9b6a7cde355bbbeedc2a56db4bbeab7f9
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: image-registry backfill, 2026-10-06
+- **notes**: Series registered as one row: 'file' is the shade 0 m screenshot; the other 10 files are listed in group_files with their sha256.
+
+## palm-beach-gold-coast-img-29 - Garmin Navionics Nautical Charts, zoom 18, Palm Beach reef: shallow-shading series 0-10 m (11 files)
+
+![palm-beach-gold-coast-img-29](../../../07_scale/shapes/palm-beach-gold-coast/src/navionics/naut_z18_shade00.0.png)
+
+- **file**: `07_scale/shapes/palm-beach-gold-coast/src/navionics/naut_z18_shade00.0.png`
+- **kind**: chart_screenshot
+- **shows**: The chart around the Palm Beach reef at each shallow-shading value: spot soundings and coarse contours. The reef is not drawn as a feature (a 'FISH HAVEN 1.5MT' label sits at the west end of the crest on the nautical chart).
+- **structure visible**: False
+- **state shown**: seabed and charted shoal near the reef (data date unknown)
+- **image date**: chart data dates not shown by the viewer; screenshots 2026-10-05
+- **citation**: Garmin Ltd / Navionics (2026). Marine Maps viewer, Nautical Charts, depths in metres, zoom 18; series of 11 screenshots with 'Shallow shading' 0, 1, ... 10 m (centre -28.107334, 153.470913; page title 'Garmin | Marine Maps', 'Not to be used for navigation'). https://maps.garmin.com/en-US/marine?maps=another-brand&overlay=false&key=r7j0h74ngmnv (webapp.navionics.com redirects here). Captured 2026-10-05 14:22-14:35 local by navionics_capture.py. Accessed 2026-10-05.
+- **image URL**: https://maps.garmin.com/en-US/marine?maps=another-brand&overlay=false&key=r7j0h74ngmnv
+- **source page**: https://maps.garmin.com/en-US/marine?maps=another-brand&overlay=false&key=r7j0h74ngmnv
+- **page / figure**: Nautical Charts zoom 18 (0.378 m/px); files naut_z18_shade00.0 .. shade10.0 (the blue area is water shallower than the setting, so its edge is the chart contour of that depth)
+- **credit**: Garmin Navionics charts and SonarChart (c) Navionics / Garmin Ltd; screenshots by this project (own headless Chrome)
+- **licence**: Garmin/Navionics terms ('Not to be used for navigation'); no open licence; private research copy, reuse NOT cleared
+- **retrieved**: 2026-10-05
+- **used for**: 3d_seabed; 3d_crest; cross_check
+- **How used for the model**: Source of the Navionics seabed in the 3D model: the edge of the blue shading at each value gives the chart contour; contour lines extracted into navionics_isolines.json (427 toe points compared); datum test RMS LAT 0.61 m (best), MLWS 0.74, MLWN 0.96, AHD 1.17, MSL 1.28, MHWS 1.88 -> chart datum assumed LAT; 'FISH HAVEN 1.5MT' label vs the design crest (SOURCES_3D steps 1d, NAVIONICS paragraphs; model.js navionics).
+- **3D check pending**: no - none: seabed cross-check already done
+- **annotated / overlay files**: `07_scale/shapes/palm-beach-gold-coast/3d/annotated/nav_nautical_z18_fish_haven_label.png`
+- **series files (11)**: `07_scale/shapes/palm-beach-gold-coast/src/navionics/naut_z18_shade00.0.png` .. `07_scale/shapes/palm-beach-gold-coast/src/navionics/naut_z18_shade10.0.png`
+- **linked records**: 07_scale/shapes/palm-beach-gold-coast/3d/SOURCES_3D.md (NAVIONICS capture, DATUM TEST, INTERVAL TEST); 07_scale/shapes/palm-beach-gold-coast/3d/navionics_capture.py; 07_scale/shapes/palm-beach-gold-coast/src/navionics/capture_log.json; 07_scale/shapes/palm-beach-gold-coast/3d/model.js (navionics iso-lines)
+- **size**: 0.02 MB, 982x655 px
+- **sha256**: b978b5d27651b295e0e1f9d963069c6c8aa96c4f12d96277ea11f7c1b1a0b118
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: image-registry backfill, 2026-10-06
+- **notes**: Series registered as one row: 'file' is the shade 0 m screenshot; the other 10 files are listed in group_files with their sha256.
+
+## palm-beach-gold-coast-img-30 - Garmin Navionics SonarChart Maps, zoom 17, Palm Beach reef: shallow-shading series 0-10 m (11 files)
+
+![palm-beach-gold-coast-img-30](../../../07_scale/shapes/palm-beach-gold-coast/src/navionics/sonar_z17_shade00.0.png)
+
+- **file**: `07_scale/shapes/palm-beach-gold-coast/src/navionics/sonar_z17_shade00.0.png`
+- **kind**: chart_screenshot
+- **shows**: The chart around the Palm Beach reef at each shallow-shading value: SonarChart contours every 0.5 m (labelled), bending seaward around the reef. The reef is not drawn as a feature (a 'FISH HAVEN 1.5MT' label sits at the west end of the crest on the nautical chart).
+- **structure visible**: False
+- **state shown**: seabed and charted shoal near the reef (data date unknown)
+- **image date**: chart data dates not shown by the viewer; screenshots 2026-10-05
+- **citation**: Garmin Ltd / Navionics (2026). Marine Maps viewer, SonarChart Maps, depths in metres, zoom 17; series of 11 screenshots with 'Shallow shading' 0, 1, ... 10 m (centre -28.107334, 153.470913; page title 'Garmin | Marine Maps', 'Not to be used for navigation'). https://maps.garmin.com/en-US/marine?maps=another-brand&overlay=false&key=r7j0h74ngmnv (webapp.navionics.com redirects here). Captured 2026-10-05 14:22-14:35 local by navionics_capture.py. Accessed 2026-10-05.
+- **image URL**: https://maps.garmin.com/en-US/marine?maps=another-brand&overlay=false&key=r7j0h74ngmnv
+- **source page**: https://maps.garmin.com/en-US/marine?maps=another-brand&overlay=false&key=r7j0h74ngmnv
+- **page / figure**: SonarChart Maps zoom 17 (0.756 m/px); files sonar_z17_shade00.0 .. shade10.0 (the blue area is water shallower than the setting, so its edge is the chart contour of that depth)
+- **credit**: Garmin Navionics charts and SonarChart (c) Navionics / Garmin Ltd; screenshots by this project (own headless Chrome)
+- **licence**: Garmin/Navionics terms ('Not to be used for navigation'); no open licence; private research copy, reuse NOT cleared
+- **retrieved**: 2026-10-05
+- **used for**: 3d_seabed; 3d_crest; cross_check
+- **How used for the model**: Source of the Navionics seabed in the 3D model: the edge of the blue shading at each value gives the chart contour; contour lines extracted into navionics_isolines.json (427 toe points compared); datum test RMS LAT 0.61 m (best), MLWS 0.74, MLWN 0.96, AHD 1.17, MSL 1.28, MHWS 1.88 -> chart datum assumed LAT; 'FISH HAVEN 1.5MT' label vs the design crest (SOURCES_3D steps 1d, NAVIONICS paragraphs; model.js navionics).
+- **3D check pending**: no - none: seabed cross-check already done
+- **series files (11)**: `07_scale/shapes/palm-beach-gold-coast/src/navionics/sonar_z17_shade00.0.png` .. `07_scale/shapes/palm-beach-gold-coast/src/navionics/sonar_z17_shade10.0.png`
+- **linked records**: 07_scale/shapes/palm-beach-gold-coast/3d/SOURCES_3D.md (NAVIONICS capture, DATUM TEST, INTERVAL TEST); 07_scale/shapes/palm-beach-gold-coast/3d/navionics_capture.py; 07_scale/shapes/palm-beach-gold-coast/src/navionics/capture_log.json; 07_scale/shapes/palm-beach-gold-coast/3d/model.js (navionics iso-lines)
+- **size**: 0.05 MB, 982x655 px
+- **sha256**: 5e8b491590afd5e1e983eac434b52c5820b3003f8b1f4c88989382f9844492a4
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: image-registry backfill, 2026-10-06
+- **notes**: Series registered as one row: 'file' is the shade 0 m screenshot; the other 10 files are listed in group_files with their sha256.
+
+## palm-beach-gold-coast-img-31 - Garmin Navionics SonarChart Maps, zoom 18, Palm Beach reef: shallow-shading series 0-10 m (11 files)
+
+![palm-beach-gold-coast-img-31](../../../07_scale/shapes/palm-beach-gold-coast/src/navionics/sonar_z18_shade00.0.png)
+
+- **file**: `07_scale/shapes/palm-beach-gold-coast/src/navionics/sonar_z18_shade00.0.png`
+- **kind**: chart_screenshot
+- **shows**: The chart around the Palm Beach reef at each shallow-shading value: SonarChart contours every 0.5 m (labelled), bending seaward around the reef. The reef is not drawn as a feature (a 'FISH HAVEN 1.5MT' label sits at the west end of the crest on the nautical chart).
+- **structure visible**: False
+- **state shown**: seabed and charted shoal near the reef (data date unknown)
+- **image date**: chart data dates not shown by the viewer; screenshots 2026-10-05
+- **citation**: Garmin Ltd / Navionics (2026). Marine Maps viewer, SonarChart Maps, depths in metres, zoom 18; series of 11 screenshots with 'Shallow shading' 0, 1, ... 10 m (centre -28.107334, 153.470913; page title 'Garmin | Marine Maps', 'Not to be used for navigation'). https://maps.garmin.com/en-US/marine?maps=another-brand&overlay=false&key=r7j0h74ngmnv (webapp.navionics.com redirects here). Captured 2026-10-05 14:22-14:35 local by navionics_capture.py. Accessed 2026-10-05.
+- **image URL**: https://maps.garmin.com/en-US/marine?maps=another-brand&overlay=false&key=r7j0h74ngmnv
+- **source page**: https://maps.garmin.com/en-US/marine?maps=another-brand&overlay=false&key=r7j0h74ngmnv
+- **page / figure**: SonarChart Maps zoom 18 (0.378 m/px); files sonar_z18_shade00.0 .. shade10.0 (the blue area is water shallower than the setting, so its edge is the chart contour of that depth)
+- **credit**: Garmin Navionics charts and SonarChart (c) Navionics / Garmin Ltd; screenshots by this project (own headless Chrome)
+- **licence**: Garmin/Navionics terms ('Not to be used for navigation'); no open licence; private research copy, reuse NOT cleared
+- **retrieved**: 2026-10-05
+- **used for**: 3d_seabed; 3d_crest; cross_check
+- **How used for the model**: Source of the Navionics seabed in the 3D model: the edge of the blue shading at each value gives the chart contour; contour lines extracted into navionics_isolines.json (427 toe points compared); datum test RMS LAT 0.61 m (best), MLWS 0.74, MLWN 0.96, AHD 1.17, MSL 1.28, MHWS 1.88 -> chart datum assumed LAT; 'FISH HAVEN 1.5MT' label vs the design crest (SOURCES_3D steps 1d, NAVIONICS paragraphs; model.js navionics).
+- **3D check pending**: no - none: seabed cross-check already done
+- **annotated / overlay files**: `07_scale/shapes/palm-beach-gold-coast/3d/annotated/nav_sonar_z18_labels_read_with_reef_outline.png`
+- **series files (11)**: `07_scale/shapes/palm-beach-gold-coast/src/navionics/sonar_z18_shade00.0.png` .. `07_scale/shapes/palm-beach-gold-coast/src/navionics/sonar_z18_shade10.0.png`
+- **linked records**: 07_scale/shapes/palm-beach-gold-coast/3d/SOURCES_3D.md (NAVIONICS capture, DATUM TEST, INTERVAL TEST); 07_scale/shapes/palm-beach-gold-coast/3d/navionics_capture.py; 07_scale/shapes/palm-beach-gold-coast/src/navionics/capture_log.json; 07_scale/shapes/palm-beach-gold-coast/3d/model.js (navionics iso-lines)
+- **size**: 0.03 MB, 982x655 px
+- **sha256**: cbf1f3f32d2bcfe7651dd760bb76a8dd39c39fd9cd839c14d072577568671805
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: image-registry backfill, 2026-10-06
+- **notes**: Series registered as one row: 'file' is the shade 0 m screenshot; the other 10 files are listed in group_files with their sha256.
+
+## palm-beach-gold-coast-img-32 - Model sections: cross-shore section through the crest centre and section along the crest axis
+
+![palm-beach-gold-coast-img-32](../../../07_scale/shapes/palm-beach-gold-coast/3d/annotated/model_sections.png)
+
+- **file**: `07_scale/shapes/palm-beach-gold-coast/3d/annotated/model_sections.png`
+- **kind**: cross_section
+- **shows**: Cross-shore profile: seabed (Navionics-only vs the model) falling to -13 m over 600 m with the reef mound crest at -1.5 m MSL (1:12 / 1:5 flanks); along-crest section as a flat-topped body.
+- **structure visible**: False
+- **state shown**: model output (as-built reef)
+- **image date**: 2026-10-05 (figure)
+- **citation**: This project (2026-10-05), figure from the Palm Beach 3D model (annotate_3d.py): cross-shore section through the crest centre (vertical exaggeration x10) and a section along the crest axis (x3), with the Navionics-only seabed and the concept design anchor. Inputs: model.js (Navionics SonarChart seabed, Bluecoast aerial contours, council polygon), Mortensen et al. (2015). Accessed 2026-10-05.
+- **image URL**: https://www.msq.qld.gov.au/
+- **source page**: 07_scale/shapes/palm-beach-gold-coast/3d/model.js
+- **page / figure**: annotate_3d.py output
+- **credit**: Figure by this project; data Garmin Navionics, Bluecoast, DHI
+- **licence**: project figure; underlying data as per sources.md
+- **retrieved**: 2026-10-05
+- **used for**: 3d_height_slopes; 3d_crest; 3d_seabed
+- **How used for the model**: Visual check of the model: crest at -1.5 m MSL, flank slopes 1:12 (seaward) and 1:5 (shoreward), crest height above the model seabed 3.9 m (SOURCES_3D steps 3 and 5).
+- **3D check pending**: no - none: our own check figure
+- **linked records**: 07_scale/shapes/palm-beach-gold-coast/3d/SOURCES_3D.md (STEP 2/3); 07_scale/shapes/palm-beach-gold-coast/3d/model.js
+- **size**: 0.14 MB, 1320x1045 px
+- **sha256**: 3540dad17a6be10411baac71366eb00bc511ba27e1d2b60f809b79d860af9375
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: image-registry backfill, 2026-10-06
+
+## palm-beach-gold-coast-img-33 - MSQ Semidiurnal Tidal Planes 2026 table with the Gold Coast Seaway row highlighted
+
+![palm-beach-gold-coast-img-33](../../../07_scale/shapes/palm-beach-gold-coast/3d/annotated/msq_tidal_planes_2026_gold_coast_seaway.png)
+
+- **file**: `07_scale/shapes/palm-beach-gold-coast/3d/annotated/msq_tidal_planes_2026_gold_coast_seaway.png`
+- **kind**: diagram
+- **shows**: Table of tidal planes with the Gold Coast Seaway standard-port row (MHWS 1.53, MHWN 1.24, MLWN 0.51, MLWS 0.22, MSL 0.88, HAT 2.03 m above LAT) boxed; ocean beaches tide 20 min earlier than the Seaway.
+- **structure visible**: False
+- **state shown**: not applicable (table)
+- **image date**: 2026 edition (epoch 2010-2029)
+- **citation**: Maritime Safety Queensland (2026). Semidiurnal Tidal Planes - 2026, Height above Queensland Port Datum (LAT (1992)), Tidal Datum Epoch 2010-2029, row 'Gold Coast Seaway'. https://www.msq.qld.gov.au/_/media/tmronline/msqinternet/msqfiles/home/tides/tidal-planes/2026-semidiurnal-tidal-planes.pdf. Accessed 2026-10-05.
+- **image URL**: https://www.msq.qld.gov.au/_/media/tmronline/msqinternet/msqfiles/home/tides/tidal-planes/2026-semidiurnal-tidal-planes.pdf
+- **source page**: https://www.msq.qld.gov.au/_/media/tmronline/msqinternet/msqfiles/home/tides/tidal-planes/2026-semidiurnal-tidal-planes.pdf
+- **page / figure**: table page (annotated crop)
+- **credit**: Maritime Safety Queensland (annotated by this project)
+- **licence**: Queensland Government publication; licence not checked - research copy
+- **retrieved**: 2026-10-05
+- **used for**: 3d_tides
+- **How used for the model**: Water levels LAT..HAT of the model (z = value - 0.88 at MSL) and the datum ladder (SOURCES_3D, tide row used; model.js water_levels).
+- **3D check pending**: no - none: already used
+- **source PDF**: `07_scale/shapes/palm-beach-gold-coast/src/msq_tidal_planes_2026.pdf`
+- **linked records**: 07_scale/shapes/palm-beach-gold-coast/3d/SOURCES_3D.md (annotated msq_tidal_planes); 07_scale/shapes/palm-beach-gold-coast/3d/model.js
+- **size**: 0.35 MB, 1853x1310 px
+- **sha256**: 8c266565d3d702b2403c75e018bed83c55f07af5b508e58b5824b8216c4b8d9e
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: image-registry backfill, 2026-10-06
+
+## palm-beach-gold-coast-img-34 - Navionics iso-lines extracted from the shading series, toe residuals and RMS per candidate chart datum
+
+![palm-beach-gold-coast-img-34](../../../07_scale/shapes/palm-beach-gold-coast/3d/annotated/nav_isolines_and_datum_test.png)
+
+- **file**: `07_scale/shapes/palm-beach-gold-coast/3d/annotated/nav_isolines_and_datum_test.png`
+- **kind**: diagram
+- **shows**: Left: extracted iso-lines with toe residuals coloured; right: bar chart of RMS (toe elevation minus Navionics seabed) for datums LAT 0.61 m, MLWS 0.74, MLWN 0.96, AHD 1.17, MSL 1.28, MHWS 1.88 m.
+- **structure visible**: False
+- **state shown**: not applicable (analysis chart)
+- **image date**: 2026-10-05
+- **citation**: This project (2026-10-05), figure made from Garmin Navionics SonarChart screenshots (https://maps.garmin.com/en-US/marine?maps=another-brand&overlay=false&key=r7j0h74ngmnv, accessed 2026-10-05) and the traced toe elevations from the Bluecoast aerial.
+- **image URL**: https://maps.garmin.com/en-US/marine?maps=another-brand&overlay=false&key=r7j0h74ngmnv
+- **source page**: https://maps.garmin.com/en-US/marine?maps=another-brand&overlay=false&key=r7j0h74ngmnv
+- **page / figure**: navionics_isolines.py output
+- **credit**: Figure by this project; data Garmin Navionics
+- **licence**: project figure; underlying data as above
+- **retrieved**: 2026-10-05
+- **used for**: 3d_seabed; 3d_tides
+- **How used for the model**: Result that LAT is the best-fitting chart datum (MSL and AHD rejected, > 1 m) and the 0.5 m contour interval is supported (0.46 m per interval); basis of the Navionics seabed in model.js (SOURCES_3D DATUM TEST / INTERVAL TEST).
+- **3D check pending**: no - none: already used
+- **linked records**: 07_scale/shapes/palm-beach-gold-coast/3d/SOURCES_3D.md (DATUM TEST); 07_scale/shapes/palm-beach-gold-coast/3d/navionics_isolines.json; 07_scale/shapes/palm-beach-gold-coast/3d/model.js
+- **size**: 0.13 MB, 1700x819 px
+- **sha256**: 1cff311edb442854a4aa45452bcb3507d1198b40957a31a3bf3913ed30adce20
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: image-registry backfill, 2026-10-06

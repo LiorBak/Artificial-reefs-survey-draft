@@ -1,0 +1,6 @@
+{
+  "_comment": "Round 11: slugs listed here are NOT built into the 3D tab even if their 3d folder has index.html + model.js (another agent is still writing them). Remove the entry when the model's agent has finished (its HANDOFF.md has a 3D section and 05_qa/00_STATUS.md has a '<reef> 3D DONE' entry).",
+  "hold": {
+    "borth-coastal-defence-reef": "still in work"
+  }
+}

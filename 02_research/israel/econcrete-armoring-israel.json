@@ -1,0 +1,65 @@
+{
+  "slug": "econcrete-armoring-israel",
+  "name": "ECOncrete bio-enhancing concrete armoring installations in Israel",
+  "place": "Haifa Bay (\"Polinom\" port breakwater), Herzliya Marina, Jaffa Port; also reported at a Haifa naval base, Ashdod port and Eilat port (dates not found)",
+  "country": "Israel",
+  "kind": "israel",
+  "type": "bio-enhancing precast concrete armoring units, seawall panels, and tide pools (Antifer-shaped armor units at Haifa; seawall face panels at Herzliya; tide-pool units at Jaffa)",
+  "purpose": "ecological enhancement (biodiversity, native-species dominance, water purification) of coastal/port infrastructure that would otherwise be built in plain Portland-cement concrete; secondary claimed benefit of 'bioprotection' reducing structural maintenance",
+  "year_built": {
+    "haifa_polinom_breakwater": "port constructed 2012; ECOncrete units deployed and monitored 2013-2015 (some company material says 2013-2016) [R1][R2]",
+    "herzliya_marina_seawall": "November 2014, monitored to at least 22 months post-deployment (~Sept 2016), company field says 'ongoing' [R2]",
+    "jaffa_port_tide_pools": "installed week of 2019-02-07 [R5][R6]",
+    "haifa_naval_base_ashdod_eilat": "not found"
+  },
+  "priority": 1,
+  "status": "Haifa/Polinom: 24-month comparative study completed 2015, units presumed still in place (unconfirmed). Herzliya: described as ongoing. Jaffa: installed 2019, no later status update found.",
+  "dimensions": {
+    "haifa_polinom": "exact unit count/breakwater length not confirmed in primary case-study text (one earlier AI-summarized fetch of the same page said '15 units' but this is unverified against the full PDF) [R1][R2]",
+    "herzliya": "monitoring used a 30x30 cm quadrat frame; total seawall area/unit count not found [R2]",
+    "jaffa": "3 tide-pool units [R5][R6]",
+    "source": "R1, R2, R5, R6"
+  },
+  "cost": {
+    "per_unit_or_project": "not found for any Israeli site",
+    "cost_premium_vs_standard_concrete": "approximately 2-7% more than standard marine concrete mixes, per company [R8]",
+    "company_funding_not_project_cost": "$5M Series A led by Bridges Israel + RElab, announced 2020-06-09 [R13]; earlier ~$1M and ~$3M raises reported only by article title, full text blocked (HTTP 403) [R8]"
+  },
+  "designer": "ECOncrete Tech Ltd. (Tel Aviv, Israel), founded 2012 by Dr. Shimrit Perkol-Finkel (CEO) and Dr. Ido Sella (CTO), both marine ecologists [R7][R11][R13]",
+  "contractor": "not found for any site",
+  "financed_by": {
+    "jaffa_port": "Atarim Group (Tel Aviv-Yafo municipal coastline development corporation) [R5]",
+    "haifa_polinom": "not found (not confirmed to be Israel Ports Development & Assets Company)",
+    "herzliya_marina": "not found (not confirmed to be Marina Herzliya Ltd.)"
+  },
+  "motivation": "Company founded on the argument that standard concrete coastal infrastructure is ecologically poor habitat (chemistry, smooth texture, steep incline vs natural rock); each Israeli site was a pilot/retrofit opportunity arising from other parties' construction or eco-branding goals (Haifa: side-by-side comparison during new port construction; Herzliya: Blue Flag eco-marina retrofit; Jaffa: Atarim Group innovation trial framed by port ecologist Rotem Trabitzky as balancing conservation and development) [R1][R2][R5][R6]",
+  "outcome": "Haifa: >2x invertebrate species richness/biodiversity vs standard Antifer units, greater fish diversity, ~2/3 native species on ECOncrete vs invasive-dominated on standard units [R1][R2]. Herzliya: at 22 months, diverse invertebrate colonization on ECOncrete units vs a control that declined BELOW its own original baseline [R2]. Jaffa: no quantified result found, only qualitative ecologist commentary [R6]. No structural/wave-attenuation/storm-performance data found for any site - all outcome data is ecological only.",
+  "disambiguation_resolved": "This project's own discovery sweep (discovery_israel.md) flagged the 'Haifa Port pilot' and the 'Bay Port/Polinom installation' as possibly the same site described inconsistently. This dossier's direct read of ECOncrete's full case-study PDF (which names the site 'Polinom Port - Haifa' throughout, construction year 2012) resolves this: they are the SAME installation, not two distinct sites.",
+  "relation_to_master_list": "seeded from 02_research/01_targets.md row econcrete-armoring-israel (Section D 'New Israel topics'), compiled from discovery_israel.md items 12-15",
+  "relevance_to_haifa_reef_proposal": "Direct same-bay precedent: Haifa/Polinom pilot is in Haifa Bay itself and shows ECOncrete-style armor units can be fabricated, installed and monitored on Haifa Bay port infrastructure with measured ecological uplift. Core transferable idea: use bio-enhancing armor units as the FACING MATERIAL of a Haifa reef/breakwater structure (drop-in substitute for standard cube antifers already used in Israeli port construction). Does NOT transfer: none of the Israeli case studies measured wave attenuation, surfability, or storm-structural performance - all outcome data is ecological only, so a Haifa surf-reef proposal still needs separate hydrodynamic/structural design work.",
+  "dossier_md": "02_research/israel/econcrete-armoring-israel.md",
+  "reviews_found": 6,
+  "references_count": 18,
+  "image_leads": [
+    "https://econcretetech.com/news/case-study-ecological-breakwater-infrastructure-for-ports/",
+    "https://www.monmouth.edu/uci/wp-content/uploads/sites/58/2021/09/ECOncrete-Case-Studies.pdf",
+    "https://econcretetech.com/",
+    "https://www.namalyafo.co.il/news/%D7%91%D7%A8%D7%99%D7%9B%D7%95%D7%AA-%D7%91%D7%98%D7%95%D7%9F/",
+    "https://www.atarim.gov.il/en/blog/the-future-of-the-sea-innovation-at-the-ancient-port/"
+  ],
+  "video_leads": [],
+  "blocked_sources": [
+    "https://magazine.isees.org.il/?p=22300 (403)",
+    "https://magazine.isees.org.il/?p=15800 (403)",
+    "https://www.cnn.com/2021/10/04/business/eco-concrete-ocean-biodiversity-climate-spc-intl (451)",
+    "https://www.fastcompany.com/90344405/most-creative-people-2019-econcrete-shimrit-perkol-finkel (403)",
+    "https://www.geektime.co.il/econcrete-raises-1m/ (403)",
+    "https://www.geektime.co.il/econcrete-friendly-concrete/ (403)",
+    "https://www.namalyafo.co.il/news/%D7%91%D7%A8%D7%99%D7%9B%D7%95%D7%AA-%D7%91%D7%98%D7%95%D7%9F/ (403 direct fetch)",
+    "https://www.globes.co.il/news/article.aspx?did=1001083802 (ECONNRESET)",
+    "https://www.algemeiner.com/2021/05/04/israeli-startup-leading-fight-to-protect-worlds-coral-reefs-and-oceans-from-climate-change/ (404)",
+    "https://econcretetech.com/portfolio/ (404)",
+    "http://mafish.org.il/wp-content/uploads/2018/07/Coastal_protection_Tool_box_2017.pdf (unreadable scanned PDF)"
+  ],
+  "last_updated": "2026-09-24"
+}

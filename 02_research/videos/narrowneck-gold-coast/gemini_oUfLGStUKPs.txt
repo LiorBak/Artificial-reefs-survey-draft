@@ -1,0 +1,18 @@
+Source: Gemini survey (UNVERIFIED) - C:\Users\lior\Documents\Gemini\AG\artifical reef\05_web_build\reef_videos.json (key "narrowneck-gold-coast", first entry)
+
+NOTE (added by this extract, 2026-10-04): This "quotes" block is byte-for-byte the same content (minus trivial reformatting) as OUR OWN transcript at
+02_research/videos/narrowneck-gold-coast/oUfLGStUKPs.txt and OUR OWN 02_research/videos/narrowneck-gold-coast/videos.json entry for this same video id.
+Gemini's 05_web_build/parse_videos.py reads directly from OUR path
+"C:\Users\lior\Documents\Gemini\AG\Artificial reef - to upload to git\02_research\videos\*\videos.md" to build reef_videos.json.
+This is NOT an independent transcript Gemini obtained - it is our own research, round-tripped through Gemini's folder. Copied here verbatim per brief instructions, not as a new finding.
+
+Title: "NARROWNECK REEF" (Griffith Centre for Coastal Management, 2015, 4:03)
+URL: https://www.youtube.com/watch?v=oUfLGStUKPs
+
+Quotes (as stored in Gemini's reef_videos.json):
+00:19 — "The [Narrowneck] Reef is a geotextile bag reef and its primary objective was Coastal protection."
+01:00 — "...the one that came out best was a submerged artificial Reef without the added bonuses of Surfing and Diving — it was clearly the best solution."
+01:33 — "We've constructed a structure that you can't see but it's constantly reducing the sand transport and the storm cut so we have a wider Beach, a more stable Beach."
+01:57 — "McQuade won the contract for dropping the sandbags — he had bought in a split Hull Hopper barge that he developed specifically for doing this type of work."
+02:52 — "The difference between a geotextile structure and a concrete or rock structure is the type of growth we get — 10 m of water we're getting Kelps, we're getting Turtles, and I've dived with dolphins."
+03:32 — "The data collected over the last 10 years... clearly show that it's been a highly successful device or structure for maintaining the health of the beach."

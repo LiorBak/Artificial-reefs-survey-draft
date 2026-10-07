@@ -1,0 +1,96 @@
+{
+  "slug": "kovalam-reef-india",
+  "checked_on": "2026-09-25",
+  "checked_by": "Claude Sonnet 5 (subagent, strict media re-check)",
+  "method": "Each accepted image URL from the card was downloaded to a local scratchpad with curl -L -A Mozilla/5.0, opened and viewed directly (not just alt-text/caption read), classified against the rubric, then deleted. Videos were not downloaded; classified from videos.json + videos.md (no transcripts exist; both are 'transcript blocked by 429' per the file) plus each video's own title/description already recorded there. No frames exist for this reef (03_images/video_frames/kovalam-reef-india/ is empty), so no frame classification was possible.",
+  "images": [
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/12/Kovalam-Geomat-1024x543.jpg",
+      "card_depicts": "Workers in the surf handling a geotextile mat/sock studded with orange floats; offshore vessel with pink buoys visible - construction-phase documentation",
+      "actual_content_viewed": "A hand-drawn ink sketch titled 'PETITION FOR ROCK REMOVAL', dated 7/9/1980, labeling a completely different structure called 'Burkitts Reef' with annotations like 'SWELL BUILDS UP HERE TRIPLING ITS SIZE' and 'WAVES BREAK HERE WITH ROCKS OBSTRUCTING SURFER'. Nothing resembling Kovalam, India, or a geotextile mat.",
+      "classification": "unrelated_or_wrong_site",
+      "reasoning": "The URL now serves an entirely unrelated 1980s petition sketch about a place called 'Burkitts Reef' (reads as an Australian/NZ context, not India). Either raisedwaterresearch.com's media library was reorganized/reused after the card was built, or the card's 'depicts' field was written without actually viewing the image. Either way the current content has zero visible connection to the Kovalam reef.",
+      "action": "Reject - remove from accepted images."
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/12/Kovalam-Reef-Underwater1.jpg",
+      "card_depicts": "Underwater view of a low submerged mound on a sandy seabed - the reef structure itself",
+      "actual_content_viewed": "An excavator (yellow Kobelco brand) working on a beach entirely covered in dark basalt/volcanic boulders, with a man standing among the rocks. Not an underwater photo at all; the terrain (dark boulder field) does not match Kovalam's sandy Lighthouse Beach or the geotextile-bag construction described in the dossier.",
+      "classification": "unrelated_or_wrong_site",
+      "reasoning": "Filename says 'Underwater' but the image is a dry-land excavator/rock-clearing scene on a boulder beach, inconsistent with both the filename and the dossier's description of a sand-filled geotextile bag reef on a sandy beach.",
+      "action": "Reject - remove from accepted images."
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/12/Kovalam-Reef-Underwater2.jpg",
+      "card_depicts": "Second underwater view of the submerged reef mound with small fish schooling over it",
+      "actual_content_viewed": "A surfer riding a small clean wave on a light-blue surfboard, silhouetted/backlit, generic ocean background. Not underwater, no fish, no visible reef mound.",
+      "classification": "unrelated_or_wrong_site",
+      "reasoning": "Content is a surf action shot, not an underwater reef photo; cannot even confirm it is Kovalam (no identifying background features), and there is no fish-schooling or submerged-mound content as the card claims.",
+      "action": "Reject - remove from accepted images."
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/12/ASR-beach-widening-1024x784.jpg",
+      "card_depicts": "ASR Ltd's own before/after modeling and aerial photos (August 2009 vs August 2010) documenting beach widening at Kovalam Lighthouse Beach",
+      "actual_content_viewed": "A backlit/silhouetted surfer doing an aerial maneuver above a wave at sunset. No before/after imagery, no aerial map, no beach-widening documentation of any kind.",
+      "classification": "unrelated_or_wrong_site",
+      "reasoning": "This was the single most load-bearing image for the dossier's 'beach remained wider' claim (cited directly in the 'outcome' field), and it does not show what the card says at all - it is an unrelated surf action photo. The beach-widening evidence chain for this claim needs to be re-verified from the source page text, not from this image.",
+      "action": "Reject - remove from accepted images. Flag for follow-up: re-check the 'outcome' field's beach-widening sourcing since its supporting image is not what was claimed."
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/12/Kovalam-Overview-Good-1024x512.jpg",
+      "card_depicts": "Aerial overview of Kovalam Lighthouse Beach's crescent shape with its rocky southern headland and dense hotel/resort beachfront",
+      "actual_content_viewed": "An aerial/drone shot of a crescent-shaped beach with a rocky point at the upper-left, dense hotel/resort buildings and palm trees along the shore, swimmers with red buoys in the water, and a patch of whitewater roughly mid-frame in open water. Plausibly matches the general description (crescent beach, rocky headland, dense beachfront) better than the other four, but the whitewater patch cannot be confirmed as the reef break specifically - no caption on the source page ties this exact patch to the structure, and given the other four URLs on this same domain were shown to serve mismatched content, this one's authenticity as a genuine Kovalam photo (versus another reused/mislabeled file) cannot be fully trusted either.",
+      "classification": "site_context_only",
+      "reasoning": "Generically consistent with Kovalam Lighthouse Beach's known shape, but does not clearly and verifiably show the reef structure or an unmistakable reef effect (the mid-water whitewater patch is ambiguous - could be a normal breaking wave, boat wake, or the reef, and no source-page caption resolves it). Given this same site mis-served 4 of 5 other images, treat with reduced confidence even at this classification.",
+      "action": "Keep only as generic site/location context, not as reef-evidence; do not caption it as showing the reef."
+    },
+    {
+      "url": "https://www.google.com/maps/@8.4003,76.9786,17z",
+      "card_depicts": "Satellite/map view centered near Kovalam Lighthouse Beach at the general Kovalam coordinates",
+      "actual_content_viewed": "Not re-fetched as an image (interactive map link, not a static photo) - by nature a satellite/map tile showing coastline and coordinates only, no dedicated reef annotation.",
+      "classification": "site_context_only",
+      "reasoning": "A generic map/satellite locator, not an image of the structure or its effect; useful only for geographic orientation.",
+      "action": "Keep only as a location reference, not as reef-evidence."
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=E2_03-CkwGY",
+      "title": "Surfing Kovalam Beach, South Indian Small, Fun Waves - GoPro Footage",
+      "classification": "mentions_reef_briefly",
+      "best_timestamp_seconds": null,
+      "evidence": "Uploader's own YouTube description text (per videos.md, already on file - no re-download needed): \"They have some decent waves and there is an artificial reef that really goes off when the swell is big enough.\" This is a textual mention in the description, not something shown or narrated in the 22-second clip itself, which per videos.md is silent GoPro POV/selfie footage of a surfer and whitewash with no narration and no visible structure.",
+      "note": "This is the video Lior flagged as showing surfing at the beach but never the artificial reef - confirmed: the reef is only referenced in the text description, never depicted or discussed on-camera."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=X3NqayC1Iqc",
+      "title": "Kovalam Surf Club social video",
+      "classification": "site_only",
+      "best_timestamp_seconds": null,
+      "evidence": "Per videos.md: a short (59s) social-style clip whose only tie to the dossier is its thumbnail caption 'MEET JELLE RIGOLE FROM BELGIUM' - Jelle Rigole is a named source quoted elsewhere in the dossier about the reef's failure, but the video itself has no confirmed dialogue or footage of the reef structure; it is described as a general social clip.",
+      "note": "This is the second video Lior flagged - it establishes the surf-club/community location, not the reef itself. No reef structure or discussion of it is shown in the video content."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=6eSOn_m5Oz8",
+      "title": "Surfing - Water Sports in Kovalam, Kerala",
+      "classification": "site_only",
+      "best_timestamp_seconds": null,
+      "evidence": "Per videos.md: an official Kerala tourism promotional clip describing general wave heights (0.5-2 m) and surf-tourism infrastructure at Kovalam, Kerala. No mention of the artificial reef structure, its construction, or its condition anywhere in the title/description on file.",
+      "note": "Generic tourism b-roll; confirms the site (Kovalam, Kerala) but not the reef."
+    }
+  ],
+  "frames": [],
+  "frames_note": "No frame files exist under 03_images/video_frames/kovalam-reef-india/ (folder is empty; per videos.md a test frame extraction was done and deliberately discarded because it showed only a surfer selfie and undifferentiated whitewash). Nothing to classify.",
+  "hero_recommendation": {
+    "verdict": "none",
+    "reasoning": "No accepted image or video/frame for this reef clears either 'structure_visible' or 'reef_effect_visible'. Every one of the four raisedwaterresearch.com photo URLs the card describes as showing the reef, construction, or underwater structure in fact serves unrelated content (a 1980 petition sketch for a different reef, an excavator on a boulder beach, and two generic surf-action shots). The one image that is plausibly genuine Kovalam content (Kovalam-Overview-Good) is a generic aerial beach shot with no verifiable reef-specific content, so it should be used only as location context, never captioned as depicting the reef.",
+    "recommended_best_available": "https://raisedwaterresearch.com/wp-content/uploads/2019/12/Kovalam-Overview-Good-1024x512.jpg (as generic site-context only, explicitly not as reef evidence)"
+  },
+  "recommended_card_changes": [
+    "Remove the following 4 images from kovalam-reef-india.json's images[] array (they do not show what they claim and are unrelated to the reef): Kovalam-Geomat-1024x543.jpg, Kovalam-Reef-Underwater1.jpg, Kovalam-Reef-Underwater2.jpg, ASR-beach-widening-1024x784.jpg.",
+    "Move Kovalam-Overview-Good-1024x512.jpg's 'depicts' text to make clear it is generic beach context, not reef evidence, and drop any implication it shows the reef break.",
+    "Flag the dossier's 'outcome' field claim 'the beach remained wider... after installation' for a source-text re-check, since its only cited supporting image (ASR-beach-widening.jpg) turned out not to show any before/after or beach-widening content - the claim itself may still be correct per R1's page text, but the image can no longer be used to illustrate it.",
+    "No accepted video or frame shows the reef structure or its effect; all three videos are effectively site-only or description-only mentions, matching what Lior already observed for two of the three.",
+    "Recommend the card end up with zero 'structure_visible' or 'reef_effect_visible' media for this reef; the media tab/section for Kovalam should say plainly that no verified visual evidence of the reef itself (only of the beach/surf site) was found."
+  ]
+}

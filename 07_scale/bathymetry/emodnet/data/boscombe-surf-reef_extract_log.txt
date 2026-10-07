@@ -1,0 +1,13 @@
+== boscombe-surf-reef: reef centre canonical -0.0,226.4 -> lat/lon 50.717530,-1.838910; shoreline bearing 83.4
+cell size at 50.718 N: 115.8 m (N-S) x 73.4 m (E-W)
+ERDDAP https://erddap.emodnet.eu/erddap/griddap/bathymetry_dtm_2024.csv?elevation[(50.710938):(50.723438)][(-1.844271):(-1.833854)],value_count[(50... 200 10364 bytes
+ERDDAP cells 143, valid (sea) 88, masked (land / outside) 55
+WCS emodnet__mean_2016 200 1429 bytes
+WCS emodnet__mean_2018 200 1429 bytes
+WCS emodnet__mean_2020 200 1420 bytes
+WCS emodnet__mean_2022 200 1408 bytes
+WCS emodnet__mean 200 1408 bytes
+WCS alignment vs ERDDAP (mean abs diff, ki_top, kj_left, n): (np.float64(1.9264221180164448e-07), 34294, 32789, 70)
+points written: 11
+2024 source patches in 3 km box: [{'release': '2024', 'edmo_id': 2607, 'identifier': '117452', 'type': 'CDI', 'device': None, 'metadata_url': 'https://cdi-bathymetry.seadatanet.org/report/edmo/2607/117452'}, {'release': '2024', 'edmo_id': 2607, 'identifier': '117450', 'type': 'CDI', 'device': None, 'metadata_url': 'https://cdi-bathymetry.seadatanet.org/report/edmo/2607/117450'}]
+CDI polygons: [('3042292', 'Isle of Wight, Western Approaches to the Solent, Christchurch Bay', 'OceanWise Limited'), ('1981354', 'Western Approaches to the Solent', 'OceanWise Limited'), ('1982228', 'Poole Bay, Block 12', 'OceanWise Limited'), ('1982230', 'Poole Bay, Blocks 14-17', 'OceanWise Limited')]

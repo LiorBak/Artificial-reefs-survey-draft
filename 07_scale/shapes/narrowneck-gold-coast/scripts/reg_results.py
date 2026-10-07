@@ -1,0 +1,52 @@
+import sys
+sys.path.insert(0, '.')
+import nnreg as R
+ID = "narrowneck-gold-coast-img-%02d"
+OV = "07_scale/shapes/narrowneck-gold-coast/overlays/"
+SH = "07_scale/shapes/narrowneck-gold-coast/"
+
+def upd(n, result, pending, **kw):
+    R.update(ID % n, result=result, pending=pending, **kw)
+
+topology = ("two arms + central channel + flared wings at the shoreward ends (the 2004 revised design) = the topology of our trace (shape.json, s3 Esri 2020-08-08)")
+upd(1, "Planform checked 2026-10-06: Fig 2 right = 2004 revised design: " + topology + ". The -2.50 m crest wedge covers only the shoreward ~60 m of each arm, contours -3.0 ... -6.0 deepen seaward (outer -8.0); the visible 2020 container field (113 x 157 m, arms 134 m and 111 m long) corresponds to the design out to about the -6 m contour. Crest -2.50 vs RL -2.5 m AHD adopted: consistent (Jackson 2007 p.7); datum of these labels still unstated here. STILL PENDING for the 3D agent: crest/datum and seabed only.", True,
+    how_append="Planform result written by the Narrowneck tracer: topology and arm length agree with shape.json (METHOD.md Steps 2d, 3, 6).", linked_add=[SH + "METHOD.md Step 6"])
+upd(2, "Planform checked 2026-10-06: Fig 4 (2002/03, 2004 plan with 'flair wings' and 'establish weir', 2006) shows the same two-arm layout with channel; the 2004 weir containers are drawn N-S across the channel, flared wings at the shoreward ends. Our trace (renewed 2018 state) has two arms, a 20.7 m channel gap, shoreward patches on the north wing; the weir containers are not visible in 2020 (lowered/buried, Jackson 2012 p.6). Planform check done.", False,
+    how_append="Topology cross-check of the traced shape (METHOD.md Step 6).", linked_add=[SH + "METHOD.md Step 6"])
+upd(3, "Planform checked 2026-10-06: Figs 6b/7 on this page were georeferenced to Esri on the container patches (METHOD.md Step 2d; Fig 7 = 0.21 m/px +-10 %, Fig 6b 0.3675 m/px, placement +-15 m). The 2020 trace lies inside the 2004 design envelope on both arms; offshore extents (canonical frame): north arm trace y 239.7-369.1 m vs design outer contour 217-354 m, south arm 230.3-341.7 vs 208-346 m. Differences (+15 m N tip, -4 m S tip, ~22 m at the shoreward wall) are inside the tolerance. Planform check done.", False,
+    add_annotated=[OV + "fig7_2011_aerial_design_contours_with_2020_trace.png", OV + "design_prior_fig7_contours_on_s3.png"],
+    how_append="Source page of the design-prior registration (shape.json design_prior).", linked_add=[SH + "METHOD.md Step 2d"])
+upd(4, "Planform checked 2026-10-06: revised (2004) design = flared wings + central channel + two arms, same topology as the trace; arm length to the -6 m contour about 121 m (Fig 13 bar) vs 134 m traced (north arm). Labels read -2.50 crest, -3.00, -3.50, -4.00, -4.50, -5.0, -6.0, outer -8.00 (datum not printed in the paper). The 'adopted -1.5 AHD' snippet concerns 1999 (Jackson 2007 p.4), not these labels. STILL PENDING for the 3D agent: crest depth along the arm and datum of the labels (METHOD.md INPUTS FOR 3D).", True,
+    how_append="Levels and topology used for INPUTS FOR 3D (crest variation along the arms).", linked_add=[SH + "METHOD.md INPUTS FOR 3D"])
+upd(5, "Planform checked 2026-10-06: Fig 4 shows maintenance on the ORIGINAL 1999-2000 layout (2002/03) and the 2004 modification (weir + flared wings) that became the 'final revised design'. The traced outline represents the June 2018 renewed state of that 2004 revised layout (two arms, channel, flared wings), not the 1998 split V. Planform check done.", False,
+    how_append="Design-version decision (shape.json design_version).", linked_add=[SH + "METHOD.md Step 6"])
+upd(8, "Planform checked 2026-10-06: the 2004 aerial (no scale, no north arrow, red-toned film) shows the same two container fields with an open channel between; the fields are fan-shaped and scattered. Not georeferenced (no usable control); topology agrees with the trace. Planform check done.", False,
+    how_append="Qualitative topology check only.", linked_add=[SH + "METHOD.md Step 6"])
+upd(9, "Planform checked 2026-10-06: georeferenced to Esri s3 (Fig 7/Fig 6b ratio 1.75; Fig 6b 0.3675 m/px +-10 %, dark-patch NCC corr 0.57; overlays). The 2020 trace laid on this 2011 photograph follows the 2011 dark container patches on both arms; the 2011 north-arm field already reached the same seaward limit as in 2020 (also seen in the 2016 Esri image s6), so the 2018 renewal added mostly dense infill and the amended shape differs from the 2011 footprint by less than the +-15 m registration tolerance. Planform check done.", False,
+    add_annotated=[OV + "fig6b_2011_aerial_with_2020_trace.png"], used_for_add=["scale", "cross_check"],
+    how_append="Used with Fig 7 to place the design prior on the Esri imagery (METHOD.md Step 2d; design_registration.py).", linked_add=[SH + "METHOD.md Step 2d"])
+upd(10, "Planform checked 2026-10-06: Fig 7 georeferenced to Esri s3 (0.21 m/px +-10 %, ends +-15 m). The traced container field of 2020 lies within the white 2004 design contours on most of its length; its seaward end passes the outer contour by about 15 m (north arm) and stops 4 m inside it (south arm); its shoreward end lies ~22 m seaward of the thick design wall. Neither confirms nor excludes the unverified '20 m seaward' amended shape. Planform check done.", False,
+    add_annotated=[OV + "fig7_2011_aerial_design_contours_with_2020_trace.png", OV + "design_prior_fig7_contours_on_s3.png"], used_for_add=["scale"],
+    how_append="DESIGN PRIOR registered to Esri s3 (shape.json design_prior, sources s8).", linked_add=[SH + "METHOD.md Step 2d"])
+upd(14, "Checked 2026-10-06 (planform not applicable): the sketch shows a crest container (T2) resting on two base containers (T4): two layers at the crest, which supports a reef height of about 2-3 m above the seabed at the shoreward crest and 4-6 m at the toe (estimate, METHOD.md INPUTS FOR 3D). STILL PENDING for the 3D agent (height and slopes).", True,
+    how_append="Stacking input for INPUTS FOR 3D.", linked_add=[SH + "METHOD.md INPUTS FOR 3D"])
+upd(23, "Planform checked 2026-10-06: the oblique ICM photo (dredger over the reef) shows one container field (probably the north arm) as a wedge of dense dark containers narrowing away from the camera, individual containers visible; no scale. Consistent in character with the traced wedge (134 x 54 m); qualitative only, which arm is not stated. Planform check done.", False,
+    how_append="Qualitative shape check of the traced north arm (METHOD.md Step 6).", linked_add=[SH + "METHOD.md Step 6"])
+upd(24, "Planform checked 2026-10-06: oblique drone view with two surfers and the buoy: the reef shows only as diffuse, low-contrast dark patches, the two arms cannot be separated; no scale. No planform contradiction; crest depth cannot be read from this photo. STILL PENDING for the 3D agent: crest-depth consistency only.", True,
+    how_append="Qualitative planform check (METHOD.md Step 6).", linked_add=[SH + "METHOD.md Step 6"])
+upd(26, "Planform checked 2026-10-06: the 1998 design shows two separate tapered arms (split V) on a large plan frame, with no weir and no flared wings; the arms look much longer relative to the survey frame than the built ones (scale labels not legible, not measured), with a channel between; this is NOT the state drawn (2004 revised design, renewed 2018). History only. Planform check done.", False,
+    how_append="Alternative design version rejected (shape.json design_version.alternatives_seen).", linked_add=[SH + "shape.json design_version"])
+upd(27, "Planform checked 2026-10-06: scale bar calibrated again: black bar segments 154-241 and 325-407 px (20 m each), outline 68-496 px => 4.275 px/m (+-1 %); GPS rides reach 260 m, as in the text. Design north-arm crest loop about 62 m long, outer (-6 m) contour 121 m from the wing corner to the tip; channel wall about 33 m; tip-to-tip 55 m. Traced north arm 134 m long (+10 %), south arm 111 m, gap 20.7 m. Planform check done.", False,
+    used_for_add=["scale", "cross_check"], how_append="Scale of the design planform (shape.json dimensions_check, design_prior); METHOD.md Step 2d.", linked_add=[SH + "METHOD.md Step 2d"])
+upd(31, "Planform not applicable; depth read-out unchanged. Cross-check added 2026-10-06 with the Garmin Navionics SonarChart: 4.0-4.5 m over the arms, 5.5-6 m around, 7-10 m seaward (datum LAT assumed) = 5.3-6.8 m AHD around the arms with AHD = LAT + 0.76, consistent with the -4/-5, -6 to -8, -9/-10 m AHD read here (+-1 m). STILL PENDING for the 3D agent (seabed grid and crest).", True,
+    how_append="Seabed values for INPUTS FOR 3D.", linked_add=[SH + "METHOD.md INPUTS FOR 3D"])
+upd(36, "Checked 2026-10-06: the 200 x 127 px thumbnail shows a basin instrument and a model beach, no reef plan, so it cannot say which renewal option was built. The question stays open (needs Corbett et al. 2023 figures; REPORT.md 8 request 1); the drawn state is simply the visible 2020 container field. Nothing further can be read from this image.", False,
+    how_append="No planform information (METHOD.md Step 6).", linked_add=[SH + "METHOD.md Step 6"])
+upd(43, "Planform checked 2026-10-06: the YouTube render shows two separate leaf-shaped container fields side by side with a gap, each tilted down toward the sea like our arms (north arm longer), no flared wings. Topology agrees with the trace; the render is not to scale, so no metric check. Planform check done.", False,
+    how_append="Qualitative topology check (METHOD.md Step 6).", linked_add=[SH + "METHOD.md Step 6"])
+# new images: update used_for / annotated
+R.update(ID % 45, result=None, pending=None, add_annotated=[OV + "s3_primary_trace.png"], how_append="Traced: 7 polygons (north/south arm envelopes, two NW patches, three channel containers) -> shape.json canonical (METHOD.md Steps 2a-3).")
+R.update(ID % 46, result=None, pending=None, add_annotated=[OV + "s4_crosscheck_on_2022-11.png"], how_append="Cross-check overlay: s3 polygons on this image, phase-correlation shift 0.17 m E / 0.10 m N.")
+R.update(ID % 47, result=None, pending=None, add_annotated=[OV + "s5_check_on_2019-06.png"], how_append="Position-check overlay of the s3 polygons.")
+R.update(ID % 48, result=None, pending=None, add_annotated=[OV + "s6_pre_renewal_2016-07_with_s3_trace.png"], how_append="Context overlay of the s3 polygons on the pre-renewal image.")
+print('done')

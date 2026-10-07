@@ -1,0 +1,2844 @@
+{
+ "slug": "palm-beach-gold-coast",
+ "name": "Palm Beach Reef (Palm Beach Artificial Reef, Gold Coast, Queensland)",
+ "status": "verified",
+ "updated": "2026-10-05",
+ "confidence": {
+  "level": "high",
+  "reason": "The outline is read from a vertical aerial photo with a scale bar and north arrow and matches the City of Gold Coast GIS polygon of the installed reef to 0.55 m (area 11,972 vs 11,942 m2); the same size, shape and ~45-degree skew to the shore appear in an independent drawing (ICCE 2022 Fig 1) and the rock is visible on 2025 satellite imagery inside that outline. Length (162 m) agrees with the quoted 160 m; the soft spots are the '80 m wide' label (91 m maximum, 74 m average), an undated aerial whose survey contours are not labelled as design or as-built, and only a quarter to a third of the rock being visible on satellite.",
+  "factors": [
+   "plan-view aerial with scale bar and north arrow: scale 8.50 px/m re-measured (tick lines x = 26 / 239 / 451), north-up confirmed by a free fit to the council polygon (rotation 0.04 deg, no anisotropy: sx 1.000, sy 0.998)",
+   "City of Gold Coast GIS polygon (OBJECTID 4638, status INSV) agrees: IoU 0.996, Hausdorff 0.55 m, area +0.25 %. Probably the same survey/design data as the Bluecoast contours, so this fixes scale, orientation and position but is not an independent check of the rock",
+   "independent drawing (ICCE 2022 Fig 1 icon, scaled with 4 landmarks): area 12,017 m2 (+0.6 % vs council), 162 x 92 m, long axis 110.8 deg",
+   "rock visible on georeferenced Esri imagery (2025-12-01) inside the polygon, but only 25-38 % of the footprint (shoreward side); the rest is shown by the aerial and the contours",
+   "the aerial is undated and un-georeferenced (position = council polygon); contour lines are unlabelled (design vs as-surveyed not stated); outer line sits 3-4 m outside the dark rock on the N/NW edge and the rock spills 2-3 m beyond it on the S/SE edge",
+   "shoreline direction 334.3 +-2 deg (re-measured: 335.3 on Esri z18, 337-339 on the OSM coastline), so angles to the shore are good to ~+-3 deg",
+   "length 162 m vs 160 m text (+1.4 %); width label 80 m vs 91.3 m maximum / 73.8 m mean (+14 % / -8 %); offshore 270 m in the text vs 225 m (toe) to the waterline - the text is measured from the beach/dune edge (OSM coastline gives 279 m)"
+  ]
+ },
+ "design_version": {
+  "drawn": "The reef as built in 2019 (rock placed May-Sept 2019, engineering certification Sept 2019): outer contour of the Bluecoast/Nearmap aerial = City of Gold Coast asset polygon (status INSV) = toe footprint, plus the innermost contour (a 59 x 6 m slot at 105 deg, matching the 60 m crest at 105 deg of the 2015 design). The aerial carries no date.",
+  "why_this_one": "It is the built structure: status INSV in the City of Gold Coast asset register (BOULDER, 160 x 80 m, 11,942 m2), same outline as the contours in Bluecoast's aerial, and the oblique June-2020 photo (EPW Sept 2020) and the 'final survey of the completed reef' (ICCE 2022 Fig 4) show the same rounded mound. EPW 2020 says the structure was finalised and certified in Sept 2019 and its later condition is 'comparable to the as-constructed certification report'; Prenzler et al. (ICCE 2022) report no significant movement or settlement. It supersedes the 2014-15 concept (Mortensen et al.), which was larger and further offshore; Raised Water Research notes the reef was moved 50 m closer to shore during design to save rock.",
+  "alternatives_seen": [
+   {
+    "what": "Concept design SCS B (2014/15): max length 175 m, max width 144 m, footprint 21,394 m2, volume 53,319 m3, crest -1.5 m, orientation 105 deg, offshore toe 560 m offshore in 11.4 m depth (also SCS A 309 x 154 m / 96,248 m3 and SCS C 142 x 138 m / 37,112 m3)",
+    "source_id": "s6",
+    "why_not_used": "Concept stage only (oblique 3D render, not traceable). The detailed design (Royal HaskoningDHV Design Reference Report) refined the location and dimensions; the built reef is ~270 m offshore with a 11,942 m2 footprint. The 144 m width on Royal HaskoningDHV's page is the concept SCS B maximum width."
+   },
+   {
+    "what": "Earlier text-derived schematic mound (07_scale/reefs/palm-beach-gold-coast.footprint.json): 160 x 80 m, area 9,678 m2, long axis alongshore",
+    "source_id": null,
+    "why_not_used": "Schematic from text only. The traced plan shows the long axis ~45 deg to the shoreline and an area of 11,942 m2."
+   },
+   {
+    "what": "Gemini chevron (9 vertices, apex seaward, 12,800 m2 gross / 9,100 m2 net, long axis alongshore)",
+    "source_id": null,
+    "why_not_used": "No source image; centroid-aligned IoU with the traced outline is only 0.52 (mirror allowed)."
+   },
+   {
+    "what": "2004 reef proposal near 21st Avenue (community no-reef campaign)",
+    "source_id": null,
+    "why_not_used": "Never built (card R10/R16)."
+   },
+   {
+    "what": "Concept design 'SCS B' as shown in the Raised Water Research 'Design on the left, results on the right' figure (175 m / 144 m labels, slopes 1/2 - 1/15) next to the multibeam survey of the built reef",
+    "source_id": "s9",
+    "why_not_used": "Concept render (oblique, no scale); the built reef is a different, rounded-rectangular mound. Confirms that the 144 m on Royal HaskoningDHV's page is the concept width."
+   }
+  ],
+  "page_note": "The drawing shows the reef as built in 2019 (toe outline from the City of Gold Coast asset register and Bluecoast's aerial). The 2014-15 concept design was larger (175 x 144 m, 21,394 m2) and sited further offshore. No extension, repair, damage or removal has been reported; the 2022-23 monitoring papers describe the reef as stable and the rock is still visible on Esri imagery of 2025-12-01. The sources do not say whether the aerial's contour lines are design or as-surveyed lines."
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "kind": "other",
+   "title": "City of Gold Coast Open Data - Artificial Reef layer, OBJECTID 4638 (BOULDER, 160 x 80 m, status INSV)",
+   "url": "https://services.arcgis.com/3vStCH7NDoBOZ5zn/arcgis/rest/services/Artificial_Reef/FeatureServer/0/query?where=OBJECTID%3D4638&outSR=28356&f=geojson",
+   "source_page": "https://data-goldcoast.opendata.arcgis.com/datasets/c9d0b521374740cc9e9561b04c453736_0",
+   "page_or_figure": "feature 4638",
+   "image_date": "survey date not stated; layer data last edited 2026-10-03 (whole layer); polygon identical on live re-query 2026-10-05",
+   "credit": "City of Gold Coast",
+   "license": "CC BY 3.0 Unported",
+   "local_file": "07_scale/shapes/palm-beach-gold-coast/src/gc_opendata_artificial_reef_raw.geojson",
+   "image_size": null,
+   "georef": {
+    "provider": "City of Gold Coast GIS (vector, EPSG:28356 GDA94 / MGA zone 56)",
+    "zoom": null,
+    "bounds": null,
+    "tile_template": null,
+    "imagery_date": null,
+    "attribution": "City of Gold Coast"
+   },
+   "scale": {
+    "px_per_m": null,
+    "method": "georeferenced",
+    "evidence": "vector coordinates in metres (MGA56); 154-vertex polygon, shapely area 11,950.6 m2 vs AREA_SQM 11,941.7",
+    "uncertainty_pct": 1
+   },
+   "pixel_polygons": [],
+   "traced_what": "not traced - vector asset polygon (toe footprint). Attributes: ARTIFICIAL_REEF_MATERIAL BOULDER, HEIGHT_M 5, LENGTH_M 160, WIDTH_M 80, AREA_SQM 11941.7, VOLUME 33000",
+   "match_notes": "Outline matches the s7 outer contour: IoU 0.995 centroid-aligned, Hausdorff 0.55 m, area within 0.25 %. The layer description only says it holds 'lines and polygons indicating the location of the artificial reefs'; how the polygon was surveyed is not stated. Verified: live query 2026-10-05 returns the same 154 vertices (0.00 m difference).",
+   "role": "cross_check"
+  },
+  {
+   "id": "s2",
+   "kind": "satellite",
+   "title": "Esri World Imagery z19 crop around the reef (400 m box)",
+   "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/{y}/{x}",
+   "source_page": "Esri World Imagery (fetched with 07_scale/tools/satellite.py)",
+   "page_or_figure": "stitched tiles",
+   "image_date": "2025-12-01 (Esri identify DATE field at the centre point; best effort)",
+   "credit": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+   "license": "Esri World Imagery terms (private research copy)",
+   "local_file": "07_scale/shapes/palm-beach-gold-coast/src/pb_sat_z19.png",
+   "image_size": [
+    1519,
+    1519
+   ],
+   "georef": {
+    "provider": "Esri World Imagery",
+    "zoom": 19,
+    "bounds": {
+     "north": -28.105546214795343,
+     "south": -28.109139996691585,
+     "east": 153.47298234701157,
+     "west": 153.46890807151794
+    },
+    "tile_template": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "imagery_date": "2025-12-01",
+    "attribution": "Esri, Maxar, Earthstar Geographics, and the GIS User Community"
+   },
+   "scale": {
+    "px_per_m": 3.7969,
+    "method": "georeferenced",
+    "evidence": "bounds give 400.0 m across 1519 px at the reef latitude -> 0.2634 m/px",
+    "uncertainty_pct": 0.5
+   },
+   "pixel_polygons": [
+    [
+     [
+      861.7,
+      788.7
+     ],
+     [
+      873.0,
+      808.8
+     ],
+     [
+      867.6,
+      815.4
+     ],
+     [
+      873.2,
+      829.8
+     ],
+     [
+      879.0,
+      838.0
+     ],
+     [
+      882.7,
+      861.7
+     ],
+     [
+      890.0,
+      872.0
+     ],
+     [
+      867.4,
+      896.1
+     ],
+     [
+      856.9,
+      899.0
+     ],
+     [
+      853.4,
+      905.3
+     ],
+     [
+      841.2,
+      906.2
+     ],
+     [
+      828.6,
+      914.1
+     ],
+     [
+      804.9,
+      904.0
+     ],
+     [
+      746.9,
+      867.4
+     ],
+     [
+      739.0,
+      873.9
+     ],
+     [
+      728.9,
+      872.0
+     ],
+     [
+      726.4,
+      873.9
+     ],
+     [
+      715.4,
+      868.0
+     ],
+     [
+      708.7,
+      872.9
+     ],
+     [
+      705.0,
+      871.3
+     ],
+     [
+      694.6,
+      858.2
+     ],
+     [
+      687.6,
+      865.4
+     ],
+     [
+      682.9,
+      864.2
+     ],
+     [
+      670.4,
+      854.7
+     ],
+     [
+      669.3,
+      847.6
+     ],
+     [
+      664.8,
+      845.9
+     ],
+     [
+      658.7,
+      849.4
+     ],
+     [
+      656.6,
+      841.1
+     ],
+     [
+      653.1,
+      838.2
+     ],
+     [
+      630.6,
+      850.2
+     ],
+     [
+      608.8,
+      842.7
+     ],
+     [
+      605.2,
+      838.5
+     ],
+     [
+      597.7,
+      839.1
+     ],
+     [
+      591.4,
+      831.9
+     ],
+     [
+      546.3,
+      838.5
+     ],
+     [
+      548.0,
+      833.3
+     ],
+     [
+      535.2,
+      831.4
+     ],
+     [
+      529.3,
+      827.4
+     ],
+     [
+      497.8,
+      826.6
+     ],
+     [
+      487.1,
+      821.5
+     ],
+     [
+      466.6,
+      816.4
+     ],
+     [
+      459.2,
+      809.4
+     ],
+     [
+      443.7,
+      785.7
+     ],
+     [
+      446.4,
+      777.9
+     ],
+     [
+      445.6,
+      761.6
+     ],
+     [
+      452.9,
+      746.7
+     ],
+     [
+      459.8,
+      740.4
+     ],
+     [
+      464.6,
+      725.6
+     ],
+     [
+      463.6,
+      716.8
+     ],
+     [
+      477.2,
+      697.2
+     ],
+     [
+      537.3,
+      722.8
+     ],
+     [
+      553.7,
+      726.6
+     ],
+     [
+      559.7,
+      724.7
+     ],
+     [
+      590.0,
+      740.7
+     ],
+     [
+      596.8,
+      732.3
+     ],
+     [
+      600.7,
+      731.0
+     ],
+     [
+      621.3,
+      747.2
+     ],
+     [
+      627.3,
+      742.0
+     ],
+     [
+      634.1,
+      746.8
+     ],
+     [
+      642.2,
+      741.8
+     ],
+     [
+      649.1,
+      750.6
+     ],
+     [
+      655.3,
+      750.2
+     ],
+     [
+      656.5,
+      747.6
+     ],
+     [
+      665.0,
+      758.8
+     ],
+     [
+      672.4,
+      752.9
+     ],
+     [
+      674.1,
+      746.8
+     ],
+     [
+      678.1,
+      745.0
+     ],
+     [
+      682.2,
+      744.4
+     ],
+     [
+      686.7,
+      751.4
+     ],
+     [
+      694.3,
+      751.8
+     ],
+     [
+      707.4,
+      733.5
+     ],
+     [
+      726.2,
+      739.8
+     ],
+     [
+      723.0,
+      747.6
+     ],
+     [
+      726.6,
+      751.1
+     ],
+     [
+      752.9,
+      740.3
+     ],
+     [
+      769.9,
+      742.0
+     ],
+     [
+      774.8,
+      752.8
+     ],
+     [
+      784.7,
+      752.6
+     ],
+     [
+      810.4,
+      746.8
+     ],
+     [
+      816.0,
+      750.2
+     ],
+     [
+      813.9,
+      756.4
+     ],
+     [
+      817.3,
+      760.8
+     ],
+     [
+      816.7,
+      766.3
+     ],
+     [
+      830.6,
+      768.6
+     ],
+     [
+      849.4,
+      777.2
+     ],
+     [
+      853.1,
+      783.0
+     ]
+    ]
+   ],
+   "latlon_polygons": [
+    [
+     [
+      -28.1074122,
+      153.4712193
+     ],
+     [
+      -28.1074598,
+      153.4712496
+     ],
+     [
+      -28.1074754,
+      153.4712352
+     ],
+     [
+      -28.1075094,
+      153.4712502
+     ],
+     [
+      -28.1075288,
+      153.4712657
+     ],
+     [
+      -28.1075849,
+      153.4712757
+     ],
+     [
+      -28.1076093,
+      153.4712952
+     ],
+     [
+      -28.1076663,
+      153.4712346
+     ],
+     [
+      -28.1076732,
+      153.4712065
+     ],
+     [
+      -28.1076881,
+      153.4711971
+     ],
+     [
+      -28.1076902,
+      153.4711643
+     ],
+     [
+      -28.1077089,
+      153.4711305
+     ],
+     [
+      -28.107685,
+      153.471067
+     ],
+     [
+      -28.1075984,
+      153.4709114
+     ],
+     [
+      -28.1076138,
+      153.4708902
+     ],
+     [
+      -28.1076093,
+      153.4708631
+     ],
+     [
+      -28.1076138,
+      153.4708564
+     ],
+     [
+      -28.1075998,
+      153.4708269
+     ],
+     [
+      -28.1076114,
+      153.470809
+     ],
+     [
+      -28.1076076,
+      153.470799
+     ],
+     [
+      -28.1075766,
+      153.4707711
+     ],
+     [
+      -28.1075937,
+      153.4707524
+     ],
+     [
+      -28.1075908,
+      153.4707398
+     ],
+     [
+      -28.1075684,
+      153.4707062
+     ],
+     [
+      -28.1075516,
+      153.4707033
+     ],
+     [
+      -28.1075475,
+      153.4706912
+     ],
+     [
+      -28.1075558,
+      153.4706748
+     ],
+     [
+      -28.1075362,
+      153.4706692
+     ],
+     [
+      -28.1075293,
+      153.4706598
+     ],
+     [
+      -28.1075577,
+      153.4705995
+     ],
+     [
+      -28.10754,
+      153.470541
+     ],
+     [
+      -28.10753,
+      153.4705313
+     ],
+     [
+      -28.1075314,
+      153.4705112
+     ],
+     [
+      -28.1075144,
+      153.4704943
+     ],
+     [
+      -28.10753,
+      153.4703734
+     ],
+     [
+      -28.1075177,
+      153.4703779
+     ],
+     [
+      -28.1075132,
+      153.4703436
+     ],
+     [
+      -28.1075038,
+      153.4703278
+     ],
+     [
+      -28.1075019,
+      153.4702433
+     ],
+     [
+      -28.1074898,
+      153.4702146
+     ],
+     [
+      -28.1074777,
+      153.4701596
+     ],
+     [
+      -28.1074612,
+      153.4701397
+     ],
+     [
+      -28.1074051,
+      153.4700982
+     ],
+     [
+      -28.1073867,
+      153.4701054
+     ],
+     [
+      -28.1073481,
+      153.4701033
+     ],
+     [
+      -28.1073128,
+      153.4701228
+     ],
+     [
+      -28.1072979,
+      153.4701414
+     ],
+     [
+      -28.1072629,
+      153.4701542
+     ],
+     [
+      -28.1072421,
+      153.4701515
+     ],
+     [
+      -28.1071957,
+      153.470188
+     ],
+     [
+      -28.1072563,
+      153.4703492
+     ],
+     [
+      -28.1072653,
+      153.4703932
+     ],
+     [
+      -28.1072608,
+      153.4704093
+     ],
+     [
+      -28.1072986,
+      153.4704906
+     ],
+     [
+      -28.1072788,
+      153.4705088
+     ],
+     [
+      -28.1072757,
+      153.4705193
+     ],
+     [
+      -28.107314,
+      153.4705745
+     ],
+     [
+      -28.1073017,
+      153.4705906
+     ],
+     [
+      -28.1073131,
+      153.4706089
+     ],
+     [
+      -28.1073012,
+      153.4706306
+     ],
+     [
+      -28.1073221,
+      153.4706491
+     ],
+     [
+      -28.1073211,
+      153.4706657
+     ],
+     [
+      -28.107315,
+      153.4706689
+     ],
+     [
+      -28.1073415,
+      153.4706917
+     ],
+     [
+      -28.1073275,
+      153.4707116
+     ],
+     [
+      -28.1073131,
+      153.4707161
+     ],
+     [
+      -28.1073088,
+      153.4707269
+     ],
+     [
+      -28.1073074,
+      153.4707379
+     ],
+     [
+      -28.107324,
+      153.4707499
+     ],
+     [
+      -28.1073249,
+      153.4707703
+     ],
+     [
+      -28.1072816,
+      153.4708055
+     ],
+     [
+      -28.1072965,
+      153.4708559
+     ],
+     [
+      -28.107315,
+      153.4708473
+     ],
+     [
+      -28.1073232,
+      153.470857
+     ],
+     [
+      -28.1072977,
+      153.4709275
+     ],
+     [
+      -28.1073017,
+      153.4709731
+     ],
+     [
+      -28.1073273,
+      153.4709862
+     ],
+     [
+      -28.1073268,
+      153.4710128
+     ],
+     [
+      -28.1073131,
+      153.4710817
+     ],
+     [
+      -28.1073211,
+      153.4710968
+     ],
+     [
+      -28.1073358,
+      153.4710911
+     ],
+     [
+      -28.1073462,
+      153.4711002
+     ],
+     [
+      -28.1073592,
+      153.4710986
+     ],
+     [
+      -28.1073647,
+      153.4711359
+     ],
+     [
+      -28.107385,
+      153.4711863
+     ],
+     [
+      -28.1073987,
+      153.4711963
+     ]
+    ]
+   ],
+   "traced_what": "visible dark rock only (upper part of the mound): smoothed luminance < 16 connected patch, 86 vertices; area 3,443 m2, oriented rectangle 120.6 x 41.2 m, axis bearing 105.0 deg grid. Darkness thresholds 12-24 give 2,280-4,486 m2 (19-38 % of the toe footprint): a conservative dark core, not an edge",
+   "match_notes": "Patch lies 100 % inside the council polygon (and >=96.7 % when shifted up to 10 m) and parallel to the inner contours of s7; it covers 25-38 % of the toe footprint because only part of the mound shows on this image (the shoreward, shallower side; reason not proven).",
+   "role": "cross_check"
+  },
+  {
+   "id": "s3",
+   "kind": "satellite",
+   "title": "Esri World Imagery z18 context crop (1.4 km box)",
+   "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/18/{y}/{x}",
+   "source_page": "Esri World Imagery",
+   "page_or_figure": "stitched tiles",
+   "image_date": "2025-12-01",
+   "credit": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+   "license": "Esri World Imagery terms (private research copy)",
+   "local_file": "07_scale/shapes/palm-beach-gold-coast/src/pb_context_z18.png",
+   "image_size": [
+    2658,
+    2658
+   ],
+   "georef": {
+    "provider": "Esri World Imagery",
+    "zoom": 18,
+    "bounds": {
+     "north": -28.101512234566236,
+     "south": -28.114089234568628,
+     "east": 153.47312986850739,
+     "west": 153.45887124538422
+    },
+    "tile_template": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "imagery_date": "2025-12-01",
+    "attribution": "Esri, Maxar, Earthstar Geographics, and the GIS User Community"
+   },
+   "scale": {
+    "px_per_m": 1.8985,
+    "method": "georeferenced",
+    "evidence": "bounds / 2658 px -> 0.5267 m/px",
+    "uncertainty_pct": 0.5
+   },
+   "pixel_polygons": [],
+   "shoreline_points_px": [
+    [
+     1394,
+     775
+    ],
+    [
+     1418,
+     825
+    ],
+    [
+     1426,
+     850
+    ],
+    [
+     1439,
+     875
+    ],
+    [
+     1446,
+     900
+    ],
+    [
+     1456,
+     925
+    ],
+    [
+     1465,
+     950
+    ],
+    [
+     1477,
+     975
+    ],
+    [
+     1490,
+     1000
+    ],
+    [
+     1510,
+     1050
+    ],
+    [
+     1517,
+     1075
+    ],
+    [
+     1542,
+     1125
+    ],
+    [
+     1553,
+     1150
+    ],
+    [
+     1571,
+     1175
+    ],
+    [
+     1587,
+     1200
+    ],
+    [
+     1612,
+     1225
+    ],
+    [
+     1622,
+     1275
+    ],
+    [
+     1684,
+     1375
+    ],
+    [
+     1697,
+     1400
+    ],
+    [
+     1729,
+     1500
+    ],
+    [
+     1743,
+     1525
+    ],
+    [
+     1781,
+     1575
+    ],
+    [
+     1785,
+     1600
+    ],
+    [
+     1787,
+     1625
+    ],
+    [
+     1804,
+     1650
+    ],
+    [
+     1819,
+     1675
+    ],
+    [
+     1832,
+     1700
+    ],
+    [
+     1842,
+     1725
+    ],
+    [
+     1846,
+     1750
+    ],
+    [
+     1855,
+     1775
+    ]
+   ],
+   "traced_what": "not a reef trace: the sand/water edge (30 inlier points, right-most sand run per row, y 700-1800) used to fix the shoreline direction and the canonical frame",
+   "match_notes": "Reef visible as a sharp dark patch ~300 m off the beach; a scattered dark cluster ~300 m up-coast is the natural Palm Beach reef.",
+   "role": "context"
+  },
+  {
+   "id": "s4",
+   "kind": "paper_figure",
+   "title": "Fig 1 \"Location and orientation of the artificial reef\" - Hunt et al., Palm Beach Shoreline Project: Innovative Coastal Management Solution",
+   "url": "https://icce-ojs-tamu.tdl.org/icce/article/download/13024/12297",
+   "source_page": "https://icce-ojs-tamu.tdl.org/icce/article/view/13024 (DOI 10.9753/icce.v37.management.66)",
+   "page_or_figure": "Figure 1",
+   "image_date": "aerial base undated; paper ICCE 2022 (publ. 2023)",
+   "credit": "Hunt, Britton, Messiter, Prenzler, Knight, Watterson - Coastal Engineering Proceedings",
+   "license": "CC BY 4.0",
+   "local_file": "07_scale/shapes/palm-beach-gold-coast/src/icce13024_fig1_location_orientation.jpeg",
+   "image_size": [
+    1459,
+    777
+   ],
+   "georef": {
+    "provider": "control points matched to Esri World Imagery z18 (s3)",
+    "zoom": 18,
+    "bounds": null,
+    "tile_template": null,
+    "imagery_date": "2025-12-01 (Esri); the figure aerial is undated",
+    "attribution": "derived: 4 control points - 21st Avenue groyne seaward tip, tall tower at 19th Avenue, blue-roofed building, red-roofed building"
+   },
+   "scale": {
+    "px_per_m": 0.984,
+    "method": "known dimension",
+    "evidence": "similarity fit of 4 control-point pairs (fig px -> Esri z18 px): scale 1.9285 Esri px per figure px (0.5267 m/px) -> 1.016 m per figure px, rotation 0.7 deg (figure is north-up as its arrow shows), residual 3-6 Esri px (2-3 m); the \"Approx. 270m\" arrow measures 255 m on this scale, i.e. it is only approximate",
+    "uncertainty_pct": 3
+   },
+   "pixel_polygons": [
+    [
+     [
+      664.4,
+      394.0
+     ],
+     [
+      680.0,
+      396.4
+     ],
+     [
+      696.0,
+      396.0
+     ],
+     [
+      708.0,
+      398.0
+     ],
+     [
+      722.0,
+      399.4
+     ],
+     [
+      736.0,
+      401.6
+     ],
+     [
+      749.0,
+      400.4
+     ],
+     [
+      760.0,
+      403.0
+     ],
+     [
+      772.0,
+      407.0
+     ],
+     [
+      780.0,
+      410.0
+     ],
+     [
+      787.0,
+      416.0
+     ],
+     [
+      792.0,
+      427.0
+     ],
+     [
+      797.0,
+      438.0
+     ],
+     [
+      798.0,
+      450.0
+     ],
+     [
+      797.0,
+      464.0
+     ],
+     [
+      795.0,
+      474.0
+     ],
+     [
+      789.0,
+      482.0
+     ],
+     [
+      778.0,
+      488.0
+     ],
+     [
+      760.0,
+      490.4
+     ],
+     [
+      742.0,
+      493.4
+     ],
+     [
+      730.0,
+      489.0
+     ],
+     [
+      712.0,
+      482.4
+     ],
+     [
+      694.0,
+      474.0
+     ],
+     [
+      680.0,
+      469.0
+     ],
+     [
+      666.0,
+      464.0
+     ],
+     [
+      654.0,
+      461.0
+     ],
+     [
+      645.0,
+      455.0
+     ],
+     [
+      640.0,
+      447.0
+     ],
+     [
+      639.0,
+      440.0
+     ],
+     [
+      641.0,
+      430.0
+     ],
+     [
+      648.0,
+      418.0
+     ],
+     [
+      656.0,
+      406.0
+     ]
+    ],
+    [
+     [
+      656.2,
+      426.2
+     ],
+     [
+      665.0,
+      423.8
+     ],
+     [
+      720.0,
+      445.0
+     ],
+     [
+      742.5,
+      453.8
+     ],
+     [
+      755.0,
+      462.5
+     ],
+     [
+      756.2,
+      470.0
+     ],
+     [
+      750.0,
+      476.2
+     ],
+     [
+      735.0,
+      473.8
+     ],
+     [
+      690.0,
+      460.0
+     ],
+     [
+      657.5,
+      450.0
+     ],
+     [
+      655.0,
+      440.0
+     ]
+    ]
+   ],
+   "traced_what": "polygon 1 = outer outline of the schematic reef icon (32 vertices, read from 5x zoom grids); polygon 2 = the pale band inside it (the schematic crest, 11 vertices). The icon is a drawn symbol over an aerial photo, not a survey.",
+   "match_notes": "Scaled with the control points, the icon is 12,017 m2 with an oriented rectangle of 162.3 x 92.5 m and long-axis bearing 110.8 deg: it matches the s7 outline (11,972 m2; 162.3 x 91.3 m; 109.6 deg), IoU 0.97 centroid-aligned and 0.84 with no alignment at all (centroid offset 5 m along, 9 m offshore, within the georeferencing error). Independent confirmation of the plan shape.",
+   "role": "cross_check"
+  },
+  {
+   "id": "s5",
+   "kind": "as_built_survey",
+   "title": "Fig 4 \"Final survey of the completed reef structure\" (oblique 3D multibeam render)",
+   "url": "https://icce-ojs-tamu.tdl.org/icce/article/download/13024/12297",
+   "source_page": "https://icce-ojs-tamu.tdl.org/icce/article/view/13024",
+   "page_or_figure": "Figure 4",
+   "image_date": "2019 (after completion)",
+   "credit": "Hunt et al. / City of Gold Coast",
+   "license": "CC BY 4.0",
+   "local_file": "07_scale/shapes/palm-beach-gold-coast/src/icce13024_fig4_final_survey.png",
+   "image_size": [
+    1029,
+    501
+   ],
+   "georef": null,
+   "scale": null,
+   "pixel_polygons": [],
+   "traced_what": "not traced (oblique perspective, no scale)",
+   "match_notes": "Shows a rounded-rectangular mound with a flat crest, longer than wide, narrowing toward the near-shore side - consistent with the traced shape.",
+   "role": "context"
+  },
+  {
+   "id": "s6",
+   "kind": "paper_figure",
+   "title": "Fig 3 concept design SCS B (oblique 3D render) - Mortensen et al. 2015",
+   "url": "https://www.dhigroup.com/upload/publications/coastsea/Mortensen_2015.pdf",
+   "source_page": "Australasian Coasts & Ports Conference 2015",
+   "page_or_figure": "p.5 Figure 3 and Table 2",
+   "image_date": "concept design, autumn 2014; paper Sept 2015",
+   "credit": "Mortensen, Hibberd, Kaergaard, Kristensen, Deigaard, Hunt / DHI",
+   "license": "not stated (research copy only)",
+   "local_file": "07_scale/shapes/palm-beach-gold-coast/src/mortensen2015_fig3_concept_SCS_B.png",
+   "image_size": [
+    603,
+    433
+   ],
+   "georef": null,
+   "scale": null,
+   "pixel_polygons": [],
+   "traced_what": "not traced (alternative design; oblique render)",
+   "match_notes": "Concept SCS B: 175 x 144 m, 21,394 m2, orientation 105 deg; superseded by the built design. The text also says the concept has 'a 60 m long crest oriented 105 to true north' - the same length and orientation as the 59 x 6 m innermost contour in s7 (104.8 deg grid), so that slot is very probably the design crest.",
+   "role": "context"
+  },
+  {
+   "id": "s7",
+   "kind": "aerial_photo",
+   "title": "Palm Beach artificial reef - vertical Nearmap aerial with survey contour lines, north arrow and 0-25-50 m scale bar (AR_aerial_Nearmaps.jpg), Bluecoast Consulting Engineers",
+   "url": "https://images.squarespace-cdn.com/content/v1/5bfcd059e2ccd1869cf36e40/1600918806427-S6WYBPQYUR963346U8E9/AR_aerial_Nearmaps.jpg",
+   "source_page": "https://www.bluecoastconsulting.com.au/artificialreefs",
+   "page_or_figure": "gallery image, no figure number",
+   "image_date": "not stated (post-construction; between Sept 2019 and the page's Sept 2020 content)",
+   "credit": "Bluecoast Consulting Engineers; aerial base Nearmap",
+   "license": "not stated - (c) Bluecoast/Nearmap; private research copy, permission needed before public use",
+   "local_file": "07_scale/shapes/palm-beach-gold-coast/src/bluecoast_AR_aerial_Nearmaps.jpg",
+   "image_size": [
+    2079,
+    1386
+   ],
+   "georef": null,
+   "georef_note": "No coordinates in the image. Rotation (0 deg, north arrow vertical) and scale (scale bar) come from the image; position = council polygon s1 (centroid-aligned, IoU 0.995).",
+   "scale": {
+    "px_per_m": 8.5,
+    "method": "scale bar",
+    "evidence": "white tick lines of the 0-25-50 m bar at x = 26, 239, 451 px (25 m = 213 px, 50 m = 425 px)",
+    "uncertainty_pct": 1
+   },
+   "pixel_polygons": [
+    [
+     [
+      1826.3,
+      699.1
+     ],
+     [
+      1842.3,
+      822.3
+     ],
+     [
+      1842.2,
+      937.6
+     ],
+     [
+      1825.9,
+      999.6
+     ],
+     [
+      1795.2,
+      1070.2
+     ],
+     [
+      1755.4,
+      1106.6
+     ],
+     [
+      1727.4,
+      1119.0
+     ],
+     [
+      1543.0,
+      1173.0
+     ],
+     [
+      1459.4,
+      1181.6
+     ],
+     [
+      1402.3,
+      1179.3
+     ],
+     [
+      1335.7,
+      1163.6
+     ],
+     [
+      1283.6,
+      1140.1
+     ],
+     [
+      1191.1,
+      1106.7
+     ],
+     [
+      1070.1,
+      1068.2
+     ],
+     [
+      1007.2,
+      1035.9
+     ],
+     [
+      869.9,
+      994.2
+     ],
+     [
+      550.0,
+      883.3
+     ],
+     [
+      508.7,
+      858.4
+     ],
+     [
+      483.6,
+      827.9
+     ],
+     [
+      469.9,
+      794.6
+     ],
+     [
+      467.0,
+      760.0
+     ],
+     [
+      478.9,
+      680.1
+     ],
+     [
+      491.0,
+      635.8
+     ],
+     [
+      524.4,
+      586.3
+     ],
+     [
+      532.7,
+      565.9
+     ],
+     [
+      550.2,
+      549.0
+     ],
+     [
+      600.2,
+      478.3
+     ],
+     [
+      636.9,
+      414.7
+     ],
+     [
+      675.7,
+      365.1
+     ],
+     [
+      681.7,
+      341.9
+     ],
+     [
+      696.5,
+      326.5
+     ],
+     [
+      871.4,
+      346.2
+     ],
+     [
+      962.2,
+      344.6
+     ],
+     [
+      1051.4,
+      355.6
+     ],
+     [
+      1130.0,
+      370.0
+     ],
+     [
+      1184.7,
+      370.8
+     ],
+     [
+      1308.0,
+      395.1
+     ],
+     [
+      1361.0,
+      390.3
+     ],
+     [
+      1373.5,
+      385.1
+     ],
+     [
+      1380.5,
+      388.6
+     ],
+     [
+      1439.2,
+      391.5
+     ],
+     [
+      1542.9,
+      413.5
+     ],
+     [
+      1603.4,
+      440.7
+     ],
+     [
+      1664.2,
+      476.0
+     ],
+     [
+      1747.2,
+      559.4
+     ],
+     [
+      1789.3,
+      619.9
+     ],
+     [
+      1817.8,
+      675.5
+     ]
+    ],
+    [
+     [
+      636,
+      724
+     ],
+     [
+      1105,
+      848
+     ],
+     [
+      1116,
+      851
+     ],
+     [
+      1119,
+      862
+     ],
+     [
+      1114,
+      884
+     ],
+     [
+      1107,
+      897
+     ],
+     [
+      1100,
+      898
+     ],
+     [
+      623,
+      772
+     ]
+    ]
+   ],
+   "traced_what": "polygon 1 = OUTER survey contour line (toe footprint), 47 vertices, found by top-hat line extraction + ray casting; polygon 2 = innermost contour (a 59 x 6 m rounded slot), 8 vertices read by hand",
+   "match_notes": "Outer line fits the dark rock within ~3-4 m (line outside the rock on the N/NW edge, dark apron spilling ~2-3 m beyond the line on the S/SE edge). Area 11,972 m2 vs council 11,942 m2. A mosaic seam across the top (y~185) is outside the reef. Verification 2026-10-05: scale ticks re-measured at x = 26/239/451 (8.50 px/m); free similarity fit to the council polygon gives scale 0.9989, rotation 0.0002 deg (anisotropic: sx 1.000, sy 0.998). The Squarespace page gives this image no caption (it is a gallery item), so 'survey contours' vs 'design contours' is not stated. The saved local copy is byte-different from the current CDN download (md5 differs, same 2079x1386 size, mean pixel difference 2/255, i.e. re-encoding only).",
+   "role": "primary"
+  },
+  {
+   "id": "s8",
+   "kind": "other",
+   "title": "Engineering for Public Works (IPWEAQ) Sept 2020 pp.50-51, Palm Beach Artificial Reef (text + oblique photo June 2020)",
+   "url": "https://images.squarespace-cdn.com/content/v1/5bfcd059e2ccd1869cf36e40/1600915288822-89V2T6CKSW7PKEPCA0ZE/image-asset.png",
+   "source_page": "https://issuu.com/ipweaqld/docs/3660___epw_september_2020_final/50 (this Issuu link, which Bluecoast's page gives, returned HTTP 404 on 2026-10-05; the page image hosted by Bluecoast is byte-identical to the saved copy and is the evidence used)",
+   "page_or_figure": "pp.50-51",
+   "image_date": "Sept 2020 (photo June 2020)",
+   "credit": "IPWEAQ / Engineering for Public Works",
+   "license": "not stated (research copy only)",
+   "local_file": "07_scale/shapes/palm-beach-gold-coast/src/bluecoast_EPW2020_pages50-51.png",
+   "image_size": [
+    1394,
+    985
+   ],
+   "georef": null,
+   "scale": null,
+   "pixel_polygons": [],
+   "traced_what": "not traced (oblique photo); used for text",
+   "match_notes": "Text: built ~270 m offshore from Nineteenth Avenue, 160 m long, 80 m wide, 1.5 m below the average water level at its highest point.",
+   "role": "context"
+  },
+  {
+   "id": "s9",
+   "kind": "paper_figure",
+   "title": "'Palm Beach Artificial Surf Reef Design vs Constructed' - concept render (left) and multibeam survey of the built reef (right), Raised Water Research",
+   "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/12/Palm-Beach-Reef-Design-and-Constructed.jpg",
+   "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/australia/queensland/palm-beach-reef/",
+   "page_or_figure": "figure captioned 'Design on the left, results on the right'",
+   "image_date": "posted Dec 2019 (concept 2014; survey 2019)",
+   "credit": "Raised Water Research page (lists sources: City of Gold Coast, Swellnet, DHI, SurferToday); the figure itself is not credited",
+   "license": "not stated - private research copy, permission needed before public use",
+   "local_file": "07_scale/shapes/palm-beach-gold-coast/src/rwr_design_vs_constructed_641x187.jpg",
+   "image_size": [
+    641,
+    187
+   ],
+   "georef": null,
+   "scale": null,
+   "pixel_polygons": [],
+   "traced_what": "not traced (oblique renders, no scale)",
+   "match_notes": "Left: the concept (SCS B, 175 m long, 144 m wide, side slopes 1/2, 1/5, 1/12, 1/15) = Mortensen et al. Fig 3. Right: the multibeam survey of the built reef, a rounded-rectangular mound. Shows the design changed between concept and construction.",
+   "role": "context"
+  }
+ ],
+ "canonical": {
+  "frame": "metres; origin = foot of the perpendicular from the reef-outline centroid onto the waterline fitted to the 2025-12-01 Esri imagery; +x alongshore toward 334.3 deg (NNW); +y offshore (toward 64.3 deg, ENE)",
+  "derived_from": "s7",
+  "polygons_m": [
+   [
+    [
+     -27.98,
+     373.92
+    ],
+    [
+     -41.86,
+     369.33
+    ],
+    [
+     -54.07,
+     363.44
+    ],
+    [
+     -59.82,
+     358.55
+    ],
+    [
+     -65.73,
+     351.69
+    ],
+    [
+     -67.56,
+     345.61
+    ],
+    [
+     -67.45,
+     342.01
+    ],
+    [
+     -63.76,
+     319.71
+    ],
+    [
+     -60.41,
+     310.41
+    ],
+    [
+     -57.25,
+     304.47
+    ],
+    [
+     -52.19,
+     298.21
+    ],
+    [
+     -47.04,
+     293.89
+    ],
+    [
+     -38.78,
+     285.79
+    ],
+    [
+     -28.53,
+     274.93
+    ],
+    [
+     -21.9,
+     269.9
+    ],
+    [
+     -10.47,
+     257.48
+    ],
+    [
+     17.61,
+     229.22
+    ],
+    [
+     22.35,
+     226.11
+    ],
+    [
+     26.87,
+     225.01
+    ],
+    [
+     31.09,
+     225.26
+    ],
+    [
+     34.91,
+     226.71
+    ],
+    [
+     42.77,
+     232.05
+    ],
+    [
+     46.85,
+     235.59
+    ],
+    [
+     50.4,
+     241.66
+    ],
+    [
+     52.14,
+     243.58
+    ],
+    [
+     53.03,
+     246.3
+    ],
+    [
+     57.98,
+     255.21
+    ],
+    [
+     62.85,
+     262.34
+    ],
+    [
+     66.13,
+     268.98
+    ],
+    [
+     68.28,
+     270.8
+    ],
+    [
+     69.16,
+     273.16
+    ],
+    [
+     58.15,
+     290.69
+    ],
+    [
+     53.68,
+     300.4
+    ],
+    [
+     47.97,
+     309.3
+    ],
+    [
+     42.43,
+     316.89
+    ],
+    [
+     39.56,
+     322.65
+    ],
+    [
+     30.69,
+     334.48
+    ],
+    [
+     28.49,
+     340.35
+    ],
+    [
+     28.41,
+     341.94
+    ],
+    [
+     27.68,
+     342.5
+    ],
+    [
+     24.38,
+     348.58
+    ],
+    [
+     16.76,
+     358.45
+    ],
+    [
+     10.79,
+     363.47
+    ],
+    [
+     3.94,
+     368.12
+    ],
+    [
+     -9.13,
+     372.66
+    ],
+    [
+     -17.7,
+     374.04
+    ],
+    [
+     -25.04,
+     374.22
+    ]
+   ]
+  ],
+  "inner_contour_polygon_m": [
+   [
+    30.11,
+    246.47
+   ],
+   [
+    -6.97,
+    289.86
+   ],
+   [
+    -7.85,
+    290.87
+   ],
+   [
+    -9.16,
+    290.63
+   ],
+   [
+    -11.24,
+    288.98
+   ],
+   [
+    -12.26,
+    287.57
+   ],
+   [
+    -12.01,
+    286.78
+   ],
+   [
+    25.68,
+    242.64
+   ]
+  ],
+  "area_m2": 11972.0,
+  "bbox_m": {
+   "alongshore": 136.7,
+   "crossshore": 149.2
+  },
+  "bbox_ranges_m": {
+   "x_alongshore": [
+    -67.6,
+    69.2
+   ],
+   "y_offshore": [
+    225.0,
+    374.2
+   ]
+  },
+  "max_dim_m": 163.2,
+  "oriented_rectangle_m": [
+   162.3,
+   91.3
+  ],
+  "distance_offshore_m": 225.0,
+  "distance_offshore_detail_m": {
+   "nearest_toe_to_waterline": 225.0,
+   "centroid_to_waterline": 305.0,
+   "farthest_toe_to_waterline": 374.0,
+   "note": "measured perpendicular to the fitted waterline; the dry-sand / dune edge lies landward of the waterline, which is one way the quoted approx. 270 m can arise"
+  },
+  "shore_normal_bearing_deg": 64.3,
+  "esri_visible_rock_polygons_m": [
+   [
+    [
+     -20.88,
+     328.04
+    ],
+    [
+     -26.92,
+     328.44
+    ],
+    [
+     -27.86,
+     326.41
+    ],
+    [
+     -31.91,
+     326.1
+    ],
+    [
+     -34.51,
+     326.55
+    ],
+    [
+     -40.53,
+     324.73
+    ],
+    [
+     -43.8,
+     325.29
+    ],
+    [
+     -46.91,
+     317.19
+    ],
+    [
+     -46.39,
+     314.36
+    ],
+    [
+     -47.48,
+     312.82
+    ],
+    [
+     -46.3,
+     309.82
+    ],
+    [
+     -46.73,
+     305.92
+    ],
+    [
+     -41.63,
+     301.44
+    ],
+    [
+     -26.35,
+     291.83
+    ],
+    [
+     -26.99,
+     289.22
+    ],
+    [
+     -25.38,
+     287.03
+    ],
+    [
+     -25.55,
+     286.22
+    ],
+    [
+     -22.9,
+     284.28
+    ],
+    [
+     -23.29,
+     282.13
+    ],
+    [
+     -22.49,
+     281.44
+    ],
+    [
+     -18.2,
+     280.46
+    ],
+    [
+     -19.1,
+     277.98
+    ],
+    [
+     -18.28,
+     277.0
+    ],
+    [
+     -14.61,
+     275.11
+    ],
+    [
+     -12.81,
+     275.65
+    ],
+    [
+     -11.89,
+     274.78
+    ],
+    [
+     -12.02,
+     272.93
+    ],
+    [
+     -9.82,
+     273.38
+    ],
+    [
+     -8.74,
+     272.87
+    ],
+    [
+     -9.0,
+     266.17
+    ],
+    [
+     -4.74,
+     261.84
+    ],
+    [
+     -3.33,
+     261.46
+    ],
+    [
+     -2.62,
+     259.61
+    ],
+    [
+     -0.2,
+     258.94
+    ],
+    [
+     3.4,
+     247.48
+    ],
+    [
+     4.43,
+     248.47
+    ],
+    [
+     6.35,
+     245.65
+    ],
+    [
+     7.97,
+     244.7
+    ],
+    [
+     11.75,
+     237.31
+    ],
+    [
+     14.18,
+     235.35
+    ],
+    [
+     17.73,
+     231.06
+    ],
+    [
+     20.23,
+     230.1
+    ],
+    [
+     27.6,
+     229.11
+    ],
+    [
+     29.13,
+     230.64
+    ],
+    [
+     33.08,
+     232.3
+    ],
+    [
+     35.76,
+     235.73
+    ],
+    [
+     36.46,
+     238.09
+    ],
+    [
+     39.41,
+     240.91
+    ],
+    [
+     41.6,
+     241.67
+    ],
+    [
+     44.68,
+     247.13
+    ],
+    [
+     31.76,
+     258.49
+    ],
+    [
+     28.99,
+     261.96
+    ],
+    [
+     28.75,
+     263.6
+    ],
+    [
+     21.51,
+     268.97
+    ],
+    [
+     22.72,
+     271.54
+    ],
+    [
+     22.58,
+     272.62
+    ],
+    [
+     16.4,
+     275.67
+    ],
+    [
+     16.94,
+     277.68
+    ],
+    [
+     15.03,
+     278.75
+    ],
+    [
+     15.29,
+     281.25
+    ],
+    [
+     12.42,
+     281.88
+    ],
+    [
+     11.8,
+     283.4
+    ],
+    [
+     12.28,
+     283.98
+    ],
+    [
+     8.66,
+     284.73
+    ],
+    [
+     9.21,
+     287.16
+    ],
+    [
+     10.46,
+     288.25
+    ],
+    [
+     10.43,
+     289.41
+    ],
+    [
+     10.1,
+     290.45
+    ],
+    [
+     7.93,
+     290.72
+    ],
+    [
+     6.97,
+     292.48
+    ],
+    [
+     9.79,
+     297.67
+    ],
+    [
+     6.16,
+     301.42
+    ],
+    [
+     4.68,
+     299.78
+    ],
+    [
+     3.44,
+     300.23
+    ],
+    [
+     2.99,
+     307.71
+    ],
+    [
+     0.64,
+     311.55
+    ],
+    [
+     -2.47,
+     311.49
+    ],
+    [
+     -3.55,
+     313.86
+    ],
+    [
+     -5.12,
+     320.62
+    ],
+    [
+     -6.56,
+     321.57
+    ],
+    [
+     -7.79,
+     320.36
+    ],
+    [
+     -9.22,
+     320.67
+    ],
+    [
+     -10.45,
+     319.9
+    ],
+    [
+     -12.58,
+     322.94
+    ],
+    [
+     -16.76,
+     326.43
+    ],
+    [
+     -18.55,
+     326.65
+    ]
+   ]
+  ],
+  "esri_visible_rock_area_m2": 3443.0,
+  "crosscheck_s4_icon_polygon_m": [
+   [
+    [
+     74.5,
+     263.6
+    ],
+    [
+     65.27,
+     276.73
+    ],
+    [
+     58.4,
+     291.48
+    ],
+    [
+     51.16,
+     301.5
+    ],
+    [
+     43.56,
+     313.62
+    ],
+    [
+     35.24,
+     325.38
+    ],
+    [
+     30.45,
+     337.75
+    ],
+    [
+     23.12,
+     346.6
+    ],
+    [
+     14.07,
+     355.72
+    ],
+    [
+     7.73,
+     361.66
+    ],
+    [
+     -0.86,
+     365.33
+    ],
+    [
+     -13.09,
+     364.94
+    ],
+    [
+     -25.31,
+     364.54
+    ],
+    [
+     -36.63,
+     360.05
+    ],
+    [
+     -48.86,
+     352.84
+    ],
+    [
+     -57.01,
+     346.52
+    ],
+    [
+     -61.54,
+     337.46
+    ],
+    [
+     -62.01,
+     324.74
+    ],
+    [
+     -56.04,
+     307.28
+    ],
+    [
+     -50.62,
+     289.54
+    ],
+    [
+     -41.21,
+     280.59
+    ],
+    [
+     -27.09,
+     267.17
+    ],
+    [
+     -11.34,
+     254.56
+    ],
+    [
+     -0.49,
+     244.06
+    ],
+    [
+     10.37,
+     233.57
+    ],
+    [
+     18.52,
+     223.99
+    ],
+    [
+     28.02,
+     218.49
+    ],
+    [
+     37.53,
+     217.54
+    ],
+    [
+     44.32,
+     219.78
+    ],
+    [
+     52.47,
+     226.1
+    ],
+    [
+     60.17,
+     237.87
+    ],
+    [
+     67.42,
+     250.56
+    ]
+   ]
+  ],
+  "handedness_note": "x (toward 334.3 deg) and y (toward 64.3 deg) run clockwise on a north-up map. Draw with +x to the right and +y pointing DOWN the screen (shore at the top, sea at the bottom); with +y up the reef would be mirrored.",
+  "rounding_note": "Verified 2026-10-05 by an explicit rotation of the s7 polygon (centroid at y = 305.0): all vertices agree with polygons_m to a constant 0.30 m in y (the polygons_m centroid sits at y = 304.7); extents differ by 0.3 m. Left unchanged. geom.py make-canonical was NOT used for this block, so the 2026-10-05 rotation-sign bug does not apply.",
+  "esri_visible_rock_area_range_m2": [
+   2280,
+   4486
+  ]
+ },
+ "geo": {
+  "polygons_latlon": [
+   [
+    [
+     -28.1072904,
+     153.4716713
+    ],
+    [
+     -28.1074212,
+     153.4716905
+    ],
+    [
+     -28.1075436,
+     153.4716904
+    ],
+    [
+     -28.1076094,
+     153.4716709
+    ],
+    [
+     -28.1076844,
+     153.4716341
+    ],
+    [
+     -28.107723,
+     153.4715865
+    ],
+    [
+     -28.1077362,
+     153.4715529
+    ],
+    [
+     -28.1077935,
+     153.4713322
+    ],
+    [
+     -28.1078026,
+     153.4712321
+    ],
+    [
+     -28.1078002,
+     153.4711637
+    ],
+    [
+     -28.1077835,
+     153.471084
+    ],
+    [
+     -28.1077586,
+     153.4710216
+    ],
+    [
+     -28.1077231,
+     153.4709109
+    ],
+    [
+     -28.1076822,
+     153.470766
+    ],
+    [
+     -28.1076479,
+     153.4706907
+    ],
+    [
+     -28.1076037,
+     153.4705263
+    ],
+    [
+     -28.1074859,
+     153.4701433
+    ],
+    [
+     -28.1074595,
+     153.4700938
+    ],
+    [
+     -28.1074271,
+     153.4700638
+    ],
+    [
+     -28.1073918,
+     153.4700474
+    ],
+    [
+     -28.107355,
+     153.4700439
+    ],
+    [
+     -28.1072702,
+     153.4700582
+    ],
+    [
+     -28.1072232,
+     153.4700727
+    ],
+    [
+     -28.1071707,
+     153.4701126
+    ],
+    [
+     -28.107149,
+     153.4701226
+    ],
+    [
+     -28.1071311,
+     153.4701435
+    ],
+    [
+     -28.107056,
+     153.4702034
+    ],
+    [
+     -28.1069885,
+     153.4702473
+    ],
+    [
+     -28.1069358,
+     153.4702938
+    ],
+    [
+     -28.1069112,
+     153.470301
+    ],
+    [
+     -28.1068948,
+     153.4703187
+    ],
+    [
+     -28.1069158,
+     153.4705281
+    ],
+    [
+     -28.1069141,
+     153.4706368
+    ],
+    [
+     -28.1069257,
+     153.4707436
+    ],
+    [
+     -28.106941,
+     153.4708377
+    ],
+    [
+     -28.1069419,
+     153.4709032
+    ],
+    [
+     -28.1069677,
+     153.4710508
+    ],
+    [
+     -28.1069626,
+     153.4711143
+    ],
+    [
+     -28.1069571,
+     153.4711292
+    ],
+    [
+     -28.1069608,
+     153.4711376
+    ],
+    [
+     -28.1069639,
+     153.4712079
+    ],
+    [
+     -28.1069872,
+     153.471332
+    ],
+    [
+     -28.1070161,
+     153.4714045
+    ],
+    [
+     -28.1070536,
+     153.4714773
+    ],
+    [
+     -28.1071421,
+     153.4715766
+    ],
+    [
+     -28.1072063,
+     153.471627
+    ],
+    [
+     -28.1072653,
+     153.4716612
+    ],
+    [
+     -28.1072904,
+     153.4716713
+    ]
+   ]
+  ],
+  "shoreline_bearing_deg": 334.3,
+  "centroid_latlon": [
+   -28.107334,
+   153.470913
+  ],
+  "canonical_origin_latlon": [
+   -28.108526,
+   153.468119
+  ],
+  "method": "s7 pixels -> metres with the scale bar (8.5 px/m), north up (arrow), translated onto the City of Gold Coast polygon s1 (best translation by IoU search = 0,0 m) and converted through a local azimuthal-equidistant projection to WGS84. Position accuracy ~1-2 m relative to the council data; the Esri-visible rock sits inside it (consistent to ~5 m).",
+  "source_id": "s7",
+  "grid_note": "The aerial is aligned to MGA56 grid north; grid convergence here is -0.22 deg, so true bearings of lines measured on the aerial differ by 0.2 deg (immaterial). geo.polygons_latlon vs the council polygon converted to WGS84: Hausdorff 0.63 m, IoU 0.995."
+ },
+ "angles": [
+  {
+   "what": "long axis of the toe outline (oriented bounding rectangle 162 x 91 m) vs shoreline",
+   "deg": 44.7,
+   "bearing_deg": 109.6,
+   "method": "minimum rotated rectangle of the s7 outer outline; true bearing 109.6 deg (180-periodic); shoreline 154.3 deg (= 334.3 deg)"
+  },
+  {
+   "what": "innermost-contour slot axis (59 x 6 m) vs shoreline",
+   "deg": 49.5,
+   "bearing_deg": 104.8,
+   "method": "minimum rotated rectangle of the 8-vertex slot; the concept design (Mortensen 2015 Fig 3) quotes crest orientation 105 deg - agrees within 0.2 deg"
+  },
+  {
+   "what": "Esri-visible rock patch axis vs shoreline",
+   "deg": 49.6,
+   "bearing_deg": 104.7,
+   "method": "minimum rotated rectangle of the s2 patch (120.6 x 41.2 m)"
+  },
+  {
+   "what": "north edge (straight-ish stretch, 72 m) vs shoreline",
+   "deg": 58.3,
+   "bearing_deg": 96.0,
+   "method": "SVD line through the 7 outline vertices between the NW corner and px (1308,395)"
+  },
+  {
+   "what": "NW end edge (29 m) vs shoreline",
+   "deg": 58.6,
+   "bearing_deg": 32.9,
+   "method": "SVD line through 5 outline vertices from px (682,342) to (550,549)"
+  },
+  {
+   "what": "SSW edge (40 m) vs shoreline",
+   "deg": 45.2,
+   "bearing_deg": 109.1,
+   "method": "single outline edge px (550,883)-(870,994); roughly parallel to the slot axis"
+  },
+  {
+   "what": "shoreline bearing (true), alongshore toward NNW",
+   "deg": 334.3,
+   "method": "SVD line through 30 waterline points on Esri z18 (rms 3.4 m, 578 m long); +-2 deg"
+  },
+  {
+   "what": "schematic reef icon in ICCE Fig 1 (s4): long axis vs shoreline",
+   "deg": 43.5,
+   "bearing_deg": 110.8,
+   "method": "minimum rotated rectangle of the traced icon outline after control-point scaling (162.3 x 92.5 m)"
+  },
+  {
+   "what": "shoreline bearing cross-check (true, toward NNW)",
+   "deg": 335.3,
+   "method": "re-measured 2026-10-05 on Esri z18: indicator R-(B+G)/2, rightmost sand pixel per row, RANSAC 8 m, 37 of 56 points (rms 3.3 m). OpenStreetMap coastline way 591135103 gives 336.5-338.6 deg. Original value 334.3 +-2 deg retained; the three values span 334-339 deg."
+  }
+ ],
+ "dimensions_check": [
+  {
+   "quantity": "overall length (long axis)",
+   "text_value": "160 m",
+   "text_ref": "card size field R2/R4/R6/R7/R9/R13/R15; council LENGTH_M 160; EPW 2020 (s8); footprint S1",
+   "drawing_value": "162.3 m (oriented rectangle); 163.2 m max vertex distance",
+   "diff_pct": 1.4,
+   "comment": "agrees"
+  },
+  {
+   "quantity": "width",
+   "text_value": "80 m (most sources); 144 m (Royal HaskoningDHV page, R5)",
+   "text_ref": "card size field; council WIDTH_M 80",
+   "drawing_value": "91.3 m (oriented rectangle); average width area/length = 73.8 m; N-S extent 100.6 m",
+   "diff_pct": 14.1,
+   "comment": "80 m lies between the average width (74 m) and the maximum (91 m). The 144 m on the RHDHV page is the concept SCS B maximum width (Mortensen 2015 Table 2), not the built reef. The council's own polygon has an oriented width of 90.9 m, so its WIDTH_M = 80 is a nominal value, not the polygon's bounding width."
+  },
+  {
+   "quantity": "footprint area",
+   "text_value": "11,941.7 m2 (council AREA_SQM); 12,800 m2 = 160 x 80 gross (Gemini); 9,678 m2 (earlier text-derived schematic)",
+   "text_ref": "council layer s1; 07_scale/reefs footprint",
+   "drawing_value": "11,972 m2 (s7 outer contour)",
+   "diff_pct": 0.25,
+   "comment": "vs council +0.25 %; vs earlier schematic +23.7 %; vs 160 x 80 rectangle -6.5 %"
+  },
+  {
+   "quantity": "offshore distance",
+   "text_value": "approx. 270 m (Hunt et al. Fig 1, EPW 2020); 330 m (Royal HaskoningDHV page)",
+   "text_ref": "card size field R2/R4/R7; s4; s8",
+   "drawing_value": "nearest toe 225 m, centroid 305 m, farthest 374 m from the Dec-2025 waterline",
+   "diff_pct": -16.7,
+   "comment": "270 m lies between nearest toe and centroid; sources do not say where it is measured from (the arrow in Hunt et al. Fig 1 starts on the dry beach, landward of the waterline). Not a conflict."
+  },
+  {
+   "quantity": "orientation of the long axis",
+   "text_value": "105 deg crest orientation (concept SCS B)",
+   "text_ref": "Mortensen 2015 Fig 3 (s6)",
+   "drawing_value": "104.8 deg (inner slot), 109.6 deg (outline), 104.7 deg (Esri visible rock)",
+   "diff_pct": null,
+   "comment": "the built reef keeps the concept orientation; the long axis is ~45-50 deg to the shoreline, NOT alongshore as in the earlier text-derived schematic"
+  },
+  {
+   "quantity": "visible-rock area on satellite",
+   "text_value": null,
+   "text_ref": null,
+   "drawing_value": "3,443 m2 (Esri 2025-12-01) = 29 % of the 11,972 m2 toe footprint; 2,280-4,486 m2 (19-38 %) for darkness thresholds 12-24",
+   "diff_pct": null,
+   "comment": "Esri shows only part of the mound (shoreward side); treat the red patch as a lower bound, not as the reef extent"
+  },
+  {
+   "quantity": "outline area / oriented size (second independent drawing)",
+   "text_value": null,
+   "text_ref": null,
+   "drawing_value": "ICCE Fig 1 icon: 12,017 m2, 162.3 x 92.5 m, axis 110.8 deg (s4)",
+   "diff_pct": 0.4,
+   "comment": "agrees with s7 and with the council polygon; icon offset from s7 by 5 m alongshore / -9 m offshore (georeferencing error)"
+  },
+  {
+   "quantity": "length of the innermost contour slot (probable crest)",
+   "text_value": "60 m crest length, oriented 105 deg to true north (concept SCS B)",
+   "text_ref": "Mortensen et al. 2015 p.5 + Table 2 (s6)",
+   "drawing_value": "59.2 x 5.9 m, axis 104.8 deg (grid)",
+   "diff_pct": -1.3,
+   "comment": "agrees; the contour values are unlabelled, so 'crest' is an inference, not a reading"
+  },
+  {
+   "quantity": "rock volume (text only, not measured)",
+   "text_value": "~25,000 m3 of rock (card); council VOLUME 33,000; 60,000 t",
+   "text_ref": "card size field; council layer s1; EPW 2020",
+   "drawing_value": null,
+   "diff_pct": null,
+   "comment": "the sources disagree (25,000 vs 33,000 m3); not used for any drawing"
+  }
+ ],
+ "gemini": {
+  "values": {
+   "coordinates": [
+    -28.1181,
+    153.4732
+   ],
+   "location_text": "11th Avenue, Palm Beach",
+   "dimensions": "160 x 80 m, area 12,800 m2 gross (9,100 m2 net of its polygon)",
+   "distance_offshore_m": 270,
+   "shoreline_orientation_deg": 345,
+   "bounding_polygon_9_vertices": [
+    [
+     -75,
+     240
+    ],
+    [
+     -25,
+     230
+    ],
+    [
+     45,
+     245
+    ],
+    [
+     80,
+     275
+    ],
+    [
+     70,
+     305
+    ],
+    [
+     15,
+     310
+    ],
+    [
+     -45,
+     295
+    ],
+    [
+     -80,
+     270
+    ],
+    [
+     -75,
+     240
+    ]
+   ],
+   "shape": "Sculptured Asymmetric Rock Chevron / Trapezoid, apex seaward, long axis alongshore"
+  },
+  "sources_used": [
+   {
+    "url": "(no URL) City of Gold Coast: Palm Beach Shoreline Project Monitoring (2021)",
+    "what_gemini_said": "general source for the reef",
+    "our_check": "unverifiable",
+    "evidence": "no URL or document id; no document with this title found. The real monitoring paper is Prenzler et al. ICCE 2022 (2-page abstract, no plan figure)."
+   },
+   {
+    "url": "(no URL) Royal HaskoningDHV: Palm Beach Artificial Reef Design Summary (2019)",
+    "what_gemini_said": "general source",
+    "our_check": "unverifiable",
+    "evidence": "no URL; RHDHV's project page exists but gives 144 m width / 330 m offshore, which our check ties to the superseded concept design."
+   },
+   {
+    "url": "(no URL) Swellnet: Palm Beach Reef Surfing Evaluation (2020)",
+    "what_gemini_said": "general source",
+    "our_check": "unverifiable",
+    "evidence": "no URL; the Swellnet articles we found are dated 2018-2019 and contain no plan drawing."
+   },
+   {
+    "url": "https://www.bluecoastconsulting.com.au/assets/images/palm-beach-reef.jpg",
+    "what_gemini_said": "aerial wave-refraction image of the reef (Gemini IMAGE_PROVENANCE.md)",
+    "our_check": "dead",
+    "evidence": "HTTP 404. The live Bluecoast page https://www.bluecoastconsulting.com.au/artificialreefs hosts the real plan-view aerial (our s7), which Gemini did not use for its polygon. Re-checked 2026-10-05: still HTTP 404."
+   },
+   {
+    "url": "Gemini coordinates -28.1181, 153.4732 (11th Avenue)",
+    "what_gemini_said": "reef location",
+    "our_check": "wrong_site",
+    "evidence": "1,214 m from the traced reef centroid (-28.1073, 153.4709; off 19th Avenue per Mortensen 2015, Hunt et al. Fig 1 and the council polygon). Looked at Esri z18 (2025-12-01) around -28.1181, 153.4732: beach and surf zone with a rock groyne to the north, no offshore structure within 450 m."
+   },
+   {
+    "url": "Gemini polygon (9 vertices) and shoreline 345 deg",
+    "what_gemini_said": "chevron, apex seaward, long axis alongshore, shoreline 345 deg",
+    "our_check": "wrong_design_version",
+    "evidence": "not a version of this reef: no source image. Centroid-aligned IoU with the traced outline 0.41 (0.52 with a mirror flip); a free rotation of -60 deg would raise it to 0.75, i.e. the size is about right but the long axis is drawn alongshore, whereas the traced long axis is ~45 deg to the shore. Gemini's shoreline 345 deg vs measured 334-339 deg."
+   },
+   {
+    "url": "https://commons.wikimedia.org/wiki/File:Palm_Beach,_Queensland,_Australia.jpg",
+    "what_gemini_said": "'Palm Beach, Gold Coast, showing wide sand salient fronting the 2019 submerged rock reef' (CC BY-SA 3.0) - field photo in Gemini's images_provenance.json",
+    "our_check": "wrong_design_version",
+    "evidence": "Commons page (HTTP 200) describes a February 1967 photograph of Palm Beach by Jack Bain (QUT collection), CC BY 4.0: it predates the reef by 52 years and cannot show it; Gemini's caption and licence are wrong. Not a footprint source."
+   },
+   {
+    "url": "(no URL) Bluecoast Consulting Engineers (2020) Palm Beach Artificial Reef Monitoring & Review (IMAGE_PROVENANCE.md source for its scale figure)",
+    "what_gemini_said": "source of the 'aerial wave refraction & salient' scale figure",
+    "our_check": "unverifiable",
+    "evidence": "no URL; no document with this title found. The real Bluecoast material is the artificial-reefs page (our s7) and the EPW Sept 2020 article (s8); neither contains a document called 'Monitoring & Review'."
+   },
+   {
+    "url": "Gemini numeric attributes: structure_height_m 8.5, crest_width_m 24, footprint_area_m2 12,800, volume_m3 25,000",
+    "what_gemini_said": "dimension block of its record",
+    "our_check": "dimension_not_in_source",
+    "evidence": "council register HEIGHT_M = 5 and VOLUME = 33,000; 12,800 is just 160 x 80 (traced footprint 11,972 m2 = council 11,942 m2); no source gives a 24 m crest width (the innermost contour is 6 m wide, 59 m long)."
+   }
+  ],
+  "summary": "Gemini's 160 x 80 m and ~270 m offshore are in the sources, but its shape is a hand-drawn chevron with no source image, placed at the wrong site (1.2 km away, on the surf zone) and aligned alongshore; its other numbers (height 8.5 m, volume 25,000 m3, footprint 12,800 m2) are not supported by the council register; its three named documents have no URLs, its one image link is dead and its field photo is from 1967."
+ },
+ "no_source": null,
+ "references": [
+  {
+   "id": "ref1",
+   "citation": "City of Gold Coast Open Data, Artificial Reef feature layer (CC BY 3.0)",
+   "url": "https://data-goldcoast.opendata.arcgis.com/datasets/c9d0b521374740cc9e9561b04c453736_0",
+   "accessed": "2026-10-05",
+   "supports": "asset polygon of the built reef, 160 x 80 m, area 11,941.7 m2"
+  },
+  {
+   "id": "ref2",
+   "citation": "Bluecoast Consulting Engineers, Artificial Reefs for Coastal Protection and Amenity (page with AR_aerial_Nearmaps.jpg)",
+   "url": "https://www.bluecoastconsulting.com.au/artificialreefs",
+   "accessed": "2026-10-05",
+   "supports": "plan-view aerial with contours, scale bar, north arrow"
+  },
+  {
+   "id": "ref3",
+   "citation": "Hunt S., Britton G., Messiter D., Prenzler P., Knight S., Watterson E. (2022) Palm Beach Shoreline Project: Innovative Coastal Management Solution. Coastal Engineering Proceedings 37, DOI 10.9753/icce.v37.management.66",
+   "url": "https://icce-ojs-tamu.tdl.org/icce/article/view/13024",
+   "accessed": "2026-10-05",
+   "supports": "Fig 1 location/orientation (approx. 270 m), Fig 4 final survey; detailed design refined location and dimensions"
+  },
+  {
+   "id": "ref4",
+   "citation": "Mortensen S.B. et al. (2015) Concept Design of a Multipurpose Submerged Control Structure for Palm Beach, Gold Coast. Australasian Coasts & Ports",
+   "url": "https://www.dhigroup.com/upload/publications/coastsea/Mortensen_2015.pdf",
+   "accessed": "2026-10-05",
+   "supports": "concept SCS A/B/C dimensions, orientation 105 deg, reef sited off 19th Avenue"
+  },
+  {
+   "id": "ref5",
+   "citation": "Engineering for Public Works, Issue 19, Sept 2020 (IPWEAQ), pp.50-51",
+   "url": "https://issuu.com/ipweaqld/docs/3660___epw_september_2020_final/50",
+   "accessed": "2026-10-05",
+   "supports": "built ~270 m offshore from 19th Avenue; 160 m x 80 m; 1.5 m below average water level"
+  },
+  {
+   "id": "ref6",
+   "citation": "Prenzler P. et al. (2022) Monitoring of the Palm Beach Artificial Reef. ICCE (abstract)",
+   "url": "https://icce-ojs-tamu.tdl.org/icce/article/view/12921",
+   "accessed": "2026-10-05",
+   "supports": "stable structure, no significant movement or settlement; basalt/greenstone, crest 1.5 m below MSL"
+  },
+  {
+   "id": "ref7",
+   "citation": "Esri World Imagery (Maxar), fetched through satellite.py",
+   "url": "https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9",
+   "accessed": "2026-10-04",
+   "supports": "georeferenced visible rock; shoreline"
+  },
+  {
+   "id": "ref8",
+   "citation": "Raised Water Research, Palm Beach Reef page (design vs constructed figure; reef moved 50 m closer to shore during design; construction Apr-Sept 2019)",
+   "url": "https://raisedwaterresearch.com/spot/artificial-reef/australia/queensland/palm-beach-reef/",
+   "accessed": "2026-10-05",
+   "supports": "design evolution; concept vs built figure (s9)"
+  },
+  {
+   "id": "ref9",
+   "citation": "Royal HaskoningDHV, Palm Beach Shoreline Protection Project page",
+   "url": "https://www.haskoning.com/en/projects/palm-beach-shoreline-management",
+   "accessed": "2026-10-05",
+   "supports": "'The 144-metre-wide reef has been built 330 metres offshore' (= concept width; conflicts with the 80 m / 270 m of other sources); construction May-Sept 2019"
+  },
+  {
+   "id": "ref10",
+   "citation": "OpenStreetMap coastline (way 591135103) via Overpass API",
+   "url": "https://www.openstreetmap.org/way/591135103",
+   "accessed": "2026-10-05",
+   "supports": "independent shoreline direction (336.5-338.6 deg) and 279 m nearest-toe distance"
+  }
+ ],
+ "verified_on": "2026-10-04",
+ "verification": [
+  {
+   "check": "1 overlays viewed + re-rendered from shape.json",
+   "verdict": "good (s7 outline, s4 icon outline); approximate (s2 Esri patch, s4 pale band)",
+   "evidence": "Re-rendered all pixel polygons with overlay.py and my own crops (3-5x): s7 outline sits on the outermost contour all round (<2 px), slot on the innermost contour; ICCE outline follows the icon rim; Esri polygon is a conservative dark core leaving a 4-8 m darker halo on the N side."
+  },
+  {
+   "check": "2 design version",
+   "verdict": "as-built (2019) footprint; no later change found",
+   "evidence": "council asset INSV + EPW 2020 (certified Sept 2019) + ICCE 2022 Figs 1/4; concept SCS B (175 x 144 m) is a different, superseded design (Mortensen Fig 3; RWR design-vs-constructed); monitoring to 2023 stable; Esri 2025-12-01 shows the rock in place. Contour basis (design vs surveyed) not stated by any source."
+  },
+  {
+   "check": "3 scale, area, bbox, angles",
+   "verdict": "confirmed",
+   "evidence": "scale bar ticks 26/239/451 px = 8.50 px/m; free fit to the council polygon: scale 0.999, rot 0.0002 deg, sx/sy 1.000/0.998, IoU 0.996; recomputed area 11,972.5 m2, bbox 161.8 x 100.6 m, oriented rectangle 162.3 x 91.3 m, axis 109.6 deg."
+  },
+  {
+   "check": "3b geom.py make-canonical rotation bug",
+   "verdict": "not affected",
+   "evidence": "canonical block was not made with geom.py; an independent explicit rotation reproduces all 47 vertices to a constant 0.30 m; hand check of vertex 0: px (1826.3, 699.1) -> (-27.98, 374.22) vs json (-27.98, 373.92)."
+  },
+  {
+   "check": "3c shoreline direction",
+   "verdict": "confirmed within +-3 deg",
+   "evidence": "334.3 (tracer) vs 335.3 (own Esri z18 fit) vs 336.5-338.6 (OSM coastline)."
+  },
+  {
+   "check": "4 dimensions vs text",
+   "verdict": "length and area agree; width label is nominal",
+   "evidence": "length 162.3 vs 160 (+1.4 %); area 11,972 vs council 11,942 (+0.25 %) vs 160x80 (-6.5 %); width 91.3 max / 73.8 mean vs 80; offshore 225-374 m from the waterline, 279-432 m from the OSM coastline vs '~270 m' (beach edge); RHDHV's 144 m / 330 m are concept values; crest slot 59 m vs 60 m concept crest."
+  },
+  {
+   "check": "5 provenance",
+   "verdict": "complete after fixes",
+   "evidence": "all sources have url/page/date/credit/licence; added s9 and ref8-10; s8 Issuu link is dead (Bluecoast-hosted image used); s7 local copy is a re-encoded variant of the CDN file; '25,000 m3' is card-sourced and conflicts with the council's 33,000."
+  },
+  {
+   "check": "6 Gemini findings",
+   "verdict": "all tracer verdicts confirmed; 3 more added",
+   "evidence": "no-URL documents unverifiable; image URL 404; coordinates 1,214 m off (surf zone on Esri); chevron IoU 0.41/0.52 (0.75 at -60 deg); field photo is a 1967 image; height/crest/volume attributes not supported by the council register."
+  },
+  {
+   "check": "7 confidence",
+   "verdict": "high retained, reason rewritten",
+   "evidence": "structure clear on a scaled plan-view aerial, outline equals the council GIS polygon, independent icon agrees (+0.6 % area); caveats now stated (undated aerial, contour basis, width label, partial Esri visibility)."
+  }
+ ],
+ "overlay_match": "good for the primary outline (s7) and the ICCE icon outline (s4); approximate for the Esri visible-rock patch (s2, conservative dark core) and the ICCE pale band"
+}
