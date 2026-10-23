@@ -22,6 +22,8 @@ re-export ONLY the combined meshes whose signature changed, fill `{{tokens}}` in
 | model not finished yet | add the slug to `data\models3d_hold.json` ("Not yet modelled") | stops half-written folders reaching the page |
 | a caveat is fixed | its row in `data\models3d_caveats.json` (status `resolved`, new numbers, `{{tokens}}`) | rows are text; tokens `{{path\|fmt}}` are read from model.js |
 | photo-match tolerance / Navionics log | `src\photo_match.py` (NAV_LOGS, TOL_*) | a capture log is only used when complete |
+Models added later (2026-10-10): Cables needs `shore_mode: "none"` in its combined entry (its seabed window starts offshore of the shoreline); Albany needs the viewer fix in `compile_models3d.py VIEWER_FIXES`
+(its viewer drew a height-above-bed grid as absolute z; delete the entry once `07_scale/.../southern-ocean-surf-reef-albany/3d/index.html` is fixed). Dead ends: `02_research/dead_ends/<slug>.json` is read by every `compile_data.py` run; nothing else to do.
 Pending updates, exactly what to touch: **Mount Maunganui bed** (default -3.6 m CD, later -2.8) = nothing, every bed number is a token; once the 2007
 survey is in, set the caveat "as-built bed (ASSUMPTION)" to resolved. **Borth offshore fix**: caveat "Offshore seabed (y > 335 m) deeper than the Fig 2
 -4.0 m contour" and key number "Seabed seaward of the reef" -> resolved text (the 0.89 m figure is typed there, not a token). **Boscombe flattening**:

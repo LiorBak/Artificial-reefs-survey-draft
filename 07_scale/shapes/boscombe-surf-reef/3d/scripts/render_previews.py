@@ -12,7 +12,12 @@ import asyncio, base64, json, os, socket, subprocess, sys, tempfile, time, urlli
 import websockets
 
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))      # the 3d folder (screenshots are written here)
-CHROME = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "..", "..", "04_build", "src"))
+try:
+    from qa_cdp import find_chrome                       # cloud / Linux: finds the Chromium by itself (read-only import of 04_build/src/qa_cdp.py)
+    CHROME = find_chrome()
+except Exception:
+    CHROME = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
 
 
 def free_port():
@@ -60,7 +65,7 @@ async def main(http_port, jobs, w, h):
     prof = tempfile.mkdtemp(prefix='boscombe3d_chrome_')
     proc = subprocess.Popen([CHROME, '--headless=new', '--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist',
                              '--remote-debugging-port=%d' % port, '--user-data-dir=' + prof, '--window-size=%d,%d' % (w, h), '--no-first-run',
-                             '--hide-scrollbars', 'about:blank'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                             '--hide-scrollbars', '--no-sandbox', 'about:blank'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     try:
         ws_url = None
         for _ in range(60):

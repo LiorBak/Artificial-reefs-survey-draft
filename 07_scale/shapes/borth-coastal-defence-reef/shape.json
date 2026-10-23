@@ -9616,7 +9616,7 @@
   },
   {
    "id": "ref6",
-   "citation": "Hansford, M. (2011-09-15). Borth's Big Dig. New Civil Engineer.",
+   "citation": "Hansford, Mark (2011-09-15). Borth's Big Dig. New Civil Engineer.",
    "url": "https://www.newcivilengineer.com/archive/borths-big-dig-15-09-2011/",
    "accessed": "2026-10-06",
    "supports": "double reef 400 m offshore, 275,000 t, rock types"
@@ -13067,7 +13067,7 @@
      ]
     ]
    ],
-   "volume_m3_model": 31336,
+   "volume_m3_model": 30119,
    "note": "Default (Lior 2026-10-06: laser survey or rock layer are more accurate than a photo). DSM sees block tops, about 0.1-0.3 m above the design surface."
   },
   {
@@ -15748,7 +15748,7 @@
      ]
     ]
    ],
-   "volume_m3_model": 30091,
+   "volume_m3_model": 28919,
    "note": "The as-designed rock layer; the as-built flanks are flatter and 8-10 m wider than the design (LiDAR)."
   },
   {
@@ -16419,7 +16419,7 @@
      ]
     ]
    ],
-   "volume_m3_model": 26400,
+   "volume_m3_model": 25504,
    "note": "Smallest footprint: the photo shows only the rock above the water at that tide, so it understates the structure; kept as the traceable photo outline."
   }
  ],

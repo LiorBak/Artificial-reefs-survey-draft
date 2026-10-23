@@ -1,0 +1,48 @@
+# sources.md - mount-maunganui-reef (private research copies; reuse rights must be checked before any public release)
+
+All local files are in 07_scale/shapes/mount-maunganui-reef/src/. Retrieved by this task on 2026-10-04/05 unless stated. "Role": primary = canonical outline derived from it; cross_check = independent check / as-built supplement (traced or projected); context = looked at, nothing traced from it.
+
+| id | kind | title | url | source page | page / figure | image date | credit | licence | local file | retrieved | role |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| doc0 | report (PDF) | Mount Maunganui Reef - Assessment of Management Options (prepared for Bay of Plenty Regional Council, Dec 2013; PDF created 2014-01-23) | https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf (TLS certificate problem: curl -k) | same | whole report, 49 PDF pages (printed page = PDF page - 1); text used: printed pp 6, 9-10, 13, 21, 23, 25-26, 28-29 | Dec 2013 | Focus Resource Management Group for BoPRC | not stated (council report) - check before reuse | boprc_report.pdf (md5 69cce3e5..., 1,802,520 B) | 2026-10-04, re-downloaded + md5 identical 2026-10-05 | context (text source for dimensions, depths, history) |
+| img1 | as_built_survey (multibeam plan, colour-coded depth) | Figure 3 "Most recent survey of Mount Reef conducted on 18 July 2013" (title on figure: MOUNT MAUNGANUI - ARTIFICIAL SURF REEF; "Surveyed using Multibeam Echosunder ... by University of Waikato & Discovery Marine Ltd"; depths referred to Chart Datum) | https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf | doc0 | PDF page 23 (printed p22), embedded raster xref 53, 900 x 1064 px native, extracted unresampled | survey 2013-07-18 | University of Waikato & Discovery Marine Ltd (DML), reproduced by Focus RMG / BoPRC | not stated - check before reuse | boprc_fig3_2013_survey.png | 2026-10-05 | primary |
+| img2 | aerial_photo (orthophoto, 0.125 m) | Bay of Plenty 0.125m Urban Aerial Photos (2010-2011), tile BD37_1000_1314 (1100 x 1100 px crop, centred on the reef) | https://nz-imagery.s3.ap-southeast-2.amazonaws.com/bay-of-plenty/bay-of-plenty_2010-2011_0.125m/rgb/2193/BD37_1000_1314.tiff (19.19 MB COG; STAC item ./BD37_1000_1314.json) | LINZ open data on AWS, catalogue https://nz-imagery.s3.ap-southeast-2.amazonaws.com/catalog.json | n/a | flown 2010-12-28 .. 2011-03-31 (collection extent) | LINZ (host/processor); New Zealand Aerial Mapping (producer); BOPLASS and Gisborne District Council (licensors) | CC BY 4.0 (collection.json) - attribution required | linz_aerial_2010-11_BD37_1000_1314_crop.png (+ .geo.json, NZTM2000 EPSG:2193, 0.125 m/px) | 2026-10-05 | cross_check (geo-referenced; reef clearly visible) |
+| img3 | other (colour-coded bathymetry of the completed reef, no scale) | "Mount Reef Installed" (credit on page: "The installed reef. Image: ASR") | https://raisedwaterresearch.com/wp-content/uploads/2019/11/Mount-Reef-Installed.jpg | https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/mount-maunganui/ (Raised Water Research) | n/a; 570 x 519 px; colour legend -1.8..-7.4 m (datum not stated), axes 100-700 unlabelled | undated; after Aug 2008 (shows the replaced split bag and the apex "focus" bags) | ASR Ltd via Raised Water Research | all rights reserved (link only; no licence stated on page) | mount-reef-installed.jpg (md5 d9d9d32467...) | 2026-10-04, md5 identical on re-download 2026-10-05 | cross_check (as-built toe-level outline + extra bags; scale from registration to img1) |
+| ctx1 | paper_figure (shaded-relief multibeam, no scale) | Figure 4 "multibeam survey conducted in January 2007, when the reef was 70 % complete (from Scarfe, 2009)" | https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf | doc0 | PDF page 26 (printed p25), raster xref 60, 815 x 953 px; north arrow only | survey Jan 2007 | Scarfe (2009) via BoPRC / Focus RMG | not stated | boprc_fig4_2007_multibeam.png | 2026-10-05 | context (layout at 70 % complete, missing bag on northern arm; not traced) |
+| ctx2 | paper_figure | "Mount Reef Multibeam 2007" (RWR copy of ctx1, caption "Depth reading 2007, showing missing bag. Image: Scarf 2009") | https://raisedwaterresearch.com/wp-content/uploads/2019/11/Mount-Reef-Multibean-2007.jpg | RWR Mount Maunganui page (above) | n/a; 637 x 752 px | Jan 2007 | Scarfe 2009 via Raised Water Research | all rights reserved | mount-reef-multibeam-2007.jpg (md5 813a8d357a...) | 2026-10-04/05 | context (duplicate of ctx1) |
+| ctx3 | design_drawing (3D render, no scale) | "Mount Reef" CAD render, symmetric two-arm layout with interleaved apex | https://raisedwaterresearch.com/wp-content/uploads/2019/11/Mount-Reef.jpg | RWR page (above) | n/a; 581 x 438 px | design stage (2005 delta-wing) | ASR via Raised Water Research | all rights reserved | mount-reef-cad-design.jpg (md5 70ee1a1d92...) | 2026-10-04/05 | context (design topology only; superseded by as-built) |
+| ctx4 | aerial_photo (wide oblique) | "Mount Reef Arial" (reef arrowed, too small to measure) | https://raisedwaterresearch.com/wp-content/uploads/2019/11/Mount-Reef-Arial-1024x575.jpg?v=1573519132 | RWR page (above) | n/a; 1024 x 575 px | undated | Raised Water Research / BoPRC (BoPRC fig 1 p7 is the same kind of photo) | all rights reserved | mount-reef-arial.jpg (md5 bfee705083...) | 2026-10-04/05 | context |
+| ctx5 | satellite | Esri World Imagery Wayback release 3630, z18, 700 m radius around -37.6448, 176.2023 (2961 x 2961 px, 0.4728 m/px) | tile template in the .geo.json: https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/3630/{z}/{y}/{x} | Esri Wayback | n/a | 2011-01-15 (Esri SRC_DATE2) | Esri, Maxar, Earthstar Geographics, GIS User Community | Esri terms (not CC) - private research copy | esri_wayback_2011-01-15_z18_wide.png (+ .geo.json) | 2026-10-05 | context (shoreline line: wet/dry-sand boundary fitted on it; reef visible) |
+| ctx6 | satellite | Esri Wayback release 3630, z19, 200 m radius (1692 x 1692 px, 0.2364 m/px) | as ctx5 | Esri Wayback | n/a | 2011-01-15 | as ctx5 | as ctx5 | esri_wayback_2011-01-15_z19.png (+ .geo.json) | 2026-10-05 | context (first registration test; superseded by img2) |
+| ctx7 | satellite | Esri Wayback release 10, z17, 250 m radius (529 x 529 px, 0.9457 m/px) | tile template as ctx5 with release 10 | Esri Wayback | n/a | 2010-03-03 (SRC_DATE2) | as ctx5 | as ctx5 | esri_wayback_2010-03-03_z17.png (+ .geo.json) | 2026-10-05 | context (reef visible as a dark "7" 21 months after completion; too coarse to trace) |
+| ctx8 | satellite (current) | Esri World Imagery current, z19, 400 m radius (not saved) | https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x} | Esri | n/a | capture 2025-10-31 (tile metadata) | Esri | Esri terms | not saved | 2026-10-05 | context (reef NOT visible: removed 2014) |
+
+## Not saved / looked at only
+- BoPRC report Figure 1 (p7, aerial, reef arrowed) and Figure 5 (p26, oblique colour-coded view of the 2013 survey): in the PDF only; not extracted (img1 holds the same survey in plan view).
+- Raised Water Research "Mount-Reef-Multibean-2013.jpg" (338,632 B, 1024 x 593): fetched to %TEMP% only, not used.
+
+## Registry ids (added 2026-10-06, image registry backfill)
+
+Every image is registered (citation + 'how used') in 03_images/reefs/mount-maunganui-reef/images.json (IMAGES.md). Figures extracted from the BoPRC report on 2026-10-06 (Fig 1, 2, 5) are in 03_images/reefs/mount-maunganui-reef/.
+
+| source id | registry id |
+|---|---|
+| img1 | mount-maunganui-reef-img-08 |
+| img2 | mount-maunganui-reef-img-09 |
+| img3 | mount-maunganui-reef-img-10 |
+| ctx1 | mount-maunganui-reef-img-11 |
+| ctx2 | mount-maunganui-reef-img-12 |
+| ctx3 | mount-maunganui-reef-img-13 |
+| ctx4 | mount-maunganui-reef-img-14 |
+| ctx5 | mount-maunganui-reef-img-15 |
+| ctx6 | mount-maunganui-reef-img-16 |
+| ctx7 | mount-maunganui-reef-img-17 |
+| ctx9 | mount-maunganui-reef-img-04 |
+
+## Verifier additions (2026-10-06)
+
+| id | kind | title | url | source page | page / figure | image date | credit | licence | local file | retrieved | role |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| ctx9 | survey_plot (hillshaded multibeam DEM with colour bar) | BoPRC Figure 5 "View of July 2013 multibeam survey with colour-coded depths. Note apparent bag deflation near apex (arrowed)" - NZ-grid ticks every 20 m (4.2165 px/m), colour bar -0.19 to -4.90 m | https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf | doc0 | PDF page 27 (printed p26), raster xref 67, 1299 x 752 px | survey 2013-07-18 | University of Waikato & Discovery Marine Ltd via Focus RMG / BoPRC | not stated - check before reuse | 03_images/reefs/mount-maunganui-reef/mount-maunganui-reef_boprc-fig5-multibeam-2013_2013.png | extracted 2026-10-06 (backfill); read by the verifier 2026-10-06 | cross_check (verification of img1: depth < -2.0 m mask 1,074 vs 1,072 m2, IoU 0.93; crest and bed depths) |
+
+The "Not saved / looked at only" note above is superseded for Figures 1, 2 and 5: they are saved in 03_images/reefs/mount-maunganui-reef/ (registry img-01 to img-04). The RWR "Artificial-Reef-Comparison.jpg" (Gemini's source) was viewed from %TEMP% only and is deliberately not stored (registry README: original of Lior's image26). Verifier scripts and outputs: scripts/verify_fig5_check.py, work_verify_fig5.json, overlays/verify_fig5_crosscheck_2013.png.

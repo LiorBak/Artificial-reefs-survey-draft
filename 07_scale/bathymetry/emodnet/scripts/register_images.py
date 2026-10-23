@@ -3,7 +3,7 @@
 import hashlib, json, os, re
 from PIL import Image
 
-ROOT = r"C:\Users\lior\Documents\Gemini\AG\Artificial reef - to upload to git"
+ROOT = r"C:\Users\lior\Documents\Claude\Projects\Artificial reef"
 OUT = "07_scale/bathymetry/emodnet"
 REG = f"{ROOT}/03_images/reefs"
 TODAY = "2026-10-06"

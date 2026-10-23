@@ -80,7 +80,7 @@
     if (!hasVers(m)) return '';
     var act = activeVer(m), s = esc(m.slug);
     var btns = m.versions.length > 1 ? '<div class="m3d-vgroup" role="group" aria-labelledby="m3d-vlbl-' + s + '">' + m.versions.map(function (v) {
-      return '<button type="button" class="m3d-vbtn" data-m3d-ver="' + s + '|' + esc(v.id) + '" aria-pressed="' + (v.id === act) + '"><span class="n">' + esc(v.name) + '</span>' +
+      return '<button type="button" class="m3d-vbtn" data-m3d-ver="' + s + '|' + esc(v.id) + '" title="' + esc(v.name + (v.date ? ' (' + v.date + ')' : '')) + '" aria-pressed="' + (v.id === act) + '"><span class="n">' + esc(v.name) + '</span>' +
         '<span class="d">' + esc(v.date) + (v.id === m.default_version ? ' &middot; default' : '') + '</span></button>';
     }).join('') + '</div>' : '';
     return '<div class="m3d-versions" data-vbar="' + s + '"><div class="m3d-vrow"><span class="lbl" id="m3d-vlbl-' + s + '">Outline version</span>' + btns +
@@ -304,18 +304,19 @@
       '<small>' + esc(m.place) + (m.verdict_label ? ' &middot; verdict: ' + esc(m.verdict_label) : '') + '</small></h2>' +
       '<div class="m3d-conf m3d-conf-' + esc(lvl) + '"><span class="m3d-badge" title="3D confidence rubric: Appendix A, section 8">3D confidence: ' + esc(lvl) + '</span>' +
       '<span class="m3d-reason" title="' + esc(c.reason_short || c.reason) + '">' + esc(c.reason_short || c.reason) + '</span>' + confInfoHTML(m) + '</div>' +
-      '<p class="m3d-state"><b>State modelled:</b> <span class="t" title="' + esc(m.state_short) + '">' + esc(m.state_short) + '</span><span class="m3d-ve">Vertical exaggeration 1&times; by default</span></p></header>';
+      '<p class="m3d-state"><b>State modelled:</b> <span class="t" title="' + esc(m.state_short) + '">' + esc(m.state_short) + '</span><span class="m3d-ve">Vertical exaggeration 1&times; by default</span></p>' +
+      '<p class="m3d-loc">' + (window.ReefLoc ? window.ReefLoc.extras(m.slug, true) : '') + '</p></header>';
   }
 
   function knNotesHTML(m) {
-    return info('How to read the key numbers', pp('Model value, the value stated in the sources, and the difference, for each quantity that fixes the shape. Hover a source id for its citation.') +
+    return info('How to read the key numbers', pp('Model value, the value stated in the sources, and the difference, for each quantity that fixes the shape. Hover a source id for its citation. The ids (R1, S3, img1, ...) are this model\'s own source numbers (METHODS_3D.md), not the numbers of the reef card\'s references.') +
       pp('Heights are metres relative to the model zero (mean sea level, MSL) unless a datum is named; &quot;below LAT&quot; means below lowest astronomical tide.') +
       (hasVers(m) ? pp('Shaded rows belong to the selected outline version; the other rows apply to every version unless a row says otherwise.') : '') +
       goLink('#m3d-caveats', 'Appendix C: caveats and discrepancies'));
   }
   function knInner(m) {
     var rows = rowsFor(m);
-    var head = '<table class="m3d-t m3d-kn"><thead><tr><th>Quantity</th><th>Model (this reconstruction)</th><th>Stated in sources</th><th>Difference (model - stated)</th><th>Source ids</th></tr></thead><tbody>';
+    var head = '<table class="m3d-t m3d-kn"><thead><tr><th>Quantity</th><th>Model (this reconstruction)</th><th>Stated in sources</th><th>Difference (model - stated)</th><th title="The model\'s own source numbers (METHODS_3D.md), not the reef card\'s R-numbers">Model source ids</th></tr></thead><tbody>';
     var body = rows.map(function (r) {
       return '<tr' + (r.ver ? ' class="ver"' : '') + '><td class="q">' + esc(r.q) + (r.note ? '<small>' + esc(r.note) + '</small>' : '') + '</td><td>' + esc(r.model) + '</td><td>' + esc(r.stated || '-') + '</td><td class="diff">' + esc(r.diff || '-') + '</td><td>' + sidChips(m.slug, r.ids) + '</td></tr>';
     }).join('');

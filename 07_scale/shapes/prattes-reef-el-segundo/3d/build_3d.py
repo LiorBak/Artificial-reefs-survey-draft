@@ -311,7 +311,7 @@ def main(annotations=False):
          "present shoreline fitted on Esri 2026-01-09 image (155.5 deg); concept plan bisector 61 deg; SonarChart 0 ft line trend gives 158 deg", "+-5 deg (drawing has no north arrow)", True)
     prov("position (lat/lon)", "%.5f N, %.5f W (inferred hint; not surveyed)" % (L.HINT_LAT, -L.HINT_LON), "deg", "S10 Borrero & Nelsen 2003 Fig. 9 (UTM window) + p.1 text + Fig. 2; Navionics outfall landfall",
          "centre of the Fig. 9 survey window (UTM 11N 367505 E, 3754275 N); agrees to <= 35 m with 'about 200 m south of the 1-mile outfall' (outfall landfall read on the Navionics chart) + 91 m offshore; Fig. 2 scale gives 320 m instead of 200 m; the earlier text hint (CCC 1998: 300 yd north of the Grand Avenue jetty, 33.9188 N 118.4324 W) is 217 m away and superseded",
-         "+-100 m alongshore (window half-length 56 m; outfall- and jetty-based estimates span 190 m); no effect on depths (bed uniform alongshore)", True)
+         "+-150 m alongshore (DECISION 2026-10-10, by the project team: window half-length 56 m, but the paper text (200 m) and its Fig. 2 (about 340 m) differ by 140-170 m, and outfall- and jetty-based estimates span 190 m); no effect on depths (bed uniform alongshore)", True)
     prov("crest B: top of the reef at the offshore face, Phase I as installed (MODELLED, default)", "%.3f (stated %s)" % (z_B, cB["value_stated"]), "m rel. MSL", cB["source_id"],
          "z_MSL = -(6 ft x 0.3048 + (MSL - MLLW)) = -(1.829 + %.3f); carried along the reef at constant thickness %.2f m above the DEM seabed" % (msl_mllw, cB["thickness_m"]),
          "+-%.2f m (reading 'approximately', single point, as-built variation); datum MLLW now confirmed in the primary paper" % cB["uncertainty_m"], False)
@@ -362,14 +362,14 @@ def main(annotations=False):
                        "the tide datums and the seabed (NOAA DEM and Navionics agree within 0.3 m in the reef zone) are well supported. But there is still no as-built plan (the paper's Fig. 4 is the design layout), "
                        "the stack height is not stated and the single-course model holds only %d m3 against %d-%d m3 for 110 bags, the Phase I crest is one point that differs by %.1f m from the design reading, "
                        "and the vertical uncertainty (+-%.2f m) is more than half the reef height (%.1f m)." % (round(stats["B"]["volume_m3"]), round(bag_vol_lo), round(bag_vol_hi), abs(z_A - z_B), unc["sig_H_m"], stats["B"]["crest_h_apex_m"])),
-            "reason_short": "LOW: all inputs sourced and the 2003 paper fixes datum, bag size, dates and position (+-100 m), but no as-built plan, stack height unknown (volume gap %d-%d m3), crest readings differ by %.1f m; vertical error (+-%.2f m) is over half the %.1f m reef height." % (
+            "reason_short": "LOW: all inputs sourced and the 2003 paper fixes datum, bag size, dates and position (+-150 m), but no as-built plan, stack height unknown (volume gap %d-%d m3), crest readings differ by %.1f m; vertical error (+-%.2f m) is over half the %.1f m reef height." % (
                 round(bag_vol_lo - stats["B"]["volume_m3"]), round(bag_vol_hi * 1.0 - stats["B"]["volume_m3"] + 0), abs(z_A - z_B), unc["sig_H_m"], stats["B"]["crest_h_apex_m"])}
     inputs_status = {
         "plan": "sourced - verified outline of the Phase I design layout (435.2 m2, 58.0 x 28.6 m); the 2003 paper's Fig. 4 is the same design drawing, so no as-built plan exists",
         "crest": "sourced - Phase I outermost point approximately 6 ft below MLLW (Borrero & Nelsen 2003 p.2; datum MLLW now confirmed) = %.2f m MSL, default; Skelly design minimum -6 ft MSL = %.2f m MSL (same number, other datum label) as alternative; variation along the crest assumed" % (z_B, z_A),
         "height_slopes": "estimated - bag size 4 x 7 x 10 ft now primary; number of courses NOT stated by any source; one course (thickness %.2f m from crest B minus the DEM seabed) assumed; side slope 1H:1V assumed; the 110-bag volume check fails (%d vs %d-%d m3)" % (h0, round(stats["B"]["volume_m3"]), round(bag_vol_lo), round(bag_vol_hi)),
         "seabed": "sourced - NOAA 1/3 arc-sec DEM (primary), Navionics SonarChart (check) and the 2003 paper's profiles (beds beside the reef %.2f m MSL if the axis is MLLW): DEM %.2f vs Navionics %.2f m MSL at the hint; reef distance +-25 m -> +-%.1f m" % (bed5_mean_msl, nav["dem_z_msl_at_hint"], nav["hint_z_msl_assumed_mllw"], sig_pos),
-        "position": "inferred - Borrero & Nelsen (2003) Fig. 9 survey window centre %.5f N, %.5f W, consistent with '200 m south of the 1-mile outfall'; +-100 m; not surveyed, no georeferenced outline" % (L.HINT_LAT, -L.HINT_LON),
+        "position": "inferred - Borrero & Nelsen (2003) Fig. 9 survey window centre %.5f N, %.5f W, consistent with '200 m south of the 1-mile outfall'; +-150 m (decided 2026-10-10); not surveyed, no georeferenced outline" % (L.HINT_LAT, -L.HINT_LON),
         "tides": "sourced - NOAA CO-OPS 9410840 Santa Monica (cross-check 9410660); MSL-MLLW = %.3f m" % msl_mllw,
     }
     lifecycle = [
@@ -508,7 +508,7 @@ def main(annotations=False):
         "vol_bag_nom": round(N_BAGS_PHASE1 * BAG["volume_max_m3"]), "vol_total_nom": round(N_BAGS_FINAL * BAG["volume_max_m3"]),
         "ratioB_nom": f2(stats["B"]["volume_m3"] / (N_BAGS_PHASE1 * BAG["volume_max_m3"])), "ratioA_nom": f2(stats["A"]["volume_m3"] / (N_BAGS_PHASE1 * BAG["volume_max_m3"])),
         "missing_nom": round(N_BAGS_PHASE1 * BAG["volume_max_m3"] - stats["B"]["volume_m3"]),
-        "dist_hint_old_m": 217, "sig_x": 100, "volB_p1": round(stats["B"]["volume_m3"] + sig_V_B), "volB_p2": round(stats["B"]["volume_m3"] + 2 * sig_V_B), "volB_p3": round(stats["B"]["volume_m3"] + 3 * sig_V_B),
+        "dist_hint_old_m": 217, "sig_x": 150, "volB_p1": round(stats["B"]["volume_m3"] + sig_V_B), "volB_p2": round(stats["B"]["volume_m3"] + 2 * sig_V_B), "volB_p3": round(stats["B"]["volume_m3"] + 3 * sig_V_B),
         "nav_label_n": nav["label_check"]["n"], "nav_label_match": nav["label_check"]["n_match"],
         "nav_lab_n_all": nav["label_datum_test"]["n"], "nav_lab_n_reef": nav["label_datum_test"]["zones"]["reef_zone"]["n"],
         "nav_lab_surf_mllw": nav["label_datum_test"]["zones"]["surf_zone_lt_8ft"]["datums"]["MLLW"]["bias_nav_minus_dem_m"],

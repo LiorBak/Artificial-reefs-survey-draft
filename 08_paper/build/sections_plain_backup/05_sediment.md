@@ -1,0 +1,61 @@
+# 5 Sediment transport and coastal stabilisation
+
+Most surf reefs were promoted as multi-purpose structures that would also stabilise the beach. This section compares the standard shoreline predictors with the surveyed response and asks how a surf reef can be combined with coastal stabilisation.
+
+## 5.1 Theory: transmission, salients and erosion in the lee
+
+A submerged reef dissipates part of the incident energy by breaking and transmits the rest. For low-crested structures d'Angremond et al. (1996) fitted
+
+$$K_t = -0.4\,\frac{R_c}{H_i} + c\left(\frac{B}{H_i}\right)^{-0.31}\left(1 - e^{-0.5\,\xi}\right), \qquad 0.075 \leq K_t \leq 0.8,$$
+
+with freeboard $R_c$ (negative when submerged), crest width $B$, surf similarity $\xi$ and $c$ = 0.64 (permeable) or 0.80 (impermeable); Briganti et al. (2003) give a variant for wide crests (both as reproduced by Blacka et al., 2013, Eqs. 25-29). The transmitted energy is $K_t^2$.
+
+The shoreline responds to gradients of the wave-driven flow in the lee. In the models of Ranasinghe et al. (2006), a reef close to shore drives diverging currents and erosion, and a reef farther offshore drives two converging cells and accretion (as summarised by Rendle, 2016, p. 43); erosion is likely when the reef's distance from the shoreline is less than the natural surf-zone width ($S_a/SZW < 1$) and accretion when $S_a/SZW > 1.5$, peaking near 2 (as reproduced by Blacka et al., 2013, pp. 22-23). Reviewing built structures, Ranasinghe and Turner (2006, abstract) found that "contrary to expectations, a majority of the submerged structures constructed to date have resulted in shoreline erosion in their lee". The empirical method of Black and Andrews (2001) predicts little change for an alongshore length to offshore distance ratio $B/S$ below about 0.1 and a salient amplitude from $X_{off}/B = 0.5\,(B/S)^{-1.27}$ (Eq. 30, as reproduced by Blacka et al., 2013, p. 21); Blacka et al. (2013, p. 22), citing an earlier evaluation by Evans and Ranasinghe, note that the method over-predicts at built reefs.
+
+## 5.2 Predictions for the built reefs
+
+Table 3 applies these predictors to the reconstructed reefs. At mid tide the submerged reefs transmit 41 to 80 % of the site-wave height, i.e. 17 to 64 % of its energy; only Borth, whose crest dries, blocks most waves. Both predictors expect a salient at every reef ($B/S$ 0.23 to 0.78; amplitude 11 to 114 m; $S_a/SZW$ 1.5 to 5.5 under typical waves), but storms widen the surf zone until $S_a/SZW$ = 1 at $H_0$ of 1.5 to 4.5 m, putting every reef in the erosion-likely regime.
+
+**Table 3. Predicted and observed shoreline response (predictions derived in this review; observations from Section 5.3).** $K_t$ for the site wave at low, mid and high tide (d'Angremond et al., 1996; Briganti et al., 2003); $B/S$ and the salient amplitude of Black and Andrews (2001, Eq. 30), in brackets the lower reading of their Eq. 31 (with an assumed total salient length of 1 to 3 $B$); $S_a/SZW$ for the site wave and twice the site wave (Ranasinghe et al., 2006).
+
+| Reef | $K_t$ low / mid / high | $B/S$ | Predicted salient (m) | $S_a/SZW$ ($H$ / $2H$) | Observed lee response |
+|:--|:--|--:|--:|:--|:--|
+| Boscombe | 0.05 / 0.48 / 0.47 | 0.39 | 84 (Eq. 31: 11-35) | 5.5 / 3.7 | +3.4 m (95 % CI +1.3 to +5.3), before/after with controls |
+| Palm Beach | 0.29 / 0.52 / 0.75 | 0.43 | 114 | 4.8 / 2.0 | 2 m or less (chart, low confidence) |
+| Cables | 0.38 / 0.52 / 0.67 | 0.47 | 98 (Eq. 31: 14-41) | 3.6 / 2.0 | lee high pre-dates the reef; beach bulge shrinking |
+| Borth | 0.05 / 0.05 / 0.66 | 0.39 | 88 | 1.8 / 1.4 | +30 m bulge (+12 to +48), single survey, no baseline |
+| Pratte's | 0.80 (upper limit) | 0.63 | 40 | 2.8 / 1.3 | +13 m in 5 months, no control; "no discernible impact" |
+| Narrowneck | 0.42 / 0.64 / 0.68 | 0.39 | 104 | 3.3 / 1.3 | not testable (continuous nourishment) |
+| Mt Maunganui | 0.44 / 0.66 / 0.80 | 0.23 | 79 | 2.1 / 1.1 | "subtle and within the natural variation" |
+| Albany | 0.39 / 0.41 / 0.40 | 0.78 | 77 | 2.4 / 1.6 | no post-construction data (opened 2025) |
+| Bunbury | 0.46 / 0.64 / 0.80 | 0.34 | 11 | 1.5 / 0.7 | removed within days |
+
+## 5.3 Observed response: the seabed and beach surveys
+
+Only five of the 13 reefs have measured seabed or beach data that can test a reef effect (Appendix A). For each, this review compared the lee with control stretches 1.5 to 3.5 reef lengths alongshore and, where possible, before with after.
+
+**Boscombe** has the best-controlled record, 316 beach-profile surveys from 2004 to 2026 (Channel Coastal Observatory, 2026a). Relative to four control lines, the 0 m ODN contour behind the reef advanced by +3.4 m (95 % confidence interval +1.3 to +5.3 m) after construction (Figure 8): 0.04 of the 84 m predicted by Eq. 30, while beach management moved the whole frontage by +72 m³/m in 2006-07 and +40 m³/m in 2020-21. This agrees with Rendle (2016, p. 102): "no significant shoreline response". The designers' 60 m salient after six months (Mead & Borrero, 2011, p. 5) coincided with 11,100 m³ of surplus fill sand left on the beach and dispersed after the first winter (Rendle, 2016, pp. 125-128).
+
+![**Figure 8.** Shoreline response at Boscombe before (2004-2008) and after (2009-2026) the reef, from the beach-profile surveys of the Channel Coastal Observatory (2026a), analysed in this review. (a) Beach volume above 0 m ODN on six profile lines (yearly means; colour: alongshore position $x$): the whole frontage rises together in 2006-07 and 2020-21, a beach-management signal. (b) Change of the 0 m ODN contour (post minus pre, relative to the frontage mean) against alongshore position: the two lee lines (rings) lie +3.4 m (95 % confidence interval +1.3 to +5.3 m, bootstrap over survey dates) above the line through the four control lines. (c) The same for the beach volume: +3.4 m³/m ($-4.5$ to +10.5). Black and Andrews (2001, Eq. 30) predict a salient of 84 m.](figures/fig_sediment_boscombe-surf-reef.png){#fig:sed-boscombe width=70%}
+
+**Cables**, the only reef with offshore soundings before and after construction (Western Australia Department of Transport, 2020), has a lee seabed 0.60 m higher than the controls, but the offset already existed in 1995 (Figure 9): the lee bed changed by +0.03 m (standard error 0.04 m) from 1995 to 2002, and the beach bulge shrank from +26 m (2001) to +10 m (2012), whereas a reef-driven salient would grow.
+
+![**Figure 9.** Seabed and shoreline around Cables Reef from the single-beam soundings of the Western Australia Department of Transport (2020) and beach-level surveys, analysed in this review. (a) Contours (m AHD) in December 1995, before the reef (dashed), and February 2002 (solid), with the reef footprint, the lee band (orange) and the control windows (grey). (b) Bed change 2002 minus 1995 (red: bed higher). (c) Offset of the $-4$, $-5$ and $-6$ m contours in the lee relative to the controls in 1995 (dashed) and 2002 (solid): the offset pre-dates the reef. (d) Shoreline (0 m AHD) relative to the control mean, 2001-2012: a lee bulge that shrinks from +26 m to +10 m rather than growing.](figures/fig_sediment_cables-reef-wa.png){#fig:sed-cables width=62%}
+
+**Borth** gives the one positive signal: in the 2022 lidar survey (Welsh Government, 2022) the 0 m contour bulges +30 m behind the reef (+12 to +48 m depending on the control; Figure 10), but without a pre-construction survey, and within a scheme of groynes, breakwaters and shingle recharge, the bulge cannot be attributed to the reef. At Palm Beach chart contours are offset by 2 m or less (low confidence).
+
+![**Figure 10.** Seabed behind the Borth reef from the lidar terrain model of 19 March 2022 (Welsh Government, 2022), analysed in this review. (a) Bed level (m MSL) with the 0, $-1$ and $-2$ m contours and the two reef mounds (grey). (b) Contour positions alongshore, with the lee window (orange) and the control windows (grey): relative to the trend through both controls, the lee contours lie +30, +40 and +57 m farther offshore (+12 to +48, +1 to +77 and +22 to +93 m over control choices). A single survey without a baseline cannot separate the reef from the groynes, breakwaters and shingle recharge of the same scheme.](figures/fig_sediment_borth-coastal-defence-reef.png){#fig:sed-borth width=65%}
+
+The literature agrees. At Mount Maunganui effects were "subtle and within the natural variation" with "no noticeable salient" (Weppe et al., 2007, as cited in Blacka et al., 2013, p. 103); at Pratte's monitoring found "no discernible impact on either the surrounding bathymetry or the beach" (Blacka et al., 2013, p. 117); and about half of the protection structures reviewed by Blacka et al. (2013, p. 73) had no significant accretionary impact. The one positive report, a wider beach at Kovalam, rests on the designers' photographs over less than three years (Mead & Borrero, 2011, p. 5; Blacka et al., 2013, p. 70). The observed lee response is thus 0.02 to 0.06 of the Black and Andrews prediction, because transmission is high, the reefs are short (12 to 132 m alongshore) and diffract the waves, and beach management produces signals an order of magnitude larger.
+
+## 5.4 The Gold Coast and the nourishment confound
+
+The author's lead (b; Appendix F) is that the Gold Coast reefs are claimed to protect the coast although the shoreline shows little change, and that the claim cannot be attributed to the reef because sand is nourished continuously. The record supports it. Narrowneck was built as "a coastal control point to stabilize the nourished beaches to the south" after 1.3 million m³ of nourishment in 1999-2000, with at least 60,000 m³ a year planned thereafter (Jackson et al., 2012, pp. 1-2). The designers report a beach 30 to 50 m wider (Mead & Borrero, 2011, p. 4), whereas Blacka et al. (2013, pp. 98-100) found "only a minor planform perturbation" of about 10 m and called the published widening "a likely misreading" of an arbitrary reference line, and Jackson et al. (2012) found "a minor groyne effect" and no long-term salient. Palm Beach was part of an AU$18 million nourishment project that placed about 470,000 m³ on the beach (Royal HaskoningDHV, n.d.); the City's statement that the reef "retained about 550,000 cubic metres" in two years (ABC News, 2022) is of the same order as the volume placed, and there is no nourishment-only control (Prenzler et al., 2023).
+
+## 5.5 Burial, settlement and scour
+
+What reefs change reliably is the bed near the structure: "vertical displacement of the structures of the order of 0.5 to 2 m as well as localised bed scouring" at most of them (Blacka et al., 2013, p. 72). At Pratte's the bed scoured to about 4 m, the crest dropped 1.5 m in a year and many bags were buried at removal (Blacka et al., 2013, pp. 116-117); at Narrowneck a storm bar buried the seaward containers (Jackson et al., 2012, pp. 4-5; Corbett et al., 2023, p. 663); at Boscombe the $-3.5$ m contour moved 50 m shoreward in the lee (Rendle, 2016, p. 102). The rock reef at Cables, on limestone bedrock, shows no toe scour or burial (this review). Settlement and burial remove relief, which Section 4 found decisive for surfing; Section 7.4 quantifies the effect for Haifa.
+
+## 5.6 Combining a surf reef with coastal stabilisation
+
+The two functions pull the design apart. A surfing crest lies about 1 to 2 m below MSL (Table 2) and therefore transmits 17 to 64 % of the energy, and a short reef changes the planform little; placing it at about twice the surf-zone width favours accretion under typical waves (Ranasinghe et al., 2006), but not in storms. The Gold Coast schemes therefore combine nourishment with a reef acting as a control point (Jackson et al., 2012; Prenzler et al., 2023); the engineers' claim that over 30 years the reef "definitely stacks up against beach nourishment" (ABC News, 2022) has not been tested against a nourishment-only baseline. A surf reef can hold nourished sand and add amenity within a stabilisation scheme, but it should not be relied on as stand-alone protection, and a protective effect should be claimed only from before/after surveys with controls and a nourishment record, which no reef examined has published in full.

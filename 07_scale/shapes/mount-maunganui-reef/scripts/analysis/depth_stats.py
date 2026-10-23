@@ -1,7 +1,7 @@
 import numpy as np, json, math, sys
 from scipy import ndimage as ndi
 from PIL import Image
-R='C:/Users/lior/Documents/Gemini/AG/Artificial reef - to upload to git/07_scale/shapes/mount-maunganui-reef/'
+R='C:/Users/lior/Documents/Claude/Projects/Artificial reef/07_scale/shapes/mount-maunganui-reef/'
 pxm=5.45
 dep=np.load('dep.npy')              # Fig 3, m CD (swatch mid-depths)
 polys=json.load(open(R+'work_polys_fig3_m20_v2.json'))

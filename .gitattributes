@@ -1,0 +1,2 @@
+# Store every file byte-for-byte (no CRLF/LF conversion): the project mixes Windows-written text, data and images.
+* -text

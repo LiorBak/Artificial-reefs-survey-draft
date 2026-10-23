@@ -1,7 +1,7 @@
 """Write 07_scale/bathymetry/gold_coast/SOURCES.md from registered_images.json (images) + the documents table below."""
 import json, os
 
-WORK = r"C:\Users\lior\Documents\Gemini\AG\Artificial reef - to upload to git\07_scale\bathymetry\gold_coast"
+WORK = r"C:\Users\lior\Documents\Claude\Projects\Artificial reef\07_scale\bathymetry\gold_coast"
 imgs = json.load(open(WORK + r"\tools\registered_images.json", encoding="utf8"))
 
 DOCS = [
@@ -91,7 +91,7 @@ lines = ["# SOURCES - Gold Coast nearshore bathymetry and government / council /
          "|---|---|---|---|---|---|---|---|---|---|---|"]
 for e in imgs:
     def c(s): return str(s).replace("|", "/").replace("\n", " ")
-    lines.append("| %s | %s | %s | %s | %s | %s | %s | %s | 2026-10-06 | %s | `%s` |" % (e["gc"], e.get("rid", ""), c(e["title"]), c(e["url"]), c(e["pf"]), c(e["date"]), c(e["credit"]), c(e["lic"]), c(e["shows"]), c(os.path.relpath(e["file"], r"C:\Users\lior\Documents\Gemini\AG\Artificial reef - to upload to git").replace("\\", "/"))))
+    lines.append("| %s | %s | %s | %s | %s | %s | %s | %s | 2026-10-06 | %s | `%s` |" % (e["gc"], e.get("rid", ""), c(e["title"]), c(e["url"]), c(e["pf"]), c(e["date"]), c(e["credit"]), c(e["lic"]), c(e["shows"]), c(os.path.relpath(e["file"], r"C:\Users\lior\Documents\Claude\Projects\Artificial reef").replace("\\", "/"))))
 lines += ["", "## B. Documents, data services and pages consulted", "",
           "| id | title | URL | page / table | date | credit | licence | retrieved | what it gave |", "|---|---|---|---|---|---|---|---|---|"]
 for d in DOCS:

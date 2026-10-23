@@ -7,7 +7,7 @@ import numpy as np, json, os
 from PIL import Image
 from scipy import ndimage as ndi
 from skimage import measure
-R = 'C:/Users/lior/Documents/Gemini/AG/Artificial reef - to upload to git/07_scale/shapes/mount-maunganui-reef/'
+R = 'C:/Users/lior/Documents/Claude/Projects/Artificial reef/07_scale/shapes/mount-maunganui-reef/'
 im = np.array(Image.open(R + 'src/boprc_fig3_2013_survey.png').convert('RGB')).astype(float)
 seps = [619,634,649,663,678,693,708,723,737,752,767,782,796,811,826,841,855,870,885,900,915,929,944,959,974,988,1003]
 cols = np.array([np.median(im[(seps[k]+seps[k+1])//2-2:(seps[k]+seps[k+1])//2+3, 66:84].reshape(-1,3), axis=0) for k in range(26)])

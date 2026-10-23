@@ -6,33 +6,33 @@
   "name": "Opunake Surf Reef",
   "place": "Opunake, Taranaki, North Island",
   "country": "New Zealand",
-  "lat": -39.46,
-  "lon": 173.86,
-  "year": "Planned for March 2006 construction start [R3]; most retrospective sources say started 2006 [R2][R4]; one 2021 source says 2005 [R1] — disputed",
-  "type": "Submerged multi-purpose reef, sand-filled geotextile (\"geo-container\") bags — 27 bags in place by 2009 [R2][R4]",
-  "purpose": "Increase surfable days at Opunake from an estimated 1-in-8 to 1-in-3, to draw tourism and jobs to a South Taranaki district with a slowly declining population; not designed for coastal-erosion protection [R2][R3][R4]",
-  "size": "North reef only (the larger south reef was never built): footprint ~90 m long x 20 m wide, designed for a right-hand wave 1.8-2.5 m high, rideable for about 100 m [R2][R3][R4]",
-  "cost": "North reef costed at ~NZ$1.3 million before construction [R3]; council actually allocated NZ$1.1 million [R2][R4]; spending had exceeded NZ$1.7 million by 2009 with a further NZ$400,000 sought [R1][R2][R4]; council separately wrote off a NZ$400,000 loan to the Trust in 2011 [R2][R4]",
-  "cost_usd_approx": "No sourced USD conversion found in any reference; a rough unsourced conversion at ~0.65 NZD:USD puts the ~NZ$1.7m spend at roughly US$1.1m — Claude's own estimate, not a citable fact",
-  "financed_by": "South Taranaki District Council (initial NZ$1.1M allocation plus a later NZ$400,000 loan) and the Opunake Artificial Surf Reef Trust, a local community trust [R1][R2][R4]",
-  "motivation": "Tourism and economic development for a declining South Taranaki town, via more frequent good surfing conditions; explicitly not a coastal-protection project [R2][R3][R4]",
-  "designer": "Dr Kerry Black / Artificial Surf Reefs (ASR) Ltd, Raglan, NZ, with surf-science design input from ASR co-founder Shaw Mead before he left the company in 2011 [R1][R2][R3][R4][R5]",
-  "contractor": "ASR Ltd (Raglan, NZ) — no separate named construction contractor found [R2][R3][R4]",
-  "status_now": "Failed: never produced the promised rideable waves. The Trust sued ASR in 2011; the council wrote off its debt as unrecoverable; ASR itself was liquidated in 2012. No source found reports formal removal or dismantling of the structure [R1][R2][R4]",
+  "lat": -39.4594,
+  "lon": 173.8516,
+  "year": "Planned for March 2006 construction start [R3]; most retrospective sources say started 2006 [R2]; one 2021 source says 2005 [R1] — disputed Mead & Borrero (2011, p.3) give construction commencing early 2006 [R13], vs 2005 per [R1]: sources disagree. UPDATE 2026-10-13 (TRC Technical Report 2009-33, Lior's copy) [R18]: the three coastal permits were granted 31 May 2005 (expiry 1 June 2018); construction began in early 2006, was halted by weather and because the equipment was needed at Mount Maunganui, and continued in the following two summers (site sign: works period February 2007 to May 200? - last digit blurred, read as 2008); as of April 2008 27 geo-textile bags were in place with fine-tuning planned for summer 2009/2010 (printed p.4); in Sept 2009 the reef was 'basically in place' but not complete [R18]. The 2021 source's '2005' may refer to the 2005 consents; construction itself started in 2006 (TRC).",
+  "type": "Submerged multi-purpose reef, sand-filled geotextile (\"geo-container\") bags — 27 bags in place by 2009 [R2]",
+  "purpose": "Increase surfable days at Opunake from an estimated 1-in-8 to 1-in-3, to draw tourism and jobs to a South Taranaki district with a slowly declining population; not designed for coastal-erosion protection [R2][R3]",
+  "size": "North reef only (the larger south reef was never built). DESIGN SIZE at consent stage (TRC 2009, printed p.4) [R18]: about 99 m long x 30 m wide x 3.5 m high, plan area about 2,970 m2 (= 99 x 30 exactly, a bounding rectangle, not the true bag footprint) and volume about 4,900 m3; built in 3.0 to 1.8 m of water below chart datum (= lowest astronomical tide) with the shallowest contour at 0.0 m below chart datum (reef as shallow as possible without emerging except at extreme low tide), on a thin sand layer over rock strata, no excavation [R18, printed pp. 3-4]. Designed for a right-hand wave 1.8-2.5 m high, rideable for about 100 m [R2][R3]. SIZE CONFLICT RESOLVED 2026-10-13: 99 x 30 m [R18] is the same design as Blacka et al. (2013, Table 4.2 p.65): 30 m (longshore) x 100 m (cross-shore), depth 1.8-3.0 m, ~300 m offshore, 'at LAT' [R14]. The '90 m long x 20 m wide' of [R1][R2] (also repeated by SurferToday per earlier notes) is the earlier 2004 concept (bags 1.5-2 m high 'covering an area around 90m long and 20m wide', slight hook; Opunake Artificial Reef Committee chairman D. Lusk, The Daily News, 11 June 2004) [R19]; it is superseded by the consent-stage design and is no longer used as the reef's size. POSITION FOUND 2026-10-13: the reef lies inside the area Coastal Permit 6376-1 (31 May 2005) lets the Trust occupy: a 189 x 94 m rectangle (17,726 m2) with corners published as Taranaki local circuit grid co-ordinates (TRC 2009 Appendix I, PDF p.39) = centre -39.4594, 173.8516 (NZGD2000), long axis bearing 63 deg; where the 99 x 30 m reef sits inside it is unknown (+-47 m along, +-32 m across) [R18, R20; 07_scale/shapes/opunake-reef/consent_georef.json]. TRC Figure 1 (printed p.3) shows the same rectangle as 'Proposed location of surf reef'. Volume: design volume 4,800 m3 (Mead & Borrero 2011, p.3) [R13] agrees with TRC's 4,900 m3 within 2 percent; about 1,400 m3 was still needed to reach design crest height (p.3-4) and no funds were committed; last construction work May 2008 [R13]. 27 geo-textile bags were in place as of April 2008 [R18]. Rendle thesis Table 2.1 [R15] lists Opunake at 4,800 m3 of sand-filled containers, total cost A$760,000 (as printed; exchange rate 05/05/2011), construction start 2006, 'not officially completed' - agrees with design volume [R13], differs from NZ$1.1M-1.7M+ in [R1][R2] (different basis; both kept). No source found (papers/, web search 2026-10-10) gives a plan drawing, coordinates, bearing or crest depth with datum (negative search result of this project, 07_scale/shapes/opunake-reef/HANDOFF.md section 1). The monitoring report 'Opunake Artificial Reef Monitoring Programme 2005-2009', Taranaki Regional Council Technical Report 2009-33 (cited in [R14] and [R15]) was supplied by Lior and read 2026-10-13: [R18]. Shape/3D model: none. The reef's own plan shape is still not drawn: no source gives the bag layout, per-bag levels or an as-built survey, and the reef is not visible on LINZ 2011-12 or Esri imagery (07_scale/shapes/opunake-reef/FEASIBILITY.md).",
+  "cost": "North reef costed at ~NZ$1.3 million before construction [R3]; council actually allocated NZ$1.1 million [R2]; spending had exceeded NZ$1.7 million by 2009 with a further NZ$400,000 sought [R1][R2]; council separately wrote off a NZ$400,000 loan to the Trust in 2011 [R2] Mead & Borrero (2011, p.4): no fixed price; costs approaching twice the original estimate [R13]. Blacka et al. (2013, Table 4.4): A$0.93 M in 2013 dollars, A$274 per m3, implying about 3,400 m3 built (design 4,800 minus 1,400 shortfall) [R14]. Council decision to fund NZ$1.1 million: 10 June 2004, reported 11 June 2004 [R19]. Consent bond NZ$50,000 on commencement of construction, guaranteed by the council (consent 6377-1 condition 18; TRC Table 3) [R18].",
+  "cost_usd_approx": "No sourced USD conversion found in any reference; a rough unsourced conversion at ~0.65 NZD:USD puts the ~NZ$1.7m spend at roughly US$1.1m — Claude's own estimate, not a citable fact ASSUMPTION A1: exchange rate 0.65 NZD:USD is the agent's recollection, not from a source (replace with the RBNZ historical rate for 2009); effect about +-10 % on US$1.1 M.",
+  "financed_by": "South Taranaki District Council (initial NZ$1.1M allocation plus a later NZ$400,000 loan) and the Opunake Artificial Surf Reef Trust, a local community trust [R1][R2]",
+  "motivation": "Tourism and economic development for a declining South Taranaki town, via more frequent good surfing conditions; explicitly not a coastal-protection project [R2][R3]",
+  "designer": "Dr Kerry Black / Artificial Surf Reefs (ASR) Ltd, Raglan, NZ, with surf-science design input from ASR co-founder Shaw Mead before he left the company in 2011 [R1][R2][R3][R5]",
+  "contractor": "ASR Ltd (Raglan, NZ) — no separate named construction contractor found [R2][R3]",
+  "status_now": "Failed: never produced the promised rideable waves [R1]. The Trust sued ASR in 2011; the council wrote off its debt as unrecoverable; ASR itself was liquidated in 2012 [R2]. No source found reports formal removal or dismantling of the structure [R1][R2] Decision: verdict 'failed' was assigned by the dossier agent (verified_on 2026-09-24), not by a source, because the reef never produced the promised waves [R1], construction was never completed [R13][R14] (Blacka Table 4.1: surfing 'No (construction incomplete)'), the Trust sued ASR and the council wrote off its debt [R2]. Counter-view kept: Mead & Borrero (2011, p.3-4) say the most complete inside section gives good-quality waves [R13]. Sept 2009 (TRC) [R18]: reef 'basically in place' (27 bags), not complete; no post-construction survey or dive-survey result found.",
   "verdict": "failed",
-  "hover_text": "A ~90x20 m submerged sand-bag reef off Opunake Beach, Taranaki, planned for ~NZ$1.3 million from 2006 but ending up costing over NZ$1.7 million by 2009 [R1][R2][R3][R4] — it never produced the rideable waves it was designed for, and the project ended in litigation, a written-off council loan, and the designer's liquidation in 2012 [R1][R2][R4].",
-  "design_as_planned": "Two reefs were planned: a cheaper north reef (built first) costed at ~NZ$1.3 million across a 90x20 m footprint, designed for a right-hand wave 1.8-2.5 m high rideable for ~100 m; and a larger, never-built south reef meant to deliver a 200 m ride on waves up to 3.6 m high. ASR tested the design in a small-scale wave pool at its Raglan facility. Kerry Black publicly expected the north reef to be finished within about two months of construction starting [R2][R3][R4].",
-  "as_built_vs_design": "Only the cheaper north reef was ever attempted; the south reef was never built. Construction, planned for ~2 months, instead dragged on for years: by 2009 all 27 geotextile bags were reportedly in place but still needed \"fine tuning\" (more sand, closing gaps between bags), while spending had already passed NZ$1.7 million against the NZ$1.1 million council allocation. A 2009-10 proposal to cap the geo-containers with rock (est. NZ$150,000) was pledged by ASR's new part-owner Sealutions LLC as part of a sale agreement but was never honoured. In 2010 seabed changes were reported to be causing uneven performance across the reef. By August 2011 the council, Trust and ASR relationship had broken down entirely, ending in litigation [R2][R4].",
-  "outcome": "No source found gives a measured/instrumented surf-quality outcome for Opunake (no wave-height, peel-angle or ride-length monitoring data, unlike Narrowneck) — \"not found\". Qualitatively, every source agrees the reef never produced the promised rideable waves; a 2021 investigative piece states flatly the reef \"didn't produce the expected waves\" [R1]. The reef did attract fish and other sea-life, but the structure itself began to break apart, with pieces washing ashore [R1]. No coastal-protection outcome is reported because none was designed in [R3]. No removal/dismantling is documented in any source found [R1][R2][R4].",
-  "why_worked_or_failed": "It failed. Contributing causes across sources: chronic under-budgeting and repeated funding shortfalls (the NZ$1.1-1.3M allocation proved far short of the NZ$1.7M+ actually spent, and later top-up requests of NZ$400,000, NZ$150,000 and NZ$133,000 were each unmet or only partly met) [R1][R2][R4]; the intrinsic durability problem of sand-filled geotextile bags, which ASR co-founder Shaw Mead later called the technology's \"fatal flaw\" — a single torn bag loses sand and changes the whole structure's shape [R5]; seabed changes over time causing uneven performance across the reef by 2010 [R2][R4]; and corporate instability at ASR (majority sale to Sealutions LLC, an unhonoured completion pledge, and ASR's own liquidation in 2012) that removed any prospect of finishing the fix [R1][R2][R4]. Because the reef was designed purely for surfing with no coastal-protection goal, there was no secondary benefit to justify the sunk cost once the surf failed to materialise [R3].",
-  "unexpected_results": "The reef attracted fish and other sea-life even as it failed to produce surf [R1]. Pieces of the failed structure washed ashore over time [R1], a pattern echoed more dramatically at the related Mount Maunganui and Boscombe ASR reefs [R1]. The dispute escalated beyond an engineering failure into litigation: the Trust sued ASR in 2011, and the council wrote off first a NZ$400,000 loan and then its whole claim as unrecoverable [R1][R2][R4]. No source found documents fishing pressure, swimmer-safety/rip-current incidents, or tourism data specific to Opunake — \"not found\" [R1][R5].",
-  "could_be_better": "ASR co-founder Shaw Mead concluded the geotextile-bag construction method itself was the core weakness and said it led him to shift subsequent multi-purpose-reef designs to traditional rock construction [R5]; he separately called the sandbag approach \"an evolutionary deadend\" in an email to Newsroom [R1]. At Opunake specifically, ASR's own 2009-10 fix proposal was to cap the geo-containers with rock rather than keep tuning bags with sand, but the funding for that fix was never delivered [R2][R4]. Surfrider Foundation CEO Jim Moriarty argued more broadly that ocean-based artificial-reef attempts as a class have \"absolutely horrible\" results and that effort should go into protecting natural breaks instead [R6]. NZ Surfing Magazine editor Cory Scott was blunter still: \"not one artificial reef has created a wave of any quality, despite claims to the contrary\" [R1]. Process-wise, the repeated pattern of underestimating both time (2 months expected; it ran years) and cost (three separate unmet top-up requests) suggests firmer contingency budgeting and a completion-guarantee contract with the builder would have been needed to finish the job at all [R1][R2][R4].",
-  "relevance_to_israel": "Tide range is the biggest physical contrast: Opunake's open New Zealand coast shows a sample tidal range on the order of ~2.5 m (high 2.94 m / low 0.47 m) [R7], versus well under half a metre at Haifa on Israel's virtually tideless Mediterranean coast (~0.36-0.40 m high / ~0.00-0.07 m low) [R12]. A geotextile-bag reef at Opunake has to keep working across that ~2.5 m swing in water depth every tide cycle — a substantially harder crest-depth design problem than any Israeli Mediterranean site would present, which is a point in Israel's favour for a similar reef proposal. However, the dominant documented failure modes at Opunake — chronic under-budgeting, repeated shortfalls in \"finishing\" funding, corporate instability at the design/construction firm, and the durability problem of sand-filled geotextile bags (tear -> sand loss -> shape change -> wave-quality loss) [R1][R2][R4][R5] — are not tide-dependent and would transfer directly to any Israeli geotextile-bag project, including the Ashkelon geotube project already logged in this project's master list, which itself suffered partial construction failure and higher-than-expected maintenance costs. The clearest transferable lesson is financial and material: secure full contingency funding and a completion-guarantee contract before committing to a geotextile-bag structure, and weigh rock-based construction (which ASR's own co-founder ultimately endorsed over bags) given the technology's poor track record on sand-bag durability [R1][R2][R4][R5][R7][R12].",
+  "hover_text": "A ~99x30x3.5 m (design) submerged sand-bag reef off Opunake Beach, Taranaki, planned for ~NZ$1.3 million from 2006 but ending up costing over NZ$1.7 million by 2009 [R1][R2][R3] — it never produced the rideable waves it was designed for, and the project ended in litigation, a written-off council loan, and the designer's liquidation in 2012 [R1][R2].",
+  "design_as_planned": "Two reefs were planned: a cheaper north reef (built first) costed at ~NZ$1.3 million [R3], designed (consent stage) as a 99 x 30 x 3.5 m reef of about 4,900 m3 [R18] (the 2004 concept was ~90 x 20 m with bags 1.5-2 m high [R19]) for a fast hollow right-hand wave 1.8-2.5 m high rideable for ~100 m [R2][R3][R18]; and a larger, never-built south reef meant to deliver a 200 m ride on waves up to 3.6 m high [R3]. ASR tested the design in a small-scale wave pool at its Raglan facility [R2]. Kerry Black publicly expected the north reef to be finished within about two months of construction starting [R2][R3]. Design history [R18, printed pp. 2-3]: the idea was first pursued in 1998 by Mr Eddie Klaassen and future Trust members; Dr Kerry Black did a site-selection study (sites within 10 km of the town; best sites in Opunake Bay); ASR Ltd's Phase I feasibility study (2001, computer modelling and data collection) found two satisfactory positions, north and south sides of the bay; after consultation the north side was chosen and ASR did the Phase II detailed design and environmental studies for the consents. The position was set from bathymetry, rock and sand cover, aerial photographs, video and visual observations, numerical modelling and wave-angle measurements. Built from large sand-filled geo-textile containers made to reproduce the designed profile, not fixed to the seabed (stability from weight and friction). Black and Mead (2006) 'Opunake Reef Construction Manual' (ASR) is cited by TRC (printed p.20), not found online.",
+  "as_built_vs_design": "Only the cheaper north reef was ever attempted; the south reef was never built [R2][R13][R14]. Construction, planned for ~2 months, instead dragged on for years: by 2009 all 27 geotextile bags were reportedly in place but still needed \"fine tuning\" (more sand, closing gaps between bags), while spending had already passed NZ$1.7 million against the NZ$1.1 million council allocation [R1][R2]. A 2009-10 proposal to cap the geo-containers with rock (est. NZ$150,000) was pledged by ASR's new part-owner Sealutions LLC as part of a sale agreement but was never honoured [R2]. In 2010 seabed changes were reported to be causing uneven performance across the reef [R2]. By August 2011 the council, Trust and ASR relationship had broken down entirely, ending in litigation [R2]. TRC 2009 (read 2026-10-13) [R18]: construction began early 2006, was halted by weather and the equipment being needed at Mount Maunganui, resumed over the next two summers (site sign: works February 2007 to May 200?, read as 2008); as of April 2008 27 bags were in place with fine-tuning planned for 2009/2010; the council still rated the Trust's environmental performance 'good' and noted no adverse effects (baseline kaimoana and intertidal surveys 2006-07; post-construction surveys to follow); the as-built confirmation and the position survey (+-5 m) required by consent 6377-1 conditions 9 and 10 were not yet due ('reef not yet complete', Table 3); the required signs at Opunake Beach were missing and TRC called the nearly finished reef 'already a potential hazard' for boating (printed p.15); TRC recommended a dive survey of the structure in 2009-10 (printed p.18) - its result was not found.",
+  "outcome": "No source found gives a measured/instrumented surf-quality outcome for Opunake (no wave-height, peel-angle or ride-length monitoring data, unlike Narrowneck) — \"not found\" (negative search result of this card, not a sourced statement). Qualitatively, every source agrees the reef never produced the promised rideable waves; a 2021 investigative piece states flatly the reef \"didn't produce the expected waves\" [R1]. The reef did attract fish and other sea-life, but the structure itself began to break apart, with pieces washing ashore [R1]. No coastal-protection outcome is reported because none was designed in [R3]. No removal/dismantling is documented in any source found [R1][R2]. Mead & Borrero (2011, p.3-4) note the inside (most complete) section gives good-quality waves but the reef is widely considered a failure; predominant NW winds are mostly offshore and waves are pre-conditioned in the bay [R13]. This differs in tone from [R1] (reef 'didn't produce the expected waves'): sources disagree, both kept. Blacka Table 4.1 rates surfing 'No (construction incomplete)' [R14].",
+  "why_worked_or_failed": "It failed. Contributing causes across sources: chronic under-budgeting and repeated funding shortfalls (the NZ$1.1-1.3M allocation proved far short of the NZ$1.7M+ actually spent, and later top-up requests of NZ$400,000, NZ$150,000 and NZ$133,000 were each unmet or only partly met) [R1][R2]; the intrinsic durability problem of sand-filled geotextile bags, which ASR co-founder Shaw Mead later called the technology's \"fatal flaw\" — a single torn bag loses sand and changes the whole structure's shape [R5]; seabed changes over time causing uneven performance across the reef by 2010 [R2]; and corporate instability at ASR (majority sale to Sealutions LLC, an unhonoured completion pledge, and ASR's own liquidation in 2012) that removed any prospect of finishing the fix [R1][R2]. Because the reef was designed purely for surfing with no coastal-protection goal, there was no secondary benefit to justify the sunk cost once the surf failed to materialise [R3].",
+  "unexpected_results": "The reef attracted fish and other sea-life even as it failed to produce surf [R1]. Pieces of the failed structure washed ashore over time [R1], a pattern echoed more dramatically at the related Mount Maunganui and Boscombe ASR reefs [R1]. The dispute escalated beyond an engineering failure into litigation: the Trust sued ASR in 2011, and the council wrote off first a NZ$400,000 loan and then its whole claim as unrecoverable [R1][R2]. No source found documents fishing pressure, swimmer-safety/rip-current incidents, or tourism data specific to Opunake — \"not found\" [R1][R5].",
+  "could_be_better": "ASR co-founder Shaw Mead concluded the geotextile-bag construction method itself was the core weakness and said it led him to shift subsequent multi-purpose-reef designs to traditional rock construction [R5]; he separately called the sandbag approach \"an evolutionary deadend\" in an email to Newsroom [R1]. At Opunake specifically, ASR's own 2009-10 fix proposal was to cap the geo-containers with rock rather than keep tuning bags with sand, but the funding for that fix was never delivered [R2]. Surfrider Foundation CEO Jim Moriarty argued more broadly that ocean-based artificial-reef attempts as a class have \"absolutely horrible\" results and that effort should go into protecting natural breaks instead [R6]. NZ Surfing Magazine editor Cory Scott was blunter still: \"not one artificial reef has created a wave of any quality, despite claims to the contrary\" [R1]. Process-wise, the repeated pattern of underestimating both time (2 months expected; it ran years) and cost (three separate unmet top-up requests) suggests firmer contingency budgeting and a completion-guarantee contract with the builder would have been needed to finish the job at all [R1][R2].",
+  "relevance_to_israel": "Tide range is the biggest physical contrast: Opunake's open New Zealand coast shows a sample tidal range on the order of ~2.5 m (high 2.94 m / low 0.47 m, one sample day, datum not stated) [R7] and more than 3.0 m according to Blacka et al. (2013, Table 4.3) [R14], versus well under half a metre at Haifa on Israel's virtually tideless Mediterranean coast (~0.36-0.40 m high / ~0.00-0.07 m low) [R12]. A geotextile-bag reef at Opunake has to keep working across that ~2.5 m swing in water depth every tide cycle — a substantially harder crest-depth design problem than any Israeli Mediterranean site would present, which is a point in Israel's favour for a similar reef proposal (INFERENCE of this card's author; the ~2.5 m swing is DERIVED as 2.94 m - 0.47 m = 2.47 m from one sample day [R7], Blacka's spring range is >3.0 m [R14]). However, the dominant documented failure modes at Opunake — chronic under-budgeting, repeated shortfalls in \"finishing\" funding, corporate instability at the design/construction firm, and the durability problem of sand-filled geotextile bags (tear -> sand loss -> shape change -> wave-quality loss) [R1][R2][R5] — are not tide-dependent and would transfer directly to any Israeli geotextile-bag project, including the Ashkelon geotube project already logged in this project's master list, which itself suffered partial construction failure (15 of 48 geotubes destroyed before the layout was completed) and higher-than-expected maintenance costs (Bar, D. and Drimer, N. (2023), J. Mar. Sci. Eng. 11, 236, https://doi.org/10.3390/jmse11020236, as summarised in 01_source_notes/jmse2023_bar_drimer_paper.md and 02_research/00_master_list.md; paper's own figures not re-checked in this audit). The clearest transferable lesson is financial and material: secure full contingency funding and a completion-guarantee contract before committing to a geotextile-bag structure, and weigh rock-based construction (which ASR's own co-founder ultimately endorsed over bags) given the technology's poor track record on sand-bag durability [R1][R2][R5][R7][R12]. Design crest level [R18]: the shallowest contour was set at 0.0 m below chart datum (= lowest astronomical tide), i.e. as shallow as possible without emerging except at extreme low tide, in a 3 m or larger tidal range; for Haifa's small tide the equivalent crest depth would be set relative to local mean sea level, not chart datum (project reasoning, not a source statement).",
   "reviews": [
     {
       "who": "Neil Walker",
       "role": "Acting chairman, Opunake Artificial Surf Reef Trust",
-      "quote_or_summary": "On the 2009 state of the reef: \"already breaking on a couple of points.\" [R2][R4]",
+      "quote_or_summary": "On the 2009 state of the reef: \"already breaking on a couple of points.\" [R2]",
       "outlet": "Stuff.co.nz (2009), as reported by Raised Water Research / SurferToday",
       "date": "2009",
       "url": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/opunake/"
@@ -40,7 +40,7 @@
     {
       "who": "Nick Behunin",
       "role": "Managing partner, Sealutions LLC (ASR's then-majority owner)",
-      "quote_or_summary": "On 2010 seabed problems: \"We may have to change the bag layout and how full the bags are.\" [R2][R4]",
+      "quote_or_summary": "On 2010 seabed problems: \"We may have to change the bag layout and how full the bags are.\" [R2]",
       "outlet": "Stuff.co.nz (2010), as reported by Raised Water Research / SurferToday",
       "date": "2010",
       "url": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/opunake/"
@@ -48,7 +48,7 @@
     {
       "who": "Chris Jensen",
       "role": "ASR Ltd marketing director",
-      "quote_or_summary": "On the August 2011 council dispute: \"The council's stance has been that it would not put any more funds into the project for the past three years.\" [R2][R4]",
+      "quote_or_summary": "On the August 2011 council dispute: \"The council's stance has been that it would not put any more funds into the project for the past three years.\" [R2]",
       "outlet": "Bournemouth Echo (2011), as reported by Raised Water Research / SurferToday",
       "date": "2011",
       "url": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/opunake/"
@@ -56,7 +56,7 @@
     {
       "who": "Ross Dunlop",
       "role": "Mayor, South Taranaki District Council",
-      "quote_or_summary": "Publicly criticised ASR's performance and wrote off the council's NZ$400,000 loan to the Trust in August 2011 (paraphrase; no direct quote captured in sources found) [R2][R4].",
+      "quote_or_summary": "Publicly criticised ASR's performance and wrote off the council's NZ$400,000 loan to the Trust in August 2011 (paraphrase; no direct quote captured in sources found) [R2].",
       "outlet": "Raised Water Research / SurferToday",
       "date": "2011",
       "url": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/opunake/"
@@ -206,92 +206,163 @@
   "references": [
     {
       "id": "R1",
-      "citation": "Melanie Reid and Bonnie Sumner, Newsroom (2021-12-06). \"The Kiwi scientist and the failed surf breaks.\"",
+      "citation": "Reid, M. and Sumner, B. (2021-12-06). \"The Kiwi scientist and the failed surf breaks.\" Newsroom (New Zealand), investigative web article.",
       "url": "https://newsroom.co.nz/2021/12/06/the-kiwi-scientist-and-the-failed-surf-breaks/",
       "accessed": "2026-09-24",
-      "supports": "construction start year (2005 per this article), $1.1M council allocation, 90x20m footprint, 2009 ~$600,000 budget blowout, council writing off debt, reef attracting fish/sea-life then falling apart with debris washing ashore, Cory Scott quotes, Shaw Mead quote, Mount Maunganui/Boscombe/Kovalam comparison, Eddie Grogan quote"
+      "supports": "construction start year (2005 per this article), $1.1M council allocation, 90x20m footprint, 2009 ~$600,000 budget blowout, council writing off debt, reef attracting fish/sea-life then falling apart with debris washing ashore, Cory Scott quotes, Shaw Mead quote, Mount Maunganui/Boscombe/Kovalam comparison, Eddie Grogan quote. Audit 2026-10-10: location: article body (no page numbers); the quotes of Cory Scott and Shaw Mead are opinions/e-mail statements as reported by the outlet."
     },
     {
       "id": "R2",
-      "citation": "Raised Water Research. \"Opunake.\"",
+      "citation": "Raised Water Research (n.d.). \"Opunake\" [spot page in its artificial-reef database]. No author or date shown; it relays Stuff.co.nz (2009, 2010) and Bournemouth Echo (2011) reports, which were not seen in the original.",
       "url": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/opunake/",
       "accessed": "2026-09-24",
-      "supports": "1-in-8-to-1-in-3-days design goal, 1.8-2.5m wave-height design/100m ride, Raglan wave-pool testing, 2006 construction start, 27 bags by 2009, Neil Walker quote, >$1.7M spent + $400k sought, Sealutions $150k rock-capping pledge and reneging, Nick Behunin quote (2010), Ross Dunlop $400,000 write-off (Aug 2011), Chris Jensen quote, 2011 court case, ASR liquidation"
+      "supports": "1-in-8-to-1-in-3-days design goal, 1.8-2.5m wave-height design/100m ride, Raglan wave-pool testing, 2006 construction start, 27 bags by 2009, Neil Walker quote, >$1.7M spent + $400k sought, Sealutions $150k rock-capping pledge and reneging, Nick Behunin quote (2010), Ross Dunlop $400,000 write-off (Aug 2011), Chris Jensen quote, 2011 court case, ASR liquidation. Audit 2026-10-10: location: page text (no page numbers). Everything attributed to it is second-hand."
     },
     {
       "id": "R3",
       "citation": "Andrew Moores, New Zealand Geographic, Issue 078 (Mar-Apr 2006). \"Artificial surf reefs — coming to a beach near you.\"",
       "url": "https://www.nzgeo.com/stories/artificial-surf-reefs-coming-to-a-beach-near-you/",
-      "accessed": "2026-09-24",
-      "supports": "pre-construction design details, north reef ~$1.3M cost estimate, construction slated for March 2006, unbuilt south reef design (200m ride/3.6m waves), motivation (tourism/jobs, declining population), no coastal-protection design goal, Kerry Black/ASR background"
+      "accessed": "2026-09-24; text re-read 2026-10-13 from Lior's print (new uploads from lior/New Zyland Geographic.pdf, OCR 05_qa/papers_intake/nzgeo_moores_2006_artificial_surf_reefs_ocr.md): text only, NO Opunake design figure; issue number and date are not printed on the print (issue 078 / Mar-Apr 2006 is kept from the earlier fetch, not re-confirmed)",
+      "supports": "pre-construction design details, north reef ~$1.3M cost estimate, construction slated for March 2006, unbuilt south reef design (200m ride/3.6m waves), motivation (tourism/jobs, declining population), no coastal-protection design goal, Kerry Black/ASR background. Audit 2026-10-10: location: article body, section on the Opunake north and south reefs (no page numbers); pre-construction text, so costs and dates are plans, not outcomes."
     },
     {
       "id": "R4",
-      "citation": "Luis MP, SurferToday. \"The history of artificial surf reefs.\"",
+      "citation": "Luis, M.P. (n.d.). \"The history of artificial surf reefs.\" SurferToday, web article. NOT READ: the same page was blocked (Cloudflare HTTP 403, also in the Wayback Machine) when re-checked for the cables-reef-wa card on 2026-09-24; no text of it was seen for this card.",
       "url": "https://www.surfertoday.com/surfing/the-history-of-artificial-surf-reefs",
       "accessed": "2026-09-24",
-      "supports": "corroborates all R2 Opunake facts, plus Mount Maunganui removal cost (NZ$87,000, Nov 2014), Boscombe, Kovalam, Pratte's Reef, Narrowneck, Cable Station, Bunbury Airwave comparisons"
+      "supports": "Nothing: all [R4] tags were removed from the text on 2026-10-10 (each sat beside R2, which carries the facts). The entry is kept only as a record of a page that was not read. Do not cite it unless it is read."
     },
     {
       "id": "R5",
-      "citation": "The Inertia. \"Why Have Most Artificial Reefs Never Really Worked?\"",
+      "citation": "The Inertia (staff, publication date not visible on the fetched page). \"Why Have Most Artificial Reefs Never Really Worked?\" Web article.",
       "url": "https://www.theinertia.com/surf/why-have-most-artificial-reefs-never-really-worked/",
       "accessed": "2026-09-24",
-      "supports": "Shaw Mead's explanation of geotextile-bag failure mechanism and reasons per site, Opunake grouped among ASR's most public failures, Eddie Grogan quote on Mount Reef's scour hole, Mead's shift to rock construction"
+      "supports": "Shaw Mead's explanation of geotextile-bag failure mechanism and reasons per site, Opunake grouped among ASR's most public failures, Eddie Grogan quote on Mount Reef's scour hole, Mead's shift to rock construction. Audit 2026-10-10: location: article body (no page numbers); Shaw Mead's statements are those of an interested party (ASR co-founder)."
     },
     {
       "id": "R6",
-      "citation": "Jim Moriarty, The Inertia. \"Myth: Artificial Reefs Work.\"",
+      "citation": "Moriarty, J. (n.d.; date not stated). \"Myth: Artificial Reefs Work.\" The Inertia, opinion article by the Surfrider Foundation CEO.",
       "url": "https://www.theinertia.com/environment/myth-artificial-reefs-work/",
       "accessed": "2026-09-24",
-      "supports": "Surfrider Foundation CEO's opinion naming Opunake and Bournemouth as recent failures, calling ocean-based artificial-reef results abysmal"
+      "supports": "Surfrider Foundation CEO's opinion naming Opunake and Bournemouth as recent failures, calling ocean-based artificial-reef results abysmal. Audit 2026-10-10: opinion piece, not a study; location: article body."
     },
     {
       "id": "R7",
-      "citation": "Surf-Forecast.com. \"Opunake Beach Surf Guide.\"",
+      "citation": "Surf-Forecast.com (n.d.). \"Opunake Beach Surf Guide.\" Surf-break page.",
       "url": "https://www.surf-forecast.com/breaks/Opunake-Beach",
       "accessed": "2026-09-24",
-      "supports": "coordinates (39.46S 173.86E), sample tide heights (high 2.94m/low 0.47m), wave/wind/swell climate, clean surf 26% of time in best month, water temperature"
+      "supports": "coordinates (39.46S 173.86E), sample tide heights (high 2.94m/low 0.47m), wave/wind/swell climate, clean surf 26% of time in best month, water temperature. Audit 2026-10-10: the tide heights 2.94 m / 0.47 m are one SAMPLE day on a forecast page (datum not stated), not a tidal-range statistic; Blacka et al. (2013, Table 4.3 p.67) give a tide range of more than 3.0 m for Opunake [R14]."
     },
     {
       "id": "R8",
-      "citation": "Wikipedia. \"Opunake.\"",
+      "citation": "Wikipedia contributors. \"Opunake.\" Wikipedia, The Free Encyclopedia (revision date not recorded).",
       "url": "https://en.wikipedia.org/wiki/%C5%8Cpunake",
       "accessed": "2026-09-24",
-      "supports": "township coordinates (39.450S 173.850E); confirms no mention of the artificial reef on this page"
+      "supports": "township coordinates (39.450S 173.850E); confirms no mention of the artificial reef on this page. Audit 2026-10-10: township coordinates only; the card lat/lon is the surf-forecast break position, approximate to about 1 km, not a surveyed reef position."
     },
     {
       "id": "R9",
-      "citation": "ResearchGate (search-result snippet only; full page blocked on fetch). \"Studies for Resource Consent: Opunake Surfing Reef.\"",
+      "citation": "Black, K. / ASR Ltd (2004). \"Studies for Resource Consent: Opunake Surfing Reef.\" Report for South Taranaki District Council and the Opunake Artificial Reef Committee. Authors, report number and pages: not confirmed (only a ResearchGate search snippet was seen).",
       "url": "https://www.researchgate.net/publication/273133845_Studies_for_Resource_Consent_Opunake_Surfing_Reef",
       "accessed": "2026-09-24 (search snippet)",
-      "supports": "existence of a 2004 ASR Ltd technical/resource-consent study prepared for South Taranaki District Council and the Opunake Artificial Reef Committee"
+      "supports": "existence of a 2004 ASR Ltd technical/resource-consent study prepared for South Taranaki District Council and the Opunake Artificial Reef Committee. Audit 2026-10-10: existence only; not read; no number in the card rests on it. Authors not confirmed (searched 2026-10-10)."
     },
     {
       "id": "R10",
-      "citation": "David McCallum, YouTube. \"Every Breaking Wave at OPUNAKE beach.\"",
+      "citation": "McCallum, D. (upload date not recorded). \"Every Breaking Wave at OPUNAKE beach.\" YouTube video.",
       "url": "https://www.youtube.com/watch?v=-xWlsZlffZY",
       "accessed": "2026-09-24",
-      "supports": "video lead of current wave conditions at Opunake Beach"
+      "supports": "video lead of current wave conditions at Opunake Beach. Audit 2026-10-10: video lead only; supports no number in the card."
     },
     {
       "id": "R11",
       "citation": "Wikimedia Commons media search, \"Opunake reef.\"",
       "url": "https://commons.wikimedia.org/w/index.php?search=Opunake+reef&title=Special:MediaSearch",
       "accessed": "2026-09-24",
-      "supports": "no images of this site found on Commons (used to support 'not found' claim under Image leads)"
+      "supports": "no images of this site found on Commons (used to support 'not found' claim under Image leads). Audit 2026-10-10: negative search result, 2026-09-24; supports only the statement that no Commons image was found."
     },
     {
       "id": "R12",
-      "citation": "Tide-Forecast.com. \"Tide Times and Tide Chart for Haifa.\"",
+      "citation": "Tide-Forecast.com (n.d.). \"Tide Times and Tide Chart for Haifa.\" Forecast web page.",
       "url": "https://www.tide-forecast.com/locations/Haifa/tides/latest",
       "accessed": "2026-09-24",
-      "supports": "Haifa/Israel tidal range figures (~0.36-0.40m high, ~0.00-0.07m low) used for the Israel/Haifa tide-range comparison"
+      "supports": "Haifa/Israel tidal range figures (~0.36-0.40m high, ~0.00-0.07m low) used for the Israel/Haifa tide-range comparison. Audit 2026-10-10: location: tide table on the page; heights are forecast values for a sample period (dates and datum not recorded), so the Haifa range 0.36-0.40 m high / 0.00-0.07 m low is indicative only."
+    },
+    {
+      "id": "R13",
+      "citation": "Mead, S.T. and Borrero, J.C. (2011). Multi-Purpose Reefs - A Decade of Applications. Proc. 20th Australasian Coastal and Ocean Engineering Conference (Coasts and Ports 2011), ASR Ltd. https://search.informit.org/doi/10.3316/informit.715072832934166 (Lior's copy: papers/).",
+      "url": "https://search.informit.org/doi/10.3316/informit.715072832934166",
+      "accessed": "2026-10-10",
+      "supports": "design volume 4,800 m3; ~1,400 m3 shortfall to design crest; construction early 2006, last work May 2008; costs approaching twice the estimate; waves pre-conditioned in the bay; inside section good waves but widely a failure (p.3-4)"
+    },
+    {
+      "id": "R14",
+      "citation": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08, UNSW Water Research Laboratory, for NSW Office of Environment and Heritage. https://doi.org/10.4225/53/58e1dc7368c7a (P8 report page = PDF page - 12).",
+      "url": "https://doi.org/10.4225/53/58e1dc7368c7a",
+      "accessed": "2026-10-10",
+      "supports": "Table 4.2 (p.65): 30 x 100 m, depth 1.8-3.0 m, ~300 m offshore, submergence at LAT; Table 4.3 tide range >3.0 m; Table 4.4 A$0.93 M (2013), A$274/m3; Table 4.1 surfing 'No (construction incomplete)'"
+    },
+    {
+      "id": "R15",
+      "citation": "Rendle, E.J. (2016). The Environmental, Social and Economic Impacts of an Artificial Surf Reef - The UK Experience. PhD thesis, University of Plymouth (PEARL), Table 2.1 p.41 and reference list p.298 (PDF pages). Local copy papers/Rendle...pdf.",
+      "url": "",
+      "accessed": "2026-10-10",
+      "supports": "Table 2.1: Opunake 2006 (construction start; not officially completed), 4,800 m3 sand-filled containers, total A$760,000 (US$494,682, 103 per m3 as printed), adapted from Jackson and Corbett (2007); cites Taranaki Regional Council (2009) Opunake Artificial Reef Monitoring Programme 2005-2009"
+    },
+    {
+      "id": "R16",
+      "citation": "Toitu Te Whenua Land Information New Zealand (2012). Taranaki 0.4m Rural Aerial Photos (2011-2012). LINZ open imagery (flown 2011-11-30 to 2012-03-30; provider New Zealand Aerial Mapping / Taranaki Regional Consortium), CC BY 4.0, tile BJ28_5000_0806; and Toitu Te Whenua LINZ (2022). Taranaki 0.25m Rural Aerial Photos (2021-2022), flown 2021-11-23 to 2022-01-07, CC BY 4.0, same tile. https://nz-imagery.s3.ap-southeast-2.amazonaws.com/taranaki/ . Accessed 2026-10-10.",
+      "url": "https://nz-imagery.s3.ap-southeast-2.amazonaws.com/taranaki/taranaki_2011-2012_0.4m/rgb/2193/BJ28_5000_0806.tiff",
+      "accessed": "2026-10-10",
+      "supports": "Negative finding: no reef structure (bag field, rock, linear feature) is visible in the Opunake cove in clear-water 0.4 m (2011-12) and 0.25 m (2021-22) orthophotos; breaking waves only. Crops saved in 07_scale/shapes/opunake-reef/src/."
+    },
+    {
+      "id": "R17",
+      "citation": "Esri (2026). World Imagery Wayback releases 2015-08-19, 2019-05-15, 2023-08-31, 2024-05-09 (the only distinct imagery versions among 197 releases at this location), z19 mosaics. https://wayback.maptiles.arcgis.com . Accessed 2026-10-10.",
+      "url": "https://s3-us-west-2.amazonaws.com/config.maptiles.arcgis.com/waybackconfig.json",
+      "accessed": "2026-10-10",
+      "supports": "Negative finding: no reef structure visible in any of the four versions."
+    },
+    {
+      "id": "R18",
+      "citation": "Taranaki Regional Council (2009). Opunake Artificial Reef Monitoring Programme 2005-2009. Technical Report 2009-33 (ISSN 0114-8184 print; 1178-1467 online; document 631513). Stratford, NZ, September 2009. 58 pp. Local copy: new uploads from lior/Opunake Artificial Reef monitoring programme 2005-2009.pdf (Lior's upload, request P15).",
+      "url": "https://www.trc.govt.nz (report not reachable here: bot check; Lior's copy used)",
+      "accessed": "2026-10-13",
+      "supports": "Design dimensions and depths: printed pp. 3-4 (PDF 9-10). Reef location figure: printed p.3, Figure 1 (PDF p.9). Construction history and 27 bags: printed p.4. Consents 6376-1 (occupation area with corner co-ordinates), 6377-1 (structure) and 6378-1 (discharge), granted 31 May 2005: printed pp. 5-7 and Appendix I (scanned, PDF pp. 29-41; OCR 05_qa/papers_intake/trc_2009-33_opunake_appendixI_consents_ocr.md). Evaluation, signage, dive-survey recommendation: printed pp. 15-18. Glossary (chart datum = LAT): printed p.19. Bibliography (Black and Mead 2006 construction manual): printed p.20. Audit: statements checked against the page text and the scanned page images; first printed easting of consent 6376-1 (257484) is a misprint of 267484 (geometry, GR P20:832-937)."
+    },
+    {
+      "id": "R19",
+      "citation": "The Daily News (2004-06-11). Surf reef decision has Opunake buzzing at tourism prospects. Stuff.co.nz / The Daily News, New Plymouth (author not printed); archived copy at artificialreefs.org.",
+      "url": "https://artificialreefs.org/Articles/STUFF%20%20TRAVEL%20%20IN%20NEW%20ZEALAND%20-%20STORY%20%20New%20Zealand's%20leading%20news%20and%20information%20website.htm",
+      "accessed": "2026-10-13 (curl, HTTP 200)",
+      "supports": "2004 concept quoted from the Opunake Artificial Reef Committee chairman David Lusk: bags 1.5-2 m high 'covering an area around 90m long and 20m wide', slight hook, reef under water at all times; South Taranaki District Council decision to fund NZ$1.1 million; installation could possibly begin 'by February' (the following year implied). Origin of the '90 x 20 m' figure repeated by [R1][R2]."
+    },
+    {
+      "id": "R20",
+      "citation": "Toitu Te Whenua Land Information New Zealand. NZGD49 to NZGD2000 distortion grid nz_linz_nzgd2kgrid0005 (0.2 m), distributed through the PROJ datumgrid CDN. https://cdn.proj.org/nz_linz_nzgd2kgrid0005.tif . Open licence (CC BY 4.0).",
+      "url": "https://cdn.proj.org/nz_linz_nzgd2kgrid0005.tif",
+      "accessed": "2026-10-13",
+      "supports": "Datum conversion of the consent co-ordinates (NZGD49 / Taranaki Circuit, EPSG:27209) to WGS84: 07_scale/shapes/opunake-reef/scripts/build_consent_georef.py; the 7-parameter fallback differs by 3.7 m."
+    },
+    {
+      "id": "R21",
+      "citation": "Land Information New Zealand (LINZ). Standard port tidal levels, Port Taranaki, 1 Jul 2026 - 30 Jun 2027.",
+      "url": "https://www.linz.govt.nz/guidance/marine-information/tide-prediction-guidance/standard-port-tidal-levels",
+      "accessed": "2026-10-19",
+      "supports": "Spring 3.16 m, neap 1.53 m, mean 2.35 m tide range at Port Taranaki (read from a search extract; the LINZ host was blocked)"
+    },
+    {
+      "id": "R22",
+      "citation": "Reef rating (A surf quality, B safety and longevity, C sediment / storm protection), scores 1-5, approved by Lior 2026-10-19. Table: 08_paper/notes/rating_final.md; evidence per reef: 08_paper/notes/rating_evidence.md (this review, repo-internal files).",
+      "url": "",
+      "accessed": "2026-10-19",
+      "supports": "Scores A/B/C and reason for this reef"
     }
   ],
   "blocked_sources": [
     "R9 https://www.researchgate.net/publication/273133845_Studies_for_Resource_Consent_Opunake_Surfing_Reef — 403 on WebFetch and curl; already hedged in the dossier as unverified/search-snippet-only",
-    "https://www.youtube.com/watch?v=-4xU8GNiDdk — yt-dlp could not resolve metadata (likely removed/private); dropped rather than guessed"
+    "https://www.youtube.com/watch?v=-4xU8GNiDdk — yt-dlp could not resolve metadata (likely removed/private); dropped rather than guessed",
+    "2026-10-13: nzgeo.com and trc.govt.nz (Cloudflare bot check, not bypassed); Lior supplied copies of TRC Technical Report 2009-33 and the NZ Geographic article instead (OCR in 05_qa/papers_intake/)."
   ],
   "gaps": [
     "No USD conversion for cost figures found in any source — a rough unsourced Claude estimate is flagged separately, not cited as fact",
@@ -300,8 +371,21 @@
     "No source found reports formal removal or dismantling of the reef structure",
     "No Opunake-specific fishing-pressure, rip-current/swimmer-safety incident, or tourism data found",
     "No video or image was found that visibly shows the reef structure itself (it is submerged); all accepted media show the beach, surf club, or surf community context instead",
-    "South Taranaki District Council's own Opunake page was not fetched in this pass for possible official project photos/archives"
+    "South Taranaki District Council's own Opunake page was not fetched in this pass for possible official project photos/archives",
+    "Bag layout (plan drawing), per-bag levels and an as-built survey are still missing after TRC 2009-33 and NZ Geographic (2026-10-13): consent 6377-1 conditions 3 (detailed design plan), 9 (as-built confirmation), 10 (position map +-5 m) and 15 (structural-integrity reports) name documents held by TRC / the South Taranaki District Council / LINZ Hydrographic Office; see 07_scale/shapes/opunake-reef/FEASIBILITY.md. Resolved on 2026-10-13: position (consent area), size (99 x 30 x 3.5 m), crest datum (0.0 m below chart datum).",
+    "Position (updated 2026-10-13): lat/lon now -39.4594, 173.8516 = centre of the 189 x 94 m occupation area of Coastal Permit 6376-1 (TRC 2009-33 Appendix I) [R18][R20]; the reef is somewhere inside it (+-47 m along, +-32 m across). The earlier value (-39.46, 173.86, about 720 m to the east) was the surf-break listing [R7].",
+    "Post-construction dive survey of the reef (recommended by TRC for 2009-10) and the annual structural-integrity reports (consent condition 15) were not found; later TRC technical reports on Opunake were not found by web search 2026-10-13."
   ],
   "hero_recommendation": "none",
-  "videos_rejected": []
+  "videos_rejected": [],
+  "tide_check": "Opunake (reference port: Port Taranaki, not checked for suitability): LINZ standard-port levels 2026-27 give MHWS 3.56 m and MLWS 0.40 m above chart datum, so spring range 3.16 m, neap range 1.53 m, mean range 2.35 m. The earlier mean '>3.0 m' (Blacka 2013 Table 4.3) matches the spring range, not the mean. Values taken from a search extract of the LINZ page (host blocked from the session). [R21]",
+  "rating": {
+    "rank": 11,
+    "A": "1",
+    "B": "1",
+    "C": "?",
+    "reason": "no wave; bags failed [R22]",
+    "scale": "1-5, ?=no evidence, *=provisional",
+    "source": "this review, Lior-approved 2026-10-19"
+  }
 }

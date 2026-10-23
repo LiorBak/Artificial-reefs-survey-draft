@@ -198,7 +198,7 @@
    "note": "pixel -> Web-Mercator bounds of the image (Esri World Imagery (current layer)) -> canonical via the geo <-> canonical fit (rms 0.005 m, scale 1.00000)",
    "reference": "canonical outline (shape.json, traced on this picture)",
    "to_canonical": [
-    0.001371494,
+    0.001371493,
     0.181829402,
     -112.911716443,
     -0.181829403,
@@ -248,7 +248,7 @@
    "note": "pixel -> Web-Mercator bounds of the image (Esri World Imagery (Wayback release 34007)) -> canonical via the geo <-> canonical fit (rms 0.005 m, scale 1.00000)",
    "reference": "canonical outline (shape.json)",
    "to_canonical": [
-    0.001371494,
+    0.001371493,
     0.181829402,
     -112.911716443,
     -0.181829403,
@@ -298,7 +298,7 @@
    "note": "pixel -> Web-Mercator bounds of the image (Esri World Imagery (Wayback release 18358)) -> canonical via the geo <-> canonical fit (rms 0.005 m, scale 1.00000)",
    "reference": "canonical outline (shape.json)",
    "to_canonical": [
-    0.001371494,
+    0.001371493,
     0.181829402,
     -112.911716443,
     -0.181829403,
@@ -397,9 +397,9 @@
    "method": "web_mercator_capture_log",
    "note": "north-up Web-Mercator screenshot, zoom 17, centred on 52.483453, -4.056205 (07_scale/shapes/borth-coastal-defence-reef/3d/src/navionics/capture_log.json (reef_latlon) + nav_geometry.json (clip 982 x 655, centre pixel 491,327)); canonical via the geo <-> canonical fit",
    "to_canonical": [
-    0.005485973,
+    0.005485971,
     0.727317614,
-    -240.900467767,
+    -240.900467766,
     -0.727317613,
     0.005485972,
     685.822025231
@@ -440,9 +440,9 @@
    "method": "web_mercator_capture_log",
    "note": "north-up Web-Mercator screenshot, zoom 18, centred on 52.483453, -4.056205 (07_scale/shapes/borth-coastal-defence-reef/3d/src/navionics/capture_log.json (reef_latlon) + nav_geometry.json (clip 982 x 655, centre pixel 491,327)); canonical via the geo <-> canonical fit",
    "to_canonical": [
-    0.002742986,
-    0.363658806,
-    -120.455402455,
+    0.002742985,
+    0.363658809,
+    -120.455402454,
     -0.363658807,
     0.002742986,
     508.163879191
@@ -483,9 +483,9 @@
    "method": "web_mercator_capture_log",
    "note": "north-up Web-Mercator screenshot, zoom 17, centred on 52.483453, -4.056205 (07_scale/shapes/borth-coastal-defence-reef/3d/src/navionics/capture_log.json (reef_latlon) + nav_geometry.json (clip 982 x 655, centre pixel 491,327)); canonical via the geo <-> canonical fit",
    "to_canonical": [
-    0.005485973,
+    0.005485971,
     0.727317614,
-    -240.900467767,
+    -240.900467766,
     -0.727317613,
     0.005485972,
     685.822025231
@@ -526,9 +526,9 @@
    "method": "web_mercator_capture_log",
    "note": "north-up Web-Mercator screenshot, zoom 18, centred on 52.483453, -4.056205 (07_scale/shapes/borth-coastal-defence-reef/3d/src/navionics/capture_log.json (reef_latlon) + nav_geometry.json (clip 982 x 655, centre pixel 491,327)); canonical via the geo <-> canonical fit",
    "to_canonical": [
-    0.002742986,
-    0.363658806,
-    -120.455402455,
+    0.002742985,
+    0.363658809,
+    -120.455402454,
     -0.363658807,
     0.002742986,
     508.163879191
@@ -572,9 +572,9 @@
    "to_canonical": [
     0.375582311,
     -0.043399623,
-    -534.562680118,
-    0.043399623,
-    0.37558231,
+    -534.562680116,
+    0.043399624,
+    0.375582311,
     -346.367138627
    ],
    "image_px": [
@@ -621,10 +621,10 @@
    "to_canonical": [
     1.502329242,
     -0.173598493,
-    -1267.355873351,
+    -1267.355873348,
     0.173598493,
     1.502329244,
-    -663.527233167
+    -663.527233166
    ],
    "image_px": [
     1400,
@@ -669,7 +669,7 @@
    "to_canonical": [
     0.751164621,
     -0.086799246,
-    -633.709146348,
+    -633.709146346,
     0.086799247,
     0.75116462,
     -218.46399393
@@ -715,10 +715,10 @@
    "method": "web_mercator_capture_log",
    "note": "north-up Web-Mercator screenshot, zoom 18, centred on 50.71753, -1.83891 (07_scale/shapes/boscombe-surf-reef/src/navionics_garmin_screenshots.provenance.json (map centred on 50.71753 N, 1.83891 W by Leaflet setView; 1400 x 900 screenshot, map pane x 400..1400, y 113..864)); canonical via the geo <-> canonical fit",
    "to_canonical": [
-    0.37558231,
+    0.375582311,
     -0.043399623,
-    -316.885782846,
-    0.043399623,
+    -316.885782845,
+    0.043399624,
     0.37558231,
     4.067625689
    ],
@@ -765,7 +765,7 @@
    "to_canonical": [
     0.751164621,
     -0.086799246,
-    -633.709146348,
+    -633.709146346,
     0.086799247,
     0.75116462,
     -218.46399393
@@ -811,10 +811,10 @@
    "method": "web_mercator_capture_log",
    "note": "north-up Web-Mercator screenshot, zoom 18, centred on 50.71753, -1.83891 (07_scale/shapes/boscombe-surf-reef/src/navionics_garmin_screenshots.provenance.json (map centred on 50.71753 N, 1.83891 W by Leaflet setView; 1400 x 900 screenshot, map pane x 400..1400, y 113..864)); canonical via the geo <-> canonical fit",
    "to_canonical": [
-    0.37558231,
+    0.375582311,
     -0.043399623,
-    -316.885782846,
-    0.043399623,
+    -316.885782845,
+    0.043399624,
     0.37558231,
     4.067625689
    ],
@@ -911,8 +911,8 @@
    "reference": "canonical outline (shape.json, traced on this picture)",
    "to_canonical": [
     -0.1271032,
-    -0.132796424,
-    127.463023629,
+    -0.132796422,
+    127.463023627,
     0.132357849,
     -0.127524363,
     314.748493753
@@ -962,7 +962,7 @@
    "to_canonical": [
     -0.08918485,
     -0.093292441,
-    100.470957641,
+    100.470957639,
     0.092871895,
     -0.089588702,
     305.436233561
@@ -1059,12 +1059,12 @@
    "method": "web_mercator_capture_log",
    "note": "north-up Web-Mercator screenshot, zoom 17, centred on -37.6447833, 176.2025908 (07_scale/shapes/mount-maunganui-reef/3d/navionics_capture.py (REEF = shape.json geo.centroid_latlon, CLIP x400 y113 982 x 655, Leaflet setView)); canonical via the geo <-> canonical fit",
    "to_canonical": [
-    -0.654561318,
-    -0.681621926,
+    -0.65456132,
+    -0.681621928,
     544.613129588,
-    0.681621928,
-    -0.654561318,
-    187.409130508
+    0.68162193,
+    -0.654561317,
+    187.409130504
    ],
    "image_px": [
     982,
@@ -1102,9 +1102,9 @@
    "method": "web_mercator_capture_log",
    "note": "north-up Web-Mercator screenshot, zoom 18, centred on -37.6447833, 176.2025908 (07_scale/shapes/mount-maunganui-reef/3d/navionics_capture.py (REEF = shape.json geo.centroid_latlon, CLIP x400 y113 982 x 655, Leaflet setView)); canonical via the geo <-> canonical fit",
    "to_canonical": [
-    -0.327280657,
+    -0.327280656,
     -0.340810962,
-    272.302735269,
+    272.302735267,
     0.340810962,
     -0.327280659,
     247.562897619
@@ -1145,12 +1145,12 @@
    "method": "web_mercator_capture_log",
    "note": "north-up Web-Mercator screenshot, zoom 17, centred on -37.6447833, 176.2025908 (07_scale/shapes/mount-maunganui-reef/3d/navionics_capture.py (REEF = shape.json geo.centroid_latlon, CLIP x400 y113 982 x 655, Leaflet setView)); canonical via the geo <-> canonical fit",
    "to_canonical": [
-    -0.654561318,
-    -0.681621926,
+    -0.65456132,
+    -0.681621928,
     544.613129588,
-    0.681621928,
-    -0.654561318,
-    187.409130508
+    0.68162193,
+    -0.654561317,
+    187.409130504
    ],
    "image_px": [
     982,
@@ -1188,9 +1188,9 @@
    "method": "web_mercator_capture_log",
    "note": "north-up Web-Mercator screenshot, zoom 18, centred on -37.6447833, 176.2025908 (07_scale/shapes/mount-maunganui-reef/3d/navionics_capture.py (REEF = shape.json geo.centroid_latlon, CLIP x400 y113 982 x 655, Leaflet setView)); canonical via the geo <-> canonical fit",
    "to_canonical": [
-    -0.327280657,
+    -0.327280656,
     -0.340810962,
-    272.302735269,
+    272.302735267,
     0.340810962,
     -0.327280659,
     247.562897619
@@ -1334,9 +1334,9 @@
     -0.455962978,
     -0.948873892,
     534.602375716,
-    0.948873892,
-    -0.455962976,
-    -11.902654087
+    0.948873889,
+    -0.45596298,
+    -11.902654085
    ],
    "image_px": [
     982,
@@ -1374,12 +1374,12 @@
    "method": "web_mercator_capture_log",
    "note": "north-up Web-Mercator screenshot, zoom 18, centred on -28.107334, 153.470913 (07_scale/shapes/palm-beach-gold-coast/3d/navionics_capture.py (REEF = council polygon centroid = shape.json geo.centroid_latlon, CLIP 982 x 655, Leaflet setView)); canonical via the geo <-> canonical fit",
    "to_canonical": [
-    -0.227981489,
-    -0.474436948,
-    267.285364874,
-    0.474436942,
     -0.227981487,
-    146.381948799
+    -0.474436944,
+    267.285364872,
+    0.474436944,
+    -0.227981487,
+    146.381948797
    ],
    "image_px": [
     982,
@@ -1420,9 +1420,9 @@
     -0.455962978,
     -0.948873892,
     534.602375716,
-    0.948873892,
-    -0.455962976,
-    -11.902654087
+    0.948873889,
+    -0.45596298,
+    -11.902654085
    ],
    "image_px": [
     982,
@@ -1460,12 +1460,12 @@
    "method": "web_mercator_capture_log",
    "note": "north-up Web-Mercator screenshot, zoom 18, centred on -28.107334, 153.470913 (07_scale/shapes/palm-beach-gold-coast/3d/navionics_capture.py (REEF = council polygon centroid = shape.json geo.centroid_latlon, CLIP 982 x 655, Leaflet setView)); canonical via the geo <-> canonical fit",
    "to_canonical": [
-    -0.227981489,
-    -0.474436948,
-    267.285364874,
-    0.474436942,
     -0.227981487,
-    146.381948799
+    -0.474436944,
+    267.285364872,
+    0.474436944,
+    -0.227981487,
+    146.381948797
    ],
    "image_px": [
     982,
@@ -1649,6 +1649,16 @@
    "reason": "Navionics/Garmin screenshots (6) not offered: no geo (lat/lon <-> canonical) in shape.json"
   },
   {
+   "slug": "cables-reef-wa",
+   "source_id": "-",
+   "reason": "model frame not yet supported by photo_match.py (model_rings / scene_map)"
+  },
+  {
+   "slug": "narrowneck-gold-coast",
+   "source_id": "-",
+   "reason": "model frame not yet supported by photo_match.py (model_rings / scene_map)"
+  },
+  {
    "slug": "palm-beach-gold-coast",
    "source_id": "s2",
    "registry_id": "palm-beach-gold-coast-img-23",
@@ -1686,6 +1696,11 @@
    "slug": "prattes-reef-el-segundo",
    "source_id": "navionics",
    "reason": "Navionics/Garmin screenshots (10) not offered: no geo (lat/lon <-> canonical) in shape.json"
+  },
+  {
+   "slug": "southern-ocean-surf-reef-albany",
+   "source_id": "-",
+   "reason": "model frame not yet supported by photo_match.py (model_rings / scene_map)"
   }
  ],
  "summary": {
@@ -1701,5 +1716,5 @@
   "max_residual_m": 3.25,
   "max_residual_m_all_kinds": 3.25
  },
- "signature": "1db312e0324528b81db7"
+ "signature": "b988639f7dec89b0d468"
 }

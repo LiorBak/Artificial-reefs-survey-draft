@@ -38,6 +38,28 @@ Access dates are 2026-10-05 unless stated. "Licence" is the licence stated by th
 | fall 2008 | removal of the mostly buried remnants begins (30 Sept-17 Oct) | no | S2, S9 |
 | fall 2010 | removal completed at permit expiry | no | S9 |
 
+### 2.2 How each source was used (added in the 2026-10-10 source audit)
+
+Columns: what was read, how it was read, reading accuracy, which model element it feeds. "Registry" = image ids in `03_images/reefs/prattes-reef-el-segundo/images.json`; annotated readings A1-A17 are in `annotated/`.
+
+| id | what was read | how (method) | accuracy | feeds / role |
+|---|---|---|---|---|
+| S10 Borrero & Nelsen 2003 | p.2: crest "approximately - 6 ft MLLW" at the outermost point; bag size and fill; dates; p.1 and Fig. 2: position text and distances; Figs 5, 7, 8: profiles; Fig. 9: survey window and contours; Fig. 4: design layout; Fig. 20: size | text read by eye; figure vectors digitised by `bn_digitise.py` (PDF paths), Fig. 8 by eye, Fig. 2 and Fig. 20 measured on their own scale bars | profile datum not stated (A12, L10); Fig. 2 internally inconsistent with the text by 140-170 m | crest B (the only as-built level), position hint, validation V6-V16; plan only as cross-check |
+| P1 Skelly drawing (via RWR; = Fig. 4 of S10) | outline of the 110 solid bags; scale bar; label "TOP OF BAG MIN DEPTH -6' MSL" | traced by hand (76 vertices) on the raster, scaled on the 0-90 ft bar (5.155 px/m), see `../METHOD.md` and `../VERIFY.md` | +-1 px = +-0.2 m = +-4 % area | plan (all x, y); crest A label; design layout, not as built |
+| S1 CCC staff report 1998 | distances (300 yd north of the Grand Avenue jetty, 100 yd offshore), tidal labels, concept section | text read by eye | text, not to scale | frame offset y_nom (A2), earlier position hint (superseded), tidal cross-check V1 |
+| S2 Borrero, Mead & Moores 2010 | crest depths in metres, bag size and fill, dates | text and Fig. 1 read by eye | as published | confirmation of the crest value and bag size (V6); not an independent source of the crest (same authors) |
+| S3 Raised Water Research | Phase II placement on top, "roughly 100 meters" offshore, source of the drawing raster | web page text; image downloaded | datum of the "5 m" not stated | context, plan raster (P1), A2 cross-check |
+| S4 NOAA 9410840 datums | MSL, MLLW, NAVD88, LAT, HAT | numbers from the CO-OPS metadata API (epoch 1983-2001); conversions in section 3.2 | +-0.03 m (A7) | all level conversions (tides) |
+| S8 NOAA 9410660 datums | MSL - MLLW at Los Angeles | same API | 0.012 m difference | cross-check only (V2) |
+| S5 NOAA 1/3 arc-second DEM | seabed elevation | exported raster sampled bilinearly at 31 alongshore stations and averaged (section 3.4) | cell about 10 m; sources 1932-2009; reef absent | seabed (primary) |
+| S6 USGS/NOAA Coastal Relief Model 1 arc-second | seabed | sampled at the same points | about 30 m cell | seabed validation only (V5) |
+| S7 Garmin Navionics SonarChart | one-foot contours and depth labels along a shore-normal transect | own headless-Chrome screenshots, dark-pixel counting along the transect (section 3.5; `nav_annotate.py`) | contour counting +-2 lines; chart datum assumed MLLW (A8) | seabed check and selectable alternative bed; outfall landfall for the position |
+| S9 reef card | removal dates | copied from the card, not re-fetched | as the card | chronology note only, not modelled |
+| Henriquez 2005 (thesis) | Fig. 2.10 (after S10) | context | - | context only, no number used |
+| Wikipedia, Chevron Reef | bag counts and dates | text | secondary | used by `shape.json` for bag counts; not used for any model number |
+| Gemini (another AI) | its footprints (40 x 20 m, 584-650 m2) | compared with the scaled drawing | - | REJECTED: not in any source it cites and contradicted by the drawing (58 x 29 m); not used for any value (`../shape.json` rejected-source record) |
+| Earlier agents' estimates | first trace including the 30 dashed bags (-49 m2 corrected), schematic 324 m2 footprint | re-checked against the drawing in `../VERIFY.md` | - | superseded; the 2026-10-05 verified outline is used |
+
 ## 3. Methods
 
 ### 3.1 Coordinate frame and orientation
@@ -117,7 +139,7 @@ z_MSL(n) = -(n x 0.3048) - {{msl_mllw}} m          y = y_hint + s = {{y_hint}} +
 
 ### 3.6 Crest scenarios
 
-Two scenarios are selectable; only B is the as-built Phase I and is the default.
+Two scenarios are selectable; only B is the as-built Phase I and is the default. The datum reading of B (the paper's MLLW, not the drawing's MSL) was confirmed by Lior on 2026-10-10 (decision D6, section 3.12).
 
 * **B - Phase I as installed (Borrero & Nelsen 2003 p.2).** "After the initial installation, the depth at the outermost point of the reef was approximately - 6 ft MLLW". The outermost point is read as the offshore face of the V apex block. Its elevation z_B = {{zB}} m is the top of the reef at y = y_apex = {{y_max}} m; the top is carried along the reef at constant thickness above the bed (assumption A4):
   `h_top = max( z_B - z_bed(y_apex), 1.2 m ) = {{thickB}} m`  ({{coursesB}} bag courses of 1.2 m). Tops are then {{topB_apex}} m MSL at the apex ({{topB_apex_mllw}} m below MLLW, {{topB_apex_lat}} m below LAT) and {{topB_tips}} m at the arm tips ({{topB_tips_mllw}} m below MLLW, {{topB_tips_lat}} m below LAT).
@@ -169,6 +191,9 @@ window: E {{fig9_win_e}}, N {{fig9_win_n}}  ->  centre (367505, 3754275) = {{hin
 
 The reef is not drawn in the figure and no contour shows a bag signature, but the paper says the offshore bathymetry has not changed "outside of the contours created by the reef bags themselves", and the window (about 112 x 71 m) is just large enough for the 58 x 29 m reef. Independent text evidence for the position: p.1 "approximately 200 m south of the Hyperion Sewage Treatment Plant's 1-mile outfall" and "within 500 m" of the outfall and the Grand Street jetty; Fig. 2 (aerial, range lines 550 m apart, scale 6.3 m per original pixel) places the reef chevron on range line 3, 325 m from the outfall and 672 m from the Grand Street jetty arrow. The outfall landfall was read on the Navionics chart (33.9231 N, 118.4337 W, +-20 m); 200 to 318 m south along 155 deg plus 91 m offshore gives 33.9202-33.9211 N, 118.4332-118.4337 W, within 35 m of the window centre. A jetty-based estimate (660 m north of the groin at 33.91685 N, 118.43030 W) gives 33.9219 N, 118.4342 W, 160 m further north. The three estimates span 190 m, so the hint is stated as +-{{sig_x}} m. The earlier text hint (33.9188 N, 118.4324 W, from the 1996-98 concept siting "300 yards north of the Grand Avenue jetty") lies {{dist_hint_old_m}} m away and is superseded. The survey is not a georeferenced outline of the reef, so `shape.json` keeps `geo = null`.
 
+
+**Re-verification note, 2026-10-10 (no model change).** Re-reading Fig. 2 of the paper (range lines 550 m apart, about 6.25 m per pixel) puts the reef chevron about 340 m from the outfall landfall and about 670 m from the Grand Street jetty arrow, whereas the text (p.1) says about 200 m and 'within 500 m'. The paper is therefore internally inconsistent by 140-170 m, and the realistic uncertainty of the position hint is therefore taken as +-150 m (decision D10, section 3.12: decided by the project team on 2026-10-10; earlier builds stated +-100 m). Only the stated uncertainty (sigma_x) changed; the position hint, the model and all depths are unchanged, and depths are barely affected anyway (section 5). See `../VERIFY.md` (check 12). The size of the plan was also confirmed on the paper's Fig. 20 (29.0 x 58.5 m on its own 0-50 m bar vs 28.6 x 58.0 m; `../VERIFY.md` check 10).
+
 ### 3.11 Profiles through the reef after Phase II (new in revision 3)
 
 Figs 5 and 7 are vector graphics (curves read from the PDF paths), Fig. 8 a raster (read by eye). Calibration (tick marks):
@@ -178,6 +203,23 @@ Fig. 5:  d = (x_pt - 141.5) / 1.0980 m ;   z = (455.82 - y_pt) / 8.60 m         
 ```
 
 All profiles are along range line 3 (the reef centreline) from the dune base. Fig. 5 (Oct 2001) and Fig. 7/8 (Oct 2001) are the same data on shifted axes: Fig. 5 = Fig. 7 + {{bn_offset57}} m vertically (peak and bed alike) and about 5.5 m horizontally. The vertical datum is not stated. Reading A12 (Fig. 5 zero = MLLW, from the tide lines) gives crest {{bn_peak5}} m MLLW at d = {{bn_peak_d5}} m, beds {{bn_bed5_land}} m (landward) and {{bn_bed5_sea}} m (seaward) = {{bn_bed5_land_msl}} / {{bn_bed5_sea_msl}} m MSL, relief {{bn_relief}} m above the landward bed and {{bn_relief_sea}} m above the seaward bed, base width {{bn_base_w}} m (the design apex block is only 10.6 m wide at the centreline: the widened Phase II reef was about three times as wide). The Fig. 7/8 axis is 1.44 m higher, equal to MHW - MLLW (1.43 m) or MSL - LAT (1.47 m); it cannot be decided from the paper. Fig. 8 gives the crest history on the Fig. 7/8 axis: May 2001 {{bn_may01}} m, October 2001 {{bn_oct01}} m, February 2002 {{bn_feb02}} m, September 2002 {{bn_sep02}} m, i.e. {{bn_erosion}} m of erosion in 16 months. The Phase I profile is NOT available: the November 2000 profile stops at d = 109 m, before the reef.
+
+### 3.12 Decisions log (added in the 2026-10-10 source audit)
+
+Each row: alternatives, who decided and when, reason. "Agent" = the model-building agent; "team" = Lior's project team (orchestrator).
+
+| id | decision | alternatives | decided by, date | reason |
+|---|---|---|---|---|
+| D1 | state drawn = Phase I as installed (22 Sept 2000) | Phase II (Apr 2001), final 200-bag reef | Lior, 2026-10-05 (model brief) | only the Phase I plan view exists; 3D shows the as-built state; later changes are notes |
+| D2 | outline = Skelly design layout, 110 solid bags | add the 30 optional bags (+15-20 % area); Gemini's 40 x 20 m | agent, 2026-10-05 | printed BAG COUNT 110; Gemini value unsupported (section 2.2) |
+| D3 | no Haifa tide preset, local NOAA datums only | Israeli tide preset | Lior, 2026-10-05 | rule: local tides only |
+| D4 | seabed = NOAA 1/3 arc-second DEM (primary); Navionics selectable check | Navionics as primary; CRM | agent, 2026-10-05 | DEM is a dated, documented public survey product; the three sources agree within 0.3 m in the reef zone (V5, V14) |
+| D5 | crest scenario B (paper, MLLW, at the apex) is the default; A (drawing, MSL, level crest) is selectable | A as default | agent, 2026-10-05 | B is the only as-built statement |
+| D6 | crest datum: keep the paper's MLLW reading ("J1") | read the paper's 6 ft as MSL like the drawing (a 0.849 m difference) | Lior, 2026-10-10 | the paper prints MLLW; the drawing's MSL label is a design value |
+| D7 | `geo` stays null; position given only as a hint 33.92058 N, 118.43335 W | use one of the three published coordinates | agent, 2026-10-05 | the three coordinates disagree by 313 m and none fits the primary sources |
+| D8 | Phase II, erosion and removal are notes, not modelled | model them | Lior, 2026-10-05 | see D1 |
+| D9 | the 2003 paper's profile figures are used for cross-checks only | use as model input | agent, 2026-10-05 | datum not stated (A12, L10) |
+| D10 | stated position uncertainty = +-150 m ("J2"), was +-100 m | keep +-100 m | team, 2026-10-10 (Lior did not need to answer) | paper text and Fig. 2 disagree by 140-170 m; a documentation value only, the hint, the model and all depths are unchanged |
 
 ## 4. Validation (cross-checks performed)
 
@@ -211,7 +253,7 @@ Per input (all are 1-sigma-like ranges, not statistical intervals; where only re
 |---|---|---|
 | outline | +-0.2 m, +-4 % area; scale bar +-3-5 % | `shape.json` verification |
 | position along y | sigma_y = +-{{sig_y}} m | text distances; the paper's profiles give {{bn_peak_from_msl5}}-{{bn_mid_from_zero7}} m; hint vs text {{y_hint}} vs {{y_nom}} m |
-| position along x | +-{{sig_x}} m; irrelevant to depth (uniform bed) | window half-length 56 m; outfall- and jetty-based estimates span 190 m |
+| position along x | +-{{sig_x}} m; irrelevant to depth (uniform bed) | window half-length 56 m, but paper text (200 m) vs its Fig. 2 (about 340 m) differ by 140-170 m and outfall- and jetty-based estimates span 190 m; +-150 m decided 2026-10-10 (D10) |
 | crest B reading | sigma_zc = +-{{sig_zc}} m | "approximately 6 ft"; single point; datum transfer 0.012 m |
 | crest A reading | +-0.15 m | integer-foot label; datum label disputed (A vs B differ by {{zAB_diff}} m) |
 | seabed depth at the reef | sigma_zb = +-{{sig_zb}} m | sample SD of six estimates ({{sd_est}} m, table below); slope x sigma_y = {{sig_pos}} m |
@@ -244,6 +286,18 @@ So the crest (state B) is {{topB_apex_lat}} +- {{sig_D_lat_B}} m below LAT at th
 ## 6. Confidence
 
 **LOW.** Rubric used (my extension of the plan-shape rubric in `SHAPE_SPEC.md`, which covers only the outline): *high* = built-state footprint from a survey or georeferenced image, crest and seabed from surveys at the site and mutually consistent within 0.3 m, position known to better than 10 m; *medium* = all vertical inputs sourced and consistent within 0.5 m, with at most one of (footprint is a design, position known only to +-50 m, assumed stack height); *low* = two or more of those, or vertical uncertainty at least half the reef height. Against it: the footprint is a design layout (A9), the position is inferred (+-{{sig_x}} m), the stack height and slope are assumed (A4, A5), the two crest readings differ by {{zAB_diff}} m (one number, two datum labels), the volume check fails for the as-built-based state (V8), and sigma_H = {{sig_H}} m is more than half the reef height. In favour: the 2003 paper confirmed the crest datum (MLLW), the bag size, the dates and the position text; the tidal datums are cross-checked (V1, V2); the seabed is supported by three sources agreeing within 0.3 m in the reef zone (V5, V14); the apex thickness is one bag course (V12). The paper did **not** change the level: it holds no as-built plan and no stack height. The *plan* confidence ({{confidence_plan}}) is separate from this one. Before the paper the level was also LOW (reasons: crest datum unconfirmed, bag width only from web summaries, position +-150 m).
+
+Confidence per model element (added in the 2026-10-10 source audit; same rubric):
+
+| element | confidence | reason |
+|---|---|---|
+| plan | {{confidence_plan}} | scaled design drawing of the designer of record, scale bar fits to 0.5 px; but a design layout, not an as-built survey (A9) |
+| crest | LOW-MEDIUM | one as-built statement (paper p.2, about 6 ft MLLW, B = {{zB}} m MSL); the drawing label gives A = {{zA}} m; the two differ by {{zAB_diff}} m; "approximately" and apex-only (A4) |
+| seabed | MEDIUM | three sources agree within 0.3 m in the reef zone; the DEM is about 10 m cell and does not contain the reef (A3) |
+| tides and datums | HIGH | NOAA datums, two stations agree to 0.012 m (A7) |
+| volume | LOW | model B {{volB}} m3 vs bags 695-782 m3; gap V8 unresolved |
+| position | LOW | inferred, +-{{sig_x}} m (D10); does not affect depths |
+| overall | LOW | see above |
 
 ## 7. Limitations and unknowns
 

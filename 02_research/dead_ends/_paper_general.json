@@ -1,0 +1,105 @@
+{
+  "slug": "_paper_general",
+  "entries": [
+    {
+      "what": "Drimer 2026 paper with a wave-force model for geotextile tubes (most wave power at the break lifts the tube up and then down, why tubes tear)",
+      "kind": "search",
+      "where": "Crossref API (query.author=Drimer since 2023-06; bibliographic queries 'Drimer geotube', 'Drimer geotextile tube breaking waves', 'Bar Drimer submerged breakwater'; 5 keyword scans of 2025-2026 geotextile/geotube papers); Semantic Scholar author search; WebSearch x9 in English and Hebrew (e.g. 'Drimer 2026 geotextile tube wave loads breaking waves uplift tearing numerical model', Hebrew 'דרימר גיאוטיוב מודל כוחות גלים שבירת הגל הרמה של הצינור נקרע טכניון מאמר 2026')",
+      "checked": "2026-10-15",
+      "by": "agent: paper round 1, tasks A-C (Sonnet 5.5, cloud)",
+      "result": "not found",
+      "detail": "Only Bar & Drimer 2023 (J. Mar. Sci. Eng. 11, 236, doi 10.3390/jmse11020236) is a Drimer geotube load paper. Drimer's 2025-2026 outputs in Crossref are SWAN-WEC wave energy converter (JMSE 14(10) 870, doi 10.3390/jmse14100870), docking vessels, seaweed culture pod, floating-structure connectors and a ceramic 3D-printed artificial reef stability paper (J. Cleaner Prod. 523, 146380); none models geotube forces or tearing. BD23 models sliding only (rigid body), not tearing.",
+      "might_work": "Lior gives the exact title, DOI or venue he saw (or says it was a talk); Lior opens Drimer's Google Scholar profile (scholar.google.com/citations?user=8dRCbf8AAAAJ) in his own browser; ask Zalul for Annex B of its July 2025 Kiryat Haim appeal (Drimer's full opinion of 17 Nov 2024)."
+    },
+    {
+      "what": "Technion Mechanical Engineering faculty page of Nitai Drimer (publication list)",
+      "kind": "web page",
+      "where": "https://meeng.technion.ac.il/en/member/nitai-drimer/ and https://meeng.technion.ac.il/member/nitai-drimer-2/",
+      "checked": "2026-10-15",
+      "by": "agent: paper round 1, tasks A-C (Sonnet 5.5, cloud)",
+      "result": "bot check (not bypassed)",
+      "detail": "curl returned HTTP 200 with a 'Request Rejected ... BOT security violation' page; WebFetch failed with DNS error. Publication list not seen.",
+      "might_work": "Lior via browser."
+    },
+    {
+      "what": "OpenAlex author and works lookup for Drimer",
+      "kind": "database",
+      "where": "https://api.openalex.org/authors?search=Nitai%20Drimer",
+      "checked": "2026-10-15",
+      "by": "agent: paper round 1, tasks A-C (Sonnet 5.5, cloud)",
+      "result": "other: HTTP 429, daily free budget exhausted",
+      "detail": "Not retried; Crossref and Semantic Scholar were used instead.",
+      "might_work": "Retry after midnight UTC, or use an API key."
+    },
+    {
+      "what": "Full text of Drimer's expert opinion (17 Nov 2024) attached as Annex B to the Zalul appeal against the Kiryat Haim breakwaters",
+      "kind": "report",
+      "where": "https://zalul.org.il/wp-content/uploads/2025/07/ערר-שוברי-גלים-קרית-חים-02.07.25.pdf (appeal, read) and Zalul pages https://zalul.org.il/עוצרים-את-שוברי-הגלים and https://zalul.org.il/מפרץ-חיפה/",
+      "checked": "2026-10-15",
+      "by": "agent: paper round 1, tasks A-C (Sonnet 5.5, cloud)",
+      "result": "other: only quotes inside the appeal",
+      "detail": "The appeal (28 pages) quotes the opinion on geotubes (PDF p.23), wide submerged arrays (p.15) and 2 m crest clearance (p.10), but the annexes are not in the PDF and no linked copy was found on the reachable Zalul pages. Partial yield: the quotes are used as references in 08_paper/notes/drimer_2026_forces.md.",
+      "might_work": "Ask Zalul (Lior), or the Planning Administration file for plan 304-0860023."
+    },
+    {
+      "what": "Marine biologist's survey report on the Ashkelon North geotubes, one year after completion (mentioned in Lior's note, with depths, locations and large seabed cobbles)",
+      "kind": "report",
+      "where": "WebSearch Hebrew and English ('סקר ימי גיאוטיובים אשקלון צפון דוח ביולוג ימי ...', 'Ashkelon North geotubes marine survey fish algae colonisation geotextile tubes ecological monitoring report Israel cliff protection')",
+      "checked": "2026-10-15",
+      "by": "agent: paper round 1, tasks A-C (Sonnet 5.5, cloud)",
+      "result": "not found",
+      "detail": "No public survey report found. The State Comptroller reports (2020, 2024) contain no ecological monitoring results for the tubes (grep for ecology terms). The earlier dossier also could not find it.",
+      "might_work": "Lior's own copy (he says it was attached to his note but it is not in the repo); the Government Company for the Protection of Mediterranean Sea Cliffs (MCCP); Ministry of Environmental Protection marine unit."
+    },
+    {
+      "what": "Published vertical seasonal bed-level or beach-profile change of about 1 m near Haifa (and the Oct/May high-sand seasons)",
+      "kind": "search",
+      "where": "WebSearch English and Hebrew ('Haifa Bay beach profile seasonal changes sand level ...', 'חופי חיפה שינויים עונתיים במפלס החול ...', 'Israel Mediterranean coast beach seasonal profile changes ...'); Zviely et al. 2009 (Geo-Mar. Lett. 29, 93-110) read",
+      "checked": "2026-10-15",
+      "by": "agent: paper round 1, tasks A-C (Sonnet 5.5, cloud)",
+      "result": "not found",
+      "detail": "Found only horizontal evidence: seasonal shoreline fluctuations of less than about +/-20 m in Haifa Bay 1928-2006 (Zviely et al. 2009) and a qualitative winter-loss, transition-season-gain statement (Sarid/GeoMare 2024, PDF p.6). No metre-scale vertical survey series. The 1 m claim stays Lior's observation; a derived range of 0.3 to 1.3 m is given in 08_paper/notes/israel.md.",
+      "might_work": "CAMERI/Israel Ports Company bathymetry for Haifa Port and the CAMERI report 2001-2013 cited in the Kiryat Haim appeal; IOLR or Haifa University (Zviely, Rosen) profile surveys; Lior's own diving or buoy-site observations."
+    },
+    {
+      "what": "Gouaud, F. (2016). Geotextile Structures for Beach Protection Ashkelon, Israel. Corinthe Ingenierie, Grimaud, France (cited as ref. 24 in Bar & Drimer 2023)",
+      "kind": "report",
+      "where": "WebSearch 'Gouaud Corinthe Ingenierie Ashkelon geotextile structures beach protection geotubes cliff Israel project description'",
+      "checked": "2026-10-15",
+      "by": "agent: paper round 1, tasks A-C (Sonnet 5.5, cloud)",
+      "result": "not found",
+      "detail": "No result names Gouaud or Corinthe with Ashkelon. A Haaretz 7 Feb 2019 report and the State Comptroller reports were used instead.",
+      "might_work": "Corinthe Ingenierie directly (not allowed for agents to e-mail); MCCP tender records."
+    },
+    {
+      "what": "Geotubes torn at Netanya in winter about 2019 (Lior's recollection)",
+      "kind": "search",
+      "where": "Hebrew and English searches (e.g. 'גיאוטיובים נתניה נקרעו', 'Netanya geotube torn cliff protection'); State Comptroller 2020 and 2024; MCCP project list",
+      "checked": "2026-10-15",
+      "by": "agent: paper round 1, tasks A-C (Sonnet 5.5, cloud)",
+      "result": "wrong site",
+      "detail": "No geotube was built or laid at Netanya in any source. Netanya's protection is rock breakwaters (phase 1 April 2021 to September 2023). The torn tubes Lior describes match Ashkelon North, 2017-2019 (see 08_paper/notes/israel_geotubes_netanya.md and israel.md).",
+      "might_work": "Lior may recall a different event, e.g. a Technion architecture studio on Netanya (page blocked by bot check) or a sand-sleeve trial; ask him."
+    },
+    {
+      "what": "Lopez et al. 2016 full text (multifunctional artificial reef, Babilonia beach, Guardamar del Segura)",
+      "kind": "paper",
+      "where": "University of Alicante repository hdl.handle.net/10045/63070 (DSpace API bitstream)",
+      "checked": "2026-10-15",
+      "by": "agent: paper round 1, tasks A-C (Sonnet 5.5, cloud)",
+      "result": "login needed",
+      "detail": "Bitstream download returned HTTP 401; not bypassed. Only the abstract (via search summary) was read: surfers of low to intermediate skill can use the reef about 60% of the time.",
+      "might_work": "Lior via browser or university access; Elsevier version doi 10.1016/j.scitotenv.2016.01.180."
+    },
+    {
+      "what": "Sulaiman et al. 2015, Beach profile changes due to low crested breakwaters at Sigandu Beach (full text)",
+      "kind": "paper",
+      "where": "https://doi.org/10.1016/j.proeng.2015.08.320 (ScienceDirect)",
+      "checked": "2026-10-15",
+      "by": "agent: paper round 1, tasks A-C (Sonnet 5.5, cloud)",
+      "result": "paywalled",
+      "detail": "Landing page returned a redirect stub; full text previously returned HTTP 403 (card access_note). Abstract and a Solmax vendor page used for the survey entry.",
+      "might_work": "Lior via browser (Procedia Engineering is open access); follow-up Sulaiman et al. 2017 (doi 10.1142/9789813233812_0041)."
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 import json, math, sys, numpy as np
-sys.path.insert(0,"C:/Users/lior/Documents/Gemini/AG/Artificial reef - to upload to git/07_scale/tools")
+sys.path.insert(0,"C:/Users/lior/Documents/Claude/Projects/Artificial reef/07_scale/tools")
 import geom, satellite as S
 import shapely.geometry as sg
-ROOT="C:/Users/lior/Documents/Gemini/AG/Artificial reef - to upload to git/07_scale/shapes/narrowneck-gold-coast"
+ROOT="C:/Users/lior/Documents/Claude/Projects/Artificial reef/07_scale/shapes/narrowneck-gold-coast"
 sh=json.load(open(ROOT+"/shape.json",encoding='utf-8'))
 c=sh['canonical']; P=c['polygons_m']; names=['north_arm','south_arm','wing_patch_NW_a','wing_patch_NW_b','weir_1','weir_2_faint','weir_3_faint']
 fr=json.load(open('frame.json')); SHORE=fr['bearing_north_heading_deg']

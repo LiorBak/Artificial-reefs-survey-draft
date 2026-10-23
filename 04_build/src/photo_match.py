@@ -501,8 +501,17 @@ def process_navionics(slug: str, sj: dict, gf, reg: list, out: dict) -> None:
 
 
 # ------------------------------------------------------------------------------------------------ main
+def held_slugs() -> set:
+    """Slugs in data/models3d_hold.json (models other agents are still building): never processed here (2026-10-10 fix: Narrowneck's half-built folder broke the whole run)."""
+    try:
+        return set((json.loads((OUT.parent / "models3d_hold.json").read_text(encoding="utf-8")).get("hold") or {}).keys())
+    except Exception:  # noqa: BLE001
+        return set()
+
+
 def model_slugs() -> list[str]:
-    return sorted(p.name for p in SHAPES.iterdir() if (p / "3d" / "model.js").is_file() and (p / "3d" / "index.html").is_file() and (p / "shape.json").is_file())
+    hold = held_slugs()
+    return sorted(p.name for p in SHAPES.iterdir() if p.name not in hold and (p / "3d" / "model.js").is_file() and (p / "3d" / "index.html").is_file() and (p / "shape.json").is_file())
 
 
 def signature(slugs: list[str] | None = None) -> str:
@@ -539,7 +548,12 @@ def main() -> int:
         if not (SHAPES / s / "shape.json").is_file():
             out["excluded"].append({"slug": s, "source_id": "-", "reason": "no shape.json"})
             continue
-        process_model(s, out)
+        try:
+            process_model(s, out)
+        except KeyError as e:   # a new model whose frame model_rings/scene_map do not know yet: skip it, keep every other model's buttons
+            if str(e).strip("'") != s:
+                raise
+            out["excluded"].append({"slug": s, "source_id": "-", "reason": "model frame not yet supported by photo_match.py (model_rings / scene_map)"})
     per = {}
     for pid, e in out["pictures"].items():
         per[e["slug"]] = per.get(e["slug"], 0) + 1

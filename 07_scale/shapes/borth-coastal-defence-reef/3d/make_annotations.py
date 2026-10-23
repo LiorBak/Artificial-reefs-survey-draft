@@ -115,7 +115,7 @@ def fig2():
     out = with_caption(out, ['HRPP576 (Wallingford/Cardiff 2013) Fig 2, 849 x 349 px shown at x2. Up = landward, right = south, left labels are mODN (Ordnance Datum Newlyn).',
                              'Red / blue / green lines = the -2 / -3 / -4 mODN contours as traced by eye (98 / 94 / 51 points, canonical frame, +-10 m). Orange boxes = printed contour labels read.',
                              'Black rings = the column-330 read-out (-2.0 at row 139, -3.0 at row 191, -4.0 at row 262.5). Scale: 500 m bar and oval C (the only structure in the figure that is built) give 1.776 m/px.',
-                             'Used: -3.0 contour (y about 287 m offshore at the reef) as seabed control outside the reef zone; -2 and -4 for checking only. Private research copy.'], sz=20)
+                             'Used: -3.0 contour (y about 287 m offshore at the reef) and, since D6 (2026-10-07), the -4.0 contour (y 408-460 m) as seabed control outside the reef zone; -2 for checking only. Private research copy.'], sz=20)
     save(out, 'A1_fig2_contours_read.png')
 
 
@@ -323,21 +323,23 @@ def seabed():
     dp = R.design_polys(F); mh, axv = dp['axis']; tail = mh + axv * dp['s']['R3'] * 0.5 + axv * dp['s']['R2'] * 0.5
     nodes = L.seabed_nodes(F, shape, os.path.join(SRC, 'lidar_beach_SN6089_2022-03-19.npz'), os.path.join(SRC, 'fig2_contours_canonical.json'), ex_union,
                            arm_axis=((float(tail[0]), float(tail[1])), (float(mh[0]), float(mh[1]))))
-    sx, sy, Z, rbf = L.seabed_grid(nodes); M = _model()
+    sx, sy, Z, rbf = L.seabed_grid(nodes, c4=L.contour4_line(os.path.join(SRC, 'fig2_contours_canonical.json'))); M = _model()
     fig, ax = plt.subplots(figsize=(14, 10))
     im = ax.pcolormesh(sx, sy, Z, cmap='Blues_r', vmin=-7, vmax=0, shading='auto')
     cs = ax.contour(sx, sy, Z, levels=np.arange(-7, 0.1, 0.5), colors='k', linewidths=0.5); ax.clabel(cs, fmt='%.1f', fontsize=7)
     sty = {'lidar_dtm_2022': ('#2ca02c', 3, 'LiDAR DTM 19 Mar 2022 beach (y < 255, rock buffered out)'), 'fig2_-3.0': ('#d62728', 40, 'HRPP576 Fig 2 -3.0 mODN contour (outside the reef zone)'),
            'design_N3_arm': ('#ff7f0e', 40, 'design bed under the north arm -4.0 (drawing 1021 N3, derived)'), 'design_N4': ('#ff7f0e', 40, None), 'assumed_tail': ('#ffbb78', 40, 'ASSUMED bed under the tail (-3.0 ... -3.4)'),
-           'design_S2_shoreward': ('#9467bd', 40, 'printed bed range under the oval -3.6 / -4.2 (drawing 1023 note)'), 'design_S2_seaward': ('#9467bd', 40, None), 'anchor_335': ('k', 40, 'ASSUMED anchor -4.0 at y = 335 outside the reef (design bed level)')}
+           'design_S2_shoreward': ('#9467bd', 40, 'printed bed range under the oval -3.6 / -4.2 (drawing 1023 note)'), 'design_S2_seaward': ('#9467bd', 40, None), 'fig2_-4.0': ('#1f77b4', 40, 'HRPP576 Fig 2 -4.0 mODN contour (traced points, outside the reef zone; D6 2026-10-07)'),
+           'fig2_-4.0_bridge': ('#aec7e8', 40, 'ASSUMED -4.0 bridge where the contour is hidden behind the drawn mounds'), 'fig2_-4.0_extrap': ('#aec7e8', 40, 'ASSUMED -4.0 continuation east of the traced end (x > 170)')}
     for k, (c, sz, lab) in sty.items():
         P = np.array([[n['x'], n['y']] for n in nodes if n['src'] == k])
         if len(P):
             ax.scatter(P[:, 0], P[:, 1], s=sz, c=c, edgecolors='w', linewidths=0.4, label=lab)
     for ring in M['versions'][0]['outline_m']:
         ax.plot(*np.array(ring + [ring[0]]).T, color='m', lw=1.5)
-    ax.axhline(335, color='k', ls=':', lw=0.8); ax.text(-195, 340, 'y = 335 m: beyond this the EMODnet gradient -1.1 % is applied to the modelled level', fontsize=9)
-    ax.text(-195, 10, 'LiDAR beach zone', fontsize=9); ax.text(-195, 470, 'no control data: EMODnet gradient only', fontsize=9, bbox=dict(fc='w', alpha=.7))
+    c4x, c4y = L.contour4_line(os.path.join(SRC, 'fig2_contours_canonical.json'))
+    ax.plot(c4x, c4y, color='k', ls=':', lw=0.9); ax.text(-195, c4y[0] + 6, 'beyond the Fig 2 -4.0 contour (dotted): EMODnet gradient -1.1 % from the modelled level on the contour', fontsize=9)
+    ax.text(-195, 10, 'LiDAR beach zone', fontsize=9); ax.text(-195, 485, 'no control data: EMODnet gradient only', fontsize=9, bbox=dict(fc='w', alpha=.7))
     ax.set_aspect('equal'); ax.set_xlim(-200, 260); ax.set_ylim(0, 520); ax.set_xlabel('x alongshore, + south (m)'); ax.set_ylabel('y offshore, + west (m)')
     ax.legend(loc='lower right', fontsize=8); plt.colorbar(im, ax=ax, shrink=0.6, label='seabed mODN (thin-plate RBF through the nodes)')
     ax.set_title('Borth seabed: where each part of the modelled seabed comes from (control nodes by source; magenta = LiDAR-edge outline of the mounds)')

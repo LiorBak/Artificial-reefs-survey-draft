@@ -30,8 +30,7 @@
   function vclass(key) { return 'v-' + String(key).replace(/\s+/g, '-'); }
   function badge(r) {
     var v = V_BY_KEY[r.verdict] || V_BY_KEY['n-a'];
-    var titleAttr = v && v.note ? ' title="' + esc(v.label + ': ' + v.note) + '"' : '';
-    return '<span class="badge ' + vclass(v.key) + '"' + titleAttr + '><span class="sym" aria-hidden="true">' + v.sym + '</span>' + esc(v.label) + '</span>';
+    return '<span class="badge ' + vclass(v.key) + '"><span class="sym" aria-hidden="true">' + v.sym + '</span>' + esc(v.label) + '</span>';
   }
   function flag(r) { return r.country_flag ? '<span class="flag" aria-hidden="true">' + r.country_flag + '</span> ' : ''; }
   function mmss(sec) {
@@ -45,6 +44,97 @@
     var s = safeUrl(u);
     if (!s) return esc(text);
     return '<a href="' + esc(s) + '" target="_blank" rel="noopener noreferrer"' + (cls ? ' class="' + cls + '"' : '') + '>' + esc(text) + '</a>';
+  }
+  function noUrlWord(x) { return /personal communication|interview/i.test(String((x && x.type) || '') + ' ' + String((x && x.citation) || '')) ? 'personal communication, unpublished' : 'internal note'; }
+  /* Location link (Lior 2026-10-10: the Map tab is gone, each reef still links to its place). r.location is compiled in compile_data.py:
+     status ok | approximate | none; the coordinates come from shape.json geo, else the card (r.location.source says which). */
+  function locLinks(r, compact) {
+    var L = r.location || {};
+    if (L.status === 'none' || !L.maps_url) return '<span class="loc-none">' + (compact ? 'not published' : 'Location: not published') + '</span>';
+    var ap = L.status === 'approximate';
+    var title = esc((L.lat + ', ' + L.lon) + ' — ' + (L.source || '') + (L.note ? ' — ' + L.note : ''));
+    var a = '<a class="loc-link" href="' + esc(L.maps_url) + '" target="_blank" rel="noopener noreferrer" title="' + title + '">' +
+      (compact ? (ap ? 'Map (approx.) ↗' : 'Map ↗') : (ap ? 'approximate location: open in Google Maps ↗' : 'open in Google Maps ↗')) + '</a>';
+    if (compact) return a;
+    return '<span class="loc-lab">' + (ap ? 'Location (approximate): ' : 'Location: ') + '</span>' + a +
+      ' · <a class="loc-link" href="' + esc(L.satellite_url) + '" target="_blank" rel="noopener noreferrer">satellite view ↗</a>';
+  }
+  function locFact(r) {
+    var L = r.location || {};
+    if (L.status === 'none' || !L.maps_url) return 'not published' + (L.note ? ' (' + esc(L.note) + ')' : '');
+    return esc(L.lat + ', ' + L.lon) + (L.status === 'approximate' ? ' (approximate)' : '') + ' — ' + esc(L.source || '') + (L.note ? '. ' + esc(L.note) : '') + ' ' + locLinks(r, false);
+  }
+  /* "Open location in..." block (Lior 2026-10-13): coordinates as text + Copy, Google Maps / satellite / Google Earth web, KML download for
+     Google Earth Pro (built in the browser from r.location; the outline polygon only when r.location.outline_latlon exists = outline shown),
+     and a Navionics hint (webapp.navionics.com has no working centred URL: it redirects to a Garmin page, tested 2026-10-13). Same point as locLinks. */
+  function locExtras(r, withMaps) {
+    var L = r.location || {};
+    if (L.status === 'none' || !L.maps_url) return '<span class="loc-none">Location: not published</span>';
+    var ap = L.status === 'approximate', a = function (u, t) { return '<a class="loc-link" href="' + esc(u) + '" target="_blank" rel="noopener noreferrer">' + t + ' ↗</a>'; };
+    return '<span class="loc-block" data-locblock="' + esc(r.slug) + '">' +
+      '<span class="loc-coords"><span class="loc-lab">' + (ap ? 'Coordinates (approximate): ' : 'Coordinates: ') + '</span><code class="loc-dd">' + esc(L.dd) + '</code> <span class="loc-dm">(' + esc(L.dm) + ')</span> ' +
+      '<button type="button" class="loc-copy" data-loc-copy="' + esc(L.dd) + '" title="Copies &quot;lat, lon&quot;; paste it into the search box of Google Earth Pro, Navionics, Google Maps and most other apps">Copy</button></span>' +
+      '<span class="loc-open"><span class="loc-lab">Open in: </span>' +
+      (withMaps ? a(L.maps_url, ap ? 'Google Maps (approx.)' : 'Google Maps') + ' · ' + a(L.satellite_url, 'satellite') + ' · ' : '') +
+      a(L.earth_url, 'Google Earth (web)') + ' · ' +
+      '<button type="button" class="loc-kml" data-loc-kml="' + esc(r.slug) + '" title="Downloads a .kml file (placemark' + (L.outline_latlon ? ' and the traced outline' : ', point only: this reef\'s outline is not shown') + '); double-click it to open in Google Earth Pro">KML for Google Earth Pro</button> · ' +
+      '<span class="loc-nav" title="Navionics\' web app has no link that opens centred on a point without a login">Navionics: paste the copied coordinates into its search box</span></span></span>';
+  }
+  function locMenu(r) {      // gallery tile: a small menu that does not open the dialog
+    var L = r.location || {};
+    if (L.status === 'none' || !L.maps_url) return '<span class="loc-none">not published</span>';
+    return '<details class="loc-menu"><summary title="Open the location in Google Maps, Google Earth, KML for Google Earth Pro; copy coordinates">' + (L.status === 'approximate' ? 'Location (approx.)' : 'Location') + ' ▾</summary>' +
+      '<div class="loc-pop">' + locExtras(r, true) + '</div></details>';
+  }
+  function xmlEsc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
+  function kmlPlacemark(r) {
+    var L = r.location || {};
+    if (L.status === 'none' || L.lat == null) return '';
+    var desc = (r.place ? r.place + ', ' + r.country + '. ' : '') + 'Location confidence: ' + (L.status === 'approximate' ? 'approximate' : 'ok (centre of the traced outline or card coordinates)') + '. ' +
+      (L.source ? 'Source: ' + L.source + '. ' : '') + (L.note ? L.note + ' ' : '') +
+      (L.outline_latlon ? 'Polygon = the traced outline shown on the survey page (default version).' : 'Point only: no outline of this reef is shown on the page.') + ' Private research copy.';
+    var g = '<Point><coordinates>' + L.lon + ',' + L.lat + ',0</coordinates></Point>';
+    if (L.outline_latlon) {
+      g = '<MultiGeometry>' + g + L.outline_latlon.map(function (ring) {
+        var pts = ring.slice(); if (pts[0][0] !== pts[pts.length - 1][0] || pts[0][1] !== pts[pts.length - 1][1]) pts.push(pts[0]);
+        return '<Polygon><tessellate>1</tessellate><outerBoundaryIs><LinearRing><coordinates>' + pts.map(function (q) { return q[1] + ',' + q[0] + ',0'; }).join(' ') + '</coordinates></LinearRing></outerBoundaryIs></Polygon>';
+      }).join('') + '</MultiGeometry>';
+    }
+    return '<Placemark><name>' + xmlEsc(r.name) + '</name><description>' + xmlEsc(desc) + '</description>' +
+      '<Style><IconStyle><scale>1.1</scale></IconStyle><LineStyle><color>ff00a5ff</color><width>2</width></LineStyle><PolyStyle><color>5500a5ff</color></PolyStyle></Style>' + g + '</Placemark>';
+  }
+  function kmlFor(slug) {
+    var list = slug === 'all' ? REEFS : REEFS.filter(function (x) { return x.slug === slug; });
+    var pm = list.map(kmlPlacemark).join('');
+    return '<?xml version="1.0" encoding="UTF-8"?>\n<kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>' + (slug === 'all' ? 'Artificial surf reefs (survey)' : xmlEsc(list[0] ? list[0].name : slug)) + '</name>' + pm + '</Document></kml>\n';
+  }
+  function downloadText(name, text, type) {
+    try {
+      var blob = new Blob([text], { type: type }), u = URL.createObjectURL(blob), a = document.createElement('a');
+      a.href = u; a.download = name; a.style.display = 'none'; document.body.appendChild(a); a.click();
+      setTimeout(function () { URL.revokeObjectURL(u); a.remove(); }, 2000);
+    } catch (e) { /* no download possible */ }
+  }
+  function copyText(txt, btn) {
+    var done = function () { if (!btn) return; var o = btn.getAttribute('data-t0') || btn.textContent; btn.setAttribute('data-t0', o); btn.textContent = 'Copied'; setTimeout(function () { btn.textContent = o; }, 1600); };
+    var fallback = function () { try { var ta = document.createElement('textarea'); ta.value = txt; ta.style.cssText = 'position:fixed;opacity:0'; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); done(); } catch (e) { /* ignore */ } };
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(txt).then(done, fallback); else fallback();
+  }
+  document.addEventListener('click', function (e) {
+    var t = e.target, k = t.closest && t.closest('[data-loc-kml]'), c = t.closest && t.closest('[data-loc-copy]');
+    if (k) { e.preventDefault(); e.stopPropagation(); var s = k.getAttribute('data-loc-kml'); downloadText(s === 'all' ? 'artificial-surf-reefs-all.kml' : s + '.kml', kmlFor(s), 'application/vnd.google-earth.kml+xml'); return; }
+    if (c) { e.preventDefault(); e.stopPropagation(); copyText(c.getAttribute('data-loc-copy'), c); return; }
+    var openM = document.querySelectorAll('details.loc-menu[open]');
+    for (var i = 0; i < openM.length; i++) if (!openM[i].contains(t)) openM[i].removeAttribute('open');
+  });
+  window.ReefLoc = { extras: function (slug, withMaps) { var r = REEFS.filter(function (x) { return x.slug === slug; })[0]; return r ? locExtras(r, withMaps !== false) : ''; }, kml: kmlFor };
+  function disagreeBody(r) {
+    var d = r.sources_disagree || [];
+    return '<p class="muted">Where the sources, or a source and the founder, say different things. Both sides are kept, each with its source; nothing is averaged.</p>' +
+      '<div class="sc-tw"><table class="sc-tab sd-tab"><thead><tr><th>Topic</th><th>Card (published sources) says</th><th>Interview says</th><th>Note</th></tr></thead><tbody>' +
+      d.map(function (x) {
+        return '<tr><td>' + esc(x.topic) + '</td><td>' + refify(x.card_says, r, 'link') + '</td><td>' + refify(x.founder_says, r, 'link') + '</td><td>' + refify(x.note, r, 'link') + '</td></tr>';
+      }).join('') + '</tbody></table></div>';
   }
   function refIds(r) { var o = {}; (r.references || []).forEach(function (x) { o[x.id] = true; }); return o; }
   function refById(r, id) {
@@ -190,7 +280,9 @@
     size: function (r) { return (r.size_short || '').toLowerCase(); },
     financed: function (r) { return stripRefs(r.financed_by).toLowerCase(); },
     verdict: function (r) { return (V_BY_KEY[r.verdict] || V_BY_KEY['n-a']).order; },
-    refs: function (r) { return (r.references || []).length; }
+    refs: function (r) { return (r.references || []).length; },
+    rating: function (r) { return r.rating && r.rating.rank ? r.rating.rank : null; },
+    loc: function (r) { var L = r.location || {}; return L.status === 'none' ? 2 : L.status === 'approximate' ? 1 : 0; }
   };
   function current() {
     var key = SORTERS[state.sort] || SORTERS.year, dir = state.dir;
@@ -221,8 +313,10 @@
         '<span class="pp">Compiled ' + esc(META.compiled_on) + '. The method is described in the footer and in the References index at the bottom of the page.</span>' +
         '<a class="more" href="#references">Read more: References index &rarr;</a>');
 
-    var leg = $('#legend');
-    if (leg) leg.remove();
+    $('#legend').innerHTML = '<span class="muted" style="font-size:.78rem;text-transform:uppercase;letter-spacing:.05em">Verdict</span>' +
+      VERDICTS.map(function (v) {
+        return '<span class="legend-item"><span class="badge ' + vclass(v.key) + '"><span class="sym" aria-hidden="true">' + v.sym + '</span>' + esc(v.label) + '</span><span class="muted">' + esc(v.note) + '</span></span>';
+      }).join('');
 
     var totalM = META.usd_total_mid / 1e6;
     var lowM = META.usd_total_low / 1e6, highM = META.usd_total_high / 1e6;
@@ -236,14 +330,12 @@
 
   // ------------------------------------------------------------------ chips
   function renderChips() {
-    function group(title, field, values, labeller, titler) {
+    function group(title, field, values, labeller) {
       var counts = {};
       REEFS.forEach(function (r) { counts[r[field]] = (counts[r[field]] || 0) + 1; });
       return '<div class="chip-group" role="group" aria-label="Filter by ' + title + '"><span>' + title + '</span>' +
         values.map(function (v) {
-          var tip = titler ? titler(v) : '';
-          var titleAttr = tip ? ' title="' + esc(tip) + '"' : '';
-          return '<button type="button" class="chip" data-f="' + field + '" data-v="' + esc(v) + '"' + titleAttr + ' aria-pressed="false">' + labeller(v) + ' <span class="n">' + (counts[v] || 0) + '</span></button>';
+          return '<button type="button" class="chip" data-f="' + field + '" data-v="' + esc(v) + '" aria-pressed="false">' + labeller(v) + ' <span class="n">' + (counts[v] || 0) + '</span></button>';
         }).join('') + '</div>';
     }
     var countries = [], types = [];
@@ -257,24 +349,17 @@
     $('#chips').innerHTML =
       group('Verdict', 'verdict', presentV.map(function (v) { return v.key; }), function (k) {
         return '<span class="dot ' + vclass(k) + '" aria-hidden="true"></span>' + esc(V_BY_KEY[k].label);
-      }, function (k) {
-        var v = V_BY_KEY[k];
-        return v ? v.label + ': ' + v.note : '';
       }) +
-      group('Country', 'country', countries, function (c) { return (flags[c] ? '<span class="flag" aria-hidden="true">' + flags[c] + '</span>' : '') + esc(c); }, function (c) {
-        return 'Filter by country: ' + c;
-      }) +
-      group('Type', 'type_short', types, function (t) { return esc(t); }, function (t) {
-        return 'Filter by structure type: ' + t;
-      });
+      group('Country', 'country', countries, function (c) { return (flags[c] ? '<span class="flag" aria-hidden="true">' + flags[c] + '</span>' : '') + esc(c); }) +
+      group('Type', 'type_short', types, function (t) { return esc(t); });
   }
   var FIELD_TO_STATE = { verdict: 'verdict', country: 'country', type_short: 'type' };
 
   // ---------------------------------------------------------------- gallery
   function tileHTML(r) {
     var h = r.hero_image, hv = r.hover || {};
-    var media = h && safeUrl(h.url)
-      ? imgTag(h.url, stripRefs(h.depicts) || r.name) + fallbackBox(h.source_page, true)
+    var media = h && (h.local || safeUrl(h.url))
+      ? imgTag(h.local || h.url, stripRefs(h.depicts) || r.name) + fallbackBox(h.source_page, true)
       : fallbackBox(h && h.source_page, false);
     var descId = 'hv-' + r.slug;
     var credit = h ? 'Image: ' + esc(h.credit || 'unknown') + ' · ' + esc(h.license || 'licence not stated') + ' · ' + extLink(h.source_page, 'source') : '';
@@ -290,6 +375,7 @@
         '<h3><button type="button" class="tile-open" data-open="' + esc(r.slug) + '" aria-describedby="' + descId + '">' + esc(r.name) + '</button></h3>' +
         '<p class="tile-meta">' + flag(r) + esc(r.place_short) + '</p>' +
         '<p class="tile-meta">' + esc(r.year_short) + ' · ' + esc(r.type_short) + '</p>' +
+        '<div class="tile-meta tile-loc">' + locMenu(r) + '</div>' +
       '</div>' +
       '<p class="tile-credit" title="' + esc(h ? (h.credit + ' — ' + h.license) : '') + '">' + credit + '</p>' +
     '</article>';
@@ -300,13 +386,25 @@
   var COLS = [
     { k: 'name', t: 'Name' }, { k: 'country', t: 'Country' }, { k: 'year', t: 'Year' }, { k: 'type', t: 'Type' },
     { k: 'size', t: 'Size' }, { k: 'cost', t: 'Cost (~US$)' }, { k: 'financed', t: 'Financed by' },
-    { k: 'verdict', t: 'Verdict' }, { k: 'refs', t: '# refs' }
+    { k: 'loc', t: 'Location' }, { k: 'verdict', t: 'Verdict' }, { k: 'rating', t: 'Rating A/B/C' }, { k: 'refs', t: '# refs' }
   ];
+  /* 2026-10-19 (paper review): reef rating A/B/C from the card key `rating` (source: 08_paper/notes/rating_final.md, evidence rating_evidence.md). */
+  function RATING_INFO() {
+    return infoHTML('Reef rating: criteria and scale',
+      '<span class="pp"><b>Reef rating A / B / C</b> (this review, approved by Lior 2026-10-19). Scores 1 to 5: 1 very poor, 2 poor, 3 mixed or neutral (includes "no measurable effect"), 4 good, 5 very good. ? = no usable evidence; * = provisional (a signal exists but cannot be attributed to the reef).</span>' +
+      '<span class="pp"><b>A</b> surf quality. <b>B</b> safety and longevity (material survived, injuries, removal). <b>C</b> sediment and storm protection. Ranking is mainly by A, with B as tie-break; C is not weighed equally.</span>' +
+      '<span class="pp">Evidence: the repo notes <i>rating_final.md</i> and <i>rating_evidence.md</i> (08_paper/notes), built from the reef cards and the papers cited there. Much of the surf evidence is journalism, designer reports or anecdote, so treat the scores as an informed ranking, not a measurement.</span>');
+  }
+  function ratingCell(r) {
+    var q = r.rating; if (!q) return '<span class="muted">—</span>';
+    return '<span title="' + esc(stripRefs(q.reason)) + '">' + esc(q.A) + ' / ' + esc(q.B) + ' / ' + esc(q.C) + '</span>';
+  }
   function renderTable(list) {
     var head = '<thead><tr>' + COLS.map(function (c) {
       var s = state.sort === c.k ? (state.dir > 0 ? 'ascending' : 'descending') : 'none';
       return '<th scope="col" aria-sort="' + s + '"><button type="button" data-sort="' + c.k + '">' + esc(c.t) + '</button></th>';
     }).join('') + '</tr></thead>';
+    head = head.replace('Rating A/B/C</button>', 'Rating A/B/C</button>' + RATING_INFO());
     var body = '<tbody>' + list.map(function (r) {
       var cost = r.usd
         ? '<span title="' + esc(r.usd.basis + ' — card: ' + r.usd.source_text) + '">' + esc(r.usd.label) + '</span>'
@@ -319,7 +417,9 @@
         '<td class="wide">' + esc(cleanShort(r.size_short)) + plainRefs(r.hover_refs.size) + '</td>' +
         '<td class="num">' + cost + '</td>' +
         '<td class="wide">' + esc(short(stripRefs(r.financed_by), 140)) + plainRefs(uniqRefs(r.financed_by)) + '</td>' +
+        '<td class="loc">' + locLinks(r, true) + '</td>' +
         '<td>' + badge(r) + '</td>' +
+        '<td class="num">' + ratingCell(r) + '</td>' +
         '<td class="num">' + (r.references || []).length + '</td>' +
       '</tr>';
     }).join('') + '</tbody>';
@@ -327,17 +427,16 @@
   }
 
   // ------------------------------------------------------------------ views
-  function showNotice(msg) { var n = $('#notice'); if (n) { n.textContent = msg; n.hidden = !msg; } }
+  function showNotice(msg) { var n = $('#notice'); n.textContent = msg; n.hidden = !msg; }
   function setView(v) {
-    if (v !== 'gallery' && v !== 'table' && v !== 'models3d') v = 'gallery';
     state.view = v;
     $all('.views button').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.view === v)); });
-    ['gallery', 'table', 'models3d'].forEach(function (k) { var el = $('#view-' + k); if (el) el.hidden = k !== v; });
+    ['gallery', 'table', 'models3d'].forEach(function (k) { $('#view-' + k).hidden = k !== v; });
     document.body.setAttribute('data-view', v);     // lets CSS hide the reef filters on the 3D models tab
     var vh = v === 'gallery' ? '' : '#view/' + v;
     var keepHash = /^#reef\//.test(location.hash) || (v === 'models3d' && /^#view\/models3d\//.test(location.hash));
     if (!keepHash && location.hash !== vh) history.replaceState(null, '', vh || (location.pathname + location.search));
-    showNotice('');
+    if (v !== 'gallery') showNotice('');
     if (v !== 'models3d' && window.ReefModels3D && window.ReefModels3D.unloadAll) window.ReefModels3D.unloadAll();   // free the WebGL viewers when the tab is left
     render();
   }
@@ -361,9 +460,12 @@
     var rows = [
       ['Place', r.place], ['Country', r.country], ['Year', r.year], ['Type', r.type], ['Purpose', r.purpose],
       ['Size', r.size], ['Cost', r.cost], ['Cost (approx. USD)', r.cost_usd_approx], ['Financed by', r.financed_by],
-      ['Designer', r.designer], ['Contractor', r.contractor], ['Status now', r.status_now]
+      ['Designer', r.designer], ['Contractor', r.contractor], ['Status now', r.status_now], ['Location', { html: locFact(r) }],
+      ['Tide range (checked 2026-10-19)', r.tide_check],
+      ['Rating A / B / C', r.rating ? { html: '<b>' + esc(r.rating.A) + ' / ' + esc(r.rating.B) + ' / ' + esc(r.rating.C) + '</b>' + (r.rating.rank ? ' (rank ' + r.rating.rank + ' of 12)' : '') + ' ' + RATING_INFO() + '<br>' + refify(r.rating.reason, r, 'link') + ' <span class="muted">A surf, B safety and longevity, C sediment / storm protection; 1 to 5.</span>' } : null]
     ];
     return '<table class="qf"><tbody>' + rows.filter(function (x) { return x[1] != null && x[1] !== ''; }).map(function (x) {
+      if (x[1] && x[1].html) return '<tr><th scope="row">' + esc(x[0]) + '</th><td>' + x[1].html + '</td></tr>';
       var val = typeof x[1] === 'number' ? 'US$' + x[1].toLocaleString('en-US') : x[1];
       return '<tr><th scope="row">' + esc(x[0]) + '</th><td>' + refify(val, r, 'link') + '</td></tr>';
     }).join('') + '<tr><th scope="row">Verdict</th><td>' + badge(r) + '</td></tr></tbody></table>';
@@ -399,6 +501,9 @@
     return '<div class="media-grid">' + (r.images || []).map(function (im) {
       var cred = 'Credit: ' + esc(im.credit || 'unknown') + ' · Licence: ' + esc(im.license || 'not stated') + ' · ' + extLink(im.source_page || im.url, 'source');
       var lab = showsTag(im);
+      if (im.local) {
+        return figureHTML({ url: im.local, local: true, alt: stripRefs(im.depicts) || r.name, caption: lab + refify(im.depicts, r, 'link'), credit: cred + ' · local copy', contain: im.kind !== 'photo' });
+      }
       if (im.hotlink_ok === true && safeUrl(im.url)) {
         return figureHTML({ url: im.url, alt: stripRefs(im.depicts) || r.name, caption: lab + refify(im.depicts, r, 'link'), credit: cred, source: im.source_page, contain: im.kind !== 'photo' });
       }
@@ -509,7 +614,7 @@
   function refsHTML(r, idPrefix) {
     return '<ol>' + (r.references || []).map(function (x) {
       return '<li id="' + idPrefix + esc(x.id) + '"><span class="rid">' + esc(x.id) + '</span><span>' +
-        esc(x.citation) + (safeUrl(x.url) ? ' ' + extLink(x.url, 'link ↗') : ' <span class="muted">(internal note — no URL)</span>') +
+        esc(x.citation) + (safeUrl(x.url) ? ' ' + extLink(x.url, 'link ↗') : ' <span class="muted">(' + noUrlWord(x) + ' — no URL)</span>') +
         (safeUrl(x.pdf_url) ? ' ' + extLink(x.pdf_url, 'PDF ↗') : '') +
         (safeUrl(x.also_url) ? ' ' + extLink(x.also_url, 'also read at ↗') : '') +
         (x.origin ? ' <span class="tag tag-gem">' + esc(x.origin) + '</span>' : '') +
@@ -517,11 +622,30 @@
     }).join('') + '</ol>';
   }
 
+  /* 2026-10-10 (Lior): "Checked, nothing useful (N)": sources we looked at that gave nothing (02_research/dead_ends/<slug>.json). NOT references:
+     it is the last section of the dialog, closed by default (also in print), so a later agent does not repeat the search. */
+  function deadEndsBody(r) {
+    var list = r.dead_ends || [];
+    if (!list.length) return '<p class="de-none">No dead ends recorded for this reef.</p>';
+    function whereHTML(w) {
+      var parts = String(w || '').split(/(https?:\/\/[^\s<>"')\]]+[^\s<>"')\].,;])/g);
+      return parts.map(function (t, i) { return i % 2 ? extLink(t, t.length > 70 ? t.slice(0, 67) + '…' : t) : esc(t); }).join('');
+    }
+    return '<p class="de-intro">Sources and searches that did not give what we needed. They are <b>not</b> references: no statement on this page rests on them. Listed so the same search is not repeated; the last line of each says what might still work.</p>' +
+      '<ol class="de-list">' + list.map(function (e) {
+        return '<li class="de-item"><p class="de-what">' + esc(e.what) + '</p>' +
+          '<p class="de-meta"><span class="de-kind">' + esc(e.kind) + '</span> <span class="de-res">' + esc(e.result) + '</span> <span>checked ' + esc(e.checked) + '</span> <span>by ' + esc(e.by) + '</span></p>' +
+          '<p class="de-where"><b>Where:</b> ' + whereHTML(e.where) + '</p>' +
+          (e.detail ? '<p class="de-detail">' + esc(e.detail) + '</p>' : '') +
+          (e.might_work ? '<p class="de-might"><b>Might still work:</b> ' + whereHTML(e.might_work) + '</p>' : '') + '</li>';
+      }).join('') + '</ol>';
+  }
+
   var OPEN_BY_DEFAULT = { 'quick-facts': true, 'outcome': true };
   function keyOf(title) { return String(title).toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); }
   function accHTML(pfx, key, title, body, opts) {
     opts = opts || {};
-    var open = opts.forPrint || OPEN_BY_DEFAULT[key];
+    var open = (opts.forPrint && !opts.closed) || OPEN_BY_DEFAULT[key];
     return '<details class="acc' + (opts.cls ? ' ' + opts.cls : '') + '" id="' + pfx + key + '"' + (open ? ' open' : '') + '>' +
       '<summary><h3>' + esc(title) + (opts.count != null ? ' <span class="acc-n">' + opts.count + '</span>' : '') + '</h3>' +
       (opts.peek ? '<span class="acc-peek">' + esc(opts.peek) + '</span>' : '') + '</summary>' +
@@ -534,6 +658,7 @@
     var nImg = (r.images || []).length, nVid = forPrint ? 0 : (r.videos || []).length, nFig = (r.lior_images || []).length;
     var nRev = (r.reviews || []).length, nRef = (r.references || []).length;
     var hasFp = !!(r.footprint && window.ReefScale);
+    var nDis = (r.sources_disagree || []).length, nDe = (r.dead_ends || []).length;
     var story = (r.sections || []).filter(function (s) { return s.html_or_text; }).map(function (s) {
       return accHTML(pfx, keyOf(s.title), s.title, paras(s.html_or_text, r),
         { forPrint: forPrint, peek: short(stripRefs(s.html_or_text), 140) });
@@ -544,13 +669,16 @@
       (firstSec ? '<button type="button" data-jump="' + keyOf(firstSec.title) + '">Story</button>' : '') +
       (nRev ? '<button type="button" data-jump="reviews">Reviews <span class="n">' + nRev + '</span></button>' : '') +
       (nImg + nVid + nFig ? '<button type="button" data-jump="' + (nImg ? 'images' : nVid ? 'videos' : 'figures') + '">Media <span class="n">' + (nImg + nVid + nFig) + '</span></button>' : '') +
-      (hasFp ? '<button type="button" data-jump="scale">Scale</button>' : '') +
+      (nDis ? '<button type="button" data-jump="sources-disagree">Disagree <span class="n">' + nDis + '</span></button>' : '') +
+      (hasFp ? '<button type="button" data-jump="scale">Footprint</button>' : '') +
       '<button type="button" data-jump="references">Sources <span class="n">' + nRef + '</span></button>' +
+      '<button type="button" data-jump="dead-ends">Dead ends <span class="n">' + nDe + '</span></button>' +
       '<button type="button" class="xall" data-expand-all aria-pressed="false">Expand all</button>' +
     '</nav>';
     return '<article class="detail">' +
       '<h2 class="dt"' + (forPrint ? '' : ' id="dlg-title"') + '>' + esc(r.name) + '</h2>' +
       '<p class="dplace">' + flag(r) + esc(r.place) + ', ' + esc(r.country) + '</p>' +
+      '<p class="dloc">' + locLinks(r, false) + '</p>' + '<p class="dloc dloc2">' + locExtras(r, false) + '</p>' +
       '<div class="dmeta"><span>' + esc(r.type_short) + '</span>' +
         '<span>Card verified ' + esc(r.verified_on || '—') + '</span>' +
         (forPrint ? '' : '<span class="tip">Tap or hover any <span class="ref-demo">R1</span> marker to see its source</span>' +
@@ -559,15 +687,19 @@
       glanceHTML(r) +
       accHTML(pfx, 'quick-facts', 'Quick facts', quickFacts(r), o) +
       story +
+      (nDis ? accHTML(pfx, 'sources-disagree', 'Sources disagree', disagreeBody(r), { forPrint: forPrint, count: nDis, cls: 'acc-sd',
+        peek: 'Published sources vs the 2026-10-08 interview with the founder: both sides kept, each with its source' }) : '') +
       (nRev ? accHTML(pfx, 'reviews', 'Reviews by real people', reviewsBody(r), { forPrint: forPrint, count: nRev, cls: 'acc-rv',
         peek: short(stripRefs((r.reviews[0] || {}).quote_or_summary).replace(/^["“]/, ''), 120) + ' — ' + (r.reviews[0].who || '') }) : '') +
       (nImg ? accHTML(pfx, 'images', 'Images', imagesBody(r), { forPrint: forPrint, count: nImg }) : '') +
       (nVid ? accHTML(pfx, 'videos', 'Videos', videosBody(r), { forPrint: forPrint, count: nVid }) : '') +
       (nFig ? accHTML(pfx, 'figures', 'Lior\'s figures', liorBody(r), { forPrint: forPrint, count: nFig }) : '') +
-      (hasFp ? accHTML(pfx, 'scale', 'Scale & footprint', window.ReefScale.detailSection(r, forPrint), { forPrint: forPrint,
-        peek: 'Plan drawing at a common scale, and how we drew it: every number with its source' }) : '') +
+      (hasFp ? accHTML(pfx, 'scale', 'Footprint & how we drew it', window.ReefScale.detailSection(r, forPrint), { forPrint: forPrint,
+        peek: r.footprint.display ? 'Traced plan drawing, and how we drew it: every number with its source' : 'Shape not drawn: no plan, survey or clear image of the reef found' }) : '') +
       accHTML(pfx, 'references', 'References', '<div class="refs">' + refsHTML(r, forPrint ? pfx + 'ref-' : 'ref-') + '</div>',
         { forPrint: forPrint, count: nRef, peek: 'Every [R#] above, with what each source supports and when it was checked' }) +
+      accHTML(pfx, 'dead-ends', 'Checked, nothing useful (' + nDe + ')', deadEndsBody(r), { forPrint: forPrint, closed: true, cls: 'acc-de',
+        peek: 'Not references: sources and searches that gave nothing, so nobody repeats them' }) +
     '</article>';
   }
 
@@ -594,7 +726,6 @@
      and on hover after a short delay for mouse users. Dismiss: Esc, click outside, × button,
      or opening another marker. */
   var pop = $('#ref-pop');
-  var scaleRoot = $('#view-scale');
   var SHEET_MQ = window.matchMedia ? window.matchMedia('(max-width: 599px)') : { matches: false };
   var HOVER_MQ = window.matchMedia ? window.matchMedia('(hover: hover) and (pointer: fine)') : { matches: false };
   var P = { open: false, anchor: null, id: null, pinned: false, hoverT: 0, leaveT: 0, closedAt: -1e9, raf: 0 };
@@ -633,7 +764,7 @@
         (ref.origin ? ' · <span class="tag tag-gem">' + esc(ref.origin) + '</span>' : '') + '</p>' +
       '<div class="rp-actions">' +
         (hasUrl ? '<a class="rp-open" href="' + esc(ref.url) + '" target="_blank" rel="noopener noreferrer">Open source ↗</a>'
-                : '<span class="rp-nourl">(internal note — no URL)</span>') +
+                : '<span class="rp-nourl">(' + noUrlWord(ref) + ' — no URL)</span>') +
         '<button type="button" class="rp-btn" data-pop-list>Show in list</button>' +
         '<button type="button" class="rp-btn" data-pop-copy>Copy citation</button>' +
       '</div>';
@@ -814,6 +945,7 @@
     var m = /^#reef\/([a-z0-9-]+)(?:\/([RS]\d+))?$/i.exec(location.hash);
     var vm = /^#view\/(gallery|table|models3d)(?:\/[a-z0-9-]+)?$/.exec(location.hash);
     if (vm && state.view !== vm[1]) setView(vm[1]);
+    else if (!vm && /^#view\//.test(location.hash) && state.view !== 'gallery') setView('gallery');   // retired #view/map, #view/scale (2026-10-10) -> gallery
     if (m && BY_SLUG[m[1]]) openReef(m[1], m[2], true);
     else if (dlg.open && !/^#reef\//.test(location.hash)) closeReef();
   }
@@ -878,7 +1010,7 @@
       var t = e.target;
       // --- source pop-up: marker, controls inside it, and click-outside dismissal
       var mark = t.closest('.ref-mark');
-      if (mark && (dlg.contains(mark) || (scaleRoot && scaleRoot.contains(mark)))) {
+      if (mark && dlg.contains(mark)) {
         e.preventDefault();
         if (P.open && P.anchor === mark && P.pinned) closePop(true);
         else openPop(mark, e.detail === 0 ? 'key' : 'click');
@@ -969,10 +1101,6 @@
     // (which may live in <body>) keeps itself open while hovered
     dlg.addEventListener('mouseover', onMarkOver);
     dlg.addEventListener('mouseout', onMarkOut);
-    if (scaleRoot) {
-      scaleRoot.addEventListener('mouseover', onMarkOver);
-      scaleRoot.addEventListener('mouseout', onMarkOut);
-    }
     pop.addEventListener('mouseover', onMarkOver);
     pop.addEventListener('mouseout', onMarkOut);
     window.addEventListener('scroll', schedulePos, { passive: true });
@@ -1025,12 +1153,11 @@
 
   window.ReefInfo = { html: infoHTML };       // (i) pop-over markup for the 3D tab (src/models3d.js)
 
-  // ------------------------------------------------- API for scale.js (Scale view)
+  // ------------------------------------------------- API for footprint.js (reef-dialog footprint section)
   window.ReefApp = {
     REEFS: REEFS, BY_SLUG: BY_SLUG, VERDICT_COLOR: VERDICT_COLOR, V_BY_KEY: V_BY_KEY,
     esc: esc, safeUrl: safeUrl, extLink: extLink, refById: refById, markBtn: markBtn, badge: badge,
-    imgTag: imgTag, short: short, flag: flag, openReef: openReef, closeReef: closeReef, closePop: closePop, setView: setView,
-    rerender: function () { render(); }
+    imgTag: imgTag, refify: refify, short: short, flag: flag, openReef: openReef, closeReef: closeReef, closePop: closePop, setView: setView
   };
 
   // ----------------------------------------------------------------- init

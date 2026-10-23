@@ -6,28 +6,28 @@
   "name": "Southern Ocean Surf Reef (\"Midds Reef\")",
   "place": "Middleton Beach, Albany, Western Australia",
   "country": "Australia",
-  "lat": -35.0236,
-  "lon": 117.9136,
-  "year": "Construction began ~Oct 2024 (quarry establishment); main rock placement Jan-Mar 2025; officially opened 16 July 2025 [R1][R2][R3]",
-  "type": "Submerged rock-berm surf reef, ~70,000 t of layered granite in three graded layers (belly, core, Class 1 armour), no geotextile [R2][R3][R1]",
+  "lat": -35.018005,
+  "lon": 117.920991,
+  "year": "Quarry establishment from ~Oct 2024 [R17]; first rock placed on the seabed 18 Mar 2025 (planned six weeks) [R26][R30]; 'more than two-thirds complete' 16 May 2025, finish pushed to mid-June [R27]; storm of Mon 26 May 2025 moved some core rock [R25][R28]; officially opened 16 July 2025 'after four months of work' [R29][R31][R1][R2]. The City's programme 'Jan-Mar 2025, practical completion Mar 2025' [R3][R32] was a plan, not what happened.",
+  "type": "Submerged rock-berm surf reef, 62,800 t of layered granite per the City's design table (belly, core, Class 1 armour) [R3] (the ~70,000 t quoted by The Inertia [R6] is kept as a rounded journalistic figure), no geotextile [R2][R3][R1] Tonnage note (audit 2026-10-10): the City design table gives 62,800 t [R3]; the ~70,000 t of The Inertia [R6] is a rounded journalistic figure; both kept, the design table is preferred.",
   "purpose": "Surfing amenity / tourism / youth retention - the reef's sole and primary stated design objective; unlike most artificial surf reefs, coastal erosion protection was not a driver [R3][R8][R9]",
-  "size": "Length 165 m; width up to 110 m; crest at -1.0 m AHD; total volume 62,800 t (belly D50 0.16 m/12,400 t, core D50 0.49 m/23,600 t, armour D50 0.94 m/26,800 t); reef sits ~140 m offshore [R3]",
+  "size": "Length 165 m; width up to 110 m; crest at -1.0 m AHD; total volume 62,800 t (belly D50 0.16 m/12,400 t, core D50 0.49 m/23,600 t, armour D50 0.94 m/26,800 t); reef sits ~140 m offshore [R3] Shape model (07_scale/shapes/southern-ocean-surf-reef-albany/HANDOFF.md section 3; HIGH confidence for position, size, orientation): default outline = Bluecoast final-design outermost contour [R3], placed on the Esri 2026-01-20 image by a fitted wedge (IoU 0.84); area 13,104 m2; along/across the crest 164.6 / 121.2 m (the card's 'width up to 110 m' is the design crest length at -2 m AHD, not the outline width); nearest edge 66.8 m from the beach-face line (the card's '~140 m offshore' is the City's value from an undefined reference, 'landward toe'; not reconciled). Volume about 34,000 m3 (DERIVED: 62,800 t [R3] divided by an assumed rock bulk density of 1.85 t/m3, ASSUMPTION of the shape agent with no source, 07_scale/shapes/southern-ocean-surf-reef-albany/HANDOFF.md section 3; the ~70,000 t of [R6] would give about 37,800 m3 by the same density). Crest levels are design values in AHD [R3], not surveyed; no as-built survey was found (negative search result of this project). The City's own design table (registry img-10, read again 2026-10-10) states 'Reef volume 34,000 m3 (based on 2017 bathymetry)' [R3], so the volume above is no longer only DERIVED: the table value and the tonnage-over-density value agree to within rounding. Seabed and water depth under the reef (3D model, LOW confidence, 07_scale/shapes/southern-ocean-surf-reef-albany/3d/METHODS_3D.md sections 3.2 and 4): about -2.1 m AHD at the shoreward apex to -7.4 m AHD at the offshore toe, DERIVED from the depth contours of the 2015 RHDHV Option B plan [R21] (datum not printed; read as AHD, georeferenced by hand); a 2018 BMT sounding of 2.7 m below chart datum near the shore is about 1.6 m deeper than that profile if chart datum equals AHD [R20] (unresolved). Update 2026-10-13 (Lior uploads, agent Albany uploads): Rock mass: the City's table gives 62,800 t [R3]; ABC and The Inertia say 70,000 t of granite [R2][R6]; Raised Water Research says 'more than 47,000 m3 (70,000 tonnes)', footprint 1.61 ha, 'designed 140-375 m offshore' and a crest 'roughly .75 m under the surface at low tide', mixing 2015 and final-design values with no source [R10][R23]. Distance offshore: 140 m [R3][R26] (City news of 7 Mar 2025) vs 120 m (City news of 16 Jul 2025 [R31], RWR 'about 120 m'); not reconciled. None of the four new sources gives an as-built level, crest survey, section or seabed depth, so the 3D model's seabed and heights are unchanged (LOW). A 70,000 t sensitivity is in the 3D model (design outline: 37,898 m3, mean height 2.89 m) [3d/METHODS_3D.md].",
   "cost": "City of Albany 'Total Committed Funds' AUD $11.75 million; Wikipedia/ABC/Beachgrit report project cost as approximately AUD $13 million [R3][R1][R7]",
-  "cost_usd_approx": "~USD $7.6-8.5 million at an approximate, unsourced AUD->USD conversion of ~0.65-0.72 (indicative only, not independently sourced) [R3][R1][R7]",
-  "financed_by": "Commonwealth (Australian) Government $4.75M; WA State Government (DPIRD) $5M; City of Albany $1.995M; Albany Boardriders club $5,000. WA state pledge from both major parties in the 2017 election; federal pledge from both major parties in 2022 [R3][R2][R6]",
+  "cost_usd_approx": "~USD $7.6-8.5 million at an approximate, unsourced AUD->USD conversion of ~0.65-0.72 (indicative only, not independently sourced) [R3][R1][R7] ASSUMPTION A1: the AUD->USD factor 0.65-0.72 is the agent's rough recollection, no exchange-rate source consulted (replace with the RBA rate for 2024-25); effect about +-10 %.",
+  "financed_by": "Commonwealth (Australian) Government $4.75M; WA State Government (DPIRD) $5M; City of Albany $1.995M; Albany Boardriders club $5,000 [R3]. CONFLICT: the City page lists Commonwealth 4.75 M and WA 5 M; the WA Government statement of 14 Jan 2025 ('Cook Government is contributing $4.75 million') and Raised Water Research give WA 4.75 M and Commonwealth 5 M [R32][R10]; not resolved (the total is the same). WA state pledge from both major parties in the 2017 election; federal pledge from both major parties in 2022 [R3][R2][R6]",
   "motivation": "Middleton Beach produced 'unreliable and unsurfable waves for much of the year' despite being closest to central Albany; ~30 years of local-surfer advocacy (led by Peter Bolt from 1990) sought a consistent, surfable wave to build youth surf access, tourism, and economic development for Albany - not a response to erosion or a port-mitigation problem [R1][R6][R3][R8]",
   "designer": "Bluecoast Consulting Engineers, lead design engineer Evan Watterson (principal engineer at Bluecoast per the firm's own bio; 'Principal Coastal Engineer / Director' per a separate CV) [R3][R16]",
   "contractor": "Heron Construction Limited (main contractor; marine personnel crew mobilised from New Zealand); Stantec (project superintendent); Spinifex Crushing & Screening Services (rock supplier, quarry at Mindijup Rd, Palmdale); marine plant (backhoe dredge, barges/tugs) mobilised via Darwin and Adelaide [R3][R2][R6][R17]",
-  "status_now": "Built and operating since July 2025. As of March 2026, the City of Albany repositioned 18 rocks on the reef, at a cost of more than AUD $20,000, in response to a spate of user injuries [R3][R11][R8]",
+  "status_now": "Built and operating since July 2025 [R1][R2]. About 18 'high rocks' were repositioned over two days in late February 2026 (reported 11 March 2026) by commercial divers with a local vessel and Albany Boardriders, at 'more than $20,000' (lede) or 'about $24,000' (City estimate), in response to a spate of user injuries [R3][R11][R8] Decision: verdict 'mixed' was assigned by the dossier agent (verified_on 2026-09-24), not by a source: wave quality is reported as a success [R2][R8][R10], but injuries led to a proposed detuning and a rock repositioning [R7][R11], and no monitoring data exist. The repositioning cost is from one paywalled article only (two figures in it: >20,000 and about 24,000; read from the page metadata, no login, see D12).",
   "verdict": "mixed",
   "hover_text": "165 m long, 62,800-tonne rock reef built for AUD ~$13M (opened July 2025) that delivers a widely praised, better-than-design surf break - but its shallow, permeable rock crest caused repeated surfer injuries, forcing an 18-rock, $20,000+ safety 'detuning' in March 2026 [R1][R2][R3][R11].",
-  "design_as_planned": "The 2015 Feasibility Study's objective was 'the creation of a consistent, surfable wave, which maximises available swell conditions' for Albany's economic and demographic benefit [R3]. The Detailed Design (executive summary by 2020) targeted a left-hand break, rides up to 100 m, and surfable waves 41% of the year, aimed at beginner-to-intermediate surfers per EPA WA [R3][R2][R9]. Design used 'thorough numerical, physical and conceptual modelling', with a 2018 BMT Environmental Impact Assessment reportedly finding no significant coastal-process impact and predicting shoreline widening in the reef's lee [R3][R8]. Business-case modelling projected NPV $57.9M / BCR 6.69, driven by ~10 annual surfing events and ~3,500 extra overnight visitors/year (an earlier May-2023 interim figure gave NPV $19.4M / BCR 3.25) [R3][R15].",
-  "as_built_vs_design": "The built reef matches the design specification closely on paper: 165 m long, up to 110 m wide, crest at -1.0 m AHD, 62,800 t of rock in three graded layers [R3]. Construction ran from ~Oct 2024 (quarry establishment) through March 2025 (survey/practical completion), with main placement in Jan-Mar 2025 by a New Zealand marine crew using precision geospatial placement equipment [R3][R2][R8]. Once open, the reef performed 'far higher' than the 41% design-surfability target, though no source gives a precise revised percentage [R2][R6]. The most significant post-opening change came in March 2026: the City of Albany spent more than AUD $20,000 repositioning 18 rocks, described by the Albany Advertiser as a 'successful bid to reduce user injuries' [R11].",
+  "design_as_planned": "The 2015 Feasibility Study's objective was 'the creation of a consistent, surfable wave, which maximises available swell conditions' for Albany's economic and demographic benefit [R3]. The Detailed Design (executive summary by 2020) targeted a left-hand break, rides up to 100 m, and surfable waves 41% of the year, aimed at beginner-to-intermediate surfers per EPA WA [R3][R2][R9]. Design used 'thorough numerical, physical and conceptual modelling', with a 2018 BMT Environmental Impact Assessment, read at the source in October 2026: its shoreline-modelling appendix says 'In all the simulations tested, there appeared to be a widening of the shoreline' (PDF p.151) and the report expects offshore placement to give no significant shoreline impact compared with inshore placement (PDF p.38) [R20]; these findings were earlier cited via [R3][R8]. Business-case modelling projected NPV $57.9M / BCR 6.69, driven by ~10 annual surfing events and ~3,500 extra overnight visitors/year (an earlier May-2023 interim figure gave NPV $19.4M / BCR 3.25) [R3][R15].",
+  "as_built_vs_design": "The built reef matches the design specification closely on paper: 165 m long, up to 110 m wide, crest at -1.0 m AHD, 62,800 t of rock in three graded layers [R3]. Construction: quarry from ~Oct 2024 [R17]; first rock on the seabed 18 Mar 2025, planned six weeks [R26][R30]; 'more than two-thirds complete' on 16 May 2025 with finish moved to mid-June [R27]; opened 16 Jul 2025 [R29][R31] (the earlier reading 'main placement Jan-Mar 2025, practical completion Mar 2025' came from the City's programme and the WA Government statement of 14 Jan 2025, which were plans [R3][R32]). A New Zealand marine crew used precision geospatial placement equipment [R3][R2][R8]. Storm of Mon 26 May 2025 (highest waves in King George Sound since 2017) moved some of the smaller CORE rock shoreward before the armour was on top; the contractor surveyed and replaced it before opening [R25][R28]. No as-built level, crest survey, section or seabed depth has been published (checked again 2026-10-13 in four new sources). Once open, the reef performed 'far higher' than the 41% design-surfability target [R2][R6], though no source gives a precise revised percentage (Raised Water Research gives about 40 % of the year breaking on the reef proper [R10], which does not support 'far higher'; the claim rests on quotes in R2/R6 only). The most significant post-opening change came in late February 2026 (reported 11 March 2026): about 18 'high rocks' were repositioned over two days by commercial divers with a local vessel and Albany Boardriders, after surveys in late 2025; cost 'more than $20,000' in the article lede and 'about $24,000' as the City's estimate (paywalled article, text read from the page metadata) [R11][R18]. This is a later change: the 3D model shows the 2025 design state, and this goes in as a note, not as geometry.",
   "outcome": "Widely reported as a rare unambiguous artificial-surf-reef success on wave quality: Swellnet says 'the reef performs far better than expectations' [R8]; Peter Bolt calls it 'intermediate-to-advanced on most days' as swell grows [R6][R2]; local surfer Cameron Warburton calls it 'a really high-performance wave' [R2]. Raised Water Research describes 0.8-1.3 m faces, 100-120 m rides, breaking on the reef proper ~40% of the year [R10]. But a persistent forum question (Aug-Oct 2025, user 'steveb') is whether it breaks well on the small (<1 m) everyday swells that dominate the local climate; local 'soggydog' answered 'No, but it has created reliable banks either side when it's too small for the reef proper' [R8]. No monitoring data, beach-width surveys, storm-damage, or fisheries/ecology results were found in sources fetched, beyond the single 2018 EIA citation [R8].",
   "why_worked_or_failed": "Sources attribute the reef's relative success to layered, precision-placed rock construction rather than geotextile sand bags, which 'failed due to the bags splitting, shifting, or settling' at earlier reefs worldwide [R8][R3][R6]. Engineer 'steveb' (Swellnet) argues rock reefs cannot match a sand-formed bank's contour accuracy because armour rock must be massive for stability, so shallow enough placement to break small swells 'compromises user safety'; rock permeability also means small swells 'surge into the reef rather than shoal and break', while larger swells ride over imperfections and shoal further up - explaining why the reef performs much better on bigger swells [R8]. He contrasts Albany's shallow crest (-1.0 m AHD, chosen partly 'to maximise wave breaking') unfavourably with Palm Beach (Gold Coast), which mitigated injury risk with a deeper crest [R8][R3]. Mayor Greg Stocks frames the injuries more as a behavioural issue: 'inexperienced surfers taking on quite elite waves...the temptation to go there above your skill level is probably contributing to some of that' [R7].",
-  "unexpected_results": "Injuries began within weeks of opening: Swellnet forum posts from Albany locals describe 'a good face injury', sharp rocks cutting feet, and (per 'Baldhead') 'a number of injuries - broken bones, gashes, concussion' [R8]. By October 2025 the reef was being considered for 'detuning' ('busting up a couple of the rocks in the shallower part of the wave') following a 'spate of injuries on beginner surfers who can't handle its juice' [R7]. By March 2026 the City had repositioned 18 rocks at a cost of more than AUD $20,000 [R11]. 'steveb' argued this represented a public-liability/facility-design failure, comparing the reef to a council-managed playground where 'public safety is the number one priority' [R8]. Positive unplanned effects include reliable secondary sand-bank breaks either side of the reef on small swells, and youth/community access described by Peter Bolt watching 'the kids come down here before school, in the dark, to get a wave before they go to school' [R8][R2]. Shark risk is raised as a live community concern (no confirmed incident found) [R8].",
+  "unexpected_results": "Injuries began within weeks of opening: Swellnet forum posts from Albany locals describe 'a good face injury', sharp rocks cutting feet, and (per 'Baldhead') 'a number of injuries - broken bones, gashes, concussion' [R8]. By October 2025 the reef was being considered for 'detuning' ('busting up a couple of the rocks in the shallower part of the wave') following a 'spate of injuries on beginner surfers who can't handle its juice' [R7]. In late February 2026 (reported 11 March 2026) about 18 'high rocks' were repositioned over two days, at 'more than $20,000' (lede) / 'about $24,000' (City estimate) [R11][R18]. Earlier, the storm of 26 May 2025 had already moved some core rock shoreward during construction [R25][R28]. 'steveb' argued this represented a public-liability/facility-design failure, comparing the reef to a council-managed playground where 'public safety is the number one priority' [R8]. Positive unplanned effects include reliable secondary sand-bank breaks either side of the reef on small swells, and youth/community access described by Peter Bolt watching 'the kids come down here before school, in the dark, to get a wave before they go to school' [R8][R2]. Shark risk is raised as a live community concern (no confirmed incident found) [R8].",
   "could_be_better": "Engineer 'steveb' (Swellnet) proposes that rock-dumped reefs inherently trade wave-shape accuracy against user safety, and argues a fully prefabricated reef structure - built onshore, floated out, and installed by controlled submergence - could achieve 'accurate shape and level, no subsidence, no settlement, no sharp edges, no possible entrapment points', citing materials with a 'safe working life in excess of 100 years', and points to Palm Beach's deeper, safer crest as a precedent for the safety/wave-quality trade-off Albany did not take [R8][R3]. Most surfer sentiment in the sources is not calling for a safer/easier wave - several posters push back on 'detuning' as inherent to a legitimately world-class wave - but there is a recurring, unanswered request for clearer information on how reliably the reef breaks on the small, sub-1 m swells that make up most of Middleton Beach's actual wave climate [R7][R8].",
-  "relevance_to_israel": "King George Sound (Albany) is micro-tidal (mean range 0.4 m, spring 1.1 m), broadly comparable to the Mediterranean at Haifa, which is also effectively micro-tidal, though no fetched source gives a numeric Haifa tidal-range figure [R5][R10]. Albany's wave climate (consistent, long-period 12-16s Southern Ocean groundswell) is fundamentally more energetic than Haifa's, where Lior's own Shikmona-buoy measurements define 'minimum surfable' at only 0.45-0.6 m / 6-8s within a narrow WNW swell window [R10][R12]. Albany's problem was reshaping abundant swell into a rideable, non-closeout wave; Haifa/Israel's problem is swell scarcity ('less than 1 day/week' naturally surfable per Lior's Haifa proposal) [R13]. What transfers: (1) rock-vs-geotextile construction lesson; (2) the shallow-crest/wave-quality vs deeper-crest/safety trade-off any Haifa project would also face; (3) the multi-decade, multi-level-government (federal/state/city/club) financing pattern; (4) because Haifa is swell-starved rather than closeout-prone, Albany is a better precedent for safe rock-reef engineering than for wave-energy requirements, where Lior's own Gold Coast/Narrowneck comparison may be more directly analogous [R8][R3][R13].",
+  "relevance_to_israel": "King George Sound (Albany) is micro-tidal (mean range 0.4 m, spring 1.1 m), broadly comparable to the Mediterranean at Haifa, which is also effectively micro-tidal, though no fetched source gives a numeric Haifa tidal-range figure [R5][R10]. Official Albany figures differ in form from the Wikipedia ones: the 2018 BMT assessment gives a Middleton Beach spring range of 0.9 m and a neap range of 0.3 m, largest range below 1.5 m [R20]; the WA Department of Transport / Bureau of Meteorology predictions for 2024 run from 0.12 to 1.40 m above LAT, mean 0.742 m above LAT (1,043 high and low waters) [R22]. Datums and averaging periods differ, so the figures are not reconciled. Albany's wave climate (consistent, long-period 12-16s Southern Ocean groundswell) is fundamentally more energetic than Haifa's, where Lior's own Shikmona-buoy measurements define 'minimum surfable' at only 0.45-0.6 m within a narrow WNW swell window [R10][R12]; the 6-8 s period is NOT part of his buoy-based definition: in his notes it belongs to the '4Surfers' forecast-site cross-check (page 1) [R12], while the periods he read off the buoy charts are 5.7-6.2 s (pages 3-4, 6 and 15 Aug 2025) [R12]. Albany's problem was reshaping abundant swell into a rideable, non-closeout wave; Haifa/Israel's problem is swell scarcity ('less than 1 day/week' naturally surfable per Lior's Haifa proposal) [R13]. What transfers: (1) rock-vs-geotextile construction lesson; (2) the shallow-crest/wave-quality vs deeper-crest/safety trade-off any Haifa project would also face; (3) the multi-decade, multi-level-government (federal/state/city/club) financing pattern; (4) because Haifa is swell-starved rather than closeout-prone, Albany is a better precedent for safe rock-reef engineering than for wave-energy requirements, where Lior's own Gold Coast/Narrowneck comparison may be more directly analogous [R8][R3][R13].",
   "reviews": [
     {
       "who": "Peter Bolt",
@@ -100,6 +100,15 @@
       "outlet": "Beachgrit",
       "date": "2025-10",
       "url": "https://beachgrit.com/2025/10/worlds-best-artificial-surfing-reef-to-be-detuned-following-spate-of-injuries/"
+    },
+    {
+      "who": "Troy (founder of Airwave / Waveco, developer of a different reef, Bunbury)",
+      "role": "Outside observer, not surfed: developer of a competing artificial-reef project; interested party",
+      "quote_or_summary": "Said the waves look bad from the outside; he did not surf them. This is an outside observer's opinion based on looking, not surfing, and comes from a developer of a different reef. It conflicts with the largely positive surfer reports above; weight accordingly. Notes as reported by Lior; not verbatim.",
+      "outlet": "Personal communication: Zoom interview with Lior Bakalo",
+      "date": "2026-10-08",
+      "url": "",
+      "ref": "R19"
     }
   ],
   "images": [
@@ -162,6 +171,16 @@
       "kind": "diagram",
       "hotlink_ok": true,
       "shows": "structure visible"
+    },
+    {
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2025/05/Rocks-at-Southern-Ocean-Surf-Reef.png",
+      "source_page": "https://raisedwaterresearch.com/more-waves-and-a-few-moved-rocks-at-southern-ocean-surf-reef/",
+      "credit": "Sam Carmody and Albany Boardriders; ABC Great Southern; Raised Water Research",
+      "license": "not stated; copyright ABC / photographers: link/research copy only, not cleared",
+      "depicts": "Rocks moved shoreward by the 26 May 2025 storm while the reef was under construction (registry southern-ocean-surf-reef-albany-img-29; file in 03_images/reefs/southern-ocean-surf-reef-albany/)",
+      "kind": "photo",
+      "hotlink_ok": true,
+      "shows": "structure visible: dark core rocks showing above the water closer to the beach than designed, late May 2025 (482 x 282 px, the largest size on the RWR site); used as a note on later changes, not as model geometry."
     }
   ],
   "images_rejected": [
@@ -228,115 +247,115 @@
   "references": [
     {
       "id": "R1",
-      "citation": "Wikipedia, \"Southern Ocean Surf Reef\"",
+      "citation": "Wikipedia contributors. \"Southern Ocean Surf Reef.\" Wikipedia, The Free Encyclopedia (revision date not recorded).",
       "url": "https://en.wikipedia.org/wiki/Southern_Ocean_Surf_Reef",
       "accessed": "2026-09-24",
-      "supports": "location, construction timeline, materials, cost, funders, contractor, opening date, design performance targets"
+      "supports": "location, construction timeline, materials, cost, funders, contractor, opening date, design performance targets. Audit 2026-10-10: tertiary source; section not recorded; cost ~AUD 13 M and dates are cross-checked against R3 and R7."
     },
     {
       "id": "R2",
       "citation": "Daniel Mercer / ABC News, \"Artificial reef at Middleton Beach transforms Albany's surf scene\" (15-16 Jul 2025)",
       "url": "https://www.abc.net.au/news/2025-07-16/southern-ocean-surf-reef-transforms-albany-wa/105530202",
       "accessed": "2026-09-24",
-      "supports": "funding pledge history, construction crew and duration, wave performance vs 41% target, Bolt/Warburton quotes, Watterson opening-day quote"
+      "supports": "funding pledge history, construction crew and duration, wave performance vs 41% target, Bolt/Warburton quotes, Watterson opening-day quote. Audit 2026-10-10: news article; location: article body (no page numbers); quotes of Bolt, Warburton, Watterson as reported."
     },
     {
       "id": "R3",
-      "citation": "City of Albany, \"Southern Ocean Surf Reef (SOSR)\" project pages",
+      "citation": "City of Albany (n.d.; page current 2026-09-24). \"Southern Ocean Surf Reef (SOSR)\" project pages, albany.wa.gov.au, including the detailed-design table (registry img-10).",
       "url": "https://www.albany.wa.gov.au/council/projects/completed-projects/southern-ocean-surf-reef-sosr.aspx",
       "accessed": "2026-09-24",
-      "supports": "2015 Feasibility Study objective, detailed design dimensions/depths/rock layers, funding breakdown, project team, construction programme, business-case NPV/BCR"
+      "supports": "2015 Feasibility Study objective, detailed design dimensions/depths/rock layers, funding breakdown, project team, construction programme, business-case NPV/BCR. Audit 2026-10-10: primary (client) source; location: design table for dimensions, levels, rock layers and tonnages (62,800 t), funding breakdown section. The client has a stake in the project's success (interested party)."
     },
     {
       "id": "R4",
-      "citation": "Wikipedia, \"Middleton Beach, Western Australia\"",
+      "citation": "Wikipedia contributors. \"Middleton Beach, Western Australia.\" Wikipedia, The Free Encyclopedia (revision date not recorded).",
       "url": "https://en.wikipedia.org/wiki/Middleton_Beach,_Western_Australia",
       "accessed": "2026-09-24",
-      "supports": "coordinates, reef offshore distance and tonnage description"
+      "supports": "coordinates, reef offshore distance and tonnage description. Audit 2026-10-10: tertiary; coordinates only."
     },
     {
       "id": "R5",
-      "citation": "Wikipedia, \"King George Sound\"",
+      "citation": "Wikipedia contributors. \"King George Sound (Western Australia).\" Wikipedia, The Free Encyclopedia (revision date not recorded).",
       "url": "https://en.wikipedia.org/wiki/King_George_Sound_(Western_Australia)",
       "accessed": "2026-09-24",
-      "supports": "sound geography, mean tidal range (0.4m) and spring tidal range (1.1m)"
+      "supports": "sound geography, mean tidal range (0.4m) and spring tidal range (1.1m). Audit 2026-10-10: tidal ranges 0.4 m mean / 1.1 m spring are the article's statement for the Sound (original source not given there); the 3D/shape HANDOFF also relies on it (MLLW/MHHW offsets) and the datum is not stated."
     },
     {
       "id": "R6",
-      "citation": "The Inertia, \"An Artificial Surf Reef in Western Australia Is Making Serious Waves\"",
+      "citation": "The Inertia (staff or author not recorded; publication date not recorded). \"An Artificial Surf Reef in Western Australia Is Making Serious Waves.\" Web article.",
       "url": "https://www.theinertia.com/surf/an-artificial-surf-reef-in-western-australia-is-making-serious-waves/",
       "accessed": "2026-09-24",
-      "supports": "Peter Bolt quotes, 2017 mayoral/funding turning point, NZ construction crew, 70,000-tonne figure"
+      "supports": "Peter Bolt quotes, 2017 mayoral/funding turning point, NZ construction crew, 70,000-tonne figure. Audit 2026-10-10: journalistic secondary source; its '70,000-tonne' figure differs from R3's 62,800 t."
     },
     {
       "id": "R7",
       "citation": "Derek Rielly / Beachgrit, \"World's best artificial surfing reef to be 'detuned' following spate of injuries\" (Oct 2025)",
       "url": "https://beachgrit.com/2025/10/worlds-best-artificial-surfing-reef-to-be-detuned-following-spate-of-injuries/",
       "accessed": "2026-09-24",
-      "supports": "injuries and proposed detuning, Mayor Stocks quotes, $13M cost figure, Bolt wave-difficulty quote, 2022 federal funding"
+      "supports": "injuries and proposed detuning, Mayor Stocks quotes, $13M cost figure, Bolt wave-difficulty quote, 2022 federal funding. Audit 2026-10-10: journalistic piece; the Oct 2025 'detuning' proposal is reported there, not confirmed by the City; Mayor Stocks quotes as reported."
     },
     {
       "id": "R8",
       "citation": "Stu Nettle / Swellnet Dispatch, \"Albany Artificial Reef Opened Today\" (16 Jul 2025) incl. comment thread",
       "url": "https://www.swellnet.com/news/swellnet-dispatch/2025/07/16/albany-artificial-reef-opened-today",
       "accessed": "2026-09-24",
-      "supports": "history of prior artificial-reef failures, construction description, geotextile-vs-rock rationale, all named-handle reader reviews/quotes"
+      "supports": "history of prior artificial-reef failures, construction description, geotextile-vs-rock rationale, all named-handle reader reviews/quotes. Audit 2026-10-10: the article is a news item; the reader comments (handles 'steveb', 'soggydog', 'Baldhead', 'quokka', 'mikehunt207') are anonymous forum posts: anecdotal opinions, not evidence; the self-described engineering expertise of 'steveb' cannot be verified."
     },
     {
       "id": "R9",
       "citation": "EPA Western Australia, \"Albany Artificial Surf Reef\" proposal page",
       "url": "https://www.epa.wa.gov.au/proposals/albany-artificial-surf-reef",
       "accessed": "2026-09-24",
-      "supports": "proponent, target surfer group (beginner-intermediate), referral status/date"
+      "supports": "proponent, target surfer group (beginner-intermediate), referral status/date. Audit 2026-10-10: primary regulator page; location: the proposal's description of the target surfer group."
     },
     {
       "id": "R10",
-      "citation": "Raised Water Research, \"Midds Reef\" spot page",
+      "citation": "Raised Water Research (n.d.). \"Midds Reef\" [spot page in its artificial-reef database]. No author or date shown.",
       "url": "https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/albany-artificial-surf-reef/",
       "accessed": "2026-09-24",
-      "supports": "wave face height, break frequency, ride length, ideal swell period, tidal notes, skill-level guidance"
+      "supports": "wave face height, break frequency, ride length, ideal swell period, tidal notes, skill-level guidance. Audit 2026-10-10: secondary website; the 0.8-1.3 m, 100-120 m and ~40 % of the year are its statements, not measurements; the ~40 % is consistent with the 41 % design target [R3], not with 'far higher'. Update 2026-10-13: Lior's PDF of the page (7 pp.) and the live page read; adds 'about 120 m off shore', 1.61 ha, '140-375 m offshore ... more than 47,000 m3 (70,000 tonnes)', crest 'roughly .75 m under the surface at low tide', funding with WA 4.75 M / Commonwealth 5 M (conflicts with the City page); no author, no source for the numbers (validation only)."
     },
     {
       "id": "R11",
       "citation": "Albany Advertiser: anniversary letter (Kane Holtom) and \"Eighteen rocks of Southern Ocean Surf Reef repositioned in successful bid to reduce user injuries\" (11 Mar 2026)",
       "url": "https://www.albanyadvertiser.com.au/news/albany-advertiser/eighteen-rocks-of-southern-ocean-surf-reef-repositioned-in-successful-bid-to-reduce-user-injuries-c-21896905",
       "accessed": "2026-09-24",
-      "supports": "18 rocks repositioned, injury-reduction rationale (body paywalled; cost figure corroborated only via search-engine synthesis)"
+      "supports": "18 rocks repositioned, injury-reduction rationale (body paywalled; cost figure corroborated only via search-engine synthesis). Audit 2026-10-10: body paywalled; only the headline, date and '18 rocks' are directly verified; the AUD 20,000 cost is NOT confirmed by a second source (see gaps). Update 2026-10-13: the visible body is paywalled, but the page's schema.org articleBody (page source, no login) gives: about 18 'high rocks' repositioned over two days in late February 2026 by commercial divers with a local vessel and Albany Boardriders, after surveys in late 2025, cost 'more than $20,000' (lede) / 'about $24,000' (City estimate). Text from page metadata; flagged to Lior as decision D12."
     },
     {
       "id": "R12",
       "citation": "Lior's notes, 01_source_notes/lior_suggestions_and_swell_heights.md",
       "url": "",
       "accessed": "2026-09-24",
-      "supports": "Haifa/Shikmona-buoy minimum-surfable-wave definitions used for Israel/Haifa comparison"
+      "supports": "Haifa/Shikmona-buoy minimum-surfable-wave definitions used for Israel/Haifa comparison. Audit 2026-10-10: Lior's own data. Location: pages 1-4 (Shikmona buoy charts, Israel Marine Data Center, three windows in July-August 2025; 'minimum surfable wave' 0.45-0.6 m); read off charts by eye, accuracy not stated. Note: in the notes the 6-8 s period belongs to the '4Surfers' forecast cross-check (page 1), not to Lior's buoy-based definition; the buoy peak periods read 5.7-6.2 s (pages 3-4, 2025-08-06 and 2025-08-15)."
     },
     {
       "id": "R13",
       "citation": "Lior's notes, 01_source_notes/hebrew_surf_route_summary.md",
       "url": "",
       "accessed": "2026-09-24",
-      "supports": "Lior's own Haifa municipal reef proposal, Israeli surf-demand figures, Gold Coast/Narrowneck comparison"
+      "supports": "Lior's own Haifa municipal reef proposal, Israeli surf-demand figures, Gold Coast/Narrowneck comparison. Audit 2026-10-10: Lior's working notes (Hebrew route summary); location: the section on his Haifa municipal proposal; the 'less than 1 day/week' figure is Lior's estimate, source in the notes not re-checked in this audit."
     },
     {
       "id": "R14",
       "citation": "02_research/00_master_list.md and 02_research/01_targets.md (project seed list)",
       "url": "",
       "accessed": "2026-09-24",
-      "supports": "initial slug/target framing and seed facts this dossier's research was tasked with verifying"
+      "supports": "initial slug/target framing and seed facts this dossier's research was tasked with verifying. Audit 2026-10-10: internal project list, not a literature source."
     },
     {
       "id": "R15",
       "citation": "City of Albany, \"Albany Artificial Surf Reef - Frequently Asked Questions\" (May 2023 PDF)",
       "url": "https://www.albany.wa.gov.au/documents/803/albany-artificial-surf-reef-community-update-and-faqs",
       "accessed": "2026-09-24",
-      "supports": "Feb 2015 and Sep 2020 community survey results, interim offshore-distance estimate, interim NPV/BCR figures superseded by R3"
+      "supports": "Feb 2015 and Sep 2020 community survey results, interim offshore-distance estimate, interim NPV/BCR figures superseded by R3. Audit 2026-10-10: City document, May 2023; interim figures (NPV $19.4M / BCR 3.25) are superseded by R3 (NPV $57.9M / BCR 6.69); both are the proponent's business-case modelling (interested party)."
     },
     {
       "id": "R16",
-      "citation": "Bluecoast Consulting Engineers, staff bio page for Evan Watterson",
+      "citation": "Bluecoast Consulting Engineers (n.d.). Staff biography page for Evan Watterson, bluecoastconsulting.com.au/evan.",
       "url": "https://www.bluecoastconsulting.com.au/evan",
       "accessed": "2026-09-24",
-      "supports": "Evan Watterson's title at Bluecoast"
+      "supports": "Evan Watterson's title at Bluecoast. Audit 2026-10-10: firm's own page (self-description)."
     },
     {
       "id": "R17",
@@ -350,8 +369,140 @@
       "citation": "Albany Advertiser: 'Eighteen rocks of Southern Ocean Surf Reef repositioned in successful bid to reduce user injuries', Melissa Sheil, 11 March 2026",
       "url": "https://www.albanyadvertiser.com.au/news/albany-advertiser/eighteen-rocks-of-southern-ocean-surf-reef-repositioned-in-successful-bid-to-reduce-user-injuries-c-21896905",
       "accessed": "2026-09-25",
-      "supports": "Independently re-verified R11's article is live and correctly headlined/dated ('Eighteen rocks of Southern Ocean Surf Reef repositioned in successful bid to reduce user injuries', byline Melissa Sheil, Wed 11 March 2026 4:00PM). No new facts beyond R11: article body remains behind a subscriber paywall in both the live page and a Wayback Machine snapshot (20260517181036), so cost/cause details beyond the headline stay unconfirmed by a second independent source.",
+      "supports": "Independently re-verified R11's article is live and correctly headlined/dated ('Eighteen rocks of Southern Ocean Surf Reef repositioned in successful bid to reduce user injuries', byline Melissa Sheil, Wed 11 March 2026 4:00PM). No new facts beyond R11: article body remains behind a subscriber paywall in both the live page and a Wayback Machine snapshot (20260517181036), so cost/cause details beyond the headline stay unconfirmed by a second independent source. Update 2026-10-13: the visible body is paywalled, but the page's schema.org articleBody (page source, no login) gives: about 18 'high rocks' repositioned over two days in late February 2026 by commercial divers with a local vessel and Albany Boardriders, after surveys in late 2025, cost 'more than $20,000' (lede) / 'about $24,000' (City estimate). Text from page metadata; flagged to Lior as decision D12.",
       "origin": "via Gemini survey, verified 2026-09-25"
+    },
+    {
+      "id": "R19",
+      "citation": "Lior Bakalo, Zoom interview with Troy (founder of Airwave, the Bunbury reef developer), 8 October 2026; notes as reported by Lior. Personal communication / interview, unpublished, no URL. (Troy commented on the Albany reef.)",
+      "url": "",
+      "accessed": "2026-10-10",
+      "type": "personal communication / interview",
+      "supports": "Troy (Airwave founder) says the Albany waves look bad from the outside; he did not surf them (opinion of a non-surfing outside observer from a different reef developer).",
+      "origin": "added 2026-10-10 from Lior's interview notes"
+    },
+    {
+      "id": "R20",
+      "citation": "BMT Western Australia Pty Ltd (2018). Middleton Beach Artificial Surf Reef Environmental Impact Assessment. Report 1345_001/1_Rev2, September 2018, prepared for the City of Albany, 160 pp. (EPA WA referral documentation).",
+      "url": "https://epa.wa.gov.au/sites/default/files/Referral_Documentation/Environmental%20Impact%20Assessment_0.pdf",
+      "accessed": "2026-10-10",
+      "supports": "Middleton Beach tides (PDF p.23, printed p.13: spring range 0.9 m, neap 0.3 m, largest tidal range < 1.5 m, storm surge +0.4-1.0 m); offshore placement expected to give no significant shoreline impact compared with inshore placement (PDF p.38); 'In all the simulations tested, there appeared to be a widening of the shoreline' (shoreline-modelling appendix, PDF p.151); spot soundings in m CD, Fig 6.9 (printed p.32, PDF p.42), used by the 3D model as a far-field seabed check and as the 1.6 m conflict near the shore. Consultant report prepared for the client (interested party). Read by the 3D agent, 07_scale/shapes/southern-ocean-surf-reef-albany/3d/METHODS_3D.md sections 2 and 4."
+    },
+    {
+      "id": "R21",
+      "citation": "Royal HaskoningDHV (2015). Option B 'Long Right' reef design with depth contours (-0.5 to -8 m, legend only, datum not stated) over Google Earth imagery (c) 2015 Google, DigitalGlobe, as reproduced by Raised Water Research (n.d.) on its 'Midds Reef' page (image Albany-Model2.jpg, 609 x 354 px). The original RHDHV report figure was not found.",
+      "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/12/Albany-Model2.jpg",
+      "accessed": "2026-10-10",
+      "supports": "Seabed under and around the reef in the 3D model: contour crossings (-1 to -7 m) read by colour along 8 transects, georeferenced by hand on the Esri 2025-01-16 image; gives about -2.1 m at the shoreward apex to -7.4 m at the offshore toe (datum unstated, read as AHD). A design-stage plan of a different design option, not an as-built survey. Page: https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/albany-artificial-surf-reef/ (R10). Used through 07_scale/shapes/southern-ocean-surf-reef-albany/3d/METHODS_3D.md sections 3.2 and 4."
+    },
+    {
+      "id": "R22",
+      "citation": "Government of Western Australia, Department of Transport / Bureau of Meteorology (2024). Tide Predictions by Location, WA 2024, Albany (35 02 S 117 53 E; datum of predictions LAT). Albany tide page https://transport.wa.gov.au/imarine/albany-tide.asp.",
+      "url": "https://transport.wa.gov.au/mediaFiles/marine/MAR_P_2024_Tide_Predictions_by_Location_WA.PDF",
+      "accessed": "2026-10-10",
+      "supports": "Albany tide levels used in the 3D model: 1,043 predicted high and low waters of 2024 (PDF pp.3-5): highest 1.40 m, lowest 0.12 m, mean 0.742 m above LAT (statistics computed by the 3D agent, scripts/tides_from_dot.py); LAT = -0.74 m AHD with AHD taken as MSL (assumption). Predictions, not measurements; HAT not found. Used through 07_scale/shapes/southern-ocean-surf-reef-albany/3d/METHODS_3D.md section 3."
+    },
+    {
+      "id": "R23",
+      "citation": "Indelicato, P. (2019). Detailed Design Starts on Albany Artificial Surf Reef. Raised Water Research, 14 December 2019.",
+      "url": "https://raisedwaterresearch.com/detailed-design-starts-on-albany-artificial-surf-reef/",
+      "accessed": "2026-10-13",
+      "supports": "Bluecoast awarded the detailed-design tender; the steering group chose 'Long Right' (feasibility Option B), ride about 120 m, face 0.8-1.3 m; UWA WERC peer review; 90 % survey support. The 'Long Right' of 2019 is the 2015 option, not the built left-hander. Lior's PDF (4 pp.) and the live page read 2026-10-13; context only.",
+      "origin": "Lior's uploads 2026-10-11 and live pages, read by agent Albany uploads 2026-10-13"
+    },
+    {
+      "id": "R24",
+      "citation": "Indelicato, P. (2025). Construction Underway on Southern Ocean Surf Reef. Raised Water Research, 19 May 2025.",
+      "url": "https://raisedwaterresearch.com/construction-underway-on-southern-ocean-artificial-reef/",
+      "accessed": "2026-10-13",
+      "supports": "Construction photos and progress text of May 2025 (images registered). Live page read 2026-10-13.",
+      "origin": "Lior's uploads 2026-10-11 and live pages, read by agent Albany uploads 2026-10-13"
+    },
+    {
+      "id": "R25",
+      "citation": "Indelicato, P. (2025). More waves, and a few moved rocks, at Southern Ocean Surf Reef. Raised Water Research, 28 May 2025 (photo: Sam Carmody and Albany Boardriders; reporting by ABC Great Southern).",
+      "url": "https://raisedwaterresearch.com/more-waves-and-a-few-moved-rocks-at-southern-ocean-surf-reef/",
+      "accessed": "2026-10-13",
+      "supports": "An abnormally large storm moved boulders; ABC Great Southern: rocks moved closer to the beach and surfaced; Peter Bolt: the moved rock was the smaller CORE rock, armour to be placed on top; reef 'more than 60 % complete', completion expected June. No coordinates or counts. Lior's PDF (4 pp.) and the live page read 2026-10-13. The original ABC article was not found.",
+      "origin": "Lior's uploads 2026-10-11 and live pages, read by agent Albany uploads 2026-10-13"
+    },
+    {
+      "id": "R26",
+      "citation": "Sheil, M. (2025). First rocks dropped onto Middleton Beach seabed floor as six-week build of Southern Ocean Surf Reef begins. The Albany Advertiser, 18 March 2025.",
+      "url": "https://www.albanyadvertiser.com.au/news/albany-advertiser/first-rocks-dropped-onto-middleton-beach-seabed-floor-as-six-week-build-of-southern-ocean-surf-reef-begins-c-18065729",
+      "accessed": "2026-10-13",
+      "supports": "First rock placed 18 Mar 2025; six-week build planned; reef built 140 m from the shoreline. Read on the Countryman copy, 2026-10-13.",
+      "origin": "Lior's uploads 2026-10-11 and live pages, read by agent Albany uploads 2026-10-13"
+    },
+    {
+      "id": "R27",
+      "citation": "Elezovich, J. (2025). Southern Ocean Surf Reef construction at Middleton Beach in Albany continues, finish date pushed back to June. The Albany Advertiser, 16 May 2025.",
+      "url": "https://www.albanyadvertiser.com.au/news/albany-advertiser/southern-ocean-surf-reef-construction-at-middleton-beach-in-albany-continues-finish-date-pushed-back-to-june-c-18704195",
+      "accessed": "2026-10-13",
+      "supports": "'More than two-thirds complete' on 16 May 2025; finish mid-June. Countryman copy, 2026-10-13.",
+      "origin": "Lior's uploads 2026-10-11 and live pages, read by agent Albany uploads 2026-10-13"
+    },
+    {
+      "id": "R28",
+      "citation": "Elezovich, J. (2025). Record swell reverses Middleton Beach and Emu Point sand nourishment works, moves artificial surf reef rocks. The Albany Advertiser, 28 May 2025.",
+      "url": "https://www.albanyadvertiser.com.au/news/regional/record-swell-reverses-middleton-beach-and-emu-point-sand-nourishment-works-moves-artificial-surf-reef-rocks-c-18839461",
+      "accessed": "2026-10-13",
+      "supports": "Record swell on Monday 26 May 2025, highest waves in King George Sound since 2017; reef rocks suspected moved, contractor survey scheduled. Read 2026-10-13.",
+      "origin": "Lior's uploads 2026-10-11 and live pages, read by agent Albany uploads 2026-10-13"
+    },
+    {
+      "id": "R29",
+      "citation": "The Albany Advertiser (2026). Albany 2026: Reef advocates look back on decades-long journey to bring Southern Ocean Surf Reef to life. 4 August 2026.",
+      "url": "https://www.albanyadvertiser.com.au/news/albany-advertiser/albany-2026-reef-advocates-look-back-on-decades-long-journey-to-bring-southern-ocean-surf-reef-to-life-c-22657778",
+      "accessed": "2026-10-13",
+      "supports": "Reef completed and opened 16 Jul 2025 'after four months of work'; final cost 13 M AUD. Body paywalled: text read from the page's schema.org articleBody (page source, no login), 2026-10-13.",
+      "origin": "Lior's uploads 2026-10-11 and live pages, read by agent Albany uploads 2026-10-13"
+    },
+    {
+      "id": "R30",
+      "citation": "City of Albany (2025). News: Construction of Southern Ocean Surf Reef to Begin. Published 7 March 2025.",
+      "url": "https://www.albany.wa.gov.au/news/construction-of-southern-ocean-surf-reef-to-begin/1294",
+      "accessed": "2026-10-13",
+      "supports": "Construction start, six weeks, 150 m north of the Surfers Beach car park, 140 m offshore. Read 2026-10-13.",
+      "origin": "Lior's uploads 2026-10-11 and live pages, read by agent Albany uploads 2026-10-13"
+    },
+    {
+      "id": "R31",
+      "citation": "City of Albany (2025). News: Swell of excitement over Southern Ocean Surf Reef. Published 16 July 2025.",
+      "url": "https://www.albany.wa.gov.au/news/swell-of-excitement-over-southern-ocean-surf-reef/1342",
+      "accessed": "2026-10-13",
+      "supports": "Successful completion; reef 120 m offshore (the City gives 140 m and 120 m in two news items). Read 2026-10-13.",
+      "origin": "Lior's uploads 2026-10-11 and live pages, read by agent Albany uploads 2026-10-13"
+    },
+    {
+      "id": "R32",
+      "citation": "Government of Western Australia (2025). Albany artificial reef project making waves. Media statement, 14 January 2025.",
+      "url": "https://www.wa.gov.au/government/media-statements/Cook%20Labor%20Government/-Albany-artificial-reef-project-making-waves-20250114",
+      "accessed": "2026-10-13",
+      "supports": "'Cook Government is contributing $4.75 million' (the City page lists WA 5 M and Commonwealth 4.75 M); construction January to March, completion mid-2025 (plan); 140 m offshore; 41 %. Read 2026-10-13.",
+      "origin": "Lior's uploads 2026-10-11 and live pages, read by agent Albany uploads 2026-10-13"
+    },
+    {
+      "id": "R33",
+      "citation": "Geoscience Australia (2021). AusSeabed Bathymetry Coverage 2021 (holdings to June 2021). doi:10.26186/148613. 42 MB FileGDB, linked from https://data.gov.au/data/dataset/ausseabed-bathymetry-coverage-2021.",
+      "url": "https://d28rz98at9flks.cloudfront.net/140124/140124_00_1.zip",
+      "accessed": "2026-10-13",
+      "supports": "Lead only (request W8): attribute table (searched as text, no GIS reader) lists WA Department of Transport surveys 'Middleton Bay & Oyster Harbour' (multibeam; laser scanner), 'Middleton Bay' (single beam) and 'King George Sound' (single beam, RTK), Data Access https://maps.slip.wa.gov.au/Marine/app/ ; years and extents not read. Nothing used for values.",
+      "origin": "Lior's uploads 2026-10-11 and live pages, read by agent Albany uploads 2026-10-13"
+    },
+    {
+      "id": "R34",
+      "citation": "WA Department of Transport / Bureau of Meteorology. Tide Predictions by Location WA 2026, Albany (heights above LAT); 2024 edition read as a cross-check. Extremes extracted by script from 3 of 4 quarterly blocks, so they are lower bounds of the true extremes.",
+      "url": "https://transport.wa.gov.au:443/getmedia/482d7b83-1a48-4220-9e2c-b07ebfcf8594/MAR_P_2026_Tide_Predictions_by_Location_WA.pdf",
+      "accessed": "2026-10-19",
+      "supports": "Predicted annual extremes (not MHWS-MLWS) used for the corrected tide-range text; method and limits in 08_paper/notes/tides_check.md"
+    },
+    {
+      "id": "R35",
+      "citation": "Reef rating (A surf quality, B safety and longevity, C sediment / storm protection), scores 1-5, approved by Lior 2026-10-19. Table: 08_paper/notes/rating_final.md; evidence per reef: 08_paper/notes/rating_evidence.md (this review, repo-internal files).",
+      "url": "",
+      "accessed": "2026-10-19",
+      "supports": "Scores A/B/C and reason for this reef"
     }
   ],
   "blocked_sources": [
@@ -361,10 +512,23 @@
   "gaps": [
     "No monitoring results, post-construction beach-width surveys, or fisheries/ecology data found in sources fetched",
     "No numeric Haifa/Mediterranean tidal-range figure available from a fetched source for direct comparison",
-    "AUD $20,000 repositioning cost figure corroborated only via search-engine synthesis of the paywalled R11 article, not an independent second source",
+    "AUD $20,000+ (lede) / about $24,000 (City estimate) repositioning cost: one paywalled article only (11 Mar 2026), text read from the page metadata; no second source",
     "No frame files exist in 03_images/video_frames/southern-ocean-surf-reef-albany/ for this item",
-    "No Lior figures identifiably tied to this specific item"
+    "No Lior figures identifiably tied to this specific item",
+    "Position (citations audit 2026-10-10): lat/lon changed from -35.0236, 117.9136 to -35.018005, 117.920991, the centroid of the reef outline (07_scale/shapes/southern-ocean-surf-reef-albany/HANDOFF.md section 3; design outline placed on the Esri 2026-01-20 image, position HIGH confidence); the old point was 918 m away (Middleton Beach area). The page's Google Maps link uses this value. Checked 2026-10-10 (page agent): the page's Google Maps link is the centre of the traced design outline (-35.01808, 117.920935), about 10 m from the card's lat/lon.",
+    "2026-10-13: still no as-built survey, crest survey, section or seabed depth after reading Lior's four uploads and the live Raised Water Research pages; leads: WA Department of Transport surveys 'Middleton Bay & Oyster Harbour' (multibeam, laser scanner) found in the AusSeabed 2021 holdings list [R33] (request W8), and the March 2025 practical-completion survey (e-mail to the City, Bluecoast or Heron).",
+    "2026-10-13: funding split conflict (City page: Commonwealth 4.75 M / WA 5 M; WA Government statement and Raised Water Research: WA 4.75 M / Commonwealth 5 M) not resolved."
   ],
   "hero_recommendation": "https://live-production.wcms.abc-cdn.net.au/1927a3b21137e3775326b744d308276e?impolicy=wcms_crop_resize&cropH=2827&cropW=4240&xPos=0&yPos=3&width=862&height=575",
-  "videos_rejected": []
+  "videos_rejected": [],
+  "tide_check": "Albany: WA DoT / BoM 2026 predictions (datum LAT) give annual predicted extremes of 0.09 to 1.47 m, an annual predicted range of about 1.4 m (2024 edition: 0.12 to 1.40 m). The 0.6 m (MHHW-MLLW) used earlier in this review is too small. This is the predicted annual range, not a spring range (MHWS/MLWS not published on the pages read). [R34]",
+  "rating": {
+    "rank": 1,
+    "A": "5",
+    "B": "2",
+    "C": "?",
+    "reason": "best wave; injury reports, 18 rocks moved Feb 2026; too new for sediment data [R35]",
+    "scale": "1-5, ?=no evidence, *=provisional",
+    "source": "this review, Lior-approved 2026-10-19"
+  }
 }

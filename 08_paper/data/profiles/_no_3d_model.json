@@ -1,0 +1,71 @@
+{
+ "generated": "2026-10-19",
+ "note": "Reefs without a 3D model: only what the reef cards and FEASIBILITY files give; \"unknown\" where no source gives a value. No profile arrays.",
+ "reefs": {
+  "kovalam-reef-india": {
+   "name": "Kovalam Reef (Lighthouse Beach, Kerala, India)",
+   "has_3d_model": false,
+   "crest_depth": "unknown as a located value. Range only: \"submergence 0.2-3.4 m\", datum not stated, not tied to any position on the reef (Blacka et al. 2013, Table 4.2, report p.66)",
+   "toe_depth": "unknown. Water depth at the reef \"1.3-3.7 m\" (a range, datum not stated) (Blacka et al. 2013, Table 4.2, report p.66)",
+   "size": "plan 65 m longshore x 85 m cross-shore, 90 m offshore (Blacka et al. 2013, Table 4.2 p.66); volume 4,000 m3 (Mead and Borrero 2011, p.4), 4,300 m3 (Rendle 2016 Table 2.1 p.41), 4,800 m3 (RWR / ICM); 30 m long sand-container units. Project trace of the oblique photo: 59 x 41 m default, 546-1,681 m2 depending on the assumed camera height (LOW confidence; 07_scale/shapes/kovalam-reef-india/FEASIBILITY.md)",
+   "ramp_slope": "unknown",
+   "alongshore_length": "65 m (Blacka et al. 2013 Table 4.2: longshore dimension); trace 59 m (LOW)",
+   "tide": "tide range about 1.0 m (Blacka et al. 2013 Table 4.3 p.68)",
+   "sources": [
+    "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08, UNSW Water Research Laboratory, for NSW Office of Environment and Heritage. https://doi.org/10.4225/53/58e1dc7368c7a (report page = PDF page - 12)",
+    "Mead, S.T. and Borrero, J.C. (2011). Multi-Purpose Reefs - A Decade of Applications. Proc. 20th Australasian Coastal and Ocean Engineering Conference (Coasts and Ports 2011), ASR Ltd. https://search.informit.org/doi/10.3316/informit.715072832934166",
+    "Rendle, E.J. (2016). The Environmental, Social and Economic Impacts of an Artificial Surf Reef - The UK Experience. PhD thesis, University of Plymouth, Table 2.1 printed p.41 (Lior's copy in papers/)"
+   ],
+   "read_from": "07_scale/shapes/kovalam-reef-india/FEASIBILITY.md; 02_research/reefs/kovalam-reef-india.json (size, references R13, R14, R15)",
+   "why_no_profile": "3D model not built: crest and seabed are single unlocated ranges without datum, plan scale only estimated (FEASIBILITY.md 2026-10-10). Structure later sank and deflated."
+  },
+  "opunake-reef": {
+   "name": "Opunake Reef (north reef, Taranaki, New Zealand)",
+   "has_3d_model": false,
+   "crest_depth": "shallowest contour 0.0 m below chart datum (chart datum = LAT) (design, consent stage; TRC 2009 printed p.3). Relative to MSL: not converted (no tide level with datum fetched; Blacka 2013 Table 4.3 tide range > 3.0 m)",
+   "toe_depth": "built in 3.0 to 1.8 m of water below chart datum (LAT) on a thin sand layer over rock, no excavation (TRC 2009 printed pp.3-4; Blacka 2013 Table 4.2 p.65: depth 1.8-3.0 m)",
+   "size": "design about 99 m long x 30 m wide x 3.5 m high, plan area about 2,970 m2 (a bounding rectangle 99 x 30, not the true footprint), volume about 4,900 m3 (TRC 2009 printed p.4); Blacka 2013 Table 4.2: 30 m longshore x 100 m cross-shore, ~300 m offshore; 27 bags in place by April 2008, structure not completed (Sept 2009)",
+   "ramp_slope": "unknown (no cross-section)",
+   "alongshore_length": "design long axis 99 m, bearing 63 deg (occupation area 189 x 94 m rectangle); true footprint unknown",
+   "tide": "tide range > 3.0 m (Blacka et al. 2013 Table 4.3)",
+   "sources": [
+    "Taranaki Regional Council (2009). Opunake Artificial Reef Monitoring Programme 2005-2009. Technical Report 2009-33 (ISSN 0114-8184; document 631513). Stratford, NZ, September 2009, 58 pp. (Lior's copy: new uploads from lior/Opunake Artificial Reef monitoring programme 2005-2009.pdf)",
+    "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08, UNSW Water Research Laboratory, for NSW Office of Environment and Heritage. https://doi.org/10.4225/53/58e1dc7368c7a (report page = PDF page - 12)"
+   ],
+   "read_from": "07_scale/shapes/opunake-reef/FEASIBILITY.md; 02_research/reefs/opunake-reef.json (size, references R18, R14)",
+   "why_no_profile": "3D model not built: no bag layout, no per-bag crest levels, no surveyed seabed (FEASIBILITY.md 2026-10-13)."
+  },
+  "burkitts-reef-bargara": {
+   "name": "Burkitts Reef (Bargara, Queensland, Australia)",
+   "has_3d_model": false,
+   "crest_depth": "unknown (no crest or minimum-depth figure found; natural basalt platform awash/exposed on satellite at unknown tide)",
+   "toe_depth": "unknown (dive-site depth \"to ~9 m\" is a site-wide maximum, not a profile; not used)",
+   "size": "about 300 m3 of rock moved, at least 12 large basalt boulders relocated (RWR Burkitts Reef page; Swellnet comment 2022); traced natural basalt platform 31,485 m2 minimum (321 x 377 m, Esri 2025-09-05, LOW confidence) which is NOT the reshaped zone; Redgard Phase 3 work-zone ellipse about 1,750 m2 (43 x 52 m, +-20-30 m, LOW)",
+   "ramp_slope": "unknown",
+   "alongshore_length": "unknown (reef zone not located)",
+   "tide": "about 2.5 m swing (no datum); MSQ 2026 planes Burnett Heads: MHWS 2.94, MHWN 2.35, MLWN 1.20, MLWS 0.61, MSL 1.78, HAT 3.68 m above LAT",
+   "sources": [
+    "Raised Water Research (n.d.). \"Burkitts Reef\" [spot page, artificial-reef database]. https://raisedwaterresearch.com/spot/artificial-reef/australia/queensland/burkitts-reef/ (accessed 2026-09-24)",
+    "Swellnet comment thread, user truebluebasher, 2022-06-02. https://www.swellnet.com/comments/get/540429"
+   ],
+   "read_from": "07_scale/shapes/burkitts-reef-bargara/FEASIBILITY.md; 02_research/reefs/burkitts-reef-bargara.json (size; references R4, R8)",
+   "why_no_profile": "3D model not built: only a low-confidence outline of the natural platform exists; crest and seabed are missing (FEASIBILITY.md 2026-10-10). Natural boulder headland reshaped in place, not an engineered structure."
+  },
+  "mexico-reef-2026-unnamed": {
+   "name": "Xala Reef (Costalegre, Jalisco, Mexico; card name \"Mexico reef 2026\")",
+   "has_3d_model": false,
+   "crest_depth": "unknown (not disclosed in any source)",
+   "toe_depth": "unknown",
+   "size": "not disclosed; \"3,000 truckloads\" of quarried boulders (Hollywood Reporter 2025-04-22). The 160 x 80 m analogy envelope in 07_scale/reefs/ and Gemini's ~140 x 75 m are unsourced and not used",
+   "ramp_slope": "unknown",
+   "alongshore_length": "unknown",
+   "tide": "unknown (Manzanillo/Cuyutlan tide not fetched)",
+   "sources": [
+    "Romeyn, K. (2025-04-22). With Xala, Richard Gere has Co-Founded a Luxury Mexican Paradise. The Hollywood Reporter. https://www.hollywoodreporter.com/lifestyle/lifestyle-news/xala-richard-gere-luxury-mexican-paradise-1236192415/",
+    "Indelicato, P. (2026-03-31). Unveiling the new reef in Mexico. Raised Water Research (announcement). https://raisedwaterresearch.com/unveiling-the-new-reef-in-mexico/"
+   ],
+   "read_from": "07_scale/shapes/mexico-reef-2026-unnamed/FEASIBILITY.md; 02_research/reefs/mexico-reef-2026-unnamed.json (size; references R1, R3)",
+   "why_no_profile": "no plan, no coordinates, no dimensions, no image of the structure (FEASIBILITY.md 2026-10-10)."
+  }
+ }
+}

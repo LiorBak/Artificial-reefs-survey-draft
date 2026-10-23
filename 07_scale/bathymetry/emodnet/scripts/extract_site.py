@@ -10,7 +10,7 @@ from matplotlib.path import Path as MPath
 from shapely.geometry import Polygon, LineString, Point
 from shapely.ops import unary_union
 
-ROOT = r"C:\Users\lior\Documents\Gemini\AG\Artificial reef - to upload to git"
+ROOT = r"C:\Users\lior\Documents\Claude\Projects\Artificial reef"
 OUT = os.path.join(ROOT, "07_scale", "bathymetry", "emodnet")
 DATA = os.path.join(OUT, "data")
 SCRATCH = os.path.join(os.environ["TEMP"], "emodnet_scratch")

@@ -1,0 +1,95 @@
+{
+  "slug": "mount-maunganui-reef",
+  "entries": [
+    {
+      "what": "Mead and Black (1999) 'A multipurpose, artificial reef at Mount Maunganui Beach, New Zealand', Coastal Management 27(4): 355-365 (card R13)",
+      "kind": "paper",
+      "where": "https://doi.org/10.1080/089207599263767 (Taylor and Francis); Semantic Scholar record",
+      "checked": "2026-10-06",
+      "by": "agent: Mount Maunganui verifier (cloud); card research 2026-09-24",
+      "result": "paywalled",
+      "detail": "The publisher page returns HTTP 403 and the abstract is not available (Semantic Scholar abstract elided); the card already flags it as inaccessible. It is a 1999 pre-construction design paper (consent 2000, redesigned to a delta wing in 2005), so any dimension in it would be a design-stage value, not as-built. Crossref gives the true title and authors (Gemini's 'Black, S.M. & Kerry, A.' is a garbled parse).",
+      "might_work": "Lior: university library / publisher access; low value for the as-built shape"
+    },
+    {
+      "what": "Black and Mead (2007) 'Sand bank responses to a multi-purpose reef on an exposed sandy coast', Shore and Beach 75(4): 55-66 (P4), and Mead (2011) cited throughout the BoPRC report",
+      "kind": "paper",
+      "where": "ASBPA Shore and Beach back issues; Google Scholar; web search 2026-10-10 '\"Sand bank responses to a multi-purpose reef\"'",
+      "checked": "2026-10-10",
+      "by": "agent: Mount Maunganui verifier / papers request list (cloud)",
+      "result": "not found",
+      "detail": "No copy located; the volume and pages (from an old list) could not be confirmed by the 2026-10-10 search, and the paper is known only as cited by Scarfe (2008). Mead (2011), which the BoPRC report cites throughout for the design and as-built facts, is also not accessible. They would hold post-construction seabed surveys (sand bank response).",
+      "might_work": "Lior: P4 / W9 (ASBPA, ResearchGate, Google Scholar)"
+    },
+    {
+      "what": "Papers P2 (Mead, Black and Moores 2007) and P3 (Mead and Borrero 2011) for an as-built plan with scale, as-built bed level and vertical datum",
+      "kind": "paper",
+      "where": "papers/ folder: 'Mount Maunganui Reef-amalgamating design and the constraints 2007.pdf'; 'Multi-Purpose Reefs - A Decade of Applications 2011.pdf'",
+      "checked": "2026-10-10",
+      "by": "agent: Mount Maunganui 3D agent (cloud)",
+      "result": "no plan or figure",
+      "detail": "Both gave design and construction facts and are card references, but neither gives an as-built plan with a scale, a bed level or a datum. P2's Oct 2006 survey (Fig 12) is of the unfinished reef with an unlabelled datum; the P3 Fig 3 'design 6,500 m3 vs as-built 2,800 m3' drawing has an unlabelled grid and no scale or date (it only corroborates the ASR toe outline, IoU 0.87). The as-built seabed at the reef is therefore an assumption (-3.6 m CD, Lior's decision D1; later-seabed option -2.8). P2 is image-only (no text layer, 6 pages).",
+      "might_work": "ASR / Raised Water Research for the datum of the 'Mount Reef Installed' bathymetry (Lior: E6); Google Earth history 2008-2010 (G5)"
+    },
+    {
+      "what": "Datum of the ASR 'Mount Reef Installed' colour-coded bathymetry image (legend -1.8 to -7.4 m)",
+      "kind": "web page",
+      "where": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Mount-Reef-Installed.jpg ; RWR Mount Maunganui spot page",
+      "checked": "2026-10-10",
+      "by": "agent: Mount Maunganui 3D agent (cloud)",
+      "result": "other: datum not stated",
+      "detail": "The image (credit ASR) has no scale bar, no grid and no datum; it is read as MVD-53 in the model, but if the legend were chart datum the toe-level ring would move from -4.46 to -5.4 m CD. The RWR page does not say.",
+      "might_work": "One-line answer from ASR / Raised Water Research (Lior: E6)"
+    },
+    {
+      "what": "Newstalk ZB 'Artificial reef washes ashore at Mount Maunganui'",
+      "kind": "web page",
+      "where": "https://www.newstalkzb.co.nz/news/national/artificial-reef-washes-ashore-at-mount-maunganui/",
+      "checked": "2026-09-24",
+      "by": "agent: Mount Maunganui card research (cloud)",
+      "result": "bot check (not bypassed)",
+      "detail": "HTTP 403 to WebFetch; not used as a reference because R12 covers the same event (fabric ashore, 18 Jan 2023).",
+      "might_work": ""
+    },
+    {
+      "what": "Gemini's Mount Maunganui sources: 'Mead et al. (2007) Mount Maunganui Reef Monitoring Report, ASR Ltd', BoPRC (2014) 'Resource Consent Review and Decommissioning Report', Tauranga City Council 'Tay Street Reef Removal Dossier (2014)', Wikimedia 'Mount_Maunganui_beach_08.jpg', footprint 95 x 75 m Y-shape at -37.6331, 176.1864",
+      "kind": "report",
+      "where": "Gemini reef_footprints.json and provenance files (read-only); web searches 2026-10-06",
+      "checked": "2026-10-06",
+      "by": "agent: Mount Maunganui tracer and verifier (cloud)",
+      "result": "not found",
+      "detail": "The monitoring report, the BoPRC 'Decommissioning Report' title and the Tauranga City Council dossier were not found (searches return BoPRC, NZ Herald and SunLive items only; the removal was BoPRC's decision, announced 16 Apr 2014; the real BoPRC-commissioned document is Focus RMG Dec 2013 'Assessment of Management Options', 80 x 70 m). The Wikimedia file is a 2026 beach photo by Panamitsu with no reef (removed 2014); the 95 x 75 m text is Gemini's own and probably comes from Moores 2006 design dimensions. The coordinates are 1.93 km from the traced reef (wrong site) and the drawing is a design-stage schematic. Gemini lead not confirmed; nothing used.",
+      "might_work": ""
+    },
+    {
+      "what": "EMODnet Bathymetry DTM 2024 (viewer, REST, ERDDAP) for seabed depth at the reef",
+      "kind": "database",
+      "where": "https://emodnet.ec.europa.eu/geoviewer/ ; EMODnet Bathymetry REST depth_sample / ERDDAP bathymetry_dtm_2024 at -37.6448, 176.2026",
+      "checked": "2026-10-06",
+      "by": "agent: EMODnet bathymetry agent (cloud)",
+      "result": "not found",
+      "detail": "EMODnet covers European seas only; the REST service returns HTTP 204 (empty) at this reef's coordinate (New Zealand), so the site is outside the grid. Only two of the 13 reefs are covered (Boscombe, Borth). Do not retry EMODnet for this reef.",
+      "might_work": "Local sources instead: national or state bathymetry, a council or authority survey, Navionics / Google Earth readings (see REQUESTS_FOR_LIOR.md section 5)"
+    },
+    {
+      "what": "The 2008 as-completed multibeam survey of Mount Reef (north-arm base bags, seabed depth at completion)",
+      "kind": "database",
+      "where": "BoPRC / Focus RMG (Dec 2013) 'Assessment of Management Options' pp.23-25 (refers to it); Scarfe (2008) thesis (Jan 2007 survey only); ASR 'Mount Reef Installed' image",
+      "checked": "2026-10-06",
+      "by": "agent: Mount Maunganui verifier and 2026-09-25 verification (cloud)",
+      "result": "not found",
+      "detail": "BoPRC says the deepest north-arm bags and seabed depths of 3.0-4.0 m were 'evident in the 2008 survey' but not in the July 2013 survey (2.25-2.75 m; the small edge bags are 'most likely still intact but buried'), yet the 2008 survey itself is not published in any source found. What exists is the Jan 2007 survey of the 70 % complete reef (Scarfe 2008, Fig 4.22) and the July 2013 survey (BoPRC Fig 3 and 5, the traced default), plus the ASR 'Installed' colour-coded image with no scale or stated datum. So the as-built seabed at the reef is an assumption (-3.6 m CD) and the 2013 outline is a post-deflation state.",
+      "might_work": "Google Earth Pro imagery 2008-2010 on a calm clear day (Lior: G5); ASR Ltd / Raised Water Research (Lior: E6); University of Waikato (Scarfe, Discovery Marine Ltd) survey archive"
+    },
+    {
+      "what": "Black & Mead (2007) 'Sand bank responses to a multi-purpose reef...' Shore & Beach (P4, W9)",
+      "kind": "paper",
+      "where": "Google: \"Sand bank responses to a multi-purpose reef\" Black Mead Shore Beach",
+      "checked": "2026-10-11",
+      "by": "Lior (browser), recorded by main",
+      "result": "not found",
+      "detail": "Lior searched for it 2026-10-11 and found no such paper; volume/pages were never confirmed, the citation itself may be wrong.",
+      "might_work": "Ask ASR/eCoast (S. Mead) whether it exists"
+    }
+  ]
+}

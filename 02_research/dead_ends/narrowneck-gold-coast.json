@@ -1,0 +1,155 @@
+{
+  "slug": "narrowneck-gold-coast",
+  "entries": [
+    {
+      "what": "Black and Mead (2001) 'Design of the Gold Coast reef for surfing, beach amenity and coastal protection', Journal of Coastal Research SI 29, pp. 115-130 (original design crest -0.67 m AHD)",
+      "kind": "paper",
+      "where": "Journal of Coastal Research (publisher / ScienceDirect-type access); web searches by title",
+      "checked": "2026-10-10",
+      "by": "agent: Narrowneck source audit (cloud); stage-1 tracer Step 4 (2026-10-05)",
+      "result": "paywalled",
+      "detail": "Never opened; no figure or dimension obtained. The 2026-10-05 tracer's web search confirmed a paper with this reference (title as 'Design of the Gold Coast reef for surfing, beach amenity and surfing aspects', SI 29, pp.115-130), but the 2026-10-10 source audit found no matching record (the closest is a different title, Black, Hutt, Mead, Jackson, McGrath and Couriel 1999), so the citation is not confirmed. The crest of -0.67 m AHD is known only through Vieira da Silva et al. (2021) p.5.",
+      "might_work": "Lior: look the exact citation up (Scopus / Google Scholar / JCR site) and fetch the PDF; listed under Narrowneck in REQUESTS_FOR_LIOR (source audit lines)"
+    },
+    {
+      "what": "Hunt et al. (2019) Coasts and Ports paper on the Narrowneck reef renewal (renewal drawings and which option was built)",
+      "kind": "paper",
+      "where": "web search for the 2019 Coasts and Ports Hunt paper; ICM page https://www.coastalmanagement.com.au/narrowneck-artificial-reef-renewal",
+      "checked": "2026-10-07",
+      "by": "agent: Narrowneck verifier (cloud)",
+      "result": "not found",
+      "detail": "The 2019 Hunt paper was not found online, and the ICM renewal page gives no numbers or drawings. The question 'which renewal option was built' was later settled from Corbett et al. (2023) in papers/ (Option 2), so only the 2019 paper and the City's renewal drawings / QGHL physical-modelling results remain missing.",
+      "might_work": "Lior: E3 (City of Gold Coast renewal drawings and post-renewal as-built survey)"
+    },
+    {
+      "what": "Swellnet (2026-01-07) 'Questioning The Narrowneck Breakwall' (card R12)",
+      "kind": "web page",
+      "where": "https://www.swellnet.com/news/swellnet-dispatch/2026/01/07/questioning-the-narrowneck-breakwall",
+      "checked": "2026-09-25",
+      "by": "agent: Narrowneck card verification (cloud)",
+      "result": "bot check (not bypassed)",
+      "detail": "HTTP 403 to WebFetch and 202 to curl with a browser user-agent (3 retries); no web.archive.org snapshot existed at the time. The 2026 mayoral rockwall proposal (Luke Sorensen / Save Our Spit Alliance) is kept only because a WebSearch result corroborates it; the article body was never read. Not relevant to the plan or levels.",
+      "might_work": "Lior in a browser if the 2026 breakwall proposal is wanted at source; retry the Wayback Machine"
+    },
+    {
+      "what": "Gemini's Narrowneck dossier (two stacked 'inshore' + 'offshore' lobes, 400 x 220 m, 75,000 m2) and its sources",
+      "kind": "report",
+      "where": "Gemini folder (read-only): reef_footprints.json; its cited sources Black and Mead 2001, Jackson et al. 2012, ICM webinar (Salyer 2025), Swellnet 2017-11-07, Wikimedia photo",
+      "checked": "2026-10-10",
+      "by": "agent: Narrowneck tracer and verifier (cloud)",
+      "result": "not found",
+      "detail": "No source supports the lobes or the 400 x 220 m / 75,000 m2 figures. Jackson et al. 2012 (our PDF) shows two alongshore arms with a central channel / weir and flared wings and contains no such figure; the ICM page and webinar slide (registry img-42) show the reef but give no dimensions or levels; Black and Mead 2001 is paywalled. Swellnet 2017-11-07 is correct only as a depth quote (2.5-2.6 m at low tide), not a plan source. The Gemini hosts could not be re-fetched from the cloud (WebFetch ENOTFOUND; swellnet 2019-08-19 timed out). Gemini lead not confirmed; nothing used.",
+      "might_work": ""
+    },
+    {
+      "what": "ICM case study / webinar (Salyer 2025) for Narrowneck planform dimensions or levels",
+      "kind": "web page",
+      "where": "https://www.coastalmanagement.com.au (Narrowneck case study, artificial-reefs-and-nearshore-nourishment page, coastal-engineering-research page)",
+      "checked": "2026-10-10",
+      "by": "agent: Narrowneck tracer and card verification",
+      "result": "no plan or figure",
+      "detail": "The page and the webinar slide (registry img-42) show the reef but give no planform dimensions or levels and no scaled plan view; the research page only links to ResearchGate. The card uses it for the V configuration, '1.5 m below the low tide waterline' and about 70,000 m3 (text facts).",
+      "might_work": ""
+    },
+    {
+      "what": "Esri Wayback releases of Narrowneck for 2012-07-03 (release 10) and 2014-08-02 (release 6984), and the 2025-10-10 release (22869) at z19",
+      "kind": "imagery",
+      "where": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/{release}/19/{y}/{x} (tile 19/304624/485596)",
+      "checked": "2026-10-05",
+      "by": "agent: Narrowneck tracer (stage 1, cloud)",
+      "result": "broken link",
+      "detail": "HTTP 404 on the z19 tile for releases 6984 and 10 (z19 not served for them; z18 retry not recorded). The 2025-10 tile is featureless. The 2022-23 and 2025-04 tiles match 2020-08-08 to 0.2 m; the 2016-07-01 pre-renewal frame is murky (south arm further 55 m of containers either added or uncovered, unresolved). The seaward toe in -6 to -10 m and three seaward dark patches are not visible in any frame, so the footprint is a lower bound.",
+      "might_work": "Google Earth Pro historical imagery (Lior: G6); City's multibeam (E3); the 2025 State bathymetric LiDAR if released"
+    },
+    {
+      "what": "Garmin / Navionics SonarChart and Nautical chart at Narrowneck for the crest level and nearshore bed (registry img-50 to img-53)",
+      "kind": "chart",
+      "where": "https://maps.garmin.com/en-US/marine, zoom 17/18 at -27.986629, 153.434052 (own headless Chrome)",
+      "checked": "2026-10-06",
+      "by": "agent: Narrowneck verifier (cloud)",
+      "result": "other: crest not resolvable",
+      "detail": "The crowd-sourced SonarChart shows the reef only as shoals 1.5-2 m above the 5.5-6 m seabed (4.0-4.5 m contours) and cannot resolve a crest at -1.4 m LAT. Its land edge lies about 80 m seaward of the 2020-08-08 waterline, so the nearshore contours were not used. The nautical layer gives only spot depths 0.9 (suffix unclear, datum unstated, probably an older crest state of 1.0 m below LAT) and 5.9 in a restricted-area polygon, no reef outline. Only the seaward bed (y 385-500 m) was taken from it.",
+      "might_work": "Lior: Navionics app readings (REQUESTS section 5, Narrowneck rows: the '0.9' label and four points off the beach)"
+    },
+    {
+      "what": "City of Gold Coast Digital Terrain Model (data.gov.au, 4.1 GB) and its metadata geodatabase, for seabed levels at the reef",
+      "kind": "database",
+      "where": "https://data.gov.au/data/dataset/digital-elevation-models-dem ; dtm_metadata.zip",
+      "checked": "2026-10-06",
+      "by": "agent: Gold Coast bathymetry / reports agent (cloud)",
+      "result": "other: no data at the reef",
+      "detail": "The 1 m source-ID raster, the 104-row attribute table and the 65-step lineage name only LiDAR 2022/2015, Broadwater bathymetric LiDAR 2014 and creek / canal sections: no open-coast, beach, reef or nearshore hydrographic survey. At Narrowneck the last data block lies 337 m landward of the reef centre; nothing seaward. The 4.1 GB DTM was not downloaded (rule: no file over 50 MB).",
+      "might_work": "Not in the public DTM; City multibeam via Lior: E3"
+    },
+    {
+      "what": "City of Gold Coast Contours MapServer (50/10/5/1 m layers) and the open-data hub catalogue for bathymetry",
+      "kind": "database",
+      "where": "https://maps1.goldcoast.qld.gov.au/arcgis/rest/services/Contours/MapServer ; https://data-goldcoast.opendata.arcgis.com",
+      "checked": "2026-10-06",
+      "by": "agent: Gold Coast bathymetry / reports agent (cloud)",
+      "result": "other: no offshore data",
+      "detail": "Minimum contour elevation 0 m in the windows around both reefs; all 226 negative 1 m contours lie inland (Nerang River, Broadwater, canals), none east of x = 543,500. Hub searches (bathymetry, hydrographic, nearshore, reef, contour, DEM) return only the Artificial Reef feature layer (already used) and the Contours / Hillshade services.",
+      "might_work": ""
+    },
+    {
+      "what": "Queensland State-wide Nearshore Bathymetry Survey (DETSI, Gold Coast stage 2025) and other state data (QSpatial, Queensland Globe, AusSeabed, MSQ surveys)",
+      "kind": "database",
+      "where": "https://www.qcoast2100.com.au/files/assets/qcoast2100/v/1/events/forum-9-documents/2._qcoast_forum_2025_detsi_sel_sultmann_final.pdf ; qld.gov.au seabed mapping pages; AusSeabed portal",
+      "checked": "2026-10-06",
+      "by": "agent: Gold Coast bathymetry / reports agent (cloud)",
+      "result": "not found",
+      "detail": "Airborne bathymetric LiDAR (1 m DEM, 200 m onshore to up to 6 km offshore, AHD; flown from mid-July 2025) is free to councils but 'no decision on public availability' (Sultmann 2025). Only the Sunshine Coast 2011-12 pilot is open; older Queensland data are 'up to 40 years old' surveys of uncertain accuracy. No open-coast Gold Coast beach-profile, multibeam or LiDAR layer was found in QSpatial / Queensland Globe / AusSeabed / GCWA / MSQ. The qcoast2100.com.au PDF gave 403 to scripts; the copy cached by WebFetch was read.",
+      "might_work": "Lior: E4 (DETSI coastal team) to ask for release; check again after 2026"
+    },
+    {
+      "what": "Queensland Hydrographic Charts 1802-2013 (data.qld.gov.au) for historic Gold Coast soundings",
+      "kind": "database",
+      "where": "https://www.data.qld.gov.au/dataset/hydrographic-charts-1802-2013",
+      "checked": "2026-10-06",
+      "by": "agent: Gold Coast bathymetry / reports agent (cloud)",
+      "result": "bot check (not bypassed)",
+      "detail": "The dataset page answered scripts with an HTTP 202 challenge; known only from search snippets (scanned charts current to 2010, including Gold Coast beaches D-series 1987-1999). Lead only: not downloaded and not read.",
+      "might_work": "Lior in a browser; likely only pre-reef (before 1999) soundings"
+    },
+    {
+      "what": "City of Gold Coast hydrographic surveys and as-built data: Whole-of-Coast transects, ten Narrowneck topo-bathymetric surveys 2018-2020, post-renewal multibeam, renewal design drawings",
+      "kind": "e-mail contact",
+      "where": "City of Gold Coast (Beaches and Waterways); not on the open-data hub",
+      "checked": "2026-10-10",
+      "by": "agent: Narrowneck stage 2 / Gold Coast bathymetry agent (cloud)",
+      "result": "not found",
+      "detail": "These exist (80 ETA transects about 400 m apart; ten single-beam + RTK surveys 19 Jul 2018 - 23 Apr 2020; multibeam after the 2018 renewal showing crest -2.2 m AHD) but are internal / Griffith. Only Fig 3 of Vieira da Silva et al. (2021) reproduces some of it. The AHD-to-LAT offset the City used for its 2018 survey (0.760 m per MSQ vs 1.00 m in the papers) is also unknown. Claude never sends e-mail.",
+      "might_work": "Lior: E3 (e-mail the City of Gold Coast) - biggest remaining gain for Narrowneck and Palm Beach"
+    },
+    {
+      "what": "Publisher and aggregator sites blocked during the Gold Coast reports run: ResearchGate, ScienceDirect, academia.edu, ADS, MDPI, informit.org, theinertia.com",
+      "kind": "web page",
+      "where": "researchgate.net (HTTP 403); sciencedirect.com (Cloudflare error 1000); academia.edu and ui.adsabs (human-verification page); mdpi.com (Akamai 403); search.informit.org (Cloudflare challenge); theinertia.com (403)",
+      "checked": "2026-10-06",
+      "by": "agent: Gold Coast bathymetry / reports agent (cloud)",
+      "result": "bot check (not bypassed)",
+      "detail": "None bypassed. Papers that were gated this way (Corbett et al. 2023 on ResearchGate / Informit; Black and Mead 2001) were obtained by Lior (Corbett 2023 is now in papers/) or remain missing. Abstracts came from search-engine snippets only.",
+      "might_work": "Lior in a normal browser; or an institutional / Griffith Research Online copy"
+    },
+    {
+      "what": "YouTube Short 'HOW PRETTY IS NARROWNECK REEF AND GOLD COAST SEAWAY' (xCLnKjvJ9r4, Diving Diaries, 2025-06-14)",
+      "kind": "video",
+      "where": "https://www.youtube.com/shorts/xCLnKjvJ9r4",
+      "checked": "2026-09-25",
+      "by": "agent: Narrowneck media re-check (cloud)",
+      "result": "other: video not about the reef",
+      "detail": "The cached description discusses only the Gold Coast Seaway (a separate structure at the river mouth), never the offshore reef, so it stays a link-only uncertain lead. No frames exist for Narrowneck (the video_frames folder is empty).",
+      "might_work": ""
+    },
+    {
+      "what": "EMODnet Bathymetry DTM 2024 (viewer, REST, ERDDAP) for seabed depth at the reef",
+      "kind": "database",
+      "where": "https://emodnet.ec.europa.eu/geoviewer/ ; EMODnet Bathymetry REST depth_sample / ERDDAP bathymetry_dtm_2024 at -27.9864, 153.4297",
+      "checked": "2026-10-06",
+      "by": "agent: EMODnet bathymetry agent (cloud)",
+      "result": "not found",
+      "detail": "EMODnet covers European seas only; the REST service returns HTTP 204 (empty) at this reef's coordinate (Australia), so the site is outside the grid. Only two of the 13 reefs are covered (Boscombe, Borth). Do not retry EMODnet for this reef.",
+      "might_work": "Local sources instead: national or state bathymetry, a council or authority survey, Navionics / Google Earth readings (see REQUESTS_FOR_LIOR.md section 5)"
+    }
+  ]
+}

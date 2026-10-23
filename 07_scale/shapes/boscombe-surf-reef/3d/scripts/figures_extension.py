@@ -28,7 +28,7 @@ toe = np.vstack([toe, toe[:1]])
 lines = ex.beach_lines()
 WL = {w["key"]: w["z"] for w in M["water_levels"]}
 CODES = {0: ("Fig. 9 survey (Apr 2011)", "#2a7fbf"), 1: ("spline extrapolation, no data", "#b9b9b9"), 2: ("interpolated under the reef", "#e0b030"),
-         3: ("CCO beach profile (2010-04-20)", "#2e9e4f"), 4: ("CCO-to-survey blend (40 m)", "#9fd36a"), 5: ("EMODnet slope extrapolation (+-1.2 m)", "#d9534f")}
+         3: ("CCO beach profile (2010-04-20)", "#2e9e4f"), 4: ("CCO-to-survey blend (40 m)", "#9fd36a"), 5: ("EMODnet slope, flat alongshore (D2; +-0.5 m)", "#d9534f")}
 
 # ---- 1. plan of the profile lines on the seabed z
 fig, ax = plt.subplots(figsize=(8, 6.8), dpi=130)

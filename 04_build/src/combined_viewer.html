@@ -365,6 +365,19 @@
         pen += Math.abs(x - c[0]) * 0.3 + Math.abs(y - c[1]) * 0.3;
         if (pen < bestScore) { bestScore = pen; best = cand; }
       });
+      if (bestScore >= 1000 && !ov) {      // 2026-10-10 (9 reefs): every preferred spot collides, so scan the free area; the free spot nearest to the reef wins (a leader line joins it to the reef)
+        var px = L.sx - L.w / 2, py = L.sy - L.h - 10, stepY = (L.h + 4) / 2, bestD = 1e18, found = null;
+        for (var yy = y0; yy <= y1 - L.h; yy += stepY) {
+          for (var xx = x0; xx <= x1 - L.w; xx += 24) {
+            var cd = { x: xx, y: yy, w: L.w, h: L.h }, bad = false;
+            for (var q = 0; q < placed.length; q++) { if (overlap(cd, placed[q], 3)) { bad = true; break; } }
+            if (bad) continue;
+            var dd = Math.hypot(xx - px, yy - py);
+            if (dd < bestD) { bestD = dd; found = cd; }
+          }
+        }
+        if (found) best = found;
+      }
       r = best; placed.push(r);
       L.el.style.transform = 'translate(' + r.x.toFixed(1) + 'px,' + r.y.toFixed(1) + 'px)';
       // leader line: from the nearest point of the label box to the reef, only when the label is not right above it

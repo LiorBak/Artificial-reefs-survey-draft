@@ -15,7 +15,7 @@ import asyncio, base64, datetime, json, os, socket, subprocess, sys, tempfile, t
 import websockets
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-OUTDIR = 'C:/Users/lior/Documents/Gemini/AG/Artificial reef - to upload to git/07_scale/shapes/narrowneck-gold-coast/src/navionics'
+OUTDIR = 'C:/Users/lior/Documents/Claude/Projects/Artificial reef/07_scale/shapes/narrowneck-gold-coast/src/navionics'
 CHROME = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
 REEF = (-27.986629, 153.434052)          # council polygon centroid = shape.json geo.centroid_latlon
 GEOHASH_KEY = 'r7j0g3pq0d1k'             # geohash of REEF (12 characters)

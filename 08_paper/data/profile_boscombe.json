@@ -1,0 +1,53 @@
+{
+ "slug": "boscombe-surf-reef",
+ "method": "loft of METHODS_3D E10 on model.js seabed (m MSL); crest -0.90 m MSL = +0.5 m ACD",
+ "crest_depth_msl_m": 0.8999999999999999,
+ "crest_acd": 0.5,
+ "x_crest_centre": 2.1599999999999966,
+ "transect": {
+  "x": 2.1599999999999966,
+  "y_toe": 253.25,
+  "y_crest": 239.25,
+  "toe_depth_msl": 5.4584,
+  "crest_depth_msl": 0.8999999999999999,
+  "ramp": 14.0,
+  "gap": 4.558400000000001,
+  "bed_at_crest_msl": 4.95885
+ },
+ "medians": {
+  "toe_depth_msl": [
+   5.2732624999999995,
+   3.9807050000000004,
+   6.126634999999999
+  ],
+  "crest_depth_msl": [
+   0.8999999999999999,
+   0.8999999999999999,
+   3.1922330302696635
+  ],
+  "ramp": [
+   14.0,
+   5.0,
+   26.400000000000006
+  ],
+  "gap": [
+   3.956359232402435,
+   1.6650160624986328,
+   5.198365
+  ]
+ },
+ "n_columns": 94,
+ "bed_under_outline_acd_mean": -3.566346130470016,
+ "bed_under_outline_msl_range": [
+  3.64115,
+  6.263
+ ],
+ "y_extent": [
+  179.25,
+  278.25
+ ],
+ "x_extent": [
+  -40.84,
+  52.16
+ ]
+}

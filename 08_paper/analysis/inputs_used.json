@@ -1,0 +1,4898 @@
+{
+ "narrowneck-gold-coast": {
+  "slug": "narrowneck-gold-coast",
+  "name": "Narrowneck Reef, Gold Coast (Queensland, Australia)",
+  "site": {
+   "H": 1.0,
+   "H_src": "SOURCED: H ~1 m, Blacka et al. (2013) Table 4.3 p.67-68 (PDF p.79-80)",
+   "T": 10.0,
+   "T_src": "ASSUMPTION: no Tp in the sources (reefs.json swell_tp_s unknown; Blacka 2013 A.2 p.100: actual waves shorter period than the design swell); 10 s used, 6-14 s sensitivity",
+   "phi0": [
+    81.1,
+    81.1
+   ],
+   "phi0_src": "ASSUMPTION: shore-normal swell at the reef; arms near shore-normal converging seaward by 17.8 deg (reefs.json arm_angle_to_shoreline_deg note) -> each arm 90 - 8.9 = 81.1 deg to the crest. If the SE swell arrived ~49 deg off shore-normal unrefracted (reefs.json gaps note), the angle would be ~41 deg (alt run).",
+   "phi0_alt": [
+    41.0,
+    41.0
+   ],
+   "tide_kind": "semidiurnal",
+   "swell_dir": "SE (qualitative; reefs.json swell_dir)"
+  },
+  "planes": {
+   "LAT": -0.88,
+   "MLWS": -0.66,
+   "MLWN": -0.37,
+   "MSL": 0.0,
+   "MHWN": 0.36,
+   "MHWS": 0.65,
+   "HAT": 1.15
+  },
+  "tide": {
+   "A_spring": 0.655,
+   "A_neap": 0.365,
+   "z0": -0.005,
+   "basis": "MHWS/MLWS and MHWN/MLWN",
+   "kind": "semidiurnal",
+   "extreme_hi": 1.15,
+   "extreme_lo": -0.88
+  },
+  "tide_levels": {
+   "low": -0.66,
+   "mid": 0.0,
+   "high": 0.65
+  },
+  "tide_sources": [
+   {
+    "input": "tide planes (MSL = LAT + 0.88 m), AHD link",
+    "sources": {
+     "msq": "Maritime Safety Queensland (2014) Standard port datum levels - height above LAT (Gold Coast Seaway: AHD = LAT + 0.760 m); Maritime Safety Queensland (2026) Semidiurnal tidal planes 2026 (MSL, MHWS, MHWN, MLWN, MLWS, HAT above LAT). msq.qld.gov.au, licence not stated"
+    }
+   }
+  ],
+  "profile_json": "08_paper/data/profiles/narrowneck-gold-coast.json",
+  "version": {
+   "id": "photo_2020-08-08",
+   "name": "Renewed reef as seen on the 2020 aerial photo (visible container field, 8 Aug 2020)",
+   "date": "2020-08-08",
+   "is_default_version": true
+  },
+  "datum": "z = metres above MSL; z_MSL = z_AHD - 0.12 (MSQ 2026 Gold Coast Seaway planes: AHD = LAT + 0.76, MSL = LAT + 0.88, uncertainty +-0.25 m); alternative from the papers: AHD = LAT + 1.00 shifts geometry by +0.24 m",
+  "shoreline_definition": "y = 0 is the waterline of the Esri World Imagery of 8 Aug 2020 (tide stage unknown); the seabed profile there is 0.0 m AHD = -0.12 m MSL (validation.stats.bed_profile_AHD), so the MSL crossing is within a few metres of y = 0.",
+  "glob": {
+   "crest_z_msl_m": -1.92,
+   "crest_x_m": 46.0,
+   "crest_y_m": 217.0,
+   "crest_height_above_seabed_m": 0.972,
+   "crest_depth_below_msl_m": 1.92,
+   "footprint_x_range_m": [
+    -57.0,
+    55.0
+   ],
+   "footprint_y_range_m": [
+    212.0,
+    369.0
+   ],
+   "footprint_alongshore_span_m": 113.0,
+   "footprint_cross_shore_span_m": 158.0,
+   "footprint_area_m2_thickness_ge_0p10": 6239.0,
+   "footprint_centroid_xy_m": [
+    0.04,
+    288.13
+   ],
+   "centreline_x_m": -1.0,
+   "alongshore_length_z_ge_minus0p5_m_msl": {
+    "level_msl_m": -0.5,
+    "span_m": null,
+    "union_m": null,
+    "note": "no reef cell at or above this level"
+   },
+   "alongshore_length_z_ge_crest_minus0p5": {
+    "level_msl_m": -2.42,
+    "span_m": 104.0,
+    "union_m": 66.0,
+    "x_min_m": -51.0,
+    "x_max_m": 52.0
+   },
+   "alongshore_extent_by_level": [
+    {
+     "level_msl_m": 0.5,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": 0.0,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": -0.5,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": -1.0,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": -1.5,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": -2.0,
+     "span_m": 28.0,
+     "union_m": 12.0,
+     "x_min_m": 25.0,
+     "x_max_m": 52.0
+    },
+    {
+     "level_msl_m": -2.5,
+     "span_m": 105.0,
+     "union_m": 67.0,
+     "x_min_m": -52.0,
+     "x_max_m": 52.0
+    },
+    {
+     "level_msl_m": -3.0,
+     "span_m": 110.0,
+     "union_m": 76.0,
+     "x_min_m": -57.0,
+     "x_max_m": 52.0
+    },
+    {
+     "level_msl_m": -4.0,
+     "span_m": 112.0,
+     "union_m": 98.0,
+     "x_min_m": -57.0,
+     "x_max_m": 54.0
+    },
+    {
+     "level_msl_m": -5.0,
+     "span_m": 113.0,
+     "union_m": 103.0,
+     "x_min_m": -57.0,
+     "x_max_m": 55.0
+    }
+   ]
+  },
+  "reefs_json": {
+   "name": {
+    "value": "Narrowneck Reef (Gold Coast Reef), Gold Coast, Queensland",
+    "status": "sourced",
+    "location": "Appendix A.2 p.94",
+    "source": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013) A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08 (final, 11 June 2013), UNSW Water Research Laboratory, for the NSW Office of Environment and Heritage. doi:10.4225/53/58e1dc7368c7a. Accessed 2026-10-07."
+   },
+   "country": {
+    "value": "Australia",
+    "status": "sourced",
+    "location": "Appendix A.2 p.94",
+    "source": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013) A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08 (final, 11 June 2013), UNSW Water Research Laboratory, for the NSW Office of Environment and Heritage. doi:10.4225/53/58e1dc7368c7a. Accessed 2026-10-07."
+   },
+   "year_built": {
+    "value": 1999,
+    "status": "sourced",
+    "location": "A.2.1 p.94: construction began Aug 1999",
+    "source": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013) A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08 (final, 11 June 2013), UNSW Water Research Laboratory, for the NSW Office of Environment and Heritage. doi:10.4225/53/58e1dc7368c7a. Accessed 2026-10-07."
+   },
+   "purpose": {
+    "value": "multi",
+    "status": "sourced",
+    "location": "p.2 (3.1.2): first MPR designed primarily for coastal protection, surfing secondary",
+    "source": "Mead, S.T. and Borrero, J.C. (2011). Multi-Purpose Reefs - A Decade of Applications. Proc. 20th Australasian Coastal and Ocean Engineering Conference (Coasts and Ports 2011), ASR Ltd (Narrowneck pp.2-5, Fig. 5 p.5). Lior's copy in papers/; intake note 05_qa/papers_intake/P3_mead_borrero_2011.md. (Earlier text of this citation used a wrong title.) https://search.informit.org/doi/10.3316/informit.715072832934166"
+   },
+   "material": {
+    "value": "geotextile sand-filled containers (Terrafix); initial ~400, 534 placed by 2018; each ~20 m long, 3-4.5 m diameter, 160-300 t",
+    "status": "sourced",
+    "location": "A.2.5 p.97",
+    "source": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013) A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08 (final, 11 June 2013), UNSW Water Research Laboratory, for the NSW Office of Environment and Heritage. doi:10.4225/53/58e1dc7368c7a. Accessed 2026-10-07."
+   },
+   "volume_m3": {
+    "value": 70000,
+    "status": "sourced",
+    "location": "p.2 (3.1.2): \"largest yet built (some 70,000 m3)\" citing Jackson 2007",
+    "source": "Mead, S.T. and Borrero, J.C. (2011). Multi-Purpose Reefs - A Decade of Applications. Proc. 20th Australasian Coastal and Ocean Engineering Conference (Coasts and Ports 2011), ASR Ltd (Narrowneck pp.2-5, Fig. 5 p.5). Lior's copy in papers/; intake note 05_qa/papers_intake/P3_mead_borrero_2011.md. (Earlier text of this citation used a wrong title.) https://search.informit.org/doi/10.3316/informit.715072832934166"
+   },
+   "surf_outcome": {
+    "value": "works rarely",
+    "status": "sourced",
+    "location": "Swellnet 2017/2019; Blacka Table 4.1 (surfing \"Minor\")",
+    "source": "Nettle, Stu (\"stunet\") (2017-11-07). \"Narrowneck artificial reef nears completion (updated).\" Swellnet Dispatch. https://www.swellnet.com/news/swellnet-dispatch/2017/11/07/narrowneck-artificial-reef-nears-completion-updated"
+   },
+   "surfable_days_per_year": {
+    "value": null,
+    "status": "unknown",
+    "location": "",
+    "source": null
+   },
+   "durability": {
+    "value": "containers stable to 8-10 m waves; nine storms with H>5 m by 2002; settlement 1-2 m locally (weir containers up to 2 m); damage by anchors, spears, knives, boards; composite geotextile used in later bags; renewal 2017-18 (84 containers); Cyclone Oma Feb 2019 erosion (beach)",
+    "status": "sourced",
+    "location": "Blacka A.2.5 p.97-98; METHODS_3D s1 (history); Swellnet 2019",
+    "source": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013) A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08 (final, 11 June 2013), UNSW Water Research Laboratory, for the NSW Office of Environment and Heritage. doi:10.4225/53/58e1dc7368c7a. Accessed 2026-10-07."
+   },
+   "sediment_shoreline_outcome": {
+    "value": "Mixed/disputed. Published 20-50 m salient; Blacka 2013 (p.98-100) reads it as a likely misreading (arbitrary dune reference line); Turner (2005) ~20 m accretion within 1000 m of the reef 2001-2003; shoreline receded 2.8 m/yr north/south and 4.3 m/yr in the lee over 8 yr (Blacka et al. 2008); sand increases mostly in offshore bars (City 2019). NSW review rating: coastal protection \"Minor\".",
+    "status": "sourced",
+    "location": "Blacka A.2.6-A.2.7 p.98-100; Mead & Borrero p.4 (30-50 m); Swellnet 2019",
+    "source": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013) A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08 (final, 11 June 2013), UNSW Water Research Laboratory, for the NSW Office of Environment and Heritage. doi:10.4225/53/58e1dc7368c7a. Accessed 2026-10-07."
+   },
+   "tide_spring_range_m": {
+    "value": 1.31,
+    "status": "derived",
+    "location": "MHWS +0.65 - MLWS -0.66 m MSL (Gold Coast Seaway planes above LAT: MLWS 0.22, MHWS 1.53); METHODS_3D s3.1",
+    "source": "Maritime Safety Queensland (2026) Semidiurnal tidal planes 2026. msq.qld.gov.au."
+   },
+   "cost_usd_2024": {
+    "value": 2957000.0,
+    "status": "derived",
+    "location": "nominal USD x CPI_USA(2024) 143.86 / CPI_USA(2000) 78.97",
+    "source": "World Bank, World Development Indicators: PA.NUS.FCRF \"Official exchange rate (LCU per US$, period average)\" and FP.CPI.TOTL \"Consumer price index (2010 = 100)\", USA; https://api.worldbank.org/v2 ; fetched 2026-10-15"
+   },
+   "distance_offshore_crest_m": {
+    "value": 212.0,
+    "status": "derived",
+    "location": "y of the shallowest crest cell",
+    "source": "07_scale/shapes/narrowneck-gold-coast/3d/model.js frame (shoreline_y = 0) (derive_profiles.py)"
+   },
+   "arm_angle_to_shoreline_deg": {
+    "value": 72.2,
+    "status": "derived",
+    "location": "north arm axis vs shoreline (acute): 72.2 deg (min-rectangle 82.2); south arm 90.0; arms converge seaward by 17.8 +-5 deg",
+    "source": "07_scale/shapes/narrowneck-gold-coast/shape.json angles"
+   },
+   "arm_angle_to_swell_deg": {
+    "value": null,
+    "status": "unknown",
+    "location": "",
+    "source": null
+   }
+  },
+  "confidence_3d": "medium",
+  "line_metrics": {
+   "centreline": {
+    "reef_on_line": true,
+    "crest_z_msl_m": -5.43,
+    "crest_y_m": 336.0,
+    "crest_depth_below_msl_m": 5.43,
+    "crest_seabed_z_msl_m": -6.82,
+    "crest_height_above_seabed_m": 1.39,
+    "crest_zone_y_m": [
+     328.0,
+     337.0
+    ],
+    "crest_zone_width_m": 10.0,
+    "seaward_toe_y_m": 369.0,
+    "seaward_toe_reef_z_msl_m": -6.39,
+    "seaward_toe_seabed_z_msl_m": -7.362,
+    "seaward_toe_thickness_m": 0.972,
+    "ramp_length_m": 32.0,
+    "ramp_rise_m": 0.96,
+    "crest_to_toe_drop_m": 0.96,
+    "crest_to_toe_seabed_drop_m": 1.932,
+    "mean_seaward_slope": {
+     "tan": 0.03,
+     "deg": 1.72,
+     "one_in": 33.33
+    },
+    "max_seaward_slope": {
+     "tan": 0.325,
+     "deg": 18.0,
+     "one_in": 3.08
+    },
+    "max_seaward_slope_at_y_m": 368.0,
+    "shoreward_toe_y_m": 317.0,
+    "shoreward_toe_reef_z_msl_m": -5.59,
+    "shoreward_toe_seabed_z_msl_m": -6.562,
+    "shoreward_ramp_length_m": 11.0,
+    "shoreward_ramp_rise_m": 0.15,
+    "mean_shoreward_slope": {
+     "tan": 0.0136,
+     "deg": 0.78,
+     "one_in": 73.33
+    },
+    "reef_cross_shore_extent_m": 53.0,
+    "max_thickness_on_line_m": 1.978,
+    "y_msl_crossing_m": -5.0,
+    "segments": [
+     {
+      "y_from_m": 317.0,
+      "y_to_m": 369.0,
+      "max_z_msl_m": -5.43
+     }
+    ],
+    "bridged_gaps": [
+     {
+      "y_from_m": 340.0,
+      "y_to_m": 346.0
+     }
+    ],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.0154,
+     "deg": 0.88,
+     "one_in": 65.0
+    },
+    "crest_distance_from_msl_line_m": 341.0,
+    "seaward_toe_distance_from_msl_line_m": 374.0,
+    "shoreward_toe_distance_from_msl_line_m": 322.0,
+    "seabed_mean_slope_msl_line_to_seaward_toe": {
+     "tan": 0.0197,
+     "deg": 1.13,
+     "one_in": 50.8
+    },
+    "seabed_mean_slope_msl_line_to_shoreward_toe": {
+     "tan": 0.0204,
+     "deg": 1.17,
+     "one_in": 49.07
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.0243,
+     "deg": 1.39,
+     "one_in": 41.11
+    }
+   },
+   "crest_line": {
+    "reef_on_line": true,
+    "crest_z_msl_m": -1.92,
+    "crest_y_m": 216.0,
+    "crest_depth_below_msl_m": 1.92,
+    "crest_seabed_z_msl_m": -2.844,
+    "crest_height_above_seabed_m": 0.924,
+    "crest_zone_y_m": [
+     216.0,
+     217.0
+    ],
+    "crest_zone_width_m": 2.0,
+    "seaward_toe_y_m": 233.0,
+    "seaward_toe_reef_z_msl_m": -3.02,
+    "seaward_toe_seabed_z_msl_m": -3.996,
+    "seaward_toe_thickness_m": 0.976,
+    "ramp_length_m": 16.0,
+    "ramp_rise_m": 1.08,
+    "crest_to_toe_drop_m": 1.1,
+    "crest_to_toe_seabed_drop_m": 2.076,
+    "mean_seaward_slope": {
+     "tan": 0.0675,
+     "deg": 3.86,
+     "one_in": 14.81
+    },
+    "max_seaward_slope": {
+     "tan": 0.07,
+     "deg": 4.0,
+     "one_in": 14.29
+    },
+    "max_seaward_slope_at_y_m": 229.0,
+    "shoreward_toe_y_m": 216.0,
+    "shoreward_toe_reef_z_msl_m": -1.92,
+    "shoreward_toe_seabed_z_msl_m": -2.844,
+    "shoreward_ramp_length_m": 0.0,
+    "shoreward_ramp_rise_m": 0.0,
+    "mean_shoreward_slope": {
+     "tan": null,
+     "deg": null,
+     "one_in": null
+    },
+    "reef_cross_shore_extent_m": 18.0,
+    "max_thickness_on_line_m": 3.07,
+    "y_msl_crossing_m": -5.0,
+    "segments": [
+     {
+      "y_from_m": 216.0,
+      "y_to_m": 233.0,
+      "max_z_msl_m": -1.92
+     },
+     {
+      "y_from_m": 251.0,
+      "y_to_m": 263.0,
+      "max_z_msl_m": -2.32
+     },
+     {
+      "y_from_m": 279.0,
+      "y_to_m": 288.0,
+      "max_z_msl_m": -3.44
+     }
+    ],
+    "bridged_gaps": [
+     {
+      "y_from_m": 218.0,
+      "y_to_m": 227.0
+     }
+    ],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.0677,
+     "deg": 3.88,
+     "one_in": 14.76
+    },
+    "crest_distance_from_msl_line_m": 221.0,
+    "seaward_toe_distance_from_msl_line_m": 238.0,
+    "shoreward_toe_distance_from_msl_line_m": 221.0,
+    "seabed_mean_slope_msl_line_to_seaward_toe": {
+     "tan": 0.0168,
+     "deg": 0.96,
+     "one_in": 59.57
+    },
+    "seabed_mean_slope_msl_line_to_shoreward_toe": {
+     "tan": 0.0129,
+     "deg": 0.74,
+     "one_in": 77.71
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.0316,
+     "deg": 1.81,
+     "one_in": 31.62
+    }
+   },
+   "second_crest_line": {
+    "reef_on_line": true,
+    "crest_z_msl_m": -2.32,
+    "crest_y_m": 239.0,
+    "crest_depth_below_msl_m": 2.32,
+    "crest_seabed_z_msl_m": -4.432,
+    "crest_height_above_seabed_m": 2.112,
+    "crest_zone_y_m": [
+     239.0,
+     295.0
+    ],
+    "crest_zone_width_m": 57.0,
+    "seaward_toe_y_m": 332.0,
+    "seaward_toe_reef_z_msl_m": -5.27,
+    "seaward_toe_seabed_z_msl_m": -6.238,
+    "seaward_toe_thickness_m": 0.968,
+    "ramp_length_m": 37.0,
+    "ramp_rise_m": 2.95,
+    "crest_to_toe_drop_m": 2.95,
+    "crest_to_toe_seabed_drop_m": 3.918,
+    "mean_seaward_slope": {
+     "tan": 0.0797,
+     "deg": 4.56,
+     "one_in": 12.54
+    },
+    "max_seaward_slope": {
+     "tan": 0.445,
+     "deg": 23.99,
+     "one_in": 2.25
+    },
+    "max_seaward_slope_at_y_m": 331.0,
+    "shoreward_toe_y_m": 232.0,
+    "shoreward_toe_reef_z_msl_m": -3.13,
+    "shoreward_toe_seabed_z_msl_m": -4.1,
+    "shoreward_ramp_length_m": 7.0,
+    "shoreward_ramp_rise_m": 0.81,
+    "mean_shoreward_slope": {
+     "tan": 0.1157,
+     "deg": 6.6,
+     "one_in": 8.64
+    },
+    "reef_cross_shore_extent_m": 101.0,
+    "max_thickness_on_line_m": 3.62,
+    "y_msl_crossing_m": -5.0,
+    "segments": [
+     {
+      "y_from_m": 232.0,
+      "y_to_m": 332.0,
+      "max_z_msl_m": -2.32
+     }
+    ],
+    "bridged_gaps": [],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.0214,
+     "deg": 1.22,
+     "one_in": 46.77
+    },
+    "crest_distance_from_msl_line_m": 244.0,
+    "seaward_toe_distance_from_msl_line_m": 337.0,
+    "shoreward_toe_distance_from_msl_line_m": 237.0,
+    "seabed_mean_slope_msl_line_to_seaward_toe": {
+     "tan": 0.0185,
+     "deg": 1.06,
+     "one_in": 54.02
+    },
+    "seabed_mean_slope_msl_line_to_shoreward_toe": {
+     "tan": 0.0173,
+     "deg": 0.99,
+     "one_in": 57.8
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.0313,
+     "deg": 1.79,
+     "one_in": 31.95
+    }
+   }
+  }
+ },
+ "palm-beach-gold-coast": {
+  "slug": "palm-beach-gold-coast",
+  "name": "Palm Beach Reef (Palm Beach Artificial Reef, Gold Coast, Queensland)",
+  "site": {
+   "H": 1.0,
+   "H_src": "ASSUMPTION: Narrowneck value (same Gold Coast coast, Blacka et al. (2013) Table 4.3 p.67-68 (PDF p.79-80)) transferred; no site value in reefs.json",
+   "T": 10.0,
+   "T_src": "ASSUMPTION (as Narrowneck)",
+   "phi0": [
+    44.7
+   ],
+   "phi0_src": "ASSUMPTION: crest parallel to the shoreline at the reef; reef long axis 44.7 deg to the shoreline (reefs.json arm_angle_to_shoreline_deg, DERIVED from the toe outline)",
+   "tide_kind": "semidiurnal",
+   "swell_dir": "SE (reefs.json swell_dir)"
+  },
+  "planes": {
+   "LAT": -0.88,
+   "MLWS": -0.66,
+   "MLWN": -0.37,
+   "MSL": 0.0,
+   "MHWN": 0.36,
+   "MHWS": 0.65,
+   "HAT": 1.15
+  },
+  "tide": {
+   "A_spring": 0.655,
+   "A_neap": 0.365,
+   "z0": -0.005,
+   "basis": "MHWS/MLWS and MHWN/MLWN",
+   "kind": "semidiurnal",
+   "extreme_hi": 1.15,
+   "extreme_lo": -0.88
+  },
+  "tide_levels": {
+   "low": -0.66,
+   "mid": 0.0,
+   "high": 0.65
+  },
+  "tide_sources": [
+   {
+    "input": "tide planes (MSL = LAT + 0.88 m)",
+    "sources": {
+     "t1": "Maritime Safety Queensland (2026), Semidiurnal Tidal Planes"
+    }
+   }
+  ],
+  "profile_json": "08_paper/data/profiles/palm-beach-gold-coast.json",
+  "version": {
+   "id": "as_built_2019",
+   "name": "As built (rock placed May-Sept 2019, certified Sept 2019); contours from Bluecoast/Nearmap aerial of the completed reef",
+   "date": "2019-09 (aerial undated, Sept 2019 - Sept 2020)",
+   "is_default_version": true
+  },
+  "datum": "z = metres above MSL; MSL = LAT + 0.88 m (MSQ 2026 Gold Coast Seaway); seabed Navionics depths taken as depth below LAT (assumption A5): z_MSL = -d - 0.88",
+  "shoreline_definition": "y = 0 is the waterline fitted to Esri World Imagery 2025-12-01 and taken as z = 0 (MSL) (assumption A7, tide stage of the image unknown). Landward (y < 0) a visual beach face rises at 1:15 (not surveyed).",
+  "glob": {
+   "crest_z_msl_m": -1.5,
+   "crest_x_m": 9.0,
+   "crest_y_m": 267.0,
+   "crest_height_above_seabed_m": 3.67,
+   "crest_depth_below_msl_m": 1.5,
+   "footprint_x_range_m": [
+    -65.0,
+    66.0
+   ],
+   "footprint_y_range_m": [
+    227.0,
+    371.0
+   ],
+   "footprint_alongshore_span_m": 132.0,
+   "footprint_cross_shore_span_m": 145.0,
+   "footprint_area_m2_thickness_ge_0p10": 11323.0,
+   "footprint_centroid_xy_m": [
+    -0.08,
+    304.29
+   ],
+   "centreline_x_m": 0.5,
+   "alongshore_length_z_ge_minus0p5_m_msl": {
+    "level_msl_m": -0.5,
+    "span_m": null,
+    "union_m": null,
+    "note": "no reef cell at or above this level"
+   },
+   "alongshore_length_z_ge_crest_minus0p5": {
+    "level_msl_m": -2.0,
+    "span_m": 61.0,
+    "union_m": 61.0,
+    "x_min_m": -21.0,
+    "x_max_m": 39.0
+   },
+   "alongshore_extent_by_level": [
+    {
+     "level_msl_m": 0.5,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": 0.0,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": -0.5,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": -1.0,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": -1.5,
+     "span_m": 42.0,
+     "union_m": 42.0,
+     "x_min_m": -12.0,
+     "x_max_m": 29.0
+    },
+    {
+     "level_msl_m": -2.0,
+     "span_m": 61.0,
+     "union_m": 61.0,
+     "x_min_m": -21.0,
+     "x_max_m": 39.0
+    },
+    {
+     "level_msl_m": -2.5,
+     "span_m": 73.0,
+     "union_m": 73.0,
+     "x_min_m": -30.0,
+     "x_max_m": 42.0
+    },
+    {
+     "level_msl_m": -3.0,
+     "span_m": 87.0,
+     "union_m": 87.0,
+     "x_min_m": -39.0,
+     "x_max_m": 47.0
+    },
+    {
+     "level_msl_m": -4.0,
+     "span_m": 110.0,
+     "union_m": 110.0,
+     "x_min_m": -47.0,
+     "x_max_m": 62.0
+    },
+    {
+     "level_msl_m": -5.0,
+     "span_m": 121.0,
+     "union_m": 121.0,
+     "x_min_m": -54.0,
+     "x_max_m": 66.0
+    }
+   ]
+  },
+  "reefs_json": {
+   "name": {
+    "value": "Palm Beach Reef (Palm Beach Artificial Reef), 19th Avenue, Palm Beach, Gold Coast, Queensland",
+    "status": "sourced",
+    "location": "card R13",
+    "source": "International Coastal Management, article by Aaron Salyer (2024-12-03, updated 2025-02-05). \"Building Artificial Surf Reefs: Worldwide Lessons & Applications.\" https://www.coastalmanagement.com.au/artificial-surf-reefs"
+   },
+   "country": {
+    "value": "Australia",
+    "status": "sourced",
+    "location": "card R13",
+    "source": "International Coastal Management, article by Aaron Salyer (2024-12-03, updated 2025-02-05). \"Building Artificial Surf Reefs: Worldwide Lessons & Applications.\" https://www.coastalmanagement.com.au/artificial-surf-reefs"
+   },
+   "year_built": {
+    "value": 2019,
+    "status": "sourced",
+    "location": "card year field (R1, R3, R5): concept 2013, detailed design 2013-14, construction 2019",
+    "source": "International Coastal Management, article by Aaron Salyer (2024-12-03, updated 2025-02-05). \"Building Artificial Surf Reefs: Worldwide Lessons & Applications.\" https://www.coastalmanagement.com.au/artificial-surf-reefs"
+   },
+   "purpose": {
+    "value": "multi",
+    "status": "sourced",
+    "location": "card purpose: (1) coastal-erosion protection, (2) surf amenity (right-hand wave, explicit in the brief), (3) habitat",
+    "source": "Raised Water Research (n.d.). \"Palm Beach Reef.\" https://raisedwaterresearch.com/spot/artificial-reef/australia/queensland/palm-beach-reef/"
+   },
+   "material": {
+    "value": "quarried basalt/greenstone boulders (~60,000 t) as a rock mound",
+    "status": "sourced",
+    "location": "card size field (R2, R4-R7, R13)",
+    "source": "International Coastal Management, article by Aaron Salyer (2024-12-03, updated 2025-02-05). \"Building Artificial Surf Reefs: Worldwide Lessons & Applications.\" https://www.coastalmanagement.com.au/artificial-surf-reefs"
+   },
+   "volume_m3": {
+    "value": 25000,
+    "status": "sourced",
+    "location": "card size field: ~25,000 m3 / ~60,000 t",
+    "source": "International Coastal Management, article by Aaron Salyer (2024-12-03, updated 2025-02-05). \"Building Artificial Surf Reefs: Worldwide Lessons & Applications.\" https://www.coastalmanagement.com.au/artificial-surf-reefs"
+   },
+   "surf_outcome": {
+    "value": "works",
+    "status": "sourced",
+    "location": "Swellnet 2019-07-29: July 2019 (reef ~50% built) broke 4-5 ft with rides up to ~30 m; at completion a consistent right plus a short thick left on bigger swells, handling at least double-overhead SE swells; The Inertia: \"modest, measurable improvements\"",
+    "source": "Nettle, S., Swellnet (2019-08-23). \"Watch: Palm Beach Artificial Reef.\" https://www.swellnet.com/news/swellnet-dispatch/2019/08/23/watch-palm-beach-artificial-reef"
+   },
+   "surfable_days_per_year": {
+    "value": null,
+    "status": "unknown",
+    "location": "",
+    "source": null
+   },
+   "durability": {
+    "value": "stable structure with no significant movement or settlement (ICCE 2022 monitoring abstract, Prenzler et al.; monitoring papers to 2023); no damage or removal found",
+    "status": "sourced",
+    "location": "card status_now (abstract page only read; DOI/pages not confirmed)",
+    "source": "Hunt, S., Britton, G., Messiter, D., Prenzler, P., Knight, S. and Watterson, E. (2022) Palm Beach Shoreline Project: Innovative Coastal Management Solution. *Coastal Engineering Proceedings* 37, DOI 10.9753/icce.v37.management.66. CC BY 4.0."
+   },
+   "sediment_shoreline_outcome": {
+    "value": "about 550,000 m3 of sand retained over the reef's first two years of operation (ABC News 2022); Watterson: compares favourably with nourishment over 30 years (journalistic, not a monitoring report)",
+    "status": "sourced",
+    "location": "card outcome field",
+    "source": "ABC News Australia (2022-09-03). \"Millions spent to protect Gold Coast beaches, but climate change poses a huge challenge.\" https://www.abc.net.au/news/2022-09-03/gold-coast-no-stranger-to-beach-erosion/101381812"
+   },
+   "tide_spring_range_m": {
+    "value": 1.31,
+    "status": "derived",
+    "location": "Gold Coast Seaway standard-port planes 2026: MHWS +0.65, MLWS -0.66 m MSL (METHODS_3D)",
+    "source": "Maritime Safety Queensland (2026) *Semidiurnal Tidal Planes - 2026, height above Queensland Port Datum (LAT (1992))*. https://www.msq.qld.gov.au/_/media/tmronline/msqinternet/msqfiles/home/tides/tidal-planes/2026-semidiurnal-tidal-planes.pdf. Accessed 2026-10-05."
+   },
+   "cost_usd_2024": {
+    "value": 15524000.0,
+    "status": "derived",
+    "location": "nominal USD x CPI_USA(2024) 143.86 / CPI_USA(2019) 117.24",
+    "source": "World Bank, World Development Indicators: PA.NUS.FCRF \"Official exchange rate (LCU per US$, period average)\" and FP.CPI.TOTL \"Consumer price index (2010 = 100)\", USA; https://api.worldbank.org/v2 ; fetched 2026-10-15"
+   },
+   "distance_offshore_crest_m": {
+    "value": 243.0,
+    "status": "derived",
+    "location": "y of the shallowest crest cell; toe nearest edge 225 m, centroid 305 m, farthest 374 m",
+    "source": "07_scale/shapes/palm-beach-gold-coast/3d/model.js reef grid (derive_others.py)"
+   },
+   "arm_angle_to_shoreline_deg": {
+    "value": 44.7,
+    "status": "derived",
+    "location": "oriented bounding rectangle of the toe outline vs shoreline 154.3 deg (334.3)",
+    "source": "07_scale/shapes/palm-beach-gold-coast/shape.json angles"
+   },
+   "arm_angle_to_swell_deg": {
+    "value": null,
+    "status": "unknown",
+    "location": "",
+    "source": null
+   }
+  },
+  "confidence_3d": "medium",
+  "line_metrics": {
+   "centreline": {
+    "reef_on_line": true,
+    "crest_z_msl_m": -1.5,
+    "crest_y_m": 274.0,
+    "crest_depth_below_msl_m": 1.5,
+    "crest_seabed_z_msl_m": -5.272,
+    "crest_height_above_seabed_m": 3.772,
+    "crest_zone_y_m": [
+     272.0,
+     282.0
+    ],
+    "crest_zone_width_m": 11.0,
+    "seaward_toe_y_m": 367.0,
+    "seaward_toe_reef_z_msl_m": -6.86,
+    "seaward_toe_seabed_z_msl_m": -6.989,
+    "seaward_toe_thickness_m": 0.129,
+    "ramp_length_m": 85.0,
+    "ramp_rise_m": 5.3,
+    "crest_to_toe_drop_m": 5.36,
+    "crest_to_toe_seabed_drop_m": 5.489,
+    "mean_seaward_slope": {
+     "tan": 0.0624,
+     "deg": 3.57,
+     "one_in": 16.04
+    },
+    "max_seaward_slope": {
+     "tan": 0.0775,
+     "deg": 4.43,
+     "one_in": 12.9
+    },
+    "max_seaward_slope_at_y_m": 350.0,
+    "shoreward_toe_y_m": 248.0,
+    "shoreward_toe_reef_z_msl_m": -4.64,
+    "shoreward_toe_seabed_z_msl_m": -4.837,
+    "shoreward_ramp_length_m": 24.0,
+    "shoreward_ramp_rise_m": 3.045,
+    "mean_shoreward_slope": {
+     "tan": 0.1269,
+     "deg": 7.23,
+     "one_in": 7.88
+    },
+    "reef_cross_shore_extent_m": 120.0,
+    "max_thickness_on_line_m": 3.907,
+    "y_msl_crossing_m": 0.0,
+    "segments": [
+     {
+      "y_from_m": 248.0,
+      "y_to_m": 367.0,
+      "max_z_msl_m": -1.5
+     }
+    ],
+    "bridged_gaps": [],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.0181,
+     "deg": 1.04,
+     "one_in": 55.32
+    },
+    "crest_distance_from_msl_line_m": 274.0,
+    "seaward_toe_distance_from_msl_line_m": 367.0,
+    "shoreward_toe_distance_from_msl_line_m": 248.0,
+    "seabed_mean_slope_msl_line_to_seaward_toe": {
+     "tan": 0.019,
+     "deg": 1.09,
+     "one_in": 52.51
+    },
+    "seabed_mean_slope_msl_line_to_shoreward_toe": {
+     "tan": 0.0195,
+     "deg": 1.12,
+     "one_in": 51.27
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.0262,
+     "deg": 1.5,
+     "one_in": 38.24
+    }
+   },
+   "crest_line": {
+    "reef_on_line": true,
+    "crest_z_msl_m": -1.5,
+    "crest_y_m": 263.0,
+    "crest_depth_below_msl_m": 1.5,
+    "crest_seabed_z_msl_m": -5.093,
+    "crest_height_above_seabed_m": 3.593,
+    "crest_zone_y_m": [
+     262.0,
+     273.0
+    ],
+    "crest_zone_width_m": 12.0,
+    "seaward_toe_y_m": 362.0,
+    "seaward_toe_reef_z_msl_m": -6.83,
+    "seaward_toe_seabed_z_msl_m": -6.987,
+    "seaward_toe_thickness_m": 0.157,
+    "ramp_length_m": 89.0,
+    "ramp_rise_m": 5.23,
+    "crest_to_toe_drop_m": 5.33,
+    "crest_to_toe_seabed_drop_m": 5.487,
+    "mean_seaward_slope": {
+     "tan": 0.0588,
+     "deg": 3.36,
+     "one_in": 17.02
+    },
+    "max_seaward_slope": {
+     "tan": 0.075,
+     "deg": 4.29,
+     "one_in": 13.33
+    },
+    "max_seaward_slope_at_y_m": 355.0,
+    "shoreward_toe_y_m": 240.0,
+    "shoreward_toe_reef_z_msl_m": -4.43,
+    "shoreward_toe_seabed_z_msl_m": -4.71,
+    "shoreward_ramp_length_m": 22.0,
+    "shoreward_ramp_rise_m": 2.88,
+    "mean_shoreward_slope": {
+     "tan": 0.1309,
+     "deg": 7.46,
+     "one_in": 7.64
+    },
+    "reef_cross_shore_extent_m": 123.0,
+    "max_thickness_on_line_m": 3.73,
+    "y_msl_crossing_m": 0.0,
+    "segments": [
+     {
+      "y_from_m": 240.0,
+      "y_to_m": 362.0,
+      "max_z_msl_m": -1.5
+     }
+    ],
+    "bridged_gaps": [],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.0187,
+     "deg": 1.07,
+     "one_in": 53.57
+    },
+    "crest_distance_from_msl_line_m": 263.0,
+    "seaward_toe_distance_from_msl_line_m": 362.0,
+    "shoreward_toe_distance_from_msl_line_m": 240.0,
+    "seabed_mean_slope_msl_line_to_seaward_toe": {
+     "tan": 0.0193,
+     "deg": 1.11,
+     "one_in": 51.81
+    },
+    "seabed_mean_slope_msl_line_to_shoreward_toe": {
+     "tan": 0.0196,
+     "deg": 1.12,
+     "one_in": 50.96
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.0242,
+     "deg": 1.39,
+     "one_in": 41.34
+    }
+   },
+   "second_crest_line": {
+    "reef_on_line": true,
+    "crest_z_msl_m": -1.5,
+    "crest_y_m": 280.0,
+    "crest_depth_below_msl_m": 1.5,
+    "crest_seabed_z_msl_m": -5.375,
+    "crest_height_above_seabed_m": 3.875,
+    "crest_zone_y_m": [
+     279.0,
+     289.0
+    ],
+    "crest_zone_width_m": 11.0,
+    "seaward_toe_y_m": 369.0,
+    "seaward_toe_reef_z_msl_m": -6.87,
+    "seaward_toe_seabed_z_msl_m": -6.985,
+    "seaward_toe_thickness_m": 0.115,
+    "ramp_length_m": 80.0,
+    "ramp_rise_m": 5.28,
+    "crest_to_toe_drop_m": 5.37,
+    "crest_to_toe_seabed_drop_m": 5.485,
+    "mean_seaward_slope": {
+     "tan": 0.066,
+     "deg": 3.78,
+     "one_in": 15.15
+    },
+    "max_seaward_slope": {
+     "tan": 0.08,
+     "deg": 4.57,
+     "one_in": 12.5
+    },
+    "max_seaward_slope_at_y_m": 339.0,
+    "shoreward_toe_y_m": 254.0,
+    "shoreward_toe_reef_z_msl_m": -4.78,
+    "shoreward_toe_seabed_z_msl_m": -4.957,
+    "shoreward_ramp_length_m": 25.0,
+    "shoreward_ramp_rise_m": 3.24,
+    "mean_shoreward_slope": {
+     "tan": 0.1296,
+     "deg": 7.38,
+     "one_in": 7.72
+    },
+    "reef_cross_shore_extent_m": 116.0,
+    "max_thickness_on_line_m": 4.07,
+    "y_msl_crossing_m": 0.0,
+    "segments": [
+     {
+      "y_from_m": 254.0,
+      "y_to_m": 369.0,
+      "max_z_msl_m": -1.5
+     }
+    ],
+    "bridged_gaps": [],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.0176,
+     "deg": 1.01,
+     "one_in": 56.72
+    },
+    "crest_distance_from_msl_line_m": 280.0,
+    "seaward_toe_distance_from_msl_line_m": 369.0,
+    "shoreward_toe_distance_from_msl_line_m": 254.0,
+    "seabed_mean_slope_msl_line_to_seaward_toe": {
+     "tan": 0.0189,
+     "deg": 1.08,
+     "one_in": 52.83
+    },
+    "seabed_mean_slope_msl_line_to_shoreward_toe": {
+     "tan": 0.0195,
+     "deg": 1.12,
+     "one_in": 51.24
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.0269,
+     "deg": 1.54,
+     "one_in": 37.11
+    }
+   }
+  }
+ },
+ "cables-reef-wa": {
+  "slug": "cables-reef-wa",
+  "name": "Cable Station artificial surfing reef (Cables Reef, Cottesloe / Leighton, Perth, Western Australia)",
+  "site": {
+   "H": 1.5,
+   "H_src": "SOURCED: H = 1-2 m summer, 1.5-2.5 m winter, Blacka et al. (2013) Table 4.3 p.67-68 (PDF p.79-80); 1.5 m used",
+   "T": 12.0,
+   "T_src": "ASSUMPTION: no Tp in the sources (reefs.json swell_tp_s unknown); 12 s used for Indian Ocean swell, sensitivity 6-14 s",
+   "phi0": [
+    45.0,
+    45.0
+   ],
+   "phi0_src": "SOURCED design value: peel angle ~45 deg between each arm and the wave crest (reefs.json arm_angle_to_swell_deg, design_wave; Lyons 1992 via card R1/R2); the real swell direction is not confirmed",
+   "tide_kind": "mixed",
+   "swell_dir": "narrow window in the lee of Rottnest Island (reefs.json)"
+  },
+  "planes": {
+   "DATUM": -0.716,
+   "MSL": 0.0,
+   "ANN_LO": -0.57,
+   "ANN_HI": 0.57
+  },
+  "tide": {
+   "A_spring": 0.57,
+   "A_neap": 0.285,
+   "z0": 0.0,
+   "basis": "WA DoT 2026 predicted annual range (approx. LAT-HAT, centred on MSL) as the spring-amplitude proxy; neap = 0.5 spring (ASSUMPTION)",
+   "kind": "mixed",
+   "extreme_hi": 0.57,
+   "extreme_lo": -0.57
+  },
+  "tide_levels": {
+   "low": -0.57,
+   "mid": 0.0,
+   "high": 0.57
+  },
+  "tide_sources": [
+   {
+    "input": "plan outline / design (Lyons 1992 design plan, Fig. A.2)",
+    "sources": {
+     "B2013": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013) A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08 (final, 11 June 2013), UNSW Water Research Laboratory, for the NSW Office of Environment and Heritage. https://doi.org/10.4225/53/58e1dc7368c7a (Fig. A.2 p.93 reproduces Lyons (1992) design plan; Table 4.3 p.67 tide range 0.8 m). Read in Lior's copy in papers/ (intake note 05_qa/papers_intake/P8_blacka_2013.md); cited per 07_scale/shapes/cables-reef-wa/3d/METHODS_3D.md reference 1."
+    }
+   },
+   {
+    "input": "datum: AHD = MSL 1966-68 = 0.716 m above Fremantle gauge zero",
+    "sources": {
+     "Roelse1975": "Roelse, A., Granger, H.W. and Graham, J.W. (1975) The Adjustment of the Australian Levelling Survey 1970-1971. Division of National Mapping, Department of Minerals and Energy, Technical Report 12, 2nd edition, Canberra. Table 3 (Fremantle MSL 1966-68 = AHD 0.000 is 0.716 m above gauge zero). https://d28rz98at9flks.cloudfront.net/69874/Tech_Rep_DNM_012.pdf ; accessed 2026-10-13 (per cables-reef-wa/3d/METHODS_3D.md reference 13)."
+    }
+   }
+  ],
+  "profile_json": "08_paper/data/profiles/cables-reef-wa.json",
+  "version": {
+   "id": "survey_surface_1999_11",
+   "name": "Surveyed surface, Nov 1999 (DoT WA singlebeam)",
+   "date": "survey ending 22 Nov 1999 (FR19991122); construction Feb-Dec 1999",
+   "is_default_version": true
+  },
+  "datum": "z = metres above MSL, MSL taken = AHD (A12). Surveyed versions are in AHD directly. Design versions: reading A (default for design) z_MSL = z_RL - 0.716 (Fremantle LWD to AHD, DNM TR12 Table 3, +-0.04 m); reading B: z_MSL = z_RL.",
+  "shoreline_definition": "y = 0 is the NOMINAL origin line of the design frame (centroid of the original footprint at y = 271 m, Pattiaratchi 1999 / Blacka 2013), not the surveyed shoreline. The surveyed 0 m AHD line (fitted line, bearing 7.8 deg T) lies 254 m due east of the anchor (centroid) (shore_and_datum.py); y_true_shoreline is DERIVED from that (see derived_true_shoreline). The seabed grid starts at y = 190 m, so the MSL crossing is not in the model.",
+  "glob": {
+   "crest_z_msl_m": -1.55,
+   "crest_x_m": -18.0,
+   "crest_y_m": 267.0,
+   "crest_height_above_seabed_m": 2.005,
+   "crest_depth_below_msl_m": 1.55,
+   "footprint_x_range_m": [
+    -57.5,
+    61.0
+   ],
+   "footprint_y_range_m": [
+    240.5,
+    314.0
+   ],
+   "footprint_alongshore_span_m": 119.0,
+   "footprint_cross_shore_span_m": 74.0,
+   "footprint_area_m2_thickness_ge_0p10": 3646.2,
+   "footprint_centroid_xy_m": [
+    -5.04,
+    274.8
+   ],
+   "centreline_x_m": 1.75,
+   "alongshore_length_z_ge_minus0p5_m_msl": {
+    "level_msl_m": -0.5,
+    "span_m": null,
+    "union_m": null,
+    "note": "no reef cell at or above this level"
+   },
+   "alongshore_length_z_ge_crest_minus0p5": {
+    "level_msl_m": -2.05,
+    "span_m": 81.5,
+    "union_m": 79.0,
+    "x_min_m": -31.5,
+    "x_max_m": 49.5
+   },
+   "alongshore_extent_by_level": [
+    {
+     "level_msl_m": 0.5,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": 0.0,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": -0.5,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": -1.0,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": -1.5,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": -2.0,
+     "span_m": 80.5,
+     "union_m": 75.5,
+     "x_min_m": -31.5,
+     "x_max_m": 48.5
+    },
+    {
+     "level_msl_m": -2.5,
+     "span_m": 100.0,
+     "union_m": 100.0,
+     "x_min_m": -41.0,
+     "x_max_m": 58.5
+    },
+    {
+     "level_msl_m": -3.0,
+     "span_m": 109.0,
+     "union_m": 108.5,
+     "x_min_m": -47.5,
+     "x_max_m": 61.0
+    },
+    {
+     "level_msl_m": -4.0,
+     "span_m": 119.0,
+     "union_m": 119.0,
+     "x_min_m": -57.5,
+     "x_max_m": 61.0
+    },
+    {
+     "level_msl_m": -5.0,
+     "span_m": 119.0,
+     "union_m": 119.0,
+     "x_min_m": -57.5,
+     "x_max_m": 61.0
+    }
+   ]
+  },
+  "reefs_json": {
+   "name": {
+    "value": "Cables Reef (Cable Station reef), Perth / Fremantle, Western Australia",
+    "status": "sourced",
+    "location": "Appendix A.1 p.92",
+    "source": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013) A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08 (final, 11 June 2013), UNSW Water Research Laboratory, for the NSW Office of Environment and Heritage. https://doi.org/10.4225/53/58e1dc7368c7a . Read (Lior's copy in papers/; intake note 05_qa/papers_intake/P8_blacka_2013.md). Used for: plan Fig A.2 (p.93, img-26), text A.1.1 (shape, 140 x 70 m, 'crest submergence 1-2.5 m below MSL', 275 m offshore), A.1.3 (5,500 m3 of 1.5 t and 3.0 t granite), Table 4.2 (p.65, depths 3.0-6.0 m), Table 4.3 (p.67, tide range 0.8 m)."
+   },
+   "country": {
+    "value": "Australia",
+    "status": "sourced",
+    "location": "Appendix A.1 p.92",
+    "source": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013) A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08 (final, 11 June 2013), UNSW Water Research Laboratory, for the NSW Office of Environment and Heritage. https://doi.org/10.4225/53/58e1dc7368c7a . Read (Lior's copy in papers/; intake note 05_qa/papers_intake/P8_blacka_2013.md). Used for: plan Fig A.2 (p.93, img-26), text A.1.1 (shape, 140 x 70 m, 'crest submergence 1-2.5 m below MSL', 275 m offshore), A.1.3 (5,500 m3 of 1.5 t and 3.0 t granite), Table 4.2 (p.65, depths 3.0-6.0 m), Table 4.3 (p.67, tide range 0.8 m)."
+   },
+   "year_built": {
+    "value": 1999,
+    "status": "sourced",
+    "location": "media statement 7 Feb 1999: construction work starts (card R20)",
+    "source": "Government of Western Australia (7 February 1999). Media statement \"Construction work starts on artificial surf reef project\" (date taken from the URL code 19990207). https://www.wa.gov.au/government/media-statements/Court%20Coalition%20Government/Construction-work-starts-on-artificial-surf-reef-project-19990207"
+   },
+   "purpose": {
+    "value": "surf",
+    "status": "sourced",
+    "location": "A.1 p.92: \"not designed at all for coastal protection\"",
+    "source": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013) A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08 (final, 11 June 2013), UNSW Water Research Laboratory, for the NSW Office of Environment and Heritage. https://doi.org/10.4225/53/58e1dc7368c7a . Read (Lior's copy in papers/; intake note 05_qa/papers_intake/P8_blacka_2013.md). Used for: plan Fig A.2 (p.93, img-26), text A.1.1 (shape, 140 x 70 m, 'crest submergence 1-2.5 m below MSL', 275 m offshore), A.1.3 (5,500 m3 of 1.5 t and 3.0 t granite), Table 4.2 (p.65, depths 3.0-6.0 m), Table 4.3 (p.67, tide range 0.8 m)."
+   },
+   "material": {
+    "value": "granite boulders, 1.5 t (body) keyed by a perimeter of 3.0 t stones, placed by excavator from a barge on limestone reef/bedrock",
+    "status": "sourced",
+    "location": "A.1.3 p.93",
+    "source": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013) A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08 (final, 11 June 2013), UNSW Water Research Laboratory, for the NSW Office of Environment and Heritage. https://doi.org/10.4225/53/58e1dc7368c7a . Read (Lior's copy in papers/; intake note 05_qa/papers_intake/P8_blacka_2013.md). Used for: plan Fig A.2 (p.93, img-26), text A.1.1 (shape, 140 x 70 m, 'crest submergence 1-2.5 m below MSL', 275 m offshore), A.1.3 (5,500 m3 of 1.5 t and 3.0 t granite), Table 4.2 (p.65, depths 3.0-6.0 m), Table 4.3 (p.67, tide range 0.8 m)."
+   },
+   "volume_m3": {
+    "value": 5500,
+    "status": "sourced",
+    "location": "A.1.3 p.93",
+    "source": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013) A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08 (final, 11 June 2013), UNSW Water Research Laboratory, for the NSW Office of Environment and Heritage. https://doi.org/10.4225/53/58e1dc7368c7a . Read (Lior's copy in papers/; intake note 05_qa/papers_intake/P8_blacka_2013.md). Used for: plan Fig A.2 (p.93, img-26), text A.1.1 (shape, 140 x 70 m, 'crest submergence 1-2.5 m below MSL', 275 m offshore), A.1.3 (5,500 m3 of 1.5 t and 3.0 t granite), Table 4.2 (p.65, depths 3.0-6.0 m), Table 4.3 (p.67, tide range 0.8 m)."
+   },
+   "surf_outcome": {
+    "value": "mixed/disputed",
+    "status": "sourced",
+    "location": "Blacka Table 4.1 (surfing \"Partially\"); A.1.4 p.93; Pitt 2009 via RWR; M&B p.2",
+    "source": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013) A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08 (final, 11 June 2013), UNSW Water Research Laboratory, for the NSW Office of Environment and Heritage. https://doi.org/10.4225/53/58e1dc7368c7a . Read (Lior's copy in papers/; intake note 05_qa/papers_intake/P8_blacka_2013.md). Used for: plan Fig A.2 (p.93, img-26), text A.1.1 (shape, 140 x 70 m, 'crest submergence 1-2.5 m below MSL', 275 m offshore), A.1.3 (5,500 m3 of 1.5 t and 3.0 t granite), Table 4.2 (p.65, depths 3.0-6.0 m), Table 4.3 (p.67, tide range 0.8 m)."
+   },
+   "surfable_days_per_year": {
+    "value": 142,
+    "status": "sourced",
+    "location": "p.2: Pattiaratchi (2007) 5-7 surfable days per year before, 142 after",
+    "source": "Mead, S.T. and Borrero, J.C. (2011) Multi-Purpose Reefs - A Decade of Applications. Proceedings of the 20th Australasian Coastal and Ocean Engineering Conference (Coasts and Ports 2011), ASR Ltd, Raglan NZ. https://search.informit.org/doi/10.3316/informit.715072832934166 . Read (papers/; 05_qa/papers_intake/P3_mead_borrero_2011.md). Used for: 5,000 m3, 'limestone rock placed from a barge', 1998 (context and conflict only, not in the geometry)."
+   },
+   "durability": {
+    "value": "no structural damage reported; rock described as durable; Blacka 2013 A.1.3: \"no information on long-term stability/durability\"; surveyed rock volume 4,671 (Nov 1999) -> 5,219 m3 (Feb 2002) and top -1.55 -> -1.71 m AHD are within the survey error",
+    "status": "sourced",
+    "location": "A.1.3 p.93; Table 4.2 (settlement/scour not reported); METHODS_3D s1",
+    "source": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013) A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08 (final, 11 June 2013), UNSW Water Research Laboratory, for the NSW Office of Environment and Heritage. https://doi.org/10.4225/53/58e1dc7368c7a . Read (Lior's copy in papers/; intake note 05_qa/papers_intake/P8_blacka_2013.md). Used for: plan Fig A.2 (p.93, img-26), text A.1.1 (shape, 140 x 70 m, 'crest submergence 1-2.5 m below MSL', 275 m offshore), A.1.3 (5,500 m3 of 1.5 t and 3.0 t granite), Table 4.2 (p.65, depths 3.0-6.0 m), Table 4.3 (p.67, tide range 0.8 m)."
+   },
+   "sediment_shoreline_outcome": {
+    "value": "none relevant: not designed for coastal protection; stable rocky/limestone shoreline; longshore transport negligible",
+    "status": "sourced",
+    "location": "Table 4.3 p.67; A.1.1 p.92",
+    "source": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013) A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08 (final, 11 June 2013), UNSW Water Research Laboratory, for the NSW Office of Environment and Heritage. https://doi.org/10.4225/53/58e1dc7368c7a . Read (Lior's copy in papers/; intake note 05_qa/papers_intake/P8_blacka_2013.md). Used for: plan Fig A.2 (p.93, img-26), text A.1.1 (shape, 140 x 70 m, 'crest submergence 1-2.5 m below MSL', 275 m offshore), A.1.3 (5,500 m3 of 1.5 t and 3.0 t granite), Table 4.2 (p.65, depths 3.0-6.0 m), Table 4.3 (p.67, tide range 0.8 m)."
+   },
+   "tide_spring_range_m": {
+    "value": 1.14,
+    "status": "derived",
+    "location": "Fremantle 2026 predicted extremes above LAT: +0.30 to +1.44 m -> 1.14 m (2024 edition: +0.32 to +1.38 m); field name kept for the pipeline, the quantity is the annual range; band centred on MSL (no LAT-to-MSL offset documented)",
+    "source": "Government of Western Australia, Department of Transport / Bureau of Meteorology (2026). Tide Predictions by Location, WA 2026 (heights above LAT). https://transport.wa.gov.au/getmedia/482d7b83-1a48-4220-9e2c-b07ebfcf8594/MAR_P_2026_Tide_Predictions_by_Location_WA.pdf (downloaded 2026-10-19; extremes extracted by script from 3 of 4 quarterly blocks, so they are lower bounds of the true annual extremes). Checked in 08_paper/notes/tides_check.md"
+   },
+   "cost_usd_2024": {
+    "value": 2187000.0,
+    "status": "derived",
+    "location": "nominal USD x CPI_USA(2024) 143.86 / CPI_USA(1999) 76.39",
+    "source": "World Bank, World Development Indicators: PA.NUS.FCRF \"Official exchange rate (LCU per US$, period average)\" and FP.CPI.TOTL \"Consumer price index (2010 = 100)\", USA; https://api.worldbank.org/v2 ; fetched 2026-10-15"
+   },
+   "distance_offshore_crest_m": {
+    "value": 267.5,
+    "status": "derived",
+    "location": "y of the shallowest crest cell; METHODS_3D s3.6: 254 m (due east) and 263 m (080/100 deg) from the reef centre to the 0 m AHD line",
+    "source": "07_scale/shapes/cables-reef-wa/3d/model.js frame (shoreline_y = 0) (derive_profiles.py)"
+   },
+   "arm_angle_to_shoreline_deg": {
+    "value": [
+     27,
+     60
+    ],
+    "status": "derived",
+    "location": "arm bearings after georeferencing: north arm 35 deg T, south arm 128 deg T vs shoreline 7.8 deg T; apex angle 87.4 deg",
+    "source": "07_scale/shapes/cables-reef-wa/shape.json angles"
+   },
+   "arm_angle_to_swell_deg": {
+    "value": [
+     45,
+     45
+    ],
+    "status": "sourced",
+    "location": "design peel angle ~45 deg (card R1/R2/R21; shape.json angles: canonical arm angles 42.7 / 44.7 deg)",
+    "source": "Pattiaratchi, C.B. (1999) Design studies for an artificial surfing reef: Cable Station, Western Australia. Centre for Water Research, University of Western Australia, report ED1483CP. http://joas.free.fr/studies/bei/g2s/reefdesign.pdf (mirror, accessed 2026-10-05). Read. Used for: Fig 7 plan (img-20), 3 m contour extension, 1:20 slope, 45 deg peel angle, 250 m offshore, 'mean tide level of 0.78 m above datum' (p.3; no longer used as the RL-to-AHD offset, see 3.1 and X14)."
+   }
+  },
+  "confidence_3d": "medium",
+  "line_metrics": {
+   "centreline": {
+    "reef_on_line": true,
+    "crest_z_msl_m": -2.08,
+    "crest_y_m": 267.0,
+    "crest_depth_below_msl_m": 2.08,
+    "crest_seabed_z_msl_m": -3.528,
+    "crest_height_above_seabed_m": 1.448,
+    "crest_zone_y_m": [
+     266.0,
+     267.0
+    ],
+    "crest_zone_width_m": 2.0,
+    "seaward_toe_y_m": 303.0,
+    "seaward_toe_reef_z_msl_m": -3.98,
+    "seaward_toe_seabed_z_msl_m": -5.515,
+    "seaward_toe_thickness_m": 1.535,
+    "ramp_length_m": 36.0,
+    "ramp_rise_m": 1.9,
+    "crest_to_toe_drop_m": 1.9,
+    "crest_to_toe_seabed_drop_m": 3.435,
+    "mean_seaward_slope": {
+     "tan": 0.0528,
+     "deg": 3.02,
+     "one_in": 18.95
+    },
+    "max_seaward_slope": {
+     "tan": 0.12,
+     "deg": 6.84,
+     "one_in": 8.33
+    },
+    "max_seaward_slope_at_y_m": 268.0,
+    "shoreward_toe_y_m": 263.0,
+    "shoreward_toe_reef_z_msl_m": -3.29,
+    "shoreward_toe_seabed_z_msl_m": -3.394,
+    "shoreward_ramp_length_m": 3.0,
+    "shoreward_ramp_rise_m": 1.19,
+    "mean_shoreward_slope": {
+     "tan": 0.3967,
+     "deg": 21.64,
+     "one_in": 2.52
+    },
+    "reef_cross_shore_extent_m": 41.0,
+    "max_thickness_on_line_m": 1.535,
+    "y_msl_crossing_m": null,
+    "segments": [
+     {
+      "y_from_m": 263.0,
+      "y_to_m": 303.0,
+      "max_z_msl_m": -2.08
+     }
+    ],
+    "bridged_gaps": [],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.053,
+     "deg": 3.04,
+     "one_in": 18.86
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.0321,
+     "deg": 1.84,
+     "one_in": 31.19
+    },
+    "crest_distance_from_true_shoreline_m": 257.69,
+    "seaward_toe_distance_from_true_shoreline_m": 293.69
+   },
+   "crest_line": {
+    "reef_on_line": true,
+    "crest_z_msl_m": -1.922,
+    "crest_y_m": 269.0,
+    "crest_depth_below_msl_m": 1.922,
+    "crest_seabed_z_msl_m": -3.543,
+    "crest_height_above_seabed_m": 1.621,
+    "crest_zone_y_m": [
+     268.0,
+     270.0
+    ],
+    "crest_zone_width_m": 3.0,
+    "seaward_toe_y_m": 315.0,
+    "seaward_toe_reef_z_msl_m": -3.867,
+    "seaward_toe_seabed_z_msl_m": -6.516,
+    "seaward_toe_thickness_m": 2.648,
+    "ramp_length_m": 45.0,
+    "ramp_rise_m": 1.898,
+    "crest_to_toe_drop_m": 1.946,
+    "crest_to_toe_seabed_drop_m": 4.594,
+    "mean_seaward_slope": {
+     "tan": 0.0422,
+     "deg": 2.41,
+     "one_in": 23.71
+    },
+    "max_seaward_slope": {
+     "tan": 0.1513,
+     "deg": 8.6,
+     "one_in": 6.61
+    },
+    "max_seaward_slope_at_y_m": 302.0,
+    "shoreward_toe_y_m": 264.0,
+    "shoreward_toe_reef_z_msl_m": -3.132,
+    "shoreward_toe_seabed_z_msl_m": -3.297,
+    "shoreward_ramp_length_m": 4.0,
+    "shoreward_ramp_rise_m": 1.121,
+    "mean_shoreward_slope": {
+     "tan": 0.2803,
+     "deg": 15.66,
+     "one_in": 3.57
+    },
+    "reef_cross_shore_extent_m": 52.0,
+    "max_thickness_on_line_m": 2.648,
+    "y_msl_crossing_m": null,
+    "segments": [
+     {
+      "y_from_m": 264.0,
+      "y_to_m": 315.0,
+      "max_z_msl_m": -1.922
+     }
+    ],
+    "bridged_gaps": [],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.0631,
+     "deg": 3.61,
+     "one_in": 15.84
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.0253,
+     "deg": 1.45,
+     "one_in": 39.55
+    },
+    "crest_distance_from_true_shoreline_m": 249.44,
+    "seaward_toe_distance_from_true_shoreline_m": 295.44
+   },
+   "second_crest_line": {
+    "reef_on_line": true,
+    "crest_z_msl_m": -1.74,
+    "crest_y_m": 252.0,
+    "crest_depth_below_msl_m": 1.74,
+    "crest_seabed_z_msl_m": -3.194,
+    "crest_height_above_seabed_m": 1.454,
+    "crest_zone_y_m": [
+     251.0,
+     253.0
+    ],
+    "crest_zone_width_m": 3.0,
+    "seaward_toe_y_m": 272.0,
+    "seaward_toe_reef_z_msl_m": -3.48,
+    "seaward_toe_seabed_z_msl_m": -4.025,
+    "seaward_toe_thickness_m": 0.545,
+    "ramp_length_m": 19.0,
+    "ramp_rise_m": 1.67,
+    "crest_to_toe_drop_m": 1.74,
+    "crest_to_toe_seabed_drop_m": 2.285,
+    "mean_seaward_slope": {
+     "tan": 0.0879,
+     "deg": 5.02,
+     "one_in": 11.38
+    },
+    "max_seaward_slope": {
+     "tan": 0.175,
+     "deg": 9.93,
+     "one_in": 5.71
+    },
+    "max_seaward_slope_at_y_m": 254.0,
+    "shoreward_toe_y_m": 247.0,
+    "shoreward_toe_reef_z_msl_m": -3.08,
+    "shoreward_toe_seabed_z_msl_m": -3.216,
+    "shoreward_ramp_length_m": 4.0,
+    "shoreward_ramp_rise_m": 1.29,
+    "mean_shoreward_slope": {
+     "tan": 0.3225,
+     "deg": 17.87,
+     "one_in": 3.1
+    },
+    "reef_cross_shore_extent_m": 26.0,
+    "max_thickness_on_line_m": 1.454,
+    "y_msl_crossing_m": null,
+    "segments": [
+     {
+      "y_from_m": 247.0,
+      "y_to_m": 272.0,
+      "max_z_msl_m": -1.74
+     }
+    ],
+    "bridged_gaps": [],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.0323,
+     "deg": 1.85,
+     "one_in": 30.93
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.0405,
+     "deg": 2.32,
+     "one_in": 24.7
+    },
+    "crest_distance_from_true_shoreline_m": 234.41,
+    "seaward_toe_distance_from_true_shoreline_m": 254.41
+   },
+   "crest_line_auto": {
+    "reef_on_line": true,
+    "crest_z_msl_m": -1.56,
+    "crest_y_m": 267.0,
+    "crest_depth_below_msl_m": 1.56,
+    "crest_seabed_z_msl_m": -3.565,
+    "crest_height_above_seabed_m": 2.005,
+    "crest_zone_y_m": [
+     266.0,
+     268.0
+    ],
+    "crest_zone_width_m": 3.0,
+    "seaward_toe_y_m": 312.0,
+    "seaward_toe_reef_z_msl_m": -3.83,
+    "seaward_toe_seabed_z_msl_m": -6.432,
+    "seaward_toe_thickness_m": 2.602,
+    "ramp_length_m": 44.0,
+    "ramp_rise_m": 2.17,
+    "crest_to_toe_drop_m": 2.27,
+    "crest_to_toe_seabed_drop_m": 4.872,
+    "mean_seaward_slope": {
+     "tan": 0.0493,
+     "deg": 2.82,
+     "one_in": 20.28
+    },
+    "max_seaward_slope": {
+     "tan": 0.13,
+     "deg": 7.41,
+     "one_in": 7.69
+    },
+    "max_seaward_slope_at_y_m": 268.0,
+    "shoreward_toe_y_m": 262.0,
+    "shoreward_toe_reef_z_msl_m": -2.44,
+    "shoreward_toe_seabed_z_msl_m": -3.451,
+    "shoreward_ramp_length_m": 4.0,
+    "shoreward_ramp_rise_m": 0.83,
+    "mean_shoreward_slope": {
+     "tan": 0.2075,
+     "deg": 11.72,
+     "one_in": 4.82
+    },
+    "reef_cross_shore_extent_m": 51.0,
+    "max_thickness_on_line_m": 2.603,
+    "y_msl_crossing_m": null,
+    "segments": [
+     {
+      "y_from_m": 262.0,
+      "y_to_m": 312.0,
+      "max_z_msl_m": -1.56
+     }
+    ],
+    "bridged_gaps": [],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.0596,
+     "deg": 3.41,
+     "one_in": 16.77
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.0252,
+     "deg": 1.44,
+     "one_in": 39.75
+    },
+    "crest_distance_from_true_shoreline_m": 263.91,
+    "seaward_toe_distance_from_true_shoreline_m": 308.91
+   },
+   "layer:design_plan_original_1999": {
+    "reef_on_line": true,
+    "crest_z_msl_m": -1.84,
+    "crest_y_m": 264.0,
+    "crest_depth_below_msl_m": 1.84,
+    "crest_seabed_z_msl_m": -3.311,
+    "crest_height_above_seabed_m": 1.471,
+    "crest_zone_y_m": [
+     263.0,
+     266.0
+    ],
+    "crest_zone_width_m": 4.0,
+    "seaward_toe_y_m": 310.0,
+    "seaward_toe_reef_z_msl_m": -5.43,
+    "seaward_toe_seabed_z_msl_m": -5.828,
+    "seaward_toe_thickness_m": 0.398,
+    "ramp_length_m": 44.0,
+    "ramp_rise_m": 3.53,
+    "crest_to_toe_drop_m": 3.59,
+    "crest_to_toe_seabed_drop_m": 3.988,
+    "mean_seaward_slope": {
+     "tan": 0.0802,
+     "deg": 4.59,
+     "one_in": 12.46
+    },
+    "max_seaward_slope": {
+     "tan": 0.2,
+     "deg": 11.31,
+     "one_in": 5.0
+    },
+    "max_seaward_slope_at_y_m": 304.0,
+    "shoreward_toe_y_m": 258.0,
+    "shoreward_toe_reef_z_msl_m": -2.94,
+    "shoreward_toe_seabed_z_msl_m": -3.368,
+    "shoreward_ramp_length_m": 5.0,
+    "shoreward_ramp_rise_m": 1.03,
+    "mean_shoreward_slope": {
+     "tan": 0.206,
+     "deg": 11.64,
+     "one_in": 4.85
+    },
+    "reef_cross_shore_extent_m": 53.0,
+    "max_thickness_on_line_m": 1.72,
+    "y_msl_crossing_m": null,
+    "segments": [
+     {
+      "y_from_m": 258.0,
+      "y_to_m": 310.0,
+      "max_z_msl_m": -1.84
+     }
+    ],
+    "bridged_gaps": [],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.0473,
+     "deg": 2.71,
+     "one_in": 21.14
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.0311,
+     "deg": 1.78,
+     "one_in": 32.2
+    },
+    "crest_distance_from_true_shoreline_m": 255.87,
+    "seaward_toe_distance_from_true_shoreline_m": 301.87
+   }
+  }
+ },
+ "mount-maunganui-reef": {
+  "slug": "mount-maunganui-reef",
+  "name": "Mount Maunganui Beach Reef (\"Mount Reef\"), New Zealand",
+  "site": {
+   "H": 1.5,
+   "H_src": "SOURCED: H ~1.5 m, Blacka et al. (2013) Table 4.3 p.67-68 (PDF p.79-80) and A.3.1",
+   "T": 11.0,
+   "T_src": "SOURCED: T ~11 s, Blacka et al. (2013) Table 4.3 p.67-68 (PDF p.79-80)",
+   "phi0": [
+    50.1,
+    54.9
+   ],
+   "phi0_src": "ASSUMPTION: shore-normal swell at the reef; arms 50.1 and 54.9 deg to the shoreline (reefs.json arm_angle_to_shoreline_deg, DERIVED)",
+   "tide_kind": "semidiurnal",
+   "swell_dir": "unknown (reefs.json)"
+  },
+  "planes": {
+   "HAT": 1.07,
+   "MHWS": 0.83,
+   "MHWN": 0.53,
+   "MSL": 0.0,
+   "MLWN": -0.56,
+   "MLWS": -0.92,
+   "LAT": -1.16
+  },
+  "tide": {
+   "A_spring": 0.875,
+   "A_neap": 0.545,
+   "z0": -0.045,
+   "basis": "MHWS/MLWS and MHWN/MLWN",
+   "kind": "semidiurnal",
+   "extreme_hi": 1.07,
+   "extreme_lo": -1.16
+  },
+  "tide_levels": {
+   "low": -0.92,
+   "mid": 0.0,
+   "high": 0.83
+  },
+  "tide_sources": [
+   {
+    "input": "chart datum / MSL / tide levels (LINZ Tauranga)",
+    "sources": {
+     "R6": "LINZ (2026). *Standard port tidal levels* (Tauranga row; page updated 8 Jun 2026; accessed 2026-10-06). https://www.linz.govt.nz/guidance/marine-information/tide-prediction-guidance/standard-port-tidal-levels (copy `3d/src/linz_standard_port_levels_Tauranga_excerpt.txt`)"
+    }
+   }
+  ],
+  "profile_json": "08_paper/data/profiles/mount-maunganui-reef.json",
+  "version": {
+   "id": "multibeam_2013_m2p0",
+   "name": "Multibeam survey outline (-2.0 m CD, 18 Jul 2013)",
+   "date": "2013-07-18",
+   "is_default_version": true
+  },
+  "datum": "z = metres above present MSL; MSL = Chart Datum + 1.13 m (LINZ Tauranga 2026-27 standard port levels); z_MSL = z_CD - 1.13; MVD-53 = CD + 0.9622 m (NIWA 2006)",
+  "shoreline_definition": "y = 0 is the wet/dry-sand boundary of the Esri 2011-01-15 image; the seabed rule starts at y = 0 with z = MSL (first knot (0, 1.13 m CD)), so y = 0 is also the MSL line of the modelled profile by construction. Landward (y < 0) a schematic 1:15 beach (not sourced).",
+  "glob": {
+   "crest_z_msl_m": -2.03,
+   "crest_x_m": 14.0,
+   "crest_y_m": 302.5,
+   "crest_height_above_seabed_m": 2.604,
+   "crest_depth_below_msl_m": 2.03,
+   "footprint_x_range_m": [
+    -35.5,
+    34.5
+   ],
+   "footprint_y_range_m": [
+    283.5,
+    346.5
+   ],
+   "footprint_alongshore_span_m": 70.5,
+   "footprint_cross_shore_span_m": 63.5,
+   "footprint_area_m2_thickness_ge_0p10": 1626.8,
+   "footprint_centroid_xy_m": [
+    -0.41,
+    310.47
+   ],
+   "centreline_x_m": -0.5,
+   "alongshore_length_z_ge_minus0p5_m_msl": {
+    "level_msl_m": -0.5,
+    "span_m": null,
+    "union_m": null,
+    "note": "no reef cell at or above this level"
+   },
+   "alongshore_length_z_ge_crest_minus0p5": {
+    "level_msl_m": -2.53,
+    "span_m": 65.0,
+    "union_m": 58.5,
+    "x_min_m": -33.0,
+    "x_max_m": 31.5
+   },
+   "alongshore_extent_by_level": [
+    {
+     "level_msl_m": 0.5,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": 0.0,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": -0.5,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": -1.0,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": -1.5,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": -2.0,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": -2.5,
+     "span_m": 65.0,
+     "union_m": 57.5,
+     "x_min_m": -33.0,
+     "x_max_m": 31.5
+    },
+    {
+     "level_msl_m": -3.0,
+     "span_m": 67.0,
+     "union_m": 64.5,
+     "x_min_m": -34.0,
+     "x_max_m": 32.5
+    },
+    {
+     "level_msl_m": -4.0,
+     "span_m": 69.5,
+     "union_m": 69.5,
+     "x_min_m": -35.0,
+     "x_max_m": 34.0
+    },
+    {
+     "level_msl_m": -5.0,
+     "span_m": 70.5,
+     "union_m": 70.5,
+     "x_min_m": -35.5,
+     "x_max_m": 34.5
+    }
+   ]
+  },
+  "reefs_json": {
+   "name": {
+    "value": "Mount Maunganui Reef (Mount Reef), Mount Maunganui main beach, Bay of Plenty",
+    "status": "sourced",
+    "location": "Appendix A.3 p.101",
+    "source": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08, UNSW Water Research Laboratory, for NSW Office of Environment and Heritage. https://doi.org/10.4225/53/58e1dc7368c7a (P8 report page = PDF page - 12)."
+   },
+   "country": {
+    "value": "New Zealand",
+    "status": "sourced",
+    "location": "Appendix A.3 p.101",
+    "source": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08, UNSW Water Research Laboratory, for NSW Office of Environment and Heritage. https://doi.org/10.4225/53/58e1dc7368c7a (P8 report page = PDF page - 12)."
+   },
+   "year_built": {
+    "value": 2005,
+    "status": "sourced",
+    "location": "A.3.1 p.101: construction began 2005 (Nov 2005 per M&B p.3; card: Feb/Nov 2005, sources disagree)",
+    "source": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08, UNSW Water Research Laboratory, for NSW Office of Environment and Heritage. https://doi.org/10.4225/53/58e1dc7368c7a (P8 report page = PDF page - 12)."
+   },
+   "purpose": {
+    "value": "multi",
+    "status": "sourced",
+    "location": "card R13 (surf primary, per designer) + Blacka Table 4.1 (protection secondary)",
+    "source": "Mead, S. and Black, K. (1999). A multipurpose, artificial reef at Mount Maunganui Beach, New Zealand. Coastal Management 27(4): 355-365. https://doi.org/10.1080/089207599263767"
+   },
+   "material": {
+    "value": "sand-filled geotextile containers (SFC), 24 containers built in two halves by the RAD method, filled sizes 30 x 1.5 x 1.0 m to 50 x 7.2 x 3.2 m",
+    "status": "sourced",
+    "location": "A.3.3 p.102",
+    "source": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08, UNSW Water Research Laboratory, for NSW Office of Environment and Heritage. https://doi.org/10.4225/53/58e1dc7368c7a (P8 report page = PDF page - 12)."
+   },
+   "volume_m3": {
+    "value": 2800,
+    "status": "sourced",
+    "location": "p.3 Fig 3 (as-built survey 2,800 m3); repeated by Focus/BoPRC 2013 p.28",
+    "source": "Mead, S.T. and Borrero, J.C. (2011). *Multi-Purpose Reefs - A Decade of Applications*. Coasts and Ports 2011. doi:10.3316/informit.715072832934166."
+   },
+   "surf_outcome": {
+    "value": "works rarely",
+    "status": "sourced",
+    "location": "M&B p.3; Blacka Table 4.1 (surfing \"No\", construction incomplete); card R7",
+    "source": "NZ Herald (Bay of Plenty Times). \"Stuck with a 'Dead Zone'?\" https://www.nzherald.co.nz/bay-of-plenty-times/news/stuck-with-a-dead-zone/XJONH2K4USMBRMYTBBBPEQON5I/"
+   },
+   "surfable_days_per_year": {
+    "value": null,
+    "status": "unknown",
+    "location": "",
+    "source": null
+   },
+   "durability": {
+    "value": "ruptured containers and sand loss during filling; one of the largest containers damaged beyond repair (gap 60 x 6 m, replaced ~9 months later; adjacent container slumped, crest ~1 m lower at offshore end); apex bags deflated to -2.0 to -2.4 m CD by 2013; buried base bags; reef removed 25 Sep - Nov 2014 (resource consent lapsed 2010)",
+    "status": "sourced",
+    "location": "M&B p.3; Blacka p.72; BoPRC/Focus 2013; METHODS_3D s1",
+    "source": "Mead, S.T. and Borrero, J.C. (2011). *Multi-Purpose Reefs - A Decade of Applications*. Coasts and Ports 2011. doi:10.3316/informit.715072832934166."
+   },
+   "sediment_shoreline_outcome": {
+    "value": "weak/disputed: Weppe et al. 2009 report ~25 m widening, influence ~150 m SE (via M&B p.5); the NSW review reads the same data as subtle (30 m accretion 100-200 m NW, no noticeable salient, maybe a slight groyne effect +-200 m) and rates protection \"Negligible\"",
+    "status": "sourced",
+    "location": "M&B p.5; Blacka A.3.4 p.103; Table 4.1",
+    "source": "Mead, S.T. and Borrero, J.C. (2011). *Multi-Purpose Reefs - A Decade of Applications*. Coasts and Ports 2011. doi:10.3316/informit.715072832934166."
+   },
+   "tide_spring_range_m": {
+    "value": 1.75,
+    "status": "derived",
+    "location": "MHWS +0.83 - MLWS -0.92 m MSL (LINZ Tauranga; METHODS_3D s3.1 check \"spring range 1.75\")",
+    "source": "Land Information New Zealand (LINZ). Standard port tidal levels (Tauranga); and 'Notes about the Moturiki Annual Mean Sea Level Data' (updated 16 Feb 2023). https://www.linz.govt.nz/guidance/marine-information/tide-prediction-guidance/standard-port-tidal-levels"
+   },
+   "cost_usd_2024": {
+    "value": 1536000.0,
+    "status": "derived",
+    "location": "nominal USD x CPI_USA(2024) 143.86 / CPI_USA(2008) 98.74",
+    "source": "World Bank, World Development Indicators: PA.NUS.FCRF \"Official exchange rate (LCU per US$, period average)\" and FP.CPI.TOTL \"Consumer price index (2010 = 100)\", USA; https://api.worldbank.org/v2 ; fetched 2026-10-15"
+   },
+   "distance_offshore_crest_m": {
+    "value": 307.7,
+    "status": "derived",
+    "location": "reef centroid 307.7 m; shoreline bearing 136.15 deg T",
+    "source": "07_scale/shapes/mount-maunganui-reef/3d/METHODS_3D.md KN \"Distance from the shoreline\""
+   },
+   "arm_angle_to_shoreline_deg": {
+    "value": [
+     50.1,
+     54.9
+    ],
+    "status": "derived",
+    "location": "west arm axis 86 deg T, south arm 11 deg T vs shoreline 136.15 deg T; apex angle 75 +-5 deg; V bisector within 2 deg of shore-normal",
+    "source": "07_scale/shapes/mount-maunganui-reef/shape.json angles"
+   },
+   "arm_angle_to_swell_deg": {
+    "value": null,
+    "status": "unknown",
+    "location": "",
+    "source": null
+   }
+  },
+  "confidence_3d": "medium",
+  "line_metrics": {
+   "centreline": {
+    "reef_on_line": true,
+    "crest_z_msl_m": -2.714,
+    "crest_y_m": 340.0,
+    "crest_depth_below_msl_m": 2.714,
+    "crest_seabed_z_msl_m": -5.13,
+    "crest_height_above_seabed_m": 2.416,
+    "crest_zone_y_m": [
+     337.0,
+     340.0
+    ],
+    "crest_zone_width_m": 4.0,
+    "seaward_toe_y_m": 344.0,
+    "seaward_toe_reef_z_msl_m": -5.06,
+    "seaward_toe_seabed_z_msl_m": -5.187,
+    "seaward_toe_thickness_m": 0.127,
+    "ramp_length_m": 4.0,
+    "ramp_rise_m": 2.346,
+    "crest_to_toe_drop_m": 2.346,
+    "crest_to_toe_seabed_drop_m": 2.473,
+    "mean_seaward_slope": {
+     "tan": 0.5864,
+     "deg": 30.39,
+     "one_in": 1.71
+    },
+    "max_seaward_slope": {
+     "tan": 0.815,
+     "deg": 39.18,
+     "one_in": 1.23
+    },
+    "max_seaward_slope_at_y_m": 343.0,
+    "shoreward_toe_y_m": 334.0,
+    "shoreward_toe_reef_z_msl_m": -4.44,
+    "shoreward_toe_seabed_z_msl_m": -5.045,
+    "shoreward_ramp_length_m": 3.0,
+    "shoreward_ramp_rise_m": 1.641,
+    "mean_shoreward_slope": {
+     "tan": 0.547,
+     "deg": 28.68,
+     "one_in": 1.83
+    },
+    "reef_cross_shore_extent_m": 11.0,
+    "max_thickness_on_line_m": 2.416,
+    "y_msl_crossing_m": 0.0,
+    "segments": [
+     {
+      "y_from_m": 334.0,
+      "y_to_m": 344.0,
+      "max_z_msl_m": -2.714
+     }
+    ],
+    "bridged_gaps": [],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.0142,
+     "deg": 0.81,
+     "one_in": 70.4
+    },
+    "crest_distance_from_msl_line_m": 340.0,
+    "seaward_toe_distance_from_msl_line_m": 344.0,
+    "shoreward_toe_distance_from_msl_line_m": 334.0,
+    "seabed_mean_slope_msl_line_to_seaward_toe": {
+     "tan": 0.0151,
+     "deg": 0.86,
+     "one_in": 66.32
+    },
+    "seabed_mean_slope_msl_line_to_shoreward_toe": {
+     "tan": 0.0151,
+     "deg": 0.87,
+     "one_in": 66.2
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.0149,
+     "deg": 0.85,
+     "one_in": 67.15
+    }
+   },
+   "crest_line": {
+    "reef_on_line": true,
+    "crest_z_msl_m": -2.078,
+    "crest_y_m": 302.0,
+    "crest_depth_below_msl_m": 2.078,
+    "crest_seabed_z_msl_m": -4.64,
+    "crest_height_above_seabed_m": 2.562,
+    "crest_zone_y_m": [
+     302.0,
+     303.0
+    ],
+    "crest_zone_width_m": 2.0,
+    "seaward_toe_y_m": 323.0,
+    "seaward_toe_reef_z_msl_m": -4.22,
+    "seaward_toe_seabed_z_msl_m": -4.905,
+    "seaward_toe_thickness_m": 0.685,
+    "ramp_length_m": 20.0,
+    "ramp_rise_m": 2.14,
+    "crest_to_toe_drop_m": 2.142,
+    "crest_to_toe_seabed_drop_m": 2.827,
+    "mean_seaward_slope": {
+     "tan": 0.107,
+     "deg": 6.11,
+     "one_in": 9.34
+    },
+    "max_seaward_slope": {
+     "tan": 0.578,
+     "deg": 30.03,
+     "one_in": 1.73
+    },
+    "max_seaward_slope_at_y_m": 322.0,
+    "shoreward_toe_y_m": 296.0,
+    "shoreward_toe_reef_z_msl_m": -4.1,
+    "shoreward_toe_seabed_z_msl_m": -4.545,
+    "shoreward_ramp_length_m": 6.0,
+    "shoreward_ramp_rise_m": 2.022,
+    "mean_shoreward_slope": {
+     "tan": 0.3369,
+     "deg": 18.62,
+     "one_in": 2.97
+    },
+    "reef_cross_shore_extent_m": 28.0,
+    "max_thickness_on_line_m": 2.576,
+    "y_msl_crossing_m": 0.0,
+    "segments": [
+     {
+      "y_from_m": 296.0,
+      "y_to_m": 323.0,
+      "max_z_msl_m": -2.078
+     }
+    ],
+    "bridged_gaps": [],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.0133,
+     "deg": 0.76,
+     "one_in": 75.01
+    },
+    "crest_distance_from_msl_line_m": 302.0,
+    "seaward_toe_distance_from_msl_line_m": 323.0,
+    "shoreward_toe_distance_from_msl_line_m": 296.0,
+    "seabed_mean_slope_msl_line_to_seaward_toe": {
+     "tan": 0.0152,
+     "deg": 0.87,
+     "one_in": 65.85
+    },
+    "seabed_mean_slope_msl_line_to_shoreward_toe": {
+     "tan": 0.0154,
+     "deg": 0.88,
+     "one_in": 65.12
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.0144,
+     "deg": 0.83,
+     "one_in": 69.42
+    }
+   },
+   "second_crest_line": {
+    "reef_on_line": true,
+    "crest_z_msl_m": -2.03,
+    "crest_y_m": 299.0,
+    "crest_depth_below_msl_m": 2.03,
+    "crest_seabed_z_msl_m": -4.593,
+    "crest_height_above_seabed_m": 2.563,
+    "crest_zone_y_m": [
+     297.0,
+     305.0
+    ],
+    "crest_zone_width_m": 9.0,
+    "seaward_toe_y_m": 313.0,
+    "seaward_toe_reef_z_msl_m": -4.42,
+    "seaward_toe_seabed_z_msl_m": -4.791,
+    "seaward_toe_thickness_m": 0.371,
+    "ramp_length_m": 8.0,
+    "ramp_rise_m": 2.315,
+    "crest_to_toe_drop_m": 2.39,
+    "crest_to_toe_seabed_drop_m": 2.761,
+    "mean_seaward_slope": {
+     "tan": 0.2894,
+     "deg": 16.14,
+     "one_in": 3.46
+    },
+    "max_seaward_slope": {
+     "tan": 0.58,
+     "deg": 30.11,
+     "one_in": 1.72
+    },
+    "max_seaward_slope_at_y_m": 312.0,
+    "shoreward_toe_y_m": 287.0,
+    "shoreward_toe_reef_z_msl_m": -4.11,
+    "shoreward_toe_seabed_z_msl_m": -4.403,
+    "shoreward_ramp_length_m": 10.0,
+    "shoreward_ramp_rise_m": 2.03,
+    "mean_shoreward_slope": {
+     "tan": 0.203,
+     "deg": 11.48,
+     "one_in": 4.92
+    },
+    "reef_cross_shore_extent_m": 27.0,
+    "max_thickness_on_line_m": 2.63,
+    "y_msl_crossing_m": 0.0,
+    "segments": [
+     {
+      "y_from_m": 287.0,
+      "y_to_m": 313.0,
+      "max_z_msl_m": -2.03
+     }
+    ],
+    "bridged_gaps": [],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.0149,
+     "deg": 0.85,
+     "one_in": 67.16
+    },
+    "crest_distance_from_msl_line_m": 299.0,
+    "seaward_toe_distance_from_msl_line_m": 313.0,
+    "shoreward_toe_distance_from_msl_line_m": 287.0,
+    "seabed_mean_slope_msl_line_to_seaward_toe": {
+     "tan": 0.0153,
+     "deg": 0.88,
+     "one_in": 65.34
+    },
+    "seabed_mean_slope_msl_line_to_shoreward_toe": {
+     "tan": 0.0153,
+     "deg": 0.88,
+     "one_in": 65.18
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.014,
+     "deg": 0.8,
+     "one_in": 71.55
+    }
+   },
+   "layer:multibeam_2013-07-18_DEM_from_BoPRC_Fig5": {
+    "reef_on_line": true,
+    "crest_z_msl_m": -1.29,
+    "crest_y_m": 293.0,
+    "crest_depth_below_msl_m": 1.29,
+    "crest_seabed_z_msl_m": -4.498,
+    "crest_height_above_seabed_m": 3.208,
+    "crest_zone_y_m": [
+     291.0,
+     294.0
+    ],
+    "crest_zone_width_m": 4.0,
+    "seaward_toe_y_m": 375.0,
+    "seaward_toe_reef_z_msl_m": -4.72,
+    "seaward_toe_seabed_z_msl_m": -5.628,
+    "seaward_toe_thickness_m": 0.908,
+    "ramp_length_m": 81.0,
+    "ramp_rise_m": 3.38,
+    "crest_to_toe_drop_m": 3.43,
+    "crest_to_toe_seabed_drop_m": 4.338,
+    "mean_seaward_slope": {
+     "tan": 0.0417,
+     "deg": 2.39,
+     "one_in": 23.96
+    },
+    "max_seaward_slope": {
+     "tan": 0.185,
+     "deg": 10.48,
+     "one_in": 5.41
+    },
+    "max_seaward_slope_at_y_m": 303.0,
+    "shoreward_toe_y_m": 252.0,
+    "shoreward_toe_reef_z_msl_m": -3.32,
+    "shoreward_toe_seabed_z_msl_m": -3.852,
+    "shoreward_ramp_length_m": 39.0,
+    "shoreward_ramp_rise_m": 1.93,
+    "mean_shoreward_slope": {
+     "tan": 0.0495,
+     "deg": 2.83,
+     "one_in": 20.21
+    },
+    "reef_cross_shore_extent_m": 124.0,
+    "max_thickness_on_line_m": 3.208,
+    "y_msl_crossing_m": 0.0,
+    "segments": [
+     {
+      "y_from_m": 252.0,
+      "y_to_m": 375.0,
+      "max_z_msl_m": -1.29
+     }
+    ],
+    "bridged_gaps": [
+     {
+      "y_from_m": 296.0,
+      "y_to_m": 301.0
+     },
+     {
+      "y_from_m": 303.0,
+      "y_to_m": 303.0
+     }
+    ],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.0144,
+     "deg": 0.83,
+     "one_in": 69.27
+    },
+    "crest_distance_from_msl_line_m": 293.0,
+    "seaward_toe_distance_from_msl_line_m": 375.0,
+    "shoreward_toe_distance_from_msl_line_m": 252.0,
+    "seabed_mean_slope_msl_line_to_seaward_toe": {
+     "tan": 0.015,
+     "deg": 0.86,
+     "one_in": 66.64
+    },
+    "seabed_mean_slope_msl_line_to_shoreward_toe": {
+     "tan": 0.0153,
+     "deg": 0.88,
+     "one_in": 65.42
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.0149,
+     "deg": 0.85,
+     "one_in": 67.02
+    }
+   }
+  }
+ },
+ "prattes-reef-el-segundo": {
+  "slug": "prattes-reef-el-segundo",
+  "name": "Pratte's Reef (permit name: Chevron Reef), El Segundo / Dockweiler Beach, California",
+  "site": {
+   "H": 1.2,
+   "H_src": "SOURCED: H = 0.9 m summer, 1.5 m winter at El Segundo, Blacka et al. (2013) Table 4.3 p.67-68 (PDF p.79-80); mean 1.2 m used",
+   "T": 6.0,
+   "T_src": "SOURCED: T = 6 s, Blacka et al. (2013) Table 4.3 p.67-68 (PDF p.79-80) (probably a mean period; 12 s swell sensitivity)",
+   "phi0": [
+    44.7,
+    44.4
+   ],
+   "phi0_src": "DERIVED from the design drawing: arms 44.7 and 44.4 deg to the V axis = assumed swell direction (reefs.json arm_angle_to_swell_deg)",
+   "tide_kind": "mixed",
+   "swell_dir": "assumed along the V axis (reefs.json)"
+  },
+  "planes": {
+   "LAT": -1.469,
+   "MLLW": -0.849,
+   "MLW": -0.566,
+   "MSL": 0.0,
+   "MHW": 0.579,
+   "MHHW": 0.804,
+   "HAT": 1.382
+  },
+  "tide": {
+   "A_spring": 0.827,
+   "A_neap": 0.319,
+   "z0": -0.022,
+   "basis": "MHHW/MLLW (spring proxy) and MHW/MLW (mean) -> neap = 2 mean - spring",
+   "kind": "mixed",
+   "extreme_hi": 1.382,
+   "extreme_lo": -1.469
+  },
+  "tide_levels": {
+   "low": -0.849,
+   "mid": 0.0,
+   "high": 0.804
+  },
+  "tide_sources": [
+   {
+    "input": "tidal datums NOAA CO-OPS 9410840",
+    "sources": {
+     "S4": "NOAA CO-OPS (2026). *Tidal datums, station 9410840 Santa Monica, CA* (34.0083 N, 118.5 W; 11.7 km from the site), epoch 1983-2001. https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9410840/datums.json?units=metric"
+    }
+   }
+  ],
+  "profile_json": "08_paper/data/profiles/prattes-reef-el-segundo.json",
+  "version": {
+   "id": "state_B",
+   "name": "B  Phase I as installed (Sept 2000): outermost point approximately 6 ft below MLLW (Borrero & Nelsen 2003 p.2); top follows the seabed",
+   "date": "Phase I, 22 Sept 2000 (as installed)",
+   "is_default_version": true
+  },
+  "datum": "z = metres above MSL (NOAA 9410840 Santa Monica, epoch 1983-2001); MSL - MLLW = 0.849 m; z_MSL = z_NAVD88 - 0.792 (DEM); LAT = -1.469 m MSL; MLLW = -0.849 m MSL",
+  "shoreline_definition": "y = 0 is the MSL waterline: the z = 0 contour of the NOAA DEM mean cross-shore profile (model.js seabed.shoreline_y_m = 0, definition: \"MSL waterline (z = 0 contour of the seabed profile)\").",
+  "glob": {
+   "crest_z_msl_m": -1.841,
+   "crest_x_m": -26.77,
+   "crest_y_m": 76.78,
+   "crest_height_above_seabed_m": 1.349,
+   "crest_depth_below_msl_m": 1.841,
+   "footprint_x_range_m": [
+    -28.77,
+    28.73
+   ],
+   "footprint_y_range_m": [
+    74.78,
+    103.03
+   ],
+   "footprint_alongshore_span_m": 57.75,
+   "footprint_cross_shore_span_m": 28.5,
+   "footprint_area_m2_thickness_ge_0p10": 418.5,
+   "footprint_centroid_xy_m": [
+    0.05,
+    91.56
+   ],
+   "centreline_x_m": -0.02,
+   "alongshore_length_z_ge_minus0p5_m_msl": {
+    "level_msl_m": -0.5,
+    "span_m": null,
+    "union_m": null,
+    "note": "no reef cell at or above this level"
+   },
+   "alongshore_length_z_ge_crest_minus0p5": {
+    "level_msl_m": -2.341,
+    "span_m": 56.0,
+    "union_m": 38.0,
+    "x_min_m": -28.02,
+    "x_max_m": 27.73
+   },
+   "alongshore_extent_by_level": [
+    {
+     "level_msl_m": 0.5,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": 0.0,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": -0.5,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": -1.0,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": -1.5,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": -2.0,
+     "span_m": 55.0,
+     "union_m": 10.0,
+     "x_min_m": -27.52,
+     "x_max_m": 27.23
+    },
+    {
+     "level_msl_m": -2.5,
+     "span_m": 56.5,
+     "union_m": 56.5,
+     "x_min_m": -28.27,
+     "x_max_m": 27.98
+    },
+    {
+     "level_msl_m": -3.0,
+     "span_m": 57.5,
+     "union_m": 57.5,
+     "x_min_m": -28.77,
+     "x_max_m": 28.48
+    },
+    {
+     "level_msl_m": -4.0,
+     "span_m": 57.75,
+     "union_m": 57.75,
+     "x_min_m": -28.77,
+     "x_max_m": 28.73
+    },
+    {
+     "level_msl_m": -5.0,
+     "span_m": 57.75,
+     "union_m": 57.75,
+     "x_min_m": -28.77,
+     "x_max_m": 28.73
+    }
+   ]
+  },
+  "reefs_json": {
+   "name": {
+    "value": "Pratte's Reef (permit name Chevron Reef), El Segundo / Dockweiler Beach, California",
+    "status": "sourced",
+    "location": "title / p.1",
+    "source": "| S10 | Borrero, J.C. & Nelsen, C. (2003). Results of a comprehensive monitoring program at Pratte's Reef. In: Black, K. & Mead, S. (eds), *Proceedings of the 3rd International Surfing Reef Symposium*, Raglan, New Zealand. File `src/borrero_nelsen_2003_prattes_monitoring_results.pdf`, 16 pp., supplied by Lior on 2026-10-05 (his `Downloads\\Pratte_results.pdf`; original URL unknown). Page 1 title *Results of a comprehensive monitoring program at Pratte's Reef*, authors J.C. Borrero (USC) and C. Nelsen (Surfrider Foundation); **the file prints neither venue nor year** (the PDF metadata title is *2 Years of Pratte's Reef: Performance and Considerations for Future Artificial Reef Endeavors in Santa Monica Bay*, re-saved 2020-11-03); venue and year are those of the citation R23 in `shape.json`, consistent with the content (monitoring to Oct 2002) | bag size, counts and dates; Phase I crest depth (6 ft MLLW) and Phase II crest (3 ft MLLW); the design drawing (Fig. 4); position text, aerial (Fig. 2) and a georeferenced bathymetry window (Fig. 9); centreline profiles after Phase II (Figs 5-8) | text; Figs 5, 7, 9 vector graphics (digitised from the PDF paths), Figs 2, 4, 8 rasters (432 x 231, 371 x 468, 969 x 560 px); survey Oct 2000 - Sept 2002 | copyright holder; private research copy |"
+   },
+   "country": {
+    "value": "USA",
+    "status": "sourced",
+    "location": "Appendix A.11 p.115",
+    "source": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08, UNSW Water Research Laboratory, for NSW Office of Environment and Heritage. https://doi.org/10.4225/53/58e1dc7368c7a (P8 report page = PDF page - 12)."
+   },
+   "year_built": {
+    "value": 2000,
+    "status": "sourced",
+    "location": "p.2-3 (METHODS_3D s2.1); Phase II 23-24 April 2001 (+90 bags)",
+    "source": "| S10 | Borrero, J.C. & Nelsen, C. (2003). Results of a comprehensive monitoring program at Pratte's Reef. In: Black, K. & Mead, S. (eds), *Proceedings of the 3rd International Surfing Reef Symposium*, Raglan, New Zealand. File `src/borrero_nelsen_2003_prattes_monitoring_results.pdf`, 16 pp., supplied by Lior on 2026-10-05 (his `Downloads\\Pratte_results.pdf`; original URL unknown). Page 1 title *Results of a comprehensive monitoring program at Pratte's Reef*, authors J.C. Borrero (USC) and C. Nelsen (Surfrider Foundation); **the file prints neither venue nor year** (the PDF metadata title is *2 Years of Pratte's Reef: Performance and Considerations for Future Artificial Reef Endeavors in Santa Monica Bay*, re-saved 2020-11-03); venue and year are those of the citation R23 in `shape.json`, consistent with the content (monitoring to Oct 2002) | bag size, counts and dates; Phase I crest depth (6 ft MLLW) and Phase II crest (3 ft MLLW); the design drawing (Fig. 4); position text, aerial (Fig. 2) and a georeferenced bathymetry window (Fig. 9); centreline profiles after Phase II (Figs 5-8) | text; Figs 5, 7, 9 vector graphics (digitised from the PDF paths), Figs 2, 4, 8 rasters (432 x 231, 371 x 468, 969 x 560 px); survey Oct 2000 - Sept 2002 | copyright holder; private research copy |"
+   },
+   "purpose": {
+    "value": "surf",
+    "status": "sourced",
+    "location": "A.11 p.115: coastal protection not an objective",
+    "source": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08, UNSW Water Research Laboratory, for NSW Office of Environment and Heritage. https://doi.org/10.4225/53/58e1dc7368c7a (P8 report page = PDF page - 12)."
+   },
+   "material": {
+    "value": "sand-filled geotextile (polypropylene) bags, 110 bags of 3.0 x 2.1 x 1.2 m (~12.7-14 t filled, 7.9 m3 nominal) in Phase I; +90 bags in Phase II",
+    "status": "sourced",
+    "location": "Blacka A.11.2 p.115; B&N 2003 p.2",
+    "source": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08, UNSW Water Research Laboratory, for NSW Office of Environment and Heritage. https://doi.org/10.4225/53/58e1dc7368c7a (P8 report page = PDF page - 12)."
+   },
+   "volume_m3": {
+    "value": 1350,
+    "status": "sourced",
+    "location": "p.3 (3.1.3): smallest MPR ever built, 1,350 m3",
+    "source": "Mead, S.T. and Borrero, J.C. (2011). Multi-Purpose Reefs - A Decade of Applications. Proc. 20th Australasian Coastal and Ocean Engineering Conference (Coasts and Ports 2011), ASR Ltd. https://search.informit.org/doi/10.3316/informit.715072832934166 (Lior's copy: papers/)."
+   },
+   "surf_outcome": {
+    "value": "does not work",
+    "status": "sourced",
+    "location": "Blacka A.11 p.117 (surfing \"No\"; after Stage 2 \"near rideable waves that broke only briefly\", then none after settlement); Table 4.1",
+    "source": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08, UNSW Water Research Laboratory, for NSW Office of Environment and Heritage. https://doi.org/10.4225/53/58e1dc7368c7a (P8 report page = PDF page - 12)."
+   },
+   "surfable_days_per_year": {
+    "value": null,
+    "status": "unknown",
+    "location": "",
+    "source": null
+   },
+   "durability": {
+    "value": "bags moved, sank, buried by sand; black polypropylene deteriorated (\"largely disintegrated\" within ~2 years); seabed scoured to ~4 m depth soon after installation; crest dropped 1.5 m in the year after Phase II; removed 2008 and 2010: 142.5 containers removed, 1 left visible, 42.5 torn or buried",
+    "status": "sourced",
+    "location": "A.11 p.116-119; card R4 (RWR) for \"largely disintegrated\"",
+    "source": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08, UNSW Water Research Laboratory, for NSW Office of Environment and Heritage. https://doi.org/10.4225/53/58e1dc7368c7a (P8 report page = PDF page - 12)."
+   },
+   "sediment_shoreline_outcome": {
+    "value": "no discernible effect on bathymetry or beach (monthly profiles, quarterly ADCP/dive surveys)",
+    "status": "sourced",
+    "location": "A.11 p.117",
+    "source": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08, UNSW Water Research Laboratory, for NSW Office of Environment and Heritage. https://doi.org/10.4225/53/58e1dc7368c7a (P8 report page = PDF page - 12)."
+   },
+   "tide_spring_range_m": {
+    "value": 1.65,
+    "status": "derived",
+    "location": "NOAA CO-OPS 9410840 Santa Monica datums, epoch 1983-2001: GT 1.654 (MHHW 2.398 - MLLW 0.745 station datum); MHHW +0.804, MLLW -0.849 m MSL (METHODS_3D tide levels); mixed semidiurnal tide, so spring/neap planes are not published; HAT-LAT = 2.85 m",
+    "source": "| S4 | NOAA CO-OPS (2026). *Tidal datums, station 9410840 Santa Monica, CA* (34.0083 N, 118.5 W; 11.7 km from the site), epoch 1983-2001. https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9410840/datums.json?units=metric | MSL, MLLW, MHW, MHHW, MLW, NAVD88, LAT, HAT (m above station datum) | epoch 1983-2001; LAT/HAT from the station record | NOAA, public domain |"
+   },
+   "cost_usd_2024": {
+    "value": 1002000.0,
+    "status": "derived",
+    "location": "nominal USD x CPI_USA(2024) 143.86 / CPI_USA(2000) 78.97",
+    "source": "World Bank, World Development Indicators: PA.NUS.FCRF \"Official exchange rate (LCU per US$, period average)\" and FP.CPI.TOTL \"Consumer price index (2010 = 100)\", USA; https://api.worldbank.org/v2 ; fetched 2026-10-15"
+   },
+   "distance_offshore_crest_m": {
+    "value": 103.3,
+    "status": "derived",
+    "location": "model frame y from the MSL waterline; shape.json canonical.distance_offshore_m = 91.44 (reef centre)",
+    "source": "07_scale/shapes/prattes-reef-el-segundo/3d/METHODS_3D.md s3.2 (y_apex = 103.28 m)"
+   },
+   "arm_angle_to_shoreline_deg": {
+    "value": [
+     44.7,
+     44.4
+    ],
+    "status": "derived",
+    "location": "arm edges vs V axis: 44.7 and 44.4 deg; apex angle 89.1 deg; the 1996 concept orientation gives 41.2 deg (NNE arm) and other values (not the built design)",
+    "source": "07_scale/shapes/prattes-reef-el-segundo/shape.json angles"
+   },
+   "arm_angle_to_swell_deg": {
+    "value": [
+     44.7,
+     44.4
+    ],
+    "status": "derived",
+    "location": "same measurements",
+    "source": "07_scale/shapes/prattes-reef-el-segundo/shape.json angles"
+   }
+  },
+  "confidence_3d": "low",
+  "line_metrics": {
+   "centreline": {
+    "reef_on_line": true,
+    "crest_z_msl_m": -2.419,
+    "crest_y_m": 94.0,
+    "crest_depth_below_msl_m": 2.419,
+    "crest_seabed_z_msl_m": -3.745,
+    "crest_height_above_seabed_m": 1.326,
+    "crest_zone_y_m": [
+     94.0,
+     98.0
+    ],
+    "crest_zone_width_m": 5.0,
+    "seaward_toe_y_m": 103.0,
+    "seaward_toe_reef_z_msl_m": -3.752,
+    "seaward_toe_seabed_z_msl_m": -4.018,
+    "seaward_toe_thickness_m": 0.266,
+    "ramp_length_m": 5.0,
+    "ramp_rise_m": 1.235,
+    "crest_to_toe_drop_m": 1.334,
+    "crest_to_toe_seabed_drop_m": 1.599,
+    "mean_seaward_slope": {
+     "tan": 0.2469,
+     "deg": 13.87,
+     "one_in": 4.05
+    },
+    "max_seaward_slope": {
+     "tan": 0.5719,
+     "deg": 29.76,
+     "one_in": 1.75
+    },
+    "max_seaward_slope_at_y_m": 102.0,
+    "shoreward_toe_y_m": 93.0,
+    "shoreward_toe_reef_z_msl_m": -3.363,
+    "shoreward_toe_seabed_z_msl_m": -3.714,
+    "shoreward_ramp_length_m": 1.0,
+    "shoreward_ramp_rise_m": 0.944,
+    "mean_shoreward_slope": {
+     "tan": 0.9444,
+     "deg": 43.36,
+     "one_in": 1.06
+    },
+    "reef_cross_shore_extent_m": 11.0,
+    "max_thickness_on_line_m": 1.349,
+    "y_msl_crossing_m": 0.0,
+    "segments": [
+     {
+      "y_from_m": 93.0,
+      "y_to_m": 103.0,
+      "max_z_msl_m": -2.419
+     }
+    ],
+    "bridged_gaps": [],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.0304,
+     "deg": 1.74,
+     "one_in": 32.92
+    },
+    "crest_distance_from_msl_line_m": 94.0,
+    "seaward_toe_distance_from_msl_line_m": 103.0,
+    "shoreward_toe_distance_from_msl_line_m": 93.0,
+    "seabed_mean_slope_msl_line_to_seaward_toe": {
+     "tan": 0.039,
+     "deg": 2.23,
+     "one_in": 25.63
+    },
+    "seabed_mean_slope_msl_line_to_shoreward_toe": {
+     "tan": 0.0399,
+     "deg": 2.29,
+     "one_in": 25.04
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.0268,
+     "deg": 1.53,
+     "one_in": 37.34
+    }
+   },
+   "crest_line": {
+    "reef_on_line": true,
+    "crest_z_msl_m": -1.859,
+    "crest_y_m": 77.0,
+    "crest_depth_below_msl_m": 1.859,
+    "crest_seabed_z_msl_m": -3.208,
+    "crest_height_above_seabed_m": 1.349,
+    "crest_zone_y_m": [
+     77.0,
+     78.0
+    ],
+    "crest_zone_width_m": 2.0,
+    "seaward_toe_y_m": 79.0,
+    "seaward_toe_reef_z_msl_m": -2.596,
+    "seaward_toe_seabed_z_msl_m": -3.271,
+    "seaward_toe_thickness_m": 0.675,
+    "ramp_length_m": 1.0,
+    "ramp_rise_m": 0.705,
+    "crest_to_toe_drop_m": 0.736,
+    "crest_to_toe_seabed_drop_m": 1.412,
+    "mean_seaward_slope": {
+     "tan": 0.7048,
+     "deg": 35.18,
+     "one_in": 1.42
+    },
+    "max_seaward_slope": {
+     "tan": 0.3682,
+     "deg": 20.21,
+     "one_in": 2.72
+    },
+    "max_seaward_slope_at_y_m": 78.0,
+    "shoreward_toe_y_m": 75.0,
+    "shoreward_toe_reef_z_msl_m": -2.807,
+    "shoreward_toe_seabed_z_msl_m": -3.145,
+    "shoreward_ramp_length_m": 2.0,
+    "shoreward_ramp_rise_m": 0.948,
+    "mean_shoreward_slope": {
+     "tan": 0.4739,
+     "deg": 25.36,
+     "one_in": 2.11
+    },
+    "reef_cross_shore_extent_m": 5.0,
+    "max_thickness_on_line_m": 1.349,
+    "y_msl_crossing_m": 0.0,
+    "segments": [
+     {
+      "y_from_m": 75.0,
+      "y_to_m": 79.0,
+      "max_z_msl_m": -1.859
+     }
+    ],
+    "bridged_gaps": [],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.0316,
+     "deg": 1.81,
+     "one_in": 31.65
+    },
+    "crest_distance_from_msl_line_m": 77.0,
+    "seaward_toe_distance_from_msl_line_m": 79.0,
+    "shoreward_toe_distance_from_msl_line_m": 75.0,
+    "seabed_mean_slope_msl_line_to_seaward_toe": {
+     "tan": 0.0414,
+     "deg": 2.37,
+     "one_in": 24.15
+    },
+    "seabed_mean_slope_msl_line_to_shoreward_toe": {
+     "tan": 0.0419,
+     "deg": 2.4,
+     "one_in": 23.85
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.0285,
+     "deg": 1.64,
+     "one_in": 35.03
+    }
+   },
+   "second_crest_line": {
+    "reef_on_line": true,
+    "crest_z_msl_m": -1.891,
+    "crest_y_m": 78.0,
+    "crest_depth_below_msl_m": 1.891,
+    "crest_seabed_z_msl_m": -3.24,
+    "crest_height_above_seabed_m": 1.349,
+    "crest_zone_y_m": [
+     78.0,
+     79.0
+    ],
+    "crest_zone_width_m": 2.0,
+    "seaward_toe_y_m": 80.0,
+    "seaward_toe_reef_z_msl_m": -2.576,
+    "seaward_toe_seabed_z_msl_m": -3.303,
+    "seaward_toe_thickness_m": 0.727,
+    "ramp_length_m": 1.0,
+    "ramp_rise_m": 0.653,
+    "crest_to_toe_drop_m": 0.684,
+    "crest_to_toe_seabed_drop_m": 1.412,
+    "mean_seaward_slope": {
+     "tan": 0.6528,
+     "deg": 33.14,
+     "one_in": 1.53
+    },
+    "max_seaward_slope": {
+     "tan": 0.3422,
+     "deg": 18.89,
+     "one_in": 2.92
+    },
+    "max_seaward_slope_at_y_m": 79.0,
+    "shoreward_toe_y_m": 76.0,
+    "shoreward_toe_reef_z_msl_m": -2.666,
+    "shoreward_toe_seabed_z_msl_m": -3.177,
+    "shoreward_ramp_length_m": 2.0,
+    "shoreward_ramp_rise_m": 0.775,
+    "mean_shoreward_slope": {
+     "tan": 0.3874,
+     "deg": 21.18,
+     "one_in": 2.58
+    },
+    "reef_cross_shore_extent_m": 5.0,
+    "max_thickness_on_line_m": 1.349,
+    "y_msl_crossing_m": 0.0,
+    "segments": [
+     {
+      "y_from_m": 76.0,
+      "y_to_m": 80.0,
+      "max_z_msl_m": -1.891
+     }
+    ],
+    "bridged_gaps": [],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.0316,
+     "deg": 1.81,
+     "one_in": 31.65
+    },
+    "crest_distance_from_msl_line_m": 78.0,
+    "seaward_toe_distance_from_msl_line_m": 80.0,
+    "shoreward_toe_distance_from_msl_line_m": 76.0,
+    "seabed_mean_slope_msl_line_to_seaward_toe": {
+     "tan": 0.0413,
+     "deg": 2.36,
+     "one_in": 24.22
+    },
+    "seabed_mean_slope_msl_line_to_shoreward_toe": {
+     "tan": 0.0418,
+     "deg": 2.39,
+     "one_in": 23.92
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.0285,
+     "deg": 1.63,
+     "one_in": 35.11
+    }
+   }
+  }
+ },
+ "boscombe-surf-reef": {
+  "slug": "boscombe-surf-reef",
+  "name": "Boscombe Surf Reef (Bournemouth, UK)",
+  "site": {
+   "H": 0.5,
+   "H_src": "SOURCED: H ~0.5 m, Blacka et al. (2013) Table 4.3 p.67-68 (PDF p.79-80) (typical, not the surf design wave)",
+   "T": 8.0,
+   "T_src": "ASSUMPTION for surfing swell: 8 s. Blacka et al. (2013) Table 4.3 p.67-68 (PDF p.79-80) gives T ~4 s (typical local sea, not surf); both reported",
+   "T_alt": 4.0,
+   "phi0": [
+    72.9
+   ],
+   "phi0_src": "DERIVED: reef long axis (28.1 deg) vs the crest line of the 191 deg design swell, ignores refraction (reefs.json arm_angle_to_swell_deg)",
+   "tide_kind": "semidiurnal",
+   "swell_dir": "191 deg design (Mead et al. 2010 via reefs.json)"
+  },
+  "planes": {
+   "HAT": 1.19,
+   "MHWS": 0.81,
+   "MHWN": 0.27,
+   "MSL": 0.0,
+   "MLWN": -0.23,
+   "MLWS": -0.95,
+   "LAT": -1.46
+  },
+  "tide": {
+   "A_spring": 0.88,
+   "A_neap": 0.25,
+   "z0": -0.07,
+   "basis": "MHWS/MLWS and MHWN/MLWN",
+   "kind": "semidiurnal",
+   "extreme_hi": 1.19,
+   "extreme_lo": -1.46
+  },
+  "tide_levels": {
+   "low": -0.95,
+   "mid": 0.0,
+   "high": 0.81
+  },
+  "tide_sources": [
+   {
+    "input": "design crest +0.5 m ACD, tide levels (ACD), settlement",
+    "sources": {
+     "S3": "Mead, S., Blenkinsopp, C., Moores, A. and Borrero, J. (2010). Design and construction of the Boscombe multi-purpose reef. *Coastal Engineering Proceedings* 1(32), structures.58 (proceedings of ICCE 2010, Shanghai; the OJS listing dates the paper 2011), OJS article 1352. https://icce-ojs-tamu.tdl.org/icce/article/view/1352 (accessed 2026-10-05; citation form re-checked 2026-10-10; DOI not confirmed)"
+    }
+   },
+   {
+    "input": "MSL above chart datum (1.40 m), Ordnance Datum link",
+    "sources": {
+     "S4": "National Tidal and Sea Level Facility (n.d.). Chart datum and ordnance datum. https://ntslf.org/tides/datum (accessed 2026-10-05)"
+    }
+   }
+  ],
+  "profile_json": "08_paper/data/profiles/boscombe-surf-reef.json",
+  "version": {
+   "id": "idealised",
+   "name": "AS-BUILT 2009 (intact): idealised loft of the verified outline, design crest +0.5 m ACD",
+   "date": "2009 (Sept-Oct 2009 completion)",
+   "is_default_version": true
+  },
+  "datum": "z = metres above MSL; model assumes the survey zero is Admiralty Chart Datum (ACD) with MSL = ACD + 1.40 m (Ordnance Datum - 1.40 m at Bournemouth, NTSLF), so z_MSL = z_ACD - 1.40; the alternative reading (survey zero = ODN) shifts survey heights by +1.40 m",
+  "shoreline_definition": "y = 0 is the surf line visible in the 2011-09-28 Esri image (tide state unknown); it lies about 8 m SEAWARD of the modelled MSL waterline (z = -0.2 m at the line) (model.js shoreline.note). The MSL crossing is computed per line (y_msl_crossing_m).",
+  "glob": {
+   "crest_z_msl_m": -0.9,
+   "crest_x_m": 2.0,
+   "crest_y_m": 223.0,
+   "crest_height_above_seabed_m": 3.805,
+   "crest_depth_below_msl_m": 0.9,
+   "footprint_x_range_m": [
+    -40.0,
+    51.0
+   ],
+   "footprint_y_range_m": [
+    180.0,
+    277.0
+   ],
+   "footprint_alongshore_span_m": 92.0,
+   "footprint_cross_shore_span_m": 98.0,
+   "footprint_area_m2_thickness_ge_0p10": 4677.0,
+   "footprint_centroid_xy_m": [
+    0.18,
+    226.39
+   ],
+   "centreline_x_m": 5.5,
+   "alongshore_length_z_ge_minus0p5_m_msl": {
+    "level_msl_m": -0.5,
+    "span_m": null,
+    "union_m": null,
+    "note": "no reef cell at or above this level"
+   },
+   "alongshore_length_z_ge_crest_minus0p5": {
+    "level_msl_m": -1.4,
+    "span_m": 69.0,
+    "union_m": 69.0,
+    "x_min_m": -28.0,
+    "x_max_m": 40.0
+   },
+   "alongshore_extent_by_level": [
+    {
+     "level_msl_m": 0.5,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": 0.0,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": -0.5,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": -1.0,
+     "span_m": 66.0,
+     "union_m": 66.0,
+     "x_min_m": -27.0,
+     "x_max_m": 38.0
+    },
+    {
+     "level_msl_m": -1.5,
+     "span_m": 71.0,
+     "union_m": 71.0,
+     "x_min_m": -28.0,
+     "x_max_m": 42.0
+    },
+    {
+     "level_msl_m": -2.0,
+     "span_m": 77.0,
+     "union_m": 77.0,
+     "x_min_m": -30.0,
+     "x_max_m": 46.0
+    },
+    {
+     "level_msl_m": -2.5,
+     "span_m": 81.0,
+     "union_m": 81.0,
+     "x_min_m": -31.0,
+     "x_max_m": 49.0
+    },
+    {
+     "level_msl_m": -3.0,
+     "span_m": 83.0,
+     "union_m": 83.0,
+     "x_min_m": -33.0,
+     "x_max_m": 49.0
+    },
+    {
+     "level_msl_m": -4.0,
+     "span_m": 88.0,
+     "union_m": 88.0,
+     "x_min_m": -36.0,
+     "x_max_m": 51.0
+    },
+    {
+     "level_msl_m": -5.0,
+     "span_m": 90.0,
+     "union_m": 90.0,
+     "x_min_m": -38.0,
+     "x_max_m": 51.0
+    }
+   ]
+  },
+  "reefs_json": {
+   "name": {
+    "value": "Boscombe Surf Reef, Boscombe, Bournemouth, Dorset (Poole Bay)",
+    "status": "sourced",
+    "location": "Table 4.2 p.66",
+    "source": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08, UNSW Water Research Laboratory, for NSW Office of Environment and Heritage. https://doi.org/10.4225/53/58e1dc7368c7a (P8 report page = PDF page - 12)."
+   },
+   "country": {
+    "value": "United Kingdom (England)",
+    "status": "sourced",
+    "location": "title",
+    "source": "Mead, S., Blenkinsopp, C., Moores, A. and Borrero, J. (2010/2011). Design and construction of the Boscombe multi-purpose reef. *Coastal Engineering Proceedings* 1(32), structures.58 (ICCE 2010; OJS article 1352; DOI not confirmed). https://icce-ojs-tamu.tdl.org/icce/article/view/1352 (accessed 2026-10-05)."
+   },
+   "year_built": {
+    "value": 2008,
+    "status": "sourced",
+    "location": "p.64: construction started 30 Aug 2008, suspended 13 Nov 2008, resumed 18 Apr 2009",
+    "source": "Rendle, E.J. (2016). The Environmental, Social and Economic Impacts of an Artificial Surf Reef - The UK Experience. PhD thesis, University of Plymouth. https://pearl.plymouth.ac.uk/bms-theses/412/ (P5 in the project, S15 above)."
+   },
+   "purpose": {
+    "value": "multi",
+    "status": "sourced",
+    "location": "title: Design and construction of the Boscombe multi-purpose reef",
+    "source": "Mead, S., Blenkinsopp, C., Moores, A. and Borrero, J. (2010/2011). Design and construction of the Boscombe multi-purpose reef. *Coastal Engineering Proceedings* 1(32), structures.58 (ICCE 2010; OJS article 1352; DOI not confirmed). https://icce-ojs-tamu.tdl.org/icce/article/view/1352 (accessed 2026-10-05)."
+   },
+   "material": {
+    "value": "sand-filled non-woven geotextile containers placed by divers/RAD in two layers; 32-55 containers (sources differ), each up to 60-70 m long, 2-5 m diameter",
+    "status": "sourced",
+    "location": "p.68-69, Table 5.3 p.98 (eight T4 containers ~4 m diameter, 65-70 m long, 746.7 m3 each)",
+    "source": "Rendle, E.J. (2016). The Environmental, Social and Economic Impacts of an Artificial Surf Reef - The UK Experience. PhD thesis, University of Plymouth. https://pearl.plymouth.ac.uk/bms-theses/412/ (P5 in the project, S15 above)."
+   },
+   "volume_m3": {
+    "value": 12800,
+    "status": "sourced",
+    "location": "p.4 (3.1.6)",
+    "source": "Mead, S.T. and Borrero, J.C. (2011). Multi-Purpose Reefs - A Decade of Applications. Proc. 20th Australasian Coastal and Ocean Engineering Conference (Coasts and Ports 2011), ASR Ltd. https://search.informit.org/doi/10.3316/informit.715072832934166 (Lior's copy: papers/)."
+   },
+   "surf_outcome": {
+    "value": "works rarely",
+    "status": "sourced",
+    "location": "Wikipedia (citing Davidson 2010): met 4 of 11 objectives; Blacka Table 4.1 surfing \"Partially\"; M&B p.4: designers say 7 of 9 criteria met",
+    "source": "Wikipedia (2026, accessed). \"Boscombe Surf Reef.\" https://en.wikipedia.org/wiki/Boscombe_Surf_Reef"
+   },
+   "surfable_days_per_year": {
+    "value": "77 (design baseline) -> 154 (design target)",
+    "status": "sourced",
+    "location": "card purpose field; target not an outcome",
+    "source": "The Breaker (2018). \"The rise and fall of Boscombe's surf reef.\" https://www.thebreaker.co.uk/the-rise-and-fall-of-boscombes-surf-reef/"
+   },
+   "durability": {
+    "value": "containers failed from March-April 2011 (offshore half of the axis at -0.8 to -2.8 m ACD; crest dip ~2 m); closed 31 Mar 2011; repairs aborted; ASR liquidated 2012; structure still present, shown on Garmin Navionics as a shoal with a 380-490 m2 drying patch",
+    "status": "sourced",
+    "location": "METHODS_3D s1, s3.10; Rendle & Davidson 2012",
+    "source": "Rendle, E.J. and Davidson, M. (2012). An evaluation of the physical impact and structural integrity of a geotextile surf reef. Proc. International Conference on Coastal Engineering (ICCE 2012), article 6794. https://icce-ojs-tamu.tdl.org/icce/article/view/6794"
+   },
+   "sediment_shoreline_outcome": {
+    "value": "within 6 months the beach in the lee and to the west accreted up to +60 m over >500 m (designers, M&B Fig 6); later monitoring (Rendle & Davidson 2012) found no noticeable long-term impact on the 0 m contour; accretion was predicted mainly around the -1 m contour; NSW review rates protection \"Minor\"",
+    "status": "sourced",
+    "location": "M&B p.5; Blacka p.70, Table 4.1",
+    "source": "Mead, S.T. and Borrero, J.C. (2011). Multi-Purpose Reefs - A Decade of Applications. Proc. 20th Australasian Coastal and Ocean Engineering Conference (Coasts and Ports 2011), ASR Ltd. https://search.informit.org/doi/10.3316/informit.715072832934166 (Lior's copy: papers/)."
+   },
+   "tide_spring_range_m": {
+    "value": 1.76,
+    "status": "sourced",
+    "location": "Table 1 water levels at Boscombe (Bournemouth Pier gauge): MHWS 2.21, MLWS 0.45 m ACD; maximum spring range 1.96 m (METHODS_3D s3.2)",
+    "source": "Mead, S., Blenkinsopp, C., Moores, A. and Borrero, J. (2010/2011). Design and construction of the Boscombe multi-purpose reef. *Coastal Engineering Proceedings* 1(32), structures.58 (ICCE 2010; OJS article 1352; DOI not confirmed). https://icce-ojs-tamu.tdl.org/icce/article/view/1352 (accessed 2026-10-05)."
+   },
+   "cost_usd_2024": {
+    "value": 7289000.0,
+    "status": "derived",
+    "location": "nominal USD x CPI_USA(2024) 143.86 / CPI_USA(2009) 98.39",
+    "source": "World Bank, World Development Indicators: PA.NUS.FCRF \"Official exchange rate (LCU per US$, period average)\" and FP.CPI.TOTL \"Consumer price index (2010 = 100)\", USA; https://api.worldbank.org/v2 ; fetched 2026-10-15"
+   },
+   "distance_offshore_crest_m": {
+    "value": 239.0,
+    "status": "derived",
+    "location": "seaward crest edge of the loft; outline nearest edge 181 m, centroid 226 m, far edge 276 m offshore of the surf line (METHODS_3D s3.3)",
+    "source": "07_scale/shapes/boscombe-surf-reef/3d/model.js; derive_boscombe.py"
+   },
+   "arm_angle_to_shoreline_deg": {
+    "value": 55.3,
+    "status": "derived",
+    "location": "minimum rotated rectangle of the outline, 121 m long side; shoreline bearing 83.4 deg",
+    "source": "07_scale/shapes/boscombe-surf-reef/shape.json angles"
+   },
+   "arm_angle_to_swell_deg": {
+    "value": 72.9,
+    "status": "derived",
+    "location": "reef long axis (28.1 deg) vs the wave-crest line of the 191 deg design swell (crest bearing 101 deg); ignores refraction",
+    "source": "07_scale/shapes/boscombe-surf-reef/shape.json angles"
+   }
+  },
+  "confidence_3d": "medium",
+  "line_metrics": {
+   "centreline": {
+    "reef_on_line": true,
+    "crest_z_msl_m": -0.9,
+    "crest_y_m": 202.0,
+    "crest_depth_below_msl_m": 0.9,
+    "crest_seabed_z_msl_m": -4.752,
+    "crest_height_above_seabed_m": 3.852,
+    "crest_zone_y_m": [
+     201.0,
+     237.0
+    ],
+    "crest_zone_width_m": 37.0,
+    "seaward_toe_y_m": 249.0,
+    "seaward_toe_reef_z_msl_m": -4.95,
+    "seaward_toe_seabed_z_msl_m": -5.246,
+    "seaward_toe_thickness_m": 0.296,
+    "ramp_length_m": 12.0,
+    "ramp_rise_m": 4.05,
+    "crest_to_toe_drop_m": 4.05,
+    "crest_to_toe_seabed_drop_m": 4.346,
+    "mean_seaward_slope": {
+     "tan": 0.3375,
+     "deg": 18.65,
+     "one_in": 2.96
+    },
+    "max_seaward_slope": {
+     "tan": 0.44,
+     "deg": 23.75,
+     "one_in": 2.27
+    },
+    "max_seaward_slope_at_y_m": 247.0,
+    "shoreward_toe_y_m": 180.0,
+    "shoreward_toe_reef_z_msl_m": -4.64,
+    "shoreward_toe_seabed_z_msl_m": -4.867,
+    "shoreward_ramp_length_m": 21.0,
+    "shoreward_ramp_rise_m": 3.72,
+    "mean_shoreward_slope": {
+     "tan": 0.1771,
+     "deg": 10.05,
+     "one_in": 5.65
+    },
+    "reef_cross_shore_extent_m": 70.0,
+    "max_thickness_on_line_m": 3.945,
+    "y_msl_crossing_m": -8.08,
+    "segments": [
+     {
+      "y_from_m": 180.0,
+      "y_to_m": 249.0,
+      "max_z_msl_m": -0.9
+     }
+    ],
+    "bridged_gaps": [],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.0055,
+     "deg": 0.31,
+     "one_in": 182.18
+    },
+    "crest_distance_from_msl_line_m": 210.08,
+    "seaward_toe_distance_from_msl_line_m": 257.08,
+    "shoreward_toe_distance_from_msl_line_m": 188.08,
+    "seabed_mean_slope_msl_line_to_seaward_toe": {
+     "tan": 0.0204,
+     "deg": 1.17,
+     "one_in": 49.0
+    },
+    "seabed_mean_slope_msl_line_to_shoreward_toe": {
+     "tan": 0.0259,
+     "deg": 1.48,
+     "one_in": 38.64
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.0173,
+     "deg": 0.99,
+     "one_in": 57.85
+    }
+   },
+   "crest_line": {
+    "reef_on_line": true,
+    "crest_z_msl_m": -0.9,
+    "crest_y_m": 206.0,
+    "crest_depth_below_msl_m": 0.9,
+    "crest_seabed_z_msl_m": -4.74,
+    "crest_height_above_seabed_m": 3.84,
+    "crest_zone_y_m": [
+     205.0,
+     239.0
+    ],
+    "crest_zone_width_m": 35.0,
+    "seaward_toe_y_m": 252.0,
+    "seaward_toe_reef_z_msl_m": -5.16,
+    "seaward_toe_seabed_z_msl_m": -5.41,
+    "seaward_toe_thickness_m": 0.25,
+    "ramp_length_m": 13.0,
+    "ramp_rise_m": 4.19,
+    "crest_to_toe_drop_m": 4.26,
+    "crest_to_toe_seabed_drop_m": 4.51,
+    "mean_seaward_slope": {
+     "tan": 0.3223,
+     "deg": 17.86,
+     "one_in": 3.1
+    },
+    "max_seaward_slope": {
+     "tan": 0.44,
+     "deg": 23.75,
+     "one_in": 2.27
+    },
+    "max_seaward_slope_at_y_m": 249.0,
+    "shoreward_toe_y_m": 187.0,
+    "shoreward_toe_reef_z_msl_m": -4.55,
+    "shoreward_toe_seabed_z_msl_m": -4.81,
+    "shoreward_ramp_length_m": 18.0,
+    "shoreward_ramp_rise_m": 3.63,
+    "mean_shoreward_slope": {
+     "tan": 0.2017,
+     "deg": 11.4,
+     "one_in": 4.96
+    },
+    "reef_cross_shore_extent_m": 66.0,
+    "max_thickness_on_line_m": 4.03,
+    "y_msl_crossing_m": -8.0,
+    "segments": [
+     {
+      "y_from_m": 187.0,
+      "y_to_m": 252.0,
+      "max_z_msl_m": -0.9
+     }
+    ],
+    "bridged_gaps": [],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.0092,
+     "deg": 0.53,
+     "one_in": 108.33
+    },
+    "crest_distance_from_msl_line_m": 214.0,
+    "seaward_toe_distance_from_msl_line_m": 260.0,
+    "shoreward_toe_distance_from_msl_line_m": 195.0,
+    "seabed_mean_slope_msl_line_to_seaward_toe": {
+     "tan": 0.0208,
+     "deg": 1.19,
+     "one_in": 48.06
+    },
+    "seabed_mean_slope_msl_line_to_shoreward_toe": {
+     "tan": 0.0247,
+     "deg": 1.41,
+     "one_in": 40.54
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.0166,
+     "deg": 0.95,
+     "one_in": 60.24
+    }
+   },
+   "second_crest_line": {
+    "reef_on_line": true,
+    "crest_z_msl_m": -0.9,
+    "crest_y_m": 190.0,
+    "crest_depth_below_msl_m": 0.9,
+    "crest_seabed_z_msl_m": -4.845,
+    "crest_height_above_seabed_m": 3.945,
+    "crest_zone_y_m": [
+     190.0,
+     224.0
+    ],
+    "crest_zone_width_m": 35.0,
+    "seaward_toe_y_m": 242.0,
+    "seaward_toe_reef_z_msl_m": -4.56,
+    "seaward_toe_seabed_z_msl_m": -4.82,
+    "seaward_toe_thickness_m": 0.26,
+    "ramp_length_m": 18.0,
+    "ramp_rise_m": 3.66,
+    "crest_to_toe_drop_m": 3.66,
+    "crest_to_toe_seabed_drop_m": 3.92,
+    "mean_seaward_slope": {
+     "tan": 0.2033,
+     "deg": 11.49,
+     "one_in": 4.92
+    },
+    "max_seaward_slope": {
+     "tan": 0.445,
+     "deg": 23.99,
+     "one_in": 2.25
+    },
+    "max_seaward_slope_at_y_m": 240.0,
+    "shoreward_toe_y_m": 180.0,
+    "shoreward_toe_reef_z_msl_m": -4.47,
+    "shoreward_toe_seabed_z_msl_m": -4.825,
+    "shoreward_ramp_length_m": 10.0,
+    "shoreward_ramp_rise_m": 3.57,
+    "mean_shoreward_slope": {
+     "tan": 0.357,
+     "deg": 19.65,
+     "one_in": 2.8
+    },
+    "reef_cross_shore_extent_m": 63.0,
+    "max_thickness_on_line_m": 3.945,
+    "y_msl_crossing_m": -8.39,
+    "segments": [
+     {
+      "y_from_m": 180.0,
+      "y_to_m": 242.0,
+      "max_z_msl_m": -0.9
+     }
+    ],
+    "bridged_gaps": [],
+    "seabed_mean_slope_under_reef": {
+     "tan": null,
+     "deg": null,
+     "one_in": null
+    },
+    "crest_distance_from_msl_line_m": 198.39,
+    "seaward_toe_distance_from_msl_line_m": 250.39,
+    "shoreward_toe_distance_from_msl_line_m": 188.39,
+    "seabed_mean_slope_msl_line_to_seaward_toe": {
+     "tan": 0.0193,
+     "deg": 1.1,
+     "one_in": 51.95
+    },
+    "seabed_mean_slope_msl_line_to_shoreward_toe": {
+     "tan": 0.0256,
+     "deg": 1.47,
+     "one_in": 39.04
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.0192,
+     "deg": 1.1,
+     "one_in": 52.22
+    }
+   },
+   "layer:surveyed_surface_2011-04": {
+    "reef_on_line": true,
+    "crest_z_msl_m": -0.72,
+    "crest_y_m": 193.0,
+    "crest_depth_below_msl_m": 0.72,
+    "crest_seabed_z_msl_m": -4.795,
+    "crest_height_above_seabed_m": 4.075,
+    "crest_zone_y_m": [
+     192.0,
+     194.0
+    ],
+    "crest_zone_width_m": 3.0,
+    "seaward_toe_y_m": 240.0,
+    "seaward_toe_reef_z_msl_m": -4.58,
+    "seaward_toe_seabed_z_msl_m": -4.69,
+    "seaward_toe_thickness_m": 0.11,
+    "ramp_length_m": 46.0,
+    "ramp_rise_m": 3.81,
+    "crest_to_toe_drop_m": 3.86,
+    "crest_to_toe_seabed_drop_m": 3.97,
+    "mean_seaward_slope": {
+     "tan": 0.0828,
+     "deg": 4.73,
+     "one_in": 12.07
+    },
+    "max_seaward_slope": {
+     "tan": 0.175,
+     "deg": 9.93,
+     "one_in": 5.71
+    },
+    "max_seaward_slope_at_y_m": 220.0,
+    "shoreward_toe_y_m": 177.0,
+    "shoreward_toe_reef_z_msl_m": -4.32,
+    "shoreward_toe_seabed_z_msl_m": -4.635,
+    "shoreward_ramp_length_m": 15.0,
+    "shoreward_ramp_rise_m": 3.52,
+    "mean_shoreward_slope": {
+     "tan": 0.2347,
+     "deg": 13.21,
+     "one_in": 4.26
+    },
+    "reef_cross_shore_extent_m": 64.0,
+    "max_thickness_on_line_m": 4.075,
+    "y_msl_crossing_m": -8.53,
+    "segments": [
+     {
+      "y_from_m": 177.0,
+      "y_to_m": 240.0,
+      "max_z_msl_m": -0.72
+     }
+    ],
+    "bridged_gaps": [],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.0009,
+     "deg": 0.05,
+     "one_in": 1145.45
+    },
+    "crest_distance_from_msl_line_m": 201.53,
+    "seaward_toe_distance_from_msl_line_m": 248.53,
+    "shoreward_toe_distance_from_msl_line_m": 185.53,
+    "seabed_mean_slope_msl_line_to_seaward_toe": {
+     "tan": 0.0189,
+     "deg": 1.08,
+     "one_in": 52.99
+    },
+    "seabed_mean_slope_msl_line_to_shoreward_toe": {
+     "tan": 0.025,
+     "deg": 1.43,
+     "one_in": 40.03
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.0199,
+     "deg": 1.14,
+     "one_in": 50.25
+    }
+   }
+  }
+ },
+ "borth-coastal-defence-reef": {
+  "slug": "borth-coastal-defence-reef",
+  "name": "Borth coastal defence reef (Phase 1, Ceredigion, Wales)",
+  "site": {
+   "H": 1.0,
+   "H_src": "ASSUMPTION: no wave statistics for Borth in the sources (reefs.json swell_hs_m unknown); 1.0 m used",
+   "T": 8.0,
+   "T_src": "ASSUMPTION: 8 s (Cardigan Bay)",
+   "phi0": [
+    64.2
+   ],
+   "phi0_src": "ASSUMPTION: shore-normal swell; reef axis 64.2 deg to the shoreline (reefs.json, DERIVED PCA)",
+   "tide_kind": "semidiurnal",
+   "swell_dir": "unknown"
+  },
+  "planes": {
+   "LAT": -2.75,
+   "MLWS": -2.05,
+   "MLWN": -0.95,
+   "MSL": 0.0,
+   "MHWN": 0.75,
+   "MHWS": 2.25
+  },
+  "tide": {
+   "A_spring": 2.15,
+   "A_neap": 0.85,
+   "z0": 0.1,
+   "basis": "MHWS/MLWS and MHWN/MLWN",
+   "kind": "semidiurnal",
+   "extreme_hi": 2.25,
+   "extreme_lo": -2.75
+  },
+  "tide_levels": {
+   "low": -2.05,
+   "mid": 0.0,
+   "high": 2.25
+  },
+  "tide_sources": [
+   {
+    "input": "datum / tide levels (MSL = +0.31 mODN estimate; LAT = -2.44 mODN)",
+    "sources": {
+     "ref3": "Royal HaskoningDHV (2011). *West of Wales Shoreline Management Plan 2*, Section 4 Coastal Area C Introduction, p. 4C.3, water-level table (Aberystwyth). https://www.grwparfordirolgorllewincymru.cymru/sites/default/files/2019-06/4c1%20-%20Section%204%20Coastal%20Area%20C%20Introduction.pdf, accessed 2026-10-06",
+     "ref4": "National Tidal and Sea Level Facility (n.d.). *Chart datum and ordnance datum: differences at selected ports*. https://ntslf.org/tides/datum, accessed 2026-10-06"
+    }
+   }
+  ],
+  "profile_json": "08_paper/data/profiles/borth-coastal-defence-reef.json",
+  "version": {
+   "id": "lidar_2022",
+   "name": "Laser survey edge (Welsh Government LiDAR, 19 Mar 2022)",
+   "date": "2022-03-19",
+   "is_default_version": true
+  },
+  "datum": "z = metres above MSL; MSL = +0.31 mODN (+-0.15, estimate); z_MSL = z_ODN - 0.31 (model.js datum.equation)",
+  "shoreline_definition": "y = 0 is the DEFENCE LINE (back of the shingle beach, z about +4.9 m MSL), NOT the MSL waterline. The MSL waterline is where the modelled natural seabed crosses z = 0 (computed per line, key y_msl_crossing_m).",
+  "glob": {
+   "crest_z_msl_m": 1.09,
+   "crest_x_m": -63.0,
+   "crest_y_m": 273.0,
+   "crest_height_above_seabed_m": 4.443,
+   "crest_depth_below_msl_m": -1.09,
+   "footprint_x_range_m": [
+    -81.0,
+    14.0
+   ],
+   "footprint_y_range_m": [
+    251.0,
+    405.0
+   ],
+   "footprint_alongshore_span_m": 96.0,
+   "footprint_cross_shore_span_m": 155.0,
+   "footprint_area_m2_thickness_ge_0p10": 7435.0,
+   "footprint_centroid_xy_m": [
+    -36.99,
+    334.44
+   ],
+   "centreline_x_m": -33.5,
+   "alongshore_length_z_ge_minus0p5_m_msl": {
+    "level_msl_m": -0.5,
+    "span_m": 66.0,
+    "union_m": 66.0,
+    "x_min_m": -69.0,
+    "x_max_m": -4.0
+   },
+   "alongshore_length_z_ge_crest_minus0p5": {
+    "level_msl_m": 0.59,
+    "span_m": 14.0,
+    "union_m": 12.0,
+    "x_min_m": -65.0,
+    "x_max_m": -52.0
+   },
+   "alongshore_extent_by_level": [
+    {
+     "level_msl_m": 0.5,
+     "span_m": 27.0,
+     "union_m": 21.0,
+     "x_min_m": -65.0,
+     "x_max_m": -39.0
+    },
+    {
+     "level_msl_m": 0.0,
+     "span_m": 61.0,
+     "union_m": 61.0,
+     "x_min_m": -68.0,
+     "x_max_m": -8.0
+    },
+    {
+     "level_msl_m": -0.5,
+     "span_m": 66.0,
+     "union_m": 66.0,
+     "x_min_m": -69.0,
+     "x_max_m": -4.0
+    },
+    {
+     "level_msl_m": -1.0,
+     "span_m": 71.0,
+     "union_m": 71.0,
+     "x_min_m": -71.0,
+     "x_max_m": -1.0
+    },
+    {
+     "level_msl_m": -1.5,
+     "span_m": 75.0,
+     "union_m": 75.0,
+     "x_min_m": -73.0,
+     "x_max_m": 1.0
+    },
+    {
+     "level_msl_m": -2.0,
+     "span_m": 79.0,
+     "union_m": 79.0,
+     "x_min_m": -74.0,
+     "x_max_m": 4.0
+    },
+    {
+     "level_msl_m": -2.5,
+     "span_m": 88.0,
+     "union_m": 88.0,
+     "x_min_m": -78.0,
+     "x_max_m": 9.0
+    },
+    {
+     "level_msl_m": -3.0,
+     "span_m": 92.0,
+     "union_m": 92.0,
+     "x_min_m": -81.0,
+     "x_max_m": 10.0
+    },
+    {
+     "level_msl_m": -4.0,
+     "span_m": 96.0,
+     "union_m": 96.0,
+     "x_min_m": -81.0,
+     "x_max_m": 14.0
+    },
+    {
+     "level_msl_m": -5.0,
+     "span_m": 96.0,
+     "union_m": 96.0,
+     "x_min_m": -81.0,
+     "x_max_m": 14.0
+    }
+   ]
+  },
+  "reefs_json": {
+   "name": {
+    "value": "Borth coastal defence reef (Phase 1: northern surf reef + southern oval breakwater, incl. Wallog headland), Ceredigion, Wales",
+    "status": "sourced",
+    "location": "Table 4.2 p.66; Fig 4.1 p.72",
+    "source": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08, UNSW Water Research Laboratory, for NSW Office of Environment and Heritage. https://doi.org/10.4225/53/58e1dc7368c7a (P8 report page = PDF page - 12)."
+   },
+   "country": {
+    "value": "United Kingdom (Wales)",
+    "status": "sourced",
+    "location": "record NPRN 424699",
+    "source": "| ref7 | RCAHMW (2020). Coflein, Coastal Defences, Borth, NPRN 424699. https://coflein.gov.uk/en/site/424699, accessed 2026-10-06 | completion 8 March 2012, reef about 300 m offshore | - |"
+   },
+   "year_built": {
+    "value": 2011,
+    "status": "sourced",
+    "location": "card year field (R1): construction started Jan 2011",
+    "source": "| ref6 | Hansford, M. (Mark) (2011). Borth's Big Dig. *New Civil Engineer*, 15 Sept 2011. https://www.newcivilengineer.com/archive/borths-big-dig-15-09-2011/ | 275,000 t rock for the whole Phase 1, Type 4 (6-10 t) 42,000 t | upper bound only |"
+   },
+   "purpose": {
+    "value": "multi",
+    "status": "sourced",
+    "location": "card purpose: primary flood/erosion protection of Borth village, secondary surf amenity (community rejected a sea wall)",
+    "source": "| ref6 | Hansford, M. (Mark) (2011). Borth's Big Dig. *New Civil Engineer*, 15 Sept 2011. https://www.newcivilengineer.com/archive/borths-big-dig-15-09-2011/ | 275,000 t rock for the whole Phase 1, Type 4 (6-10 t) 42,000 t | upper bound only |"
+   },
+   "material": {
+    "value": "quarry rock armour: Type 4 (6-10 t) 42,000 t, Type 1 (3-6 t) 16,200 t, Type 3 (0.3-1 t) 18,500 t, Type 6 (5-100 kg) 500 t for the whole Phase 1 (275,000 t material incl. 84,500 t shingle); rock density 1.7 t/m3 in the model",
+    "status": "sourced",
+    "location": "card size field (R1)",
+    "source": "| ref6 | Hansford, M. (Mark) (2011). Borth's Big Dig. *New Civil Engineer*, 15 Sept 2011. https://www.newcivilengineer.com/archive/borths-big-dig-15-09-2011/ | 275,000 t rock for the whole Phase 1, Type 4 (6-10 t) 42,000 t | upper bound only |"
+   },
+   "volume_m3": {
+    "value": 30119,
+    "status": "derived",
+    "location": "model rock volume +-4,600 m3 for 0.4 m bed error (METHODS_3D KN \"Rock volume\"); design foot 28,919 m3, photo edge 25,504 m3",
+    "source": "| lidar2022 | Welsh Government (2022). *LiDAR 2020-22, 1 m DSM and DTM, tile SN6089*, flown 2022-03-19 03:15-03:20 UTC. DataMapWales; Open Government Licence. https://dmwproductionblob.blob.core.windows.net/lidar-zips/2020-22/dsm/wg_del_29_260289_20220319dsm.tif (DTM: same path with dtm), accessed 2026-10-06 (registry img-24) | as-built exposed surface (DSM), beach and foreshore (DTM), water edge about -2.3 mODN | 1 m, EPSG:27700, vertical datum not stated (ODN assumed, A4) |"
+   },
+   "surf_outcome": {
+    "value": "unknown",
+    "status": "sourced",
+    "location": "Blacka Table 4.1 (protection and surfing \"Unknown (insufficient monitoring)\"); Stormrider guide still calls it a \"proposed\" artificial reef site; Surf-Forecast 3.0/5 beginner, no first-hand reviews",
+    "source": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08, UNSW Water Research Laboratory, for NSW Office of Environment and Heritage. https://doi.org/10.4225/53/58e1dc7368c7a (P8 report page = PDF page - 12)."
+   },
+   "surfable_days_per_year": {
+    "value": null,
+    "status": "unknown",
+    "location": "",
+    "source": null
+   },
+   "durability": {
+    "value": "no damage, deflation or removal found (imagery 2012-2024, LiDAR 2022); rock armour designed with 3D physical modelling; defences withstood December 2011 storms",
+    "status": "sourced",
+    "location": "METHODS_3D s1; card outcome (R2, R3)",
+    "source": "North Wales Live / Daily Post, \"Borth's new coastal defences to transform town into a surfer's paradise\" (2013-04-16, updated 2013-04-19). https://www.dailypost.co.uk/news/local-news/borths-new-coastal-defences-transform-2685578"
+   },
+   "sediment_shoreline_outcome": {
+    "value": "flood protection reported effective from Dec 2011; scheme combines reef + groynes + breakwater with beach nourishment (84,500 t shingle); no quantified shoreline response found; Blacka: performance \"yet to be determined\"",
+    "status": "sourced",
+    "location": "card outcome; Blacka p.70, Table 4.1",
+    "source": "North Wales Live / Daily Post, \"Borth's new coastal defences to transform town into a surfer's paradise\" (2013-04-16, updated 2013-04-19). https://www.dailypost.co.uk/news/local-news/borths-new-coastal-defences-transform-2685578"
+   },
+   "tide_spring_range_m": {
+    "value": 4.3,
+    "status": "derived",
+    "location": "MHWS +2.56 - MLWS -1.74 mODN (Aberystwyth, West of Wales SMP2 water-level table, p.4C.3); neap range 1.70 m",
+    "source": "| ref3 | Royal HaskoningDHV (2011). *West of Wales Shoreline Management Plan 2*, Section 4 Coastal Area C Introduction, p. 4C.3, water-level table (Aberystwyth). https://www.grwparfordirolgorllewincymru.cymru/sites/default/files/2019-06/4c1%20-%20Section%204%20Coastal%20Area%20C%20Introduction.pdf, accessed 2026-10-06 | MHWS +2.56, MHWN +1.06, MLWN -0.64, MLWS -1.74 mAOD (= mODN) | tabulated |"
+   },
+   "cost_usd_2024": {
+    "value": 28057000.0,
+    "status": "derived",
+    "location": "nominal USD x CPI_USA(2024) 143.86 / CPI_USA(2012) 105.29",
+    "source": "World Bank, World Development Indicators: PA.NUS.FCRF \"Official exchange rate (LCU per US$, period average)\" and FP.CPI.TOTL \"Consumer price index (2010 = 100)\", USA; https://api.worldbank.org/v2 ; fetched 2026-10-15"
+   },
+   "distance_offshore_crest_m": {
+    "value": 330.5,
+    "status": "derived",
+    "location": "centroid 330.5 m; nearest edge 257 m, farthest 397 m; Esri +-5 m",
+    "source": "07_scale/shapes/borth-coastal-defence-reef/shape.json canonical.distance_offshore_m / METHODS_3D KN"
+   },
+   "arm_angle_to_shoreline_deg": {
+    "value": 64.2,
+    "status": "derived",
+    "location": "PCA of the polygon vs shoreline bearing 359.57 deg; the south (oval) mound is parallel to the shore (0.18 deg)",
+    "source": "07_scale/shapes/borth-coastal-defence-reef/shape.json angles"
+   },
+   "arm_angle_to_swell_deg": {
+    "value": null,
+    "status": "unknown",
+    "location": "",
+    "source": null
+   }
+  },
+  "confidence_3d": "medium",
+  "line_metrics": {
+   "centreline": {
+    "reef_on_line": true,
+    "crest_z_msl_m": 0.46,
+    "crest_y_m": 348.0,
+    "crest_depth_below_msl_m": -0.46,
+    "crest_seabed_z_msl_m": -4.31,
+    "crest_height_above_seabed_m": 4.77,
+    "crest_zone_y_m": [
+     345.0,
+     350.0
+    ],
+    "crest_zone_width_m": 6.0,
+    "seaward_toe_y_m": 396.0,
+    "seaward_toe_reef_z_msl_m": -3.94,
+    "seaward_toe_seabed_z_msl_m": -4.3,
+    "seaward_toe_thickness_m": 0.36,
+    "ramp_length_m": 46.0,
+    "ramp_rise_m": 4.315,
+    "crest_to_toe_drop_m": 4.4,
+    "crest_to_toe_seabed_drop_m": 4.76,
+    "mean_seaward_slope": {
+     "tan": 0.0938,
+     "deg": 5.36,
+     "one_in": 10.66
+    },
+    "max_seaward_slope": {
+     "tan": 0.3825,
+     "deg": 20.93,
+     "one_in": 2.61
+    },
+    "max_seaward_slope_at_y_m": 389.0,
+    "shoreward_toe_y_m": 305.0,
+    "shoreward_toe_reef_z_msl_m": -4.09,
+    "shoreward_toe_seabed_z_msl_m": -4.255,
+    "shoreward_ramp_length_m": 40.0,
+    "shoreward_ramp_rise_m": 4.45,
+    "mean_shoreward_slope": {
+     "tan": 0.1113,
+     "deg": 6.35,
+     "one_in": 8.99
+    },
+    "reef_cross_shore_extent_m": 92.0,
+    "max_thickness_on_line_m": 4.77,
+    "y_msl_crossing_m": 90.64,
+    "segments": [
+     {
+      "y_from_m": 305.0,
+      "y_to_m": 396.0,
+      "max_z_msl_m": 0.46
+     }
+    ],
+    "bridged_gaps": [],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.0005,
+     "deg": 0.03,
+     "one_in": 2022.22
+    },
+    "crest_distance_from_msl_line_m": 257.36,
+    "seaward_toe_distance_from_msl_line_m": 305.36,
+    "shoreward_toe_distance_from_msl_line_m": 214.36,
+    "seabed_mean_slope_msl_line_to_seaward_toe": {
+     "tan": 0.0141,
+     "deg": 0.81,
+     "one_in": 71.01
+    },
+    "seabed_mean_slope_msl_line_to_shoreward_toe": {
+     "tan": 0.0199,
+     "deg": 1.14,
+     "one_in": 50.38
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.009,
+     "deg": 0.52,
+     "one_in": 110.55
+    }
+   },
+   "crest_line": {
+    "reef_on_line": true,
+    "crest_z_msl_m": 0.47,
+    "crest_y_m": 338.0,
+    "crest_depth_below_msl_m": -0.47,
+    "crest_seabed_z_msl_m": -4.306,
+    "crest_height_above_seabed_m": 4.776,
+    "crest_zone_y_m": [
+     335.0,
+     342.0
+    ],
+    "crest_zone_width_m": 8.0,
+    "seaward_toe_y_m": 382.0,
+    "seaward_toe_reef_z_msl_m": -3.85,
+    "seaward_toe_seabed_z_msl_m": -4.3,
+    "seaward_toe_thickness_m": 0.45,
+    "ramp_length_m": 40.0,
+    "ramp_rise_m": 4.235,
+    "crest_to_toe_drop_m": 4.32,
+    "crest_to_toe_seabed_drop_m": 4.77,
+    "mean_seaward_slope": {
+     "tan": 0.1059,
+     "deg": 6.04,
+     "one_in": 9.45
+    },
+    "max_seaward_slope": {
+     "tan": 0.3925,
+     "deg": 21.43,
+     "one_in": 2.55
+    },
+    "max_seaward_slope_at_y_m": 375.0,
+    "shoreward_toe_y_m": 264.0,
+    "shoreward_toe_reef_z_msl_m": -2.61,
+    "shoreward_toe_seabed_z_msl_m": -2.736,
+    "shoreward_ramp_length_m": 71.0,
+    "shoreward_ramp_rise_m": 2.98,
+    "mean_shoreward_slope": {
+     "tan": 0.042,
+     "deg": 2.4,
+     "one_in": 23.83
+    },
+    "reef_cross_shore_extent_m": 119.0,
+    "max_thickness_on_line_m": 4.776,
+    "y_msl_crossing_m": 86.92,
+    "segments": [
+     {
+      "y_from_m": 264.0,
+      "y_to_m": 382.0,
+      "max_z_msl_m": 0.47
+     }
+    ],
+    "bridged_gaps": [],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.0133,
+     "deg": 0.76,
+     "one_in": 75.46
+    },
+    "crest_distance_from_msl_line_m": 251.08,
+    "seaward_toe_distance_from_msl_line_m": 295.08,
+    "shoreward_toe_distance_from_msl_line_m": 177.08,
+    "seabed_mean_slope_msl_line_to_seaward_toe": {
+     "tan": 0.0146,
+     "deg": 0.83,
+     "one_in": 68.62
+    },
+    "seabed_mean_slope_msl_line_to_shoreward_toe": {
+     "tan": 0.0155,
+     "deg": 0.89,
+     "one_in": 64.72
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.0077,
+     "deg": 0.44,
+     "one_in": 129.7
+    }
+   },
+   "second_crest_line": {
+    "reef_on_line": true,
+    "crest_z_msl_m": 0.46,
+    "crest_y_m": 348.0,
+    "crest_depth_below_msl_m": -0.46,
+    "crest_seabed_z_msl_m": -4.31,
+    "crest_height_above_seabed_m": 4.77,
+    "crest_zone_y_m": [
+     345.0,
+     349.0
+    ],
+    "crest_zone_width_m": 5.0,
+    "seaward_toe_y_m": 396.0,
+    "seaward_toe_reef_z_msl_m": -3.94,
+    "seaward_toe_seabed_z_msl_m": -4.3,
+    "seaward_toe_thickness_m": 0.36,
+    "ramp_length_m": 47.0,
+    "ramp_rise_m": 4.35,
+    "crest_to_toe_drop_m": 4.4,
+    "crest_to_toe_seabed_drop_m": 4.76,
+    "mean_seaward_slope": {
+     "tan": 0.0926,
+     "deg": 5.29,
+     "one_in": 10.8
+    },
+    "max_seaward_slope": {
+     "tan": 0.39,
+     "deg": 21.31,
+     "one_in": 2.56
+    },
+    "max_seaward_slope_at_y_m": 389.0,
+    "shoreward_toe_y_m": 306.0,
+    "shoreward_toe_reef_z_msl_m": -4.12,
+    "shoreward_toe_seabed_z_msl_m": -4.26,
+    "shoreward_ramp_length_m": 39.0,
+    "shoreward_ramp_rise_m": 4.49,
+    "mean_shoreward_slope": {
+     "tan": 0.1151,
+     "deg": 6.57,
+     "one_in": 8.69
+    },
+    "reef_cross_shore_extent_m": 91.0,
+    "max_thickness_on_line_m": 4.77,
+    "y_msl_crossing_m": 90.86,
+    "segments": [
+     {
+      "y_from_m": 306.0,
+      "y_to_m": 396.0,
+      "max_z_msl_m": 0.46
+     }
+    ],
+    "bridged_gaps": [],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.0004,
+     "deg": 0.03,
+     "one_in": 2227.72
+    },
+    "crest_distance_from_msl_line_m": 257.14,
+    "seaward_toe_distance_from_msl_line_m": 305.14,
+    "shoreward_toe_distance_from_msl_line_m": 215.14,
+    "seabed_mean_slope_msl_line_to_seaward_toe": {
+     "tan": 0.0141,
+     "deg": 0.81,
+     "one_in": 70.96
+    },
+    "seabed_mean_slope_msl_line_to_shoreward_toe": {
+     "tan": 0.0198,
+     "deg": 1.13,
+     "one_in": 50.51
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.009,
+     "deg": 0.52,
+     "one_in": 110.77
+    }
+   },
+   "crest_line_auto": {
+    "reef_on_line": true,
+    "crest_z_msl_m": 1.09,
+    "crest_y_m": 273.0,
+    "crest_depth_below_msl_m": -1.09,
+    "crest_seabed_z_msl_m": -3.353,
+    "crest_height_above_seabed_m": 4.443,
+    "crest_zone_y_m": [
+     272.0,
+     273.0
+    ],
+    "crest_zone_width_m": 2.0,
+    "seaward_toe_y_m": 346.0,
+    "seaward_toe_reef_z_msl_m": -3.95,
+    "seaward_toe_seabed_z_msl_m": -4.259,
+    "seaward_toe_thickness_m": 0.309,
+    "ramp_length_m": 73.0,
+    "ramp_rise_m": 5.04,
+    "crest_to_toe_drop_m": 5.04,
+    "crest_to_toe_seabed_drop_m": 5.349,
+    "mean_seaward_slope": {
+     "tan": 0.069,
+     "deg": 3.95,
+     "one_in": 14.48
+    },
+    "max_seaward_slope": {
+     "tan": 0.35,
+     "deg": 19.29,
+     "one_in": 2.86
+    },
+    "max_seaward_slope_at_y_m": 336.0,
+    "shoreward_toe_y_m": 253.0,
+    "shoreward_toe_reef_z_msl_m": -2.61,
+    "shoreward_toe_seabed_z_msl_m": -2.82,
+    "shoreward_ramp_length_m": 19.0,
+    "shoreward_ramp_rise_m": 3.61,
+    "mean_shoreward_slope": {
+     "tan": 0.19,
+     "deg": 10.76,
+     "one_in": 5.26
+    },
+    "reef_cross_shore_extent_m": 94.0,
+    "max_thickness_on_line_m": 4.529,
+    "y_msl_crossing_m": 79.2,
+    "segments": [
+     {
+      "y_from_m": 253.0,
+      "y_to_m": 346.0,
+      "max_z_msl_m": 1.09
+     }
+    ],
+    "bridged_gaps": [],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.0155,
+     "deg": 0.89,
+     "one_in": 64.64
+    },
+    "crest_distance_from_msl_line_m": 193.8,
+    "seaward_toe_distance_from_msl_line_m": 266.8,
+    "shoreward_toe_distance_from_msl_line_m": 173.8,
+    "seabed_mean_slope_msl_line_to_seaward_toe": {
+     "tan": 0.016,
+     "deg": 0.91,
+     "one_in": 62.64
+    },
+    "seabed_mean_slope_msl_line_to_shoreward_toe": {
+     "tan": 0.0162,
+     "deg": 0.93,
+     "one_in": 61.62
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.0046,
+     "deg": 0.26,
+     "one_in": 218.91
+    }
+   }
+  }
+ },
+ "bunbury-airwave": {
+  "slug": "bunbury-airwave",
+  "name": "Bunbury Airwave: sand-slurry-ballasted rubber (Hypalon) bladder, as installed Dec 2019 - torn, not a working reef",
+  "site": {
+   "H": 1.0,
+   "H_src": "ASSUMPTION: no wave statistics in the sources; 1.0 m used",
+   "T": 12.0,
+   "T_src": "ASSUMPTION: 12 s",
+   "phi0": null,
+   "phi0_src": "dome (spherical cap): peel angle varies along the circular contour; not computed",
+   "tide_kind": "mixed",
+   "swell_dir": "unknown"
+  },
+  "planes": {
+   "LAT": -0.7,
+   "MLLW": -0.3,
+   "MHLW": -0.1,
+   "MSL": 0.0,
+   "MLHW": 0.0,
+   "MHHW": 0.1,
+   "HAT": 0.5,
+   "ANN_LO": -0.6,
+   "ANN_HI": 0.6
+  },
+  "tide": {
+   "A_spring": 0.6,
+   "A_neap": 0.3,
+   "z0": 0.0,
+   "basis": "WA DoT 2026 predicted annual range (approx. LAT-HAT, centred on MSL) as the spring-amplitude proxy; neap = 0.5 spring (ASSUMPTION)",
+   "kind": "mixed",
+   "extreme_hi": 0.6,
+   "extreme_lo": -0.7
+  },
+  "tide_levels": {
+   "low": -0.6,
+   "mid": 0.0,
+   "high": 0.6
+  },
+  "tide_sources": [
+   {
+    "input": "base diameter 12 m, height 2.0 m, crest 1 m below surface at low tide",
+    "sources": {
+     "S_RWR": "Raised Water Research (n.d.). *Bunbury Airwave* (spot page). https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/bunbury-airwave/",
+     "S_ABC19": "ABC News (2019). Bunbury's Back Beach surfers deflated as artificial reef, Airwave, tears during installation, 16 Dec. https://www.abc.net.au/news/2019-12-16/word-first-surf-reef-tears-during-installation/11803228",
+     "S_Tracks19": "Tracks Magazine (2019). Airwave set for live trial at Bunbury, 15 Nov. https://tracksmag.com.au/airwave-set-for-live-trial-at-bunbury-534049"
+    }
+   },
+   {
+    "input": "tidal planes and MSL = +0.1 m AHD",
+    "sources": {
+     "S_tide": "GHD (2021). *Tidal Inundation Monitoring and Modelling Report*, Appendix B of the Southern Ports Authority Turkey Point Access Road approvals, Table 1 \"Tidal planes for Port of Bunbury\" (source cited there: Department of Defence 2018). https://www.epa.wa.gov.au/sites/default/files/PER_documentation2/App%20B%20-%20Tidal%20innudation%20report.pdf"
+    }
+   }
+  ],
+  "profile_json": "08_paper/data/profiles/bunbury-airwave.json",
+  "version": {
+   "id": "installed_Dec2019_spherical_cap",
+   "name": "Installed bladder, December 2019 (torn before completion): symmetric spherical-cap stand-in, 12 m diameter, H = 2.0 m",
+   "date": "2019-12-09..13",
+   "is_default_version": true
+  },
+  "datum": "z = metres above MSL; MSL = +0.1 m AHD (GHD 2021 Table 1, Port of Bunbury, rounded 0.1 m); z_MSL = z_AHD - 0.1",
+  "shoreline_definition": "y = 0 is the fitted 0 m AHD contour of the 2009 lidar (about the MSL waterline, MSL = +0.1 m AHD; rms scatter 8.4 m) (model.js shoreline.definition).",
+  "glob": {
+   "crest_z_msl_m": -0.68,
+   "crest_x_m": 0.0,
+   "crest_y_m": 37.0,
+   "crest_height_above_seabed_m": 1.987,
+   "crest_depth_below_msl_m": 0.68,
+   "footprint_x_range_m": [
+    -5.75,
+    5.75
+   ],
+   "footprint_y_range_m": [
+    31.75,
+    43.25
+   ],
+   "footprint_alongshore_span_m": 11.75,
+   "footprint_cross_shore_span_m": 11.75,
+   "footprint_area_m2_thickness_ge_0p10": 106.9,
+   "footprint_centroid_xy_m": [
+    -0.01,
+    37.5
+   ],
+   "centreline_x_m": 0.0,
+   "alongshore_length_z_ge_minus0p5_m_msl": {
+    "level_msl_m": -0.5,
+    "span_m": null,
+    "union_m": null,
+    "note": "no reef cell at or above this level"
+   },
+   "alongshore_length_z_ge_crest_minus0p5": {
+    "level_msl_m": -1.18,
+    "span_m": 6.25,
+    "union_m": 6.25,
+    "x_min_m": -3.0,
+    "x_max_m": 3.0
+   },
+   "alongshore_extent_by_level": [
+    {
+     "level_msl_m": 0.5,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": 0.0,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": -0.5,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": -1.0,
+     "span_m": 5.0,
+     "union_m": 5.0,
+     "x_min_m": -2.25,
+     "x_max_m": 2.5
+    },
+    {
+     "level_msl_m": -1.5,
+     "span_m": 8.0,
+     "union_m": 8.0,
+     "x_min_m": -3.75,
+     "x_max_m": 4.0
+    },
+    {
+     "level_msl_m": -2.0,
+     "span_m": 10.0,
+     "union_m": 10.0,
+     "x_min_m": -4.75,
+     "x_max_m": 5.0
+    },
+    {
+     "level_msl_m": -2.5,
+     "span_m": 11.5,
+     "union_m": 11.5,
+     "x_min_m": -5.5,
+     "x_max_m": 5.75
+    },
+    {
+     "level_msl_m": -3.0,
+     "span_m": 11.75,
+     "union_m": 11.75,
+     "x_min_m": -5.75,
+     "x_max_m": 5.75
+    },
+    {
+     "level_msl_m": -4.0,
+     "span_m": 11.75,
+     "union_m": 11.75,
+     "x_min_m": -5.75,
+     "x_max_m": 5.75
+    },
+    {
+     "level_msl_m": -5.0,
+     "span_m": 11.75,
+     "union_m": 11.75,
+     "x_min_m": -5.75,
+     "x_max_m": 5.75
+    }
+   ]
+  },
+  "reefs_json": {
+   "name": {
+    "value": "Bunbury Airwave (inflatable bladder surf reef), Back Beach, Bunbury, Western Australia",
+    "status": "sourced",
+    "location": "ABC News 2019-12-16/17",
+    "source": "ABC News (2019-12-16/17). Bunbury's Back Beach surfers deflated as artificial reef, Airwave, tears during installation. https://www.abc.net.au/news/2019-12-16/word-first-surf-reef-tears-during-installation/11803228"
+   },
+   "country": {
+    "value": "Australia",
+    "status": "sourced",
+    "location": "ABC News 2019-12-16/17",
+    "source": "ABC News (2019-12-16/17). Bunbury's Back Beach surfers deflated as artificial reef, Airwave, tears during installation. https://www.abc.net.au/news/2019-12-16/word-first-surf-reef-tears-during-installation/11803228"
+   },
+   "year_built": {
+    "value": 2019,
+    "status": "sourced",
+    "location": "bladder tore during installation, mid-Dec 2019",
+    "source": "ABC News (2019-12-16/17). Bunbury's Back Beach surfers deflated as artificial reef, Airwave, tears during installation. https://www.abc.net.au/news/2019-12-16/word-first-surf-reef-tears-during-installation/11803228"
+   },
+   "purpose": {
+    "value": "surf",
+    "status": "sourced",
+    "location": "card purpose: create a reliable wave on a closeout beach, tourism/competitions",
+    "source": "ABC News (2019-06-13). \"'World-first' inflatable surf reef to be installed at beach in Western Australia.\" https://www.abc.net.au/news/2019-06-13/world-first-artificial-surf-reef-to-be-installed-at-bunbury/11204280"
+   },
+   "material": {
+    "value": "inflatable dome-shaped Hypalon rubber bladder, glued seams, ballasted with ~140-150 t of washed coarse beach sand plus air (final design per the founder: sand-filled instead of air)",
+    "status": "sourced",
+    "location": "Tracks 2019-11-15; Bakalo interview 2026",
+    "source": "Tracks Magazine (2019-11-15). \"Airwave set for live trial at Bunbury.\" https://tracksmag.com.au/airwave-set-for-live-trial-at-bunbury-534049"
+   },
+   "volume_m3": {
+    "value": 105,
+    "status": "derived",
+    "location": "cap volume of the model; sand fill 140-150 t = 70-94 m3 at 1.6-2.0 t/m3",
+    "source": "07_scale/shapes/bunbury-airwave/3d/METHODS_3D.md KN \"Volume (cap) vs fill\""
+   },
+   "surf_outcome": {
+    "value": "does not work",
+    "status": "sourced",
+    "location": "ABC 2019-12-16/17; Bunbury Mail 2022-03-22",
+    "source": "ABC News (2019-12-16/17). Bunbury's Back Beach surfers deflated as artificial reef, Airwave, tears during installation. https://www.abc.net.au/news/2019-12-16/word-first-surf-reef-tears-during-installation/11803228"
+   },
+   "surfable_days_per_year": {
+    "value": null,
+    "status": "unknown",
+    "location": "",
+    "source": null
+   },
+   "durability": {
+    "value": "bladder torn along a glued seam during installation (Dec 2019), removed within ~3 days (one source: half a day); second prototype only planned; developer later proposed a granite reef instead",
+    "status": "sourced",
+    "location": "ABC 2019-12; RWR 2019-12-16; card status_now",
+    "source": "ABC News (2019-12-16/17). Bunbury's Back Beach surfers deflated as artificial reef, Airwave, tears during installation. https://www.abc.net.au/news/2019-12-16/word-first-surf-reef-tears-during-installation/11803228"
+   },
+   "sediment_shoreline_outcome": {
+    "value": null,
+    "status": "unknown",
+    "location": "",
+    "source": null
+   },
+   "tide_spring_range_m": {
+    "value": 1.2,
+    "status": "derived",
+    "location": "Bunbury 2026 predicted extremes above LAT: max 1.30, min 0.10 -> 1.20 m (2024: 1.24 - 0.12 = 1.12 m); GHD 2021 HAT +0.5 / LAT -0.7 m MSL (1.2 m) agrees; field name kept for the pipeline, the quantity is the annual range",
+    "source": "Government of Western Australia, Department of Transport / Bureau of Meteorology (2026). Tide Predictions by Location, WA 2026 (heights above LAT). https://transport.wa.gov.au/getmedia/482d7b83-1a48-4220-9e2c-b07ebfcf8594/MAR_P_2026_Tide_Predictions_by_Location_WA.pdf (downloaded 2026-10-19; extremes extracted by script from 3 of 4 quarterly blocks, so they are lower bounds of the true annual extremes). Checked in 08_paper/notes/tides_check.md"
+   },
+   "cost_usd_2024": {
+    "value": 491000.0,
+    "status": "derived",
+    "location": "nominal USD x CPI_USA(2024) 143.86 / CPI_USA(2019) 117.24",
+    "source": "World Bank, World Development Indicators: PA.NUS.FCRF \"Official exchange rate (LCU per US$, period average)\" and FP.CPI.TOTL \"Consumer price index (2010 = 100)\", USA; https://api.worldbank.org/v2 ; fetched 2026-10-15"
+   },
+   "distance_offshore_crest_m": {
+    "value": 37.5,
+    "status": "derived",
+    "location": "model default centre y = 37.5 m",
+    "source": "07_scale/shapes/bunbury-airwave/shape.json canonical.distance_offshore_m"
+   },
+   "arm_angle_to_shoreline_deg": {
+    "value": null,
+    "status": "unknown",
+    "location": "",
+    "source": null
+   },
+   "arm_angle_to_swell_deg": {
+    "value": null,
+    "status": "unknown",
+    "location": "",
+    "source": null
+   }
+  },
+  "confidence_3d": "medium",
+  "line_metrics": {
+   "centreline": {
+    "reef_on_line": true,
+    "crest_z_msl_m": -0.681,
+    "crest_y_m": 37.0,
+    "crest_depth_below_msl_m": 0.681,
+    "crest_seabed_z_msl_m": -2.668,
+    "crest_height_above_seabed_m": 1.987,
+    "crest_zone_y_m": [
+     36.0,
+     38.0
+    ],
+    "crest_zone_width_m": 3.0,
+    "seaward_toe_y_m": 43.0,
+    "seaward_toe_reef_z_msl_m": -2.593,
+    "seaward_toe_seabed_z_msl_m": -2.992,
+    "seaward_toe_thickness_m": 0.399,
+    "ramp_length_m": 5.0,
+    "ramp_rise_m": 1.859,
+    "crest_to_toe_drop_m": 1.912,
+    "crest_to_toe_seabed_drop_m": 2.311,
+    "mean_seaward_slope": {
+     "tan": 0.3718,
+     "deg": 20.4,
+     "one_in": 2.69
+    },
+    "max_seaward_slope": {
+     "tan": 0.5469,
+     "deg": 28.67,
+     "one_in": 1.83
+    },
+    "max_seaward_slope_at_y_m": 42.0,
+    "shoreward_toe_y_m": 32.0,
+    "shoreward_toe_reef_z_msl_m": -2.025,
+    "shoreward_toe_seabed_z_msl_m": -2.344,
+    "shoreward_ramp_length_m": 4.0,
+    "shoreward_ramp_rise_m": 1.296,
+    "mean_shoreward_slope": {
+     "tan": 0.324,
+     "deg": 17.95,
+     "one_in": 3.09
+    },
+    "reef_cross_shore_extent_m": 12.0,
+    "max_thickness_on_line_m": 1.988,
+    "y_msl_crossing_m": 3.18,
+    "segments": [
+     {
+      "y_from_m": 32.0,
+      "y_to_m": 43.0,
+      "max_z_msl_m": -0.681
+     }
+    ],
+    "bridged_gaps": [],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.0589,
+     "deg": 3.37,
+     "one_in": 16.98
+    },
+    "crest_distance_from_msl_line_m": 33.82,
+    "seaward_toe_distance_from_msl_line_m": 39.82,
+    "shoreward_toe_distance_from_msl_line_m": 28.82,
+    "seabed_mean_slope_msl_line_to_seaward_toe": {
+     "tan": 0.0751,
+     "deg": 4.3,
+     "one_in": 13.31
+    },
+    "seabed_mean_slope_msl_line_to_shoreward_toe": {
+     "tan": 0.0813,
+     "deg": 4.65,
+     "one_in": 12.29
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.0385,
+     "deg": 2.21,
+     "one_in": 25.96
+    }
+   },
+   "crest_line": {
+    "reef_on_line": true,
+    "crest_z_msl_m": -0.681,
+    "crest_y_m": 37.0,
+    "crest_depth_below_msl_m": 0.681,
+    "crest_seabed_z_msl_m": -2.668,
+    "crest_height_above_seabed_m": 1.987,
+    "crest_zone_y_m": [
+     36.0,
+     38.0
+    ],
+    "crest_zone_width_m": 3.0,
+    "seaward_toe_y_m": 43.0,
+    "seaward_toe_reef_z_msl_m": -2.593,
+    "seaward_toe_seabed_z_msl_m": -2.992,
+    "seaward_toe_thickness_m": 0.399,
+    "ramp_length_m": 5.0,
+    "ramp_rise_m": 1.859,
+    "crest_to_toe_drop_m": 1.912,
+    "crest_to_toe_seabed_drop_m": 2.311,
+    "mean_seaward_slope": {
+     "tan": 0.3718,
+     "deg": 20.4,
+     "one_in": 2.69
+    },
+    "max_seaward_slope": {
+     "tan": 0.5469,
+     "deg": 28.67,
+     "one_in": 1.83
+    },
+    "max_seaward_slope_at_y_m": 42.0,
+    "shoreward_toe_y_m": 32.0,
+    "shoreward_toe_reef_z_msl_m": -2.025,
+    "shoreward_toe_seabed_z_msl_m": -2.344,
+    "shoreward_ramp_length_m": 4.0,
+    "shoreward_ramp_rise_m": 1.296,
+    "mean_shoreward_slope": {
+     "tan": 0.324,
+     "deg": 17.95,
+     "one_in": 3.09
+    },
+    "reef_cross_shore_extent_m": 12.0,
+    "max_thickness_on_line_m": 1.988,
+    "y_msl_crossing_m": 3.18,
+    "segments": [
+     {
+      "y_from_m": 32.0,
+      "y_to_m": 43.0,
+      "max_z_msl_m": -0.681
+     }
+    ],
+    "bridged_gaps": [],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.0589,
+     "deg": 3.37,
+     "one_in": 16.98
+    },
+    "crest_distance_from_msl_line_m": 33.82,
+    "seaward_toe_distance_from_msl_line_m": 39.82,
+    "shoreward_toe_distance_from_msl_line_m": 28.82,
+    "seabed_mean_slope_msl_line_to_seaward_toe": {
+     "tan": 0.0751,
+     "deg": 4.3,
+     "one_in": 13.31
+    },
+    "seabed_mean_slope_msl_line_to_shoreward_toe": {
+     "tan": 0.0813,
+     "deg": 4.65,
+     "one_in": 12.29
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.0385,
+     "deg": 2.21,
+     "one_in": 25.96
+    }
+   },
+   "second_crest_line": {
+    "reef_on_line": true,
+    "crest_z_msl_m": -0.686,
+    "crest_y_m": 37.0,
+    "crest_depth_below_msl_m": 0.686,
+    "crest_seabed_z_msl_m": -2.671,
+    "crest_height_above_seabed_m": 1.984,
+    "crest_zone_y_m": [
+     36.0,
+     38.0
+    ],
+    "crest_zone_width_m": 3.0,
+    "seaward_toe_y_m": 43.0,
+    "seaward_toe_reef_z_msl_m": -2.602,
+    "seaward_toe_seabed_z_msl_m": -2.994,
+    "seaward_toe_thickness_m": 0.391,
+    "ramp_length_m": 5.0,
+    "ramp_rise_m": 1.862,
+    "crest_to_toe_drop_m": 1.916,
+    "crest_to_toe_seabed_drop_m": 2.307,
+    "mean_seaward_slope": {
+     "tan": 0.3724,
+     "deg": 20.43,
+     "one_in": 2.69
+    },
+    "max_seaward_slope": {
+     "tan": 0.5482,
+     "deg": 28.73,
+     "one_in": 1.82
+    },
+    "max_seaward_slope_at_y_m": 42.0,
+    "shoreward_toe_y_m": 32.0,
+    "shoreward_toe_reef_z_msl_m": -2.043,
+    "shoreward_toe_seabed_z_msl_m": -2.346,
+    "shoreward_ramp_length_m": 4.0,
+    "shoreward_ramp_rise_m": 1.308,
+    "mean_shoreward_slope": {
+     "tan": 0.327,
+     "deg": 18.11,
+     "one_in": 3.06
+    },
+    "reef_cross_shore_extent_m": 12.0,
+    "max_thickness_on_line_m": 1.984,
+    "y_msl_crossing_m": 3.18,
+    "segments": [
+     {
+      "y_from_m": 32.0,
+      "y_to_m": 43.0,
+      "max_z_msl_m": -0.686
+     }
+    ],
+    "bridged_gaps": [],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.0589,
+     "deg": 3.37,
+     "one_in": 16.99
+    },
+    "crest_distance_from_msl_line_m": 33.82,
+    "seaward_toe_distance_from_msl_line_m": 39.82,
+    "shoreward_toe_distance_from_msl_line_m": 28.82,
+    "seabed_mean_slope_msl_line_to_seaward_toe": {
+     "tan": 0.0752,
+     "deg": 4.3,
+     "one_in": 13.3
+    },
+    "seabed_mean_slope_msl_line_to_shoreward_toe": {
+     "tan": 0.0814,
+     "deg": 4.65,
+     "one_in": 12.28
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.0385,
+     "deg": 2.21,
+     "one_in": 25.96
+    }
+   }
+  }
+ },
+ "southern-ocean-surf-reef-albany": {
+  "slug": "southern-ocean-surf-reef-albany",
+  "name": "Southern Ocean Surf Reef (\"Midds Reef\"), Middleton Beach, Albany WA",
+  "site": {
+   "H": 1.0,
+   "H_src": "SOURCED design range: 0.8-1.3 m wave faces (reefs.json design_wave, RHDHV 2015 via card); 1.0 m used",
+   "T": 13.0,
+   "T_src": "ASSUMPTION: 13 s Southern Ocean swell refracted into King George Sound",
+   "phi0": [
+    71.2
+   ],
+   "phi0_src": "ASSUMPTION: crest parallel to the beach at the reef; crest edge 71.2 deg to the shoreline (reefs.json, DERIVED). The real swell at the reef is likely oblique (refraction around the Sound), which would lower the angle.",
+   "tide_kind": "mixed",
+   "swell_dir": "unknown"
+  },
+  "planes": {
+   "LAT": -0.74,
+   "MLLW": -0.26,
+   "MSL": 0.0,
+   "MHHW": 0.34,
+   "HAT": 0.66,
+   "ANN_LO": -0.69,
+   "ANN_HI": 0.69
+  },
+  "tide": {
+   "A_spring": 0.69,
+   "A_neap": 0.345,
+   "z0": 0.0,
+   "basis": "WA DoT 2026 predicted annual range (approx. LAT-HAT, centred on MSL) as the spring-amplitude proxy; neap = 0.5 spring (ASSUMPTION)",
+   "kind": "mixed",
+   "extreme_hi": 0.69,
+   "extreme_lo": -0.74
+  },
+  "tide_levels": {
+   "low": -0.69,
+   "mid": 0.0,
+   "high": 0.69
+  },
+  "tide_sources": [
+   {
+    "input": "seabed profile (design contours)",
+    "sources": {
+     "rhdhv2015": "Royal HaskoningDHV (2015). Albany Artificial Surf Reef Feasibility Study, Middleton Beach, executive summary, 13 July 2015, report PA1039_RP150622, 2 pp. https://www.albany.wa.gov.au/documents/435/albany-artificial-surf-reef-feasibility-study-middleton-beach ; and Royal HaskoningDHV (2015) Option B \"Long Right\" reef design with depth contours, as reproduced by Raised Water Research, https://raisedwaterresearch.com/wp-content/uploads/2019/12/Albany-Model2.jpg (img-16); per METHODS_3D.md section 8.",
+     "eia2018": "BMT Western Australia Pty Ltd (2018). Middleton Beach Artificial Surf Reef Environmental Impact Assessment. Report 1345_001/1_Rev2, September 2018, for the City of Albany, 160 pp. https://epa.wa.gov.au/sites/default/files/Referral_Documentation/Environmental%20Impact%20Assessment_0.pdf (Fig 6.9 p.32; tides s.5 p.13); per METHODS_3D.md section 8."
+    }
+   },
+   {
+    "input": "tides (LAT, MLLW, MHHW)",
+    "sources": {
+     "dot_tides": "Western Australia Department of Transport and Bureau of Meteorology (2024). Tide Predictions by Location WA 2024, Albany (35 02 S 117 53 E, datum LAT). https://transport.wa.gov.au/mediaFiles/marine/MAR_P_2024_Tide_Predictions_by_Location_WA.PDF ; per METHODS_3D.md section 8.",
+     "city_page": "City of Albany (2026). Southern Ocean Surf Reef (SOSR), completed project page (\"Design Aspects\"). https://www.albany.wa.gov.au/council/projects/completed-projects/southern-ocean-surf-reef-sosr.aspx ; per METHODS_3D.md section 8."
+    }
+   }
+  ],
+  "profile_json": "08_paper/data/profiles/southern-ocean-surf-reef-albany.json",
+  "version": {
+   "id": "design_bluecoast",
+   "name": "Bluecoast final design, outer contour (design stage, volume on 2017 bathymetry)",
+   "date": "design stage, before the March - June 2025 rock placement",
+   "is_default_version": true
+  },
+  "datum": "z = metres above AHD, taken as MSL (assumption A2); LAT = -0.74 m AHD (derived: LAT + mean of 2024 predicted extremes), MHHW = +0.34, MLLW = -0.26 (City of Albany crest statement)",
+  "shoreline_definition": "y = 0 is the beach-face line (edge of bright dry sand) of the Esri 2026-01-20 image, NOT the MSL line. The modelled seabed (seabed.profile: z = +1.0 m at y -30, -0.5 m at y +7) crosses z = 0 (AHD = MSL) about 5 m LANDWARD of y = 0 (y_msl_crossing_m, interpolated).",
+  "glob": {
+   "crest_z_msl_m": -1.166,
+   "crest_x_m": 48.0,
+   "crest_y_m": 194.0,
+   "crest_height_above_seabed_m": 5.94,
+   "crest_depth_below_msl_m": 1.166,
+   "footprint_x_range_m": [
+    -66.0,
+    62.0
+   ],
+   "footprint_y_range_m": [
+    68.0,
+    232.0
+   ],
+   "footprint_alongshore_span_m": 129.0,
+   "footprint_cross_shore_span_m": 165.0,
+   "footprint_area_m2_thickness_ge_0p10": 13085.0,
+   "footprint_centroid_xy_m": [
+    -2.0,
+    159.58
+   ],
+   "centreline_x_m": -2.0,
+   "alongshore_length_z_ge_minus0p5_m_msl": {
+    "level_msl_m": -0.5,
+    "span_m": null,
+    "union_m": null,
+    "note": "no reef cell at or above this level"
+   },
+   "alongshore_length_z_ge_crest_minus0p5": {
+    "level_msl_m": -1.666,
+    "span_m": 26.0,
+    "union_m": 26.0,
+    "x_min_m": 26.0,
+    "x_max_m": 51.0
+   },
+   "alongshore_extent_by_level": [
+    {
+     "level_msl_m": 0.5,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": 0.0,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": -0.5,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": -1.0,
+     "span_m": null,
+     "union_m": null,
+     "note": "no reef cell at or above this level"
+    },
+    {
+     "level_msl_m": -1.5,
+     "span_m": 16.0,
+     "union_m": 16.0,
+     "x_min_m": 35.0,
+     "x_max_m": 50.0
+    },
+    {
+     "level_msl_m": -2.0,
+     "span_m": 54.0,
+     "union_m": 54.0,
+     "x_min_m": -1.0,
+     "x_max_m": 52.0
+    },
+    {
+     "level_msl_m": -2.5,
+     "span_m": 73.0,
+     "union_m": 73.0,
+     "x_min_m": -19.0,
+     "x_max_m": 53.0
+    },
+    {
+     "level_msl_m": -3.0,
+     "span_m": 83.0,
+     "union_m": 83.0,
+     "x_min_m": -28.0,
+     "x_max_m": 54.0
+    },
+    {
+     "level_msl_m": -4.0,
+     "span_m": 97.0,
+     "union_m": 97.0,
+     "x_min_m": -40.0,
+     "x_max_m": 56.0
+    },
+    {
+     "level_msl_m": -5.0,
+     "span_m": 109.0,
+     "union_m": 109.0,
+     "x_min_m": -50.0,
+     "x_max_m": 58.0
+    }
+   ]
+  },
+  "reefs_json": {
+   "name": {
+    "value": "Southern Ocean Surf Reef (Albany artificial surf reef, \"Midds Reef\"), Middleton Beach, Albany, Western Australia",
+    "status": "sourced",
+    "location": "City of Albany project pages",
+    "source": "City of Albany (n.d.; page current 2026-09-24). \"Southern Ocean Surf Reef (SOSR)\" project pages, albany.wa.gov.au, including the detailed-design table (registry img-10). https://www.albany.wa.gov.au/council/projects/completed-projects/southern-ocean-surf-reef-sosr.aspx"
+   },
+   "country": {
+    "value": "Australia",
+    "status": "sourced",
+    "location": "project pages",
+    "source": "City of Albany (n.d.; page current 2026-09-24). \"Southern Ocean Surf Reef (SOSR)\" project pages, albany.wa.gov.au, including the detailed-design table (registry img-10). https://www.albany.wa.gov.au/council/projects/completed-projects/southern-ocean-surf-reef-sosr.aspx"
+   },
+   "year_built": {
+    "value": 2025,
+    "status": "sourced",
+    "location": "card year field (R26, R30): first rock placed 18 Mar 2025; opened 16 Jul 2025",
+    "source": "City of Albany (n.d.; page current 2026-09-24). \"Southern Ocean Surf Reef (SOSR)\" project pages, albany.wa.gov.au, including the detailed-design table (registry img-10). https://www.albany.wa.gov.au/council/projects/completed-projects/southern-ocean-surf-reef-sosr.aspx"
+   },
+   "purpose": {
+    "value": "surf",
+    "status": "sourced",
+    "location": "card purpose: sole stated design objective is surfing amenity/tourism/youth retention; coastal protection not a driver",
+    "source": "City of Albany (n.d.; page current 2026-09-24). \"Southern Ocean Surf Reef (SOSR)\" project pages, albany.wa.gov.au, including the detailed-design table (registry img-10). https://www.albany.wa.gov.au/council/projects/completed-projects/southern-ocean-surf-reef-sosr.aspx"
+   },
+   "material": {
+    "value": "quarried rock in three grades: belly D50 0.16 m (12,400 t), core D50 0.49 m (23,600 t), armour D50 0.94 m (26,800 t); total 62,800 t",
+    "status": "sourced",
+    "location": "card size field (design table)",
+    "source": "City of Albany (n.d.; page current 2026-09-24). \"Southern Ocean Surf Reef (SOSR)\" project pages, albany.wa.gov.au, including the detailed-design table (registry img-10). https://www.albany.wa.gov.au/council/projects/completed-projects/southern-ocean-surf-reef-sosr.aspx"
+   },
+   "volume_m3": {
+    "value": 34000,
+    "status": "sourced",
+    "location": "City/Bluecoast design volume 34,000 m3; 62,800 t / 1.847 t/m3 (ASSUMED bulk density)",
+    "source": "City of Albany (n.d.; page current 2026-09-24). \"Southern Ocean Surf Reef (SOSR)\" project pages, albany.wa.gov.au, including the detailed-design table (registry img-10). https://www.albany.wa.gov.au/council/projects/completed-projects/southern-ocean-surf-reef-sosr.aspx"
+   },
+   "surf_outcome": {
+    "value": "works",
+    "status": "sourced",
+    "location": "Swellnet: \"the reef performs far better than expectations\"; Peter Bolt: \"intermediate-to-advanced on most days\"; Cameron Warburton: \"a really high-performance wave\" (ABC); RWR: 0.8-1.3 m faces, 100-120 m rides",
+    "source": "Stu Nettle / Swellnet Dispatch, \"Albany Artificial Reef Opened Today\" (16 Jul 2025) incl. comment thread https://www.swellnet.com/news/swellnet-dispatch/2025/07/16/albany-artificial-reef-opened-today"
+   },
+   "surfable_days_per_year": {
+    "value": 146,
+    "status": "derived",
+    "location": "RWR \"Midds Reef\": breaking on the reef proper ~40 % of the year (card outcome field)",
+    "source": "Raised Water Research (n.d.). \"Midds Reef\" [spot page in its artificial-reef database]. No author or date shown. https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/albany-artificial-surf-reef/"
+   },
+   "durability": {
+    "value": "built 2025 with graded rock (not geotextile); storm of 26 May 2025 moved some core rock; about 18 high rocks repositioned late Feb 2026 (user injuries); no other damage reported",
+    "status": "sourced",
+    "location": "card status_now (R3, R11, R18, R25, R28)",
+    "source": "Albany Advertiser: 'Eighteen rocks of Southern Ocean Surf Reef repositioned in successful bid to reduce user injuries', Melissa Sheil, 11 March 2026 https://www.albanyadvertiser.com.au/news/albany-advertiser/eighteen-rocks-of-southern-ocean-surf-reef-repositioned-in-successful-bid-to-reduce-user-injuries-c-21896905"
+   },
+   "sediment_shoreline_outcome": {
+    "value": null,
+    "status": "unknown",
+    "location": "",
+    "source": null
+   },
+   "tide_spring_range_m": {
+    "value": 1.38,
+    "status": "derived",
+    "location": "Albany 2026 predicted extremes above LAT: max 1.47, min 0.09 -> 1.38 m (2024: 1.40 m, HAT +0.66 / LAT -0.74 m AHD); field name kept for the pipeline, the quantity is the annual range",
+    "source": "Government of Western Australia, Department of Transport / Bureau of Meteorology (2026). Tide Predictions by Location, WA 2026 (heights above LAT). https://transport.wa.gov.au/getmedia/482d7b83-1a48-4220-9e2c-b07ebfcf8594/MAR_P_2026_Tide_Predictions_by_Location_WA.pdf (downloaded 2026-10-19; extremes extracted by script from 3 of 4 quarterly blocks, so they are lower bounds of the true annual extremes). Checked in 08_paper/notes/tides_check.md"
+   },
+   "cost_usd_2024": {
+    "value": 8376000.0,
+    "status": "derived",
+    "location": "nominal USD x CPI_USA(2024) 143.86 / CPI_USA(2025) 143.86",
+    "source": "World Bank, World Development Indicators: PA.NUS.FCRF \"Official exchange rate (LCU per US$, period average)\" and FP.CPI.TOTL \"Consumer price index (2010 = 100)\", USA; https://api.worldbank.org/v2 ; fetched 2026-10-15"
+   },
+   "distance_offshore_crest_m": {
+    "value": 189.0,
+    "status": "derived",
+    "location": "y of the shallowest crest cell; nearest outline edge 66.8 m; centroid 165 m (shape.json canonical.distance_offshore_m)",
+    "source": "07_scale/shapes/southern-ocean-surf-reef-albany/3d/model.js frame (derive_profiles.py)"
+   },
+   "arm_angle_to_shoreline_deg": {
+    "value": 71.2,
+    "status": "derived",
+    "location": "crest edge bearing 281.5 vs shoreline 30.3 deg true (design dashed crest line 278.1)",
+    "source": "07_scale/shapes/southern-ocean-surf-reef-albany/shape.json angles"
+   },
+   "arm_angle_to_swell_deg": {
+    "value": null,
+    "status": "unknown",
+    "location": "",
+    "source": null
+   }
+  },
+  "confidence_3d": "low",
+  "line_metrics": {
+   "centreline": {
+    "reef_on_line": true,
+    "crest_z_msl_m": -2.012,
+    "crest_y_m": 80.0,
+    "crest_depth_below_msl_m": 2.012,
+    "crest_seabed_z_msl_m": -2.692,
+    "crest_height_above_seabed_m": 0.68,
+    "crest_zone_y_m": [
+     70.0,
+     104.0
+    ],
+    "crest_zone_width_m": 35.0,
+    "seaward_toe_y_m": 217.0,
+    "seaward_toe_reef_z_msl_m": -6.871,
+    "seaward_toe_seabed_z_msl_m": -7.271,
+    "seaward_toe_thickness_m": 0.4,
+    "ramp_length_m": 113.0,
+    "ramp_rise_m": 4.762,
+    "crest_to_toe_drop_m": 4.859,
+    "crest_to_toe_seabed_drop_m": 5.259,
+    "mean_seaward_slope": {
+     "tan": 0.0421,
+     "deg": 2.41,
+     "one_in": 23.73
+    },
+    "max_seaward_slope": {
+     "tan": 0.2119,
+     "deg": 11.97,
+     "one_in": 4.72
+    },
+    "max_seaward_slope_at_y_m": 214.0,
+    "shoreward_toe_y_m": 70.0,
+    "shoreward_toe_reef_z_msl_m": -2.043,
+    "shoreward_toe_seabed_z_msl_m": -2.273,
+    "shoreward_ramp_length_m": 0.0,
+    "shoreward_ramp_rise_m": 0.0,
+    "mean_shoreward_slope": {
+     "tan": null,
+     "deg": null,
+     "one_in": null
+    },
+    "reef_cross_shore_extent_m": 148.0,
+    "max_thickness_on_line_m": 4.14,
+    "y_msl_crossing_m": -5.33,
+    "segments": [
+     {
+      "y_from_m": 70.0,
+      "y_to_m": 217.0,
+      "max_z_msl_m": -2.012
+     }
+    ],
+    "bridged_gaps": [],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.034,
+     "deg": 1.95,
+     "one_in": 29.41
+    },
+    "crest_distance_from_msl_line_m": 85.33,
+    "seaward_toe_distance_from_msl_line_m": 222.33,
+    "shoreward_toe_distance_from_msl_line_m": 75.33,
+    "seabed_mean_slope_msl_line_to_seaward_toe": {
+     "tan": 0.0327,
+     "deg": 1.87,
+     "one_in": 30.58
+    },
+    "seabed_mean_slope_msl_line_to_shoreward_toe": {
+     "tan": 0.0302,
+     "deg": 1.73,
+     "one_in": 33.15
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.0065,
+     "deg": 0.37,
+     "one_in": 154.34
+    }
+   },
+   "crest_line": {
+    "reef_on_line": true,
+    "crest_z_msl_m": -1.97,
+    "crest_y_m": 118.0,
+    "crest_depth_below_msl_m": 1.97,
+    "crest_seabed_z_msl_m": -4.5,
+    "crest_height_above_seabed_m": 2.53,
+    "crest_zone_y_m": [
+     111.0,
+     132.0
+    ],
+    "crest_zone_width_m": 22.0,
+    "seaward_toe_y_m": 231.0,
+    "seaward_toe_reef_z_msl_m": -7.068,
+    "seaward_toe_seabed_z_msl_m": -7.368,
+    "seaward_toe_thickness_m": 0.3,
+    "ramp_length_m": 99.0,
+    "ramp_rise_m": 4.998,
+    "crest_to_toe_drop_m": 5.098,
+    "crest_to_toe_seabed_drop_m": 5.398,
+    "mean_seaward_slope": {
+     "tan": 0.0505,
+     "deg": 2.89,
+     "one_in": 19.81
+    },
+    "max_seaward_slope": {
+     "tan": 0.2869,
+     "deg": 16.01,
+     "one_in": 3.48
+    },
+    "max_seaward_slope_at_y_m": 228.0,
+    "shoreward_toe_y_m": 92.0,
+    "shoreward_toe_reef_z_msl_m": -2.83,
+    "shoreward_toe_seabed_z_msl_m": -3.2,
+    "shoreward_ramp_length_m": 19.0,
+    "shoreward_ramp_rise_m": 0.779,
+    "mean_shoreward_slope": {
+     "tan": 0.041,
+     "deg": 2.35,
+     "one_in": 24.38
+    },
+    "reef_cross_shore_extent_m": 140.0,
+    "max_thickness_on_line_m": 4.85,
+    "y_msl_crossing_m": -5.33,
+    "segments": [
+     {
+      "y_from_m": 92.0,
+      "y_to_m": 231.0,
+      "max_z_msl_m": -1.97
+     }
+    ],
+    "bridged_gaps": [],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.03,
+     "deg": 1.72,
+     "one_in": 33.35
+    },
+    "crest_distance_from_msl_line_m": 123.33,
+    "seaward_toe_distance_from_msl_line_m": 236.33,
+    "shoreward_toe_distance_from_msl_line_m": 97.33,
+    "seabed_mean_slope_msl_line_to_seaward_toe": {
+     "tan": 0.0312,
+     "deg": 1.79,
+     "one_in": 32.08
+    },
+    "seabed_mean_slope_msl_line_to_shoreward_toe": {
+     "tan": 0.0329,
+     "deg": 1.88,
+     "one_in": 30.42
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.0064,
+     "deg": 0.36,
+     "one_in": 157.41
+    }
+   },
+   "second_crest_line": {
+    "reef_on_line": true,
+    "crest_z_msl_m": -2.028,
+    "crest_y_m": 83.0,
+    "crest_depth_below_msl_m": 2.028,
+    "crest_seabed_z_msl_m": -2.808,
+    "crest_height_above_seabed_m": 0.78,
+    "crest_zone_y_m": [
+     70.0,
+     104.0
+    ],
+    "crest_zone_width_m": 35.0,
+    "seaward_toe_y_m": 217.0,
+    "seaward_toe_reef_z_msl_m": -6.941,
+    "seaward_toe_seabed_z_msl_m": -7.271,
+    "seaward_toe_thickness_m": 0.33,
+    "ramp_length_m": 113.0,
+    "ramp_rise_m": 4.832,
+    "crest_to_toe_drop_m": 4.913,
+    "crest_to_toe_seabed_drop_m": 5.243,
+    "mean_seaward_slope": {
+     "tan": 0.0428,
+     "deg": 2.45,
+     "one_in": 23.38
+    },
+    "max_seaward_slope": {
+     "tan": 0.2069,
+     "deg": 11.69,
+     "one_in": 4.83
+    },
+    "max_seaward_slope_at_y_m": 213.0,
+    "shoreward_toe_y_m": 70.0,
+    "shoreward_toe_reef_z_msl_m": -2.093,
+    "shoreward_toe_seabed_z_msl_m": -2.273,
+    "shoreward_ramp_length_m": 0.0,
+    "shoreward_ramp_rise_m": 0.0,
+    "mean_shoreward_slope": {
+     "tan": null,
+     "deg": null,
+     "one_in": null
+    },
+    "reef_cross_shore_extent_m": 148.0,
+    "max_thickness_on_line_m": 4.11,
+    "y_msl_crossing_m": -5.33,
+    "segments": [
+     {
+      "y_from_m": 70.0,
+      "y_to_m": 217.0,
+      "max_z_msl_m": -2.028
+     }
+    ],
+    "bridged_gaps": [],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.034,
+     "deg": 1.95,
+     "one_in": 29.41
+    },
+    "crest_distance_from_msl_line_m": 88.33,
+    "seaward_toe_distance_from_msl_line_m": 222.33,
+    "shoreward_toe_distance_from_msl_line_m": 75.33,
+    "seabed_mean_slope_msl_line_to_seaward_toe": {
+     "tan": 0.0327,
+     "deg": 1.87,
+     "one_in": 30.58
+    },
+    "seabed_mean_slope_msl_line_to_shoreward_toe": {
+     "tan": 0.0302,
+     "deg": 1.73,
+     "one_in": 33.15
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.0065,
+     "deg": 0.37,
+     "one_in": 154.34
+    }
+   },
+   "crest_line_auto": {
+    "reef_on_line": true,
+    "crest_z_msl_m": -1.167,
+    "crest_y_m": 192.0,
+    "crest_depth_below_msl_m": 1.167,
+    "crest_seabed_z_msl_m": -7.097,
+    "crest_height_above_seabed_m": 5.93,
+    "crest_zone_y_m": [
+     187.0,
+     202.0
+    ],
+    "crest_zone_width_m": 16.0,
+    "seaward_toe_y_m": 224.0,
+    "seaward_toe_reef_z_msl_m": -6.749,
+    "seaward_toe_seabed_z_msl_m": -7.319,
+    "seaward_toe_thickness_m": 0.57,
+    "ramp_length_m": 22.0,
+    "ramp_rise_m": 5.503,
+    "crest_to_toe_drop_m": 5.582,
+    "crest_to_toe_seabed_drop_m": 6.152,
+    "mean_seaward_slope": {
+     "tan": 0.2501,
+     "deg": 14.04,
+     "one_in": 4.0
+    },
+    "max_seaward_slope": {
+     "tan": 0.4219,
+     "deg": 22.88,
+     "one_in": 2.37
+    },
+    "max_seaward_slope_at_y_m": 218.0,
+    "shoreward_toe_y_m": 161.0,
+    "shoreward_toe_reef_z_msl_m": -5.943,
+    "shoreward_toe_seabed_z_msl_m": -6.393,
+    "shoreward_ramp_length_m": 26.0,
+    "shoreward_ramp_rise_m": 4.69,
+    "mean_shoreward_slope": {
+     "tan": 0.1804,
+     "deg": 10.23,
+     "one_in": 5.54
+    },
+    "reef_cross_shore_extent_m": 64.0,
+    "max_thickness_on_line_m": 5.96,
+    "y_msl_crossing_m": -5.33,
+    "segments": [
+     {
+      "y_from_m": 161.0,
+      "y_to_m": 224.0,
+      "max_z_msl_m": -1.167
+     }
+    ],
+    "bridged_gaps": [],
+    "seabed_mean_slope_under_reef": {
+     "tan": 0.0147,
+     "deg": 0.84,
+     "one_in": 67.99
+    },
+    "crest_distance_from_msl_line_m": 197.33,
+    "seaward_toe_distance_from_msl_line_m": 229.33,
+    "shoreward_toe_distance_from_msl_line_m": 166.33,
+    "seabed_mean_slope_msl_line_to_seaward_toe": {
+     "tan": 0.0319,
+     "deg": 1.83,
+     "one_in": 31.33
+    },
+    "seabed_mean_slope_msl_line_to_shoreward_toe": {
+     "tan": 0.0384,
+     "deg": 2.2,
+     "one_in": 26.02
+    },
+    "seabed_mean_slope_seaward_of_toe_100m": {
+     "tan": 0.0064,
+     "deg": 0.37,
+     "one_in": 155.51
+    }
+   }
+  }
+ },
+ "_israel": {
+  "tide_spring_range_m": 0.4,
+  "tide_neap_range_m": 0.15,
+  "tide_src": "Rosen (2001) GLOSS report (via 02_research/israel/israel-wave-climate-and-tides.md R1): ~0.4 m spring, ~0.15 m neap, semidiurnal",
+  "Hs_surf_min": [
+   0.45,
+   0.6
+  ],
+  "Hmax_surf_min": [
+   0.6,
+   0.8
+  ],
+  "Hs_src": "Lior's Shikmona buoy field definition of the minimum surfable wave (LiorBuoy2025; 01_source_notes/lior_suggestions_and_swell_heights.md lines 44-53)",
+  "Tp_obs": [
+   5.7,
+   6.2
+  ],
+  "Tp_forecast": [
+   6.0,
+   8.0
+  ],
+  "Tp_src": "Shikmona buoy readouts 2025-08-06 (Hs 0.69 m, Tp 6.20 s) and 2025-08-15 (Hs 0.81 m, Tp 5.70 s); 4Surfers forecast 6-8 s (LiorBuoy2025)",
+  "swell_dir_deg": [
+   284,
+   294
+  ],
+  "dir_src": "LiorBuoy2025 (WNW)",
+  "lior_break_depth": {
+   "low": {
+    "Hs": 0.45,
+    "Hmax": 0.6,
+    "no_break": 1.45,
+    "break_depth": 1.3,
+    "min_depth": 1.15
+   },
+   "high": {
+    "Hs": 0.6,
+    "Hmax": 0.8,
+    "no_break": 1.7,
+    "break_depth": 1.5,
+    "min_depth": 1.35
+   },
+   "src": "LiorBuoy2025 page 1 depth bands (01_source_notes/lior_suggestions_and_swell_heights.md lines 57-61)"
+  },
+  "storm": {
+   "Hs12": [
+    3.0,
+    3.3
+   ],
+   "src": "Zviely et al. (2009) via 02_research/israel/haifa-bay-sediment-budget.md line 92: breaker-zone Hs exceeded 12 h/yr, CAMERI buoys, used for the ~5 m closure depth"
+  },
+  "storm_extreme": {
+   "Hs": 5.0,
+   "T": 15.0,
+   "src": "Carmel, Inman & Golik (1985) Coastal Engineering 9 (abstract, via israel-wave-climate-and-tides.md R4): storm waves > 5 m Hs, periods up to 15 s"
+  },
+  "closure_depth_m": 5.0,
+  "closure_src": "Zviely et al. (2009) via haifa-bay-sediment-budget.md line 72",
+  "lst_m3yr": [
+   60000,
+   72000
+  ],
+  "lst_src": "Zviely et al. (2007) via haifa-bay-sediment-budget.md line 16: net LST 60,000-72,000 m3/yr at the south Carmel coast before Haifa Bay",
+  "haifa_trap_m3yr": 66000,
+  "haifa_trap_src": "Zviely et al. (2007, 2009) via haifa-bay-sediment-budget.md line 17: ~5 million m3 trapped at the Haifa Port breakwater 1929-2004, ~66,000 m3/yr",
+  "seasonal_bed_change_m": 1.0,
+  "seasonal_src": "Lior's observation (PLAN.md insight h-B): about 1 m seasonal bed-level change at Haifa; not yet sourced (ASSUMPTION; 0.5-1.5 m sensitivity)"
+ }
+}

@@ -5,28 +5,28 @@
   "name": "Burkitts Reef (\"Greg's Reef\")",
   "place": "Bargara, near Bundaberg, Queensland",
   "country": "Australia",
-  "lat": 24.8205,
-  "lon": 152.4625,
+  "lat": -24.8157,
+  "lon": 152.4675,
   "year": "Construction Feb 1997 (2 days on-reef excavator work); first council application 1982 [R4][R8][R1][R6]",
   "type": "Existing natural basalt boulder headland reef, reshaped in place — boulders broken down/relocated with a rented excavator, not a new engineered structure [R1][R3][R4][R6][R8]",
   "purpose": "Surfing only — remove/relocate hazardous boulders and old rail-track debris that made the point break dangerous and largely unsurfable [R1][R3][R6]",
-  "size": "~300 m3 of rock moved; at least 12 large basalt boulders relocated/broken down; ~2.5 m local tide swing exploited to work at low tide [R4][R8]",
+  "size": "~300 m3 of rock moved; at least 12 large basalt boulders relocated/broken down; ~2.5 m local tide swing exploited to work at low tide [R4][R8] Shape model (07_scale/shapes/burkitts-reef-bargara/HANDOFF.md section 3; LOW confidence): the traced outline is the whole visible basalt rock platform on the Esri image of 2025-09-05 (registry img-08): area 31,485 m2, 321 m E-W x 377 m N-S (minimum values; the image frame cuts the polygon at the south). It is NOT the reshaped boulder zone, whose location is not defined in any source; the card's ~300 m3 and ~12 boulders are text values only and cannot be checked against the outline. Tide swing ~2.5 m [R4] has no datum.",
   "cost": "~AUD $10,000 (excavator rental) [R1][R4][R8]",
-  "cost_usd_approx": "~USD $6,500-7,500 (rough 1997 FX estimate, not sourced from an FX reference)",
+  "cost_usd_approx": "~USD $6,500-7,500 (rough 1997 FX estimate, not sourced from an FX reference) ASSUMPTION A1: the 1997 AUD/USD rate (about 0.65-0.75) is the agent's recollection, no exchange-rate source consulted; effect about +-10 %. The AUD 10,000 itself is reported identically by R1, R4, R6, R8 but all trace back to Redgard's account (no invoice seen).",
   "financed_by": "Greg Redgard personally, who mortgaged his house; approvals only (no funding) from the Beach Protection Authority of Queensland and Burnett Shire Council [R1][R6]",
   "motivation": "One local surfer's grassroots push, not a council/tourism/erosion program: Greg Redgard, a Bargara Boardriders Association member, first applied in 1982 and spent over a decade lobbying before approval landed in 1997 [R1][R3][R4][R6][R8]",
   "designer": "Greg Redgard, a local sugarcane cutter with no engineering background or formal reef modelling/scale testing [R1][R4][R6]",
   "contractor": "None named as a firm — Redgard and his mates did the work themselves using a rented Kobelco hydraulic excavator [R1][R4][R6]",
-  "status_now": "Still standing and still surfed as of the most recent (2024) coverage, known locally as \"Greg's Reef\"; no reported repair, damage, or removal in nearly three decades [R1][R5]",
+  "status_now": "Still standing and still surfed as of the most recent (2024) coverage, known locally as \"Greg's Reef\"; no reported repair, damage, or removal in nearly three decades [R1][R5] Decision: verdict 'worked' was assigned by the dossier agent (verified_on 2026-09-24), not by a source, because every source found calls it a success; the evidence base is media and anecdotal (Redgard's own account, a researcher's before/after estimate relayed by R4, forum comments) with no monitoring data, so the verdict is of moderate reliability.",
   "verdict": "worked",
   "hover_text": "A Bargara sugarcane cutter spent AUD $10,000 of his own money (mortgaging his house) to have an excavator reshape a natural basalt reef in 1997, after a 15-year fight for approval — surfable days rose from a handful a year to about 30, and the reef still works, unrepaired, almost three decades later [R1][R4][R6][R8].",
-  "design_as_planned": "No formal engineering design, wave model, or scale test — Redgard designed and built it by instinct, telling ABC \"Not rocket science, really, when you think about it.\" The plan was simply to break down/relocate the boulders and discarded railway-track debris blocking the takeoff zone so a wave could \"break over it,\" turning a hazard-strewn stretch into a rideable right-hand point break. No modelled promises about wave height, beach width, or ecological effect were made [R1][R5][R6][R8].",
-  "as_built_vs_design": "Because there was no formal design, sources report little planned-vs-built gap: construction (completed February 1997) matched Redgard's simple intent. A Kobelco hydraulic excavator worked at low tide (using the ~2.5 m local tide range) to break down and reposition at least 12 large boulders, clearing a deep gutter that had split the wave into two disconnected sections, with gaps filled partly by hand — reportedly including carrying bricks out on a surfboard. Construction duration is reported two ways: R4/R8 describe the on-reef excavator work as \"two days (~8 hours),\" while ABC News (R1) describes the whole job as completed \"within weeks\" of approval — a genuine, unresolved cross-source discrepancy the dossier flags rather than silently resolving. Some of the large rocks removed from the takeoff zone were relocated to the shoreline rather than discarded, where locals still use them for fishing [R1][R4][R5][R6][R8].",
-  "outcome": "Surfable days rose from \"a handful\" per year before the works to roughly 30 days a year afterward, with overhead (4+ ft) conditions on the order of 4 days a year, per researcher Andrew Pitt (SurfingRamps.com.au), cited independently via Raised Water Research and a Swellnet forum comment. Wave face height is reported at 2-6 ft (0.5-2 m), period 7-10 seconds, described as a consistent peeling face that occasionally barrels. Best swell window is November-April. The modification has held for nearly three decades with no reported maintenance, storm damage, or re-work. No coastal-protection outcome or ecological impact study was found (not a stated goal) [R1][R3][R4][R6][R8].",
-  "why_worked_or_failed": "By the consensus of every source found, this is treated as a rare unambiguous success among artificial/enhanced surf reefs: (1) it reshaped an existing natural reef rather than importing new structure, unlike sandbag/geotextile reefs that must create a wholly new bathymetric feature; (2) it was a simple, low-risk intervention — removing hazards and gap-filling rather than engineering a specific wave shape, so there was little to go wrong structurally, unlike geotextile-bag reefs whose fabric tore, shifted, or sank; (3) a large natural tide range (~2.5 m) made the boulders workable at low tide with ordinary excavation equipment, without marine plant or diving contractors; (4) rock/boulder material is inherently more durable than sand-filled geotextile bags. No source reports a failure mode for this reef [R3][R4].",
-  "unexpected_results": "Boulders cleared from the takeoff zone were relocated to the shoreline, where locals now use them as a fishing spot — an unplanned secondary benefit. The project was picked up by TIME magazine (per ABC) as the \"world's first surf enhancement project\" and resurfaced in Australian national media in January 2024 as a good-news/DIY-hero story. The same reef is independently marketed as a scuba/snorkel attraction (\"Burkitts Reef Dive Site\"), an example of one enhanced natural reef serving two recreational audiences. Redgard's daughter Tahlija, who grew up surfing the reef, became a professional surfer and credits it directly. No litigation, safety incident, localism/crowding conflict, or negative unexpected consequence was found in any source [R1][R5][R6][R10][R13].",
-  "could_be_better": "None of the sources reviewed (including comparison pages that do critique other reefs' bag sizes, crest depths, and funding models) offer a specific critique of Burkitts Reef's execution — it is consistently used as the positive contrast case rather than a subject of critique. No critical surfer commentary was found. Sources suggest very little \"could have been done better\": if anything, some note it did not create \"a world-class surf spot,\" only a modest, locally valued improvement — offered as a realistic-expectations lesson rather than a criticism [R3][R4][R8].",
-  "relevance_to_israel": "Bargara's ~2.5 m tide swing is far larger than the Israeli Mediterranean coast's tide range (well under 0.5 m, micro-tidal) — Burkitts' construction method assumed tidal exposure that a Haifa-area site would not get, so similar reshaping there would likely need different plant (barge/crane, diver-assisted work) rather than simple low-tide excavator access. Bargara's 2-6 ft, 7-10 s point-break wave comes from a defined Coral Sea/Pacific swell season (Nov-Apr); Israeli Mediterranean wave climate is generally smaller and more wind-swell dominated with shorter period. The core transferable lesson is procedural/economic rather than technical: a modest, self-funded, reshape-what's-already-there approach (relocating existing boulders rather than importing new engineered material) achieved a multi-decade, apparently maintenance-free improvement for roughly AUD $10,000, in contrast to far more expensive professionally engineered geotextile-bag reefs elsewhere that have frequently failed or required costly renewal. For any Haifa/Israel natural reef or rock outcrop with existing hazards, a similarly minimal clear/reshape approach is the direct analogy worth testing, if geology and permitting allow [R4][R1].",
+  "design_as_planned": "No formal engineering design, wave model, or scale test — Redgard designed and built it by instinct, telling ABC \"Not rocket science, really, when you think about it\" [R1]. The plan was simply to break down/relocate the boulders and discarded railway-track debris blocking the takeoff zone so a wave could \"break over it,\" turning a hazard-strewn stretch into a rideable right-hand point break [R1][R6]. No modelled promises about wave height, beach width, or ecological effect were made [R1][R5][R6][R8].",
+  "as_built_vs_design": "Because there was no formal design, sources report little planned-vs-built gap: construction (completed February 1997) matched Redgard's simple intent [R4] (February 1997 completion: R4; 'matched his intent' is the card author's reading of the absence of any reported gap). A Kobelco hydraulic excavator worked at low tide (using the ~2.5 m local tide range) to break down and reposition at least 12 large boulders, clearing a deep gutter that had split the wave into two disconnected sections, with gaps filled partly by hand — reportedly including carrying bricks out on a surfboard [R4][R6]. The Kobelco make and the 12 boulders are R4; the bricks on the surfboard are R6; the 'deep gutter that split the wave' detail is not isolated to one of R1/R4/R5/R6/R8 (paragraph-level attribution, the pages cannot be re-read here). Construction duration is reported two ways: [R4][R8] describe the on-reef excavator work as \"two days (~8 hours),\" while ABC News [R1] describes the whole job as completed \"within weeks\" of approval — a genuine, unresolved cross-source discrepancy the dossier flags rather than silently resolving. Some of the large rocks removed from the takeoff zone were relocated to the shoreline rather than discarded, where locals still use them for fishing [R1][R4][R5][R6][R8].",
+  "outcome": "Surfable days rose from \"a handful\" per year before the works to roughly 30 days a year afterward, with overhead (4+ ft) conditions on the order of 4 days a year, per researcher Andrew Pitt (SurfingRamps.com.au), cited independently via Raised Water Research and a Swellnet forum comment [R4][R8]. Wave face height is reported at 2-6 ft (0.5-2 m), period 7-10 seconds, described as a consistent peeling face that occasionally barrels [R4] (wave face and period; the 'consistent peeling' wording is paragraph-level, R3/R4/R8). Best swell window is November-April. The modification has held for nearly three decades with no reported maintenance, storm damage, or re-work [R1] (status as of January 2024; 'no reported' is a negative finding of this card). No coastal-protection outcome or ecological impact study was found (not a stated goal) [R1][R3][R4][R6][R8].",
+  "why_worked_or_failed": "By the consensus of the sources listed in References (the card author's synthesis [R1][R3][R4][R6][R8]; points (1)-(4) are inferences, not source statements), this is treated as a rare unambiguous success among artificial/enhanced surf reefs: (1) it reshaped an existing natural reef rather than importing new structure, unlike sandbag/geotextile reefs that must create a wholly new bathymetric feature; (2) it was a simple, low-risk intervention — removing hazards and gap-filling rather than engineering a specific wave shape, so there was little to go wrong structurally, unlike geotextile-bag reefs whose fabric tore, shifted, or sank; (3) a large natural tide range (~2.5 m) made the boulders workable at low tide with ordinary excavation equipment, without marine plant or diving contractors; (4) rock/boulder material is inherently more durable than sand-filled geotextile bags (general engineering judgement of the card author, unsourced here). No source reports a failure mode for this reef [R3][R4].",
+  "unexpected_results": "Boulders cleared from the takeoff zone were relocated to the shoreline, where locals now use them as a fishing spot [R5] — an unplanned secondary benefit. The project was picked up by TIME magazine (per ABC) as the \"world's first surf enhancement project\" [R1] and resurfaced in Australian national media in January 2024 as a good-news/DIY-hero story [R1][R7]. A marine-park dive site with the same name (\"Burkitts Reef Dive Site\", scuba/snorkel) is marketed separately [R10][R15]; it is NOT established that it is the same reef as the reshaped surf break: the image registry rejected the dive video as showing the natural marine-park reef, not the rock-reshaped surf break (03_images/reefs/burkitts-reef-bargara/images.json img-06, img-07; Lior 2026-09-25), so the 'two recreational audiences' reading and the dive site's ~9 m depth [R10] are not used for the surf reef. Redgard's daughter Tahlija, who grew up surfing the reef, became a professional surfer and credits it directly [R1]. No litigation, safety incident, localism/crowding conflict, or negative unexpected consequence was found in any source [R1][R5][R6][R10].",
+  "could_be_better": "None of the sources reviewed (a negative finding of this card; including comparison pages that do critique other reefs' bag sizes, crest depths, and funding models) offer a specific critique of Burkitts Reef's execution — it is consistently used as the positive contrast case rather than a subject of critique. No critical surfer commentary was found. Sources suggest very little \"could have been done better\": if anything, some note it did not create \"a world-class surf spot,\" only a modest, locally valued improvement — offered as a realistic-expectations lesson rather than a criticism [R3][R4][R8].",
+  "relevance_to_israel": "Bargara's ~2.5 m tide swing [R4] is far larger than the Israeli Mediterranean coast's tide range (well under 0.5 m, micro-tidal [R18], a web tide table) — Burkitts' construction method assumed tidal exposure that a Haifa-area site would not get, so similar reshaping there would likely need different plant (barge/crane, diver-assisted work) rather than simple low-tide excavator access (inference of the card author, unsourced). Bargara's 2-6 ft, 7-10 s point-break wave [R4] comes from a defined Coral Sea/Pacific swell season (Nov-Apr; the season is stated without a located source in this card, (unsourced)); Israeli Mediterranean wave climate is generally smaller and more wind-swell dominated with shorter period (general statement of the card author, (unsourced) here; Lior's Shikmona buoy readings are cited in the Albany card). The core transferable lesson is procedural/economic rather than technical: a modest, self-funded, reshape-what's-already-there approach (relocating existing boulders rather than importing new engineered material) achieved a multi-decade, apparently maintenance-free improvement for roughly AUD $10,000 [R1][R4][R6], in contrast to far more expensive professionally engineered geotextile-bag reefs elsewhere that have frequently failed or required costly renewal (comparison is the card author's, based on the other reef cards of this project). For any Haifa/Israel natural reef or rock outcrop with existing hazards, a similarly minimal clear/reshape approach is the direct analogy worth testing, if geology and permitting allow [R4][R1].",
   "reviews": [
     {
       "who": "Greg Redgard",
@@ -148,91 +148,91 @@
       "citation": "ABC News (journalists Sarah Howells, Danielle O'Neal) (2024-01-28). \"How a sugarcane cutter and his mates created a world-first DIY surf break at Burkitts Reef, Bargara.\"",
       "url": "https://www.abc.net.au/news/2024-01-28/diy-surf-break-built-by-mates-at-burkitts-reef-bargara/103387450",
       "accessed": "2026-09-24",
-      "supports": "builder identity, 1997 approval after decade-plus of applications, mortgage financing, construction method, quotes, TIME magazine feature, daughter Tahlija quote, current status"
+      "supports": "builder identity, 1997 approval after decade-plus of applications, mortgage financing, construction method, quotes, TIME magazine feature, daughter Tahlija quote, current status. Audit 2026-10-10: news article; location: article body (no page numbers); quotes of Redgard and his daughter as reported."
     },
     {
       "id": "R2",
-      "citation": "Wikipedia (2026). \"Multi-purpose reef.\"",
+      "citation": "Wikipedia contributors. \"Multi-purpose reef.\" Wikipedia, The Free Encyclopedia (revision date not recorded; the year 2026 earlier given was the access year).",
       "url": "https://en.wikipedia.org/wiki/Multi-purpose_reef",
       "accessed": "2026-09-24",
-      "supports": "1997 date, 'shifting boulders' description, comparison context with Cable Station Reef and Narrowneck"
+      "supports": "1997 date, 'shifting boulders' description, comparison context with Cable Station Reef and Narrowneck. Audit 2026-10-10: tertiary; section not recorded; context only."
     },
     {
       "id": "R3",
-      "citation": "Coastal Management / ICM (Angus Jackson) (2026). \"Building Artificial Surf Reefs: Worldwide Lessons & Applications.\"",
+      "citation": "Jackson, A. / Coastal Management (ICM) (n.d.; undated page, year 2026 earlier given was the access year). \"Building Artificial Surf Reefs: Worldwide Lessons & Applications.\" Web page of a coastal-engineering consultancy.",
       "url": "https://www.coastalmanagement.com.au/artificial-surf-reefs",
       "accessed": "2026-09-24",
-      "supports": "1997 date, basalt boulder material, excavator-at-low-tide method, ~300 m3 volume, surf-only objective, wave description"
+      "supports": "1997 date, basalt boulder material, excavator-at-low-tide method, ~300 m3 volume, surf-only objective, wave description. Audit 2026-10-10: secondary commercial source; location: its Burkitts entry in the comparison table."
     },
     {
       "id": "R4",
-      "citation": "Raised Water Research (2026). \"Burkitts Reef\" spot page.",
+      "citation": "Raised Water Research (n.d.). \"Burkitts Reef\" [spot page in its artificial-reef database]. No author or date shown (the year 2026 earlier given was the access year).",
       "url": "https://raisedwaterresearch.com/spot/artificial-reef/australia/queensland/burkitts-reef/",
       "accessed": "2026-09-24",
-      "supports": "1982 initial application / Feb 1997 completion timeline, ~12 boulders / ~300 m3, ~AUD $10,000 cost, wave face height/period, before/after surfable-days figures, 2.5 m tide swing, designer, Kobelco excavator brand, approving authorities"
+      "supports": "1982 initial application / Feb 1997 completion timeline, ~12 boulders / ~300 m3, ~AUD $10,000 cost, wave face height/period, before/after surfable-days figures, 2.5 m tide swing, designer, Kobelco excavator brand, approving authorities. Audit 2026-10-10: secondary website; it relays Andrew Pitt's before/after estimate (original at SurfingRamps.com.au not seen). Its tide swing of ~2.5 m has no datum."
     },
     {
       "id": "R5",
       "citation": "ABC Radio, \"The Bright Side\" (2024). \"Mates' surf break still going strong.\"",
       "url": "https://www.abc.net.au/listen/programs/the-bright-side/mates-surf-break-still-going-strong/103068400",
       "accessed": "2026-09-24",
-      "supports": "'Greg's Reef' nickname, quotes, boulders relocated to shoreline now used for fishing, Andrew Pitt evaluation, Redgard still surfing at 61"
+      "supports": "'Greg's Reef' nickname, quotes, boulders relocated to shoreline now used for fishing, Andrew Pitt evaluation, Redgard still surfing at 61. Audit 2026-10-10: radio programme page; location: programme summary/transcript text; Pitt's evaluation is relayed."
     },
     {
       "id": "R6",
-      "citation": "Yahoo Lifestyle (2026, syndicated). \"How a Motivated Surfer Created an Epic New Surf Break in Australia.\"",
+      "citation": "Yahoo Lifestyle (syndicated; date not recorded, the year 2026 earlier given was the access year). \"How a Motivated Surfer Created an Epic New Surf Break in Australia.\" Web article.",
       "url": "https://www.yahoo.com/lifestyle/motivated-surfer-created-epic-surf-210000398.html",
       "accessed": "2026-09-24",
-      "supports": "'unrideable' quote, decade-plus of council persuasion, ~AUD $10,000 cost, rented 30-tonne excavator, bricks carried out on a surfboard"
+      "supports": "'unrideable' quote, decade-plus of council persuasion, ~AUD $10,000 cost, rented 30-tonne excavator, bricks carried out on a surfboard. Audit 2026-10-10: syndicated secondary source of the ABC story; not independent of R1."
     },
     {
       "id": "R7",
-      "citation": "Ground News (2026). \"The surfer who mortgaged his house to create a public surf break\" (aggregator page).",
+      "citation": "Ground News (aggregator; date not recorded). \"The surfer who mortgaged his house to create a public surf break.\"",
       "url": "https://ground.news/article/the-surfer-who-mortgaged-his-house-to-create-a-public-surf-break",
       "accessed": "2026-09-24",
-      "supports": "confirms ABC News as originating report; coverage-breadth context"
+      "supports": "confirms ABC News as originating report; coverage-breadth context. Audit 2026-10-10: aggregator only; supports no number in the card."
     },
     {
       "id": "R8",
       "citation": "Swellnet — comment thread including user 'truebluebasher' (posted 2022-06-02).",
       "url": "https://www.swellnet.com/comments/get/540429",
       "accessed": "2026-09-24",
-      "supports": "1982 Bargara Boardriders proposal, $10,000 cost, 1997 completion, before/after performance figures, contrast with failed professionally-designed reefs"
+      "supports": "1982 Bargara Boardriders proposal, $10,000 cost, 1997 completion, before/after performance figures, contrast with failed professionally-designed reefs. Audit 2026-10-10: anonymous forum comment ('truebluebasher'), an anecdotal source; the 30 days/yr and 4 days/yr overhead figures are repeated from Pitt via R4, so they are one source counted twice, not two independent confirmations."
     },
     {
       "id": "R9",
       "citation": "Swellnet Forums — thread 'An actual functioning man-made reef. Burkitts Reef, Bargara,' started by user Dicky Roberts. (BLOCKED: HTTP 403, title/framing only)",
       "url": "https://www.swellnet.com/forums/surfing-reef-designs/577692",
       "accessed": "2026-09-24",
-      "supports": "existence of a positive surfer-community discussion thread about the reef"
+      "supports": "existence of a positive surfer-community discussion thread about the reef. Audit 2026-10-10: NOT READ (HTTP 403); supports no statement."
     },
     {
       "id": "R10",
-      "citation": "DivePlanit (2026). \"From macro to megafauna: shore diving the Bundaberg coast.\"",
+      "citation": "DivePlanit (n.d.; year 2026 earlier given was the access year). \"From macro to megafauna: shore diving the Bundaberg coast.\" Dive-travel web article.",
       "url": "https://www.diveplanit.com/diving/dive-bundaberg/",
       "accessed": "2026-09-24",
-      "supports": "Burkitt's Reef dive-site description, depth to ~9 m, coral gardens/small bommies, marine-life list"
+      "supports": "Dive-site description of the marine-park 'Burkitt's Reef' (coral gardens/small bommies, marine-life list; depth ~9 m as the article states, datum not stated). Audit 2026-10-10: the registry rejected the related dive video as showing the natural marine-park reef, not the rock-reshaped surf break; NOT used for the surf reef (the ~9 m depth is not a depth of the surf reef)."
     },
     {
       "id": "R11",
-      "citation": "Wikipedia (2026). \"Bargara, Queensland.\"",
+      "citation": "Wikipedia contributors. \"Bargara, Queensland.\" Wikipedia, The Free Encyclopedia (revision date not recorded).",
       "url": "https://en.wikipedia.org/wiki/Bargara,_Queensland",
       "accessed": "2026-09-24",
-      "supports": "Bargara town coordinates, Burkitt Street place-name near the boat ramp"
+      "supports": "Bargara town coordinates, Burkitt Street place-name near the boat ramp. Audit 2026-10-10: town-centre coordinates 24.8205 S, 152.4625 E, NOT the reef (the shape model places the rock platform at about -24.8157, 152.4675; 07_scale/shapes/burkitts-reef-bargara/HANDOFF.md section 3). The card's lat/lon are therefore town-centre values; the sign of lat was corrected from + to - on 2026-10-10. Citations audit 2026-10-10: the card lat/lon no longer uses this value; see gaps[0]."
     },
     {
       "id": "R13",
       "citation": "X (Twitter), @abcsport (2024-01-27). Post with photo and summary of the ABC News story. (BLOCKED: HTTP 402/paywall)",
       "url": "https://x.com/abcsport/status/1751370066221051992",
       "accessed": "2026-09-24",
-      "supports": "journalist byline, restates core facts, image lead — quote retained via R14 corroboration"
+      "supports": "journalist byline, restates core facts, image lead — quote retained via R14 corroboration. Audit 2026-10-10: NOT READ (blocked HTTP 402); the [R13] tag was removed from the card text on 2026-10-10; it remains listed as an image lead only."
     },
     {
       "id": "R14",
       "citation": "Instagram, @abcbrisbane, post C2n6UcWvcGV (2024-01-27/28).",
       "url": "https://www.instagram.com/abcbrisbane/p/C2n6UcWvcGV/",
       "accessed": "2026-09-24",
-      "supports": "image/video lead for the same ABC News story; corroborates R13's quote text"
+      "supports": "image/video lead for the same ABC News story; corroborates R13's quote text. Audit 2026-10-10: social-media post (not read in full); lead only."
     },
     {
       "id": "R15",
@@ -254,6 +254,55 @@
       "url": "https://www.youtube.com/watch?v=O3bEn8029XQ",
       "accessed": "2026-09-24",
       "supports": "video lead (general Bargara surf content, not confirmed to show Burkitts Reef specifically)"
+    },
+    {
+      "id": "R18",
+      "citation": "Tide-Forecast.com (live data). \"Haifa, Israel tide times.\" Web tide table (not a primary tide source).",
+      "url": "https://www.tide-forecast.com/locations/Haifa/tides/latest",
+      "accessed": "2026-09-24",
+      "supports": "Haifa tidal range well under 0.5 m (same page as R13 of the Pratte's card). LOCATION: live tide page, access day only."
+    },
+    {
+      "id": "R19",
+      "citation": "Jackson, L.A. and Corbett, B.B. (2007). Review of Existing Multi-Functional Artificial Reefs. Australasian Conference on Coasts and Ports 2007, International Coastal Management, Queensland; section 2 Bargara Reef (pp.1-2), Fig. 1-3, Table 1 (p.6).",
+      "url": "https://ref.coastalrestorationtrust.org.nz/site/assets/files/7954/2007_cp-review_mfar.pdf",
+      "accessed": "2026-10-10",
+      "supports": "north side of the headland, effectively a half V; no modelling; Phase 3 work-zone figure (Redgard); spring tide range ~2.5 m (text) and 3.7 m (Table 1); ~300 m3; ~A$10,000; no monitoring"
+    },
+    {
+      "id": "R20",
+      "citation": "Maritime Safety Queensland (2026). Semidiurnal Tidal Planes - 2026 (height above LAT 1992, epoch 2010-2029), p.8, Bundaberg (Burnett Heads): MHWS 2.94, MHWN 2.35, MLWN 1.20, MLWS 0.61, MSL 1.78, HAT 3.68 m.",
+      "url": "https://www.msq.qld.gov.au/_/media/tmronline/msqinternet/msqfiles/home/tides/tidal-planes/2026-semidiurnal-tidal-planes.pdf",
+      "accessed": "2026-10-10",
+      "supports": "port tide levels (nearest standard port); spring range 2.33 m"
+    },
+    {
+      "id": "R21",
+      "citation": "Bundaberg Regional Council (2016). BRC Elevation Basemap 2016, 1 m DEM (ArcGIS MapServer).",
+      "url": "https://mappingdata.bundaberg.qld.gov.au/arcgis/rest/services/BRC_2016_DEM_1m/MapServer",
+      "accessed": "2026-10-10",
+      "supports": "context: platform is NoData (below LiDAR floor); lowest valid 0.58 m"
+    },
+    {
+      "id": "R22",
+      "citation": "Bundaberg Region (n.d.). Burkitts Reef Dive Site: 'Stretching along the headland in depths of two to eight metres'.",
+      "url": "https://www.bundabergregion.org/?p=5180",
+      "accessed": "2026-10-10",
+      "supports": "dive depths along the headland (same headland as the surf reef)"
+    },
+    {
+      "id": "R23",
+      "citation": "Maritime Safety Queensland. Semidiurnal Tidal Planes 2026, Burnett Heads (height above LAT).",
+      "url": "https://www.msq.qld.gov.au/_/media/tmronline/msqinternet/msqfiles/home/tides/tidal-planes/2026-semidiurnal-tidal-planes.pdf",
+      "accessed": "2026-10-19",
+      "supports": "Spring range 2.33 m and mean range 1.74 m at Burnett Heads (Burnett Heads row not read directly: PDF host returned 403)"
+    },
+    {
+      "id": "R24",
+      "citation": "Reef rating (A surf quality, B safety and longevity, C sediment / storm protection), scores 1-5, approved by Lior 2026-10-19. Table: 08_paper/notes/rating_final.md; evidence per reef: 08_paper/notes/rating_evidence.md (this review, repo-internal files).",
+      "url": "",
+      "accessed": "2026-10-19",
+      "supports": "Scores A/B/C and reason for this reef"
     }
   ],
   "blocked_sources": [
@@ -261,9 +310,9 @@
     "R13 - https://x.com/abcsport/status/1751370066221051992 - HTTP 402"
   ],
   "gaps": [
-    "Precise reef coordinates (lat/lon used here is Bargara town centre, not the reef itself) — not found",
-    "Construction duration conflict: '2 days/~8 hours' (R4/R8) vs 'within weeks' (R1) — left as an open discrepancy, not resolved",
-    "1982-vs-'over a decade' framing conflict between R4/R8 (specific year) and R1/R6 (vaguer duration) — left as an open discrepancy",
+    "Precise reef coordinates: not found in any text source. Citations audit 2026-10-10: lat/lon now = the traced rock-platform point -24.8157, 152.4675 (mean of the traced platform polygon, 07_scale/shapes/burkitts-reef-bargara/shape.json geo and HANDOFF.md section 3, Esri image 2025-09-05, LOW confidence: the platform that carries the reef, not the reshaped boulder zone itself); the old value was the Bargara town centre (-24.8205, 152.4625 [R11])",
+    "Construction duration conflict: '2 days/~8 hours' ([R4][R8]) vs 'within weeks' ([R1]) — left as an open discrepancy, not resolved",
+    "1982-vs-'over a decade' framing conflict between [R4][R8] (specific year) and [R1][R6] (vaguer duration) — left as an open discrepancy",
     "No ecological impact study found for the 1997 boulder-moving's effect on the reef",
     "No coastal-protection outcome data (not a stated goal)",
     "Jackson and Corbett's 2007 'Review of Existing Multi-Functional Artificial Reefs' could not be fetched directly (access blocked)"
@@ -317,5 +366,27 @@
     "url": "https://live-production.wcms.abc-cdn.net.au/a6112bacdcff48646a25f1539549b362?impolicy=wcms_crop_resize&cropH=583&cropW=874&xPos=47&yPos=0&width=862&height=575",
     "reason": "Clearest, most unambiguous structure_visible shot (Kobelco excavator + marked boulders during the Feb 1997 construction) — directly documents the reef-reshaping work this reef's story is about, unlike the wave-riding shots which could be confused with generic surf photography.",
     "runner_up": "https://live-production.wcms.abc-cdn.net.au/a315cc055a6a5d93d4c292c7857238d7?impolicy=wcms_crop_resize&cropH=1152&cropW=1728&xPos=160&yPos=0&width=862&height=575"
+  },
+  "network_pass_2026_10_10": {
+    "tide_values_side_by_side": {
+      "RWR spot page (R4)": "2.5 m tide swing (no datum)",
+      "J&C 2007 text (R19)": "spring tidal range about 2.5 m",
+      "J&C 2007 Table 1 (R19)": "tide range 3.7 m",
+      "MSQ Burnett Heads 2026 (R20)": "MHWS-MLWS 2.33 m; HAT-LAT 3.68 m (datum LAT)"
+    },
+    "reef_zone": "Redgard's Phase 3 work zones (later designed works, not the 1997 first works) are marked on an oblique aerial, J&C 2007 Fig. 1 (RWR copy 'Burkitts.jpg'): reprofile several surface rocks / remove to lengthen break (ellipse) / improve shore break / reprofile dangerous rocks, on the north and east seaward side of the platform. Georeferenced: ellipse ~1,750 m2 centred -24.81510, 152.46652, +-20-30 m (07_scale/shapes/burkitts-reef-bargara/shape.json reef_zone). The 1997 first works remain unlocated (RWR: boulders 'relocated to gaps in the reef where the wave would break at higher tides').",
+    "duration_conflict": "RWR: two days (8 hours) in Feb 1997; ABC/Swellnet: 'within weeks' - kept side by side",
+    "dive_depth": "2-8 m along the headland (R22): same headland as the surf reef per this source",
+    "not_found": "QImagery 1990s aerials (token needed), Pitt (2005) 'Redgard the Reef Renovator', Redgard (2006) pers. comm. (maps of phases 1-3); see 02_research/dead_ends/burkitts-reef-bargara.json"
+  },
+  "tide_check": "Burkitts (reference port: Burnett Heads): Maritime Safety Queensland 2026 planes give MHWS 2.94 m, MLWS 0.61 m (above LAT), so spring range 2.33 m and mean range 1.74 m. This replaces the earlier '2.5 m tide swing' (Raised Water Research, basis unknown). The planes come from this project's own copy (08_paper/data/profiles/_no_3d_model.json); the MSQ row itself was not read directly. [R23]",
+  "rating": {
+    "rank": 3,
+    "A": "3",
+    "B": "4",
+    "C": "?",
+    "reason": "rock, reported working; thin evidence [R24]",
+    "scale": "1-5, ?=no evidence, *=provisional",
+    "source": "this review, Lior-approved 2026-10-19"
   }
 }

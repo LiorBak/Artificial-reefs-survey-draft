@@ -1,0 +1,5 @@
+{
+ "_about": "Pratte's re-verification 2026-10-10: optional wording edits for main to apply after the page agent finishes (04_build/data). No numbers change.",
+ "caveats": {"Reef position": {"stated": ["text: '200 m south of the 1-mile outfall'; earlier CCC hint 217 m away; jetty-based estimate 160 m further north", "text: '200 m south of the 1-mile outfall' (but the same paper's Fig. 2 reads about 340 m from the outfall and 670 m from the Grand Street jetty); earlier CCC hint 217 m away; jetty-based estimate 160 m further north"]}},
+ "curated": {"Footprint": {"stated": ["same design drawing (Skelly; Fig. 4 of the 2003 paper); 110 bags x 6.39 m2 = 703 m2 of bag footprint", "same design drawing (Skelly; Fig. 4 of the 2003 paper, whose Fig. 20 re-measures at 29.0 x 58.5 m); 110 bags x 6.39 m2 = 703 m2 of bag footprint"]}}
+}

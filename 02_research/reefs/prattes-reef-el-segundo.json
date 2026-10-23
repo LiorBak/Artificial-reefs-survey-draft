@@ -6,28 +6,28 @@
   "name": "Pratte's Reef (permit name: Chevron Reef)",
   "place": "Dockweiler State Beach / El Segundo, California",
   "country": "USA",
-  "lat": 33.915123,
-  "lon": -118.432624,
-  "year": "2000-2001 built (Phase I fall 2000, 110 bags; Phase II spring 2001, +90 bags); removed 2008-2010",
-  "type": "Submerged artificial surf reef (ASR), sand-filled geotextile bags in a V/chevron layout",
-  "purpose": "Surfing — court/permit-mandated legal mitigation for a surf break lost to a 1984 Chevron rock groin",
-  "size": "~200 geotextile bags total, ~1,400-1,600 m3 built volume (vs. ~3,800 m3 / 5,000 yd3 in the original 1997 proposal); crest ~0.9-2.4 m below low-tide sea level (sources disagree)",
-  "cost": "$300,000 Chevron construction payment + $200,000-250,000 California Coastal Conservancy grant + $50,000 Surfrider add-on + ~$300,000 anonymous donation for removal; Surfline's cumulative headline figure is $850,000 over 2000-2008",
+  "lat": 33.92058,
+  "lon": -118.43335,
+  "year": "2000-2001 built (Phase I fall 2000, 110 bags; Phase II spring 2001, +90 bags); removed 2008-2010 Phase 2 dated 2000 in Blacka et al. (2013, p.117) [R19] vs spring 2001 above: sources disagree. RESOLVED 2026-10-10: the monitoring paper by the reef's monitors gives the second installation as 23-24 April 2001 (90 new bags, +80 % volume, crest widened and made shallower, placed over the Phase I bags) [R28, p.3]; Blacka's 'Phase 2 in 2000' is not supported by that primary text.",
+  "type": "Submerged artificial surf reef (ASR), sand-filled geotextile bags in a V/chevron layout [R4][R28]",
+  "purpose": "Surfing — court/permit-mandated legal mitigation for a surf break lost to a 1984 Chevron rock groin [R1][R7]",
+  "size": "~200 geotextile bags total, ~1,400-1,600 m3 built volume (vs. ~3,800 m3 / 5,000 yd3 in the original 1997 proposal); crest ~0.9-2.4 m below low-tide sea level (sources disagree) Mead & Borrero (2011, p.3) give 1,350 m3, the smallest MPR ever built, placed very close to shore [R18] (card 1,400-1,600 m3: sources disagree slightly, both kept). Blacka et al. (2013, Table 4.2; A.11): 64 m x 29 m V, depth 3.0 m (MLLW), 50 m from the undisturbed shoreline; Phase 1 design 110 bags of 3.0 x 2.1 x 1.2 m (~12.7 t, 80-90% fill), crest 1.8 m below MLLW; after Phase 2 (+90 bags, +80% volume) apex 0.9 m below MLLW; crest then dropped 1.5 m in a year; seabed scoured to ~4 m depth [R19]. Primary-source values (Borrero & Nelsen 2003): initial installation 110 bags on 22 September 2000, each about 14 tons when filled, 4 x 7 x 10 ft, max 280 ft3 (7.9 m3), filled 80-90 %; depth at the outermost point after the initial installation about -6 ft MLLW (1.83 m below MLLW); after Phase II within 3 ft of MLLW (0.91 m); obtuse 'V' with apex offshore (p.2-3); 'Pratte's only extends 30' (unit not printed, metres by context; p.14); 'approximately 1600 cubic meters of sand contained in 200' bags (p.16) [R28]. 200 bags x 7.9 m3 x 80-90 % fill = 1,264-1,422 m3 (project arithmetic, not a source value). Project-traced Phase I design layout (not the as-built 200-bag reef): 110 bags, area 435.2 m2, bounding box 58.0 x 28.6 m (alongshore x cross-shore), arms 44.7 / 44.4 deg to the V axis, traced by hand on the Skelly design drawing (RWR copy) and cross-checked on Fig. 4 of [R28] [R4][R28][R29]. Blacka's 64 x 29 m [R19] is therefore 10 % longer than this traced outline (58.0 m); its basis is not stated.",
+  "cost": "$300,000 Chevron construction payment + $200,000-250,000 California Coastal Conservancy grant + $50,000 Surfrider add-on + ~$300,000 anonymous donation for removal; Surfline's cumulative headline figure is $850,000 over 2000-2008 [R1][R4][R7]. Mead & Borrero (2011, p.3): US$300,000 to build (Phase 1 budget only) and removal in 2010 cost more than twice that [R18]. Blacka et al. (2013, p.117-119): build US$550,000 ($300,000 + $250,000); removal US$551,000 (stage 1 budget $285,000; stage 2 $266,000 two years later); 142.5 containers removed, 1 left visible, 42.5 torn or buried [R19]. SOURCES DISAGREE on the build total (US$300,000 Phase 1 only [R18] vs US$550,000 total [R19]) and the removal total (more than US$600,000 [R18] vs US$551,000 [R19]); all kept.",
   "cost_usd_approx": 850000,
-  "financed_by": "Chevron Corporation (construction, as legal mitigation), California Coastal Conservancy (construction top-up), Surfrider Foundation (added funds + anonymous-donor-funded removal)",
+  "financed_by": "Chevron Corporation (construction, as legal mitigation), California Coastal Conservancy (construction top-up), Surfrider Foundation (added funds + anonymous-donor-funded removal) [R1][R4][R7]",
   "motivation": "Court/permit-mandated mitigation for loss of the surfable Grand Avenue break, caused by Chevron's 1984 rock groin built to stop beach erosion threatening its El Segundo refinery's offshore oil-pipeline terminal [R1][R7]",
   "designer": "Skelly Engineering (David W. Skelly, PE)",
   "contractor": "Placed by barge-mounted crane (builder not separately named in sources); removal directed by Coastal Frontiers Corporation, with American Marine Corporation (dive crew) and Morrissey Construction Company (onshore handling/disposal) [R3][R6][R10]",
-  "status_now": "Removed. Phase I removal fall 2008 (Sept 30-Oct 17, 2008); Phase II removal fall 2010, coinciding with expiry of the original 10-year experimental permit. First-ever removal of a purpose-built artificial surfing reef [R3][R6][R9][R10]",
+  "status_now": "Removed. Phase I removal fall 2008 (Sept 30-Oct 17, 2008); Phase II removal fall 2010, coinciding with expiry of the original 10-year experimental permit [R1][R3][R6][R9][R10]. First-ever removal of a purpose-built artificial surfing reef [R3][R6][R9][R10]",
   "verdict": "failed",
   "hover_text": "~200 sand-filled geotextile bags (~1,400-1,600 m3) built 2000-2001 for roughly $550,000-$850,000, funded by Chevron as legal mitigation for a lost surf break; never produced a consistently surfable wave in 8 years and was removed in 2008-2010, the first-ever removal of a purpose-built artificial surfing reef [R1][R7][R6].",
   "design_as_planned": "The original 1997 CEQA filing by Surfrider Foundation (via the LA Dept. of Parks & Recreation) described '10-20 large geo-textile fabric bags containing approx. 5,000 cubic yards of sand' [R8]. As engineered by Skelly Engineering, the built design called for a V-shaped (delta/chevron) reef with arms at roughly 45 degrees to the predominant swell, meant to focus and peel incoming waves like a natural point break, cresting close to the low-tide waterline for consistent breaking [R4]. The goal was purely restoring a lost surfing amenity at the Grand Avenue break, not beach nourishment or ecological habitat creation [R4][R1].",
-  "as_built_vs_design": "Construction proceeded in two funded phases instead of one: 110 bags in fall 2000 (using the initial $300,000 Chevron payment), then ~90 more bags in spring 2001 once the Coastal Conservancy added $200,000-250,000, for roughly 200 bags total [R1][R7]. Even after that expansion, the built reef was far smaller than the 1997 proposal's ~5,000 yd3 (~3,800 m3) target: built volume is reported at only ~1,400-1,600 m3 [R2][R4] — under half the size first proposed, and by Surfrider's own later accounting roughly one-seventh the volume of Mount Maunganui and one-tenth to one-thirtieth the volume of Narrowneck [R7]. Individual bags were also markedly smaller (~8 m3 each) than Narrowneck's containers (140-320 m3 each) [R2]. Chad Nelsen (Surfrider): 'we probably should have said $300,000 is not enough' [R7].",
-  "outcome": "Wikipedia states the reef 'had very little effect on the surfing conditions at Dockweiler Beach and ... no measurable effect on the shoreline morphology' [R1][R2]. Surfline's 2008 feature: over 'eight plus years, Pratte's Reef was as useless as useless gets' and 'it never produced a consistently surfable wave' [R7]. Diver surveys found bags had moved, sunk, and been buried by sand, with the black polypropylene material visibly deteriorating — 'largely disintegrated' within about two years [R4][R2]. No coastal-protection or ecological benefit is reported anywhere in the sources found. The reef was removed over two phases (fall 2008, fall 2010), the first-ever removal of a purpose-built artificial surfing reef [R3][R6][R7][R9][R10].",
-  "why_worked_or_failed": "Undersized for its budget and site: a $300,000-$550,000 construction budget bought a reef roughly 1/7 the size of Mount Maunganui's and 1/10-1/30 the size of Narrowneck's [R7]. Crest-depth mismatch: on big swells the crest was too deep to trigger breaking, so waves broke outside the reef [R1][R7]. Pre-existing degraded beach: the Chevron groin had already straightened/steepened the beach and buried the original Grand Avenue break in trapped sand, conditions a small mitigation reef could not reverse [R7]. Material/structural failure: sand-filled fabric bags resting on a sandy, mobile seabed with no rigid foundation settled, sank, and were buried, and the polypropylene fabric deteriorated within roughly two years [R4][R2]. Insufficient pre-construction monitoring: Nelsen said more monitoring of sand bars and beach conditions beforehand 'would have told us the reef was too small before we even put it in' [R7].",
-  "unexpected_results": "No fishing-pressure or ecological side effects are reported for Pratte's Reef in any source found, unlike Narrowneck (Gold Coast), whose geotextile containers were colonized by macro-algae, benthos and pelagic fish and became popular for local (spear-)fishing, diving and snorkeling, though also flagged as vulnerable to vessel/anchor damage as a design risk [R17]. The project's most consequential outcome may have been legal/political: the 1984 mitigation condition Tom Pratte secured is credited by Surfrider as the first case in which the California Coastal Commission formally recognized a surf break as a protectable coastal recreational resource, a precedent Surfrider says later helped protect Trestles from development [R7]. Surfrider itself updated its institutional policy on artificial reefs after this project, moving toward protecting existing surf breaks rather than promising to recreate lost ones: 'I don't think we should ever trade a surf spot for the promise of building something else' (Chad Nelsen) [R7]. No litigation was found in any source reviewed.",
+  "as_built_vs_design": "Construction proceeded in two funded phases instead of one: 110 bags in fall 2000 (using the initial $300,000 Chevron payment), then ~90 more bags in spring 2001 once the Coastal Conservancy added $200,000-250,000, for roughly 200 bags total [R1][R7]. Even after that expansion, the built reef was far smaller than the 1997 proposal's ~5,000 yd3 (~3,800 m3) target: built volume is reported at only ~1,400-1,600 m3 [R2][R4] — under half the size first proposed, and by Surfrider's own later accounting roughly one-seventh the volume of Mount Maunganui and one-tenth to one-thirtieth the volume of Narrowneck [R7]. Individual bags were also markedly smaller (~8 m3 each) than Narrowneck's containers (140-320 m3 each) [R2]. Chad Nelsen (Surfrider): 'we probably should have said $300,000 is not enough' [R7]. SOURCES DISAGREE on the Phase 2 date: Blacka et al. (2013, p.117) date the 90-bag extension in 2000 [R19]; the card has spring 2001 [R1][R7]. RESOLVED 2026-10-10 for 2001: Borrero & Nelsen (2003) p.3 give the second installation on 23-24 April 2001, 90 bags [R28]. Blacka Table A.11 also: after Phase 2 apex 0.9 m below MLLW and the crest then dropped 1.5 m in a year [R19].",
+  "outcome": "Wikipedia states the reef 'had very little effect on the surfing conditions at Dockweiler Beach and ... no measurable effect on the shoreline morphology' [R1][R2]. Surfline's 2008 feature: over 'eight plus years, Pratte's Reef was as useless as useless gets' and 'it never produced a consistently surfable wave' [R7]. Diver surveys found bags had moved, sunk, and been buried by sand, with the black polypropylene material visibly deteriorating — 'largely disintegrated' within about two years [R4][R2]. No coastal-protection or ecological benefit is reported in any of the sources listed in References (negative search result of this card, not a sourced statement). The reef was removed over two phases (fall 2008, fall 2010), the first-ever removal of a purpose-built artificial surfing reef [R3][R6][R7][R9][R10].",
+  "why_worked_or_failed": "Undersized for its budget and site: a $300,000-$550,000 construction budget bought a reef roughly 1/7 the size of Mount Maunganui's and 1/10-1/30 the size of Narrowneck's [R7]. Crest-depth mismatch: on big swells the crest was too deep to trigger breaking, so waves broke outside the reef [R1][R7]. Pre-existing degraded beach: the Chevron groin had already straightened/steepened the beach and buried the original Grand Avenue break in trapped sand, conditions a small mitigation reef could not reverse [R7]. Material/structural failure: sand-filled fabric bags resting on a sandy, mobile seabed with no rigid foundation settled, sank, and were buried, and the polypropylene fabric deteriorated within roughly two years [R4][R2]. Insufficient pre-construction monitoring: Nelsen said more monitoring of sand bars and beach conditions beforehand 'would have told us the reef was too small before we even put it in' [R7]. Surfer and local comments on a YouTube video (2026, evidence grade D, anecdotal) agree that it rarely or never produced a rideable wave: too small, a steep approach that gave swells no time to build, swell shadow from Catalina Island and the land mass, and a V instead of a triangle [R33].",
+  "unexpected_results": "No fishing-pressure or ecological side effects are reported for Pratte's Reef in any source found, unlike Narrowneck (Gold Coast), whose geotextile containers were colonized by macro-algae, benthos and pelagic fish and became popular for local (spear-)fishing, diving and snorkeling, though also flagged as vulnerable to vessel/anchor damage as a design risk [R17]. The project's most consequential outcome may have been legal/political: the 1984 mitigation condition Tom Pratte secured is credited by Surfrider as the first case in which the California Coastal Commission formally recognized a surf break as a protectable coastal recreational resource, a precedent Surfrider says later helped protect Trestles from development [R7]. Surfrider itself updated its institutional policy on artificial reefs after this project, moving toward protecting existing surf breaks rather than promising to recreate lost ones: 'I don't think we should ever trade a surf spot for the promise of building something else' (Chad Nelsen) [R7]. No litigation was found in any source listed in References (negative search result of this card, not a sourced statement).",
   "could_be_better": "Surfrider's Chad Nelsen (2008 Surfline retrospective): should have told Chevron up front that $300,000 was not enough to build a working reef; more monitoring of sand bars and beach conditions before construction would have revealed the reef was undersized before it was built; more broadly, mitigation itself is often 'a false promise', and protecting existing surf breaks is preferable to engineering replacements after the fact [R7]. Named Surfline commenters (2008): depth/tide design was wrong ('Andrew': should have been 'nearly dry on a negative tide to be legit', not 8 feet deep at zero tide); distance from shore was wrong, though commenters disagreed on direction ('Randy Wright': 'simply too far away from the shore'; Dr. Jose Borrero, quoted elsewhere: 'too small and too close to shore'); cruder/cheaper materials might have worked as well ('prattes is a joke': rocks or 'smashed up cars'); lack of surfer input in the engineering process ('evan') [R7][R4].",
-  "relevance_to_israel": "Tidal range is the single most transferable engineering lesson: Pratte's Reef's crest depth was wrong for the local tide swing (too deep to break big swells; ~8 ft/2.4 m deep even at zero/low tide per a Surfrider-sourced figure) [R7]. Santa Monica Bay has a mean tidal range of ~1.4-1.7 m [R12], versus Haifa's ~0.3-0.4 m [R13], consistent with the Mediterranean's generally small tides [R11] — a crest depth calibrated for Haifa's ~0.3-0.4 m swing is a much smaller, more predictable engineering target than one spanning ~1.5 m, supporting Lior's thesis that Israel's small tidal range is a structural advantage for reef stability [R15]. Budget-driven undersizing is a transferable governance/funding risk, not a site-specific one, relevant to any small pilot reef Israel might build on a limited budget. Material degradation (UV/wave abrasion of polypropylene bags within ~2 years) is a warning for any low-cost geotextile design proposed for the Israeli coast, including Lior's own 'cheap & light materials... for fast deployment and removal' sketch [R15]. Israel has no directly comparable built ASR yet — its only confirmed built geotextile project is the Ashkelon Geotube, a shore-protection structure, not a surf reef [R14].",
+  "relevance_to_israel": "Tidal range is the single most transferable engineering lesson: Pratte's Reef's crest depth was wrong for the local tide swing (too deep to break big swells; ~8 ft/2.4 m deep even at zero/low tide per a Surfrider-sourced figure) [R7]. Santa Monica Bay has a mean tidal range of ~1.4-1.7 m [R12], versus Haifa's ~0.3-0.4 m [R13], consistent with the Mediterranean's generally small tides [R11] — a crest depth calibrated for Haifa's ~0.3-0.4 m swing is a much smaller, more predictable engineering target than one spanning ~1.5 m, supporting Lior's thesis that Israel's small tidal range is a structural advantage for reef stability [R15]. Budget-driven undersizing (Nelsen: '$300,000 is not enough' [R7]) is, in this card author's INFERENCE (not a sourced statement), a transferable governance/funding risk, not a site-specific one, relevant to any small pilot reef Israel might build on a limited budget. Material degradation (UV/wave abrasion of polypropylene bags within ~2 years; the 'largely disintegrated within about two years' finding is the diver-survey report in the outcome field [R4][R2]) is a warning for any low-cost geotextile design proposed for the Israeli coast, including Lior's own 'cheap & light materials... for fast deployment and removal' sketch [R15]. Israel has no directly comparable built ASR yet — its only confirmed built geotextile project is the Ashkelon Geotube, a shore-protection structure, not a surf reef [R14]. Tide levels (NOAA CO-OPS Santa Monica 9410840, epoch 1983-2001, relative to MSL): MHHW +0.804, MLLW -0.849, HAT +1.382, LAT -1.469 m, i.e. MHHW - MLLW = 1.653 m [R30]; this is the sourced replacement for the live tide-forecast figure [R12]. Haifa's 0.3-0.4 m [R13] is a web tide-table figure, not a primary source.",
   "reviews": [
     {
       "who": "Chad Nelsen",
@@ -102,6 +102,60 @@
       "url": "https://www.surfline.com/templates/article_html.cfm?n=2&id=19261&p=1",
       "stance": "negative",
       "origin": "via Gemini survey, verified 2026-09-25"
+    },
+    {
+      "who": "@johnlong1100",
+      "role": "Worked at the adjacent power plant 1975-82 and 1988-2002 (YouTube comment)",
+      "quote_or_summary": "\"The sand bag reef never produced a surfable wave. I was there 365 days a year and never saw one.\" It sat where only a wind swell could reach it: \"The south swells wouldn't reach it because of Catalina Island blocking the swell ... The northwest swells didn't make it either\".",
+      "outlet": "YouTube comments, video DK7cqXDzLpM (grade D, user comments, retrieved 2026-10-19 via Lior)",
+      "date": "2025-26 (about 7-8 months before 2026-10-19)",
+      "url": "https://www.youtube.com/watch?v=DK7cqXDzLpM",
+      "stance": "negative"
+    },
+    {
+      "who": "@spencerparker4691",
+      "role": "Surfer (YouTube comment)",
+      "quote_or_summary": "\"my buddies and I surfed Prattes reef on a couple of occasions when it actually broke. It was really tide sensitive and wave height sensitive. It was never going to handle legitimate overhead swell ... The wave came from deep water, hit the shallow reef quickly, then instantly went into deep water again ... it would mush out and disappear. It was barely surfable.\" \"The reef was shaped like a V instead of a triangle\".",
+      "outlet": "YouTube comments, video DK7cqXDzLpM (grade D, user comments, retrieved 2026-10-19 via Lior)",
+      "date": "2025-26 (about 7-8 months before 2026-10-19)",
+      "url": "https://www.youtube.com/watch?v=DK7cqXDzLpM",
+      "stance": "negative"
+    },
+    {
+      "who": "@krokus1972",
+      "role": "Geologist (YouTube comment)",
+      "quote_or_summary": "\"it did nothing. A major letdown.\" \"The approach of shore at that location is too steep. The swells had no time to build before they encountered the tiny reef. Resulting in a tiny close out wave.\"",
+      "outlet": "YouTube comments, video DK7cqXDzLpM (grade D, user comments, retrieved 2026-10-19 via Lior)",
+      "date": "2025-26 (about 7-8 months before 2026-10-19)",
+      "url": "https://www.youtube.com/watch?v=DK7cqXDzLpM",
+      "stance": "negative"
+    },
+    {
+      "who": "@camerongieda",
+      "role": "Helped with survey work, USC, 1990s (YouTube comment)",
+      "quote_or_summary": "\"We surfed over it a few times, but it was never big enough to hold any decent sized surf. The only thing it was good for was attracting lobster\".",
+      "outlet": "YouTube comments, video DK7cqXDzLpM (grade D, user comments, retrieved 2026-10-19 via Lior)",
+      "date": "2025-26 (about 7-8 months before 2026-10-19)",
+      "url": "https://www.youtube.com/watch?v=DK7cqXDzLpM",
+      "stance": "negative"
+    },
+    {
+      "who": "@feedbackart",
+      "role": "Witness to the removal (YouTube comment)",
+      "quote_or_summary": "\"I saw them pull the bags out. The polymer bags were still intact.\" (If true, the failure was the wave, not the material; one anonymous comment.)",
+      "outlet": "YouTube comments, video DK7cqXDzLpM (grade D, user comments, retrieved 2026-10-19 via Lior)",
+      "date": "2025-26 (about 7-8 months before 2026-10-19)",
+      "url": "https://www.youtube.com/watch?v=DK7cqXDzLpM",
+      "stance": "neutral"
+    },
+    {
+      "who": "@RonMiks-k6h, @TheTactical001, @kirbyharness9696, @BananaPistachio",
+      "role": "Other commenters (YouTube)",
+      "quote_or_summary": "Poor design and siting (\"the V-shape reef, use of sand bags and poor selection for reef placement ... Bummed nothing ever broke\"); \"the use of sand bags was a joke you need hard structure like boulders\"; \"never produced anything\"; \"never saw it break other than once when a big swell came through\".",
+      "outlet": "YouTube comments, video DK7cqXDzLpM (grade D, user comments, retrieved 2026-10-19 via Lior)",
+      "date": "2025-26 (about 7-8 months before 2026-10-19)",
+      "url": "https://www.youtube.com/watch?v=DK7cqXDzLpM",
+      "stance": "negative"
     }
   ],
   "images": [
@@ -316,119 +370,175 @@
       "citation": "Wikipedia contributors (updated). \"Chevron Reef.\" Wikipedia.",
       "url": "https://en.wikipedia.org/wiki/Chevron_Reef",
       "accessed": "2026-09-24",
-      "supports": "build years, location/coordinates, cost figures, permit history, removal timing, Nelsen budget quote"
+      "supports": "build years, location/coordinates, cost figures, permit history, removal timing, Nelsen budget quote TERTIARY (Wikipedia). LOCATION: article text, access date only."
     },
     {
       "id": "R2",
       "citation": "Wikipedia contributors (updated). \"Multi-purpose reef.\" Wikipedia.",
       "url": "https://en.wikipedia.org/wiki/Multi-purpose_reef",
       "accessed": "2026-09-24",
-      "supports": "comparative reef-volume table, per-bag container-size comparison, 'no measurable effect' quote, 'largely disintegrated within two years' description"
+      "supports": "comparative reef-volume table, per-bag container-size comparison, 'no measurable effect' quote, 'largely disintegrated within two years' description TERTIARY (Wikipedia). LOCATION: article text, access date only."
     },
     {
       "id": "R3",
       "citation": "Surfrider Foundation. \"ASR removal in El Segundo, CA.\" Surfrider Foundation News.",
       "url": "https://www.surfrider.org/news/asr-removal-in-el-segundo-ca",
       "accessed": "2026-09-24",
-      "supports": "removal contractors, removal dates, reason for removal, deterioration quote"
+      "supports": "removal contractors, removal dates, reason for removal, deterioration quote. LOCATION: whole web page"
     },
     {
       "id": "R4",
       "citation": "Raised Water Research. \"Pratte's Reef.\"",
       "url": "https://raisedwaterresearch.com/spot/artificial-reef/us/california/prattes-reef/",
       "accessed": "2026-09-24",
-      "supports": "bag weight, crest depth, designer, delta/V-shape and 45-degree angle, financing breakdown, diver survey findings, Borrero quote"
+      "supports": "bag weight, crest depth, designer, delta/V-shape and 45-degree angle, financing breakdown, diver survey findings, Borrero quote. LOCATION: spot page; author/date not shown"
     },
     {
       "id": "R5",
       "citation": "Beachapedia. \"Pratte's Reef.\"",
       "url": "https://beachapedia.org/Pratte's_Reef",
       "accessed": "2026-09-24",
-      "supports": "general timeline confirmation, list of further primary-source links"
+      "supports": "general timeline confirmation, list of further primary-source links. LOCATION: not cited in the text; context only"
     },
     {
       "id": "R6",
       "citation": "Coastal Frontiers Corporation. \"Removal of Pratte's Reef.\"",
       "url": "https://www.coastalfrontiers.com/removal-of-prattes-reef",
       "accessed": "2026-09-24",
-      "supports": "removal methodology, contractor roles, 'first-ever removal of a man-made surfing reef' claim"
+      "supports": "removal methodology, contractor roles, 'first-ever removal of a man-made surfing reef' claim. LOCATION: whole web page"
     },
     {
       "id": "R7",
       "citation": "Fontaine, Evan (2008-10-11). \"SANDBAGGED: After years of unspectacular closeouts, Pratte's Reef is removed from El Segundo.\" Surfline.com.",
       "url": "https://www.surfline.com/templates/article_html.cfm?n=2&id=19261&p=1",
       "accessed": "2026-09-24",
-      "supports": "full narrative history, cost/date framing, Nelsen interview quotes, size comparisons, all eight named-commenter reviews"
+      "supports": "full narrative history, cost/date framing, Nelsen interview quotes, size comparisons, all eight named-commenter reviews. LOCATION: pages 1+ of the Surfline article (id=19261); article is the main narrative source"
     },
     {
       "id": "R8",
       "citation": "California State Clearinghouse / CEQAnet (1997-12-02). \"Surfrider Foundation Pratte's Reef\" project filing (SCH# 1997121007).",
       "url": "https://ceqanet.lci.ca.gov/1997121007",
       "accessed": "2026-09-24",
-      "supports": "original 1997 project description, lead agency, state review period"
+      "supports": "original 1997 project description, lead agency, state review period. LOCATION: project filing SCH# 1997121007, project description field"
     },
     {
       "id": "R9",
       "citation": "Surfrider Foundation, Florida Chapter. \"Removal of Artificial Surfing Reef.\"",
       "url": "https://florida.surfrider.org/removal-of-artifical-surfing-reef/",
       "accessed": "2026-09-24",
-      "supports": "removal timeline and contractor confirmation"
+      "supports": "removal timeline and contractor confirmation. LOCATION: whole web page"
     },
     {
       "id": "R10",
       "citation": "Surfrider Foundation. \"ASR removal in El Segundo, CA\" (coastal blog entry).",
       "url": "https://www.surfrider.org/coastal-blog/entry/asr-removal-in-el-segundo-ca",
       "accessed": "2026-09-24",
-      "supports": "monitoring/adverse-impact-finding timeline, removal contractor list"
+      "supports": "monitoring/adverse-impact-finding timeline, removal contractor list. LOCATION: blog entry"
     },
     {
       "id": "R11",
       "citation": "Wikipedia contributors (updated). \"Tide.\" Wikipedia.",
       "url": "https://en.wikipedia.org/wiki/Tide",
       "accessed": "2026-09-24",
-      "supports": "general statement that the Mediterranean Sea has extremely small tides"
+      "supports": "general statement that the Mediterranean Sea has extremely small tides TERTIARY (Wikipedia). LOCATION: article text, access date only."
     },
     {
       "id": "R12",
       "citation": "Tide-Forecast.com (live data). \"Los Angeles, California tide times.\"",
       "url": "https://www.tide-forecast.com/locations/Los-Angeles-California/tides/latest",
       "accessed": "2026-09-24",
-      "supports": "Santa Monica Bay/Los Angeles mean tidal range figure"
+      "supports": "Santa Monica Bay/Los Angeles mean tidal range figure. LOCATION: live tide page, access day only"
     },
     {
       "id": "R13",
       "citation": "Tide-Forecast.com (live data). \"Haifa, Israel tide times.\"",
       "url": "https://www.tide-forecast.com/locations/Haifa/tides/latest",
       "accessed": "2026-09-24",
-      "supports": "Haifa mean tidal range figure"
+      "supports": "Haifa mean tidal range figure. LOCATION: live tide page, access day only"
     },
     {
       "id": "R14",
       "citation": "Lior's notes, 01_source_notes/jmse2023_bar_drimer_paper.md",
       "url": "",
       "accessed": "2026-09-24",
-      "supports": "Israel's only confirmed built geotextile project (Ashkelon Geotube), Narrowneck ecological comparison point"
+      "supports": "Israel's only confirmed built geotextile project (Ashkelon Geotube), Narrowneck ecological comparison point NOT A CITABLE SOURCE for facts (Lior's note of a paper he read; see the paper itself)."
     },
     {
       "id": "R15",
       "citation": "Lior's notes, 01_source_notes/pptx_goldcoast_swells_people_photos.md",
       "url": "",
       "accessed": "2026-09-24",
-      "supports": "Lior's tidal-range-as-advantage argument, cheap/light temporary-reef design sketch, image26.png caption"
+      "supports": "Lior's tidal-range-as-advantage argument, cheap/light temporary-reef design sketch, image26.png caption NOT A CITABLE SOURCE for facts (Lior's own argument/opinion)."
     },
     {
       "id": "R16",
       "citation": "02_research/00_master_list.md",
       "url": "",
       "accessed": "2026-09-24",
-      "supports": "seed facts and seed URLs for this dossier"
+      "supports": "seed facts and seed URLs for this dossier NOT A CITABLE SOURCE (project seed list; not cited in the text)."
     },
     {
       "id": "R17",
       "citation": "EcoShape. \"Artificial Reefs — Example Cases.\"",
       "url": "https://www.ecoshape.org/en/knowledge-articles/artificial-reefs/example-cases/",
       "accessed": "2026-09-24",
-      "supports": "Narrowneck marine-life colonization, recreational use, vessel/anchor damage vulnerability"
+      "supports": "Narrowneck marine-life colonization, recreational use, vessel/anchor damage vulnerability. LOCATION: whole web page"
+    },
+    {
+      "id": "R18",
+      "citation": "Mead, S.T. and Borrero, J.C. (2011). Multi-Purpose Reefs - A Decade of Applications. Proc. 20th Australasian Coastal and Ocean Engineering Conference (Coasts and Ports 2011), ASR Ltd. https://search.informit.org/doi/10.3316/informit.715072832934166 (Lior's copy: papers/).",
+      "url": "https://search.informit.org/doi/10.3316/informit.715072832934166",
+      "accessed": "2026-10-10",
+      "supports": "volume 1,350 m3 (smallest MPR built, close to shore); US$300,000 build; removal 2010 cost more than twice that (p.3). LOCATION: p.3 (cost and volume statements; page numbers as recorded in the card)"
+    },
+    {
+      "id": "R19",
+      "citation": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08, UNSW Water Research Laboratory, for NSW Office of Environment and Heritage. https://doi.org/10.4225/53/58e1dc7368c7a (P8 report page = PDF page - 12).",
+      "url": "https://doi.org/10.4225/53/58e1dc7368c7a",
+      "accessed": "2026-10-10",
+      "supports": "Table 4.2 and Appendix A.11 (p.115-119): 64 x 29 m V, depth 3.0 m MLLW, 50 m from undisturbed shoreline; bags and crest depths; build US$550,000, removal US$551,000 (p.117-119); Phase 2 dated 2000 (p.117). LOCATION: Table 4.2 and Appendix A.11, pp.115-119"
+    },
+    {
+      "id": "R28",
+      "citation": "Borrero, J.C. and Nelsen, C. (2003). Results of a comprehensive monitoring program at Pratte's Reef. In: Black, K. and Mead, S. (eds), Proc. 3rd International Surfing Reef Symposium, Raglan, New Zealand (venue/year as in the project's earlier record; the supplied 16-page PDF prints neither, its metadata title is '2 Years of Pratte's Reef: Performance and Considerations for Future Artificial Reef Endeavors in Santa Monica Bay'). Private research copy supplied by Lior, 07_scale/shapes/prattes-reef-el-segundo/src/.",
+      "url": "https://www.researchgate.net/publication/293137985_Results_of_a_comprehensive_monitoring_program_at_Pratte's_Reef",
+      "accessed": "2026-10-05",
+      "supports": "p.2: 110 bags, 4x7x10 ft, 7.9 m3, ~14 tons, 22 Sep 2000, ~-6 ft MLLW at the outermost point, obtuse V (Fig 4 = design layout); p.3: second installation 23-24 April 2001, 90 bags, +80 % volume, within 3 ft of MLLW; p.6 Fig 8 crest erosion after April 2001; p.14 Fig 20 comparison with Narrowneck, 'extends 30'; p.16 about 1600 m3 in 200 bags. LOCATION: pages as stated (checked against the PDF text on 2026-10-10)"
+    },
+    {
+      "id": "R29",
+      "citation": "Skelly Engineering design drawing of Pratte's Reef (V layout, 110 bags, scale bar 0-90 ft), as reproduced by Raised Water Research [R4]; traced by this project (07_scale/shapes/prattes-reef-el-segundo/shape.json, VERIFY.md).",
+      "url": "https://raisedwaterresearch.com/spot/artificial-reef/us/california/prattes-reef/",
+      "accessed": "2026-10-05",
+      "supports": "outline of the Phase I design layout (76 vertices, scale 5.155 px/m, +-1 px = +-0.2 m = +-4 % area); a project trace, not an as-built survey. Private research copy"
+    },
+    {
+      "id": "R30",
+      "citation": "NOAA CO-OPS. Datums for station 9410840 Santa Monica, CA (epoch 1983-2001); cross-checked with station 9410660 Los Angeles.",
+      "url": "https://tidesandcurrents.noaa.gov/datums.html?id=9410840",
+      "accessed": "2026-10-05",
+      "supports": "MSL - MLLW = 0.849 m (Los Angeles 0.861 m); MHHW +0.804, HAT +1.382, LAT -1.469 m rel. MSL (values recomputed by the project; the station-page URL is the standard CO-OPS address, the project accessed the metadata API). LOCATION: datums table"
+    },
+    {
+      "id": "R31",
+      "citation": "NOAA CO-OPS. Datums for station 9410840 Santa Monica, CA, metric (epoch 1983-2001).",
+      "url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9410840/datums.json?units=metric",
+      "accessed": "2026-10-19",
+      "supports": "Great diurnal range 1.654 m (MHHW 2.398 - MLLW 0.745) and mean range 1.145 m"
+    },
+    {
+      "id": "R32",
+      "citation": "Reef rating (A surf quality, B safety and longevity, C sediment / storm protection), scores 1-5, approved by Lior 2026-10-19. Table: 08_paper/notes/rating_final.md; evidence per reef: 08_paper/notes/rating_evidence.md (this review, repo-internal files).",
+      "url": "",
+      "accessed": "2026-10-19",
+      "supports": "Scores A/B/C and reason for this reef"
+    },
+    {
+      "id": "R33",
+      "citation": "YouTube comments on video DK7cqXDzLpM about Pratte's Reef (about 7-8 months before 2026-10-19). Quoted excerpts copied by Lior on 2026-10-19. Evidence grade D (anecdotal user comments): surfer testimony only, never measurement. Notes: 08_paper/notes/youtube_comments/prattes_DK7cqXDzLpM.md",
+      "url": "https://www.youtube.com/watch?v=DK7cqXDzLpM",
+      "accessed": "2026-10-19",
+      "supports": "Surfer and local testimony: no or barely surfable wave, swell shadowing, too small, V shape, bags intact at removal"
     }
   ],
   "blocked_sources": [
@@ -438,11 +548,24 @@
     "researchgate.net (same paper) — 403, inaccessible, not cited anywhere in the dossier"
   ],
   "gaps": [
-    "No single authoritative engineering drawing reconciling the two disputed crest-depth figures (-0.9 m MLLW vs ~2.4 m/8 ft at zero tide) was found",
-    "Bag weight also disputed 2x (14 tons vs 14,000 lb) across sources",
+    "No single authoritative engineering drawing reconciling the two disputed crest-depth figures (-0.9 m MLLW vs ~2.4 m/8 ft at zero tide) was found [2026-10-10 update, not resolved: Blacka et al. 2013 Table A.11 give Phase 1 design crest 1.8 m below MLLW and apex 0.9 m below MLLW after Phase 2 [R19], consistent with the -0.9 m figure but not with ~2.4 m] UPDATE 2026-10-10 (audit): the primary paper gives about -6 ft MLLW (1.83 m) after Phase I and within 3 ft (0.91 m) after Phase II [R28, p.2-3]; the ~2.4 m / 8 ft 'at zero tide' is a Surfline commenter's remark [R7] and is not supported. Open (HANDOFF J1): the design drawing labels the same 6 ft as '-6 ft MSL' (0.849 m shallower than MLLW) [R29]; the 0.849 m is MLLW relative to MSL at NOAA 9410840 [R30].",
+    "Bag weight also disputed 2x (14 tons vs 14,000 lb) across sources [2026-10-10 update, not resolved: Blacka et al. 2013 give ~12.7 t per bag (3.0 x 2.1 x 1.2 m, 80-90% fill) [R19], a third value] UPDATE 2026-10-10: Borrero & Nelsen (2003, p.2) give ~14 tons per filled bag [R28]; 12.7 t [R19] is a lower derived value.",
     "No litigation record found despite the reef's ultimate failure",
-    "Google Maps satellite link (image #7) is a live map, not a static, independently hotlink-testable image file"
+    "Google Maps satellite link (image #7) is a live map, not a static, independently hotlink-testable image file",
+    "Source-audit 2026-10-10: the card lat/lon was (33.915123, -118.432624) from the first card/Wikipedia [R1]; the project could not fix the reef position (three published coordinates differ by 313 m and none fits the primary sources). Citations audit 2026-10-10: lat/lon now = the model's position HINT 33.92058, -118.43335, uncertainty +-150 m (decision J2, 2026-10-10), read from the survey window of Fig 9 in Borrero & Nelsen (2003) [R28]; source: 07_scale/shapes/prattes-reef-el-segundo/HANDOFF.md item 4 and shape.json geo_note. It is a page-marker hint, not a surveyed or traced position; the old point is about 600 m south. The page's Google Maps link uses this hint. The card point is a published value (Wikipedia, about 33 54 54 N 118 25 57 W = 33.915, -118.4325 [R1]); decision for main/Lior which to show. Also not confirmed: venue and year of Borrero & Nelsen (the file prints neither); authors/dates of the web pages.",
+    "Source-audit 2026-10-10: the 'UV/wave abrasion of polypropylene bags within ~2 years' sentence in relevance_to_israel carries no [R#] tag; RESOLVED 2026-10-10 in the citations audit: the claim is the diver-survey finding already tagged in the outcome field [R4][R2], which now also stands beside the sentence."
   ],
   "hero_recommendation": "https://raisedwaterresearch.com/wp-content/uploads/2019/07/Building-Prattes-Reef.jpg",
-  "videos_rejected": []
+  "videos_rejected": [],
+  "verdict_reason": "Verdict 'failed' was assigned by the research agent that wrote this card (verified_on 2026-09-24, enriched 2026-10-10), not by Lior; no Lior ruling on it is recorded. Basis: the reef was removed in 2008 and 2010 (first removal of a purpose-built surf reef) [R3][R6]; surfers described unspectacular closeouts [R7]; the monitors report the reef gave only a few months of better waves after Phase II and the crest then eroded [R28, p.16, Fig 8]. Re-checked 2026-10-10; unchanged.",
+  "tide_check": "Pratte's (NOAA Santa Monica 9410840, 11.7 km away): great diurnal range (MHHW-MLLW) 1.654 m; mean range 1.145 m. The earlier value 1.65 m was labelled 'spring' in this review; it is the great diurnal range. No value change. [R31]",
+  "rating": {
+    "rank": 10,
+    "A": "1",
+    "B": "1",
+    "C": "2",
+    "reason": "too small; never produced a reliable wave; removed (A = 1 by Lior; surfer comments, grade D) [R32]",
+    "scale": "1-5, ?=no evidence, *=provisional",
+    "source": "this review, Lior-approved 2026-10-19"
+  }
 }

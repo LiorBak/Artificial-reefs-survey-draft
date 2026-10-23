@@ -2,7 +2,7 @@
 
 Source of truth: `images.json` in this folder (convention: `_agent_briefs/image_registry.md`; overview: `03_images/reefs/README.md`). This file is generated from it.
 
-18 images registered, 18 with a file, 4 used for the model (any use other than context/not_used).
+41 images registered, 41 with a file, 13 used for the model (any use other than context/not_used).
 
 ## mount-maunganui-reef-img-01 - BoPRC report Figure 1: aerial view of Mount Reef (arrowed in the report), Mauao and Mount Maunganui Beach
 
@@ -14,7 +14,7 @@ Source of truth: `images.json` in this folder (convention: `_agent_briefs/image_
 - **structure visible**: False
 - **state shown**: as-built (photo date not stated)
 - **image date**: not stated (BoPRC photo; before Dec 2013)
-- **citation**: Focus Resource Management Group (2013). Mount Maunganui Reef - Assessment of Management Options. Report prepared for Bay of Plenty Regional Council, December 2013 (PDF created 2014-01-23), PDF page 8 (printed p.7), Figure 1 'Aerial view of Mount Reef (arrowed). Photo supplied by BoPRC.' (embedded raster 2077 x 1172 px; the arrow is a vector overlay not present in this raster). https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf. Accessed 2026-10-05.
+- **citation**: Dahm, J. and Gibberd, B. (Focus Resource Management Group) (2013). Mount Maunganui Reef - Assessment of Management Options. Focus Report No. 131, prepared for Bay of Plenty Regional Council, December 2013 (PDF created 2014-01-23), PDF page 8 (printed p.7), Figure 1 'Aerial view of Mount Reef (arrowed). Photo supplied by BoPRC.' (embedded raster 2077 x 1172 px; the arrow is a vector overlay not present in this raster). https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf. Accessed 2026-10-05.
 - **image URL**: https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf
 - **source page**: https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf
 - **page / figure**: PDF p.8, Figure 1 (embedded raster xref 18)
@@ -42,7 +42,7 @@ Source of truth: `images.json` in this folder (convention: `_agent_briefs/image_
 - **structure visible**: False
 - **state shown**: design/as-built (modelled)
 - **image date**: not stated (modelling quoted by the report; original model run date unknown)
-- **citation**: Focus Resource Management Group (2013). Mount Maunganui Reef - Assessment of Management Options. Report prepared for Bay of Plenty Regional Council, December 2013 (PDF created 2014-01-23), PDF page 15 (printed p.14), Figure 2 'Predicted hydrodynamic circulations in the vicinity of the reef for wave height of 1.0 m (top) ...' (embedded raster 810 x 578 px). https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf. Accessed 2026-10-05.
+- **citation**: Dahm, J. and Gibberd, B. (Focus Resource Management Group) (2013). Mount Maunganui Reef - Assessment of Management Options. Focus Report No. 131, prepared for Bay of Plenty Regional Council, December 2013 (PDF created 2014-01-23), PDF page 15 (printed p.14), Figure 2 'Predicted hydrodynamic circulations in the vicinity of the reef for wave height of 1.0 m (top) ...' (embedded raster 810 x 578 px). https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf. Accessed 2026-10-05.
 - **image URL**: https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf
 - **source page**: https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf
 - **page / figure**: PDF p.15, Figure 2 top panel (embedded raster xref 33)
@@ -70,7 +70,7 @@ Source of truth: `images.json` in this folder (convention: `_agent_briefs/image_
 - **structure visible**: False
 - **state shown**: design/as-built (modelled)
 - **image date**: not stated
-- **citation**: Focus Resource Management Group (2013). Mount Maunganui Reef - Assessment of Management Options. Report prepared for Bay of Plenty Regional Council, December 2013 (PDF created 2014-01-23), PDF page 15 (printed p.14), Figure 2 lower panel (embedded raster 850 x 623 px). https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf. Accessed 2026-10-05.
+- **citation**: Dahm, J. and Gibberd, B. (Focus Resource Management Group) (2013). Mount Maunganui Reef - Assessment of Management Options. Focus Report No. 131, prepared for Bay of Plenty Regional Council, December 2013 (PDF created 2014-01-23), PDF page 15 (printed p.14), Figure 2 lower panel (embedded raster 850 x 623 px). https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf. Accessed 2026-10-05.
 - **image URL**: https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf
 - **source page**: https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf
 - **page / figure**: PDF p.15, Figure 2 lower panel (embedded raster xref 35)
@@ -98,7 +98,7 @@ Source of truth: `images.json` in this folder (convention: `_agent_briefs/image_
 - **structure visible**: True
 - **state shown**: as-built, 2013 (five years after completion; apex deflation)
 - **image date**: survey 2013-07-18
-- **citation**: Focus Resource Management Group (2013). Mount Maunganui Reef - Assessment of Management Options. Report prepared for Bay of Plenty Regional Council, December 2013 (PDF created 2014-01-23), PDF page 27 (printed p.26), Figure 5 'View of July 2013 multibeam survey with colour-coded depths. Note apparent bag deflation near apex (arrowed).' (embedded raster 1299 x 752 px). https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf. Accessed 2026-10-05.
+- **citation**: Dahm, J. and Gibberd, B. (Focus Resource Management Group) (2013). Mount Maunganui Reef - Assessment of Management Options. Focus Report No. 131, prepared for Bay of Plenty Regional Council, December 2013 (PDF created 2014-01-23), PDF page 27 (printed p.26), Figure 5 'View of July 2013 multibeam survey with colour-coded depths. Note apparent bag deflation near apex (arrowed).' (embedded raster 1299 x 752 px). https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf. Accessed 2026-10-05.
 - **image URL**: https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf
 - **source page**: https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf
 - **page / figure**: PDF p.27, Figure 5 (embedded raster xref 67)
@@ -208,7 +208,7 @@ Source of truth: `images.json` in this folder (convention: `_agent_briefs/image_
 - **structure visible**: True
 - **state shown**: as-built, 2013 survey (5 years after completion; partly smaller than the BoPRC text, small north-arm base bags buried)
 - **image date**: survey 2013-07-18
-- **citation**: Focus Resource Management Group (2013). Mount Maunganui Reef - Assessment of Management Options. Report prepared for Bay of Plenty Regional Council, December 2013 (PDF created 2014-01-23), PDF page 23 (printed p.22), Figure 3 'Most recent survey of Mount Reef conducted on 18 July 2013' (embedded raster 900 x 1064 px, extracted unresampled; figure title 'MOUNT MAUNGANUI - ARTIFICIAL SURF REEF', surveyed by University of Waikato & Discovery Marine Ltd). https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf. Accessed 2026-10-05.
+- **citation**: Dahm, J. and Gibberd, B. (Focus Resource Management Group) (2013). Mount Maunganui Reef - Assessment of Management Options. Focus Report No. 131, prepared for Bay of Plenty Regional Council, December 2013 (PDF created 2014-01-23), PDF page 23 (printed p.22), Figure 3 'Most recent survey of Mount Reef conducted on 18 July 2013' (embedded raster 900 x 1064 px, extracted unresampled; figure title 'MOUNT MAUNGANUI - ARTIFICIAL SURF REEF', surveyed by University of Waikato & Discovery Marine Ltd). https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf. Accessed 2026-10-05.
 - **image URL**: https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf
 - **source page**: https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf
 - **page / figure**: PDF p.23, Figure 3 (raster xref 53)
@@ -293,7 +293,7 @@ Source of truth: `images.json` in this folder (convention: `_agent_briefs/image_
 - **structure visible**: True
 - **state shown**: part-built (January 2007, 70% complete)
 - **image date**: survey January 2007 (reef 70% complete)
-- **citation**: Focus Resource Management Group (2013). Mount Maunganui Reef - Assessment of Management Options. Report prepared for Bay of Plenty Regional Council, December 2013 (PDF created 2014-01-23), PDF page 26 (printed p.25), Figure 4 'View of the Mount Reef from a multibeam survey conducted in January 2007, when the reef was 70 % complete (from Scarfe, 2009)' (raster 815 x 953 px). https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf. Accessed 2026-10-05.
+- **citation**: Dahm, J. and Gibberd, B. (Focus Resource Management Group) (2013). Mount Maunganui Reef - Assessment of Management Options. Focus Report No. 131, prepared for Bay of Plenty Regional Council, December 2013 (PDF created 2014-01-23), PDF page 26 (printed p.25), Figure 4 'View of the Mount Reef from a multibeam survey conducted in January 2007, when the reef was 70 % complete (from Scarfe, 2009)' (raster 815 x 953 px). https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf. Accessed 2026-10-05.
 - **image URL**: https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf
 - **source page**: https://www.boprc.govt.nz/media/558385/mount-maunganui-reef-assessment-of-management-options.pdf
 - **page / figure**: PDF p.26, Figure 4 (raster xref 60)
@@ -609,3 +609,493 @@ Source of truth: `images.json` in this folder (convention: `_agent_briefs/image_
 - **rights**: Private research copy; reuse rights to be checked before any public release.
 - **display in HTML**: True
 - **added by**: 3D agent mount-maunganui-reef, 2026-10-06
+
+## mount-maunganui-reef-img-23 - Mead & Borrero (2011) Fig. 3 (bottom): "as-built survey", 2,800 m3 of the 6,500 m3 design in place
+
+![mount-maunganui-reef-img-23](../../../07_scale/shapes/mount-maunganui-reef/3d/src/mmr_meadborrero2011_fig3b_asbuilt-survey-2800m3.png)
+
+- **file**: `07_scale/shapes/mount-maunganui-reef/3d/src/mmr_meadborrero2011_fig3b_asbuilt-survey-2800m3.png`
+- **annotated**: `07_scale/shapes/mount-maunganui-reef/3d/annotated/mmr_meadborrero2011_fig3b_layout_check.png`
+- **kind**: plan_figure
+- **shows**: Low-resolution (205 x 211 px) colour render of the as-built survey: bag tops (yellow), bed (olive), deeper water (blue), chevron of 3-bag and 2-bag arms; regular grid ticks every 26 px on all edges, no labels, scale, north arrow, date or depth legend.
+- **structure visible**: True
+- **state shown**: as-built (2011 text: partly sand-depleted)
+- **citation**: Mead, S.T. and Borrero, J.C. (2011). Multi-Purpose Reefs - A Decade of Applications. Coasts and Ports 2011: 20th Australasian Coastal and Ocean Engineering Conference, Informit, doi:10.3316/informit.715072832934166, page 3, Figure 3 (bottom). Private copy supplied by Lior (papers/Multi-Purpose Reefs - A Decade of Applications 2011.pdf). Accessed 2026-10-07.
+- **link**: https://doi.org/10.3316/informit.715072832934166
+- **page / figure**: Figure 3 (bottom) (PDF page 3)
+- **image date**: survey date not stated (reef state 2011 text: 2,800 m3 in place; reef built 2005-2008)
+- **credit**: Authors as cited (Informit / Coasts and Ports conference paper); native embedded image extracted from the supplied PDF
+- **licence**: not stated (conference paper; reuse not cleared)
+- **retrieved**: 2026-10-07
+- **used for**: scale, cross_check
+- **How used for the model**: Registered to our traced polygons (3d/fig3_asbuilt_check.py): best fit = mirrored ASR toe outline, IoU 0.874 at 2.5 px/m (grid 10.4 m, i.e. 10 m within 4 %); the 2013 -2.0 m outline fits at IoU 0.69; bag-top area 1,436 m2 if the grid is 10 m vs toe outline 1,424 m2. It corroborates the ASR toe version (METHODS_3D.md 4.5); NOT traced as a new outline version (no labelled scale/date/depth, 205 px). The 2,800 m3 caption feeds the volume check.
+- **3D check pending**: no - Does the picture give a usable scale / contours for a new as-built outline version? Does it agree with the ASR toe outline? RESOLVED: 3D agent 2026-10-07/10: RESOLVED. No labelled scale, date or depth; grid ticks only. Mirrored toe outline fits at IoU 0.874 (10.4 m grid), so it corroborates the toe version; not traced, default outline unchanged (decision on promoting the toe version asked of Lior, REQUESTS_FOR_LIOR).
+- **linked records**: 07_scale/shapes/mount-maunganui-reef/3d/SOURCES_3D.md (checkpoint 2026-10-07 b, 2026-10-10); 07_scale/shapes/mount-maunganui-reef/3d/fig3_asbuilt_check.json; 07_scale/shapes/mount-maunganui-reef/3d/METHODS_3D.md section 4.5
+- **size**: 0.072 MB, 205x211 px
+- **sha256**: 543505cb177efc2f2912a120e85abc3b6f379eba7dad01c20e72e38275ec0719
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: task_mm_update (agent 3), 2026-10-10
+
+## mount-maunganui-reef-img-24 - Mead & Borrero (2011) Fig. 3 (top): design, 6,500 m3
+
+![mount-maunganui-reef-img-24](../../../07_scale/shapes/mount-maunganui-reef/3d/src/mmr_meadborrero2011_fig3a_design-6500m3.png)
+
+- **file**: `07_scale/shapes/mount-maunganui-reef/3d/src/mmr_meadborrero2011_fig3a_design-6500m3.png`
+- **kind**: design_drawing
+- **shows**: Low-resolution (242 x 182 px) render of the symmetric chevron design (ASR logo), the 6,500 m3 design volume, no scale or labels.
+- **structure visible**: True
+- **state shown**: design
+- **citation**: Mead, S.T. and Borrero, J.C. (2011). Multi-Purpose Reefs - A Decade of Applications. Coasts and Ports 2011: 20th Australasian Coastal and Ocean Engineering Conference, Informit, doi:10.3316/informit.715072832934166, page 3, Figure 3 (top). Private copy supplied by Lior (papers/Multi-Purpose Reefs - A Decade of Applications 2011.pdf). Accessed 2026-10-07.
+- **link**: https://doi.org/10.3316/informit.715072832934166
+- **page / figure**: Figure 3 (top) (PDF page 3)
+- **image date**: design (2004 final design; paper 2011)
+- **credit**: Authors as cited (Informit / Coasts and Ports conference paper); native embedded image extracted from the supplied PDF
+- **licence**: not stated (conference paper; reuse not cleared)
+- **retrieved**: 2026-10-07
+- **used for**: context
+- **How used for the model**: Context only: the 6,500 m3 design volume against the 2,800 m3 in place (img-23). Not traced; the design shape (wedge / delta) is not the built reef.
+- **3D check pending**: no - none: context / design-stage figure, nothing in the model depends on it
+- **linked records**: 07_scale/shapes/mount-maunganui-reef/3d/SOURCES_3D.md (checkpoint 2026-10-07 b, 2026-10-10)
+- **size**: 0.083 MB, 242x182 px
+- **sha256**: b680a7d498fa67d4c9ef101410a216fa9df3b3a62b94fc2ff1bbb68a4ab21d53
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: task_mm_update (agent 3), 2026-10-10
+
+## mount-maunganui-reef-img-25 - Mead & Borrero (2011) Fig. 4: surfing the reef, late summer 2007
+
+![mount-maunganui-reef-img-25](../../../07_scale/shapes/mount-maunganui-reef/3d/src/mmr_meadborrero2011_fig4_surfing-late-summer-2007.png)
+
+- **file**: `07_scale/shapes/mount-maunganui-reef/3d/src/mmr_meadborrero2011_fig4_surfing-late-summer-2007.png`
+- **kind**: photo
+- **shows**: Surfer on the face of a clean, steep right-hand wave with spray at the lip (422 x 213 px); the reef is not visible (water too deep and turbid).
+- **structure visible**: False
+- **state shown**: partly built (2007, about 70 % complete)
+- **citation**: Mead, S.T. and Borrero, J.C. (2011). Multi-Purpose Reefs - A Decade of Applications. Coasts and Ports 2011: 20th Australasian Coastal and Ocean Engineering Conference, Informit, doi:10.3316/informit.715072832934166, page 3, Figure 4. Private copy supplied by Lior (papers/Multi-Purpose Reefs - A Decade of Applications 2011.pdf). Accessed 2026-10-07.
+- **link**: https://doi.org/10.3316/informit.715072832934166
+- **page / figure**: Figure 4 (PDF page 3)
+- **image date**: late summer 2007
+- **credit**: Authors as cited (Informit / Coasts and Ports conference paper); native embedded image extracted from the supplied PDF
+- **licence**: not stated (conference paper; reuse not cleared)
+- **retrieved**: 2026-10-07
+- **used for**: context
+- **How used for the model**: Context: evidence the reef produced a hollow right in 2007; no height or position was read off it.
+- **3D check pending**: no - none: context / design-stage figure, nothing in the model depends on it
+- **linked records**: 07_scale/shapes/mount-maunganui-reef/3d/SOURCES_3D.md (checkpoint 2026-10-07 b, 2026-10-10)
+- **size**: 0.123 MB, 422x213 px
+- **sha256**: 191770cec2a4b5128aedb4b728d07d99664c534503f8af9a9595727783188b5f
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: task_mm_update (agent 3), 2026-10-10
+
+## mount-maunganui-reef-img-26 - Mead et al. (2007) Fig. 1: location map of the Mount Maunganui reef site
+
+![mount-maunganui-reef-img-26](../../../07_scale/shapes/mount-maunganui-reef/3d/src/mmr_mead2007_fig1_location-map.png)
+
+- **file**: `07_scale/shapes/mount-maunganui-reef/3d/src/mmr_mead2007_fig1_location-map.png`
+- **kind**: plan_figure
+- **shows**: Location map of the reef site off Mount Maunganui, Bay of Plenty; no scale useful for the model.
+- **structure visible**: False
+- **state shown**: site
+- **citation**: Mead, S.T., Black, K.P. and Moores, A. (2007). Mount Maunganui Reef - amalgamating design and the constraints of construction. Coasts and Ports 2007: 18th Australasian Coastal and Ocean Engineering Conference (paper pp 768-773), Informit, doi:10.3316/informit.816670201626573, PDF page 2 (paper p 769), Figure 1. Private copy supplied by Lior (papers/Mount Maunganui Reef-amalgamating design and the constraints 2007.pdf; scan, no text layer). Accessed 2026-10-07.
+- **link**: https://doi.org/10.3316/informit.816670201626573
+- **page / figure**: Figure 1 (PDF page 2 (paper p 769))
+- **image date**: 2007 (paper)
+- **credit**: Authors as cited (Informit / Coasts and Ports conference paper); crop made by this project from the supplied PDF (300 dpi page render)
+- **licence**: not stated (conference paper; reuse not cleared)
+- **retrieved**: 2026-10-07
+- **used for**: context
+- **How used for the model**: Context only; the position comes from BoPRC Fig 3 / LINZ aerial (shape.json).
+- **3D check pending**: no - none: context / design-stage figure, nothing in the model depends on it
+- **linked records**: 07_scale/shapes/mount-maunganui-reef/3d/SOURCES_3D.md (checkpoint 2026-10-07 b, 2026-10-10)
+- **size**: 0.310 MB, 925x642 px
+- **sha256**: 83d758918e5889f7d4539b1b9fdfbf84b7e5d491a5f6979e88a56848575c1810
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: task_mm_update (agent 3), 2026-10-10
+
+## mount-maunganui-reef-img-27 - Mead et al. (2007) Fig. 2: design bathymetry of the "Delta" reef (rotated for modelling)
+
+![mount-maunganui-reef-img-27](../../../07_scale/shapes/mount-maunganui-reef/3d/src/mmr_mead2007_fig2_design-bathymetry-delta.png)
+
+- **file**: `07_scale/shapes/mount-maunganui-reef/3d/src/mmr_mead2007_fig2_design-bathymetry-delta.png`
+- **kind**: design_drawing
+- **shows**: Colour plan of the 2004 final design bathymetry, axes x, y 0-200 m, colour bar -0.5 to -4.5 m (datum not stated), symmetric delta with focus zone and wedge.
+- **structure visible**: True
+- **state shown**: design
+- **citation**: Mead, S.T., Black, K.P. and Moores, A. (2007). Mount Maunganui Reef - amalgamating design and the constraints of construction. Coasts and Ports 2007: 18th Australasian Coastal and Ocean Engineering Conference (paper pp 768-773), Informit, doi:10.3316/informit.816670201626573, PDF page 2 (paper p 769), Figure 2. Private copy supplied by Lior (papers/Mount Maunganui Reef-amalgamating design and the constraints 2007.pdf; scan, no text layer). Accessed 2026-10-07.
+- **link**: https://doi.org/10.3316/informit.816670201626573
+- **page / figure**: Figure 2 (PDF page 2 (paper p 769))
+- **image date**: 2004 design (paper 2007)
+- **credit**: Authors as cited (Informit / Coasts and Ports conference paper); crop made by this project from the supplied PDF (300 dpi page render)
+- **licence**: not stated (conference paper; reuse not cleared)
+- **retrieved**: 2026-10-07
+- **used for**: cross_check
+- **How used for the model**: Design bed about -4.5 m (datum unstated). Read as a design value only: it does not give the as-built bed (the reef was built about 50 m nearer the shore, Mead & Borrero 2011 sect. 4.1.2). Cited in METHODS_3D.md 3.3 / 4.5 as the upper end of the bed evidence.
+- **3D check pending**: YES - Design bed about -4.5 (datum unstated) vs the assumed as-built bed -3.6 m CD (D1); design only, built ~50 m nearer shore so not comparable point-for-point.
+- **linked records**: 07_scale/shapes/mount-maunganui-reef/3d/SOURCES_3D.md (checkpoint 2026-10-07 b, 2026-10-10)
+- **size**: 0.233 MB, 954x725 px
+- **sha256**: 7188aa5a28183af688acba7907f65f87d6ea0f1f986a1570edc2d6c210167fc5
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: task_mm_update (agent 3), 2026-10-10
+
+## mount-maunganui-reef-img-28 - Mead et al. (2007) Fig. 3: design plan drawing (wedge) and the 1:20 plywood physical model
+
+![mount-maunganui-reef-img-28](../../../07_scale/shapes/mount-maunganui-reef/3d/src/mmr_mead2007_fig3_design-plan-drawing-and-plywood-model.png)
+
+- **file**: `07_scale/shapes/mount-maunganui-reef/3d/src/mmr_mead2007_fig3_design-plan-drawing-and-plywood-model.png`
+- **kind**: design_drawing
+- **shows**: Dimensioned plan of the original wedge design (87.6 m overall, 75.1 m wide, 27.5 m notch, contours 1.25-2.50 m) and photo of the 1:20 model.
+- **structure visible**: True
+- **state shown**: design (never built)
+- **citation**: Mead, S.T., Black, K.P. and Moores, A. (2007). Mount Maunganui Reef - amalgamating design and the constraints of construction. Coasts and Ports 2007: 18th Australasian Coastal and Ocean Engineering Conference (paper pp 768-773), Informit, doi:10.3316/informit.816670201626573, PDF page 3 (paper p 770), Figure 3. Private copy supplied by Lior (papers/Mount Maunganui Reef-amalgamating design and the constraints 2007.pdf; scan, no text layer). Accessed 2026-10-07.
+- **link**: https://doi.org/10.3316/informit.816670201626573
+- **page / figure**: Figure 3 (PDF page 3 (paper p 770))
+- **image date**: 2004-2005 (paper 2007)
+- **credit**: Authors as cited (Informit / Coasts and Ports conference paper); crop made by this project from the supplied PDF (300 dpi page render)
+- **licence**: not stated (conference paper; reuse not cleared)
+- **retrieved**: 2026-10-07
+- **used for**: context
+- **How used for the model**: Context: the wedge was a design only and is never drawn in our model (HANDOFF section 2). Dimensions recorded in the card.
+- **3D check pending**: no - none: context / design-stage figure, nothing in the model depends on it
+- **linked records**: 07_scale/shapes/mount-maunganui-reef/3d/SOURCES_3D.md (checkpoint 2026-10-07 b, 2026-10-10)
+- **size**: 0.911 MB, 908x1571 px
+- **sha256**: 41969d2517bd974dded026843cf97d807903449de5ad4b260f31f7e1e384c04d
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: task_mm_update (agent 3), 2026-10-10
+
+## mount-maunganui-reef-img-29 - Mead et al. (2007) Fig. 4: physical-model photos of waves breaking on the modified design
+
+![mount-maunganui-reef-img-29](../../../07_scale/shapes/mount-maunganui-reef/3d/src/mmr_mead2007_fig4_model-breaking-waves-modified-design.png)
+
+- **file**: `07_scale/shapes/mount-maunganui-reef/3d/src/mmr_mead2007_fig4_model-breaking-waves-modified-design.png`
+- **kind**: photo
+- **shows**: Photos of the 1:20 model with waves breaking on the widened wedge.
+- **structure visible**: True
+- **state shown**: design (model test)
+- **citation**: Mead, S.T., Black, K.P. and Moores, A. (2007). Mount Maunganui Reef - amalgamating design and the constraints of construction. Coasts and Ports 2007: 18th Australasian Coastal and Ocean Engineering Conference (paper pp 768-773), Informit, doi:10.3316/informit.816670201626573, PDF page 3 (paper p 770), Figure 4. Private copy supplied by Lior (papers/Mount Maunganui Reef-amalgamating design and the constraints 2007.pdf; scan, no text layer). Accessed 2026-10-07.
+- **link**: https://doi.org/10.3316/informit.816670201626573
+- **page / figure**: Figure 4 (PDF page 3 (paper p 770))
+- **image date**: 2004-2005 (paper 2007)
+- **credit**: Authors as cited (Informit / Coasts and Ports conference paper); crop made by this project from the supplied PDF (300 dpi page render)
+- **licence**: not stated (conference paper; reuse not cleared)
+- **retrieved**: 2026-10-07
+- **used for**: context
+- **How used for the model**: Context only (design development).
+- **3D check pending**: no - none: context / design-stage figure, nothing in the model depends on it
+- **linked records**: 07_scale/shapes/mount-maunganui-reef/3d/SOURCES_3D.md (checkpoint 2026-10-07 b, 2026-10-10)
+- **size**: 0.763 MB, 846x1259 px
+- **sha256**: 83672dd6ced0f835df7f6b1d6eb783544290f0f320c1417fbac3a3f8813a07f1
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: task_mm_update (agent 3), 2026-10-10
+
+## mount-maunganui-reef-img-30 - Mead et al. (2007) Fig. 5: 1:21 mega-container (plastic tube) physical model, version 2
+
+![mount-maunganui-reef-img-30](../../../07_scale/shapes/mount-maunganui-reef/3d/src/mmr_mead2007_fig5_mega-container-model-v2.png)
+
+- **file**: `07_scale/shapes/mount-maunganui-reef/3d/src/mmr_mead2007_fig5_mega-container-model-v2.png`
+- **kind**: photo
+- **shows**: Photos of the 1:21 plastic-tube model of the container reef (2:1 filled ratio).
+- **structure visible**: True
+- **state shown**: design (model test)
+- **citation**: Mead, S.T., Black, K.P. and Moores, A. (2007). Mount Maunganui Reef - amalgamating design and the constraints of construction. Coasts and Ports 2007: 18th Australasian Coastal and Ocean Engineering Conference (paper pp 768-773), Informit, doi:10.3316/informit.816670201626573, PDF page 3 (paper p 770), Figure 5. Private copy supplied by Lior (papers/Mount Maunganui Reef-amalgamating design and the constraints 2007.pdf; scan, no text layer). Accessed 2026-10-07.
+- **link**: https://doi.org/10.3316/informit.816670201626573
+- **page / figure**: Figure 5 (PDF page 3 (paper p 770))
+- **image date**: 2005 (paper 2007)
+- **credit**: Authors as cited (Informit / Coasts and Ports conference paper); crop made by this project from the supplied PDF (300 dpi page render)
+- **licence**: not stated (conference paper; reuse not cleared)
+- **retrieved**: 2026-10-07
+- **used for**: context
+- **How used for the model**: Context only (design development).
+- **3D check pending**: no - none: context / design-stage figure, nothing in the model depends on it
+- **linked records**: 07_scale/shapes/mount-maunganui-reef/3d/SOURCES_3D.md (checkpoint 2026-10-07 b, 2026-10-10)
+- **size**: 0.238 MB, 584x438 px
+- **sha256**: 221d1f5e2214cab489cc85e29bad7ce8599d82c802f408755de500076e050c1c
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: task_mm_update (agent 3), 2026-10-10
+
+## mount-maunganui-reef-img-31 - Mead et al. (2007) Fig. 6: clean breaking wave on the mega-container model
+
+![mount-maunganui-reef-img-31](../../../07_scale/shapes/mount-maunganui-reef/3d/src/mmr_mead2007_fig6_model-clean-breaking-wave.png)
+
+- **file**: `07_scale/shapes/mount-maunganui-reef/3d/src/mmr_mead2007_fig6_model-clean-breaking-wave.png`
+- **kind**: photo
+- **shows**: Photo of a clean breaking wave on the 1:21 container model.
+- **structure visible**: True
+- **state shown**: design (model test)
+- **citation**: Mead, S.T., Black, K.P. and Moores, A. (2007). Mount Maunganui Reef - amalgamating design and the constraints of construction. Coasts and Ports 2007: 18th Australasian Coastal and Ocean Engineering Conference (paper pp 768-773), Informit, doi:10.3316/informit.816670201626573, PDF page 4 (paper p 771), Figure 6. Private copy supplied by Lior (papers/Mount Maunganui Reef-amalgamating design and the constraints 2007.pdf; scan, no text layer). Accessed 2026-10-07.
+- **link**: https://doi.org/10.3316/informit.816670201626573
+- **page / figure**: Figure 6 (PDF page 4 (paper p 771))
+- **image date**: 2005 (paper 2007)
+- **credit**: Authors as cited (Informit / Coasts and Ports conference paper); crop made by this project from the supplied PDF (300 dpi page render)
+- **licence**: not stated (conference paper; reuse not cleared)
+- **retrieved**: 2026-10-07
+- **used for**: context
+- **How used for the model**: Context only.
+- **3D check pending**: no - none: context / design-stage figure, nothing in the model depends on it
+- **linked records**: 07_scale/shapes/mount-maunganui-reef/3d/SOURCES_3D.md (checkpoint 2026-10-07 b, 2026-10-10)
+- **size**: 0.532 MB, 967x592 px
+- **sha256**: c045ad11757e077ee3ea24b52c7a8563e8d4c5ae29f3aa2c698489c2200a4a4f
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: task_mm_update (agent 3), 2026-10-10
+
+## mount-maunganui-reef-img-32 - Mead et al. (2007) Fig. 7: wave rating versus tide and wave height from the physical model
+
+![mount-maunganui-reef-img-32](../../../07_scale/shapes/mount-maunganui-reef/3d/src/mmr_mead2007_fig7_wave-rating-chart.png)
+
+- **file**: `07_scale/shapes/mount-maunganui-reef/3d/src/mmr_mead2007_fig7_wave-rating-chart.png`
+- **kind**: diagram
+- **shows**: Chart of surf-quality rating (6-7 best at mid tide and 1.5-2 m waves; closes out above about 3 m) for MHWS / MSL / MLWS.
+- **structure visible**: False
+- **state shown**: design (model test)
+- **citation**: Mead, S.T., Black, K.P. and Moores, A. (2007). Mount Maunganui Reef - amalgamating design and the constraints of construction. Coasts and Ports 2007: 18th Australasian Coastal and Ocean Engineering Conference (paper pp 768-773), Informit, doi:10.3316/informit.816670201626573, PDF page 4 (paper p 771), Figure 7. Private copy supplied by Lior (papers/Mount Maunganui Reef-amalgamating design and the constraints 2007.pdf; scan, no text layer). Accessed 2026-10-07.
+- **link**: https://doi.org/10.3316/informit.816670201626573
+- **page / figure**: Figure 7 (PDF page 4 (paper p 771))
+- **image date**: 2005 (paper 2007)
+- **credit**: Authors as cited (Informit / Coasts and Ports conference paper); crop made by this project from the supplied PDF (300 dpi page render)
+- **licence**: not stated (conference paper; reuse not cleared)
+- **retrieved**: 2026-10-07
+- **used for**: context
+- **How used for the model**: Context: performance expectations written into the card; not used for geometry.
+- **3D check pending**: no - none: context / design-stage figure, nothing in the model depends on it
+- **linked records**: 07_scale/shapes/mount-maunganui-reef/3d/SOURCES_3D.md (checkpoint 2026-10-07 b, 2026-10-10)
+- **size**: 0.016 MB, 950x567 px
+- **sha256**: 58dbb91d5b65e2944ec5b1186641f7e12f4d99da6e98ad7c2569c7b9a00642e4
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: task_mm_update (agent 3), 2026-10-10
+
+## mount-maunganui-reef-img-33 - Mead et al. (2007) Fig. 8: final mega-container layout (chevron of about 24 containers)
+
+![mount-maunganui-reef-img-33](../../../07_scale/shapes/mount-maunganui-reef/3d/src/mmr_mead2007_fig8_final-mega-container-layout.png)
+
+- **file**: `07_scale/shapes/mount-maunganui-reef/3d/src/mmr_mead2007_fig8_final-mega-container-layout.png`
+- **kind**: design_drawing
+- **shows**: Layout of the final chevron of about 24 geo-containers; no scale or axes.
+- **structure visible**: True
+- **state shown**: design (final construction layout)
+- **citation**: Mead, S.T., Black, K.P. and Moores, A. (2007). Mount Maunganui Reef - amalgamating design and the constraints of construction. Coasts and Ports 2007: 18th Australasian Coastal and Ocean Engineering Conference (paper pp 768-773), Informit, doi:10.3316/informit.816670201626573, PDF page 4 (paper p 771), Figure 8. Private copy supplied by Lior (papers/Mount Maunganui Reef-amalgamating design and the constraints 2007.pdf; scan, no text layer). Accessed 2026-10-07.
+- **link**: https://doi.org/10.3316/informit.816670201626573
+- **page / figure**: Figure 8 (PDF page 4 (paper p 771))
+- **image date**: 2005-2006 (paper 2007)
+- **credit**: Authors as cited (Informit / Coasts and Ports conference paper); crop made by this project from the supplied PDF (300 dpi page render)
+- **licence**: not stated (conference paper; reuse not cleared)
+- **retrieved**: 2026-10-07
+- **used for**: cross_check
+- **How used for the model**: Qualitative check of the bag arrangement (chevron with two arms) against the traced arms; no dimensions read.
+- **3D check pending**: YES - Number and arrangement of containers (about 24, two halves of 12) vs the traced arms (west arm 3 bags, south arm 2 bags + NE bags) in shape.json; no scale, qualitative.
+- **linked records**: 07_scale/shapes/mount-maunganui-reef/3d/SOURCES_3D.md (checkpoint 2026-10-07 b, 2026-10-10)
+- **size**: 0.335 MB, 929x709 px
+- **sha256**: 8a8896dd13135b60fe03e1fe680cea68634a8f796159a8f0cea49ffee6d3b582
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: task_mm_update (agent 3), 2026-10-10
+
+## mount-maunganui-reef-img-34 - Mead et al. (2007) Fig. 9: cranes lifting the first half of the reef assembled onshore
+
+![mount-maunganui-reef-img-34](../../../07_scale/shapes/mount-maunganui-reef/3d/src/mmr_mead2007_fig9_cranes-first-half-onshore.png)
+
+- **file**: `07_scale/shapes/mount-maunganui-reef/3d/src/mmr_mead2007_fig9_cranes-first-half-onshore.png`
+- **kind**: photo
+- **shows**: Photo of the first onshore-assembled half (12 containers) being lifted by cranes.
+- **structure visible**: True
+- **state shown**: under construction (2006)
+- **citation**: Mead, S.T., Black, K.P. and Moores, A. (2007). Mount Maunganui Reef - amalgamating design and the constraints of construction. Coasts and Ports 2007: 18th Australasian Coastal and Ocean Engineering Conference (paper pp 768-773), Informit, doi:10.3316/informit.816670201626573, PDF page 5 (paper p 772), Figure 9. Private copy supplied by Lior (papers/Mount Maunganui Reef-amalgamating design and the constraints 2007.pdf; scan, no text layer). Accessed 2026-10-07.
+- **link**: https://doi.org/10.3316/informit.816670201626573
+- **page / figure**: Figure 9 (PDF page 5 (paper p 772))
+- **image date**: 2006 (paper 2007)
+- **credit**: Authors as cited (Informit / Coasts and Ports conference paper); crop made by this project from the supplied PDF (300 dpi page render)
+- **licence**: not stated (conference paper; reuse not cleared)
+- **retrieved**: 2026-10-07
+- **used for**: context
+- **How used for the model**: Context: RAD (reef assembled onshore) construction method; container size 50 x 7.2 x 3.2 m filled in the card.
+- **3D check pending**: no - none: context / design-stage figure, nothing in the model depends on it
+- **linked records**: 07_scale/shapes/mount-maunganui-reef/3d/SOURCES_3D.md (checkpoint 2026-10-07 b, 2026-10-10)
+- **size**: 0.650 MB, 895x600 px
+- **sha256**: 77099dccd2a65079062452be6585a14be3704d276227d60a075ac56e3b0282c0
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: task_mm_update (agent 3), 2026-10-10
+
+## mount-maunganui-reef-img-35 - Mead et al. (2007) Fig. 10: barge route and reef site on a Google Earth image, 2006
+
+![mount-maunganui-reef-img-35](../../../07_scale/shapes/mount-maunganui-reef/3d/src/mmr_mead2007_fig10_barge-route-google-earth-2006.png)
+
+- **file**: `07_scale/shapes/mount-maunganui-reef/3d/src/mmr_mead2007_fig10_barge-route-google-earth-2006.png`
+- **kind**: aerial
+- **shows**: Google Earth image with the barge route from the launching beach to the reef site.
+- **structure visible**: False
+- **state shown**: site (2006)
+- **citation**: Mead, S.T., Black, K.P. and Moores, A. (2007). Mount Maunganui Reef - amalgamating design and the constraints of construction. Coasts and Ports 2007: 18th Australasian Coastal and Ocean Engineering Conference (paper pp 768-773), Informit, doi:10.3316/informit.816670201626573, PDF page 5 (paper p 772), Figure 10. Private copy supplied by Lior (papers/Mount Maunganui Reef-amalgamating design and the constraints 2007.pdf; scan, no text layer). Accessed 2026-10-07.
+- **link**: https://doi.org/10.3316/informit.816670201626573
+- **page / figure**: Figure 10 (PDF page 5 (paper p 772))
+- **image date**: 2006 (image) / 2007 (paper)
+- **credit**: Authors as cited (Informit / Coasts and Ports conference paper); crop made by this project from the supplied PDF (300 dpi page render)
+- **licence**: not stated (conference paper; reuse not cleared)
+- **retrieved**: 2026-10-07
+- **used for**: context
+- **How used for the model**: Context only; Google Earth imagery licence not stated, not used for the plan.
+- **3D check pending**: no - none: context / design-stage figure, nothing in the model depends on it
+- **linked records**: 07_scale/shapes/mount-maunganui-reef/3d/SOURCES_3D.md (checkpoint 2026-10-07 b, 2026-10-10)
+- **size**: 0.612 MB, 891x829 px
+- **sha256**: 938dc74e7dfc2a567cd6bf987d635928c983f9fc53a76d5fda7e2240ed28c174
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: task_mm_update (agent 3), 2026-10-10
+
+## mount-maunganui-reef-img-36 - Mead et al. (2007) Fig. 11: surf photos of the reef 2006-2007
+
+![mount-maunganui-reef-img-36](../../../07_scale/shapes/mount-maunganui-reef/3d/src/mmr_mead2007_fig11_surf-photos-2006-2007.png)
+
+- **file**: `07_scale/shapes/mount-maunganui-reef/3d/src/mmr_mead2007_fig11_surf-photos-2006-2007.png`
+- **kind**: photo
+- **shows**: Photos of waves breaking on the partly built reef (2006-2007).
+- **structure visible**: False
+- **state shown**: partly built (2006-2007)
+- **citation**: Mead, S.T., Black, K.P. and Moores, A. (2007). Mount Maunganui Reef - amalgamating design and the constraints of construction. Coasts and Ports 2007: 18th Australasian Coastal and Ocean Engineering Conference (paper pp 768-773), Informit, doi:10.3316/informit.816670201626573, PDF page 5 (paper p 772), Figure 11. Private copy supplied by Lior (papers/Mount Maunganui Reef-amalgamating design and the constraints 2007.pdf; scan, no text layer). Accessed 2026-10-07.
+- **link**: https://doi.org/10.3316/informit.816670201626573
+- **page / figure**: Figure 11 (PDF page 5 (paper p 772))
+- **image date**: 2006-2007
+- **credit**: Authors as cited (Informit / Coasts and Ports conference paper); crop made by this project from the supplied PDF (300 dpi page render)
+- **licence**: not stated (conference paper; reuse not cleared)
+- **retrieved**: 2026-10-07
+- **used for**: context
+- **How used for the model**: Context: evidence of breaking on the unfinished reef; no values read.
+- **3D check pending**: no - none: context / design-stage figure, nothing in the model depends on it
+- **linked records**: 07_scale/shapes/mount-maunganui-reef/3d/SOURCES_3D.md (checkpoint 2026-10-07 b, 2026-10-10)
+- **size**: 0.680 MB, 750x1163 px
+- **sha256**: 6a5eb3f09043a78f0a22ec2868c2438ce84f41a0452147642155bc5497ceeb46
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: task_mm_update (agent 3), 2026-10-10
+
+## mount-maunganui-reef-img-37 - Mead et al. (2007) Fig. 12 (top): bathymetry survey of the unfinished reef, October 2006
+
+![mount-maunganui-reef-img-37](../../../07_scale/shapes/mount-maunganui-reef/3d/src/mmr_mead2007_fig12a_oct2006-bathymetry-survey.png)
+
+- **file**: `07_scale/shapes/mount-maunganui-reef/3d/src/mmr_mead2007_fig12a_oct2006-bathymetry-survey.png`
+- **annotated**: `07_scale/shapes/mount-maunganui-reef/3d/annotated/mmr_mead2007_fig12a_depth_classes.png`
+- **kind**: survey_plot
+- **shows**: Colour bathymetry (25 depth classes, 0.33-5.25 m, positive depths, datum not stated, no scale bar) of the 70 % built "7" with the 60 x 6 m gap through the right-hander; design outline and manta anchors drawn.
+- **structure visible**: True
+- **state shown**: partly built (Oct 2006)
+- **citation**: Mead, S.T., Black, K.P. and Moores, A. (2007). Mount Maunganui Reef - amalgamating design and the constraints of construction. Coasts and Ports 2007: 18th Australasian Coastal and Ocean Engineering Conference (paper pp 768-773), Informit, doi:10.3316/informit.816670201626573, PDF page 6 (paper p 773), Figure 12 (top). Private copy supplied by Lior (papers/Mount Maunganui Reef-amalgamating design and the constraints 2007.pdf; scan, no text layer). Accessed 2026-10-07.
+- **link**: https://doi.org/10.3316/informit.816670201626573
+- **page / figure**: Figure 12 (top) (PDF page 6 (paper p 773))
+- **image date**: October 2006
+- **credit**: Authors as cited (Informit / Coasts and Ports conference paper); crop made by this project from the supplied PDF (300 dpi page render)
+- **licence**: not stated (conference paper; reuse not cleared)
+- **retrieved**: 2026-10-07
+- **used for**: 3d_seabed, 3d_crest, cross_check
+- **How used for the model**: Read by 3d/fig12_oct2006_read.py (legend bins reconstructed, +-0.02 m): reef parts 0.33-1.5 m below the unstated datum (median 1.18; shallowest class 0.33-0.70; CD assumed since it matches BoPRC crest -0.8..-1.0), bed beside the reef 1.94 / 2.13-2.70 / 3.65 m (P10 / P50 / P90 by ring), deepest class 4.59 m. Supports the "later seabed" option (-2.8 m CD) and a bed shallower than the assumed -3.6; the default was not changed (D1).
+- **3D check pending**: no - Bed beside the reef and crest depth in Oct 2006 vs the assumed bed -3.6 m CD and crest -0.9 m CD. RESOLVED: 3D agent 2026-10-07: RESOLVED. Bed 2.0-3.7 m (shallower than -3.6, datum unstated, CD assumed); reef parts 0.33-1.5 m consistent with the crest -0.9 m CD. Reported only; D1 default kept, option -2.8 m CD added.
+- **linked records**: 07_scale/shapes/mount-maunganui-reef/3d/SOURCES_3D.md (checkpoint 2026-10-07 b, 2026-10-10)
+- **size**: 0.414 MB, 854x600 px
+- **sha256**: 8d1717f0a98202a6ff84d9a919d9b22fb1ec76f169b7d91e89d5d40a1d9cbb61
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: task_mm_update (agent 3), 2026-10-10
+
+## mount-maunganui-reef-img-38 - Mead et al. (2007) Fig. 12 (b, c): model of the gap through the right-hander and a photo of the reef
+
+![mount-maunganui-reef-img-38](../../../07_scale/shapes/mount-maunganui-reef/3d/src/mmr_mead2007_fig12bc_gap-model-and-photo.png)
+
+- **file**: `07_scale/shapes/mount-maunganui-reef/3d/src/mmr_mead2007_fig12bc_gap-model-and-photo.png`
+- **kind**: photo
+- **shows**: Physical-model plan and photo illustrating the 60 x 6 m gap through the middle of the right-hander of the unfinished reef.
+- **structure visible**: True
+- **state shown**: partly built (2006-2007)
+- **citation**: Mead, S.T., Black, K.P. and Moores, A. (2007). Mount Maunganui Reef - amalgamating design and the constraints of construction. Coasts and Ports 2007: 18th Australasian Coastal and Ocean Engineering Conference (paper pp 768-773), Informit, doi:10.3316/informit.816670201626573, PDF page 6 (paper p 773), Figure 12 (middle and bottom). Private copy supplied by Lior (papers/Mount Maunganui Reef-amalgamating design and the constraints 2007.pdf; scan, no text layer). Accessed 2026-10-07.
+- **link**: https://doi.org/10.3316/informit.816670201626573
+- **page / figure**: Figure 12 (middle and bottom) (PDF page 6 (paper p 773))
+- **image date**: 2006-2007
+- **credit**: Authors as cited (Informit / Coasts and Ports conference paper); crop made by this project from the supplied PDF (300 dpi page render)
+- **licence**: not stated (conference paper; reuse not cleared)
+- **retrieved**: 2026-10-07
+- **used for**: context
+- **How used for the model**: Context: the 60 x 6 m gap (replacement scheduled) explains why the 2007 reef surfed poorly through the middle; not modelled (as-built state = completed 2008).
+- **3D check pending**: no - none: context / design-stage figure, nothing in the model depends on it
+- **linked records**: 07_scale/shapes/mount-maunganui-reef/3d/SOURCES_3D.md (checkpoint 2026-10-07 b, 2026-10-10)
+- **size**: 1.084 MB, 854x1208 px
+- **sha256**: 846d2ba46725111ab29d3a923c852f55f75d0fe8273872d3a205ac31fec567f9
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: task_mm_update (agent 3), 2026-10-10
+
+## mount-maunganui-reef-img-39 - Blacka et al. (2013) Fig. 2.16: Rapid Accurate Deployment (RAD) reef construction method at Mount Maunganui (ASR 2008a)
+- **file**: `03_images/reefs/mount-maunganui-reef/mount-maunganui-reef_p8-fig2-16-RAD-method_2005-2008.png`
+- **kind**: diagram
+- **shows**: Six panels: bag layout drawing (V of tubes), webbing and bag assembly on the beach, loading a panel on a barge, deployment, diver securing the anchor, filling the tubes.
+- **structure visible**: True
+- **state shown**: as-built (construction method)
+- **image date**: 2005-2008 (construction)
+- **citation**: Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08 (Final, 11 June 2013), UNSW Water Research Laboratory, for the NSW Office of Environment and Heritage. p.34 (PDF p.46), Figure 2.16. https://doi.org/10.4225/53/58e1dc7368c7a. Accessed 2026-10-07.
+- **image URL**: https://doi.org/10.4225/53/58e1dc7368c7a
+- **source page**: https://doi.org/10.4225/53/58e1dc7368c7a
+- **page / figure**: report p.34 (PDF p.46), Figure 2.16 (clip, 200 dpi)
+- **credit**: ASR (2008a) as reproduced in Blacka et al. (2013)
+- **licence**: CC BY-NC-ND 3.0 AU (as recorded in REQUESTS_FOR_LIOR.md P8; not re-checked on the PDF)
+- **retrieved**: 2026-10-10
+- **used for**: context, cross_check
+- **How used for the model**: Shows the V-shaped bag layout drawing (too small to read). Context for construction method and why built volume fell short; no geometry read.
+- **3D check pending**: no - none: layout drawing illegible at this size
+- **linked records**: 05_qa/papers_intake/P8_blacka_2013.md
+- **size**: 1.90 MB, 1417x1348 px
+- **sha256**: b63025ab7b4bf7b71724ff4ca7412161267a8dd581265f4c4bc8a91f41f274d3
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: papers intake P3/P8, 2026-10-10
+
+## mount-maunganui-reef-img-40 - Blacka et al. (2013) Fig. 3.1: physical modelling of wave breaking on the Mount Maunganui MPR (Black and Mead 2009)
+- **file**: `03_images/reefs/mount-maunganui-reef/mount-maunganui-reef_p8-fig3-1-physical-model-waves_2007.png`
+- **kind**: photo
+- **shows**: Two close-up photos of a wave breaking over the model reef in the flume.
+- **structure visible**: False
+- **state shown**: design (physical model)
+- **image date**: not dated (physical model, before 2009)
+- **citation**: Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08 (Final, 11 June 2013), UNSW Water Research Laboratory, for the NSW Office of Environment and Heritage. p.42 (PDF p.54), Figure 3.1. https://doi.org/10.4225/53/58e1dc7368c7a. Accessed 2026-10-07.
+- **image URL**: https://doi.org/10.4225/53/58e1dc7368c7a
+- **source page**: https://doi.org/10.4225/53/58e1dc7368c7a
+- **page / figure**: report p.42 (PDF p.54), Figure 3.1 (clip, 200 dpi)
+- **credit**: Black and Mead (2009) as reproduced in Blacka et al. (2013)
+- **licence**: CC BY-NC-ND 3.0 AU (as recorded in REQUESTS_FOR_LIOR.md P8; not re-checked on the PDF)
+- **retrieved**: 2026-10-10
+- **used for**: context
+- **How used for the model**: Context only; the registered Mead et al. (2007) physical-model photos (img-29, img-30) cover the same test.
+- **3D check pending**: no - none
+- **linked records**: 05_qa/papers_intake/P8_blacka_2013.md
+- **size**: 0.79 MB, 1307x542 px
+- **sha256**: 66d6d423c0b63fbb2c034de2ebaad753da8758958bbdee29a031a73cdf8c1df6
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: papers intake P3/P8, 2026-10-10
+
+## mount-maunganui-reef-img-41 - Blacka et al. (2013) Fig. A.9: location of Mount MPR (satellite)
+- **file**: `03_images/reefs/mount-maunganui-reef/mount-maunganui-reef_p8-figA9-location_2013.png`
+- **kind**: satellite
+- **shows**: Satellite map of Tauranga Harbour entrance, Motuotau Island and Mount Maunganui beach with a reef marker offshore; 1 km scale bar.
+- **structure visible**: False
+- **state shown**: context (location)
+- **image date**: unknown (imagery before 2013)
+- **citation**: Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08 (Final, 11 June 2013), UNSW Water Research Laboratory, for the NSW Office of Environment and Heritage. p.101 (PDF p.113), Figure A.9. https://doi.org/10.4225/53/58e1dc7368c7a. Accessed 2026-10-07.
+- **image URL**: https://doi.org/10.4225/53/58e1dc7368c7a
+- **source page**: https://doi.org/10.4225/53/58e1dc7368c7a
+- **page / figure**: report p.101 (PDF p.113), Figure A.9 (clip, 200 dpi)
+- **credit**: Blacka et al. (2013) over satellite imagery (provider not stated)
+- **licence**: CC BY-NC-ND 3.0 AU (as recorded in REQUESTS_FOR_LIOR.md P8; not re-checked on the PDF)
+- **retrieved**: 2026-10-10
+- **used for**: context
+- **How used for the model**: Location context only.
+- **3D check pending**: no - none
+- **linked records**: 05_qa/papers_intake/P8_blacka_2013.md
+- **size**: 1.02 MB, 1209x715 px
+- **sha256**: 71827bf3b94ce88e300c2979f899a740c55de6fcd83c121e2ffa3708672d1548
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: papers intake P3/P8, 2026-10-10

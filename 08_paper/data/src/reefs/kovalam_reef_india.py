@@ -1,0 +1,47 @@
+import sys; sys.path.insert(0, '/home/user/artificial-reef-survey/08_paper/data/src')
+from common import *
+SL = 'kovalam-reef-india'
+SH = '07_scale/shapes/kovalam-reef-india/'
+AL = dict(GLOBAL_ALIASES, RWR=r'Raised Water Research \(n\.d\., copyright 2020', ICM=r'Coastal Management \(ICM\)\. "Building', Rendle2016=r'Rendle, E\.J\. \(2016\)', Collins2010=r'Sean Collins', Surfer2010=r'SURFER Magazine', Geosynth=r'Geosynthetics Magazine')
+def build():
+    r = Reef(SL, AL)
+    r.F('name', 'Kovalam Reef (India\'s first multi-purpose reef), Kovalam, Kerala', 'text', 'S', 'Blacka2013', 'Table 4.2 p.66; Section 4.3 p.70-71')
+    r.F('country', 'India', 'text', 'S', 'Blacka2013', 'Table 4.2 p.66')
+    r.F('lat', 8.387326, 'deg N (WGS84)', 'D', 'repo:' + SH + 'shape.json geo (centre of the photo trace, H60 default); page status approximate', 'centre of an UNSCALED oblique-photo trace; +-20 m by the camera fit, scale undetermined', note='Page marks the pin approximate; the card gives 8.387313, 76.975188.')
+    r.F('lon', 76.97522, 'deg E (WGS84)', 'D', 'repo:' + SH + 'shape.json geo', 'as lat')
+    r.F('year_built', 2009, 'year (Dec 2009 - Feb 2010)', 'S', 'RWR', 'card year field (R1, R10); one source gives April 2010 (R3)')
+    r.F('year_completed', 2010, 'year', 'S', 'MeadBorrero2011', 'completed late Feb 2010 (07_scale/shapes/kovalam-reef-india/HANDOFF.md s3.3, citing M&B s.3.1.7 / Collins 2010)')
+    r.F('purpose', 'multi', 'category', 'S', 'RWR', 'card purpose: primary coastal-erosion protection (monsoon waves), secondary surf/tourism', note='Blacka Table 4.1: coastal protection "Yes (preliminary)" and surfing "Yes (preliminary)".')
+    r.F('material', 'sand-filled geotextile containers (strips ~30 m long), 5-6 strips fanning out', 'text', 'S', 'RWR', 'card size/type fields; shape.json (strips seen in the ASR aerial)')
+    r.F('volume_m3', 4000, 'm3', 'S', 'MeadBorrero2011', 's.3.1.7 (Kovalam)', note='Disagreement: 3,000 initial; 4,300 (Rendle 2016 Table 2.1); 4,800 (RWR/ICM card); ~4,017 implied by Blacka Table 4.4 (A$1.41 M at A$351/m3).',
+        alts=[(4800, 'RWR / ICM', 'S', 'RWR', 'card size field'), (4300, 'Rendle 2016 Table 2.1 p.41', 'S', 'Rendle2016', 'Table 2.1'), (4017, 'implied by Blacka cost rate (DERIVED)', 'D', 'Blacka2013', 'Table 4.4')])
+    r.F('footprint_area_m2', 1216, 'm2 (photo trace H60, LOW)', 'D', 'repo:' + SH + 'shape.json canonical.area_m2 / rectify_result.json', 'camera-fit rectification of the ASR oblique aerial (camera height ASSUMED 60 m); H35: 640 m2, H80: 1,681 m2', note='Scale undetermined: treat as an order-of-magnitude figure.',
+        alts=[(5525, '65 x 85 m envelope (published, rectangle area DERIVED)', 'D', 'Blacka2013', 'Table 4.2 p.66')])
+    r.F('plan_length_alongshore_m', 59, 'm (photo trace H60)', 'D', 'repo:' + SH + 'shape.json canonical.bbox_m.alongshore', '', alts=[(65, 'published', 'S', 'Blacka2013', 'Table 4.2 p.66')])
+    r.F('plan_length_crossshore_m', 41, 'm (photo trace H60)', 'D', 'repo:' + SH + 'shape.json canonical.bbox_m.crossshore', 'cross-shore size is -52 % vs the published 85 m at the default scale', alts=[(85, 'published', 'S', 'Blacka2013', 'Table 4.2 p.66')])
+    r.U('reef_height_m', 'm', 'no height or cross-section in any source (containers ~30 m long).')
+    r.U('crest_depth_msl_m', 'm below MSL', 'only "submergence 0.2-3.4 m" (Blacka Table 4.2 p.66; datum not stated, probably a range across the reef) - not tied to a position or a datum, so not entered.')
+    r.U('crest_depth_lat_m', 'm below LAT', 'datum not stated (see crest_depth_msl_m).')
+    r.U('seabed_depth_toe_m', 'm below MSL', 'only "water depth 1.3-3.7 m" at the reef (Blacka Table 4.2 p.66), datum not stated, no profile.')
+    r.U('seabed_depth_at_crest_m', 'm below MSL', 'as above.')
+    r.U('depth_gap_m', 'm', 'crest and toe levels not located: no 3D model (FEASIBILITY.md).')
+    r.U('seaward_ramp_length_m', 'm', 'no section; plan scale uncertain.')
+    r.U('mean_seaward_slope', 'm/m', 'not computable.')
+    r.F('distance_offshore_crest_m', 90, 'm (to the pre-reef shoreline; nearest edge 65, mean 90, max 106 in the photo trace)', 'S', 'Blacka2013', 'Table 4.2 p.66 "offshore 90 m"; shape.json nearest edge 65 m (H60)')
+    r.U('tide_spring_range_m', 'm', 'only "tide range about 1.0 m" (Blacka Table 4.3 p.68).')
+    r.F('tide_mean_range_m', 1.0, 'm (approx., definition not stated)', 'S', 'Blacka2013', 'Table 4.3 p.68')
+    r.F('swell_hs_m', '1-2.5', 'm', 'S', 'Blacka2013', 'Table 4.3 p.68: H = 1-2.5 m, T = 11-15 s')
+    r.F('swell_tp_s', '11-15', 's', 'S', 'Blacka2013', 'Table 4.3 p.68')
+    r.U('swell_dir', 'text', 'direction not confirmed in sources read.')
+    r.F('design_wave', 'shaped to produce a ~100 m left-hand wave (ASR)', 'text', 'S', 'RWR', 'card size field (R1, R10)')
+    r.F('arm_angle_to_shoreline_deg', 38, 'deg (strip direction vs swash line, +-15)', 'D', 'repo:' + SH + 'shape.json angles', 'rectified edge bearings 230.7/237.7 deg vs swash tangent 196 deg at the camera')
+    r.U('arm_angle_to_swell_deg', 'deg', 'swell direction not confirmed.')
+    r.F('surf_outcome', 'mixed/disputed', 'category', 'S', 'Collins2010+RWR+Blacka2013', 'Collins 2010; RWR; Blacka Table 4.1 (preliminary "Yes")',
+        note='Initially positive: 7-10 s left-hand rides, "fun and open faced" (reef\'s own monitoring); Sean Collins 29 Apr 2010: potentially "the best wave an artificial reef has ever created". Then failure: containers tearing and washing ashore "less than two weeks" after inauguration; by 2010-11 "waves just roll over the reef now without even breaking" (Jelle Rigole, RWR).')
+    r.U('surfable_days_per_year', 'days/yr', 'not stated.')
+    r.F('durability', 'containers torn, deflated and sunk; damage hampering the protective effect by 2013 (E. Rendle pers. comm. 2013 via Blacka); degraded in place, no formal removal', 'text', 'S', 'RWR+Blacka2013', 'card status_now; Blacka p.70')
+    r.F('sediment_shoreline_outcome', 'beach 10-15 m wider in monsoon and up to 30 m in non-monsoon season (designers); NSW review: only MPR with a significant positive shoreline effect so far, <3 years of monitoring, independent CESS assessment pending', 'text', 'S', 'MeadBorrero2011+Blacka2013', 'M&B s.4.1.4; Blacka p.70')
+    r.F('cost_local', 75000000, 'INR', 'S', 'RWR', 'card cost field (R1, R10): Rs 75,000,000', price_year=2010, currency='INR', note='Price year ASSUMED 2010 (financial year 2009-10). Card derived USD 1.58 M with Rs 47.44/US$ (RBI series via MoSPI, secondary). Blacka Table 4.4: A$1.41 M (2013), A$351/m3.')
+    r.F('shape_on_page', 'hidden', 'category', 'S', None, '04_build/data/reefs.json footprint.display = False (read only); shape.json status verified with confidence LOW')
+    r.F('model_3d', 'no', 'text', 'S', None, SH + 'FEASIBILITY.md: 3D withheld (crest/seabed/tides unlocated ranges without datum)')
+    return r

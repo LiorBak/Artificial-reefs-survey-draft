@@ -1,0 +1,18 @@
+# sources.md - southern-ocean-surf-reef-albany (private research copies; reuse rights NOT cleared)
+
+| id | kind | title | url | source page | page/figure | image date | credit | licence | local file | role | registry id | retrieved |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| sat2026 | satellite | Esri World Imagery current layer, centre -35.018, 117.9207, r 250 m, z18 | https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x} | Esri World Imagery | 1022x1022 px, 0.489 m/px, .geo.json sidecar | 2026-01-20 (identify DATE field) | Esri, Maxar, Earthstar Geographics, GIS User Community | Esri/Maxar terms, private copy | src/esri_current_2026-01-20_z18.png | primary (as-built visible outline) | southern-ocean-surf-reef-albany-img-13 | 2026-10-04 |
+| sat2025 | satellite | Esri Wayback release 13192, same footprint | https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/13192/{z}/{y}/{x} | Esri Wayback | same bounds | 2025-01-16 | as above | as above | src/esri_wayback13192_2025-01-16_z18.png | context (before construction) | -img-12 | 2026-10-04 |
+| design_plan | design_drawing | Southern Ocean Surf Reef Design by Bluecoast (plan, scale bar) | https://raisedwaterresearch.com/wp-content/uploads/2019/12/Souther-Ocean-Surf-Reef-Design-by-Bluecoast.png | https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/albany-artificial-surf-reef/ | gallery image 984x702 | design stage (uploaded 2019-12; based on 2017 bathymetry) | Bluecoast Consulting Engineers via Raised Water Research | not stated | src/rwr_bluecoast_design_diagram.png | primary (default outline) | -img-11 | 2026-10-04 |
+| design_table | design_drawing | Final Reef Design table + plan | https://www.albany.wa.gov.au/Profiles/albany/Assets/ClientData/Surf_Reef/design.jpg | https://www.albany.wa.gov.au/council/projects/completed-projects/southern-ocean-surf-reef-sosr.aspx | design table | design stage | City of Albany / Bluecoast | not stated | src/design.jpg | primary for parameters (crest, volume, orientation text, 140 m, 350 m) | -img-10 | 2026-10-04 |
+| constr_aerials | aerial_photo | RWR construction overview (May 2025), ABC 'Supplied' vessels photo (2025) | see registry | see registry | - | 2025 | RWR; ABC | not cleared | 03_images/reefs/southern-ocean-surf-reef-albany/ | context (not traced) | -img-05, -img-03 | 2026-10-06 |
+
+Values read from the design table (design_table, img-10, viewed 2026-10-10): surfing direction left-hander; reef volume 34,000 m3 (2017 bathymetry);
+alongshore position 350 m north of the Big4 Middleton Beach Caravan Park; cross-shore position 140 m from landward toe; crest length 110 m @ -2 m AHD;
+crest level -1.00 m AHD; crest orientation curved 270 N - 305 N; peel angle 60 deg, rides up to 100 m / 12 s, breaking about 41 % of the year.
+Further numbers (62,800 t, layers D50 0.16 / 0.49 / 0.94 m, tide range) are from the City page via the card (02_research/reefs/southern-ocean-surf-reef-albany.md, R3, R5).
+Derived overlays in overlays/ are our own annotated copies of the above.
+
+## Added 2026-10-10 (3D network run; full citations in 3d/REGISTER_3D.md S1-S14)
+rhdhv2015 (RHDHV 2015 Option B plan with seabed contours, via Raised Water Research, img-16/17): seabed profile. eia2018 (BMT 2018 EIA Fig 6.9, img-14; Fig 29, img-15): soundings, tides. dot_tides (WA DoT/BoM 2024 Albany predictions): LAT. city_page / city_exec / city_faq / city_profile / feas2015 (City of Albany documents in src/city_docs/): dimensions, MLLW/MHHW, mass, concept history.

@@ -1,0 +1,115 @@
+{
+  "slug": "borth-coastal-defence-reef",
+  "entries": [
+    {
+      "what": "ResearchGate record 'Borth Multi-Purpose reef for Coastal Protection and Amenity' (card R10; the original Borth feasibility study, May 2004) and the study's authors",
+      "kind": "report",
+      "where": "https://www.researchgate.net/publication/273133799_Borth_Multi-Purpose_reef_for_Coastal_Protection_and_Amenity ; Borth Community website (card R4)",
+      "checked": "2026-09-24",
+      "by": "agent: Borth card research (cloud)",
+      "result": "bot check (not bypassed)",
+      "detail": "HTTP 403 via both WebFetch and direct curl, and no Wayback snapshot exists, so only a web-search snippet of the record was seen (existence and title). The May 2004 date, evaluation criteria and purpose were corroborated through the Borth Community website (R4) instead; the authors of the May 2004 study are still unknown (card gap).",
+      "might_work": "Lior in a browser; Ceredigion County Council"
+    },
+    {
+      "what": "Borrero and Mead (2010) 'Borth Reef: Surfing Assessment Study', report for Ceredigion Council, September 2010 (card R15)",
+      "kind": "report",
+      "where": "cited in the reference list of Mead and Borrero (2011), papers/ p.6; no online copy located",
+      "checked": "2026-10-10",
+      "by": "agent: papers intake P3 / P8 (cloud)",
+      "result": "not found",
+      "detail": "Known only as a reference in Mead and Borrero 2011; not seen. It would hold the surfing assessment of the design (wave modelling, peel angle) and possibly design dimensions. No search hit is recorded in the notes.",
+      "might_work": "Ceredigion County Council or the authors (J.C. Borrero, S. Mead); Lior to request"
+    },
+    {
+      "what": "As-built plan, post-construction survey or reef-only rock quantity for the Borth reef (Phase 1, completed 8 March 2012)",
+      "kind": "search",
+      "where": "web searches 2026-10-06/07; Ceredigion County Council monitoring reports; Wales Coastal Monitoring Centre (wcmc.wales) map; CoastSnap Borth",
+      "checked": "2026-10-07",
+      "by": "agent: Borth verifier and 3D agent (cloud)",
+      "result": "not found",
+      "detail": "Not found at a primary source: an as-built plan, a post-construction survey of the reef, or a reef-only rock volume or tonnage (the 3D model uses the Royal Haskoning design drawings 9V5090/1020-1023 and the 2022 Welsh Government LiDAR instead). Ceredigion's annual beach monitoring (Royal HaskoningDHV Vol I 2012-13) has LiDAR-derived beach profiles only, no reef levels. The Wales Coastal Monitoring Centre is an interactive map with no readable static values, and CoastSnap Borth photos (2024-25) exist but were not checked for the reef. The design bed level (about -4.0 mODN) therefore limits the model.",
+      "might_work": "Lior: Phase 1 as-built drawings from Ceredigion County Council or the contractor (BAM Nuttall); a post-2022 drone or boat sounding"
+    },
+    {
+      "what": "Highest astronomical tide (HAT), Z0 and chart-datum offsets for Aberystwyth",
+      "kind": "database",
+      "where": "NTSLF 'Chart datum and ordnance datum' table; UKHO-derived harbour pages; tide-forecast.com listing; searches 2026-10-06",
+      "checked": "2026-10-06",
+      "by": "agent: Borth 3D agent (cloud)",
+      "result": "not found",
+      "detail": "HAT not found at a primary source (the NTSLF table lists Barmouth and Fishguard, -2.44 m, but not Aberystwyth; the only HAT-like figure, 5.9 m CD, is a predicted maximum). Secondary harbour pages give MHWS 5.0 / MHWN 3.5 / MLWN 1.8 / MLWS 0.7 m CD, consistent with LAT -2.44 mODN. MSL (+0.31 mODN) is a four-level mean with +-0.15 m. So the tide slider stops at MHWS.",
+      "might_work": "Lior: W3 / REQUESTS row 6 (UKHO EasyTide or Admiralty Tide Tables Vol 1, Aberystwyth)"
+    },
+    {
+      "what": "Garmin / Navionics web viewer at Borth for the reef or a depth at it",
+      "kind": "chart",
+      "where": "https://maps.garmin.com/en-US/marine?maps=another-brand&overlay=false&key=gcm4edq678dp (zoom 17/18, 44 screenshots)",
+      "checked": "2026-10-07",
+      "by": "agent: Borth 3D agent (cloud, own headless Chrome)",
+      "result": "imagery shows no structure",
+      "detail": "No login or CAPTCHA appeared. The chart shows no reef symbol, no obstruction and no depth at the rock; its datum is not stated (LAT assumed, best of 7 by RMS) and its offshore contours are 0.6-1.1 m shallower than the pre-construction survey (Fig 2) and EMODnet, so it was not used for the model. The Navionics app may show an obstruction symbol that the web viewer does not.",
+      "might_work": "Lior: Navionics app rows 1-3 in the Borth 3D REQUESTS_FOR_LIOR.md"
+    },
+    {
+      "what": "EMODnet DTM 2024 cells at Borth and CDI survey record 115084 (survey date and datum)",
+      "kind": "database",
+      "where": "EMODnet ERDDAP bathymetry_dtm_2024; https://cdi-bathymetry.seadatanet.org/report/edmo/2607/115084",
+      "checked": "2026-10-06",
+      "by": "agent: EMODnet bathymetry agent (cloud)",
+      "result": "bot check (not bypassed)",
+      "detail": "The reef cells (-0.34 to -0.13 m LAT) are GEBCO fill (interpolated), not survey values; the real source cells (CDI 115084) have one sounding per cell, age over 30 years and unknown horizontal accuracy, and start 335 m from the defence line. The CDI page sits behind a bot check / block page (not bypassed), so the survey date and datum were not read. Only the LAT statement and a seaward gradient of about -1.1 % are used. No finer data (nearest high-resolution DTM, CHERISH Wales, is 22 km north).",
+      "might_work": "Lior: W2 (open CDI 115084 in a normal browser and the EMODnet viewer 'Source Reference of the DTM')"
+    },
+    {
+      "what": "Esri Wayback frames of Borth 2017-05-09 and 2020-03-26, and the current z18/z17 frames",
+      "kind": "imagery",
+      "where": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/{release}/{z}/{y}/{x}",
+      "checked": "2026-10-04",
+      "by": "agent: Borth tracer (cloud)",
+      "result": "imagery shows no structure",
+      "detail": "2017-05-09: cloud cover; 2020-03-26: low contrast, reef partly submerged and in spray; the z18/z17 current frames covered the wrong area (cliffs 1.7 km south) or only context. Deleted and not used. The traced outline comes from 2024-09-17 and 2022-08-25 (low tide, rock bare); 2012-10-27 and 2013-06-04 are used as cross-checks.",
+      "might_work": "Lior: lowest-water Google Earth Pro image (G7)"
+    },
+    {
+      "what": "Gemini's Borth sources and footprint (200 x 200 m, 12,500 m2, 110,000 t, Halcrow; 'Ceredigion Final Review 2013', 'BAM Nuttall case study 2012', 'Coflein Craig y Delyn Reef 2015')",
+      "kind": "report",
+      "where": "Gemini reef_footprints.json (read-only); web searches 2026-09-25 and 2026-10-06",
+      "checked": "2026-10-06",
+      "by": "agent: Borth verifier (cloud)",
+      "result": "not found",
+      "detail": "The Ceredigion 'Final Review 2013' and the BAM Nuttall 'case study 2012' do not exist as far as searched; the Coflein record is actually 'Coastal Defences, Borth' (NPRN 424699, record 2020), not 'Craig y Delyn Reef 2015'. The 200 x 200 m footprint does not match the drawings, LiDAR or imagery, and 200 m offshore is contradicted by two live sources (300-400 m). Gemini lead not confirmed; nothing used.",
+      "might_work": ""
+    },
+    {
+      "what": "Borth image leads: geograph 2554717 (construction fence) and Wikimedia 'A bigger splash' barge photo",
+      "kind": "imagery",
+      "where": "s0.geograph.org.uk/.../2554717_ca5fc76b.jpg ; upload.wikimedia.org .../A_bigger_splash...2366565.jpg",
+      "checked": "2026-09-25",
+      "by": "agent: Borth media re-check (cloud)",
+      "result": "imagery shows no structure",
+      "detail": "The geograph photo shows a chain-link fence and 'Construction Operations KEEP OUT' sign with the beach behind and no reef visible offshore; the Wikimedia photo shows a barge delivering rock armour (the works, not the reef in place). Site context only. A video frame (QUB6s_F9dZc_0007) shows onshore stockpiling of rock, not the offshore reef.",
+      "might_work": ""
+    },
+    {
+      "what": "YouTube videos QUB6s_F9dZc 'Borth Beach Sea Defence Works August 2011' and dQieZVQUDEI 'borth sea defence 2012' as footage of the reef",
+      "kind": "video",
+      "where": "https://www.youtube.com/watch?v=QUB6s_F9dZc ; https://www.youtube.com/watch?v=dQieZVQUDEI",
+      "checked": "2026-09-25",
+      "by": "agent: Borth media re-check (cloud)",
+      "result": "other: video shows the works, not the reef",
+      "detail": "Silent amateur construction b-roll. The saved frame QUB6s_F9dZc_0007 shows houses, plant and a stockpile of quarried rock on the seafront (onshore works, not the offshore reef); dQieZVQUDEI is a Komatsu 450 separating rock and shingle (material preparation), judged on its description only (embed not possible, no download). The other two Borth videos (c4J6hfvynr4, AJXnUqQObJM) do show the reef under construction.",
+      "might_work": ""
+    },
+    {
+      "what": "SeaDataNet CDI record 115084 / 1981385 ('CARDIGAN BAY'): vertical datum, horizontal datum, grid resolution",
+      "kind": "database",
+      "where": "https://cdi.seadatanet.org/search ; https://cdi.seadatanet.org/report/1981385 ; https://cdi-bathymetry.seadatanet.org/report/edmo/2607/115084 ; CSW endpoints; MARIS WFS https://geo-service.maris.nl/emodnet_bathymetry/wfs",
+      "checked": "2026-10-13",
+      "by": "agent: W1/W2 SeaDataNet + Kovalam (cloud, resumed after interruption)",
+      "result": "bot check (not bypassed)",
+      "detail": "Partial yield: the CDI search export gave survey dates 1969-03-11 to 1969-05-25, distributor OceanWise, originator UKHO, instrument single-beam echosounders, access 'by negotiation' (references in 07_scale/shapes/borth-coastal-defence-reef/3d/SOURCES_3D.md, section W2). The record page with the datums is behind the bot check ('Checking your browser' 503 / 'Web Page Blocked'); no CSW endpoint answers; MARIS WFS has no n_code 115084. Datum and resolution stay unknown.",
+      "might_work": "Lior in a normal browser (REQUESTS W2, figure and 5 lines); a modern MCA/UKHO survey of Cardigan Bay (BGS lists HI1450, 2014) for the offshore gradient"
+    }
+  ]
+}

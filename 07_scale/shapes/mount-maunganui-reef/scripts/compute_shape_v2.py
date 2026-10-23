@@ -11,7 +11,7 @@ from shapely.geometry import Polygon
 from shapely.ops import unary_union
 sys.path.insert(0, '.')
 from geo_tools import *
-sys.path.insert(0, 'C:/Users/lior/Documents/Gemini/AG/Artificial reef - to upload to git/07_scale/tools')
+sys.path.insert(0, 'C:/Users/lior/Documents/Claude/Projects/Artificial reef/07_scale/tools')
 import geom
 from satellite import pix2ll
 

@@ -1,0 +1,951 @@
+{
+ "script": "08_paper/analysis/hypsometry.py",
+ "status": "DERIVED from the default 3D model surfaces (read only); footprint = reef - seabed >= 0.10 m",
+ "reefs": {
+  "borth-coastal-defence-reef": {
+   "slug": "borth-coastal-defence-reef",
+   "version": "lidar_2022",
+   "cell_m": [
+    1.0,
+    1.0
+   ],
+   "crest_z_msl_m": 1.09,
+   "footprint_area_m2": 7435.0,
+   "volume_total_m3": 19953.6,
+   "relative": [
+    {
+     "level_m": 0.0,
+     "level_msl_m": 1.09,
+     "area_m2": 2.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -0.25,
+     "level_msl_m": 0.84,
+     "area_m2": 25.0,
+     "volume_above_m3": 2.0
+    },
+    {
+     "level_m": -0.5,
+     "level_msl_m": 0.59,
+     "area_m2": 168.0,
+     "volume_above_m3": 25.7
+    },
+    {
+     "level_m": -1.0,
+     "level_msl_m": 0.09,
+     "area_m2": 1381.0,
+     "volume_above_m3": 386.1
+    },
+    {
+     "level_m": -1.5,
+     "level_msl_m": -0.41,
+     "area_m2": 2334.0,
+     "volume_above_m3": 1322.3
+    },
+    {
+     "level_m": -2.0,
+     "level_msl_m": -0.91,
+     "area_m2": 3043.0,
+     "volume_above_m3": 2672.9
+    },
+    {
+     "level_m": -3.0,
+     "level_msl_m": -1.91,
+     "area_m2": 4491.0,
+     "volume_above_m3": 6399.4
+    }
+   ],
+   "absolute": [
+    {
+     "level_m": 0.0,
+     "level_msl_m": 0.0,
+     "area_m2": 1580.0,
+     "volume_above_m3": 519.0
+    },
+    {
+     "level_m": -0.5,
+     "level_msl_m": -0.5,
+     "area_m2": 2488.0,
+     "volume_above_m3": 1539.7
+    },
+    {
+     "level_m": -1.0,
+     "level_msl_m": -1.0,
+     "area_m2": 3181.0,
+     "volume_above_m3": 2953.0
+    },
+    {
+     "level_m": -1.5,
+     "level_msl_m": -1.5,
+     "area_m2": 3837.0,
+     "volume_above_m3": 4702.4
+    },
+    {
+     "level_m": -2.0,
+     "level_msl_m": -2.0,
+     "area_m2": 4656.0,
+     "volume_above_m3": 6810.3
+    },
+    {
+     "level_m": -2.5,
+     "level_msl_m": -2.5,
+     "area_m2": 5612.0,
+     "volume_above_m3": 9372.9
+    },
+    {
+     "level_m": -3.0,
+     "level_msl_m": -3.0,
+     "area_m2": 6234.0,
+     "volume_above_m3": 12332.5
+    },
+    {
+     "level_m": -4.0,
+     "level_msl_m": -4.0,
+     "area_m2": 7365.0,
+     "volume_above_m3": 18190.9
+    }
+   ]
+  },
+  "boscombe-surf-reef": {
+   "slug": "boscombe-surf-reef",
+   "version": "idealised",
+   "cell_m": [
+    1.0,
+    1.0
+   ],
+   "crest_z_msl_m": -0.9,
+   "footprint_area_m2": 4677.0,
+   "volume_total_m3": 13112.5,
+   "relative": [
+    {
+     "level_m": 0.0,
+     "level_msl_m": -0.9,
+     "area_m2": 1786.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -0.25,
+     "level_msl_m": -1.15,
+     "area_m2": 1953.0,
+     "volume_above_m3": 466.3
+    },
+    {
+     "level_m": -0.5,
+     "level_msl_m": -1.4,
+     "area_m2": 2119.0,
+     "volume_above_m3": 975.6
+    },
+    {
+     "level_m": -1.0,
+     "level_msl_m": -1.9,
+     "area_m2": 2491.0,
+     "volume_above_m3": 2125.7
+    },
+    {
+     "level_m": -1.5,
+     "level_msl_m": -2.4,
+     "area_m2": 2868.0,
+     "volume_above_m3": 3462.7
+    },
+    {
+     "level_m": -2.0,
+     "level_msl_m": -2.9,
+     "area_m2": 3284.0,
+     "volume_above_m3": 4997.9
+    },
+    {
+     "level_m": -3.0,
+     "level_msl_m": -3.9,
+     "area_m2": 3981.0,
+     "volume_above_m3": 8637.1
+    }
+   ],
+   "absolute": [
+    {
+     "level_m": 0.0,
+     "level_msl_m": 0.0,
+     "area_m2": 0.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -0.5,
+     "level_msl_m": -0.5,
+     "area_m2": 0.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -1.0,
+     "level_msl_m": -1.0,
+     "area_m2": 1859.0,
+     "volume_above_m3": 181.8
+    },
+    {
+     "level_m": -1.5,
+     "level_msl_m": -1.5,
+     "area_m2": 2205.0,
+     "volume_above_m3": 1191.1
+    },
+    {
+     "level_m": -2.0,
+     "level_msl_m": -2.0,
+     "area_m2": 2567.0,
+     "volume_above_m3": 2378.2
+    },
+    {
+     "level_m": -2.5,
+     "level_msl_m": -2.5,
+     "area_m2": 2954.0,
+     "volume_above_m3": 3753.3
+    },
+    {
+     "level_m": -3.0,
+     "level_msl_m": -3.0,
+     "area_m2": 3350.0,
+     "volume_above_m3": 5329.3
+    },
+    {
+     "level_m": -4.0,
+     "level_msl_m": -4.0,
+     "area_m2": 4034.0,
+     "volume_above_m3": 9032.3
+    }
+   ]
+  },
+  "bunbury-airwave": {
+   "slug": "bunbury-airwave",
+   "version": "installed_Dec2019_spherical_cap",
+   "cell_m": [
+    0.25,
+    0.25
+   ],
+   "crest_z_msl_m": -0.68,
+   "footprint_area_m2": 106.9,
+   "volume_total_m3": 116.0,
+   "relative": [
+    {
+     "level_m": 0.0,
+     "level_msl_m": -0.68,
+     "area_m2": 0.1,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -0.25,
+     "level_msl_m": -0.93,
+     "area_m2": 15.4,
+     "volume_above_m3": 2.0
+    },
+    {
+     "level_m": -0.5,
+     "level_msl_m": -1.18,
+     "area_m2": 30.6,
+     "volume_above_m3": 7.8
+    },
+    {
+     "level_m": -1.0,
+     "level_msl_m": -1.68,
+     "area_m2": 59.7,
+     "volume_above_m3": 30.5
+    },
+    {
+     "level_m": -1.5,
+     "level_msl_m": -2.18,
+     "area_m2": 87.4,
+     "volume_above_m3": 67.4
+    },
+    {
+     "level_m": -2.0,
+     "level_msl_m": -2.68,
+     "area_m2": 104.2,
+     "volume_above_m3": 108.3
+    },
+    {
+     "level_m": -3.0,
+     "level_msl_m": -3.68,
+     "area_m2": 106.9,
+     "volume_above_m3": 116.0
+    }
+   ],
+   "absolute": [
+    {
+     "level_m": 0.0,
+     "level_msl_m": 0.0,
+     "area_m2": 0.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -0.5,
+     "level_msl_m": -0.5,
+     "area_m2": 0.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -1.0,
+     "level_msl_m": -1.0,
+     "area_m2": 19.8,
+     "volume_above_m3": 3.2
+    },
+    {
+     "level_m": -1.5,
+     "level_msl_m": -1.5,
+     "area_m2": 49.6,
+     "volume_above_m3": 20.6
+    },
+    {
+     "level_m": -2.0,
+     "level_msl_m": -2.0,
+     "area_m2": 77.8,
+     "volume_above_m3": 52.5
+    },
+    {
+     "level_m": -2.5,
+     "level_msl_m": -2.5,
+     "area_m2": 99.8,
+     "volume_above_m3": 96.0
+    },
+    {
+     "level_m": -3.0,
+     "level_msl_m": -3.0,
+     "area_m2": 106.9,
+     "volume_above_m3": 116.0
+    },
+    {
+     "level_m": -4.0,
+     "level_msl_m": -4.0,
+     "area_m2": 106.9,
+     "volume_above_m3": 116.0
+    }
+   ]
+  },
+  "cables-reef-wa": {
+   "slug": "cables-reef-wa",
+   "version": "survey_surface_1999_11",
+   "cell_m": [
+    0.5,
+    0.5
+   ],
+   "crest_z_msl_m": -1.55,
+   "footprint_area_m2": 3646.2,
+   "volume_total_m3": 4682.7,
+   "relative": [
+    {
+     "level_m": 0.0,
+     "level_msl_m": -1.55,
+     "area_m2": 0.5,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -0.25,
+     "level_msl_m": -1.8,
+     "area_m2": 86.0,
+     "volume_above_m3": 7.0
+    },
+    {
+     "level_m": -0.5,
+     "level_msl_m": -2.05,
+     "area_m2": 377.0,
+     "volume_above_m3": 60.8
+    },
+    {
+     "level_m": -1.0,
+     "level_msl_m": -2.55,
+     "area_m2": 1348.8,
+     "volume_above_m3": 470.1
+    },
+    {
+     "level_m": -1.5,
+     "level_msl_m": -3.05,
+     "area_m2": 2289.0,
+     "volume_above_m3": 1380.3
+    },
+    {
+     "level_m": -2.0,
+     "level_msl_m": -3.55,
+     "area_m2": 3110.2,
+     "volume_above_m3": 2517.7
+    },
+    {
+     "level_m": -3.0,
+     "level_msl_m": -4.55,
+     "area_m2": 3638.8,
+     "volume_above_m3": 3937.5
+    }
+   ],
+   "absolute": [
+    {
+     "level_m": 0.0,
+     "level_msl_m": 0.0,
+     "area_m2": 0.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -0.5,
+     "level_msl_m": -0.5,
+     "area_m2": 0.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -1.0,
+     "level_msl_m": -1.0,
+     "area_m2": 0.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -1.5,
+     "level_msl_m": -1.5,
+     "area_m2": 0.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -2.0,
+     "level_msl_m": -2.0,
+     "area_m2": 314.0,
+     "volume_above_m3": 43.8
+    },
+    {
+     "level_m": -2.5,
+     "level_msl_m": -2.5,
+     "area_m2": 1247.0,
+     "volume_above_m3": 405.8
+    },
+    {
+     "level_m": -3.0,
+     "level_msl_m": -3.0,
+     "area_m2": 2193.0,
+     "volume_above_m3": 1271.1
+    },
+    {
+     "level_m": -4.0,
+     "level_msl_m": -4.0,
+     "area_m2": 3555.2,
+     "volume_above_m3": 3343.3
+    }
+   ]
+  },
+  "mount-maunganui-reef": {
+   "slug": "mount-maunganui-reef",
+   "version": "multibeam_2013_m2p0",
+   "cell_m": [
+    0.5,
+    0.5
+   ],
+   "crest_z_msl_m": -2.03,
+   "footprint_area_m2": 1626.8,
+   "volume_total_m3": 2943.1,
+   "relative": [
+    {
+     "level_m": 0.0,
+     "level_msl_m": -2.03,
+     "area_m2": 222.2,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -0.25,
+     "level_msl_m": -2.28,
+     "area_m2": 447.8,
+     "volume_above_m3": 83.9
+    },
+    {
+     "level_m": -0.5,
+     "level_msl_m": -2.53,
+     "area_m2": 656.0,
+     "volume_above_m3": 222.6
+    },
+    {
+     "level_m": -1.0,
+     "level_msl_m": -3.03,
+     "area_m2": 1012.2,
+     "volume_above_m3": 645.7
+    },
+    {
+     "level_m": -1.5,
+     "level_msl_m": -3.53,
+     "area_m2": 1216.0,
+     "volume_above_m3": 1207.2
+    },
+    {
+     "level_m": -2.0,
+     "level_msl_m": -4.03,
+     "area_m2": 1399.5,
+     "volume_above_m3": 1861.5
+    },
+    {
+     "level_m": -3.0,
+     "level_msl_m": -5.03,
+     "area_m2": 1624.8,
+     "volume_above_m3": 2929.4
+    }
+   ],
+   "absolute": [
+    {
+     "level_m": 0.0,
+     "level_msl_m": 0.0,
+     "area_m2": 0.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -0.5,
+     "level_msl_m": -0.5,
+     "area_m2": 0.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -1.0,
+     "level_msl_m": -1.0,
+     "area_m2": 0.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -1.5,
+     "level_msl_m": -1.5,
+     "area_m2": 0.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -2.0,
+     "level_msl_m": -2.0,
+     "area_m2": 0.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -2.5,
+     "level_msl_m": -2.5,
+     "area_m2": 631.0,
+     "volume_above_m3": 203.4
+    },
+    {
+     "level_m": -3.0,
+     "level_msl_m": -3.0,
+     "area_m2": 993.2,
+     "volume_above_m3": 615.6
+    },
+    {
+     "level_m": -4.0,
+     "level_msl_m": -4.0,
+     "area_m2": 1390.2,
+     "volume_above_m3": 1819.7
+    }
+   ]
+  },
+  "narrowneck-gold-coast": {
+   "slug": "narrowneck-gold-coast",
+   "version": "photo_2020-08-08",
+   "cell_m": [
+    1.0,
+    1.0
+   ],
+   "crest_z_msl_m": -1.92,
+   "footprint_area_m2": 6239.0,
+   "volume_total_m3": 13495.7,
+   "relative": [
+    {
+     "level_m": 0.0,
+     "level_msl_m": -1.92,
+     "area_m2": 64.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -0.25,
+     "level_msl_m": -2.17,
+     "area_m2": 110.0,
+     "volume_above_m3": 20.6
+    },
+    {
+     "level_m": -0.5,
+     "level_msl_m": -2.42,
+     "area_m2": 1727.0,
+     "volume_above_m3": 209.8
+    },
+    {
+     "level_m": -1.0,
+     "level_msl_m": -2.92,
+     "area_m2": 2579.0,
+     "volume_above_m3": 1281.8
+    },
+    {
+     "level_m": -1.5,
+     "level_msl_m": -3.42,
+     "area_m2": 3487.0,
+     "volume_above_m3": 2765.1
+    },
+    {
+     "level_m": -2.0,
+     "level_msl_m": -3.92,
+     "area_m2": 4401.0,
+     "volume_above_m3": 4696.7
+    },
+    {
+     "level_m": -3.0,
+     "level_msl_m": -4.92,
+     "area_m2": 5622.0,
+     "volume_above_m3": 9286.7
+    }
+   ],
+   "absolute": [
+    {
+     "level_m": 0.0,
+     "level_msl_m": 0.0,
+     "area_m2": 0.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -0.5,
+     "level_msl_m": -0.5,
+     "area_m2": 0.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -1.0,
+     "level_msl_m": -1.0,
+     "area_m2": 0.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -1.5,
+     "level_msl_m": -1.5,
+     "area_m2": 0.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -2.0,
+     "level_msl_m": -2.0,
+     "area_m2": 73.0,
+     "volume_above_m3": 5.5
+    },
+    {
+     "level_m": -2.5,
+     "level_msl_m": -2.5,
+     "area_m2": 1878.0,
+     "volume_above_m3": 353.5
+    },
+    {
+     "level_m": -3.0,
+     "level_msl_m": -3.0,
+     "area_m2": 2734.0,
+     "volume_above_m3": 1491.1
+    },
+    {
+     "level_m": -4.0,
+     "level_msl_m": -4.0,
+     "area_m2": 4534.0,
+     "volume_above_m3": 5038.2
+    }
+   ]
+  },
+  "palm-beach-gold-coast": {
+   "slug": "palm-beach-gold-coast",
+   "version": "as_built_2019",
+   "cell_m": [
+    1.0,
+    1.0
+   ],
+   "crest_z_msl_m": -1.5,
+   "footprint_area_m2": 11323.0,
+   "volume_total_m3": 21947.7,
+   "relative": [
+    {
+     "level_m": 0.0,
+     "level_msl_m": -1.5,
+     "area_m2": 308.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -0.25,
+     "level_msl_m": -1.75,
+     "area_m2": 661.0,
+     "volume_above_m3": 119.2
+    },
+    {
+     "level_m": -0.5,
+     "level_msl_m": -2.0,
+     "area_m2": 1132.0,
+     "volume_above_m3": 336.1
+    },
+    {
+     "level_m": -1.0,
+     "level_msl_m": -2.5,
+     "area_m2": 2087.0,
+     "volume_above_m3": 1123.7
+    },
+    {
+     "level_m": -1.5,
+     "level_msl_m": -3.0,
+     "area_m2": 3311.0,
+     "volume_above_m3": 2453.7
+    },
+    {
+     "level_m": -2.0,
+     "level_msl_m": -3.5,
+     "area_m2": 4445.0,
+     "volume_above_m3": 4384.9
+    },
+    {
+     "level_m": -3.0,
+     "level_msl_m": -4.5,
+     "area_m2": 6996.0,
+     "volume_above_m3": 10073.2
+    }
+   ],
+   "absolute": [
+    {
+     "level_m": 0.0,
+     "level_msl_m": 0.0,
+     "area_m2": 0.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -0.5,
+     "level_msl_m": -0.5,
+     "area_m2": 0.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -1.0,
+     "level_msl_m": -1.0,
+     "area_m2": 0.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -1.5,
+     "level_msl_m": -1.5,
+     "area_m2": 308.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -2.0,
+     "level_msl_m": -2.0,
+     "area_m2": 1132.0,
+     "volume_above_m3": 336.1
+    },
+    {
+     "level_m": -2.5,
+     "level_msl_m": -2.5,
+     "area_m2": 2087.0,
+     "volume_above_m3": 1123.7
+    },
+    {
+     "level_m": -3.0,
+     "level_msl_m": -3.0,
+     "area_m2": 3311.0,
+     "volume_above_m3": 2453.7
+    },
+    {
+     "level_m": -4.0,
+     "level_msl_m": -4.0,
+     "area_m2": 5742.0,
+     "volume_above_m3": 6915.4
+    }
+   ]
+  },
+  "prattes-reef-el-segundo": {
+   "slug": "prattes-reef-el-segundo",
+   "version": "state_B",
+   "cell_m": [
+    0.25,
+    0.25
+   ],
+   "crest_z_msl_m": -1.841,
+   "footprint_area_m2": 418.5,
+   "volume_total_m3": 442.1,
+   "relative": [
+    {
+     "level_m": 0.0,
+     "level_msl_m": -1.841,
+     "area_m2": 0.1,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -0.25,
+     "level_msl_m": -2.091,
+     "area_m2": 29.4,
+     "volume_above_m3": 3.0
+    },
+    {
+     "level_m": -0.5,
+     "level_msl_m": -2.341,
+     "area_m2": 96.1,
+     "volume_above_m3": 16.7
+    },
+    {
+     "level_m": -1.0,
+     "level_msl_m": -2.841,
+     "area_m2": 318.6,
+     "volume_above_m3": 134.6
+    },
+    {
+     "level_m": -1.5,
+     "level_msl_m": -3.341,
+     "area_m2": 387.7,
+     "volume_above_m3": 308.1
+    },
+    {
+     "level_m": -2.0,
+     "level_msl_m": -3.841,
+     "area_m2": 417.8,
+     "volume_above_m3": 433.8
+    },
+    {
+     "level_m": -3.0,
+     "level_msl_m": -4.841,
+     "area_m2": 418.5,
+     "volume_above_m3": 442.1
+    }
+   ],
+   "absolute": [
+    {
+     "level_m": 0.0,
+     "level_msl_m": 0.0,
+     "area_m2": 0.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -0.5,
+     "level_msl_m": -0.5,
+     "area_m2": 0.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -1.0,
+     "level_msl_m": -1.0,
+     "area_m2": 0.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -1.5,
+     "level_msl_m": -1.5,
+     "area_m2": 0.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -2.0,
+     "level_msl_m": -2.0,
+     "area_m2": 15.6,
+     "volume_above_m3": 1.1
+    },
+    {
+     "level_m": -2.5,
+     "level_msl_m": -2.5,
+     "area_m2": 203.9,
+     "volume_above_m3": 39.4
+    },
+    {
+     "level_m": -3.0,
+     "level_msl_m": -3.0,
+     "area_m2": 342.9,
+     "volume_above_m3": 186.9
+    },
+    {
+     "level_m": -4.0,
+     "level_msl_m": -4.0,
+     "area_m2": 418.5,
+     "volume_above_m3": 442.0
+    }
+   ]
+  },
+  "southern-ocean-surf-reef-albany": {
+   "slug": "southern-ocean-surf-reef-albany",
+   "version": "design_bluecoast",
+   "cell_m": [
+    1.0,
+    1.0
+   ],
+   "crest_z_msl_m": -1.166,
+   "footprint_area_m2": 13085.0,
+   "volume_total_m3": 33998.9,
+   "relative": [
+    {
+     "level_m": 0.0,
+     "level_msl_m": -1.166,
+     "area_m2": 1.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -0.25,
+     "level_msl_m": -1.416,
+     "area_m2": 195.0,
+     "volume_above_m3": 23.1
+    },
+    {
+     "level_m": -0.5,
+     "level_msl_m": -1.666,
+     "area_m2": 508.0,
+     "volume_above_m3": 110.9
+    },
+    {
+     "level_m": -1.0,
+     "level_msl_m": -2.166,
+     "area_m2": 2647.0,
+     "volume_above_m3": 671.0
+    },
+    {
+     "level_m": -1.5,
+     "level_msl_m": -2.666,
+     "area_m2": 5975.0,
+     "volume_above_m3": 2913.3
+    },
+    {
+     "level_m": -2.0,
+     "level_msl_m": -3.166,
+     "area_m2": 7399.0,
+     "volume_above_m3": 6036.4
+    },
+    {
+     "level_m": -3.0,
+     "level_msl_m": -4.166,
+     "area_m2": 9457.0,
+     "volume_above_m3": 13342.0
+    }
+   ],
+   "absolute": [
+    {
+     "level_m": 0.0,
+     "level_msl_m": 0.0,
+     "area_m2": 0.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -0.5,
+     "level_msl_m": -0.5,
+     "area_m2": 0.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -1.0,
+     "level_msl_m": -1.0,
+     "area_m2": 0.0,
+     "volume_above_m3": 0.0
+    },
+    {
+     "level_m": -1.5,
+     "level_msl_m": -1.5,
+     "area_m2": 296.0,
+     "volume_above_m3": 43.4
+    },
+    {
+     "level_m": -2.0,
+     "level_msl_m": -2.0,
+     "area_m2": 1192.0,
+     "volume_above_m3": 344.4
+    },
+    {
+     "level_m": -2.5,
+     "level_msl_m": -2.5,
+     "area_m2": 5336.0,
+     "volume_above_m3": 1998.6
+    },
+    {
+     "level_m": -3.0,
+     "level_msl_m": -3.0,
+     "area_m2": 6970.0,
+     "volume_above_m3": 4947.0
+    },
+    {
+     "level_m": -4.0,
+     "level_msl_m": -4.0,
+     "area_m2": 9165.0,
+     "volume_above_m3": 12056.2
+    }
+   ]
+  }
+ }
+}

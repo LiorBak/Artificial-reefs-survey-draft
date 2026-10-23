@@ -1,0 +1,62 @@
+{
+ "about": "Fremantle Low Water Datum (LWD = tide-gauge zero) relative to AHD, from the datum definition itself (AHD 0.000 = MSL 1966-68 at 30 gauges incl. Fremantle).",
+ "dnm_tr12_table3": {
+  "station": "Fremantle",
+  "tide_gauge_bench_mark": "NMV/F/6",
+  "msl_1966_68_above_staff_gauge_zero_ft": 2.35,
+  "msl_1966_68_above_staff_gauge_zero_m": 0.7163,
+  "bm_above_msl_ft": 10.659,
+  "epoch": "1 Jan 1966 - 31 Dec 1968",
+  "location": "Roelse, Granger and Graham (1975) DNM Technical Report 12, 2nd ed., Table 3, report p.36 (PDF p.40); text 4.5.4 p.35"
+ },
+ "psmsl_check": {
+  "definition": "PSMSL RLR = tide-gauge zero + 6.000 m (psmsl.org rlr.diagrams/111.php, 'Add 6.000m to all data values to refer to RLR')",
+  "annual_msl_above_TGZ_m": {
+   "1966": 0.705,
+   "1968": 0.718
+  },
+  "mean_1966_1968_available_years_m": 0.7115,
+  "mean_1992_2011_m": 0.7716,
+  "bom_mean_1992_2011_m": 0.773,
+  "diff_1966_68_vs_DNM_m": -0.0048,
+  "reading": "staff-gauge zero of the 1966-68 survey = tide-gauge zero (= LWD) within 0.005 m; PSMSL and BoM 1992-2011 means agree within 0.002 m"
+ },
+ "result": {
+  "LWD_in_m_AHD": -0.716,
+  "AHD_above_LWD_m": 0.716,
+  "metro_zone_ambiguity_m": 0.04,
+  "AHD_above_LWD_range_m": [
+   0.676,
+   0.756
+  ],
+  "present_MSL_1992_2011_minus_AHD_m": 0.057,
+  "present_MSL_PSMSL_minus_AHD_m": 0.055,
+  "highest_recorded_m_AHD": 1.231,
+  "lowest_recorded_m_AHD": -0.816,
+  "highest_recorded_when": "0100 hours 16/05/2003",
+  "lowest_recorded_when": "0100 hours 01/01/1987"
+ },
+ "design_vs_survey": {
+  "1999-11": {
+   "fitted_RL_minus_AHD_m": 0.59,
+   "sd_m": 0.58,
+   "n": 454,
+   "official_minus_fitted_m": 0.126,
+   "highest_sounding_AHD_m": -1.4,
+   "design_crest_RL_-1.0_in_AHD_m": -1.716,
+   "highest_sounding_above_design_crest_m": 0.316
+  },
+  "2002-02": {
+   "fitted_RL_minus_AHD_m": 0.5,
+   "sd_m": 0.58,
+   "n": 236,
+   "official_minus_fitted_m": 0.216,
+   "highest_sounding_AHD_m": -1.67,
+   "design_crest_RL_-1.0_in_AHD_m": -1.716,
+   "highest_sounding_above_design_crest_m": 0.046
+  }
+ },
+ "reading_A_offset_old_m": 0.78,
+ "reading_A_offset_new_m": 0.716,
+ "old_0.78_source": "Pattiaratchi (1999) p.3: wave-basin 'mean tide level of 0.78 m above datum' (a present-day MSL, cf. BoM 1992-2011 0.773)"
+}

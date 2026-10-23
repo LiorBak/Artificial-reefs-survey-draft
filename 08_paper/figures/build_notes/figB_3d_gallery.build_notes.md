@@ -1,0 +1,1 @@
+Build notes (not part of the caption): source images `07_scale/shapes/<slug>/3d/preview_oblique.png` (Pratte's and Mount Maunganui: `preview_plan.png`), cropped to the 3D viewport (crop boxes in `figures_survey.py`, `GALLERY`); the text labels inside the tiles come from the viewer. Plan previews for the other reefs are not used because Figure 1 shows their plan shapes.

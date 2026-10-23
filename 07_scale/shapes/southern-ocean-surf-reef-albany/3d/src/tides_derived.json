@@ -1,0 +1,12 @@
+{
+ "source": "WA DoT / BoM Tide Predictions by Location 2024, Albany (LAT 35 02 S, LONG 117 53 E), pages (0-based) [2, 3, 4]",
+ "datum": "Lowest Astronomical Tide (stated on the page)",
+ "n_extremes": 1043,
+ "max_m": 1.4,
+ "min_m": 0.12,
+ "mean_all_m": 0.742,
+ "mean_high_m": 0.952,
+ "mean_low_m": 0.444,
+ "n_high": 611,
+ "n_low": 432
+}

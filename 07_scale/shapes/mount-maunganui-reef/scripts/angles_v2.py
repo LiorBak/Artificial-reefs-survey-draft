@@ -4,7 +4,7 @@ import json, math, numpy as np
 from shapely.geometry import Polygon, Point
 from shapely.ops import unary_union
 from shapely import prepared
-R = 'C:/Users/lior/Documents/Gemini/AG/Artificial reef - to upload to git/07_scale/shapes/mount-maunganui-reef/'
+R = 'C:/Users/lior/Documents/Claude/Projects/Artificial reef/07_scale/shapes/mount-maunganui-reef/'
 c = json.load(open(R + 'work_canonical_v2.json'))
 X0 = c['alongshore_x_true_bearing_deg']; shore = c['shoreline_true_bearing_deg']
 P = [Polygon(p) for p in c['survey_polygons_m']]

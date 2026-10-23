@@ -1,0 +1,135 @@
+{
+  "slug": "boscombe-surf-reef",
+  "entries": [
+    {
+      "what": "Rendle (2016) PhD thesis, University of Plymouth: as-built bag layout, as-built crest levels and survey datum (P5)",
+      "kind": "paper",
+      "where": "papers/ folder PDF (343 pp); https://pearl.plymouth.ac.uk/bms-theses/412/",
+      "checked": "2026-10-10",
+      "by": "agent: Boscombe P5 agent (cloud)",
+      "result": "no plan or figure",
+      "detail": "The thesis has NO as-built plan. Fig 5.3 (p.95) is the ASR Ltd design bag layout of 18 Dec 2006 (no scale or coordinates, about 46 labelled bags, footprint 4,474 m2, crest 0.3 m CD); the text says 32 containers were built. Four council bathymetry surveys exist (Oct 2009 as-built, May 2010, Oct 2010, Apr 2011) but only Apr 2011 is shown in plan (Fig 5.7, OS-grid axes), which the model already uses; a spring 2012 survey was withheld by the council. Datum wording is loose (Fig 5.6 'relative to MSL', values fit chart datum; '1.66 mODN = MSL' vs the model's 1.40). Its other facts (crest about +0.5 m CD built, costs, Davidson 2010 criteria) are card references (R17). Before Lior supplied the PDF, the PEARL page returned a Cloudflare bot check and academia.edu / ResearchGate gave 403 (not bypassed), so only search snippets were available.",
+      "might_work": "Council / CCO survey data: Lior E10 (BCP Council) and E8 (Channel Coastal Observatory)"
+    },
+    {
+      "what": "Bournemouth council / Channel Coastal Observatory reef bathymetry: Oct 2009 as-built survey, 2010-2012 surveys, nearshore and offshore single- or multibeam data of Poole Bay at Boscombe",
+      "kind": "database",
+      "where": "https://coastalmonitoring.org (CCO map viewer and contact form); Bournemouth, Christchurch and Poole (BCP) Council",
+      "checked": "2026-10-07",
+      "by": "agent: Boscombe 3D agent, seabed extension run (cloud)",
+      "result": "not found",
+      "detail": "CCO beach-profile lines were found through the viewer's own WFS service and used (11 lines, mostly 2010-04-20), but no CCO or council reef bathymetry for 2009-2012 is public; the spring 2012 survey was withheld. The seabed seaward of the Fig 9 survey is therefore a spline blend (+-0.5 m) and an EMODnet slope extension (+-1.2 m). Claude never sends e-mail.",
+      "might_work": "Lior: E8 (CCO) and E10 (BCP Council); D2 in the 3D requests"
+    },
+    {
+      "what": "EMODnet CDI survey records 117452 (EDMO 2607, OceanWise) and 1982230 ('Poole Bay, Blocks 14-17'): survey date and vertical datum; and EMODnet DTM 2024 levels at the reef",
+      "kind": "database",
+      "where": "https://cdi-bathymetry.seadatanet.org/report/edmo/2607/117452 ; https://cdi-bathymetry.seadatanet.org/report/1982230 ; EMODnet ERDDAP bathymetry_dtm_2024",
+      "checked": "2026-10-06",
+      "by": "agent: EMODnet bathymetry agent (cloud, own headless Chrome)",
+      "result": "bot check (not bypassed)",
+      "detail": "The CDI pages sit behind a 'Checking your browser' JavaScript check (plain HTTP) and a 'Web Page Blocked' firewall page (headless Chrome); the survey date and datum were not read (the 2011-2012 date is an inference from quality-index age classes; the record's extent ends 2.5 km south of the reef and its identity with the cells is unconfirmed). The DTM cell at the reef (115.8 x 73.4 m, mean -5.62 m LAT, 12 soundings) is 1.1-3.1 m deeper than the Fig 9 survey and the Navionics soundings, with an unattributed offset, so only its LAT datum statement and the seaward gradient (-1.41 %) are used, not levels. No finer EMODnet data (nearest HR DTM 106 km away).",
+      "might_work": "Lior: W1 (open the CDI 117452 page in a normal browser; EMODnet viewer 'Source Reference of the DTM')"
+    },
+    {
+      "what": "Garmin / Navionics web viewer at Boscombe for depth datum, survey date and drying height of the reef shoal",
+      "kind": "chart",
+      "where": "https://maps.garmin.com/en-US/marine (webapp.navionics.com redirects there; ChartViewer decommissioned July 2024)",
+      "checked": "2026-10-05",
+      "by": "agent: Boscombe 3D agent (cloud, own headless Chrome)",
+      "result": "other: datum, survey date and drying height not shown",
+      "detail": "Nautical Chart and SonarChart load without login or CAPTCHA and give soundings and the shoal area (a green drying patch about 12.7 m from the survey peak), but the viewer states no depth datum, no survey or update date and prints no drying height; whether the shoal is the 2011 survey, a later one or crowd-sourced is unknown. Datum assumption A3 (chart datum) rests on a 1-2 % area match, not proof.",
+      "might_work": "Lior: Navionics app readings A in the Boscombe 3D REQUESTS_FOR_LIOR.md (drying height, toe depths, chart info/date)"
+    },
+    {
+      "what": "ResearchGate / academia.edu pages for Boscombe papers, incl. the abstract snippet '32 giant bags with a basal area of 50 x 70 m'",
+      "kind": "web page",
+      "where": "researchgate.net and academia.edu pages found by search (Rendle / Mead papers)",
+      "checked": "2026-10-05",
+      "by": "agent: Boscombe tracer (cloud)",
+      "result": "bot check (not bypassed)",
+      "detail": "HTTP 403, not fetched. The search-snippet claim of 32 bags on a 50 x 70 m (3,500 m2) base is unverified and not used (the traced outline is 4,042 m2; Rendle gives 4,474 m2 design and 5,450 m2 in Table 4.4).",
+      "might_work": "Lior in a browser if the abstract is wanted"
+    },
+    {
+      "what": "Esri Wayback releases 15423 (2017-06-20), 48376 (2020-05-07), 16245 (2021-09-06), 57965 (2022-08-26), 60013 (2023-09-03) for tracing the Boscombe reef",
+      "kind": "imagery",
+      "where": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/{release}/{z}/{y}/{x}",
+      "checked": "2026-10-05",
+      "by": "agent: Boscombe tracer (cloud)",
+      "result": "imagery shows no structure",
+      "detail": "Reef not visible or not traceable in these frames (wave glint, turbid or near-black water); downloaded, viewed and deleted. 2017 shows a darker ghost where the reef is but no outline. Only the 2011-09-28 Wayback image (release 10) allowed a trace; the 2025-06-15 Esri image shows a dark block of the same envelope (cross-check only).",
+      "might_work": "Google Earth Pro history 2009-2012 for an image before the 2011 damage (Lior: G2)"
+    },
+    {
+      "what": "Oblique and diagram images of the Boscombe reef rejected for tracing: RWR 'Boscombe-Arial' and 'Boscombe-From-Above', Wavelength Mag image, bournemouthswell.wordpress.com design diagram, Wikimedia 'Boscombe_Surf_Reef.jpg'",
+      "kind": "imagery",
+      "where": "raisedwaterresearch.com Boscombe page; Wavelength Mag; bournemouthswell.wordpress.com; Wikimedia Commons",
+      "checked": "2026-10-05",
+      "by": "agent: Boscombe tracer and verifier (cloud)",
+      "result": "no plan or figure",
+      "detail": "Boscombe-Arial is oblique (pier at the left, no usable control); Boscombe-From-Above is near-nadir but has no scale or north; the Wavelength Mag image is a sign and a sand heap, not the reef; the bournemouthswell design diagram is only 100 x 39 px; the Wikimedia 'layout' diagram is a cartoon of tube cross-sections forming a ramp. Used as context at most.",
+      "might_work": ""
+    },
+    {
+      "what": "Flickr photo 2009-07-28 'exposed reef mound' (registry boscombe-surf-reef-img-01)",
+      "kind": "imagery",
+      "where": "Flickr page cited in the card images list",
+      "checked": "2026-10-07",
+      "by": "agent: Boscombe 3D agent (cloud)",
+      "result": "imagery shows no structure",
+      "detail": "Viewed directly: a dry, wind-rippled sand heap with footprints behind a temporary fence and the 'Surf reef' safety sign; no sea, waterline or reef bags, so the earlier description 'exposed reef mound at extreme low tide' is not supported. Not usable for crest or planform.",
+      "might_work": ""
+    },
+    {
+      "what": "Gemini's Boscombe sources: Bournemouth Council 'Boscombe Reef Review (2012)', Halcrow 'Independent Engineering Audit (2011)', RWR 'Dossier (2024)', 'Davidson (2010) Final Performance Report', 'Harrow et al. 2012 multibeam'",
+      "kind": "report",
+      "where": "Gemini reef_footprints.json (read-only); web searches 2026-10-05 and 2026-10-10",
+      "checked": "2026-10-10",
+      "by": "agent: Boscombe tracer, verifier and source audit (cloud)",
+      "result": "not found",
+      "detail": "No URLs given; searches found no council review and no Halcrow audit. The Davidson (2010) report is a 6-month INTERIM report with surf-quality content and no 100 x 55 m plan. 'Harrow et al. 2012 multibeam' does not exist (the 2012 Plymouth paper is Rendle and Davidson, DGPS bathymetry). The RWR spot page gives only 2.5 acres / 210 m. Gemini's 9,176 m2 quadrilateral is 2.3 times our outline and oriented differently; its 'triangular delta 100 x 55 m' appears in no plan-view source. Gemini lead not confirmed; nothing used.",
+      "might_work": ""
+    },
+    {
+      "what": "Whether the Dec 2010 planned modification (four extra bags at the south-east corner, three pillow bags to lengthen the right to 65 m) was built",
+      "kind": "search",
+      "where": "Wikipedia 'Boscombe Surf Reef' (Construction, citing Bournemouth Echo 16 Dec 2010); council releases 12 Aug and 24 Oct 2011; BBC 15 Aug 2011",
+      "checked": "2026-10-05",
+      "by": "agent: Boscombe verifier (cloud)",
+      "result": "not found",
+      "detail": "Not documented as built before the 2011 imagery date or afterwards: the council releases only mention repairs to two upper-layer containers ('funds previously allocated for improvement are being used' for repair), the BBC says refinement was still only a plan in August 2011, and repair work continued into spring 2012. The drawn state is therefore the damaged-and-repaired reef of 2011 without the extension.",
+      "might_work": "Lior: E10 (BCP Council records); Google Earth history (G2)"
+    },
+    {
+      "what": "ASR Ltd construction manual (full bag table) and Rendle and Davidson (2012) Fig 9 profile panels",
+      "kind": "report",
+      "where": "ASR Ltd construction manual (not online); https://icce-ojs-tamu.tdl.org/icce/article/view/6794 Fig 9 profile panels",
+      "checked": "2026-10-05",
+      "by": "agent: Boscombe card research and tracer (cloud)",
+      "result": "not found",
+      "detail": "The ASR construction manual with individual bag capacities was not seen (card gap; only container totals such as T4 746.7 m3 from Rendle Table 5.3). The Fig 9 profile panels use an 'Eastings' axis around 4.21e5 that does not match the plan Eastings (4.11e5) and their scale could not be reconciled with the profile lines (88 units vs a 135 m line), so they were not used; only the plan survey panel was read.",
+      "might_work": "ASR Ltd (Raglan NZ) or Raised Water Research (Lior: E6)"
+    },
+    {
+      "what": "YouTube video HeiYPXt85LM 'Boscombe Surf Reef - the regeneration of Boscombe' as a description of the reef structure",
+      "kind": "video",
+      "where": "https://www.youtube.com/watch?v=HeiYPXt85LM",
+      "checked": "2026-09-25",
+      "by": "agent: Boscombe media re-check (cloud)",
+      "result": "other: video not about the structure",
+      "detail": "Full transcript read: a regeneration and interview piece about the town (run-down history, Overstrand development, beach pods, pier refit). The reef is credited as the catalyst ('it was a catalyst for all of this investment') but the structure is never described or shown. Downgraded to 'mentions the reef briefly'. Another video, 7xMwL09a1TI 'the construction story so far', was classified from its title alone (no description, not transcribed).",
+      "might_work": ""
+    },
+    {
+      "what": "SeaDataNet CDI record 117452 / 1982230: vertical datum, horizontal datum, instrument model, grid resolution (the fields of the record page)",
+      "kind": "database",
+      "where": "https://cdi.seadatanet.org/search ; https://cdi.seadatanet.org/report/1982230 ; https://cdi-bathymetry.seadatanet.org/report/edmo/2607/117452 ; https://cdi.seadatanet.org/csw ; https://cdi-bathymetry.seadatanet.org/csw ; EMODnet Geonetwork CSW (free text 117452)",
+      "checked": "2026-10-13",
+      "by": "agent: W1/W2 SeaDataNet + Kovalam (cloud, resumed after interruption)",
+      "result": "bot check (not bypassed)",
+      "detail": "Partial yield: the CDI search export gave survey dates 2011-08-26 to 2012-04-06, distributor OceanWise (EDMO 2607), originator UKHO, access 'by negotiation', instrument 'unknown' (these are references in 07_scale/shapes/boscombe-surf-reef/3d/SOURCES_3D.md, section W1). The record page that would show vertical and horizontal datum answers 503 'Checking your browser... JavaScript required' to plain HTTP and 'Web Page Blocked' to headless Chrome; the two CSW endpoints are 404 or do not resolve; the EMODnet Geonetwork CSW holds no per-CDI records. Datum, horizontal datum and resolution therefore stay unknown.",
+      "might_work": "Lior in a normal browser (REQUESTS W1, figure and 5 lines); the underlying MCA survey HI1366 'Report of Survey' (UKHO 2012) or its 1 m grid on the Defra / UKHO portals (BGS backscatter link HI1366.zip is 404; gisrest.defra.gov.uk unreachable from the sandbox)"
+    }
+  ]
+}

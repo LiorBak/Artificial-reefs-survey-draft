@@ -1,0 +1,185 @@
+{
+  "slug": "mexico-reef-2026-unnamed",
+  "entries": [
+    {
+      "what": "Xala reef design plan, dimensions, coordinates or crest depth (any source): web search for Xala + Mortensen + DHI + dimensions",
+      "kind": "search",
+      "where": "WebSearch 2026-10-10: 'Xala' + 'Mortensen' + 'DHI' + reef dimensions; earlier card sweep 2026-09-24 and re-check 2026-09-25",
+      "checked": "2026-10-10",
+      "by": "agent: Mexico shape agent / source audit (cloud)",
+      "result": "not found",
+      "detail": "Nothing Xala-specific: the searches returned only Palm Beach (Gold Coast) data for the same designer. No length, width, crest depth, volume, cost, contractor, coordinates or dates are disclosed in any source found; the only physical fact is '3,000 truckloads of boulders' (Hollywood Reporter 2025-04-22), and a truckload is not a volume (truck size not given). Location withheld by RWR until its 16 Apr 2026 event; only the region (Costalegre, Jalisco) is known.",
+      "might_work": "Lior: W4 / P14 (Google `Xala arrecife artificial surf Costalegre Mortensen DHI`; SEMARNAT MIA documents; RWR follow-up posts); contacts E6 (RWR)"
+    },
+    {
+      "what": "Six Senses Xala page (sixsenses.com) and the surfer.com article 'artificial reefs making comeback'",
+      "kind": "web page",
+      "where": "https://www.sixsenses.com/en/new-openings/xala/ ; https://www.surfer.com/news/artificial-reefs-making-comeback",
+      "checked": "2026-09-24",
+      "by": "agent: Mexico card research (cloud)",
+      "result": "bot check (not bypassed)",
+      "detail": "Both returned HTTP 403 to WebFetch (2026-09-24) and were not read. The Six Senses page would only give location / opening context (opening year is itself unresolved: 2027 per THR vs 2026 per Hospitality Net); the Xala press pages were read later (see the Xala developer pages entry). The surfer.com Palm Beach article is covered by its own entry.",
+      "might_work": "Lior in a browser if the opening date or any reef text is wanted"
+    },
+    {
+      "what": "RWR and California Surf Club social-media captions (Instagram raisedwater, Facebook raisedwater, Instagram casurfclub) and the 16 Apr 2026 reveal event",
+      "kind": "web page",
+      "where": "https://www.instagram.com/raisedwater ; https://www.facebook.com/raisedwater ; https://www.instagram.com/casurfclub/",
+      "checked": "2026-09-24",
+      "by": "agent: Mexico card research (cloud)",
+      "result": "login needed",
+      "detail": "Captions are not renderable via WebFetch and Facebook typically blocks it. No source seen reports that the 16 Apr 2026 event actually took place (the card wording 'unveiled' was corrected on 2026-10-10 as unsupported). The California Surf Club events page (californiasurfclub.clients.peoplevine.com/events) was not checked.",
+      "might_work": "Lior: check the social posts and event recap for coordinates, plan graphics or video (REQUESTS W4)"
+    },
+    {
+      "what": "Google Maps area pin 19.71861, -105.23222 (near Chalacatepec airport) as the reef location",
+      "kind": "imagery",
+      "where": "https://www.google.com/maps/@19.71861,-105.23222,13z",
+      "checked": "2026-09-25",
+      "by": "agent: Mexico media re-check (cloud)",
+      "result": "wrong site",
+      "detail": "An approximate area pin only (serves HTML, not an image); explicitly not the reef coordinates, which the public does not have. Do not use it as a position for satellite searches. The earlier analogy envelope (160 x 80 m copied from Palm Beach) is likewise not a measurement and is hidden.",
+      "might_work": "Reef coordinates from RWR / the 16 Apr event / SEMARNAT MIA (Lior: W4)"
+    },
+    {
+      "what": "Videos of the Xala / Mexico reef",
+      "kind": "video",
+      "where": "YouTube / web search sweep 2026-09-24; 02_research/videos/mexico-reef-2026-unnamed/videos.json (empty)",
+      "checked": "2026-09-24",
+      "by": "agent: Mexico card research and media re-check (cloud)",
+      "result": "not found",
+      "detail": "No video of the reef was located; videos.json is an empty array, no transcripts and the video_frames folder exists but is empty. The reef was unveiled only in March-April 2026, so no independent surf report, wave data or session footage exists yet.",
+      "might_work": "Re-search later; RWR / California Surf Club social posts (Lior)"
+    },
+    {
+      "what": "Gemini's Xala dossier ('xala-reef-mexico', about 140 m x 75 m)",
+      "kind": "report",
+      "where": "Gemini folder (read-only): reef_footprints.json / dossier for xala-reef-mexico",
+      "checked": "2026-10-10",
+      "by": "agent: Mexico shape agent (queue item 9) and 2026-09-25 verification",
+      "result": "not found",
+      "detail": "The 140 x 75 m size has no source in Gemini's own data and no CAD entry; the cited sources could not be matched to any figure. Our independent re-check of the same sources did not confirm it. Gemini lead not confirmed; not used (rule 2).",
+      "might_work": ""
+    },
+    {
+      "what": "RWR 'Unveiling the new reef in Mexico' (2026-03-31): location / plan",
+      "kind": "web page",
+      "where": "https://raisedwaterresearch.com/unveiling-the-new-reef-in-mexico/ (fetched 2026-10-10, HTTP 200)",
+      "checked": "2026-10-10",
+      "by": "agent: Burkitts+Mexico network pass (cloud, 2026-10-10)",
+      "result": "no plan or figure",
+      "detail": "Fetched fine now (earlier 403). Text is an event announcement only: location to be revealed on 16 April 2026; no coordinates, size or graphics beyond the two registered photos.",
+      "might_work": "Coverage of the 16 Apr 2026 California Surf Club event (video/slides) via Lior or RWR."
+    },
+    {
+      "what": "RWR site search 'xala', 'mortensen', 'mexico' and category Surf Reef News",
+      "kind": "web page",
+      "where": "https://raisedwaterresearch.com/?s=xala ; ?s=mortensen ; ?s=mexico",
+      "checked": "2026-10-10",
+      "by": "agent: Burkitts+Mexico network pass (cloud, 2026-10-10)",
+      "result": "no plan or figure",
+      "detail": "Only the unveiling post plus older Palm Beach/Mortensen interviews; no follow-up post with a plan found as of 2026-10-10.",
+      "might_work": ""
+    },
+    {
+      "what": "Xala developer pages: press/six-senses-xala, community, real-estate, life.xala.com, xala.com",
+      "kind": "web page",
+      "where": "https://xala.com/press/six-senses-xala/ ; /community/ ; /real-estate/ ; https://life.xala.com/",
+      "checked": "2026-10-10",
+      "by": "agent: Burkitts+Mexico network pass (cloud, 2026-10-10)",
+      "result": "no plan or figure",
+      "detail": "Partial yield (location context): 3,000 acres, five miles of coast, ~65 miles south of Puerto Vallarta, 10 min from Costalegre airport; 'new coastal protection reef' for 'a consistently great wave'; 'surf' page: bay exclusive to residents and guests. No dimensions, coordinates or drawings.",
+      "might_work": ""
+    },
+    {
+      "what": "Hollywood Reporter (Romeyn 2025-04-22) re-read for size",
+      "kind": "web page",
+      "where": "https://www.hollywoodreporter.com/lifestyle/lifestyle-news/xala-richard-gere-luxury-mexican-paradise-1236192415/",
+      "checked": "2026-10-10",
+      "by": "agent: Burkitts+Mexico network pass (cloud, 2026-10-10)",
+      "result": "no plan or figure",
+      "detail": "Partial yield (already R3): '3,000 truckloads of boulders from a nearby quarry'; no size, location or plan. Earlier (2026-09-25) the same URL served a tollbit paywall redirect and the archive.org / archive.ph mirrors were blocked; the text was then read through its Yahoo syndication (https://www.yahoo.com/lifestyle/richard-gere-next-great-role-130000544.html), which gave the same single physical line.",
+      "might_work": ""
+    },
+    {
+      "what": "WSCC 2026 Mortensen speaker bio",
+      "kind": "web page",
+      "where": "https://www.wscc2026.com.au/key-speakers/simon-brandi-mortensen/",
+      "checked": "2026-10-10",
+      "by": "agent: Burkitts+Mexico network pass (cloud, 2026-10-10)",
+      "result": "no plan or figure",
+      "detail": "Says he designed 'three additional surfing reefs globally, most recent in the Americas'; does not name Xala or give figures.",
+      "might_work": ""
+    },
+    {
+      "what": "DHI group site search for Xala / Mortensen artificial reef Mexico",
+      "kind": "web page",
+      "where": "https://www.dhigroup.com/search?q=xala ; WebSearch 'Xala artificial reef DHI Seaport coastal protection surf Jalisco case study'",
+      "checked": "2026-10-10",
+      "by": "agent: Burkitts+Mexico network pass (cloud, 2026-10-10)",
+      "result": "not found",
+      "detail": "No DHI page, case study or conference abstract mentions Xala. Earlier guessed URLs (2026-09-25): dhigroup.com/it/seaport returned 404 and dhiseaport.com resolves to an unrelated maritime-software company; neither is a page for Mortensen's employer.",
+      "might_work": "DHI Seaport (Mortensen) directly, via Lior."
+    },
+    {
+      "what": "SEMARNAT MIA (Manifestacion de Impacto Ambiental) for Xala / Costalegre / Chalacatepec reef",
+      "kind": "database",
+      "where": "https://gaceta.semarnat.gob.mx/ (unreachable, proxy 502); https://sinat.semarnat.gob.mx/ (reachable, interactive shell only); WebSearch in Spanish and English",
+      "checked": "2026-10-10",
+      "by": "agent: Burkitts+Mexico network pass (cloud, 2026-10-10)",
+      "result": "not found",
+      "detail": "No MIA or Gaceta entry for a Xala reef or breakwater found; unrelated MIAs (Marina Careyes 2005, Punta Perula 2023) returned. The search forms on SINAT were not driven.",
+      "might_work": "Lior in a browser: SINAT / Gaceta search for the developer (Santa Cruz / Xala) and project words 'arrecife', 'protección costera', Tomatlan / La Huerta; also SEMADET Jalisco."
+    },
+    {
+      "what": "Esri imagery of the Xala coast (z15 r=6.5 km and z17 r=0.9 km, image 2025-05-23)",
+      "kind": "imagery",
+      "where": "Esri World Imagery current, centre 19.735,-105.255 and 19.6805,-105.262",
+      "checked": "2026-10-10",
+      "by": "agent: Burkitts+Mexico network pass (cloud, 2026-10-10)",
+      "result": "imagery shows no structure",
+      "detail": "Coast between the Xola-Paraman lagoon mouth (19.731,-105.291) and a rocky point at about 19.679,-105.262 is a long beach with surf; no artificial rock works are visible. The rocky point is a natural headland: NOT identified as the Xala reef (location unconfirmed). A submerged boulder reef would not show (assumption A3).",
+      "might_work": "Coordinates from the 16 Apr 2026 event; Google Earth Pro imagery after 2026-04."
+    },
+    {
+      "what": "papers/ folder for Xala / Mortensen / Costalegre",
+      "kind": "paper",
+      "where": "papers/ (pymupdf grep of 5 PDFs)",
+      "checked": "2026-10-10",
+      "by": "agent: Burkitts+Mexico network pass (cloud, 2026-10-10)",
+      "result": "wrong site",
+      "detail": "Only the NSW 2013 review cites Mortensen (2010) CFD surfing paper (p.68, 100); nothing on Xala. Mexico appears in the PDFs only for the Yucatan geotextile reefs (Rendle thesis p.38, 124, 278-280; Blacka et al. 2013 Tables p.75-79, reference p.96), a different project and type; the 2007 Mount Maunganui paper has no text layer; the reef was unveiled in 2026, after all five papers.",
+      "might_work": ""
+    },
+    {
+      "what": "Surfer magazine Mortensen/Palm Beach and artificial reefs articles",
+      "kind": "web page",
+      "where": "https://www.surfer.com/news/artificial-surf-reefs-australia-palm-beach",
+      "checked": "2026-10-10",
+      "by": "agent: Burkitts+Mexico network pass (cloud, 2026-10-10)",
+      "result": "bot check (not bypassed)",
+      "detail": "HTTP 403 from the container.",
+      "might_work": ""
+    },
+    {
+      "what": "EMODnet Bathymetry DTM 2024 (viewer, REST, ERDDAP) for seabed depth at the reef",
+      "kind": "database",
+      "where": "https://emodnet.ec.europa.eu/geoviewer/ ; EMODnet Bathymetry REST depth_sample / ERDDAP bathymetry_dtm_2024 (no coordinate for this reef)",
+      "checked": "2026-10-06",
+      "by": "agent: EMODnet bathymetry agent (cloud)",
+      "result": "not found",
+      "detail": "EMODnet covers European seas only; the REST service returns HTTP 204 (empty) at this reef's coordinate (Mexico (Pacific)), so the site is outside the grid. Only two of the 13 reefs are covered (Boscombe, Borth). Do not retry EMODnet for this reef.",
+      "might_work": "Local sources instead: national or state bathymetry, a council or authority survey, Navionics / Google Earth readings (see REQUESTS_FOR_LIOR.md section 5)"
+    },
+    {
+      "what": "W4 web searches (Xala / Chalacatepec / Mortensen DHI / SEMARNAT MIA)",
+      "kind": "search",
+      "where": "Google searches listed in REQUESTS_FOR_LIOR.md W4",
+      "checked": "2026-10-11",
+      "by": "Lior (browser), recorded by main",
+      "result": "other: only wave photos",
+      "detail": "Lior ran the W4 searches in a normal browser; results were only wave photos, no coordinates, plan or MIA.",
+      "might_work": "Recording of the 16 Apr 2026 reveal event; Mortensen/DHI contact"
+    }
+  ]
+}

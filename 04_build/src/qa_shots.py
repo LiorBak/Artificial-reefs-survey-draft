@@ -6,7 +6,7 @@ Headless Edge/Chrome can do both, with no extra installs (no Playwright needed).
 Usage:  python qa_shots.py [--prefix round3] [--slug <reef-slug>]
 Writes: ../QA/<prefix>_*.png and ../QA/<prefix>_file_smoke.txt ; exit code 1 if the smoke test fails.
 """
-import argparse, json, re, subprocess, sys, tempfile, shutil
+import argparse, json, os, re, subprocess, sys, tempfile, shutil
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -23,11 +23,13 @@ CANDIDATES = [
 
 
 def browsers():
-    found = [c for c in CANDIDATES if Path(c).exists()]
-    for n in ("chrome", "google-chrome", "chromium", "msedge"):
+    found = [c for c in [os.environ.get("CHROME_PATH", "")] + CANDIDATES if c and Path(c).exists()]
+    for n in ("chrome", "google-chrome", "google-chrome-stable", "chromium", "chromium-browser", "msedge"):
         p = shutil.which(n)
         if p and p not in found:
             found.append(p)
+    # Playwright's own Chromium on Linux (python -m playwright install chromium)
+    found += [str(h) for h in (sorted(Path.home().glob(".cache/ms-playwright/chromium-*/chrome-linux*/chrome")) + sorted(Path("/opt/pw-browsers").glob("chromium-*/chrome-linux*/chrome")))[-1:]]  # + cloud image
     if not found:
         sys.exit("No Chrome/Edge found for headless QA.")
     return found
@@ -37,6 +39,8 @@ def run(exe, args, url, profile, timeout=90):
     cmd = [exe, "--headless=new", "--disable-gpu", "--hide-scrollbars", "--no-first-run",
            "--no-default-browser-check", "--allow-file-access-from-files",
            f"--user-data-dir={profile}", "--virtual-time-budget=8000", *args, url]
+    if hasattr(os, "geteuid") and os.geteuid() == 0:   # cloud container runs as root: Chrome needs this there
+        cmd.insert(1, "--no-sandbox")
     return subprocess.run(cmd, capture_output=True, timeout=timeout)
 
 
@@ -45,21 +49,16 @@ def strip_scripts(dom):
     return re.sub(r"<script\b[^>]*>.*?</script>", "", dom, flags=re.S)
 
 
-def scale_view_checks(dom, n_reefs=13):
-    """Checks on a DOM dump of <page>#view/scale. Returns {name: bool}."""
+def retired_view_checks(dom):
+    """Checks on a DOM dump of <page>#view/scale (or #view/map): the Map and Scale tabs were removed 2026-10-10,
+    so the route must fall back to the gallery and no trace of the two views may remain. Returns {name: bool}."""
     body = strip_scripts(dom)
-    root = re.search(r'id="view-scale"([^>]*)>(.*?)</section>', body, re.S)
-    part = root.group(2) if root else ""
+    g = re.search(r'<section id="view-gallery"([^>]*)>', body)
     return {
-        "scale view is the visible view": bool(root) and "hidden" not in root.group(1),
-        f"{n_reefs} per-reef scale drawings (svg.sc-svg)": part.count('class="sc-svg"') == n_reefs,
-        f"{n_reefs} reef polygons groups in the drawings": part.count('class="sc-reef"') == n_reefs,
-        "overlay svg rendered": part.count('class="sc-ov-svg"') == 1,
-        f"overlay has {n_reefs} reef outlines": part.count('class="sc-ov-reef"') == n_reefs,
-        f"{n_reefs} 'How we drew this' blocks": part.count('class="sc-how"') == n_reefs,
-        f"comparison table has {n_reefs} rows": len(re.findall(r'<table class="data sc-cmp">.*?</table>', part, re.S)) == 1
-            and re.search(r'<table class="data sc-cmp">(.*?)</table>', part, re.S).group(1).count("<tr data-open") == n_reefs,
-        "source markers rendered in the Scale view": part.count('class="ref-mark"') > 50,
+        "retired route falls back to the gallery (visible)": bool(g) and "hidden" not in g.group(1),
+        "no Map / Scale view section or button": 'id="view-scale"' not in body and 'id="view-map"' not in body
+            and 'data-view="scale"' not in body and 'data-view="map"' not in body,
+        "top navigation is exactly Gallery, Table, 3D models": re.findall(r'<button type="button" data-view="([a-z0-9]+)"', body) == ["gallery", "table", "models3d"],
     }
 
 
@@ -122,6 +121,14 @@ def main():
             report.append(f"{'PASS' if v else 'FAIL'}  {k}")
             ok &= v
 
+        # 1b) the retired Scale route (#view/scale must fall back to the gallery)
+        r2 = run(exe, ["--dump-dom"], url + "#view/scale", prof)
+        sdom = r2.stdout.decode("utf-8", "replace")
+        (QA / f"{a.prefix}_retired_dom.html").write_text(sdom, encoding="utf-8")
+        for k, v in retired_view_checks(sdom).items():
+            report.append(f"{'PASS' if v else 'FAIL'}  retired route: {k}")
+            ok &= v
+
         # 2) saved screenshots
         shots = [
             ("desktop", "1440,900", url),
@@ -134,7 +141,7 @@ def main():
             shots += [("detail", "1440,900", f"{url}#reef/{slug}"),
                       ("detail_ref", "1440,900", f"{url}#reef/{slug}/R1"),
                       ("detail_mobile", "390,844", f"{url}#reef/{slug}/R1")]
-        shots += [("scale_detail_S1", "1440,900", f"{url}#reef/borth-coastal-defence-reef/S1")]
+        shots += [("footprint_detail_S1", "1440,900", f"{url}#reef/borth-coastal-defence-reef/S1")]
         for name, size, u in shots:
             out = QA / f"{a.prefix}_{name}.png"
             if out.exists():

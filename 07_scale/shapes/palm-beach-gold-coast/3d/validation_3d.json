@@ -1,33 +1,33 @@
 {
  "interval_fit": {
-  "s_nav_m": 0.4587733874777849,
+  "s_nav_m": 0.45877338691771324,
   "by_datum": {
    "LAT": {
-    "s_m": 0.4587733874777849,
-    "se_m": 0.002720747150056588,
-    "rms_m": 0.492894290411863
+    "s_m": 0.45877338691771324,
+    "se_m": 0.0027207471444247056,
+    "rms_m": 0.49289428939158336
    },
    "MSL": {
-    "s_m": 0.36112533959630116,
-    "se_m": 0.002097291618370863,
-    "rms_m": 0.3799482300301789
+    "s_m": 0.36112533903622956,
+    "se_m": 0.0020972916143748594,
+    "rms_m": 0.3799482293062574
    }
   },
   "by_rank_band": {
    "4-6": {
     "n": 53,
     "mean_rank": 5.362885415898149,
-    "s_m": 0.6453589972380626
+    "s_m": 0.6453589963406927
    },
    "6-8": {
     "n": 87,
     "mean_rank": 6.475704197670624,
-    "s_m": 0.5121679379295062
+    "s_m": 0.5121679370808987
    },
    "8-11": {
     "n": 215,
     "mean_rank": 9.352074902349887,
-    "s_m": 0.4303017375203113
+    "s_m": 0.43030173699196006
    }
   },
   "assumed_m": 0.5,
@@ -36,66 +36,66 @@
  "datum_test": {
   "LAT": {
    "offset_above_LAT_m": 0.0,
-   "mean_m": -0.2738064704958406,
-   "rms_m": 0.61146231385248
+   "mean_m": -0.27380647554265813,
+   "rms_m": 0.6114623159392388
   },
   "MLWS": {
    "offset_above_LAT_m": 0.22,
-   "mean_m": -0.4938064704958403,
-   "rms_m": 0.736723155791915
+   "mean_m": -0.49380647554265783,
+   "rms_m": 0.736723159030953
   },
   "MLWN": {
    "offset_above_LAT_m": 0.51,
-   "mean_m": -0.7838064704958404,
-   "rms_m": 0.9556509619979388
+   "mean_m": -0.7838064755426578,
+   "rms_m": 0.9556509660264508
   },
-  "AHD (0.76, unverified)": {
+  "AHD (0.76, MSQ 2014)": {
    "offset_above_LAT_m": 0.76,
-   "mean_m": -1.0338064704958405,
-   "rms_m": 1.169475094397271
+   "mean_m": -1.033806475542658,
+   "rms_m": 1.1694750987680829
   },
   "MSL": {
    "offset_above_LAT_m": 0.88,
-   "mean_m": -1.1538064704958406,
-   "rms_m": 1.2767871981401238
+   "mean_m": -1.153806475542658,
+   "rms_m": 1.2767872026179052
   },
   "MHWN": {
    "offset_above_LAT_m": 1.24,
-   "mean_m": -1.513806470495841,
-   "rms_m": 1.6095111705395255
+   "mean_m": -1.5138064755426581,
+   "rms_m": 1.6095111752204674
   },
   "MHWS": {
    "offset_above_LAT_m": 1.53,
-   "mean_m": -1.8038064704958408,
-   "rms_m": 1.8848432192039482
+   "mean_m": -1.8038064755426586,
+   "rms_m": 1.8848432239776103
   },
   "HAT": {
    "offset_above_LAT_m": 2.03,
-   "mean_m": -2.3038064704958403,
-   "rms_m": 2.3677923117273063
+   "mean_m": -2.303806475542658,
+   "rms_m": 2.367792316593026
   }
  },
  "datum_rms_minimum_offset_above_LAT_m": -0.26999999999999935,
  "toe_residual_by_sector": {
   "W end (x < -40)": {
    "n": 106,
-   "mean_m": -0.7181313069837965,
-   "sd_m": 0.1436661882099727
+   "mean_m": -0.7181313103409851,
+   "sd_m": 0.14366618808288675
   },
   "E end (y > 340)": {
    "n": 128,
-   "mean_m": -0.5077852728531983,
-   "sd_m": 0.21819971996730758
+   "mean_m": -0.5077852781740462,
+   "sd_m": 0.21819972026762663
   },
   "N flank (x > 20, y < 300)": {
    "n": 106,
-   "mean_m": 0.38636611563496365,
-   "sd_m": 0.5889117289511518
+   "mean_m": 0.38636611028853496,
+   "sd_m": 0.5889117294328752
   },
   "S flank": {
    "n": 100,
-   "mean_m": -0.6549032732749948,
-   "sd_m": 0.25543645829082795
+   "mean_m": -0.6549032768649067,
+   "sd_m": 0.2554364574023178
   }
  },
  "east_axis_spacing_m": [
@@ -117,8 +117,8 @@
    23.0,
    534.0
   ],
-  "navionics_z_msl": -11.877798696922866,
-  "diff_m": -1.1222013030771336
+  "navionics_z_msl": -11.877798686830339,
+  "diff_m": -1.1222013131696613
  },
  "frame_check": {
   "vertex0_canonical_m": [
@@ -141,29 +141,29 @@
   "y_bearing_deg": 64.30000000000001,
   "handedness": "canonical (x, y, z up) is left-handed; ENU (E = x sin bx + y sin by, N = x cos bx + y cos by, U = z) is right-handed"
  },
- "volume_envelope_m3": 22020.00385439201,
- "volume_blended_m3": 21965.985270480764,
+ "volume_envelope_m3": 22020.00376244564,
+ "volume_blended_m3": 21965.98518259819,
  "area_m2": 11989.0,
- "mean_height_m": 1.8366839481518067,
- "max_height_m": 4.171259645770707,
+ "mean_height_m": 1.8366839404825792,
+ "max_height_m": 4.171259639280553,
  "max_height_at_xy": [
   -8.0,
   291.0
  ],
- "crest_mean_bed_z": -5.386127118681612,
- "height_at_crest_m": 3.886127118681612,
+ "crest_mean_bed_z": -5.386127111594575,
+ "height_at_crest_m": 3.8861271115945746,
  "navionics_only": {
-  "crest_mean_bed_z": -5.0134174621928675,
-  "height_at_crest_m": 3.5134174621928675,
-  "volume_envelope_m3": 16357.91187813603
+  "crest_mean_bed_z": -5.013417456531911,
+  "height_at_crest_m": 3.5134174565319114,
+  "volume_envelope_m3": 16357.91182960954
  },
  "volume_sensitivity_by_seabed_offset_m": {
-  "-1.0": 34004.14806581657,
-  "-0.5": 28009.648065816567,
-  "-0.25": 25012.856068690664,
-  "0.25": 19157.966672060968,
-  "0.5": 16536.69863458322,
-  "1.0": 11957.379182211651
+  "-1.0": 34004.1479734032,
+  "-0.5": 28009.647973403196,
+  "-0.25": 25012.85597633257,
+  "0.25": 19157.96658788641,
+  "0.5": 16536.698557684045,
+  "1.0": 11957.379119094725
  },
  "toe_depth_range_m": [
   -7.0,
@@ -171,10 +171,10 @@
  ],
  "crest_below_LAT_m": -0.62,
  "toe_vs_navionics": {
-  "mean_m": -0.2738064704958406,
-  "sd_m": 0.5467322726677464,
+  "mean_m": -0.27380647554265813,
+  "sd_m": 0.5467322724740925,
   "fraction_toe_below_seabed": 0.7775175644028103,
-  "mean_if_chart_datum_were_MSL_m": -1.1538064704958406,
+  "mean_if_chart_datum_were_MSL_m": -1.153806475542658,
   "n": 427
  },
  "contour_plane_fit": {
@@ -188,8 +188,8 @@
   "n_points_iso": 1041,
   "n_points_anchor": 25,
   "n_points_toe": 0,
-  "rms_residual_m": 0.08216761369166167,
-  "max_abs_residual_m": 1.006073398124835,
+  "rms_residual_m": 0.0821676136918018,
+  "max_abs_residual_m": 1.0060733985490042,
   "kernel": "thin_plate_spline",
   "smoothing": 1.0,
   "buffer_m": 25.0
@@ -198,8 +198,8 @@
   "n_points_iso": 1041,
   "n_points_anchor": 25,
   "n_points_toe": 107,
-  "rms_residual_m": 0.08216763071242848,
-  "max_abs_residual_m": 1.0060733940917999,
+  "rms_residual_m": 0.0821676307128059,
+  "max_abs_residual_m": 1.0060733998834621,
   "kernel": "thin_plate_spline",
   "smoothing": 1.0,
   "buffer_m": 25.0
@@ -283,11 +283,43 @@
   "rock_tonnes": 60000,
   "bulk_density_t_m3_if_33000": 1.8181818181818181,
   "solid_density_t_m3_if_25000": 2.4,
-  "volume_model_over_register": 0.6672728440724851
+  "volume_model_over_register": 0.6672728412862315
  },
  "fish_haven": {
   "charted_least_depth_m": 1.5,
   "crest_depth_below_LAT_m": 0.62,
   "difference_m": 0.88
+ },
+ "recheck_2026_10_10": {
+  "pbo3": {
+   "canonical_xy_m": [
+    -110.7,
+    571.2
+   ],
+   "inside_grid": true,
+   "beyond_10m_line_extrapolated": true,
+   "model_z_msl_m": -13.25,
+   "model_depth_below_LAT_m": 12.37,
+   "model_depth_below_MSL_m": 13.25,
+   "source_depth_m": 11.75,
+   "source": "Daniels et al. 2022 Table 1 (palm-beach-gold-coast-img-05); datum not stated, vertical accuracy not stated",
+   "diff_if_source_below_LAT_m": 0.62,
+   "diff_if_source_below_MSL_m": 1.5,
+   "distance_seaward_of_toe_m": 196.9
+  },
+  "mortensen_fig6a": {
+   "n_labels": 13,
+   "depth_range_m": [
+    3.5,
+    11.5
+   ],
+   "datum_assumed": "AHD (depth below AHD = -z_MSL - 0.12)",
+   "best_shift_m": 313.0,
+   "rms_m": 0.33,
+   "mean_model_minus_source_m": -0.065,
+   "max_abs_m": 0.89,
+   "max_abs_excluding_3p5m_label_m": 0.52,
+   "note": "horizontal shift = model-metre origin of the figure vs the waterline of our frame (unknown, fitted); x = +-150 m columns of the seabed grid"
+  }
  }
 }

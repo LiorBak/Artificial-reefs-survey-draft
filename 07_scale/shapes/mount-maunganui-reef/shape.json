@@ -5944,7 +5944,7 @@
     "url": "(no URL given by Gemini)",
     "what_gemini_said": "\"Mead, S. et al. (2007). Mount Maunganui Reef Monitoring Report. ASR Ltd.\"",
     "our_check": "unverifiable",
-    "evidence": "not found online (re-searched 2026-10-06); the real 2007 item is Mead, Black & Moores (2007) 'Mount Maunganui Reef - Amalgamating Design and the Constraints of Construction', 17th Australasian Coasts and Ports Conference, Melbourne (no PDF found); also Black & Mead (2007) Shore & Beach 75(4):55-66 and Mead (2011), cited by Scarfe/BoPRC but not accessible."
+    "evidence": "not found online (re-searched 2026-10-06); the real 2007 item is Mead, Black & Moores (2007) 'Mount Maunganui Reef - Amalgamating Design and the Constraints of Construction', Coasts and Ports 2007, 18th Australasian Coastal and Ocean Engineering Conference (corrected from '17th' 2026-10-10: proceedings.com listing, 18-20 July 2007), Melbourne (no PDF found); also Black & Mead (2007) Shore & Beach 75(4):55-66 and Mead (2011), cited by Scarfe/BoPRC but not accessible."
    },
    {
     "url": "(no URL given by Gemini)",
@@ -9144,5 +9144,120 @@
    "polygons_m": null,
    "note": "Not stored as a polygon and not built in 3D (Lior 2026-10-06): the dark mass includes shadow and scour-hole darkening, so only its area is kept as an upper bound (threshold +-2 units gives 1,308-2,073 m2). Optional: could be re-traced from src/linz_aerial_2010-11_BD37_1000_1314_crop.png."
   }
- ]
+ ],
+ "volume_table_3d": {
+  "description": "Model volume (m3) per outline version x seabed (bed) scenario; crest -0.9 m CD; sum(h) dx dy on a 0.5 m grid (3d/mmr_model.py, 3d/computed.json), reef height h = surface - local seabed. The as-built bed is an ASSUMPTION (D1, Lior 2026-10-07); no source states it.",
+  "stated_volume_m3": 2800,
+  "stated_volume_sources": "BoPRC/Focus RMG 2013/14 p28; Raised Water Research; Mead & Borrero 2011 Fig 3 / sect. 3.1.4 (\"only 2,800 m3 of the 6,500 m3 design volume currently in place\")",
+  "bed_scenarios_z_cd": {
+   "assumed (default, ASSUMPTION)": -3.6,
+   "later seabed": -2.8,
+   "sensitivity": [
+    -3.0,
+    -3.5,
+    -4.0,
+    -4.5
+   ],
+   "nav": "Navionics 2026 as it is (-2.76 at the reef centre)"
+  },
+  "method": "3d/METHODS_3D.md sections 3.2-3.3 and 4.3; inner profile from the 2013 DEM, flank rule per version (skirt run 1 H:V or toe loft), seabed = Navionics 2026 profile shifted to the bed with a ramp.",
+  "crest_check": {
+   "lowest_water_level": "LAT",
+   "lowest_water_cd": -0.03,
+   "highest_crest_option_cd": -0.8,
+   "max_reef_z_cd_by_version_and_bed": {
+    "multibeam_2013_m2p0": {
+     "-3.6": -0.8,
+     "-2.8": -0.8,
+     "-3.0": -0.8,
+     "-3.5": -0.8,
+     "-4.0": -0.8,
+     "-4.5": -0.8,
+     "nav": -0.8
+    },
+    "asr_installed_toe_2008": {
+     "-3.6": -0.8,
+     "-2.8": -0.8,
+     "-3.0": -0.8,
+     "-3.5": -0.8,
+     "-4.0": -0.8,
+     "-4.5": -0.8,
+     "nav": -0.8
+    }
+   },
+   "max_reef_z_cd_overall": -0.8,
+   "margin_below_LAT_m": 0.77,
+   "any_above_lowest_water": false
+  },
+  "versions": {
+   "multibeam_2013_m2p0": {
+    "name": "2013 multibeam -2.0 m CD outline + 1:1 skirt (default outline)",
+    "outline_area_m2": 1071.0,
+    "volume_m3_by_bed": {
+     "-3.6": 2945,
+     "-2.8": 1752,
+     "-3.0": 2030,
+     "-3.5": 2784,
+     "-4.0": 3620,
+     "-4.5": 4537,
+     "nav": 1692
+    },
+    "footprint_at_bed_m2": {
+     "-3.6": 1652,
+     "-2.8": 1382,
+     "-3.0": 1453,
+     "-3.5": 1621,
+     "-4.0": 1788,
+     "-4.5": 1953,
+     "nav": 1367
+    },
+    "h_max_m": {
+     "-3.6": 2.85,
+     "-2.8": 2.05,
+     "-3.0": 2.25,
+     "-3.5": 2.75,
+     "-4.0": 3.25,
+     "-4.5": 3.75,
+     "nav": 2.01
+    },
+    "bed_that_gives_2800_m_cd": -3.51,
+    "vs_stated_at_default_bed_pct": 5.2,
+    "vs_stated_at_later_seabed_pct": -37.4
+   },
+   "asr_installed_toe_2008": {
+    "name": "ASR Installed toe outline, loft toe -> -2.0 contour -> crest",
+    "outline_area_m2": 1423.8,
+    "volume_m3_by_bed": {
+     "-3.6": 2727,
+     "-2.8": 1756,
+     "-3.0": 1999,
+     "-3.5": 2606,
+     "-4.0": 3212,
+     "-4.5": 3819,
+     "nav": 1703
+    },
+    "footprint_at_bed_m2": {
+     "-3.6": 1429,
+     "-2.8": 1422,
+     "-3.0": 1427,
+     "-3.5": 1428,
+     "-4.0": 1430,
+     "-4.5": 1431,
+     "nav": 1422
+    },
+    "h_max_m": {
+     "-3.6": 2.85,
+     "-2.8": 2.05,
+     "-3.0": 2.25,
+     "-3.5": 2.75,
+     "-4.0": 3.25,
+     "-4.5": 3.75,
+     "nav": 2.01
+    },
+    "bed_that_gives_2800_m_cd": -3.66,
+    "vs_stated_at_default_bed_pct": -2.6,
+    "vs_stated_at_later_seabed_pct": -37.3
+   }
+  }
+ }
 }

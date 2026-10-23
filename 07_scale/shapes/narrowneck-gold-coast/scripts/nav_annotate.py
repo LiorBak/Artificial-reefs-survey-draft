@@ -1,6 +1,6 @@
 import numpy as np, cv2, json, math
 from PIL import Image
-ROOT="C:/Users/lior/Documents/Gemini/AG/Artificial reef - to upload to git/07_scale/shapes/narrowneck-gold-coast"
+ROOT="C:/Users/lior/Documents/Claude/Projects/Artificial reef/07_scale/shapes/narrowneck-gold-coast"
 fr=json.load(open('frame.json')); sh=json.load(open(ROOT+'/shape.json'))
 mpp_chart=156543.03392*math.cos(math.radians(-27.986629))/2**18   # m per CSS px at z18
 print('chart m/px',mpp_chart)

@@ -7,7 +7,7 @@ Agent task, 2026-10-04. Scope: Gemini's `05_web_build/reef_videos.json` + `05_we
 Two mechanisms account for everything in Gemini's video data:
 
 1. **Circular copy.** `05_web_build/parse_videos.py` (read in full) parses markdown files at the literal path
-   `C:\Users\lior\Documents\Gemini\AG\Artificial reef - to upload to git\02_research\videos\*\videos.md` — **our own project**, not Gemini's.
+   `C:\Users\lior\Documents\Claude\Projects\Artificial reef\02_research\videos\*\videos.md` — **our own project**, not Gemini's.
    Its output, `reef_videos.json`, is therefore our own research reflected back at us for boscombe-surf-reef, burkitts-reef-bargara,
    cables-reef-wa (empty both sides), kovalam-reef-india, narrowneck-gold-coast's first two videos, palm-beach-gold-coast, and
    southern-ocean-surf-reef-albany — every id, title, channel and quote matches our own `videos.json` entries, in several cases

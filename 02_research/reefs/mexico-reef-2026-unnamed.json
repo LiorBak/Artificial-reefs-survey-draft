@@ -7,26 +7,26 @@
   "country": "Mexico",
   "lat": null,
   "lon": null,
-  "year": "Unclear/phased: boulder surf break reported built by April 2025 [R3][R4]; Raised Water Research calls it 'newly completed' and unveiled it 31 Mar–16 Apr 2026 [R1]",
+  "year": "Unclear/phased: boulder surf break reported built by April 2025 [R3][R4]; Raised Water Research calls it 'newly completed' and, in its announcement of 31 March 2026, billed a reveal event for 16 April 2026 [R1]",
   "type": "Rock/boulder reef — 3,000 truckloads of quarried boulders, not geotextile sand tubes [R3][R4]",
   "purpose": "Dual: (1) private members'-only high-performance surf break for Xala's owners/guests; (2) coastal protection/beach restoration, engineered to 'restore the beach, not flatten it' [R3][R4][R5]",
-  "size": "Not disclosed — no length, width, crest depth, or fill volume found in any source this sweep [R1][R3][R4][R5]",
+  "size": "Not disclosed — no length, width, crest depth, or fill volume found in any source this sweep [R1][R3][R4][R5] Shape/3D model: none, trace not possible (07_scale/shapes/mexico-reef-2026-unnamed/HANDOFF.md): no image shows the structure and no dimensions or coordinates exist; the 160 x 80 m 'analogy envelope' in 07_scale/reefs/ and Gemini's ~140 x 75 m are unsourced and not used. The card therefore has no model numbers to match (statement about this project's own files, 07_scale/shapes/mexico-reef-2026-unnamed/HANDOFF.md).",
   "cost": "Not disclosed for the reef specifically [R3][R5]",
   "cost_usd_approx": null,
-  "financed_by": "Xala development by Activos Turísticos de México (ACTUR), led by Ricardo Santa Cruz and Jerónimo Bremer; Richard Gere is a co-founder/backer; Six Senses (IHG) will operate the resort hotel. No source itemizes who specifically paid for the reef construction [R3][R4][R5]",
+  "financed_by": "Xala development by Activos Turísticos de México (ACTUR), led by Ricardo Santa Cruz and Jerónimo Bremer [R3]; Richard Gere is a co-founder/backer [R3][R4]; Six Senses (IHG) will operate the resort hotel [R3][R5]. No source itemizes who specifically paid for the reef construction [R3][R4][R5]",
   "motivation": "Positioned as part of a 'regenerative,' low-density luxury development contrasted with conventional Mexican coastal resorts; developer Ricardo Santa Cruz frames the project around ecological restraint over density and a buyer base (largely Californian tech-wealth) that doesn't want a conventional resort [R3][R4]",
   "designer": "Simon Brandi Mortensen, Principal Coastal Engineer and Managing Director, DHI Seaport (MSc Coastal Engineering, TU Denmark; 19 years in coastal projects; designer of Australia's Palm Beach Reef) [R1][R6]",
   "contractor": "Not stated in sources found",
-  "status_now": "Complete and operational per Raised Water Research; publicly unveiled 16 April 2026 at a California Surf Club event in Redondo Beach, CA. Access is private/limited — Xala caps built units at 93 against an approved 4,500 [R1][R3][R4]",
+  "status_now": "Described as complete ('newly completed') in Raised Water Research's announcement of 31 March 2026 [R1] (the source's framing, not a verified fact); that announcement billed a reveal at a California Surf Club event in Redondo Beach, CA, for 16 April 2026 [R1][R9]; no source seen reports that the event took place. Access is private/limited — Xala caps built units at 93 against an approved 4,500 [R1][R3][R4] Audit 2026-10-10: the earlier wording 'publicly unveiled 16 April 2026' was removed because it is not supported as a past event: R1 is an announcement posted 2026-03-31 that bills the reveal for 16 April 2026; no source seen reports that it took place, and 'complete and operational' is R1's framing, not a verified fact. (The shape HANDOFF carried the same wording; corrected in the citations audit of 2026-10-10.)",
   "verdict": "n-a",
-  "hover_text": "A private, members'-only rock/boulder surf reef (3,000 truckloads of quarried boulders) built inside the Xala luxury resort development on Mexico's Costalegre coast, Jalisco; cost and exact build date undisclosed, unveiled publicly 16 April 2026 — too new for any independent outcome data to exist yet [R1][R3][R4].",
-  "design_as_planned": "No detailed design brief (target wave height, period, break type, or beach-width promise) was found. Documented: quarried rock/boulder construction (3,000 truckloads), not geotextile sand-filled tubes [R3][R4], consistent with designer Simon Mortensen's stated philosophy that geotextile reefs suffer from bags 'breaking, shifting or sinking' with removal costs sometimes exceeding placement costs, whereas rock is 'natural and provides many small crevasses for marine habitat' [R12]. Stated intent: coastal protection/beach nourishment combined with a 'consistently great wave,' explicitly contrasted with reef designs that would 'flatten' rather than 'restore' the beach [R3][R4][R5]. No public engineering report, EIS, or design paper was located this sweep.",
-  "as_built_vs_design": "Not enough independent material was found to compare as-designed vs as-built — no construction-progress reporting, as-built drawings, or named contractor were located. The only construction detail available (3,000 truckloads of quarry boulders) is presented in press coverage as the finished description, not a revised design target [R3][R4]. A roughly one-year gap between the reef being described as part of Xala's built amenities (April 2025 [R3][R4]) and Raised Water Research's 'newly completed'/unveiling framing (March–April 2026 [R1]) is unresolved in sources found — possibly phased construction, or the reef was substantially built by 2025 and only formally unveiled in 2026.",
-  "outcome": "No independent surf report, wave-height measurement, or session footage description was found; Raised Water Research withheld even the reef's exact location until the 16 April 2026 event and promised 'never-before-seen footage,' implying essentially no public track record as of the unveiling [R1]. Coastal-protection performance (before/after beach-profile or erosion data) is not measured/reported in any source found. Ecology is not reported for the reef structure itself, though the wider Xala site includes a leatherback/Olive Ridley/green sea-turtle sanctuary and Ramsar-listed estuaries as separate conservation features [R5][R10]. Access/longevity/damage-event data does not yet exist given the very recent (April 2026) public unveiling.",
-  "why_worked_or_failed": "No outcome data exists yet to assess this directly. The only available engineering signal is designer pedigree: Simon Mortensen led the design of Australia's Palm Beach Reef (Gold Coast; design 2013–2014, construction April–September 2019 [R6][R7]; ~$18.2M AUD/~$12.5M USD, financed by the City of Gold Coast; 4–8 tonne rock boulders plus 470,000 m³ of beach-nourishment sand), which Raised Water Research assesses as a design success — 'the reef appears to be a success,' producing a consistent ~60 m right-hander and a shorter left in bigger swell [R7]. This is background on the designer's method only, not evidence about Xala's own performance — no source directly ties Palm Beach's outcome data to the Xala build.",
-  "unexpected_results": "Nothing Xala-specific was found (no litigation, safety incidents, fishing pressure, rip currents, or tourism-surge reporting). One indirect signal: an unrelated online repost of the Hollywood Reporter piece on a political/finance forum drew at least one favorable outside comment calling the whole project 'a neat idea/project,' but this concerns the development in general, not the reef, and is a single anonymous forum post [R4].",
-  "could_be_better": "No source offers a critique of the Xala reef specifically (too new; no engineering post-mortem or surfer complaint thread was found). Generic rock-reef trade-off to watch for once surf reports exist: rock-bottom reefs (versus sand-bottom breaks) have drawn 'harder surface' complaints at other sites such as Palm Beach Reef — flagged here only as a general risk category, not a documented Xala complaint. No author/expert or surfer view was found for Xala specifically; the site's private/members-only access model may itself suppress independent public reviews for some time.",
-  "relevance_to_israel": "Tide range and local wave climate at the Xala/Costalegre site were not found this sweep. What transfers conceptually, independent of Xala's own unverified outcome: (1) Material choice precedent — the designer's shift toward quarried rock/boulder construction (also used at Palm Beach Reef, 4–8 t boulders) rather than geotextile sand-filled tubes is directly comparable to the geotube-vs-rock materials question already live in this project's Israel dossiers (e.g. Ashkelon's 2018 geotube) — a rock-reef alternative is one materials option Israeli planners could weigh against documented geotube failure modes (undersized tubes, sand burial). (2) Governance-model contrast — Xala's reef is privately financed and privately accessed (members-only resort), unlike Israel's public-agency-funded structures (e.g. Ashkelon, Michmoret), a useful contrast case for 'who pays / who gets access' framing, though not a coastal-engineering transfer.",
+  "hover_text": "A private, members'-only rock/boulder surf reef (3,000 truckloads of quarried boulders) built inside the Xala luxury resort development on Mexico's Costalegre coast, Jalisco; cost and exact build date undisclosed, announced 31 March 2026 with a public reveal billed for 16 April 2026 [R1] — too new for any independent outcome data to exist yet [R1][R3][R4].",
+  "design_as_planned": "No detailed design brief (target wave height, period, break type, or beach-width promise) was found in the sources listed in References (negative finding of this card). Documented: quarried rock/boulder construction (3,000 truckloads), not geotextile sand-filled tubes [R3][R4], consistent with designer Simon Mortensen's stated philosophy that geotextile reefs suffer from bags 'breaking, shifting or sinking' with removal costs sometimes exceeding placement costs, whereas rock is 'natural and provides many small crevasses for marine habitat' [R12]. Stated intent: coastal protection/beach nourishment combined with a 'consistently great wave,' explicitly contrasted with reef designs that would 'flatten' rather than 'restore' the beach [R3][R4][R5]. No public engineering report, EIS, or design paper was located in this card's searches (negative finding).",
+  "as_built_vs_design": "Not enough independent material was found (negative finding of this card) to compare as-designed vs as-built — no construction-progress reporting, as-built drawings, or named contractor were located. The only construction detail available (3,000 truckloads of quarry boulders) is presented in press coverage as the finished description, not a revised design target [R3][R4]. A roughly one-year gap between the reef being described as part of Xala's built amenities (April 2025 [R3][R4]) and Raised Water Research's 'newly completed'/unveiling framing (March–April 2026 [R1]) is unresolved in sources found — possibly phased construction, or the reef was substantially built by 2025 and only formally unveiled in 2026.",
+  "outcome": "No independent surf report, wave-height measurement, or session footage description was found; Raised Water Research withheld even the reef's exact location until the reveal event billed for 16 April 2026 and promised 'never-before-seen footage,' implying essentially no public track record as of its 31 March 2026 announcement [R1]. Coastal-protection performance (before/after beach-profile or erosion data) is not measured/reported in any source found (negative finding of this card). Ecology is not reported for the reef structure itself, though the wider Xala site includes a leatherback/Olive Ridley/green sea-turtle sanctuary and Ramsar-listed estuaries as separate conservation features [R5][R10]. Access/longevity/damage-event data does not yet exist given that the reef was only announced in March-April 2026 [R1]; no source was found stating otherwise (negative finding of this card).",
+  "why_worked_or_failed": "No outcome data was found to assess this directly (negative finding of this card). The only available engineering signal is designer pedigree: Simon Mortensen led the design of Australia's Palm Beach Reef (Gold Coast; design 2013–2014, construction April–September 2019 [R6][R7]; ~$18.2M AUD/~$12.5M USD, financed by the City of Gold Coast; 4–8 tonne rock boulders plus 470,000 m³ of beach-nourishment sand), which Raised Water Research assesses as a design success — 'the reef appears to be a success,' producing a consistent ~60 m right-hander and a shorter left in bigger swell [R7]. This is background on the designer's method only, not evidence about Xala's own performance — no source directly ties Palm Beach's outcome data to the Xala build. Decision: verdict 'n-a' was assigned by the dossier agent (verified_on 2026-09-24) because the reef is too new and no performance data exist [R1]; it is not a judgement of success or failure.",
+  "unexpected_results": "Nothing Xala-specific was found in the sources listed in References (negative finding of this card) (no litigation, safety incidents, fishing pressure, rip currents, or tourism-surge reporting). One indirect signal: an unrelated online repost of the Hollywood Reporter piece on a political/finance forum drew at least one favorable outside comment calling the whole project 'a neat idea/project,' but this concerns the development in general, not the reef, and is a single anonymous forum post [R4].",
+  "could_be_better": "No source listed in References offers a critique of the Xala reef specifically (negative finding of this card) (too new; no engineering post-mortem or surfer complaint thread was found). Generic rock-reef trade-off to watch for once surf reports exist: rock-bottom reefs (versus sand-bottom breaks) have drawn 'harder surface' complaints at other sites such as Palm Beach Reef (no source for this complaint is held in the Palm Beach card either, (unsourced)) — flagged here only as a general risk category, not a documented Xala complaint. No author/expert or surfer view was found for Xala specifically (negative finding); the site's private/members-only access model [R3][R4] may itself suppress independent public reviews for some time (the card author's inference).",
+  "relevance_to_israel": "Tide range and local wave climate at the Xala/Costalegre site were not found in this card's searches. What transfers conceptually, independent of Xala's own unverified outcome (all items are the card author's inferences): (1) Material choice precedent — the designer's shift toward quarried rock/boulder construction [R3][R12] (also used at Palm Beach Reef, 4–8 t boulders [R7]) rather than geotextile sand-filled tubes is directly comparable to the geotube-vs-rock materials question already live in this project's Israel dossiers (e.g. Ashkelon's 2018 geotube) — a rock-reef alternative is one materials option Israeli planners could weigh against documented geotube failure modes (undersized tubes, sand burial). (2) Governance-model contrast — Xala's reef is privately financed and privately accessed (members-only resort [R3][R4][R5]), unlike Israel's public-agency-funded structures (e.g. Ashkelon, Michmoret), a useful contrast case for 'who pays / who gets access' framing, though not a coastal-engineering transfer.",
   "reviews": [
     {
       "who": "Kathryn Romeyn",
@@ -110,73 +110,87 @@
   "references": [
     {
       "id": "R1",
-      "citation": "Peter Indelicato, Raised Water Research (2026-03-31). \"Unveiling the new reef in Mexico.\"",
+      "citation": "Indelicato, P. (2026-03-31). \"Unveiling the new reef in Mexico.\" Raised Water Research (industry website), announcement post.",
       "url": "https://raisedwaterresearch.com/unveiling-the-new-reef-in-mexico/",
       "accessed": "2026-09-24",
-      "supports": "Reef name/location tag (\"Xala\"), designer (Simon Brandi Mortensen), unveiling event details, completion framing, image URLs/captions"
+      "supports": "Reef name/location tag (\"Xala\"), designer (Simon Brandi Mortensen), unveiling event details, completion framing, image URLs/captions. Audit 2026-10-10: an ANNOUNCEMENT posted 2026-03-31 for an event on 2026-04-16; it does not report that the event took place. Location: post text (no page numbers). The author runs the website (interested party in promoting the event). Direct re-fetch failed on 2026-10-10 (HTTP 403, shape HANDOFF)."
     },
     {
       "id": "R2",
-      "citation": "Raised Water Research, \"Watch: Simon Mortensen on Artificial Surf Reef Design.\"",
+      "citation": "Raised Water Research (n.d.). \"Watch: Simon Mortensen on Artificial Surf Reef Design.\" Video post; no author or date shown.",
       "url": "https://raisedwaterresearch.com/watch-simon-mortensen-on-artificial-surf-reef-design/",
       "accessed": "2026-09-24",
-      "supports": "Mortensen's identification as lead Palm Beach Reef designer"
+      "supports": "Mortensen's identification as lead Palm Beach Reef designer. Audit 2026-10-10: identification of the designer only."
     },
     {
       "id": "R3",
       "citation": "Kathryn Romeyn, The Hollywood Reporter (2025-04-22). \"With Xala, Richard Gere has Co-Founded a Luxury Mexican Paradise.\"",
       "url": "https://www.hollywoodreporter.com/lifestyle/lifestyle-news/xala-richard-gere-luxury-mexican-paradise-1236192415/",
       "accessed": "2026-09-24",
-      "supports": "Reef materials (3,000 truckloads of quarry boulders), design intent, Costalegre/Jalisco location, ACTUR/Santa Cruz/Bremer, Six Senses, buyer profile, named quotes"
+      "supports": "Reef materials (3,000 truckloads of quarry boulders), design intent, Costalegre/Jalisco location, ACTUR/Santa Cruz/Bremer, Six Senses, buyer profile, named quotes. Audit 2026-10-10: magazine feature; location: the passages on the surf break ('3,000 truckloads of boulders', 'restore the beach, not flatten it'); the reef description is journalistic and unverified (no engineering document); the quotes of Santa Cruz are the developer's own (interested party)."
     },
     {
       "id": "R4",
       "citation": "Freerepublic.com repost of the Hollywood Reporter article, \"Richard Gere's Next Great Role? Helping Billionaires Hatch Sea Turtles in Mexico.\"",
       "url": "https://freerepublic.com/focus/f-chat/4312838/posts",
       "accessed": "2026-09-24",
-      "supports": "Cross-check copy of R3 quotes/facts plus one forum-reader comment"
+      "supports": "Cross-check copy of R3 quotes/facts plus one forum-reader comment. Audit 2026-10-10: repost, not independent of R3; the forum comment is anonymous."
     },
     {
       "id": "R5",
-      "citation": "Hospitality Net (2026). \"2026 Opening Planned for Six Senses Xala, Mexico.\"",
+      "citation": "Hospitality Net (2026; exact date not recorded). \"2026 Opening Planned for Six Senses Xala, Mexico.\" Press release / announcement.",
       "url": "https://www.hospitalitynet.org/announcement/41010415.html",
       "accessed": "2026-09-24",
-      "supports": "Costalegre/Jalisco location, site size, developer, Six Senses as operator, reef purpose statement, reforestation and turtle programs"
+      "supports": "Costalegre/Jalisco location, site size, developer, Six Senses as operator, reef purpose statement, reforestation and turtle programs. Audit 2026-10-10: developer/operator press release (interested party); location: reef purpose statement in the text."
     },
     {
       "id": "R6",
-      "citation": "World Surfing Conservation Conference 2026, speaker bio. \"Simon Brandi Mortensen.\"",
+      "citation": "World Surfing Conservation Conference 2026 (n.d.). Speaker biography, \"Simon Brandi Mortensen.\" wscc2026.com.au.",
       "url": "https://www.wscc2026.com.au/key-speakers/simon-brandi-mortensen/",
       "accessed": "2026-09-24",
-      "supports": "Mortensen's title, Palm Beach Reef as his first reef, most recent project completed in the Americas"
+      "supports": "Mortensen's title, Palm Beach Reef as his first reef, most recent project completed in the Americas. Audit 2026-10-10: self-supplied biography (title, 19 years, MSc, Palm Beach Reef as first reef); not independently verified."
     },
     {
       "id": "R7",
       "citation": "Raised Water Research, \"Palm Beach Reef\" spot page.",
       "url": "https://raisedwaterresearch.com/spot/artificial-reef/australia/queensland/palm-beach-reef/",
       "accessed": "2026-09-24",
-      "supports": "Palm Beach Reef comparison data used as designer-pedigree background (cost, materials, outcome assessed as success)"
+      "supports": "Palm Beach Reef comparison data used as designer-pedigree background (cost, materials, outcome assessed as success). Audit 2026-10-10: secondary website; supplies another reef's data (Palm Beach) as background about the designer only; the Palm Beach values (A$18.2 M, 470,000 m3, 4-8 t boulders, success assessment) belong to that card and are cross-checked there (02_research/reefs/palm-beach-gold-coast.json)."
     },
     {
       "id": "R9",
       "citation": "BeachLife Festival, \"California Surf Club\" page.",
       "url": "https://www.beachlifefestival.com/california-surf-club",
       "accessed": "2026-09-24",
-      "supports": "Description of the venue that hosted the reef-unveiling event"
+      "supports": "Description of the venue named in R1 for the reveal event billed for 16 April 2026 (no source reports that the event took place). Audit 2026-10-10: venue page; supports only the event venue."
     },
     {
       "id": "R10",
-      "citation": "Xala official website, homepage.",
+      "citation": "Xala (developer website, n.d.). Homepage, xala.com.",
       "url": "https://www.xala.com",
       "accessed": "2026-09-24",
-      "supports": "Development scale, reforestation, Ramsar estuaries, turtle sanctuary"
+      "supports": "Development scale, reforestation, Ramsar estuaries, turtle sanctuary. Audit 2026-10-10: developer marketing text (interested party); development scale and conservation claims are unaudited."
     },
     {
       "id": "R12",
-      "citation": "Raised Water Research, \"Interview with Simon Mortensen: The Designer Behind Palm Beach Reef.\"",
+      "citation": "Raised Water Research (n.d.). \"Interview with Simon Mortensen: The Designer Behind Palm Beach Reef.\" Interview post; interviewer and date not recorded.",
       "url": "https://raisedwaterresearch.com/interview-with-simon-mortensen-the-brains-behind-the-palm-beach-reef/",
       "accessed": "2026-09-24",
-      "supports": "Mortensen's rock-vs-geotextile design philosophy in his own words"
+      "supports": "Mortensen's rock-vs-geotextile design philosophy in his own words. Audit 2026-10-10: the designer's own words (interested party); location: his rock-vs-geotextile passage."
+    },
+    {
+      "id": "R13",
+      "citation": "Xala (n.d.). Xala Community: Life on Mexico's Costalegre; Beachfront Real Estate in Costalegre, Jalisco; Six Senses Xala press page. Developer marketing pages.",
+      "url": "https://xala.com/community/ ; https://xala.com/real-estate/ ; https://xala.com/press/six-senses-xala/",
+      "accessed": "2026-10-10",
+      "supports": "location context: ~5 miles of coastline, ~65 miles south of Puerto Vallarta, 10 min from the Costalegre airport, 3,000 acres; 'new coastal protection reef to create a consistently great wave to surf'. No reef dimensions or coordinates"
+    },
+    {
+      "id": "R14",
+      "citation": "Reef rating (A surf quality, B safety and longevity, C sediment / storm protection), scores 1-5, approved by Lior 2026-10-19. Table: 08_paper/notes/rating_final.md; evidence per reef: 08_paper/notes/rating_evidence.md (this review, repo-internal files).",
+      "url": "",
+      "accessed": "2026-10-19",
+      "supports": "Scores A/B/C and reason for this reef"
     }
   ],
   "blocked_sources": [
@@ -194,12 +208,27 @@
     "Reef dimensions (length, width, crest depth, fill volume) not found",
     "Cost of the reef specifically not disclosed",
     "Contractor/builder not named",
-    "Construction timeline unresolved (built by April 2025 per press vs 'newly completed' March 2026 per RWR)",
+    "Construction timeline unresolved (built by April 2025 per press [R3][R4] vs 'newly completed' March 2026 per RWR [R1])",
     "No independent surf report, wave-height data, or session footage yet exists (too recently unveiled)",
     "No before/after coastal-protection or erosion data",
     "No video of the reef publicly located this sweep",
-    "Opening-year discrepancy for Six Senses (2027 per THR vs 2026 per Hospitality Net) unresolved"
+    "Opening-year discrepancy for Six Senses (2027 per THR [R3] vs 2026 per Hospitality Net [R5]) unresolved",
+    "Position (citations audit 2026-10-10): lat/lon stay null: no source gives coordinates (07_scale/shapes/mexico-reef-2026-unnamed/HANDOFF.md); only the region (Costalegre, Jalisco) is known [R3][R5]."
   ],
   "hero_recommendation": "https://raisedwaterresearch.com/wp-content/uploads/2026/04/Reef1-1024x573.jpg",
-  "videos_rejected": []
+  "videos_rejected": [],
+  "network_pass_2026_10_10": {
+    "result": "No plan, coordinates or size found with full network access. RWR post re-fetched (announcement only); RWR site search, xala.com pages, THR, WSCC bio, DHI site, SEMARNAT search (gaceta host unreachable), Esri imagery: nothing. Details: 02_research/dead_ends/mexico-reef-2026-unnamed.json and 07_scale/shapes/mexico-reef-2026-unnamed/FEASIBILITY.md section 6.",
+    "location_context": "Xala: ~5 miles (8 km) of Pacific coast near the Xola-Paraman lagoon, Tomatlan/Costalegre; Chalacatepec airstrip ~19.719,-105.231 (the area pin); lagoon mouth ~19.731,-105.291 (by eye from Esri imagery). The reef position on that coast is unknown.",
+    "designer_note": "WSCC 2026 bio: Mortensen designed 'three additional surfing reefs globally, most recent in the Americas' (Xala not named)."
+  },
+  "rating": {
+    "rank": null,
+    "A": "?",
+    "B": "?",
+    "C": "?",
+    "reason": "not enough information [R14]",
+    "scale": "1-5, ?=no evidence, *=provisional",
+    "source": "this review, Lior-approved 2026-10-19"
+  }
 }

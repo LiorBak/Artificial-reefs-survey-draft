@@ -3,7 +3,7 @@ from pyproj import Transformer
 from shapely.geometry import Polygon
 from shapely import affinity
 from scipy import ndimage as ndi
-base=r"C:\Users\lior\Documents\Gemini\AG\Artificial reef - to upload to git\07_scale\shapes\borth-coastal-defence-reef"
+base=r"C:\Users\lior\Documents\Claude\Projects\Artificial reef\07_scale\shapes\borth-coastal-defence-reef"
 sh=json.load(open(base+r"\shape.json",encoding='utf-8'))
 g=json.load(open(base+r"\src\borth_esri_2024-09-17_z19.png.geo.json"))
 R=6378137.0

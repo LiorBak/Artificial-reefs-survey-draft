@@ -1,0 +1,255 @@
+{
+  "slug": "cables-reef-wa",
+  "entries": [
+    {
+      "what": "Bancroft (1999) UWA BEng thesis 'Performance Monitoring of the Cable Station Artificial Surfing Reef' (as-built levels, monitoring)",
+      "kind": "paper",
+      "where": "papers/ folder (pymupdf grep 'Bancroft'); web search 'Bancroft 1999 UWA thesis Cable Station artificial surfing reef'",
+      "checked": "2026-10-10",
+      "by": "agent: Cables with imagery and bathymetry (cloud)",
+      "result": "not found",
+      "detail": "papers/ has only two citations of it (Review of artificial reefs for coastal protection in NSW 2013). Web search returns secondary summaries and no repository record or full text.",
+      "might_work": "UWA Library catalogue / UWA Centre for Water Research archive via Lior or an e-mail to the library; check Blacka et al. 2013 reference list for the call number."
+    },
+    {
+      "what": "Ranasinghe et al. (2001) Cable Station reef design study",
+      "kind": "paper",
+      "where": "papers/ folder (grep 'Ranasinghe', hits in Rendle thesis, NSW review 2013, Narrowneck 2023 are all citations); web search 'Ranasinghe Turner Symonds 2001 artificial surfing reef Cable Station'",
+      "checked": "2026-10-10",
+      "by": "agent: Cables with imagery and bathymetry (cloud)",
+      "result": "not found",
+      "detail": "The only hits are citations; the Ranasinghe, Turner and Symonds item that exists is the 2006 Coastal Engineering paper on shoreline response (different paper). No 2001 record found.",
+      "might_work": "Check Blacka (2013) reference list for the exact 2001 item; Lior via a university library."
+    },
+    {
+      "what": "Pattiaratchi (2003) 'Performance of an artificial surfing reef: Cable Station, Western Australia', COPEDEC VI, Colombo",
+      "kind": "paper",
+      "where": "https://www.researchgate.net/publication/235223428_Performance_of_an_artificial_surfing_reef_Cable_Station_Western_Australia ; https://research-repository.uwa.edu.au/en/publications/?search=cable+station+artificial+surfing+reef",
+      "checked": "2026-10-10",
+      "by": "agent: Cables with imagery and bathymetry (cloud)",
+      "result": "bot check (not bypassed)",
+      "detail": "Both returned HTTP 403 to a plain curl request; no login or bot check was attempted around. papers/ only cites it (Rendle thesis p.293; NSW review 2013).",
+      "might_work": "Lior via browser (ResearchGate download or UWA repository), or the COPEDEC VI proceedings."
+    },
+    {
+      "what": "Pattiaratchi (2007) 'The Cables artificial surfing reef, Western Australia', Shore & Beach 75(4):80-92",
+      "kind": "paper",
+      "where": "https://www.researchgate.net/publication/289531725_The_Cables_artificial_surfing_reef_Western_Australia (found by search, not fetched: same ResearchGate 403)",
+      "checked": "2026-10-10",
+      "by": "agent: Cables with imagery and bathymetry (cloud)",
+      "result": "bot check (not bypassed)",
+      "detail": "Citation taken from Mead and Borrero 2011 (papers/, ref [13]); the PDF was not reachable. Possible source of as-built description and monitoring.",
+      "might_work": "Lior via browser; ASBPA Shore & Beach archive (asbpa.org) may host the volume openly."
+    },
+    {
+      "what": "Higher-resolution RWR design drawings Cables-Design.jpg and Cables-Additional-Fill-Area.jpg",
+      "kind": "web page",
+      "where": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/Cables-Design.jpg and ...Cables-Additional-Fill-Area.jpg",
+      "checked": "2026-10-10",
+      "by": "agent: Cables with imagery and bathymetry (cloud)",
+      "result": "other: same files",
+      "detail": "Downloaded again: 478 x 339 and 417 x 296 px, SHA-256 identical to the registered img-05 and img-06. The RWR site has no larger version.",
+      "might_work": "Request the drawings from Raised Water Research / the UWA CWR (e-mail by Lior)."
+    },
+    {
+      "what": "Transport WA tide-data pages (Fremantle Fishing Boat Harbour, Fremantle Railway Bridge, Perth) for LAT / AHD / chart-datum relation",
+      "kind": "web page",
+      "where": "https://www.transport.wa.gov.au/marine/charts-warnings-current-conditions/coastal-data-charts/tide-data/<station> (curl; WebFetch gives ENOTFOUND for this host)",
+      "checked": "2026-10-10",
+      "by": "agent: Cables with imagery and bathymetry (cloud)",
+      "result": "other: page has no datum text",
+      "detail": "Pages are script-rendered; the fetched HTML contains no datum, LAT, MSL or AHD statement. Transport WA states heights as 'metres to LWM Fremantle Fishing Boat Harbour' (search snippet) without the AHD offset.",
+      "might_work": "Transport WA Coastal Information (Tides@transport.wa.gov.au, named in the DoT bathymetry readme) for the Fremantle CD-AHD offset and HAT/LAT; the Australian National Tide Tables."
+    },
+    {
+      "what": "BoM NTC Fremantle metadata sheet 62230 (Corkhill Landing gauge)",
+      "kind": "report",
+      "where": "https://www.bom.gov.au/ntc/IDO50000/IDO50000_62230.pdf",
+      "checked": "2026-10-10",
+      "by": "agent: Cables with imagery and bathymetry (cloud)",
+      "result": "other: partial",
+      "detail": "Gives only 'Fremantle Low Water Datum (LWD) = CD' as vertical reference and TGBM Fremantle 53A at 3.088 m above CD; no AHD or LAT offset. Used as a reference for the datum name; the missing offset is the dead end.",
+      "might_work": "Fremantle Ports hydrographer (named on the sheet) or Transport WA."
+    },
+    {
+      "what": "Perth Metro LiDAR (Landgate) as a seabed source",
+      "kind": "database",
+      "where": "https://catalogue.data.wa.gov.au/dataset/perth-metro-lidar-data",
+      "checked": "2026-10-10",
+      "by": "agent: Cables with imagery and bathymetry (cloud)",
+      "result": "other: land only, ad hoc paid extract",
+      "detail": "Captured 2021-22 over built-up areas; not bathymetric and not downloadable.",
+      "might_work": "Not useful for the seabed; DoT WA Bathymetry (used) is."
+    },
+    {
+      "what": "Esri Wayback releases before 2014-12 at zoom 19 around the reef",
+      "kind": "imagery",
+      "where": "wayback.maptiles.arcgis.com tile/{release}/19/311401/430710 (releases 2014-02-20, 2014-03-26)",
+      "checked": "2026-10-10",
+      "by": "agent: Cables with imagery and bathymetry (cloud)",
+      "result": "broken link",
+      "detail": "Tiles missing at z19 for the two earliest releases (z17 tiles exist); capture dates of Wayback tiles are not returned by the metadata layer for most releases ('unknown').",
+      "might_work": "Google Earth Pro historical imagery (Lior) for dated 1999-2010 imagery; Nearmap/Landgate historic aerials (login or fee)."
+    },
+    {
+      "what": "Surf-forecast / design-study coordinates for the reef ('32 00 S 115 45 E', surf-forecast 32.00 S 115.74 E)",
+      "kind": "search",
+      "where": "web search 'Cables Reef coordinates latitude longitude Cable Station'",
+      "checked": "2026-10-10",
+      "by": "agent: Cables with imagery and bathymetry (cloud)",
+      "result": "wrong site",
+      "detail": "Rounded coordinates point about 1.7 km north of the reef (reef anchor -32.0156, 115.7485, found from the DoT soundings and imagery); the task's search box -32.01..-31.99 missed it.",
+      "might_work": ""
+    },
+    {
+      "what": "Tide-prediction websites (tidecheck, tide-forecast, WillyWeather) for the Fremantle datum",
+      "kind": "web page",
+      "where": "web search 'Fremantle tidal planes HAT MHWS MSL LAT AHD'",
+      "checked": "2026-10-10",
+      "by": "agent: Cables with imagery and bathymetry (cloud)",
+      "result": "other: no datum stated",
+      "detail": "Predictions only, datum not stated or model-derived (FES2022).",
+      "might_work": ""
+    },
+    {
+      "what": "SurferToday 'The history of artificial surf reefs' (card R5)",
+      "kind": "web page",
+      "where": "https://www.surfertoday.com/surfing/the-history-of-artificial-surf-reefs ; its web.archive.org snapshot",
+      "checked": "2026-09-24",
+      "by": "agent: Cables card research and verification re-check (2026-09-25)",
+      "result": "bot check (not bypassed)",
+      "detail": "HTTP 403 Cloudflare live, and the Wayback snapshot is itself a Cloudflare block page, so the article was never read. Facts taken from R5 (construction narrative, cost, durability, Pitt 2009 'crest about 1.5 m below the lowest tide') are second-hand and were corroborated via R2 except the 'WA Ministry of Sport and Recreation' naming variant (dropped) and one direct quote (de-quoted, pending).",
+      "might_work": "Lior in a browser if the Pitt 2009 crest statement is wanted at source"
+    },
+    {
+      "what": "Hutt et al. 'Design Studies for an Artificial Surfing Reef: Cable Station, Western Australia', Coasts and Ports 99 (card R8; ResearchGate listing 264880547)",
+      "kind": "paper",
+      "where": "https://www.researchgate.net/publication/264880547_Design_Studies_for_an_Artificial_Surfing_Reef_Cable_Station_Western_Australia",
+      "checked": "2026-09-25",
+      "by": "agent: Cables verification re-check (cloud)",
+      "result": "bot check (not bypassed)",
+      "detail": "ResearchGate returned HTTP 403 on direct fetch; the abstract came from web-search snippets. The same content was later found as a 5-page PDF mirror (Pattiaratchi 1999, CWR UWA ED1483CP, http://joas.free.fr/studies/bei/g2s/reefdesign.pdf, card R21), whose title page lists Pattiaratchi as sole author, so the 'Hutt et al.' attribution is probably a snippet error. The mirror's Figures 4 and 7 are low-resolution 1999 photocopies with illegible scale bars, so apex direction and scale could not be read from them (the design drawing in Blacka 2013 Fig A.2 was used instead).",
+      "might_work": "A clean copy of the Coasts and Ports 99 paper with legible figures (Lior via ResearchGate / UWA library)"
+    },
+    {
+      "what": "ResearchGate figure 'Location of the Cables Artificial Surfing Reef together with wave and water level' (fig2 of publication 235223428)",
+      "kind": "paper",
+      "where": "https://www.researchgate.net/figure/Location-of-the-Cables-Artificial-Surfing-Reef-together-with-wave-and-water-level_fig2_235223428",
+      "checked": "2026-09-25",
+      "by": "agent: Cables media stage (cloud)",
+      "result": "bot check (not bypassed)",
+      "detail": "HTTP 403 on WebFetch during the media stage; the location / wave-data figure could not be retrieved.",
+      "might_work": "Lior: open in a browser and save the figure (same paper as Pattiaratchi 2003, see the entry above)"
+    },
+    {
+      "what": "Lyons (1992) design study for the Cable Station artificial surfing reef (UWA, Dept of Environmental Engineering)",
+      "kind": "report",
+      "where": "web search by title and author; cited only via Blacka et al. (2013) Fig A.2 'Cable Station ASR Design (After Lyons, 1992)'",
+      "checked": "2026-10-10",
+      "by": "agent: Cables source audit (cloud)",
+      "result": "not found",
+      "detail": "Web search found nothing; citation details (title, report number) are not confirmed. The design drawing is known only as reproduced in Blacka et al. 2013 p.93, whose RL datum is ambiguous by 0.78 m (design RL vs MSL).",
+      "might_work": "UWA library / Centre for Water Research archive (Lior or an e-mail to the library)"
+    },
+    {
+      "what": "Gemini's Cables sources: 'Pattiaratchi 2000 UWA Report', 'Raised Water Research dossier 2024', 'DoT WA Coastal Engineering Records' (crest -1.0 to -2.0 m LAT, apex facing WSW 240-270 deg)",
+      "kind": "report",
+      "where": "Gemini reef_footprints.json (Cables entry); searches for the three titles",
+      "checked": "2026-09-25",
+      "by": "agent: Cables verification re-check",
+      "result": "not found",
+      "detail": "The 'DoT WA Coastal Engineering Records' and the 'RWR dossier 2024' could not be located. The Pattiaratchi report that was found (the 1999 design paper, R21) contradicts Gemini's description of it. Only Gemini's crest value is plausible (inside our 1-3 m range) but its LAT datum is unconfirmed; the apex direction cannot be confirmed at Gemini's precision. Gemini lead not confirmed; not used.",
+      "might_work": ""
+    },
+    {
+      "what": "Videos or frames of Cables Reef (Cottesloe / Cable Station)",
+      "kind": "video",
+      "where": "video search during the card research 2026-09-24; 02_research/videos/cables-reef-wa (does not exist)",
+      "checked": "2026-09-24",
+      "by": "agent: Cables card research (cloud)",
+      "result": "not found",
+      "detail": "No video content found for this site: 0 videos and 0 frames despite a search attempt. The card keeps `videos: []` and the media re-check had nothing to classify.",
+      "might_work": "Re-search (Mondo.surf / surf-forecast clips, local Cottesloe surf clubs); transcription is paused"
+    },
+    {
+      "what": "EMODnet Bathymetry DTM 2024 (viewer, REST, ERDDAP) for seabed depth at the reef",
+      "kind": "database",
+      "where": "https://emodnet.ec.europa.eu/geoviewer/ ; EMODnet Bathymetry REST depth_sample / ERDDAP bathymetry_dtm_2024 at -32.0000, 115.7400",
+      "checked": "2026-10-06",
+      "by": "agent: EMODnet bathymetry agent (cloud)",
+      "result": "not found",
+      "detail": "EMODnet covers European seas only; the REST service returns HTTP 204 (empty) at this reef's coordinate (Australia), so the site is outside the grid. Only two of the 13 reefs are covered (Boscombe, Borth). Do not retry EMODnet for this reef.",
+      "might_work": "Local sources instead: national or state bathymetry, a council or authority survey, Navionics / Google Earth readings (see REQUESTS_FOR_LIOR.md section 5)"
+    },
+    {
+      "what": "Bancroft (1999) thesis PDF listed at data-ww3.ifremer.fr/BIB/Bancroft_BATHESIS1999.pdf (card R19, 'identified, not read')",
+      "kind": "paper",
+      "where": "https://data-ww3.ifremer.fr/BIB/Bancroft_BATHESIS1999.pdf (http:// form: host does not resolve)",
+      "checked": "2026-10-10",
+      "by": "agent: dead-ends compilation (curl check, cloud)",
+      "result": "other: HTTP 403 from the origin server",
+      "detail": "The citations audit (05_qa/source_audit, Cables R19) found the thesis only as a listing at this IFREMER URL and did not read it. A direct request on 2026-10-10 (browser user-agent, https) returns 403 Forbidden from the Apache origin with the page text 'Server unable to read htaccess file, denying access to be safe' (a server misconfiguration, not a bot check); the plain http:// form does not resolve. The directory index /BIB/ gives the same 403. So the PDF is not retrievable from there; it is the possible source of the as-built levels and monitoring surveys (Bancroft 1999, UWA BEng thesis).",
+      "might_work": "Lior in a browser (the 403 may be temporary); UWA Library / Centre for Water Research archive; Wayback copy of the IFREMER URL"
+    },
+    {
+      "what": "HAT and LAT of Fremantle (and a numeric chart-datum-to-AHD offset) on Transport WA pages: 'Tide gauge stations updated vertical reference datum' (21 Jan 2026) and the Perth (Barrack St) tide data page",
+      "kind": "web page",
+      "where": "https://transport.wa.gov.au/tide-gauge-stations-updated-vertical-reference-datum ; https://www.transport.wa.gov.au/marine/charts-warnings-current-conditions/coastal-data-charts/tide-data/perth",
+      "checked": "2026-10-13",
+      "by": "agent: Cables fixes + datum link (cloud, resumed)",
+      "result": "other: datum name only",
+      "detail": "Both pages read. They name the vertical reference ('LWM Fremantle'; gauges changed from Chart Datum to LAT; Fremantle is not among them) but give no numbers: no LWD-to-AHD offset and no HAT / LAT. The LWD-AHD offset was found elsewhere (DNM TR12 Table 3, METHODS_3D 3.1).",
+      "might_work": "E-mail tides@transport.wa.gov.au (address named in the DoT bathymetry readme); draft in 07_scale/shapes/cables-reef-wa/3d/REQUESTS_FOR_LIOR.md"
+    },
+    {
+      "what": "BoM National Tidal Centre pages for Fremantle (station 62230): metadata sheet and monthly sea levels, searched again for HAT / LAT",
+      "kind": "web page",
+      "where": "https://www.bom.gov.au/ntc/IDO50000/IDO50000_62230.pdf ; https://www.bom.gov.au/ntc/IDO70000/IDO70000_62230_SLD.shtml",
+      "checked": "2026-10-13",
+      "by": "agent: Cables fixes + datum link (cloud, resumed)",
+      "result": "other: partial",
+      "detail": "Gives the datum name (Fremantle LWD), the bench mark TGBM Fremantle 53A 3.088 m above LWD, MSL 1992-2011 and the recorded extremes (used). No HAT / LAT and no AHD relation. Only the HAT / LAT part failed.",
+      "might_work": "Tide Tables / AusTides from the Australian Hydrographic Office (paid or login), or e-mail Transport WA"
+    },
+    {
+      "what": "Australian National Tide Tables / AusTides (Australian Hydrographic Office) for the Fremantle HAT and LAT",
+      "kind": "database",
+      "where": "hydro.gov.au (tide tables page)",
+      "checked": "2026-10-13",
+      "by": "agent: Cables fixes + datum link (cloud, resumed)",
+      "result": "other: host unreachable (TLS connection reset from this environment)",
+      "detail": "The host could not be reached; the tables are also a paid product. Not bypassed.",
+      "might_work": "Lior via browser, or a library copy of the Australian National Tide Tables (Fremantle is a standard port)"
+    },
+    {
+      "what": "Landgate (WA) 'Australian Height Datum 1971 and its modification around Perth' (the 0.040 m statement)",
+      "kind": "report",
+      "where": "https://landgate.wa.gov.au/siteassets/documents/location-data-and-services/surveying/australian_height_datum_1971_and_its_modification_around_perth.pdf (also the strata.wa.gov.au and prod013 mirrors)",
+      "checked": "2026-10-13",
+      "by": "agent: Cables fixes + datum link (cloud, resumed)",
+      "result": "bot check (not bypassed)",
+      "detail": "The PDF answers 403 with a bot check. The statement 'disagreed by 0.040m from the already well established State MSL datum' is known only from search-engine snippets, so the +-0.040 m in the datum link is flagged as quoted from snippets (METHODS_3D A19). The link itself (0.716 m) does not depend on it.",
+      "might_work": "Lior opens the PDF in a browser and saves it (REQUESTS_FOR_LIOR)"
+    },
+    {
+      "what": "Web searches 'Fremantle tidal planes HAT LAT MSL chart datum AHD Department of Transport Western Australia' and 'Fremantle Highest Astronomical Tide Lowest Astronomical Tide ... Fremantle Low Water Datum' (and a Fremantle Ports variant)",
+      "kind": "search",
+      "where": "WebSearch, 2026-10-13",
+      "checked": "2026-10-13",
+      "by": "agent: Cables fixes + datum link (cloud, resumed)",
+      "result": "not found",
+      "detail": "Results were the BODC GLOSS sheet (already used), the Landgate PDF, tide-prediction sites (MLLW, no HAT / LAT) and other ports (Onslow, Port Hedland). No Fremantle HAT / LAT in metres.",
+      "might_work": "Transport WA e-mail; Australian National Tide Tables"
+    },
+    {
+      "what": "Research Data Australia record 'DoT tide gauge deployments' (possible datum table for Fremantle)",
+      "kind": "database",
+      "where": "https://researchdata.edu.au/dot-tide-gauge-deployments/681236",
+      "checked": "2026-10-13",
+      "by": "agent: Cables fixes + datum link (cloud, resumed)",
+      "result": "other: host not resolvable from this environment (ENOTFOUND)",
+      "detail": "Not opened; the search snippet only says the Department of Transport holds Fremantle tide data and that queries go to tides@transport.wa.gov.au.",
+      "might_work": "Lior via browser; same Transport WA e-mail"
+    }
+  ]
+}

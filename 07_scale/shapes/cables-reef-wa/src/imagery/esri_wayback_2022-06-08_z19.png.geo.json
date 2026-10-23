@@ -1,0 +1,24 @@
+{
+  "image": "wb_2022-06-08.png",
+  "width": 1580,
+  "height": 1580,
+  "bounds": {
+    "north": -32.01370275579269,
+    "south": -32.01729608290461,
+    "east": 115.74992001056671,
+    "west": 115.74568212032318
+  },
+  "zoom": 19,
+  "m_per_px_center": 0.2531692037557553,
+  "tile_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/{release}/{z}/{y}/{x}",
+  "wayback_release": "44710",
+  "center": {
+    "lat": -32.0155,
+    "lon": 115.7478
+  },
+  "radius_m": 200,
+  "attribution": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+  "retrieved": "2026-10-10",
+  "capture_date": "unknown",
+  "capture_date_field": null
+}

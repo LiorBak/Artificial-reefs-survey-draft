@@ -1,0 +1,158 @@
+{
+ "_about": "Typed texts for 04_build/data (main merges): models3d_curated.json models[slug]; models3d_caveats.json rows (append); models3d_combined.json models[slug]. Written 2026-10-10 by the Narrowneck 3D agent. ev lists are empty on purpose (nothing to verify). Token paths use version ids with hyphens (versions/photo_2020-08-08/...): if the token filler rejects them, replace by literals.",
+ "curated": {
+  "narrowneck-gold-coast": {
+   "state_short": "Renewed reef as left in June 2018 (84 containers added around the 2004-revised structure; about 534 containers placed since 1999), drawn as the visible container field of the 8 Aug 2020 aerial (default; a lower bound). Four more outlines are selectable: Option 2 renewal design 2017, 2004 revised design, 2011 survey relief zone, Navionics 4.0 m shoals (outline only). History (1999 build, 2004 weir and wings, 2017-18 renewal, Option 2 only partly built) is notes, not modelled.",
+   "ve_note": "At VE = 5 a 1.5:1 container flank looks like 0.3:1 and the 2 m mound height looks 10 m high.",
+   "key_numbers": [
+    {
+     "q": "Footprint (plan outline)",
+     "model": "{{versions/photo_2020-08-08/area_m2|n0}} m2 visible container field (photo 8 Aug 2020, default); {{versions/design_option2_2017/area_m2|n0}} m2 Option 2 design envelope; {{versions/design_2004_revised/area_m2|n0}} m2 2004 design; {{versions/survey_2011-06-09/area_m2|n0}} m2 2011 relief zone",
+     "stated": "council layer OBJECTID 4637: 34,565 m2 polygon; design drawings to the -6 m contour: 13,631 m2 (2004) and 13,941 m2 (Option 2)",
+     "diff": "the photo field is 45 % of the design envelope (toe below about -6 m not visible)",
+     "ids": "s3; cor23; jack12",
+     "note": "Use the version toggle; design outlines are placed to +-15 m."
+    },
+    {
+     "q": "Crest level",
+     "model": "-2.2 m AHD measured after the 2018 renewal (= -2.32 m MSL); 1.44 m below LAT by MSQ, 1.20 m by the papers; shallowest mesh top {{versions/photo_2020-08-08/crest_shallowest_AHD|n1}} m AHD (isolated wing container)",
+     "stated": "-2.2 m AHD measured (Vieira da Silva 2021 p.5); target -2.5 m AHD = -1.5 m LAT (Jackson 2007, Corbett 2023)",
+     "diff": "0.24 m datum ambiguity (MSQ AHD = LAT + 0.760 vs papers LAT + 1.00)",
+     "ids": "vds21; jack07; cor23; msq",
+     "note": "The viewer has a datum-rule switch; geometry is in m AHD."
+    },
+    {
+     "q": "Mound envelope volume",
+     "model": "{{versions/photo_2020-08-08/volume_m3|n0}} m3 (photo, default); {{versions/design_option2_2017/volume_m3|n0}} m3 (Option 2); {{versions/design_2004_revised/volume_m3|n0}} m3 (2004); {{versions/survey_2011-06-09/volume_m3|n0}} m3 (2011 zone); +-3,100 m3 for 0.5 m of bed (photo)",
+     "stated": "534 containers x about 147 m3 of sand = about 78,500 m3 placed",
+     "diff": "exposed mound is 17-27 % of the placed volume",
+     "ids": "jack07; jack12; city20",
+     "note": "Envelope above the modelled seabed including gaps between containers; the rest is buried, stacked below the visible field, displaced or lost."
+    },
+    {
+     "q": "Reef height above the seabed",
+     "model": "mean {{versions/photo_2020-08-08/mean_height_m|n1}} m, maximum {{versions/photo_2020-08-08/max_height_m|n1}} m (default); 2-2.5 m at the crest wedge, 1-1.5 m at the toe",
+     "stated": "no published section; multibeam relief p90 0.9-1.2 m, p99 1.8-2.2 m (Corbett 2023 Fig 3, this model)",
+     "diff": "stage-1 estimate 4-6 m at the toe is not supported",
+     "ids": "cor23",
+     "note": "Heights from the 2017 multibeam are biased low where stacks are wider than 9 m."
+    },
+    {
+     "q": "Seabed",
+     "model": "-4 m AHD at the shoreward ends of the arms, -7 m at the toe, -7.8 to -10.8 m at 400-515 m offshore; nearshore (0-190 m) assumed",
+     "stated": "inner edge -4/-5, under the reef -6 to -8, seaward -9/-10 m AHD (Vieira da Silva 2021 Fig 3)",
+     "diff": "within +-1 m",
+     "ids": "cor23; vds21; s12",
+     "note": "Window of 164 x 145 m from the pre-works multibeam (colour figure, +-0.4 m, placed +-10 m)."
+    },
+    {
+     "q": "Tide planes (local, Gold Coast Seaway)",
+     "model": "LAT -0.88, MLWS -0.66, MLWN -0.37, MSL 0, MHWN +0.36, MHWS +0.65, HAT +1.15 m MSL",
+     "stated": "MSQ 2026 planes above LAT: 0.22, 0.51, 0.88, 1.24, 1.53, 2.03",
+     "diff": "none",
+     "ids": "msq",
+     "note": "z = 0 at MSL; z_MSL = z_AHD - 0.12 (MSQ)."
+    }
+   ],
+   "relied": []
+  }
+ },
+ "caveat_rows": [
+  {
+   "slug": "narrowneck-gold-coast",
+   "q": "Volume (placed vs exposed)",
+   "model": "{{versions/photo_2020-08-08/volume_m3|n0}} m3 mound envelope (photo, default) / {{versions/design_option2_2017/volume_m3|n0}} m3 (Option 2)",
+   "stated": "534 containers x about 147 m3 sand = about 78,500 m3 placed (Jackson 2007 p.4; Jackson 2012 p.3; City 2020)",
+   "diff": "-83 % (photo) to -73 % (Option 2) against the placed volume",
+   "reason": "The model shows only the exposed mound seen in the photo and the 2017 multibeam (relief 1-2.5 m); containers are partly buried, stacked, displaced or lost, and the envelope includes gaps.",
+   "status": "unresolved",
+   "resolve": "Container-by-container multibeam or the City as-built; a post-renewal survey.",
+   "section": "3.4; 4.5",
+   "ids": "jack07; jack12; cor23",
+   "ev": []
+  },
+  {
+   "slug": "narrowneck-gold-coast",
+   "q": "Crest datum (AHD vs LAT)",
+   "model": "crest -2.2 m AHD = 1.44 m below LAT (MSQ AHD = LAT + 0.760)",
+   "stated": "papers: -2.5 m AHD = -1.5 m LAT, i.e. AHD = LAT + 1.00",
+   "diff": "0.24 m",
+   "reason": "Two datum relations for the same design crest; the model uses MSQ because it is the official benchmark and all heights are AHD-based (only the tide levels move).",
+   "status": "unresolved",
+   "resolve": "The offset used in the 2018 survey (City of Gold Coast / MSQ).",
+   "section": "3.1",
+   "ids": "msq; jack07; cor23",
+   "ev": []
+  },
+  {
+   "slug": "narrowneck-gold-coast",
+   "q": "Footprint is a lower bound",
+   "model": "{{versions/photo_2020-08-08/area_m2|n0}} m2 visible field vs {{versions/design_option2_2017/area_m2|n0}} m2 Option 2 envelope",
+   "stated": "design to the -6 m contour; deeper toe to about -10 m (Jackson & Corbett 2019)",
+   "diff": "photo field is 45 % of the design envelope",
+   "reason": "The toe below about -6 m is not visible on the 2020 photo; 96.6 % of the traced arms lie inside the Option 2 envelope.",
+   "status": "unresolved",
+   "resolve": "Post-renewal multibeam or the 2025 State bathymetric lidar.",
+   "section": "4.1",
+   "ids": "s3; cor23",
+   "ev": []
+  },
+  {
+   "slug": "narrowneck-gold-coast",
+   "q": "Reef height at the toe",
+   "model": "1-1.5 m (multibeam relief)",
+   "stated": "stage-1 estimate 4-6 m at the -6 to -8 m toe",
+   "diff": "-3 to -4.5 m",
+   "reason": "The 2017 multibeam bed at the toe is -6.5 to -7.5 m and container tops are -5 to -6 m.",
+   "status": "resolved",
+   "resolve": "Done 2026-10-10 (Corbett Fig 3 digitised).",
+   "section": "4.3",
+   "ids": "cor23",
+   "ev": []
+  },
+  {
+   "slug": "narrowneck-gold-coast",
+   "q": "Nearshore bed (0-190 m offshore)",
+   "model": "assumed smooth profile 0 / -1.8 / -2.1 m AHD at y = 0 / 100 / 190 m",
+   "stated": "no source resolves the surf zone here (Navionics land edge is 80 m seaward of the 2020 waterline)",
+   "diff": "unknown, +-1 m",
+   "reason": "Not part of the reef volume; affects only the look of the shore side.",
+   "status": "unresolved",
+   "resolve": "Navionics app and Google Earth readings (3d/REQUESTS_FOR_LIOR.md).",
+   "section": "3.3; 4.4",
+   "ids": "vds21; s12",
+   "ev": []
+  },
+  {
+   "slug": "narrowneck-gold-coast",
+   "q": "Multibeam read from a colour picture",
+   "model": "bed and relief from Corbett Fig 3 (460 x 312 px)",
+   "stated": "datum and north not stated in the figure",
+   "diff": "+-0.4 m levels, +-10 m position",
+   "reason": "Hue read through a four-tick colour bar; assumed AHD and north-up.",
+   "status": "unresolved",
+   "resolve": "The original multibeam grid from ICM or the City.",
+   "section": "3.2; 5",
+   "ids": "cor23",
+   "ev": []
+  }
+ ],
+ "combined": {
+  "narrowneck-gold-coast": {
+   "frame_note": "model.js frame: x alongshore toward NORTH (bearing 356.21), y offshore toward EAST (bearing 86.21) (x turned 90 deg clockwise); viewer maps (X = x, Y = z, Z = y); default outline version (photo trace 8 Aug 2020)",
+   "offshore_scene_xz": [
+    0,
+    1
+   ],
+   "hand": 1,
+   "polygon": "M.versions.filter(function(v){return v.id===M.default_version;})[0].outline_m",
+   "area_ref_expr": "M.versions.filter(function(v){return v.id===M.default_version;})[0].area_m2",
+   "area_ref_label": "footprint area vs model.js area of the default version (the mesh covers the 7 traced polygons)",
+   "crest_z": "M.versions.filter(function(v){return v.id===M.default_version;})[0].crest_shallowest_AHD - M.datum.ahd_msl_msq",
+   "crest_note": "shallowest top of the default mesh (-1.8 m AHD, an isolated container at the shoreward wing; the arm crest is -2.2 m AHD measured) minus 0.12 = -1.92 m MSL",
+   "shore_mode": "crossing",
+   "sublabels": []
+  }
+ },
+ "hold": "remove slug from models3d_hold.json if present"
+}

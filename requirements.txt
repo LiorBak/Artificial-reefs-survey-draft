@@ -1,0 +1,19 @@
+# Python packages used by the build pipeline (04_build/src) and the shape / 3D / bathymetry scripts (07_scale).
+# Tested on Lior's PC with Python 3.14.4 (2026-10-07): numpy 2.4.4, matplotlib 3.10.9, pillow 12.2.0, shapely 2.1.2, scipy 1.17.1,
+# pyproj 3.8.0, scikit-image 0.26.0, opencv-python-headless 5.0.0.93, contourpy 1.3.3, pymupdf 1.28.0, requests 2.33.1,
+# Markdown 3.11, h5py 3.16.0, CairoSVG 2.9.1, websockets 16.0. Left unpinned so a cloud Python (3.11+) can resolve its own wheels.
+numpy
+matplotlib
+pillow
+shapely
+scipy
+pyproj
+scikit-image
+opencv-python-headless
+contourpy
+pymupdf
+requests
+markdown
+h5py
+cairosvg
+websockets

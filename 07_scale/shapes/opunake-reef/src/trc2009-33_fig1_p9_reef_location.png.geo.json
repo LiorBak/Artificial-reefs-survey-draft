@@ -1,0 +1,44 @@
+{
+ "image": "trc2009-33_fig1_p9_reef_location.png",
+ "width": 417,
+ "height": 273,
+ "crs": "EPSG:27209 (NZGD49 / Taranaki Circuit), E,N metres",
+ "affine_pixel_to_EN": [
+  [
+   4.54896,
+   -0.02147,
+   266617.34998
+  ],
+  [
+   0.04504,
+   -4.4151,
+   664383.31497
+  ]
+ ],
+ "m_per_px": [
+  4.549,
+  4.415
+ ],
+ "method": "4 GCPs = consent 6376-1 corners; see consent_georef.json",
+ "residuals_m": {
+  "A": [
+   0.23,
+   0.3
+  ],
+  "B": [
+   -0.23,
+   -0.29
+  ],
+  "C": [
+   0.22,
+   0.28
+  ],
+  "D": [
+   -0.23,
+   -0.3
+  ]
+ },
+ "accuracy": "+-0.5 px reading = +-2.2 m; landmark check offset 0.7 m",
+ "source": "TRC Technical Report 2009-33 (Sept 2009), p.9 Figure 1",
+ "retrieved": "2026-10-13 from new uploads from lior/ PDF"
+}

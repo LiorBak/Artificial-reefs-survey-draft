@@ -28,7 +28,7 @@ DZ = 0.5                  # m, contour interval of the aerial's survey lines - A
 TIDE_ABOVE_LAT = dict(HAT=2.03, MHWS=1.53, MHWN=1.24, MSL=0.88, MLWN=0.51, MLWS=0.22, LAT=0.0)
 MSL_ABOVE_LAT = TIDE_ABOVE_LAT['MSL']
 CHART_DATUM_ABOVE_LAT = 0.0   # ASSUMPTION A5: Navionics depths are referred to chart datum = LAT (not stated by the viewer)
-AHD_ABOVE_LAT = 0.76          # UNVERIFIED (search-result snippet of an MSQ page); used only for the AHD <-> MSL note, never in the geometry
+AHD_ABOVE_LAT = 0.76          # MSQ 2014 'Standard port datum levels', Gold Coast Seaway (read at the source, bathymetry/gold_coast/REPORT.md sec 3; re-check 2026-10-10); valid at the standard-port benchmark only; used for the AHD <-> MSL note and the Mortensen/PBO checks, never in the geometry
 NAV_BUFFER_M = 25.0       # m, Navionics iso-line points closer than this to the reef toe outline are not used for the natural seabed (A6)
 NAV_MIN_PIECE = 100       # samples; shorter iso-line pieces are fragments at the window edge
 NAV_SMOOTH = 1.0          # RBF smoothing (thin-plate spline) for the natural seabed (iso-line points are quantised to 1 m)
@@ -45,6 +45,53 @@ SLOT_FILL_M = 1.0
 def smoothstep(t):
     t = np.clip(t, 0, 1)
     return t * t * (3 - 2 * t)
+
+
+
+# ---- re-check 2026-10-10: model seabed vs independent depth values (registry images img-05 and img-09) ------------------------------
+PBO3 = dict(id='PBO3', lat=-28.107191, lon=153.473845, depth_m=11.75, src='Daniels et al. 2022 Table 1 (palm-beach-gold-coast-img-05); datum not stated, vertical accuracy not stated')
+MORTENSEN_CSV = os.path.join(HERE, '..', '..', '..', 'bathymetry', 'gold_coast', 'annotated', 'palm_beach_mortensen2015_fig6a_profile_y3050.csv')
+
+
+def recheck_2026_10_10(shp, sb):
+    """(1) model depth at the PBO3 buoy; (2) model cross-shore profile vs the pre-reef City survey labels of Mortensen et al. 2015 Fig 6a
+    (datum assumed AHD; depth below AHD = -z_MSL - (MSL - AHD)).  Read-only checks: nothing here changes the geometry."""
+    g = shp['geo']
+    lat0, lon0 = g['canonical_origin_latlon']
+    bx, by = math.radians(g['shoreline_bearing_deg']), math.radians((g['shoreline_bearing_deg'] + 90) % 360)
+    aeqd = Proj(proj='aeqd', lat_0=lat0, lon_0=lon0, datum='WGS84')
+    E, N = aeqd(PBO3['lon'], PBO3['lat'])
+    x, y = np.linalg.solve(np.array([[math.sin(bx), math.sin(by)], [math.cos(bx), math.cos(by)]]), [E, N])
+    xs, ys, Z = sb['xs'], sb['ys'], sb['zb']
+
+    def zat(px, py):
+        fx, fy = (px - xs[0]) / SB_DX, (py - ys[0]) / SB_DX
+        ix, iy = int(np.clip(np.floor(fx), 0, len(xs) - 2)), int(np.clip(np.floor(fy), 0, len(ys) - 2))
+        tx, ty = fx - ix, fy - iy
+        return float(Z[iy, ix] * (1 - tx) * (1 - ty) + Z[iy, ix + 1] * tx * (1 - ty) + Z[iy + 1, ix] * (1 - tx) * ty + Z[iy + 1, ix + 1] * tx * ty)
+    z = zat(x, y)
+    out = dict(pbo3=dict(canonical_xy_m=[round(float(x), 1), round(float(y), 1)], inside_grid=bool(xs[0] <= x <= xs[-1] and ys[0] <= y <= ys[-1]),
+                         beyond_10m_line_extrapolated=True, model_z_msl_m=round(z, 2), model_depth_below_LAT_m=round(-z - MSL_ABOVE_LAT, 2),
+                         model_depth_below_MSL_m=round(-z, 2), source_depth_m=PBO3['depth_m'], source=PBO3['src'],
+                         diff_if_source_below_LAT_m=round(-z - MSL_ABOVE_LAT - PBO3['depth_m'], 2), diff_if_source_below_MSL_m=round(-z - PBO3['depth_m'], 2),
+                         distance_seaward_of_toe_m=round(float(y - max(p[1] for p in shp['canonical']['polygons_m'][0])), 1)))
+    # Mortensen 2015 Fig 6a profile
+    rows = [l.strip().split(',') for l in open(MORTENSEN_CSV, encoding='utf8') if l[:1].isdigit()]
+    X = np.array([float(r[0]) for r in rows]); D = np.array([float(r[1]) for r in rows])
+    sel = (D >= 3.5) & (D <= 11.5)
+    yy = np.arange(20.0, 560.0, 2.0)
+    P = np.mean([[-zat(xc, yv) - (MSL_ABOVE_LAT - AHD_ABOVE_LAT) for yv in yy] for xc in (-150.0, 150.0)], axis=0)   # depth below AHD
+    best = None
+    for s_ in np.arange(250.0, 400.0, 0.5):
+        r = float(np.sqrt(np.mean((D[sel] - np.interp(X[sel] - s_, yy, P)) ** 2)))
+        if best is None or r < best[1]:
+            best = (float(s_), r)
+    resid = np.interp(X[sel] - best[0], yy, P) - D[sel]
+    out['mortensen_fig6a'] = dict(n_labels=int(sel.sum()), depth_range_m=[float(D[sel].min()), float(D[sel].max())], datum_assumed='AHD (depth below AHD = -z_MSL - 0.12)',
+                                  best_shift_m=best[0], rms_m=round(best[1], 3), mean_model_minus_source_m=round(float(resid.mean()), 3),
+                                  max_abs_m=round(float(np.abs(resid).max()), 2), max_abs_excluding_3p5m_label_m=round(float(np.abs(resid[1:]).max()), 2),
+                                  note='horizontal shift = model-metre origin of the figure vs the waterline of our frame (unknown, fitted); x = +-150 m columns of the seabed grid')
+    return out
 
 
 # ---- frame check ----------------------------------------------------------------------------------------------------------------------
@@ -253,7 +300,7 @@ def main():
     interval_fit = dict(s_nav_m=s_hat['LAT']['s_m'], by_datum=s_hat, by_rank_band=bands, assumed_m=DZ,
                         e_toe_if_1m_interval=CREST_Z - 1.0 * float(rk.max()))
     datum_test = {}
-    for nm, off in (('LAT', 0.0), ('MLWS', 0.22), ('MLWN', 0.51), ('AHD (0.76, unverified)', 0.76), ('MSL', 0.88), ('MHWN', 1.24), ('MHWS', 1.53), ('HAT', 2.03)):
+    for nm, off in (('LAT', 0.0), ('MLWS', 0.22), ('MLWN', 0.51), ('AHD (0.76, MSQ 2014)', 0.76), ('MSL', 0.88), ('MHWN', 1.24), ('MHWS', 1.53), ('HAT', 2.03)):
         rr_ = toe_z - (zb_toe + off)
         datum_test[nm] = dict(offset_above_LAT_m=off, mean_m=float(rr_.mean()), rms_m=float(np.sqrt((rr_ ** 2).mean())))
     offs = np.arange(-1.0, 2.01, 0.01)
@@ -303,6 +350,7 @@ def main():
     rel = {k: round(v - MSL_ABOVE_LAT, 2) for k, v in TIDE_ABOVE_LAT.items()}
     zgrid = np.round(zr * 100).astype(int)
     zgrid = np.where(inside | (dist_edge < 2.0), zgrid, -32768)
+    val['recheck_2026_10_10'] = recheck_2026_10_10(shp, sb)
     sbz = np.round(sb['zb'] * 100).astype(int)
     xb, yb = shp['geo']['shoreline_bearing_deg'], (shp['geo']['shoreline_bearing_deg'] + 90) % 360
     nav_lines = []
@@ -343,7 +391,7 @@ def main():
         water=dict(levels=[dict(key=k, label=lab, z=rel[k], above_lat=TIDE_ABOVE_LAT[k]) for k, lab in
                            [('LAT', 'LAT (lowest astronomical tide)'), ('MLWS', 'MLWS'), ('MLWN', 'MLWN'), ('MSL', 'MSL'), ('MHWN', 'MHWN'), ('MHWS', 'MHWS'), ('HAT', 'HAT (highest astronomical tide)')]],
                    source='Maritime Safety Queensland (2026), Semidiurnal Tidal Planes 2026, Gold Coast Seaway standard port, epoch 2010-2029; heights above LAT converted to MSL by subtracting %.2f m' % MSL_ABOVE_LAT,
-                   default='MSL', ahd_note='AHD is about %.2f m above LAT at the Seaway standard port (UNVERIFIED snippet), i.e. MSL = AHD + %.2f m; not applied' % (AHD_ABOVE_LAT, MSL_ABOVE_LAT - AHD_ABOVE_LAT)),
+                   default='MSL', ahd_note='AHD is about %.2f m above LAT at the Seaway standard port (MSQ 2014 Standard port datum levels; valid at the standard-port benchmark only), i.e. MSL = AHD + %.2f m; not applied to the geometry' % (AHD_ABOVE_LAT, MSL_ABOVE_LAT - AHD_ABOVE_LAT)),
         validation=val)
     extras = dict(toe_z=toe_z, toe_xy=txy, zb_toe=zb_toe, sb=sb, sb_nav=sb_nav, grid=dict(xs=xs, ys=ys, zr=zr, zb=zb, zt=zt, inside=inside), tin_points=(P2, Z2), plane=plane)
     return model, val, extras

@@ -137,7 +137,7 @@ window.addEventListener('unhandledrejection', function (ev) { var e = document.g
         <div class="row"><label>Heading (true)</label><input id="ch" type="range" min="0" max="360" step="0.5"><input id="chN" type="number" step="0.5" style="width:66px"></div>
         <div class="row"><label>Pitch (+ up)</label><input id="cp" type="range" min="-90" max="60" step="0.5"><input id="cpN" type="number" step="0.5" style="width:66px"></div>
         <div class="row"><label>Roll</label><input id="cr" type="range" min="-30" max="30" step="0.25"><input id="crN" type="number" step="0.25" style="width:66px"></div>
-        <div class="sm">Vertical FOV is the slider under View. The canvas takes the photo's aspect ratio when a photo is loaded. The reef was removed in 2008-2010; the model has no georeferenced outline (position inferred, +-100 m), so match shore features first.</div>
+        <div class="sm">Vertical FOV is the slider under View. The canvas takes the photo's aspect ratio when a photo is loaded. The reef was removed in 2008-2010; the model has no georeferenced outline (position inferred, +-150 m), so match shore features first.</div>
       </div>
       <div class="btns"><button id="copyCam">Copy camera parameters (JSON)</button></div>
       <textarea id="camjson" rows="5" style="display:none;width:100%;background:#0b1117;color:#e8eef2;border:1px solid #38505f;font:11px ui-monospace,Consolas,monospace"></textarea>
@@ -635,12 +635,17 @@ function md(src) {
   }
   return out.join('\n');
 }
-const docTabs = [['methods_md', 'Methods'], ['sources_md', 'Sources log'], ['requests_md', 'Requests for Lior'], ['figs', 'Annotated figures']];
+const docTabs = [['methods_md', 'Methods'], ['sec_src', 'Sources: how used'], ['sec_ass', 'Assumptions'], ['sec_dec', 'Decisions'], ['sec_conf', 'Confidence'], ['sources_md', 'Sources log'], ['requests_md', 'Requests for Lior'], ['figs', 'Annotated figures']];
 function showDoc(key) {
   document.querySelectorAll('#subtabs button').forEach(b => b.classList.toggle('on', b.dataset.k === key));
   if (key === 'figs') {
     $('docbody').innerHTML = '<h2>Annotated source images</h2><p class="sm">Private research copies of the sources with what was read marked on them (A1-A11). Stored next to this page in <code>annotated/</code>; not embedded. Reuse not cleared.</p><ul>' +
       (DOCS.annotated || []).map(f => `<li><a href="annotated/${f}" target="_blank">${f}</a></li>`).join('') + '</ul>';
+  } else if (key.startsWith('sec_')) {
+    const H = {sec_src: /^### 2\.2 .*$/m, sec_ass: /^### 3\.9 .*$/m, sec_dec: /^### 3\.12 .*$/m, sec_conf: /^## 6\. .*$/m}[key];
+    const s = DOCS.methods_md || '', m = H.exec(s);
+    if (!m) { $('docbody').innerHTML = '(section not available)'; }
+    else { const lvl = m[0].match(/^#+/)[0].length, rest = s.slice(m.index + m[0].length), e = new RegExp('^#{1,' + lvl + '} ', 'm').exec(rest); $('docbody').innerHTML = md(m[0] + (e ? rest.slice(0, e.index) : rest)); }
   } else { $('docbody').innerHTML = md(DOCS[key] || '(not available)'); }
   $('pDocs').scrollTop = 0;
 }

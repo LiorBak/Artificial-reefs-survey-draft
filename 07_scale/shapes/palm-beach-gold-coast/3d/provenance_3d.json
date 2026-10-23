@@ -22,9 +22,9 @@
    "parameter": "Crest level",
    "value": -1.5,
    "unit": "m vs MSL",
-   "source_id": "p1; s8; p2",
+   "source_id": "p1 (p.1); s8; p2; c1 (brochure pp.8-9, img-12, img-14); s6 (p.4, Fig 3: concept -1.5 m AHD)",
    "method": "\"The crest of the reef is 1.5m below mean sea level\"; \"1.5 metres below the average water level at its highest point\"; \"minimum freeboard of 1.5m at mean sea level, equating to 60cm at the lowest astronomical low tide\"",
-   "uncertainty": "+-0.2 m (rounded figure; MSL vs AHD differ by about 0.1 m); applied uniformly over the 59 x 6 m crest, apex/arm variation not published",
+   "uncertainty": "+-0.2 m (rounded figure; MSL vs AHD differ by 0.12 m: the council text says \"average water level\", the concept paper -1.5 m AHD; re-check 2026-10-10: both within tolerance, no change; = -0.62 m vs LAT at the Seaway MSL, about -0.50 m vs LAT with the interpolated Palm Beach MSL); applied uniformly over the 59 x 6 m crest, apex/arm variation not published",
    "estimated": false
   },
   {
@@ -145,6 +145,33 @@
    "estimated": true
   },
   {
+   "parameter": "Offshore check: PBO3 buoy depth",
+   "value": "12.37 m below LAT (13.25 m below MSL) in the model vs 11.75 m in the source",
+   "unit": "m",
+   "source_id": "d1 (img-05)",
+   "method": "DWR-G4 buoy PBO3 at 28.107191 S 153.473845 E = canonical (-111, 571) m, 197 m seaward of the offshore toe, beyond the 10 m iso-line (extrapolated seabed). Model minus source: +0.62 m if the source depth is below LAT, +1.50 m if below MSL (datum and vertical accuracy NOT stated by the source). Not used to build the seabed.",
+   "uncertainty": "+-0.7 m (extrapolation +-0.5 m, unstated datum of the source)",
+   "estimated": false
+  },
+  {
+   "parameter": "Seabed vs the pre-reef City survey (Mortensen 2015 Fig 6a)",
+   "value": "RMS 0.33 m over 13 labels (3.5-11.5 m)",
+   "unit": "m",
+   "source_id": "s6 (p.6, Fig 6 top; img-09)",
+   "method": "contour labels read along y = 3050 m of the figure and compared with the model profile (x = +-150 m) after converting depth below LAT to AHD (+0.76, MSQ 2014; z_AHD = z_MSL + 0.12); fitted horizontal shift 313 m (origin of the figure), mean model minus source -0.07 m, largest difference 0.89 m (0.52 m without the 3.5 m label at the surf zone). Datum of the figure assumed AHD (the paper gives the concept crest as -1.5 m AHD). The chart bed may be about 0.5 m shallower than the 2013-14 survey (2017 nourishment of 470,000 m3): no change.",
+   "uncertainty": "source vertical accuracy not stated; labels every 0.5 m",
+   "estimated": false
+  },
+  {
+   "parameter": "AHD - MSL offset",
+   "value": "MSL = AHD + 0.12 m",
+   "unit": "m",
+   "source_id": "t1; t2",
+   "method": "AHD = LAT + 0.760 m at the Seaway standard-port benchmark (MSQ 2014 \"Standard port datum levels\", read at the source; applies at the benchmark only) and MSL = LAT + 0.88 m (MSQ 2026): MSL - AHD = 0.12 m. Only used to compare AHD-referenced sources; the geometry stays on MSL.",
+   "uncertainty": "+-0.1 m (Palm Beach is not the standard port)",
+   "estimated": false
+  },
+  {
    "parameter": "GEBCO check",
    "value": "-13 (450 m cell at y = 534 m)",
    "unit": "m",
@@ -182,7 +209,7 @@
   {
    "id": "s6",
    "citation": "Mortensen, S.B., Hibberd, S., Kaergaard, K., Kristensen, S.E., Deigaard, R. and Hunt, S. (2015) Concept design of a multipurpose submerged control structure for Palm Beach, Gold Coast. Australasian Coasts & Ports Conference 2015. https://www.dhigroup.com/upload/publications/coastsea/Mortensen_2015.pdf",
-   "used_for": "concept slopes 1/12, 1/5, crest orientation 105 deg, 60 m crest (context; the concept was NOT built)"
+   "used_for": "concept slopes 1/12, 1/5, crest orientation 105 deg, 60 m crest (context; the concept was NOT built); Fig 6 top (p.6): pre-reef City survey depth labels, used as an independent seabed profile check (registry img-09)"
   },
   {
    "id": "s7",
@@ -218,6 +245,21 @@
    "id": "n2",
    "citation": "Garmin Navionics (2026) Nautical Charts layer, same viewer and date; label \"FISH HAVEN 1.5MT\". Not for navigation; private research copy.",
    "used_for": "charted crest depth cross-check"
+  },
+  {
+   "id": "c1",
+   "citation": "City of Gold Coast (2020) Palm Beach Shoreline Project - project overview (brochure, published June 2020, ref 19-TI-00753), pp.8-9 (PDF pp.10-11). https://www.goldcoast.qld.gov.au/files/sharedassets/public/v/1/pdfs/environment/palm-beach-shoreline-project-brochure-a4.pdf. Accessed 2026-10-06. Private research copy; reuse rights not cleared.",
+   "used_for": "crest 1.5 m below the average water level; 160 x 80 m; about 270 m offshore; rock classes by zone (registry img-12, img-13, img-14)"
+  },
+  {
+   "id": "d1",
+   "citation": "Daniels, R., Metters, D. and Ryan, J. (2022) Wave transformation over Palm Beach reef. Coastal Engineering Proceedings 37 (ICCE 2022), papers.63, doi:10.9753/icce.v37.papers.63, pp.1-2, Table 1 and Fig 1. https://icce-ojs-tamu.tdl.org/icce/article/view/12702. Accessed 2026-10-06. CC BY 4.0.",
+   "used_for": "buoy depths PBO1-PBO4 (datum not stated); PBO3 offshore check (registry img-05)"
+  },
+  {
+   "id": "t2",
+   "citation": "Maritime Safety Queensland (2014) Standard port datum levels (AHD above LAT, Gold Coast Seaway 0.760 m), as read in 07_scale/bathymetry/gold_coast/REPORT.md section 3. Valid at the standard-port benchmark only.",
+   "used_for": "AHD - MSL offset (0.12 m); comparison of AHD-referenced sources"
   },
   {
    "id": "g1",

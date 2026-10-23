@@ -1,0 +1,302 @@
+{
+ "_about": "Entries for 04_build/data/models3d_combined.json (models.<slug>), models3d_curated.json (models.<slug>) and models3d_caveats.json (rows, append). Written 2026-10-10 by the Albany 3D agent for main to paste (04_build is not edited by agents). Numbers are typed (no {{tokens}}); every 'ev' string is a verbatim substring of 3d/METHODS_3D.md. Also: remove the slug from data/models3d_hold.json (a model now exists).",
+ "combined": {
+  "southern-ocean-surf-reef-albany": {
+   "frame_note": "model.js frame: x alongshore toward 30.26 deg true (NNE), y offshore toward 120.26 deg (x turned 90 deg clockwise); viewer maps (X = x, Y = z, Z = y)",
+   "offshore_scene_xz": [
+    0,
+    1
+   ],
+   "hand": 1,
+   "polygon": "M.versions.filter(function(v){return v.id===M.default_version;})[0].outline_m[0]",
+   "crest_z": "-1.0",
+   "crest_note": "shallowest crest of the City design table, -1.0 m AHD (about MSL), a design value; the crest is -2.0 m AHD over most of the ridge (assumption A7)"
+  }
+ },
+ "curated": {
+  "southern-ocean-surf-reef-albany": {
+   "state_short": "As built (rock placed 18 March - June 2025, opened 16 July 2025), plan = Bluecoast final-design outer contour (13,104 m2, default) or the visible rock patch on Esri 2026-01-20 (10,918 m2); heights from City design crest levels over a seabed read from a 2015 design contour plot (LOW confidence). A May 2025 storm move of core rock and the 18 high rocks repositioned in late February 2026 are not modelled.",
+   "ve_note": "At VE = 5 the 1:21 bed between the -2 m and -5 m contours looks like 1:4.1 and the 6.0 m high pile looks 30 m high.",
+   "ve_ev": [
+    "At VE = 5 the 1:21 bed between the -2 m and -5 m contours looks like 1:4.1 and the 6.0 m high pile looks 30 m high"
+   ],
+   "key_numbers": [
+    {
+     "q": "Crest, shallowest",
+     "model": "-1.0 m AHD (first 15 m of the ridge from its offshore end), -2.0 m AHD beyond 40 m",
+     "stated": "'Shallowest crest level of -1.0m AHD ... 0.74m below mean low water (MLLW) and 1.34m below mean high water (MHHW)'; crest length 110 m @ -2 m AHD (design table)",
+     "diff": "0 (model input)",
+     "ids": "S5; S6",
+     "note": "Design values, no as-built survey. Which end of the ridge is shallowest is assumed (A7).",
+     "ev": [
+      "the City gives -1.0 m \"shallowest\" and \"110 m at -2 m\" but not where"
+     ]
+    },
+    {
+     "q": "Seabed under the footprint",
+     "model": "-2.1 m AHD at the shoreward apex to -7.4 m AHD at the offshore toe",
+     "stated": "not stated by the City; BMT 2018 sounding 2.7 m CD at (x -53, y 32) is 1.6 m deeper than the profile",
+     "diff": "+-1 m (2-3 m near the apex if the BMT value is right)",
+     "ids": "S11; S12",
+     "note": "Contours of a 2015 RHDHV design plan, datum unstated (read as AHD), georeferenced by hand (A3).",
+     "ev": [
+      "-2.1 m at the shoreward apex (y = 67) to -7.4 m at the offshore toe (y = 234)"
+     ]
+    },
+    {
+     "q": "Rock volume, design outline",
+     "model": "34,000 m3 (FITTED, N = 2.73); unfitted loft 20,826 m3",
+     "stated": "34,000 m3 'based on 2017 bathymetry'; 62,800 t",
+     "diff": "0 (fitted); unfitted -39 %",
+     "ids": "S5; S6",
+     "note": "Not an independent check (A9). Satellite outline: 30,273 m3 (a result).",
+     "ev": [
+      "20,826 m3 = 61 % of the stated 34,000 m3"
+     ]
+    },
+    {
+     "q": "Pile height above the seabed",
+     "model": "mean 2.59 m, maximum 6.0 m (design outline)",
+     "stated": "34,000 m3 / 13,104 m2 = 2.6 m (inference)",
+     "diff": "0 (fitted)",
+     "ids": "S5; S11",
+     "note": "Mean follows from the fit; the maximum depends on the seabed (+-1 m).",
+     "ev": [
+      "2.59 m (stated volume / area gives 2.6 m, as it is fitted)"
+     ]
+    },
+    {
+     "q": "LAT and mean level",
+     "model": "LAT = -0.74 m AHD; MLLW -0.26, MHHW +0.34 m AHD",
+     "stated": "City: MLLW/MHHW from the crest statement; DoT/BoM 2024 predictions (datum LAT)",
+     "diff": "+-0.1 m (AHD = MSL assumed)",
+     "ids": "S6; S13",
+     "note": "Local tides only; highest predicted 2024 tide +0.66 m AHD (HAT not found).",
+     "ev": [
+      "the mean of the 1,043 predicted high and low waters of 2024 (WA DoT/BoM, datum LAT) is 0.742 m above LAT"
+     ]
+    },
+    {
+     "q": "Plan, default outline",
+     "model": "13,104 m2 (toggle: 10,918 m2)",
+     "stated": "City: 165 m long, width up to 110 m, 140 m offshore",
+     "diff": "area -30 %/+20 % by edge definition",
+     "ids": "S1; S4; S5",
+     "note": "Design drawing placed on the satellite image; no as-built survey found.",
+     "ev": [
+      "the Bluecoast final-design outer contour, 13,104 m2, positioned on the satellite image"
+     ]
+    }
+   ]
+  }
+ },
+ "caveats_rows": [
+  {
+   "slug": "southern-ocean-surf-reef-albany",
+   "q": "Seabed source and datum",
+   "model": "profile from contours of a 2015 RHDHV plan, read as m AHD",
+   "stated": "datum not printed on the plan; same report family uses '-0.75 mAHD' for the crest",
+   "diff": "if CD = LAT the bed is 0.74 m deeper (+5.7k m3)",
+   "reason": "Only continuous contour source found; the full Detailed Design Report with the 2017 bathymetry is not public.",
+   "status": "unresolved",
+   "resolve": "Full Bluecoast report / 2017 bathymetry / mid-2025 as-built survey from the City of Albany; Navionics readings by Lior",
+   "section": "3.2; 4; 7",
+   "ids": "S11; S12",
+   "ev": [
+    "Not on the City website (only the executive summary, 5 pages)"
+   ]
+  },
+  {
+   "slug": "southern-ocean-surf-reef-albany",
+   "q": "BMT 2018 near-shore sounding",
+   "model": "-1.1 m AHD at (x -53, y 32)",
+   "stated": "2.7 m below chart datum at that point",
+   "diff": "sounding 1.6 m (CD = AHD) or 2.3 m (CD = LAT) deeper",
+   "reason": "Different survey dates, label positions (+-11 m) or datum; far-field 8.4 m CD agrees within 0.4 m.",
+   "status": "unresolved",
+   "resolve": "as above",
+   "section": "4",
+   "ids": "S12",
+   "ev": [
+    "the sounding is 1.6 m (CD = AHD) or 2.3 m (CD = LAT) deeper. UNRESOLVED"
+   ]
+  },
+  {
+   "slug": "southern-ocean-surf-reef-albany",
+   "q": "Volume fitted",
+   "model": "34,000 m3 by construction (N = 2.73)",
+   "stated": "34,000 m3 (City)",
+   "diff": "unfitted loft gives 20,826 m3 (61 %)",
+   "reason": "Either a fuller pile or a deeper seabed (+1.5 m) is needed; the evidence cannot separate them. The broad plateau and steep toe of the model are an effect of the fit.",
+   "status": "unresolved",
+   "resolve": "design cross-sections or a survey",
+   "section": "3.3; 4",
+   "ids": "S5",
+   "ev": [
+    "the shortfall cannot be assigned to either (evidence: none)"
+   ]
+  },
+  {
+   "slug": "southern-ocean-surf-reef-albany",
+   "q": "Which end of the crest is shallowest",
+   "model": "-1.0 m AHD at the offshore (east) end, -2.0 m beyond 40 m",
+   "stated": "table: -1.00 m 'shallowest' and 110 m @ -2 m, no position",
+   "diff": "all -1.0 m: +6.4k m3; all -2.0 m: -1.4k m3",
+   "reason": "The design plan puts the take-off area at the east end; no section drawing.",
+   "status": "unresolved",
+   "resolve": "section drawing",
+   "section": "3.3",
+   "ids": "S5",
+   "ev": [
+    "Ridge level z_c: -1.0 m AHD over the first 15 m from the offshore (east) end"
+   ]
+  },
+  {
+   "slug": "southern-ocean-surf-reef-albany",
+   "q": "Later rock movements (May 2025 storm; 18 rocks repositioned February 2026)",
+   "model": "not modelled",
+   "stated": "RWR 28 May 2025; Albany Advertiser 28 May 2025 and 11 Mar 2026",
+   "diff": "note only",
+   "reason": "Positions and sizes not published.",
+   "status": "by-design",
+   "resolve": "",
+   "section": "1",
+   "ids": "S17-S19; card R11, R18",
+   "ev": [
+    "the rock movements of May 2025 and February 2026 are notes only"
+   ]
+  },
+  {
+   "slug": "southern-ocean-surf-reef-albany",
+   "q": "No as-built survey, no construction image",
+   "model": "design outline (default) positioned on the 2026 satellite image",
+   "stated": "no survey; 19 Wayback releases hold only three captures (2022-12-19, 2025-01-16, 2026-01-20)",
+   "diff": "area -30 %/+20 %",
+   "reason": "Completion survey of mid-2025 (the City programme said March 2025) not public.",
+   "status": "open",
+   "resolve": "City of Albany; Google Earth Pro historical imagery (Lior)",
+   "section": "2; 7",
+   "ids": "S1; S2",
+   "ev": [
+    "so there is no construction-sequence image"
+   ]
+  },
+  {
+   "slug": "southern-ocean-surf-reef-albany",
+   "q": "Rock quantity: 62,800 t or 70,000 t",
+   "model": "62,800 t = 34,000 m3 (City design table); loft fitted to 34,000 m3",
+   "stated": "ABC News 16 Jul 2025 and Raised Water Research: 70,000 t",
+   "diff": "70,000 t = 37,898 m3: N 2.73 -> 3.89, mean height 2.59 -> 2.89 m",
+   "reason": "No source says whether 70,000 t is the as-built quantity; the City layer sum is 62,800 t.",
+   "status": "open",
+   "resolve": "Completion survey or as-built quantities from the City / Heron Construction",
+   "section": "4",
+   "ids": "S6; S15; S22; A13",
+   "ev": [
+    "70,000 t = 37,898 m3 needs loft exponent N = 3.89 (now 2.73)"
+   ]
+  },
+  {
+   "slug": "southern-ocean-surf-reef-albany",
+   "q": "Footprint 13,104 m2 or 16,100 m2",
+   "model": "13,104 m2 (Bluecoast design outline), 10,918 m2 (satellite patch)",
+   "stated": "Raised Water Research: 1.61 ha, 165 m x up to 110 m; City FAQ 2023 about 16,000 m2 (earlier concept)",
+   "diff": "drawn outline 19 % smaller; 16,100 m2 would fill 89 % of the 165 x 110 m bounding box (drawn outline 72 %)",
+   "reason": "RWR gives no source and mixes 2015 and final-design numbers.",
+   "status": "unresolved",
+   "resolve": "Design drawing with area, or completion survey",
+   "section": "4",
+   "ids": "S8; S15",
+   "ev": [
+    "16,100 m2 would fill 89 % of it"
+   ]
+  }
+ ],
+ "_update_2026-10-13": {
+  "about": "Albany 3D agent, 2026-10-13: exact old -> new for main (the JSON above is already updated; entries here list what changed). Geometry unchanged; only state/date text and two new caveat rows. Every caveat ev snippet was checked verbatim against METHODS_3D.md.",
+  "changes": [
+   {
+    "target": "models3d_curated.json models.southern-ocean-surf-reef-albany.state_short",
+    "old": "As built (completed March 2025)",
+    "new": "As built (rock placed 18 March - June 2025, opened 16 July 2025)"
+   },
+   {
+    "target": "models3d_curated.json models.southern-ocean-surf-reef-albany.state_short",
+    "old": "18 rocks moved in March 2026 are not modelled.",
+    "new": "A May 2025 storm move of core rock and the 18 high rocks repositioned in late February 2026 are not modelled."
+   },
+   {
+    "target": "models3d_caveats.json row \"Seabed source and datum\" .resolve",
+    "old": "March 2025 as-built survey",
+    "new": "mid-2025 as-built survey"
+   },
+   {
+    "target": "models3d_caveats.json row slug=albany q=Eighteen rocks moved March 2026 .q",
+    "old": "Eighteen rocks moved March 2026",
+    "new": "Later rock movements (May 2025 storm; 18 rocks repositioned February 2026)"
+   },
+   {
+    "target": "models3d_caveats.json row slug=albany q=Eighteen rocks moved March 2026 .stated",
+    "old": "Albany Advertiser 11 Mar 2026",
+    "new": "RWR 28 May 2025; Albany Advertiser 28 May 2025 and 11 Mar 2026"
+   },
+   {
+    "target": "models3d_caveats.json row slug=albany q=Eighteen rocks moved March 2026 .ids",
+    "old": "card R11, R18",
+    "new": "S17-S19; card R11, R18"
+   },
+   {
+    "target": "same row .ev",
+    "old": [
+     "18 rocks moved in March 2026 are a note only"
+    ],
+    "new": [
+     "the rock movements of May 2025 and February 2026 are notes only"
+    ]
+   },
+   {
+    "target": "models3d_caveats.json row \"No as-built survey, no construction image\" .reason",
+    "old": "Practical-completion survey of March 2025 not public.",
+    "new": "Completion survey of mid-2025 (the City programme said March 2025) not public."
+   },
+   {
+    "target": "models3d_caveats.json rows (append)",
+    "old": null,
+    "new": {
+     "slug": "southern-ocean-surf-reef-albany",
+     "q": "Rock quantity: 62,800 t or 70,000 t",
+     "model": "62,800 t = 34,000 m3 (City design table); loft fitted to 34,000 m3",
+     "stated": "ABC News 16 Jul 2025 and Raised Water Research: 70,000 t",
+     "diff": "70,000 t = 37,898 m3: N 2.73 -> 3.89, mean height 2.59 -> 2.89 m",
+     "reason": "No source says whether 70,000 t is the as-built quantity; the City layer sum is 62,800 t.",
+     "status": "open",
+     "resolve": "Completion survey or as-built quantities from the City / Heron Construction",
+     "section": "4",
+     "ids": "S6; S15; S22; A13",
+     "ev": [
+      "70,000 t = 37,898 m3 needs loft exponent N = 3.89 (now 2.73)"
+     ]
+    }
+   },
+   {
+    "target": "models3d_caveats.json rows (append)",
+    "old": null,
+    "new": {
+     "slug": "southern-ocean-surf-reef-albany",
+     "q": "Footprint 13,104 m2 or 16,100 m2",
+     "model": "13,104 m2 (Bluecoast design outline), 10,918 m2 (satellite patch)",
+     "stated": "Raised Water Research: 1.61 ha, 165 m x up to 110 m; City FAQ 2023 about 16,000 m2 (earlier concept)",
+     "diff": "drawn outline 19 % smaller; 16,100 m2 would fill 89 % of the 165 x 110 m bounding box (drawn outline 72 %)",
+     "reason": "RWR gives no source and mixes 2015 and final-design numbers.",
+     "status": "unresolved",
+     "resolve": "Design drawing with area, or completion survey",
+     "section": "4",
+     "ids": "S8; S15",
+     "ev": [
+      "16,100 m2 would fill 89 % of it"
+     ]
+    }
+   }
+  ]
+ }
+}

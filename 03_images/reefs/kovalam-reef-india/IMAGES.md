@@ -184,12 +184,12 @@ Source of truth: `images.json` in this folder (convention: `_agent_briefs/image_
 - **credit**: ASR Ltd
 - **licence**: not stated (company brochure) - NOT cleared
 - **retrieved**: 2026-10-04
-- **used for**: plan_trace; cross_check
-- **How used for the model**: Source of the draft pixel polygon (pixel_polys_img1.json, 11 vertices, overlays img1_zoom1-7 and img1_overlay_check): a smooth crescent/delta wedge, ~35-76 m offshore (centroid 56 m, low confidence). No shape.json was finalised for Kovalam; the earlier text-derived footprint (07_scale/reefs/kovalam-reef-india.footprint.json) used this photo as qualitative evidence only.
-- **3D check pending**: YES - Planform and offshore distance: the draft polygon (smooth crescent, ~56 m offshore) vs a stepped/zigzag typology suggested by the outline image (img2); re-trace against img2 and the satellite frames before any 3D model (values: planform, position)
+- **used for**: plan_trace, cross_check
+- **How used for the model**: PRIMARY plan source (2026-10-10 re-trace, supersedes the 2026-09 draft crescent polygon): outer edge of the 5-6 sand-container strips traced in pixels (pixel_polys_img1_v2.json, 18 vertices; overlays/img1_trace_v2.png), then rectified through a camera fitted to the 2011-02-28 Esri swash line (rectify_fit.py; overlays/img1_camera_fit_check.png, sat2011_plan_reconstruction.png). Result: 1,216 m2, 59 x 41 m at assumed camera height 60 m (640-1,681 m2 for 35-80 m); LOW confidence; shape.json source img1.
+- **3D check pending**: no - Planform: strips are an echelon fan about 38 deg to the swash line, not a smooth crescent. Position about 60-100 m from the 2011 swash line, just NW of the tombolo rock. Scale not fixed by the photo (camera height free). Draft overlays moved to overlays/_draft_2026-09/.
 - **annotated / overlay files**: `07_scale/shapes/kovalam-reef-india/overlays/img1_overlay_check.png`; `07_scale/shapes/kovalam-reef-india/overlays/img1_overlay_check2.png`; `07_scale/shapes/kovalam-reef-india/overlays/img1_zoom1.png`; `07_scale/shapes/kovalam-reef-india/overlays/img1_zoom2.png`; `07_scale/shapes/kovalam-reef-india/overlays/img1_zoom3.png`; `07_scale/shapes/kovalam-reef-india/overlays/img1_zoom4.png`; `07_scale/shapes/kovalam-reef-india/overlays/img1_zoom5.png`; `07_scale/shapes/kovalam-reef-india/overlays/img1_zoom6.png`; `07_scale/shapes/kovalam-reef-india/overlays/img1_zoom7.png`
 - **source PDF**: `07_scale/shapes/kovalam-reef-india/src/asr_brochure_wayback.pdf`
-- **linked records**: 07_scale/reefs/kovalam-reef-india.md S2; 07_scale/shapes/kovalam-reef-india/pixel_polys_img1.json
+- **linked records**: 07_scale/reefs/kovalam-reef-india.md S2; 07_scale/shapes/kovalam-reef-india/shape.json (img1); 07_scale/shapes/kovalam-reef-india/METHOD.md section 3; 07_scale/shapes/kovalam-reef-india/sources.md img1
 - **size**: 0.83 MB, 915x735 px
 - **sha256**: 76280513eeb90779e4fa7e2dc1c4c69df07500ad8e02f664bd7f380ae2fc16de
 - **rights**: Private research copy; reuse rights to be checked before any public release.
@@ -213,10 +213,11 @@ Source of truth: `images.json` in this folder (convention: `_agent_briefs/image_
 - **credit**: Raised Water Research
 - **licence**: no licence stated on the page; link/research copy only - NOT cleared
 - **retrieved**: 2026-09-25
-- **used for**: cross_check; plan_trace
-- **How used for the model**: Strongest shape evidence for the chevron/echelon fan typology in the dossier (S3, 07_scale/reefs/kovalam-reef-india.md): the polyline could be the crest outline or just the foam line - no source says which; no scale, so qualitative only.
-- **3D check pending**: YES - Typology: stepped zigzag break line (chevron/echelon fan of ~30 m units?) vs the smooth crescent in the draft polygon; settle before shape/3D (values: planform)
-- **linked records**: 07_scale/reefs/kovalam-reef-india.md S3
+- **used for**: cross_check, plan_trace
+- **How used for the model**: Cross-check only (2026-10-10): confirms a stepped / echelon pattern of straight segments, but it is the foam line on a monsoon day and has no scale, so nothing was traced or measured on it. Typology question settled in favour of the photo strips of img-07 (parallel strips fanning from the whitewater end), shape.json source img2.
+- **3D check pending**: no - Typology: stepped fan, consistent with img-07. Not used for position or size.
+- **annotated versions**: 
+- **linked records**: 07_scale/reefs/kovalam-reef-india.md S3; 07_scale/shapes/kovalam-reef-india/shape.json (img2); 07_scale/shapes/kovalam-reef-india/METHOD.md section 2
 - **size**: 0.18 MB, 475x305 px
 - **sha256**: 7c69fcaf74fa7364a80955727db24d983086c0c6e5cc56f5aa7acde2e9d7a762
 - **rights**: Private research copy; reuse rights to be checked before any public release.
@@ -240,10 +241,11 @@ Source of truth: `images.json` in this folder (convention: `_agent_briefs/image_
 - **credit**: Esri, Maxar, Earthstar Geographics, and the GIS User Community
 - **licence**: Esri/Maxar imagery terms (not an open licence); private research copy only
 - **retrieved**: 2026-10-04
-- **used for**: context
-- **How used for the model**: Fetched 2026-10-04 for the shape work; no trace made on it (no sources.md/shape.json for Kovalam). Oldest frame: reef period (after Feb 2010 completion); first locator check of the site. (File name says 2014 but the sidecar capture date is 2011-02-28.)
+- **used for**: scale, plan_trace, context
+- **How used for the model**: Geometry for the camera fit (2026-10-10): the surf-zone swash line (landward edge of foam, 11 points) and the tombolo rock were read on this 2011-02-28 frame, georeferenced with its .geo.json (Web Mercator bounds). Reef itself not visible. Overlay overlays/sat2011_plan_reconstruction.png shows the fitted camera, swash line and rectified reef outline. shape.json source sat2011.
 - **3D check pending**: no - none: reef not visible in the frame
-- **linked records**: 07_scale/shapes/kovalam-reef-india/src/satellite_2014.png.geo.json
+- **annotated versions**: `07_scale/shapes/kovalam-reef-india/overlays/sat2011_plan_reconstruction.png`
+- **linked records**: 07_scale/shapes/kovalam-reef-india/shape.json (sat2011); 07_scale/shapes/kovalam-reef-india/METHOD.md section 3
 - **size**: 0.47 MB, 507x508 px
 - **sha256**: 8b07818bd5e704494c38e35dddab033614073a8b2321508c88be72b4bed370c9
 - **rights**: Private research copy; reuse rights to be checked before any public release.
@@ -384,3 +386,100 @@ Source of truth: `images.json` in this folder (convention: `_agent_briefs/image_
 - **rights**: Private research copy; reuse rights to be checked before any public release.
 - **display in HTML**: True
 - **added by**: image-registry backfill, 2026-10-06
+
+## kovalam-reef-india-img-15 - Mead & Borrero (2011) Fig. 7: Kovalam Beach shoreline response during monsoon, pre-reef (red) versus after (yellow)
+- **file**: `03_images/reefs/kovalam-reef-india/kovalam-reef-india_p3-fig7-shoreline-monsoon_2010.png`
+- **kind**: aerial
+- **shows**: Rectified frame from the lighthouse camera with the pre-reef shoreline (red dashed) and the post-reef shoreline (yellow dashed) along the promenade; inset average beach width chart.
+- **structure visible**: False
+- **state shown**: as-built (after Feb 2010 completion)
+- **image date**: overlay appears to read 10/08/2010 (low resolution); monsoon season
+- **citation**: Mead, S.T. and Borrero, J.C. (2011). Multi-Purpose Reefs - A Decade of Applications. Proceedings of the 20th Australasian Coastal and Ocean Engineering Conference (Coasts and Ports 2011), ASR Ltd, Raglan NZ. p.5, Figure 7. https://search.informit.org/doi/10.3316/informit.715072832934166 (Lior's copy: papers/Multi-Purpose Reefs - A Decade of Applications 2011.pdf). Accessed 2026-10-07.
+- **image URL**: https://search.informit.org/doi/10.3316/informit.715072832934166
+- **source page**: https://search.informit.org/doi/10.3316/informit.715072832934166
+- **page / figure**: PDF p.5, Figure 7 (clip, 200 dpi)
+- **credit**: ASR Ltd (Kovalam Reef beach monitoring camera, lighthouse platform)
+- **licence**: not stated (conference paper, (c) Coasts and Ports 2011); private research copy
+- **retrieved**: 2026-10-10
+- **used for**: cross_check
+- **How used for the model**: Source of the claim that the beach is 10-15 m wider in monsoon and up to 30 m wider in the non-monsoon season. Not used for geometry.
+- **3D check pending**: no - none
+- **linked records**: 05_qa/papers_intake/P3_mead_borrero_2011.md
+- **size**: 0.61 MB, 695x667 px
+- **sha256**: 501cecd33f06e982e658ce2cd0f324b0468c072f4bf7c3611ec450ba2b8ae023
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: papers intake P3/P8, 2026-10-10
+
+## kovalam-reef-india-img-16 - Blacka et al. (2013) Fig. 4.5: Kovalam MPR, Kerala, India (source: ASR 2012)
+- **file**: `03_images/reefs/kovalam-reef-india/kovalam-reef-india_p8-fig4-5-kovalam-mpr_2012.png`
+- **kind**: photo
+- **shows**: Oblique photo over Lighthouse Beach with the reef breaking as a white patch offshore and the rocky headland behind.
+- **structure visible**: True
+- **state shown**: as-built (after 2010; damage reported by 2013)
+- **image date**: 2010-2012 (not dated on the figure)
+- **citation**: Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08 (Final, 11 June 2013), UNSW Water Research Laboratory, for the NSW Office of Environment and Heritage. p.71 (PDF p.83), Figure 4.5. https://doi.org/10.4225/53/58e1dc7368c7a. Accessed 2026-10-07.
+- **image URL**: https://doi.org/10.4225/53/58e1dc7368c7a
+- **source page**: https://doi.org/10.4225/53/58e1dc7368c7a
+- **page / figure**: report p.71 (PDF p.83), Figure 4.5 (clip, 200 dpi)
+- **credit**: ASR (2012), as credited in Blacka et al. (2013)
+- **licence**: CC BY-NC-ND 3.0 AU (as recorded in REQUESTS_FOR_LIOR.md P8; not re-checked on the PDF)
+- **retrieved**: 2026-10-10
+- **used for**: context, camera_match, cross_check
+- **How used for the model**: Same photo as img-07 but uncropped (WRL 2013 Fig 4.5); used 2026-10-10 as the provenance check for img-07 (credit 'ASR, 2012', CC BY-NC-ND 3.0 AU per WRL). The trace itself was done on the higher-resolution img-07 crop. The table of the same report (Table 4.2 p.66: 65 x 85 m, 90 m offshore, depth 1.3-3.7 m, submergence 0.2-3.4 m) was used as dimension cross-check in shape.json dimensions_check.
+- **3D check pending**: no - Break position is NW of the tombolo rock about 60-100 m off the swash line; planform check done in shape.json (pending closed for planform). Depth and crest values from the same report are unlocated ranges (see FEASIBILITY.md).
+- **annotated versions**: 
+- **linked records**: 05_qa/papers_intake/P8_blacka_2013.md; 07_scale/shapes/kovalam-reef-india/shape.json dimensions_check; 07_scale/shapes/kovalam-reef-india/sources.md wrl
+- **size**: 1.18 MB, 1112x737 px
+- **sha256**: 167636e20b88ed4278fd4e5d9a2966302bc236c912c953c1871fffe6971d4ea1
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: papers intake P3/P8, 2026-10-10
+
+## kovalam-reef-india-img-17 - RWR Kovalam surf photo (Kovalam-Barrel.jpg)
+- **file**: 03_images/reefs/kovalam-reef-india/kovalam-reef-india_rwr-barrel_unknown-date.jpg
+- **citation**: Raised Water Research (2019). Kovalam artificial reef, spot page, image Kovalam-Barrel.jpg. https://raisedwaterresearch.com/spot/artificial-reef/asia/india/kovalam/ Accessed 2026-10-10.
+- **url**: https://raisedwaterresearch.com/wp-content/uploads/2019/12/Kovalam-Barrel.jpg
+- **date**: unknown (2010-2011 by context); retrieved 2026-10-10; licence: not stated
+- **shows**: A surfer in a green barrel on a left-breaking wave at the reef, shot from the beach side; no structure visible.
+- **How used for the model**: Looked at once (2026-10-10) for any vertical view, scale or structure: none. Surf context only; not used for plan, crest or seabed.
+- **3D check pending**: no
+- **size**: 45235 bytes, 640x428 px; sha256 57d946a0069a44e6ad7ee6206aa5ca344bc68ef12f66c70e470896c19005a9cf
+- **display in HTML**: True
+- **added by**: kovalam network pass, 2026-10-10
+
+## kovalam-reef-india-img-18 - RWR Kovalam surf photo (Kovalam-Left.jpg)
+- **file**: 03_images/reefs/kovalam-reef-india/kovalam-reef-india_rwr-left_unknown-date.jpg
+- **citation**: Raised Water Research (2019). Kovalam artificial reef, spot page, image Kovalam-Left.jpg. https://raisedwaterresearch.com/spot/artificial-reef/asia/india/kovalam/ Accessed 2026-10-10.
+- **url**: https://raisedwaterresearch.com/wp-content/uploads/2019/12/Kovalam-Left.jpg
+- **date**: unknown (2010-2011 by context); retrieved 2026-10-10; licence: not stated
+- **shows**: Distant left-hander breaking over the reef with a pink buoy; no structure visible.
+- **How used for the model**: Looked at once (2026-10-10) for any vertical view, scale or structure: none. Surf context only; not used for plan, crest or seabed.
+- **3D check pending**: no
+- **size**: 25789 bytes, 550x300 px; sha256 d777c668e0c4bed07f550c123ae98692f70e71d17649f928dd76b581d3a1eb77
+- **display in HTML**: True
+- **added by**: kovalam network pass, 2026-10-10
+
+## kovalam-reef-india-img-19 - RWR Kovalam surf photo (Kovalam-Left2.jpg)
+- **file**: 03_images/reefs/kovalam-reef-india/kovalam-reef-india_rwr-left2_unknown-date.jpg
+- **citation**: Raised Water Research (2019). Kovalam artificial reef, spot page, image Kovalam-Left2.jpg. https://raisedwaterresearch.com/spot/artificial-reef/asia/india/kovalam/ Accessed 2026-10-10.
+- **url**: https://raisedwaterresearch.com/wp-content/uploads/2019/12/Kovalam-Left2.jpg
+- **date**: unknown (2010-2011 by context); retrieved 2026-10-10; licence: not stated
+- **shows**: Left-hand wave breaking off the beach with two bathers in the foreground; no structure visible.
+- **How used for the model**: Looked at once (2026-10-10) for any vertical view, scale or structure: none. Surf context only; not used for plan, crest or seabed.
+- **3D check pending**: no
+- **size**: 36755 bytes, 720x405 px; sha256 e8256892f4ab738217116a2a360ef14cf34a5a698339fdde2c002f9e7d59e001
+- **display in HTML**: True
+- **added by**: kovalam network pass, 2026-10-10
+
+## kovalam-reef-india-img-20 - Esri Wayback z17 contact sheet, Kovalam west of the tombolo rock, 6 releases (2014-02-20 [= capture 2011-02-28], 2014-12-03, 2017-02-27, 2018-09-06, 2019-10-09, 2020-11-18)
+- **file**: 07_scale/shapes/kovalam-reef-india/src/wayback_z17_2011_to_2020_sheet.png
+- **citation**: Esri, Maxar, Earthstar Geographics, and the GIS User Community (2011-2020 captures). World Imagery Wayback releases 10, 23383, 31026, 2168, 11351, 20753, z17. https://livingatlas.arcgis.com/wayback/. Accessed 2026-10-10.
+- **url**: https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/{release}/17/{y}/{x} (releases 10, 23383, 31026, 2168, 11351, 20753; tiles x 93560-93562, y 2 rows around 62471)
+- **date**: 2011-02-28 (release 10, from earlier agent); other captures dated only by release date (2014-12-03 to 2020-11-18), capture dates not read; retrieved 2026-10-10; licence: Esri/Maxar imagery terms (not an open licence); private research copy only
+- **shows**: Six 240x240 px z17 crops (1.19 m/px, enlarged 3x) of the bay west of the rock; surf zone and swash visible, no container strips or reef outline in any release.
+- **How used for the model**: Network pass 2026-10-10: scanned all 197 Wayback releases; z19 and z18 tiles are blank (196-byte no-data) for the Kovalam area before 2021, so 1.19 m/px z17 is the finest pre-2021 imagery; the only distinct pre-2014 capture is 2011-02-28. Reef not resolved: no re-trace possible.
+- **3D check pending**: no
+- **size**: 1371429 bytes, 1200x800 px; sha256 1ecf137845fe62ff34644ba001e1cb820b5946579b1e5edbed55db626fd5fddb
+- **display in HTML**: True
+- **added by**: kovalam network pass, 2026-10-10

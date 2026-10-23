@@ -1,0 +1,10 @@
+{
+ "crs": "EPSG:2193",
+ "px_m": 0.25,
+ "x_left": 1672971.0,
+ "y_top": 5632659.0,
+ "w": 4000,
+ "h": 4000,
+ "source": "https://nz-imagery.s3.ap-southeast-2.amazonaws.com/taranaki/taranaki_2021-2022_0.25m/rgb/2193/BJ28_5000_0806.tiff",
+ "note": "saved as JPEG q93 from lossless crop of the WebP source tiles (PNG was 27 MB)"
+}

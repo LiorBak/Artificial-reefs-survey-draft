@@ -2,6 +2,20 @@
  "versions": {
   "multibeam_2013_m2p0": {
    "volume_by_bed": {
+    "-3.6": {
+     "volume_m3": 2944.96,
+     "footprint_area_m2": 1652.0,
+     "h_max_m": 2.85,
+     "h_mean_m": 1.78,
+     "crest_z_cd": -0.9
+    },
+    "-2.8": {
+     "volume_m3": 1751.54,
+     "footprint_area_m2": 1382.0,
+     "h_max_m": 2.05,
+     "h_mean_m": 1.27,
+     "crest_z_cd": -0.9
+    },
     "-3.0": {
      "volume_m3": 2030.2,
      "footprint_area_m2": 1453.25,
@@ -40,20 +54,43 @@
    },
    "bed_for_2800": -3.51,
    "area_m2": 1071.0,
-   "volume_bed-4.0_crest-0.8": 3688.1,
-   "volume_bed-4.0_crest-1.0": 3551.8,
-   "volume_bed-4.0_by_run": {
-    "0.25": 3048.7,
-    "0.5": 3245.0,
-    "1.0": 3619.9,
-    "1.5": 3982.6,
-    "2.0": 4327.0
+   "volume_beddef_crest-0.8": 3013.1,
+   "volume_beddef_crest-1.0": 2876.8,
+   "max_reef_z_cd": {
+    "-3.6": -0.8,
+    "-2.8": -0.8,
+    "-3.0": -0.8,
+    "-3.5": -0.8,
+    "-4.0": -0.8,
+    "-4.5": -0.8,
+    "nav": -0.8
+   },
+   "volume_beddef_by_run": {
+    "0.25": 2566.8,
+    "0.5": 2694.7,
+    "1.0": 2945.0,
+    "1.5": 3186.6,
+    "2.0": 3421.2
    },
    "volume_above_contour_m3": 749.9,
-   "vertical_wall_minimum_volume_bed-4.0_m3": 2892.0
+   "vertical_wall_minimum_volume_beddef_m3": 2464.0
   },
   "asr_installed_toe_2008": {
    "volume_by_bed": {
+    "-3.6": {
+     "volume_m3": 2727.08,
+     "footprint_area_m2": 1428.75,
+     "h_max_m": 2.85,
+     "h_mean_m": 1.91,
+     "crest_z_cd": -0.9
+    },
+    "-2.8": {
+     "volume_m3": 1756.3,
+     "footprint_area_m2": 1422.5,
+     "h_max_m": 2.05,
+     "h_mean_m": 1.23,
+     "crest_z_cd": -0.9
+    },
     "-3.0": {
      "volume_m3": 1998.99,
      "footprint_area_m2": 1427.25,
@@ -92,12 +129,49 @@
    },
    "bed_for_2800": -3.66,
    "area_m2": 1423.8,
-   "volume_bed-4.0_crest-0.8": 3280.6,
-   "volume_bed-4.0_crest-1.0": 3144.3
+   "volume_beddef_crest-0.8": 2795.3,
+   "volume_beddef_crest-1.0": 2658.9,
+   "max_reef_z_cd": {
+    "-3.6": -0.8,
+    "-2.8": -0.8,
+    "-3.0": -0.8,
+    "-3.5": -0.8,
+    "-4.0": -0.8,
+    "-4.5": -0.8,
+    "nav": -0.8
+   }
   }
  },
  "bed_for_2800": {
   "multibeam_2013_m2p0": -3.51,
   "asr_installed_toe_2008": -3.66
+ },
+ "crest_check": {
+  "lowest_water_level": "LAT",
+  "lowest_water_cd": -0.03,
+  "highest_crest_option_cd": -0.8,
+  "max_reef_z_cd_by_version_and_bed": {
+   "multibeam_2013_m2p0": {
+    "-3.6": -0.8,
+    "-2.8": -0.8,
+    "-3.0": -0.8,
+    "-3.5": -0.8,
+    "-4.0": -0.8,
+    "-4.5": -0.8,
+    "nav": -0.8
+   },
+   "asr_installed_toe_2008": {
+    "-3.6": -0.8,
+    "-2.8": -0.8,
+    "-3.0": -0.8,
+    "-3.5": -0.8,
+    "-4.0": -0.8,
+    "-4.5": -0.8,
+    "nav": -0.8
+   }
+  },
+  "max_reef_z_cd_overall": -0.8,
+  "margin_below_LAT_m": 0.77,
+  "any_above_lowest_water": false
  }
 }

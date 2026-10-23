@@ -1,7 +1,7 @@
 import numpy as np, json, math, sys
-sys.path.insert(0,r"C:\Users\lior\Documents\Gemini\AG\Artificial reef - to upload to git\07_scale\tools")
+sys.path.insert(0,r"C:\Users\lior\Documents\Claude\Projects\Artificial reef\07_scale\tools")
 import satellite as S
-ROOT=r"C:\Users\lior\Documents\Gemini\AG\Artificial reef - to upload to git\07_scale\shapes\narrowneck-gold-coast"
+ROOT=r"C:\Users\lior\Documents\Claude\Projects\Artificial reef\07_scale\shapes\narrowneck-gold-coast"
 g19=json.load(open(ROOT+r"\src\wayback\nn_wayback_2020-08-08_r9812_z19.png.geo.json"))
 g17=json.load(open('z17_wb9812.png.geo.json'))
 pts=np.load('waterline_pts.npy')

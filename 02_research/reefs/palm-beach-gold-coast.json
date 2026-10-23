@@ -6,28 +6,28 @@
   "name": "Palm Beach Reef",
   "place": "Palm Beach, Gold Coast, Queensland",
   "country": "Australia",
-  "lat": null,
-  "lon": null,
+  "lat": -28.107334,
+  "lon": 153.470913,
   "year": "Concept design 2013; detailed design 2013–2014; construction Apr/May–Oct 2019; finalised and certified Sept 2019 [R1][R3][R5]",
-  "type": "Submerged rock (quarried boulder) reef, 4–8 t boulders on individual sourcing (up to 8 t per most sources), NOT geotextile sand containers — a deliberate contrast with Narrowneck [R2][R4][R7][R16]",
+  "type": "Submerged rock (quarried boulder) reef, 4–8 t boulders on individual sourcing (up to 8 t per most sources), NOT geotextile sand containers — a deliberate contrast with Narrowneck [R2][R4][R7][R16] Crest level in other datums: -1.5 m MSL = about -0.62 m relative to LAT, using Gold Coast Seaway MSL = LAT + 0.88 m [R23]; the concept paper gives the crest as -1.5 m AHD (Mortensen et al. 2015, p.4), and AHD is 0.12 m below MSL at the Seaway benchmark (AHD = LAT + 0.760 m, MSQ 2014), a difference inside the +-0.2 m crest uncertainty and not applied in the 3D model [R22][R23]. A charted 'FISH HAVEN 1.5MT' label (chart as read by the shape agent, not cited as a reference in this card) differs from the design by 0.88 m, which is the MSL-LAT offset of the Seaway [R23] (DERIVED, open: this project, 07_scale/shapes/palm-beach-gold-coast/HANDOFF.md section 5.2).",
   "purpose": "Multipurpose, in order of priority: (1) coastal-erosion protection for a narrow, storm-vulnerable beach; (2) surf amenity (a right-hand wave), explicit in the design brief from the start, unlike Narrowneck; (3) marine habitat, unquantified [R3][R8][R12][R13][R16]",
-  "size": "160 m long × 80 m wide \"core\" per most sources, vs Royal HaskoningDHV's own page giving 144 m wide (unresolved); ~270 m offshore per most sources vs Royal HaskoningDHV's 330 m (unresolved); crest 1.5 m below MSL at highest point, 60 cm at lowest astronomical tide; ~25,000 m³ of rock (~60,000 tonnes of boulders) [R2][R4][R5][R6][R7][R9][R13][R15]",
+  "size": "160 m long × 80 m wide \"core\" per most sources, vs Royal HaskoningDHV's own page giving 144 m wide (unresolved); ~270 m offshore per most sources vs Royal HaskoningDHV's 330 m (unresolved); crest 1.5 m below MSL at highest point, 60 cm at lowest astronomical tide; ~25,000 m³ of rock (~60,000 tonnes of boulders) [R2][R4][R5][R6][R7][R9][R13][R15] Project-measured geometry (2026-10-10 audit; not source statements): the City of Gold Coast asset polygon (160 x 80 m nominal, area 11,941.7 m2) [R19] and the Bluecoast/Nearmap aerial with survey contours [R20] give a toe outline of 11,972 m2, oriented rectangle 162.3 x 91.3 m (mean width 73.8 m), long axis 109.6 deg true, about 45 deg to the shore; nearest toe edge 225 m, centroid 305 m and farthest 374 m from the Esri 2025-12-01 waterline (279 m from the OSM coast); the '~270 m' of the sources has no stated start point [R21]. The 144 m width on Royal HaskoningDHV's page equals the width of the unbuilt concept designs SCS A/B/C (175 x 144 m) [R22]. Rock quantities differ in kind: ~25,000 m3 quarried rock and ~60,000 t [R13]; the project's 3D envelope volume is 22,020 m3 (inferred from contours, voids included, a seabed offset of -0.5 / +0.5 m gives 28,010 / 16,537 m3, HANDOFF 3.3); the City asset register shows 33,000 (units not stated).",
   "cost": "AU$18.2 million per most sources, vs AU$18.3 million per ICM's technical comparison (both cited, unresolved) [R2][R4][R7][R8][R9][R12][R13][R16]",
   "cost_usd_approx": "~US$12.5 million (Raised Water Research's own stated conversion, ~2019 rate) [R2]",
   "financed_by": "City of Gold Coast (local council), under its Ocean Beaches Strategy (adopted 2015); no state/federal co-funding found in any source checked [R8][R12]",
   "motivation": "Palm Beach is the Gold Coast's most erosion-prone beach, with the coastal road running close to the shore [R11][R16]. An earlier 2004 reef proposal near 21st Avenue was defeated by a community 'no reef' campaign and never built [R10][R16]. The successful 2013–2019 project is Phase 2 of the Palm Beach Shoreline Project, following a 2017 sand-nourishment Phase 1, and was pushed forward by a run of severe storms (2013 storm damage, a 2014 Climate Council sea-level-rise report, the 2015 Ocean Beaches Strategy, and Cyclone Oma battering Palm Beach in early 2019) [R5][R8][R12]. Mayor Tom Tate was the principal political champion throughout [R8][R12][R16].",
   "designer": "Disputed/multi-party, unreconciled across sources: DHI Australia (lead, principal engineer Simon Mortensen, won the Concept Design Study by open tender in 2013) [R3][R18]; Royal HaskoningDHV (design reference report, hydrodynamic modelling, environmental assessment, construction-phase QA, final engineering certification) [R5]; Bluecoast Consulting Engineers (core consultancy team, construction QA, as-built certification) [R1]. No source lays out how these three roles fit together.",
   "contractor": "HC2 joint venture — Hall Contracting Pty Ltd (AU) and Heron Construction Company (NZ); built using a backhoe dredge for precise rock placement, rock sourced from South-East Queensland quarries and barged from the Port of Brisbane [R4][R16]",
-  "status_now": "Operational as of the most recent source checked (ICM article, updated Feb 2025, still describes it in the present tense); no removal, decommissioning, or major structural-damage report found for this reef specifically in any source fetched, including a targeted (unsuccessful) search for Cyclone Alfred (March 2025) impact [R13]",
+  "status_now": "Operational as of the most recent source checked (ICM article, updated Feb 2025, still describes it in the present tense); no removal, decommissioning, or major structural-damage report found for this reef specifically in any source fetched, including a targeted (unsuccessful) search for Cyclone Alfred (March 2025) impact [R13] Monitoring: the ICCE 2022 monitoring abstract (Prenzler et al.) reports a stable structure with no significant movement or settlement [R24] (abstract page only read; DOI, pages and full author list not confirmed).",
   "verdict": "partly worked",
   "hover_text": "A 160×80 m submerged boulder reef built 2019 for AU$18.2M by the City of Gold Coast to fight erosion at Palm Beach, with a right-hand surf wave designed in from the start; it retained roughly 550,000 m³ of sand in its first two years and delivers a modest, workable (not world-class) wave, though a narrow shallow-to-deep tidal window draws local complaints [R2][R9][R15].",
   "design_as_planned": "DHI Australia (lead designer Simon Mortensen) combined empirical surf knowledge — Mortensen personally surfing Palm Beach and reference breaks — with numerical modelling (DHI's MIKE 21 SM shoreline module using 30 years of wave/current data, a 3D VOF model in OpenFOAM, in-house OptiSurf surf-simulation software) and physical wave-tank testing for rock sizing [R3][R18]. The reef was deliberately sited 'in the lee of a natural reef' offshore to exploit an existing natural wave-focusing zone, targeting a right-hand wave 'suitable for average [to advanced] surfers with accessible takeoffs and extended wall length,' with a secondary short, more intense left on larger swells [R3][R13][R15][R17]. Rock (not geotextile, as used at Narrowneck) was chosen for its 100+-year coastal-engineering track record, precise shape control, expected habitat value, and to avoid geotextile bags' documented tearing/removal-cost problems [R3]. Design freeboard was set at a minimum 1.5 m below mean sea level, 60 cm at lowest astronomical tide, based on six years of local swell data [R2][R15]. Mortensen himself framed it as 'always a compromise... especially since the main focus was coastal protection' [R3].",
-  "as_built_vs_design": "The built reef matches the planned footprint and dominant right-hand wave, but execution surfaced issues not evident in the design promise. Swellnet's July 2019 first-look (at ~50% completion) reported the reef 'alarmingly shallow, with one rock even breaking the surface,' and a forum commenter described it going 'from too shallow to too deep really quickly' across the tide cycle — a narrower-than-hoped surfable tidal window [R15]. The timeline held essentially to plan rather than beating it: Swellnet's own 23 Aug 2019 update reported the reef only ~50% complete and 'still on track for an October finish,' and the project was finalised/certified in September 2019 — consistent with, not ahead of, the original target [R1][R5][R17]. Cost and dimension figures vary slightly by source (AU$18.2M vs AU$18.3M; 80 m vs 144 m width; 270 m vs 330 m offshore), plausibly rounding/measurement-basis differences between the council's headline figures and individual consultants' own project pages, though no source explains the gap [R2][R4][R5][R7][R9][R13].",
+  "as_built_vs_design": "The built reef matches the planned footprint (size field [R19][R22]) and dominant right-hand wave, but execution surfaced issues not evident in the design promise (the card author's summary of the findings below [R15]). Swellnet's July 2019 first-look (at ~50% completion) reported the reef 'alarmingly shallow, with one rock even breaking the surface,' and a forum commenter described it going 'from too shallow to too deep really quickly' across the tide cycle — a narrower-than-hoped surfable tidal window [R15]. The timeline held essentially to plan rather than beating it: Swellnet's own 23 Aug 2019 update reported the reef only ~50% complete and 'still on track for an October finish,' and the project was finalised/certified in September 2019 — consistent with, not ahead of, the original target [R1][R5][R17]. Cost and dimension figures vary slightly by source (AU$18.2M vs AU$18.3M; 80 m vs 144 m width; 270 m vs 330 m offshore), plausibly rounding/measurement-basis differences between the council's headline figures and individual consultants' own project pages, though no source explains the gap [R2][R4][R5][R7][R9][R13].",
   "outcome": "Surfing: on its first meaningful swell test (July 2019, reef ~50% built) it broke 4–5 ft waves with rides up to ~30 m; at completion it produced a consistent right with a short, thick left on bigger swells, handling at least double-overhead SE swells [R6][R15][R17]. The Inertia groups Palm Beach with Cable Station and Burkitts Reef among Australian stone reefs delivering 'modest, measurable improvements in the quality of waves' without becoming world-class breaks [R18]. Coastal protection: ABC News reported approximately 550,000 m³ of sand retained over the reef's first two years of operation — the clearest quantitative protection outcome found [R9]. Coastal engineer Evan Watterson argued such structures compare favourably to plain beach nourishment 'over a 30-year period' [R9]. Ecology: marine-habitat creation is claimed by both Bluecoast and Raised Water Research but with zero ecological survey data found in any source fetched [R1][R2]. Longevity: no storm-damage, structural-failure, or removal reports were found for this reef specifically [R13][R17]. Awards: IPWEAQ 2019 Excellence Award for Innovation and a 2020 Excellence Award for Coastal Engineering [R5].",
   "why_worked_or_failed": "Sources repeatedly credit the rock-over-geotextile material choice as the key differentiator from failed reef projects elsewhere — rock's long engineering track record, precise shape-control, and habitat value versus geotextile bags' history of tearing and expensive removal [R3][R13][R18]. Siting the reef behind an existing natural reef to pre-focus wave energy is credited with helping it punch above its size for surf quality [R3][R13]. The tuned crest depth/freeboard (1.5 m below MSL / 60 cm at LAT) balanced rideable wave height against safety, but the resulting narrow, fast-changing tidal window drew user complaints [R15]. Lead designer Simon Mortensen's own stated regret was about process, not physical design: 'we would have been more realistic in our budgeting on how long it would actually take to work on this reef. The City got a good deal' [R3]. ICM's own comparison attributes Palm Beach's stronger wave outcome (versus Narrowneck) to its surf-first design brief at a materially higher unit cost (~AU$700/m³ vs ~AU$30/m³ at Narrowneck): 'when the objective is surfing, the design can be more focused and effective' [R13].",
   "unexpected_results": "Rock breaking the surface at low tide, flagged by Swellnet as a possible safety/design concern locals questioned [R15]. A single joking Swellnet forum comment about a shark sighting ('Predatory Pirate Shark circles Palmy Reef') was not corroborated by any other source and is not treated here as a real trend [R17]. Crowding complaints: because the reef breaks predominantly as a right-hander in a region already dominated by right-hand points, some surfers criticised it for adding to an existing imbalance and concentrating crowds [R17]. The pre-existing 2004 'no reef' community backlash that killed an earlier reef proposal at the same beach is itself a notable data point about local social license, given the later, larger 2019 project proceeded with comparatively less reported opposition [R10][R16].",
   "could_be_better": "Simon Mortensen's own retrospective criticism concerns process, not the built structure: the consultancy underestimated how long the multi-year design phase would take [R3]. Outside civil engineer Shane Abel (not on the design team) argued before construction that 'whatever they build in the ocean should be removable and 8 tonnes of rock isn't,' proposing a removable design instead of the fixed boulder approach [R16]. The Palm Beach Board Riders Club (Mike Gifford) felt stakeholder consultation with surfers was inadequate ahead of construction [R16]. Post-construction surfer commentary focused on the tide-sensitivity problem — the narrow window between 'too shallow' and 'too deep' — suggesting a design tweak to crest depth or profile might have produced a more forgiving tidal window [R15]. Some surfers also felt the community would have been better served by a different wave shape (e.g. a left or a peak) given the Gold Coast's existing abundance of right-hand points [R17].",
-  "relevance_to_israel": "Tide range: Palm Beach is microtidal (~1.5 m illustrative weekly range per a live tide check), broadly consistent with the reef's own 1.5 m/60 cm freeboard spec; Haifa's Mediterranean coast is essentially micro-tidal to negligible-tidal, which means Palm Beach's core challenge — keeping a fixed-crest structure inside a workable 'not too shallow, not too deep' window across the tide cycle — would be more forgiving at Haifa, since Haifa's tide swing is smaller [R14][R15]. Wave climate: Palm Beach's design leaned on six years of dominant east-to-southeast Pacific ocean swell arriving at a site with an existing natural offshore reef to pre-focus it; Haifa's Mediterranean wave climate is smaller and less consistent, meaning a Haifa reef would likely need to actively increase wave height rather than merely reshape already-large incoming swell [R3][R15]. What transfers: (1) the rock-over-geotextile durability and shape-control lesson is directly transferable regardless of wave climate; (2) siting behind/near an existing natural feature to pre-focus energy is a transferable design principle, though Haifa may lack an equivalent natural offshore reef; (3) the tide-window lesson is less of a constraint for Haifa given its smaller tidal range, giving more freedom in crest-depth choice; (4) the cost lesson — Palm Beach's much higher per-m³ cost than Narrowneck reflects the premium of prioritising surf quality in the design brief — is directly relevant to budgeting a Haifa reef if surf quality is a primary goal [R13].",
+  "relevance_to_israel": "Tide range: Palm Beach is microtidal (~1.5 m illustrative weekly range per a live tide check), broadly consistent with the reef's own 1.5 m/60 cm freeboard spec; Haifa's Mediterranean coast is essentially micro-tidal to negligible-tidal, which means Palm Beach's core challenge — keeping a fixed-crest structure inside a workable 'not too shallow, not too deep' window across the tide cycle — would be more forgiving at Haifa, since Haifa's tide swing is smaller [R14][R15]. Wave climate: Palm Beach's design leaned on six years of dominant east-to-southeast Pacific ocean swell arriving at a site with an existing natural offshore reef to pre-focus it; Haifa's Mediterranean wave climate is smaller and less consistent, meaning a Haifa reef would likely need to actively increase wave height rather than merely reshape already-large incoming swell [R3][R15]. What transfers: (1) the rock-over-geotextile durability and shape-control lesson is directly transferable regardless of wave climate; (2) siting behind/near an existing natural feature to pre-focus energy is a transferable design principle, though Haifa may lack an equivalent natural offshore reef; (3) the tide-window lesson is less of a constraint for Haifa given its smaller tidal range, giving more freedom in crest-depth choice; (4) the cost lesson — Palm Beach's much higher per-m³ cost than Narrowneck reflects the premium of prioritising surf quality in the design brief — is directly relevant to budgeting a Haifa reef if surf quality is a primary goal [R13]. Tide planes (Gold Coast Seaway, MSQ 2026, above LAT): HAT 2.03, MHWS 1.53, MHWN 1.24, MSL 0.88, MLWN 0.51, MLWS 0.22 m, i.e. a spring range (MHWS - MLWS) of 1.31 m and HAT - LAT of 2.03 m [R23]; this replaces the single-week 'illustrative' 1.5 m of WillyWeather [R14]. Haifa tidal range itself is not sourced in this card.",
   "reviews": [
     {
       "who": "An unnamed local surfer",
@@ -94,6 +94,16 @@
       "url": "https://stabmag.com/news/this-artificial-reef-on-the-gold-coast-is-showing-serious-potential/",
       "stance": "positive",
       "origin": "via Gemini survey, verified 2026-09-25"
+    },
+    {
+      "who": "@rebeccaeccles1480",
+      "role": "YouTube viewer comment (surfer who was at the reef that day)",
+      "quote_or_summary": "\"Great Video, I was out their on the reef that day and IT Was Solid\" - a solid session is singled out as notable, suggesting such days are occasional.",
+      "outlet": "YouTube comments, video mHSiPEh-93M (grade D, anecdotal user comment, copied by Lior 2026-10-19; automated retrieval blocked by a bot check)",
+      "date": "about 3 years before 2026-10-19",
+      "url": "https://www.youtube.com/watch?v=mHSiPEh-93M",
+      "stance": "positive",
+      "origin": "08_paper/notes/youtube_comments/palm_beach_mHSiPEh-93M.md"
     }
   ],
   "images": [
@@ -200,6 +210,26 @@
       "key_quotes": [],
       "frames": [],
       "about": "mentions the reef briefly"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8Ebp7VNAGEY",
+      "platform": "YouTube",
+      "video_id": "8Ebp7VNAGEY",
+      "title": "Wave Pocket Tracking at the Palm Beach Artificial Reef",
+      "channel": "Michael Thompson",
+      "channel_url": "https://www.youtube.com/@michaelthompson9374",
+      "duration_seconds": null,
+      "date": "not retrieved (year unknown)",
+      "retrieved": "2026-10-19",
+      "embed_ok": false,
+      "best_timestamp_seconds": null,
+      "what_it_shows": "Footage of the Palm Beach reef with tracked wave pockets, used to extract surf-amenity metrics (average ride length, ride duration, ride rate, ride direction). Description (supplied by Lior 2026-10-19): \"Tracking wave pockets is an effective way to assess surf amenity. We can extract surf amenity metrics such as average ride length, average ride duration, ride rate, ride direction and many more. Thanks to the City of Gold Coast, Bluecoast Consulting Engineers, Swellnet and UQ for making this possible\". Lior's note: very low swell in the footage, but it documents the reef shape nicely and shows surf-amenity tracking. Reef assignment: confirmed by the video title (oEmbed, 2026-10-19). Video not watched or downloaded by the project; no transcript.",
+      "transcript_path": null,
+      "key_quotes": [],
+      "frames": [],
+      "about": "about the reef",
+      "licence": "YouTube standard licence; linked, not embedded or downloaded",
+      "source_of_metadata": "YouTube oEmbed endpoint, retrieved 2026-10-19"
     }
   ],
   "lior_images": [],
@@ -209,126 +239,175 @@
       "citation": "Bluecoast Consulting Engineers (n.d.). \"Artificial reefs for coastal protection and surfing.\"",
       "url": "https://www.bluecoastconsulting.com.au/artificialreefs",
       "accessed": "2026-09-24",
-      "supports": "designer/QA role claim, 4-yr design process, Sept 2019 completion"
+      "supports": "designer/QA role claim, 4-yr design process, Sept 2019 completion. LOCATION: whole web page; author/date not shown, not confirmed. Designer/QA role is the firm's own claim"
     },
     {
       "id": "R2",
       "citation": "Raised Water Research (n.d.). \"Palm Beach Reef.\"",
       "url": "https://raisedwaterresearch.com/spot/artificial-reef/australia/queensland/palm-beach-reef/",
       "accessed": "2026-09-24",
-      "supports": "dimensions, cost, materials, designer, contractor"
+      "supports": "dimensions, cost, materials, designer, contractor. LOCATION: spot page; author/date not shown"
     },
     {
       "id": "R3",
       "citation": "Raised Water Research (n.d.). \"Interview with Simon Mortensen: The Designer Behind Palm Beach Reef.\"",
       "url": "https://raisedwaterresearch.com/interview-with-simon-mortensen-the-brains-behind-the-palm-beach-reef/",
       "accessed": "2026-09-24",
-      "supports": "motivation, design process, rock-vs-geotextile rationale, designer's own regrets"
+      "supports": "motivation, design process, rock-vs-geotextile rationale, designer's own regrets. LOCATION: interview text, whole page"
     },
     {
       "id": "R4",
       "citation": "Hall Contracting (n.d.). \"Palm Beach shoreline project.\"",
       "url": "https://hallcontracting.com.au/project/palm-beach-shoreline-project/",
       "accessed": "2026-09-24",
-      "supports": "contractor role, dimensions, tonnage, construction method"
+      "supports": "contractor role, dimensions, tonnage, construction method. LOCATION: project page; contractor's own description"
     },
     {
       "id": "R5",
       "citation": "Royal HaskoningDHV (n.d.). \"Palm Beach Shoreline Protection Project.\"",
       "url": "https://www.haskoning.com/en/projects/holistic-beach-nourishment-to-protect-palm-beach-gold-coast",
       "accessed": "2026-09-24",
-      "supports": "timeline, cost, design/engineering services, alt. dimension figures, awards"
+      "supports": "timeline, cost, design/engineering services, alt. dimension figures, awards. LOCATION: project page; consultant's own description; author/date not shown"
     },
     {
       "id": "R6",
       "citation": "Stab Magazine (2019-08-28). \"This Artificial Reef On The Gold Coast Is Half Finished And Looks Pretty Fun.\"",
       "url": "https://stabmag.com/news/this-artificial-reef-on-the-gold-coast-is-showing-serious-potential/",
       "accessed": "2026-09-24",
-      "supports": "wave-shape description, converging-swell-line design mechanism; title corrected 2026-09-25 to match the page's actual <title>/og:title/JSON-LD headline (\"...Half Finished And Looks Pretty Fun\"), confirmed via Wayback Machine capture (datePublished 2019-08-28T05:45:38+00:00) after the original citation text used a mismatched headline; origin: via Gemini survey, verified 2026-09-25"
+      "supports": "wave-shape description, converging-swell-line design mechanism; title corrected 2026-09-25 to match the page's actual <title>/og:title/JSON-LD headline (\"...Half Finished And Looks Pretty Fun\"), confirmed via Wayback Machine capture (datePublished 2019-08-28T05:45:38+00:00) after the original citation text used a mismatched headline; origin: via Gemini survey, verified 2026-09-25. LOCATION: whole web page"
     },
     {
       "id": "R7",
       "citation": "Cru Collective (n.d.). \"Palm Beach Artificial Reef Completion.\"",
       "url": "https://www.crucollective.com.au/blog/palm-beach-artificial-reef-completion/",
       "accessed": "2026-09-24",
-      "supports": "dimensions, cost, timeline, tonnage, purpose; image captions"
+      "supports": "dimensions, cost, timeline, tonnage, purpose; image captions. LOCATION: blog post; author/date not shown"
     },
     {
       "id": "R8",
       "citation": "Stab Magazine (n.d.). \"The Gold Coast's Getting (Another) Artificial Reef.\"",
       "url": "https://stabmag.com/news/the-gold-coasts-getting-another-artificial-reef/",
       "accessed": "2026-09-24",
-      "supports": "cost, Mayor Tom Tate quote, Narrowneck precedent"
+      "supports": "cost, Mayor Tom Tate quote, Narrowneck precedent. LOCATION: whole web page; date not shown"
     },
     {
       "id": "R9",
       "citation": "ABC News Australia (2022-09-03). \"Millions spent to protect Gold Coast beaches, but climate change poses a huge challenge.\"",
       "url": "https://www.abc.net.au/news/2022-09-03/gold-coast-no-stranger-to-beach-erosion/101381812",
       "accessed": "2026-09-24",
-      "supports": "sand retained, Watterson quote, cost, boulder tonnage; image"
+      "supports": "sand retained, Watterson quote, cost, boulder tonnage; image. LOCATION: whole web page; reporter not confirmed"
     },
     {
       "id": "R10",
       "citation": "Wikipedia (n.d.). \"Gold Coast Shoreline Management Plan.\"",
       "url": "https://en.wikipedia.org/wiki/Gold_Coast_Shoreline_Management_Plan",
       "accessed": "2026-09-24",
-      "supports": "2004 failed reef proposal, 'no reef' campaign"
+      "supports": "2004 failed reef proposal, 'no reef' campaign. TERTIARY (Wikipedia). LOCATION: article text, access date only"
     },
     {
       "id": "R11",
       "citation": "Wikipedia (n.d.). \"Palm Beach, Queensland.\"",
       "url": "https://en.wikipedia.org/wiki/Palm_Beach,_Queensland",
       "accessed": "2026-09-24",
-      "supports": "2019 Shoreline Project description, geography"
+      "supports": "2019 Shoreline Project description, geography. TERTIARY (Wikipedia). LOCATION: article text, access date only"
     },
     {
       "id": "R12",
       "citation": "Stormwater Solutions (n.d.). \"Gold Coast, Australia, Plans to Build Artificial Reef to Prevent Erosion.\"",
       "url": "https://www.stormwater.com/erosion-control/news/33045981/gold-coast-australia-plans-to-build-artificial-reef-to-prevent-erosion",
       "accessed": "2026-09-24",
-      "supports": "Tate quotes, Cyclone Oma motivation, Ocean Beaches Strategy"
+      "supports": "Tate quotes, Cyclone Oma motivation, Ocean Beaches Strategy. LOCATION: whole web page; date/author not shown"
     },
     {
       "id": "R13",
       "citation": "International Coastal Management, article by Aaron Salyer (2024-12-03, updated 2025-02-05). \"Building Artificial Surf Reefs: Worldwide Lessons & Applications.\"",
       "url": "https://www.coastalmanagement.com.au/artificial-surf-reefs",
       "accessed": "2026-09-24",
-      "supports": "Palm Beach vs Narrowneck cost/design comparison"
+      "supports": "Palm Beach vs Narrowneck cost/design comparison. LOCATION: whole article (Salyer 2024-12-03, updated 2025-02-05); a consultancy's own article, secondary source"
     },
     {
       "id": "R14",
       "citation": "WillyWeather (live tide forecast). \"Tides — Palm Beach, Gold Coast.\"",
       "url": "https://tides.willyweather.com.au/qld/gold-coast/palm-beach.html",
       "accessed": "2026-09-24",
-      "supports": "illustrative local tidal range"
+      "supports": "illustrative local tidal range. LOCATION: live tide page, access day only (changes daily)"
     },
     {
       "id": "R15",
       "citation": "Nettle, S., Swellnet (2019-07-29). \"First impressions at the Palm Beach Artificial Reef.\"",
       "url": "https://www.swellnet.com/news/swellnet-dispatch/2019/07/29/first-impressions-palm-beach-artificial-reef",
       "accessed": "2026-09-24",
-      "supports": "50% complete, swell test description, freeboard spec, surfer/forum quotes"
+      "supports": "50% complete, swell test description, freeboard spec, surfer/forum quotes. LOCATION: whole web page"
     },
     {
       "id": "R16",
       "citation": "Nettle, S., Swellnet (2018-08-29). \"Palm Beach Reef given green light.\"",
       "url": "https://www.swellnet.com/news/swellnet-dispatch/2018/08/29/palm-beach-reef-given-green-light",
       "accessed": "2026-09-24",
-      "supports": "approval, cost, contractor, Tate quote, Gifford/Abel comments, 2004 rejection"
+      "supports": "approval, cost, contractor, Tate quote, Gifford/Abel comments, 2004 rejection. LOCATION: whole web page"
     },
     {
       "id": "R17",
       "citation": "Nettle, S., Swellnet (2019-08-23). \"Watch: Palm Beach Artificial Reef.\"",
       "url": "https://www.swellnet.com/news/swellnet-dispatch/2019/08/23/watch-palm-beach-artificial-reef",
       "accessed": "2026-09-24",
-      "supports": "50% complete as of 23 Aug 2019, timeline, forum debate, crowding criticism"
+      "supports": "50% complete as of 23 Aug 2019, timeline, forum debate, crowding criticism. LOCATION: whole web page (video page text)"
     },
     {
       "id": "R18",
       "citation": "The Inertia (n.d.). \"Why Have Most Artificial Reefs Never Really Worked?\"",
       "url": "https://www.theinertia.com/surf/why-have-most-artificial-reefs-never-really-worked/",
       "accessed": "2026-09-24",
-      "supports": "Palm Beach grouped with Cable Station/Burkitts as a 'modest success' stone reef"
+      "supports": "Palm Beach grouped with Cable Station/Burkitts as a 'modest success' stone reef. LOCATION: whole web page; author not confirmed"
+    },
+    {
+      "id": "R19",
+      "citation": "City of Gold Coast Open Data, Artificial Reef feature layer (OBJECTID 4638: BOULDER, 160 x 80 m, status INSV), CC BY 3.0.",
+      "url": "https://data-goldcoast.opendata.arcgis.com/datasets/c9d0b521374740cc9e9561b04c453736_0",
+      "accessed": "2026-10-05",
+      "supports": "asset polygon of the built reef, area 11,941.7 m2. LOCATION: feature 4638 (layer last edited 2026-10-03; survey date not stated)"
+    },
+    {
+      "id": "R20",
+      "citation": "Bluecoast Consulting Engineers (c. 2020). Palm Beach artificial reef - Nearmap aerial with survey contour lines, north arrow and 0-25-50 m scale bar (AR_aerial_Nearmaps.jpg), on the page 'Artificial Reefs for Coastal Protection and Amenity'.",
+      "url": "https://www.bluecoastconsulting.com.au/artificialreefs",
+      "accessed": "2026-10-05",
+      "supports": "toe outline and crest slot (59.2 x 5.9 m) traced by hand/colour from the contour lines; contour interval 0.5 m is an ASSUMPTION (A-contour). LOCATION: gallery image, no figure number; image date not stated. Private research copy, rights not cleared"
+    },
+    {
+      "id": "R21",
+      "citation": "This project's trace and verification of the Palm Beach reef outline: 07_scale/shapes/palm-beach-gold-coast/shape.json, VERIFY.md, HANDOFF.md section 3.1.",
+      "url": "",
+      "accessed": "2026-10-10",
+      "supports": "distances, oriented rectangle and orientation (project results, from R19, R20, Esri World Imagery 2025-12-01 and OpenStreetMap way 591135103). LOCATION: files named"
+    },
+    {
+      "id": "R22",
+      "citation": "Mortensen, S.B., Hibberd, S., Kaergaard, K., Kristensen, S.E., Deigaard, R. and Hunt, S. (2015). Concept design of a multipurpose submerged control structure for Palm Beach, Gold Coast. Australasian Coasts & Ports Conference 2015.",
+      "url": "https://www.dhigroup.com/upload/publications/coastsea/Mortensen_2015.pdf",
+      "accessed": "2026-10-05",
+      "supports": "concept SCS A/B/C 175 x 144 m, 53,319 m3, 560 m offshore; crest -1.5 m AHD (p.4); Fig 3 and Table 2 (p.5). Concept designs were not built"
+    },
+    {
+      "id": "R23",
+      "citation": "Maritime Safety Queensland (2026). Semidiurnal Tidal Planes - 2026, height above Queensland Port Datum (LAT (1992)), Gold Coast Seaway; and Maritime Safety Queensland (2014), standard port datum levels (AHD = LAT + 0.760 m at the Seaway).",
+      "url": "https://www.msq.qld.gov.au/_/media/tmronline/msqinternet/msqfiles/home/tides/tidal-planes/2026-semidiurnal-tidal-planes.pdf",
+      "accessed": "2026-10-05",
+      "supports": "HAT 2.03, MHWS 1.53, MHWN 1.24, MSL 0.88, MLWN 0.51, MLWS 0.22 m above LAT (epoch 2010-2029 as recorded in the project); the 2014 AHD offset was read via 07_scale/bathymetry/gold_coast/REPORT.md. LOCATION: Gold Coast Seaway row"
+    },
+    {
+      "id": "R24",
+      "citation": "Prenzler, P. et al. (2022). Monitoring of the Palm Beach Artificial Reef. Coastal Engineering Proceedings 37 (ICCE 2022), abstract 12921. Full author list, DOI and pages not confirmed.",
+      "url": "https://icce-ojs-tamu.tdl.org/icce/article/view/12921",
+      "accessed": "2026-10-05",
+      "supports": "stable structure, no significant movement or settlement; basalt/greenstone rock; crest 1.5 m below MSL. LOCATION: abstract page only"
+    },
+    {
+      "id": "R25",
+      "citation": "Reef rating (A surf quality, B safety and longevity, C sediment / storm protection), scores 1-5, approved by Lior 2026-10-19. Table: 08_paper/notes/rating_final.md; evidence per reef: 08_paper/notes/rating_evidence.md (this review, repo-internal files).",
+      "url": "",
+      "accessed": "2026-10-19",
+      "supports": "Scores A/B/C and reason for this reef"
     }
   ],
   "blocked_sources": [
@@ -338,16 +417,27 @@
     "R18 The Inertia (403 direct; recovered via archive.org snapshot fetched with curl)"
   ],
   "gaps": [
-    "Precise lat/lon of the reef structure itself not found in any source (only onshore/suburb approximations)",
+    "Precise lat/lon of the reef not published in any source. Updated 2026-10-10: lat/lon now hold the centroid of the project's traced toe outline (-28.107334, 153.470913; City asset polygon / Bluecoast aerial, shape.json geo) [R19][R20]; a project result, position uncertainty a few metres",
     "Designer credit not reconciled across DHI/Royal HaskoningDHV/Bluecoast",
-    "Dimension disagreement unresolved: 80 m vs 144 m width; 270 m vs 330 m offshore",
-    "Cost disagreement unresolved: AU$18.2M vs AU$18.3M",
+    "Dimension disagreement unresolved: 80 m vs 144 m width; 270 m vs 330 m offshore (values and sources in the size field [R19][R21][R22])",
+    "Cost disagreement unresolved: AU$18.2M vs AU$18.3M (sources in the cost field)",
     "No ecological survey/monitoring data found for the claimed marine-habitat benefit",
     "No state/federal co-funding confirmed or ruled out",
     "Cyclone Alfred (March 2025) impact on this reef specifically not found",
     "No frames extracted from any of the three videos in this pass",
-    "Image #4 (Bluecoast/Squarespace surf photo) verified only via page-text caption, not visually distinctive content"
+    "Image #4 (Bluecoast/Squarespace surf photo) verified only via page-text caption, not visually distinctive content",
+    "Source-audit 2026-10-10: not confirmed - authors/dates for R1, R2, R4, R5, R7, R10, R11, R12, R18 ('n.d.' pages); DOI, pages and full authors of Prenzler et al. (2022) [R24]; 'AU$18.2M' is not tied to a price year; the HC2 joint venture and 'up to 8 t' wording rest on contractor/consultant pages only."
   ],
   "hero_recommendation": "https://www.crucollective.com.au/wp-content/uploads/2019/10/Palm-Beach-Artificial-Reef-Completion.jpg",
-  "videos_rejected": []
+  "videos_rejected": [],
+  "verdict_reason": "Verdict 'partly worked' was assigned by the research agent that wrote this card (verified_on 2026-09-24, enriched 2026-10-10), not by Lior; no Lior ruling on it is recorded. Basis: protection side reported positive (about 550,000 m3 of sand retained in two years, ABC 2022 [R9]; stable structure [R24]); surf side only partly satisfactory: a narrow, fast-changing tidal window and 'alarmingly shallow' first impressions [R15], rated a 'modest' improvement [R18]; no systematic surf or ecological monitoring found. Re-checked 2026-10-10; unchanged.",
+  "rating": {
+    "rank": 4,
+    "A": "3",
+    "B": "4",
+    "C": "3*",
+    "reason": "rock, intact; inconsistent wave (Lior: \"not consistent at all\"); nourishment confounds shoreline [R25]",
+    "scale": "1-5, ?=no evidence, *=provisional",
+    "source": "this review, Lior-approved 2026-10-19"
+  }
 }

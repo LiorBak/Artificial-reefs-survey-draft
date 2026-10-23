@@ -120,8 +120,12 @@ from shapely.ops import unary_union
 
 # seabed grid (canonical metres)
 SB_X0, SB_X1, SB_Y0, SB_Y1, SB_STEP = -200.0, 260.0, 0.0, 520.0, 5.0
-ANCHOR_Y = 335.0          # offshore of this the EMODnet gradient is used (orchestrator decision 2026-10-06)
+# D6 (2026-10-07): the former assumed anchor (-4.0 at y = 335 m, ANCHOR_Y) is removed. The EMODnet gradient now starts ON the
+# HRPP576 Fig 2 -4.0 mODN contour, y_c(x) = CONTOUR4_LINE (traced points, bridged across the gap behind the drawn mounds and extended
+# east of the traced end by the trend of the last 270 m).  Archived pre-D6 version: archive/pre_D6/b3d_lib.py.
 EMODNET_GRAD = 0.011      # -1.1 % (REPORT.md 5.4 / 9.2: cells y 368-652 m)
+CONTOUR4_BRIDGE_X = (-64, -24, 16, 56, 96, 136)
+CONTOUR4_EXTRAP = ((200.0, 464.0), (230.0, 469.0), (260.0, 473.0))   # assumed continuation east of the traced end (x 170, y 460): +0.146 m/m
 DESIGN_BED_ARM = -4.0     # mODN, drawings 1021 N3 (-4.01), N4 about -3.8
 DESIGN_BED_OVAL = (-3.6, -4.2)   # mODN, note on drawing 1023 S2 (shoreward .. seaward)
 
@@ -151,6 +155,17 @@ def seabed_nodes(frame, shape, beach_npz, fig2_json, exposed_union, arm_axis=((-
     for x, y in f2['-3'][::2]:
         if -200 <= x <= 260 and not (-115 <= x <= 160):
             nodes.append(dict(x=x, y=y, z=-3.0, src='fig2_-3.0'))
+    # (B2) Fig 2 -4.0 contour, outside the reef zone (D6, 2026-10-07): all traced points; east of the traced end (x 170) the contour leaves the
+    #      figure (y about 460), three ASSUMED nodes continue its trend (src fig2_-4.0_extrap; not used in the validation check)
+    for x, y in f2['-4']:
+        if -200 <= x <= 260 and not (-115 <= x <= 160):
+            nodes.append(dict(x=x, y=y, z=-4.0, src='fig2_-4.0'))
+    for x, y in CONTOUR4_EXTRAP:
+        nodes.append(dict(x=x, y=y, z=-4.0, src='fig2_-4.0_extrap'))
+    #      and 6 ASSUMED bridge nodes where the contour is hidden behind the drawn mounds (x -104..170): straight line between the traced ends,
+    #      so that the thin-plate fit does not overshoot between the design bed and the contour (src fig2_-4.0_bridge)
+    for x in CONTOUR4_BRIDGE_X:
+        nodes.append(dict(x=float(x), y=float(np.interp(x, [-104.0, 169.7], [420.0, 459.8])), z=-4.0, src='fig2_-4.0_bridge'))
     # (C) design bed levels under the reefs (METHODS A5..A7): arm axis from the tail mid-point to the head mid-point
     (tx, ty), (hx, hy) = arm_axis
     def on_axis(y):
@@ -163,20 +178,26 @@ def seabed_nodes(frame, shape, beach_npz, fig2_json, exposed_union, arm_axis=((-
     for x in (49, 70, 85, 100, 121):
         nodes.append(dict(x=float(x), y=309.0, z=DESIGN_BED_OVAL[0], src='design_S2_shoreward'))
         nodes.append(dict(x=float(x), y=340.0, z=DESIGN_BED_OVAL[1], src='design_S2_seaward'))
-    # (D) anchor line at y=ANCHOR_Y alongshore: design bed level
-    for x in range(-200, 261, 40):
-        if -80 <= x <= 130: continue
-        nodes.append(dict(x=float(x), y=ANCHOR_Y, z=-4.0, src='anchor_335'))
+    # (D) pre-D6 anchor line (-4.0 at y = 335, alongshore, outside x -80..130) REMOVED 2026-10-07 (see archive/pre_D6/b3d_lib.py)
     return nodes
 
 
-def seabed_grid(nodes, step=SB_STEP):
+def contour4_line(f2_json):
+    """y_c(x): offshore position of the Fig 2 -4.0 contour as a function of x (traced points; np.interp bridges the gap x -104..170 behind
+    the drawn mounds; CONTOUR4_EXTRAP east of the traced end)."""
+    pts = [(x, y) for x, y in json.load(open(f2_json))['contours_mODN']['-4'] if -200 <= x <= 260]
+    pts = sorted(pts + list(CONTOUR4_EXTRAP))
+    return np.array([p[0] for p in pts]), np.array([p[1] for p in pts])
+
+
+def seabed_grid(nodes, step=SB_STEP, c4=None):
     xs = np.arange(SB_X0, SB_X1 + 1e-6, step); ys = np.arange(SB_Y0, SB_Y1 + 1e-6, step)
     P = np.array([[n['x'], n['y']] for n in nodes]); V = np.array([n['z'] for n in nodes])
     rbf = RBFInterpolator(P, V, kernel='thin_plate_spline', smoothing=0.5, neighbors=80)
     X, Y = np.meshgrid(xs, ys)
-    Yc = np.minimum(Y, ANCHOR_Y)
+    # beyond the Fig 2 -4.0 contour y_c(x): EMODnet gradient, starting from the fitted level on the contour
+    yc = np.interp(X, c4[0], c4[1])
+    Yc = np.minimum(Y, yc)
     Z = rbf(np.c_[X.ravel(), Yc.ravel()]).reshape(X.shape)
-    # beyond the anchor: EMODnet gradient
-    Z = np.where(Y > ANCHOR_Y, Z - EMODNET_GRAD * (Y - ANCHOR_Y), Z)
+    Z = Z - EMODNET_GRAD * np.maximum(Y - yc, 0.0)
     return xs, ys, Z, rbf

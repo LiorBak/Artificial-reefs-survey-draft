@@ -1,0 +1,325 @@
+{
+ "generated": "2026-10-13",
+ "script": "07_scale/shapes/opunake-reef/scripts/build_consent_georef.py",
+ "crs_note": "Taranaki local circuit grid = NZGD49 / Taranaki Circuit (EPSG:27209; TM, origin 39 08 08.7 S 174 13 40.8 E, FE 300000, FN 700000). Converted to NZGD2000 (~WGS84) with the LINZ NZGD49->NZGD2000 grid nz_linz_nzgd2kgrid0005.tif (0.2 m; scripts/proj_grid/), verified against PROJ 7-parameter fallback (differs ~3.7 m).",
+ "consent_printed_corners_E_N": {
+  "A": [
+   257484,
+   663800
+  ],
+  "B": [
+   267650,
+   663887
+  ],
+  "C": [
+   267696,
+   663803
+  ],
+  "D": [
+   267525,
+   663718
+  ]
+ },
+ "consent_used_corners_E_N": {
+  "A": [
+   267484,
+   663800
+  ],
+  "B": [
+   267650,
+   663887
+  ],
+  "C": [
+   267696,
+   663803
+  ],
+  "D": [
+   267525,
+   663718
+  ]
+ },
+ "typo_note": "Corner A printed 257484E; used 267484E (see sources.md c6376, METHOD.md 2026-10-13).",
+ "consent_corners_lonlat_wgs84": {
+  "A": [
+   173.8504082,
+   -39.4594475
+  ],
+  "B": [
+   173.8523412,
+   -39.4586702
+  ],
+  "C": [
+   173.8528716,
+   -39.4594285
+  ],
+  "D": [
+   173.8508806,
+   -39.4601876
+  ]
+ },
+ "consent_corners_nztm_E_N": {
+  "A": [
+   1673160.25,
+   5631890.95
+  ],
+  "B": [
+   1673327.36,
+   5631975.65
+  ],
+  "C": [
+   1673372.2,
+   5631891.06
+  ],
+  "D": [
+   1673200.12,
+   5631808.43
+  ]
+ },
+ "consent_corners_nzmg_E_N": {
+  "A": [
+   2583211.7,
+   6193647.2
+  ],
+  "B": [
+   2583378.9,
+   6193731.8
+  ],
+  "C": [
+   2583423.7,
+   6193647.2
+  ],
+  "D": [
+   2583251.6,
+   6193564.6
+  ]
+ },
+ "consent_centre": {
+  "circuit_E_N": [
+   267588.8,
+   663802.0
+  ],
+  "lat": -39.459433,
+  "lon": 173.851625,
+  "nzmg_E_N": [
+   2583316.5,
+   6193647.7
+  ]
+ },
+ "gr_check": "Consent text GR P20:832-937 (NZMS 260 sheet P20, 100 m) -> NZMG E 2583200 N 6193700; polygon corners lie at NZMG E 2583212-2583424 N 6193565-6193732 (corner A = 832-936): consistent, ~100 m rounding.",
+ "consent_polygon": {
+  "sides_m": {
+   "A-B": 187.4,
+   "D-C": 191.0,
+   "B-C": 95.8,
+   "A-D": 91.7
+  },
+  "mean_long_m": 189.2,
+  "mean_short_m": 93.7,
+  "corner_angles_deg": [
+   91.1,
+   91.0,
+   87.7,
+   90.1
+  ],
+  "area_m2": 17726.0,
+  "long_axis_grid_bearing_deg": 63.0,
+  "long_axis_true_azimuth_deg": 63.2
+ },
+ "fig1_georef": {
+  "image": "src/trc2009-33_fig1_p9_reef_location.png",
+  "px": [
+   417,
+   273
+  ],
+  "gcps": "4 corners of the white rectangle <-> 4 consent corners (affine, 6 parameters, 2 degrees of freedom check)",
+  "gcp_pixels": {
+   "A": [
+    191.2,
+    134.0
+   ],
+   "B": [
+    227.5,
+    114.8
+   ],
+   "C": [
+    237.8,
+    133.8
+   ],
+   "D": [
+    200.2,
+    152.8
+   ]
+  },
+  "gcp_circuit_E_N": {
+   "A": [
+    267484,
+    663800
+   ],
+   "B": [
+    267650,
+    663887
+   ],
+   "C": [
+    267696,
+    663803
+   ],
+   "D": [
+    267525,
+    663718
+   ]
+  },
+  "residuals_m": {
+   "A": [
+    0.23,
+    0.3
+   ],
+   "B": [
+    -0.23,
+    -0.29
+   ],
+   "C": [
+    0.22,
+    0.28
+   ],
+   "D": [
+    -0.23,
+    -0.3
+   ]
+  },
+  "affine_pixel_to_circuitEN": [
+   [
+    4.54896,
+    -0.02147,
+    266617.34998
+   ],
+   [
+    0.04504,
+    -4.4151,
+    664383.31497
+   ]
+  ],
+  "m_per_px_x": 4.549,
+  "m_per_px_y": 4.415,
+  "image_rotation_deg_from_north_up": 0.57,
+  "scalebar": {
+   "bar_px_0_to_4X": 64.7,
+   "m_per_px_if_4X_equals_300m": 4.637,
+   "labels": "illegible at 417 px width; tick spacing 1:1:2 and 3-character labels at ticks 3 and 4 -> 0/75/150/300 m inferred; matches the consent-derived 4.4-4.5 m/px within 3-5 %"
+  },
+  "orange_corners_circuit_E_N": {
+   "A": [
+    267414.3,
+    663828.3
+   ],
+   "B": [
+    267704.8,
+    663981.3
+   ],
+   "C": [
+    267792.6,
+    663802.5
+   ],
+   "D": [
+    267491.7,
+    663653.8
+   ]
+  },
+  "orange_note": "orange rectangle = 'Area of water to be used during the construction process' (not a consent boundary in the text we hold)",
+  "landmark_check": {
+   "boat_ramp_pixel": [
+    155.0,
+    125.5
+   ],
+   "predicted_lonlat": [
+    173.848501,
+    -39.459115
+   ],
+   "esri_2025_pick_lonlat": [
+    173.848498,
+    -39.459109
+   ],
+   "offset_m": 0.7,
+   "pick_uncertainty_m": "5-10 (hardstanding picked by eye in both images)",
+   "meaning": "independent of the 4 GCPs: confirms white rectangle = consent area, figure north-up at ~4.5 m/px"
+  }
+ },
+ "envelope_assumed": {
+  "what": "99 m x 30 m rectangle (TRC 2009-33 p.4), centred on the consent centre, long axis parallel to the consent long axis (ASSUMPTION: orientation and centring; 99 m cannot fit across the 94 m short side, so it lies within ~47 deg of the long axis)",
+  "corners_circuit_E_N": [
+   [
+    267551.5,
+    663766.1
+   ],
+   [
+    267639.7,
+    663811.1
+   ],
+   [
+    267626.0,
+    663837.9
+   ],
+   [
+    267537.8,
+    663792.9
+   ]
+  ],
+  "corners_lonlat": [
+   [
+    173.8511906,
+    -39.4597551
+   ],
+   [
+    173.8522173,
+    -39.459353
+   ],
+   [
+    173.8520601,
+    -39.4591118
+   ],
+   [
+    173.8510334,
+    -39.4595139
+   ]
+  ],
+  "area_m2": 2970.0
+ },
+ "canonical_frame": {
+  "frame": "metres; origin = consent-area centre (no single shoreline point: headland rock shore ~90 m NW of the polygon, Opunake Beach 300+ m E-SE); +y along the consent long axis toward bearing 243.0 deg grid (WSW, away from the beach); +x = +y rotated 90 deg clockwise (bearing 333.0)",
+  "consent_polygon_m": [
+   [
+    45.85,
+    94.21
+   ],
+   [
+    47.86,
+    -93.2
+   ],
+   [
+    -47.87,
+    -95.98
+   ],
+   [
+    -45.83,
+    94.97
+   ]
+  ],
+  "envelope_m": [
+   [
+    -15.0,
+    49.5
+   ],
+   [
+    -15.0,
+    -49.5
+   ],
+   [
+    15.0,
+    -49.5
+   ],
+   [
+    15.0,
+    49.5
+   ]
+  ]
+ }
+}

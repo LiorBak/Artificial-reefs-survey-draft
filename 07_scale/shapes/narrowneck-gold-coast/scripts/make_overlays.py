@@ -1,6 +1,6 @@
 import numpy as np, cv2, json
 from PIL import Image
-ROOT=r"C:\Users\lior\Documents\Gemini\AG\Artificial reef - to upload to git\07_scale\shapes\narrowneck-gold-coast"
+ROOT=r"C:\Users\lior\Documents\Claude\Projects\Artificial reef\07_scale\shapes\narrowneck-gold-coast"
 OV=ROOT+r"\overlays"
 import os; os.makedirs(OV,exist_ok=True)
 polys=json.load(open('polys_v2.json')); ext=json.load(open('extras_v2.json'))

@@ -1,0 +1,68 @@
+{
+ "rows": [
+  {
+   "case": "BD23 validation",
+   "H": 0.3,
+   "Fy_BELWF_kN": 7,
+   "Fy_est_kN": 6.718469225712635,
+   "Fz_BELWF_kN": 13,
+   "Fz_est_kN": 11.97839795445807,
+   "SI_BELWF": 0.016,
+   "SI_est": 0.014386443738142688,
+   "ratio_Fy": 1.0419040059318725,
+   "ratio_Fz": 1.0852870349963382,
+   "ratio_SI": 1.1121581046175644,
+   "geom_height": 4.014346649700083,
+   "geom_Wsub_kN": 440.26986782157604
+  },
+  {
+   "case": "BD23 validation",
+   "H": 1.0,
+   "Fy_BELWF_kN": 28,
+   "Fy_est_kN": 22.39489741904212,
+   "Fz_BELWF_kN": 48,
+   "Fz_est_kN": 39.92799318152691,
+   "SI_BELWF": 0.066,
+   "SI_est": 0.04812122644700804,
+   "ratio_Fy": 1.2502848071182469,
+   "ratio_Fz": 1.2021641003036359,
+   "ratio_SI": 1.3715361156200039,
+   "geom_height": 4.014346649700083,
+   "geom_Wsub_kN": 440.26986782157604
+  },
+  {
+   "case": "BD23 validation",
+   "H": 1.6,
+   "Fy_BELWF_kN": 44.5,
+   "Fy_est_kN": 35.831835870467394,
+   "Fz_BELWF_kN": 64,
+   "Fz_est_kN": 63.88478909044304,
+   "SI_BELWF": 0.106,
+   "SI_est": 0.07745428874290353,
+   "ratio_Fy": 1.241912364213437,
+   "ratio_Fz": 1.0018034169196965,
+   "ratio_SI": 1.3685491367927882,
+   "geom_height": 4.014346649700083,
+   "geom_Wsub_kN": 440.26986782157604
+  },
+  {
+   "case": "BD23 design (near breaking, H/h = 0.72)",
+   "H": 2.86,
+   "SI_BELWF": 0.17,
+   "SI_est": 0.15995304479190542,
+   "SIc_BELWF": 0.31,
+   "SIc_est": 0.13752527492799238,
+   "ratio_SI": 1.0628119034630783,
+   "ratio_SIc": 2.2541311054445416,
+   "Wsub_est_kN": 233.14304005432467,
+   "uplift_fraction_est": 0.5140889790957288,
+   "geom_R": 1.8770177708900515,
+   "geom_middle_section": 6.19522555901861
+  }
+ ],
+ "factors": {
+  "linear_range_SI_factor": 1.284081119010119,
+  "near_breaking_SI_factor": 1.0628119034630783,
+  "near_breaking_SIc_factor": 2.2541311054445416
+ }
+}

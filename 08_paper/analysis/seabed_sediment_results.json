@@ -1,0 +1,4710 @@
+{
+ "_meta": {
+  "script": "08_paper/analysis/seabed_sediment.py",
+  "run_date": "2026-10-15",
+  "python": "3.13.16",
+  "numpy": "2.5.3",
+  "note": "All numbers DERIVED from the project-held bathymetry (read-only). ASSUMPTION flags are in the text fields. Positive anomalies = contour farther offshore / bed higher in the lee."
+ },
+ "cables-reef-wa": {
+  "reef": "cables-reef-wa",
+  "frame": "s alongshore (bearing 7.8 deg true, + towards NNE), n offshore (+ towards WSW), origin = reef footprint centroid; shoreline bearing from 07_scale/shapes/cables-reef-wa/scripts/shore_datum.json (7.8 deg, fitted there to the DoT Perth_5m 0 m AHD contour)",
+  "reef_alongshore_extent_L_m": 110.13682700736287,
+  "reef_cross_shore_extent_m": 86.17429385291973,
+  "datum": "AHD (DoT WA converts every survey to AHD; AHD ~ MSL: the 3D model takes z_MSL = z_AHD, METHODS_3D 3.1)",
+  "surveys": {
+   "1995": {
+    "n_soundings": 13589,
+    "s_range": [
+     -211.18522529209105,
+     339.0566580577803
+    ],
+    "n_range": [
+     -166.5068187936218,
+     179.25257724199147
+    ],
+    "z_range_AHD": [
+     -9.786,
+     -2.446
+    ]
+   },
+   "1998": {
+    "n_soundings": 14303,
+    "s_range": [
+     -119.60449860121832,
+     109.9305128134823
+    ],
+    "n_range": [
+     -74.8518532765375,
+     198.79773646650827
+    ],
+    "z_range_AHD": [
+     -10.256,
+     -2.456
+    ]
+   },
+   "1999": {
+    "n_soundings": 840,
+    "s_range": [
+     -63.53977290655463,
+     81.07931370433924
+    ],
+    "n_range": [
+     -52.531861050898385,
+     45.406491385814256
+    ],
+    "z_range_AHD": [
+     -4.963,
+     -1.398
+    ]
+   },
+   "2002": {
+    "n_soundings": 8373,
+    "s_range": [
+     -878.9456128274921,
+     282.0925413079573
+    ],
+    "n_range": [
+     -245.9670581156228,
+     281.4580815947817
+    ],
+    "z_range_AHD": [
+     -10.856,
+     -1.066
+    ]
+   }
+  },
+  "surveys_source": "DoT WA (Department of Transport) singlebeam point files, CC BY 4.0: 07_scale/shapes/cables-reef-wa/src/bathymetry/FR_selected/FR19951221_Single.txt (pre-construction), FR19980330_Reef_Single.txt (pre-construction, 30 Mar 1998), FR19991122_Single.txt (rock surface 22 Nov 1999, the month before completion), FR20020201_Single.txt (1 Feb 2002). Reference list: 07_scale/shapes/cables-reef-wa/3d/SOURCES_3D.md; file ReadMe: DoT_FR_PointData (\"accuracy variable, no warranty\").",
+  "T1_contour_offset": {
+   "definition": "anomaly = mean cross-shore position of the contour in the lee window minus the control-strip trend (m). POSITIVE = contour farther OFFSHORE (nearer the reef) in the lee = bulge/salient. Windows in m alongshore from the reef centre: lee_L = +-55, lee_2L = +-110, controls = -385..-165 and 165..385 (1.5-3.5 L). Surfaces: soundings -> linear TIN (<= 25 m from a sounding) on a 5 m grid, Gaussian sigma 10 m; first downward crossing from the shore side.",
+   "rows": [
+    {
+     "label": "Perth_5m composite (date mixed, contains the reef as a smoothed mound) | 0 m | lee_L",
+     "n_lee": 23,
+     "n_ctrl": 67,
+     "trend_slope_m_per_100m": 0.6387321192020918,
+     "trend": "linear through both control strips",
+     "lee_mean": -253.13949878585035,
+     "ctrl_mean": -268.3984622920969,
+     "anomaly": 15.365736636620769,
+     "n_placebo_windows": 19,
+     "n_indep_control_windows": 4.0,
+     "ctrl_resid_sd": 3.1558639916300724,
+     "tau_samples": 7.387604080550661,
+     "se_analytic": 2.072955693451745,
+     "z": 7.41247711427676,
+     "placebo_sd": 1.5114188386598397,
+     "placebo_rms": 1.5533214789792813,
+     "z_placebo": 10.166431860969404,
+     "p_empirical": 0.05,
+     "anomaly_by_control": {
+      "both_linear": 15.365736636620769,
+      "strip1_only": 17.122683685064004,
+      "strip2_only": 13.836650738201653
+     },
+     "anomaly_range": [
+      13.836650738201653,
+      17.122683685064004
+     ],
+     "sign_consistent": true,
+     "dataset": "Perth_5m composite (date mixed, contains the reef as a smoothed mound)",
+     "level_m_AHD": 0,
+     "lee": "lee_L"
+    },
+    {
+     "label": "Perth_5m composite (date mixed, contains the reef as a smoothed mound) | 0 m | lee_2L",
+     "n_lee": 44,
+     "n_ctrl": 67,
+     "trend_slope_m_per_100m": 0.6387321192020918,
+     "trend": "linear through both control strips",
+     "lee_mean": -251.1291451563805,
+     "ctrl_mean": -268.3984622920969,
+     "anomaly": 17.360121963110537,
+     "n_placebo_windows": 19,
+     "n_indep_control_windows": 4.0,
+     "ctrl_resid_sd": 3.1558639916300724,
+     "tau_samples": 7.387604080550661,
+     "se_analytic": 1.664438811665807,
+     "z": 10.430015114665672,
+     "placebo_sd": 1.5114188386598397,
+     "placebo_rms": 1.5533214789792813,
+     "z_placebo": 11.485976963542143,
+     "p_empirical": 0.05,
+     "anomaly_by_control": {
+      "both_linear": 17.360121963110537,
+      "strip1_only": 19.133037314533826,
+      "strip2_only": 15.847004367671474
+     },
+     "anomaly_range": [
+      15.847004367671474,
+      19.133037314533826
+     ],
+     "sign_consistent": true,
+     "dataset": "Perth_5m composite (date mixed, contains the reef as a smoothed mound)",
+     "level_m_AHD": 0,
+     "lee": "lee_2L"
+    },
+    {
+     "label": "Perth_5m composite (date mixed, contains the reef as a smoothed mound) | -1 m | lee_L",
+     "n_lee": 23,
+     "n_ctrl": 88,
+     "trend_slope_m_per_100m": 0.9627665538849561,
+     "trend": "linear through both control strips",
+     "lee_mean": -230.6940831270819,
+     "ctrl_mean": -248.14528105820574,
+     "anomaly": 17.45119793112388,
+     "n_placebo_windows": 22,
+     "n_indep_control_windows": 4.0,
+     "ctrl_resid_sd": 5.518358983848545,
+     "tau_samples": 10.042087976287823,
+     "se_analytic": 4.095229031185287,
+     "z": 4.26134846140045,
+     "placebo_sd": 2.5086721747579044,
+     "placebo_rms": 2.557648595762274,
+     "z_placebo": 6.956348504486434,
+     "p_empirical": 0.043478260869565216,
+     "anomaly_by_control": {
+      "both_linear": 17.45119793112388,
+      "strip1_only": 19.32124080754207,
+      "strip2_only": 15.581155054705386
+     },
+     "anomaly_range": [
+      15.581155054705386,
+      19.32124080754207
+     ],
+     "sign_consistent": true,
+     "dataset": "Perth_5m composite (date mixed, contains the reef as a smoothed mound)",
+     "level_m_AHD": -1,
+     "lee": "lee_L"
+    },
+    {
+     "label": "Perth_5m composite (date mixed, contains the reef as a smoothed mound) | -1 m | lee_2L",
+     "n_lee": 45,
+     "n_ctrl": 88,
+     "trend_slope_m_per_100m": 0.9627665538849561,
+     "trend": "linear through both control strips",
+     "lee_mean": -228.78184221315323,
+     "ctrl_mean": -248.14528105820574,
+     "anomaly": 19.363438845052578,
+     "n_placebo_windows": 22,
+     "n_indep_control_windows": 4.0,
+     "ctrl_resid_sd": 5.518358983848545,
+     "tau_samples": 10.042087976287823,
+     "se_analytic": 3.204794506391424,
+     "z": 6.042021978768203,
+     "placebo_sd": 2.5086721747579044,
+     "placebo_rms": 2.557648595762274,
+     "z_placebo": 7.718600716301729,
+     "p_empirical": 0.043478260869565216,
+     "anomaly_by_control": {
+      "both_linear": 19.363438845052578,
+      "strip1_only": 21.23348172147076,
+      "strip2_only": 17.493395968634083
+     },
+     "anomaly_range": [
+      17.493395968634083,
+      21.23348172147076
+     ],
+     "sign_consistent": true,
+     "dataset": "Perth_5m composite (date mixed, contains the reef as a smoothed mound)",
+     "level_m_AHD": -1,
+     "lee": "lee_2L"
+    },
+    {
+     "label": "Perth_5m composite (date mixed, contains the reef as a smoothed mound) | -2 m | lee_L",
+     "n_lee": 23,
+     "n_ctrl": 88,
+     "trend_slope_m_per_100m": 0.9457856934310612,
+     "trend": "linear through both control strips",
+     "lee_mean": -210.50327660638425,
+     "ctrl_mean": -228.41851043883707,
+     "anomaly": 17.915233832452873,
+     "n_placebo_windows": 22,
+     "n_indep_control_windows": 4.0,
+     "ctrl_resid_sd": 7.499887324731183,
+     "tau_samples": 10.415060219197006,
+     "se_analytic": 5.66815694351784,
+     "z": 3.160680625285246,
+     "placebo_sd": 3.5947735671585654,
+     "placebo_rms": 3.762503326903307,
+     "z_placebo": 4.983689096894551,
+     "p_empirical": 0.043478260869565216,
+     "anomaly_by_control": {
+      "both_linear": 17.915233832452873,
+      "strip1_only": 19.585877725418314,
+      "strip2_only": 16.244589939487174
+     },
+     "anomaly_range": [
+      16.244589939487174,
+      19.585877725418314
+     ],
+     "sign_consistent": true,
+     "dataset": "Perth_5m composite (date mixed, contains the reef as a smoothed mound)",
+     "level_m_AHD": -2,
+     "lee": "lee_L"
+    },
+    {
+     "label": "Perth_5m composite (date mixed, contains the reef as a smoothed mound) | -2 m | lee_2L",
+     "n_lee": 45,
+     "n_ctrl": 88,
+     "trend_slope_m_per_100m": 0.9457856934310612,
+     "trend": "linear through both control strips",
+     "lee_mean": -207.462017969163,
+     "ctrl_mean": -228.41851043883707,
+     "anomaly": 20.956492469674224,
+     "n_placebo_windows": 22,
+     "n_indep_control_windows": 4.0,
+     "ctrl_resid_sd": 7.499887324731183,
+     "tau_samples": 10.415060219197006,
+     "se_analytic": 4.435717293372669,
+     "z": 4.724487852502451,
+     "placebo_sd": 3.5947735671585654,
+     "placebo_rms": 3.762503326903307,
+     "z_placebo": 5.829711406896476,
+     "p_empirical": 0.043478260869565216,
+     "anomaly_by_control": {
+      "both_linear": 20.956492469674224,
+      "strip1_only": 22.627136362639668,
+      "strip2_only": 19.285848576708524
+     },
+     "anomaly_range": [
+      19.285848576708524,
+      22.627136362639668
+     ],
+     "sign_consistent": true,
+     "dataset": "Perth_5m composite (date mixed, contains the reef as a smoothed mound)",
+     "level_m_AHD": -2,
+     "lee": "lee_2L"
+    },
+    {
+     "label": "Perth_5m composite (date mixed, contains the reef as a smoothed mound) | -3 m | lee_L",
+     "n_lee": 23,
+     "n_ctrl": 88,
+     "trend_slope_m_per_100m": 0.29760823515987084,
+     "trend": "linear through both control strips",
+     "lee_mean": -178.69121090608314,
+     "ctrl_mean": -206.09204436580083,
+     "anomaly": 27.400833459717738,
+     "n_placebo_windows": 22,
+     "n_indep_control_windows": 4.0,
+     "ctrl_resid_sd": 9.261268276354556,
+     "tau_samples": 11.931988335221373,
+     "se_analytic": 7.49174713101043,
+     "z": 3.6574690763784656,
+     "placebo_sd": 4.561112240907545,
+     "placebo_rms": 4.831033394899901,
+     "z_placebo": 6.007489404440894,
+     "p_empirical": 0.043478260869565216,
+     "anomaly_by_control": {
+      "both_linear": 27.400833459717738,
+      "strip1_only": 27.399224994956622,
+      "strip2_only": 27.40244192447883
+     },
+     "anomaly_range": [
+      27.399224994956622,
+      27.40244192447883
+     ],
+     "sign_consistent": true,
+     "dataset": "Perth_5m composite (date mixed, contains the reef as a smoothed mound)",
+     "level_m_AHD": -3,
+     "lee": "lee_L"
+    },
+    {
+     "label": "Perth_5m composite (date mixed, contains the reef as a smoothed mound) | -3 m | lee_2L",
+     "n_lee": 45,
+     "n_ctrl": 88,
+     "trend_slope_m_per_100m": 0.29760823515987084,
+     "trend": "linear through both control strips",
+     "lee_mean": -176.12777255488928,
+     "ctrl_mean": -206.09204436580083,
+     "anomaly": 29.964271810911633,
+     "n_placebo_windows": 22,
+     "n_indep_control_windows": 4.0,
+     "ctrl_resid_sd": 9.261268276354556,
+     "tau_samples": 11.931988335221373,
+     "se_analytic": 5.8628003137072,
+     "z": 5.1109146154705805,
+     "placebo_sd": 4.561112240907545,
+     "placebo_rms": 4.831033394899901,
+     "z_placebo": 6.569509853795991,
+     "p_empirical": 0.043478260869565216,
+     "anomaly_by_control": {
+      "both_linear": 29.964271810911633,
+      "strip1_only": 29.962663346150517,
+      "strip2_only": 29.965880275672735
+     },
+     "anomaly_range": [
+      29.962663346150517,
+      29.965880275672735
+     ],
+     "sign_consistent": true,
+     "dataset": "Perth_5m composite (date mixed, contains the reef as a smoothed mound)",
+     "level_m_AHD": -3,
+     "lee": "lee_2L"
+    },
+    {
+     "label": "Perth_5m composite (date mixed, contains the reef as a smoothed mound) | -4 m | lee_L",
+     "n_lee": 23,
+     "n_ctrl": 88,
+     "trend_slope_m_per_100m": -0.6500089681663327,
+     "trend": "linear through both control strips",
+     "lee_mean": -142.53287897648335,
+     "ctrl_mean": -179.99196150179748,
+     "anomaly": 37.45908252531426,
+     "n_placebo_windows": 22,
+     "n_indep_control_windows": 4.0,
+     "ctrl_resid_sd": 8.515313386102278,
+     "tau_samples": 11.886038717447448,
+     "se_analytic": 6.875043357402765,
+     "z": 5.448559460353054,
+     "placebo_sd": 4.0030500838595815,
+     "placebo_rms": 4.6110780143357335,
+     "z_placebo": 9.357635238277535,
+     "p_empirical": 0.043478260869565216,
+     "anomaly_by_control": {
+      "both_linear": 37.45908252531426,
+      "strip1_only": 35.15706393848056,
+      "strip2_only": 39.76110111214773
+     },
+     "anomaly_range": [
+      35.15706393848056,
+      39.76110111214773
+     ],
+     "sign_consistent": true,
+     "dataset": "Perth_5m composite (date mixed, contains the reef as a smoothed mound)",
+     "level_m_AHD": -4,
+     "lee": "lee_L"
+    },
+    {
+     "label": "Perth_5m composite (date mixed, contains the reef as a smoothed mound) | -4 m | lee_2L",
+     "n_lee": 45,
+     "n_ctrl": 88,
+     "trend_slope_m_per_100m": -0.6500089681663327,
+     "trend": "linear through both control strips",
+     "lee_mean": -139.75010474984546,
+     "ctrl_mean": -179.99196150179748,
+     "anomaly": 40.24185675195212,
+     "n_placebo_windows": 22,
+     "n_indep_control_windows": 4.0,
+     "ctrl_resid_sd": 8.515313386102278,
+     "tau_samples": 11.886038717447448,
+     "se_analytic": 5.380187778320707,
+     "z": 7.479637962471381,
+     "placebo_sd": 4.0030500838595815,
+     "placebo_rms": 4.6110780143357335,
+     "z_placebo": 10.052798718209521,
+     "p_empirical": 0.043478260869565216,
+     "anomaly_by_control": {
+      "both_linear": 40.24185675195212,
+      "strip1_only": 37.93983816511842,
+      "strip2_only": 42.54387533878558
+     },
+     "anomaly_range": [
+      37.93983816511842,
+      42.54387533878558
+     ],
+     "sign_consistent": true,
+     "dataset": "Perth_5m composite (date mixed, contains the reef as a smoothed mound)",
+     "level_m_AHD": -4,
+     "lee": "lee_2L"
+    },
+    {
+     "label": "DoT singlebeam 2002 | -2 m | lee_L",
+     "n_lee": 23,
+     "n_ctrl": 56,
+     "trend_slope_m_per_100m": 1.5517995466403531,
+     "trend": "linear through both control strips",
+     "lee_mean": -193.904908679509,
+     "ctrl_mean": -218.12698206705136,
+     "anomaly": 22.68828579992529,
+     "n_placebo_windows": 14,
+     "n_indep_control_windows": 4.0,
+     "ctrl_resid_sd": 8.039464363448904,
+     "tau_samples": 9.362953181674351,
+     "se_analytic": 6.092410451196238,
+     "z": 3.724024502562934,
+     "placebo_sd": 3.2671690121472223,
+     "placebo_rms": 4.274612951752396,
+     "z_placebo": 6.944325719168804,
+     "p_empirical": 0.06666666666666667,
+     "anomaly_by_control": {
+      "both_linear": 22.68828579992529,
+      "strip1_only": 26.07647249459529,
+      "strip2_only": 20.61087512643922
+     },
+     "anomaly_range": [
+      20.61087512643922,
+      26.07647249459529
+     ],
+     "sign_consistent": true,
+     "dataset": "DoT singlebeam 2002",
+     "level_m_AHD": -2,
+     "lee": "lee_L"
+    },
+    {
+     "label": "DoT singlebeam 2002 | -2 m | lee_2L",
+     "n_lee": 45,
+     "n_ctrl": 56,
+     "trend_slope_m_per_100m": 1.5517995466403531,
+     "trend": "linear through both control strips",
+     "lee_mean": -193.18581018196883,
+     "ctrl_mean": -218.12698206705136,
+     "anomaly": 23.407384297465438,
+     "n_placebo_windows": 14,
+     "n_indep_control_windows": 4.0,
+     "ctrl_resid_sd": 8.039464363448904,
+     "tau_samples": 9.362953181674351,
+     "se_analytic": 4.924860766546331,
+     "z": 4.752902753407258,
+     "placebo_sd": 3.2671690121472223,
+     "placebo_rms": 4.274612951752396,
+     "z_placebo": 7.164424065739356,
+     "p_empirical": 0.06666666666666667,
+     "anomaly_by_control": {
+      "both_linear": 23.407384297465438,
+      "strip1_only": 26.795570992135435,
+      "strip2_only": 21.329973623979367
+     },
+     "anomaly_range": [
+      21.329973623979367,
+      26.795570992135435
+     ],
+     "sign_consistent": true,
+     "dataset": "DoT singlebeam 2002",
+     "level_m_AHD": -2,
+     "lee": "lee_2L"
+    },
+    {
+     "label": "DoT singlebeam 2002 | -3 m | lee_L",
+     "n_lee": 23,
+     "n_ctrl": 60,
+     "trend_slope_m_per_100m": 1.7307985401664414,
+     "trend": "linear through both control strips",
+     "lee_mean": -158.50126891661776,
+     "ctrl_mean": -193.02442159382912,
+     "anomaly": 33.05774324653718,
+     "n_placebo_windows": 16,
+     "n_indep_control_windows": 4.0,
+     "ctrl_resid_sd": 8.558829426042667,
+     "tau_samples": 9.80102495382417,
+     "se_analytic": 6.571274687220521,
+     "z": 5.030643949616988,
+     "placebo_sd": 3.1760116693654017,
+     "placebo_rms": 4.34312864861307,
+     "z_placebo": 10.408571091032055,
+     "p_empirical": 0.058823529411764705,
+     "anomaly_by_control": {
+      "both_linear": 33.05774324653718,
+      "strip1_only": 37.248034765003325,
+      "strip2_only": 29.816538161934353
+     },
+     "anomaly_range": [
+      29.816538161934353,
+      37.248034765003325
+     ],
+     "sign_consistent": true,
+     "dataset": "DoT singlebeam 2002",
+     "level_m_AHD": -3,
+     "lee": "lee_L"
+    },
+    {
+     "label": "DoT singlebeam 2002 | -3 m | lee_2L",
+     "n_lee": 45,
+     "n_ctrl": 60,
+     "trend_slope_m_per_100m": 1.7307985401664414,
+     "trend": "linear through both control strips",
+     "lee_mean": -157.87792679931195,
+     "ctrl_mean": -193.02442159382912,
+     "anomaly": 33.68108536384294,
+     "n_placebo_windows": 16,
+     "n_indep_control_windows": 4.0,
+     "ctrl_resid_sd": 8.558829426042667,
+     "tau_samples": 9.80102495382417,
+     "se_analytic": 5.2840009384242155,
+     "z": 6.374163395566551,
+     "placebo_sd": 3.1760116693654017,
+     "placebo_rms": 4.34312864861307,
+     "z_placebo": 10.604836779637132,
+     "p_empirical": 0.058823529411764705,
+     "anomaly_by_control": {
+      "both_linear": 33.68108536384294,
+      "strip1_only": 37.87137688230908,
+      "strip2_only": 30.4398802792401
+     },
+     "anomaly_range": [
+      30.4398802792401,
+      37.87137688230908
+     ],
+     "sign_consistent": true,
+     "dataset": "DoT singlebeam 2002",
+     "level_m_AHD": -3,
+     "lee": "lee_2L"
+    },
+    {
+     "label": "DoT singlebeam 2002 | -4 m | lee_L",
+     "n_lee": 23,
+     "n_ctrl": 62,
+     "trend_slope_m_per_100m": 2.2106571632964234,
+     "trend": "linear through both control strips",
+     "lee_mean": -120.2672593735134,
+     "ctrl_mean": -164.93903695395935,
+     "anomaly": 42.83194032841211,
+     "n_placebo_windows": 16,
+     "n_indep_control_windows": 4.0,
+     "ctrl_resid_sd": 9.738992241279364,
+     "tau_samples": 10.87439214805959,
+     "se_analytic": 7.840905417046588,
+     "z": 5.462626833285473,
+     "placebo_sd": 3.941520656834651,
+     "placebo_rms": 4.611078300834153,
+     "z_placebo": 10.866856743257438,
+     "p_empirical": 0.058823529411764705,
+     "anomaly_by_control": {
+      "both_linear": 42.83194032841211,
+      "strip1_only": 48.46969195236274,
+      "strip2_only": 38.231835819369664
+     },
+     "anomaly_range": [
+      38.231835819369664,
+      48.46969195236274
+     ],
+     "sign_consistent": true,
+     "dataset": "DoT singlebeam 2002",
+     "level_m_AHD": -4,
+     "lee": "lee_L"
+    },
+    {
+     "label": "DoT singlebeam 2002 | -4 m | lee_2L",
+     "n_lee": 45,
+     "n_ctrl": 62,
+     "trend_slope_m_per_100m": 2.2106571632964234,
+     "trend": "linear through both control strips",
+     "lee_mean": -122.35699525287924,
+     "ctrl_mean": -164.93903695395935,
+     "anomaly": 40.742204449046284,
+     "n_placebo_windows": 16,
+     "n_indep_control_windows": 4.0,
+     "ctrl_resid_sd": 9.738992241279364,
+     "tau_samples": 10.87439214805959,
+     "se_analytic": 6.289357798093321,
+     "z": 6.477959396966996,
+     "placebo_sd": 3.941520656834651,
+     "placebo_rms": 4.611078300834153,
+     "z_placebo": 10.33667155299535,
+     "p_empirical": 0.058823529411764705,
+     "anomaly_by_control": {
+      "both_linear": 40.742204449046284,
+      "strip1_only": 46.37995607299692,
+      "strip2_only": 36.14209994000384
+     },
+     "anomaly_range": [
+      36.14209994000384,
+      46.37995607299692
+     ],
+     "sign_consistent": true,
+     "dataset": "DoT singlebeam 2002",
+     "level_m_AHD": -4,
+     "lee": "lee_2L"
+    },
+    {
+     "label": "DoT singlebeam 2002 | -5 m | lee_L",
+     "n_lee": 23,
+     "n_ctrl": 58,
+     "trend_slope_m_per_100m": 18.500981298118038,
+     "trend": "linear through both control strips",
+     "lee_mean": 28.643608542767804,
+     "ctrl_mean": -30.418361938173813,
+     "anomaly": 35.13828776785795,
+     "n_placebo_windows": 13,
+     "n_indep_control_windows": 4.0,
+     "ctrl_resid_sd": 6.7747782790078,
+     "tau_samples": 8.479477989268075,
+     "se_analytic": 4.8612084001040765,
+     "z": 7.2283031040400685,
+     "placebo_sd": 3.030242143367692,
+     "placebo_rms": 3.7843417431404007,
+     "z_placebo": 11.595867955557718,
+     "p_empirical": 0.07142857142857142,
+     "anomaly_by_control": {
+      "both_linear": 35.13828776785795,
+      "strip1_only": 84.44891423401371,
+      "strip2_only": -2.1653644529381593
+     },
+     "anomaly_range": [
+      -2.1653644529381593,
+      84.44891423401371
+     ],
+     "sign_consistent": false,
+     "dataset": "DoT singlebeam 2002",
+     "level_m_AHD": -5,
+     "lee": "lee_L"
+    },
+    {
+     "label": "DoT singlebeam 2002 | -5 m | lee_2L",
+     "n_lee": 45,
+     "n_ctrl": 58,
+     "trend_slope_m_per_100m": 18.500981298118038,
+     "trend": "linear through both control strips",
+     "lee_mean": 18.992450367826812,
+     "ctrl_mean": -30.418361938173813,
+     "anomaly": 25.48712959291695,
+     "n_placebo_windows": 13,
+     "n_indep_control_windows": 4.0,
+     "ctrl_resid_sd": 6.7747782790078,
+     "tau_samples": 8.479477989268075,
+     "se_analytic": 3.9190247275702865,
+     "z": 6.503436789672526,
+     "placebo_sd": 3.030242143367692,
+     "placebo_rms": 3.7843417431404007,
+     "z_placebo": 8.41092176369495,
+     "p_empirical": 0.07142857142857142,
+     "anomaly_by_control": {
+      "both_linear": 25.48712959291695,
+      "strip1_only": 74.79775605907274,
+      "strip2_only": -11.816522627879158
+     },
+     "anomaly_range": [
+      -11.816522627879158,
+      74.79775605907274
+     ],
+     "sign_consistent": false,
+     "dataset": "DoT singlebeam 2002",
+     "level_m_AHD": -5,
+     "lee": "lee_2L"
+    },
+    {
+     "label": "DoT singlebeam 2002 | -6 m | lee_L",
+     "n_lee": 23,
+     "n_ctrl": 59,
+     "trend_slope_m_per_100m": 14.626825709023214,
+     "trend": "linear through both control strips",
+     "lee_mean": 39.97417675593974,
+     "ctrl_mean": -3.1749063125531696,
+     "anomaly": 23.62598943144922,
+     "n_placebo_windows": 13,
+     "n_indep_control_windows": 4.0,
+     "ctrl_resid_sd": 7.1613792501375455,
+     "tau_samples": 9.571558778975744,
+     "se_analytic": 5.446343280876913,
+     "z": 4.337954516088676,
+     "placebo_sd": 3.9542570959923604,
+     "placebo_rms": 4.264191005124333,
+     "z_placebo": 5.974823805815297,
+     "p_empirical": 0.07142857142857142,
+     "anomaly_by_control": {
+      "both_linear": 23.62598943144922,
+      "strip1_only": 62.66161801228132,
+      "strip2_only": -5.058356204396138
+     },
+     "anomaly_range": [
+      -5.058356204396138,
+      62.66161801228132
+     ],
+     "sign_consistent": false,
+     "dataset": "DoT singlebeam 2002",
+     "level_m_AHD": -6,
+     "lee": "lee_L"
+    },
+    {
+     "label": "DoT singlebeam 2002 | -6 m | lee_2L",
+     "n_lee": 45,
+     "n_ctrl": 59,
+     "trend_slope_m_per_100m": 14.626825709023214,
+     "trend": "linear through both control strips",
+     "lee_mean": 35.98569301202551,
+     "ctrl_mean": -3.1749063125531696,
+     "anomaly": 19.637505687534983,
+     "n_placebo_windows": 13,
+     "n_indep_control_windows": 4.0,
+     "ctrl_resid_sd": 7.1613792501375455,
+     "tau_samples": 9.571558778975744,
+     "se_analytic": 4.385028454527926,
+     "z": 4.478307470789052,
+     "placebo_sd": 3.9542570959923604,
+     "placebo_rms": 4.264191005124333,
+     "z_placebo": 4.966168160243702,
+     "p_empirical": 0.07142857142857142,
+     "anomaly_by_control": {
+      "both_linear": 19.637505687534983,
+      "strip1_only": 58.67313426836709,
+      "strip2_only": -9.046839948310371
+     },
+     "anomaly_range": [
+      -9.046839948310371,
+      58.67313426836709
+     ],
+     "sign_consistent": false,
+     "dataset": "DoT singlebeam 2002",
+     "level_m_AHD": -6,
+     "lee": "lee_2L"
+    }
+   ]
+  },
+  "Ls_over_X": {
+   "Ls_alongshore_m": 110.13682700736287,
+   "X_shoreline_to_shoreward_toe_m": 210.90942500272607,
+   "X_shoreline_to_reef_centre_m": 253.13949878585035,
+   "Ls_over_X_toe": 0.522199645681739,
+   "Ls_over_X_centre": 0.4350835311581929,
+   "regime_toe": "salient expected (B/S < 2)",
+   "regime_centre": "salient expected (B/S < 2)",
+   "illustrative_salient_amplitude_m": [
+    13.767103375920358,
+    41.30131012776108
+   ],
+   "note": "DERIVED B/S (B = Ls alongshore extent, S = X shoreline-to-reef distance). Rules (Black & Andrews 2001 via Blacka et al. 2013): no change if B/S < ~0.1, salient if < 2, tombolo if > 0.6; Blacka et al. note the method over-predicts salient size for submerged reefs (Narrowneck, Mount Maunganui). Illustrative amplitude = 0.125 x D_tot with D_tot = 1-3 B (ASSUMPTION; D_tot is not given in the secondary source) -> an order of magnitude only. shoreline = 0 m AHD contour of the Perth_5m composite (undated), mean over the lee window"
+  },
+  "lee_band_n_m": [
+   -165.0,
+   -62.0
+  ],
+  "T2_bed_level_lee_band": {
+   "definition": "mean bed elevation (m AHD) over n = -165..-62 m per alongshore column; anomaly = lee minus control trend; positive = bed HIGHER (sand accumulation or a natural high) in the lee",
+   "rows": [
+    {
+     "label": "DoT 1995-12 (pre-construction)",
+     "n_lee": 23,
+     "n_ctrl": 9,
+     "trend": "constant (controls on one side only)",
+     "lee_mean": -3.928892641461661,
+     "ctrl_mean": -4.674579560882277,
+     "anomaly": 0.7456869194206163,
+     "n_placebo_windows": 0,
+     "n_indep_control_windows": 4.0,
+     "ctrl_resid_sd": 0.09068776534814543,
+     "tau_samples": 2.7742887906627107,
+     "se_analytic": 0.05939014020152488,
+     "z": 12.555735967120519,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": 0.7456869194206163,
+      "strip1_only": 0.7456869194206163,
+      "strip2_only": null
+     },
+     "anomaly_range": [
+      0.7456869194206163,
+      0.7456869194206163
+     ],
+     "sign_consistent": true,
+     "lee_band_n_m": [
+      -165.0,
+      -62.0
+     ]
+    },
+    {
+     "label": "DoT 2002-02 (2.2 y after completion)",
+     "n_lee": 23,
+     "n_ctrl": 64,
+     "trend_slope_m_per_100m": 0.04426804582610707,
+     "trend": "linear through both control strips",
+     "lee_mean": -3.8448937765639495,
+     "ctrl_mean": -4.480908909543783,
+     "anomaly": 0.5952401126446929,
+     "n_placebo_windows": 16,
+     "n_indep_control_windows": 4.0,
+     "ctrl_resid_sd": 0.08657036611852029,
+     "tau_samples": 5.9235501704240985,
+     "se_analytic": 0.05122311802755205,
+     "z": 11.620536499252609,
+     "placebo_sd": 0.036805038632944695,
+     "placebo_rms": 0.035637093719411386,
+     "z_placebo": 16.172788692901555,
+     "p_empirical": 0.058823529411764705,
+     "anomaly_by_control": {
+      "both_linear": 0.5952401126446929,
+      "strip1_only": 0.7222695538661215,
+      "strip2_only": 0.48225725226949456
+     },
+     "anomaly_range": [
+      0.48225725226949456,
+      0.7222695538661215
+     ],
+     "sign_consistent": true,
+     "lee_band_n_m": [
+      -165.0,
+      -62.0
+     ]
+    },
+    {
+     "label": "Perth_5m composite",
+     "n_lee": 23,
+     "n_ctrl": 88,
+     "trend_slope_m_per_100m": 0.013507743325357412,
+     "trend": "linear through both control strips",
+     "lee_mean": -4.172261786822914,
+     "ctrl_mean": -4.565764308419626,
+     "anomaly": 0.3935025215967141,
+     "n_placebo_windows": 22,
+     "n_indep_control_windows": 4.0,
+     "ctrl_resid_sd": 0.20174063810623893,
+     "tau_samples": 14.209215350868309,
+     "se_analytic": 0.17808800697816216,
+     "z": 2.2095958524875114,
+     "placebo_sd": 0.12092209026696014,
+     "placebo_rms": 0.1203131523358693,
+     "z_placebo": 3.2541822650268215,
+     "p_empirical": 0.043478260869565216,
+     "anomaly_by_control": {
+      "both_linear": 0.3935025215967141,
+      "strip1_only": 0.4122743385446687,
+      "strip2_only": 0.37473070464875585
+     },
+     "anomaly_range": [
+      0.37473070464875585,
+      0.4122743385446687
+     ],
+     "sign_consistent": true,
+     "lee_band_n_m": [
+      -165.0,
+      -62.0
+     ]
+    }
+   ]
+  },
+  "T3_temporal_boxes": {
+   "definition": "dz = later minus earlier survey, per 5 m cell where both surveys have a sounding within 25 m (TIN); boxes in s (m from the reef centre) x n = -165..-62 m; volume = sum(dz) x 25 m2 over VALID cells only (coverage given); pairs 2002-1998 and 1998-1995 do not reach the lee band (1998 covers n > -75 m only)",
+   "rows": [
+    {
+     "pair": "2002-1995",
+     "box": "lee",
+     "s_range": [
+      -55.068413503681434,
+      55.068413503681434
+     ],
+     "n_range": [
+      -165.0,
+      -62.0
+     ],
+     "n_cells_valid": 465,
+     "n_cells_total": 483,
+     "coverage": 0.9627329192546584,
+     "mean_dz_m": 0.03564432714235673,
+     "sd_cell_dz_m": 0.17947601747589959,
+     "volume_change_m3": 414.3653030298969
+    },
+    {
+     "pair": "2002-1995",
+     "box": "ctrl_S",
+     "s_range": [
+      -150.0,
+      -75.0
+     ],
+     "n_range": [
+      -165.0,
+      -62.0
+     ],
+     "n_cells_valid": 213,
+     "n_cells_total": 336,
+     "coverage": 0.6339285714285714,
+     "mean_dz_m": 0.02810202994268199,
+     "sd_cell_dz_m": 0.25703386453122606,
+     "volume_change_m3": 149.64330944478158
+    },
+    {
+     "pair": "2002-1995",
+     "box": "ctrl_N",
+     "s_range": [
+      75.0,
+      125.0
+     ],
+     "n_range": [
+      -165.0,
+      -62.0
+     ],
+     "n_cells_valid": 199,
+     "n_cells_total": 231,
+     "coverage": 0.8614718614718615,
+     "mean_dz_m": -0.035240136706859757,
+     "sd_cell_dz_m": 0.19304119643671033,
+     "volume_change_m3": -175.3196801166273
+    },
+    {
+     "pair": "2002-1998",
+     "box": "lee",
+     "s_range": [
+      -55.068413503681434,
+      55.068413503681434
+     ],
+     "n_range": [
+      -165.0,
+      -62.0
+     ],
+     "n_cells_valid": 10,
+     "n_cells_total": 483,
+     "coverage": 0.020703933747412008,
+     "mean_dz_m": 0.1524274044943664,
+     "sd_cell_dz_m": 0.14976413808249014,
+     "volume_change_m3": 38.1068511235916
+    },
+    {
+     "pair": "2002-1998",
+     "box": "ctrl_S",
+     "s_range": [
+      -150.0,
+      -75.0
+     ],
+     "n_range": [
+      -165.0,
+      -62.0
+     ],
+     "n_cells_valid": 6,
+     "n_cells_total": 336,
+     "coverage": 0.017857142857142856,
+     "mean_dz_m": -0.0023910536134403118,
+     "sd_cell_dz_m": 0.14482769976638504,
+     "volume_change_m3": -0.3586580420160468
+    },
+    {
+     "pair": "2002-1998",
+     "box": "ctrl_N",
+     "s_range": [
+      75.0,
+      125.0
+     ],
+     "n_range": [
+      -165.0,
+      -62.0
+     ],
+     "n_cells_valid": 0,
+     "n_cells_total": 231,
+     "coverage": 0.0,
+     "mean_dz_m": null,
+     "sd_cell_dz_m": null,
+     "volume_change_m3": null
+    },
+    {
+     "pair": "1998-1995",
+     "box": "lee",
+     "s_range": [
+      -55.068413503681434,
+      55.068413503681434
+     ],
+     "n_range": [
+      -165.0,
+      -62.0
+     ],
+     "n_cells_valid": 10,
+     "n_cells_total": 483,
+     "coverage": 0.020703933747412008,
+     "mean_dz_m": -0.11438401900400366,
+     "sd_cell_dz_m": 0.18173704611402472,
+     "volume_change_m3": -28.596004751000915
+    },
+    {
+     "pair": "1998-1995",
+     "box": "ctrl_S",
+     "s_range": [
+      -150.0,
+      -75.0
+     ],
+     "n_range": [
+      -165.0,
+      -62.0
+     ],
+     "n_cells_valid": 6,
+     "n_cells_total": 336,
+     "coverage": 0.017857142857142856,
+     "mean_dz_m": 0.03308247315417626,
+     "sd_cell_dz_m": 0.14404132639626735,
+     "volume_change_m3": 4.96237097312644
+    },
+    {
+     "pair": "1998-1995",
+     "box": "ctrl_N",
+     "s_range": [
+      75.0,
+      125.0
+     ],
+     "n_range": [
+      -165.0,
+      -62.0
+     ],
+     "n_cells_valid": 0,
+     "n_cells_total": 231,
+     "coverage": 0.0,
+     "mean_dz_m": null,
+     "sd_cell_dz_m": null,
+     "volume_change_m3": null
+    }
+   ]
+  },
+  "T3_dz_difference_in_differences": [
+   {
+    "label": "dz 2002-1995, n=-165..-62",
+    "n_lee": 23,
+    "n_ctrl": 27,
+    "trend_slope_m_per_100m": -0.04034686416969884,
+    "trend": "linear through both control strips",
+    "lee_mean": 0.03496351234266457,
+    "ctrl_mean": 0.013625633350677631,
+    "anomaly": 0.031798177110057016,
+    "n_placebo_windows": 3,
+    "n_indep_control_windows": 2.272727272727273,
+    "ctrl_resid_sd": 0.11123152238839076,
+    "tau_samples": 1.569798191581997,
+    "se_analytic": 0.03954476468774632,
+    "z": 0.8041058623345474,
+    "placebo_sd": null,
+    "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+    "anomaly_by_control": {
+     "both_linear": 0.031798177110057016,
+     "strip1_only": -0.012672992212451693,
+     "strip2_only": 0.07080823710753405
+    },
+    "anomaly_range": [
+     -0.012672992212451693,
+     0.07080823710753405
+    ],
+    "sign_consistent": false,
+    "note_controls": "adjacent strips s=-150..-75 and +75..+125 (survey coverage limit); placebo windows 55 m wide (narrower than the lee window: conservative)"
+   },
+   {
+    "label": "dz 2002-1995, n=-110..-62",
+    "n_lee": 23,
+    "n_ctrl": 27,
+    "trend_slope_m_per_100m": -0.06707252761284185,
+    "trend": "linear through both control strips",
+    "lee_mean": -0.0022260678349505254,
+    "ctrl_mean": 0.0699857995951527,
+    "anomaly": -0.05482269360455159,
+    "n_placebo_windows": 3,
+    "n_indep_control_windows": 2.272727272727273,
+    "ctrl_resid_sd": 0.06848520608180199,
+    "tau_samples": 1.7250291567120697,
+    "se_analytic": 0.025523145074334327,
+    "z": -2.1479599573204804,
+    "placebo_sd": null,
+    "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+    "anomaly_by_control": {
+     "both_linear": -0.05482269360455159,
+     "strip1_only": -0.12809518042889548,
+     "strip2_only": 0.009072951477231013
+    },
+    "anomaly_range": [
+     -0.12809518042889548,
+     0.009072951477231013
+    ],
+    "sign_consistent": false,
+    "note_controls": "adjacent strips s=-150..-75 and +75..+125 (survey coverage limit); placebo windows 55 m wide (narrower than the lee window: conservative)"
+   }
+  ],
+  "T3_contour_migration_2002_minus_1995": [
+   {
+    "label": "contour migration 2002-1995, -4 m AHD",
+    "n_lee": 23,
+    "n_ctrl": 21,
+    "trend_slope_m_per_100m": -0.20552908294247849,
+    "trend": "linear through both control strips",
+    "lee_mean": 3.870430890124286,
+    "ctrl_mean": -3.124016633068082,
+    "anomaly": 6.982213649207696,
+    "n_placebo_windows": 2,
+    "n_indep_control_windows": 2.272727272727273,
+    "ctrl_resid_sd": 5.9320703644923976,
+    "tau_samples": 3.0925531074586683,
+    "se_analytic": 3.1486011512887053,
+    "z": 2.2175605336197997,
+    "placebo_sd": null,
+    "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+    "anomaly_by_control": {
+     "both_linear": 6.982213649207696,
+     "strip1_only": 6.450094509734897,
+     "strip2_only": 7.489313899062794
+    },
+    "anomaly_range": [
+     6.450094509734897,
+     7.489313899062794
+    ],
+    "sign_consistent": true,
+    "level_m_AHD": -4,
+    "n_common_transects": 75
+   },
+   {
+    "label": "contour migration 2002-1995, -5 m AHD",
+    "n_lee": 23,
+    "n_ctrl": 27,
+    "trend_slope_m_per_100m": 4.051271881195149,
+    "trend": "linear through both control strips",
+    "lee_mean": 8.879114279407895,
+    "ctrl_mean": 2.9423512424501874,
+    "anomaly": 4.886433289981189,
+    "n_placebo_windows": 3,
+    "n_indep_control_windows": 2.272727272727273,
+    "ctrl_resid_sd": 2.97635997433573,
+    "tau_samples": 4.065246248487586,
+    "se_analytic": 1.702817428245339,
+    "z": 2.869616677001241,
+    "placebo_sd": null,
+    "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+    "anomaly_by_control": {
+     "both_linear": 4.886433289981189,
+     "strip1_only": 9.11751251933106,
+     "strip2_only": 1.3102183353237427
+    },
+    "anomaly_range": [
+     1.3102183353237427,
+     9.11751251933106
+    ],
+    "sign_consistent": true,
+    "level_m_AHD": -5,
+    "n_common_transects": 85
+   },
+   {
+    "label": "contour migration 2002-1995, -6 m AHD",
+    "n_lee": 23,
+    "n_ctrl": 27,
+    "trend_slope_m_per_100m": 2.2226193907832705,
+    "trend": "linear through both control strips",
+    "lee_mean": 5.166520490699575,
+    "ctrl_mean": 2.0102050164138325,
+    "anomaly": 2.5800808174160035,
+    "n_placebo_windows": 3,
+    "n_indep_control_windows": 2.272727272727273,
+    "ctrl_resid_sd": 3.393849597999854,
+    "tau_samples": 4.548461995795179,
+    "se_analytic": 2.053828043127305,
+    "z": 1.256230201963446,
+    "placebo_sd": null,
+    "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+    "anomaly_by_control": {
+     "both_linear": 2.5800808174160035,
+     "strip1_only": 4.822131418000824,
+     "strip2_only": 0.7333104652456213
+    },
+    "anomaly_range": [
+     0.7333104652456213,
+     4.822131418000824
+    ],
+    "sign_consistent": true,
+    "level_m_AHD": -6,
+    "n_common_transects": 82
+   }
+  ],
+  "T1b_contour_offset_adjacent_controls_1995_vs_2002": {
+   "definition": "same as T1 but with the adjacent control strips so that the PRE-construction survey (1995, coverage s = -212..+339 but only -150..+125 in the lee band) can be compared with the post-construction survey (2002) on identical transects",
+   "rows": [
+    {
+     "label": "1995 survey, -4 m AHD contour, lee vs ADJACENT strips",
+     "n_lee": 23,
+     "n_ctrl": 21,
+     "trend_slope_m_per_100m": 12.697760885031181,
+     "trend": "linear through both control strips",
+     "lee_mean": -124.13769026363768,
+     "ctrl_mean": -122.71159246520966,
+     "anomaly": -0.67027869812855,
+     "n_placebo_windows": 2,
+     "n_indep_control_windows": 2.272727272727273,
+     "ctrl_resid_sd": 5.653293735367768,
+     "tau_samples": 3.1305427892141324,
+     "se_analytic": 3.0190071822790965,
+     "z": -0.2220195771851546,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": -0.67027869812855,
+      "strip1_only": 12.23674248311243,
+      "strip2_only": -13.846861690737494
+     },
+     "anomaly_range": [
+      -13.846861690737494,
+      12.23674248311243
+     ],
+     "sign_consistent": false,
+     "level_m_AHD": -4,
+     "survey": "1995"
+    },
+    {
+     "label": "1995 survey, -5 m AHD contour, lee vs ADJACENT strips",
+     "n_lee": 23,
+     "n_ctrl": 27,
+     "trend_slope_m_per_100m": 6.6538467711213105,
+     "trend": "linear through both control strips",
+     "lee_mean": 19.764494263359918,
+     "ctrl_mean": -2.333501681128088,
+     "anomaly": 20.372924559382476,
+     "n_placebo_windows": 3,
+     "n_indep_control_windows": 2.272727272727273,
+     "ctrl_resid_sd": 6.263051363950012,
+     "tau_samples": 4.297033555561292,
+     "se_analytic": 3.683914550434949,
+     "z": 5.530238087899488,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": 20.372924559382476,
+      "strip1_only": 27.671585086718856,
+      "strip2_only": 13.990957192152223
+     },
+     "anomaly_range": [
+      13.990957192152223,
+      27.671585086718856
+     ],
+     "sign_consistent": true,
+     "level_m_AHD": -5,
+     "survey": "1995"
+    },
+    {
+     "label": "1995 survey, -6 m AHD contour, lee vs ADJACENT strips",
+     "n_lee": 23,
+     "n_ctrl": 27,
+     "trend_slope_m_per_100m": 6.163034387042445,
+     "trend": "linear through both control strips",
+     "lee_mean": 34.80765626524017,
+     "ctrl_mean": 25.495778101001523,
+     "anomaly": 7.714054434264676,
+     "n_placebo_windows": 3,
+     "n_indep_control_windows": 2.272727272727273,
+     "ctrl_resid_sd": 1.8226161466881927,
+     "tau_samples": 3.8195392085354745,
+     "se_analytic": 1.0107410438368727,
+     "z": 7.632077950432649,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": 7.714054434264676,
+      "strip1_only": 14.45059264495009,
+      "strip2_only": 1.837384374112898
+     },
+     "anomaly_range": [
+      1.837384374112898,
+      14.45059264495009
+     ],
+     "sign_consistent": true,
+     "level_m_AHD": -6,
+     "survey": "1995"
+    },
+    {
+     "label": "2002 survey, -4 m AHD contour, lee vs ADJACENT strips",
+     "n_lee": 23,
+     "n_ctrl": 27,
+     "trend_slope_m_per_100m": 12.856749178953352,
+     "trend": "linear through both control strips",
+     "lee_mean": -120.2672593735134,
+     "ctrl_mean": -130.1575552078961,
+     "anomaly": 6.557064565765156,
+     "n_placebo_windows": 3,
+     "n_indep_control_windows": 2.272727272727273,
+     "ctrl_resid_sd": 1.9692043500434615,
+     "tau_samples": 2.6316639275933387,
+     "se_analytic": 0.9064528157164577,
+     "z": 7.233762697932016,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": 6.557064565765156,
+      "strip1_only": 21.060688327297242,
+      "strip2_only": -6.357547791674696
+     },
+     "anomaly_range": [
+      -6.357547791674696,
+      21.060688327297242
+     ],
+     "sign_consistent": false,
+     "level_m_AHD": -4,
+     "survey": "2002"
+    },
+    {
+     "label": "2002 survey, -5 m AHD contour, lee vs ADJACENT strips",
+     "n_lee": 23,
+     "n_ctrl": 27,
+     "trend_slope_m_per_100m": 10.705118652316456,
+     "trend": "linear through both control strips",
+     "lee_mean": 28.643608542767804,
+     "ctrl_mean": 0.6088495613221001,
+     "anomaly": 25.25935784936366,
+     "n_placebo_windows": 3,
+     "n_indep_control_windows": 2.272727272727273,
+     "ctrl_resid_sd": 5.700027494047605,
+     "tau_samples": 4.2134275320715355,
+     "se_analytic": 3.3199681471199685,
+     "z": 7.608313312064708,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": 25.25935784936366,
+      "strip1_only": 36.789097606049914,
+      "strip2_only": 15.301175527475966
+     },
+     "anomaly_range": [
+      15.301175527475966,
+      36.789097606049914
+     ],
+     "sign_consistent": true,
+     "level_m_AHD": -5,
+     "survey": "2002"
+    },
+    {
+     "label": "2002 survey, -6 m AHD contour, lee vs ADJACENT strips",
+     "n_lee": 23,
+     "n_ctrl": 27,
+     "trend_slope_m_per_100m": 8.385653777825715,
+     "trend": "linear through both control strips",
+     "lee_mean": 39.97417675593974,
+     "ctrl_mean": 27.505983117415354,
+     "anomaly": 10.294135251680682,
+     "n_placebo_windows": 3,
+     "n_indep_control_windows": 2.272727272727273,
+     "ctrl_resid_sd": 3.562689630552387,
+     "tau_samples": 4.491652755868441,
+     "se_analytic": 2.142497278198898,
+     "z": 4.804736676414592,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": 10.294135251680682,
+      "strip1_only": 19.272724062950914,
+      "strip2_only": 2.5706948393585196
+     },
+     "anomaly_range": [
+      2.5706948393585196,
+      19.272724062950914
+     ],
+     "sign_consistent": true,
+     "level_m_AHD": -6,
+     "survey": "2002"
+    }
+   ]
+  },
+  "dz_cell_statistics_outside_reef_buffer": {
+   "2002-1995": {
+    "n_cells": 4057,
+    "mean_m": -0.025015371533056247,
+    "sd_m": 0.29249741850139327,
+    "p5": -0.45108224459415425,
+    "p95": 0.4235362293041205
+   },
+   "2002-1998": {
+    "n_cells": 1526,
+    "mean_m": 0.06658666031214222,
+    "sd_m": 0.21411119931145467,
+    "p5": -0.21842782233326385,
+    "p95": 0.4707656985223474
+   },
+   "1998-1995": {
+    "n_cells": 1407,
+    "mean_m": -0.103975528075667,
+    "sd_m": 0.24196782733152797,
+    "p5": -0.5031161019228165,
+    "p95": 0.2808057818903273
+   }
+  },
+  "repeatability_1998_vs_1995_soundings_within_3m": {
+   "n": 11647,
+   "mean_m": -0.08551082080884306,
+   "sd_m": 0.28456334135482003,
+   "note": "nearest-sounding pairs; METHODS_3D 3.4 quotes mean 0.09 m, sd 0.29 m (n=8,063) for the 1995/1998 agreement; includes 2.3 y of natural change"
+  },
+  "T4_rings_post_minus_1998_bed": {
+   "definition": "dz at each post-construction sounding minus the 1998 TIN (soundings <= 15 m from a 1998 sounding). Positive outside the footprint = sand and/or rock fall-down above the 1998 bed (not separable with echo-sounder data). SE ignores spatial correlation.",
+   "rows": [
+    {
+     "survey": "1999",
+     "zone": "inside footprint (rock thickness above the 1998 bed)",
+     "sector": "all",
+     "n": 600,
+     "mean_dz_m": 1.2764971776681,
+     "sd_m": 0.6943451509156419,
+     "se_m": 0.028346522085318376
+    },
+    {
+     "survey": "1999",
+     "zone": "inside footprint (rock thickness above the 1998 bed)",
+     "sector": "flank",
+     "n": 600,
+     "mean_dz_m": 1.2764971776681,
+     "sd_m": 0.6943451509156419,
+     "se_m": 0.028346522085318376
+    },
+    {
+     "survey": "1999",
+     "zone": "ring 0-10 m outside",
+     "sector": "all",
+     "n": 178,
+     "mean_dz_m": 0.5128846475017406,
+     "sd_m": 0.6410517503001093,
+     "se_m": 0.04804886011361941
+    },
+    {
+     "survey": "1999",
+     "zone": "ring 0-10 m outside",
+     "sector": "shoreward",
+     "n": 29,
+     "mean_dz_m": 0.8213911316482873,
+     "sd_m": 0.7624188475131154,
+     "se_m": 0.14157762572150612
+    },
+    {
+     "survey": "1999",
+     "zone": "ring 0-10 m outside",
+     "sector": "flank",
+     "n": 148,
+     "mean_dz_m": 0.4362077888925876,
+     "sd_m": 0.5628957560003337,
+     "se_m": 0.04626974612246918
+    },
+    {
+     "survey": "1999",
+     "zone": "ring 10-25 m outside",
+     "sector": "all",
+     "n": 61,
+     "mean_dz_m": -0.031613023592646665,
+     "sd_m": 0.2558827191329525,
+     "se_m": 0.03276242498652879
+    },
+    {
+     "survey": "1999",
+     "zone": "ring 10-25 m outside",
+     "sector": "flank",
+     "n": 60,
+     "mean_dz_m": -0.029261330778291236,
+     "sd_m": 0.2573516544446065,
+     "se_m": 0.03322395572609623
+    },
+    {
+     "survey": "2002",
+     "zone": "inside footprint (rock thickness above the 1998 bed)",
+     "sector": "all",
+     "n": 316,
+     "mean_dz_m": 1.2851965515704682,
+     "sd_m": 0.6911222291236242,
+     "se_m": 0.03887866290240065
+    },
+    {
+     "survey": "2002",
+     "zone": "inside footprint (rock thickness above the 1998 bed)",
+     "sector": "flank",
+     "n": 316,
+     "mean_dz_m": 1.2851965515704682,
+     "sd_m": 0.6911222291236242,
+     "se_m": 0.03887866290240065
+    },
+    {
+     "survey": "2002",
+     "zone": "ring 0-10 m outside",
+     "sector": "all",
+     "n": 267,
+     "mean_dz_m": 0.420949064426001,
+     "sd_m": 0.5296396335941128,
+     "se_m": 0.03241341918630637
+    },
+    {
+     "survey": "2002",
+     "zone": "ring 0-10 m outside",
+     "sector": "shoreward",
+     "n": 40,
+     "mean_dz_m": 0.3102306468462431,
+     "sd_m": 0.4316164771140527,
+     "se_m": 0.06824455716691727
+    },
+    {
+     "survey": "2002",
+     "zone": "ring 0-10 m outside",
+     "sector": "seaward",
+     "n": 19,
+     "mean_dz_m": 0.8254571762200326,
+     "sd_m": 0.840590803041142,
+     "se_m": 0.1928447559645284
+    },
+    {
+     "survey": "2002",
+     "zone": "ring 0-10 m outside",
+     "sector": "flank",
+     "n": 208,
+     "mean_dz_m": 0.4052908075947689,
+     "sd_m": 0.49210652755961454,
+     "se_m": 0.03412144842512929
+    },
+    {
+     "survey": "2002",
+     "zone": "ring 10-25 m outside",
+     "sector": "all",
+     "n": 502,
+     "mean_dz_m": 0.0871205010637353,
+     "sd_m": 0.16843625853709793,
+     "se_m": 0.007517678128397321
+    },
+    {
+     "survey": "2002",
+     "zone": "ring 10-25 m outside",
+     "sector": "shoreward",
+     "n": 120,
+     "mean_dz_m": 0.09379090923702695,
+     "sd_m": 0.16641864515125726,
+     "se_m": 0.01519187432313189
+    },
+    {
+     "survey": "2002",
+     "zone": "ring 10-25 m outside",
+     "sector": "seaward",
+     "n": 92,
+     "mean_dz_m": 0.12952714200324716,
+     "sd_m": 0.15061295954445544,
+     "se_m": 0.015702486504407018
+    },
+    {
+     "survey": "2002",
+     "zone": "ring 10-25 m outside",
+     "sector": "flank",
+     "n": 290,
+     "mean_dz_m": 0.07090719090087291,
+     "sd_m": 0.17205390362422274,
+     "se_m": 0.01010335310545777
+    },
+    {
+     "survey": "2002",
+     "zone": "ring 25-50 m outside",
+     "sector": "all",
+     "n": 885,
+     "mean_dz_m": 0.13108907772466258,
+     "sd_m": 0.26236934681763036,
+     "se_m": 0.008819449112887581
+    },
+    {
+     "survey": "2002",
+     "zone": "ring 25-50 m outside",
+     "sector": "shoreward",
+     "n": 134,
+     "mean_dz_m": 0.048280707145339066,
+     "sd_m": 0.1628287386257378,
+     "se_m": 0.01406626060760149
+    },
+    {
+     "survey": "2002",
+     "zone": "ring 25-50 m outside",
+     "sector": "seaward",
+     "n": 324,
+     "mean_dz_m": 0.08997828522994886,
+     "sd_m": 0.20520005373001898,
+     "se_m": 0.011400002985001054
+    },
+    {
+     "survey": "2002",
+     "zone": "ring 25-50 m outside",
+     "sector": "flank",
+     "n": 427,
+     "mean_dz_m": 0.1882699171296195,
+     "sd_m": 0.309351839120369,
+     "se_m": 0.014970584769941092
+    },
+    {
+     "survey": "2002",
+     "zone": "ring 50-100 m outside",
+     "sector": "all",
+     "n": 1084,
+     "mean_dz_m": 0.04701620557803482,
+     "sd_m": 0.23527493284832832,
+     "se_m": 0.007145967176539394
+    },
+    {
+     "survey": "2002",
+     "zone": "ring 50-100 m outside",
+     "sector": "shoreward",
+     "n": 28,
+     "mean_dz_m": -0.030287944884913248,
+     "sd_m": 0.11428266775425303,
+     "se_m": 0.021597394145912423
+    },
+    {
+     "survey": "2002",
+     "zone": "ring 50-100 m outside",
+     "sector": "seaward",
+     "n": 916,
+     "mean_dz_m": 0.002003274594412888,
+     "sd_m": 0.17597784484314033,
+     "se_m": 0.005814471657017347
+    },
+    {
+     "survey": "2002",
+     "zone": "ring 50-100 m outside",
+     "sector": "flank",
+     "n": 140,
+     "mean_dz_m": 0.3569902126777508,
+     "sd_m": 0.33590443833961353,
+     "se_m": 0.0283891065244917
+    }
+   ]
+  },
+  "T4_reef_surface_2002_minus_1999_matched_within_3m": {
+   "n": 517,
+   "mean_m": 0.13805802707930365,
+   "sd_m": 0.3699237368714573,
+   "se_m": 0.01626922734538278,
+   "z95_inside_footprint_1999": -1.756,
+   "z95_inside_footprint_2002": -1.8335000000000001,
+   "n_inside_1999": 600,
+   "n_inside_2002": 316,
+   "note": "negative = 2002 surface lower than 1999 (settlement, or burial is NOT visible as a rise); positive = higher (sand cover, or sounding-line offsets)"
+  },
+  "T5_beach_levels_spatial": {
+   "definition": "DoT WA terrestrial point-elevation files (zip DoT_FR_PointData_FR.zip, FR*_Levels.txt: Jan 2001 = 13 months after completion, Feb 2002, Jan 2003, Aug 2011 and Apr 2012 (Port Beach files); capture dates are the file-name end dates, accuracy variable). Points grouped into profile lines (gap > 8 m in s, >= 5 points; about 50 m apart); position of the 0/+1/+2 m AHD contour on each line (first downward crossing from the dune); lee = lines within +-55 m, controls = lines 165-385 m either side. Positive = contour farther offshore in the lee.",
+   "rows": [
+    {
+     "label": "beach levels 2001-01, +0 m AHD contour",
+     "n_lee": 2,
+     "n_ctrl": 6,
+     "trend_slope_m_per_100m": 0.7398762070658033,
+     "trend": "linear through both control strips",
+     "lee_mean": -248.26733482439013,
+     "ctrl_mean": -274.4842882743147,
+     "anomaly": 26.063461731976673,
+     "n_placebo_windows": 2,
+     "n_indep_control_windows": 8.0,
+     "ctrl_resid_sd": null,
+     "tau_samples": 1.0,
+     "se_analytic": null,
+     "z": null,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": 26.063461731976673,
+      "strip1_only": null,
+      "strip2_only": null
+     },
+     "anomaly_range": [
+      26.063461731976673,
+      26.063461731976673
+     ],
+     "sign_consistent": true,
+     "date": "2001-01",
+     "level_m_AHD": 0.0,
+     "n_lines": 13
+    },
+    {
+     "label": "beach levels 2001-01, +1 m AHD contour",
+     "n_lee": 2,
+     "n_ctrl": 6,
+     "trend_slope_m_per_100m": 3.2741734527598174,
+     "trend": "linear through both control strips",
+     "lee_mean": -270.562081985757,
+     "ctrl_mean": -297.1339515897605,
+     "anomaly": 25.89262285525848,
+     "n_placebo_windows": 2,
+     "n_indep_control_windows": 8.0,
+     "ctrl_resid_sd": null,
+     "tau_samples": 1.0,
+     "se_analytic": null,
+     "z": null,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": 25.89262285525848,
+      "strip1_only": null,
+      "strip2_only": null
+     },
+     "anomaly_range": [
+      25.89262285525848,
+      25.89262285525848
+     ],
+     "sign_consistent": true,
+     "date": "2001-01",
+     "level_m_AHD": 1.0,
+     "n_lines": 13
+    },
+    {
+     "label": "beach levels 2001-01, +2 m AHD contour",
+     "n_lee": 1,
+     "n_ctrl": 6,
+     "anomaly": null,
+     "note": "insufficient data (lee n=1, control n=6)",
+     "date": "2001-01",
+     "level_m_AHD": 2.0,
+     "n_lines": 11
+    },
+    {
+     "label": "beach levels 2002-02, +0 m AHD contour",
+     "n_lee": 2,
+     "n_ctrl": 7,
+     "trend_slope_m_per_100m": 2.3045960007524124,
+     "trend": "linear through both control strips",
+     "lee_mean": -247.6272824754193,
+     "ctrl_mean": -271.923441084571,
+     "anomaly": 23.302678805707288,
+     "n_placebo_windows": 2,
+     "n_indep_control_windows": 8.0,
+     "ctrl_resid_sd": null,
+     "tau_samples": 1.0,
+     "se_analytic": null,
+     "z": null,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": 23.302678805707288,
+      "strip1_only": 27.151417845263595,
+      "strip2_only": null
+     },
+     "anomaly_range": [
+      23.302678805707288,
+      27.151417845263595
+     ],
+     "sign_consistent": true,
+     "date": "2002-02",
+     "level_m_AHD": 0.0,
+     "n_lines": 14
+    },
+    {
+     "label": "beach levels 2002-02, +1 m AHD contour",
+     "n_lee": 2,
+     "n_ctrl": 7,
+     "trend_slope_m_per_100m": 4.193611604293082,
+     "trend": "linear through both control strips",
+     "lee_mean": -270.8495412373202,
+     "ctrl_mean": -296.25036129949245,
+     "anomaly": 23.593011478370897,
+     "n_placebo_windows": 2,
+     "n_indep_control_windows": 8.0,
+     "ctrl_resid_sd": null,
+     "tau_samples": 1.0,
+     "se_analytic": null,
+     "z": null,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": 23.593011478370897,
+      "strip1_only": 33.532882895145235,
+      "strip2_only": null
+     },
+     "anomaly_range": [
+      23.593011478370897,
+      33.532882895145235
+     ],
+     "sign_consistent": true,
+     "date": "2002-02",
+     "level_m_AHD": 1.0,
+     "n_lines": 14
+    },
+    {
+     "label": "beach levels 2002-02, +2 m AHD contour",
+     "n_lee": 0,
+     "n_ctrl": 7,
+     "anomaly": null,
+     "note": "insufficient data (lee n=0, control n=7)",
+     "date": "2002-02",
+     "level_m_AHD": 2.0,
+     "n_lines": 9
+    },
+    {
+     "label": "beach levels 2003-01, +0 m AHD contour",
+     "n_lee": 2,
+     "n_ctrl": 8,
+     "trend_slope_m_per_100m": 0.6744990145349578,
+     "trend": "linear through both control strips",
+     "lee_mean": -260.86623252786956,
+     "ctrl_mean": -275.55442703527467,
+     "anomaly": 14.717436674053147,
+     "n_placebo_windows": 2,
+     "n_indep_control_windows": 8.0,
+     "ctrl_resid_sd": null,
+     "tau_samples": 1.0,
+     "se_analytic": null,
+     "z": null,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": 14.717436674053147,
+      "strip1_only": 16.113818993964315,
+      "strip2_only": 13.26257002084597
+     },
+     "anomaly_range": [
+      13.26257002084597,
+      16.113818993964315
+     ],
+     "sign_consistent": true,
+     "date": "2003-01",
+     "level_m_AHD": 0.0,
+     "n_lines": 15
+    },
+    {
+     "label": "beach levels 2003-01, +1 m AHD contour",
+     "n_lee": 2,
+     "n_ctrl": 8,
+     "trend_slope_m_per_100m": 3.968971607702371,
+     "trend": "linear through both control strips",
+     "lee_mean": -272.9193423231202,
+     "ctrl_mean": -296.28582321094746,
+     "anomaly": 23.53855130849908,
+     "n_placebo_windows": 2,
+     "n_indep_control_windows": 8.0,
+     "ctrl_resid_sd": null,
+     "tau_samples": 1.0,
+     "se_analytic": null,
+     "z": null,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": 23.53855130849908,
+      "strip1_only": 33.63507508013927,
+      "strip2_only": 13.097886695515314
+     },
+     "anomaly_range": [
+      13.097886695515314,
+      33.63507508013927
+     ],
+     "sign_consistent": true,
+     "date": "2003-01",
+     "level_m_AHD": 1.0,
+     "n_lines": 15
+    },
+    {
+     "label": "beach levels 2003-01, +2 m AHD contour",
+     "n_lee": 1,
+     "n_ctrl": 8,
+     "anomaly": null,
+     "note": "insufficient data (lee n=1, control n=8)",
+     "date": "2003-01",
+     "level_m_AHD": 2.0,
+     "n_lines": 13
+    },
+    {
+     "label": "beach levels 2011-08, +0 m AHD contour",
+     "n_lee": 2,
+     "n_ctrl": 7,
+     "trend_slope_m_per_100m": 7.019962974064477,
+     "trend": "linear through both control strips",
+     "lee_mean": -271.8230827110949,
+     "ctrl_mean": -291.2367432243137,
+     "anomaly": 15.809766957923301,
+     "n_placebo_windows": 2,
+     "n_indep_control_windows": 8.0,
+     "ctrl_resid_sd": null,
+     "tau_samples": 1.0,
+     "se_analytic": null,
+     "z": null,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": 15.809766957923301,
+      "strip1_only": 34.4033133153963,
+      "strip2_only": null
+     },
+     "anomaly_range": [
+      15.809766957923301,
+      34.4033133153963
+     ],
+     "sign_consistent": true,
+     "date": "2011-08",
+     "level_m_AHD": 0.0,
+     "n_lines": 23
+    },
+    {
+     "label": "beach levels 2011-08, +1 m AHD contour",
+     "n_lee": 2,
+     "n_ctrl": 8,
+     "trend_slope_m_per_100m": 6.413223966794224,
+     "trend": "linear through both control strips",
+     "lee_mean": -277.3246327345912,
+     "ctrl_mean": -302.4904537922917,
+     "anomaly": 19.702678441608725,
+     "n_placebo_windows": 3,
+     "n_indep_control_windows": 8.0,
+     "ctrl_resid_sd": null,
+     "tau_samples": 1.0,
+     "se_analytic": null,
+     "z": null,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": 19.702678441608725,
+      "strip1_only": 37.41777576026516,
+      "strip2_only": null
+     },
+     "anomaly_range": [
+      19.702678441608725,
+      37.41777576026516
+     ],
+     "sign_consistent": true,
+     "date": "2011-08",
+     "level_m_AHD": 1.0,
+     "n_lines": 24
+    },
+    {
+     "label": "beach levels 2011-08, +2 m AHD contour",
+     "n_lee": 2,
+     "n_ctrl": 8,
+     "trend_slope_m_per_100m": 5.8892521517169865,
+     "trend": "linear through both control strips",
+     "lee_mean": -281.0037368798821,
+     "ctrl_mean": -310.5878443536509,
+     "anomaly": 24.567313335041916,
+     "n_placebo_windows": 3,
+     "n_indep_control_windows": 8.0,
+     "ctrl_resid_sd": null,
+     "tau_samples": 1.0,
+     "se_analytic": null,
+     "z": null,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": 24.567313335041916,
+      "strip1_only": 40.847270878775646,
+      "strip2_only": null
+     },
+     "anomaly_range": [
+      24.567313335041916,
+      40.847270878775646
+     ],
+     "sign_consistent": true,
+     "date": "2011-08",
+     "level_m_AHD": 2.0,
+     "n_lines": 24
+    },
+    {
+     "label": "beach levels 2012-04, +0 m AHD contour",
+     "n_lee": 2,
+     "n_ctrl": 7,
+     "trend_slope_m_per_100m": 2.684540826942899,
+     "trend": "linear through both control strips",
+     "lee_mean": -257.989240452029,
+     "ctrl_mean": -269.5113966606246,
+     "anomaly": 10.151218163854125,
+     "n_placebo_windows": 2,
+     "n_indep_control_windows": 8.0,
+     "ctrl_resid_sd": null,
+     "tau_samples": 1.0,
+     "se_analytic": null,
+     "z": null,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": 10.151218163854125,
+      "strip1_only": 16.777244563512127,
+      "strip2_only": null
+     },
+     "anomaly_range": [
+      10.151218163854125,
+      16.777244563512127
+     ],
+     "sign_consistent": true,
+     "date": "2012-04",
+     "level_m_AHD": 0.0,
+     "n_lines": 23
+    },
+    {
+     "label": "beach levels 2012-04, +1 m AHD contour",
+     "n_lee": 2,
+     "n_ctrl": 8,
+     "trend_slope_m_per_100m": 3.439285240530901,
+     "trend": "linear through both control strips",
+     "lee_mean": -276.67719228590806,
+     "ctrl_mean": -289.9662318777794,
+     "anomaly": 10.365095009525987,
+     "n_placebo_windows": 3,
+     "n_indep_control_windows": 8.0,
+     "ctrl_resid_sd": null,
+     "tau_samples": 1.0,
+     "se_analytic": null,
+     "z": null,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": 10.365095009525987,
+      "strip1_only": 19.39632639898994,
+      "strip2_only": null
+     },
+     "anomaly_range": [
+      10.365095009525987,
+      19.39632639898994
+     ],
+     "sign_consistent": true,
+     "date": "2012-04",
+     "level_m_AHD": 1.0,
+     "n_lines": 24
+    },
+    {
+     "label": "beach levels 2012-04, +2 m AHD contour",
+     "n_lee": 2,
+     "n_ctrl": 8,
+     "trend_slope_m_per_100m": 5.588253099256811,
+     "trend": "linear through both control strips",
+     "lee_mean": -281.7722777414183,
+     "ctrl_mean": -309.3242410992697,
+     "anomaly": 22.801051109635523,
+     "n_placebo_windows": 3,
+     "n_indep_control_windows": 8.0,
+     "ctrl_resid_sd": null,
+     "tau_samples": 1.0,
+     "se_analytic": null,
+     "z": null,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": 22.801051109635523,
+      "strip1_only": 38.32052739786138,
+      "strip2_only": null
+     },
+     "anomaly_range": [
+      22.801051109635523,
+      38.32052739786138
+     ],
+     "sign_consistent": true,
+     "date": "2012-04",
+     "level_m_AHD": 2.0,
+     "n_lines": 24
+    }
+   ],
+   "lines_per_date": {
+    "2001-01": 13,
+    "2002-02": 14,
+    "2003-01": 15,
+    "2011-08": 24,
+    "2012-04": 24
+   }
+  },
+  "T5b_beach_levels_change": {
+   "definition": "change in contour position between survey dates on matched lines (nearest line within 20 m), lee minus control trend; positive = the lee shoreline advanced relative to the controls; there is NO pre-construction beach survey (the first is 13 months after completion), so this tests growth after Jan 2001 only",
+   "rows": [
+    {
+     "label": "beach levels, change 2001-01 -> 2003-01, +0 m AHD contour",
+     "n_lee": 2,
+     "n_ctrl": 7,
+     "trend_slope_m_per_100m": 0.5061606247911574,
+     "trend": "linear through both control strips",
+     "lee_mean": -12.598897703479395,
+     "ctrl_mean": -2.458233384144226,
+     "anomaly": -10.35462488908955,
+     "n_placebo_windows": 2,
+     "n_indep_control_windows": 8.0,
+     "ctrl_resid_sd": null,
+     "tau_samples": 1.0,
+     "se_analytic": null,
+     "z": null,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": -10.35462488908955,
+      "strip1_only": -8.881443967677896,
+      "strip2_only": null
+     },
+     "anomaly_range": [
+      -10.35462488908955,
+      -8.881443967677896
+     ],
+     "sign_consistent": true,
+     "from_date": "2001-01",
+     "to_date": "2003-01",
+     "level_m_AHD": 0.0,
+     "n_matched_lines": 13
+    },
+    {
+     "label": "beach levels, change 2001-01 -> 2003-01, +1 m AHD contour",
+     "n_lee": 2,
+     "n_ctrl": 7,
+     "trend_slope_m_per_100m": 1.1373520579256167,
+     "trend": "linear through both control strips",
+     "lee_mean": -2.3572603373631296,
+     "ctrl_mean": -0.57225672416465,
+     "anomaly": -2.265776874503601,
+     "n_placebo_windows": 2,
+     "n_indep_control_windows": 8.0,
+     "ctrl_resid_sd": null,
+     "tau_samples": 1.0,
+     "se_analytic": null,
+     "z": null,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": -2.265776874503601,
+      "strip1_only": 0.5107462001013232,
+      "strip2_only": null
+     },
+     "anomaly_range": [
+      -2.265776874503601,
+      0.5107462001013232
+     ],
+     "sign_consistent": false,
+     "from_date": "2001-01",
+     "to_date": "2003-01",
+     "level_m_AHD": 1.0,
+     "n_matched_lines": 13
+    },
+    {
+     "label": "beach levels, change 2003-01 -> 2012-04, +0 m AHD contour",
+     "n_lee": 2,
+     "n_ctrl": 6,
+     "trend_slope_m_per_100m": 2.037783856295616,
+     "trend": "linear through both control strips",
+     "lee_mean": 2.876992075840562,
+     "ctrl_mean": 6.543850286152946,
+     "anomaly": -3.6094757448743193,
+     "n_placebo_windows": 2,
+     "n_indep_control_windows": 8.0,
+     "ctrl_resid_sd": null,
+     "tau_samples": 1.0,
+     "se_analytic": null,
+     "z": null,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": -3.6094757448743193,
+      "strip1_only": null,
+      "strip2_only": null
+     },
+     "anomaly_range": [
+      -3.6094757448743193,
+      -3.6094757448743193
+     ],
+     "sign_consistent": true,
+     "from_date": "2003-01",
+     "to_date": "2012-04",
+     "level_m_AHD": 0.0,
+     "n_matched_lines": 12
+    },
+    {
+     "label": "beach levels, change 2003-01 -> 2012-04, +1 m AHD contour",
+     "n_lee": 2,
+     "n_ctrl": 7,
+     "trend_slope_m_per_100m": -1.1732698520801432,
+     "trend": "linear through both control strips",
+     "lee_mean": -3.7578499627879296,
+     "ctrl_mean": 9.803599532725514,
+     "anomaly": -13.048969029371197,
+     "n_placebo_windows": 2,
+     "n_indep_control_windows": 8.0,
+     "ctrl_resid_sd": null,
+     "tau_samples": 1.0,
+     "se_analytic": null,
+     "z": null,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": -13.048969029371197,
+      "strip1_only": -16.34728985333642,
+      "strip2_only": null
+     },
+     "anomaly_range": [
+      -16.34728985333642,
+      -13.048969029371197
+     ],
+     "sign_consistent": true,
+     "from_date": "2003-01",
+     "to_date": "2012-04",
+     "level_m_AHD": 1.0,
+     "n_matched_lines": 13
+    },
+    {
+     "label": "beach levels, change 2001-01 -> 2012-04, +0 m AHD contour",
+     "n_lee": 2,
+     "n_ctrl": 6,
+     "trend_slope_m_per_100m": 2.703889047340063,
+     "trend": "linear through both control strips",
+     "lee_mean": -9.721905627638833,
+     "ctrl_mean": 4.060542825879746,
+     "anomaly": -13.70630896535451,
+     "n_placebo_windows": 2,
+     "n_indep_control_windows": 8.0,
+     "ctrl_resid_sd": null,
+     "tau_samples": 1.0,
+     "se_analytic": null,
+     "z": null,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": -13.70630896535451,
+      "strip1_only": null,
+      "strip2_only": null
+     },
+     "anomaly_range": [
+      -13.70630896535451,
+      -13.70630896535451
+     ],
+     "sign_consistent": true,
+     "from_date": "2001-01",
+     "to_date": "2012-04",
+     "level_m_AHD": 0.0,
+     "n_matched_lines": 12
+    },
+    {
+     "label": "beach levels, change 2001-01 -> 2012-04, +1 m AHD contour",
+     "n_lee": 2,
+     "n_ctrl": 7,
+     "trend_slope_m_per_100m": -0.03991088672951594,
+     "trend": "linear through both control strips",
+     "lee_mean": -6.115110300151059,
+     "ctrl_mean": 9.231342808560864,
+     "anomaly": -15.32902016283078,
+     "n_placebo_windows": 2,
+     "n_indep_control_windows": 8.0,
+     "ctrl_resid_sd": null,
+     "tau_samples": 1.0,
+     "se_analytic": null,
+     "z": null,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": -15.32902016283078,
+      "strip1_only": -15.836543653235097,
+      "strip2_only": null
+     },
+     "anomaly_range": [
+      -15.836543653235097,
+      -15.32902016283078
+     ],
+     "sign_consistent": true,
+     "from_date": "2001-01",
+     "to_date": "2012-04",
+     "level_m_AHD": 1.0,
+     "n_matched_lines": 13
+    },
+    {
+     "label": "beach levels, change 2002-02 -> 2012-04, +0 m AHD contour",
+     "n_lee": 2,
+     "n_ctrl": 6,
+     "trend_slope_m_per_100m": 3.4735346910278344,
+     "trend": "linear through both control strips",
+     "lee_mean": -10.36195797660966,
+     "ctrl_mean": -2.353785801832894,
+     "anomaly": -7.910360042376148,
+     "n_placebo_windows": 2,
+     "n_indep_control_windows": 8.0,
+     "ctrl_resid_sd": null,
+     "tau_samples": 1.0,
+     "se_analytic": null,
+     "z": null,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": -7.910360042376148,
+      "strip1_only": null,
+      "strip2_only": null
+     },
+     "anomaly_range": [
+      -7.910360042376148,
+      -7.910360042376148
+     ],
+     "sign_consistent": true,
+     "from_date": "2002-02",
+     "to_date": "2012-04",
+     "level_m_AHD": 0.0,
+     "n_matched_lines": 13
+    },
+    {
+     "label": "beach levels, change 2002-02 -> 2012-04, +1 m AHD contour",
+     "n_lee": 2,
+     "n_ctrl": 7,
+     "trend_slope_m_per_100m": -1.1199253081991167,
+     "trend": "linear through both control strips",
+     "lee_mean": -5.82765104858791,
+     "ctrl_mean": 8.361479635408338,
+     "anomaly": -13.69995094160977,
+     "n_placebo_windows": 2,
+     "n_indep_control_windows": 8.0,
+     "ctrl_resid_sd": null,
+     "tau_samples": 1.0,
+     "se_analytic": null,
+     "z": null,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": -13.69995094160977,
+      "strip1_only": -16.245097668342382,
+      "strip2_only": null
+     },
+     "anomaly_range": [
+      -16.245097668342382,
+      -13.69995094160977
+     ],
+     "sign_consistent": true,
+     "from_date": "2002-02",
+     "to_date": "2012-04",
+     "level_m_AHD": 1.0,
+     "n_matched_lines": 14
+    }
+   ]
+  }
+ },
+ "boscombe-surf-reef": {
+  "reef": "boscombe-surf-reef",
+  "reef_alongshore_extent_L_m": 88.46000000000001,
+  "reef_centre_x_m": 5.389999999999997,
+  "reef_x_range": [
+   -38.84,
+   49.62
+  ],
+  "datum": "metres ODN (Ordnance Datum Newlyn) of the CCO profiles; the 3D model takes ODN = MSL within +-0.1 m (A4, METHODS_3D 3.2), so 0 m ODN ~ MSL contour",
+  "data_source": "Channel Coastal Observatory (CCO) beach-profile surveys, lines 5f00424-5f00429 (+ \"A\" lines 424A-428A from 2010), 316 files 07_scale/shapes/boscombe-surf-reef/src/cco_profiles/<line>_<date>.txt, fetched by 3d/scripts/cco_fetch.py (see 3d/SOURCES_3D.md S13); points (E,N,z_ODN,chainage) converted to the canonical reef frame with 3d/scripts/canon.py (OSGB36 -> canonical, +-5 m). Profiles run from the sea wall (y about -64 m) to z about -1 m ODN (y about +21 m); the reef lies at y = 181-276 m, i.e. >= 160 m seaward of the end of every profile.",
+  "periods": {
+   "pre": "before 2008-06-01 (lines 424/427: 2004-07 .. 2008-04; others 5 dates 2004-07 .. 2008-04)",
+   "construction": "2008-06-01 .. 2009-11-18 (excluded)",
+   "post": "from 2009-11-19 (official opening) to 2026-03-06"
+  },
+  "line_x_m": {
+   "5f00424": 222.2372860747508,
+   "5f00424A": 175.79943519727888,
+   "5f00425": 145.5467848808488,
+   "5f00425A": 95.90634955066949,
+   "5f00426": 43.07390764878847,
+   "5f00426A": -5.01037127104018,
+   "5f00427": -57.84636644069888,
+   "5f00427A": -87.55511006792871,
+   "5f00428": -142.36683825154788,
+   "5f00428A": -183.24647565613805,
+   "5f00429": -220.56282909734648
+  },
+  "lee_lines": [
+   "5f00426",
+   "5f00427"
+  ],
+  "control_lines": [
+   "5f00424",
+   "5f00425",
+   "5f00428",
+   "5f00429"
+  ],
+  "A_raw_pre_post_by_line": [
+   {
+    "line": "5f00424",
+    "x_m": 222.2372860747508,
+    "x_rel_reef_centre_m": 216.84728607475083,
+    "n_dates_pre": 16,
+    "n_dates_post": 44,
+    "y_0.0": {
+     "pre_mean": -13.801281654412762,
+     "pre_sd": 11.82998970273881,
+     "n_pre": 16,
+     "post_mean": -2.4264392731073907,
+     "post_sd": 9.813368154467947,
+     "n_post": 43,
+     "post_minus_pre": 11.37484238130537
+    },
+    "y_+1.0": {
+     "pre_mean": -28.95349578802152,
+     "pre_sd": 11.176074351616984,
+     "n_pre": 16,
+     "post_mean": -17.38088122831196,
+     "post_sd": 10.89473694849746,
+     "n_post": 44,
+     "post_minus_pre": 11.57261455970956
+    },
+    "vol0_m3_per_m": {
+     "pre_mean": 56.343747229314275,
+     "pre_sd": 30.289320694610392,
+     "n_pre": 16,
+     "post_mean": 85.25001884404588,
+     "post_sd": 35.487466715483244,
+     "n_post": 43,
+     "post_minus_pre": 28.906271614731608
+    }
+   },
+   {
+    "line": "5f00424A",
+    "x_m": 175.79943519727888,
+    "x_rel_reef_centre_m": 170.4094351972789,
+    "n_dates_pre": 0,
+    "n_dates_post": 17,
+    "y_0.0": {
+     "pre_mean": null,
+     "pre_sd": null,
+     "n_pre": 0,
+     "post_mean": -0.6421679760765485,
+     "post_sd": 8.21195261621766,
+     "n_post": 17,
+     "post_minus_pre": null
+    },
+    "y_+1.0": {
+     "pre_mean": null,
+     "pre_sd": null,
+     "n_pre": 0,
+     "post_mean": -16.28643265569704,
+     "post_sd": 9.617442836369564,
+     "n_post": 17,
+     "post_minus_pre": null
+    },
+    "vol0_m3_per_m": {
+     "pre_mean": null,
+     "pre_sd": null,
+     "n_pre": 0,
+     "post_mean": 89.61063080015658,
+     "post_sd": 30.798608570866733,
+     "n_post": 17,
+     "post_minus_pre": null
+    }
+   },
+   {
+    "line": "5f00425",
+    "x_m": 145.5467848808488,
+    "x_rel_reef_centre_m": 140.15678488084882,
+    "n_dates_pre": 5,
+    "n_dates_post": 17,
+    "y_0.0": {
+     "pre_mean": -18.01069329444657,
+     "pre_sd": 12.340456103289451,
+     "n_pre": 5,
+     "post_mean": -0.646721429459588,
+     "post_sd": 7.971205033119951,
+     "n_post": 17,
+     "post_minus_pre": 17.36397186498698
+    },
+    "y_+1.0": {
+     "pre_mean": -30.709505959552008,
+     "pre_sd": 10.192729507895873,
+     "n_pre": 5,
+     "post_mean": -17.082707040282813,
+     "post_sd": 8.571136546884434,
+     "n_post": 17,
+     "post_minus_pre": 13.626798919269195
+    },
+    "vol0_m3_per_m": {
+     "pre_mean": 54.29182249289494,
+     "pre_sd": 33.85766221278581,
+     "n_pre": 5,
+     "post_mean": 86.5288359597716,
+     "post_sd": 27.62817831360218,
+     "n_post": 17,
+     "post_minus_pre": 32.23701346687666
+    }
+   },
+   {
+    "line": "5f00425A",
+    "x_m": 95.90634955066949,
+    "x_rel_reef_centre_m": 90.51634955066949,
+    "n_dates_pre": 0,
+    "n_dates_post": 17,
+    "y_0.0": {
+     "pre_mean": null,
+     "pre_sd": null,
+     "n_pre": 0,
+     "post_mean": -1.2082437911600348,
+     "post_sd": 7.879570368623244,
+     "n_post": 17,
+     "post_minus_pre": null
+    },
+    "y_+1.0": {
+     "pre_mean": null,
+     "pre_sd": null,
+     "n_pre": 0,
+     "post_mean": -15.329118403242713,
+     "post_sd": 8.085703651277358,
+     "n_post": 17,
+     "post_minus_pre": null
+    },
+    "vol0_m3_per_m": {
+     "pre_mean": null,
+     "pre_sd": null,
+     "n_pre": 0,
+     "post_mean": 88.26678550886501,
+     "post_sd": 17.30278134077719,
+     "n_post": 17,
+     "post_minus_pre": null
+    }
+   },
+   {
+    "line": "5f00426",
+    "x_m": 43.07390764878847,
+    "x_rel_reef_centre_m": 37.68390764878848,
+    "n_dates_pre": 5,
+    "n_dates_post": 17,
+    "y_0.0": {
+     "pre_mean": -16.37362075499356,
+     "pre_sd": 12.832162962869216,
+     "n_pre": 5,
+     "post_mean": -4.130923668700046,
+     "post_sd": 6.15485659590183,
+     "n_post": 17,
+     "post_minus_pre": 12.242697086293514
+    },
+    "y_+1.0": {
+     "pre_mean": -28.636201713619833,
+     "pre_sd": 9.818599245659254,
+     "n_pre": 5,
+     "post_mean": -19.694937734542645,
+     "post_sd": 6.170934671044155,
+     "n_post": 17,
+     "post_minus_pre": 8.941263979077188
+    },
+    "vol0_m3_per_m": {
+     "pre_mean": 50.67606006678484,
+     "pre_sd": 27.73459670360798,
+     "n_pre": 5,
+     "post_mean": 74.36599443248849,
+     "post_sd": 15.823652429609286,
+     "n_post": 17,
+     "post_minus_pre": 23.68993436570365
+    }
+   },
+   {
+    "line": "5f00426A",
+    "x_m": -5.01037127104018,
+    "x_rel_reef_centre_m": -10.400371271040177,
+    "n_dates_pre": 0,
+    "n_dates_post": 17,
+    "y_0.0": {
+     "pre_mean": null,
+     "pre_sd": null,
+     "n_pre": 0,
+     "post_mean": -4.810861048503288,
+     "post_sd": 6.272128397908539,
+     "n_post": 17,
+     "post_minus_pre": null
+    },
+    "y_+1.0": {
+     "pre_mean": null,
+     "pre_sd": null,
+     "n_pre": 0,
+     "post_mean": -19.99086487760813,
+     "post_sd": 7.017828253638784,
+     "n_post": 17,
+     "post_minus_pre": null
+    },
+    "vol0_m3_per_m": {
+     "pre_mean": null,
+     "pre_sd": null,
+     "n_pre": 0,
+     "post_mean": 72.63278506673282,
+     "post_sd": 18.20437604670321,
+     "n_post": 17,
+     "post_minus_pre": null
+    }
+   },
+   {
+    "line": "5f00427",
+    "x_m": -57.84636644069888,
+    "x_rel_reef_centre_m": -63.23636644069887,
+    "n_dates_pre": 16,
+    "n_dates_post": 44,
+    "y_0.0": {
+     "pre_mean": -14.59803966773267,
+     "pre_sd": 11.555528529535959,
+     "n_pre": 16,
+     "post_mean": -3.9794560047109546,
+     "post_sd": 6.542525941779885,
+     "n_post": 43,
+     "post_minus_pre": 10.618583663021715
+    },
+    "y_+1.0": {
+     "pre_mean": -30.837636808740115,
+     "pre_sd": 10.053588306516065,
+     "n_pre": 16,
+     "post_mean": -20.59051622502719,
+     "post_sd": 7.033011452753013,
+     "n_post": 44,
+     "post_minus_pre": 10.247120583712924
+    },
+    "vol0_m3_per_m": {
+     "pre_mean": 52.08975017287517,
+     "pre_sd": 26.879691758043755,
+     "n_pre": 16,
+     "post_mean": 76.25288546615113,
+     "post_sd": 18.538931313072567,
+     "n_post": 43,
+     "post_minus_pre": 24.163135293275957
+    }
+   },
+   {
+    "line": "5f00427A",
+    "x_m": -87.55511006792871,
+    "x_rel_reef_centre_m": -92.94511006792871,
+    "n_dates_pre": 0,
+    "n_dates_post": 17,
+    "y_0.0": {
+     "pre_mean": null,
+     "pre_sd": null,
+     "n_pre": 0,
+     "post_mean": -1.8143334635936794,
+     "post_sd": 7.091415856573353,
+     "n_post": 17,
+     "post_minus_pre": null
+    },
+    "y_+1.0": {
+     "pre_mean": null,
+     "pre_sd": null,
+     "n_pre": 0,
+     "post_mean": -17.072745247880682,
+     "post_sd": 5.511764279173185,
+     "n_post": 17,
+     "post_minus_pre": null
+    },
+    "vol0_m3_per_m": {
+     "pre_mean": null,
+     "pre_sd": null,
+     "n_pre": 0,
+     "post_mean": 84.13647980308528,
+     "post_sd": 14.595655600759317,
+     "n_post": 17,
+     "post_minus_pre": null
+    }
+   },
+   {
+    "line": "5f00428",
+    "x_m": -142.36683825154788,
+    "x_rel_reef_centre_m": -147.75683825154786,
+    "n_dates_pre": 5,
+    "n_dates_post": 17,
+    "y_0.0": {
+     "pre_mean": -8.14812647892364,
+     "pre_sd": 13.013421736856118,
+     "n_pre": 5,
+     "post_mean": -3.9855486494789556,
+     "post_sd": 6.621167355354348,
+     "n_post": 17,
+     "post_minus_pre": 4.162577829444684
+    },
+    "y_+1.0": {
+     "pre_mean": -21.51215489616164,
+     "pre_sd": 10.401233914986118,
+     "n_pre": 5,
+     "post_mean": -18.37233834606533,
+     "post_sd": 7.0865235366973565,
+     "n_post": 17,
+     "post_minus_pre": 3.1398165500963096
+    },
+    "vol0_m3_per_m": {
+     "pre_mean": 63.03904664634109,
+     "pre_sd": 21.976833952459224,
+     "n_pre": 5,
+     "post_mean": 74.61445035974879,
+     "post_sd": 16.03628099677966,
+     "n_post": 17,
+     "post_minus_pre": 11.575403713407695
+    }
+   },
+   {
+    "line": "5f00428A",
+    "x_m": -183.24647565613805,
+    "x_rel_reef_centre_m": -188.63647565613803,
+    "n_dates_pre": 0,
+    "n_dates_post": 17,
+    "y_0.0": {
+     "pre_mean": null,
+     "pre_sd": null,
+     "n_pre": 0,
+     "post_mean": -7.312082212738445,
+     "post_sd": 5.863449793070336,
+     "n_post": 17,
+     "post_minus_pre": null
+    },
+    "y_+1.0": {
+     "pre_mean": null,
+     "pre_sd": null,
+     "n_pre": 0,
+     "post_mean": -21.221535358481574,
+     "post_sd": 6.64693108110359,
+     "n_post": 17,
+     "post_minus_pre": null
+    },
+    "vol0_m3_per_m": {
+     "pre_mean": null,
+     "pre_sd": null,
+     "n_pre": 0,
+     "post_mean": 67.0584481704682,
+     "post_sd": 17.420254154574437,
+     "n_post": 17,
+     "post_minus_pre": null
+    }
+   },
+   {
+    "line": "5f00429",
+    "x_m": -220.56282909734648,
+    "x_rel_reef_centre_m": -225.95282909734647,
+    "n_dates_pre": 5,
+    "n_dates_post": 17,
+    "y_0.0": {
+     "pre_mean": -12.003895751247379,
+     "pre_sd": 10.656566300606501,
+     "n_pre": 5,
+     "post_mean": -7.853306551158696,
+     "post_sd": 4.747508851440006,
+     "n_post": 17,
+     "post_minus_pre": 4.150589200088683
+    },
+    "y_+1.0": {
+     "pre_mean": -22.40083057667548,
+     "pre_sd": 8.285203156246197,
+     "n_pre": 5,
+     "post_mean": -21.862040741281728,
+     "post_sd": 6.617109104120884,
+     "n_post": 17,
+     "post_minus_pre": 0.5387898353937537
+    },
+    "vol0_m3_per_m": {
+     "pre_mean": 56.141895575826666,
+     "pre_sd": 18.22618221886799,
+     "n_pre": 5,
+     "post_mean": 64.27612382937521,
+     "post_sd": 15.60637815740153,
+     "n_post": 17,
+     "post_minus_pre": 8.134228253548542
+    }
+   }
+  ],
+  "Ls_over_X": {
+   "Ls_alongshore_m": 88.46000000000001,
+   "X_shoreline_to_shoreward_toe_m": 185.2723718428412,
+   "X_shoreline_to_reef_centre_m": 225.8715718428412,
+   "Ls_over_X_toe": 0.47745920840823974,
+   "Ls_over_X_centre": 0.39163848410967556,
+   "regime_toe": "salient expected (B/S < 2)",
+   "regime_centre": "salient expected (B/S < 2)",
+   "illustrative_salient_amplitude_m": [
+    11.057500000000001,
+    33.1725
+   ],
+   "note": "DERIVED B/S (B = Ls alongshore extent, S = X shoreline-to-reef distance). Rules (Black & Andrews 2001 via Blacka et al. 2013): no change if B/S < ~0.1, salient if < 2, tombolo if > 0.6; Blacka et al. note the method over-predicts salient size for submerged reefs (Narrowneck, Mount Maunganui). Illustrative amplitude = 0.125 x D_tot with D_tot = 1-3 B (ASSUMPTION; D_tot is not given in the secondary source) -> an order of magnitude only. shoreline = mean post-construction 0 m ODN contour of the lee lines (y = -4.0 m)"
+  },
+  "B_yearly_means_main_lines": {
+   "5f00424": {
+    "2004": {
+     "y_0": -17.356325473897282,
+     "vol0": 39.6326682278669,
+     "n": 2
+    },
+    "2005": {
+     "y_0": -19.7485812751793,
+     "vol0": 37.373095480893525,
+     "n": 5
+    },
+    "2006": {
+     "y_0": -27.7932423948025,
+     "vol0": 27.569711039877017,
+     "n": 3
+    },
+    "2007": {
+     "y_0": -0.36170650330222703,
+     "vol0": 104.74727643935778,
+     "n": 3
+    },
+    "2008": {
+     "y_0": -1.6119142433255056,
+     "vol0": 75.68531818491415,
+     "n": 7
+    },
+    "2009": {
+     "y_0": -4.79924637491982,
+     "vol0": 66.15082916706662,
+     "n": 5
+    },
+    "2010": {
+     "y_0": -7.588615213643916,
+     "vol0": 60.99241564734106,
+     "n": 4
+    },
+    "2011": {
+     "y_0": -12.525083488312866,
+     "vol0": 56.09689252776741,
+     "n": 4
+    },
+    "2012": {
+     "y_0": -10.091571138855908,
+     "vol0": 54.77019108616137,
+     "n": 3
+    },
+    "2013": {
+     "y_0": -8.398959067764844,
+     "vol0": 52.17790792002666,
+     "n": 3
+    },
+    "2014": {
+     "y_0": -11.33283815280573,
+     "vol0": 50.06425150375396,
+     "n": 4
+    },
+    "2015": {
+     "y_0": -13.48710326261187,
+     "vol0": 53.53318739151865,
+     "n": 3
+    },
+    "2016": {
+     "y_0": 3.974430369337174,
+     "vol0": 127.88861013370565,
+     "n": 3
+    },
+    "2017": {
+     "y_0": 9.462934498471938,
+     "vol0": 141.12620115843885,
+     "n": 2
+    },
+    "2018": {
+     "y_0": 0.37830068925253113,
+     "vol0": 123.17246492667171,
+     "n": 2
+    },
+    "2019": {
+     "y_0": 2.5311083242375565,
+     "vol0": 112.91074779205039,
+     "n": 2
+    },
+    "2020": {
+     "y_0": 1.815426413095722,
+     "vol0": 101.10560029277562,
+     "n": 2
+    },
+    "2021": {
+     "y_0": 9.826758736560091,
+     "vol0": 110.036068023875,
+     "n": 2
+    },
+    "2022": {
+     "y_0": 7.883820681337782,
+     "vol0": 115.1822118526231,
+     "n": 2
+    },
+    "2023": {
+     "y_0": 4.190608112378404,
+     "vol0": 105.14177017192156,
+     "n": 2
+    },
+    "2024": {
+     "y_0": 8.31261380862538,
+     "vol0": 106.14690804664582,
+     "n": 2
+    },
+    "2025": {
+     "y_0": 2.8703729219488903,
+     "vol0": 96.4917040271883,
+     "n": 2
+    },
+    "2026": {
+     "y_0": 7.137968256101027,
+     "vol0": 101.2431210386142,
+     "n": 1
+    }
+   },
+   "5f00425": {
+    "2004": {
+     "y_0": -26.786407698887377,
+     "vol0": 26.51342194678574,
+     "n": 1
+    },
+    "2005": {
+     "y_0": -20.736161655980506,
+     "vol0": 41.78759500789461,
+     "n": 1
+    },
+    "2006": {
+     "y_0": -32.04195519209687,
+     "vol0": 25.795211127277334,
+     "n": 1
+    },
+    "2007": {
+     "y_0": -4.275731947255663,
+     "vol0": 104.17371727990354,
+     "n": 1
+    },
+    "2008": {
+     "y_0": -6.213209978012431,
+     "vol0": 73.18916710261345,
+     "n": 3
+    },
+    "2009": {
+     "y_0": 1.0222604382245741,
+     "vol0": 74.57509453056447,
+     "n": 1
+    },
+    "2010": {
+     "y_0": -8.145559795003164,
+     "vol0": 53.99892869000296,
+     "n": 1
+    },
+    "2011": {
+     "y_0": -13.324319399137135,
+     "vol0": 61.73726052294138,
+     "n": 1
+    },
+    "2012": {
+     "y_0": -7.133762470260543,
+     "vol0": 60.75282779331047,
+     "n": 1
+    },
+    "2013": {
+     "y_0": -6.708760896420677,
+     "vol0": 54.111717848201764,
+     "n": 1
+    },
+    "2014": {
+     "y_0": -13.776656854304033,
+     "vol0": 45.59104098392088,
+     "n": 1
+    },
+    "2015": {
+     "y_0": -11.17783170451903,
+     "vol0": 52.76371335268031,
+     "n": 1
+    },
+    "2016": {
+     "y_0": 6.7724178471483265,
+     "vol0": 146.76672560970596,
+     "n": 1
+    },
+    "2017": {
+     "y_0": 9.84598775393709,
+     "vol0": 118.42291751887973,
+     "n": 1
+    },
+    "2018": {
+     "y_0": -2.467518053736394,
+     "vol0": 107.81364505641329,
+     "n": 1
+    },
+    "2019": {
+     "y_0": 2.700723237247974,
+     "vol0": 99.24858177525121,
+     "n": 1
+    },
+    "2020": {
+     "y_0": -1.455877330487461,
+     "vol0": 93.55523226726724,
+     "n": 1
+    },
+    "2021": {
+     "y_0": 6.447784604000169,
+     "vol0": 99.65211285687519,
+     "n": 1
+    },
+    "2022": {
+     "y_0": 4.831534442381647,
+     "vol0": 100.78698558692454,
+     "n": 1
+    },
+    "2023": {
+     "y_0": 4.363619243408501,
+     "vol0": 91.06531480737952,
+     "n": 1
+    },
+    "2024": {
+     "y_0": 5.812601821430779,
+     "vol0": 88.61534227084725,
+     "n": 1
+    },
+    "2025": {
+     "y_0": 3.380067777769648,
+     "vol0": 94.0018414852825,
+     "n": 1
+    },
+    "2026": {
+     "y_0": 9.041285475731305,
+     "vol0": 102.10602289023322,
+     "n": 1
+    }
+   },
+   "5f00426": {
+    "2004": {
+     "y_0": -16.454140630859282,
+     "vol0": 36.40787942812524,
+     "n": 1
+    },
+    "2005": {
+     "y_0": -22.852247213298124,
+     "vol0": 40.539209290523175,
+     "n": 1
+    },
+    "2006": {
+     "y_0": -33.68064110930868,
+     "vol0": 22.97940560819345,
+     "n": 1
+    },
+    "2007": {
+     "y_0": -0.4188069846833987,
+     "vol0": 94.7004556743379,
+     "n": 1
+    },
+    "2008": {
+     "y_0": -8.462267836818333,
+     "vol0": 58.75335033274446,
+     "n": 3
+    },
+    "2010": {
+     "y_0": -10.066407325719279,
+     "vol0": 76.25798419207193,
+     "n": 1
+    },
+    "2011": {
+     "y_0": -11.564979522240622,
+     "vol0": 74.32741789091224,
+     "n": 1
+    },
+    "2012": {
+     "y_0": -2.0667298574443924,
+     "vol0": 75.392567849901,
+     "n": 1
+    },
+    "2013": {
+     "y_0": -2.3104828808363465,
+     "vol0": 59.886056814376005,
+     "n": 1
+    },
+    "2014": {
+     "y_0": -14.00138815205852,
+     "vol0": 51.065222976584096,
+     "n": 1
+    },
+    "2015": {
+     "y_0": -12.036621011153764,
+     "vol0": 55.25537384540772,
+     "n": 1
+    },
+    "2016": {
+     "y_0": 1.1428462867153435,
+     "vol0": 72.65451364860668,
+     "n": 1
+    },
+    "2017": {
+     "y_0": -4.246163217157332,
+     "vol0": 73.76450679029651,
+     "n": 1
+    },
+    "2018": {
+     "y_0": -8.147603336060243,
+     "vol0": 60.3393929930276,
+     "n": 1
+    },
+    "2019": {
+     "y_0": -7.845113300549555,
+     "vol0": 60.897982201110324,
+     "n": 1
+    },
+    "2020": {
+     "y_0": -9.78520545526435,
+     "vol0": 71.96795155450843,
+     "n": 1
+    },
+    "2021": {
+     "y_0": 7.056798240090603,
+     "vol0": 113.70479749216297,
+     "n": 1
+    },
+    "2022": {
+     "y_0": 1.4547986483034336,
+     "vol0": 101.56250505668525,
+     "n": 1
+    },
+    "2023": {
+     "y_0": -0.7287952161511279,
+     "vol0": 86.84164796855272,
+     "n": 1
+    },
+    "2024": {
+     "y_0": 1.7616237030841049,
+     "vol0": 78.63894060108544,
+     "n": 1
+    },
+    "2025": {
+     "y_0": 2.962984331866435,
+     "vol0": 79.78187636564759,
+     "n": 1
+    },
+    "2026": {
+     "y_0": -1.8052643033251665,
+     "vol0": 71.88316711136797,
+     "n": 1
+    }
+   },
+   "5f00427": {
+    "2004": {
+     "y_0": -23.373438954542234,
+     "vol0": 33.6075616626184,
+     "n": 2
+    },
+    "2005": {
+     "y_0": -18.886860662818297,
+     "vol0": 39.745161912079084,
+     "n": 5
+    },
+    "2006": {
+     "y_0": -27.612301646509263,
+     "vol0": 24.99691849652345,
+     "n": 3
+    },
+    "2007": {
+     "y_0": 2.4570818049787277,
+     "vol0": 98.14963707600026,
+     "n": 3
+    },
+    "2008": {
+     "y_0": -4.796206764404335,
+     "vol0": 68.14452105508937,
+     "n": 7
+    },
+    "2009": {
+     "y_0": -4.225520469666396,
+     "vol0": 100.99144284531101,
+     "n": 3
+    },
+    "2010": {
+     "y_0": -1.8303376903329154,
+     "vol0": 92.29088747527103,
+     "n": 4
+    },
+    "2011": {
+     "y_0": -7.125952650874031,
+     "vol0": 83.38529727710497,
+     "n": 4
+    },
+    "2012": {
+     "y_0": -6.625670715490583,
+     "vol0": 69.65365930339554,
+     "n": 3
+    },
+    "2013": {
+     "y_0": -7.760783824271335,
+     "vol0": 60.30130726636971,
+     "n": 3
+    },
+    "2014": {
+     "y_0": -8.603616091214146,
+     "vol0": 55.65086426031534,
+     "n": 4
+    },
+    "2015": {
+     "y_0": -7.0287353939819175,
+     "vol0": 61.621898201731206,
+     "n": 3
+    },
+    "2016": {
+     "y_0": -9.65371248614929,
+     "vol0": 55.77925763550155,
+     "n": 3
+    },
+    "2017": {
+     "y_0": -2.432690617080087,
+     "vol0": 72.61845440163961,
+     "n": 2
+    },
+    "2018": {
+     "y_0": -6.521704281938453,
+     "vol0": 67.96060899543355,
+     "n": 2
+    },
+    "2019": {
+     "y_0": -8.90958376381423,
+     "vol0": 53.503167831961235,
+     "n": 2
+    },
+    "2020": {
+     "y_0": -3.702676248899542,
+     "vol0": 69.77387290892024,
+     "n": 2
+    },
+    "2021": {
+     "y_0": 8.682576981521493,
+     "vol0": 115.41468347100279,
+     "n": 2
+    },
+    "2022": {
+     "y_0": 3.2808563680743608,
+     "vol0": 110.84843548990332,
+     "n": 2
+    },
+    "2023": {
+     "y_0": -0.609818738933251,
+     "vol0": 94.27106236037056,
+     "n": 2
+    },
+    "2024": {
+     "y_0": 0.05796260610330539,
+     "vol0": 80.75092301386276,
+     "n": 2
+    },
+    "2025": {
+     "y_0": 5.262046475668006,
+     "vol0": 87.89021839873035,
+     "n": 2
+    },
+    "2026": {
+     "y_0": 1.7104867913402597,
+     "vol0": 75.73839007831735,
+     "n": 1
+    }
+   },
+   "5f00428": {
+    "2004": {
+     "y_0": -10.29861904372987,
+     "vol0": 55.349307566556746,
+     "n": 1
+    },
+    "2005": {
+     "y_0": -10.9914070096821,
+     "vol0": 60.16289372727914,
+     "n": 1
+    },
+    "2006": {
+     "y_0": -25.316889907161677,
+     "vol0": 36.547931274191,
+     "n": 1
+    },
+    "2007": {
+     "y_0": 10.817692135343789,
+     "vol0": 96.99691338186925,
+     "n": 1
+    },
+    "2008": {
+     "y_0": -4.9514085693883505,
+     "vol0": 66.13818728180934,
+     "n": 1
+    },
+    "2009": {
+     "y_0": 3.855707151215155,
+     "vol0": 85.08159609068134,
+     "n": 1
+    },
+    "2010": {
+     "y_0": -2.844825415887723,
+     "vol0": 73.71157257091804,
+     "n": 1
+    },
+    "2011": {
+     "y_0": -6.475171862169469,
+     "vol0": 78.65977012567885,
+     "n": 1
+    },
+    "2012": {
+     "y_0": 4.071219016184895,
+     "vol0": 88.28721555073045,
+     "n": 1
+    },
+    "2013": {
+     "y_0": -9.577536049424722,
+     "vol0": 85.57821993266624,
+     "n": 1
+    },
+    "2014": {
+     "y_0": -14.60435811373649,
+     "vol0": 52.24996640736427,
+     "n": 1
+    },
+    "2015": {
+     "y_0": -9.4840814355045,
+     "vol0": 59.3739859445926,
+     "n": 1
+    },
+    "2016": {
+     "y_0": -15.946874982825827,
+     "vol0": 52.28978992716494,
+     "n": 1
+    },
+    "2017": {
+     "y_0": -8.525332369290407,
+     "vol0": 66.16324913604585,
+     "n": 1
+    },
+    "2018": {
+     "y_0": -8.831843803943007,
+     "vol0": 71.96462093450795,
+     "n": 1
+    },
+    "2019": {
+     "y_0": -2.0628236967660727,
+     "vol0": 69.25720233848168,
+     "n": 1
+    },
+    "2020": {
+     "y_0": -3.708861615429616,
+     "vol0": 70.92470086444176,
+     "n": 1
+    },
+    "2021": {
+     "y_0": 8.376747844001398,
+     "vol0": 116.23199730355495,
+     "n": 1
+    },
+    "2022": {
+     "y_0": 1.3446118540866707,
+     "vol0": 96.64825199867566,
+     "n": 1
+    },
+    "2023": {
+     "y_0": -0.7984136967880373,
+     "vol0": 82.23108261496901,
+     "n": 1
+    },
+    "2024": {
+     "y_0": 3.4163587453513515,
+     "vol0": 71.31944621006313,
+     "n": 1
+    },
+    "2025": {
+     "y_0": -0.5927857661470914,
+     "vol0": 70.61502561742154,
+     "n": 1
+    },
+    "2026": {
+     "y_0": -1.5103556928536068,
+     "vol0": 62.939558638452546,
+     "n": 1
+    }
+   },
+   "5f00429": {
+    "2004": {
+     "y_0": -14.647074761390114,
+     "vol0": 47.4087414180609,
+     "n": 1
+    },
+    "2005": {
+     "y_0": -18.27225250886285,
+     "vol0": 47.31377254375673,
+     "n": 1
+    },
+    "2006": {
+     "y_0": -22.81507106981718,
+     "vol0": 40.48011810202799,
+     "n": 1
+    },
+    "2007": {
+     "y_0": 4.807163076599006,
+     "vol0": 86.49012886392477,
+     "n": 1
+    },
+    "2008": {
+     "y_0": -9.09224349276575,
+     "vol0": 59.01671695136292,
+     "n": 1
+    },
+    "2009": {
+     "y_0": -0.19128851379044304,
+     "vol0": 71.2007741901901,
+     "n": 1
+    },
+    "2010": {
+     "y_0": -6.6856805615577075,
+     "vol0": 64.78612015702319,
+     "n": 1
+    },
+    "2011": {
+     "y_0": -7.506376374921918,
+     "vol0": 71.15058432258536,
+     "n": 1
+    },
+    "2012": {
+     "y_0": -4.26466239258209,
+     "vol0": 67.50974657624657,
+     "n": 1
+    },
+    "2013": {
+     "y_0": -7.214645603824875,
+     "vol0": 92.57665217714671,
+     "n": 1
+    },
+    "2014": {
+     "y_0": -12.125766388337981,
+     "vol0": 45.95730475879285,
+     "n": 1
+    },
+    "2015": {
+     "y_0": -7.520292313594431,
+     "vol0": 59.691109642454,
+     "n": 1
+    },
+    "2016": {
+     "y_0": -21.63332181235292,
+     "vol0": 42.538740422539604,
+     "n": 1
+    },
+    "2017": {
+     "y_0": -8.540338928913926,
+     "vol0": 60.80308484677273,
+     "n": 1
+    },
+    "2018": {
+     "y_0": -9.201108531192764,
+     "vol0": 59.2412729678289,
+     "n": 1
+    },
+    "2019": {
+     "y_0": -11.608841736936073,
+     "vol0": 53.62958336473755,
+     "n": 1
+    },
+    "2020": {
+     "y_0": -4.874286407321596,
+     "vol0": 66.50004276464237,
+     "n": 1
+    },
+    "2021": {
+     "y_0": 0.7385915666863434,
+     "vol0": 103.78115193091482,
+     "n": 1
+    },
+    "2022": {
+     "y_0": -4.992227471900781,
+     "vol0": 75.72428736971506,
+     "n": 1
+    },
+    "2023": {
+     "y_0": -4.2590640990974675,
+     "vol0": 64.64290185343172,
+     "n": 1
+    },
+    "2024": {
+     "y_0": -8.540212687472044,
+     "vol0": 51.24433082154733,
+     "n": 1
+    },
+    "2025": {
+     "y_0": -4.737102542187827,
+     "vol0": 62.34634006704508,
+     "n": 1
+    },
+    "2026": {
+     "y_0": -10.540875084189784,
+     "vol0": 50.57085105595462,
+     "n": 1
+    }
+   }
+  },
+  "B_common_mode_volume_jumps": {
+   "rows": [
+    {
+     "from_year": 2006,
+     "to_year": 2007,
+     "median_change_m3_per_m": 72.43688432281064,
+     "lines_rising": 6
+    },
+    {
+     "from_year": 2020,
+     "to_year": 2021,
+     "median_change_m3_per_m": 39.50897755196349,
+     "lines_rising": 4
+    }
+   ],
+   "definition": "year-to-year rise of the beach volume above 0 m ODN (between y=-55 m and the 0 m contour) with a median over the 6 main lines > 20 m3 per m. DERIVED indicator only: the dates and volumes of Poole Bay recharge / recycling are NOT in the repo (ASSUMPTION that such jumps are beach management, not natural; the CCO and BCP Council beach-management records must be checked)."
+  },
+  "C_common_mode_removed_BACI": {
+   "definition": "For each date on which all six main lines were surveyed, the line value minus the mean of the six lines (removes common-mode beach-management and seasonal signal). change_rel = post mean minus pre mean per line. lee_anomaly = mean change_rel of the lee lines (5f00426, 5f00427) minus the straight-line trend fitted to the control lines (5f00424, 5f00425, 5f00428, 5f00429) at the lee-line positions; POSITIVE = lee shoreline advanced (or volume rose) relative to the controls after the reef. 95 % CI by bootstrap over survey dates (4000 resamples; pre n=5 dates, post n=17 dates).",
+   "metrics": {
+    "y_0.0": {
+     "n_dates_pre": 5,
+     "n_dates_post": 17,
+     "lines": [
+      "5f00424",
+      "5f00425",
+      "5f00426",
+      "5f00427",
+      "5f00428",
+      "5f00429"
+     ],
+     "x_rel_m": [
+      216.84728607475083,
+      140.15678488084882,
+      37.68390764878848,
+      -63.23636644069887,
+      -147.75683825154786,
+      -225.95282909734647
+     ],
+     "rel_pre": [
+      0.231426616179301,
+      -3.935781595402369,
+      -2.298709055949363,
+      -1.9947371327449452,
+      5.926785220120559,
+      2.0710159477968233
+     ],
+     "rel_post": [
+      3.5833244842727643,
+      2.3486303244250806,
+      -1.1355719148153776,
+      1.051768798985849,
+      -0.9901968955942877,
+      -4.8579547972740285
+     ],
+     "change_rel": [
+      3.3518978680934635,
+      6.28441191982745,
+      1.1631371411339855,
+      3.0465059317307945,
+      -6.916982115714847,
+      -6.928970745070852
+     ],
+     "se_change": [
+      2.10150468790895,
+      2.1654119572932418,
+      1.1597866732419781,
+      1.5971937603420558,
+      1.6078806408281976,
+      1.9417656140498991
+     ],
+     "control_trend_slope_per_100m": 2.99513475766292,
+     "lee_anomaly": 3.4148088109929744,
+     "lee_anomaly_ci95": [
+      1.2670432112820103,
+      5.3289351053501
+     ],
+     "bootstrap_sd": 1.035256651457851
+    },
+    "y_+1.0": {
+     "n_dates_pre": 5,
+     "n_dates_post": 17,
+     "lines": [
+      "5f00424",
+      "5f00425",
+      "5f00426",
+      "5f00427",
+      "5f00428",
+      "5f00429"
+     ],
+     "x_rel_m": [
+      216.84728607475083,
+      140.15678488084882,
+      37.68390764878848,
+      -63.23636644069887,
+      -147.75683825154786,
+      -225.95282909734647
+     ],
+     "rel_pre": [
+      -1.1569285232818003,
+      -4.184457049741741,
+      -2.1111528038095706,
+      -1.6845739699503042,
+      5.012894013648625,
+      4.124218333134779
+     ],
+     "rel_post": [
+      3.8618758102816173,
+      1.2828477033649925,
+      -1.329382990894842,
+      -0.3120709227003087,
+      -0.006783602417531294,
+      -3.4964859976339255
+     ],
+     "change_rel": [
+      5.018804333563418,
+      5.467304753106733,
+      0.7817698129147286,
+      1.3725030472499955,
+      -5.019677616066156,
+      -7.620704330768705
+     ],
+     "se_change": [
+      1.7979299333359398,
+      1.5000381545075019,
+      0.977428408887427,
+      1.3943186310671392,
+      2.133898144440287,
+      1.7844000815472212
+     ],
+     "control_trend_slope_per_100m": 3.0893999340657388,
+     "lee_anomaly": 1.8813877966683334,
+     "lee_anomaly_ci95": [
+      -0.5173996806143367,
+      4.253087021384712
+     ],
+     "bootstrap_sd": 1.2342519249685535
+    },
+    "y_+2.0": {
+     "n_dates_pre": 5,
+     "n_dates_post": 17,
+     "lines": [
+      "5f00424",
+      "5f00425",
+      "5f00426",
+      "5f00427",
+      "5f00428",
+      "5f00429"
+     ],
+     "x_rel_m": [
+      216.84728607475083,
+      140.15678488084882,
+      37.68390764878848,
+      -63.23636644069887,
+      -147.75683825154786,
+      -225.95282909734647
+     ],
+     "rel_pre": [
+      2.300293970882283,
+      0.5270299173608315,
+      -1.1661544351884168,
+      -0.28414386483953535,
+      0.5839480732643054,
+      -1.9609736614794684
+     ],
+     "rel_post": [
+      6.356562196344432,
+      3.2429655069206373,
+      -1.206549744120627,
+      -0.8323478787643845,
+      -1.3137801340508986,
+      -6.246849946329157
+     ],
+     "change_rel": [
+      4.056268225462149,
+      2.715935589559806,
+      -0.04039530893221022,
+      -0.5482040139248492,
+      -1.897728207315204,
+      -4.285876284849689
+     ],
+     "se_change": [
+      3.1181262137108114,
+      2.528391930911755,
+      1.3897865418920252,
+      2.036877291019317,
+      2.1091160501620503,
+      2.351398991176792
+     ],
+     "control_trend_slope_per_100m": 1.8005792842890695,
+     "lee_anomaly": -0.2866027293196267,
+     "lee_anomaly_ci95": [
+      -4.626399158998231,
+      3.435726419054496
+     ],
+     "bootstrap_sd": 2.051043235233494
+    },
+    "vol0_m3_per_m": {
+     "n_dates_pre": 5,
+     "n_dates_post": 17,
+     "lines": [
+      "5f00424",
+      "5f00425",
+      "5f00426",
+      "5f00427",
+      "5f00428",
+      "5f00429"
+     ],
+     "x_rel_m": [
+      216.84728607475083,
+      140.15678488084882,
+      37.68390764878848,
+      -63.23636644069887,
+      -147.75683825154786,
+      -225.95282909734647
+     ],
+     "rel_pre": [
+      2.5401056995199,
+      -1.6441364896919026,
+      -5.259898915801992,
+      -2.9450945510200506,
+      7.103087663754256,
+      0.20593659323982222
+     ],
+     "rel_post": [
+      16.46342422981505,
+      7.398422937523491,
+      -4.764418589759623,
+      0.27282327779332316,
+      -4.51596266249933,
+      -14.85428919287292
+     ],
+     "change_rel": [
+      13.92331853029515,
+      9.042559427215394,
+      0.4954803260423688,
+      3.217917828813374,
+      -11.619050326253586,
+      -15.060225786112744
+     ],
+     "se_change": [
+      7.593312808367471,
+      5.922135580836905,
+      2.3305468118511317,
+      3.7380419479373312,
+      4.937190887259201,
+      5.931935471486892
+     ],
+     "control_trend_slope_per_100m": 6.732541789377663,
+     "lee_anomaly": 3.364035784745422,
+     "lee_anomaly_ci95": [
+      -4.482941556510453,
+      10.53024893756853
+     ],
+     "bootstrap_sd": 3.857194211830802
+    }
+   }
+  },
+  "D_post_only_alongshore_pattern_11_lines": {
+   "definition": "Post-construction annual surveys on which all 11 lines (6 main + 5 \"A\") exist; position minus the 11-line mean; anomaly of the lee lines against the straight line through the control lines (|x - xc| >= 1.5 L) per date; mean and standard error over dates (dates not independent: nourishment and storms act on all).",
+   "metrics": {
+    "y_0.0": {
+     "n_dates": 17,
+     "lines": [
+      "5f00424",
+      "5f00424A",
+      "5f00425",
+      "5f00425A",
+      "5f00426",
+      "5f00426A",
+      "5f00427",
+      "5f00427A",
+      "5f00428",
+      "5f00428A",
+      "5f00429"
+     ],
+     "x_rel_m": [
+      216.84728607475083,
+      170.4094351972789,
+      140.15678488084882,
+      90.51634955066949,
+      37.68390764878848,
+      -10.400371271040177,
+      -63.23636644069887,
+      -92.94511006792871,
+      -147.75683825154786,
+      -188.63647565613803,
+      -225.95282909734647
+     ],
+     "mean_rel": [
+      3.6570453681499147,
+      2.42690466168527,
+      2.4223512083022305,
+      1.860828846601784,
+      -1.0618510309382272,
+      -1.7417884107414694,
+      1.1254896828629992,
+      1.2547391741681386,
+      -0.9164760117171378,
+      -4.243009574976625,
+      -4.784233913396878
+     ],
+     "sd_rel": [
+      6.1460706721536225,
+      4.881521662034328,
+      4.574539823087228,
+      3.586523138007718,
+      2.833274607065098,
+      3.285693047792664,
+      4.279834567273062,
+      3.2022867297342374,
+      4.471121174712429,
+      6.020210120939779,
+      5.583898148345224
+     ],
+     "lee_anomaly_mean": -0.21242838502762842,
+     "lee_anomaly_se": 0.9399112809443113,
+     "lee_lines": [
+      "5f00426",
+      "5f00426A",
+      "5f00427"
+     ],
+     "control_lines": [
+      "5f00424",
+      "5f00424A",
+      "5f00425",
+      "5f00428",
+      "5f00428A",
+      "5f00429"
+     ]
+    },
+    "y_+1.0": {
+     "n_dates": 17,
+     "lines": [
+      "5f00424",
+      "5f00424A",
+      "5f00425",
+      "5f00425A",
+      "5f00426",
+      "5f00426A",
+      "5f00427",
+      "5f00427A",
+      "5f00428",
+      "5f00428A",
+      "5f00429"
+     ],
+     "x_rel_m": [
+      216.84728607475083,
+      170.4094351972789,
+      140.15678488084882,
+      90.51634955066949,
+      37.68390764878848,
+      -10.400371271040177,
+      -63.23636644069887,
+      -92.94511006792871,
+      -147.75683825154786,
+      -188.63647565613803,
+      -225.95282909734647
+     ],
+     "mean_rel": [
+      3.686686976160811,
+      1.9039332538299505,
+      1.1076588692441867,
+      2.8612475062842826,
+      -1.5045718250156481,
+      -1.800498968081134,
+      -0.4872597568211146,
+      1.1176206616463136,
+      -0.1819724365383373,
+      -3.0311694489545773,
+      -3.671674831754732
+     ],
+     "sd_rel": [
+      6.585123624282567,
+      6.075768191595615,
+      5.586506622402811,
+      4.1313519919698365,
+      2.7661551962115127,
+      3.1324290280618583,
+      3.584043129467677,
+      3.7366366430468068,
+      5.274755297210152,
+      5.883261091775024,
+      5.7555158591406235
+     ],
+     "lee_anomaly_mean": -1.151259617529797,
+     "lee_anomaly_se": 0.8187190519261931,
+     "lee_lines": [
+      "5f00426",
+      "5f00426A",
+      "5f00427"
+     ],
+     "control_lines": [
+      "5f00424",
+      "5f00424A",
+      "5f00425",
+      "5f00428",
+      "5f00428A",
+      "5f00429"
+     ]
+    },
+    "vol0_m3_per_m": {
+     "n_dates": 17,
+     "lines": [
+      "5f00424",
+      "5f00424A",
+      "5f00425",
+      "5f00425A",
+      "5f00426",
+      "5f00426A",
+      "5f00427",
+      "5f00427A",
+      "5f00428",
+      "5f00428A",
+      "5f00429"
+     ],
+     "x_rel_m": [
+      216.84728607475083,
+      170.4094351972789,
+      140.15678488084882,
+      90.51634955066949,
+      37.68390764878848,
+      -10.400371271040177,
+      -63.23636644069887,
+      -92.94511006792871,
+      -147.75683825154786,
+      -188.63647565613803,
+      -225.95282909734647
+     ],
+     "mean_rel": [
+      15.91314566271803,
+      9.92993921081143,
+      6.848144370426468,
+      8.586093919519868,
+      -5.314697156856647,
+      -7.0479065226123305,
+      -0.27745528930370006,
+      4.45578821374014,
+      -5.066241229596354,
+      -12.622243418876957,
+      -15.40456775996994
+     ],
+     "sd_rel": [
+      28.768820679307648,
+      23.016204544764513,
+      20.568285090172136,
+      6.820158149208259,
+      7.20854471159608,
+      12.1263144897522,
+      13.376216324058127,
+      9.837207592355163,
+      13.031201877191382,
+      17.004684824070186,
+      15.974983541864235
+     ],
+     "lee_anomaly_mean": -3.762385038348368,
+     "lee_anomaly_se": 3.9824371944701564,
+     "lee_lines": [
+      "5f00426",
+      "5f00426A",
+      "5f00427"
+     ],
+     "control_lines": [
+      "5f00424",
+      "5f00424A",
+      "5f00425",
+      "5f00428",
+      "5f00428A",
+      "5f00429"
+     ]
+    }
+   }
+  },
+  "E_six_month_changes_2008_2010": {
+   "rows": [
+    {
+     "line": "5f00424",
+     "from_date": "2009-11-30",
+     "to_date": "2010-04-20",
+     "days": 141,
+     "d_y0_m": 2.142224965659201
+    },
+    {
+     "line": "5f00427",
+     "from_date": "2009-11-30",
+     "to_date": "2010-04-20",
+     "days": 141,
+     "d_y0_m": 3.0380298686772225
+    }
+   ],
+   "max_advance_m": 3.0380298686772225,
+   "note": "Mead & Borrero (2011) p.4-5 (as recorded in 02_research/reefs/boscombe-surf-reef.md) report beach accretion of up to 60 m over >500 m within 6 months; the 0 m ODN contour at the CCO lines moved by the amounts listed (the claim may use another contour, line or reference; NOT reproduced here)."
+  }
+ },
+ "borth-coastal-defence-reef": {
+  "reef": "borth-coastal-defence-reef",
+  "reef_alongshore_extent_L_m": 195.46,
+  "reef_alongshore_x_range_m": [
+   -74.2,
+   121.26
+  ],
+  "reef_centre_x_m": 23.53,
+  "frame": "x alongshore (+ towards SOUTH, bearing 179.57), y offshore (+ towards WEST), origin on the defence line; project Frame class (BNG -> canonical, fit rms 0.005 m)",
+  "data_source": "Welsh Government LiDAR DTM, tile SN6089, flight 2022-03-19, 1 m cells, 07_scale/shapes/borth-coastal-defence-reef/3d/src/lidar_beach_SN6089_2022-03-19.npz (licence/vertical datum: ODN assumed, not stated in the tile; METHODS_3D 3.3). Rock mounds are in the tile; the beach and foreshore down to the water edge (about -2.3 mODN) are bare-earth. ONE DATE ONLY (10 y after Phase 1 was completed on 8 Mar 2012): no pre-construction beach survey exists in the repo.",
+  "datum": "metres MSL = mODN - 0.31 (MSL +0.31 mODN +-0.15 from a 4-level mean; Borth is macrotidal, MHWS +2.56, MLWS -1.74 mODN)",
+  "not_used": "3D model seabed grid (thin-plate-spline of the LiDAR nodes, HRPP576 Fig 2 contours and ASSUMED bridge nodes): only the LiDAR DTM itself is analysed.",
+  "windows_x_m": {
+   "lee": [
+    -74.2,
+    121.26
+   ],
+   "controls": [
+    [
+     -330.0,
+     -171.93
+    ],
+    [
+     218.99,
+     420.0
+    ]
+   ],
+   "note": "LiDAR tile spans x = -330..420 m only, so the 1.5-3.5 L controls used elsewhere do not fit; controls start 0.5 L beyond the reef edges (inside a possible sphere of influence: biases toward zero). The north (west) control strip contains an unexplained shore-parallel ridge in the DTM (x about -330..-235 m, y about 75-95 m: closed 0 / -1 m contour loops) that kinks the -1 m contour; not identified (possible rock revetment/outfall; not checked)."
+  },
+  "T1_contour_offset": {
+   "definition": "cross-shore position y (m from the defence line) of the contour, first downward crossing from the shore; anomaly = mean y in the lee window minus the control trend (POSITIVE = contour farther offshore in the lee = bulge toward the reef). Placebo/analytic uncertainty as in lee_vs_control.",
+   "rows": [
+    {
+     "label": "LiDAR 2022-03-19, +0 m MSL contour",
+     "n_lee": 98,
+     "n_ctrl": 181,
+     "trend_slope_m_per_100m": 5.950512682071952,
+     "trend": "linear through both control strips",
+     "lee_mean": 96.29496646737282,
+     "ctrl_mean": 68.54835868079995,
+     "anomaly": 30.401982976246643,
+     "n_placebo_windows": 42,
+     "n_indep_control_windows": 3.6742044408063026,
+     "ctrl_resid_sd": 4.707161326070169,
+     "tau_samples": 27.806677695938426,
+     "se_analytic": 3.1130307514104616,
+     "z": 9.766040043925688,
+     "placebo_sd": 2.4248244469325786,
+     "placebo_rms": 2.438901406984347,
+     "z_placebo": 12.537807846133102,
+     "p_empirical": 0.023255813953488372,
+     "anomaly_by_control": {
+      "both_linear": 30.401982976246643,
+      "strip1_only": 47.620537530323574,
+      "strip2_only": 12.004881256869314
+     },
+     "anomaly_range": [
+      12.004881256869314,
+      47.620537530323574
+     ],
+     "sign_consistent": true,
+     "level_m_MSL": 0.0,
+     "peak_x_m": 28.0,
+     "peak_y_m": 106.94996840954352,
+     "peak_minus_reef_centre_x_m": 4.469999999999999,
+     "peak_above_south_control_mean_m": 22.65988319904001,
+     "peak_above_north_control_mean_m": 58.27553947249427
+    },
+    {
+     "label": "LiDAR 2022-03-19, -1 m MSL contour",
+     "n_lee": 98,
+     "n_ctrl": 181,
+     "trend_slope_m_per_100m": 12.834029440549704,
+     "trend": "linear through both control strips",
+     "lee_mean": 158.94394015695875,
+     "ctrl_mean": 124.43718586799825,
+     "anomaly": 40.2338512940058,
+     "n_placebo_windows": 42,
+     "n_indep_control_windows": 3.6742044408063026,
+     "ctrl_resid_sd": 13.686997394457729,
+     "tau_samples": 26.224480086292395,
+     "se_analytic": 8.79045599828513,
+     "z": 4.576992513454905,
+     "placebo_sd": 6.131957075379577,
+     "placebo_rms": 6.229423248523485,
+     "z_placebo": 6.561339356980947,
+     "p_empirical": 0.023255813953488372,
+     "anomaly_by_control": {
+      "both_linear": 40.2338512940058,
+      "strip1_only": 77.41966312656986,
+      "strip2_only": 0.5163314472897373
+     },
+     "anomaly_range": [
+      0.5163314472897373,
+      77.41966312656986
+     ],
+     "sign_consistent": true,
+     "level_m_MSL": -1.0,
+     "peak_x_m": 4.0,
+     "peak_y_m": 186.62732741697135,
+     "peak_minus_reef_centre_x_m": -19.53,
+     "peak_above_south_control_mean_m": 28.19971870730234,
+     "peak_above_north_control_mean_m": 105.10305038658245
+    },
+    {
+     "label": "LiDAR 2022-03-19, -2 m MSL contour",
+     "n_lee": 48,
+     "n_ctrl": 181,
+     "trend_slope_m_per_100m": 12.09116104396073,
+     "trend": "linear through both control strips",
+     "lee_mean": 229.20557220299224,
+     "ctrl_mean": 175.8422735666477,
+     "anomaly": 57.49939980763938,
+     "n_placebo_windows": 42,
+     "n_indep_control_windows": 3.6742044408063026,
+     "ctrl_resid_sd": 6.278423804788722,
+     "tau_samples": 27.59543417029422,
+     "se_analytic": 5.3546005559025565,
+     "z": 10.738317304407675,
+     "placebo_sd": 3.7902215581530534,
+     "placebo_rms": 3.757825257384358,
+     "z_placebo": 15.170458751666857,
+     "p_empirical": 0.023255813953488372,
+     "anomaly_by_control": {
+      "both_linear": 57.49939980763938,
+      "strip1_only": 93.13604583501414,
+      "strip2_only": 21.86013253838837
+     },
+     "anomaly_range": [
+      21.86013253838837,
+      93.13604583501414
+     ],
+     "sign_consistent": true,
+     "level_m_MSL": -2.0,
+     "peak_x_m": 64.0,
+     "peak_y_m": 253.4731891270888,
+     "peak_minus_reef_centre_x_m": 40.47,
+     "peak_above_south_control_mean_m": 46.12774946248496,
+     "peak_above_north_control_mean_m": 117.40366275911074
+    }
+   ],
+   "sensitivity_single_side_controls": [
+    {
+     "label": "+0 m MSL contour, west (north) control only",
+     "n_lee": 98,
+     "n_ctrl": 80,
+     "trend": "constant (controls on one side only)",
+     "lee_mean": 96.29496646737282,
+     "ctrl_mean": 48.67442893704924,
+     "anomaly": 47.620537530323574,
+     "n_placebo_windows": 16,
+     "n_indep_control_windows": 1.6174153279443364,
+     "ctrl_resid_sd": 2.8099564405858644,
+     "tau_samples": 24.816899729309245,
+     "se_analytic": 2.109236705358269,
+     "z": 22.577142437048046,
+     "placebo_sd": 1.2274972845505374,
+     "placebo_rms": 1.1991564303524807,
+     "z_placebo": 38.79482107999969,
+     "p_empirical": 0.058823529411764705,
+     "level_m_MSL": 0.0
+    },
+    {
+     "label": "+0 m MSL contour, east (south) control only",
+     "n_lee": 98,
+     "n_ctrl": 101,
+     "trend": "constant (controls on one side only)",
+     "lee_mean": 96.29496646737282,
+     "ctrl_mean": 84.2900852105035,
+     "anomaly": 12.004881256869314,
+     "n_placebo_windows": 26,
+     "n_indep_control_windows": 2.0567891128619666,
+     "ctrl_resid_sd": 0.9757922811208286,
+     "tau_samples": 21.052890915620903,
+     "se_analytic": 0.6348426004290705,
+     "z": 18.910012101827423,
+     "placebo_sd": 0.4186828112529791,
+     "placebo_rms": 0.5770222854872952,
+     "z_placebo": 28.672973750564722,
+     "p_empirical": 0.037037037037037035,
+     "level_m_MSL": 0.0
+    },
+    {
+     "label": "-1 m MSL contour, west (north) control only",
+     "n_lee": 98,
+     "n_ctrl": 80,
+     "trend": "constant (controls on one side only)",
+     "lee_mean": 158.94394015695875,
+     "ctrl_mean": 81.5242770303889,
+     "anomaly": 77.41966312656986,
+     "n_placebo_windows": 16,
+     "n_indep_control_windows": 1.6174153279443364,
+     "ctrl_resid_sd": 14.398064419676077,
+     "tau_samples": 20.5149350424873,
+     "se_analytic": 9.82632570534291,
+     "z": 7.878800830352502,
+     "placebo_sd": 5.81126416084718,
+     "placebo_rms": 5.672444668942208,
+     "z_placebo": 13.322344499184398,
+     "p_empirical": 0.058823529411764705,
+     "level_m_MSL": -1.0
+    },
+    {
+     "label": "-1 m MSL contour, east (south) control only",
+     "n_lee": 98,
+     "n_ctrl": 101,
+     "trend": "constant (controls on one side only)",
+     "lee_mean": 158.94394015695875,
+     "ctrl_mean": 158.42760870966902,
+     "anomaly": 0.5163314472897373,
+     "n_placebo_windows": 26,
+     "n_indep_control_windows": 2.0567891128619666,
+     "ctrl_resid_sd": 3.9154500769176854,
+     "tau_samples": 15.838086239665966,
+     "se_analytic": 2.209458537951781,
+     "z": 0.23369139471084552,
+     "placebo_sd": 0.8872114349239386,
+     "placebo_rms": 1.6358555828819985,
+     "z_placebo": 0.5819711367155709,
+     "p_empirical": 0.9259259259259259,
+     "level_m_MSL": -1.0
+    },
+    {
+     "label": "-2 m MSL contour, west (north) control only",
+     "n_lee": 48,
+     "n_ctrl": 80,
+     "trend": "constant (controls on one side only)",
+     "lee_mean": 229.20557220299224,
+     "ctrl_mean": 136.06952636797806,
+     "anomaly": 93.13604583501414,
+     "n_placebo_windows": 16,
+     "n_indep_control_windows": 1.6174153279443364,
+     "ctrl_resid_sd": 2.1769218501955723,
+     "tau_samples": 13.578392600226689,
+     "se_analytic": 1.4645573809745915,
+     "z": 63.5933061038801,
+     "placebo_sd": 0.35364896693776565,
+     "placebo_rms": 0.9177815069237759,
+     "z_placebo": 263.3573247547589,
+     "p_empirical": 0.058823529411764705,
+     "level_m_MSL": -2.0
+    },
+    {
+     "label": "-2 m MSL contour, east (south) control only",
+     "n_lee": 48,
+     "n_ctrl": 101,
+     "trend": "constant (controls on one side only)",
+     "lee_mean": 229.20557220299224,
+     "ctrl_mean": 207.34543966460384,
+     "anomaly": 21.86013253838837,
+     "n_placebo_windows": 26,
+     "n_indep_control_windows": 2.0567891128619666,
+     "ctrl_resid_sd": 1.5294723258944118,
+     "tau_samples": 16.13431043129195,
+     "se_analytic": 1.0770321224102717,
+     "z": 20.296639332787915,
+     "placebo_sd": 0.3884643133321142,
+     "placebo_rms": 0.7626979783616207,
+     "z_placebo": 56.27320654213928,
+     "p_empirical": 0.037037037037037035,
+     "level_m_MSL": -2.0
+    }
+   ]
+  },
+  "Ls_over_X": {
+   "Ls_alongshore_m": 195.46,
+   "X_shoreline_to_shoreward_toe_m": 160.6850335326272,
+   "X_shoreline_to_reef_centre_m": 229.40718543136143,
+   "Ls_over_X_toe": 1.2164169599548407,
+   "Ls_over_X_centre": 0.852022135368038,
+   "regime_toe": "salient expected (B/S < 2); tombolo possible (B/S > 0.6)",
+   "regime_centre": "salient expected (B/S < 2); tombolo possible (B/S > 0.6)",
+   "illustrative_salient_amplitude_m": [
+    24.4325,
+    73.2975
+   ],
+   "note": "DERIVED B/S (B = Ls alongshore extent, S = X shoreline-to-reef distance). Rules (Black & Andrews 2001 via Blacka et al. 2013): no change if B/S < ~0.1, salient if < 2, tombolo if > 0.6; Blacka et al. note the method over-predicts salient size for submerged reefs (Narrowneck, Mount Maunganui). Illustrative amplitude = 0.125 x D_tot with D_tot = 1-3 B (ASSUMPTION; D_tot is not given in the secondary source) -> an order of magnitude only. Ls = both mounds (x -74..121 m); shoreline = mean 0 m MSL contour of the lee window (y = 96 m, 2022); the northern mound alone has Ls = 75 m (Ls/X toe = 0.47)"
+  },
+  "T2_bed_level_bands": {
+   "definition": "mean bed level (m MSL) in y bands (distance from the defence line); anomaly = lee minus control trend; positive = bed higher in the lee",
+   "rows": [
+    {
+     "label": "LiDAR 2022-03-19, mean bed level in y=40-100 m",
+     "n_lee": 98,
+     "n_ctrl": 181,
+     "trend_slope_m_per_100m": 0.2642334507578794,
+     "trend": "linear through both control strips",
+     "lee_mean": 0.9282085057514359,
+     "ctrl_mean": 0.3382882089578083,
+     "anomaly": 0.7078326493776823,
+     "n_placebo_windows": 42,
+     "n_indep_control_windows": 3.6742044408063026,
+     "ctrl_resid_sd": 0.2881505340999784,
+     "tau_samples": 25.82606798599317,
+     "se_analytic": 0.18365313668582425,
+     "z": 3.85418219449512,
+     "placebo_sd": 0.13734262420976168,
+     "placebo_rms": 0.14158007442300755,
+     "z_placebo": 5.1537725702446044,
+     "p_empirical": 0.023255813953488372,
+     "anomaly_by_control": {
+      "both_linear": 0.7078326493776823,
+      "strip1_only": 1.4779455016538967,
+      "strip2_only": -0.11346600408579358
+     },
+     "anomaly_range": [
+      -0.11346600408579358,
+      1.4779455016538967
+     ],
+     "sign_consistent": false,
+     "band_y_m": [
+      40.0,
+      100.0
+     ]
+    },
+    {
+     "label": "LiDAR 2022-03-19, mean bed level in y=100-160 m",
+     "n_lee": 98,
+     "n_ctrl": 181,
+     "trend_slope_m_per_100m": 0.1697224255017693,
+     "trend": "linear through both control strips",
+     "lee_mean": -0.6378430672633673,
+     "ctrl_mean": -1.3378649820770199,
+     "anomaly": 0.7757593750776184,
+     "n_placebo_windows": 42,
+     "n_indep_control_windows": 3.6742044408063026,
+     "ctrl_resid_sd": 0.08527653099347872,
+     "tau_samples": 25.377809298253396,
+     "se_analytic": 0.05387736734712079,
+     "z": 14.398613244770486,
+     "placebo_sd": 0.05059344527679913,
+     "placebo_rms": 0.05014413817754355,
+     "z_placebo": 15.333199208581313,
+     "p_empirical": 0.023255813953488372,
+     "anomaly_by_control": {
+      "both_linear": 0.7757593750776184,
+      "strip1_only": 1.2566769467418002,
+      "strip2_only": 0.25910703803888263
+     },
+     "anomaly_range": [
+      0.25910703803888263,
+      1.2566769467418002
+     ],
+     "sign_consistent": true,
+     "band_y_m": [
+      100.0,
+      160.0
+     ]
+    },
+    {
+     "label": "LiDAR 2022-03-19, mean bed level in y=160-220 m",
+     "n_lee": 98,
+     "n_ctrl": 181,
+     "trend_slope_m_per_100m": 0.1441330984097107,
+     "trend": "linear through both control strips",
+     "lee_mean": -1.370838167912987,
+     "ctrl_mean": -1.9849738191215944,
+     "anomaly": 0.6784540509796143,
+     "n_placebo_windows": 42,
+     "n_indep_control_windows": 3.6742044408063026,
+     "ctrl_resid_sd": 0.07909361452407836,
+     "tau_samples": 26.820755232401222,
+     "se_analytic": 0.05137202682961193,
+     "z": 13.206682563447915,
+     "placebo_sd": 0.04606701011427075,
+     "placebo_rms": 0.0471846325847406,
+     "z_placebo": 14.727546877834843,
+     "p_empirical": 0.023255813953488372,
+     "anomaly_by_control": {
+      "both_linear": 0.6784540509796143,
+      "strip1_only": 1.0887993541266159,
+      "strip2_only": 0.23816440137256198
+     },
+     "anomaly_range": [
+      0.23816440137256198,
+      1.0887993541266159
+     ],
+     "sign_consistent": true,
+     "band_y_m": [
+      160.0,
+      220.0
+     ]
+    }
+   ]
+  },
+  "T4_burial_note": "HANDOFF.md of the Borth folder: LiDAR DSM minus design levels above -2.0 mODN = +0.14 +- 0.28 m (crest strips; the DSM sees block tops), i.e. no sign of burial or settlement of the crest 10 y after completion at the 0.3 m level. Not recomputed here."
+ },
+ "palm-beach-gold-coast": {
+  "reef": "palm-beach-gold-coast",
+  "reef_alongshore_extent_L_m": 136.72,
+  "reef_cross_shore_y_range_m": [
+   225.01,
+   374.22
+  ],
+  "data_source": "Garmin Navionics SonarChart iso-depth lines 1-10 m (1 m interval), read from z17 screenshots of maps.garmin.com (accessed 2026-10-05, \"not for navigation\"), converted to the canonical frame; model.js navionics.lines; METHODS_3D 3.5. Chart datum assumed LAT (A5; RMS 0.29 m against the pre-reef City survey contours of Mortensen et al. 2015 Fig 6a along ONE profile). The chart is compiled from sonar logs and surveys of UNKNOWN date; the reef (built 2019) is drawn as a smoothed shoal, so contours of 4 m and deeper are bent by the reef itself (METHODS_3D 4.5: 47-81 m).",
+  "datum": "metres below chart datum (LAT) as printed; only RELATIVE contour positions are used",
+  "windows_x_m": {
+   "lee": [
+    -67.56,
+    69.16
+   ],
+   "controls": [
+    [
+     -477.71999999999997,
+     -204.27999999999997
+    ],
+    [
+     205.88,
+     479.32
+    ]
+   ]
+  },
+  "T1_contour_offset": {
+   "definition": "y of the chart iso-line (m offshore of the waterline y=0 of the model frame) vs alongshore x; anomaly = lee mean - control trend; positive = contour farther offshore in the lee. Contours of 4 m and deeper (rows flagged) are bent by the reef itself in the chart and are NOT a sediment signal.",
+   "rows": [
+    {
+     "label": "Navionics SonarChart 1 m contour",
+     "n_lee": 13,
+     "n_ctrl": 25,
+     "trend_slope_m_per_100m": 2.3078354581956937,
+     "trend": "linear through both control strips",
+     "lee_mean": 68.72556588413711,
+     "ctrl_mean": 74.67305881954495,
+     "anomaly": -1.3779787281803817,
+     "n_placebo_windows": 7,
+     "n_indep_control_windows": 8.0,
+     "ctrl_resid_sd": 3.3055011386150546,
+     "tau_samples": 6.559744274475381,
+     "se_analytic": 2.8948821172731964,
+     "z": -0.47600512641197085,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": -1.3779787281803817,
+      "strip1_only": null,
+      "strip2_only": -8.69977686915813
+     },
+     "anomaly_range": [
+      -8.69977686915813,
+      -1.3779787281803817
+     ],
+     "sign_consistent": true,
+     "chart_depth_m": 1.0,
+     "contour_inside_reef_influence": false
+    },
+    {
+     "label": "Navionics SonarChart 2 m contour",
+     "n_lee": 13,
+     "n_ctrl": 25,
+     "trend_slope_m_per_100m": -3.26756307726678,
+     "trend": "linear through both control strips",
+     "lee_mean": 138.9903085352675,
+     "ctrl_mean": 134.76206971004544,
+     "anomaly": -2.2415360677662326,
+     "n_placebo_windows": 7,
+     "n_indep_control_windows": 8.0,
+     "ctrl_resid_sd": 0.7753931827808984,
+     "tau_samples": 5.789206017014093,
+     "se_analytic": 0.6379425919895724,
+     "z": -3.5136955831330856,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": -2.2415360677662326,
+      "strip1_only": null,
+      "strip2_only": 7.796795471784734
+     },
+     "anomaly_range": [
+      -2.2415360677662326,
+      7.796795471784734
+     ],
+     "sign_consistent": false,
+     "chart_depth_m": 2.0,
+     "contour_inside_reef_influence": false
+    },
+    {
+     "label": "Navionics SonarChart 3 m contour",
+     "n_lee": 13,
+     "n_ctrl": 25,
+     "trend_slope_m_per_100m": -4.217911949930167,
+     "trend": "linear through both control strips",
+     "lee_mean": 181.39885563309193,
+     "ctrl_mean": 173.3933364087881,
+     "anomaly": -0.34594643655794444,
+     "n_placebo_windows": 7,
+     "n_indep_control_windows": 8.0,
+     "ctrl_resid_sd": 0.43540460233963435,
+     "tau_samples": 4.5713324596667055,
+     "se_analytic": 0.3183204476324695,
+     "z": -1.0867867242929103,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": -0.34594643655794444,
+      "strip1_only": null,
+      "strip2_only": 12.500590372016937
+     },
+     "anomaly_range": [
+      -0.34594643655794444,
+      12.500590372016937
+     ],
+     "sign_consistent": false,
+     "chart_depth_m": 3.0,
+     "contour_inside_reef_influence": false
+    },
+    {
+     "label": "Navionics SonarChart 4 m contour",
+     "n_lee": 13,
+     "n_ctrl": 25,
+     "trend_slope_m_per_100m": -6.035704028918955,
+     "trend": "linear through both control strips",
+     "lee_mean": 263.253051367089,
+     "ctrl_mean": 213.0484338995548,
+     "anomaly": 38.253923490274516,
+     "n_placebo_windows": 7,
+     "n_indep_control_windows": 8.0,
+     "ctrl_resid_sd": 1.3415877523223434,
+     "tau_samples": 4.868006992615272,
+     "se_analytic": 1.0121498133447073,
+     "z": 37.794724640478094,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": 38.253923490274516,
+      "strip1_only": null,
+      "strip2_only": 56.63708665315889
+     },
+     "anomaly_range": [
+      38.253923490274516,
+      56.63708665315889
+     ],
+     "sign_consistent": true,
+     "chart_depth_m": 4.0,
+     "contour_inside_reef_influence": true
+    },
+    {
+     "label": "Navionics SonarChart 5 m contour",
+     "n_lee": 13,
+     "n_ctrl": 24,
+     "trend_slope_m_per_100m": -8.945900967301833,
+     "trend": "linear through both control strips",
+     "lee_mean": 348.1702907685318,
+     "ctrl_mean": 260.53888349307755,
+     "anomaly": 70.67147002494454,
+     "n_placebo_windows": 7,
+     "n_indep_control_windows": 8.0,
+     "ctrl_resid_sd": 1.9659528657926022,
+     "tau_samples": 4.368585829094358,
+     "se_analytic": 1.4150347415101334,
+     "z": 49.94327556192969,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": 70.67147002494454,
+      "strip1_only": null,
+      "strip2_only": 97.43847370315419
+     },
+     "anomaly_range": [
+      70.67147002494454,
+      97.43847370315419
+     ],
+     "sign_consistent": true,
+     "chart_depth_m": 5.0,
+     "contour_inside_reef_influence": true
+    },
+    {
+     "label": "Navionics SonarChart 6 m contour",
+     "n_lee": 13,
+     "n_ctrl": 19,
+     "trend_slope_m_per_100m": -1.2614693407439117,
+     "trend": "linear through both control strips",
+     "lee_mean": 383.8326369548755,
+     "ctrl_mean": 343.42921738444545,
+     "anomaly": 38.610805244109855,
+     "n_placebo_windows": 5,
+     "n_indep_control_windows": 8.0,
+     "ctrl_resid_sd": 7.352938829360116,
+     "tau_samples": 4.2701868278978115,
+     "se_analytic": 5.469037532262197,
+     "z": 7.059890340181847,
+     "placebo_sd": null,
+     "note": "fewer than 8 placebo windows: no placebo distribution; z uses the analytic standard error",
+     "anomaly_by_control": {
+      "both_linear": 38.610805244109855,
+      "strip1_only": null,
+      "strip2_only": 42.61356553412789
+     },
+     "anomaly_range": [
+      38.610805244109855,
+      42.61356553412789
+     ],
+     "sign_consistent": true,
+     "chart_depth_m": 6.0,
+     "contour_inside_reef_influence": true
+    }
+   ]
+  },
+  "Ls_over_X": {
+   "Ls_alongshore_m": 136.72,
+   "X_shoreline_to_shoreward_toe_m": 225.01,
+   "X_shoreline_to_reef_centre_m": 302.98,
+   "Ls_over_X_toe": 0.6076174392249234,
+   "Ls_over_X_centre": 0.45125090765067,
+   "regime_toe": "salient expected (B/S < 2); tombolo possible (B/S > 0.6)",
+   "regime_centre": "salient expected (B/S < 2)",
+   "illustrative_salient_amplitude_m": [
+    17.09,
+    51.269999999999996
+   ],
+   "note": "DERIVED B/S (B = Ls alongshore extent, S = X shoreline-to-reef distance). Rules (Black & Andrews 2001 via Blacka et al. 2013): no change if B/S < ~0.1, salient if < 2, tombolo if > 0.6; Blacka et al. note the method over-predicts salient size for submerged reefs (Narrowneck, Mount Maunganui). Illustrative amplitude = 0.125 x D_tot with D_tot = 1-3 B (ASSUMPTION; D_tot is not given in the secondary source) -> an order of magnitude only. shoreline = model waterline y = 0 (Esri 2025-12-01, tide unknown)"
+  }
+ },
+ "prattes_two_surveys": {
+  "reef": "prattes-reef-el-segundo",
+  "data_source": "Borrero & Nelsen (2003) Fig. 9, two bathymetric surveys (dashed = October 2000, four weeks after Phase I; solid = March 2001; METHODS_3D 3.10 / S10), contours -1..-4 m, vector paths digitised by 3d/bn_digitise.py into 3d/src/bn2003_fig9_contours.json (UTM 11N, datum not stated). Window 112 x 71 m, reef (58 x 29 m, 435 m2) not drawn; reef position inside the window is NOT known (+-150 m).",
+  "result_rows": [
+   {
+    "level_m": -1,
+    "overlap_alongshore_m": 53.656659767846946,
+    "mean_shift_m": 10.768884765169018,
+    "max_abs_shift_m": 19.3946679079201,
+    "sd_m": 4.551998207853177,
+    "mean_offshore_position_m": -43.69812124876171
+   },
+   {
+    "level_m": -2,
+    "overlap_alongshore_m": 80.63858441834196,
+    "mean_shift_m": 14.090653152687182,
+    "max_abs_shift_m": 27.86284830179956,
+    "sd_m": 9.434207576048555,
+    "mean_offshore_position_m": -23.542731319721188
+   },
+   {
+    "level_m": -3,
+    "overlap_alongshore_m": 67.8456414230094,
+    "mean_shift_m": 17.827110724133796,
+    "max_abs_shift_m": 21.467348525713483,
+    "sd_m": 2.4504619117089277,
+    "mean_offshore_position_m": 0.1321983476119866
+   },
+   {
+    "level_m": -4,
+    "overlap_alongshore_m": 67.60309828697228,
+    "mean_shift_m": 8.77851692874027,
+    "max_abs_shift_m": 13.950850035350363,
+    "sd_m": 2.579646740370969,
+    "mean_offshore_position_m": 35.567393434614445
+   }
+  ],
+  "interpretation": "Contour-to-contour shifts between the two surveys are listed; the window (about 2 x the reef length) has no control section and the reef is not drawn, so no lee/control test is possible. The paper itself states that the bathymetry did not change outside the contours made by the bags (S10)."
+ },
+ "albany_baseline": {
+  "reef": "southern-ocean-surf-reef-albany",
+  "data_source": "RHDHV Option B plan (2015, PRE-construction; reef built Mar-Jun 2025) contour crossings read on 8 shore-normal transects 20 m apart (x = -160..-20 m), distance from the beach-face line, 3d/src/levels2_raw.json (colour reading, +-10 m for the deeper lines; METHODS_3D 3.2). BMT 2018 soundings: spot values only.",
+  "baseline_rows": [
+   {
+    "level_m": -1.0,
+    "n": 8,
+    "mean_y_m": 35.25,
+    "trend_m_per_100m": -11.452380952380949,
+    "resid_sd_after_trend_m": 1.9847833834867425,
+    "range_m": 14.599999999999998
+   },
+   {
+    "level_m": -2.0,
+    "n": 8,
+    "mean_y_m": 63.77499999999999,
+    "trend_m_per_100m": -11.214285714285682,
+    "resid_sd_after_trend_m": 1.7615266647076857,
+    "range_m": 15.799999999999997
+   },
+   {
+    "level_m": -3.0,
+    "n": 8,
+    "mean_y_m": 88.1,
+    "trend_m_per_100m": -11.571428571428534,
+    "resid_sd_after_trend_m": 1.1380852759077842,
+    "range_m": 15.799999999999997
+   }
+  ],
+  "use": "NATURAL alongshore variability of the -1..-3 m contours before the reef (trend + residual sd) = a noise floor for any future post-construction comparison; no post-construction bathymetry exists in the repo."
+ },
+ "skipped": {
+  "narrowneck-gold-coast": "SKIPPED: the only measured bed is Corbett et al. (2023) Fig. 3 (ICM 2017 pre-works multibeam) digitised by colour hue into a 164 x 145 m window that is filled by the reef itself (no lee strip wider than 25 m, no control section; +-0.4 m colour-to-depth fit); outside the window the model bed is an ASSUMED alongshore-uniform profile (METHODS_3D 3.3: shoreward of y=190 assumed). City of Gold Coast DTM has NO underwater cells at the reef (07_scale/bathymetry/gold_coast, Q1). Gold Coast beaches are continuously nourished and sand-bypassed (insight b), so a shoreline signal would be confounded anyway. Literature pointers only (not tested here): Jackson et al. 2012 Fig. 16 (salient photo 20 May 2010), Mead & Borrero 2011 Fig. 5 (beach width envelope), Blacka et al. 2013 p.98 (called the widening an artefact of the reference line).",
+  "mount-maunganui-reef": "SKIPPED: bed = ASSUMED alongshore-uniform profile (Navionics profile + a reef-centre offset; METHODS_3D 3.3) plus a digitised 2013 multibeam window (178 x 148 m, mostly the reef). The Navionics SonarChart z17 iso-lines (reef removed in 2014, so they show the ambient bed) trend by about 70 m over 320 m of coast near Mauao (2 m line: y = 320 m at x = -380 to 250 m at x = -60, 3d/navionics_isolines.json), i.e. the natural gradient is larger than any plausible reef signal; BoPRC p.29: the bed fluctuates by more than 1 m.",
+  "bunbury-airwave": "SKIPPED: the Airwave bladder was in the water for about 3 days in Dec 2019 (installed 9-13 Dec, torn, removed within about 3 days; model.js lifecycle), so no sediment response is possible. The 2009 WA DoT airborne lidar grid in the model (10 m, gap-filled) is pre-structure.",
+  "prattes-reef-el-segundo": "Seabed in the 3D model = ASSUMED alongshore-uniform profile (NOAA DEM 1/3 arc-sec + Navionics, METHODS_3D 3.4) -> SKIPPED for T1-T4; the two vector-contour surveys of Fig. 9 are summarised separately under \"prattes_two_surveys\".",
+  "southern-ocean-surf-reef-albany": "SKIPPED: the reef was built in 2025 and the repo holds only the PRE-construction 2015 contours and an assumed alongshore-uniform profile (A4); a baseline of natural alongshore variability is given under \"albany_baseline\".",
+  "kovalam-reef-india / opunake-reef / burkitts-reef-bargara / mexico-reef-2026-unnamed": "SKIPPED: no 3D model and no bathymetry grid or survey in the repo (their src/ folders hold imagery, outlines and PDFs only; opunake holds only a NZGD2000 grid-shift raster). Kovalam, Opunake and Burkitts: no data for a sediment test.",
+  "EMODnet DTM (07_scale/bathymetry/emodnet)": "NOT USABLE for this test: cells of 115 x 73 m (about the reef size), reef invisible in every release 2018-2024 (Boscombe cell max -4.87 mLAT vs model crest +0.56), one sounding per cell at Borth, interpolated at Haifa."
+ },
+ "summary_table": [
+  {
+   "reef": "cables-reef-wa",
+   "test": "T1 shoreline / contour offset (lee vs far controls)",
+   "data": "DoT WA single-beam 1995-12, 1998-03, 1999-11, 2002-02 + Perth_5m composite (undated mix)",
+   "signal": "yes in the data, NOT attributable to the reef",
+   "magnitude": "lee contours +15 m (0 m AHD), +17 (-1), +18 (-2), +27 (-3), +37 (-4) from the composite; +23..+43 m for -2..-6 m in the 2002 survey, versus controls 1.5-3.5 L away",
+   "uncertainty": "formal SE 2-8 m (placebo sd 1.5-4.6 m); the north-only and south-only controls give the same sign and agree within 10 m (anomaly_range in the JSON), so the offset is a robust spatial feature; its ATTRIBUTION is the problem, not its existence",
+   "caveats": "THE SAME BULGE IS IN THE 1995 PRE-CONSTRUCTION SURVEY: -5 m contour lee offset +20 m (1995) vs +25 m (2002) against adjacent strips; -6 m: +8 vs +10 m. The shoreward contours (0 to -3 m) have no pre-construction survey (1995 reaches only -2.45 m AHD, at n >= -167 m). Natural limestone reef lines of the Cottesloe coast are the likely cause (ASSUMPTION, not verified)."
+  },
+  {
+   "reef": "cables-reef-wa",
+   "test": "T3 temporal change 1995 -> 2002 (before/after, lee vs adjacent controls)",
+   "data": "single-beam 1995-12 (pre) and 2002-02 (2.2 y after completion), TIN <= 25 m from a sounding",
+   "signal": "NO",
+   "magnitude": "contour migration 2002-1995 in the lee relative to adjacent strips: +7.0 m (-4 m), +4.9 m (-5 m), +2.6 m (-6 m); bed change in the lee band (n = -165..-62 m): +0.03 m (lee +0.04 m, adjacent strips +0.03 / -0.04 m), volume +414 m3 over 96 % of the box",
+   "uncertainty": "noise floor: single-beam cell sd 0.29 m, pre-construction pair (1998 vs 1995) mean -0.10 m, sd 0.24 m; a +-0.1 m systematic survey offset = +-1,100 m3 over the lee box (11,300 m2)",
+   "caveats": "only 2.2 y after completion; controls are adjacent (1.4-2.7 half-lengths) and may lie inside the reef influence; the contour migration of +3..+7 m (formal SE 2-3 m) equals a bed rise of about 0.1-0.2 m at the local slope (1:15 to 1:40, ASSUMPTION read from the contour spacing) = within the +-0.1 m systematic offset between surveys; Ls/X = 0.52 (toe) / 0.44 (centre): the reef is short relative to its distance from the shore (thresholds not asserted here)"
+  },
+  {
+   "reef": "cables-reef-wa",
+   "test": "T2 bed level in the lee band (n = -165..-62 m) vs controls",
+   "data": "single-beam 1995 (pre) and 2002 (post), Perth_5m composite",
+   "signal": "yes, but PRE-EXISTING (natural high in the lee)",
+   "magnitude": "lee band bed higher than the far controls by +0.60 m in 2002 (range +0.48..+0.72 over control choice) and by +0.75 m already in 1995 (single-sided control, n=9 samples), +0.39 m in the Perth_5m composite",
+   "uncertainty": "formal SE 0.05 m (2002); datum offsets between surveys +-0.1 m",
+   "caveats": "the high bed in the lee is as large before as after the reef: not a sediment-transport effect of the reef within the data"
+  },
+  {
+   "reef": "cables-reef-wa",
+   "test": "T5 shoreline from beach-level surveys 2001-2012 (lee lines vs control lines)",
+   "data": "DoT WA beach point-elevation files Jan 2001 (13 months after completion), Feb 2002, Jan 2003, Aug 2011, Apr 2012; profile lines about 50 m apart; 2 lee lines, 6-8 control lines",
+   "signal": "yes (a lee shoreline bulge at every date) but shrinking, not growing; no pre-construction beach survey: inconclusive",
+   "magnitude": "0 m AHD contour, lee minus controls: +26 m (2001-01), +23 (2002-02), +15 (2003-01), +16 (2011-08), +10 (2012-04); change 2001-01 to 2012-04 -14 m (+1 m contour: -15 m)",
+   "uncertainty": "3-4 lines per control strip, no formal SE; north-only and south-only controls differ by up to 19 m (anomaly_range); scatter between dates 10-26 m",
+   "caveats": "a salient that grows after construction would increase this number; it decreases by about 14 m in 11 y. A decaying initial feature, a natural feature (the offshore -5/-6 m contours show a lee hump already in 1995) and beach management at Leighton/Port Beach (NOT checked) are all compatible; the 2011-12 files cover a longer shore with a regional gradient of about 0.05 m/m"
+  },
+  {
+   "reef": "cables-reef-wa",
+   "test": "T2/T4 scour, burial",
+   "data": "post-construction soundings vs the 1998 pre-construction TIN; 1999-11 vs 2002-02 reef surface",
+   "signal": "NO scour; no burial detectable",
+   "magnitude": "ring 0-10 m outside the footprint +0.51 m (1999) / +0.42 m (2002) above the 1998 bed (rock spill, edge definition +-5 m); 10-25 m: -0.03 / +0.09 m; 25-50 m (2002) +0.13 m; 50-100 m +0.05 m. Reef surface 2002 minus 1999 at matched soundings +0.14 m (n=517, sd 0.37 m); 95th-percentile level inside the footprint -1.76 (1999) vs -1.83 m AHD (2002)",
+   "uncertainty": "sounding sd 0.3 m; positioning of soundings on a rough rock surface +-several m; SE in the JSON ignores spatial correlation",
+   "caveats": "an echo-sounder cannot separate sand cover from rock fall-down; negative values (toe scour) do not occur beyond 10 m"
+  },
+  {
+   "reef": "boscombe-surf-reef",
+   "test": "BACI of the shoreline at 6 CCO lines (common-mode removed) and post-only alongshore pattern (11 lines)",
+   "data": "CCO beach profiles 2004-2026 (316 surveys on 11 lines); pre = 2004-07..2008-04 (5-16 dates), post = 2009-11..2026-03 (17-43 dates)",
+   "signal": "NO (at most a few metres; not distinguishable from management and tilt signals)",
+   "magnitude": "lee anomaly of the 0 m ODN contour +3.4 m (95% CI +1.3..+5.3), +1 m contour +1.9 m (-0.5..+4.3), volume above 0 m ODN +3.4 m3/m (-4.5..+10.5); post-only 11 lines: -0.2 +- 0.9 m (0 m), -1.2 +- 0.8 m (+1 m)",
+   "uncertainty": "bootstrap over survey dates; pre n = 5 dates only for 4 of the 6 lines; dates are not independent",
+   "caveats": "Poole Bay is groyned and recharged: the frontage-wide volume jumps (2006->2007: +72 m3/m; 2020->2021: +40 m3/m) are common to all lines (DERIVED indicator; recharge records not in the repo); about 23,000 m3 of sand was piled on the upper beach to build the reef (Rendle 2016 thesis p.125-127: 11,100 m3 stayed on the beach between the pier and the first groyne), which could mimic accretion; the shoreline tilts east-up/west-down by +3.0 m per 100 m after the reef (a tilt, not a local bulge); the largest 0 m contour advance 2009-11 -> 2010-04 was +3.0 m (the statement of up to 60 m in 6 months, Mead & Borrero 2011, is not reproduced at these lines)"
+  },
+  {
+   "reef": "borth-coastal-defence-reef",
+   "test": "T1/T2 lee vs control contour position and bed level, single LiDAR date",
+   "data": "Welsh Government LiDAR DTM 2022-03-19 (1 m), beach and foreshore down to about -2.3 mODN; Phase 1 completed 2012-03-08",
+   "signal": "yes (bulge) but NOT attributable: inconclusive",
+   "magnitude": "lee contour offset +30 m (0 m MSL), +40 (-1), +57 (-2) with a straight line through both controls; range over control choice +12..+48, +1..+77, +22..+93 m; bed level in the lee higher by +0.71, +0.78, +0.68 m (y = 40-100, 100-160, 160-220 m; ranges -0.11..+1.48, +0.26..+1.26, +0.24..+1.09)",
+   "uncertainty": "formal SE 2-9 m, but the choice of control (north strip vs south strip) changes the anomaly by 30-90 m: the beach has a strong natural north-south gradient (village frontage vs dune frontage)",
+   "caveats": "ONE survey 10 y after construction, no pre-construction beach survey in the repo; the south control strip shows the bulge is only +12 m (0 m MSL) and +0.5 m (-1 m) above the southern plateau, so a localised peak of about 20-26 m sits on top of a north-south step; the tile is only 730 m long so controls start 0.5 L from the reef; seasonal beach state (March) and bars not considered. Crest check from the project (HANDOFF): LiDAR minus design +0.14 +- 0.28 m, no burial."
+  },
+  {
+   "reef": "palm-beach-gold-coast",
+   "test": "T1 contour offset, chart-derived",
+   "data": "Garmin Navionics SonarChart 1-3 m iso-lines (z17 screenshots 2026-10-05), undated compilation; reef built 2019",
+   "signal": "NO (|anomaly| <= 3 m)",
+   "magnitude": "1 m: -1.4 m (range -9..-1); 2 m: -2.2 m (range -2..+8); 3 m: -0.3 m (range 0..+13)",
+   "uncertainty": "chart contours are smoothed (a 0.5 m label interval, positional error likely +-10 m, ASSUMPTION), datum and date unknown",
+   "caveats": "LOW CONFIDENCE; 4-6 m contours are bent by the reef shoal in the chart (+38 to +71 m) and are a chart artefact; the Gold Coast is nourished continuously (insight b), natural reef up-coast and bars are in the chart; no pre-reef contour set was digitised (Mortensen et al. 2015 Fig. 6a is read along ONE profile only)."
+  },
+  {
+   "reef": "prattes-reef-el-segundo",
+   "test": "two surveys, contour shift (Oct 2000 -> Mar 2001)",
+   "data": "Borrero & Nelsen (2003) Fig. 9 vector contours -1..-4 m (112 x 71 m window)",
+   "signal": "inconclusive",
+   "magnitude": "all four contours moved offshore by +13 m on average (+9..+18 m per contour)",
+   "uncertainty": "survey datum / tide differences of 0.3 m would shift a 1:35 contour by about 10 m; digitising +-1 m",
+   "caveats": "no control section, reef not drawn, window about 2 reef lengths; the source states there is no change outside the bag contours"
+  }
+ ]
+}

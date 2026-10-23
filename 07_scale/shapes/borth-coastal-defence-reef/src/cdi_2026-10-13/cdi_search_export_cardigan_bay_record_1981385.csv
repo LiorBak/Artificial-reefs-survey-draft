@@ -1,0 +1,3 @@
+Export OF (1) QUERY RESULTS FROM Marine Data Access - SeaDataNet CDI.
+"Global CDI ID","Local CDI-identifier","Data distributor (edmo_code)","Data set name","Country","Start date","Start time","End date","End time","Parameters measured","instrument / gear type","Measuring area type","Version","North","East","South","West"
+"1981385","115084","2607","CARDIGAN BAY","United Kingdom","19690311","00:00:00","19690525","00:00:00","Bathymetry and Elevation","single-beam echosounders","surface","0","52.7442016602","-4.0376000404","52.4600982666","-4.7274999619"

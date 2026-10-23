@@ -5,7 +5,7 @@ from shapely.ops import unary_union
 from PIL import Image, ImageDraw, ImageFont
 from scipy import ndimage as ndi
 D=r"C:\Users\lior\AppData\Local\Temp\claude\C--\cd973dbd-a674-4cd5-adf1-ffb4c361545f\scratchpad\borth_verify"
-base=r"C:\Users\lior\Documents\Gemini\AG\Artificial reef - to upload to git\07_scale\shapes\borth-coastal-defence-reef"
+base=r"C:\Users\lior\Documents\Claude\Projects\Artificial reef\07_scale\shapes\borth-coastal-defence-reef"
 sh=json.load(open(base+r"\shape.json",encoding='utf-8'))
 g=json.load(open(base+r"\src\borth_esri_2024-09-17_z19.png.geo.json"))
 R=6378137.0; S=5.4995

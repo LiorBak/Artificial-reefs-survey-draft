@@ -2,7 +2,7 @@
 import json, csv, os
 from shapely.geometry import Polygon
 from shapely.ops import unary_union
-R = r"C:\Users\lior\Documents\Gemini\AG\Artificial reef - to upload to git"
+R = r"C:\Users\lior\Documents\Claude\Projects\Artificial reef"
 def card(s): return json.load(open(f"{R}/02_research/reefs/{s}.json", encoding="utf-8"))
 def shape(s): return json.load(open(f"{R}/07_scale/shapes/{s}/shape.json", encoding="utf-8"))
 def cent(polys):

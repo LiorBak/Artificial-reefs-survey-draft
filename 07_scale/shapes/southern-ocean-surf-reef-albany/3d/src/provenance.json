@@ -1,0 +1,155 @@
+[
+ {
+  "parameter": "Plan outline (default)",
+  "value": "13,104 m2 design toe; 164.6 x 121.2 m along/across crest",
+  "unit": "m",
+  "source_id": "design_plan, design_table, sat2026",
+  "method": "Bluecoast plan traced (25 vertices), scaled by its bar (1.52 px/m), positioned by overlap with the satellite trace (shape.json design_bluecoast)",
+  "uncertainty": "area -30%/+20% by edge definition; position +-3 m",
+  "estimated": false
+ },
+ {
+  "parameter": "Plan outline (toggle)",
+  "value": "10,918 m2 visible rock patch (2026-01-20)",
+  "unit": "m",
+  "source_id": "sat2026",
+  "method": "20-vertex hand trace on the Esri image, georeferenced 0.4891 m/px (shape.json sat_2026)",
+  "uncertainty": "+-1.5-7 m at the edges",
+  "estimated": false
+ },
+ {
+  "parameter": "Frame, shoreline",
+  "value": "origin -35.0172584, 117.919428; +x bearing 30.26 deg; beach-face line y = 0",
+  "unit": "deg / m",
+  "source_id": "sat2026",
+  "method": "Theil-Sen fit to the dry-sand edge (shape.json canonical.frame)",
+  "uncertainty": "bearing CI 27.7-33.0 deg; line +-5 m",
+  "estimated": false
+ },
+ {
+  "parameter": "Crest level, shallowest",
+  "value": "-1.00",
+  "unit": "m AHD",
+  "source_id": "city_page, design_table",
+  "method": "read from the City table and project page; used as the ridge level over the first 15 m of the ridge from the offshore end",
+  "uncertainty": "design value, as-built not surveyed (+-0.3 m typical tolerance, not stated)",
+  "estimated": false
+ },
+ {
+  "parameter": "Crest level, main",
+  "value": "-2.0 over 110 m",
+  "unit": "m AHD",
+  "source_id": "design_table",
+  "method": "'crest length 110 m @ -2 m AHD'; used as ridge level beyond 40 m from the offshore end (assumption A7 on which end is shallowest)",
+  "uncertainty": "position along ridge assumed",
+  "estimated": true
+ },
+ {
+  "parameter": "Ridge line",
+  "value": "polyline 9 m inside the shoreward (+x) edge, 143 m (design) / 135 m (satellite)",
+  "unit": "m",
+  "source_id": "design_plan",
+  "method": "offset of the outline edge; design plan contours are dense along that edge (A6)",
+  "uncertainty": "+-5 m offset = +-1.2k m3",
+  "estimated": true
+ },
+ {
+  "parameter": "Seabed profile -1 ... -7 m",
+  "value": "y = 36, 50, 64, 75, 88, 98, 105, 118, 126, 150, 178 m",
+  "unit": "m from beach-face line",
+  "source_id": "rhdhv2015",
+  "method": "contour crossings read by colour along 8 shore-normal transects (x = -160 ... 0), medians; plan georeferenced with 4 control points on Esri 2025-01-16 (similarity fit, residual <= 5 m)",
+  "uncertainty": "+-5 m position (about +-0.25 m depth); datum assumed AHD (A3): if CD/LAT, +0.74 m deeper",
+  "estimated": true
+ },
+ {
+  "parameter": "Seabed landward / seaward ends",
+  "value": "+2.0 m at y=-60, +1.0 at -30, -0.5 at 7; -7.5 at 250, -8.0 at 330, -8.3 at 420",
+  "unit": "m AHD",
+  "source_id": "rhdhv2015, eia2018",
+  "method": "landward: assumed 1:30 beach; seaward: -8 contour of the same plan and the 8.4 m CD sounding at y = 315 (BMT Fig 6.9)",
+  "uncertainty": "+-0.5 m; outside the reef except the offshore toe",
+  "estimated": true
+ },
+ {
+  "parameter": "Soundings (cross-check only)",
+  "value": "2.7, 8.4, 7.2, 7.3, 5.7, 3.4 m",
+  "unit": "m below CD",
+  "source_id": "eia2018",
+  "method": "labels on BMT Fig 6.9 read and georeferenced by the UTM50 grid (A3 figure); 8.4 m agrees with the profile, 2.7 m near shore does NOT (-1.6 m)",
+  "uncertainty": "label position +-11 m; datum 'CD'",
+  "estimated": false
+ },
+ {
+  "parameter": "Rock volume (design outline)",
+  "value": "34,000",
+  "unit": "m3",
+  "source_id": "design_table",
+  "method": "stated by the City ('based on 2017 bathymetry'); the model shape exponent N = 2.73 is FITTED to it (A9)",
+  "uncertainty": "bed +-1 m = +7.7k / -7.9k m3 (+-23 %)",
+  "estimated": false
+ },
+ {
+  "parameter": "Rock mass / density",
+  "value": "62,800 t; 1.847 t/m3",
+  "unit": "t",
+  "source_id": "city_page",
+  "method": "62,800 t / 34,000 m3 (A10)",
+  "uncertainty": "density assumed consistent",
+  "estimated": true
+ },
+ {
+  "parameter": "Rock layers",
+  "value": "belly D50 0.16 m 18%, core 0.49 m 36%, armour 0.94 m 46%",
+  "unit": "",
+  "source_id": "city_page",
+  "method": "not modelled separately (A11)",
+  "uncertainty": "",
+  "estimated": false
+ },
+ {
+  "parameter": "MLLW, MHHW",
+  "value": "-0.26 and +0.34",
+  "unit": "m AHD",
+  "source_id": "city_page",
+  "method": "derived from 'crest -1.0 m AHD = 0.74 m below MLLW and 1.34 m below MHHW'",
+  "uncertainty": "as stated",
+  "estimated": false
+ },
+ {
+  "parameter": "LAT",
+  "value": "-0.74",
+  "unit": "m AHD",
+  "source_id": "dot_tides",
+  "method": "AHD assumed = MSL; MSL = mean of the 1,043 predicted high and low waters of 2024 = 0.742 m above LAT (scripts/tides_from_dot.py)",
+  "uncertainty": "+-0.10 m (A2)",
+  "estimated": true
+ },
+ {
+  "parameter": "Highest predicted tide 2024",
+  "value": "+0.66 (1.40 m above LAT)",
+  "unit": "m AHD",
+  "source_id": "dot_tides",
+  "method": "maximum of the 2024 predictions; HAT proper not found (slider top)",
+  "uncertainty": "HAT is higher by an unknown amount",
+  "estimated": true
+ },
+ {
+  "parameter": "Tidal range",
+  "value": "spring 0.9 m, neap 0.3 m; surge +0.4-1.0 m",
+  "unit": "m",
+  "source_id": "eia2018",
+  "method": "text, EIA s.5 (from RHDHV 2015a)",
+  "uncertainty": "secondary",
+  "estimated": false
+ },
+ {
+  "parameter": "Water level at display",
+  "value": "slider LAT to +0.66 m AHD",
+  "unit": "m AHD",
+  "source_id": "-",
+  "method": "chosen for the viewer; default 0 m AHD",
+  "uncertainty": "",
+  "estimated": false
+ }
+]

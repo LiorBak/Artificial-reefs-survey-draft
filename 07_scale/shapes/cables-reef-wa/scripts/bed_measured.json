@@ -1,0 +1,8 @@
+{
+ "raster_minus_sounding_bias_m": 0.085,
+ "raster_minus_sounding_bias_all_points_m": 0.181,
+ "share_canonical_grid_from_1998_survey": 0.524,
+ "bed_AHD_at_anchor": -3.68,
+ "smoothing_sigma_m": 2.0,
+ "n_1998_soundings_used": 14303
+}

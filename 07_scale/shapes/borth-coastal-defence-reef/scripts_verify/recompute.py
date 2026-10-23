@@ -1,7 +1,7 @@
 import json, math, numpy as np
 from shapely.geometry import Polygon
 R=6378137.0
-base=r"C:\Users\lior\Documents\Gemini\AG\Artificial reef - to upload to git\07_scale\shapes\borth-coastal-defence-reef"
+base=r"C:\Users\lior\Documents\Claude\Projects\Artificial reef\07_scale\shapes\borth-coastal-defence-reef"
 sh=json.load(open(base+r"\shape.json",encoding='utf-8'))
 def geo(f): return json.load(open(base+r"\src\\"+f+".geo.json"))
 g24=geo("borth_esri_2024-09-17_z19.png"); gsh=geo("borth_shoreline_z19.png")

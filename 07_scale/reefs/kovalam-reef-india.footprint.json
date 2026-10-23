@@ -1,4 +1,6 @@
 {
+  "display": false,
+  "display_reason": "Only one oblique, unscaled photo shows the structure and its scale is not fixed (footprint 640-1,681 m2 depending on the assumed camera height), so no reliable plan shape or size can be drawn.",
   "slug": "kovalam-reef-india",
   "name": "Kovalam Reef (Lighthouse Beach)",
   "status": "verified",

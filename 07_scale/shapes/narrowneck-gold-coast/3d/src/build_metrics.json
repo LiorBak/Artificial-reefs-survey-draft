@@ -1,0 +1,109 @@
+{
+ "M": {
+  "photo_2020-08-08": {
+   "volume_m3": 13495,
+   "area_m2": 6239,
+   "mean_height_m": 2.16,
+   "max_height_m": 3.92,
+   "crest_max_AHD": -1.8,
+   "crest_min_AHD": -6.32,
+   "volume_unc_bed_m3": 3120
+  },
+  "design_option2_2017": {
+   "volume_m3": 21271,
+   "area_m2": 13938,
+   "mean_height_m": 1.53,
+   "max_height_m": 3.62,
+   "crest_max_AHD": -2.5,
+   "crest_min_AHD": -6.69,
+   "volume_unc_bed_m3": 6969
+  },
+  "design_2004_revised": {
+   "volume_m3": 13603,
+   "area_m2": 13635,
+   "mean_height_m": 1.0,
+   "max_height_m": 3.01,
+   "crest_max_AHD": -2.34,
+   "crest_min_AHD": -6.15,
+   "volume_unc_bed_m3": 6818
+  },
+  "survey_2011-06-09": {
+   "volume_m3": 6856,
+   "area_m2": 4922,
+   "mean_height_m": 1.39,
+   "max_height_m": 3.01,
+   "crest_max_AHD": -2.5,
+   "crest_min_AHD": -6.26,
+   "volume_unc_bed_m3": 2461
+  },
+  "_containers": {
+   "n": 534,
+   "sand_m3_each": 147.0,
+   "total_m3": 78498
+  }
+ },
+ "stats": {
+  "design2004_vs_multibeam_tops": {
+   "n": 53,
+   "mean_offset_m": 0.26,
+   "sd_m": 0.66,
+   "corr": 0.76
+  },
+  "multibeam_north_arm": {
+   "shallowest_AHD": -2.51,
+   "p99_AHD": -3.13,
+   "relief_p90_m": 0.92,
+   "relief_p99_m": 1.81,
+   "bed_median_AHD": -5.55
+  },
+  "multibeam_south_arm": {
+   "shallowest_AHD": -1.82,
+   "p99_AHD": -2.72,
+   "relief_p90_m": 1.22,
+   "relief_p99_m": 2.22,
+   "bed_median_AHD": -5.31
+  },
+  "bed_profile_AHD": {
+   "0": 0.0,
+   "100": -1.8,
+   "190": -2.1,
+   "210": -2.45,
+   "235": -3.86,
+   "265": -5.1,
+   "300": -5.81,
+   "340": -6.76,
+   "370": -7.25,
+   "400": -7.7,
+   "460": -9.55,
+   "500": -10.46
+  },
+  "bed_under_photo_2020-08-08": [
+   -7.29,
+   -5.43,
+   -2.53
+  ],
+  "bed_under_design_option2_2017": [
+   -7.66,
+   -5.72,
+   -3.51
+  ],
+  "bed_under_design_2004_revised": [
+   -7.12,
+   -5.1,
+   -2.34
+  ],
+  "bed_under_survey_2011-06-09": [
+   -7.23,
+   -5.24,
+   -3.26
+  ],
+  "packing_photo_vs_containers": 0.17,
+  "packing_option2_vs_containers": 0.27,
+  "crest_below_LAT_m": {
+   "measured_msq": 1.44,
+   "measured_icm": 1.2,
+   "design_msq": 1.74,
+   "design_icm": 1.5
+  }
+ }
+}

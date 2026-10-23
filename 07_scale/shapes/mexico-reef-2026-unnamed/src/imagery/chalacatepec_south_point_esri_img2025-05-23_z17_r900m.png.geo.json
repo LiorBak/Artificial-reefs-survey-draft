@@ -1,0 +1,24 @@
+{
+  "image": "xala_point_z17.png",
+  "width": 1601,
+  "height": 1601,
+  "bounds": {
+    "north": 19.68858673516786,
+    "south": 19.672413251634026,
+    "east": -105.25341153144836,
+    "west": -105.27058839797974
+  },
+  "zoom": 17,
+  "m_per_px_center": 1.1245621229057547,
+  "tile_template": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+  "wayback_release": null,
+  "center": {
+    "lat": 19.6805,
+    "lon": -105.262
+  },
+  "radius_m": 900.0,
+  "attribution": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+  "retrieved": "2026-10-10",
+  "capture_date": "2025-05-23",
+  "capture_date_field": "DATE (YYYYMMDD)"
+}

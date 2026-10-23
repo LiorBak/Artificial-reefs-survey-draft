@@ -1,0 +1,24 @@
+{
+  "image": "w2014_z17.png",
+  "width": 554,
+  "height": 554,
+  "bounds": {
+    "north": -24.813303609156304,
+    "south": -24.818698537926576,
+    "east": 152.4701714515686,
+    "west": 152.4642276763916
+  },
+  "zoom": 17,
+  "m_per_px_center": 1.084044637350067,
+  "tile_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/{release}/{z}/{y}/{x}",
+  "wayback_release": "10",
+  "center": {
+    "lat": -24.816,
+    "lon": 152.4672
+  },
+  "radius_m": 300.0,
+  "attribution": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+  "retrieved": "2026-10-10",
+  "capture_date": "2010-09-11",
+  "capture_date_field": "SRC_DATE2"
+}

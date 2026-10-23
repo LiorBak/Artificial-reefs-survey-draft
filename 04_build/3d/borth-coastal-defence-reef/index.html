@@ -394,7 +394,7 @@ function mkControls() {
   <div class="small">Rock: <span style="color:#9a9c9e">&#9632;</span> armour / surveyed surface (Type 4) &nbsp;<span style="color:#666">&#9632;</span> toe berm (Type 0) &nbsp;<span style="color:#6b7857">&#9632;</span> blanket (Type 6). Yellow line = outline of the selected version at its edge level. Red line = defence line (y = 0). Grid: 10 m (50 m bold), x alongshore (+ south), y offshore (west).</div>
   <h3>Selected version</h3><div id="vinfo" class="small"></div>
   <h3>Seabed in this model</h3>
-  <div class="small">Beach and foreshore: Welsh Government LiDAR (19 Mar 2022). Around and under the mounds: -4.0 mODN (north arm), -3.6 to -4.2 (oval), shallower toward the tail; HRPP576 Fig 2 contour -3.0. Beyond 335 m offshore: EMODnet gradient -1.1 %. Uncertainty +-0.4 m under the rock. <b>Known issue:</b> seaward of the reef (y > 335 m) the modelled sea floor is 0.9 m deeper than the HRPP576 Fig 2 -4.0 contour, and the Navionics chart and EMODnet are shallower still (METHODS 4.4); heights above the bed are unaffected under the rock.</div>`;
+  <div class="small">Beach and foreshore: Welsh Government LiDAR (19 Mar 2022). Around and under the mounds: -4.0 mODN (north arm), -3.6 to -4.2 (oval), shallower toward the tail; HRPP576 Fig 2 contours -3.0 and -4.0 mODN outside the reef zone (the -4.0 contour is bridged behind the drawn mounds and extended east by assumption). Beyond the -4.0 contour (y about 410-470 m offshore): EMODnet gradient -1.1 %. Uncertainty +-0.4 m under the rock, +-0.5 m outside. <b>Seabed fix 2026-10-07:</b> before it the sea floor seaward of the reef was 0.89 m deeper than the Fig 2 -4.0 contour (the rock volumes were 3-4 % higher, METHODS 3.3); it now follows the contour. The Navionics chart and the EMODnet cells are still 0.7-1.3 m shallower than the model offshore (METHODS 4.4).</div>`;
   $('wl').oninput = e => setWater(parseFloat(e.target.value));
   $('wlb').onclick = e => { const id = e.target.dataset && e.target.dataset.id; if (!id) return; const l = allLevels.find(x => x.id === id); setWater(Math.min(wlMax, Math.max(wlMin, l.z))); };
   $('ve_s').oninput = e => setVE(parseFloat(e.target.value));
@@ -430,7 +430,7 @@ $('cap').innerHTML = `<b>${M.name}</b><br>z = 0 at MSL (z_MSL = z_ODN − 0.31).
 (function mkSources() {
   const rows = M.provenance.map(p => `<tr><td>${p.parameter}</td><td>${p.value} ${p.unit && p.unit !== '-' ? '' : ''}</td><td>${p.source_id}</td><td>${p.method}</td><td class="${p.estimated ? 'est' : ''}">${p.uncertainty}${p.estimated ? ' (estimated)' : ''}</td></tr>`).join('');
   $('t3').innerHTML = `<h3>3D confidence: <span class="badge b-${C.level}">${C.level.toUpperCase()}</span></h3><p>${C.reason}</p>
-  <h3>Provenance (every model value)</h3><table><tr><th>Parameter</th><th>Value</th><th>Source</th><th>Method</th><th>Uncertainty</th></tr>${rows}</table>
+  <p class="small">Source register (what was read off each source and how), methods, assumptions A1-A14, decisions DEC1-DEC14 and confidence per element: <b>Methods tab, button &ldquo;Sources, assumptions, decisions&rdquo;</b>.</p><h3>Provenance (every model value)</h3><table><tr><th>Parameter</th><th>Value</th><th>Source</th><th>Method</th><th>Uncertainty</th></tr>${rows}</table>
   <h3>Datum levels (mODN to model z)</h3><table><tr><th>Level</th><th>mODN</th><th>m MSL</th><th>Source</th></tr>${allLevels.map(l => `<tr><td>${l.name}</td><td>${fmt(l.z_ODN)}</td><td>${fmt(l.z)}</td><td class="${l.estimated ? 'est' : ''}">${l.source}</td></tr>`).join('')}</table>`;
 })();
 
@@ -463,7 +463,7 @@ function md(src) {
   return out.join('\n');
 }
 (function mkDoc() {
-  const d = $('doc'); const keys = [['methods_md', 'METHODS_3D.md'], ['sources_md', 'SOURCES_3D.md']].filter(k => DOCS[k[0]]);
+  const d = $('doc'); const keys = [['methods_md', 'Methods (METHODS_3D)'], ['register_md', 'Sources, assumptions, decisions (REGISTER_3D)'], ['sources_md', 'Run log (SOURCES_3D)']].filter(k => DOCS[k[0]]);
   d.innerHTML = '<div class="chips" id="dtabs"></div><div id="dbody"></div>';
   const show = k => { $('dbody').innerHTML = md(DOCS[k]); [...$('dtabs').children].forEach(b => b.classList.toggle('on', b.dataset.k === k)); $('t4').scrollTop = 0; };
   keys.forEach(([k, n]) => { const b = document.createElement('button'); b.textContent = n; b.dataset.k = k; b.onclick = () => show(k); $('dtabs').appendChild(b); });
@@ -571,6 +571,21 @@ window.__ready = true;
       home = { pos: camera.position.clone(), up: camera.up.clone(), tgt: controls.target.clone(), fov: camera.fov, near: camera.near, far: camera.far,
         minD: controls.minDistance, maxD: controls.maxDistance, minP: controls.minPolarAngle, maxP: controls.maxPolarAngle, sfov: s ? s.fov : null };
     }
+    // 2026-10-10: sprites with sizeAttenuation:false (Palm Beach labels, scale bars, N arrow) grow by 1/tan(fov/2) when the narrow 8 deg matching FOV replaces the viewer's own FOV:
+    // scale them by tan(FOV/2)/tan(homeFov/2) while a photo is matched, and restore them on reset.
+    function spriteList() {
+      var out = []; if (typeof scene === 'undefined' || !scene || !scene.traverse) return out;
+      scene.traverse(function (o) { if (o.isSprite && o.material && o.material.sizeAttenuation === false) out.push(o); });
+      return out;
+    }
+    function fitSprites(on) {
+      var k = on && home ? Math.tan(FOV * Math.PI / 360) / Math.tan(home.fov * Math.PI / 360) : 1;
+      spriteList().forEach(function (o) {
+        if (!o.userData.pm0) o.userData.pm0 = o.scale.clone();
+        o.scale.set(o.userData.pm0.x * k, o.userData.pm0.y * k, o.userData.pm0.z);
+        if (!on) delete o.userData.pm0;
+      });
+    }
     function overlayBox() {
       var b = document.getElementById('m3d-pmo');
       if (!b) {
@@ -606,6 +621,7 @@ window.__ready = true;
       camera.position.set(c[0] - u[0] * eps, dist, c[1] - u[1] * eps);
       controls.target.set(c[0], 0, c[1]);
       camera.lookAt(controls.target); controls.update();
+      fitSprites(true);
       layoutOverlay();
       return true;
     }
@@ -626,6 +642,7 @@ window.__ready = true;
     }
     function reset() {
       if (!home) return;
+      fitSprites(false);
       spec = null;                                                         // first: restoring the panels fires 'resize', which would re-place the overlay
       camera.position.copy(home.pos); camera.up.copy(home.up); controls.target.copy(home.tgt);
       camera.fov = home.fov; camera.near = home.near; camera.far = home.far; camera.updateProjectionMatrix();

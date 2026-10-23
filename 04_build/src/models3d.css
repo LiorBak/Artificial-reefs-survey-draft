@@ -227,6 +227,18 @@ button.m3d-vinfo:hover { background: var(--accent); color: var(--accent-ink); }
 .m3d-vnow { margin: 6px 0 0; font-size: .88rem; max-width: 110ch; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; cursor: pointer; }   /* round 11: two lines at the top; a click shows the rest */
 .m3d-vnow.open { display: block; overflow: visible; }
 .m3d-versions { margin: 6px 0 4px; padding: 6px 10px; }
+/* 2026-10-10: compact version block so the viewer is not pushed below the fold at 900 px height (Borth: 203 -> about 110 px) */
+.m3d-vrow { gap: 4px 8px; }
+.m3d-vgroup { gap: 4px; flex: 1 1 420px; flex-wrap: nowrap; min-width: 0; }
+button.m3d-vbtn { padding: 2px 8px; gap: 0 6px; flex: 1 1 0; min-width: 0; flex-wrap: nowrap; }
+button.m3d-vbtn .n { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+/* 2026-10-10: long date strings (Cables: '1992 design (Lyons) / extension 1999; built Feb-Dec 1999') overflowed their button and covered the neighbour: truncate the date as well (full text in the button's title) */
+button.m3d-vbtn .d { white-space: nowrap; flex: 0 1 auto; min-width: 0; max-width: 48%; overflow: hidden; text-overflow: ellipsis; }
+@media (max-width: 760px) { .m3d-vgroup { flex-wrap: wrap; } button.m3d-vbtn { flex: 1 1 100%; flex-wrap: wrap; } button.m3d-vbtn .n { white-space: normal; } button.m3d-vbtn .d { max-width: 100%; white-space: normal; overflow: visible; } }
+button.m3d-vbtn .n { font-size: .84rem; }
+button.m3d-vbtn .d { font-size: .72rem; }
+.m3d-vnow { margin-top: 4px; font-size: .84rem; -webkit-line-clamp: 1; }
+.m3d-vnow.open { display: block; overflow: visible; }
 .m3d-vmeth { color: var(--muted); }
 .m3d-tag.dflt { background: var(--m3d-high); color: var(--m3d-high-ink); }
 .m3d-tag.now { background: var(--accent); color: var(--accent-ink); }

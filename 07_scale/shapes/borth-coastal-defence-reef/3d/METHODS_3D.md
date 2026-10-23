@@ -1,12 +1,14 @@
 # METHODS_3D - Borth coastal defence reef (Phase 1, Ceredigion, Wales)
 
-3D model v1, 2026-10-07 (3D agent, Sonnet 5.5). Files: `3d\model.js` (data), `3d\index.html` (viewer), `3d\build_3d.py` (rebuilds model.js, docs.js and, with `--shape`, shape.json), `3d\make_annotations.py` and `3d\nav_read.py` (annotated images), `3d\SOURCES_3D.md` (step-by-step log). Not for navigation.
+3D model v1, 2026-10-07 (3D agent, Sonnet 5.5); seabed fix D6 applied 2026-10-07 (3.3; model v1.1; the pre-fix files are in `3d\archive\pre_D6\`). Files: `3d\model.js` (data), `3d\index.html` (viewer), `3d\build_3d.py` (rebuilds model.js, docs.js and, with `--shape`, shape.json), `3d\make_annotations.py` and `3d\nav_read.py` (annotated images), `3d\SOURCES_3D.md` (step-by-step log). Not for navigation.
 
 ## 1. Summary
 
-The model shows the **as-built final layout of Borth Phase 1 (completed 8 March 2012)**: a northern boot-shaped **surf reef** (crest +0.50 mODN, tail +1.00, head edge +0.00 rising over about 40 m) and a southern oval that is a **shore-parallel breakwater, not a surf reef** (crest +1.50 mODN), on a seabed rebuilt from the 2022 LiDAR beach, the HRPP576 Fig 2 contours, the design bed levels and the EMODnet trend, with the water surface selectable from LAT to MHWS. Three outlines of the same structure are modelled and selectable: the **laser-survey edge (Welsh Government LiDAR, 19 Mar 2022, 8,675 m2, default, chosen by Lior on 2026-10-06)**, the design rock-layer foot of drawing 9V5090/1020 (Jan 2011, 6,989 m2) and the visible rock edge in the Esri photo of 17 Sep 2024 (5,743 m2). The default surface is the 1 m LiDAR DSM above the exposed level (about -2.3 mODN) plus the design toe berm and blanket of drawings 1021-1023 below it; the model rock volume is 31,300 m3 (about 53,000 t at 1.7 t/m3, +-15 %). No later damage, deflation or removal was found (imagery 2012-2024, 2022 LiDAR), so no second state is modelled. **3D confidence: MEDIUM**: the plan and the crest levels are well supported (laser survey and design agree within 0.3 m), but the seabed under and around the rock rests on a design bed level (about -4.0 mODN, "bed levels vary"), a hand-read contour figure and an estimated MSL offset, and the modelled sea floor seaward of the reef is 0.9 m deeper than the Fig 2 -4.0 contour (section 4.4), so heights above the bed are known to about +-0.5 m and volumes to about +-15 %.
+The model shows the **as-built final layout of Borth Phase 1 (completed 8 March 2012)**: a northern boot-shaped **surf reef** (crest +0.50 mODN, tail +1.00, head edge +0.00 rising over about 40 m) and a southern oval that is a **shore-parallel breakwater, not a surf reef** (crest +1.50 mODN), on a seabed rebuilt from the 2022 LiDAR beach, the HRPP576 Fig 2 contours, the design bed levels and the EMODnet trend, with the water surface selectable from LAT to MHWS. Three outlines of the same structure are modelled and selectable: the **laser-survey edge (Welsh Government LiDAR, 19 Mar 2022, 8,675 m2, default, chosen by Lior on 2026-10-06)**, the design rock-layer foot of drawing 9V5090/1020 (Jan 2011, 6,989 m2) and the visible rock edge in the Esri photo of 17 Sep 2024 (5,743 m2). The default surface is the 1 m LiDAR DSM above the exposed level (about -2.3 mODN) plus the design toe berm and blanket of drawings 1021-1023 below it; the model rock volume is 30,100 m3 (about 51,200 t at 1.7 t/m3, +-15 %). No later damage, deflation or removal was found (imagery 2012-2024, 2022 LiDAR), so no second state is modelled. **3D confidence: MEDIUM**: the plan and the crest levels are well supported (laser survey and design agree within 0.3 m), but the seabed under and around the rock rests on a design bed level (about -4.0 mODN, "bed levels vary"), a hand-read contour figure and an estimated MSL offset, and the sea floor seaward of the reef now follows the Fig 2 -4.0 contour (fixed on 2026-10-07: it had been 0.89 m deeper than that contour, sections 3.3 and 4.4), so heights above the bed are known to about +-0.5 m and volumes to about +-15 %.
 
 ## 2. Data sources
+
+Source audit 2026-10-10: the full register (what was read off each source, how, accuracy, model element), the methods list, assumptions A1-A14 with effect and replacement, decisions DEC1-DEC14 and confidence per element are in `REGISTER_3D.md` (viewer: Methods tab, second button). The table below is the original source list; the registry now has 31 rows (img-31 = Blacka et al. 2013, Fig 4.1).
 
 Citations are author-year; "id" is the source id used in `model.js` provenance and `shape.json`. Registry ids refer to `03_images\reefs\borth-coastal-defence-reef\images.json`. All local copies are private research copies; reuse rights are to be checked before any public release.
 
@@ -19,7 +21,7 @@ Citations are author-year; "id" is the source id used in `model.js` provenance a
 | emodnet | EMODnet Bathymetry Consortium (2024). *EMODnet Digital Bathymetry (DTM 2024)*. https://doi.org/10.12770/cf51df64-56f9-4a99-b1aa-36b8d7b743a1 (CC BY 4.0); survey cells CDI 115084 (OceanWise Ltd), accessed 2026-10-06 (registry img-14..16) | offshore gradient -1.1 % from y = 335 m outwards; reef-zone cells are GEBCO interpolation (1.0-1.4 m too shallow) and are not used | 1/16 arc-minute cells, one sounding per cell, age > 30 y |
 | ref3 | Royal HaskoningDHV (2011). *West of Wales Shoreline Management Plan 2*, Section 4 Coastal Area C Introduction, p. 4C.3, water-level table (Aberystwyth). https://www.grwparfordirolgorllewincymru.cymru/sites/default/files/2019-06/4c1%20-%20Section%204%20Coastal%20Area%20C%20Introduction.pdf, accessed 2026-10-06 | MHWS +2.56, MHWN +1.06, MLWN -0.64, MLWS -1.74 mAOD (= mODN) | tabulated |
 | ref4 | National Tidal and Sea Level Facility (n.d.). *Chart datum and ordnance datum: differences at selected ports*. https://ntslf.org/tides/datum, accessed 2026-10-06 | LAT = chart datum = ODN - 2.44 m at Barmouth and Fishguard (Aberystwyth not listed) | +-0.1 m |
-| ref6 | Hansford, M. (2011). Borth's Big Dig. *New Civil Engineer*, 15 Sept 2011. https://www.newcivilengineer.com/archive/borths-big-dig-15-09-2011/ | 275,000 t rock for the whole Phase 1, Type 4 (6-10 t) 42,000 t | upper bound only |
+| ref6 | Hansford, M. (Mark) (2011). Borth's Big Dig. *New Civil Engineer*, 15 Sept 2011. https://www.newcivilengineer.com/archive/borths-big-dig-15-09-2011/ | 275,000 t rock for the whole Phase 1, Type 4 (6-10 t) 42,000 t | upper bound only |
 | ref7 | RCAHMW (2020). Coflein, Coastal Defences, Borth, NPRN 424699. https://coflein.gov.uk/en/site/424699, accessed 2026-10-06 | completion 8 March 2012, reef about 300 m offshore | - |
 | navionics | Garmin Ltd / Navionics (2026). Marine Maps web viewer (Nautical Charts and SonarChart Maps), "Not to be used for navigation". https://maps.garmin.com/en-US/marine?maps=another-brand&overlay=false&key=gcm4edq678dp (successor of webapp.navionics.com), accessed 2026-10-07 (registry rows added this run) | cross-check of the seabed and datum (section 3.6); NOT used as a model input | zoom 17 / 18, 0.73 / 0.36 m/px; contour interval 0.5 m shallow |
 
@@ -60,18 +62,44 @@ Thin-plate-spline radial basis function (scipy `RBFInterpolator`, smoothing 0.5,
 |---|---|---|---|
 | 3,081 | LiDAR DTM 19 Mar 2022, beach and lower foreshore, 6 m grid, y < 255 m, rock buffered out by 12 m, only cells above -2.35 mODN | measured | water edge reached about y 245 m |
 | 12 | HRPP576 Fig 2 -3.0 mODN contour, outside the reef zone (x not in -115..+160) | -3.0 | read by eye, +-0.5 m, +-10 m horizontally |
+| 13 | HRPP576 Fig 2 -4.0 mODN contour, traced points outside the reef zone (x -200..-118 and x 170; **added 2026-10-07, D6**) | -4.0 | read by eye, +-0.5 m, +-10 m horizontally; y 408-420 m west of the reef, 460 m at x 170 |
+| 6 | ASSUMED -4.0 bridge nodes at x -64, -24, 16, 56, 96, 136 on the straight line between the traced ends (-104, 420) and (170, 460), where the contour is hidden behind the drawn mounds of the figure (**D6**) | -4.0 | assumed (interpolation); stops the thin-plate fit from overshooting between the design bed and the contour |
+| 3 | ASSUMED -4.0 nodes east of the traced end of the contour: (200, 464), (230, 469), (260, 473), the trend of the last 270 m (+0.146 m/m); the traced contour leaves the figure at y about 460 m, x about 170 (**D6**) | -4.0 | assumed (extrapolation); 70-140 m east of the reef |
 | 12 + 3 | design bed under the north arm (drawing 1021 N3: 2.70 + 1.31 + 0.50 below +0.50 = -4.01) and N4 (-3.8) | -4.0 / -3.8 | derived from layer thicknesses; the section ground line is schematic ("EXISTING SEABED VARIES") |
 | 6 | tail: ASSUMED -3.0 (y 272) and -3.4 (y 282), shallower than the arm | assumed | no drawing value |
 | 10 | oval: printed note on S2 "-4.2 TO -3.6m AOD": -3.6 shoreward (y 309), -4.2 seaward (y 340) | -3.6 / -4.2 | |
-| 6 | anchor line y = 335 m outside the reef x range | -4.0 | ASSUMED (design bed level extended along the shore, A7) |
 
-Beyond y = 335 m the level at the anchor is continued with the EMODnet gradient (A7):
+Beyond the Fig 2 -4.0 contour, y_c(x) (the traced points, joined by straight lines across the gap x -104..170 and continued east by the 3 assumed nodes), the level fitted on the contour is continued with the EMODnet gradient (A7):
 
 ```
-z(x, y) = z_RBF(x, 335) - 0.011 (y - 335)         for y > 335 m   (E4)       (-1.1 %, soundings y 368-652 m, CDI 115084)
+z(x, y) = z_RBF(x, y_c(x)) - 0.011 (y - y_c(x))   for y > y_c(x)   (E4)       (-1.1 %, soundings y 368-652 m, CDI 115084; y_c = 408-473 m)
 ```
 
-The RBF reproduces all nodes (rms < 0.01 m). Under the footprints the modelled bed is -4.04 mean (-4.72..-2.51) under the north foot ring and -3.95 (-4.21..-3.62) under the oval (design -4.0 and -3.6..-4.2: met).
+The RBF reproduces all nodes (rms < 0.01 m). Under the footprints the modelled bed is -3.86 mean (-4.05..-2.51) under the north foot ring and -3.95 (-4.21..-3.62) under the oval (design -4.0 and -3.6..-4.2: met; the mean under the north ring is shallower than -4.0 because the tail bed is assumed shallower, -3.0..-3.4).
+
+**D6 fix, 2026-10-07 (bug fix of the seabed outside the reef; model v1 -> v1.1).** Two faults of the first build are removed:
+
+1. *Cause.* `seabed_grid` evaluated the thin-plate fit at `min(y, 335)` (the former ANCHOR_Y) and subtracted the EMODnet gradient beyond it. Every node with y > 335 m was therefore ignored: the design bed nodes under the head of the north arm (y 360 and 385, -4.0) and the oval seaward nodes had no effect there, and the bed under the arm head fell to -4.0 - 0.011 (y - 335) = -4.7 mODN at y 397. The first build also relied on an assumed anchor line (-4.0 at y = 335 m outside x -80..130) and used the Fig 2 -4.0 contour only as a check, so the sea floor in front of the reef was 0.89 m (sd 0.14, n 13) deeper than that contour (-4.7 at y 400, -5.1 at y 440, where Fig 2 has -4.0 at y 408-460).
+2. *Fix.* The anchor nodes are removed; the Fig 2 -4.0 contour (13 traced points, plus 6 bridge and 3 extension nodes marked ASSUMED above) is a control; the gradient E4 starts on that contour instead of at y = 335 m. The fit now uses the design bed nodes at every y.
+
+*Effect, old -> new (model.js, 1 m grid; the only change is the bed level, plan and surface are untouched):*
+
+| quantity | before D6 | after D6 |
+|---|---|---|
+| model minus Fig 2 -4.0 contour (n 13) | -0.89 m (sd 0.14) | 0.00 m (sd 0.00) |
+| model minus Fig 2 -3.0 contour (n 24, control) | -0.01 m | 0.00 m |
+| model minus Fig 2 -2.0 contour (n 24, check) | -0.14 m | -0.14 m (unchanged) |
+| model minus EMODnet cells at x -30, y 368 / 440 / 513 | -1.52 / -1.62 / -1.61 m (mean -1.58) | -1.16 / -0.73 / -0.72 m (mean -0.87) |
+| chart zero implied by the model (Navionics, section 3.6) | -4.73 +- 0.20 mODN (RMS vs LAT 2.30 m) | -3.75 +- 0.22 mODN (RMS vs LAT 1.33 m) |
+| bed under the north foot ring (mean, range) | -4.04 (-4.72..-2.51) | -3.86 (-4.05..-2.51) |
+| rock volume lidar_2022 (default) | 31,336 m3 = 53,271 t | 30,119 m3 = 51,203 t (-3.9 %) |
+| rock volume design_1020 | 30,091 m3 = 51,154 t | 28,919 m3 = 49,162 t (-3.9 %) |
+| rock volume sat_2024 | 26,400 m3 = 44,880 t | 25,504 m3 = 43,357 t (-3.4 %) |
+| Type 4 layer, default | 21,557 m3 = 36,646 t | 21,220 m3 = 36,074 t (-1.6 %) |
+
+*Why the volumes changed, and why that is accepted.* The brief for the fix asked for unchanged volumes, on the belief that the design nodes already pinned the bed under the rock. They did not: the nodes at y > 335 m were ignored (fault 1), so the bed under the head of the arm (y 335-397 m) was up to 0.7 m too deep and the total volumes were overstated by 3.4-3.9 %. The coordinator therefore replaced the rule "volumes unchanged" by "volumes change only through the bed-node fix, documented" (2026-10-07). *Option A (rejected):* freeze the bed under the rock at the old values to keep the numbers. It would keep a pit under the arm head, up to 0.7 m deeper than both the design bed (-4.0) that the documentation states and the new sea floor around it. Option B (applied) makes the model agree with its own documentation. The bed under the rock is still a design level (+-0.4 m, section 5); the volume uncertainty (E9) is unchanged in kind.
+
+*New residuals to know.* (a) The design bed under the arm (-4.0 at y 310-385) is 0.2-0.6 m deeper than a straight interpolation of the Fig 2 contours at the same place (-3.0 at y about 290, -4.0 at y about 415: -3.4 at y 335, -3.8 at y 385); the fit lets the bed rise from the design level to the Fig 2 level within about 40 m of the reef zone. Both are inside +-0.5 m. (b) The model is still 0.7-1.2 m deeper than the EMODnet absolute cells at y 368-513 (the cells are GEBCO-interpolated and are not used) and its implied Navionics zero (-3.75) is 0.17 m deeper than that implied by the Fig 2 -4.0 contour (-3.58). (c) The -4.0 level between x -104 and 170 and east of x 170 is bridged / extended by assumption (9 nodes); it lies 70 m or more from the rock. (d) A small ridge of 0.05-0.18 m per 5 m cell at y 340-345, x 160-260, comes from the oval nodes (-4.2 at y 340); it is inside the bed uncertainty.
 
 ### 3.4 Tides, water surface, viewer
 
@@ -84,7 +112,7 @@ The water is a horizontal plane at the selected level (static still water; no wa
 * A4 LiDAR heights are ODN (not stated in the tile); supported by the agreement with the design crests (oval p90 +1.75 vs +1.50 design, a block-top effect) and the sea surface at the flight (-2.2..-2.4 vs LAT -2.44).
 * A5 The LiDAR edge level (water at the flight) is -2.3 mODN (+-0.1), inferred from the data, not from a tide prediction.
 * A6 Seabed under the rock: arm -4.0 (derived), tail -3.0 .. -3.4 (assumed), N4 -3.8, oval -3.6 / -4.2 (printed note). Derived bed under the oval centreline from S1-S1 is -3.4, 0.2 m shallower than the printed range.
-* A7 Anchor -4.0 mODN at y = 335 m outside the reef range and the EMODnet gradient -1.1 % beyond (orchestrator decision 2026-10-06).
+* A7 The EMODnet gradient -1.1 % is applied beyond the Fig 2 -4.0 mODN contour, starting from the fitted level on the contour (D6, 2026-10-07; replaces the first build's assumed anchor -4.0 at y = 335 m, an orchestrator decision of 2026-10-06 that was reversed on 2026-10-07 because it left the model 0.89 m deeper than the contour). The -4.0 contour is bridged across x -104..170 and extended east of x 170 by assumption (9 nodes).
 * A8 Placed-rock bulk density 1.7 t/m3 (range 1.6-1.8; solid 2.65 t/m3, voids about 36 %).
 * A9 The DSM is smoothed with sigma 0.8 m; the DSM shows block tops, 0.1-0.3 m above the design surface.
 * A10 Edge levels of the versions: -2.3 (lidar_2022), -2.15 (design_1020), -1.3 (sat_2024; median DSM height along the traced edge: north -1.25, south -1.36 mODN).
@@ -111,9 +139,9 @@ r = 156543.03392 / 2^zoom   (Mercator m/px; 0.730 m/px of ground at zoom 17)    
 |---|---|---|---|---|---|---|---|---|
 | HRPP576 Fig 2 -4.0 contour, 7 points x -194..+169 | -3.58 +- 0.07 (7) | **1.15** | 1.84 | 2.94 | 3.89 | 3.58 | 4.64 | 6.14 |
 | EMODnet cells at x -31 (y 368, 440, 513) | -3.07 +- 0.08 (3) | **0.64** | 1.34 | 2.43 | 3.38 | 3.07 | 4.13 | 5.63 |
-| this model's seabed (24 line crossings, y <= 515) | -4.73 +- 0.20 (24) | **2.30** | 3.00 | 4.10 | 5.05 | 4.74 | 5.79 | 7.29 |
+| this model's seabed (24 line crossings, y <= 515; after D6) | -3.75 +- 0.22 (24) | **1.33** | 2.02 | 3.12 | 4.07 | 3.76 | 4.82 | 6.32 |
 
-LAT is the best standard datum against all three references and the one drying-height label agrees with it (0.2 m above chart datum = -2.24 mODN; the LiDAR has water there at -2.3: within 0.1 m), so the chart datum is taken as LAT (A13). But no datum fits well offshore: the charted 0 m line lies 140-180 m seaward of the LiDAR water edge (y about 245 m at -2.3 mODN) and the chart is 0.6-1.1 m shallower than the Fig 2 and EMODnet references; SonarChart contours are partly interpolated and their survey dates are not shown. The chart is therefore a cross-check only and was **not** used to build the seabed.
+LAT is the best standard datum against all three references and the one drying-height label agrees with it (0.2 m above chart datum = -2.24 mODN; the LiDAR has water there at -2.3: within 0.1 m), so the chart datum is taken as LAT (A13). But no datum fits well offshore: the charted 0 m line lies 140-180 m seaward of the LiDAR water edge (y about 245 m at -2.3 mODN) and the chart is 0.6-1.1 m shallower than the Fig 2 and EMODnet references (and 1.3 m shallower than this model, 2.3 m before the D6 fix); SonarChart contours are partly interpolated and their survey dates are not shown. The chart is therefore a cross-check only and was **not** used to build the seabed.
 
 *Crest and height.* The structure still exists (LiDAR 2022; imagery to 2024) but it is **not resolved** by either layer: the rock mounds (0 to +1.5 mODN, 2.4-4 m above LAT) lie inside the uniformly green drying area with no symbol, label or contour at the footprint. The only charted shoal (closed 0.5 and 1 m loops) is at canonical (37, 405), 35 m seaward of the nearest rock, and is not the reef. Navionics therefore gives no crest depth or height, and no cross-check of the design figures was possible.
 
@@ -127,13 +155,13 @@ LAT is the best standard datum against all three references and the one drying-h
 | kind / date | laser survey, 2022-03-19 | design drawing, 2011-01 | photo trace, 2024-09-17 |
 | edge definition | rock exposed at the water level of the flight, about -2.3 mODN | foot of the Type 4 armour = top of the toe berm, -2.15 mODN | rock above the waterline in the photo, about -1.3 mODN |
 | footprint at the edge | 8,675 m2 (207 x 150 m bbox) | 6,989 m2 (197 x 144 m) | 5,743 m2 (196 x 140 m) |
-| footprint incl. toe and blanket | 11,518 m2 | 11,491 m2 | 8,979 m2 |
+| footprint incl. toe and blanket | 11,391 m2 | 11,491 m2 | 8,865 m2 |
 | surface | LiDAR DSM above the edge + design toe below | design (rings 0-4 + crest zones) | LiDAR DSM above the edge + design toe (1:1.5) below |
-| rock volume above the modelled seabed | 31,336 m3 (+-4,607) | 30,091 m3 (+-4,596) | 26,400 m3 (+-3,592) |
-| tonnes at 1.7 t/m3 (range 1.6-1.8) | 53,300 (50,100-56,400) | 51,200 (48,100-54,200) | 44,900 (42,200-47,500) |
-| Type 4 armour layer (2.70 m) | 21,557 m3 = 36,600 t | 17,990 m3 = 30,600 t | 15,369 m3 = 26,100 t |
+| rock volume above the modelled seabed (after D6; before: 31,336 / 30,091 / 26,400 m3) | 30,119 m3 (+-4,556) | 28,919 m3 (+-4,596) | 25,504 m3 (+-3,546) |
+| tonnes at 1.7 t/m3 (range 1.6-1.8) | 51,200 (48,200-54,200) | 49,200 (46,300-52,100) | 43,400 (40,800-45,900) |
+| Type 4 armour layer (2.70 m) | 21,220 m3 = 36,100 t | 17,795 m3 = 30,300 t | 15,366 m3 = 26,100 t |
 
-The footprints differ because the three edges sit at different heights on the same sloping flanks (-2.3, -2.15, -1.3 mODN at about 1:4-1:5), not because the structure moved (no change was found in the imagery 2012-2024: the 2022 outline lies within 0.8 m of the 2024 one; the 5 m offset of the 2012 image is registration). The volumes differ much less than the footprints: the default and the design agree within 4 % in total volume, the photo version is 16 % lower because its edge is high and the imposed 1:1.5 toe is steep, and the Type 4 layer volume rises from 15.4k to 21.6k m3 as the edge moves down. In every version the Type 4 layer (26-37 kt) stays below the 42,000 t of Type 4 rock that NCE (ref6) gives for the **whole** Phase 1 (breakwaters, groynes and revetment included), so the model is consistent with that upper bound. No reef-only quantity exists at a primary source.
+The footprints differ because the three edges sit at different heights on the same sloping flanks (-2.3, -2.15, -1.3 mODN at about 1:4-1:5), not because the structure moved (no change was found in the imagery 2012-2024: the 2022 outline lies within 0.8 m of the 2024 one; the 5 m offset of the 2012 image is registration). The volumes differ much less than the footprints: the default and the design agree within 4 % in total volume, the photo version is 15 % lower because its edge is high and the imposed 1:1.5 toe is steep, and the Type 4 layer volume rises from 15.4k to 21.2k m3 as the edge moves down. In every version the Type 4 layer (26-36 kt) stays below the 42,000 t of Type 4 rock that NCE (ref6) gives for the **whole** Phase 1 (breakwaters, groynes and revetment included), so the model is consistent with that upper bound. No reef-only quantity exists at a primary source.
 
 ### 4.2 Crest and shape against the laser survey
 
@@ -146,17 +174,17 @@ The footprints differ because the three edges sit at different heights on the sa
 
 ### 4.4 Seabed checks
 
-* Under the footprints: model -4.04 mean under the north foot ring (design -4.0) and -3.95 under the oval (design -3.6..-4.2): met. The bed derived from S1-S1 under the oval centreline (+1.50 - 2.70 - 1.70 - 0.50 = -3.4) is 0.2 m above the printed range, inside the +-0.4 m.
-* HRPP576 Fig 2 contours (`A1`, `A7`): at the traced points outside the reef zone the model minus the contour level is -0.01 m (sd 0.03, n 24) for -3.0 (this contour is a control), -0.14 m (sd 0.04, n 24) for -2.0 (not a control), and **-0.89 m (sd 0.14, n 13) for -4.0: the model is 0.89 m deeper than the -4.0 contour** (the -4.0 contour is not a node: the anchor -4.0 at y = 335 m plus the -1.1 % gradient gives -4.7 mODN at y 400 m and -5.1 at y 440, where Fig 2 has -4.0 at y 410-450). Under the footprints the design nodes pin the bed, so the volumes do not change; the visible sea floor in front of the reef does. Navionics (implied zero -3.6) and EMODnet (-3.1) are both shallower than the model, i.e. three independent sources agree against it. Not corrected in this run (the -4.0 anchor and the EMODnet trend were fixed by the orchestrator on 2026-10-06); recommended fix in section 7.
+* Under the footprints: model -3.86 mean under the north foot ring (design -4.0; shallower because of the assumed tail bed) and -3.95 under the oval (design -3.6..-4.2): met. The bed derived from S1-S1 under the oval centreline (+1.50 - 2.70 - 1.70 - 0.50 = -3.4) is 0.2 m above the printed range, inside the +-0.4 m.
+* HRPP576 Fig 2 contours (`A1`, `A7`), after the D6 fix (3.3): at the traced points outside the reef zone the model minus the contour level is 0.00 m (sd 0.01, n 24) for -3.0 and 0.00 m (sd 0.00, n 13) for -4.0 (both are controls), and -0.14 m (sd 0.04, n 24) for -2.0 (not a control; unchanged by the fix). **Before the fix the model was 0.89 m deeper than the -4.0 contour** (sd 0.14, n 13): the anchor -4.0 at y = 335 m plus the -1.1 % gradient gave -4.7 mODN at y 400 m and -5.1 at y 440, where Fig 2 has -4.0 at y 408-460, and the nodes with y > 335 m (design bed under the arm head) were ignored; the volumes changed by -3.4 to -3.9 % when this was corrected (3.3). The check against the bridge and extension nodes is not independent (they are assumptions). Navionics (implied zero -3.58 from the Fig 2 -4.0 contour, -3.75 from the model after the fix, -4.73 before) and EMODnet cells (-3.07) are still shallower than the model, i.e. two independent sources still disagree with it by 0.7-1.3 m offshore; Fig 2 (the published contour figure of the physical-modelling report) is the reference that was used.
 * Beach (`A7`): the 2022 LiDAR DTM has a salient (contours pushed offshore) behind the mounds at x -20..+100 m: its -2.0 contour is at y about 245 m there against about 205 m elsewhere and in Fig 2 (survey about 12 years older). The measured 2022 DTM is used there.
-* EMODnet absolute cells are 1.5-1.6 m shallower than the model at y 368-513 (known: the reef-zone cells are GEBCO interpolation); only the gradient is used.
+* EMODnet absolute cells are 0.7-1.2 m shallower than the model at y 368-513 (mean 0.87 m; 1.5-1.6 m before the D6 fix; known: the reef-zone cells are GEBCO interpolation); only the gradient is used.
 
 ### 4.5 Registry rows closed (STEP 0)
 
 | id | what it bore on | result |
 |---|---|---|
-| img-14, img-15, img-16 (EMODnet viewer, sources, profile) | seabed, tides | MSL - LAT = 2.75 m (E3); reef-zone cells 1.0-1.4 m too shallow versus the design bed (interpolated); only the gradient -1.1 % is used (E4); the three images are kept as context |
-| img-17 (HRPP576 Fig 2) | seabed -3..-5 mODN | -3.0 contour is a control (model -0.01 m); -2.0 -0.14 m; -4.0 -0.89 m (model deeper; section 4.4) |
+| img-14, img-15, img-16 (EMODnet viewer, sources, profile) | seabed, tides | MSL - LAT = 2.75 m (E3); reef-zone cells 1.0-1.4 m too shallow versus the design bed (interpolated); only the gradient -1.1 % is used (E4, from the Fig 2 -4.0 contour since D6); the three images are kept as context |
+| img-17 (HRPP576 Fig 2) | seabed -3..-5 mODN | -3.0 and -4.0 contours are controls since D6 (model 0.00 m both); -2.0 -0.14 m; before D6: -4.0 was -0.89 m (model deeper; sections 3.3, 4.4) |
 | img-20 (drawing 1020) | planform, crest zones | rings, crest paths and SOP re-projected and used; design foot IoU 0.9998 |
 | img-21 (drawing 1021) | crest, layers, slopes | +0.50 / +1.00 / +0.00, ramps 40 m / 15 m, layer 2.70 m, toe berm confirmed; bed -4.0 derived |
 | img-22 (drawing 1022) | head slope, mid slope | N4 +0.50, 1:4 flanks, N5 / N6 +0.00 / -2.70 confirmed |
@@ -171,24 +199,24 @@ Simple (root-sum-square) propagation, independent inputs:
 sigma(z_crest, design) = 0.1 m                      (drawing labels, 0.05 m measured on a 300 dpi render)
 sigma(z_crest, LiDAR)  = 0.15 m (vertical datum A4) + 0.1-0.3 m (block tops)
 sigma(z_bed under rock) = 0.4 m                     (A6: derived layer thicknesses; beds "vary")
-sigma(H = z_crest - z_bed) = sqrt(0.15^2 + 0.4^2) = 0.43 m  ->  north arm H = 0.50 + 4.04 = 4.5 m +- 0.5; oval 1.50 + 3.95 = 5.5 m +- 0.5     (E7)
+sigma(H = z_crest - z_bed) = sqrt(0.15^2 + 0.4^2) = 0.43 m  ->  north arm H = 0.50 + 4.0 (design bed; model mean under the foot ring 3.86) = 4.4-4.5 m +- 0.5; oval 1.50 + 3.95 = 5.5 m +- 0.5     (E7)
 sigma(z_MSL) = sqrt(0.15^2 [MSL offset] + 0.1^2) = 0.18 m  -> crest height above MSL +0.19 m (arm) is +-0.2 m
 crest depth below the water, d = z_water - z_crest: sigma(d) = sqrt(0.18^2 + sigma_crest^2) = 0.2-0.3 m                                     (E8)
-dV = 0.4 m x A(footprint incl. toe) = 0.4 x 11,518 = 4,607 m3 (15 %); density 1.6-1.8 t/m3 -> +-6 %; edge-level choice: +-8 % (section 4.1)    (E9)
+dV = 0.4 m x A(footprint incl. toe) = 0.4 x 11,391 = 4,556 m3 (15 %); density 1.6-1.8 t/m3 -> +-6 %; edge-level choice: +-8 % (section 4.1)    (E9)
 ```
 
-Position: +-5 m (Esri), +-2-5 m (Helmert); horizontal seabed contours +-10 m. The sea floor outside the reef is less certain than under it: at y 400-500 m the modelled level is 0.9 m deeper than Fig 2 and 1-2 m deeper than Navionics / EMODnet (section 4.4). Vertical exaggeration k multiplies every height and every slope in the picture by k while plan distances stay true; at k = 5 the 1:4 flanks look like 1:0.8. Heights, slopes and tide read-outs on screen are always true values (divided by k); the photo-match mode forces k = 1.
+Position: +-5 m (Esri), +-2-5 m (Helmert); horizontal seabed contours +-10 m. The sea floor outside the reef is less certain than under it: it follows the Fig 2 -3.0 and -4.0 contours (+-0.5 m, +-10 m) and, beyond the -4.0 contour, the EMODnet gradient; at y 370-515 m it is 0.7-1.2 m deeper than the EMODnet cells and about 1.3 m deeper than the Navionics chart zero (LAT) implies (section 4.4; before the D6 fix 0.9 m deeper than Fig 2 itself). Vertical exaggeration k multiplies every height and every slope in the picture by k while plan distances stay true; at k = 5 the 1:4 flanks look like 1:0.8. Heights, slopes and tide read-outs on screen are always true values (divided by k); the photo-match mode forces k = 1.
 
 ## 6. Confidence
 
-**MEDIUM.** Against the project rubric (high = every input sourced and cross-checked within about 10 %, medium = key inputs sourced but at least one first-order input estimated, low = a first-order input missing): the plan is high (design rings and laser survey agree to 1 pixel / 0.3 m), the crest levels are high (three independent readings: design drawing, LiDAR, section drawings), the tide offsets are medium (MSL is a four-level estimate +-0.15 m, LAT from neighbouring ports), and the seabed is medium-low: under the rock it is the drawing-derived -4.0 mODN (+-0.4 m), around the rock a hand-read contour figure and an assumed anchor, and seaward of y 335 m an extrapolated gradient that disagrees with three sources by 0.6-1.5 m. Because the first-order unknown for "height above the bed" and for the volume is the bed level, the overall level is medium.
+**MEDIUM.** Against the project rubric (high = every input sourced and cross-checked within about 10 %, medium = key inputs sourced but at least one first-order input estimated, low = a first-order input missing): the plan is high (design rings and laser survey agree to 1 pixel / 0.3 m), the crest levels are high (three independent readings: design drawing, LiDAR, section drawings), the tide offsets are medium (MSL is a four-level estimate +-0.15 m, LAT from neighbouring ports), and the seabed is medium-low: under the rock it is the drawing-derived -4.0 mODN (+-0.4 m), around the rock a hand-read contour figure (-3.0 and -4.0 contours are controls since D6), and seaward of the -4.0 contour (y 408-473 m) an EMODnet gradient that sits 0.7-1.2 m deeper than the EMODnet cells themselves. Because the first-order unknown for "height above the bed" and for the volume is the bed level, the overall level is medium.
 
 ## 7. Limitations and unknowns
 
 | gap | effect on the model | what would resolve it | Lior could supply |
 |---|---|---|---|
 | bed level under the rock ("EXISTING SEABED VARIES"; no survey) | reef height +-0.5 m, volume +-15 % | post-construction multibeam or the Phase 1 as-built; Ceredigion beach-profile monitoring | Navionics app: spot depths at the reef toe (REQUESTS_FOR_LIOR.md) |
-| seabed seaward of the reef is 0.9 m deeper than the Fig 2 -4.0 contour | visible sea floor and its depth read-outs at y > 335 m | add the Fig 2 -4.0 contour (outside the reef zone) as nodes and blend the EMODnet gradient from y of that contour instead of the anchor -4.0 at y = 335 m; check with a sounding | Navionics / Google Earth depth readings along y 335-520 m |
+| **resolved 2026-10-07 (D6):** the sea floor seaward of the reef was 0.89 m deeper than the Fig 2 -4.0 contour; the contour is now a control (3.3). Remaining: the -4.0 level is bridged / extended by assumption at x -104..170 and x > 170, and the model is 0.7-1.2 m deeper than the EMODnet cells | visible sea floor and depth read-outs at y > 335 m (+-0.5 m) | a sounding line or multibeam along y 335-520 m | Navionics / Google Earth depth readings along y 335-520 m |
 | HAT not found; MSL and LAT offsets for Aberystwyth not tabulated | slider top is MHWS; +-0.15 m on z_MSL | Admiralty Tide Tables / UKHO EasyTide Aberystwyth (Z0, HAT) | a tide-table reading |
 | LiDAR vertical datum not stated | +-0.15 m on crest heights | tile metadata | - |
 | flanks below the water edge unknown (LiDAR flown at about LAT, edge -2.3) | toe geometry and the lower part of the volume are design, not measured | a multibeam or drone survey at a spring low | Google Earth Pro historical imagery at a very low tide |
@@ -198,10 +226,11 @@ Position: +-5 m (Esri), +-2-5 m (Helmert); horizontal seabed contours +-10 m. Th
 
 ## 8. References
 
+* Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08, UNSW Water Research Laboratory. https://doi.org/10.4225/53/58e1dc7368c7a, p. 60, Fig 4.1 (registry img-31; context only, not a model input).
 * Garmin Ltd / Navionics (2026). Marine Maps web viewer, SonarChart and Nautical Charts. https://maps.garmin.com/en-US/marine, accessed 2026-10-07. Not to be used for navigation.
 * EMODnet Bathymetry Consortium (2024). EMODnet Digital Bathymetry (DTM 2024). https://doi.org/10.12770/cf51df64-56f9-4a99-b1aa-36b8d7b743a1. CC BY 4.0.
 * Esri (2012-2024). World Imagery (Wayback dates 2012-10-27, 2013-06-04, 2022-08-25, 2024-09-17). https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer.
-* Hansford, M. (2011). Borth's Big Dig. New Civil Engineer, 15 September 2011. https://www.newcivilengineer.com/archive/borths-big-dig-15-09-2011/.
+* Hansford, M. (Mark) (2011). Borth's Big Dig. New Civil Engineer, 15 September 2011. https://www.newcivilengineer.com/archive/borths-big-dig-15-09-2011/.
 * Haskoning UK Ltd (2010-11). Borth Coastal Protection Scheme - Phase 1, drawings 9V5090/1001, 1020, 1021, 1022, 1023 rev C1. Ceredigion County Council; published at borthcommunity.info.
 * National Tidal and Sea Level Facility (n.d.). Chart datum and ordnance datum. https://ntslf.org/tides/datum.
 * RCAHMW (2020). Coflein, Coastal Defences, Borth, NPRN 424699. https://coflein.gov.uk/en/site/424699.

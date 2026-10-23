@@ -1,6 +1,6 @@
 import numpy as np, cv2, json, os
 from PIL import Image
-ROOT=r"C:\Users\lior\Documents\Gemini\AG\Artificial reef - to upload to git\07_scale\shapes\narrowneck-gold-coast"
+ROOT=r"C:\Users\lior\Documents\Claude\Projects\Artificial reef\07_scale\shapes\narrowneck-gold-coast"
 OV=ROOT+r"\overlays"
 reg=json.load(open(ROOT+r"\design_registration_out.json")); T=np.array(reg['fig7_px_to_s3_px_affine']); Tinv=np.linalg.inv(T)
 R=reg['ratio_fig7_over_fig6b']

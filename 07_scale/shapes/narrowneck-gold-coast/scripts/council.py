@@ -1,7 +1,7 @@
 import json, math, sys, numpy as np
-sys.path.insert(0,"C:/Users/lior/Documents/Gemini/AG/Artificial reef - to upload to git/07_scale/tools")
+sys.path.insert(0,"C:/Users/lior/Documents/Claude/Projects/Artificial reef/07_scale/tools")
 import satellite as S, shapely.geometry as sg
-ROOT="C:/Users/lior/Documents/Gemini/AG/Artificial reef - to upload to git/07_scale/shapes/narrowneck-gold-coast"
+ROOT="C:/Users/lior/Documents/Claude/Projects/Artificial reef/07_scale/shapes/narrowneck-gold-coast"
 g=json.load(open(ROOT+"/src/gc_opendata_artificial_reef_raw_4326.geojson"))
 f=[x for x in g['features'] if x['properties'].get('OBJECTID')==4637][0]
 ring=f['geometry']['coordinates'][0]

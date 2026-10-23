@@ -254,7 +254,7 @@ def export_one(c, slug: str, cfg: dict, tol: dict) -> dict:
         crest_ref = float("nan")
     # seabed checks: slope falls away offshore (direction), and z = 0 along the shoreline
     sel = (spos[:, 2] > 20) & (spos[:, 2] < 260)
-    if sel.sum() < 30:
+    if sel.sum() < 30 or mc.get("shore_mode") == "none":     # shore_mode 'none' (Cables): the patch starts at 190 m, its strip 190-260 m is the natural reef bump, so use the whole window
         sel = np.ones(len(spos), dtype=bool)
     Amat = np.c_[spos[sel][:, 0], spos[sel][:, 2], np.ones(sel.sum())]
     gx, gz, _g = np.linalg.lstsq(Amat, spos[sel][:, 1], rcond=None)[0]
@@ -272,6 +272,11 @@ def export_one(c, slug: str, cfg: dict, tol: dict) -> dict:
         cross = next((prof[i][0] * 10.0 for i in range(1, len(prof)) if prof[i - 1][1] > 0 >= prof[i][1]), None)
         shore_dev = 0.0 if cross is not None else 99.0
         shore_name = "seabed crosses 0 m MSL on a beach inside the patch (waterline at offshore %s m; the frame's y = 0 is not the shoreline)" % ("%.0f" % cross if cross is not None else "none")
+    elif mc.get("shore_mode") == "none":
+        # 2026-10-10 (Cables): the seabed window starts offshore of the shoreline (Cables: y >= 190 m), so there is no shoreline to test;
+        # the check is reported as "not applicable" (it passes with a zero error and says so in its name); the other four checks still apply
+        shore_dev = 0.0
+        shore_name = "shoreline is outside the exported seabed patch (patch starts at offshore %.0f m): shoreline check not applicable" % float(spos[:, 2].min())
     d_c = float(np.hypot(*(C_mesh - C_ref)))
     checks = [
         {"name": area_ref_label, "got": A_mesh, "ref": float(A_ref), "err": abs(A_mesh - A_ref) / A_ref, "tol": tol["area_rel"], "unit": "relative"},

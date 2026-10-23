@@ -4,8 +4,8 @@
  "uncertainty": "datum +-0.6 m; contour position +-2 m; chart depths 0.6-1.1 m shallower than the survey references offshore (SonarChart is partly interpolated; data dates not shown)",
  "implied_zero_mODN": {
   "model": [
-   -4.73,
-   0.2,
+   -3.75,
+   0.22,
    24
   ],
   "fig2_minus4": [
@@ -21,37 +21,37 @@
  },
  "rms_table": {
   "LAT (-2.44)": {
-   "model": 2.3,
+   "model": 1.33,
    "fig2_m4": 1.15,
    "emodnet": 0.64
   },
   "MLWS (-1.74)": {
-   "model": 3.0,
+   "model": 2.02,
    "fig2_m4": 1.84,
    "emodnet": 1.34
   },
   "MLWN (-0.64)": {
-   "model": 4.1,
+   "model": 3.12,
    "fig2_m4": 2.94,
    "emodnet": 2.43
   },
   "MSL (+0.31)": {
-   "model": 5.05,
+   "model": 4.07,
    "fig2_m4": 3.89,
    "emodnet": 3.38
   },
   "ODN (0.00)": {
-   "model": 4.74,
+   "model": 3.76,
    "fig2_m4": 3.58,
    "emodnet": 3.07
   },
   "MHWN (+1.06)": {
-   "model": 5.79,
+   "model": 4.82,
    "fig2_m4": 4.64,
    "emodnet": 4.13
   },
   "MHWS (+2.56)": {
-   "model": 7.29,
+   "model": 6.32,
    "fig2_m4": 6.14,
    "emodnet": 5.63
   }

@@ -2,7 +2,7 @@ import json, math, numpy as np
 from pyproj import Transformer
 from shapely.geometry import Polygon, Point
 sop={'R1':(260409.145,289284.522),'R2':(260501.860,289331.154),'R3':(260528.445,289332.669),'R4':(260527.416,289323.700),'R5':(260503.909,289322.361),'R6':(260451.697,289299.380),'R7':(260449.504,289284.783),'R8':(260445.718,289281.518),'R9':(260434.301,289276.451),'R10':(260424.002,289276.269),'R11':(260519.537,289254.981),'R12':(260551.566,289116.844),'R13':(260568.429,289104.990),'R14':(260470.000,289162.000),'R15':(260470.000,289200.000)}
-base=r"C:\Users\lior\Documents\Gemini\AG\Artificial reef - to upload to git\07_scale\shapes\borth-coastal-defence-reef"
+base=r"C:\Users\lior\Documents\Claude\Projects\Artificial reef\07_scale\shapes\borth-coastal-defence-reef"
 g=json.load(open(base+r"\src\borth_esri_2024-09-17_z19.png.geo.json"))
 R=6378137.0
 def merc(lat,lon): return R*math.radians(lon), R*math.log(math.tan(math.pi/4+math.radians(lat)/2))

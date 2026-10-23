@@ -307,7 +307,9 @@ BUNDLE_NAMES = {"THREE", "OrbitControls", "CSS2DRenderer", "CSS2DObject"}
 
 
 # --- round 10: chrome injected into the COPY of every viewer (never into 07_scale) -----------------------------------------
-BAR_TABS = [("Gallery", ""), ("Table", "#view/table"), ("3D models", "#view/models3d/{slug}")]
+# 1. a slim top bar on the standalone page: "<- Back to the page" + the page's main tabs (hidden when the viewer is framed by the page);
+# 2. a compact layout for the framed viewer (the stage next to the photo panel gives it only ~60 % of the page width).
+BAR_TABS = [("Gallery", ""), ("Table", "#view/table"), ("3D models", "#view/models3d/{slug}")]   # Map and Scale tabs removed 2026-10-10
 BAR_CSS = """<style id="m3d-bar-css">
 /* injected by 04_build/src/compile_models3d.py (round 10); the original viewer is in 07_scale and is untouched */
 html:not(.m3d-embedded) { position: relative; top: 34px; height: calc(100% - 34px); }
@@ -450,9 +452,32 @@ def inject_chrome(html: str, slug: str, title: str) -> str:
     return html
 
 
+# Documented fixes of a defect in a model's OWN viewer, applied to the COPY in 04_build/3d/<slug>/ at build time (the file in 07_scale/ is never edited).
+# slug -> [(old text, new text, why)]. A fix is skipped once the source viewer already contains `new` (so it can stay here harmlessly); a warning is
+# printed when neither text is found (the viewer changed: re-check). Reported to the model's owner in 04_build/HANDOFF.md section 0c.
+VIEWER_FIXES = {
+    "southern-ocean-surf-reef-albany": [(
+        "const z = hv === -32768 ? seaAt(x, y) : hv / 100; pos.set([x, z, y], k * 3);",
+        "const z = seaAt(x, y) + (hv === -32768 ? 0 : hv / 100); pos.set([x, z, y], k * 3);",
+        "grid.h_cm_b64 holds the HEIGHT ABOVE THE SEABED (build_3d.py: 'H = height above bed', Zs = bed + H; its mean 2.59 m equals validation.mean_height_m), "
+        "but buildReef drew it as an absolute z, so the rock pile floated 0 to 6 m above MSL (page agent 2026-10-10)")],
+}
+
+
+def apply_viewer_fixes(html: str, slug: str) -> str:
+    for old, new, why in VIEWER_FIXES.get(slug, []):
+        if old in html:
+            html = html.replace(old, new, 1)
+            warn(f"{slug}: viewer fix applied to the copy ({why[:70]}...)")
+        elif new not in html:
+            warn(f"{slug}: viewer fix NOT applicable: neither the old nor the new text is in index.html; re-check VIEWER_FIXES")
+    return html
+
+
 def rewrite_viewer(html: str, slug: str, title: str = "") -> str:
     """Replace the CDN import map + ES-module imports by the vendored classic bundle (works from file:// and http)."""
     html = re.sub(r'<script type="importmap">.*?</script>\s*', "", html, flags=re.S)
+    html = apply_viewer_fixes(html, slug)
     problems = []
 
     def star(m):
@@ -716,9 +741,7 @@ def version_caveats(slug: str, ver: dict) -> list[dict]:
     return rows
 
 
-def parse_refs(text: str) -> list[str]:
-    secs = md_sections(text)
-    body = next((b for h, b in secs.items() if re.search(r"references", h, re.I)), "")
+def _bullets(body: str) -> list[str]:
     refs, cur = [], None
     for line in body.splitlines():
         m = re.match(r"^\s*[-*]\s+(.*\S)\s*$", line)
@@ -730,6 +753,28 @@ def parse_refs(text: str) -> list[str]:
         elif not line.strip():
             cur = None
     return [" ".join(r) for r in refs]
+
+
+def parse_refs(text: str) -> list[str]:
+    secs = md_sections(text)
+    body = next((b for h, b in secs.items() if re.search(r"references", h, re.I)), "")
+    return _bullets(body)
+
+
+def parse_refs_fallback(methods_md: str, register_md: str) -> list[str]:
+    """2026-10-10: a METHODS_3D.md whose 'References' section is a one-line pointer instead of a list (Cables, Albany) gives parse_refs() nothing.
+    Fallback 1: the full citations of the model's own source register (REGISTER_3D.md section 1, table column 'citation');
+    fallback 2: the bullets of the 'Data sources' section of METHODS_3D.md (full citations with how each was used)."""
+    out: list[str] = []
+    sec1 = next((b for h, b in md_sections(register_md).items() if re.match(r"1\.?\s*sources", h, re.I)), "") if register_md else ""
+    for r in md_table_rows(sec1):
+        cit = next((v for k, v in r.items() if k.lower().startswith("citation")), "")
+        if cit and not re.match(r"^(same|ditto)\b", cit, re.I):
+            out.append(cit)
+    if out:
+        return out
+    sec = next((b for h, b in md_sections(methods_md).items() if re.search(r"data sources", h, re.I)), "")
+    return _bullets(sec)
 
 
 STOP = {"the", "and", "for", "from", "with", "that", "this", "into", "their", "over", "using", "data", "accessed", "https", "http", "www", "pdf", "html"}
@@ -932,7 +977,12 @@ def main() -> int:
                 cav += version_caveats(slug, ver)
             # references
             ref_n = 0
-            for t in parse_refs(methods_md):
+            own_refs = parse_refs(methods_md)
+            if not own_refs:
+                own_refs = parse_refs_fallback(methods_md, read(d3 / "REGISTER_3D.md"))
+                if own_refs:
+                    warn(f"{slug}: METHODS_3D.md section 'References' has no list: {len(own_refs)} references taken from REGISTER_3D.md / the 'Data sources' section")
+            for t in own_refs:
                 ref_entries.append((t, slug))
                 ref_n += 1
             for rep in REPORTS:

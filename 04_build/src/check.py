@@ -7,7 +7,7 @@ in the data resolves to a reference of its own reef; no web image is copied loca
 every [R#] marker has a source pop-up target; no rejected video is rendered; Burkitts has 0 videos.
 Scale tab (2026-09-25): 13 footprints present; every polygon closed and its shoelace area within 15 %
 of area_m2; every R#/S# used in a footprint derivation has a pop-up target; provenance md copied
-next to the page; the Scale view renders (headless DOM dump via qa_shots.dump_dom); media rules
+next to the page; the retired #view/scale route falls back to the gallery (headless DOM dump via qa_shots.dump_dom); media rules
 (labels on images, site-only videos link-only, hero preference, nothing from *_rejected rendered).
 3D models tab (round 9, 2026-10-06; function check_models3d): every model discovered in 07_scale/shapes/*/3d has a section / viewer copy /
 poster; every gallery picture has its web copy, thumbnail, annotated copies on disk and a non-empty how_used + citation (the tooltip); vendored
@@ -329,7 +329,18 @@ def main() -> int:
             card = json.loads(cp.read_text(encoding="utf-8"))
             for v in card.get("videos_rejected") or []:
                 rejected += [x for x in (v.get("video_id"), v.get("url"), v.get("title")) if x]
-    leaked = [x for x in rejected if x in raw]
+    # 2026-10-10: the collapsed 'Checked, nothing useful' section may NAME a rejected video / image as a source that gave nothing (text + link, never an embed or a reference),
+    # so the leak tests below look at the page without the dead_ends data
+    raw_nd = raw
+    try:
+        _dnd = json.loads(p.data_json)
+        for _r in _dnd["reefs"]:
+            _r.pop("dead_ends", None)
+        raw_nd = raw.replace(p.data_json, json.dumps(_dnd, ensure_ascii=False)) if p.data_json in raw else raw
+    except (ValueError, KeyError):
+        pass
+    out.append(f"INFO leak tests run on the page without the dead-ends data ({len(raw) - len(raw_nd):,} characters removed)")
+    leaked = [x for x in rejected if x in raw_nd]
     check("videos_rejected" not in p.data_json and not leaked,
           f"no videos_rejected content rendered ({len(rejected)} rejected ids/urls/titles checked; leaked={leaked})")
     bk = next((r for r in reefs if r["slug"] == "burkitts-reef-bargara"), {})
@@ -348,8 +359,8 @@ def main() -> int:
     check(not missing_fp, f"13 footprints present (missing={missing_fp})")
     not_closed, bad_area, area_rows = [], [], []
     for s, f in fps.items():
-        if not f:
-            continue
+        if not f or f.get("display") is False:
+            continue            # hidden reefs carry no outline (checked below)
         polys = f.get("polygons") or []
         if not polys or any(len(rg) < 4 or rg[0] != rg[-1] for rg in polys):
             not_closed.append(s)
@@ -365,7 +376,7 @@ def main() -> int:
     no_target_fp, n_ids = [], 0
     for r in reefs:
         f = r.get("footprint")
-        if not f:
+        if not f or f.get("display") is False:
             continue
         refs = {x["id"]: x for x in r.get("references", [])}
         text = json.dumps(f.get("derivation"), ensure_ascii=False)
@@ -375,9 +386,178 @@ def main() -> int:
             if not ref or not (ref.get("citation") or "").strip():
                 no_target_fp.append(f"{r['slug']}:{tok}")
     check(not no_target_fp, f"every one of {n_ids} R#/S# ids used in footprint derivations has a pop-up target (missing={no_target_fp})")
-    docs_missing = [s for s, f in fps.items() if f and not (BUILD / (f.get("provenance_md") or "x")).is_file()]
+    docs_missing = [s for s, f in fps.items() if f and f.get("display") is not False and not (BUILD / (f.get("provenance_md") or "x")).is_file()]
     check(not docs_missing, f"provenance md for every footprint copied to docs/scale/ (missing={docs_missing})")
-    out.append("INFO Scale tab removed per configuration")
+    # 2026-10-10: Map and Scale tabs removed; the footprint section of the reef dialog (footprint.js) stays = rule 1 traceability
+    check("function linkRefs" in raw and "window.ReefScale" in raw and "function detailSection" in raw,
+          "footprint detail code (reef dialog 'Footprint & how we drew it') is in the page")
+    check(all(x not in raw.lower() for x in ('id="view-scale"', 'id="view-map"', 'data-view="scale"', 'data-view="map"', "leaflet.min", "l.map(", "tile.openstreetmap")),
+          "no Map / Scale view, button, Leaflet or map-tile code remains in the page")
+    try:
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        import qa_shots
+        exe, sdom = qa_shots.dump_dom(HTML.as_uri() + "#view/scale")
+        if not sdom:
+            out.append("INFO no headless browser available: retired-route check skipped")
+        else:
+            for k, v in qa_shots.retired_view_checks(sdom).items():
+                check(v, f"retired #view/scale route (headless DOM dump): {k}")
+    except Exception as e:  # noqa: BLE001
+        check(False, f"retired-route check crashed: {e!r}")
+
+    # --- 2026-10-10 (Lior): "don't show the shape of reefs you don't know" + a Google Maps link per reef --------------------
+    ROOT = BUILD.parent
+    must_hide = ["mexico-reef-2026-unnamed", "opunake-reef", "burkitts-reef-bargara", "kovalam-reef-india"]
+    hide_expected = set(must_hide)
+    for s in SLUGS:
+        fpj = ROOT / "07_scale" / "reefs" / f"{s}.footprint.json"
+        shp = ROOT / "07_scale" / "shapes" / s / "shape.json"
+        rawfp = json.loads(fpj.read_text(encoding="utf-8")) if fpj.is_file() else {}
+        sh = json.loads(shp.read_text(encoding="utf-8")) if shp.is_file() else None
+        if rawfp.get("display") is False or rawfp.get("DO_NOT_DISPLAY") or sh is None or str(sh.get("status")).lower() not in ("verified", "traced", "verified with issues"):
+            hide_expected.add(s)
+    by = {r["slug"]: r for r in reefs}
+    wrong = [s for s in SLUGS if (by[s].get("footprint") or {}).get("display") is False] 
+    check(set(wrong) == hide_expected, f"hidden-shape reefs = the 4 decided (Mexico, Opunake, Burkitts, Kovalam) + anything whose shape.json is missing / not traced or verified (compiled hidden={sorted(wrong)}, expected={sorted(hide_expected)})")
+    leak = [s for s in hide_expected if (by[s].get("footprint") or {}).get("polygons") or (by[s].get("footprint") or {}).get("geom")]
+    check(not leak, f"no hidden reef carries an outline polygon in the page data (leaking={leak})")
+    nohint = [s for s in hide_expected if not (by[s].get("footprint") or {}).get("hidden_reason")]
+    check(not nohint, f"every hidden reef has a plain-text reason (missing={nohint})")
+    no_feas = [s for s in hide_expected if not (BUILD / ((by[s].get("footprint") or {}).get("docs") or {}).get("feasibility", "x")).is_file()]
+    check(not no_feas, f"every hidden reef links a FEASIBILITY.md copy next to the page (missing={no_feas})")
+    shown_bad = [s for s in SLUGS if s not in hide_expected and not (by[s].get("footprint") or {}).get("outline_source")]
+    check(not shown_bad, f"every drawn outline comes from shape.json (has an outline_source) (not from the old text-derived footprint; bad={shown_bad})")
+
+    mapsre = re.compile(r"^https://www\.google\.com/maps/search/\?api=1&query=-?\d{1,3}\.\d+,-?\d{1,3}\.\d+$")
+    bad_loc, no_loc = [], []
+    for s in SLUGS:
+        L = by[s].get("location") or {}
+        if L.get("lat") is not None:
+            if not (mapsre.match(L.get("maps_url") or "") and L["maps_url"].endswith(f"query={L['lat']},{L['lon']}") and -90 <= L["lat"] <= 90 and -180 <= L["lon"] <= 180):
+                bad_loc.append(s)
+            if L.get("status") not in ("ok", "approximate"):
+                bad_loc.append(s + ":status")
+        elif L.get("maps_url"):
+            bad_loc.append(s + ":link without coordinates")
+        else:
+            no_loc.append(s)
+    check(not bad_loc, f"every reef with coordinates has a Google Maps link in the right format https://www.google.com/maps/search/?api=1&query=LAT,LON (bad={bad_loc})")
+    check(all(by[s].get("location") for s in SLUGS) and set(no_loc) <= {"mexico-reef-2026-unnamed"},
+          f"only reefs with no published coordinates have no link (no link: {no_loc}; expected only Mexico)")
+    out.append("INFO locations: " + "; ".join(f"{s}={(by[s].get('location') or {}).get('status')}:{(by[s].get('location') or {}).get('lat')},{(by[s].get('location') or {}).get('lon')}" for s in SLUGS))
+    # "Open location in..." block (Lior 2026-10-13): data and URL formats
+    earthre = re.compile(r"^https://earth\.google\.com/web/@-?\d{1,3}\.\d+,-?\d{1,3}\.\d+,0a,1000d,35y,0h,0t,0r$")
+    ddre = re.compile(r"^-?\d{1,3}\.\d{5}, -?\d{1,3}\.\d{5}$")
+    dmre = re.compile(r"^\d{1,2}\u00b0\d{2}\.\d{3}'[NS] \d{1,3}\u00b0\d{2}\.\d{3}'[EW]$")
+    bad_blk = []
+    for s in SLUGS:
+        L = by[s].get("location") or {}
+        if L.get("lat") is None:
+            if any(k in L for k in ("dd", "dm", "earth_url", "outline_latlon")):
+                bad_blk.append(s + ":links without coordinates")
+            continue
+        if not (ddre.match(L.get("dd") or "") and L["dd"] == f"{L['lat']:.5f}, {L['lon']:.5f}" and dmre.match(L.get("dm") or "")
+                and earthre.match(L.get("earth_url") or "") and L["earth_url"] == f"https://earth.google.com/web/@{L['lat']},{L['lon']},0a,1000d,35y,0h,0t,0r"):
+            bad_blk.append(s)
+    check(not bad_blk, f"location block data: 5-decimal 'lat, lon' text, degrees-decimal-minutes text, Google Earth web URL format (bad={bad_blk})")
+    kml_out = sorted(s for s in SLUGS if (by[s].get("location") or {}).get("outline_latlon"))
+    def _georef(s):
+        try:
+            return bool((((json.loads((ROOT / "07_scale" / "shapes" / s / "shape.json").read_text(encoding="utf-8")) or {}).get("geo") or {}).get("polygons_latlon")))
+        except Exception:  # noqa: BLE001
+            return False
+    # a shown reef without a georeferenced outline (Prattes: coordinates disagree; Bunbury: estimated centre) gets its point only: a polygon would be misplaced
+    kml_exp = sorted(s for s in SLUGS if s not in hide_expected and (by[s].get("location") or {}).get("lat") is not None and _georef(s))
+    check(kml_out == kml_exp and not any(s in hide_expected for s in kml_out) and all(len(rg) >= 3 for s in kml_out for rg in by[s]["location"]["outline_latlon"]),
+          f"KML outline data only for reefs whose outline is shown AND georeferenced in shape.json geo ({len(kml_out)} reefs; never for the hidden {sorted(hide_expected)}; expected={kml_exp}; got={kml_out})")
+    try:
+        import qa_shots as _qs
+        _exe, _dom = _qs.dump_dom(HTML.as_uri())
+        if _dom:
+            _body = _qs.strip_scripts(_dom)
+            _tiles = re.findall(r'<article class="tile" data-slug="([a-z0-9-]+)">(.*?)</article>', _body, re.S)
+            _tb = {s: t for s, t in _tiles}
+            bad_t = [s for s in SLUGS if (by[s].get("location") or {}).get("lat") is not None and
+                     not ('class="loc-menu"' in _tb.get(s, "") and 'data-loc-copy="' + by[s]["location"]["dd"] + '"' in _tb.get(s, "") and 'data-loc-kml="' + s + '"' in _tb.get(s, "")
+                          and by[s]["location"]["earth_url"] in _tb.get(s, "") and 'rel="noopener noreferrer"' in _tb.get(s, ""))]
+            check(not bad_t and len(_tb) == len(SLUGS), f"[gallery] every reef with coordinates has the 'Open location in' menu in its tile (copy, KML, Google Earth; bad={bad_t}; tiles={len(_tb)})")
+            check('data-loc-kml="all"' in _body, "[gallery] 'All reefs (KML)' button in the controls header")
+            check('Navionics: paste the copied coordinates' in "".join(_tb.values()) and "webapp.navionics.com" not in _body, "Navionics: paste-the-coordinates hint, no Navionics web link (webapp.navionics.com redirects to a Garmin page, tested 2026-10-13)")
+            _m3 = [m["slug"] for m in json.loads((BUILD / "data" / "models3d.json").read_text(encoding="utf-8"))["models"]]
+            bad_3 = []
+            for s in _m3:
+                _e, _d = _qs.dump_dom(HTML.as_uri() + "#view/models3d/" + s, _exe)
+                _hd = re.search(r'<header class="m3d-mhead">.*?</header>', _qs.strip_scripts(_d) if _d else "", re.S)
+                _hs = _hd.group(0) if _hd else ""
+                L = by[s].get("location") or {}
+                if not (L.get("dd") and 'class="m3d-loc"' in _d and 'data-loc-copy="' + L["dd"] + '"' in _d and 'data-loc-kml="' + s + '"' in _d and L["earth_url"] in _d):
+                    bad_3.append(s)
+            check(not bad_3, f"[3D tab] every model entry has the 'Open location in' block (copy, KML, Google Earth; models={len(_m3)}; bad={bad_3})")
+        else:
+            out.append("INFO no headless browser available: gallery / 3D location-block DOM checks skipped")
+    except Exception as exc:  # noqa: BLE001
+        check(False, f"location block DOM checks crashed: {exc}")
+    # dead ends (Lior 2026-10-10): the data of every reef equals its 02_research/dead_ends/<slug>.json
+    de_files = {}
+    for s in SLUGS:
+        dp = ROOT / "02_research" / "dead_ends" / f"{s}.json"
+        de_files[s] = json.loads(dp.read_text(encoding="utf-8")).get("entries", []) if dp.is_file() else []
+    bad_de = [s for s in SLUGS if len(by[s].get("dead_ends") or []) != len(de_files[s]) or not de_files[s]
+              or any(e.get("what") != d.get("what") or e.get("result") != d.get("result") for e, d in zip(by[s].get("dead_ends") or [], de_files[s]))]
+    check(not bad_de, f"dead ends: all 13 reefs carry their 02_research/dead_ends/<slug>.json entries in the page data, same count and order ({sum(len(v) for v in de_files.values())} entries; bad={bad_de})")
+    leak_de = [s for s in SLUGS if any(e["what"] in json.dumps(by[s].get("references") or [], ensure_ascii=False) for e in by[s].get("dead_ends") or [])]
+    check(not leak_de, f"dead ends are not in the references list (leaking={leak_de})")
+    # DOM: open every reef dialog headlessly
+    try:
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        import qa_shots
+        exe0 = None
+        for s in SLUGS:
+            exe0, dom = qa_shots.dump_dom(HTML.as_uri() + "#reef/" + s, exe0)
+            if not dom:
+                out.append("INFO no headless browser available: dialog drawing / Maps-link DOM checks skipped")
+                break
+            body = qa_shots.strip_scripts(dom)
+            dlg_m = re.search(r'<dialog id="reef-dialog".*?</dialog>', body, re.S)
+            dd = dlg_m.group(0) if dlg_m else ""
+            hid = s in hide_expected
+            has_svg = 'class="sc-svg"' in dd or 'class="sc-reef"' in dd
+            check(bool(dd) and (has_svg != hid), f"[dialog {s}] {'no outline drawn (shape not drawn note present)' if hid else 'outline drawn'}" +
+                  ("" if (bool(dd) and (has_svg != hid)) else f" (dialog found={bool(dd)}, svg={has_svg})"))
+            if hid:
+                check("Shape not drawn" in dd, f"[dialog {s}] shows the 'Shape not drawn' text")
+            L = by[s].get("location") or {}
+            if L.get("maps_url"):
+                ok = (f'href="{L["maps_url"].replace("&", "&amp;")}"' in dd and 'target="_blank"' in dd and "noopener" in dd and "Google Maps" in dd
+                      and (L["approximate"] is False or "approximate location" in dd))
+                check(ok, f"[dialog {s}] Location link to Google Maps (new tab, noopener{', labelled approximate' if L['approximate'] else ''})")
+                check('class="loc-block"' in dd and 'data-loc-copy="' + L["dd"] + '"' in dd and 'data-loc-kml="' + s + '"' in dd and L["earth_url"] in dd and "Navionics: paste" in dd,
+                      f"[dialog {s}] 'Open location in' block: coordinates + Copy, Google Earth web, KML, Navionics hint")
+            else:
+                dd_main = re.sub(r'<details class="acc acc-de".*?</details>', "", dd, flags=re.S)       # the dead-ends section may link a Google Maps page it checked
+                check("location: not published" in dd.lower() and "google.com/maps" not in dd_main, f"[dialog {s}] says location not published and has no map link (outside the dead-ends section)")
+            # 2026-10-10 (Lior): "Checked, nothing useful (N)" = last section of the dialog, closed by default, not part of References, N = entries in the file
+            n_de = len(de_files.get(s, []))
+            art_m = re.search(r'<article class="detail">.*?</article>', dd, re.S)
+            art = art_m.group(0) if art_m else dd
+            m_de = re.search(r'<details class="acc acc-de"( open="")? id="d-dead-ends">(.*?)</details>', art, re.S) or re.search(r'<details class="acc acc-de" id="d-dead-ends"( open="")?>(.*?)</details>', art, re.S)
+            body_de = m_de.group(2) if m_de else ""
+            n_items = body_de.count('class="de-item"')
+            refs_m = re.search(r'<details class="acc" id="d-references"[^>]*>(.*?)</details>', art, re.S)
+            is_closed = bool(m_de) and not m_de.group(1)
+            is_last = art.rfind("<details") == art.find('<details class="acc acc-de"') and art.find('id="d-references"') < art.find('id="d-dead-ends"')
+            ok_de = (bool(m_de) and is_closed and f"Checked, nothing useful ({n_de})" in art and n_items == n_de
+                     and bool(refs_m) and "de-item" not in refs_m.group(1) and is_last)
+            check(ok_de, f"[dialog {s}] 'Checked, nothing useful ({n_de})' section: present, closed by default, last section, after (not inside) References, {n_de} entries as in dead_ends/{s}.json"
+                  + ("" if ok_de else f" (found={bool(m_de)}, closed={is_closed}, items={n_items}, last={is_last})"))
+        else:
+            tdom = qa_shots.dump_dom(HTML.as_uri() + "#view/table", exe0)[1]
+            tb = qa_shots.strip_scripts(tdom)
+            n_links = len(re.findall(r'<td class="loc"><a class="loc-link" href="https://www\.google\.com/maps/search/\?api=1&amp;query=', tb))
+            n_expect = sum(1 for s in SLUGS if (by[s].get("location") or {}).get("maps_url"))
+            check(n_links == n_expect and 'class="loc"' in tb, f"table: a Location link in every row that has coordinates ({n_links} of {n_expect}; Mexico shows 'not published')")
+    except Exception as e:  # noqa: BLE001
+        check(False, f"dialog / Maps-link DOM check crashed: {e!r}")
 
     # --- media rules (2026-09-25 media re-check) -------------------------------------------
     unlabelled = [f"{r['slug']}:{i}" for r in reefs for i, im in enumerate(r.get("images", [])) if im.get("shows") and not im.get("shows_label")]
@@ -407,14 +587,12 @@ def main() -> int:
         if cp.is_file():
             card = json.loads(cp.read_text(encoding="utf-8"))
             rej_img += [x["url"] for x in card.get("images_rejected") or [] if x.get("url")]
-    leaked_img = [u for u in rej_img if u in raw or u.split("?")[0] in raw]
+    leaked_img = [u for u in rej_img if u in raw_nd or u.split("?")[0] in raw_nd]
     check("images_rejected" not in p.data_json and not leaked_img,
           f"no images_rejected URL rendered anywhere, incl. the Scale tab ({len(rej_img)} checked; leaked={leaked_img})")
 
     hero_null = [r["slug"] for r in reefs if not r.get("hero_image")]
     check(not hero_null, f"every reef has a hero image (null={hero_null})")
-    no_map = [f"{r['slug']} ({r['map_note']})" for r in reefs if not r.get("map_ok")]
-    out.append(f"INFO not plotted on map: {no_map}")
     m = data["meta"]
     out.append(f"INFO total documented cost ~US${m['usd_total_mid']:,.0f} (range {m['usd_total_low']:,.0f}-{m['usd_total_high']:,.0f}) of {m['n_with_cost']} with cost data")
     ext = sorted(set(re.findall(r"(?:src|href)=\"(https?://[^\"]+)\"", raw)))

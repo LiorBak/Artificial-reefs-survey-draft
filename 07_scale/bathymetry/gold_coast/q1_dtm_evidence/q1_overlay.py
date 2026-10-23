@@ -1,7 +1,7 @@
 import numpy as np, json, requests, sys, os
 from PIL import Image, ImageDraw, ImageFont
 from pyproj import Transformer
-ROOT=r"C:\Users\lior\Documents\Gemini\AG\Artificial reef - to upload to git\07_scale"
+ROOT=r"C:\Users\lior\Documents\Claude\Projects\Artificial reef\07_scale"
 OUT=ROOT+r"\bathymetry\gold_coast\annotated"
 T=os.environ['TEMP']+r"\gc_bathy"
 img=np.load(T+r"\modeimg.npy")

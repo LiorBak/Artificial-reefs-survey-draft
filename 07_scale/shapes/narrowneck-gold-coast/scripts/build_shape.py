@@ -1,6 +1,6 @@
 """Builds shape.json (draft/refined) for narrowneck-gold-coast. Run again after each refinement."""
 import json, os, math, subprocess, sys
-ROOT=r"C:\Users\lior\Documents\Gemini\AG\Artificial reef - to upload to git"
+ROOT=r"C:\Users\lior\Documents\Claude\Projects\Artificial reef"
 SH=ROOT+r"\07_scale\shapes\narrowneck-gold-coast"
 polys=json.load(open('polys_v2.json')); extras=json.load(open('extras_v2.json'))
 frame=json.load(open('frame.json'))

@@ -29,8 +29,9 @@ RISE_Z = [0.0, 0.30, 0.50, 0.70, 0.85, 0.95, 1.05, 1.10]
 RISE_MAX = 1.10
 DX = 0.5
 X0, X1, Y0, Y1 = -44.0, 41.0, 277.0, 351.0
-BEDS = [-3.0, -3.5, -4.0, -4.5]        # CD at the reef centroid; plus 'nav' (the Navionics profile as it is)
-BED_DEFAULT = -4.0
+BEDS = [-3.6, -2.8, -3.0, -3.5, -4.0, -4.5]   # CD at the reef centroid; plus 'nav' (the Navionics profile as it is). -3.6 = D1 default (ASSUMPTION), -2.8 = 'later seabed'
+BED_DEFAULT = -3.6                       # ASSUMPTION (Lior D1, 2026-10-07): not a measurement; reproduces ~2,800 m3 (stated)
+BED_LATER = -2.8
 W_Y0 = 111.2
 
 

@@ -1,0 +1,101 @@
+# REGISTER_3D - sources, methods, assumptions, decisions, confidence (Borth coastal defence reef)
+
+Source audit of 2026-10-10 (Lior's standard: every statement has a source; every source says how it was used; methods, assumptions and decisions are explicit). This page is the one place that lists them; detail and numbers are in METHODS_3D.md (sections cited as "M 3.3" etc.), the Sources tab (provenance of every model value) and shape.json. Registry ids "img-NN" are rows of `03_images/reefs/borth-coastal-defence-reef/images.json` (31 rows). Not for navigation. All saved images and drawings are private research copies; reuse rights are not cleared.
+
+## R1. Source register - what was read, how, accuracy, which model element
+
+| id | full citation (accessed) | location used | what was read off it | how (method) | accuracy | model element / role |
+|---|---|---|---|---|---|---|
+| drg1020 | Haskoning UK Ltd for Ceredigion County Council (2010-11). Borth Coastal Protection Scheme - Phase 1, drawing 9V5090/1020 rev C1 "Multi-Purpose Reef Plan", 1:500, For Construction (Jan 2011). http://www.borthcommunity.info/index.php/planning-drawings/65-planning-drawings (2026-10-06); img-20 | plan sheet; 15 setting-out points (SOP) table | concentric rings 0-4 of the two mounds, SOP coordinates (OS grid), crest-strip paths | vector paths extracted from the PDF; affine fit of the PDF to the OS-grid SOP; OS grid to model frame by pyproj Helmert (M 3.1) | georeference residual 0.02 m; +-0.5 m on the drawing; +-2-5 m absolute (Helmert) | plan of version design_1020; design overlay on the trace; oval length (decision DEC11) |
+| drg1021-1023 | same set, drawings 9V5090/1021 (Northern Reef Sections 1/2, N1-N3, 1:200), /1022 (2/2, N4-N6), /1023 (Southern Reef Sections S1, S2); img-21..23 | section labels and dimension strings | crest +0.50 / +1.00 / +0.00 mODN, +1.50 oval; Type 4 layer 2.70 m; Type 5; Type 6 0.5 m blanket; toe berm 1.35 m high, 3.0 m top, 1:1.5; apron 2.0 m; slopes 1:3, 1:4, 1:5; transitions 40 m and 15 m; printed bed note "-4.2 TO -3.6m AOD"; MHWS +2.56 / MLWS -1.74 | read from the vector PDF text and dimensions, also by eye on 300 dpi renders | labels +-0.1 m; 0.05 m measured on render | crest levels, layers, toe, slopes, bed under the rock (derived: 2.70 + 1.31 + 0.50 below +0.50 = -4.01) |
+| drg1001 | same set, 9V5090/1001 General Arrangement 1:2000; img-19 | whole sheet | layout that was built (two separate mounds) | by eye | - | context only |
+| lidar2022 | Welsh Government (2022). LiDAR 2020-22, 1 m DSM and DTM, tile SN6089, flown 2022-03-19 03:15-03:20 UTC; DataMapWales, Open Government Licence v3. https://dmwproductionblob.blob.core.windows.net/lidar-zips/2020-22/dsm/wg_del_29_260289_20220319dsm.tif (DTM: same path with dtm) (2026-10-06); img-24 | tile SN6089, EPSG:27700, 1 m | DSM = as-built exposed rock surface; DTM = beach and foreshore; sea surface at the flight (-2.2..-2.4 mODN); crest and slope statistics | cells with a return = outline (1 m, simplified 0.4 m); DSM smoothed (Gaussian sigma 0.8 m, A9); DTM sampled on a 6 m grid as seabed nodes (rock buffered out 12 m); script `3d/prep_sources.py`, `3d/b3d_lib.py` | 1 m; vertical datum not stated (ODN assumed, A4); block tops 0.1-0.3 m above design surface | PRIMARY for the default surface (version lidar_2022), beach seabed (3,081 nodes), outline 8,675 m2, validation of crests and design |
+| hrpp576f2 | Rigden, T., Stewart, T., Allsop, W. and Johnson, A. (2013). Surf reefs - physical modelling results, not pipe dreams. HR Wallingford report HRPP576, ICE Coasts, Marine Structures and Breakwaters, Edinburgh, Sept 2013. https://eprints.hrwallingford.com/931/1/HRPP576_SurfReefs.pdf (2026-10-06); img-17 | p. 4, Figure 2 (849 x 349 px, 1.776 m/px from the 500 m scale bar) | mODN seabed contours -2, -3, -4 around the reefs; reef C (oval) position and role | contours traced by hand on the figure and georeferenced to the frame (`3d/src/fig2_contours_canonical.json`); -3.0 and -4.0 used as control nodes since D6 | +-0.5 m by eye, +-10 m horizontal | seabed outside the reef zone (12 + 13 nodes); -2.0 contour only a check |
+| hrpp576f3 | same paper, p. 4, Figure 3 "Initial plan view layout and side profile of the Northern reef"; img-18 | Fig 3 | superseded geotube design (truncated delta 180 x 65 m, 4.0 m high) | by eye | - | NOT used for geometry (superseded design); noted only |
+| sat2024 | Esri World Imagery (Esri, Maxar, Earthstar Geographics), image date 2024-09-17, zoom 19, 5.4995 px/m, centre 52.4832,-4.0562. https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer (fetched 2026-10-04 with `07_scale/tools/satellite.py`); img-08 | whole frame | visible bare-rock edge at low tide | hand tracing, 79 vertices (N 42, S 37); procedure in METHOD.md | +-5 m absolute (Esri), +-2 m edge | version sat_2024 (5,743 m2); canonical.polygons_m; waterline height at the traced edge (-1.3 mODN) read from the DSM |
+| sat2022, sat2012 | Esri Wayback release 34007 (image 2022-08-25) and 18358 (image 2012-10-27), same frame; img-09, img-10 | whole frame | independent traces (polys_2022_v1.json, polys_2012_v1.json) | hand tracing | 2012 image 5 m east of 2024 (registration, not movement) | cross-check only: no change 2012-2024 |
+| sat2013, satshore, satblobs | Esri Wayback 11351 (2013-06-04); Esri current 2024-09-17 frames r = 350 m and 250 m; img-11..13 | - | shoreline / defence line (back of the shingle beach); context | by eye | - | frame origin and offshore distance; not traced |
+| emodnet | EMODnet Bathymetry Consortium (2024). EMODnet Digital Bathymetry (DTM 2024). https://doi.org/10.12770/cf51df64-56f9-4a99-b1aa-36b8d7b743a1, CC BY 4.0; survey cells CDI 115084 (OceanWise Ltd) (2026-10-06); img-14..16 | map-viewer cell values and source layer | cross-shore gradient -1.1 % (soundings y 368-652 m) | read by eye from the viewer, linear fit of the surveyed cells (img-16) | +-0.3 % in slope | seabed beyond the Fig 2 -4.0 contour (equation E4); the absolute cells are GEBCO interpolation in the reef zone and are NOT used |
+| ref3 | Royal HaskoningDHV (2011). West of Wales Shoreline Management Plan 2, Section 4 Coastal Area C Introduction, p. 4C.3, water-level table, Aberystwyth row; report 9T9001, Final Nov 2011. https://www.grwparfordirolgorllewincymru.cymru/sites/default/files/2019-06/4c1%20-%20Section%204%20Coastal%20Area%20C%20Introduction.pdf (2026-10-06) | p. 4C.3 table | MHWS +2.56, MHWN +1.06, MLWN -0.64, MLWS -1.74 mAOD; extreme still water 10/50/100 yr +3.76 / +4.36 / +4.73 | tabulated | as printed | tide presets; MSL = mean of the four (+0.31, A2) |
+| ref4 | National Tidal and Sea Level Facility (n.d.). Chart datum and ordnance datum: differences at selected ports. https://ntslf.org/tides/datum (2026-10-06) | table, Barmouth and Fishguard rows | LAT = ODN - 2.44 m (Aberystwyth not listed) | tabulated; transferred to Aberystwyth/Borth (A3, A14) | +-0.1 m | LAT preset; EMODnet conversion E3 |
+| ref6 | Hansford, Mark (2011-09-15). Borth's Big Dig. New Civil Engineer. https://www.newcivilengineer.com/archive/borths-big-dig-15-09-2011/ (2026-10-06); first name from the reef card (R1 of 02_research/reefs/borth-coastal-defence-reef.json); the article could not be re-found by web search on 2026-10-10 | text | 275,000 t whole Phase 1; Type 4 (6-10 t) 42,000 t | quoted | whole scheme only | upper-bound check of the Type 4 volume; no model input |
+| ref7 | RCAHMW (2020). Coflein, Coastal Defences, Borth, NPRN 424699, record dated 2020-01-31. https://coflein.gov.uk/en/site/424699 (2026-10-06) | site record | completion 8 March 2012; about 300 m offshore; about 300,000 t whole works (quoting a BBC article of 8 March 2012) | quoted | - | state modelled (as-built final layout); offshore distance (300 m vs 400 m NCE: sources disagree) |
+| ref8, ref9 | Royal HaskoningDHV (2013). Ceredigion Beach Profile Monitoring Volume I, 2012-2013 survey, report 9W1559, section 2.15 (https://www.ceredigion.gov.uk/media/ke0fsyzz/ceredigion-beach-profile-monitoring-volume-2012-2013.pdf); Borth CPS Phase 2 public exhibition posters (2013), borthcommunity.info (2026-10-06) | text | Phase 1 complete; Phase 2 structures north of the reef | quoted | - | context (Phase 2 not modelled) |
+| img-31 | Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08, UNSW Water Research Laboratory. https://doi.org/10.4225/53/58e1dc7368c7a, p. 60, Fig 4.1 (2026-10-07) | Fig 4.1 | oblique photo June 2012 (source named there: eCoast 2012) | not traced | no scale | dated evidence that part of the reef is near the surface in June 2012; validation context only. NOT used by the 3D build; its dimensions for Borth (Table 4.2) describe the superseded two-reef design |
+| navionics | Garmin Ltd / Navionics (2026). Marine Maps web viewer, Nautical Charts and SonarChart. https://maps.garmin.com/en-US/marine (2026-10-07); img-26..29 | 44 screenshots, zoom 17 / 18 | depth contours | pixel rows read by `3d/nav_read.py`; datum test against seven datums (M 3.6) | datum +-0.6 m (not stated, A13) | cross-check of seabed and datum ONLY (rejected as input: shows no reef, 0.6-1.1 m shallower than Fig 2 offshore) |
+| photos | img-01..07: press/video photographs of the construction (Apr-Aug 2011) and video frames | - | qualitative construction state | by eye | - | page illustration only; not used for any number |
+| gemini | Gemini folder footprint for Borth (200 x 200 m, 12,500 m2, 110,000 t, Halcrow, ...) | VERIFY.md check 6 | - | compared with the original sources by the verifier | - | REJECTED: does not match drawings, LiDAR or imagery; nothing from it is used |
+
+Not found at a primary source (searched): HAT at Aberystwyth; a reef-only rock quantity; an as-built plan or post-construction survey of the reef; a Navionics depth at the reef.
+
+## R2. Methods that are not a direct reading (script paths relative to this folder)
+
+| method | where | parameters / equation | script |
+|---|---|---|---|
+| hand tracing of the rock edge | shape.json canonical; METHOD.md | 79 vertices on sat2024; 2022 and 2012 traced independently; IoU 0.84 (2024/2022) | by hand on the Esri tiles (METHOD.md); verification figures in `../overlays`, scripts in `../scripts_verify` |
+| georeference of drawing 1020 | M 3.1 | PDF similarity fit to 15 SOP; OS grid to WGS84 Helmert (pyproj) to local tangent plane to rotation; affine fit, residual rms 0.005 m | `b3d_lib.Frame`, `../scripts_verify/design1.py`, `design2.py`, `sop.py` |
+| datum conversion | M 3.1 | E1 z_MSL = z_ODN - 0.31; E2 z_LAT = z_ODN + 2.44; E3 z_MSL = e_LAT - 2.75 | `build_3d.py` TIDES_ODN |
+| LiDAR surface | M 3.2 | exposed-cell outline, DSM Gaussian smoothing sigma 0.8 m, floor at the edge level -2.3 mODN | `b3d_reef.py`, `prep_sources.py` |
+| design surface | M 3.2 | linear interpolation in the distance between the bounding rings (rings 0-4), then linear rise to the crest outline | `b3d_reef.py` |
+| toe below the water edge | M 3.2 | design toe slopes 1:1.5, 2 m flat apron, 0.5 m blanket, attached to the edge of the chosen version | `b3d_reef.py` |
+| seabed | M 3.3 | thin-plate-spline RBF (scipy RBFInterpolator, smoothing 0.5, 80 neighbours) through control nodes, 5 m grid; beyond the -4.0 contour E4 z = z_RBF(x, y_c) - 0.011 (y - y_c) | `b3d_lib.py` (`seabed_grid`, `contour4_line`) |
+| volumes | M 3.2 | integral of (surface - seabed) over the 1 m grid; tonnes = volume x 1.7 t/m3; uncertainty dV = 0.4 m x footprint incl. toe | `b3d_reef.py`, `build_3d.py` |
+| uncertainty propagation | M 5 | root-sum-square, independent inputs | M 5 equations E7-E9 |
+| Navionics reading and datum test | M 3.6 | pixel-row reading; best-of-7 datum by RMS | `nav_read.py`, `src/make_navionics_reading.py`, `src/navionics/capture_navionics.py` |
+| AI tools and earlier agents | - | The tracer, verifier and 3D agents are AI agents (Claude); their estimates were checked: outline against the design plan (IoU 0.79 / 0.86) and the LiDAR; crests against three independent readings; seabed against Fig 2 contours (M 4.4). Gemini output was not used (REJECTED above). | - |
+
+## R3. Assumptions (A1-A14; "ASSUMPTION" in the model means one of these)
+
+| id | assumed | why (evidence) | effect on results | would replace it |
+|---|---|---|---|---|
+| A1 | the drawn design is the built design; the layout is the final one completed 8 Mar 2012 | no as-built plan published; ref7 date; LiDAR 2022 agrees with the crests (plan IoU 0.79 / 0.86, centroid 0.3-4 m) | surface above -2.3 mODN is measured (default version); below it the design is used; not quantified separately | as-built survey |
+| A2 | MSL = +0.31 mODN (+-0.15) = mean of MHWS, MHWN, MLWN, MLWS | no MSL printed at ref3 | +-0.15 m on every z_MSL height (crest +0.19 m MSL is +-0.2 m) | tide-table value for Aberystwyth/Borth (request row 6) |
+| A3 | LAT = -2.44 mODN (+-0.1) | Barmouth and Fishguard (ref4); Aberystwyth not listed; consistent with the LiDAR sea surface -2.2..-2.4 and with MHWS 5.00 m CD | LAT preset and EMODnet conversion (E3) +-0.1 m | Admiralty / UKHO Z0 for Aberystwyth |
+| A4 | LiDAR heights are ODN | not stated in the tile; agrees with design crests and the flight sea surface | +-0.15 m on LiDAR crest heights | tile metadata |
+| A5 | water level at the flight (LiDAR edge) = -2.3 mODN (+-0.1) | lowest returns -2.2..-2.4 | edge level of the default version; volume spread between versions about 15 % (25.5-30.1 kt m3) | tide prediction for 2022-03-19 03:15 UTC |
+| A6 | seabed under the rock: arm -4.0 (derived from layer thicknesses), tail -3.0..-3.4 (assumed), N4 -3.8, oval -3.6 / -4.2 (printed note; derived centreline -3.4) | drawing ground lines are schematic ("EXISTING SEABED VARIES") | +-0.4 m bed = +-4,556 m3 = +-15 % volume; height above bed +-0.5 m | post-construction multibeam or beach-profile survey |
+| A7 | -4.0 contour bridged at x -104..170 (6 nodes) and extended east of x 170 (3 nodes); EMODnet gradient -1.1 % beyond it | the figure hides the contour behind the drawn mounds; trend of the last 270 m (+0.146 m/m) | visible sea floor and depth read-outs at y > 335 m +-0.5 m; effect on rock volume not quantified (reef window ends at y 420 m) | sounding line or multibeam |
+| A8 | placed-rock bulk density 1.7 t/m3 (1.6-1.8) | solid 2.65 t/m3 with about 36 % voids; no quarry value | tonnage +-6 % | quarry bulk density of the Type 4 supply |
+| A9 | DSM smoothing sigma 0.8 m; DSM block tops are 0.1-0.3 m above the design surface | visual noise reduction; compared with design (+0.14 +- 0.28 m) | crest heights +0.1-0.3 m; volume effect not quantified | - |
+| A10 | edge levels of the versions: -2.3 (lidar_2022), -2.15 (design_1020), -1.3 (sat_2024) | -2.15 = bed -4.0 + 0.5 + 1.35; -1.3 = median DSM at the traced edge (north -1.25, south -1.36) | footprint 5,743-8,675 m2, volume 25.5-30.1 k m3 | - |
+| A11 | flanks below the water edge are the design toe (1:1.5, 2 m apron); as-built flanks above the edge are flatter (1:4.0-1:5.3) and 8-10 m wider | no survey below the edge | lower part of the volume is design, not measured; not quantified separately | multibeam or drone survey at a spring low |
+| A12 | still, horizontal water surface at each level | viewer simplification | none on geometry; no wave set-up or run-up shown | - |
+| A13 | Navionics chart datum is LAT | UK convention; best of 7 datums by RMS | none on the model (cross-check only) | Navionics app / chart legend |
+| A14 | Aberystwyth tide levels (ref3) and the Barmouth/Fishguard LAT offset (ref4) apply at Borth | nearest tabulated port; Borth values not tabulated | feeds A2, A3 (+-0.15 / +-0.1 m); added by the audit of 2026-10-10 to make an implicit assumption explicit | tide table for Borth |
+
+## R4. Decisions (who, when, options, reason)
+
+| id | decision | options | who / when | reason |
+|---|---|---|---|---|
+| DEC1 | model the as-built final layout; the oval is a shore-parallel breakwater, not a surf reef | superseded two-geotube design; final layout | orchestrator, 2026-10-06 (SOURCES_3D.md) | Coflein completion 8 Mar 2012 (ref7); drawings 1020-1023 rev C1 |
+| DEC2 | canonical frame +x south, +y offshore (west) | tracer's +x north (mirror image) | verifier, 2026-10-06 | the tracer's frame had x pointing north, a mirror image of the shoreline geometry (HANDOFF section 2); do not flip back |
+| DEC3 | primary trace = Esri 2024-09-17 | 2012, 2013, 2022 images | tracer / verifier, 2026-10-05/06 | bare rock at low tide, sharpest edge; others kept as cross-checks |
+| DEC4 | default outline = laser survey (lidar_2022); design_1020 and sat_2024 are toggles | priority survey > drawing > photo | Lior, 2026-10-06 | a laser survey is more accurate than a photo |
+| DEC5 | working datum ODN; model zero = MSL (+0.31 mODN) | ODN zero; LAT zero | orchestrator, 2026-10-06 | fixed in SOURCES_3D.md 'Decisions fixed by the orchestrator': z = 0 at MSL, local tides only (Lior's rule 5) |
+| DEC6 | tide slider ends at MHWS; no Haifa preset | extend to HAT | agent with orchestrator, 2026-10-06; Lior's rule "local tides only" | HAT not found at a primary source (5.9 m CD is a predicted maximum) |
+| DEC7 | D6: seabed seaward of the reef follows the Fig 2 -4.0 contour (option B, faithful fix) | A: freeze the old bed under the rock to keep the volumes; B: fix the clamp that ignored nodes with y > 335 m | coordinator, 2026-10-07 (Lior's D6 in REQUESTS_FOR_LIOR.md) | option A keeps a 0.7 m pit under the arm head; volumes fall 3.4-3.9 % (documented in M 3.3) |
+| DEC8 | EMODnet absolute cells not used in the reef zone | use them | 3D agent, 2026-10-06 | GEBCO interpolation, 1.0-1.4 m too shallow at the reef |
+| DEC9 | Navionics is a cross-check only | use as a seabed input | 3D agent, 2026-10-07 | no reef shown, datum not stated, 0.6-1.1 m shallower than Fig 2 offshore |
+| DEC10 | Gemini footprint rejected | - | verifier, 2026-10-06 (VERIFY check 6) | does not match the original sources |
+| DEC11 | oval crest length 38 m (SOP table of drawing 1020) | 46 m (S1-S1 dimensions on drawing 1023) | 3D agent, 2026-10-06 | plan georeferenced from the SOP table; the choice is worth about 2 % of the oval volume. OPEN: main/Lior may prefer the sections |
+| DEC12 | LiDAR heights taken as ODN | unknown datum | 3D agent, 2026-10-06 | see A4 |
+| DEC13 | toe below the water edge = design toe | none measured | 3D agent, 2026-10-06 | see A11 |
+| DEC14 | rock tonnage reported with a range and compared with NCE 42,000 t only as an upper bound | quote NCE as the reef quantity | 3D agent, 2026-10-06 | NCE figure covers the whole Phase 1 |
+
+## R5. Confidence per element
+
+| element | level | reason |
+|---|---|---|
+| plan | HIGH | design rings and laser survey agree to 1 pixel / 0.3 m; four dated images; absolute position +-5 m |
+| crest levels | HIGH | three independent readings: drawings, LiDAR (median +0.58 arm, +1.55 oval), sections; +-0.15-0.3 m |
+| tides / datum | MEDIUM | MSL a four-level mean (+-0.15 m); LAT from neighbouring ports; LiDAR datum assumed |
+| seabed | MEDIUM-LOW | under the rock a derived design bed (+-0.4 m); outside it hand-read contours (+-0.5 m, +-10 m) and, beyond them, an EMODnet gradient 0.7-1.2 m deeper than the EMODnet cells |
+| volume / tonnage | MEDIUM | +-15 % from the bed, +-6 % density, version spread; no reef-only quantity exists to check it |
+| overall | MEDIUM | the bed level is the first-order unknown for height and volume |
+
+## R6. Consistency notes of the audit (details in SOURCE_AUDIT_2026-10-10.md)
+
+* The registry has 31 rows (row 31 added 2026-10-10 from Blacka et al. 2013); older text says 30.
+* LiDAR crest statistics depend on the cell mask: north arm median +0.58 / p90 +0.91 (this model, M 4.2), median +0.69 and p90 +0.72..+0.88 (verifier, VERIFY.md, img-24). Different masks, not a conflict; the model uses neither as input (crests are the design values).
+* Whole-Phase-1 tonnage: NCE 275,000 t (ref6) against Coflein "about 300,000 t" (ref7); the model uses neither except as an upper-bound comparison.
+* Offshore distance: 300 m (Coflein) against 400 m (NCE); the model uses the georeferenced position (reef centroid 330.5 m from the defence line).

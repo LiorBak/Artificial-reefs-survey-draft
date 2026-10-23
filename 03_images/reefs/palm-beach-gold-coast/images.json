@@ -101,10 +101,11 @@
    "context",
    "camera_match"
   ],
-  "how_used": "Context and potential camera-match target for the 3D viewer; no value read.",
+  "how_used": "Context and potential camera-match target for the 3D viewer; no value read. Re-check 2026-10-10: qualitatively consistent: one peeling wave breaks beyond the shore-break, as expected for a reef 225-374 m out; no camera position or scale, so no value compared (07_scale/shapes/palm-beach-gold-coast/3d/METHODS_3D.md 4.9).",
   "linked_records": [
    "07_scale/bathymetry/gold_coast/SOURCES.md GC-P03",
-   "07_scale/bathymetry/gold_coast/REPORT.md"
+   "07_scale/bathymetry/gold_coast/REPORT.md",
+   "07_scale/shapes/palm-beach-gold-coast/3d/METHODS_3D.md 4.9"
   ],
   "bytes": 182667,
   "px": [
@@ -115,19 +116,24 @@
   "rights_note": "Private research copy; reuse rights to be checked before any public release.",
   "display": true,
   "for_3d_check": {
-   "pending": true,
+   "pending": false,
    "what_to_check": "Compare the wave break position/line with the modelled crest outline (59 x 6 m crest slot at -1.5 m MSL) if the camera position can be inferred",
    "model_values_affected": [
     "crest_z",
     "planform"
-   ]
+   ],
+   "checked": "2026-10-10",
+   "result": "qualitatively consistent: one peeling wave breaks beyond the shore-break, as expected for a reef 225-374 m out; no camera position or scale, so no value compared",
+   "model_change": "unchanged"
   },
   "added_by": "gold_coast_gov_reports_bathymetry, 2026-10-06"
  },
  {
   "id": "palm-beach-gold-coast-img-04",
   "file": "07_scale/shapes/palm-beach-gold-coast/src/gov/palm-beach-gold-coast_prenzler2022_fig1_cctv_camera_view_of_reef_native.jpeg",
-  "annotated_files": [],
+  "annotated_files": [
+   "07_scale/shapes/palm-beach-gold-coast/3d/annotated/recheck_orientation_img04_img15.png"
+  ],
   "kind": "aerial",
   "title": "Prenzler et al. 2022 Fig 1 (top): CCTV camera view of the reef with the camera field of view drawn on an aerial",
   "citation": "Prenzler, P., Hunt, S., Elliott-Perkins, Z., Hamilton, D., Messiter, D., Wharton, C. and Watterson, E. (2022). Monitoring of the Palm Beach artificial reef. Coastal Engineering Proceedings 37 (ICCE 2022), structures.65, doi:10.9753/icce.v37.structures.65, p.1, Fig 1 top (embedded raster). https://icce-ojs-tamu.tdl.org/icce/article/view/12921. Accessed 2026-10-06.",
@@ -145,10 +151,11 @@
    "context",
    "camera_match"
   ],
-  "how_used": "Gives the camera wedge and one frame of the reef for camera_match; no geometry read.",
+  "how_used": "Gives the camera wedge and one frame of the reef for camera_match; no geometry read. Re-check 2026-10-10: patch long axis about 102 deg (+-5) vs slot axis 104.8 / outline 109.6 deg: within error; camera wedge is a camera-match candidate (camera on the beach SSW of the reef) (07_scale/shapes/palm-beach-gold-coast/3d/METHODS_3D.md 4.9).",
   "linked_records": [
    "07_scale/bathymetry/gold_coast/SOURCES.md GC-P04",
-   "07_scale/bathymetry/gold_coast/REPORT.md"
+   "07_scale/bathymetry/gold_coast/REPORT.md",
+   "07_scale/shapes/palm-beach-gold-coast/3d/METHODS_3D.md 4.9"
   ],
   "bytes": 26778,
   "px": [
@@ -159,12 +166,15 @@
   "rights_note": "Private research copy; reuse rights to be checked before any public release.",
   "display": true,
   "for_3d_check": {
-   "pending": true,
+   "pending": false,
    "what_to_check": "Camera-match the CCTV frame to the 3D model (apex of the wedge = camera; reef direction)",
    "model_values_affected": [
     "crest_z",
     "planform"
-   ]
+   ],
+   "checked": "2026-10-10",
+   "result": "patch long axis about 102 deg (+-5) vs slot axis 104.8 / outline 109.6 deg: within error; camera wedge is a camera-match candidate (camera on the beach SSW of the reef)",
+   "model_change": "unchanged"
   },
   "added_by": "gold_coast_gov_reports_bathymetry, 2026-10-06"
  },
@@ -189,10 +199,11 @@
    "3d_seabed",
    "context"
   ],
-  "how_used": "The buoy depths in Table 1 (PBO1 11.33 m at 28.114007 S 153.479249 E; PBO2 11.29 m at 28.109683 S 153.474469 E; PBO3 11.75 m at 28.107191 S 153.473845 E; PBO4 23.80 m at 28.099271 S 153.474321 E; datum not stated) are depth points offshore of the reef; PBO3 is about 214 m seaward of the reef's offshore toe. Goes to REPORT.md section 5.",
+  "how_used": "The buoy depths in Table 1 (PBO1 11.33 m at 28.114007 S 153.479249 E; PBO2 11.29 m at 28.109683 S 153.474469 E; PBO3 11.75 m at 28.107191 S 153.473845 E; PBO4 23.80 m at 28.099271 S 153.474321 E; datum not stated) are depth points offshore of the reef; PBO3 is about 214 m seaward of the reef's offshore toe. Goes to REPORT.md section 5. Re-check 2026-10-10: PBO3 11.75 m (datum, accuracy not stated) vs model 12.37 m below LAT (13.25 m below MSL) at canonical (-110.7, 571.2) m: +0.62 m (LAT) / +1.50 m (MSL), seabed there is extrapolated beyond the 10 m line; marginal, no change, recorded as a validation row (07_scale/shapes/palm-beach-gold-coast/3d/METHODS_3D.md 4.9).",
   "linked_records": [
    "07_scale/bathymetry/gold_coast/SOURCES.md GC-P05",
-   "07_scale/bathymetry/gold_coast/REPORT.md"
+   "07_scale/bathymetry/gold_coast/REPORT.md",
+   "07_scale/shapes/palm-beach-gold-coast/3d/METHODS_3D.md 4.9"
   ],
   "bytes": 28446,
   "px": [
@@ -203,11 +214,14 @@
   "rights_note": "Private research copy; reuse rights to be checked before any public release.",
   "display": true,
   "for_3d_check": {
-   "pending": true,
+   "pending": false,
    "what_to_check": "Seabed seaward of the offshore toe: model depth at PBO3 (-28.107191, 153.473845) vs 11.75 m (datum unstated, probably below MSL/AHD)",
    "model_values_affected": [
     "seabed"
-   ]
+   ],
+   "checked": "2026-10-10",
+   "result": "PBO3 11.75 m (datum, accuracy not stated) vs model 12.37 m below LAT (13.25 m below MSL) at canonical (-110.7, 571.2) m: +0.62 m (LAT) / +1.50 m (MSL), seabed there is extrapolated beyond the 10 m line; marginal, no change, recorded as a validation row",
+   "model_change": "unchanged"
   },
   "added_by": "gold_coast_gov_reports_bathymetry, 2026-10-06"
  },
@@ -354,10 +368,11 @@
    "3d_seabed",
    "cross_check"
   ],
-  "how_used": "Depth labels read along y = 3050 m (annotated copy): 2 m at x=394 ... 6.5 m at x=639, 8 m at x=718, 11.5 m at x=836 (model m; land edge x about 255). Reproduces the paper's concept toe depths 6.6 m and 11.4 m (Table 2). Goes to REPORT.md section 5 as the only labelled pre-construction seabed profile found. Compared with the 3D model's Navionics chart bed (depth below LAT converted to AHD with +0.76 m, MSQ 2014): RMS 0.29 m with no vertical adjustment (horizontal shift 316 m = waterline of the figure's x axis), 0.20 m with a 0.5 m offset (chart shallower than the 2013-14 survey, plausible after the 2017 nourishment); without the datum conversion RMS 0.52 m. Digitised profile: 07_scale/bathymetry/gold_coast/annotated/palm_beach_mortensen2015_fig6a_profile_y3050.csv; script tools/pb_profile_compare.py.",
+  "how_used": "Depth labels read along y = 3050 m (annotated copy): 2 m at x=394 ... 6.5 m at x=639, 8 m at x=718, 11.5 m at x=836 (model m; land edge x about 255). Reproduces the paper's concept toe depths 6.6 m and 11.4 m (Table 2). Goes to REPORT.md section 5 as the only labelled pre-construction seabed profile found. Compared with the 3D model's Navionics chart bed (depth below LAT converted to AHD with +0.76 m, MSQ 2014): RMS 0.29 m with no vertical adjustment (horizontal shift 316 m = waterline of the figure's x axis), 0.20 m with a 0.5 m offset (chart shallower than the 2013-14 survey, plausible after the 2017 nourishment); without the datum conversion RMS 0.52 m. Digitised profile: 07_scale/bathymetry/gold_coast/annotated/palm_beach_mortensen2015_fig6a_profile_y3050.csv; script tools/pb_profile_compare.py. Re-check 2026-10-10: model seabed profile vs 13 labels 3.5-11.5 m (datum assumed AHD): RMS 0.33 m, mean -0.07 m, max 0.52 m (0.89 m at the 3.5 m surf-zone label): within +-0.5 m, no change (07_scale/shapes/palm-beach-gold-coast/3d/METHODS_3D.md 4.9).",
   "linked_records": [
    "07_scale/bathymetry/gold_coast/SOURCES.md GC-P09",
-   "07_scale/bathymetry/gold_coast/REPORT.md"
+   "07_scale/bathymetry/gold_coast/REPORT.md",
+   "07_scale/shapes/palm-beach-gold-coast/3d/METHODS_3D.md 4.9"
   ],
   "bytes": 48307,
   "px": [
@@ -368,13 +383,16 @@
   "rights_note": "Private research copy; reuse rights to be checked before any public release.",
   "display": true,
   "for_3d_check": {
-   "pending": true,
+   "pending": false,
    "what_to_check": "Seabed datum and level: pre-reef City survey (2013-14, datum assumed AHD) agrees with the Navionics chart bed converted LAT->AHD (+0.76 m) to 0.29 m RMS; the chart bed is about 0.5 m shallower (nourishment 2017). Check that the model's seabed (chart datum = LAT) stays consistent; no change recommended unless the City supplies the as-built survey.",
    "model_values_affected": [
     "seabed",
     "crest_z",
     "height"
-   ]
+   ],
+   "checked": "2026-10-10",
+   "result": "model seabed profile vs 13 labels 3.5-11.5 m (datum assumed AHD): RMS 0.33 m, mean -0.07 m, max 0.52 m (0.89 m at the 3.5 m surf-zone label): within +-0.5 m, no change",
+   "model_change": "unchanged"
   },
   "added_by": "gold_coast_gov_reports_bathymetry, 2026-10-06"
  },
@@ -482,10 +500,11 @@
   "used_for": [
    "context"
   ],
-  "how_used": "Context and orientation (reef lies between the beach and the natural reef, north of the 21st Avenue groyne); the text on the page gives 160 m long x 80 m wide, 1.5 m below the average water level at its highest point, about 270 m offshore of Nineteenth Avenue.",
+  "how_used": "Context and orientation (reef lies between the beach and the natural reef, north of the 21st Avenue groyne); the text on the page gives 160 m long x 80 m wide, 1.5 m below the average water level at its highest point, about 270 m offshore of Nineteenth Avenue. Re-check 2026-10-10: 160 x 80 m / 1.5 m below average water level / about 270 m offshore vs model 162.3 x 91.3 m (mean width 73.8), crest -1.5 m MSL, nearest toe 225 m (waterline) or 279 m (OSM coast): within tolerance against the council GIS polygon (Hausdorff 0.55 m); text figures are nominal (07_scale/shapes/palm-beach-gold-coast/3d/METHODS_3D.md 4.9).",
   "linked_records": [
    "07_scale/bathymetry/gold_coast/SOURCES.md GC-P11",
-   "07_scale/bathymetry/gold_coast/REPORT.md"
+   "07_scale/bathymetry/gold_coast/REPORT.md",
+   "07_scale/shapes/palm-beach-gold-coast/3d/METHODS_3D.md 4.9"
   ],
   "bytes": 72883,
   "px": [
@@ -496,12 +515,15 @@
   "rights_note": "Private research copy; reuse rights to be checked before any public release.",
   "display": true,
   "for_3d_check": {
-   "pending": true,
+   "pending": false,
    "what_to_check": "Council text vs model: footprint 160 x 80 m (model grid 162 x 91 m), crest 1.5 m below 'average water level' (model -1.5 m MSL), 270 m offshore (model 225-374 m from the waterline)",
    "model_values_affected": [
     "planform",
     "crest_z"
-   ]
+   ],
+   "checked": "2026-10-10",
+   "result": "160 x 80 m / 1.5 m below average water level / about 270 m offshore vs model 162.3 x 91.3 m (mean width 73.8), crest -1.5 m MSL, nearest toe 225 m (waterline) or 279 m (OSM coast): within tolerance against the council GIS polygon (Hausdorff 0.55 m); text figures are nominal",
+   "model_change": "unchanged"
   },
   "added_by": "gold_coast_gov_reports_bathymetry, 2026-10-06"
  },
@@ -527,10 +549,11 @@
    "cross_check",
    "scale"
   ],
-  "how_used": "Second council depiction of the reef planform (schematic icon, 2637 x 2637 px, no scale bar); the '270 m' arrow is council's distance reef to beach (to the reef's landward edge or centre not specified). Cross-check only: the verified shape comes from the council GIS polygon and the Bluecoast aerial.",
+  "how_used": "Second council depiction of the reef planform (schematic icon, 2637 x 2637 px, no scale bar); the '270 m' arrow is council's distance reef to beach (to the reef's landward edge or centre not specified). Cross-check only: the verified shape comes from the council GIS polygon and the Bluecoast aerial. Re-check 2026-10-10: no scale bar and no icon/arrow in the native raster, so the 270 m cannot be re-measured here; same verdict as img-12 (earlier ICCE-copy measurement 255 m, -5 %) (07_scale/shapes/palm-beach-gold-coast/3d/METHODS_3D.md 4.9).",
   "linked_records": [
    "07_scale/bathymetry/gold_coast/SOURCES.md GC-P12",
-   "07_scale/bathymetry/gold_coast/REPORT.md"
+   "07_scale/bathymetry/gold_coast/REPORT.md",
+   "07_scale/shapes/palm-beach-gold-coast/3d/METHODS_3D.md 4.9"
   ],
   "bytes": 717711,
   "px": [
@@ -541,11 +564,14 @@
   "rights_note": "Private research copy; reuse rights to be checked before any public release.",
   "display": true,
   "for_3d_check": {
-   "pending": true,
+   "pending": false,
    "what_to_check": "Offshore distance: council 'approx. 270 m' vs model 225 m (nearest) to 374 m (farthest) from the waterline",
    "model_values_affected": [
     "planform"
-   ]
+   ],
+   "checked": "2026-10-10",
+   "result": "no scale bar and no icon/arrow in the native raster, so the 270 m cannot be re-measured here; same verdict as img-12 (earlier ICCE-copy measurement 255 m, -5 %)",
+   "model_change": "unchanged"
   },
   "added_by": "gold_coast_gov_reports_bathymetry, 2026-10-06"
  },
@@ -571,10 +597,11 @@
    "3d_height_slopes",
    "cross_check"
   ],
-  "how_used": "Read: crest 1.5 m below the average water level; layers (core rock, armour); rock classes by zone; asymmetry of the slopes (not to scale, so no slope ratio taken). Corroborates the model crest -1.5 m MSL ('average water level' = MSL/AHD, to be confirmed). Goes to REPORT.md section 5.",
+  "how_used": "Read: crest 1.5 m below the average water level; layers (core rock, armour); rock classes by zone; asymmetry of the slopes (not to scale, so no slope ratio taken). Corroborates the model crest -1.5 m MSL ('average water level' = MSL/AHD, to be confirmed). Goes to REPORT.md section 5. Re-check 2026-10-10: crest 1.5 m below average water level vs model -1.5 m MSL: difference 0 (0.12 m if AHD), within +-0.2 m; shoreward slope steeper than seaward matches the model qualitatively (07_scale/shapes/palm-beach-gold-coast/3d/METHODS_3D.md 4.9).",
   "linked_records": [
    "07_scale/bathymetry/gold_coast/SOURCES.md GC-P13",
-   "07_scale/bathymetry/gold_coast/REPORT.md"
+   "07_scale/bathymetry/gold_coast/REPORT.md",
+   "07_scale/shapes/palm-beach-gold-coast/3d/METHODS_3D.md 4.9"
   ],
   "bytes": 79439,
   "px": [
@@ -585,20 +612,25 @@
   "rights_note": "Private research copy; reuse rights to be checked before any public release.",
   "display": true,
   "for_3d_check": {
-   "pending": true,
+   "pending": false,
    "what_to_check": "Crest depth 1.5 m below 'average water level' vs model -1.5 m MSL (and the chart label FISH HAVEN 1.5MT); rock-class zones for the surface texture; shoreward slope shorter and steeper than seaward",
    "model_values_affected": [
     "crest_z",
     "height",
     "slopes"
-   ]
+   ],
+   "checked": "2026-10-10",
+   "result": "crest 1.5 m below average water level vs model -1.5 m MSL: difference 0 (0.12 m if AHD), within +-0.2 m; shoreward slope steeper than seaward matches the model qualitatively",
+   "model_change": "unchanged"
   },
   "added_by": "gold_coast_gov_reports_bathymetry, 2026-10-06"
  },
  {
   "id": "palm-beach-gold-coast-img-15",
   "file": "03_images/reefs/palm-beach-gold-coast/palm-beach-gold-coast_satellite_pair_reef_and_inshore_sandbank_icm_post2019.jpg",
-  "annotated_files": [],
+  "annotated_files": [
+   "07_scale/shapes/palm-beach-gold-coast/3d/annotated/recheck_orientation_img04_img15.png"
+  ],
   "kind": "satellite",
   "title": "Palm Beach reef and inshore sandbank: two satellite views (ICM 2023 article)",
   "citation": "International Coastal Management (2023). Artificial Reefs and Nearshore Nourishment on the Gold Coast: What the Monitoring Shows. ICM website article, published 2023-09-18, image wixstatic 97fa2b_89f98f... (828 x 528 px jpeg; alt text 'palm beach reef on Gold Coast Australia'). https://www.coastalmanagement.com.au/artificial-reefs-and-nearshore-nourishment-on-the-gold-coast-real-world-results. Accessed 2026-10-06.",
@@ -616,10 +648,11 @@
    "cross_check",
    "context"
   ],
-  "how_used": "Confirms the reef is still in place and the inshore sandbank formation after construction (no later damage visible); low resolution, no scale. Goes to REPORT.md section 5.",
+  "how_used": "Confirms the reef is still in place and the inshore sandbank formation after construction (no later damage visible); low resolution, no scale. Goes to REPORT.md section 5. Re-check 2026-10-10: dark mound still present at both dates; axis 108.3 / 108.8 deg vs model 109.6 deg: within tolerance; supports no later change (A2) (07_scale/shapes/palm-beach-gold-coast/3d/METHODS_3D.md 4.9).",
   "linked_records": [
    "07_scale/bathymetry/gold_coast/SOURCES.md GC-P14",
-   "07_scale/bathymetry/gold_coast/REPORT.md"
+   "07_scale/bathymetry/gold_coast/REPORT.md",
+   "07_scale/shapes/palm-beach-gold-coast/3d/METHODS_3D.md 4.9"
   ],
   "bytes": 97179,
   "px": [
@@ -630,11 +663,14 @@
   "rights_note": "Private research copy; reuse rights to be checked before any public release.",
   "display": true,
   "for_3d_check": {
-   "pending": true,
+   "pending": false,
    "what_to_check": "No-later-change claim: reef still present after construction (2 satellite dates unknown); compare outline orientation with model",
    "model_values_affected": [
     "planform"
-   ]
+   ],
+   "checked": "2026-10-10",
+   "result": "dark mound still present at both dates; axis 108.3 / 108.8 deg vs model 109.6 deg: within tolerance; supports no later change (A2)",
+   "model_change": "unchanged"
   },
   "added_by": "gold_coast_gov_reports_bathymetry, 2026-10-06"
  },
@@ -659,10 +695,11 @@
    "context",
    "cross_check"
   ],
-  "how_used": "Page illustration of the construction. Oblique: the dredger length gives a rough scale but it was not measured; shows the reef lies well offshore of the groynes. Council polygon (shape.json s1) and the Bluecoast aerial (s7) are the plan source; see sources.md.",
+  "how_used": "Page illustration of the construction. Oblique: the dredger length gives a rough scale but it was not measured; shows the reef lies well offshore of the groynes. Council polygon (shape.json s1) and the Bluecoast aerial (s7) are the plan source; see sources.md. Re-check 2026-10-10: qualitative only (oblique, no scale, dredger length unknown): patch well offshore of the groynes and partly built, consistent with the model; no value compared (07_scale/shapes/palm-beach-gold-coast/3d/METHODS_3D.md 4.9).",
   "linked_records": [
    "02_research/reefs/palm-beach-gold-coast.json images[0]",
-   "05_qa/reef/palm-beach-gold-coast_media_recheck.json images[0]"
+   "05_qa/reef/palm-beach-gold-coast_media_recheck.json images[0]",
+   "07_scale/shapes/palm-beach-gold-coast/3d/METHODS_3D.md 4.9"
   ],
   "bytes": 235477,
   "px": [
@@ -673,12 +710,15 @@
   "rights_note": "Private research copy; reuse rights to be checked before any public release.",
   "display": true,
   "for_3d_check": {
-   "pending": true,
+   "pending": false,
    "what_to_check": "Planform/offshore position from this oblique aerial (landmark-based) vs shape.json (162 x 92 m, 225 m toe offshore, long axis 110.8 deg) and the vessel scale (backhoe dredger length)",
    "model_values_affected": [
     "planform",
     "position"
-   ]
+   ],
+   "checked": "2026-10-10",
+   "result": "qualitative only (oblique, no scale, dredger length unknown): patch well offshore of the groynes and partly built, consistent with the model; no value compared",
+   "model_change": "unchanged"
   },
   "added_by": "image-registry backfill, 2026-10-06"
  },

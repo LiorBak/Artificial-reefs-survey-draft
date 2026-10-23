@@ -1,0 +1,125 @@
+{
+  "slug": "prattes-reef-el-segundo",
+  "entries": [
+    {
+      "what": "Borrero and Nelsen (2003) 'Results of a comprehensive monitoring program at Pratte's Reef': venue, year and pages (citation completion)",
+      "kind": "paper",
+      "where": "https://www.researchgate.net/publication/293137985 ; WebSearch 2026-10-10 'Borrero Nelsen Pratte's Reef monitoring Surfing Reef Symposium 2003 proceedings'",
+      "checked": "2026-10-10",
+      "by": "agent: Pratte's source audit (cloud)",
+      "result": "not found",
+      "detail": "The PDF supplied by Lior (07_scale/shapes/prattes-reef-el-segundo/src/) prints neither venue nor year; the search found no catalogue entry, so '3rd International Surfing Reef Symposium, Raglan 2003' is believed but not confirmed. ResearchGate returned HTTP 403 to automated fetch (the figure pages too) before Lior supplied the PDF, so the page text could not be used to complete the citation.",
+      "might_work": "Lior: P13 / W10; authors J.C. Borrero and C. Nelsen (E1)"
+    },
+    {
+      "what": "Coastal Frontiers (2008-2010) removal outline mapping, Pratte's monitoring surveys 2000-2008, and Surfrider 'Pratte's Reef Decommissioning Assessment (2008)' / Coastal Frontiers (2009) 'Deconstruction Monitoring Report'",
+      "kind": "report",
+      "where": "https://www.coastalfrontiers.com/removal-of-prattes-reef ; surfrider.org news 'ASR removal in El Segundo, CA'; web searches",
+      "checked": "2026-10-05",
+      "by": "agent: Pratte's tracer and verifier (cloud)",
+      "result": "not found",
+      "detail": "The Coastal Frontiers page gives the removal dates (phase 1 fall 2008, phase 2 2010), '14-ton bags' and says the outline was mapped before removal (unpublished), but no dimensions or map. No 'Decommissioning Assessment' or 'Deconstruction Monitoring Report' exists publicly (web searches, Surfrider news page, Beachapedia). So no as-built plan or crest survey exists in public: the drawn outline is the Skelly Phase I design layout and the only as-built number is ICCE 2010's 'outermost point 1.8 m below MLLW'.",
+      "might_work": "Lior: E2 (Surfrider LA / Coastal Frontiers Corp.: monitoring surveys and the 2008 removal mapping) and E1 (authors)"
+    },
+    {
+      "what": "Esri World Imagery (current and Wayback) as a view of the built reef",
+      "kind": "imagery",
+      "where": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer ; Esri Wayback config (earliest release 2014)",
+      "checked": "2026-10-05",
+      "by": "agent: Pratte's tracer (cloud)",
+      "result": "imagery shows no structure",
+      "detail": "The reef was removed in 2008-2010 and the earliest Wayback release is 2014, so no frame can show it; the current Esri image (2026-01-09, registry img4) cannot show the structure either. The published coordinates plotted on it (Wikipedia 'Chevron Reef' 33.915123, -118.432624) fall about 280-290 m offshore in open water. Pre-2008 imagery is needed.",
+      "might_work": "Google Earth Pro historical imagery Oct 2000 - Oct 2010 (Lior: G1)"
+    },
+    {
+      "what": "Published coordinates of Pratte's Reef (Wikipedia 'Chevron Reef' 33.915123, -118.432624; '200 yards south of the Hyperion 1-mile outfall') as a position",
+      "kind": "web page",
+      "where": "https://en.wikipedia.org/wiki/Chevron_Reef",
+      "checked": "2026-10-05",
+      "by": "agent: Pratte's verifier (cloud)",
+      "result": "wrong site",
+      "detail": "Three published coordinates differ by 313 m and none fits the primary sources: the Wikipedia point lies in open water about 280-290 m offshore of the dry-sand edge. The model position (33.92058, -118.43335, +-150 m) was instead read from the survey window of Fig 9 in Borrero and Nelsen (2003). The Wikipedia page itself gives no plan view.",
+      "might_work": "Google Earth Pro history (Lior: G1) and the authors (E1) for a fixed position"
+    },
+    {
+      "what": "californiacoastline.org California Coastal Records Project oblique aerials 2002-2010 of Pratte's Reef",
+      "kind": "imagery",
+      "where": "https://www.californiacoastline.org",
+      "checked": "2026-10-05",
+      "by": "agent: Pratte's tracer (cloud)",
+      "result": "bot check (not bypassed)",
+      "detail": "HTTP 403 to automated fetch, so the 2002-2010 oblique aerials (taken while the reef was in place) could not be used; none would give a scaled plan anyway, but they could show the bag layout.",
+      "might_work": "Lior in a normal browser: look for aerials of the reef 2002-2008 and save them"
+    },
+    {
+      "what": "Surfline 'SANDBAGGED' (Fontaine 2008, 'After years of unspectacular closeouts Pratte's Reef is removed', card R7)",
+      "kind": "web page",
+      "where": "https://www.surfline.com/surf-news/after-years-of-unspectacular-closeouts-prattes-reef-is-removed-from-el-segundo-sandbagged_19261/",
+      "checked": "2026-10-10",
+      "by": "agent: Pratte's source audit / verification (cloud); card research 2026-09-24",
+      "result": "bot check (not bypassed)",
+      "detail": "HTTP 403 to WebFetch and a Cloudflare challenge that was not bypassed; the verification pass and the 2026-10-10 re-verification could not re-fetch it. The card research (2026-09-24) recorded it as read through the browser pane, so the runs disagree. Its '8 feet deep at zero tide' quote is carried only as the upper bound of the crest-depth uncertainty (not used otherwise). A Surfline removal photo URL also gave 403 via S3.",
+      "might_work": "Lior in a browser to confirm the quote and date"
+    },
+    {
+      "what": "Leidersdorf, Richmond and Nelsen (2011) ASCE paper on Pratte's Reef (ascelibrary.org / ResearchGate copy)",
+      "kind": "paper",
+      "where": "ascelibrary.org (paper page); researchgate.net copy",
+      "checked": "2026-09-24",
+      "by": "agent: Pratte's card research (cloud)",
+      "result": "paywalled",
+      "detail": "HTTP 403 on both; inaccessible and not cited anywhere in the dossier. Title not recorded in the notes. It might hold post-removal monitoring or the as-built layout.",
+      "might_work": "Lior: ASCE library access or the authors (E1)"
+    },
+    {
+      "what": "Text-only web pages on Pratte's Reef: Wikipedia 'Chevron Reef', Beachapedia 'Pratte's Reef', Coastal Frontiers removal page, Surfrider removal news, CEQAnet 1997121007",
+      "kind": "web page",
+      "where": "https://en.wikipedia.org/wiki/Chevron_Reef ; https://beachapedia.org/Pratte's_Reef ; https://www.coastalfrontiers.com/removal-of-prattes-reef ; https://www.surfrider.org/news/asr-removal-in-el-segundo-ca ; CEQAnet 1997121007",
+      "checked": "2026-10-05",
+      "by": "agent: Pratte's tracer and verifier (cloud)",
+      "result": "no plan or figure",
+      "detail": "All carry only dates and counts (110 bags fall 2000, +90 spring 2001, removal 2008-2010) with no layout figure; CEQAnet attachments are gone. These facts are card references; the plan-view part failed. Beachapedia also needed the browser pane (HTTP 403 to WebFetch).",
+      "might_work": ""
+    },
+    {
+      "what": "ICCE 2010 Borrero paper (pdfs.semanticscholar.org 8672e1bb...) and Nelsen (2012) UCLA dissertation: plan view or layout of Pratte's Reef",
+      "kind": "paper",
+      "where": "https://pdfs.semanticscholar.org/8672/e1bb2043e0a227ce0e2ef6e01dd01bc8729e.pdf ; public.surfrider.org/files/nelsen/ (Nelsen 2012 dissertation)",
+      "checked": "2026-10-05",
+      "by": "agent: Pratte's tracer and verifier (cloud)",
+      "result": "no plan or figure",
+      "detail": "ICCE 2010 gives text only for Pratte's (110 geocontainers, 7.9 m3 maximum, 80-90 % filled, outermost point 1.8 m below MLLW after install, April 2001 +90 bags and crest within 1 m of MLLW) with no plan view; the '4 x 7 x 10 ft' bag size is not in its text. Nelsen 2012 has three passing mentions and no figure. Neither was saved.",
+      "might_work": ""
+    },
+    {
+      "what": "USGS / CSMP California State Waters bathymetry for Santa Monica Bay at 2 m resolution (0-10 m depth zone off El Segundo)",
+      "kind": "database",
+      "where": "USGS California State Waters Mapping Program; NOAA DEM already includes CSUMB multibeam",
+      "checked": "2026-10-05",
+      "by": "agent: Pratte's 3D agent (cloud)",
+      "result": "not found",
+      "detail": "Not located at 2 m resolution for the 0-10 m zone; the NOAA DEM (which already includes CSUMB multibeam) was used for the seabed. Navionics contour counting at the revised reef position was also less reliable (4 of 12 depth labels reproduced; deeper labels off by 1-3 lines), so the DEM, not the chart, supplies the seabed.",
+      "might_work": "Lior: Navionics app readings (REQUESTS section 5, Pratte's B1-B7)"
+    },
+    {
+      "what": "Gemini's Pratte's sources: footprint 40 x 20 m (584-650 m2), 'CCC permit CDP 5-97-283 (1998)', Coastal Frontiers (2009) report, Surfline removal photo, surfrider.org policy URL, Bar and Drimer (2023) JMSE 11(2) 236",
+      "kind": "report",
+      "where": "Gemini reef_footprints.json and reference list (read-only); the named URLs",
+      "checked": "2026-10-10",
+      "by": "agent: Pratte's tracer, verifier and re-verification (cloud)",
+      "result": "not found",
+      "detail": "'40 x 20 m VERIFIED' rests on Lior's image26 composite, whose single 200 m bar is not valid across its panels; the polygon is contradicted by the scaled Skelly drawing (58 x 29 m). The permit number 5-97-283 does not exist: the real record is Coastal Commission staff report W5a-10-1998 (E-98-15, a 1996 concept, wings 150 ft), which is the wrong design version for the built reef. The Coastal Frontiers 2009 report does not exist publicly. The Surfline photo URL gave 403, the surfrider.org policy URL 404, and Bar and Drimer (2023) names Pratte's once with no dimension (its real title differs from Gemini's). Gemini lead not confirmed; nothing used.",
+      "might_work": ""
+    },
+    {
+      "what": "EMODnet Bathymetry DTM 2024 (viewer, REST, ERDDAP) for seabed depth at the reef",
+      "kind": "database",
+      "where": "https://emodnet.ec.europa.eu/geoviewer/ ; EMODnet Bathymetry REST depth_sample / ERDDAP bathymetry_dtm_2024 at 33.9151, -118.4326",
+      "checked": "2026-10-06",
+      "by": "agent: EMODnet bathymetry agent (cloud)",
+      "result": "not found",
+      "detail": "EMODnet covers European seas only; the REST service returns HTTP 204 (empty) at this reef's coordinate (USA (California)), so the site is outside the grid. Only two of the 13 reefs are covered (Boscombe, Borth). Do not retry EMODnet for this reef.",
+      "might_work": "Local sources instead: national or state bathymetry, a council or authority survey, Navionics / Google Earth readings (see REQUESTS_FOR_LIOR.md section 5)"
+    }
+  ]
+}

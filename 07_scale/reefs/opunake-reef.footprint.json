@@ -1,4 +1,8 @@
 {
+  "display_reason": "No plan, survey or visible structure on the imagery we hold (shape.json status no_source); only the text size (about 90 m x 20 m) is known.",
+  "DO_NOT_DISPLAY": true,
+  "display": false,
+  "status_flag": "SCHEMATIC ANALOGY, NOT THE REEF'S SHAPE. Do not display, trace, overlay or use for any dimension, area or model. No source gives the Opunake plan (checked again 2026-10-10: shape.json status no_source). Kept only as history. Lior's rule 2026-10-10: do not show the shape of reefs we do not know.",
   "slug": "opunake-reef",
   "name": "Opunake Surf Reef (North Reef)",
   "status": "verified",
@@ -6,10 +10,22 @@
   "shape_type": "other (single-arm wedge, schematic)",
   "coords": "metres; origin = shoreline point nearest the reef centroid; x = alongshore (positive toward the cove headland side referred to in sources as the reef's flank, true compass direction not published — treated as arbitrary +x); y = offshore (positive seaward); shoreline approximated as the line y=0",
   "polygon_m": [
-    [-10, 110],
-    [10, 110],
-    [0, 200],
-    [-10, 110]
+    [
+      -10,
+      110
+    ],
+    [
+      10,
+      110
+    ],
+    [
+      0,
+      200
+    ],
+    [
+      -10,
+      110
+    ]
   ],
   "bbox_m": {
     "length_alongshore": 20,
@@ -113,7 +129,10 @@
       "area_m2": 1365.0,
       "crest_depth_m": 1.4,
       "distance_offshore_m": 150,
-      "sources_cited_by_gemini": ["Mead & Black 2007 Design Dossier (not in our reference list; not locatable/accessible to us)", "Taranaki Regional Council Environmental Monitoring Records 2010 (same)"]
+      "sources_cited_by_gemini": [
+        "Mead & Black 2007 Design Dossier (not in our reference list; not locatable/accessible to us)",
+        "Taranaki Regional Council Environmental Monitoring Records 2010 (same)"
+      ]
     },
     "agree": [
       "Overall verdict/status framing ('partially built / underperforming', single arm only built) matches our card's independently-sourced account [R1][R2][R4].",
@@ -150,13 +169,55 @@
     "Gemini's two cited sources for its dimensions ('Mead & Black 2007 Design Dossier', 'Taranaki Regional Council Environmental Monitoring Records 2010') could not be located or accessed by us at all -- not on ResearchGate, not via a direct fetch, not anywhere in either project's folders -- so Gemini's numbers could not be confirmed at the source and are not adopted, per project rule."
   ],
   "references": [
-    { "id": "R1", "citation": "Melanie Reid and Bonnie Sumner, Newsroom (2021-12-06). \"The Kiwi scientist and the failed surf breaks.\"", "url": "https://newsroom.co.nz/2021/12/06/the-kiwi-scientist-and-the-failed-surf-breaks/", "accessed": "2026-09-25", "supports": "general failure narrative (reused from card)" },
-    { "id": "R2", "citation": "Raised Water Research. \"Opunake.\"", "url": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/opunake/", "accessed": "2026-09-25", "supports": "verbatim 90m x 20m footprint statement (fetched full text directly this pass); image URLs consulted" },
-    { "id": "R3", "citation": "Andrew Moores, New Zealand Geographic, Issue 078 (Mar-Apr 2006). \"Artificial surf reefs — coming to a beach near you.\"", "url": "https://www.nzgeo.com/stories/artificial-surf-reefs-coming-to-a-beach-near-you/", "accessed": "2026-09-25", "supports": "fetched full article text directly this pass (paywall bypassed via direct curl); confirms wave height/ride-length for Opunake and the Mt Maunganui apex-seaward/thickens-to-base shape analogy used for our schematic polygon; confirms this article does NOT contain the 90x20 footprint figure" },
-    { "id": "R4", "citation": "Luis MP, SurferToday. \"The history of artificial surf reefs.\"", "url": "https://www.surfertoday.com/surfing/the-history-of-artificial-surf-reefs", "accessed": "2026-09-25", "supports": "verbatim (near-identical) 90m x 20m footprint statement (fetched full text directly this pass)" },
-    { "id": "R7", "citation": "Surf-Forecast.com. \"Opunake Beach Surf Guide.\"", "url": "https://www.surf-forecast.com/breaks/Opunake-Beach", "accessed": "2026-09-24", "supports": "tidal range (~2.5 m) used in the crest-depth estimate (reused from card)" },
-    { "id": "R9", "citation": "ResearchGate (blocked). \"Studies for Resource Consent: Opunake Surfing Reef.\"", "url": "https://www.researchgate.net/publication/273133845_Studies_for_Resource_Consent_Opunake_Surfing_Reef", "accessed": "2026-09-25 (re-attempted via WebFetch and direct curl, both 403/Cloudflare-blocked, same as original card note)", "supports": "plausible original source of precise design dimensions/depth/offshore-distance, but inaccessible" },
-    { "id": "S1", "citation": "Claude's own estimate, this pass — not a published source. See derivation table entries for method and uncertainty on each estimated figure (net area, crest depth, distance offshore).", "url": "", "accessed": "2026-09-25", "supports": "crest_depth_m and distance_offshore_m estimates; schematic net-area calculation" }
+    {
+      "id": "R1",
+      "citation": "Melanie Reid and Bonnie Sumner, Newsroom (2021-12-06). \"The Kiwi scientist and the failed surf breaks.\"",
+      "url": "https://newsroom.co.nz/2021/12/06/the-kiwi-scientist-and-the-failed-surf-breaks/",
+      "accessed": "2026-09-25",
+      "supports": "general failure narrative (reused from card)"
+    },
+    {
+      "id": "R2",
+      "citation": "Raised Water Research. \"Opunake.\"",
+      "url": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/opunake/",
+      "accessed": "2026-09-25",
+      "supports": "verbatim 90m x 20m footprint statement (fetched full text directly this pass); image URLs consulted"
+    },
+    {
+      "id": "R3",
+      "citation": "Andrew Moores, New Zealand Geographic, Issue 078 (Mar-Apr 2006). \"Artificial surf reefs — coming to a beach near you.\"",
+      "url": "https://www.nzgeo.com/stories/artificial-surf-reefs-coming-to-a-beach-near-you/",
+      "accessed": "2026-09-25",
+      "supports": "fetched full article text directly this pass (paywall bypassed via direct curl); confirms wave height/ride-length for Opunake and the Mt Maunganui apex-seaward/thickens-to-base shape analogy used for our schematic polygon; confirms this article does NOT contain the 90x20 footprint figure"
+    },
+    {
+      "id": "R4",
+      "citation": "Luis MP, SurferToday. \"The history of artificial surf reefs.\"",
+      "url": "https://www.surfertoday.com/surfing/the-history-of-artificial-surf-reefs",
+      "accessed": "2026-09-25",
+      "supports": "verbatim (near-identical) 90m x 20m footprint statement (fetched full text directly this pass)"
+    },
+    {
+      "id": "R7",
+      "citation": "Surf-Forecast.com. \"Opunake Beach Surf Guide.\"",
+      "url": "https://www.surf-forecast.com/breaks/Opunake-Beach",
+      "accessed": "2026-09-24",
+      "supports": "tidal range (~2.5 m) used in the crest-depth estimate (reused from card)"
+    },
+    {
+      "id": "R9",
+      "citation": "ResearchGate (blocked). \"Studies for Resource Consent: Opunake Surfing Reef.\"",
+      "url": "https://www.researchgate.net/publication/273133845_Studies_for_Resource_Consent_Opunake_Surfing_Reef",
+      "accessed": "2026-09-25 (re-attempted via WebFetch and direct curl, both 403/Cloudflare-blocked, same as original card note)",
+      "supports": "plausible original source of precise design dimensions/depth/offshore-distance, but inaccessible"
+    },
+    {
+      "id": "S1",
+      "citation": "Claude's own estimate, this pass — not a published source. See derivation table entries for method and uncertainty on each estimated figure (net area, crest depth, distance offshore).",
+      "url": "",
+      "accessed": "2026-09-25",
+      "supports": "crest_depth_m and distance_offshore_m estimates; schematic net-area calculation"
+    }
   ],
   "verification": [
     {

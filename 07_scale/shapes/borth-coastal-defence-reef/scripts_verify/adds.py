@@ -2,7 +2,7 @@ import json, math, pickle, numpy as np
 from pyproj import Transformer
 from shapely.geometry import Polygon
 D="C:/Users/lior/AppData/Local/Temp/claude/C--/cd973dbd-a674-4cd5-adf1-ffb4c361545f/scratchpad/borth_verify"
-base="C:/Users/lior/Documents/Gemini/AG/Artificial reef - to upload to git/07_scale/shapes/borth-coastal-defence-reef"
+base="C:/Users/lior/Documents/Claude/Projects/Artificial reef/07_scale/shapes/borth-coastal-defence-reef"
 R=6378137.0
 sh=json.load(open(base+"/shape.json",encoding='utf-8'))
 g24=json.load(open(base+"/src/borth_esri_2024-09-17_z19.png.geo.json")); gsh=json.load(open(base+"/src/borth_shoreline_z19.png.geo.json"))

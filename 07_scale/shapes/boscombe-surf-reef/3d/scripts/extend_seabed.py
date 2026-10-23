@@ -9,7 +9,7 @@ reef (code 2), and therefore the whole reef surface, is left exactly as built.
                              survey of CCO_DATE, Elevation_OD (= m ODN), interpolated alongshore between the profile lines   -> code 3
   transition y 0 .. y_end+L  base seabed (thin-plate-spline extrapolation of the Fig. 9 survey, unchanged) + the residual
                              (CCO - base) at the seaward end of each profile line, decaying to 0 over L = 40 m                -> code 3 (data, y <= y_end) / 4 (decay)
-  offshore   y 380 .. 650    z(y) = z_model(x, 380) - 0.0141 (y - 380)  (EMODnet DTM 2024 slope, REPORT 9.1), +-1.2 m          -> code 5
+  offshore   y 380 .. 650    z(y) = mean_x z_model(x, 380) [flat alongshore, D2] - 0.0141 (y - 380)  (EMODnet DTM 2024 slope, REPORT 9.1), +-0.5 m          -> code 5
 
 Datum: CCO Elevation_OD is metres above Ordnance Datum Newlyn.  The model zero is MSL and ODN ~ MSL (assumption A4, +-0.1 m), so
 z_MSL = z_ODN.  Heights taken from the Fig. 9 survey are z_MSL = z_ACD - 1.40 (E6).
@@ -28,7 +28,8 @@ CCO_DATE_CHECK = ["2009-09-22", "2009-11-30", "2011-03-23", "2011-09-15"]   # ot
 BEACH_Y0 = -66.0                 # top of the grid (back of the beach, z about +3.3 m ODN)
 OFFSHORE_Y1 = 650.0
 EMODNET_SLOPE = 0.0141           # m per m, EMODnet DTM 2024 REPORT 9.1 (+-0.0010)
-EMODNET_UNC = 1.2                # m (1 sd; Navionics z16 check, 11 soundings: rms 1.2 m; REPORT 9.1 had +-1.0 m)
+OFFSHORE_FLATTEN = True          # D2 2026-10-10: flatten row y = 380 and the offshore rows alongshore (set False to reproduce the pre-D2 model)
+EMODNET_UNC = 0.5                # m (1 sd; D2 2026-10-10: Navionics z16 check, 11 soundings, rms 0.5 m after flattening row 380; was 1.2 m with the alongshore tilt)
 BLEND_L = 40.0                   # m, decay length of the CCO offset beyond the seaward end of each profile line
 CELL = 2.0
 ALL_LINES = ["5f00424", "5f00424A", "5f00425", "5f00425A", "5f00426", "5f00426A", "5f00427", "5f00427A", "5f00428", "5f00428A", "5f00429"]
@@ -115,7 +116,13 @@ def extend(xs, base_msl, code, lines=None, ys_new=None):
         code_mid[r] = cc.astype(np.uint8)
 
     # ---- offshore rows: EMODnet slope from the last row
-    z380 = base_msl[-1]
+    # D2 (2026-10-10): the row y = 380 is a thin-plate-spline extrapolation with an alongshore tilt of +0.76 m per 100 m of x that does not
+    # exist in the EMODnet DTM nor in the Navionics soundings.  It is replaced by its alongshore mean (all 161 cells of the row are code 1,
+    # asserted); the EMODnet cross-shore gradient is kept, so z(x,y) = mean(z(.,380)) - 0.0141 (y - 380) for y >= 380.
+    assert nx == base_msl.shape[1] and (code[-1] == 1).all(), "row y = 380 must be entirely code 1 (extrapolated)"
+    row380_orig = base_msl[-1].copy()
+    z380 = np.full(nx, float(row380_orig.mean())) if OFFSHORE_FLATTEN else row380_orig
+    z_mid[-1] = z380
     z_off = np.array([z380 - EMODNET_SLOPE * (y - 380.0) for y in ys_off])
 
     ys = np.concatenate([ys_beach, ys0, ys_off])

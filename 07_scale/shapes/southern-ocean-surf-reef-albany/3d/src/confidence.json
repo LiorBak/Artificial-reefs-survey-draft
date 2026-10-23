@@ -1,0 +1,4 @@
+{
+ "level": "low",
+ "reason": "The plan outline is high-confidence and the crest levels are City design values, but the seabed under the reef (and so the height of the rock pile) comes from a 2015 design contour plot of unknown datum, georeferenced by hand, and it disagrees with a 2018 sounding near the shore by about 1.6 m; no as-built or bathymetric survey was found. The rock volume of the default outline is fitted to the City figure, so it is not an independent check."
+}

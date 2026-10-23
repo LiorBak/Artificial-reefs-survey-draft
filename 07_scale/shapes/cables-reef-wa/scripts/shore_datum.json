@@ -1,0 +1,17 @@
+{
+ "anchor_to_0mAHD_m_by_bearing_deg": {
+  "80": 263.0,
+  "90": 254.0,
+  "100": 263.0
+ },
+ "shoreline_bearing_deg_T": 7.8,
+ "shoreline_fit_rows": 40,
+ "BoM_Fremantle_MSL_above_gauge_zero_mean_of_annual_means_1992_2011_m": 0.773,
+ "n_years": 20,
+ "BoM_page_mean_sea_level_all_record_m": 0.718,
+ "BoM_page_max_recorded_m": 1.947,
+ "BoM_page_max_when": "0100 hours 16/05/2003",
+ "BoM_page_min_recorded_m": -0.1,
+ "BoM_page_min_when": "0100 hours 01/01/1987",
+ "note": "gauge zero = Fremantle Low Water Datum (BoM NTC metadata 62230); monthly means are above that zero; the page's year labels start at 1900 (as printed)"
+}

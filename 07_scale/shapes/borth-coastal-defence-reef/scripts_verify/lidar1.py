@@ -5,7 +5,7 @@ from shapely.geometry import Polygon
 from PIL import Image, ImageDraw
 D=r"C:\Users\lior\AppData\Local\Temp\claude\C--\cd973dbd-a674-4cd5-adf1-ffb4c361545f\scratchpad\borth_verify\dl"
 dsm=tifffile.imread(D+r"\wg_dsm_SN6089.tif"); dtm=tifffile.imread(D+r"\wg_dtm_SN6089.tif")
-base=r"C:\Users\lior\Documents\Gemini\AG\Artificial reef - to upload to git\07_scale\shapes\borth-coastal-defence-reef"
+base=r"C:\Users\lior\Documents\Claude\Projects\Artificial reef\07_scale\shapes\borth-coastal-defence-reef"
 sh=json.load(open(base+r"\shape.json",encoding='utf-8'))
 tf=Transformer.from_crs('EPSG:4326','EPSG:27700',always_xy=True)
 polys_en=[]

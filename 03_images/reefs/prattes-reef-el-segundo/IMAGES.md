@@ -883,3 +883,145 @@ Source of truth: `images.json` in this folder (convention: `_agent_briefs/image_
 - **rights**: Private research copy; reuse rights to be checked before any public release.
 - **display in HTML**: True
 - **added by**: image-registry backfill, 2026-10-06
+
+## prattes-reef-el-segundo-img-33 - Blacka et al. (2013) Fig. 2.19: placement of smaller geotextile bags by sling at Pratte's Reef
+- **file**: `03_images/reefs/prattes-reef-el-segundo/prattes-reef-el-segundo_p8-fig2-19-bags-sling_2000.png`
+- **kind**: report_photo
+- **shows**: Three photos: a crane barge with bags on deck, a bag lowered on slings, and a bag lifted by slings from a quay.
+- **structure visible**: False
+- **state shown**: as-built (construction, Phase 1)
+- **image date**: 2000 (construction)
+- **citation**: Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08 (Final, 11 June 2013), UNSW Water Research Laboratory, for the NSW Office of Environment and Heritage. p.36 (PDF p.48), Figure 2.19; credit Borrero and Nelson (2003); Jackson and Corbett (2007). https://doi.org/10.4225/53/58e1dc7368c7a. Accessed 2026-10-07.
+- **image URL**: https://doi.org/10.4225/53/58e1dc7368c7a
+- **source page**: https://doi.org/10.4225/53/58e1dc7368c7a
+- **page / figure**: report p.36 (PDF p.48), Figure 2.19 (clip, 200 dpi)
+- **credit**: Borrero and Nelson (2003); Jackson and Corbett (2007) as reproduced in Blacka et al. (2013)
+- **licence**: CC BY-NC-ND 3.0 AU (as recorded in REQUESTS_FOR_LIOR.md P8; not re-checked on the PDF)
+- **retrieved**: 2026-10-10
+- **used for**: context, scale
+- **How used for the model**: Gives bag size by eye only (card/ICCE give 3.0 x 2.1 x 1.2 m); no measurement taken.
+- **3D check pending**: no - none
+- **linked records**: 05_qa/papers_intake/P8_blacka_2013.md
+- **size**: 1.75 MB, 1348x1115 px
+- **sha256**: 234bfaab20f1379e9acd225db0ed66c16a5f46076f41091e0682dd3810ac8d81
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: papers intake P3/P8, 2026-10-10
+
+## prattes-reef-el-segundo-img-34 - Blacka et al. (2013) Fig. A.16: location of Prattes MPR, El Segundo, California (satellite)
+- **file**: `03_images/reefs/prattes-reef-el-segundo/prattes-reef-el-segundo_p8-figA16-location_2013.png`
+- **kind**: satellite
+- **shows**: Satellite map showing the refinery groyne area and the reef marker off El Segundo; 1 km scale bar.
+- **structure visible**: False
+- **state shown**: context (location)
+- **image date**: unknown (imagery before 2013)
+- **citation**: Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08 (Final, 11 June 2013), UNSW Water Research Laboratory, for the NSW Office of Environment and Heritage. p.115 (PDF p.127), Figure A.16. https://doi.org/10.4225/53/58e1dc7368c7a. Accessed 2026-10-07.
+- **image URL**: https://doi.org/10.4225/53/58e1dc7368c7a
+- **source page**: https://doi.org/10.4225/53/58e1dc7368c7a
+- **page / figure**: report p.115 (PDF p.127), Figure A.16 (clip, 200 dpi)
+- **credit**: Blacka et al. (2013) over satellite imagery (provider not stated)
+- **licence**: CC BY-NC-ND 3.0 AU (as recorded in REQUESTS_FOR_LIOR.md P8; not re-checked on the PDF)
+- **retrieved**: 2026-10-10
+- **used for**: context
+- **How used for the model**: Location context only.
+- **3D check pending**: no - none
+- **linked records**: 05_qa/papers_intake/P8_blacka_2013.md
+- **size**: 1.54 MB, 1209x729 px
+- **sha256**: c0397d1a46534b4c33d9804465dec1d3bb1a6d13ec11fb23c9d5c98495e570bb
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: papers intake P3/P8, 2026-10-10
+
+## prattes-reef-el-segundo-img-35 - Blacka et al. (2013) Fig. A.17: design of the Prattes ASR (after Leidersdorf et al. 2011), V layout 95 ft x 210 ft, 45 degrees
+- **file**: `03_images/reefs/prattes-reef-el-segundo/prattes-reef-el-segundo_p8-figA17-design-leidersdorf_2000.png`
+- **kind**: design_drawing
+- **shows**: Plan drawing of the V-shaped bag layout with the apex offshore, labelled dimensions 95 ft (cross-shore) and 210 ft (alongshore), 45 degree arms, wave direction arrow.
+- **structure visible**: True
+- **state shown**: design (Phase 1, 110 bags)
+- **image date**: 2000 (design, pre-construction)
+- **citation**: Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08 (Final, 11 June 2013), UNSW Water Research Laboratory, for the NSW Office of Environment and Heritage. p.116 (PDF p.128), Figure A.17. https://doi.org/10.4225/53/58e1dc7368c7a. Accessed 2026-10-07.
+- **image URL**: https://doi.org/10.4225/53/58e1dc7368c7a
+- **source page**: https://doi.org/10.4225/53/58e1dc7368c7a
+- **page / figure**: report p.116 (PDF p.128), Figure A.17 (clip, 200 dpi); original Leidersdorf et al. (2011)
+- **credit**: Leidersdorf et al. (2011) as reproduced in Blacka et al. (2013)
+- **licence**: CC BY-NC-ND 3.0 AU (as recorded in REQUESTS_FOR_LIOR.md P8; not re-checked on the PDF)
+- **retrieved**: 2026-10-10
+- **used for**: scale, cross_check
+- **How used for the model**: Dimensions read: 95 ft = 29 m and 210 ft = 64 m, matching Blacka Table 4.2 (64 m x 29 m). Cross-check for the Skelly/Borrero drawings already registered (img-04, img-09, img-28).
+- **3D check pending**: yes - Overall footprint 64 m x 29 m, arms at 45 degrees: compare with the traced Prattes shape (Phase 1 only; Phase 2 added 90 bags).
+- **linked records**: 05_qa/papers_intake/P8_blacka_2013.md
+- **size**: 0.14 MB, 834x1001 px
+- **sha256**: 1052012bfbd94abb0a72b2adb89dac9d1522c36b7a73dfc31d2ce2ec486e2cec
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: papers intake P3/P8, 2026-10-10
+
+## prattes-reef-el-segundo-img-36 - Blacka et al. (2013) Fig. A.18: removal methods used for Prattes Reef (after Leidersdorf et al. 2011)
+- **file**: `03_images/reefs/prattes-reef-el-segundo/prattes-reef-el-segundo_p8-figA18-removal-methods_2008.png`
+- **kind**: diagram
+- **shows**: Two schematic sections: vessel-based winch removal and shore-based bulldozer/winch removal with divers attaching slings.
+- **structure visible**: False
+- **state shown**: removal
+- **image date**: 2008-2010 (removal)
+- **citation**: Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08 (Final, 11 June 2013), UNSW Water Research Laboratory, for the NSW Office of Environment and Heritage. p.119 (PDF p.131), Figure A.18. https://doi.org/10.4225/53/58e1dc7368c7a. Accessed 2026-10-07.
+- **image URL**: https://doi.org/10.4225/53/58e1dc7368c7a
+- **source page**: https://doi.org/10.4225/53/58e1dc7368c7a
+- **page / figure**: report p.119 (PDF p.131), Figure A.18 (clip, 200 dpi)
+- **credit**: Leidersdorf et al. (2011) as reproduced in Blacka et al. (2013)
+- **licence**: CC BY-NC-ND 3.0 AU (as recorded in REQUESTS_FOR_LIOR.md P8; not re-checked on the PDF)
+- **retrieved**: 2026-10-10
+- **used for**: context
+- **How used for the model**: Context for the removal state of the card; no model use.
+- **3D check pending**: no - none
+- **linked records**: 05_qa/papers_intake/P8_blacka_2013.md
+- **size**: 0.54 MB, 862x1084 px
+- **sha256**: b7fc2e97c754bddaa23969086c23e5f56c34608e15c1cda6f8fdb9db00f0e6b5
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: papers intake P3/P8, 2026-10-10
+
+## prattes-reef-el-segundo-img-37 - Borrero & Nelsen (2003) Fig. 4 'The design layout of Pratte's Reef' (original raster) with the traced outline drawn on it
+- **file**: `07_scale/shapes/prattes-reef-el-segundo/src/bn2003_fig4_design_layout_raster.png`
+- **annotated**: `07_scale/shapes/prattes-reef-el-segundo/overlays/bn2003_fig4_with_img5_outline_2026-10-10.png`
+- **kind**: design_drawing
+- **citation**: Borrero, J.C. & Nelsen, C. (2003). Results of a comprehensive monitoring program at Pratte's Reef. Proc. 3rd International Surfing Reef Symposium, Raglan, New Zealand (venue/year per the project's earlier citation R23; the supplied 16-page PDF prints neither), p.3, Figure 4. PDF supplied by Lior (his Downloads\Pratte_results.pdf; original URL unknown; also on ResearchGate, publication 293137985). Accessed 2026-10-05; figure extracted 2026-10-10.
+- **image URL / source page**: https://www.researchgate.net/publication/293137985
+- **page / figure**: p.3, Figure 4 (embedded raster extracted from the PDF)
+- **credit**: J.C. Borrero & C. Nelsen; drawing by Skelly Engineering
+- **licence**: copyright holder; private research copy, reuse not cleared
+- **image date**: 2003 (drawing 2000)
+- **retrieved**: 2026-10-10
+- **shows**: The Skelly Engineering design layout (110 bags + 30 optional, 0-90 ft bar, 45 deg mark, TOP OF BAG MIN DEPTH -6' MSL) as printed in the paper; same raster as img5. The annotated version has the shape.json img5 outline in red on it, following the solid bag strokes.
+- **used for**: plan_trace; scale; cross_check
+- **How used for the model**: Re-verification 2026-10-10: proved to be the same drawing as img1 (bar 1.789 px/ft, same call-outs) and to carry the img5 outline unchanged; the paper has no as-built plan. No new value (shape.json verification item 9, VERIFY.md).
+- **3D check pending**: no - none: checked 2026-10-10, no model value changes
+- **source PDF**: `07_scale/shapes/prattes-reef-el-segundo/src/borrero_nelsen_2003_prattes_monitoring_results.pdf`
+- **linked records**: 07_scale/shapes/prattes-reef-el-segundo/VERIFY.md (re-verification 2026-10-10); 07_scale/shapes/prattes-reef-el-segundo/sources.md (added 2026-10-10)
+- **size**: 65287 bytes, 371x468 px
+- **sha256**: 340ae12f02cf6cfdfc8d176cd52314d2e63be2fe3215ba480c4bfe771730c9a9
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: Pratte's re-verification, 2026-10-10
+
+## prattes-reef-el-segundo-img-38 - Borrero & Nelsen (2003) Fig. 20 'A comparison between Pratte's Reef and Narrowneck Reef' (original raster) with the re-measurement marked
+- **file**: `07_scale/shapes/prattes-reef-el-segundo/src/bn2003_fig20_pratte_vs_narrowneck_raster.png`
+- **annotated**: `07_scale/shapes/prattes-reef-el-segundo/overlays/bn2003_fig20_pratte_scale_check_2026-10-10.png`
+- **kind**: diagram
+- **citation**: Borrero, J.C. & Nelsen, C. (2003). Results of a comprehensive monitoring program at Pratte's Reef. Proc. 3rd International Surfing Reef Symposium, Raglan, New Zealand (venue/year per the project's earlier citation R23; the supplied 16-page PDF prints neither), p.14, Figure 20 (the text calls it Figure 19). PDF supplied by Lior (his Downloads\Pratte_results.pdf; original URL unknown; also on ResearchGate, publication 293137985). Accessed 2026-10-05; figure extracted 2026-10-10.
+- **image URL / source page**: https://www.researchgate.net/publication/293137985
+- **page / figure**: p.14, Figure 20 (the text calls it Figure 19) (embedded raster extracted from the PDF)
+- **credit**: J.C. Borrero & C. Nelsen
+- **licence**: copyright holder; private research copy, reuse not cleared
+- **image date**: 2003 (drawing 2000)
+- **retrieved**: 2026-10-10
+- **shows**: The Pratte's V (5 x 5 spine grid, two-row arms, apex offshore) drawn at the same scale as Narrowneck on a 0-50 m bar; beach on the left, swell from the right. Annotated version marks bar and V extents.
+- **used for**: scale; cross_check
+- **How used for the model**: Re-verification 2026-10-10: bar 70 px = 50 m (1.40 px/m); V measures 82 px tip to tip = 58.5 m and 41 px cross-shore = 29.0 m, vs the outline's 58.0 x 28.6 m: an independent scale check, and the explanation of the text's 'extends 30' (VERIFY.md check 10; shape.json dimensions_check row 2).
+- **3D check pending**: no - none: checked 2026-10-10, no model value changes
+- **source PDF**: `07_scale/shapes/prattes-reef-el-segundo/src/borrero_nelsen_2003_prattes_monitoring_results.pdf`
+- **linked records**: 07_scale/shapes/prattes-reef-el-segundo/VERIFY.md (re-verification 2026-10-10); 07_scale/shapes/prattes-reef-el-segundo/shape.json dimensions_check
+- **size**: 113357 bytes, 576x282 px
+- **sha256**: be0c8dfb5a5d21a2da447be4e5af8f005aa2ff6bd68a1cc4f241ef7ebff73025
+- **rights**: Private research copy; reuse rights to be checked before any public release.
+- **display in HTML**: True
+- **added by**: Pratte's re-verification, 2026-10-10

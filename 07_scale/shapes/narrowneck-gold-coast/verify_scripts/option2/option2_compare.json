@@ -1,0 +1,90 @@
+{
+ "area_O2_-6": 13940.999050000004,
+ "area_O1_-6": 13244.834349999994,
+ "area_2004_-6": 13631.0879,
+ "frac_trace_arms_inside_O2": 0.965864293599748,
+ "frac_trace_arms_inside_O1": 0.95363487905407,
+ "frac_trace_arms_inside_2004": 0.94529692171268,
+ "frac_trace_N_inside_O2": 0.9686660545322089,
+ "frac_trace_S_inside_O2": 0.96132253187496,
+ "frac_trace_N_inside_2004": 0.9294111138624503,
+ "frac_trace_S_inside_2004": 0.9710484243571674,
+ "crest_loops_O2_bounds(minx,miny,maxx,maxy)": [
+  [
+   8.9,
+   246.8,
+   50.6,
+   317.6
+  ],
+  [
+   -57.3,
+   237.6,
+   -27.1,
+   312.4
+  ]
+ ],
+ "crest_loops_O1_bounds": [
+  [
+   13.8,
+   229.0,
+   55.5,
+   294.5
+  ],
+  [
+   -60.6,
+   217.1,
+   -31.1,
+   287.4
+  ]
+ ],
+ "crest_loops_2004_bounds": [
+  [
+   14.5,
+   229.1,
+   55.5,
+   286.4
+  ],
+  [
+   -60.1,
+   217.5,
+   -31.3,
+   279.3
+  ]
+ ],
+ "outer_O2_bounds": [
+  -79.4,
+  226.1,
+  68.2,
+  381.3
+ ],
+ "outer_O1_bounds": [
+  -80.8,
+  207.5,
+  72.1,
+  354.7
+ ],
+ "outer_2004_bounds": [
+  -89.4,
+  207.8,
+  75.8,
+  354.4
+ ],
+ "centroid_O2_N_half": null,
+ "translation_scan_half_vs_trace_arm": {
+  "N": {
+   "IoU_nominal": 0.49450392030661844,
+   "best_IoU": 0.5187985858977847,
+   "best_dx": -6,
+   "best_dy": -8,
+   "area_half_m2": 7090.165620218339
+  },
+  "S": {
+   "IoU_nominal": 0.31438316300498986,
+   "best_IoU": 0.33122147331368507,
+   "best_dx": 0,
+   "best_dy": -14,
+   "area_half_m2": 6850.83342978166
+  }
+ },
+ "note_IoU": "IoU is low by construction (design -6 envelope 6.6-7k m2 per half vs visible container field 2.3-3.7k m2); use the coverage fractions and the offsets of the extents"
+}

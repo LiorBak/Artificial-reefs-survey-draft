@@ -5,28 +5,28 @@
   "name": "Kovalam Reef (Lighthouse Beach)",
   "place": "Kovalam, Kerala",
   "country": "India",
-  "lat": 8.4004,
-  "lon": 76.9787,
+  "lat": 8.387313,
+  "lon": 76.975188,
   "year": "As-built: December 2009 - February 2010 [R1][R10]; one source gives April 2010 instead [R3] - unresolved. (An earlier, differently-scoped version was proposed in 2005 but not built then [R5].)",
   "type": "Non-woven geotextile sand-filled containers (\"Geotubes\"/bags), built in ~30 m-long units [R1][R2][R10]",
   "purpose": "Primary: coastal-erosion protection (monsoon wave energy) [R1][R10]. Secondary: surfing/tourism amenity and ecological benefit [R1][R5][R10]",
-  "size": "As-built total volume 4,800 m3, increased from an initial 3,000 m3 plan, shaped to produce a 100 m left-hand wave [R1][R10]. Crest/submergence depth: not found",
-  "cost": "As-built: Rs 75,000,000 [R1][R10]",
-  "cost_usd_approx": 1100000,
+  "size": "As-built total volume 4,800 m3, increased from an initial 3,000 m3 plan, shaped to produce a 100 m left-hand wave [R1][R10]. Crest/submergence depth: not found Sources disagree on volume: Mead & Borrero (2011, p.4) give 4,000 m3 [R13]; Blacka et al. (2013, Table 4.4) give A$1.41 M (2013) at A$351 per m3, which implies about 4,017 m3 [R14]; the card's 4,800 m3 comes from [R1][R10]. Unresolved (3,000 initial / 4,000 [R13] / 4,300 [R15] / 4,800 [R1][R10]). Rendle (2016, PhD thesis, Table 2.1, printed p.41 = PDF p.41, held in papers/) lists \"Kovalum\", 2010, Kerala, India, 4,300 m3 of sand-filled containers (SFC), with 1,640,321 in the table's first cost column (currency header not checked; added 2026-10-13) [R15]. Blacka et al. (2013, Table 4.2, report p.66) list a geotextile-container reef 65 m longshore x 85 m cross-shore, depth 1.3-3.7 m, 90 m offshore, submergence 0.2-3.4 m (a range; datum not stated; no nourishment) [R14]; site: tide range about 1.0 m, wave period 11-15 s, H 1-2.5 m (Table 4.3, p.68) [R14]. Shape model (this project's own trace, 07_scale/shapes/kovalam-reef-india/HANDOFF.md section 3, LOW confidence; Blacka et al. 2013 Fig 4.5 [R14]): the footprint was traced from one oblique, unscaled ASR aerial photo (registry img-07 = Blacka 2013 Fig 4.5) placed on the Esri 2011-02-28 frame with a fitted camera; the camera height is assumed (default 60 m; alternates 35 and 80 m). Default outline 59 x 41 m, 1,216 m2 (range 546-1,681 m2): measurements of this project's trace, shape.json canonical / HANDOFF.md section 3 (derived, not a source statement). The traced cross-shore size is 52 % below the 85 m of Blacka Table 4.2 [R14] (DERIVED: (85-41)/85); 4,000 m3 [R13] over 1,216 m2 would be a mean height of 3.3 m (DERIVED: 4,000/1,216), so the real footprint is probably larger (inference of this project, HANDOFF.md section 5). The card keeps the published text values and does not use the traced numbers. Open mismatch inside this project's own trace files (noted 2026-10-13, not resolved): the smallest-scale version (camera 35 m, area 640 m2) has bounding box 43 x 24 m in shape.json (outline_versions photo_trace_H35, HANDOFF.md 3.1; recomputed from its polygon vertices: x -77.0 to -34.3 = 42.7 m, y 58.5 to 82.6 = 24.1 m in the canonical frame, x along the swash line, bearing 196 deg) but 38 x 29 m (along_m, cross_m for H = 35) in rectify_result.json; both are max-minus-min extents (rectify_fit.py line 64, build_shape_json.py line 38) of the same shape, areas agree (640 / 641.5 m2), so the difference is most likely the axes used (the frame of the sweep script was not checked); SOURCE_AUDIT_2026-10-10.md row 10. Both are derived from this project's own trace, not source statements.",
+  "cost": "As-built: Rs 75,000,000 [R1][R10] Audit 2026-10-10: the earlier cost_usd_approx of 1,100,000 was an unsourced conversion (it corresponded to about Rs 68/US$) and was CORRECTED in the citations audit of 2026-10-10 to 1,580,000 = Rs 75,000,000 / 47.44 Rs per US$, the average rupee rate for financial year 2009-10 (RBI series as republished in the MoSPI dataset, found by web search 2026-10-10: https://dataful.in/datasets/586; the RBI table itself was not opened; RBI daily reference rates of 27 Apr 2010 Rs 44.45 and 15 Jun 2010 Rs 46.73 bracket it, https://website.rbi.org.in press releases 'RBI Reference Rate for US $ and Euro'). Range with those daily rates: US$1.6-1.7 M. DERIVED value, rate secondary (unconfirmed at the RBI table); the rupee figure [R1][R10] is the sourced one.",
+  "cost_usd_approx": 1580000,
   "financed_by": "India's Tsunami Rehabilitation Project, under the Planning Commission, Government of India [R1][R10]. (The 2005 proposal predating this funding was to be jointly implemented by Kerala Tourism, the Centre for Earth Science Studies (CESS), and the Department of Harbour Engineering [R5].)",
   "motivation": "Kerala Tourism pushed the idea as early as 2005, citing tourist safety, boosting water-sports tourism, monsoon-season erosion prevention, beach widening, and fishing-community benefit [R5]. The project actually built several years later was funded through post-tsunami rehabilitation money and engaged international specialist firm ASR Ltd rather than the original state team [R1][R5][R10]",
   "designer": "ASR Ltd (New Zealand-based multi-purpose/surf-reef design-and-build firm), project leads Chris Jensen and Nick Behunin [R1]",
-  "contractor": "Not separately named beyond ASR Ltd in sources found - not found",
-  "status_now": "Reported non-functional: containers torn, deflated, and sunk such that \"waves just roll over the reef now without even breaking\" [R1]. No formal removal documented; reef instead degraded in place [R1]. A separate, later (2021) Rs 8.35 crore erosion-protection/walkway project addressed \"recurring\" erosion at Kovalam's Samudra, Sea Rock, and Lighthouse beaches, not confirmed as a direct repair/successor [R6]. Kerala tourism-marketing pages currently advertise an \"Artificial Off Shore Coral Reef\" attraction at Kovalam, claimed to reduce erosion and support marine life; its identity/relationship to the 2009-10 ASR structure could not be confirmed [R9]",
+  "contractor": "Not separately named beyond ASR Ltd in the sources listed in References (negative search result of this card, not a sourced statement)",
+  "status_now": "Reported non-functional: containers torn, deflated, and sunk such that \"waves just roll over the reef now without even breaking\" [R1]. No formal removal documented; reef instead degraded in place [R1]. A separate, later (2021) Rs 8.35 crore erosion-protection/walkway project addressed \"recurring\" erosion at Kovalam's Samudra, Sea Rock, and Lighthouse beaches, not confirmed as a direct repair/successor [R6]. Kerala tourism-marketing pages currently advertise an \"Artificial Off Shore Coral Reef\" attraction at Kovalam, claimed to reduce erosion and support marine life; its identity/relationship to the 2009-10 ASR structure could not be confirmed [R9] Decision: verdict 'mixed' was assigned by the dossier agent (verified_on 2026-09-24), not by a source, because early reports were positive (Collins 2010 [R3], SURFER 2010 [R4], reef monitoring beach-width gains [R1][R13]) while later sources report the structure non-functional [R1][R2]; Blacka et al. (2013) still rated both objectives 'Yes' but preliminary [R14]. Counter-view: if the 2010-11 failure reports [R1] are taken at face value the verdict would be 'failed'.",
   "verdict": "mixed",
-  "hover_text": "A 4,800 m3 geotextile-bag reef built 2009-10 for ~Rs 75M (~US$1.1M) under India's post-tsunami rehabilitation fund; it briefly produced praised 7-10s rides and reportedly widened the beach, but containers began tearing within weeks and by 2010-11 the sunken structure no longer broke waves at all [R1][R10].",
+  "hover_text": "A 4,800 m3 geotextile-bag reef built 2009-10 for ~Rs 75M (~US$1.6M) under India's post-tsunami rehabilitation fund; it briefly produced praised 7-10s rides and reportedly widened the beach, but containers began tearing within weeks and by 2010-11 the sunken structure no longer broke waves at all [R1][R10].",
   "design_as_planned": "Two distinct designs exist from two project phases. 2005 proposal (not built as such): a 500 m-long submerged structure ~200 m offshore at Eve's Beach, 3-7 m water depth, non-woven geotextile bags filled with sand, engineered to block waves over 1 m and include a \"tranquil basin\" for fishing-boat movement while preserving the ecosystem [R5]; protection-first, closer to a detached breakwater/lagoon system. As-built ASR Ltd design (2009-10): a smaller, more surf-focused structure - 30 m geotextile bag units totalling 4,800 m3 (up from an initial 3,000 m3 plan), shaped to produce a 100 m left-hand surfable wave at Lighthouse Beach, promising \"lefts that provided 7-10 second rides,\" \"fun and open faced,\" with \"occasional head dip opportunity\" [R1][R10]. Coastal protection remained the primary stated purpose, with surf/ecology secondary [R1][R10]. No EIA/SIA/FIA was required before construction of the as-built reef [R1]",
   "as_built_vs_design": "Location shifted from the 2005 plan's Eve's/Hawah Beach to Lighthouse Beach [R1][R5][R10]. Scale shrank from a 500 m/200 m-offshore/3-7 m-deep structure [R5] to 4,800 m3 of material in 30 m units producing a 100 m wave [R1][R10], though no single directly comparable dimension confirms by how much the footprint shrank. The as-built project itself grew from an initial 3,000 m3 plan to 4,800 m3 during construction, a ~60% increase with no source explaining why [R1][R10]. Cost rose from the 2005 estimate of Rs 40.5M to the as-built Rs 75M (~US$1.1M), roughly 85% higher, though the two figures describe different-scope projects years apart [R1][R5][R10]. Design authority shifted from a Kerala Tourism/CESS/Harbour-Engineering effort to international firm ASR Ltd [R1][R5][R10]",
-  "outcome": "Initial surfing quality was described positively - 7-10 second-ride lefts, \"fun and open faced\" - per the reef's own before/after monitoring [R1]. Surf journalist Sean Collins, in a piece dated 29 April 2010 (reposted on surfingindia.net), called the wave potentially \"the best wave an artificial reef has ever created,\" possibly able to \"host an ASP World Tour event\" [R3]. This sits awkwardly against the failure timeline: Raised Water Research and an industry comparison site both state containers began tearing and washing ashore \"less than two weeks\" after inauguration, with the reef sinking so that by 2010-11 \"waves just roll over the reef now without even breaking\" (Jelle Rigole quote) [R1][R10]. A separate, unsigned Surfer.com piece of 6 May 2010 similarly quoted ASR Ltd's Chris Jensen, India Surf Club's Daruka Dasa, and an unnamed Kovalam Surf Club member, all positive about the reef in its first months [R4]. Sources found do not resolve this contradiction between contemporaneous positive surf-media coverage and rapid-failure accounts. Coastal protection: the reef's own monitoring showed the beach \"remained wider\" in both monsoon and non-monsoon seasons after installation, but this appears to describe only the initial period before structural failure [R1]. Ecology/fishing: local fishermen reported recovering \"damaged portions of the artificial reef rather than more fish,\" the opposite of the project's stated fish-attraction goal [R1][R5]",
+  "outcome": "Initial surfing quality was described positively - 7-10 second-ride lefts, \"fun and open faced\" - per the reef's own before/after monitoring [R1]. Surf journalist Sean Collins, in a piece dated 29 April 2010 (reposted on surfingindia.net), called the wave potentially \"the best wave an artificial reef has ever created,\" possibly able to \"host an ASP World Tour event\" [R3]. This sits awkwardly against the failure timeline: Raised Water Research and an industry comparison site both state containers began tearing and washing ashore \"less than two weeks\" after inauguration, with the reef sinking so that by 2010-11 \"waves just roll over the reef now without even breaking\" (Jelle Rigole quote) [R1][R10]. A separate, unsigned Surfer.com piece of 6 May 2010 similarly quoted ASR Ltd's Chris Jensen, India Surf Club's Daruka Dasa, and an unnamed Kovalam Surf Club member, all positive about the reef in its first months [R4]. Sources found do not resolve this contradiction between contemporaneous positive surf-media coverage and rapid-failure accounts. Coastal protection: the reef's own monitoring showed the beach \"remained wider\" in both monsoon and non-monsoon seasons after installation, but this appears to describe only the initial period before structural failure [R1]. Ecology/fishing: local fishermen reported recovering \"damaged portions of the artificial reef rather than more fish,\" the opposite of the project's stated fish-attraction goal [R1][R5] Mead & Borrero (2011), the reef's designers (interested party): weekly photo monitoring from the lighthouse platform showed the beach 10-15 m wider in the monsoon and up to 30 m wider in the non-monsoon season than before the reef (p.5, Fig. 7) [R13]. They say surfing worked because the lighthouse end was already an 'almost' break, swells were clean with light winds in the non-monsoon season, and the container orientation allowed relaxed construction tolerances; completed late February 2010; adopted by the Indian Surfing Association (p.4) [R13]. Blacka et al. (2013, p.70): the only multi-purpose reef with a significant positive shoreline effect so far (under 3 years monitored); both objectives rated 'Yes' but preliminary (Table 4.1); the Centre for Earth Science Studies assessment was pending; unpublished observations (E. Rendle, pers. comm. 2013) say damage to the reef now hampers its protective effect [R14].",
   "why_worked_or_failed": "Why it failed: an industry comparison source attributes Kovalam's container failures specifically to \"debris strikes\" [R2]. Coastal engineer Shaw Mead explains the underlying mechanism generally: \"as soon as even a single sand-filled container broke and lost sand, the whole structure changed shape due to the fluid nature of sand\" [R2] - a single puncture cascading into total reshaping. Once containers deflated, the structure sank deeper into the seabed, pushing its crest below the depth needed to break waves at all [R1]. No EIA, SIA, or FIA was required before construction [R1], meaning potential fisheries/community impacts were not formally assessed in advance. The task brief's own seed facts describe the failure as caused by \"debris strikes/vandalism\"; sources fetched confirm \"debris strikes\" [R2] but did not corroborate vandalism or intentional damage - unreferenced, needs source. Why the design promised what it did: the 100 m left-hand wave and multi-second ride times reflect a deliberate ASR Ltd wave-shaping design distinct from the more general, protection-first 2005 proposal [R1]",
   "unexpected_results": "Fishermen retrieving reef wreckage instead of catching more fish, a direct reversal of the project's stated fishing-community goal [R1][R5]. As surf and coastal-protection improvements visibly disappeared through 2010-2011, \"coastal communities and civil society of Kerala demanded a judicial and scientific enquiry and social audit\" [R1] - sources do not confirm whether any inquiry was actually convened. The coexistence of enthusiastic international surf-media accounts (Collins, R3; the separate Surfer.com piece, R4) with rapid-failure accounts from other sources [R1][R2][R10] suggests the story reaching international surf media diverged sharply from what was reportedly happening on the ground within the same window. Separately, India's broader 2023-announced national artificial-reef rollout (3,477 target fishing villages, ~937 approved as of Sept 2024, ~US$34.5M total) has drawn criticism over net entanglement, \"ghost fishing,\" and erosion risk from poorly sited structures - echoing some of Kovalam's own failure modes [R8]",
   "could_be_better": "Shaw Mead's general point - that geotextile-bag reefs are fragile as a system, since a single puncture cascades into total reshaping - implies the core lesson is that this material/technology is inherently high-risk for exposed, high-energy, or debris-prone sites [R2]. The absence of an EIA/SIA/FIA before construction is flagged by Raised Water Research as notable; a proper impact assessment could plausibly have surfaced fisheries and community concerns before construction rather than after failure [R1]. The scale/scope mismatch between the 2005 proposal (500 m, protection-first, 3-7 m depth) and the eventual 100 m surf-focused build is not explicitly critiqued by any source found, but a structure re-scoped from a broad coastal-defence design to a narrower, surf-tuned design may have traded protective robustness for wave-shaping performance - this is this dossier's own inference, not a sourced expert claim [R5][R1][R10]",
-  "relevance_to_israel": "No verified, sourced tide-range figure for Kovalam/Kerala was found - not found; qualitatively Kerala's Arabian Sea coast is a mixed, mesotidal-to-microtidal regime versus the microtidal Mediterranean at Haifa. Kovalam faces monsoon-driven swell seasons, a materially higher and more seasonal wave-energy environment than Israel's Mediterranean coast, relevant to why a transplanted geotextile-bag design might face structural loads and debris-strike risks not directly comparable to a Haifa site. Transferable lessons: (1) geotextile-bag reefs are reported across multiple sites (Kovalam, Boscombe, Mount Reef, Opunake) as prone to single-point-of-failure cascading damage once any one container is breached [R2] - relevant to any Haifa proposal considering the same Geotube technology already used at Ashkelon (per this project's own source note, 01_source_notes/jmse2023_bar_drimer_paper.md, which does not itself cover Kovalam); (2) the value of requiring an impact assessment (EIA/SIA/FIA) before construction, which Kovalam skipped [R1]; (3) the risk of scope/design drift between an original protection-first proposal and an eventual, differently-scoped as-built structure, as documented here between the 2005 and 2009-10 Kovalam designs [R5][R1][R10]",
+  "relevance_to_israel": "No verified, sourced tide-range figure for Kovalam/Kerala was found in the sources listed in References, apart from Blacka's 'about 1.0 m' [R14]; the qualitative statement that Kerala's Arabian Sea coast is a mixed, mesotidal-to-microtidal regime versus the microtidal Mediterranean at Haifa is the card author's own and is (unsourced). Kovalam faces monsoon-driven swell seasons (beach 10-15 m wider in the monsoon, up to 30 m in the non-monsoon months [R13]; H 1-2.5 m, T 11-15 s [R14]), a materially higher and more seasonal wave-energy environment than Israel's Mediterranean coast (the comparison with Israel is the card author's inference, unsourced), relevant to why a transplanted geotextile-bag design might face structural loads and debris-strike risks not directly comparable to a Haifa site. Transferable lessons: (1) geotextile-bag reefs are reported across multiple sites (Kovalam, Boscombe, Mount Reef, Opunake) as prone to single-point-of-failure cascading damage once any one container is breached [R2] - relevant to any Haifa proposal considering the same Geotube technology already used at Ashkelon (per this project's own source note, 01_source_notes/jmse2023_bar_drimer_paper.md, which does not itself cover Kovalam); (2) the value of requiring an impact assessment (EIA/SIA/FIA) before construction, which Kovalam skipped [R1]; (3) the risk of scope/design drift between an original protection-first proposal and an eventual, differently-scoped as-built structure, as documented here between the 2005 and 2009-10 Kovalam designs [R5][R1][R10]",
   "reviews": [
     {
       "who": "Jelle Rigole",
@@ -214,77 +214,77 @@
       "citation": "Raised Water Research (n.d., copyright 2020 per page footer). \"Kovalam.\"",
       "url": "https://raisedwaterresearch.com/spot/artificial-reef/asia/india/kovalam/",
       "accessed": "2026-09-24",
-      "supports": "build dates, volume, designer, cost, funder, initial wave description, failure timeline, Jelle Rigole quote, no EIA/SIA/FIA, fishermen finding debris, demand for enquiry/audit"
+      "supports": "build dates, volume, designer, cost, funder, initial wave description, failure timeline, Jelle Rigole quote, no EIA/SIA/FIA, fishermen finding debris, demand for enquiry/audit. Audit 2026-10-10: location: page text (no page numbers). Secondary website; its Jelle Rigole and fishermen statements are relayed, originals not seen. The page copyright (2020) is not a publication date."
     },
     {
       "id": "R2",
-      "citation": "Geosynthetics Magazine (2023-06-07). \"Why Have Most Geotextile Artificial Reefs Never Really Worked?\"",
+      "citation": "Geosynthetics Magazine (2023-06-07). \"Why Have Most Geotextile Artificial Reefs Never Really Worked?\" Web article (author not shown in the card; the text appears to republish material from The Inertia, which was blocked, see blocked_sources).",
       "url": "https://geosyntheticsmagazine.com/2023/06/07/why-have-most-geotextile-artificial-reefs-never-really-worked/",
       "accessed": "2026-09-24",
-      "supports": "Kovalam failure cause (debris strikes), Shaw Mead quote, grouping with Boscombe/Mount Reef/Opunake"
+      "supports": "Kovalam failure cause (debris strikes), Shaw Mead quote, grouping with Boscombe/Mount Reef/Opunake. Audit 2026-10-10: location: article body, Kovalam paragraph (no page numbers); Mead is a reef designer (interested party)."
     },
     {
       "id": "R3",
       "citation": "Surfing India / Mantra Surf Club, bylined \"By Sean Collins\" (2010-04-29). \"Artificial Reef in Kovalam.\"",
       "url": "https://surfingindia.net/random-stuff/artificial-reef-kovalam/",
       "accessed": "2026-09-24",
-      "supports": "alternate April 2010 date, \"India's first artificial reef\" framing, erosion-slowing claim, Sean Collins quotes"
+      "supports": "alternate April 2010 date, \"India's first artificial reef\" framing, erosion-slowing claim, Sean Collins quotes. Audit 2026-10-10: repost on a surf-club site; authorship by Sean Collins is the repost's byline and was not verified at the original; opinion piece, not a measurement."
     },
     {
       "id": "R4",
       "citation": "SURFER Magazine, byline \"SURFER Admin\" (2010-05-06). \"India's First Artificial Surfing Reef...Works.\"",
       "url": "https://www.surfer.com/features/india%E2%80%99s-first-artificial-reef%E2%80%A6works/",
       "accessed": "2026-09-24",
-      "supports": "ASR Ltd background, Chris Jensen quote, Daruka Dasa quote, unnamed Kovalam Surf Club member quote"
+      "supports": "ASR Ltd background, Chris Jensen quote, Daruka Dasa quote, unnamed Kovalam Surf Club member quote. Audit 2026-10-10: location: article body; the three quoted persons are an ASR employee (interested party), a surf-club contact who had not yet visited the reef, and an unnamed relay; no measurements."
     },
     {
       "id": "R5",
       "citation": "Kerala Tourism (2005-07-06). \"Kovalam to become an all-time destination.\"",
       "url": "https://www.keralatourism.org/newsletter/news/2005/kovalam-to-become-an-all-time-destination/891",
       "accessed": "2026-09-24",
-      "supports": "original 2005 proposal details, cost, joint implementation, motivations, international precedent"
+      "supports": "original 2005 proposal details, cost, joint implementation, motivations, international precedent. Audit 2026-10-10: newsletter item of a government tourism body announcing a proposal (2005); figures are planned, not built."
     },
     {
       "id": "R6",
       "citation": "Kerala Tourism (2021-06). \"Kovalam Beach | Sea Erosion Protection.\"",
       "url": "https://www.keralatourism.org/newsletter/news/2021/kovalam-beach-sea-erosion/2002",
       "accessed": "2026-09-24",
-      "supports": "separate later Rs 8.35 crore erosion-protection project, \"recurring\" erosion framing"
+      "supports": "separate later Rs 8.35 crore erosion-protection project, \"recurring\" erosion framing. Audit 2026-10-10: newsletter item; shows a separate later project only; no link to the reef is stated."
     },
     {
       "id": "R7",
-      "citation": "Wikipedia. \"Kovalam.\"",
+      "citation": "Wikipedia contributors. \"Kovalam.\" Wikipedia, The Free Encyclopedia (revision date not recorded).",
       "url": "https://en.wikipedia.org/wiki/Kovalam",
       "accessed": "2026-09-24",
-      "supports": "coordinates, beach names/geography, 17 km coastline"
+      "supports": "coordinates, beach names/geography, 17 km coastline. Audit 2026-10-10: context only; section not recorded."
     },
     {
       "id": "R8",
-      "citation": "Maritime Executive. \"India's Huge Artificial Reef Rollout May Cause More Harm Than Good.\"",
+      "citation": "Maritime Executive (date and author not recorded). \"India's Huge Artificial Reef Rollout May Cause More Harm Than Good.\" Editorial.",
       "url": "https://maritime-executive.com/editorials/india-s-huge-artificial-reef-rollout-may-cause-more-harm-than-good",
       "accessed": "2026-09-24",
-      "supports": "general India artificial-reef program context, net entanglement, ghost fishing, erosion-risk concerns"
+      "supports": "general India artificial-reef program context, net entanglement, ghost fishing, erosion-risk concerns. Audit 2026-10-10: opinion editorial on the national programme; context only."
     },
     {
       "id": "R9",
-      "citation": "Holidify. \"Artificial Off Shore Coral Reef, Kovalam.\"",
+      "citation": "Holidify (n.d.). \"Artificial Off Shore Coral Reef, Kovalam.\" Commercial travel-guide page.",
       "url": "https://www.holidify.com/places/kovalam/artificial-off-shore-coral-reef-sightseeing-120736.html",
       "accessed": "2026-09-24",
-      "supports": "current tourism-marketing description; identity/relationship to the 2009-10 structure unconfirmed"
+      "supports": "current tourism-marketing description; identity/relationship to the 2009-10 structure unconfirmed. Audit 2026-10-10: commercial marketing text, low reliability; relationship to the 2009-10 structure unconfirmed."
     },
     {
       "id": "R10",
       "citation": "Coastal Management (ICM). \"Building Artificial Surf Reefs: Worldwide Lessons & Applications.\"",
       "url": "https://www.coastalmanagement.com.au/artificial-surf-reefs",
       "accessed": "2026-09-24",
-      "supports": "2010 date, 30 m bag units, 100 m left-hand wave, 4,800 m3 volume, stabilised-then-failed-within-weeks outcome"
+      "supports": "2010 date, 30 m bag units, 100 m left-hand wave, 4,800 m3 volume, stabilised-then-failed-within-weeks outcome. Audit 2026-10-10: commercial site of a coastal-engineering consultancy; page undated; location: its Kovalam entry in the reef comparison table."
     },
     {
       "id": "R11",
-      "citation": "Vimeo. \"India's First Multi-Purpose Reef Goes Off\" (video, ID 11274816).",
+      "citation": "Vimeo (uploader and upload date not recorded). \"India's First Multi-Purpose Reef Goes Off\" (video, ID 11274816).",
       "url": "https://vimeo.com/11274816",
       "accessed": "2026-09-24",
-      "supports": "existence/title of a contemporaneous video; full content not accessible - video-lead only"
+      "supports": "existence/title of a contemporaneous video; full content not accessible - video-lead only. Audit 2026-10-10: title only; video not watched; supports no number."
     },
     {
       "id": "R12",
@@ -292,6 +292,34 @@
       "url": null,
       "accessed": "2026-09-24",
       "supports": "confirmation that Kovalam is not mentioned in any of Lior's 8 original source notes"
+    },
+    {
+      "id": "R13",
+      "citation": "Mead, S.T. and Borrero, J.C. (2011). Multi-Purpose Reefs - A Decade of Applications. Proceedings of the 20th Australasian Coastal and Ocean Engineering Conference (Coasts and Ports 2011), ASR Ltd, Raglan NZ. Private research copy; licence not stated.",
+      "url": "https://search.informit.org/doi/10.3316/informit.715072832934166",
+      "accessed": "2026-10-10",
+      "supports": "4,000 m3 volume (p.4); completion late Feb 2010 (p.4); why surfing worked, Indian Surfing Association adoption (p.4); beach 10-15 m / up to 30 m wider (p.5, Fig. 7). Authors are the reef's designers (interested party)"
+    },
+    {
+      "id": "R14",
+      "citation": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08, UNSW Water Research Laboratory, for NSW Office of Environment and Heritage. Report page = PDF page - 12. Licence CC BY-NC-ND 3.0 AU.",
+      "url": "https://doi.org/10.4225/53/58e1dc7368c7a",
+      "accessed": "2026-10-10",
+      "supports": "dimensions, depth, offshore distance, submergence range (Table 4.2 p.66); tide range and wave climate (Table 4.3 p.68); A$1.41 M and A$351 per m3 implying about 4,017 m3 (Table 4.4); only MPR with significant shoreline effect, CESS assessment pending, 2013 damage note (p.70, Table 4.1 note 4)"
+    },
+    {
+      "id": "R15",
+      "citation": "Rendle, E.J. (2016). The Environmental, Social and Economic Impacts of an Artificial Surf Reef - The UK Experience. PhD thesis, University of Plymouth. Table 2.1 'The current ASRs projects to date' (adapted from Jackson and Corbett 2007, updated), printed p.41 = PDF p.41. File in papers/ (Lior): 'Rendle, E.J., PhD thesis, University of Plymouth, - Boscombe as-built bag layout, crest levels and survey datum.pdf'.",
+      "url": "(file in papers/, supplied by Lior; repository URL not recorded)",
+      "accessed": "2026-10-13",
+      "supports": "volume 4,300 m3 SFC for Kovalum (2010, Kerala, India); cost column 1,640,321 (currency header not checked); read 2026-10-13 from the PDF in papers/"
+    },
+    {
+      "id": "R16",
+      "citation": "Reef rating (A surf quality, B safety and longevity, C sediment / storm protection), scores 1-5, approved by Lior 2026-10-19. Table: 08_paper/notes/rating_final.md; evidence per reef: 08_paper/notes/rating_evidence.md (this review, repo-internal files).",
+      "url": "",
+      "accessed": "2026-10-19",
+      "supports": "Scores A/B/C and reason for this reef"
     }
   ],
   "blocked_sources": [
@@ -299,13 +327,24 @@
     "The Inertia's \"Why Have Most Artificial Reefs Never Really Worked?\" - HTTP 403 to WebFetch, not read"
   ],
   "gaps": [
-    "Crest/submergence depth of the as-built reef - not found",
+    "Crest/submergence depth of the as-built reef - only a range (0.2-3.4 m, datum not stated) from Blacka et al. 2013 Table 4.2 [R14]; exact crest level not found",
+    "As-built volume unresolved: 3,000 (initial) / 4,000 [R13], ~4,017 implied [R14] / 4,300 [R15] / 4,800 [R1][R10]",
     "Contractor beyond ASR Ltd - not found",
     "Exact Kovalam tide range and specific wave height/period figures for direct Israel comparison - not found",
     "Whether any judicial/scientific enquiry demanded by civil society was actually convened - not found",
     "Vandalism/knife-cuts as a failure cause (per task seed facts) - could not be corroborated, unreferenced",
     "Vimeo video 11274816 full description/content - behind a viewer-verification wall, not read [R11]",
-    "Relationship between the currently-marketed \"Artificial Off Shore Coral Reef\" tourism attraction and the 2009-10 ASR structure - unconfirmed [R9]"
+    "Relationship between the currently-marketed \"Artificial Off Shore Coral Reef\" tourism attraction and the 2009-10 ASR structure - unconfirmed [R9]",
+    "Position (citations audit 2026-10-10): lat/lon changed from 8.4004, 76.9787 (Kovalam town [R7]) to 8.387313, 76.975188, the mean of the traced default outline vertices (07_scale/shapes/kovalam-reef-india/shape.json geo.polygons_latlon; fitted-camera trace from one oblique photo on the Esri 2011-02-28 frame, LOW confidence, stated position uncertainty +-20 m for the camera, larger for the outline); the old point was 1507 m away. The page's Google Maps link uses this value."
   ],
-  "videos_rejected": []
+  "videos_rejected": [],
+  "rating": {
+    "rank": 8,
+    "A": "2",
+    "B": "1",
+    "C": "3*",
+    "reason": "geobags damaged; surf disputed [R16]",
+    "scale": "1-5, ?=no evidence, *=provisional",
+    "source": "this review, Lior-approved 2026-10-19"
+  }
 }

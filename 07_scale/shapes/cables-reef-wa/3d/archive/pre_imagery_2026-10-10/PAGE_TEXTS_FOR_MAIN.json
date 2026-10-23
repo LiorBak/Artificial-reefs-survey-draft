@@ -1,0 +1,31 @@
+{
+ "_about": "Cables agent hand-back 2026-10-10: what the page agent needs to add cables-reef-wa to the 3D tab (per 04_build/UPDATE_PROTOCOL.md). Saved verbatim in substance by the orchestrator.",
+ "steps": "(1) remove cables-reef-wa from 04_build/data/models3d_hold.json; (2) add entries to data/models3d_combined.json, models3d_curated.json, models3d_caveats.json; (3) run python src/update_page.py --full",
+ "combined": {
+  "frame_note": "model.js frame: x alongshore toward SOUTH (bearing 180), y offshore toward WEST (bearing 270); viewer maps (X = x, Y = z, Z = y); default outline version (design plan + extension)",
+  "offshore_scene_xz": [0, 1], "hand": 1,
+  "polygon": "M.versions.filter(function(v){return v.id===M.default_version;})[0].outline_m",
+  "crest_z": "-1.0 - M.datum.rl_minus_msl_A (= -1.78 m MSL)",
+  "crest_note": "design crest line RL -1.0 under datum reading A (RL = chart datum, MSL = RL + 0.78); under reading B it would be -1.0 m MSL",
+  "shore_mode": "the seabed window starts at y = 190 m and the shore line (y = 0) is not modelled, so the 'seabed near 0 m MSL along y = 0' check cannot apply; use whatever mode skips it",
+  "sublabels": "M.roles.south and M.roles.north (centroid, label)"
+ },
+ "curated": {
+  "state_short": "Design state of the 1999 reef: V-shaped granite mound (Lyons 1992 design plan) with the drawn southern-arm extension, at design levels RL -1.0 (crest line) to -3.0 (outer edge). No survey of the built reef; default outline = design plan + extension, three more outlines offered.",
+  "ve_note": "At VE = 5 the 2 m ramp looks 10 m high; slopes of 1:13 to 1:20 look like 1:2.6 to 1:4 (plan is true).",
+  "key_numbers": [
+   "Footprint: {{versions/design_plan_plus_extension_1999/area_m2|n0}} m2 default (design plan + extension), {{versions/design_plan_original_1999/area_m2|n0}} m2 original plan; text 140 x 70 m (Blacka 2013 Table 4.2), traced 121 x 76 m from Blacka 2013 Fig A.2 (scale from its printed dimensions, +-3 %); extension 347 m2 from the RWR drawing (low resolution)",
+   "Rock volume: {{versions/design_plan_plus_extension_1999/volume_m3|n0}} m3 (bed level FITTED so the volume equals Blacka's 5,500 m3, A.1.3; other stated values 5,000 (Mead and Borrero 2011) and 3,500 (Wikipedia))",
+   "Crest: RL -1.0 = 1.78 m below MSL (reading A) or 1.0 m (reading B); ramp to RL -3.0 at the outer edge (Blacka 2013 Fig A.2); datum reading A is an ASSUMPTION",
+   "Water depth: modelled bed (ASSUMED plane, gradient 1:30 from the Pitt sketch) 2.8-5.8 m at MSL vs stated 3.0-6.0 m (Blacka Table 4.2)",
+   "Tide: range 0.8 m (Blacka 2013 Table 4.3); mean tide level 0.78 m above datum (Pattiaratchi 1999 p.3); HW/LW = MSL +-0.4 m is an estimate"
+  ]
+ },
+ "caveat_rows": [
+  "RL datum not stated on the drawing (0.78 m; reading A/B switch)",
+  "bed under and around the reef is modelled, not measured",
+  "extension size from a low-resolution drawing",
+  "built extent / levels unverified (no imagery or survey)",
+  "shore line and nearshore profile not modelled"
+ ]
+}

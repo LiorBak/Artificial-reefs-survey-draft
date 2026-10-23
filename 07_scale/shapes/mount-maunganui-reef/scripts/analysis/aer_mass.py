@@ -2,7 +2,7 @@ import numpy as np, json, sys
 from PIL import Image, ImageDraw
 from scipy import ndimage as ndi
 from skimage import filters, measure
-R='C:/Users/lior/Documents/Gemini/AG/Artificial reef - to upload to git/07_scale/shapes/mount-maunganui-reef/'
+R='C:/Users/lior/Documents/Claude/Projects/Artificial reef/07_scale/shapes/mount-maunganui-reef/'
 sys.path.insert(0,R+'scripts')
 from geo_tools import *
 im=np.array(Image.open(R+'src/linz_aerial_2010-11_BD37_1000_1314_crop.png').convert('RGB')).astype(float)

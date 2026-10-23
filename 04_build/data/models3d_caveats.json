@@ -35,8 +35,8 @@
   {
    "slug": "prattes-reef-el-segundo",
    "q": "Reef position",
-   "model": "33.92058 N, 118.43335 W, +-100 m (inferred)",
-   "stated": "text: '200 m south of the 1-mile outfall'; earlier CCC hint 217 m away; jetty-based estimate 160 m further north",
+   "model": "33.92058 N, 118.43335 W, +-150 m (inferred)",
+   "stated": "text: '200 m south of the 1-mile outfall' (but the same paper's Fig. 2 reads about 340 m from the outfall and 670 m from the Grand Street jetty); earlier CCC hint 217 m away; jetty-based estimate 160 m further north",
    "diff": "the three estimates span 190 m",
    "reason": "No georeferenced outline exists; the position is the centre of the Fig. 9 survey window of the 2003 paper. Depths are barely affected (seabed uniform alongshore, sd 0.14 m), the picture is.",
    "status": "open",
@@ -44,7 +44,7 @@
    "section": "3.10; 7 L1",
    "ids": "S10; S1; S7",
    "ev": [
-    "The three estimates span 190 m, so the hint is stated as +-100 m."
+    "outfall- and jetty-based estimates span 190 m; +-150 m decided 2026-10-10"
    ]
   },
   {
@@ -157,15 +157,15 @@
    "slug": "boscombe-surf-reef",
    "q": "As-built crest height",
    "model": "flat +0.5 m ACD along the whole outline",
-   "stated": "Oct 2009 profile tops +0.05 to +0.65 m ACD (typically +0.2 to +0.3); April 2011 maximum +0.68 m; unverified snippet: final crest 0.5 m above the final design height",
-   "diff": "+-0.3 m (up to +0.5 m if the unverified snippet is right)",
+   "stated": "Rendle (2016, p. 70): built crest approximately 0.5 m CD, i.e. 0.5 m above the design (0 m CD, Table 4.4; 0.3 m CD, Fig. 5.3); Oct 2009 profile tops +0.05 to +0.65 m ACD (typically +0.2 to +0.3); April 2011 maximum +0.68 m",
+   "diff": "+-0.3 m against the 2009 profile tops",
    "reason": "The 'focus' and 'wedge' sections have different design heights and are not published; settlement 0.5 m or less; the model is an idealised flat crest.",
    "status": "open",
    "resolve": "Oct 2009 survey grid, Rendle thesis, CCO data request",
    "section": "3.8 A6; 7",
    "ids": "S2; S3",
    "ev": [
-    "The final crest height of Boscombe ASR was 0.5 m higher than the final design height"
+    "the BUILT crest, Rendle 2016 p. 70: \"built crest approximately 0.5 m CD\""
    ]
   },
   {
@@ -275,10 +275,25 @@
    ]
   },
   {
+   "slug": "bunbury-airwave",
+   "q": "Fill type: sources disagree",
+   "model": "no fill drawn (rigid spherical cap); label wording only",
+   "stated": "ABC 2019: 'air'; Tracks 2019: 'sand + air'; developer interview (Bakalo 2026, Troy): 'sand instead of air'",
+   "diff": "none for the geometry",
+   "reason": "Three accounts of what the 2019 bladder was filled with; the interview is a developer's unrecorded recollection of the 'final' design and may not describe the December 2019 installation. Nothing in the model changes.",
+   "status": "open",
+   "resolve": "The installation record, or a recorded / transcribed interview with Waveco",
+   "section": "2.2; 3.8 A14; 7 L12",
+   "ids": "S_ABC19; S_Tracks19; S_Troy",
+   "ev": [
+    "Source disagreement: what the bladder was filled with"
+   ]
+  },
+  {
    "slug": "palm-beach-gold-coast",
    "q": "Volume and height vs the council register",
    "model": "envelope 22,000 m3; crest height above the seabed 3.9 m (max 4.17 m)",
-   "stated": "City of Gold Coast asset register VOLUME 33,000 and HEIGHT_M 5 (units and reference not stated); 25,000 m3 'quarried rock' (ICM / Salyer 2024); 60,000 t placed (EPW 2020)",
+   "stated": "City of Gold Coast asset register VOLUME 33,000 and HEIGHT_M 5 (units unknown); about 25,000 m3 quarried rock (ICM / Salyer 2024); 60,000 t placed (EPW 2020)",
    "diff": "-11,000 m3 (-33 %) and -1.1 m (-22 %) vs the register",
    "reason": "Not explained: the register may carry design or pay-line quantities, rock below the original seabed (toe trench, settlement), or the contour interval may exceed 0.5 m on the crest side. The register volume is reproduced only with a seabed 1.0 m deeper than all independent seabed evidence. 60,000 t / 33,000 m3 = 1.82 t/m3 is a normal placed-rock bulk density.",
    "status": "unresolved",
@@ -326,7 +341,7 @@
    "model": "z_MSL = z_LAT - 0.88 (Gold Coast Seaway planes)",
    "stated": "concept crest '-1.5 m AHD' vs built '1.5 m below MSL'; MSQ: AHD is 0.760 m above LAT at the Seaway benchmark (MSL = AHD + 0.12 m); Palm Beach interpolated MSL - LAT about 1.0 m (0.88-1.09)",
    "diff": "0.12 m (AHD vs MSL); crest about -0.50 m LAT instead of -0.62 m LAT if MSL - LAT = 1.0 m",
-   "reason": "MSQ has no Palm Beach row (the Seaway is 18 km away, Snapper Rocks 10 km with MSL 1.09 m above LAT). The earlier METHODS note calls the AHD offset unverified; the Gold Coast bathymetry report (2026-10-06) verified it at the Seaway benchmark.",
+   "reason": "MSQ has no Palm Beach row (the Seaway is 18 km away, Snapper Rocks 10 km with MSL 1.09 m above LAT). The METHODS note now carries the AHD offset as verified (MSQ 2014, read at the source by the Gold Coast bathymetry report; updated in the 2026-10-10 re-check); it applies at the Seaway benchmark only.",
    "status": "open",
    "resolve": "Local tide table / MSQ interpolation",
    "section": "3.1; 5; Gold Coast report 3",
@@ -339,12 +354,12 @@
    "slug": "palm-beach-gold-coast",
    "q": "Seabed and reef surface are inferred, not surveyed",
    "model": "seabed from the Navionics SonarChart; surface from 10 unlabelled aerial contour lines at an assumed 0.5 m interval",
-   "stated": "contour interval regressed 0.459 +- 0.003 m (formal); toe elevation vs chart seabed -0.27 m (sd 0.55 m); pre-reef City survey profile (Mortensen 2015 Fig. 6) agrees with the chart to 0.2-0.3 m RMS after the LAT to AHD/MSL shift; City DTM has no open-coast seabed",
+   "stated": "contour interval regressed 0.459 +- 0.003 m (formal); toe elevation vs chart seabed -0.27 m (sd 0.55 m); pre-reef City survey profile (Mortensen 2015 Fig. 6a) agrees with the chart to 0.2-0.3 m RMS after the LAT to AHD/MSL shift and with the model seabed to 0.33 m RMS (13 labels, AHD assumed); PBO3 buoy (Daniels 2022) 11.75 m vs model 12.37 m below LAT (+0.62 m, extrapolated beyond the 10 m line); City DTM has no open-coast seabed",
    "diff": "interval +9 % (assumed 0.5 vs 0.459); toe 0.27 m deeper than the chart",
-   "reason": "With a 1.0 m interval the seaward toe would be at -12.5 m, 5 m below the chart. Absolute depth and height are +-0.5 m; no surveyed depth value was read.",
+   "reason": "With a 1.0 m interval the seaward toe would be at -12.5 m, 5 m below the chart. Absolute depth and height are +-0.5 m; no surveyed depth value was read. Assumptions A12-A14 (aerial lines are as built; chart bed unchanged since the survey; Mortensen profile in AHD) and decisions DEC1-DEC15 are listed in the viewer's Methods tab, sections 3.8-3.9.",
    "status": "open",
    "resolve": "As-built multibeam (City of Gold Coast); Navionics app readings A1-A7",
-   "section": "4.2-4.4; 7; Gold Coast report 2, 5.2",
+   "section": "4.2-4.4; 4.9; 7; Gold Coast report 2, 5.2",
    "ids": "n1; s7; s6",
    "ev": [
     "With 1.0 m the seaward toe would be at -12.5 m MSL, 5 m below the chart."
@@ -352,17 +367,17 @@
   },
   {
    "slug": "boscombe-surf-reef",
-   "q": "Offshore seabed (y 380-650 m): alongshore tilt",
-   "model": "row y = 380 copied offshore: +0.76 m per 100 m of x (spline extrapolation); r.m.s. 1.2 m against 11 Navionics soundings",
-   "stated": "EMODnet DTM 2024: no alongshore gradient; Navionics soundings: model -1.2 m per 100 m of x too deep at x < 0 and too shallow at x > 0 (up to +-1.7 m)",
-   "diff": "r.m.s. 1.20 m; flattening the row would give 0.51 m",
-   "reason": "The extension kept the specified formula (slope from EMODnet, level continued from the model's own row y = 380). The zone is context for the shoreline and does not touch the reef or the survey cells.",
-   "status": "open",
-   "resolve": "Decision for Lior: flatten the offshore row alongshore (yes / no); needs only a re-run of the model build.",
+   "q": "Offshore seabed (y 380-650 m): alongshore tilt (D2 applied)",
+   "model": "row y = 380 and everything seaward flat alongshore (alongshore mean -7.78 m MSL, EMODnet cross-shore gradient 0.0141); r.m.s. 0.51 m against 11 Navionics soundings (was 1.20 m)",
+   "stated": "Before D2: EMODnet DTM 2024: no alongshore gradient; Navionics soundings: model -1.2 m per 100 m of x too deep at x < 0 and too shallow at x > 0 (up to +-1.7 m)",
+   "diff": "r.m.s. 1.20 m before, 0.51 m after D2 (2026-10-10)",
+   "reason": "Before D2 the extension copied the spline row y = 380 (tilt +0.76 m per 100 m of x) to y = 650. D2 flattened it. The zone is context for the shoreline and does not touch the reef or the survey cells. The step between rows 378 and 380 at the x edges is 1.13 m; the 11 hand-read soundings still show -0.44 m per 100 m of x.",
+   "status": "resolved",
+   "resolve": "Applied 2026-10-10 (D2); reversible with 3d/archive/pre_D2/.",
    "section": "3.4; 4 items 11-12",
    "ids": "S13; S4",
    "ev": [
-    "Replacing row 380 by its alongshore mean would give mean -0.17 m, sd 0.51 m"
+    "Since D2 (2026-10-10) row y = 380 and all rows seaward are set to the alongshore mean"
    ]
   },
   {
@@ -384,9 +399,9 @@
    "model": "{{versions/multibeam_2013_m2p0/volume_m3_default|n0}} m3 default / {{versions/asr_installed_toe_2008/volume_m3_default|n0}} m3 toe loft at the default bed {{seabed/bed_default_cd|d1}} m CD",
    "stated": "2,800 m3 built volume (Raised Water Research, BoPRC p28); Installed grid 2,835-2,861 m3",
    "diff": "{{= (P('versions/multibeam_2013_m2p0/volume_m3_default') / P('stated_volume_m3') - 1) * 100 |s0}} % / {{= (P('versions/asr_installed_toe_2008/volume_m3_default') / P('stated_volume_m3') - 1) * 100 |s0}} % vs 2,800 m3; reproduced at a bed of {{versions/multibeam_2013_m2p0/bed_for_2800_m3|d2}} / {{versions/asr_installed_toe_2008/bed_for_2800_m3|d2}} m CD",
-   "reason": "Volume = sum of crest-to-bed height over the footprint. The bed under the reef in 2008-09 is not measured; every later source reads it shallower than -4.0 m CD, and even vertical flanks on the -2.0 m outline hold more than 2,800 m3 at -4.0 m. At a bed of -4.0 m CD the model was +15 % (toe) to +29 % (survey outline) over the stated figure (METHODS_3D 4.3). Decision of Lior, 2026-10-07: the default as-built bed is -3.6 m CD, labelled an assumption, with a 'later seabed' option; this page reads the bed and the volumes from model.js, so it shows the new values as soon as the model is rebuilt.",
+   "reason": "Volume = sum of crest-to-bed height over the footprint. The bed under the reef in 2008-09 is not measured; every later source reads it shallower than -4.0 m CD (at -4.0 the model was +15 % (toe) to +29 % (survey outline) over the stated figure). Decision D1 of Lior (2026-10-07), applied 2026-10-10: default bed -3.6 m CD, labelled an ASSUMPTION; option 'later seabed' -2.8 m CD (about 1,750 m3, 37 % below 2,800 m3; P2 Fig 12, Oct 2006, reads the bed beside the reef at 2.0-3.7 m). P3 (Mead & Borrero 2011) Fig 3: 2,800 m3 of the 6,500 m3 design volume was in place (METHODS_3D 4.3).",
    "status": "unresolved",
-   "resolve": "As-built bed survey or the Mead, Black & Moores (2007) / Mead (2011) sections; Lior's decision on the default bed (REQUESTS_FOR_LIOR 1).",
+   "resolve": "An as-built bed survey, or the datum of the ASR 'Installed' image or a scaled as-built section (REQUESTS_FOR_LIOR).",
    "section": "4.3",
    "ids": "R3; R1; img3",
    "ev": [
@@ -401,7 +416,7 @@
    "diff": "{{= abs(P('seabed/bed_default_cd') - P('seabed/z_nav_at_reef_cd')) |d2}} m from the 2026 chart at the centre",
    "reason": "No source measured the 2008-09 bed at the reef; the ASR Installed image shows it but its datum is unstated. The default is a labelled assumption, not a finding; height, flank width and volume all follow it (+-0.5 m of bed = about +-19 % of volume).",
    "status": "unresolved",
-   "resolve": "Bed decision and REQUESTS_FOR_LIOR 1 and 3 (Mead section, datum of the ASR image).",
+   "resolve": "D1 applied 2026-10-10 (default -3.6 m CD ASSUMPTION, option -2.8 m CD). Settled only by the datum of the ASR 'Installed' image or a scaled as-built section (REQUESTS_FOR_LIOR).",
    "section": "3.3; 7",
    "ids": "R1; R4; R9; N1; img3",
    "ev": []
@@ -476,8 +491,8 @@
    "q": "Volume (rock)",
    "model": "{{versions/lidar_2022/volume_m3|n0}} m3 laser edge / {{versions/design_1020/volume_m3|n0}} m3 design foot / {{versions/sat_2024/volume_m3|n0}} m3 photo edge (+-4,600 m3 for 0.4 m of bed)",
    "stated": "no reef-only quantity at a primary source; Type 4 for the whole Phase 1: 42,000 t (NCE)",
-   "diff": "default Type 4 layer about 36,600 t, below 42,000 t",
-   "reason": "Volume = crest surface minus the modelled seabed. Only the bed under the rock matters, and it is a design level (-4.0 mODN derived); the three outline versions differ by up to 16 %.",
+   "diff": "default Type 4 layer about 36,100 t, below 42,000 t",
+   "reason": "Volume = crest surface minus the modelled seabed. Only the bed under the rock matters, and it is a design level (-4.0 mODN derived); the three outline versions differ by up to 15 %.",
    "status": "unresolved",
    "resolve": "A reef-only rock quantity from the contractor; a low-tide multibeam or imagery of the flanks below -2.3 mODN.",
    "section": "3.4; 4",
@@ -486,17 +501,17 @@
   },
   {
    "slug": "borth-coastal-defence-reef",
-   "q": "Offshore seabed (y > 335 m) deeper than the Fig 2 -4.0 m contour",
-   "model": "-4.7 m at y = 400 m and -5.1 m at y = 440 m (mODN)",
-   "stated": "HRPP576 Fig 2: -4.0 m contour at y 410-450 m; EMODnet cells 1.5 m shallower; Navionics chart zero -3.58 mODN",
-   "diff": "0.89 m deeper than Fig 2 (sd 0.14 m, n = 13)",
-   "reason": "Only the -3.0 m contour and the assumed anchor of -4.0 m at y = 335 m (plus the EMODnet gradient) were used offshore. The volumes under the rock are unaffected. A fix is proposed and will be rebuilt by the model agent; this page then follows model.js.",
-   "status": "open",
-   "resolve": "Add the Fig 2 -4.0 m contour as seabed nodes and start the EMODnet gradient from it (REQUESTS D6).",
+   "q": "Offshore seabed (y > 335 m) versus the Fig 2 -4.0 m contour",
+   "model": "follows the Fig 2 -4.0 m contour (traced nodes, plus assumed bridge and extension nodes); beyond it the EMODnet gradient -1.1 % (mODN)",
+   "stated": "HRPP576 Fig 2: -4.0 m contour at y 410-460 m; EMODnet cells 0.7-1.2 m shallower; Navionics chart zero -3.58 mODN",
+   "diff": "0.00 m at the 13 traced points (was 0.89 m deeper before the D6 fix of 2026-10-07)",
+   "reason": "The first build evaluated the seabed fit at y <= 335 m only and used an assumed -4.0 m anchor there, so it ignored the Fig 2 -4.0 m contour and the design bed nodes under the arm head. The D6 fix (option B) makes the contour a control; the bed under the arm head rose up to 0.7 m and the rock volumes fell 3.4-3.9 %.",
+   "status": "resolved",
+   "resolve": "Done (D6, 2026-10-07). Remaining: the -4.0 m level is bridged / extended by assumption at x -104..170 and x > 170; a sounding line or multibeam seaward of the reef would test it.",
    "section": "3.3; 4.4; 7",
    "ids": "hrpp576f2; N1",
    "ev": [
-    "0.89 m deeper than the -4"
+    "0.00 m (sd 0.00, n 13) for -4.0"
    ]
   },
   {
@@ -593,6 +608,294 @@
    "section": "3.4",
    "ids": "N1",
    "ev": []
+  },
+  {
+   "slug": "narrowneck-gold-coast",
+   "q": "Volume (placed vs exposed)",
+   "model": "{{versions/photo_2020-08-08/volume_m3|n0}} m3 mound envelope (photo, default) / {{versions/design_option2_2017/volume_m3|n0}} m3 (Option 2)",
+   "stated": "534 containers x about 147 m3 sand = about 78,500 m3 placed (Jackson 2007 p.4; Jackson 2012 p.3; City 2020)",
+   "diff": "-83 % (photo) to -73 % (Option 2) against the placed volume",
+   "reason": "The model shows only the exposed mound seen in the photo and the 2017 multibeam (relief 1-2.5 m); containers are partly buried, stacked, displaced or lost, and the envelope includes gaps.",
+   "status": "unresolved",
+   "resolve": "Container-by-container multibeam or the City as-built; a post-renewal survey.",
+   "section": "3.4; 4.5",
+   "ids": "jack07; jack12; cor23",
+   "ev": []
+  },
+  {
+   "slug": "narrowneck-gold-coast",
+   "q": "Crest datum (AHD vs LAT)",
+   "model": "crest -2.2 m AHD = 1.44 m below LAT (MSQ AHD = LAT + 0.760)",
+   "stated": "papers: -2.5 m AHD = -1.5 m LAT, i.e. AHD = LAT + 1.00",
+   "diff": "0.24 m",
+   "reason": "Two datum relations for the same design crest; the model uses MSQ because it is the official benchmark and all heights are AHD-based (only the tide levels move).",
+   "status": "unresolved",
+   "resolve": "The offset used in the 2018 survey (City of Gold Coast / MSQ).",
+   "section": "3.1",
+   "ids": "msq; jack07; cor23",
+   "ev": []
+  },
+  {
+   "slug": "narrowneck-gold-coast",
+   "q": "Footprint is a lower bound",
+   "model": "{{versions/photo_2020-08-08/area_m2|n0}} m2 visible field vs {{versions/design_option2_2017/area_m2|n0}} m2 Option 2 envelope",
+   "stated": "design to the -6 m contour; deeper toe to about -10 m (Jackson & Corbett 2019)",
+   "diff": "photo field is 45 % of the design envelope",
+   "reason": "The toe below about -6 m is not visible on the 2020 photo; 96.6 % of the traced arms lie inside the Option 2 envelope.",
+   "status": "unresolved",
+   "resolve": "Post-renewal multibeam or the 2025 State bathymetric lidar.",
+   "section": "4.1",
+   "ids": "s3; cor23",
+   "ev": []
+  },
+  {
+   "slug": "narrowneck-gold-coast",
+   "q": "Reef height at the toe",
+   "model": "1-1.5 m (multibeam relief)",
+   "stated": "stage-1 estimate 4-6 m at the -6 to -8 m toe",
+   "diff": "-3 to -4.5 m",
+   "reason": "The 2017 multibeam bed at the toe is -6.5 to -7.5 m and container tops are -5 to -6 m.",
+   "status": "resolved",
+   "resolve": "Done 2026-10-10 (Corbett Fig 3 digitised).",
+   "section": "4.3",
+   "ids": "cor23",
+   "ev": []
+  },
+  {
+   "slug": "narrowneck-gold-coast",
+   "q": "Nearshore bed (0-190 m offshore)",
+   "model": "assumed smooth profile 0 / -1.8 / -2.1 m AHD at y = 0 / 100 / 190 m",
+   "stated": "no source resolves the surf zone here (Navionics land edge is 80 m seaward of the 2020 waterline)",
+   "diff": "unknown, +-1 m",
+   "reason": "Not part of the reef volume; affects only the look of the shore side.",
+   "status": "unresolved",
+   "resolve": "Navionics app and Google Earth readings (3d/REQUESTS_FOR_LIOR.md).",
+   "section": "3.3; 4.4",
+   "ids": "vds21; s12",
+   "ev": []
+  },
+  {
+   "slug": "narrowneck-gold-coast",
+   "q": "Multibeam read from a colour picture",
+   "model": "bed and relief from Corbett Fig 3 (460 x 312 px)",
+   "stated": "datum and north not stated in the figure",
+   "diff": "+-0.4 m levels, +-10 m position",
+   "reason": "Hue read through a four-tick colour bar; assumed AHD and north-up.",
+   "status": "unresolved",
+   "resolve": "The original multibeam grid from ICM or the City.",
+   "section": "3.2; 5",
+   "ids": "cor23",
+   "ev": []
+  },
+  {
+   "slug": "cables-reef-wa",
+   "q": "Datum link: RL / AHD / MSL",
+   "model": "reading A (RL = Fremantle Low Water Datum, AHD = RL - 0.716 m): design crest -1.72 m AHD; AHD taken as MSL (MSL 1966-68)",
+   "stated": "Blacka 2013: crest 1-2.5 m below MSL; soundings imply RL - AHD = 0.59 / 0.50 m (Nov 1999 / Feb 2002)",
+   "diff": "0.13 / 0.22 m between reading A (0.716) and the soundings (0.59 / 0.50)",
+   "reason": "The design drawing's RL is not tied to AHD in any source, but the gauge zero = Fremantle LWD is tied to AHD by DNM TR12 Table 3 (0.716 m); the soundings favour reading A; the remaining 0.13-0.22 m is physical (rock above the design ramp, settlement) or a survey effect, not a datum effect.",
+   "status": "resolved (offset); gap physical",
+   "resolve": "HAT / LAT of Fremantle (Transport WA tides@transport.wa.gov.au or the Australian National Tide Tables); the Lyons (1992) drawing set",
+   "section": "3.1; 4; 7 L1",
+   "ids": "DoT1999; DoT2002; BoM; img26",
+   "ev": [
+    "remaining gap to A 0.13 / 0.22 m is physical or survey, not datum (3.1)"
+   ]
+  },
+  {
+   "slug": "cables-reef-wa",
+   "q": "Rock surface from single-beam soundings",
+   "model": "surveyed surface (default) interpolated from 840 soundings (Nov 1999), +-0.3 m vertical",
+   "stated": "no multibeam or lidar of the rock found; the DoT Perth_5m composite shows the reef only as a smoothed mound",
+   "diff": "narrow ridges smoothed; volume +-1,000 m3",
+   "reason": "Sounding lines are about 5 m apart and the surface between them is interpolated; DoT warns of issues inherent in its conversion of old survey datums to AHD.",
+   "status": "open",
+   "resolve": "A newer multibeam / lidar survey (DoT WA Bathymetry Portal, AusSeabed) or Navionics readings by Lior at the crest and apex",
+   "section": "3.4; 5; 7 L3",
+   "ids": "DoT1999; DoT5m",
+   "ev": [
+    "between lines (about 5 m) the surface is interpolated, narrow ridges are smoothed"
+   ]
+  },
+  {
+   "slug": "cables-reef-wa",
+   "q": "South-arm extension",
+   "model": "default outline = original plan, {{versions/design_plan_original_1999/area_m2|n0}} m2; the extension is a separate version ({{versions/design_plan_plus_extension_1999/area_m2|n0}} m2)",
+   "stated": "drawn on a low-resolution picture (img-06): 347 m2, 320 m3",
+   "diff": "2002 soundings +0.43 m (n = 23) against 0.92 m drawn: not confirmed",
+   "reason": "Neither the 2002 soundings nor the Esri imagery confirm that the extension was built.",
+   "status": "open",
+   "resolve": "A survey after 2002, or Pattiaratchi (2003, 2007) / Bancroft (1999), could say whether and how much was built",
+   "section": "3.5; 7 L2",
+   "ids": "img06; DoT2002; SAT",
+   "ev": [
+    "not confirmed (+0.43 m, n = 23)"
+   ]
+  },
+  {
+   "slug": "cables-reef-wa",
+   "q": "Design-surface versions are idealised",
+   "model": "design surface on the measured bed: {{versions/design_plan_original_1999/volume_m3|n0}} m3 (original) / {{versions/design_plan_plus_extension_1999/volume_m3|n0}} m3 (with extension)",
+   "stated": "surveyed {{versions/survey_surface_1999_11/volume_m3|n0}} m3 (Nov 1999) and {{versions/survey_surface_2002_02/volume_m3|n0}} m3 (Feb 2002)",
+   "diff": "11-21 % below the surveyed volume",
+   "reason": "The design surface is 0.25-0.3 m below the surveyed rock: 1.02 m thick as modelled against 1.15-1.29 m surveyed.",
+   "status": "by-design",
+   "resolve": "-",
+   "section": "3.3; 4",
+   "ids": "DoT1999; DoT2002; img26",
+   "ev": [
+    "thickness 1.02 m modelled vs 1.15-1.29 m surveyed"
+   ]
+  },
+  {
+   "slug": "cables-reef-wa",
+   "q": "No survey after February 2002",
+   "model": "latest surface Feb 2002, crest {{versions/survey_surface_2002_02/crest_AHD_m|n2}} m AHD",
+   "stated": "Pitt 2009: 'crest about 1.5 m below the lowest tide'",
+   "diff": "later settlement is not modelled",
+   "reason": "No later survey of the rock was found.",
+   "status": "open",
+   "resolve": "A newer multibeam / lidar survey (DoT WA Bathymetry Portal, AusSeabed)",
+   "section": "7 L3",
+   "ids": "DoT2002",
+   "ev": [
+    "after 2002 (settlement, Pitt 2009"
+   ]
+  },
+  {
+   "slug": "cables-reef-wa",
+   "q": "Shore line not drawn; frame rotated 9.7 deg",
+   "model": "seabed window starts at y = 190 m; frame x axis toward 170.3 deg true (rotated 9.7 deg from north by the georeference)",
+   "stated": "about 250 m offshore (Pattiaratchi 1999), about 275 m (Blacka 2013)",
+   "diff": "model: 254-263 m from the reef centre to the 0 m AHD line, between the two",
+   "reason": "The beach and shore line lie outside the modelled seabed patch; the frame follows the design drawing, fitted to the DoT soundings.",
+   "status": "by-design",
+   "resolve": "-",
+   "section": "3.1; 3.6; 4",
+   "ids": "DoT1998; BoM",
+   "ev": [
+    "254-263 m to the 0 m AHD line"
+   ]
+  },
+  {
+   "slug": "southern-ocean-surf-reef-albany",
+   "q": "Seabed source and datum",
+   "model": "profile from contours of a 2015 RHDHV plan, read as m AHD",
+   "stated": "datum not printed on the plan; same report family uses '-0.75 mAHD' for the crest",
+   "diff": "if CD = LAT the bed is 0.74 m deeper (+5.7k m3)",
+   "reason": "Only continuous contour source found; the full Detailed Design Report with the 2017 bathymetry is not public.",
+   "status": "unresolved",
+   "resolve": "Full Bluecoast report / 2017 bathymetry / mid-2025 as-built survey from the City of Albany; Navionics readings by Lior",
+   "section": "3.2; 4; 7",
+   "ids": "S11; S12",
+   "ev": [
+    "Not on the City website (only the executive summary, 5 pages)"
+   ]
+  },
+  {
+   "slug": "southern-ocean-surf-reef-albany",
+   "q": "BMT 2018 near-shore sounding",
+   "model": "-1.1 m AHD at (x -53, y 32)",
+   "stated": "2.7 m below chart datum at that point",
+   "diff": "sounding 1.6 m (CD = AHD) or 2.3 m (CD = LAT) deeper",
+   "reason": "Different survey dates, label positions (+-11 m) or datum; far-field 8.4 m CD agrees within 0.4 m.",
+   "status": "unresolved",
+   "resolve": "as above",
+   "section": "4",
+   "ids": "S12",
+   "ev": [
+    "the sounding is 1.6 m (CD = AHD) or 2.3 m (CD = LAT) deeper. UNRESOLVED"
+   ]
+  },
+  {
+   "slug": "southern-ocean-surf-reef-albany",
+   "q": "Volume fitted",
+   "model": "34,000 m3 by construction (N = 2.73)",
+   "stated": "34,000 m3 (City)",
+   "diff": "unfitted loft gives 20,826 m3 (61 %)",
+   "reason": "Either a fuller pile or a deeper seabed (+1.5 m) is needed; the evidence cannot separate them. The broad plateau and steep toe of the model are an effect of the fit.",
+   "status": "unresolved",
+   "resolve": "design cross-sections or a survey",
+   "section": "3.3; 4",
+   "ids": "S5",
+   "ev": [
+    "the shortfall cannot be assigned to either (evidence: none)"
+   ]
+  },
+  {
+   "slug": "southern-ocean-surf-reef-albany",
+   "q": "Which end of the crest is shallowest",
+   "model": "-1.0 m AHD at the offshore (east) end, -2.0 m beyond 40 m",
+   "stated": "table: -1.00 m 'shallowest' and 110 m @ -2 m, no position",
+   "diff": "all -1.0 m: +6.4k m3; all -2.0 m: -1.4k m3",
+   "reason": "The design plan puts the take-off area at the east end; no section drawing.",
+   "status": "unresolved",
+   "resolve": "section drawing",
+   "section": "3.3",
+   "ids": "S5",
+   "ev": [
+    "Ridge level z_c: -1.0 m AHD over the first 15 m from the offshore (east) end"
+   ]
+  },
+  {
+   "slug": "southern-ocean-surf-reef-albany",
+   "q": "Later rock movements (May 2025 storm; 18 rocks repositioned February 2026)",
+   "model": "not modelled",
+   "stated": "RWR 28 May 2025; Albany Advertiser 28 May 2025 and 11 Mar 2026",
+   "diff": "note only",
+   "reason": "Positions and sizes not published.",
+   "status": "by-design",
+   "resolve": "",
+   "section": "1",
+   "ids": "S17-S19; card R11, R18",
+   "ev": [
+    "the rock movements of May 2025 and February 2026 are notes only"
+   ]
+  },
+  {
+   "slug": "southern-ocean-surf-reef-albany",
+   "q": "No as-built survey, no construction image",
+   "model": "design outline (default) positioned on the 2026 satellite image",
+   "stated": "no survey; 19 Wayback releases hold only three captures (2022-12-19, 2025-01-16, 2026-01-20)",
+   "diff": "area -30 %/+20 %",
+   "reason": "Completion survey of mid-2025 (the City programme said March 2025) not public.",
+   "status": "open",
+   "resolve": "City of Albany; Google Earth Pro historical imagery (Lior)",
+   "section": "2; 7",
+   "ids": "S1; S2",
+   "ev": [
+    "so there is no construction-sequence image"
+   ]
+  },
+  {
+   "slug": "southern-ocean-surf-reef-albany",
+   "q": "Rock quantity: 62,800 t or 70,000 t",
+   "model": "62,800 t = 34,000 m3 (City design table); loft fitted to 34,000 m3",
+   "stated": "ABC News 16 Jul 2025 and Raised Water Research: 70,000 t",
+   "diff": "70,000 t = 37,898 m3: N 2.73 -> 3.89, mean height 2.59 -> 2.89 m",
+   "reason": "No source says whether 70,000 t is the as-built quantity; the City layer sum is 62,800 t.",
+   "status": "open",
+   "resolve": "Completion survey or as-built quantities from the City / Heron Construction",
+   "section": "4",
+   "ids": "S6; S15; S22; A13",
+   "ev": [
+    "70,000 t = 37,898 m3 needs loft exponent N = 3.89 (now 2.73)"
+   ]
+  },
+  {
+   "slug": "southern-ocean-surf-reef-albany",
+   "q": "Footprint 13,104 m2 or 16,100 m2",
+   "model": "13,104 m2 (Bluecoast design outline), 10,918 m2 (satellite patch)",
+   "stated": "Raised Water Research: 1.61 ha, 165 m x up to 110 m; City FAQ 2023 about 16,000 m2 (earlier concept)",
+   "diff": "drawn outline 19 % smaller; 16,100 m2 would fill 89 % of the 165 x 110 m bounding box (drawn outline 72 %)",
+   "reason": "RWR gives no source and mixes 2015 and final-design numbers.",
+   "status": "unresolved",
+   "resolve": "Design drawing with area, or completion survey",
+   "section": "4",
+   "ids": "S8; S15",
+   "ev": [
+    "16,100 m2 would fill 89 % of it"
+   ]
   }
  ]
 }

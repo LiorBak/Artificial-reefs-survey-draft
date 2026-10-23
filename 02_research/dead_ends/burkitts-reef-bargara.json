@@ -1,0 +1,245 @@
+{
+  "slug": "burkitts-reef-bargara",
+  "entries": [
+    {
+      "what": "Swellnet forum thread 'An actual functioning man-made reef. Burkitts Reef, Bargara' (Dicky Roberts); Swellnet comment thread 540429 (truebluebasher)",
+      "kind": "web page",
+      "where": "https://www.swellnet.com/forums/surfing-reef-designs/577692 ; https://www.swellnet.com (comment 540429)",
+      "checked": "2026-09-25",
+      "by": "agent: Burkitts card research and verification re-check (WebFetch / built-in browser)",
+      "result": "bot check (not bypassed)",
+      "detail": "The 577692 thread returned HTTP 403 on re-fetch (card R9), so the dossier uses only its title. The comment thread behind R8 gave ECONNRESET twice to WebFetch and was read only through the built-in browser; it covers the 1982 proposal, ~300 m3 and ~12 boulders, A$10,000 and the before/after surf-days stats, but it does NOT contain the '2.5 m tide swing' (that figure is R4 only). No location detail for the reshaped zone.",
+      "might_work": "Lior: W7 (re-read in a browser for any location detail of the moved boulders)"
+    },
+    {
+      "what": "X (Twitter) post by @abcsport about the ABC story, 2024-01-27",
+      "kind": "web page",
+      "where": "https://x.com/abcsport/status/1751370066221051992",
+      "checked": "2026-09-24",
+      "by": "agent: Burkitts card research (dossier audit 2026-10-10)",
+      "result": "paywalled",
+      "detail": "HTTP 402 on re-fetch; not read. The quote is kept in the card only because the same facts are independently corroborated by R14 (Instagram) and the ABC article itself. Nothing about location or dimensions.",
+      "might_work": ""
+    },
+    {
+      "what": "Gemini's Burkitts sources: ABC News 'burkitts-reef-bundaberg-greg-redgard-surfing/103328224' (2024-01-21), The Inertia 2021, Swellnet 2022, Tracks Magazine 2023, and the '80 m x 40 m' size",
+      "kind": "web page",
+      "where": "https://www.abc.net.au/news/2024-01-21/burkitts-reef-bundaberg-greg-redgard-surfing/103328224 ; theinertia.com, swellnet.com and tracksmag.com.au (homepages only)",
+      "checked": "2026-09-25",
+      "by": "agent: Burkitts verification re-check",
+      "result": "broken link",
+      "detail": "The ABC URL returns HTTP 404 (re-confirmed twice); the real story is dated 2024-01-28 under a different URL and gives no dimensions. The other three Gemini references link only to site homepages. The 80 x 40 m figure has no citation. Gemini lead not confirmed; not used.",
+      "might_work": ""
+    },
+    {
+      "what": "Google Maps satellite re-measurement of the Burkitts Reef point (earlier estimate 120 x 46 m, 2,480 m2)",
+      "kind": "imagery",
+      "where": "Google Maps satellite near -24.82, 152.47 (built-in browser, scale bar read from the page DOM)",
+      "checked": "2026-09-25",
+      "by": "agent: Burkitts verification re-check",
+      "result": "other: not reproducible",
+      "detail": "The 120 x 46 m figure is the dossier author's own visual estimate from Google Maps; no image was saved. The re-check could not drive Google Maps' measure tool (menu clicks inconsistent) and only reached a rough pixel-ruler agreement in order of magnitude (about 1.3 m per screenshot pixel). The 2026-10-10 shape agent therefore treated it as not reproducible and kept it as a note only.",
+      "might_work": "Lior: G10 (Google Earth Pro ruler, with dated low-tide imagery)"
+    },
+    {
+      "what": "Esri World Imagery 2025-09-05 (z19, 0.271 m/px) for the 1997 reshaped boulder zone",
+      "kind": "imagery",
+      "where": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}, centre -24.8153, 152.4671 (registry burkitts-reef-bargara-img-08)",
+      "checked": "2026-10-10",
+      "by": "agent: Burkitts shape agent (queue item 9, cloud)",
+      "result": "imagery shows no structure",
+      "detail": "The natural basalt rock platform is visible (traced, 31,485 m2 in frame, LOW confidence) but the sub-zone where about 12 boulders (about 300 m3) were moved in 1997 cannot be identified in this image by eye. Tide state of the image is unknown (the waterline edge could shift tens of metres) and the frame cuts the platform at its south end. Later the same day the network pass located Redgard's Phase 3 work zones from Jackson and Corbett (2007) Fig 1 (oblique aerial) and georeferenced them on the Esri Wayback image of 2016-07-31 (low confidence, +-25 m); that is not a survey of the 1997 works, so drawing the whole platform would still present the stage as the reef.",
+      "might_work": "Dated low-tide imagery (Google Earth Pro history: Lior G10), 1997-98 aerials (QImagery needs a token), or an account from Redgard / Bargara Boardriders (E12)"
+    },
+    {
+      "what": "YouTube videos 'Diving Bargara, Burkitt's Reef Marine Park' (wuJ__7Js-cY) and 'Surfing at Bargara Beach, QLD' (O3bEn8029XQ), and their extracted frames",
+      "kind": "video",
+      "where": "https://www.youtube.com/watch?v=wuJ__7Js-cY ; https://www.youtube.com/watch?v=O3bEn8029XQ",
+      "checked": "2026-09-25",
+      "by": "agent: Burkitts media re-check; Lior's review 2026-09-25",
+      "result": "wrong site",
+      "detail": "Lior (2026-09-25) found that neither shows the artificial reef. The first is shore-dive footage at the Burkitts Reef Marine Park dive site (sandy / rocky bottom, hard coral bommies, fish) sharing the name; the second is generic Bargara Beach surf-tourism footage with no mention of Burkitts Reef. Frames wuJ__7Js-cY_0025 and _0205 were rejected (registry img-06, img-07, display false). The dive site's depth to about 9 m is therefore not used as seabed for the reef.",
+      "might_work": ""
+    },
+    {
+      "what": "Queensland historical aerial photos 1990s (QImagery archive, before/after Feb 1997)",
+      "kind": "imagery",
+      "where": "https://qimagery.information.qld.gov.au/ ; ImageServer https://spatial-img.information.qld.gov.au/arcgis/rest/services/QImagery/QldArchive_AerialPhotos/ImageServer",
+      "checked": "2026-10-10",
+      "by": "agent: Burkitts+Mexico network pass (cloud, 2026-10-10)",
+      "result": "login needed (token required; not bypassed)",
+      "detail": "The web app config (/api/config) lists the public ImageServer, but a query returns {'error':{'code':499,'message':'Token Required'}}. Nothing was queried further.",
+      "might_work": "Lior in a browser: open QImagery, search Bargara (-24.8157, 152.4675), list negatives dated 1990-2000, request/download the 1996-98 frames via the site's request form."
+    },
+    {
+      "what": "ELVIS LiDAR (Geoscience Australia / FSDF) for Bargara",
+      "kind": "database",
+      "where": "https://elevation.fsdf.org.au/",
+      "checked": "2026-10-10",
+      "by": "agent: Burkitts+Mexico network pass (cloud, 2026-10-10)",
+      "result": "other: interactive web app; not queried",
+      "detail": "Only the HTML shell was fetched (no data API tried). A public council DEM was used instead (see BRC entry).",
+      "might_work": "Lior in a browser: ELVIS order for the Bargara tile (LiDAR is topographic: the platform is probably NoData or low-confidence below the waterline anyway)."
+    },
+    {
+      "what": "Bundaberg Regional Council 2016 1 m DEM (platform elevation)",
+      "kind": "database",
+      "where": "https://mappingdata.bundaberg.qld.gov.au/arcgis/rest/services/BRC_2016_DEM_1m/MapServer (REST identify, 9,025 points at 8 m + 195 at 3 m)",
+      "checked": "2026-10-10",
+      "by": "agent: Burkitts+Mexico network pass (cloud, 2026-10-10)",
+      "result": "other: partial; data exist only on land",
+      "detail": "Partial yield: valid cells only on land and the upper shore (lowest 0.58 m, datum not stated, assumed AHD). The whole rock platform and the Phase 3 zone are NoData, so no platform or crest level can be read. Kept as context (R21).",
+      "might_work": "Bundaberg Regional Council: ask for the LiDAR metadata (survey date, tide, datum) and any hydrographic survey."
+    },
+    {
+      "what": "AusSeabed / Geoscience Australia bathymetry for Bargara",
+      "kind": "database",
+      "where": "WebSearch 'Bargara Bundaberg LiDAR DEM coastal bathymetry AusSeabed Queensland Hervey Bay Burnett Heads survey'; https://portal.ga.gov.au/",
+      "checked": "2026-10-10",
+      "by": "agent: Burkitts+Mexico network pass (cloud, 2026-10-10)",
+      "result": "not found",
+      "detail": "No AusSeabed or GA survey over Bargara or Burnett Heads was found; GA 30 m national models cover Northern Australia, GBR and Bass Strait (Hervey Bay not listed). The portal itself was not searched interactively.",
+      "might_work": "Lior: AusSeabed portal map query at -24.8157, 152.4675; Navionics SonarChart reading (already in REQUESTS)."
+    },
+    {
+      "what": "SurfingRamps.com.au (Andrew Pitt) page on Burkitts / 'Redgard the Reef Renovator'",
+      "kind": "web page",
+      "where": "https://www.surfingramps.com.au/ , /burkitts-reef",
+      "checked": "2026-10-10",
+      "by": "agent: Burkitts+Mexico network pass (cloud, 2026-10-10)",
+      "result": "broken link",
+      "detail": "Host not resolvable from the container (DNS ENOTFOUND / proxy 502). WebSearch found no copy.",
+      "might_work": "Lior via browser or Wayback Machine."
+    },
+    {
+      "what": "Pitt, A. (2005). Redgard the Reef Renovator. Artificial Surf Reef Conference",
+      "kind": "paper",
+      "where": "WebSearch 'Pitt 2005 \"Redgard the Reef Renovator\" Artificial Surf Reef Conference Bargara'; papers/ folder grep (no hit)",
+      "checked": "2026-10-10",
+      "by": "agent: Burkitts+Mexico network pass (cloud, 2026-10-10)",
+      "result": "not found",
+      "detail": "Cited in J&C 2007 reference list (p.5) and as design source on p.1; no copy or abstract online found. Likely the source of Redgard's Phase plans.",
+      "might_work": "Lior: ask the conference organisers / Andrew Pitt / Greg Redgard (Bargara Boardriders) for the paper or slides."
+    },
+    {
+      "what": "Redgard, G. (2006). pers. comm. to Jackson and Corbett (phase plans)",
+      "kind": "e-mail contact",
+      "where": "cited in J&C 2007 (p.1, p.5)",
+      "checked": "2026-10-10",
+      "by": "agent: Burkitts+Mexico network pass (cloud, 2026-10-10)",
+      "result": "not found",
+      "detail": "Personal communication; nothing published. Would hold the Phase 1-3 maps.",
+      "might_work": "Lior to e-mail Greg Redgard via Bargara Boardriders (we do not send e-mail)."
+    },
+    {
+      "what": "Wikimedia Commons / Google Maps low-tide photos of the headland",
+      "kind": "imagery",
+      "where": "WebSearch 'Burkitts Reef Bargara low tide rock platform headland photo Wikimedia Commons'",
+      "checked": "2026-10-10",
+      "by": "agent: Burkitts+Mexico network pass (cloud, 2026-10-10)",
+      "result": "not found",
+      "detail": "Only tourism pages; no Commons file found.",
+      "might_work": "Lior: Google Maps photos / Commons search by hand; check licences."
+    },
+    {
+      "what": "Esri Wayback releases before 2010 / 1997 pairs",
+      "kind": "imagery",
+      "where": "wayback config 197 releases, tiles at -24.8165, 152.4675 z15-z18",
+      "checked": "2026-10-10",
+      "by": "agent: Burkitts+Mexico network pass (cloud, 2026-10-10)",
+      "result": "imagery shows no structure",
+      "detail": "Wayback starts 2014; underlying imagery dates are 2010-09-11 (z17 only), 2016-07-31, 2022-10-03, 2025-02-26, 2025-09-05; no pre-1997 or pre-2010 imagery; z18 tiles missing for releases before 2017-10-25. All show the platform; none shows the zone reshaped boulders.",
+      "might_work": "Google Earth Pro historical imagery (Lior; goes back to 1990s for some places); QImagery."
+    },
+    {
+      "what": "ABC News gallery 2024-01-28 (Howells and O'Neal) - wide shots",
+      "kind": "web page",
+      "where": "https://www.abc.net.au/news/2024-01-28/diy-surf-break-built-by-mates-at-burkitts-reef-bargara/103387450",
+      "checked": "2026-10-10",
+      "by": "agent: Burkitts+Mexico network pass (cloud, 2026-10-10)",
+      "result": "no plan or figure",
+      "detail": "Partial yield (already registered img-01..05, ABC captions retrieved): five photos plus the 1980 sketch; none is a wide shot locating the moved boulders. Text says only 'relocated the largest boulders nearby ... placed bricks in areas that needed filling'.",
+      "might_work": "Greg Redgard / ABC Wide Bay for the photo archive."
+    },
+    {
+      "what": "RWR Burkitts Reef spot page - text location of the works",
+      "kind": "web page",
+      "where": "https://raisedwaterresearch.com/spot/artificial-reef/australia/queensland/burkitts-reef/",
+      "checked": "2026-10-10",
+      "by": "agent: Burkitts+Mexico network pass (cloud, 2026-10-10)",
+      "result": "no plan or figure",
+      "detail": "Partial yield: its image 'Burkitts.jpg' is the Redgard Phase 3 aerial (USED, img-10). Text: boulders 'relocated ... to gaps in the reef where the wave would break at higher tides'; no coordinates.",
+      "might_work": ""
+    },
+    {
+      "what": "Swellnet article 2024-01-31 and comments (incl. comment 540429)",
+      "kind": "web page",
+      "where": "https://swellnet.com/news/swellnet-dispatch/2024/01/31/creating-the-worlds-first-diy-reef-break",
+      "checked": "2026-10-10",
+      "by": "agent: Burkitts+Mexico network pass (cloud, 2026-10-10)",
+      "result": "no plan or figure",
+      "detail": "Comments talk about access with excavators at low tide and nearby groynes; nothing locates the moved boulders.",
+      "might_work": ""
+    },
+    {
+      "what": "Bundaberg Region / queensland.com Burkitts Reef dive-site pages",
+      "kind": "web page",
+      "where": "https://www.bundabergregion.org/?p=5180",
+      "checked": "2026-10-10",
+      "by": "agent: Burkitts+Mexico network pass (cloud, 2026-10-10)",
+      "result": "no plan or figure",
+      "detail": "Partial yield: 'stretching along the headland in depths of two to eight metres' (kept as R22). No work-zone information.",
+      "might_work": ""
+    },
+    {
+      "what": "Outdoors Queensland 'World-first DIY surf break'; SurferToday 'history of artificial surf reefs'",
+      "kind": "web page",
+      "where": "https://outdoorsqueensland.com.au/world-first-diy-surf-break/ ; https://www.surfertoday.com/surfing/the-history-of-artificial-surf-reefs",
+      "checked": "2026-10-10",
+      "by": "agent: Burkitts+Mexico network pass (cloud, 2026-10-10)",
+      "result": "broken link",
+      "detail": "404 and 403 (bot block, not bypassed). Both are secondary repeats of the ABC story.",
+      "might_work": ""
+    },
+    {
+      "what": "papers/ folder (all 5 PDFs) for Bargara / Burkitt / Redgard",
+      "kind": "paper",
+      "where": "papers/ (pymupdf grep)",
+      "checked": "2026-10-10",
+      "by": "agent: Burkitts+Mexico network pass (cloud, 2026-10-10)",
+      "result": "no plan or figure",
+      "detail": "Only Rendle 2016 p.41 Table 2.1 row (already cited as R-Rendle). Nothing on the zone.",
+      "might_work": ""
+    },
+    {
+      "what": "EMODnet Bathymetry DTM 2024 (viewer, REST, ERDDAP) for seabed depth at the reef",
+      "kind": "database",
+      "where": "https://emodnet.ec.europa.eu/geoviewer/ ; EMODnet Bathymetry REST depth_sample / ERDDAP bathymetry_dtm_2024 at -24.8205, 152.4625",
+      "checked": "2026-10-06",
+      "by": "agent: EMODnet bathymetry agent (cloud)",
+      "result": "not found",
+      "detail": "EMODnet covers European seas only; the REST service returns HTTP 204 (empty) at this reef's coordinate (Australia), so the site is outside the grid. Only two of the 13 reefs are covered (Boscombe, Borth). Do not retry EMODnet for this reef.",
+      "might_work": "Local sources instead: national or state bathymetry, a council or authority survey, Navionics / Google Earth readings (see REQUESTS_FOR_LIOR.md section 5)"
+    },
+    {
+      "what": "Instagram post @abcbrisbane C2n6UcWvcGV (2024-01-27/28) about the ABC story (card R14)",
+      "kind": "web page",
+      "where": "https://www.instagram.com/abcbrisbane/p/C2n6UcWvcGV/",
+      "checked": "2026-10-10",
+      "by": "agent: Burkitts source audit (cloud)",
+      "result": "login needed",
+      "detail": "Social-media post, not read in full; lead only. It corroborates the quote text of R13 (the X post, HTTP 402) and was the independent corroboration that kept that quote in the card. No location or dimension information expected.",
+      "might_work": ""
+    },
+    {
+      "what": "W7 web searches (which boulders were moved; wide low-tide photos)",
+      "kind": "search",
+      "where": "Google searches + ABC 2024 article listed in REQUESTS_FOR_LIOR.md W7",
+      "checked": "2026-10-11",
+      "by": "Lior (browser), recorded by main",
+      "result": "other: nothing new",
+      "detail": "Lior ran the W7 searches; nothing beyond what agents already had, and nothing on which boulders were moved.",
+      "might_work": "E12 (Greg Redgard / Bargara Boardriders); QImagery 1996-98 aerials"
+    }
+  ]
+}

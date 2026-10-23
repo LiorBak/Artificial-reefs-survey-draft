@@ -47,3 +47,11 @@ Every image is registered (citation + 'how used') in 03_images/reefs/prattes-ree
 | img5 | prattes-reef-el-segundo-img-08 |
 | img6 | prattes-reef-el-segundo-img-09 |
 | img7 (PDF; figures A12-A17) | see rows A12-A17 in 3d/annotated (registry ids in SOURCES_3D.md note) |
+
+## Added 2026-10-10 (re-verification): figures extracted from img7 (registry in 03_images/reefs/prattes-reef-el-segundo/)
+| file | what | registry id |
+|---|---|---|
+| src/bn2003_fig4_design_layout_raster.png | img7 p.3 Fig. 4 'The design layout of Pratte's Reef', embedded raster 371 x 468 px (same drawing as img1; same raster as img5) | prattes-reef-el-segundo-img-37 |
+| overlays/bn2003_fig4_with_img5_outline_2026-10-10.png | Fig. 4 with the shape.json img5 outline drawn on it | prattes-reef-el-segundo-img-37 (annotated) |
+| src/bn2003_fig20_pratte_vs_narrowneck_raster.png | img7 p.14 Fig. 20 'comparison between Pratte's Reef and Narrowneck Reef', embedded raster 576 x 282 px, own 0-50 m bar | prattes-reef-el-segundo-img-38 |
+| overlays/bn2003_fig20_pratte_scale_check_2026-10-10.png | Fig. 20 with the bar and V extents marked (29.0 x 58.5 m) | prattes-reef-el-segundo-img-38 (annotated) |

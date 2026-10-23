@@ -1,0 +1,34 @@
+{
+ "transform": {
+  "anchor_canonical_xy_m": [
+   3.738,
+   271.446
+  ],
+  "anchor_E_MGA50_GDA94": 381801.49,
+  "anchor_N_MGA50_GDA94": 6457145.86,
+  "anchor_lon": 115.748462,
+  "anchor_lat": -32.015644,
+  "theta_ccw_deg": 9.74,
+  "canonical_plus_x_bearing_deg": 350.3,
+  "canonical_plus_y_(offshore)_bearing_deg": 260.3,
+  "epsg": 28350,
+  "note": "(E,N) = R(theta) (-(y-yc), (x-xc)) + (E0,N0); canonical x north, y west of shape.json"
+ },
+ "fit": {
+  "rock_soundings_inside_pct": 91.0,
+  "bed_soundings_inside_pct": 18.5,
+  "n_rock": 564,
+  "n_bed": 135,
+  "n_post_1999": 840,
+  "free_scale_fit_scale": 0.979,
+  "note": "scale freed in a separate run: 0.979 (outline scale confirmed within 2 %)"
+ },
+ "survey_2002_vs_1998": {
+  "mean_rock_thickness_inside_original_footprint_m": 1.29,
+  "n_inside": 313,
+  "extension_triangle_mean_thickness_m": 0.43,
+  "n_extension": 23,
+  "ring_0_25m_outside_mean_thickness_m": 0.19,
+  "n_ring": 809
+ }
+}

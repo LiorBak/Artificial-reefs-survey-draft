@@ -1,0 +1,215 @@
+{
+  "slug": "opunake-reef",
+  "entries": [
+    {
+      "what": "Black et al. 2004, Studies for Resource Consent: Opunake Surfing Reef (ASR Ltd report for South Taranaki District Council)",
+      "kind": "paper",
+      "where": "https://www.researchgate.net/publication/273133845_Studies_for_Resource_Consent_Opunake_Surfing_Reef ; searches 'Black Mead Opunake surfing reef resource consent studies 2004 ...'",
+      "checked": "2026-10-10",
+      "by": "agent: Opunake item 9b + network pass (cloud)",
+      "result": "login needed",
+      "detail": "Not in papers/ and not openly available. ResearchGate returned HTTP 403 / Cloudflare to WebFetch and curl with a browser user-agent (2026-09-25 verification, repeated later) and was skipped in the 2026-10-10 network pass (login). Card R9 rests on a search snippet only. A web search for the 2004 study found nothing (TRC hits were unrelated Opunake Power hydro consents). Authors and report number are not confirmed. This is the most likely source of the reef position, design plan and dimensions.",
+      "might_work": "Lior: P9 / W5 (open the ResearchGate page in a browser and save the PDF), or e-mail E11 (STDC / TRC, Official Information request)"
+    },
+    {
+      "what": "Moores 2006, NZ Geographic 078 'Artificial surf reefs - coming to a beach near you' (design figure)",
+      "kind": "web page",
+      "where": "https://www.nzgeo.com/stories/artificial-surf-reefs-coming-to-a-beach-near-you/ (nzgeo.com ?p=5057)",
+      "checked": "2026-10-10",
+      "by": "agent: Opunake network pass (fresh agent, cloud)",
+      "result": "bot check (not bypassed)",
+      "detail": "HTTP 403 Cloudflare challenge in the 2026-10-10 network pass; not bypassed. An earlier run (2026-09-25 verification) got the article text by curl with a browser user-agent (about 9.3 kB, no paywall): it is a 2006 pre-construction piece with no figures and no '90 x 20 m' dimension, so the text is already held (card R3) but the design figure is not.",
+      "might_work": "Lior: P16 (open the page in a browser, save the design figure and the page)"
+    },
+    {
+      "what": "Taranaki Regional Council (2009) Opunake Artificial Reef Monitoring Programme 2005-2009, Technical Report 2009-33",
+      "kind": "report",
+      "where": "trc.govt.nz pages; searches 'Opunake artificial reef monitoring programme Taranaki Regional Council Technical Report 2009-33 ...' and 'trc.govt.nz Opunake artificial reef monitoring report bathymetry ...'",
+      "checked": "2026-10-10",
+      "by": "agent: Opunake item 9b + network pass (cloud)",
+      "result": "not found",
+      "detail": "The report itself is not findable online (two searches 2026-10-10; no hit from TRC). trc.govt.nz pages returned HTTP 403 Cloudflare challenge in the network pass (not bypassed). The title and number come from the Rendle (2016) and Blacka et al. (2013) reference lists; place of publication (Stratford vs Opunake) is not confirmed.",
+      "might_work": "Lior: P15 / E11 (consents@trc.govt.nz) or the TRC publications library in a normal browser"
+    },
+    {
+      "what": "STDC consent plans / Opunake Artificial Surf Reef Trust documents (reef survey, crest datum, bag layout)",
+      "kind": "search",
+      "where": "'Opunake Artificial Surf Reef Trust STDC reef survey plan crest chart datum bags layout' (WebSearch)",
+      "checked": "2026-10-10",
+      "by": "agent: Opunake item 9b (cloud)",
+      "result": "no plan or figure",
+      "detail": "Only news text came back: Stuff 'Money for surf reef a wipeout' (NZ$400k write-off), SurferToday, Ausleisure on the ASR liquidation. No consent plan, survey or drawing. The Stuff, Ausleisure and Geosynthetics Magazine pages were listed as leads but not fetched and are not expected to hold a plan.",
+      "might_work": "Lior: E11 (STDC / TRC; Official Information request)"
+    },
+    {
+      "what": "Web searches for an Opunake plan drawing, coordinates, aerial of the bags, or a design paper",
+      "kind": "search",
+      "where": "WebSearch x9, 2026-10-10: 'Opunake surfing reef geotextile bags plan drawing dimensions crest depth Black ASR'; 'Opunake surf reef aerial photo bags visible offshore ... coordinates'; 'Mead Black Opunake reef design ... Coasts and Ports'; 'icce-ojs-tamu.tdl.org article 8509 ... Opunake'; 'researchcommons.waikato.ac.nz 10289/12221 Opunake'",
+      "checked": "2026-10-10",
+      "by": "agent: Opunake item 9b (cloud)",
+      "result": "no plan or figure",
+      "detail": "All hits are text only (about 90 x 20 m, 1.5-2 m high bags, 27 bags by 2009): raisedwaterresearch.com, theinertia.com, geosyntheticsmagazine.com, surf-forecast and tourism pages. No plan, no coordinates, no survey, no aerial of the bags. The ICCE (tdl.org) hits were general surfing-reef papers, not Opunake; the Waikato handle 10289/12221 was not identified.",
+      "might_work": "Lior: W5; Google Earth Pro history (G8)"
+    },
+    {
+      "what": "LINZ open aerial imagery of Opunake cove, 2011-12 (0.4 m) and 2021-22 (0.25 m), tile BJ28_5000_0806",
+      "kind": "imagery",
+      "where": "https://nz-imagery.s3.ap-southeast-2.amazonaws.com/taranaki/taranaki_2011-2012_0.4m/rgb/2193/BJ28_5000_0806.tiff and .../taranaki_2021-2022_0.25m/rgb/2193/BJ28_5000_0806.tiff",
+      "checked": "2026-10-10",
+      "by": "agent: Opunake network pass (fresh agent, cloud)",
+      "result": "imagery shows no structure",
+      "detail": "Crops of 1 km viewed once each (registry opunake-reef-img-11, img-12). 2011-12 (flown 2011-11-30 to 2012-03-30): clear water, curved wave lines peeling from the north headland and one whitewater patch, no bag field or pale rectangle. 2021-22 (flown 2021-11-23 to 2022-01-07): darker, rougher water, no structure. The reef is submerged, so not seeing it is not evidence that it is absent. Other LINZ sets exist (1976-2002 film scans, 2016-18 0.3 m, 2022-23 0.1 m, tiles BJ28_500_*) and were not fetched or not found for this tile.",
+      "might_work": "Google Earth Pro history 2007-2010 (Lior: G8), when the bags were fresh"
+    },
+    {
+      "what": "Esri Wayback releases 2015-08-19, 2019-05-15, 2023-08-31, 2024-05-09 (z19, 9 x 9 tile mosaics)",
+      "kind": "imagery",
+      "where": "https://wayback.maptiles.arcgis.com (config https://s3-us-west-2.amazonaws.com/config.maptiles.arcgis.com/waybackconfig.json), tile 515337/324775",
+      "checked": "2026-10-10",
+      "by": "agent: Opunake network pass (fresh agent, cloud)",
+      "result": "imagery shows no structure",
+      "detail": "All 197 releases were scanned for the z19 tile: 173 have a tile here, 4 distinct versions by MD5 (registry opunake-reef-img-13 to img-16). A contrast-stretched crop of the water showed no bags in any of them. Capture dates were not retrieved (release dates only).",
+      "might_work": "Google Earth Pro history 2007-2010 (Lior: G8)"
+    },
+    {
+      "what": "Esri World Imagery z20 around -39.4577, 173.8545 (capture date 2025-01-16, 0.115 m/px)",
+      "kind": "imagery",
+      "where": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+      "checked": "2026-10-04",
+      "by": "agent: Opunake shape agent (cloud)",
+      "result": "imagery shows no structure",
+      "detail": "Viewed once at 1100 px (registry opunake-reef-img-07 to img-10): shows the NW headland, boulder foreshore, surf-zone whitewater, wet black sand at low tide, camping ground and township. No bag field and no regular pale or dark rectangle. Bags are submerged and the water is turbid, so absence in the image is not evidence that the reef is absent. The image window is centred on -39.4577, 173.8545, which is itself a guess.",
+      "might_work": "Google Earth Pro history 2007-2010 (Lior: G8)"
+    },
+    {
+      "what": "LINZ chart / bathymetry layers, LINZ Basemaps, and LINZ open AWS buckets for Opunake depth data",
+      "kind": "chart",
+      "where": "https://data.linz.govt.nz (chart and bathymetry layers); LINZ Basemaps tiles; s3 buckets nz-coastal, nz-elevation",
+      "checked": "2026-10-10",
+      "by": "agent: Opunake network pass (fresh agent, cloud)",
+      "result": "login needed",
+      "detail": "The chart and bathymetry layers need a login or export key (not used). LINZ Basemaps tiles need an API key (a key seen in the data.linz.govt.nz page source belongs to that site and was not borrowed). The open AWS buckets hold no Opunake bathymetry: coastal LiDAR only at Awakino and Urenui-Oakura (2025), land DEM 2021.",
+      "might_work": "Lior: free LINZ account for chart / bathymetry downloads; Navionics soundings (REQUESTS section 5, Opunake row)"
+    },
+    {
+      "what": "Gemini's Opunake sources: 'Mead & Black 2007 Design Dossier' and 'Taranaki Regional Council Environmental Monitoring Records 2010'",
+      "kind": "report",
+      "where": "Gemini folder (read-only): reef_footprints.json entry for Opunake (30 x 67 m polygon, 80 x 30 m); searched on ResearchGate, the web and both project folders",
+      "checked": "2026-09-25",
+      "by": "agent: Opunake verification re-check (cloud / PC)",
+      "result": "not found",
+      "detail": "Neither cited source could be located or accessed anywhere. The Gemini dimensions (30 x 67 m, 1,365 m2, 1.4 m crest, 150 m offshore) are self-contradictory (polygon inverted relative to its own text) and have no matching quote in any source we can open. Gemini lead not confirmed; not used (standing rule 2).",
+      "might_work": ""
+    },
+    {
+      "what": "YouTube video https://www.youtube.com/watch?v=-4xU8GNiDdk (candidate Opunake reef video)",
+      "kind": "video",
+      "where": "https://www.youtube.com/watch?v=-4xU8GNiDdk",
+      "checked": "2026-09-25",
+      "by": "agent: Opunake card enrichment (video step)",
+      "result": "broken link",
+      "detail": "yt-dlp could not resolve the metadata (likely removed or private); dropped rather than guessed.",
+      "might_work": ""
+    },
+    {
+      "what": "YouTube videos of Opunake surfing: 'Every Breaking Wave at OPUNAKE beach', 'Opunake Classic 2015', 'Opunake Beach - Taranaki NZ'",
+      "kind": "video",
+      "where": "https://www.youtube.com/watch?v=-xWlsZlffZY ; https://www.youtube.com/watch?v=cfiQvzgdGn0 ; https://www.youtube.com/watch?v=GXYYCbZtz_s",
+      "checked": "2026-09-25",
+      "by": "agent: Opunake media re-check (cloud)",
+      "result": "other: video shows only the beach, not the reef",
+      "detail": "Judged on title, channel, description and two saved frames (no transcripts): scenic and contest footage of Opunake's natural beach waves. None mentions the reef or shows the structure or an unmistakable reef effect; frames show wet sand with distant whitewater and a beach-break wave. Useful only as site context.",
+      "might_work": "No known video shows the reef; it is submerged"
+    },
+    {
+      "what": "Raised Water Research Opunake page gallery images (Opunake-Artist-Rendition, Opunake-Location, Opunake-Reef-Flat)",
+      "kind": "imagery",
+      "where": "https://raisedwaterresearch.com/spot/artificial-reef/new-zealand/north-island/opunake/",
+      "checked": "2026-10-06",
+      "by": "agent: Opunake image registry re-view (cloud)",
+      "result": "imagery shows no structure",
+      "detail": "The 2026-09-25 media re-check rejected all three as wrong site (a fence and shingle beach with groynes, and rock-construction scenes). A re-view on 2026-10-06 judged them genuine Opunake photos as the card described, but the reef is not visible in any of them; kept as site context only. The two runs disagree. No scale or plan information in them.",
+      "might_work": "Lior: D4 (confirm keep as site context)"
+    },
+    {
+      "what": "papers/ folder: any plan figure, coordinates or crest datum for Opunake in Lior's 5 PDFs",
+      "kind": "paper",
+      "where": "papers/ folder (PyMuPDF text-layer grep, 2026-10-10)",
+      "checked": "2026-10-10",
+      "by": "agent: Opunake item 9b (cloud)",
+      "result": "no plan or figure",
+      "detail": "Opunake appears only in text and tables: Mead and Borrero 2011 p.1 (Fig 1 world map) and p.3-4 (s.3.1.5: 4,800 m3, start 2006, last work May 2008, 1,400 m3 short, no drawing); Rendle 2016 thesis Table 2.1 (p.41) and references (p.298); Blacka et al. 2013 Tables 4.1-4.4 (30 m x 100 m, depth 1.8-3.0 m, about 300 m offshore, A$0.93M) and references. Those facts are card references; the plan, position and datum part failed. The 2007 Mount Maunganui paper has no usable text layer (image pages, not OCR'd) and the 2023 Narrowneck paper has no Opunake mention.",
+      "might_work": "Not in these PDFs; see the P9, P15, P16 entries above"
+    },
+    {
+      "what": "EMODnet Bathymetry DTM 2024 (viewer, REST, ERDDAP) for seabed depth at the reef",
+      "kind": "database",
+      "where": "https://emodnet.ec.europa.eu/geoviewer/ ; EMODnet Bathymetry REST depth_sample / ERDDAP bathymetry_dtm_2024 at -39.4600, 173.8600",
+      "checked": "2026-10-06",
+      "by": "agent: EMODnet bathymetry agent (cloud)",
+      "result": "not found",
+      "detail": "EMODnet covers European seas only; the REST service returns HTTP 204 (empty) at this reef's coordinate (New Zealand), so the site is outside the grid. Only two of the 13 reefs are covered (Boscombe, Borth). Do not retry EMODnet for this reef.",
+      "might_work": "Local sources instead: national or state bathymetry, a council or authority survey, Navionics / Google Earth readings (see REQUESTS_FOR_LIOR.md section 5)"
+    },
+    {
+      "what": "SurferToday 'The history of artificial surf reefs' (card R4; source of the '90 m long and 20 m wide' wording)",
+      "kind": "web page",
+      "where": "https://www.surfertoday.com/surfing/the-history-of-artificial-surf-reefs ; its web.archive.org snapshot",
+      "checked": "2026-10-10",
+      "by": "agent: Opunake citations audit and source audit (cloud)",
+      "result": "bot check (not bypassed)",
+      "detail": "Cloudflare HTTP 403, also on the Wayback copy (the same page is card R5 in the Cables card, where it was never read). The 2026-09-25 verification reported re-fetching it by curl and confirming '90 meters long and 20 meters wide', but the 2026-10-10 citations audit could not reproduce that and removed all 31 [R4] tags (each sat beside R2, which carries the same 90 x 20 m); R4 is now recorded as NOT READ with supports 'nothing'. The two runs disagree, so the 90 x 20 m figure rests on R1 (Newsroom) and R2 (Raised Water Research) only, one lineage.",
+      "might_work": "Lior in a browser: read the page and confirm the sentence; else leave R4 uncited"
+    },
+    {
+      "what": "TRC Technical Report 2009-33 (Lior's copy): bag layout, as-built survey, bathymetry, post-construction survey",
+      "kind": "report",
+      "where": "new uploads from lior/Opunake Artificial Reef monitoring programme 2005-2009.pdf (58 pp.), read in full 2026-10-13",
+      "checked": "2026-10-13",
+      "by": "agent: Opunake TRC/NZGeo task (cloud)",
+      "result": "no plan or figure (partial yield)",
+      "detail": "The report gave the design size (99 x 30 x 3.5 m), depths with datum, state, consents and the occupation-area co-ordinates (used as references), but NO drawing of the bag layout, no bag levels, no bathymetry and no reef survey: it is an environmental compliance report (kaimoana and intertidal baseline surveys 2006-07, inspections from the cliff top). Figure 1 shows only the proposed-location rectangle on an aerial; Figure 2 a schematic hatched rectangle. The dive survey of the structure was only recommended for 2009-10 (printed p.18) and is not in this report.",
+      "might_work": "Later TRC monitoring reports (2009-10 and after; dive survey, structural-integrity reports under consent 6377-1 condition 15) and the consent file via E11 (TRC / STDC Official Information request)"
+    },
+    {
+      "what": "NZ Geographic article (Moores 2006): Opunake design figure",
+      "kind": "web page",
+      "where": "new uploads from lior/New Zyland Geographic.pdf (Lior's print of https://www.nzgeo.com/stories/artificial-surf-reefs-coming-to-a-beach-near-you/), read and OCRed 2026-10-13",
+      "checked": "2026-10-13",
+      "by": "agent: Opunake TRC/NZGeo task (cloud)",
+      "result": "no plan or figure",
+      "detail": "The article is text only (cost about NZ$1.3 m, waves 1.8-2.5 m, 100 m ride, south reef 200 m / 3.6 m, construction slated for March): used for those facts. It has no Opunake plan, dimensions of the reef or coordinates; its one photograph is an uncaptioned aerial of a pumping barge (site not stated, probably Mount Maunganui). Issue number and date are not on the print.",
+      "might_work": "Nothing for the design figure; the print edition (NZ Geographic issue 078, Mar-Apr 2006) might hold a graphic that the web page lacks (library)"
+    },
+    {
+      "what": "Black and Mead (2006), Opunake Reef Construction Manual (ASR Ltd for the Opunake Reef Trust)",
+      "kind": "report",
+      "where": "cited in TRC 2009-33 bibliography (printed p.20); WebSearch 2026-10-13 'Black Mead 2006 \"Opunake Reef Construction Manual\" ASR Limited'",
+      "checked": "2026-10-13",
+      "by": "agent: Opunake TRC/NZGeo task (cloud)",
+      "result": "not found",
+      "detail": "No online copy or catalogue record. Probably holds the construction drawings and bag layout.",
+      "might_work": "TRC / South Taranaki District Council / Opunake Reef Trust files (E11); University of Waikato (Kerry Black) library"
+    },
+    {
+      "what": "TRC post-construction monitoring reports on the Opunake reef (dive survey 2009-10, annual reports after 2009)",
+      "kind": "search",
+      "where": "WebSearch 2026-10-13: 'Opunake Artificial Reef monitoring programme post-construction dive survey Taranaki Regional Council technical report 2010'",
+      "checked": "2026-10-13",
+      "by": "agent: Opunake TRC/NZGeo task (cloud)",
+      "result": "not found",
+      "detail": "Results were unrelated reefs or general Opunake news; trc.govt.nz is bot-checked, so its publications library cannot be searched automatically.",
+      "might_work": "Lior in a browser: TRC 'Technical reports' library, search 'Opunake'; or E11"
+    },
+    {
+      "what": "Imagery inside the consent occupation area (LINZ 2011-12, 0.4 m) for a visible bag field",
+      "kind": "imagery",
+      "where": "07_scale/shapes/opunake-reef/overlays/consent_area_and_envelope_on_linz2011-12.png",
+      "checked": "2026-10-13",
+      "by": "agent: Opunake TRC/NZGeo task (cloud)",
+      "result": "imagery shows no structure",
+      "detail": "Now that the exact 189 x 94 m area is known, the LINZ 2011-12 aerial was re-checked inside it: only wave texture; the bags (crest at chart datum) are not visible. Esri 2025 frames likewise (earlier entries).",
+      "might_work": "Google Earth Pro history 2007-2012 (G8) over the polygon centre -39.4594, 173.8516 (fresh bags, calm day)"
+    }
+  ]
+}

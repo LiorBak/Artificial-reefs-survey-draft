@@ -1,0 +1,1550 @@
+{
+ "slug": "prattes-reef-el-segundo",
+ "name": "Pratte's Reef (permit name: Chevron Reef)",
+ "status": "verified",
+ "updated": "2026-10-05",
+ "confidence": {
+  "level": "medium",
+  "reason": "The outline is traced on the reef designer's own scaled plan drawing (Skelly Engineering design layout, 110 bags + 30 optional, also published as the 'design layout' in Borrero & Nelsen 2003), using only the solid-outline bags; the printed scale bar agrees with the known bag size (4 x 7 x 10 ft = 7.9 m3) within about 3-6% and two reproductions of the drawing agree to about 1% in area. It is a design drawing, not a survey or photo: nothing of the structure is visible on any image (removed 2008-2010), the April 2001 second phase (90 more bags, crest widened) is not drawn, the built bags moved and sank, and the map position cannot be fixed.",
+  "factors": [
+   "+ Scaled drawing from the designer of record (Skelly Engineering) with a printed scale bar (0-15-30-60-90 ft); the bar ticks fit a straight line to within 0.5 px in both reproductions (img1, img5) and the two reproductions are related by a near-uniform affine map (x scale 0.8763 vs 0.8783 expected from the bars, 0.2% apart; y scale 1.5% lower)",
+   "+ Independent scale check (verification 2026-10-05): ICCE-2010 gives the Pratte's bag as 7.9 m3 maximum volume; a secondary web summary (primary not located) gives the bag as 4 x 7 x 10 ft = 280 ft3 = 7.93 m3, which matches ICCE's figure by arithmetic. The drawing's bag grid, measured on both reproductions, has a column pitch of 6.8-6.9 ft (bag width 7 ft) and a row pitch of 9.4-9.6 ft (bag length 10 ft), i.e. 1-6% below nominal; spine block 10.6 m for 5 columns (2.12 m each) and 14.1 m for 5 rows (2.82 m each)",
+   "+ Solid-outline bags only: the drawing legend shows 110 solid + 30 dashed 'optional' bags; the 30 dashed bags are the outer two rows on each arm near the apex and the left column of the spine, and are excluded (this verification removed about 49 m2 of dashed-bag area that the first trace had wrongly included)",
+   "+ Arm angles 44.7 / 44.4 deg to the V axis (printed 45; re-measured on the canonical polygon: long edges at 43.7-46.5 deg), spine block 5 x 5 bag grid. NOTE the printed crest label '-6 ft MSL' (1.83 m below MSL = about 0.97 m below MLLW, using NOAA Los Angeles datums MSL = MLLW + 2.82 ft) does NOT match ICCE-2010's '1.8 m below MLLW at the outermost point after installation' (different datum and quantity); it is close to the post-Phase-II crest (-0.9 m MLLW, RWR). The crest depth therefore cannot identify which phase the drawing shows; the bag count (110) does",
+   "- Design drawing only (Phase I, 110 bags). Phase II (April 2001, +90 bags, volume +80%, crest widened and made shallower, bags placed directly over the Phase I bags - ICCE 2010 p.7) is NOT drawn: the final reef was higher and wider at the crest than this footprint, by an unknown amount, and it is unknown whether any of the 30 optional bags were built",
+   "- Bags were crane-placed, moved, sank and were buried (Borrero 2010; RWR), so the real footprint differed from the design by metres; no as-built survey, multibeam plot or aerial photo could be retrieved (Borrero & Nelsen 2003 figures and the CCRP aerials are blocked: HTTP 403)",
+   "- Drawing has no north arrow; orientation (+x toward SSE) is inferred from the 1996 concept plan (north arrow) and the present shoreline (155.5 deg, own fit)",
+   "- Published coordinates disagree by 100s of metres (card/Wikipedia is 288 m offshore of today's dry-sand edge; RWR and Gemini coordinates are 113-119 m), and all three lie SOUTH of the short rock groin at 33.91685,-118.43030 (taken to be the Grand Street jetty) whereas the CCC staff report (300 yd north of the Grand Avenue jetty) and Borrero & Nelsen 2003 (about 200 m south of the Hyperion 1-mile outfall, within 500 m of it and of the Grand Street jetty) put the reef NORTH of that jetty; so no lat/lon polygon is given (geo = null)",
+   "- Outline position depends on the stroke edge: +-1 px = +-0.2 m = about +-4% area; solid/dashed classification of the edge rows adds about +-10 m2; scale-bar anisotropy between reproductions about 1.5%",
+   "+ (2026-10-05, not yet re-verified) the primary 2003 paper confirms the bag size (4 x 7 x 10 ft, 7.9 m3), the Phase I count (110) and the 30 m cross-shore extent (p.14) against the 28.6 m of the outline (-4.7 %); it reprints the same drawing as Fig. 4. It does NOT contain an as-built plan, so confidence stays medium; the datum of the crest label is ambiguous (drawing '-6' MSL' vs paper '-6 ft MLLW': same number, 0.85 m apart)"
+  ]
+ },
+ "design_version": {
+  "drawn": "Phase I design, fall 2000: 110 solid-outline geotextile bags (about 3.0 m x 2.2 m x 1.2 m each) in a V of two arms at 45 deg to the wave direction, with a 5 x 5 bag spine block at the apex. The 30 dashed 'optional' bags on the drawing are not part of the outline. This is NOT the final reef: Phase II (April 2001) put 90 more bags on top of these and widened the crest.",
+  "why_this_one": "It is the only plan view of the built design found (Skelly Engineering title block, printed BAG COUNT 110 = the documented Phase I count) and it is later than the 1996 concept (about 30 large bags). No plan, survey or aerial photo of the post-Phase-II reef was retrievable, so the Phase I design footprint is the best available drawing; the page must say that the final (200-bag) reef was higher and wider at the crest than the footprint shown. Verification 2026-10-05: the same drawing (BAG COUNT 110, OPTIONAL BAGS 30, TOP OF BAG MIN DEPTH -6' MSL, 0-15-30-60-90 ft bar, Skelly Engineering title block) is Fig. 4 'The design layout of Pratte's Reef' of Borrero & Nelsen (2003) (viewed on ResearchGate; the full text beyond page 1 is paywalled) and Fig. 2.10 of Henriquez (2005), and RWR says 'The initial plan called for 110 bags'. Everything published labels it the DESIGN layout; no as-built plan was found, and RWR/Borrero report that the placed bags moved, sank and were buried (first winter swells covered the reef in 2000-01), so the real Phase I footprint differed from the drawing by an unknown amount. WHAT THE DRAWING REPRESENTS (state this on the page): the Phase I design layout, fall 2000, solid-outline bags only, not the as-built and not the 200-bag reef of April 2001. UPDATE 2026-10-05: Borrero & Nelsen (2003), now in hand as a file (src/borrero_nelsen_2003_prattes_monitoring_results.pdf), reprints this drawing as its Fig. 4 'The design layout of Pratte's Reef' and has no as-built plan, so the DESIGN-layout conclusion stands; design_version.drawn is unchanged.",
+  "alternatives_seen": [
+   {
+    "what": "1996 conceptual plan: about 30 large geobags, V of two 150 ft wings, about 9,000 sq ft, 5,000 yd3; permit application E-98-15, CCC hearing Oct 1998",
+    "source_id": "img6",
+    "why_not_used": "Earlier concept, superseded when the budget fell and the design changed to 110 small (7.9 m3) bags; the sketch is also not to scale (the two '150 ft' dimension lines measure 237 and 279 px). Used only for orientation and as an arm-length cross-check."
+   },
+   {
+    "what": "Phase II state (about 200 bags in total, 23-24 April 2001): 90 new bags, +80% volume, crest widened and made shallower (to within 1 m of MLLW), new bags placed directly over the Phase I bags",
+    "source_id": "R22",
+    "why_not_used": "Text only (ICCE 2010 p.7; Wikipedia 'Chevron Reef' gives the bag count; RWR says 'on top of the existing bags'). No plan or survey of it was retrievable (Borrero & Nelsen 2003 figures and Coastal Frontiers' 2008 reef-outline mapping exist but are not public). The Phase I plan footprint is therefore the base of the final structure, but the crest was wider and the plan extent after Phase II is unknown."
+   },
+   {
+    "what": "30 optional bags drawn dashed on the Skelly drawing (outer two rows of each arm near the apex + left column of the spine: about 12-13 per arm + 5)",
+    "source_id": "img1",
+    "why_not_used": "Marked OPTIONAL (not in the 110 BAG COUNT). No source says whether they were built; they may have been part of the 90 bags of Phase II. Including them would enlarge the plan outline by an estimated 15-20% (about 510-520 m2)."
+   },
+   {
+    "what": "1997 CEQA project description: 10-20 large bags, about 5,000 cubic yards",
+    "source_id": null,
+    "why_not_used": "Pre-design proposal text, no geometry."
+   },
+   {
+    "what": "Gemini: 40 m x 20 m, 650 m2 (496 m2 in another file; its own reef_footprints.json also carries 57.8 x 31.2 m / 584 m2 'per Skelly 2001 permit drawing')",
+    "source_id": null,
+    "why_not_used": "The 40 x 20 m figure is not in any source Gemini cites and is contradicted by the scaled drawing (58 x 29 m); Gemini's 57.8 x 31.2 m values agree with the drawing's outer envelope."
+   },
+   {
+    "what": "Borrero & Nelsen (2003) Fig. 2 aerial photograph (1 Mile Outfall - Reef - Grand Street Jetty - El Segundo Jetty, range lines) and Fig. 4 'design layout'",
+    "source_id": "R25",
+    "why_not_used": "Fig. 4 is the same Skelly drawing as img1 (no later layout). Fig. 2 is a small (432 x 231 px) annotated aerial photo with a 'Reef' text label only, no reef outline and no scale; not retrievable as a file (ResearchGate image hosts return HTTP 403 to scripts), viewed in the browser pane only. Used for the location constraint (reef between the outfall and the Grand Street jetty)."
+   }
+  ]
+ },
+ "sources": [
+  {
+   "id": "img1",
+   "kind": "design_drawing",
+   "title": "Skelly Engineering plan-view design drawing \"PRATTE'S REEF\" (110 bags + 30 optional)",
+   "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/07/Pratts-Reef-Diagram.png",
+   "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/us/california/prattes-reef/",
+   "page_or_figure": "single figure (full drawing with title block, legend and scale bar)",
+   "image_date": "undated; pre-construction design for the fall-2000 Phase I (Skelly Engineering title block)",
+   "credit": "Skelly Engineering (David W. Skelly, MS, PE) via Raised Water Research",
+   "license": "Unknown / all rights reserved - private research copy only (common.md rule 3); reuse rights must be checked with Raised Water Research / Skelly Engineering before any public release",
+   "local_file": "07_scale/shapes/prattes-reef-el-segundo/src/img1_skelly_diagram.png",
+   "image_size": [
+    308,
+    385
+   ],
+   "georef": null,
+   "scale": {
+    "px_per_m": 5.1549,
+    "method": "scale bar",
+    "evidence": "Printed bar 'SCALE: 1in=30ft' with ticks labelled 15', 30', 60', 90' (the 0 tick is cut off by the image edge). Run-length scan of bar rows 329-331 gives tick positions x = 21, 44, 92, 138.5 px (re-measured in verification). Least-squares fit px = -3.22 + 1.5712*ft (residuals <= 0.45 px) -> 1.5712 px/ft = 5.1549 px/m (0.1940 m/px). Cross-checks: (1) img5 (the same drawing, 1.139x larger) has its own bar fit 1.7889 px/ft; an 87-cell centroid-matched affine fit img5->img1 gives x scale 0.8763 (bars predict 0.8783, 0.2% apart) and y scale 0.8651 (1.5% lower: the two reproductions differ slightly in aspect). (2) Bag size: ICCE-2010 Fig. 1 gives 'A Pratte's Reef bag' 3 m long x 1.2 m high, volume 7.9 m3, implied plan width 7.9/(3 x 1.2) = 2.2 m; the drawing's spine block is 10.6 m wide for 5 columns (2.12 m each) and 14.1 m tall for 5 rows (2.82 m each, i.e. 6-7% below the 3.0 m bag length; verification re-measurement, the first trace said 13.8 m).",
+    "uncertainty_pct": 3
+   },
+   "pixel_polygons": [
+    [
+     [
+      96.16,
+      123.82
+     ],
+     [
+      96.08,
+      131.63
+     ],
+     [
+      97.67,
+      134.27
+     ],
+     [
+      96.09,
+      138.02
+     ],
+     [
+      96.1,
+      145.79
+     ],
+     [
+      97.77,
+      149.09
+     ],
+     [
+      96.17,
+      152.82
+     ],
+     [
+      96.21,
+      160.62
+     ],
+     [
+      98.38,
+      164.0
+     ],
+     [
+      96.27,
+      167.25
+     ],
+     [
+      96.36,
+      175.98
+     ],
+     [
+      98.38,
+      179.0
+     ],
+     [
+      96.41,
+      181.99
+     ],
+     [
+      96.46,
+      191.04
+     ],
+     [
+      100.51,
+      196.52
+     ],
+     [
+      100.21,
+      199.98
+     ],
+     [
+      101.89,
+      200.54
+     ],
+     [
+      106.24,
+      197.33
+     ],
+     [
+      108.63,
+      197.67
+     ],
+     [
+      163.76,
+      250.02
+     ],
+     [
+      168.44,
+      251.43
+     ],
+     [
+      213.03,
+      295.03
+     ],
+     [
+      224.94,
+      305.1
+     ],
+     [
+      227.04,
+      305.1
+     ],
+     [
+      238.81,
+      294.99
+     ],
+     [
+      239.5,
+      292.83
+     ],
+     [
+      238.93,
+      291.0
+     ],
+     [
+      221.97,
+      275.97
+     ],
+     [
+      178.12,
+      232.94
+     ],
+     [
+      177.43,
+      230.61
+     ],
+     [
+      181.17,
+      225.09
+     ],
+     [
+      180.92,
+      222.16
+     ],
+     [
+      150.62,
+      191.52
+     ],
+     [
+      150.65,
+      183.62
+     ],
+     [
+      148.31,
+      179.16
+     ],
+     [
+      150.57,
+      175.34
+     ],
+     [
+      150.59,
+      168.62
+     ],
+     [
+      148.31,
+      164.02
+     ],
+     [
+      150.62,
+      160.44
+     ],
+     [
+      150.98,
+      158.19
+     ],
+     [
+      150.77,
+      153.65
+     ],
+     [
+      149.1,
+      149.91
+     ],
+     [
+      150.97,
+      144.01
+     ],
+     [
+      151.0,
+      140.71
+     ],
+     [
+      150.71,
+      138.69
+     ],
+     [
+      148.48,
+      135.11
+     ],
+     [
+      150.96,
+      130.9
+     ],
+     [
+      151.34,
+      123.67
+     ],
+     [
+      184.61,
+      90.34
+     ],
+     [
+      184.88,
+      87.31
+     ],
+     [
+      180.87,
+      82.83
+     ],
+     [
+      180.96,
+      81.05
+     ],
+     [
+      224.97,
+      37.03
+     ],
+     [
+      243.41,
+      20.52
+     ],
+     [
+      243.69,
+      17.59
+     ],
+     [
+      240.97,
+      13.98
+     ],
+     [
+      233.12,
+      7.01
+     ],
+     [
+      230.99,
+      6.01
+     ],
+     [
+      228.43,
+      6.57
+     ],
+     [
+      193.76,
+      39.73
+     ],
+     [
+      174.1,
+      60.4
+     ],
+     [
+      170.67,
+      62.08
+     ],
+     [
+      159.55,
+      72.38
+     ],
+     [
+      158.24,
+      72.39
+     ],
+     [
+      155.5,
+      70.57
+     ],
+     [
+      153.65,
+      71.11
+     ],
+     [
+      152.83,
+      72.77
+     ],
+     [
+      153.56,
+      75.7
+     ],
+     [
+      152.89,
+      77.53
+     ],
+     [
+      140.8,
+      88.85
+     ],
+     [
+      137.27,
+      90.63
+     ],
+     [
+      108.87,
+      118.84
+     ],
+     [
+      106.83,
+      119.38
+     ],
+     [
+      104.38,
+      118.09
+     ],
+     [
+      102.62,
+      118.08
+     ],
+     [
+      97.48,
+      121.52
+     ]
+    ]
+   ],
+   "traced_what": "Outer boundary (outline centre-line) of the SOLID-outlined bags only = the 110 Phase I bags: the 5 x 5 spine block plus both 45-degree bag arms. The 30 dashed-outline 'optional bags' (outer two rows beside each elbow and the spine's left column) are excluded on both arms and on the spine.",
+   "match_notes": "Verification 2026-10-05: the first trace (66 vertices, 483.9 m2) wrongly included about 49 m2 of dashed-bag area (lower arm: both outer dashed rows, continuity along the outline edge 0.61-0.68; upper arm: second dashed row, 0.65-0.82; a solid line scores 0.95-1.00). The outline was re-derived by shifting those edges inward to the first continuous (solid) stroke, found on img5 where the dash gaps are resolved (edge-continuity profiles across both arms), mapped to img1 with the 87-cell affine and intersected with the original img1 trace (+0.5 px tolerance), so the img1 outline is the original trace wherever it already sat on solid lines. 76 vertices, 435.2 m2. Edge directions of the new outline: upper arm +45.1, +45.0, +43.7, +44.8 deg, lower arm -43.5, -44.4, -44.5, -45.3 deg from the horizontal (all long edges parallel to the arms, as expected for edges on real bag rows). Overlay: overlays/img1_final.png (new), overlays/img1_correction_red_new_cyan_old.png, old overlays in overlays/_pre_verification/. Sensitivity: +-1 px = +-4% area.",
+   "role": "primary"
+  },
+  {
+   "id": "img2",
+   "kind": "other",
+   "title": "Bag-size comparison diagram, \"A Pratte's Reef bag\" (3 m x 1.2 m) - same graphic as ICCE-2010 Fig. 1",
+   "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/07/Prattes-Reef-Bag-Size.jpg",
+   "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/us/california/prattes-reef/",
+   "page_or_figure": "single figure",
+   "image_date": "undated",
+   "credit": "Raised Water Research",
+   "license": "Unknown / all rights reserved - private research copy only",
+   "local_file": "07_scale/shapes/prattes-reef-el-segundo/src/img2_bag_size.jpg",
+   "image_size": [
+    640,
+    450
+   ],
+   "georef": null,
+   "scale": {
+    "px_per_m": null,
+    "method": "known dimension",
+    "evidence": "The diagram shows 'A Pratte's Reef bag' as 3 m x 1.2 m. It is a copy of Fig. 1 of the ICCE-2010 paper (Borrero 2010, p.2), where the 1.2 m is the bag HEIGHT and 3 m its length; with the stated maximum volume of 7.9 m3 the plan width is about 2.2 m (7.9/(3 x 1.2)), so the plan footprint is about 3.0 x 2.2 m (6.6 m2). (A '4 ft x 7 ft x 10 ft' bag is NOT in the ICCE 2010 text, although the first trace attributed it there; it appears only in a secondary web summary whose primary I could not locate, and 4 x 7 x 10 ft = 280 ft3 = 7.93 m3 agrees with ICCE's 7.9 m3 and gives a plan footprint of 7 x 10 ft = 2.13 x 3.05 m = 6.5 m2.)",
+    "uncertainty_pct": 5
+   },
+   "pixel_polygons": [],
+   "traced_what": "Not traced - used only for the bag dimension check.",
+   "match_notes": "Corrects the earlier assumption that a bag footprint is 3 x 1.2 m (3.6 m2); the plan footprint is about 6.6 m2.",
+   "role": "cross_check"
+  },
+  {
+   "id": "img3",
+   "kind": "aerial_photo",
+   "title": "Crane on barge placing a sand-filled bag (construction)",
+   "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/07/Building-Prattes-Reef.jpg",
+   "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/us/california/prattes-reef/",
+   "page_or_figure": "single figure",
+   "image_date": "fall 2000 / spring 2001 (construction)",
+   "credit": "Raised Water Research",
+   "license": "Unknown / all rights reserved - private research copy only",
+   "local_file": "07_scale/shapes/prattes-reef-el-segundo/src/img3_building.jpg",
+   "image_size": [
+    720,
+    472
+   ],
+   "georef": null,
+   "scale": null,
+   "pixel_polygons": [],
+   "traced_what": "Not traced - oblique surface photo, no plan view of the structure.",
+   "match_notes": "Context only.",
+   "role": "context"
+  },
+  {
+   "id": "img4",
+   "kind": "satellite",
+   "title": "Esri World Imagery, current, around the card coordinates (reef removed 2008-2010)",
+   "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+   "source_page": "satellite.py fetch (zoom 18, radius 400 m)",
+   "page_or_figure": null,
+   "image_date": "2026-01-09 (Esri identify capture date)",
+   "credit": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+   "license": "Esri World Imagery terms (view/research only)",
+   "local_file": "07_scale/shapes/prattes-reef-el-segundo/src/img4_satellite_current.png",
+   "image_size": [
+    1614,
+    1614
+   ],
+   "georef": {
+    "provider": "Esri World Imagery",
+    "zoom": 18,
+    "bounds": {
+     "north": 33.918715250327004,
+     "south": 33.91153013712269,
+     "east": -118.428293466568,
+     "west": -118.43695163726807
+    },
+    "tile_template": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "imagery_date": "2026-01-09",
+    "attribution": "Esri, Maxar, Earthstar Geographics, and the GIS User Community"
+   },
+   "scale": {
+    "px_per_m": 2.0179,
+    "method": "georeferenced",
+    "evidence": "m_per_px_center 0.49557 from the .geo.json sidecar",
+    "uncertainty_pct": 1
+   },
+   "pixel_polygons": [],
+   "traced_what": "NOTHING TRACED - the structure is not visible (removed 2008-2010; Esri Wayback only reaches back to 2014).",
+   "match_notes": "Used only to measure the present shoreline bearing (dry-sand edge, robust line fit over 113 rows: 155/335 deg, +-2) and to show that the card coordinate lies 278 m offshore of today's dry-sand edge and 192 m south of the short Grand Ave rock groin (33.91685, -118.43030), which contradicts the CCC text (reef 100 yd offshore, 300 yd north of that groin). Hence no geo-referenced polygon is given.",
+   "role": "context"
+  },
+  {
+   "id": "img5",
+   "kind": "paper_figure",
+   "title": "Fig. 2.10 \"Pratte's reef, California (Borrero & Nelson, 2003)\" - the same Skelly V design re-published (wave-direction arrow, 45 deg annotation, 0-15-30-60-90 ft bar)",
+   "url": "https://repository.tudelft.nl/file/File_79041f98-096e-4462-b710-f94cf8517494",
+   "source_page": "https://repository.tudelft.nl/record/uuid:75b15cd7-08a1-48e5-8fc9-337f184ae318",
+   "page_or_figure": "M. Henriquez (2005) 'Artificial Surf Reefs', MSc thesis TU Delft, p.12 (PDF p.22), Fig. 2.10, sec. 2.5.3; embedded raster extracted from the PDF",
+   "image_date": "thesis 2005; figure taken from Borrero & Nelsen, Proc. 3rd Int. Surfing Reef Symposium, Raglan, June 2003 (the design drawing itself pre-dates 2000)",
+   "credit": "Henriquez (2005), TU Delft, after Borrero & Nelsen (2003) / Skelly Engineering",
+   "license": "Repository says 'License info not available' - treat as all rights reserved; private research copy only",
+   "local_file": "07_scale/shapes/prattes-reef-el-segundo/src/img5_henriquez_fig2-10_raster.png",
+   "image_size": [
+    371,
+    420
+   ],
+   "georef": null,
+   "scale": {
+    "px_per_m": 5.8689,
+    "method": "scale bar",
+    "evidence": "Bar ticks for 0, 15, 30, 60, 90 ft at x = 6, 33, 59.5, 113.5, 167 px (rows 386-400 of the extracted raster); slope (167-6)/90 = 1.7889 px/ft = 5.8689 px/m (0.1704 m/px); every tick within 0.5 px of the line.",
+    "uncertainty_pct": 2
+   },
+   "pixel_polygons": [
+    [
+     [
+      120.04203043911858,
+      186.64710632962272
+     ],
+     [
+      120.30850916844157,
+      237.3516299979487
+     ],
+     [
+      122.7952397187527,
+      240.78509908107483
+     ],
+     [
+      125.64666607610557,
+      241.54604615178522
+     ],
+     [
+      130.80269780639497,
+      237.44599111915832
+     ],
+     [
+      133.56580915598275,
+      237.84530311390418
+     ],
+     [
+      164.07125375190762,
+      267.3934499381169
+     ],
+     [
+      165.60315835048712,
+      269.52984808782594
+     ],
+     [
+      168.43969490986535,
+      271.2127119228347
+     ],
+     [
+      196.83064205223914,
+      299.17224930644716
+     ],
+     [
+      201.34705826540483,
+      301.32452843541387
+     ],
+     [
+      261.39844163980854,
+      360.2630250971828
+     ],
+     [
+      265.8974877500975,
+      363.1887899958125
+     ],
+     [
+      268.3248127233184,
+      363.28334658608213
+     ],
+     [
+      271.2422917762279,
+      361.75929970255015
+     ],
+     [
+      281.1251121363942,
+      352.78031060483545
+     ],
+     [
+      282.2622510469819,
+      348.6307385802762
+     ],
+     [
+      278.8676113607228,
+      343.88529280901014
+     ],
+     [
+      211.9654655382851,
+      279.84594081743097
+     ],
+     [
+      211.38260356755094,
+      276.96682999931653
+     ],
+     [
+      215.91638128894698,
+      271.02606798567825
+     ],
+     [
+      215.63784345055467,
+      267.76053212078136
+     ],
+     [
+      181.4256886382568,
+      233.22102397075759
+     ],
+     [
+      180.9650433901463,
+      221.46989227912132
+     ],
+     [
+      179.75125777537707,
+      217.6301572964617
+     ],
+     [
+      180.96854881885716,
+      213.9243934177956
+     ],
+     [
+      180.98374502145768,
+      205.0702931815546
+     ],
+     [
+      179.1552723867412,
+      200.19367340607758
+     ],
+     [
+      181.03266824138575,
+      196.3632620943027
+     ],
+     [
+      181.7996336384007,
+      190.73416705134727
+     ],
+     [
+      180.86157748117512,
+      186.32285987809396
+     ],
+     [
+      179.305457382444,
+      182.790242758973
+     ],
+     [
+      181.84720318277746,
+      175.85200598150576
+     ],
+     [
+      181.08935423211966,
+      168.88606270868289
+     ],
+     [
+      179.9185152624349,
+      165.55845795506286
+     ],
+     [
+      181.90720304007755,
+      160.7351918186975
+     ],
+     [
+      182.37549069814915,
+      153.16189269889884
+     ],
+     [
+      214.79724268663338,
+      121.1974497804725
+     ],
+     [
+      220.2617527552244,
+      114.79270972739462
+     ],
+     [
+      220.51892419894008,
+      111.77384063203363
+     ],
+     [
+      216.34768831712324,
+      106.17225544358418
+     ],
+     [
+      216.71632096953996,
+      103.41406075863695
+     ],
+     [
+      246.0705197015484,
+      73.93463075858598
+     ],
+     [
+      286.5651004264377,
+      36.38203431273169
+     ],
+     [
+      288.43555047432625,
+      32.50270308446908
+     ],
+     [
+      287.35790567449396,
+      29.430311646938637
+     ],
+     [
+      276.65057058908263,
+      19.777778829824165
+     ],
+     [
+      273.81266043365787,
+      18.248140205777126
+     ],
+     [
+      271.1906081840523,
+      18.81018078533641
+     ],
+     [
+      241.9196325573023,
+      46.08688204987364
+     ],
+     [
+      208.958457138216,
+      80.9511153908942
+     ],
+     [
+      205.30526316604335,
+      82.59563191601393
+     ],
+     [
+      193.18897235298272,
+      93.54851269301174
+     ],
+     [
+      191.30441738007949,
+      93.74956168452658
+     ],
+     [
+      188.05797488800965,
+      92.19448527662087
+     ],
+     [
+      185.69603632901143,
+      92.94182304957461
+     ],
+     [
+      184.90022599439644,
+      94.60387915516893
+     ],
+     [
+      185.9264334744845,
+      97.92993534777837
+     ],
+     [
+      185.1658693447,
+      100.18328605464689
+     ],
+     [
+      170.89810659046884,
+      113.60769488263547
+     ],
+     [
+      167.13485251893096,
+      115.36954852863177
+     ],
+     [
+      134.16270582842787,
+      148.30296111765998
+     ],
+     [
+      131.6514302366918,
+      148.91227142694194
+     ],
+     [
+      128.85728567933938,
+      147.18485144287865
+     ],
+     [
+      127.2884488102359,
+      147.06537246017726
+     ],
+     [
+      121.02757634091965,
+      151.31215505191466
+     ],
+     [
+      120.00363375684526,
+      153.7018902616864
+     ],
+     [
+      120.02013223082251,
+      162.9383632333718
+     ],
+     [
+      120.87068608615826,
+      165.99793844721327
+     ],
+     [
+      120.01620605875922,
+      169.1350508133106
+     ],
+     [
+      120.0004410534301,
+      178.70620986239624
+     ],
+     [
+      121.29258285602778,
+      182.99719473639536
+     ]
+    ]
+   ],
+   "traced_what": "Outer boundary of the solid-outlined bags (same rule as img1). The same drawing as img1, redrawn cleaner at higher resolution - NOT an independent survey.",
+   "match_notes": "Same rule as img1, applied directly on img5 (the dashes are better resolved here): previous trace 483.4 m2 included about 44 m2 of dashed bags; corrected outline 72 vertices, 437.5 m2 (img5 scale 5.8689 px/m), bbox 58.8 x 28.7 m. Edge-continuity check (own method, fraction of the edge lying on ink): outer edges of the old trace 0.61-0.82 on the dashed lines, first solid line 5.5-6.5 px (1.0-1.1 m) inward in the upper arm and 6.5 / 12.5 px (1.1 / 2.1 m) inward in the lower arm. The spine's left column is dashed for all five rows (the lower two rows look solid on img5 only because the dash gaps are blurred; on img1 they are clearly dashed; 5 + 12.5 + 12.5 = 30 optional bags). Same drawing as img1 - NOT an independent survey.",
+   "role": "cross_check"
+  },
+  {
+   "id": "img6",
+   "kind": "design_drawing",
+   "title": "CCC staff report Exhibit 3 'REEF DESIGN PLAN VIEW' - Skelly Engineering 'Pratte's Reef Conceptual Plan and Geobag Configuration', July 1996 (Figure 3)",
+   "url": "https://documents.coastal.ca.gov/reports/1998/10/W5a-10-1998.pdf",
+   "source_page": "California Coastal Commission staff report W5a, CDP application E-98-15 (Surfrider Foundation - Pratte's Reef), hearing 13 Oct 1998",
+   "page_or_figure": "Exhibit 3, PDF p.31 of 32 (300-dpi raster, cropped to the plan view)",
+   "image_date": "drawing July 1996; staff report Aug 1998",
+   "credit": "Skelly Engineering for Surfrider Foundation; California Coastal Commission public record",
+   "license": "Public agency record; reuse terms not stated - check before public release",
+   "local_file": "07_scale/shapes/prattes-reef-el-segundo/src/img6_ccc_exhibit3_concept_plan.png",
+   "image_size": [
+    2354,
+    1919
+   ],
+   "georef": null,
+   "scale": {
+    "px_per_m": 5.6,
+    "method": "known dimension",
+    "evidence": "Both arms carry a 150 ft dimension line; measured arrow-to-arrow 237 px (arm A) and 279 px (arm B) = 1.58 and 1.86 px/ft, so the sketch is not to scale (16% spread). Mean 1.71 px/ft = 5.6 px/m used.",
+    "uncertainty_pct": 10
+   },
+   "pixel_polygons": [
+    [
+     [
+      607.3,
+      871.2
+     ],
+     [
+      679.2,
+      890.8
+     ],
+     [
+      634.5,
+      1041.7
+     ],
+     [
+      829.4,
+      1098.5
+     ],
+     [
+      808.7,
+      1169.8
+     ],
+     [
+      543.0,
+      1095.1
+     ]
+    ]
+   ],
+   "traced_what": "Outline of the two-rectangle V of the 1996 CONCEPT (about 30 large bags, each wing 150 ft): 6 vertices from intersections of PCA-fitted edges. Traced for ORIENTATION (north arrow, contours) and arm length only - it is NOT the built design.",
+   "match_notes": "Arm axes 16.2 and 106.0 deg from north (page-up = N arrow), 89.8 deg apart, bisector 61.1 deg. The north-arrow shaft is vertical. Area 1030 m2 vs CCC text 'approximately 9,000 square feet' (836 m2).",
+   "role": "cross_check"
+  },
+  {
+   "id": "img7",
+   "kind": "paper_figure",
+   "title": "Borrero & Nelsen (2003) 'Results of a comprehensive monitoring program at Pratte's Reef' - 16-page PDF; Fig. 4 'The design layout of Pratte's Reef' (371 x 468 px raster on p.3) is the Skelly drawing again",
+   "url": "unknown (supplied by Lior on 2026-10-05 as Downloads\\Pratte_results.pdf); citation per R23: Proc. 3rd International Surfing Reef Symposium, Raglan NZ (2003) - the file itself prints neither venue nor year",
+   "source_page": "supplied file",
+   "page_or_figure": "p.3 Fig. 4 (design layout); p.2 Fig. 2 (aerial with range lines); pp.4-7 Figs 5-9 (profiles and a UTM bathymetry window); text pp.1-3, 14, 16",
+   "image_date": "paper 2003; surveys Oct 2000 - Sept 2002",
+   "credit": "J.C. Borrero (USC) and C. Nelsen (Surfrider Foundation); Fig. 4 by Skelly Engineering",
+   "license": "copyright holder; private research copy only (common.md rule 3); reuse not cleared",
+   "local_file": "07_scale/shapes/prattes-reef-el-segundo/src/borrero_nelsen_2003_prattes_monitoring_results.pdf",
+   "image_size": [
+    371,
+    468
+   ],
+   "georef": null,
+   "scale": "Fig. 4: printed scale bar 0-15-30-60-90 ft (same as img1)",
+   "pixel_polygons": [],
+   "traced_what": "NOT traced: Fig. 4 is the same design drawing as img1/img5 (viewed side by side, annotated in 3d/annotated/A13); the paper contains no as-built plan and no bag-position survey",
+   "match_notes": "Fig. 4 shows BAG COUNT 110, OPTIONAL BAGS 30, TOP OF BAG MIN DEPTH -6' MSL at both arm tips, 45 deg mark, WAVE DIRECTION, Skelly Engineering title block: identical to img1. Text confirms 110 Phase I bags (22 Sept 2000), 4 x 7 x 10 ft bags (280 ft3 = 7.9 m3), 90 Phase II bags (23-24 April 2001), 'approximately - 6 ft MLLW' at the outermost point after Phase I, Phase II crest 'within 3ft of MLLW', reef 'only extends 30' m cross-shore (p.14), 'approximately 1600 cubic meters ... 200 geotextile bags' (p.16)",
+   "role": "primary text source for the design version and datum label (confirms img1 is the DESIGN layout; Phase I crest depth is stated in MLLW), cross-shore extent check (30 m vs 28.6 m), position (Fig. 9 survey window, Fig. 2, p.1 text); input of the 3D model (3d/METHODS_3D.md sections 3.10-3.11)",
+   "georef_note": "none for Fig. 4; Fig. 9 (vector) is on a UTM zone 11N grid (datum not stated)",
+   "pdf_pages": 16
+  }
+ ],
+ "canonical": {
+  "frame": "metres; origin = assumed shoreline point on the V axis, 91.44 m (100 yd, text value) inshore of the polygon centroid; +x alongshore toward ~155 deg (SSE, the side of the drawing's lower arm); +y offshore toward ~245 deg (WSW) (+y = +x turned 90 deg clockwise, the tools/geom.py convention). The drawing has no north arrow: the orientation assumes its horizontal 'wave direction' axis is the shore-normal (supported to ~5 deg by the 1996 concept plan and the present shoreline, see angles)",
+  "derived_from": "img1",
+  "polygons_m": [
+   [
+    [
+     -6.28,
+     103.27
+    ],
+    [
+     -4.77,
+     103.28
+    ],
+    [
+     -4.25,
+     102.98
+    ],
+    [
+     -3.53,
+     103.28
+    ],
+    [
+     -2.02,
+     103.28
+    ],
+    [
+     -1.38,
+     102.96
+    ],
+    [
+     -0.66,
+     103.27
+    ],
+    [
+     0.86,
+     103.26
+    ],
+    [
+     1.51,
+     102.84
+    ],
+    [
+     2.14,
+     103.25
+    ],
+    [
+     3.84,
+     103.23
+    ],
+    [
+     4.42,
+     102.84
+    ],
+    [
+     5.0,
+     103.22
+    ],
+    [
+     6.76,
+     103.21
+    ],
+    [
+     7.82,
+     102.42
+    ],
+    [
+     8.49,
+     102.48
+    ],
+    [
+     8.6,
+     102.16
+    ],
+    [
+     7.98,
+     101.31
+    ],
+    [
+     8.04,
+     100.85
+    ],
+    [
+     18.2,
+     90.15
+    ],
+    [
+     18.47,
+     89.25
+    ],
+    [
+     26.93,
+     80.6
+    ],
+    [
+     28.89,
+     78.29
+    ],
+    [
+     28.89,
+     77.88
+    ],
+    [
+     26.92,
+     75.6
+    ],
+    [
+     26.5,
+     75.46
+    ],
+    [
+     26.15,
+     75.57
+    ],
+    [
+     23.23,
+     78.86
+    ],
+    [
+     14.89,
+     87.37
+    ],
+    [
+     14.43,
+     87.5
+    ],
+    [
+     13.36,
+     86.78
+    ],
+    [
+     12.8,
+     86.83
+    ],
+    [
+     6.85,
+     92.7
+    ],
+    [
+     5.32,
+     92.7
+    ],
+    [
+     4.45,
+     93.15
+    ],
+    [
+     3.71,
+     92.71
+    ],
+    [
+     2.41,
+     92.71
+    ],
+    [
+     1.52,
+     93.15
+    ],
+    [
+     0.82,
+     92.7
+    ],
+    [
+     0.39,
+     92.63
+    ],
+    [
+     -0.49,
+     92.67
+    ],
+    [
+     -1.22,
+     93.0
+    ],
+    [
+     -2.36,
+     92.64
+    ],
+    [
+     -3.0,
+     92.63
+    ],
+    [
+     -3.4,
+     92.69
+    ],
+    [
+     -4.09,
+     93.12
+    ],
+    [
+     -4.91,
+     92.64
+    ],
+    [
+     -6.31,
+     92.56
+    ],
+    [
+     -12.78,
+     86.11
+    ],
+    [
+     -13.36,
+     86.06
+    ],
+    [
+     -14.23,
+     86.84
+    ],
+    [
+     -14.58,
+     86.82
+    ],
+    [
+     -23.12,
+     78.28
+    ],
+    [
+     -26.32,
+     74.7
+    ],
+    [
+     -26.89,
+     74.65
+    ],
+    [
+     -27.59,
+     75.18
+    ],
+    [
+     -28.94,
+     76.7
+    ],
+    [
+     -29.14,
+     77.11
+    ],
+    [
+     -29.03,
+     77.61
+    ],
+    [
+     -22.59,
+     84.34
+    ],
+    [
+     -18.58,
+     88.15
+    ],
+    [
+     -18.26,
+     88.81
+    ],
+    [
+     -16.26,
+     90.97
+    ],
+    [
+     -16.26,
+     91.23
+    ],
+    [
+     -16.61,
+     91.76
+    ],
+    [
+     -16.51,
+     92.12
+    ],
+    [
+     -16.18,
+     92.28
+    ],
+    [
+     -15.62,
+     92.13
+    ],
+    [
+     -15.26,
+     92.26
+    ],
+    [
+     -13.07,
+     94.61
+    ],
+    [
+     -12.72,
+     95.29
+    ],
+    [
+     -7.25,
+     100.8
+    ],
+    [
+     -7.14,
+     101.2
+    ],
+    [
+     -7.39,
+     101.67
+    ],
+    [
+     -7.39,
+     102.02
+    ],
+    [
+     -6.73,
+     103.01
+    ]
+   ]
+  ],
+  "area_m2": 435.2,
+  "bbox_m": {
+   "alongshore": 58.0,
+   "crossshore": 28.6
+  },
+  "max_dim_m": 58.0,
+  "distance_offshore_m": 91.44,
+  "distance_offshore_basis": "TEXT value (CCC staff report E-98-15 p.1: '100 yards offshore ... in about 15 feet of water' for the 1996 concept; Wikipedia 'Chevron Reef' about 100 yards; RWR 'roughly 100 meters off the beach'). Not measurable from the drawing; it only fixes where the canonical polygon sits along y (polygon y-range 74.7 to 103.3 m). It is the distance of the reef centre, from an undefined shoreline.",
+  "shore_normal_bearing_deg": 245,
+  "shore_normal_note": "offshore direction = present shoreline bearing 155.5/335.5 deg (own robust fit to the dry-sand edge on the 2026-01-09 Esri image, 92 inlier rows, +-2) turned to the sea side = 245.5 deg; the 1996 concept plan (img6) puts the V bisector at 61 deg (onshore), i.e. 241 deg offshore",
+  "transform_note": "Pixel -> metres by the explicit formula x = (py - oy)/px_per_m, y = -(px - ox)/px_per_m with origin (ox,oy) = (628.5, 156.2) px on img1 (placed so the polygon centroid is at x=0, y=91.44 m) and px_per_m = 5.1549. Verified in the 2026-10-05 verification against the FIXED tools/geom.py make-canonical (--alongshore-dir-px 0,1): all 76 vertices agree to 0.0000 m; one vertex checked by hand: px (96.16, 123.82) -> x = (123.82-156.2)/5.1549 = -6.281 m, y = -(96.16-628.5)/5.1549 = 103.269 m. (The pre-fix tool rotated by +phi and would have been wrong for this direction.) Re-checked in the third verification run (2026-10-05): the fixed tools/geom.py make-canonical (--origin-px 628.5,156.2 --alongshore-dir-px 0,1, --no-write on a copy) reproduces all 76 vertices of polygons_m to 0.007 m (the 2-decimal rounding), area 435.21 m2, bbox 58.02 x 28.63 m, max dimension 58.03 m; geom.py selftest = 334 checks, 0 failed; vertex 0 re-derived by hand (px 96.16,123.82 -> x = -6.281, y = 103.269 m). Handedness check: with page-up = 335 deg the drawing's upper arm points to bearing 20 deg and the lower arm to 110 deg, matching the 1996 concept plan (16 and 106 deg), so the frame is not mirrored.",
+  "img5_check": {
+   "area_m2": 437.5,
+   "bbox_m": {
+    "alongshore": 58.8,
+    "crossshore": 28.7
+   },
+   "max_dim_m": 58.8,
+   "note": "corrected img5 outline, scale 5.8689 px/m; differs from img1 by +0.5% in area, +1.3% alongshore (reproduction aspect)"
+  },
+  "alt_envelope_incl_optional_bags": {
+   "area_m2_estimate": 515,
+   "method": "NOT traced: estimate = solid outline 435 m2 + the dashed bands that the first trace had partly included (about 49 m2) + the remaining outer dashed row and the spine's dashed column (about 30 m2); i.e. +15-20%. Shown only as the upper bound of the drawn design (140 bags).",
+   "uncertainty_m2": 25
+  }
+ },
+ "geo": null,
+ "angles": [
+  {
+   "what": "upper-drawn arm (north side) vs the V axis / drawing's wave-direction axis",
+   "deg": 44.7,
+   "method": "line directions of the long straight edges of the corrected outline (img1: +45.1, +45.0, +43.7, +44.8 deg from horizontal; img5: +44.6, +45.1, +42.8, +43.0, +46.6, +45.0); drawing prints 45 deg"
+  },
+  {
+   "what": "lower-drawn arm (south side) vs the V axis",
+   "deg": 44.4,
+   "method": "same, img1 -43.5, -44.4, -44.5, -45.3; img5 -44.1, -44.6, -44.5, -43.7, -45.3 (mean 44.4)"
+  },
+  {
+   "what": "angle between the two arms",
+   "deg": 89.1,
+   "method": "44.7 + 44.4; drawing implies 2 x 45 = 90"
+  },
+  {
+   "what": "arms vs the shoreline (both arms), IF the V axis = shore-normal",
+   "deg": 45,
+   "method": "inherits the arm angles above; V axis vs present shore-normal is within ~4 deg (concept bisector 61 deg vs shore-normal 65 deg), so each arm is 45 +- 5 deg from the shoreline"
+  },
+  {
+   "what": "arms vs the shoreline using the 1996 concept orientation (img6, not the built design)",
+   "deg": null,
+   "method": "concept arm bearings 16.2 deg (NNE arm) and 106.0 deg (ESE arm) vs shoreline 155.5/335.5 deg (img4): 41.2 deg (NNE arm) and 49.0 deg (ESE arm), re-checked by eye on the 300-dpi raster. Concept is not to scale (150 ft dimension lines measure 237 vs 279 px), treat as +-5 deg"
+  },
+  {
+   "what": "spine block (5 x 5 bags, about 10.6 m x 14.1 m) long faces vs the shoreline",
+   "deg": 0,
+   "method": "the block's 14.1 m face (apex face, canonical y = 103.3 m) is the drawing's vertical = alongshore under the same shore-normal assumption; edge bearings from geom.py bearings-xy with +y = 245 deg give 335/155 deg for it"
+  },
+  {
+   "what": "present shoreline bearing at the site (context, img4)",
+   "deg": 155.5,
+   "method": "own robust (RANSAC) line fit to the dry-sand edge, 92 inlier rows of 148, Esri 2026-01-09: 155.5/335.5 deg; shore-normal pointing offshore = 245.5 deg"
+  },
+  {
+   "what": "V-axis bearing toward the shore (open side of the V), 1996 concept (img6)",
+   "deg": 61.1,
+   "method": "bisector of the two PCA-fitted arm axes on the 300-dpi raster, north arrow shaft vertical; compare onshore shore-normal 65 deg"
+  }
+ ],
+ "dimensions_check": [
+  {
+   "quantity": "alongshore span, tip to tip (drawing vertical)",
+   "text_value": "none in any text source. Earlier pass measured 57-58 m on the same drawing; Gemini reef_footprints.json dimensions block says 57.8 m 'per Skelly 2001 permit drawing' (same drawing, so not independent)",
+   "text_ref": "footprint S/R4 pass 2026-09-25; Gemini reef_footprints.json",
+   "drawing_value": "58.0 m (img1); 58.8 m (img5)",
+   "diff_pct": 0.4,
+   "comment": "Agrees with the earlier measurement (+0.4%); not an independent check. The 1996 concept (two 150 ft wings at 90 deg) would be about 65 m tip to tip, a different design."
+  },
+  {
+   "quantity": "cross-shore width (apex face to the arms' shoreward ends)",
+   "text_value": "'Narrowneck extends over 150 m offshore, while Pratte's only extends 30' (Borrero & Nelsen 2003 p.14, primary); earlier polygon 31.2 m (= Gemini's bbox, not independent)",
+   "text_ref": "R28 p.14 (this replaces the untraceable web-summary snippet)",
+   "drawing_value": "28.6 m (img1); 28.7 m (img5)",
+   "diff_pct": -4.7,
+   "comment": "UPDATED 2026-10-05: the 30 m statement is now traced to its source (p.14 of the supplied paper). 28.6 m vs 30 m = -4.7 %: agrees within the paper's rounding ('30')."
+  },
+  {
+   "quantity": "envelope area of the solid (built) bags",
+   "text_value": "324.1 m2 (earlier schematic with assumed 4 m arms and 8 x 6 m spine); Gemini 584 m2 'CAD polygon', 496 m2 'net poly', 650 m2 'gross permit envelope'",
+   "text_ref": "footprint S5; Gemini reef_footprints.json area_notes",
+   "drawing_value": "435 m2 (img1); 437 m2 (img5); about 515 m2 if the 30 optional bags are included (estimate)",
+   "diff_pct": 34.3,
+   "comment": "The traced spine is about 10.6 x 14.1 m and the arms are 2-3 bag rows wide, so the schematic underestimated. Gross bag footprint 110 x 6.5 m2 = 715 m2 is larger than the envelope because bags overlap/shingle in the arms (drawing area per bag about 4.0 m2). Gemini's 584 m2 lies between the solid-only (435) and the all-bags (about 515) envelopes of the drawing; its 650 m2 and 496 m2 are not reproducible."
+  },
+  {
+   "quantity": "bag count (Phase I)",
+   "text_value": "110 (Phase I, fall 2000); 200 after Phase II (+90, April 2001)",
+   "text_ref": "ICCE 2010 p.7; card R1/R7; Wikipedia",
+   "drawing_value": "BAG COUNT 110 printed; 30 OPTIONAL BAGS printed; about 101 closed bag interiors found by segmentation + the rest with broken outlines",
+   "diff_pct": 0,
+   "comment": "Consistent for Phase I. The drawing does not show the 90 Phase II bags."
+  },
+  {
+   "quantity": "bag plan footprint",
+   "text_value": "Borrero & Nelsen 2003 p.2 (primary): 'The bags measure 4' x 7' x 10' and contain a maximum volume of 280 ft3 (7.9 m3). Each bag was filled to between 80 and 90% capacity ... approximately 14 tons'; ICCE 2010 Fig. 1: 3 m x 1.2 m",
+   "text_ref": "R28 p.2; ICCE 2010 p.2 Fig. 1 and p.7 (the web summary is no longer needed)",
+   "drawing_value": "column pitch 6.8-6.9 ft (2.1 m) and row pitch 9.4-9.6 ft (2.9 m) measured on img5/img1; spine 10.6 x 14.1 m for 5 x 5 bags",
+   "diff_pct": -3.0,
+   "comment": "Column pitch 1-3% below the 7 ft bag width, row pitch 4-6% below the 10 ft bag length: the scale bar is consistent with the nominal bag size to about 6%. The 1.2 m of the RWR diagram is the bag HEIGHT. Plan footprint of a bag is about 6.5 m2; the spine holds 25 bags in 149 m2 (6.0 m2 each) but the arms hold 85 bags in 286 m2 (3.4 m2 each), so the arm bags are drawn overlapping/shingled and the true arm footprint was probably larger than the drawn outline. UPDATED 2026-10-05: bag size 4 x 7 x 10 ft now confirmed in the primary paper."
+  },
+  {
+   "quantity": "arm angle to wave direction",
+   "text_value": "45 deg (printed on drawing and in card R4)",
+   "text_ref": "card R4",
+   "drawing_value": "44.7 / 44.4 deg measured",
+   "diff_pct": 0,
+   "comment": "Agrees within 1 deg."
+  },
+  {
+   "quantity": "arm length (V apex to tip)",
+   "text_value": "150 ft = 45.7 m per wing (1996 concept)",
+   "text_ref": "CCC E-98-15 p.3 / Exhibit 3",
+   "drawing_value": "centreline from the virtual V apex to the tip: about 41 / 39-40 m (img1: 41.0 / 39.7; img5: 41.2 / 38.0; unchanged by the verification correction, which only moves the apex-zone edges)",
+   "diff_pct": -12,
+   "comment": "Different design stage; the built arms are about 12% shorter than the 1996 wings."
+  },
+  {
+   "quantity": "crest depth (Phase I)",
+   "text_value": "about 1.8 m below MLLW at the outermost point after initial installation (ICCE 2010 p.7); after Phase II 'within 1 m of MLLW' (ICCE 2010) / -0.9 m MLLW (RWR) | PRIMARY (Borrero & Nelsen 2003 p.2-3): 'the depth at the outermost point of the reef was approximately - 6 ft MLLW'; Phase II crest 'made shallower, to within 3ft of MLLW'",
+   "text_ref": "ICCE 2010 p.7; card R4/R7",
+   "drawing_value": "'TOP OF BAG MIN DEPTH -6 ft MSL' (1.83 m below MSL) printed at both arm tips = about 0.97 m below MLLW (NOAA Los Angeles 9410660: MSL = MLLW + 2.82 ft)",
+   "diff_pct": null,
+   "comment": "CORRECTED in verification: the earlier +1.7% 'match' compared 1.83 m below MSL with ICCE's 1.8 m below MLLW (different datums, and ICCE's is the depth at the outermost point as installed, the drawing's is the minimum depth over the bags). On a common datum the drawing's -6 ft MSL is 0.97 m below MLLW: 0.8 m shallower than ICCE's as-installed Phase I value and close to the post-Phase-II crest (RWR -0.9 m MLLW; ICCE 'within 1 m of MLLW'). Not usable as evidence for which phase is drawn. UPDATED 2026-10-05: the supplied paper prints the as-installed outermost depth as '- 6 ft MLLW' (ICCE 2010 converted it to 1.8 m) and the Phase II crest as 'within 3ft of MLLW' (ICCE: 1 m). The drawing's 'TOP OF BAG MIN DEPTH -6' MSL' is the SAME NUMBER (6 ft) with the datum label MSL: the two readings differ by exactly MSL - MLLW (0.85 m); the paper does not say which label is right. Not a verification of the outline."
+  },
+  {
+   "quantity": "volume",
+   "text_value": "1,400-1,600 m3 (final, about 200 bags x 7.9 m3 max = 1,580 m3)",
+   "text_ref": "RWR; Wikipedia 'Multi-purpose reef'; ICCE 2010",
+   "drawing_value": "not derivable from a plan view",
+   "diff_pct": null,
+   "comment": "Phase I alone is 110 x 7.9 = 870 m3 maximum (bags were filled to 80-90%); Phase II added 80%. UPDATED 2026-10-05: R28 p.16 'approximately 1600 cubic meters of sand contained in 200 geotextile bags' = 200 x 7.9 = 1,580 m3, i.e. the NOMINAL bag volume (not the 80-90 % filled volume)."
+  },
+  {
+   "quantity": "distance offshore",
+   "text_value": "100 yards = 91.4 m (CCC E-98-15 p.1, concept); RWR 'roughly 100 meters off the beach'; one unsourced web summary says 'only 30 m from the beach' (conflicting, could not be traced)",
+   "text_ref": "R1, R4, R20",
+   "drawing_value": null,
+   "diff_pct": null,
+   "comment": "Not measurable from the drawing (no shoreline shown); 91.4 m used only to place the canonical polygon. Distances of the published coordinates from today's dry-sand edge (own measurement, img4): card/Wikipedia 33.915123,-118.432624 = 288 m; Gemini 33.9162,-118.4312 = 119 m; RWR page 33.913666,-118.429733 = 113 m (the dry-sand edge is itself some tens of metres landward of the waterline, so the last two are consistent with 100 yards, the first is not)."
+  }
+ ],
+ "gemini": {
+  "values": {
+   "shape_type": "Micro V-Shape / Chevron Geobag Array",
+   "length_m": 40.0,
+   "width_m": 20.0,
+   "area_m2": 650.0,
+   "area_m2_in_photo_caption": 496,
+   "crest_depth_m": 1.8,
+   "distance_offshore_m": 95.0,
+   "orientation": "Apex faces open Pacific W-WNW swell (260-280 deg)",
+   "coordinates": "33.9162, -118.4312 (reef_footprints.json) vs 33.9151, -118.4326 (dossier)"
+  },
+  "sources_used": [
+   {
+    "url": "https://repository.tudelft.nl/record/uuid:75b15cd7-08a1-48e5-8fc9-337f184ae318",
+    "what_gemini_said": "Henriquez, M. (2005). Artificial Surf Reefs. MSc Thesis, TU Delft - cited for the 40 x 20 m micro V footprint",
+    "our_check": "dimension_not_in_source",
+    "evidence": "Re-fetched 2026-10-05 (PDF, 63 pages, text extracted): Pratte's Reef appears only in the introduction and sec. 2.5.3 ('designed by Nelson (1996) and has a simple V-shape', Fig. 2.10 'Pratte's reef, California (Borrero & Nelson, 2003)'); no '40 m x 20 m', no 650 m2, no dimension at all in the text. The figure is the Skelly drawing, scaled ~58 x 29 m (img5). Verdict confirmed."
+   },
+   {
+    "url": "(no URL given) Borrero, J. & Nelsen, C. (2003). Results of Pratte's Reef Monitoring",
+    "what_gemini_said": "cited as monitoring source for the reef geometry",
+    "our_check": "unverifiable",
+    "evidence": "Real paper (Proc. 3rd Int. Surfing Reef Symposium, Raglan, June 2003; ResearchGate 293137985). Full text is behind a download wall (HTTP 403 to scripts), but the public page was read in the browser pane on 2026-10-05: first page text (reef 'approximately 200 m south of the Hyperion Sewage Treatment Plant's 1-mile outfall', 'within 500 m of ... the Hyperion 1-mile Outfall to the north and the Grand Street Jetty to the south', beach 60-120 m wide) and the figure list; Fig. 4 'The design layout of Pratte's Reef' was viewed and is the same Skelly drawing as img1 (BAG COUNT 110, OPTIONAL BAGS 30, -6' MSL, bar 0-15-30-60-90 ft) i.e. the ~58 x 29 m layout, not 40 x 20 m. A 40 x 20 m statement elsewhere in the paper cannot be excluded (pages 2+ unread). Verdict kept: unverifiable (figure-level evidence against 40 x 20)."
+   },
+   {
+    "url": "(no URL given) Surfrider Foundation: Pratte's Reef Decommissioning Assessment (2008)",
+    "what_gemini_said": "cited as source of the decommissioning-era footprint",
+    "our_check": "unverifiable",
+    "evidence": "Re-searched 2026-10-05 (web search, surfrider.org news page 'ASR removal in El Segundo, CA', Beachapedia 'Pratte's Reef'): no document with this title. Real removal facts: Phase I 30 Sep - 17 Oct 2008 and Phase II 2010 (Coastal Frontiers; American Marine; Morrissey), no dimensions or layout given. Verdict confirmed."
+   },
+   {
+    "url": "(no URL given) California Coastal Commission Permit CDP 5-97-283 (1998), Chevron USA / Surfrider artificial reef",
+    "what_gemini_said": "cited in the dossier as permit record",
+    "our_check": "wrong_design_version",
+    "evidence": "Re-fetched the staff report 2026-10-05 (documents.coastal.ca.gov/reports/1998/10/W5a-10-1998.pdf, 32 pp, text extracted): the application is E-98-15; other permit numbers named are CDP 5-83-395 and 5-86-795 (the 1983/86 Chevron groin permits); '5-97-283' does not occur. The report describes the 1996-98 concept (10-20 large bags, 5,000 yd3, each wing about 150 ft long and 7 ft high, about 9,000 sq ft, 100 yd offshore, 300 yd north of the Grand Avenue jetty, 15 ft of water MSL) = used here as img6, not a 40 x 20 m footprint and not the built 110-bag design. Verdict confirmed (permit number not found in the record)."
+   },
+   {
+    "url": "(no URL given) Coastal Frontiers Corporation (2009). Pratte's Artificial Surfing Reef Deconstruction Monitoring Report",
+    "what_gemini_said": "cited as removal report; Gemini also says 'hydrographic multibeam surveys showing the original delta layout in 2001'",
+    "our_check": "unverifiable",
+    "evidence": "Re-fetched https://www.coastalfrontiers.com/removal-of-prattes-reef 2026-10-05: states the reef was installed Sept 2000 as sand-filled bags in a V, removal phase 1 fall 2008 and phase 2 2010, that Coastal Frontiers was to 'map the reef outline prior to the initiation of removal activities', 14-ton bags; no report titled as cited, no figure, no dimension, no multibeam 2001 survey. Verdict confirmed."
+   },
+   {
+    "url": "images/image26_scale_comparison.png (Lior's archive slide 12) - Gemini's audit says it 'VERIFIES' 40 x 20 m",
+    "what_gemini_said": "4-panel graphic matches the 40 x 20 m footprint",
+    "our_check": "dimension_not_in_source",
+    "evidence": "Re-opened 03_images/from_lior/goldcoast_pptx/image26.png (812 x 660, a Raised Water Research composite): 4 satellite strips with one '200 m' bar (about 212 px) under the strips. Read literally, the bar gives the Pratte's V (the Skelly drawing pasted on an aerial strip) as about 84 m wide x 40 m deep and the Narrowneck outlines as about 220 m long vs about 400 m real, so the bar is not valid across the strips and gives neither 40 x 20 m nor 58 x 29 m for Pratte's. The pasted V is the Skelly drawing (grid of bags), so this graphic cannot verify 40 x 20 m. Verdict confirmed."
+   },
+   {
+    "url": "https://commons.wikimedia.org/wiki/File:Dockweiler_Sunset.jpg ; File:El_Segundo,_California_aerial.jpg ; File:Pacific_Ocean_at_Dockweiler_Beach.jpg",
+    "what_gemini_said": "context photos of the beach (not footprint sources)",
+    "our_check": "correct",
+    "evidence": "All three Commons file pages return HTTP 200 on 2026-10-05; generic beach photos, none shows the reef or gives a dimension (Gemini's '40 m x 20 m (496 m2)' sits in Gemini's own caption text, not in the photos). The Surfline removal-photo URL (surfline.com/wp-content/uploads/2018/06/prattes-reef-removal.jpg) redirects to an S3 URL that returns 403; the surfrider.org artificial-reef policy URL returns 404 (dead). Verdict confirmed."
+   },
+   {
+    "url": "C:\\Users\\lior\\Documents\\Gemini\\AG\\artifical reef\\02_world_reefs_data\\reef_footprints.json (structures[3], dimensions 57.8 x 31.2 m, 584 m2 'CAD polygon', 16-vertex bounding_polygon, 'per Skelly 2001 permit drawing')",
+    "what_gemini_said": "Tip-to-tip 57.8 m, cross-shore 31.2 m, polygon area 584 m2, from 'Skelly 2001 permit drawing' (scale 1\"=30', 110 bags)",
+    "our_check": "wrong_design_version",
+    "evidence": "The cited drawing is img1 (same text: 110 bags, 1\"=30'). Gemini's 16-vertex polygon (area recomputed 584.4 m2, bbox 57.8 x 31.2 m) was overlaid on img1 with our scale, shifted along the V axis for best fit: its tip-to-tip span agrees with ours (58.0 m, +0.4%), but it is a coarse envelope that includes the dashed optional bags and overshoots the arm tips, and its inner V edge cuts through solid bags. Against our 435.3 m2 solid outline: 408 m2 overlap, 27 m2 of solid bags outside it, 177 m2 of it outside the solid bags. Cross-shore 31.2 m vs our 28.6 m solid (about 29.7 m with the dashed apex column). Gemini's polygon is therefore a rough all-140-bag envelope, not the built (110-bag) design, and its 584 m2 is 34% above the solid outline and about 13% above our estimate for all 140 bags. 'Skelly 2001' is unverified: the drawing itself is undated. Gemini's headline 40 x 20 m / 650 m2 contradicts its own polygon."
+   },
+   {
+    "url": "https://www.mdpi.com/2077-1312/11/2/236",
+    "what_gemini_said": "Bar, D. & Drimer, N. (2023) 'Design Tools for Submerged Impermeable Breakwaters', J. Mar. Sci. Eng. 11(2), 236 - listed among Gemini's references",
+    "our_check": "dimension_not_in_source",
+    "evidence": "Opened in the browser pane 2026-10-05 (the real title is 'Preliminary Design Tools for Hydrodynamic Aspects of Submerged Impermeable Breakwaters'): Pratte's Reef is named once in the introduction as an example ASR (ref. [14]); no footprint or any dimension."
+   },
+   {
+    "url": "https://www.surfline.com/surf-news/after-years-of-unspectacular-closeouts-prattes-reef-is-removed-from-el-segundo-sandbagged_19261/ (Fontaine 2008, 'SANDBAGGED')",
+    "what_gemini_said": "quotes and the claim that diver surveys found the crest 7-8 ft (2.1-2.4 m) deep at zero tide",
+    "our_check": "unverifiable",
+    "evidence": "Page is behind a Cloudflare challenge (HTTP 403 to scripts; the browser pane shows 'Just a moment...'); not attempted further. Gemini's own dossier attributes the '8 feet deep' line to a reader comment, not to a survey. Irrelevant to the plan-view footprint."
+   }
+  ],
+  "summary": "Gemini's 40 x 20 m (650 m2) cannot be traced to any retrievable source and is contradicted by the scaled drawing. The only dimensioned plan found (Skelly Engineering, scaled, 110 solid + 30 optional bags; also Fig. 4 of Borrero & Nelsen 2003 and Fig. 2.10 of Henriquez 2005) gives a solid-bag envelope of about 58 x 29 m and 435 m2 (about 515 m2 if the optional bags are counted), i.e. Gemini's length is ~31% too short, its width ~30% too narrow, and its 650 m2 is inconsistent with its own 40 x 20 m. Gemini's other file (reef_footprints.json: 57.8 x 31.2 m, 584 m2) is a coarse polygon of the same drawing that includes the optional bags: right tip-to-tip, 34% too much area. Gemini's 1.8 m crest depth is ICCE-2010's as-installed Phase I value (below MLLW); it should not be compared with the drawing's '-6 ft MSL' (about 0.97 m below MLLW). The CCC permit number it cites (5-97-283) is not in the real record (E-98-15). Its Henriquez, CCC, Coastal Frontiers, decommissioning and image26 verdicts were re-checked and stand."
+ },
+ "no_source": null,
+ "references": [
+  {
+   "id": "R1",
+   "citation": "Wikipedia contributors. 'Chevron Reef'.",
+   "url": "https://en.wikipedia.org/wiki/Chevron_Reef",
+   "accessed": "2026-10-05",
+   "supports": "Phase I/II bag counts and dates, ~100 yards offshore, 15 ft water, coordinates 33 54 54 N 118 25 57 W"
+  },
+  {
+   "id": "R4",
+   "citation": "Raised Water Research. 'Pratte's Reef'.",
+   "url": "https://raisedwaterresearch.com/spot/artificial-reef/us/california/prattes-reef/",
+   "accessed": "2026-10-05",
+   "supports": "img1 (Skelly design drawing), img2, img3; statement that the April 2001 bags were 'placed on top of the existing bags, making the reef shallower'"
+  },
+  {
+   "id": "R20",
+   "citation": "California Coastal Commission (1998). Staff report W5a, Application E-98-15, Surfrider Foundation Pratte's Reef (hearing 13 Oct 1998), incl. Exhibit 2 (cross-section, June 1997) and Exhibit 3 (conceptual plan, July 1996).",
+   "url": "https://documents.coastal.ca.gov/reports/1998/10/W5a-10-1998.pdf",
+   "accessed": "2026-10-05",
+   "supports": "img6; 100 yards offshore; wings ~150 ft; ~9,000 sq ft; 15 ft water; Grand Avenue groin 300 yards south of the reef"
+  },
+  {
+   "id": "R21",
+   "citation": "Henriquez, M. (2005). Artificial Surf Reefs. MSc thesis, Delft University of Technology (Fig. 2.10 after Borrero & Nelsen 2003).",
+   "url": "https://repository.tudelft.nl/record/uuid:75b15cd7-08a1-48e5-8fc9-337f184ae318",
+   "accessed": "2026-10-05",
+   "supports": "img5; V shape designed by Skelly/Nelson 1996, 45 deg annotation, 0-90 ft scale"
+  },
+  {
+   "id": "R22",
+   "citation": "Borrero, J.C. (2010). 'Stability considerations and case studies of submerged structures constructed from large, sand filled, geotextile containers'. Proc. 32nd International Conference on Coastal Engineering, 'Coastal Engineering 2010'.",
+   "url": "https://pdfs.semanticscholar.org/8672/e1bb2043e0a227ce0e2ef6e01dd01bc8729e.pdf",
+   "accessed": "2026-10-05",
+   "supports": "110 containers of 7.9 m3 each, depth 1.8 m at the outermost point, bags ripped by Aug 2002, remnants removed late 2008"
+  },
+  {
+   "id": "R23",
+   "citation": "Borrero, J.C. & Nelsen, C. (2003). Results of a comprehensive monitoring program at Pratte's Reef. In Black & Mead (eds), Proc. 3rd International Surfing Reef Symposium, Raglan NZ.",
+   "url": "https://www.researchgate.net/publication/293137985_Results_of_a_comprehensive_monitoring_program_at_Pratte's_Reef",
+   "accessed": "2026-10-05",
+   "supports": "NOT retrievable (HTTP 403); cited by R21/R22; likely holds the original of img5 and the as-monitored layout"
+  },
+  {
+   "id": "R24",
+   "citation": "Esri World Imagery 2026-01-09 via satellite.py (img4).",
+   "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+   "accessed": "2026-10-04",
+   "supports": "present shoreline bearing, absence of the structure"
+  },
+  {
+   "id": "R25",
+   "citation": "Borrero, J.C. & Nelsen, C. (2003). Results of a comprehensive monitoring program at Pratte's Reef. ResearchGate publication 293137985 (page text, abstract, figure list and Fig. 2 and Fig. 4 images viewed in the browser pane; full text not accessible).",
+   "url": "https://www.researchgate.net/publication/293137985_Results_of_a_comprehensive_monitoring_program_at_Pratte's_Reef",
+   "accessed": "2026-10-05",
+   "supports": "Fig. 4 'design layout' = the Skelly drawing (img1); reef about 200 m south of the Hyperion 1-mile outfall, within 500 m of it (north) and of the Grand Street jetty (south); beach 60-120 m wide"
+  },
+  {
+   "id": "R26",
+   "citation": "NOAA CO-OPS Metadata API, datums for station 9410660 Los Angeles, CA (epoch 1983-2001, accepted 2011-10-07): MSL 6.65 ft, MLLW 3.83 ft above station datum.",
+   "url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9410660/datums.json?units=english",
+   "accessed": "2026-10-05",
+   "supports": "MSL = MLLW + 2.82 ft (0.86 m), used to put the drawing's '-6 ft MSL' on the MLLW datum"
+  },
+  {
+   "id": "R27",
+   "citation": "Coastal Frontiers Corporation. 'Removal of Pratte's Reef - a man-made surf enhancement structure'.",
+   "url": "https://www.coastalfrontiers.com/removal-of-prattes-reef",
+   "accessed": "2026-10-05",
+   "supports": "installation Sept 2000 in a V; removal phase 1 fall 2008, phase 2 2010; reef outline mapped before removal (not published); 14-ton bags"
+  },
+  {
+   "id": "R28",
+   "citation": "Borrero, J.C. & Nelsen, C. (2003). Results of a comprehensive monitoring program at Pratte's Reef. In: Black, K. & Mead, S. (eds), Proc. 3rd International Surfing Reef Symposium, Raglan, New Zealand. 16-page PDF supplied by Lior on 2026-10-05 (file prints neither venue nor year; PDF metadata title '2 Years of Pratte's Reef: Performance and Considerations for Future Artificial Reef Endeavors in Santa Monica Bay'). Private research copy.",
+   "url": "file: 07_scale/shapes/prattes-reef-el-segundo/src/borrero_nelsen_2003_prattes_monitoring_results.pdf",
+   "accessed": "2026-10-05",
+   "supports": "primary version of R23/R25 (which were known only from a ResearchGate page): Fig. 4 = the Skelly design layout; bag size; Phase I/II dates and counts; crest depths in MLLW (6 ft; 3 ft); 30 m cross-shore extent; reef about 200 m south of the 1-mile outfall; Fig. 9 UTM survey window; Figs 5-8 profiles"
+  }
+ ],
+ "verified_on": "2026-10-04",
+ "verification": [
+  {
+   "check": "1 overlays",
+   "verdict": "good (corrected)",
+   "evidence": "All overlay PNGs viewed and re-rendered from shape.json at 6-12x. First trace (483.9 m2) wrongly included about 49 m2 of dashed 'optional' bags; corrected outline (img1 76 vertices 435.2 m2, img5 72 vertices 437.5 m2) follows the first solid stroke on both arms, the spine and both tips; only sub-1 m2 hooks at the apex corners remain. Solid/dashed classification is visual (dash gaps are partly blurred on img5)."
+  },
+  {
+   "check": "2 design version",
+   "verdict": "Phase I DESIGN layout (110 solid bags), not as-built, not the 200-bag reef",
+   "evidence": "Same drawing is Fig. 4 'design layout' in Borrero & Nelsen 2003 and Fig. 2.10 of Henriquez 2005; RWR: 'initial plan called for 110 bags'; Phase II (Apr 2001, +90 bags, volume +80%, crest widened, placed on top of Phase I bags - ICCE 2010, RWR) not drawn; the 30 optional bags are excluded; removal 2008-2010 (Coastal Frontiers). No as-built or post-Phase-II plan found. The page must say 'design layout, fall 2000'."
+  },
+  {
+   "check": "3 scale and recompute",
+   "verdict": "confirmed (one wrong cross-check corrected)",
+   "evidence": "Bar ticks re-measured by run-length scan: img1 20.5/44/91.5/138 px for 15/30/60/90 ft (1.567 px/ft end to end, fit 1.5712), img5 6/33/59.5/113.5/167 px for 0/15/30/60/90 ft (1.7889); the RG Fig. 4 version of the drawing shows the 0 tick and equal 0-15 / 15-30 segments. geom.py: pixel areas 11564.95 / 15069.96 px2 = 435.2 / 437.5 m2; canonical area 435.17, bbox 58.03 x 28.63, max dim 58.04, centroid (0.005, 91.44). Bag pitch 6.9 ft x 9.5 ft vs 7 x 10 ft bag. Spine height corrected 13.8 -> 14.1 m. Crest-depth 'match' with ICCE corrected (datum error)."
+  },
+  {
+   "check": "3b canonical rotation (geom.py bug)",
+   "verdict": "correct",
+   "evidence": "Explicit rotation x=(py-oy)/ppm, y=-(px-ox)/ppm used; fixed geom.py make-canonical (--alongshore-dir-px 0,1, --no-write on a copy) reproduces all 76 vertices to 0.007 m; vertex 0 by hand (96.16,123.82 -> -6.281, 103.269). selftest 334/0 PASS. Orientation (apex offshore WSW, x toward 155 deg) supported by img6's A-A section line (bearing ~67 deg), its contours (155/335 deg), img4 shoreline (155.5 deg), arm bearings 16/106 vs 20/110 deg (not mirrored)."
+  },
+  {
+   "check": "4 dimensions vs text",
+   "verdict": "agree where comparable",
+   "evidence": "No text gives the built footprint. Arm angle 45 vs 44.4-44.7 measured; Phase I bag count 110 = printed 110; arm length 39.7-41 m vs 45.7 m (1996 concept, different design); area 435 m2 vs 836 m2 (9,000 sq ft, 1996 concept) not comparable; volume not derivable. Crest depth not comparable (datum). Gross bag footprint 110 x 6.5 = 715 m2 > 435 m2 envelope because the arm bags overlap in the drawing: true arm footprint probably larger."
+  },
+  {
+   "check": "5 provenance",
+   "verdict": "complete after additions",
+   "evidence": "img1/img2/img3 md5 identical to a fresh download from the RWR page (2026-10-05); img5 Henriquez TU Delft Fig. 2.10; img6 CCC W5a-10-1998 Exhibit 3; img4 Esri sidecar. Added R25-R27. The '4 x 7 x 10 ft' bag size has no retrievable primary (only a secondary summary; arithmetic = 7.93 m3 = ICCE 7.9 m3): flagged. METHOD.md updated to the corrected numbers."
+  },
+  {
+   "check": "6 Gemini findings",
+   "verdict": "all earlier verdicts stand; three more added",
+   "evidence": "Henriquez (no 40x20, simple V), Borrero & Nelsen (figure = Skelly design; text partly paywalled), Decommissioning 2008 (not found), CCC 5-97-283 (not in E-98-15 record), Coastal Frontiers 2009 (page only), image26 (bar not transferable), Commons (200), Surfline photo (403), Surfrider policy (404) re-fetched. reef_footprints.json 57.8 x 31.2 m / 584 m2 overlaid: coarse envelope incl. optional bags. Bar & Drimer 2023: no dimension. Surfline 2008 article: Cloudflare-blocked."
+  },
+  {
+   "check": "7 confidence",
+   "verdict": "medium confirmed",
+   "evidence": "Rubric: medium = traced on a scaled design drawing. Not high: no survey/photo, as-built differed (bags moved, buried), Phase II absent, not geo-referenced. Not low: scaled drawing from the designer, bag size cross-check within 6%, two reproductions agree 0.5% in area, dimensions of the drawn design are self-consistent."
+  }
+ ],
+ "geo_note": "No lat/lon polygon: three published coordinates disagree by up to 313 m alongshore (card/Wikipedia 33.915,-118.4325; Gemini 33.9162,-118.4312; RWR page 33.913666,-118.429733) and none can be tied to the structure (removed 2008-2010; no pre-removal georeferenced image retrievable). All three lie south of the short rock groin at 33.91685,-118.43030 (assumed to be the Grand Street/Grand Avenue jetty: the only groin in the 800 m crop), whereas two primary sources put the reef north of the Grand Street jetty: CCC staff report E-98-15 (300 yd north of it, 100 yd offshore, 1996-98 siting) and Borrero & Nelsen 2003 (about 200 m south of the Hyperion 1-mile outfall, within 500 m of the outfall and the jetty, aerial figure labels 'Reef' between them). A text-only estimate from the CCC figures (274 m along the 335.5 deg shoreline from the groin, 91 m offshore toward 245.5 deg) is about 33.9188,-118.4324 with an uncertainty of +-150 m or worse; it is NOT used for any polygon and is listed only as a hint for a page marker labelled 'position approximate'. The RWR page coordinate (about 350 m south of that groin) contradicts both primary sources. UPDATE 2026-10-05 (3D run, Borrero & Nelsen 2003 supplied by Lior): Fig. 9 of that paper is a vector bathymetry window on a UTM zone 11N grid (E 367,449-367,561 m, N 3,754,239-3,754,311 m; contours -1..-4 m, Oct 2000 and Mar 2001); its centre is 33.92058 N, -118.43335 E. The paper says the reef is 'approximately 200 m south of the Hyperion 1-mile outfall'; the outfall landfall read on the Navionics chart (33.9231 N, -118.4337, +-20 m) + 200-318 m south along 155 deg + 91 m offshore gives 33.9202-33.9211 N, -118.4332..-118.4337, within 35 m of the window centre. INFERRED position hint 33.92058, -118.43335 (+-100 m); it lies 217 m NNW of the earlier text-derived hint (33.9188, -118.4324) and supersedes it. geo stays null: the reef outline is not drawn in Fig. 9, so there is no georeferenced polygon.",
+ "pending_reverification": {
+  "since": "2026-10-05",
+  "reason": "shape.json was edited after its verification (verified_on 2026-10-04) to record the supplied Borrero & Nelsen (2003) PDF (sources img7, reference R28), the upgraded dimension checks, the position note in geo_note and one confidence factor. The outline polygons, the canonical frame, design_version.drawn and the confidence level were NOT changed.",
+  "verifier_todo": [
+   "re-read img7 / R28 pages 1-3, 14, 16 and 3d/annotated/A12-A14, A17",
+   "confirm that Fig. 4 is the same drawing as img1 (3d/annotated/A13)",
+   "decide whether the 30 m cross-shore statement (p.14) changes the dimensions_check verdict",
+   "do not mark verified until done"
+  ]
+ }
+}

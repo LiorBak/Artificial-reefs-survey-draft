@@ -48,7 +48,7 @@ import json
 import shutil
 from pathlib import Path
 
-ROOT = Path(r"C:\Users\lior\Documents\Gemini\AG\Artificial reef - to upload to git")
+ROOT = Path(r"C:\Users\lior\Documents\Claude\Projects\Artificial reef")
 QA_REEF_DIR = ROOT / "05_qa" / "reef"
 CARDS_DIR = ROOT / "02_research" / "reefs"
 CHANGELOG = ROOT / "05_qa" / "media_recheck_changes.md"

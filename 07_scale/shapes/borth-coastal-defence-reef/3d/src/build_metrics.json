@@ -1,45 +1,45 @@
 {
  "M": {
   "lidar_2022": {
-   "volume_m3": 31336,
+   "volume_m3": 30119,
    "area_footprint_m2": 8675,
-   "area_incl_toe_m2": 11518,
-   "volume_type4_layer_m3": 21557,
-   "tonnes": 53271,
+   "area_incl_toe_m2": 11391,
+   "volume_type4_layer_m3": 21220,
+   "tonnes": 51203,
    "tonnes_range": [
-    50137,
-    56404
+    48191,
+    54215
    ],
-   "tonnes_type4_layer": 36646,
-   "volume_unc_bed_m3": 4607,
+   "tonnes_type4_layer": 36074,
+   "volume_unc_bed_m3": 4556,
    "max_crest_mODN": 1.81
   },
   "design_1020": {
-   "volume_m3": 30091,
+   "volume_m3": 28919,
    "area_footprint_m2": 6989,
    "area_incl_toe_m2": 11491,
-   "volume_type4_layer_m3": 17990,
-   "tonnes": 51154,
+   "volume_type4_layer_m3": 17795,
+   "tonnes": 49162,
    "tonnes_range": [
-    48145,
-    54163
+    46270,
+    52053
    ],
-   "tonnes_type4_layer": 30583,
+   "tonnes_type4_layer": 30252,
    "volume_unc_bed_m3": 4596,
    "max_crest_mODN": 1.5
   },
   "sat_2024": {
-   "volume_m3": 26400,
+   "volume_m3": 25504,
    "area_footprint_m2": 5743,
-   "area_incl_toe_m2": 8979,
-   "volume_type4_layer_m3": 15369,
-   "tonnes": 44880,
+   "area_incl_toe_m2": 8865,
+   "volume_type4_layer_m3": 15366,
+   "tonnes": 43357,
    "tonnes_range": [
-    42240,
-    47520
+    40807,
+    45907
    ],
-   "tonnes_type4_layer": 26128,
-   "volume_unc_bed_m3": 3592,
+   "tonnes_type4_layer": 26123,
+   "volume_unc_bed_m3": 3546,
    "max_crest_mODN": 1.81
   }
  },
@@ -50,9 +50,9 @@
   "dsm_crestS_p90": 1.75,
   "lidar_minus_design_mean_m": 0.14,
   "lidar_minus_design_std_m": 0.28,
-  "seabed_under_N_foot_mean_mODN": -4.04,
+  "seabed_under_N_foot_mean_mODN": -3.86,
   "seabed_under_N_foot_min_max": [
-   -4.72,
+   -4.05,
    -2.51
   ],
   "seabed_under_S_foot_mean_mODN": -3.95,
@@ -70,36 +70,31 @@
    24
   ],
   "model_minus_fig2_-3": [
-   -0.01,
-   0.03,
+   -0.0,
+   0.01,
    24
   ],
   "model_minus_fig2_-4": [
-   -0.89,
-   0.14,
+   -0.0,
+   0.0,
    13
   ],
   "emodnet_vs_model": {
    "368": {
     "emodnet_mODN": -2.84,
-    "model_mODN": -4.36
+    "model_mODN": -4.0
    },
    "440": {
     "emodnet_mODN": -3.54,
-    "model_mODN": -5.16
+    "model_mODN": -4.27
    },
    "513": {
     "emodnet_mODN": -4.35,
-    "model_mODN": -5.96
+    "model_mODN": -5.07
    }
   }
  },
  "fit_res": {
-  "anchor_335": {
-   "n": 6,
-   "rms": 0.0,
-   "mean": 0.0
-  },
   "assumed_tail": {
    "n": 6,
    "rms": 0.0,
@@ -118,7 +113,7 @@
   "design_S2_seaward": {
    "n": 5,
    "rms": 0.0,
-   "mean": -0.0
+   "mean": 0.0
   },
   "design_S2_shoreward": {
    "n": 5,
@@ -130,15 +125,30 @@
    "rms": 0.0,
    "mean": -0.0
   },
+  "fig2_-4.0": {
+   "n": 13,
+   "rms": 0.0,
+   "mean": -0.0
+  },
+  "fig2_-4.0_bridge": {
+   "n": 6,
+   "rms": 0.0,
+   "mean": -0.0
+  },
+  "fig2_-4.0_extrap": {
+   "n": 3,
+   "rms": 0.0,
+   "mean": 0.0
+  },
   "lidar_dtm_2022": {
    "n": 3081,
    "rms": 0.0,
    "mean": -0.0
   }
  },
- "nodes_n": 3130,
+ "nodes_n": 3146,
  "frame_fit": {
-  "rms": 0.004805304730472981,
-  "max": 0.015316690809171973
+  "rms": 0.0048053047331754785,
+  "max": 0.015316690811658873
  }
 }

@@ -11,7 +11,7 @@ from scipy import ndimage as ndi
 from skimage import measure
 from skimage.draw import polygon as skpoly
 import matplotlib.colors as mc
-ROOT = 'C:/Users/lior/Documents/Gemini/AG/Artificial reef - to upload to git/'
+ROOT = 'C:/Users/lior/Documents/Claude/Projects/Artificial reef/'
 S = ROOT + '07_scale/shapes/mount-maunganui-reef/'
 IMG = ROOT + '03_images/reefs/mount-maunganui-reef/mount-maunganui-reef_boprc-fig5-multibeam-2013_2013.png'
 K = 84.33 / 20.0                                    # px per m in Fig 5

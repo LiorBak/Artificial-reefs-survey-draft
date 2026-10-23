@@ -1,0 +1,15 @@
+{
+ "_about": "Palm Beach re-check 2026-10-10: typed page texts for main to apply after the page agent finishes (04_build/data). Exact old -> new from the agent's hand-back.",
+ "curated": {
+  "Crest level": {"ids": ["p1; s8; p2; t1; n2", "p1; s8; p2; c1; s6; t1; n2"],
+   "note": ["Four sources agree on the design number; the chart datum is not stated by the app.", "Four sources agree on the design number (council section view and text re-checked 2026-10-10: 0 to 0.12 m, AHD vs MSL); the chart datum is not stated by the app."]},
+  "Toe / seabed depth": {"stated": ["no surveyed value read; Navionics seabed vs toe elevations -0.27 m (sd 0.55 m)", "no as-built surveyed value read; Navionics seabed vs toe elevations -0.27 m (sd 0.55 m); pre-reef City survey profile (Mortensen 2015 Fig 6a, datum assumed AHD) vs model seabed RMS 0.33 m over 13 labels (3.5-11.5 m); PBO3 buoy (Daniels 2022) 11.75 m vs model 12.37 m below LAT (+0.62 m, extrapolated)"],
+   "ids": ["n1; s7", "n1; s7; s6; d1"]}
+ },
+ "caveats": {
+  "Datum: AHD vs MSL and the tide planes": {"reason": ["The earlier METHODS note calls the AHD offset unverified; the Gold Coast bathymetry report (2026-10-06) verified it at the Seaway benchmark.", "The METHODS note now carries the AHD offset as verified (MSQ 2014, read at the source by the Gold Coast bathymetry report; updated in the 2026-10-10 re-check); it applies at the Seaway benchmark only."]},
+  "Seabed and reef surface are inferred, not surveyed": {
+   "stated_replace": ["pre-reef City survey profile (Mortensen 2015 Fig. 6) agrees with the chart to 0.2-0.3 m RMS after the LAT to AHD/MSL shift;", "pre-reef City survey profile (Mortensen 2015 Fig. 6a) agrees with the chart to 0.2-0.3 m RMS after the LAT to AHD/MSL shift and with the model seabed to 0.33 m RMS (13 labels, AHD assumed); PBO3 buoy (Daniels 2022) 11.75 m vs model 12.37 m below LAT (+0.62 m, extrapolated beyond the 10 m line);"],
+   "section": ["4.2-4.4; 7; Gold Coast report 2, 5.2", "4.2-4.4; 4.9; 7; Gold Coast report 2, 5.2"]}
+ }
+}

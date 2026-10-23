@@ -1,0 +1,154 @@
+{
+ "_about": "Cables agent hand-back 2026-10-10, REVISED 2026-10-10 (imagery + DoT bathymetry run): what the page agent needs to add cables-reef-wa to the 3D tab (per 04_build/UPDATE_PROTOCOL.md). The first version (design drawing only) is in archive/pre_imagery_2026-10-10/PAGE_TEXTS_FOR_MAIN.json; 'old_to_new' lists the changes. REVISED 2026-10-13 (Fremantle datum link, reading A offset 0.78 -> 0.716 m): see 'page_edits_2026_10_13' for the exact old -> new strings of 04_build/data/models3d_curated.json, models3d_combined.json and models3d_caveats.json; curated, caveat_rows and combined below are already the new texts.",
+ "steps": "(1) remove cables-reef-wa from 04_build/data/models3d_hold.json; (2) add entries to data/models3d_combined.json, models3d_curated.json, models3d_caveats.json; (3) run python src/update_page.py --full",
+ "combined": {
+  "frame_note": "model.js frame: x along the design-drawing axis toward SOUTH-SOUTH-EAST (bearing 170.3 deg T, M.frame.bearing_x_deg), y offshore toward WEST-SOUTH-WEST (bearing 260.3 deg T); the frame is rotated 9.7 deg from true north (georeferenced, DoT soundings); viewer maps (X = x, Y = z, Z = y); default version = Nov 1999 surveyed surface on the original-plan footprint (M.default_version = survey_surface_1999_11)",
+  "offshore_scene_xz": [
+   0,
+   1
+  ],
+  "hand": 1,
+  "polygon": "M.versions.filter(function(v){return v.id===M.default_version;})[0].outline_m",
+  "crest_z": "M.versions.filter(function(v){return v.id===M.default_version;})[0].crest_AHD_m (= -1.55 m, highest point of the surveyed surface, AHD taken as MSL); design crest RL -1.0 = -1.72 m AHD under reading A",
+  "crest_note": "surveyed (Nov 1999) highest surface point -1.55 m AHD (highest single sounding -1.40 m); design crest line RL -1.0 = -1.72 m AHD under datum reading A (RL = Fremantle Low Water Datum, AHD = RL - 0.716 m; DNM TR12 Table 3) or -1.0 m under reading B; the soundings imply an RL-AHD offset of 0.5-0.6 m (nearer to A); AHD = MSL 1966-68 (local MSL 1992-2011 is +0.057 m)",
+  "shore_mode": "the seabed window starts at y = 190 m and the shore line (y = 0) is not modelled, so the 'seabed near 0 m MSL along y = 0' check cannot apply; use whatever mode skips it",
+  "sublabels": "M.roles.south and M.roles.north (centroid, label)"
+ },
+ "curated": {
+  "state_short": "Default: rock surface surveyed by WA Department of Transport in Nov 1999 (840 soundings, month before completion) on the Lyons (1992) design footprint, georeferenced by those soundings, over the measured 1998 seabed. Also: Feb 2002 surveyed surface, design surface with and without the drawn south-arm extension (not confirmed), two plan-only outlines.",
+  "ve_note": "At VE = 5 the 2 m ramp looks 10 m high; slopes of 1:13 to 1:20 look like 1:2.6 to 1:4 (plan is true).",
+  "key_numbers": [
+   "Footprint: {{versions/survey_surface_1999_11/area_m2|n0}} m2 (original design plan, 121 x 76 m; position and orientation fitted to the Nov 1999 soundings: 91 % of rock soundings inside; Lyons 1992 plan as reproduced in Blacka 2013 Fig A.2); text says 140 x 70 m (Blacka Table 4.2); drawn south-arm extension adds {{versions/design_plan_plus_extension_1999/area_m2|n0}} - {{versions/design_plan_original_1999/area_m2|n0}} = 306 m2 net of overlap (347 m2 drawn), NOT confirmed by the 2002 soundings or imagery",
+   "Rock volume: {{versions/survey_surface_1999_11/volume_m3|n0}} m3 surveyed (Nov 1999, +-1,000) and {{versions/survey_surface_2002_02/volume_m3|n0}} m3 (Feb 2002); design surface on the measured bed {{versions/design_plan_original_1999/volume_m3|n0}} m3 (original) / {{versions/design_plan_plus_extension_1999/volume_m3|n0}} m3 (with extension); stated 5,500 (Blacka 2013 A.1.3), 5,000 (Rendle; Mead and Borrero 2011), 3,500 (Wikipedia)",
+   "Crest: highest surveyed surface point {{versions/survey_surface_1999_11/crest_AHD_m|n2}} m AHD (Nov 1999), {{versions/survey_surface_2002_02/crest_AHD_m|n2}} m (Feb 2002); design crest RL -1.0 = -1.72 m AHD (1.72 m below MSL, reading A: RL = Fremantle Low Water Datum, AHD = RL - 0.716 m, DNM TR12 Table 3) or -1.0 m (reading B); the soundings imply RL - AHD = 0.5-0.6 m, so A is nearer (gap 0.13 / 0.22 m, not a datum effect); AHD = MSL 1966-68 (A12; local MSL 1992-2011 is +0.057 m)",
+   "Water depth: measured bed (DoT 1998 soundings, AHD) 2.8-6.6 m below MSL along the outline vs stated 3.0-6.0 m (Blacka Table 4.2); 254-263 m from the reef centre to the 0 m AHD line (stated 250 / 275 m)",
+   "Tide: range 0.8 m (Blacka 2013 Table 4.3); AHD 0.000 lies 0.716 m above the Fremantle gauge zero (Low Water Datum); BoM Fremantle MSL 1992-2011 is 0.773 m above gauge zero (= AHD +0.057); 'mean tide level 0.78 m above datum' (Pattiaratchi 1999 p.3) is a present-day MSL; HW/LW = MSL +-0.4 m is an estimate; HAT / LAT not found"
+  ]
+ },
+ "caveat_rows": [
+  "datum link RL / AHD / MSL: official link found (AHD 0.000 = 0.716 m above Fremantle LWD, +-0.04 m); reading A holds, remaining gap to the soundings 0.13 / 0.22 m is physical or survey, not datum; HAT / LAT of Fremantle not found",
+  "rock surface from single-beam soundings (+-0.3 m, about 5 m line spacing), interpolated between lines; no multibeam or lidar of the rock",
+  "south-arm extension drawn (347 m2, 320 m3) but not confirmed by the 2002 soundings (+0.43 m, n = 23) or by imagery",
+  "design-surface versions are idealised: volume 4,136 / 4,465 m3, below the surveyed 4,671 - 5,219 m3",
+  "no survey after Feb 2002; later settlement (Pitt 2009) not modelled",
+  "shore line not drawn (0 m AHD line 254-263 m east); frame rotated 9.7 deg from true north"
+ ],
+ "old_to_new": {
+  "state_short": "old: 'Design state of the 1999 reef: V-shaped granite mound (Lyons 1992 design plan) with the drawn southern-arm extension ... No survey of the built reef; default outline = design plan + extension' -> new: see curated.state_short",
+  "footprint_default": "old: 4,355 m2 (design plan + extension, 121 x 89 m) -> new: 4,049 m2 (original plan, 121 x 76 m; default is now the surveyed surface on it)",
+  "rock_volume": "old: 5,500 m3 (bed FITTED to Blacka) -> new: 4,671 m3 surveyed Nov 1999 (5,219 Feb 2002); design surface 4,136 / 4,465 m3 (3,920 / 4,249 m3 until 2026-10-12, with the 0.78 m offset)",
+  "water_depth": "old: modelled plane bed 2.8-5.8 m -> new: measured 2.8-6.6 m below MSL along the outline",
+  "crest": "old: design RL -1.0 only -> new: surveyed top -1.55 m AHD plus the design crest and the datum test",
+  "default_version": "old: design_plan_plus_extension_1999 -> new: survey_surface_1999_11 (model.js M.default_version); crest_z and frame_note changed; polygon expression unchanged",
+  "caveat_rows": "old rows 'bed modelled', 'built extent unverified (no imagery or survey)', 'extension from low-res drawing' -> replaced by the six rows above",
+  "model.js": "1.3 MB (was 0.67 MB): two extra surveyed-surface grids",
+  "datum_2026_10_13": "old: reading A offset 0.78 m (paper mean tide level), crest -1.78 m, gap 0.2-0.3 m unresolved -> new: 0.716 m (AHD 0.000 = 0.716 m above Fremantle LWD, DNM TR12 Table 3), crest -1.72 m AHD, gap 0.13 / 0.22 m and not a datum effect; surveyed versions and seabed unchanged",
+  "default_label": "old: model.js labelled design_plan_original_1999 '(default)' -> new: label removed; the default is survey_surface_1999_11 (M.default_version, unchanged)"
+ },
+ "page_edits_2026_10_13": {
+  "_about": "Exact old -> new for the Cables entries on the page (apply with a string replace in the named file/path; caveat 'ev' snippets are verbatim in 3d/METHODS_3D.md and were checked). Page numbers {{...}} (volumes) update by themselves from model.js after the rebuild.",
+  "models3d_curated.json /models/cables-reef-wa/confidence_short": {
+   "old": "Datum link MEDIUM (0.2-0.3 m unresolved); tides LOW-MEDIUM.",
+   "new": "Datum link MEDIUM-HIGH (official LWD-AHD link 0.716 +-0.04 m; gap to the soundings 0.13-0.22 m is not a datum effect); tides LOW-MEDIUM (HAT / LAT not found).",
+   "note": "replace the sentence inside the string"
+  },
+  "models3d_curated.json key_numbers[2]/stated": {
+   "old": "design crest RL -1.0 = 1.78 m below MSL (reading A: RL = chart datum, MSL = RL + 0.78) or 1.0 m (reading B); Blacka 2013 A.1.1: crest submergence 1-2.5 m below MSL",
+   "new": "design crest RL -1.0 = 1.72 m below AHD (reading A: RL = Fremantle Low Water Datum, AHD = RL - 0.716 m) or 1.0 m (reading B); Blacka 2013 A.1.1: crest submergence 1-2.5 m below MSL"
+  },
+  "models3d_curated.json key_numbers[2]/diff": {
+   "old": "the soundings imply RL - AHD = 0.5-0.6 m (A = 0.78, B = 0): nearer to A, a 0.2-0.3 m gap is unresolved",
+   "new": "the soundings imply RL - AHD = 0.5-0.6 m (A = 0.716, B = 0): nearer to A; the remaining gap of 0.13 / 0.22 m is physical or survey, not datum"
+  },
+  "models3d_curated.json key_numbers[2]/model": {
+   "old": "AHD taken as MSL (ASSUMPTION, +-0.1-0.3 m)",
+   "new": "AHD taken as MSL (MSL 1966-68; local MSL 1992-2011 is +0.057 m)"
+  },
+  "models3d_curated.json key_numbers[2]/note": {
+   "old": "The Transport WA offset between the Fremantle chart datum and AHD was not found.",
+   "new": "AHD 0.000 is 0.716 m above the Fremantle gauge zero (Low Water Datum): Roelse et al. 1975, DNM TR12, Table 3 (+-0.04 m Perth metro zone, Landgate); the Transport WA e-mail answer is no longer needed for this."
+  },
+  "models3d_curated.json key_numbers[2]/ev": {
+   "old": [
+    "RL minus AHD on the ramp 0.59 / 0.50 m; A 0.78, B 0.00"
+   ],
+   "new": [
+    "RL minus AHD on the ramp 0.59 / 0.50 m (sd 0.58)"
+   ]
+  },
+  "models3d_curated.json key_numbers[4]/model": {
+   "old": "range 0.8 m, low / high water MSL -0.4 / +0.4 m (symmetry is an estimate); datum 0.78 m below MSL",
+   "new": "range 0.8 m, low / high water MSL -0.4 / +0.4 m (symmetry is an estimate); datum (Fremantle LWD) 0.716 m below AHD = MSL"
+  },
+  "models3d_curated.json key_numbers[4]/stated": {
+   "old": "range 0.8 m (Blacka 2013 Table 4.3); mean tide level 0.78 m above datum (Pattiaratchi 1999 p.3); BoM Fremantle gauge MSL 0.773 m above gauge zero (1992-2011)",
+   "new": "range 0.8 m (Blacka 2013 Table 4.3); AHD 0.000 = 0.716 m above gauge zero (DNM TR12 Table 3); BoM Fremantle gauge MSL 0.773 m above gauge zero (1992-2011); 'mean tide level 0.78 m above datum' (Pattiaratchi 1999 p.3)"
+  },
+  "models3d_curated.json key_numbers[4]/diff": {
+   "old": "0.007 m (0.78 vs 0.773)",
+   "new": "MSL 1992-2011 is AHD +0.057 m (0.773 vs 0.716)"
+  },
+  "models3d_combined.json /models/cables-reef-wa/crest_note": {
+   "old": "surveyed (Nov 1999) highest surface point -1.55 m AHD (highest single sounding -1.40 m), AHD taken as MSL (ASSUMPTION); design crest line RL -1.0 = -1.78 m MSL under datum reading A (RL = chart datum, MSL = RL + 0.78) or -1.0 m under reading B; the soundings imply an RL-AHD offset of 0.5-0.6 m (nearer to A)",
+   "new": "surveyed (Nov 1999) highest surface point -1.55 m AHD (highest single sounding -1.40 m); design crest line RL -1.0 = -1.72 m AHD under datum reading A (RL = Fremantle Low Water Datum, AHD = RL - 0.716 m; DNM TR12 Table 3) or -1.0 m under reading B; the soundings imply an RL-AHD offset of 0.5-0.6 m (nearer to A); AHD = MSL 1966-68 (local MSL 1992-2011 is +0.057 m)"
+  },
+  "models3d_combined.json /models/cables-reef-wa/crest_z": {
+   "old": "... design crest RL -1.0 = -1.78 m MSL under reading A",
+   "new": "... design crest RL -1.0 = -1.72 m AHD under reading A",
+   "note": "only if this text is stored on the page (it is the expression + comment in this file)"
+  },
+  "models3d_caveats.json row 'Datum link: RL / AHD / MSL' (slug cables-reef-wa)": {
+   "model": {
+    "old": "reading A (RL = chart datum, MSL = RL + 0.78 m): design crest -1.78 m MSL; AHD taken as MSL",
+    "new": "reading A (RL = Fremantle Low Water Datum, AHD = RL - 0.716 m): design crest -1.72 m AHD; AHD taken as MSL (MSL 1966-68)"
+   },
+   "diff": {
+    "old": "0.2-0.3 m between reading A (0.78) and the soundings (0.5-0.6)",
+    "new": "0.13 / 0.22 m between reading A (0.716) and the soundings (0.59 / 0.50)"
+   },
+   "reason": {
+    "old": "The RL of the design drawing is not tied to AHD in any source found; the soundings favour reading A but the gap is unresolved.",
+    "new": "The design drawing's RL is not tied to AHD in any source, but the gauge zero = Fremantle LWD is tied to AHD by DNM TR12 Table 3 (0.716 m); the soundings favour reading A; the remaining 0.13-0.22 m is physical (rock above the design ramp, settlement) or a survey effect, not a datum effect."
+   },
+   "status": {
+    "old": "unresolved",
+    "new": "resolved (offset); gap physical"
+   },
+   "resolve": {
+    "old": "Transport WA (Fremantle chart datum to AHD offset, HAT / LAT); the Lyons (1992) drawing set",
+    "new": "HAT / LAT of Fremantle (Transport WA tides@transport.wa.gov.au or the Australian National Tide Tables); the Lyons (1992) drawing set"
+   },
+   "ids": {
+    "old": "DoT1999; DoT2002; BoM; img26",
+    "new": "DoT1999; DoT2002; BoM; img26",
+    "note": "unchanged: no new id is needed; the DNM TR12 citation is METHODS_3D section 8 item 13 (Roelse, Granger and Graham 1975, Table 3)"
+   },
+   "ev": {
+    "old": [
+     "unresolved gap 0.2-0.3 m (A12)"
+    ],
+    "new": [
+     "remaining gap to A 0.13 / 0.22 m is physical or survey, not datum (3.1)"
+    ]
+   }
+  },
+  "models3d_caveats.json row 'Design-surface versions are idealised' (slug cables-reef-wa)": {
+   "reason": {
+    "old": "The design surface is 0.3 m below the surveyed rock: 0.97 m thick as modelled against 1.15-1.29 m surveyed.",
+    "new": "The design surface is 0.25-0.3 m below the surveyed rock: 1.02 m thick as modelled against 1.15-1.29 m surveyed."
+   },
+   "diff": {
+    "old": "16-25 % below the surveyed volume",
+    "new": "11-21 % below the surveyed volume"
+   },
+   "ev": {
+    "old": [
+     "thickness 0.97 m modelled vs 1.15-1.29 m surveyed"
+    ],
+    "new": [
+     "thickness 1.02 m modelled vs 1.15-1.29 m surveyed"
+    ]
+   }
+  }
+ }
+}

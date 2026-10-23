@@ -1,0 +1,24 @@
+{
+  "image": "xala_z15.png",
+  "width": 2891,
+  "height": 2891,
+  "bounds": {
+    "north": 19.79339690034254,
+    "south": 19.67661588781778,
+    "east": -105.1929759979248,
+    "west": -105.31704425811768
+  },
+  "zoom": 15,
+  "m_per_px_center": 4.4967160838738565,
+  "tile_template": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+  "wayback_release": null,
+  "center": {
+    "lat": 19.735,
+    "lon": -105.255
+  },
+  "radius_m": 6500.0,
+  "attribution": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+  "retrieved": "2026-10-10",
+  "capture_date": "2025-05-23",
+  "capture_date_field": "DATE (YYYYMMDD)"
+}

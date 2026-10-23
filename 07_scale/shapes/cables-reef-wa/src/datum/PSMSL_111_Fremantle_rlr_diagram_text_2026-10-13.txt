@@ -1,0 +1,32 @@
+ 
+FREMANTLE - RLR information 
+ Jump to main content. 
+ -->
+    About Us    
+    Data    
+    Products    
+    GLOSS    
+    Training    
+    Training & Information    
+-->
+    Links    
+You are here: home > data > obtaining > rlr.diagrams > 
+ Data 
+ Obtaining 
+ Supplying 
+ High-Frequency 
+ Bottom Pressure Records 
+ Other Long Records 
+ GLOSS/ODINAFRICA Calibration Data 
+ Donate 
+Donate to PSMSL
+ Other Links
+ RLR Definition 
+ Revised Local Reference (RLR) Diagram for FREMANTLE 
+ Station ID: 111
+If the image above appears blurry, or you would like to see a larger image, 
+please view the
+ full-sized image of the RLR diagram .
+ Datum information
+Add 6.000m to all data values to refer to RLR
+RLR is 8.753m below primary benchmark DMH 098

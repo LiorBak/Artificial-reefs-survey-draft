@@ -1,6 +1,6 @@
 # Mechanics of an Artificial Reef Increasing Wave Size — Refraction/Focusing Diagram (image)
 
-- Source path: `C:\Users\lior\Documents\Gemini\AG\Artificial reef - to upload to git\Initial info from Lior\mechanic of artifical reef to increase wave size.png`
+- Source path: `C:\Users\lior\Documents\Claude\Projects\Artificial reef\Initial info from Lior\mechanic of artifical reef to increase wave size.png`
 - Size: 309,614 bytes (~302 KB); pixel dimensions 448 × 422 px
 - Type: PNG (RGBA, has an alpha channel). Image quality is low/soft for its pixel count (blurred edges, few sharp lines), consistent with a **screenshot of a screenshot**, or a small embedded figure copied out of a PDF/PPT/webpage and re-saved, rather than a native high-res export.
 - Date read: 2026-09-24
@@ -48,7 +48,7 @@ None named or identifiable. No logos, watermarks, author credits, or institution
 
 ## Images extracted
 
-- Copied to: `C:\Users\lior\Documents\Gemini\AG\Artificial reef - to upload to git\03_images\from_lior\reef_mechanics_wave_focusing_diagram.png` (exact byte-for-byte copy, MD5-verified identical to the original)
+- Copied to: `C:\Users\lior\Documents\Claude\Projects\Artificial reef\03_images\from_lior\reef_mechanics_wave_focusing_diagram.png` (exact byte-for-byte copy, MD5-verified identical to the original)
 - Caption: "Schematic diagram of wave refraction and focusing around a coastal point/reef — incoming swell (pink ribbons) bends around shallowing bathymetry and a deeper channel, converging wave energy (numbered ray path ①–⑤) to produce a larger, more organised breaking wave at the point. No source/title/credit is visible on the image; original publisher unidentified."
 - Safe to use in the final HTML? **Uncertain / lean No.** The image is a polished, professionally styled colour illustration (painterly 3-D coastal rendering, consistent line weights, deliberate colour-coded ribbons and callout markers) — this is **not** a photo and does not look like Lior's own freehand drawing; it reads as a figure copied from an external source (textbook, paper, or educational surf/oceanography website), similar in kind to the companion Mavericks image which does carry a Surfline/USGS/CSUMB credit. Because no credit line survived in this crop, its actual owner/licence cannot be confirmed either way. Recommend: do **not** embed this exact file in the public-facing HTML without further attribution research (see open questions below); either (a) find the original source online (e.g., via reverse-image search) and link to it / get proper credit text, or (b) commission/redraw an original schematic for this project that conveys the same shoaling-refraction-focusing concept without reusing a possibly copyrighted figure.
 

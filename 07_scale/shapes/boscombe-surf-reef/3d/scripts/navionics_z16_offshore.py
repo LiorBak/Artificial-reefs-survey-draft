@@ -78,5 +78,5 @@ if __name__ == "__main__":
     canvas = Image.new("RGB", (out.width, out.height + 80), (255, 255, 255)); canvas.paste(out, (0, 80)); out = canvas; dr = ImageDraw.Draw(out)
     dr.text((10, 6), "Garmin Navionics Nautical Chart z16, 2026-10-05 (screenshot rows 600-864, y ~ 390-790 m): red boxes = soundings read (m).", fill=(200, 0, 0), font=FONT)
     dr.text((10, 28), "Red numbers = model minus Navionics depth (m, positive = model deeper) for the %d soundings inside |x| <= 160 m: mean %+.2f, sd %.2f, rms %.2f." % (res["n"], res["mean"], res["sd"], res["rms"]), fill=(200, 0, 0), font=FONT)
-    dr.text((10, 50), "Pattern: model deeper than the chart at x < 0 and shallower at x > 0 (about -1.2 m per 100 m of x) - see METHODS_3D.md section 4, item 12.", fill=(200, 0, 0), font=FONT)
+    dr.text((10, 50), "After D2 (2026-10-10, row y = 380 and seaward flat alongshore; before D2: r.m.s. 1.20 m, trend -1.2 m per 100 m of x) - see METHODS_3D.md 3.4 block D2 and section 4, item 12.", fill=(200, 0, 0), font=FONT)
     out.save(HERE.parent / "annotated" / "navionics_nauticalchart_z16_offshore_soundings_annotated.png")

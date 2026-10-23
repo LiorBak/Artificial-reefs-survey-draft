@@ -1,7 +1,7 @@
 """Registry helper for narrowneck-gold-coast (append-only; re-reads images.json right before each write)."""
 import os, json, hashlib, re, tempfile
 from PIL import Image
-ROOT = r"C:\Users\lior\Documents\Gemini\AG\Artificial reef - to upload to git"
+ROOT = r"C:\Users\lior\Documents\Claude\Projects\Artificial reef"
 SLUG = "narrowneck-gold-coast"
 REG = os.path.join(ROOT, "03_images", "reefs")
 JS = os.path.join(REG, SLUG, "images.json")

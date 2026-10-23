@@ -9,7 +9,7 @@ from PIL import Image
 from scipy import ndimage as ndi
 from scipy.optimize import minimize
 from skimage import measure
-R = 'C:/Users/lior/Documents/Gemini/AG/Artificial reef - to upload to git/07_scale/shapes/mount-maunganui-reef/'
+R = 'C:/Users/lior/Documents/Claude/Projects/Artificial reef/07_scale/shapes/mount-maunganui-reef/'
 tmp = os.environ['TEMP'] + '/mmr/'
 dep3 = np.load(tmp + 'dep.npy')
 win = np.zeros(dep3.shape, bool); win[330:790, 180:720] = True

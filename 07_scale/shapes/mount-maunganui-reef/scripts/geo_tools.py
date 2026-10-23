@@ -3,7 +3,7 @@ Fig 3 pixel <-> BOPTM (EPSG:2106) <-> NZTM (EPSG:2193) <-> LINZ aerial crop pixe
 import json, math
 import numpy as np
 from pyproj import Transformer
-ROOT = 'C:/Users/lior/Documents/Gemini/AG/Artificial reef - to upload to git/07_scale/shapes/mount-maunganui-reef/'
+ROOT = 'C:/Users/lior/Documents/Claude/Projects/Artificial reef/07_scale/shapes/mount-maunganui-reef/'
 T_boptm_to_nztm = Transformer.from_crs(2106, 2193, always_xy=True)
 T_nztm_to_boptm = Transformer.from_crs(2193, 2106, always_xy=True)
 T_boptm_to_ll = Transformer.from_crs(2106, 4326, always_xy=True)

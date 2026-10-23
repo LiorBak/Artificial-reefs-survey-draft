@@ -12,7 +12,8 @@ from PIL import Image
 import matplotlib.colors as mc
 from scipy import ndimage as ndi
 
-ROOT = 'C:/Users/lior/Documents/Gemini/AG/Artificial reef - to upload to git/'
+import os as _os
+ROOT = _os.path.abspath(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)), '..', '..', '..', '..')).replace(chr(92), '/') + '/'   # repo root (was the Windows path on Lior's PC)
 S = ROOT + '07_scale/shapes/mount-maunganui-reef/'
 FIG5 = ROOT + '03_images/reefs/mount-maunganui-reef/mount-maunganui-reef_boprc-fig5-multibeam-2013_2013.png'
 K5 = 84.33 / 20.0                      # Fig 5 px per m

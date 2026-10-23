@@ -1,8 +1,8 @@
 {
  "n": 11,
- "mean": -0.27,
- "sd": 1.23,
- "rms": 1.2,
+ "mean": -0.18,
+ "sd": 0.51,
+ "rms": 0.51,
  "y_range": [
   428.0,
   604.0
@@ -10,8 +10,8 @@
  "by_zone": {
   "5": {
    "n": 11,
-   "mean": -0.27,
-   "sd": 1.23
+   "mean": -0.18,
+   "sd": 0.51
   }
  },
  "rows": [
@@ -22,8 +22,8 @@
    "x": -118.5,
    "y": 428.3,
    "depth_nav_m": 6.7,
-   "depth_model_below_cd_m": 8.05,
-   "model_minus_nav_m": 1.35,
+   "depth_model_below_cd_m": 7.06,
+   "model_minus_nav_m": 0.36,
    "zone_code": 5
   },
   {
@@ -33,8 +33,8 @@
    "x": -82.4,
    "y": 544.2,
    "depth_nav_m": 8.4,
-   "depth_model_below_cd_m": 9.43,
-   "model_minus_nav_m": 1.03,
+   "depth_model_below_cd_m": 8.69,
+   "model_minus_nav_m": 0.29,
    "zone_code": 5
   },
   {
@@ -44,8 +44,8 @@
    "x": -122.2,
    "y": 591.6,
    "depth_nav_m": 8.9,
-   "depth_model_below_cd_m": 10.37,
-   "model_minus_nav_m": 1.47,
+   "depth_model_below_cd_m": 9.36,
+   "model_minus_nav_m": 0.46,
    "zone_code": 5
   },
   {
@@ -55,8 +55,8 @@
    "x": -62.6,
    "y": 603.5,
    "depth_nav_m": 9.3,
-   "depth_model_below_cd_m": 10.08,
-   "model_minus_nav_m": 0.78,
+   "depth_model_below_cd_m": 9.53,
+   "model_minus_nav_m": 0.23,
    "zone_code": 5
   },
   {
@@ -66,8 +66,8 @@
    "x": 27.2,
    "y": 484.5,
    "depth_nav_m": 8.7,
-   "depth_model_below_cd_m": 7.47,
-   "model_minus_nav_m": -1.23,
+   "depth_model_below_cd_m": 7.85,
+   "model_minus_nav_m": -0.85,
    "zone_code": 5
   },
   {
@@ -77,8 +77,8 @@
    "x": 79.1,
    "y": 518.4,
    "depth_nav_m": 9.1,
-   "depth_model_below_cd_m": 7.66,
-   "model_minus_nav_m": -1.44,
+   "depth_model_below_cd_m": 8.33,
+   "model_minus_nav_m": -0.77,
    "zone_code": 5
   },
   {
@@ -88,8 +88,8 @@
    "x": 138.7,
    "y": 497.4,
    "depth_nav_m": 8.8,
-   "depth_model_below_cd_m": 7.13,
-   "model_minus_nav_m": -1.67,
+   "depth_model_below_cd_m": 8.03,
+   "model_minus_nav_m": -0.77,
    "zone_code": 5
   },
   {
@@ -99,8 +99,8 @@
    "x": 124.9,
    "y": 561.8,
    "depth_nav_m": 9.4,
-   "depth_model_below_cd_m": 8.09,
-   "model_minus_nav_m": -1.31,
+   "depth_model_below_cd_m": 8.94,
+   "model_minus_nav_m": -0.46,
    "zone_code": 5
   },
   {
@@ -110,8 +110,8 @@
    "x": -7.8,
    "y": 568.0,
    "depth_nav_m": 8.8,
-   "depth_model_below_cd_m": 8.96,
-   "model_minus_nav_m": 0.16,
+   "depth_model_below_cd_m": 9.03,
+   "model_minus_nav_m": 0.23,
    "zone_code": 5
   },
   {
@@ -121,8 +121,8 @@
    "x": 57.9,
    "y": 575.6,
    "depth_nav_m": 9.6,
-   "depth_model_below_cd_m": 8.56,
-   "model_minus_nav_m": -1.04,
+   "depth_model_below_cd_m": 9.13,
+   "model_minus_nav_m": -0.47,
    "zone_code": 5
   },
   {
@@ -132,14 +132,14 @@
    "x": 121.4,
    "y": 602.6,
    "depth_nav_m": 9.7,
-   "depth_model_below_cd_m": 8.68,
-   "model_minus_nav_m": -1.02,
+   "depth_model_below_cd_m": 9.52,
+   "model_minus_nav_m": -0.18,
    "zone_code": 5
   }
  ],
  "note": "model depth = -(z_MSL + 1.40) = depth below chart datum, extension grid; positive = model deeper than Navionics. Reads by eye from 2.4x crops, +-0.05 m value, +-10 px (15 m) position",
  "diff_vs_y": {
-  "intercept_at_y500_m": -0.31,
-  "slope_m_per_100m": 0.11
+  "intercept_at_y500_m": -0.27,
+  "slope_m_per_100m": 0.23
  }
 }

@@ -1,0 +1,1130 @@
+{
+ "slug": "kovalam-reef-india",
+ "name": "Kovalam Reef (Lighthouse Beach, Kerala, India)",
+ "status": "verified",
+ "updated": "2026-10-10",
+ "confidence": {
+  "level": "low",
+  "reason": "Only one oblique, unscaled photo shows the structure, and the scale (camera height) is not fixed by the picture: footprint 550-1,700 m2 for camera heights 30-80 m. The position is tied to the 2011 satellite swash line (+-15 m) and the long-shore size agrees with the 65 m of a secondary table, but the cross-shore size does not (41 vs 85 m).",
+  "factors": [
+   "single oblique photo, no scale bar, no ground control survey",
+   "camera height free: rms 2.2-2.8 px for H 30-80 m",
+   "swash line used for the fit differs in date from the photo (2011-02 satellite vs 2010-11 aerial)",
+   "left (seaward) end of the strips fades into haze",
+   "no as-built drawing or survey found; reef later deflated and sank (not drawn)"
+  ]
+ },
+ "design_version": {
+  "drawn": "As-built reef of ASR Ltd, completed late Feb 2010 (4,000 m3 per Mead & Borrero 2011; card 4,800 m3), as seen in the ASR aerial taken between completion and March 2011.",
+  "why_this_one": "It is the only built version; the 2005 Kerala Tourism proposal (500 m long, 200 m offshore, Eve's Beach) was never built. The aerial shows it intact, before the 2010-2011 deflation reported by Raised Water Research.",
+  "alternatives_seen": [
+   {
+    "what": "2005 Kerala Tourism submerged reef proposal at Eve's/Hawah Beach (500 m x ~200 m offshore, 3-7 m depth)",
+    "source_id": "card R5",
+    "why_not_used": "never built, different beach"
+   },
+   {
+    "what": "RWR hand-drawn break line (stepped polyline)",
+    "source_id": "img2",
+    "why_not_used": "shows the foam line on a monsoon day, no scale; used only to confirm the stepped/echelon typology"
+   },
+   {
+    "what": "Earlier text schematic (07_scale/reefs/kovalam-reef-india.footprint.json: 3 chained 30 m units, 1,083 m2)",
+    "source_id": "footprint",
+    "why_not_used": "schematic from text; no image evidence of the unit count"
+   }
+  ]
+ },
+ "sources": [
+  {
+   "id": "img1",
+   "kind": "aerial_photo",
+   "title": "ASR Ltd aerial of the Kovalam reef from the lighthouse end",
+   "url": "http://web.archive.org/web/20111106035249/http://www.asrltd.com/media/project-pdf/kovalam-coastal-protection.pdf",
+   "source_page": "ASR brochure p.1; same photo uncropped in WRL TR 2012/08 Fig 4.5 (registry kovalam-reef-india-img-16)",
+   "page_or_figure": "brochure p.1 composite, upper left",
+   "image_date": "2010-02 to 2011-03",
+   "credit": "ASR Ltd",
+   "license": "not stated; private research copy",
+   "local_file": "07_scale/shapes/kovalam-reef-india/src/img1_asr_aerial.png",
+   "image_size": [
+    915,
+    735
+   ],
+   "georef": null,
+   "scale": {
+    "px_per_m": null,
+    "method": "camera model fitted to the 2011 satellite swash line",
+    "evidence": "see METHOD.md section 3; camera height fixed by assumption",
+    "uncertainty_pct": 50
+   },
+   "pixel_polygons": [
+    [
+     [
+      470,
+      512
+     ],
+     [
+      430,
+      509
+     ],
+     [
+      380,
+      513
+     ],
+     [
+      330,
+      523
+     ],
+     [
+      290,
+      534
+     ],
+     [
+      250,
+      546
+     ],
+     [
+      200,
+      566
+     ],
+     [
+      150,
+      588
+     ],
+     [
+      110,
+      606
+     ],
+     [
+      90,
+      622
+     ],
+     [
+      130,
+      630
+     ],
+     [
+      200,
+      622
+     ],
+     [
+      270,
+      612
+     ],
+     [
+      340,
+      601
+     ],
+     [
+      400,
+      593
+     ],
+     [
+      470,
+      592
+     ],
+     [
+      502,
+      572
+     ],
+     [
+      495,
+      540
+     ]
+    ]
+   ],
+   "traced_what": "outer edge of the visible sand-container strips incl. the whitewater patch",
+   "match_notes": "good in photo space (overlays/img1_trace_v2.png); metric scale weak",
+   "role": "primary"
+  },
+  {
+   "id": "img2",
+   "kind": "aerial_photo",
+   "title": "RWR Kovalam Outline (monsoon swell, hand-drawn break line)",
+   "url": "https://raisedwaterresearch.com/wp-content/uploads/2019/12/Kovalam-Outline.jpg",
+   "source_page": "https://raisedwaterresearch.com/spot/artificial-reef/asia/india/kovalam/",
+   "page_or_figure": "spot page image",
+   "image_date": "unknown (before 2019)",
+   "credit": "Raised Water Research",
+   "license": "not stated",
+   "local_file": "07_scale/shapes/kovalam-reef-india/src/img2_rwr_outline.jpg",
+   "image_size": [
+    475,
+    305
+   ],
+   "georef": null,
+   "scale": null,
+   "pixel_polygons": [],
+   "traced_what": "nothing traced (break line, no scale)",
+   "match_notes": "confirms a stepped, echelon-like pattern",
+   "role": "cross_check"
+  },
+  {
+   "id": "sat2011",
+   "kind": "satellite",
+   "title": "Esri World Imagery Wayback release 10, z17",
+   "url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/10/{z}/{y}/{x}",
+   "source_page": "https://livingatlas.arcgis.com/wayback/",
+   "page_or_figure": "-",
+   "image_date": "2011-02-28",
+   "credit": "Esri, Maxar, Earthstar Geographics, GIS User Community",
+   "license": "Esri terms",
+   "local_file": "07_scale/shapes/kovalam-reef-india/src/satellite_2014.png",
+   "image_size": [
+    507,
+    508
+   ],
+   "georef": {
+    "provider": "Esri World Imagery Wayback",
+    "zoom": 17,
+    "bounds": {
+     "north": 8.391194450230898,
+     "south": 8.385802510250405,
+     "east": 76.9772207736969,
+     "west": 76.9717812538147
+    },
+    "tile_template": "see url",
+    "imagery_date": "2011-02-28",
+    "attribution": "Esri, Maxar, Earthstar Geographics, and the GIS User Community"
+   },
+   "scale": {
+    "px_per_m": 0.846,
+    "method": "georeferenced",
+    "evidence": "1.18 m/px at the frame centre (sidecar)",
+    "uncertainty_pct": 2
+   },
+   "pixel_polygons": [],
+   "traced_what": "reef not visible; swash line (landward edge of surf foam) read for the camera fit",
+   "match_notes": "",
+   "role": "context"
+  }
+ ],
+ "canonical": {
+  "frame": "metres; origin = point of the 2011-02-28 swash line nearest the reef centroid (8.387161, 76.975992); +x along the swash line toward bearing 196.0 deg (SSW); +y offshore toward bearing 286.0 deg (WNW)",
+  "derived_from": "img1 + sat2011 (camera 60 m)",
+  "polygons_m": [
+   [
+    [
+     -21.8,
+     80.6
+    ],
+    [
+     -17.8,
+     87.4
+    ],
+    [
+     -10.7,
+     94.0
+    ],
+    [
+     -2.3,
+     98.7
+    ],
+    [
+     4.7,
+     101.3
+    ],
+    [
+     11.4,
+     103.6
+    ],
+    [
+     20.0,
+     104.8
+    ],
+    [
+     27.9,
+     105.4
+    ],
+    [
+     33.7,
+     105.7
+    ],
+    [
+     37.0,
+     104.3
+    ],
+    [
+     34.2,
+     98.0
+    ],
+    [
+     27.1,
+     91.8
+    ],
+    [
+     19.6,
+     85.7
+    ],
+    [
+     11.5,
+     79.6
+    ],
+    [
+     4.5,
+     73.8
+    ],
+    [
+     -2.5,
+     65.4
+    ],
+    [
+     -9.8,
+     64.5
+    ],
+    [
+     -16.8,
+     71.0
+    ]
+   ]
+  ],
+  "area_m2": 1217,
+  "bbox_m": {
+   "alongshore": 59,
+   "crossshore": 41
+  },
+  "max_dim_m": 63,
+  "distance_offshore_m": 90,
+  "shore_normal_bearing_deg": 286.0,
+  "note": "distance measured from the 2011 swash line; the pre-reef shoreline lay 10-30 m landward (Mead & Borrero 2011 s.4.1.4)"
+ },
+ "geo": {
+  "polygons_latlon": [
+   [
+    [
+     8.387552,
+     76.975344
+    ],
+    [
+     8.387535,
+     76.975274
+    ],
+    [
+     8.387489,
+     76.975199
+    ],
+    [
+     8.387428,
+     76.975137
+    ],
+    [
+     8.387374,
+     76.975096
+    ],
+    [
+     8.387321,
+     76.97506
+    ],
+    [
+     8.38725,
+     76.975028
+    ],
+    [
+     8.387182,
+     76.975003
+    ],
+    [
+     8.387133,
+     76.974985
+    ],
+    [
+     8.3871,
+     76.97499
+    ],
+    [
+     8.387109,
+     76.975051
+    ],
+    [
+     8.387155,
+     76.975123
+    ],
+    [
+     8.387205,
+     76.975195
+    ],
+    [
+     8.38726,
+     76.975269
+    ],
+    [
+     8.387307,
+     76.975337
+    ],
+    [
+     8.387346,
+     76.975427
+    ],
+    [
+     8.387407,
+     76.975454
+    ],
+    [
+     8.387484,
+     76.975415
+    ]
+   ]
+  ],
+  "shoreline_bearing_deg": 196.0,
+  "method": "unproject traced pixels through the fitted camera onto the sea plane, local ENU about (8.3885, 76.9745), WGS84",
+  "source_id": "img1+sat2011",
+  "position_uncertainty_m": 20,
+  "camera_latlon": [
+   8.386659,
+   76.975706
+  ]
+ },
+ "outline_versions": [
+  {
+   "id": "photo_trace_H60",
+   "name": "Photo trace, camera 60 m (default, 2010-11 aerial)",
+   "date": "2010-02 to 2011-03 (aerial undated; brochure 2011-03-24)",
+   "kind": "photo_trace",
+   "source_ids": [
+    "img1",
+    "sat2011"
+   ],
+   "method": "Strips traced on the oblique ASR aerial; rectified through a camera fitted to the 2011-02-28 satellite swash line; camera height fixed at 60 m (the fit cannot determine it).",
+   "level": "visible outer edge of the sand-container strips in the photo (the whitewater patch at the shore-ward end is included)",
+   "area_m2": 1216,
+   "bbox_m": [
+    59,
+    41
+   ],
+   "polygons_m": [
+    [
+     [
+      -21.8,
+      80.6
+     ],
+     [
+      -17.8,
+      87.4
+     ],
+     [
+      -10.7,
+      94.0
+     ],
+     [
+      -2.3,
+      98.7
+     ],
+     [
+      4.7,
+      101.3
+     ],
+     [
+      11.4,
+      103.6
+     ],
+     [
+      20.0,
+      104.8
+     ],
+     [
+      27.9,
+      105.4
+     ],
+     [
+      33.7,
+      105.7
+     ],
+     [
+      37.0,
+      104.3
+     ],
+     [
+      34.2,
+      98.0
+     ],
+     [
+      27.1,
+      91.8
+     ],
+     [
+      19.6,
+      85.7
+     ],
+     [
+      11.5,
+      79.6
+     ],
+     [
+      4.5,
+      73.8
+     ],
+     [
+      -2.5,
+      65.4
+     ],
+     [
+      -9.8,
+      64.5
+     ],
+     [
+      -16.8,
+      71.0
+     ]
+    ]
+   ],
+   "polygons_latlon": [
+    [
+     [
+      8.387552,
+      76.975344
+     ],
+     [
+      8.387535,
+      76.975274
+     ],
+     [
+      8.387489,
+      76.975199
+     ],
+     [
+      8.387428,
+      76.975137
+     ],
+     [
+      8.387374,
+      76.975096
+     ],
+     [
+      8.387321,
+      76.97506
+     ],
+     [
+      8.38725,
+      76.975028
+     ],
+     [
+      8.387182,
+      76.975003
+     ],
+     [
+      8.387133,
+      76.974985
+     ],
+     [
+      8.3871,
+      76.97499
+     ],
+     [
+      8.387109,
+      76.975051
+     ],
+     [
+      8.387155,
+      76.975123
+     ],
+     [
+      8.387205,
+      76.975195
+     ],
+     [
+      8.38726,
+      76.975269
+     ],
+     [
+      8.387307,
+      76.975337
+     ],
+     [
+      8.387346,
+      76.975427
+     ],
+     [
+      8.387407,
+      76.975454
+     ],
+     [
+      8.387484,
+      76.975415
+     ]
+    ]
+   ],
+   "camera_height_m": 60,
+   "camera_f_px": 612,
+   "fov_deg": 72.3,
+   "offshore_nearest_edge_m": 65,
+   "note": "Camera height 60 m gives a 72 deg lens and an offshore distance consistent with the 90 m of WRL Table 4.2; still an assumption."
+  },
+  {
+   "id": "photo_trace_H35",
+   "name": "Photo trace, smallest scale (camera 35 m)",
+   "date": "2010-02 to 2011-03 (aerial undated; brochure 2011-03-24)",
+   "kind": "photo_trace",
+   "source_ids": [
+    "img1",
+    "sat2011"
+   ],
+   "method": "Strips traced on the oblique ASR aerial; rectified through a camera fitted to the 2011-02-28 satellite swash line; camera height fixed at 35 m (the fit cannot determine it).",
+   "level": "visible outer edge of the sand-container strips in the photo (the whitewater patch at the shore-ward end is included)",
+   "area_m2": 640,
+   "bbox_m": [
+    43,
+    24
+   ],
+   "polygons_m": [
+    [
+     [
+      -77.0,
+      75.8
+     ],
+     [
+      -74.3,
+      79.5
+     ],
+     [
+      -69.2,
+      81.9
+     ],
+     [
+      -63.1,
+      82.6
+     ],
+     [
+      -58.0,
+      82.2
+     ],
+     [
+      -53.1,
+      81.7
+     ],
+     [
+      -46.9,
+      79.8
+     ],
+     [
+      -41.0,
+      77.7
+     ],
+     [
+      -36.8,
+      76.0
+     ],
+     [
+      -34.3,
+      73.9
+     ],
+     [
+      -36.2,
+      70.2
+     ],
+     [
+      -41.2,
+      68.0
+     ],
+     [
+      -46.6,
+      66.1
+     ],
+     [
+      -52.4,
+      64.2
+     ],
+     [
+      -57.4,
+      62.3
+     ],
+     [
+      -62.3,
+      58.5
+     ],
+     [
+      -67.7,
+      60.2
+     ],
+     [
+      -73.0,
+      67.2
+     ]
+    ]
+   ],
+   "polygons_latlon": [
+    [
+     [
+      8.38802,
+      76.975524
+     ],
+     [
+      8.388005,
+      76.975485
+     ],
+     [
+      8.387967,
+      76.975451
+     ],
+     [
+      8.387916,
+      76.97543
+     ],
+     [
+      8.387871,
+      76.97542
+     ],
+     [
+      8.387827,
+      76.975413
+     ],
+     [
+      8.387768,
+      76.975414
+     ],
+     [
+      8.387712,
+      76.975418
+     ],
+     [
+      8.387671,
+      76.975421
+     ],
+     [
+      8.387644,
+      76.975434
+     ],
+     [
+      8.387651,
+      76.97547
+     ],
+     [
+      8.387689,
+      76.975502
+     ],
+     [
+      8.387732,
+      76.975533
+     ],
+     [
+      8.387777,
+      76.975563
+     ],
+     [
+      8.387816,
+      76.975593
+     ],
+     [
+      8.387849,
+      76.975638
+     ],
+     [
+      8.3879,
+      76.975637
+     ],
+     [
+      8.387964,
+      76.975589
+     ]
+    ]
+   ],
+   "camera_height_m": 35,
+   "camera_f_px": 1014,
+   "fov_deg": 47.6,
+   "offshore_nearest_edge_m": 58,
+   "note": "Best-fit camera height of the unconstrained search (rms 2.2 px); 48 deg lens. Smallest plausible footprint."
+  },
+  {
+   "id": "photo_trace_H80",
+   "name": "Photo trace, largest scale (camera 80 m)",
+   "date": "2010-02 to 2011-03 (aerial undated; brochure 2011-03-24)",
+   "kind": "photo_trace",
+   "source_ids": [
+    "img1",
+    "sat2011"
+   ],
+   "method": "Strips traced on the oblique ASR aerial; rectified through a camera fitted to the 2011-02-28 satellite swash line; camera height fixed at 80 m (the fit cannot determine it).",
+   "level": "visible outer edge of the sand-container strips in the photo (the whitewater patch at the shore-ward end is included)",
+   "area_m2": 1681,
+   "bbox_m": [
+    64,
+    68
+   ],
+   "polygons_m": [
+    [
+     [
+      5.9,
+      107.4
+     ],
+     [
+      10.1,
+      117.5
+     ],
+     [
+      17.8,
+      128.3
+     ],
+     [
+      26.9,
+      137.3
+     ],
+     [
+      34.5,
+      143.3
+     ],
+     [
+      41.9,
+      148.6
+     ],
+     [
+      51.2,
+      153.4
+     ],
+     [
+      59.9,
+      157.1
+     ],
+     [
+      66.2,
+      159.7
+     ],
+     [
+      69.9,
+      159.1
+     ],
+     [
+      67.0,
+      150.2
+     ],
+     [
+      59.4,
+      139.9
+     ],
+     [
+      51.3,
+      129.5
+     ],
+     [
+      42.6,
+      118.7
+     ],
+     [
+      35.0,
+      108.8
+     ],
+     [
+      27.6,
+      95.8
+     ],
+     [
+      19.6,
+      91.9
+     ],
+     [
+      11.7,
+      97.3
+     ]
+    ]
+   ],
+   "polygons_latlon": [
+    [
+     [
+      8.387378,
+      76.97504
+     ],
+     [
+      8.387367,
+      76.974942
+     ],
+     [
+      8.387327,
+      76.974828
+     ],
+     [
+      8.387271,
+      76.974726
+     ],
+     [
+      8.387219,
+      76.974655
+     ],
+     [
+      8.387169,
+      76.97459
+     ],
+     [
+      8.387099,
+      76.974525
+     ],
+     [
+      8.387033,
+      76.974471
+     ],
+     [
+      8.386985,
+      76.974432
+     ],
+     [
+      8.386951,
+      76.974428
+     ],
+     [
+      8.386954,
+      76.974513
+     ],
+     [
+      8.386994,
+      76.974623
+     ],
+     [
+      8.387039,
+      76.974734
+     ],
+     [
+      8.387088,
+      76.97485
+     ],
+     [
+      8.387129,
+      76.974955
+     ],
+     [
+      8.387161,
+      76.975087
+     ],
+     [
+      8.387221,
+      76.975141
+     ],
+     [
+      8.387303,
+      76.975114
+     ]
+    ]
+   ],
+   "camera_height_m": 80,
+   "camera_f_px": 427,
+   "fov_deg": 92.6,
+   "offshore_nearest_edge_m": 92,
+   "note": "Matches the WRL 65 m long-shore size and 90 m offshore best but needs a 93 deg lens; largest plausible footprint."
+  }
+ ],
+ "default_outline": "photo_trace_H60",
+ "versions_info": "Three outlines of the same sand-container strips, all traced on the ASR aerial photo (taken between completion in Feb 2010 and March 2011) and placed on the 2011-02-28 satellite frame through a fitted camera. They differ only in the assumed camera height (35, 60, 80 m), which the photo cannot fix, so they show the scale uncertainty. Default 60 m: it reproduces the 90 m offshore distance of the WRL review table with a normal wide-angle lens. No survey or design drawing of the built reef was found.",
+ "angles": [
+  {
+   "what": "strip direction (top and bottom edge of the fan) vs swash line",
+   "deg": 38,
+   "method": "rectified edge bearings 230.7 and 237.7 deg vs swash tangent 196.0 deg at camera 60 m; +-15 deg"
+  }
+ ],
+ "dimensions_check": [
+  {
+   "quantity": "long-shore length",
+   "text_value": "65 m",
+   "text_ref": "WRL TR 2012/08 Table 4.2 p.66 (V-shape max dimension)",
+   "drawing_value": "59 m",
+   "diff_pct": -9,
+   "comment": "H60; H80 gives 64 m"
+  },
+  {
+   "quantity": "cross-shore width",
+   "text_value": "85 m",
+   "text_ref": "same",
+   "drawing_value": "41 m",
+   "diff_pct": -52,
+   "comment": "traced fan is half the table value; the faint seaward end may be longer, or the table includes the design extent. H80 gives 68 m (-20%)."
+  },
+  {
+   "quantity": "offshore distance (nearest edge)",
+   "text_value": "90 m to the undisturbed pre-reef shoreline",
+   "text_ref": "same",
+   "drawing_value": "65 m from the 2011 swash line (+10-30 m widening = 75-95 m)",
+   "diff_pct": null,
+   "comment": "consistent, but the 90 m was used to choose H, so this is not an independent check"
+  },
+  {
+   "quantity": "volume vs footprint",
+   "text_value": "4,000 m3 (Mead & Borrero 2011), 4,800 m3 (card)",
+   "text_ref": "paper s.3.1.7",
+   "drawing_value": "1217 m2 footprint",
+   "diff_pct": null,
+   "comment": "would need 3.3 m mean height: the real footprint is probably larger than the traced strips Also Rendle (2016) thesis Table 2.1 lists 4,300 m3 for 'Kovalum 2010' (audit 2026-10-10); four volumes in circulation (4,000 / 4,300 / 4,800 / 4,017 derived)."
+  }
+ ],
+ "gemini": {
+  "values": {
+   "size": "95 x 48 m",
+   "area": "3,800 / 2,245 m2",
+   "crest_depth": "1.6 m",
+   "offshore": "150 m"
+  },
+  "sources_used": [
+   {
+    "url": "Kerala Harbour Engineering Dept Project Report 2011; Thomas et al. 2012 Performance Assessment of Kovalam Multipurpose Reef",
+    "what_gemini_said": "crest 1.6 m",
+    "our_check": "unverifiable",
+    "evidence": "earlier agents (2026-09-25) found no such documents; not re-fetched here (no network)"
+   }
+  ],
+  "summary": "Gemini drew a smooth crescent placed to match its own assumed 150 m offshore (circular); not used."
+ },
+ "no_source": null,
+ "references": [
+  {
+   "id": "R-WRL",
+   "citation": "Blacka, M.J., Shand, T.D., Carley, J.T., Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08, UNSW Water Research Laboratory. Table 4.2 p.66, Fig 4.5 p.71.",
+   "url": "https://doi.org/10.4225/53/58e1dc7368c7a",
+   "accessed": "2026-10-10 (Lior's PDF in papers/)",
+   "supports": "65 x 85 m, 90 m offshore, depth 1.3-3.7 m, submergence 0.2-3.4 m, tide range ~1 m"
+  },
+  {
+   "id": "R-MB",
+   "citation": "Mead, S. and Borrero, J. (2011). Multi-Purpose Reefs - A Decade of Applications. Coasts & Ports 2011 conference proceedings, ASR Ltd, Raglan, New Zealand, s.3.1.7, 4.1.4, Fig 7. [URL/DOI below not confirmed in the 2026-10-10 audit]",
+   "url": "https://search.informit.org/doi/10.3316/informit.715072832934166",
+   "accessed": "2026-10-10 (Lior's PDF)",
+   "supports": "4,000 m3, completed late Feb 2010, camera at the lighthouse viewing platform, beach 10-30 m wider"
+  },
+  {
+   "id": "R-ASR",
+   "citation": "ASR Ltd (2011). Multi-Purpose Reef Design and Construction, Kovalam, India (brochure, Wayback capture 2011-11-06).",
+   "url": "http://web.archive.org/web/20111106035249/http://www.asrltd.com/media/project-pdf/kovalam-coastal-protection.pdf",
+   "accessed": "2026-09-25",
+   "supports": "aerial photo (img1), completion Feb 2010"
+  },
+  {
+   "id": "R-Rendle",
+   "citation": "Rendle, E.J. (2016). The Environmental, Social and Economic Impacts of an Artificial Surf Reef - The UK Experience. PhD thesis, University of Plymouth. Reference list p.279 (PDF) lists ASR Ltd 2010a 'Kovalam coastal protection'. 'E. Rendle, pers. comm., 2013' in Blacka et al. 2013 p.70 is a separate item.",
+   "url": "not confirmed (Plymouth research portal record found by WebSearch; exact URL not captured)",
+   "accessed": "2026-10-10 (Lior's PDF in papers/)",
+   "supports": "lead to the missing ASR design report; reef damage after 2013"
+  }
+ ],
+ "verified_on": "2026-10-10",
+ "verification": [
+  {
+   "check": "trace follows the visible strips (photo space)",
+   "verdict": "approximate",
+   "evidence": "overlays/img1_trace_v2.png; left end blurred, faint strips right of the whitewater not included"
+  },
+  {
+   "check": "camera fit residual",
+   "verdict": "ok (2.2-2.8 px rms)",
+   "evidence": "overlays/img1_camera_fit_check.png; swash points vs projected satellite swash line"
+  },
+  {
+   "check": "scale determined by the photo",
+   "verdict": "NO",
+   "evidence": "rms flat for camera height 30-80 m; footprint 546-1,681 m2 (rectify_result.json H_sweep)"
+  },
+  {
+   "check": "sensitivity: horizon row +-6 px; satellite swash line +-10 m",
+   "verdict": "small",
+   "evidence": "area 1,177-1,251 m2 (horizon), unchanged (swash shift moves position 3 m only)"
+  },
+  {
+   "check": "dimensions vs WRL table",
+   "verdict": "partial",
+   "evidence": "long-shore -9%, cross-shore -52% at H60 (-20% at H80)"
+  },
+  {
+   "check": "design version/state",
+   "verdict": "as-built shortly after completion; later deflation not drawn",
+   "evidence": "RWR/ASR/WRL p.70 (Rendle pers. comm. 2013: damage hampers protection)"
+  },
+  {
+   "check": "Gemini sources re-fetched",
+   "verdict": "not possible (no network)",
+   "evidence": "earlier agents found them unverifiable"
+  }
+ ],
+ "page_status": {
+  "shown_on_page": false,
+  "rule": "Lior 2026-10-10: shapes we do not know are not shown (footprint.json display:false)",
+  "why": "Only one oblique, unscaled photo shows the structure and the photo cannot fix the scale: the traced strips cover 546 to 1,681 m2 depending on the assumed camera height (35, 60, 80 m shown as versions). No survey, plan or vertical image exists, so the reef's true size and place are unknown.",
+  "checked": [
+   "ASR aerial (img-07 = WRL Fig 4.5), camera-fit on the 2011-02-28 Esri frame: rms 2.2-2.8 px for H 30-80 m (rectify_result.json)",
+   "WRL TR 2012/08 Table 4.2 printed p.66 (65 x 85 m, 90 m offshore): our 41 m cross-shore is 52 % smaller at the default",
+   "Mead & Borrero 2011 s.3.1.7 (4,000 m3), s.4.1.4",
+   "Esri frames 2011-02-28 and 2026-01-23: reef not visible",
+   "RWR Kovalam Outline (foam line only)",
+   "Gemini crest 1.6 m / 150 m offshore: unfetchable, not used"
+  ],
+  "assumed": [
+   "A1-A7 below (sea plane, pinhole camera, H = 60 m default, swash line 2011 = 2010, strips = whole reef)"
+  ],
+  "audit": "SOURCE_AUDIT_2026-10-10.md",
+  "network_recheck_2026-10-10": "Esri Wayback (all 197 releases, z17-z19), surfingindia.net, Vimeo page, RWR gallery, web searches for ASR/CESS reports: no vertical or scaled image of the reef found; still hidden, confidence LOW. See METHOD.md section 6."
+ },
+ "assumptions": [
+  {
+   "id": "A1",
+   "assumption": "Sea surface is a plane z = 0 carrying the strips",
+   "effect": "scale error of a few %",
+   "replaced_by": "survey"
+  },
+  {
+   "id": "A2",
+   "assumption": "Pinhole camera, zero roll, principal point at photo centre, no distortion",
+   "effect": "horizon +-6 px: area 1,177-1,251 m2",
+   "replaced_by": "calibrated photo"
+  },
+  {
+   "id": "A3",
+   "assumption": "Camera height 60 m default (35 and 80 m alternates); chosen by lens plausibility and WRL's 90 m offshore (circular, not an independent check)",
+   "effect": "area 640-1,681 m2 (x2.6)",
+   "replaced_by": "vertical image or plan"
+  },
+  {
+   "id": "A4",
+   "assumption": "2011-02-28 swash line represents the beach at the time of the photo (2010-11)",
+   "effect": "position +-20 m",
+   "replaced_by": "satellite of the photo date"
+  },
+  {
+   "id": "A5",
+   "assumption": "Strips plus whitewater patch = the reef; faint streaks and haze tip excluded or guessed",
+   "effect": "true footprint probably larger (4,000 m3 over 1,216 m2 = 3.3 m mean height; WRL 85 m cross-shore vs 41 m)",
+   "replaced_by": "plan"
+  },
+  {
+   "id": "A6",
+   "assumption": "The aerial shows the intact reef (before later deflation)",
+   "effect": "none at that date",
+   "replaced_by": "-"
+  },
+  {
+   "id": "A7",
+   "assumption": "Swash line read by eye (+-6 m)",
+   "effect": "+-6 m position",
+   "replaced_by": "z19 tiles"
+  }
+ ],
+ "decisions": [
+  {
+   "id": "D1",
+   "decision": "Trace the ASR aerial, not satellite",
+   "options": "satellite / aerial",
+   "who": "agent 2026-10-10",
+   "reason": "reef not resolved from above"
+  },
+  {
+   "id": "D2",
+   "decision": "Camera-fit rectification instead of a guessed scale",
+   "options": "eyeball / fit",
+   "who": "agent 2026-10-10",
+   "reason": "traceable"
+  },
+  {
+   "id": "D3",
+   "decision": "Default H 60 m, H35 and H80 as toggles",
+   "options": "single / three",
+   "who": "agent 2026-10-10",
+   "reason": "scale undetermined"
+  },
+  {
+   "id": "D4",
+   "decision": "Earlier crescent draft rejected",
+   "options": "-",
+   "who": "agent",
+   "reason": "outlined the dark patch"
+  },
+  {
+   "id": "D5",
+   "decision": "Shape hidden on the page; 3D not built",
+   "options": "draw three outlines / hide",
+   "who": "Lior 2026-10-10",
+   "reason": "scale unknown"
+  }
+ ]
+}

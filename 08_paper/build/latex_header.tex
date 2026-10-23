@@ -1,0 +1,55 @@
+% Header for the xelatex build (included by build_latex.py via --include-in-header)
+\usepackage{etoolbox}
+\usepackage{xcolor}
+\definecolor{linkblue}{RGB}{0,45,125}
+\AtBeginDocument{\hypersetup{colorlinks=true,linkcolor=linkblue,citecolor=linkblue,urlcolor=linkblue,filecolor=linkblue,
+  pdfauthor={Lior Bakalo},pdfsubject={Course paper}}}
+\usepackage{csquotes}
+\usepackage{xurl}
+\usepackage{booktabs}
+\usepackage{pdflscape}
+\usepackage{microtype}
+\usepackage{caption}
+\usepackage{newunicodechar}
+% glyphs missing from the Latin Modern text font are taken from the math font
+\newunicodechar{†}{\ensuremath{\dagger}}
+\newunicodechar{φ}{\ensuremath{\varphi}}
+% captions: the Markdown captions already begin with "Figure N." / "Table N."
+\captionsetup{labelformat=empty,font=footnotesize,labelfont=bf,justification=justified,singlelinecheck=false,skip=6pt}
+\captionsetup[figure]{position=below,font={footnotesize}}
+% figures: leave room for the (long) captions
+\AtBeginDocument{\setkeys{Gin}{keepaspectratio}}
+\renewcommand{\topfraction}{0.9}\renewcommand{\bottomfraction}{0.9}\renewcommand{\textfraction}{0.08}
+\renewcommand{\floatpagefraction}{0.7}
+% tables
+\newcommand{\tablefont}{\small}
+\AtBeginEnvironment{longtable}{\tablefont}
+\setlength{\LTpre}{8pt}\setlength{\LTpost}{8pt}
+\renewcommand{\arraystretch}{1.12}
+\setlength{\emergencystretch}{3em}
+% title page: title, subtitle, author, date, abstract and keywords on one page; contents next
+\makeatletter
+\renewcommand{\maketitle}{\thispagestyle{empty}\begingroup\centering
+  \vspace*{1.2cm}
+  {\LARGE\bfseries \@title\par}\vspace{0.6cm}
+  {\large \@subtitle\par}\vspace{0.9cm}
+  {\Large \@author\par}\vspace{0.3cm}
+  {\large \@date\par}\vspace{1.0cm}\endgroup}
+\providecommand{\subtitle}[1]{\gdef\@subtitle{#1}}
+\makeatother
+\renewenvironment{abstract}{\begin{center}\bfseries\abstractname\end{center}\vspace{-0.4em}\begin{quote}\small\parindent=0pt\parskip=4pt}{\end{quote}\clearpage}
+\let\oldtableofcontents\tableofcontents
+\renewcommand{\tableofcontents}{\oldtableofcontents\clearpage}
+\setcounter{tocdepth}{2}
+\widowpenalty=10000 \clubpenalty=10000
+% biblatex-apa: hanging indent is the default; keep long URLs breakable
+\AtEndPreamble{%
+\appto{\UrlBreaks}{\do\%\do\_}
+\setcounter{biburlnumpenalty}{100}\setcounter{biburlucpenalty}{100}\setcounter{biburllcpenalty}{100}
+\setlength{\bibhang}{1.27cm}
+\setlength{\bibitemsep}{0.45\baselineskip}
+\DeclareCaseLangs{}
+\DeclareLanguageMapping{american}{american-apa}
+\DeclareLanguageMapping{english}{english-apa}
+}
+\usepackage{needspace}

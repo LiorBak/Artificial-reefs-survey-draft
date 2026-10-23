@@ -1,8 +1,8 @@
 {
  "plan_status": "verified",
  "plan_verified_on": "2026-10-04",
- "plan_md5": "2ce341598d22b61dac771292388e8935",
- "plan_mtime": "2026-10-05T19:24:40",
+ "plan_md5": "88411b266d46721e3b7c3e31ebb2d5a7",
+ "plan_mtime": "2026-10-10T21:43:39",
  "area_m2": 435.2,
  "bbox_alongshore": 58.0,
  "bbox_crossshore": 28.6,
@@ -201,7 +201,7 @@
  "ratioA_nom": "0.63",
  "missing_nom": 426,
  "dist_hint_old_m": 217,
- "sig_x": 100,
+ "sig_x": 150,
  "volB_p1": 579,
  "volB_p2": 716,
  "volB_p3": 852,
@@ -222,5 +222,5 @@
  "y15_diff": 30.2,
  "fig9_win_e": "367449-367560",
  "fig9_win_n": "3754239-3754310",
- "build_date": "2026-10-05"
+ "build_date": "2026-10-10"
 }

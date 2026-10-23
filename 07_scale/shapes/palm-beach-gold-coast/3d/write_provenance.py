@@ -11,6 +11,7 @@ def build(val):
     tv = val['toe_vs_navionics']
     sig = val['anchors']['navionics_reef_signature']['lines']
     fh = val['fish_haven']
+    rc = val['recheck_2026_10_10']
 
     def row(parameter, value, unit, source_id, method, uncertainty, estimated):
         return dict(parameter=parameter, value=value, unit=unit, source_id=source_id, method=method, uncertainty=uncertainty, estimated=estimated)
@@ -20,9 +21,9 @@ def build(val):
             'traced on the scaled Bluecoast/Nearmap aerial (8.50 px/m, north arrow) and equal to the City of Gold Coast asset polygon (IoU 0.995, Hausdorff 0.55 m)', '+-1-2 m', False),
         row('Crest outline (slot)', '59.2 x 5.9 m, axis 104.8 deg', '', 's7',
             'innermost contour line, 8 vertices read by hand on 3x zooms; equals the concept crest (60 m at 105 deg, s6)', '+-0.5 m', False),
-        row('Crest level', -1.5, 'm vs MSL', 'p1; s8; p2',
+        row('Crest level', -1.5, 'm vs MSL', 'p1 (p.1); s8; p2; c1 (brochure pp.8-9, img-12, img-14); s6 (p.4, Fig 3: concept -1.5 m AHD)',
             '"The crest of the reef is 1.5m below mean sea level"; "1.5 metres below the average water level at its highest point"; "minimum freeboard of 1.5m at mean sea level, equating to 60cm at the lowest astronomical low tide"',
-            '+-0.2 m (rounded figure; MSL vs AHD differ by about 0.1 m); applied uniformly over the 59 x 6 m crest, apex/arm variation not published', False),
+            '+-0.2 m (rounded figure; MSL vs AHD differ by 0.12 m: the council text says "average water level", the concept paper -1.5 m AHD; re-check 2026-10-10: both within tolerance, no change; = %.2f m vs LAT at the Seaway MSL, about -0.50 m vs LAT with the interpolated Palm Beach MSL); applied uniformly over the 59 x 6 m crest, apex/arm variation not published' % (-1.5 + 0.88), False),
         row('Crest depth below LAT', round(-1.5 + 0.88, 2), 'm (negative = below LAT)', 'p1; t1',
             'z_LAT = z_MSL + (MSL - LAT) = -1.5 + 0.88; the Swellnet pair gives 0.60 m below LAT (MSL - LAT = 0.90)', '+-0.22 m (sqrt(0.2^2 + 0.1^2))', False),
         row('Tide planes at the Gold Coast Seaway (MSL = 0)', 'LAT -0.88, MLWS -0.66, MLWN -0.37, MHWN +0.36, MHWS +0.65, HAT +1.15', 'm vs MSL', 't1',
@@ -55,6 +56,16 @@ def build(val):
             'datum not stated by the app', True),
         row('Waterline (y = 0) = MSL', 0.0, 'm', 's3',
             'waterline fitted to Esri World Imagery 2025-12-01; tide stage of the image unknown (A7); beach face landward of it is a visual 1:15 slope, not surveyed', '+-0.3 m', True),
+        row('Offshore check: PBO3 buoy depth', '%.2f m below LAT (%.2f m below MSL) in the model vs %.2f m in the source' % (rc['pbo3']['model_depth_below_LAT_m'], rc['pbo3']['model_depth_below_MSL_m'], rc['pbo3']['source_depth_m']), 'm',
+            'd1 (img-05)', 'DWR-G4 buoy PBO3 at 28.107191 S 153.473845 E = canonical (%.0f, %.0f) m, %.0f m seaward of the offshore toe, beyond the 10 m iso-line (extrapolated seabed). Model minus source: %+.2f m if the source depth is below LAT, %+.2f m if below MSL (datum and vertical accuracy NOT stated by the source). Not used to build the seabed.'
+            % (rc['pbo3']['canonical_xy_m'][0], rc['pbo3']['canonical_xy_m'][1], rc['pbo3']['distance_seaward_of_toe_m'], rc['pbo3']['diff_if_source_below_LAT_m'], rc['pbo3']['diff_if_source_below_MSL_m']),
+            '+-0.7 m (extrapolation +-0.5 m, unstated datum of the source)', False),
+        row('Seabed vs the pre-reef City survey (Mortensen 2015 Fig 6a)', 'RMS %.2f m over %d labels (%.1f-%.1f m)' % (rc['mortensen_fig6a']['rms_m'], rc['mortensen_fig6a']['n_labels'], rc['mortensen_fig6a']['depth_range_m'][0], rc['mortensen_fig6a']['depth_range_m'][1]), 'm',
+            's6 (p.6, Fig 6 top; img-09)', 'contour labels read along y = 3050 m of the figure and compared with the model profile (x = +-150 m) after converting depth below LAT to AHD (+0.76, MSQ 2014; z_AHD = z_MSL + 0.12); fitted horizontal shift %.0f m (origin of the figure), mean model minus source %+.2f m, largest difference %.2f m (%.2f m without the 3.5 m label at the surf zone). Datum of the figure assumed AHD (the paper gives the concept crest as -1.5 m AHD). The chart bed may be about 0.5 m shallower than the 2013-14 survey (2017 nourishment of 470,000 m3): no change.'
+            % (rc['mortensen_fig6a']['best_shift_m'], rc['mortensen_fig6a']['mean_model_minus_source_m'], rc['mortensen_fig6a']['max_abs_m'], rc['mortensen_fig6a']['max_abs_excluding_3p5m_label_m']),
+            'source vertical accuracy not stated; labels every 0.5 m', False),
+        row('AHD - MSL offset', 'MSL = AHD + 0.12 m', 'm', 't1; t2',
+            'AHD = LAT + 0.760 m at the Seaway standard-port benchmark (MSQ 2014 "Standard port datum levels", read at the source; applies at the benchmark only) and MSL = LAT + 0.88 m (MSQ 2026): MSL - AHD = 0.12 m. Only used to compare AHD-referenced sources; the geometry stays on MSL.', '+-0.1 m (Palm Beach is not the standard port)', False),
         row('GEBCO check', '-13 (450 m cell at y = 534 m)', 'm', 'g1', 'GetFeatureInfo; Navionics seabed there is %.1f m MSL (1.1 m apart); not used' % val['gebco']['navionics_z_msl'], 'cell too coarse', False),
         row('Rock layers', 'core 300-1000 kg; armour 1-8 t, crest 6-8 t', '', 's8; p1', 'text only; layer thicknesses not published, so one rock surface is drawn', '', False),
     ]
@@ -62,7 +73,7 @@ def build(val):
         dict(id='s1', citation='City of Gold Coast (2026) Artificial Reef feature layer, OBJECTID 4638. City of Gold Coast Open Data (ArcGIS Hub), CC BY 3.0. https://data-goldcoast.opendata.arcgis.com/datasets/c9d0b521374740cc9e9561b04c453736_0. Accessed 2026-10-05.', used_for='plan outline; HEIGHT_M / VOLUME cross-check'),
         dict(id='s3', citation='Esri (2025) World Imagery (Maxar), zoom 18, capture 2025-12-01, fetched 2026-10-04. https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9', used_for='waterline, shoreline bearing, state check'),
         dict(id='s4', citation='Hunt, S., Britton, G., Messiter, D., Prenzler, P., Knight, S. and Watterson, E. (2022) Palm Beach Shoreline Project: Innovative Coastal Management Solution. Coastal Engineering Proceedings 37, DOI 10.9753/icce.v37.management.66 (CC BY 4.0).', used_for='plan cross-check (Fig 1), construction 2019, survey (Fig 4 qualitative)'),
-        dict(id='s6', citation='Mortensen, S.B., Hibberd, S., Kaergaard, K., Kristensen, S.E., Deigaard, R. and Hunt, S. (2015) Concept design of a multipurpose submerged control structure for Palm Beach, Gold Coast. Australasian Coasts & Ports Conference 2015. https://www.dhigroup.com/upload/publications/coastsea/Mortensen_2015.pdf', used_for='concept slopes 1/12, 1/5, crest orientation 105 deg, 60 m crest (context; the concept was NOT built)'),
+        dict(id='s6', citation='Mortensen, S.B., Hibberd, S., Kaergaard, K., Kristensen, S.E., Deigaard, R. and Hunt, S. (2015) Concept design of a multipurpose submerged control structure for Palm Beach, Gold Coast. Australasian Coasts & Ports Conference 2015. https://www.dhigroup.com/upload/publications/coastsea/Mortensen_2015.pdf', used_for='concept slopes 1/12, 1/5, crest orientation 105 deg, 60 m crest (context; the concept was NOT built); Fig 6 top (p.6): pre-reef City survey depth labels, used as an independent seabed profile check (registry img-09)'),
         dict(id='s7', citation='Bluecoast Consulting Engineers (c. 2020) Palm Beach artificial reef, Nearmap aerial with survey contour lines (AR_aerial_Nearmaps.jpg). https://www.bluecoastconsulting.com.au/artificialreefs (private research copy; reuse rights unchecked).', used_for='plan outline, crest slot, contour lines (reef surface)'),
         dict(id='s8', citation='Engineering for Public Works (2020) Issue 19, September, IPWEAQ, pp. 50-51, Palm Beach Artificial Reef (page image hosted by Bluecoast).', used_for='crest 1.5 m below average water level; rock classes; 60,000 t'),
         dict(id='p1', citation='Prenzler, P. et al. (2022) Monitoring of the Palm Beach Artificial Reef. Coastal Engineering Proceedings 37 (abstract 12921). https://icce-ojs-tamu.tdl.org/icce/article/view/12921', used_for='crest 1.5 m below mean sea level, 6-8 t rocks, stable (no settlement)'),
@@ -70,6 +81,9 @@ def build(val):
         dict(id='t1', citation='Maritime Safety Queensland (2026) Semidiurnal Tidal Planes - 2026, height above Queensland Port Datum (LAT 1992). https://www.msq.qld.gov.au/_/media/tmronline/msqinternet/msqfiles/home/tides/tidal-planes/2026-semidiurnal-tidal-planes.pdf. Accessed 2026-10-05.', used_for='MSL, LAT, MHWS, MHWN, MLWN, MLWS, HAT'),
         dict(id='n1', citation='Garmin Navionics (2026) SonarChart Maps, web viewer https://maps.garmin.com/en-US/marine, depth units metres, zoom 17-18, accessed 2026-10-05 14:22-14:35 local. Not for navigation; private research copy; datum not stated by the app (assumed LAT, tested by RMS).', used_for='natural seabed (iso-depth lines 1-10 m), reef signature'),
         dict(id='n2', citation='Garmin Navionics (2026) Nautical Charts layer, same viewer and date; label "FISH HAVEN 1.5MT". Not for navigation; private research copy.', used_for='charted crest depth cross-check'),
+        dict(id='c1', citation='City of Gold Coast (2020) Palm Beach Shoreline Project - project overview (brochure, published June 2020, ref 19-TI-00753), pp.8-9 (PDF pp.10-11). https://www.goldcoast.qld.gov.au/files/sharedassets/public/v/1/pdfs/environment/palm-beach-shoreline-project-brochure-a4.pdf. Accessed 2026-10-06. Private research copy; reuse rights not cleared.', used_for='crest 1.5 m below the average water level; 160 x 80 m; about 270 m offshore; rock classes by zone (registry img-12, img-13, img-14)'),
+        dict(id='d1', citation='Daniels, R., Metters, D. and Ryan, J. (2022) Wave transformation over Palm Beach reef. Coastal Engineering Proceedings 37 (ICCE 2022), papers.63, doi:10.9753/icce.v37.papers.63, pp.1-2, Table 1 and Fig 1. https://icce-ojs-tamu.tdl.org/icce/article/view/12702. Accessed 2026-10-06. CC BY 4.0.', used_for='buoy depths PBO1-PBO4 (datum not stated); PBO3 offshore check (registry img-05)'),
+        dict(id='t2', citation='Maritime Safety Queensland (2014) Standard port datum levels (AHD above LAT, Gold Coast Seaway 0.760 m), as read in 07_scale/bathymetry/gold_coast/REPORT.md section 3. Valid at the standard-port benchmark only.', used_for='AHD - MSL offset (0.12 m); comparison of AHD-referenced sources'),
         dict(id='g1', citation='GEBCO Compilation Group (2024) GEBCO 2024 Grid, WMS GetFeatureInfo https://wms.gebco.net/mapserv (GEBCO_LATEST_2), queried 2026-10-05.', used_for='coarse check of the offshore depth (not used)'),
     ]
     conf = dict(level='medium',

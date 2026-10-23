@@ -1,5 +1,5 @@
 import json, math
-ROOT = "C:/Users/lior/Documents/Gemini/AG/Artificial reef - to upload to git/07_scale/shapes/narrowneck-gold-coast"
+ROOT = "C:/Users/lior/Documents/Claude/Projects/Artificial reef/07_scale/shapes/narrowneck-gold-coast"
 d = json.load(open(ROOT + "/shape.json", encoding='utf-8'))
 M = json.load(open('metrics_out.json'))
 reg = json.load(open(ROOT + "/design_registration_out.json"))

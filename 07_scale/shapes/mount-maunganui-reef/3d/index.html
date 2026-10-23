@@ -122,9 +122,11 @@ window.addEventListener('unhandledrejection', function (ev) { var e = document.g
       <div class="sm" id="wlNote"></div>
 
       <h3>Reef and seabed (uncertain inputs)</h3>
-      <div class="row"><label>Bed at the reef (CD)</label><select id="bed" style="flex:1"></select></div>
+      <h3 style="margin-top:6px">Seabed scenario <button id="binfoBtn" class="ibtn" title="What are the seabed scenarios? (assumption, later seabed, sensitivity; volumes)">i</button></h3>
+      <div class="row"><label>Bed at the reef (CD)</label><select id="bed" style="flex:1;min-width:0"></select></div>
+      <div class="sm" id="bnote"></div>
       <div class="row"><label>Crest (m CD)</label><select id="crest" style="flex:1"></select></div>
-      <div class="sm">Bed = seabed elevation at the reef centre in as-built 2008-09. Decision -4.0 m CD (range -3.0 to -4.5); every later source reads shallower (2013 survey -2.4 to -3.3, Navionics 2026 -2.76). The stated 2,800 m3 matches a bed of about -3.5 to -3.7 m CD. See the Methods tab.</div>
+      <div class="sm"><b>ASSUMPTION:</b> no source states the 2008-09 seabed at the reef. Default -3.6 m CD (reproduces the stated 2,800 m3); option "later seabed" -2.8 m CD (2013 survey -2.4 to -3.3, Navionics 2026 -2.76). The crest (-0.9 m CD) stays below the lowest water level (LAT) in every option. See the (i) pop-up and the Methods tab.</div>
 
       <h3>Show</h3>
       <div>
@@ -202,11 +204,16 @@ function headingTrue(dx, dy) { const E = dx * Math.sin(BX * RAD) + dy * Math.sin
 
 // ---------------------------------------------------------------- state
 const wl = M.water_levels, VERS = M.versions;
-const state = { wlIdx: Math.max(0, wl.findIndex(w => w.id === M.water_default)), ve: 1, ver: M.default_version, bed: SB.bed_default_cd, crest: R.crest_cd.default, run: 1, fov: 50, photo: false, sx: -18 };
+const BSC = M.bed_scenarios, bscOf = id => BSC.find(b => b.id === id), bedOf = b => b.z_cd === null ? 'nav' : b.z_cd;
+const state = { wlIdx: Math.max(0, wl.findIndex(w => w.id === M.water_default)), ve: 1, ver: M.default_version, bedId: M.default_bed, bed: bedOf(bscOf(M.default_bed)), crest: R.crest_cd.default, run: 1, fov: 50, photo: false, sx: -18 };
 if (P.get('wl')) { const k = wl.findIndex(w => w.id === P.get('wl')); if (k >= 0) state.wlIdx = k; }
 if (P.get('ve')) state.ve = clamp(+P.get('ve'), 1, 5);
 if (P.get('version') && VERS.some(v => v.id === P.get('version'))) state.ver = P.get('version');
-if (P.get('bed')) state.bed = P.get('bed') === 'nav' ? 'nav' : +P.get('bed');
+if (P.get('bed')) {   // #bed=<scenario id> (assumed | later | sens_-3.0 ... | nav); a plain number (m CD) is still accepted
+  const b = bscOf(P.get('bed'));
+  if (b) { state.bedId = b.id; state.bed = bedOf(b); }
+  else if (P.get('bed') !== 'nav' && isFinite(+P.get('bed'))) { state.bed = +P.get('bed'); const m = BSC.find(x => x.z_cd === state.bed); state.bedId = m ? m.id : 'custom'; }
+}
 if (P.get('crest')) state.crest = +P.get('crest');
 if (P.get('run')) state.run = clamp(+P.get('run'), 0.25, 2);
 if (P.get('fov')) state.fov = +P.get('fov');
@@ -379,7 +386,8 @@ function computeField(verId, bed, crest, run) {         // returns {Z (m CD, per
       const h = Math.max(0, z - S); Z[k] = z; H[k] = h; vol += h; if (h > hmax) hmax = h; if (h > 0.02) { area++; hsum += h; }
     }
   }
-  return { Z, H, vol: vol * DXR * DXR, hmax, area: area * DXR * DXR, hmean: area ? hsum / area : 0 };
+  let top = -99; for (let k = 0; k < Z.length; k++) if (H[k] > 0.02 && Z[k] > top) top = Z[k];
+  return { Z, H, topCD: top, vol: vol * DXR * DXR, hmax, area: area * DXR * DXR, hmean: area ? hsum / area : 0 };
 }
 function volumeOnly(verId, bed, crest, run) { return computeField(verId, bed, crest, run).vol; }
 function bedFor(verId, target, crest, run) { let lo = -6, hi = -2; for (let n = 0; n < 30; n++) { const mid = (lo + hi) / 2; if (volumeOnly(verId, mid, crest, run) > target) lo = mid; else hi = mid; } return (lo + hi) / 2; }
@@ -409,7 +417,7 @@ function buildReef() {
   reefGroup.add(reefLines);
   reefH = f.H; reefZ = f.Z;
   const bedC = bedCD(YC);
-  reefInfo = { vol: f.vol, hmax: f.hmax, area: f.area, hmean: f.hmean, bedC, crestH: state.crest - bedC };
+  reefInfo = { topCD: f.topCD, vol: f.vol, hmax: f.hmax, area: f.area, hmean: f.hmean, bedC, crestH: state.crest - bedC };
   if (!reefLabel) reefLabel = addLabel('Mount Reef (as built 2008)', new THREE.Vector3(), 'reef', reefGroup);
   reefLabel.position.copy(m2t(-2, YC + 4, state.crest - MSL + 1.6));
   updateStats(); applyToggles(); drawXsec();
@@ -464,7 +472,7 @@ const stated = M.stated_volume_m3;
 function updateStats() {
   const r = reefInfo, v = verObj(), w = wlZ(), crestZ = state.crest - MSL;
   const row = (k, val) => `<tr><td>${k}</td><td>${val}</td></tr>`;
-  const bedTxt = state.bed === 'nav' ? `Navionics profile as it is (${bedCD(YC).toFixed(2)} m CD)` : `${state.bed.toFixed(1)} m CD at the reef centre`;
+  const bedTxt = state.bed === 'nav' ? `Navionics profile as it is (${bedCD(YC).toFixed(2)} m CD)` : `${state.bed.toFixed(1)} m CD at the reef centre` + (state.bedId === 'assumed' ? ' <b>(ASSUMPTION, not a measurement)</b>' : state.bedId === 'later' ? ' (later seabed option)' : '');
   const b2800 = bedFor(state.ver, stated, state.crest, state.run);
   $('liveStats').innerHTML =
     row('Outline version', `<b>${v.name}</b>`) +
@@ -472,6 +480,7 @@ function updateStats() {
     row('Crest', `${state.crest.toFixed(1)} m CD = ${fmt(crestZ, 2)} m MSL`) +
     row('Crest relative to datums', `${fmt(crestZ - MVDZ, 2)} m MVD-53; below LAT ${(wl.find(x => x.id === 'LAT').z - crestZ).toFixed(2)} m; below MSL ${(0 - crestZ).toFixed(2)} m`) +
     row('Height above the bed', `centre ${r.crestH.toFixed(2)} m; max ${r.hmax.toFixed(2)} m (seaward bags sit on a deeper bed); mean over the footprint ${r.hmean.toFixed(2)} m`) +
+    row('Reef vs lowest water', `highest reef cell ${fmt(r.topCD, 2)} m CD = ${(wl.find(x => x.id === 'LAT').above_cd - r.topCD).toFixed(2)} m below LAT (${r.topCD > wl.find(x => x.id === 'LAT').above_cd ? '<b>ABOVE WATER</b>' : 'always submerged'})`) +
     row('Water over the crest now', `${(w - crestZ).toFixed(2)} m (${wl[state.wlIdx].id})`) +
     row('Footprint at the bed', `${r.area.toFixed(0)} m2 (outline of this version: ${v.area_m2} m2)`) +
     row('Model volume', `<b>${r.vol.toFixed(0)} m3</b> vs ${stated.toFixed(0)} m3 stated (${fmt((r.vol / stated - 1) * 100, 0)} %)`) +
@@ -564,7 +573,7 @@ $('copyCam').addEventListener('click', () => {
     slug: M.slug, frame: 'mount-maunganui-reef model frame (x alongshore toward 316.15 deg true, y offshore toward 046.15 deg true, z up from present MSL = CD + 1.13 m; heading = true compass bearing)',
     position_m: [+c.x.toFixed(2), +c.y.toFixed(2), +c.z.toFixed(2)], heading_true_deg: +(+c.heading).toFixed(2), pitch_deg: +(+c.pitch).toFixed(2),
     roll_deg: state.photo ? +$('cr').value : 0, vertical_fov_deg: +(+c.fov).toFixed(2), aspect: +(camera.aspect).toFixed(4),
-    water_level: wl[state.wlIdx].id, vertical_exaggeration: state.ve, outline_version: state.ver, bed_cd: state.bed, crest_cd: state.crest, skirt_run: state.run,
+    water_level: wl[state.wlIdx].id, vertical_exaggeration: state.ve, outline_version: state.ver, bed_id: state.bedId, bed_cd: state.bed, crest_cd: state.crest, skirt_run: state.run,
     origin_latlon_wgs84: M.frame.origin_latlon_wgs84, reef_centroid_latlon_wgs84: M.frame.reef_centroid_latlon_wgs84, photo: state.photo && photoEl.src ? 'loaded' : 'none',
   };
   const txt = JSON.stringify(out, null, 1), ta = $('camjson'); ta.style.display = 'block'; ta.value = txt; ta.select();
@@ -604,7 +613,7 @@ function showVersionNote() { const v = verObj(); $('vnote').textContent = `${v.d
 vsel.addEventListener('change', e => { state.ver = e.target.value; showVersionNote(); buildReef(); history.replaceState(null, '', '#' + hashNow()); });
 $('run').value = state.run; $('runO').textContent = state.run.toFixed(2);
 $('run').addEventListener('input', e => { state.run = +e.target.value; $('runO').textContent = state.run.toFixed(2); buildReef(); });
-function hashNow() { const q = new URLSearchParams(location.hash.slice(1)); q.set('version', state.ver); return q.toString(); }
+function hashNow() { const q = new URLSearchParams(location.hash.slice(1)); q.set('version', state.ver); q.set('bed', state.bedId); return q.toString(); }
 function srcName(id) { const s = (M.sources || []).find(x => x.id === id); return s ? `${id}: ${s.short || s.citation.slice(0, 80)}` : id; }
 function openInfo() {
   const rows = VERS.map(v => {
@@ -618,9 +627,20 @@ function openInfo() {
 $('vinfoBtn').addEventListener('click', openInfo); $('vclose').addEventListener('click', () => { $('vmodal').style.display = 'none'; });
 $('vmodal').addEventListener('click', e => { if (e.target === $('vmodal')) $('vmodal').style.display = 'none'; });
 // bed + crest
-const bs = $('bed'); [...SB.bed_options_cd, 'nav'].forEach(b => { const o = document.createElement('option'); o.value = b; o.textContent = b === 'nav' ? `Navionics 2026 as it is (${ZREF.toFixed(2)})` : (b.toFixed(1) + (b === SB.bed_default_cd ? '  [decision]' : '')); bs.appendChild(o); });
-bs.value = state.bed;
-bs.addEventListener('change', e => { state.bed = e.target.value === 'nav' ? 'nav' : +e.target.value; buildSeabed(); buildContours(); buildReef(); applyToggles(); });
+const bs = $('bed'); BSC.forEach(b => { const o = document.createElement('option'); o.value = b.id; o.textContent = (b.z_cd === null ? 'Navionics as is (' + ZREF.toFixed(2) + ')' : b.z_cd.toFixed(1)) + ' - ' + (b.kind === 'assumption' ? 'ASSUMPTION' : b.kind === 'option' ? 'later seabed' : b.kind === 'sensitivity' ? 'sens.' : 'ref.'); bs.appendChild(o); });
+if (state.bedId === 'custom') { const o = document.createElement('option'); o.value = 'custom'; o.textContent = state.bed.toFixed(2) + ' m CD (custom from the URL)'; bs.appendChild(o); }
+bs.value = state.bedId;
+function showBedNote() { const b = bscOf(state.bedId); $('bnote').textContent = b ? (b.kind === 'assumption' ? 'ASSUMPTION (Lior D1): ' : '') + b.name + '. ' + b.source : 'custom bed level from the URL'; }
+showBedNote();
+bs.addEventListener('change', e => { state.bedId = e.target.value; const b = bscOf(state.bedId); state.bed = b ? bedOf(b) : state.bed; showBedNote(); buildSeabed(); buildContours(); buildReef(); applyToggles(); history.replaceState(null, '', '#' + hashNow()); });
+function openBedInfo() {
+  const rows = BSC.map(b => `<tr><td><b>${b.name}</b>${b.id === M.default_bed ? ' <span class="sm">(default)</span>' : ''}<br><span class="sm">id: ${b.id}</span></td><td>${b.z_cd === null ? 'n/a' : b.z_cd.toFixed(2) + ' CD<br>' + b.z_msl.toFixed(2) + ' MSL'}</td><td>${b.kind}</td><td class="sm">${b.source}<br>${b.note}</td><td class="sm">${VERS.map(v => v.name.split(' (')[0] + ': ' + (b.volume_m3 ? b.volume_m3[v.id].toLocaleString() + ' m3' : '')).join('<br>')}</td></tr>`).join('');
+  const cc = SB.crest_check;
+  $('vbody').innerHTML = `<h2>Seabed scenarios (as-built bed at the reef centre)</h2><p><b>The as-built bed is an ASSUMPTION.</b> No source states the 2008-09 seabed level at the reef. The default -3.6 m CD (Lior decision D1, 2026-10-07) reproduces the stated 2,800 m3; the option "later seabed" -2.8 m CD follows the later surveys (2013 multibeam -2.4 to -3.3 m CD; Navionics 2026 -2.76 m CD; the Oct 2006 survey of the unfinished reef reads the bed 2.0-3.7 m). The seabed outside the reef is the Navionics 2026 profile shifted to the chosen bed.</p><table><tr><th>scenario</th><th>level</th><th>kind</th><th>source / note</th><th>volume per outline version (crest -0.9)</th></tr>${rows}</table>` +
+    `<p class="sm">Crest check: the highest reef cell in any scenario (crest option -0.8) is ${cc.max_reef_z_cd_overall.toFixed(2)} m CD, ${cc.margin_below_LAT_m.toFixed(2)} m below the lowest water level shown (LAT, ${cc.lowest_water_cd.toFixed(2)} m CD). Open this page with <code>#bed=&lt;id&gt;</code> (ids: ${BSC.map(b => b.id).join(', ')}).</p>`;
+  $('vmodal').style.display = 'flex';
+}
+$('binfoBtn').addEventListener('click', openBedInfo);
 const cs = $('crest'); R.crest_cd.options.forEach(c => { const o = document.createElement('option'); o.value = c; o.textContent = c.toFixed(1) + (c === R.crest_cd.default ? '  [decision]' : ''); cs.appendChild(o); });
 cs.value = state.crest; cs.addEventListener('change', e => { state.crest = +e.target.value; buildReef(); });
 
@@ -686,7 +706,7 @@ function md(src) {
   }
   return out.join('\n');
 }
-const docTabs = [['methods_md', 'Methods'], ['sources_md', 'Sources log'], ['requests_md', 'Requests for Lior'], ['figs', 'Annotated figures']];
+const docTabs = [['methods_md', 'Methods'], ['srcuse_md', 'Sources & how used'], ['assump_md', 'Assumptions'], ['decis_md', 'Decisions'], ['sources_md', 'Sources log'], ['requests_md', 'Requests for Lior'], ['figs', 'Annotated figures']];
 function showDoc(key) {
   document.querySelectorAll('#subtabs button').forEach(b => b.classList.toggle('on', b.dataset.k === key));
   if (key === 'figs') {
@@ -737,6 +757,7 @@ if (P.get('cam')) {   // cam=x,y,z,heading,pitch (model frame, true heading)
 applyToggles();
 if (P.get('tab') === 'docs') { document.querySelector('#tabs button[data-p=pDocs]').click(); if (P.get('doc')) showDoc(P.get('doc')); if (P.get('find')) { const hh = [...document.querySelectorAll('#docbody h2, #docbody h3')].find(e => e.textContent.includes(P.get('find'))); if (hh) hh.scrollIntoView(); } }
 if (P.get('info') === '1') openInfo();
+if (P.get('info') === 'bed') openBedInfo();
 loop();
 renderer.render(scene, camera); labelRenderer.render(scene, camera); hud();
 window.__reefReady = true;

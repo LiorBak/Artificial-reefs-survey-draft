@@ -1,0 +1,4 @@
+Export OF (2) QUERY RESULTS FROM Marine Data Access - SeaDataNet CDI.
+"Global CDI ID","Local CDI-identifier","Data distributor (edmo_code)","Data set name","Country","Start date","Start time","End date","End time","Parameters measured","instrument / gear type","Measuring area type","Version","North","East","South","West"
+"1982228","117450","2607","Poole Bay, Block 12","United Kingdom","20110826","00:00:00","20120406","00:00:00","Bathymetry and Elevation","unknown","surface","0","50.7135925293","-1.7058080435","50.6835708618","-1.9234819412"
+"1982230","117452","2607","Poole Bay, Blocks 14-17","United Kingdom","20110826","00:00:00","20120406","00:00:00","Bathymetry and Elevation","unknown","surface","0","50.727771759","-1.5442899466","50.6413154602","-1.9490580559"

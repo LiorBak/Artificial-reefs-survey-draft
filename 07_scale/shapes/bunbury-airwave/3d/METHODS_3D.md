@@ -1,6 +1,6 @@
 # METHODS_3D - Bunbury Airwave (Bunbury Back Beach, Western Australia): three-dimensional model
 
-Built 2026-10-05 by `build_3d.py` (numbers in this note are filled in by that script from `shape.json`, the reef card, `data/lidar_*`, and `data/nav_transects.json`; edit `METHODS_3D.template.md`, not this file). Companion notes: `SOURCES_3D.md` (running log of what was read where), `REQUESTS_FOR_LIOR.md` (what could not be read), `annotated/` (the sources with the readings marked: lidar figures and N1-N4 for Navionics).
+Built 2026-10-10 by `build_3d.py` (numbers in this note are filled in by that script from `shape.json`, the reef card, `data/lidar_*`, and `data/nav_transects.json`; edit `METHODS_3D.template.md`, not this file). Companion notes: `SOURCES_3D.md` (running log of what was read where), `REQUESTS_FOR_LIOR.md` (what could not be read), `annotated/` (the sources with the readings marked: lidar figures and N1-N4 for Navionics).
 
 ## 1. Summary
 
@@ -13,7 +13,7 @@ Access dates are 2026-10-05 unless stated. "Licence" is the licence stated by th
 | id | reference (author-year) | what it contributed | resolution / date | licence |
 |---|---|---|---|---|
 | S_shape | This project (2026). `shape.json`, verified 2026-10-04: 29-vertex outline traced on the Raised Water Research drone photo "Airwave from above" (Raised Water Research 2019b) | plan outline (circle, 112.1 m2) | photo 956 x 587 px, no scale bar: size from the text-stated 12 m | photo (c) RWR, private copy |
-| S_card | This project (2026). Reef card `02_research/reefs/bunbury-airwave.json` (verified 2026-09-24; developer-account check 2026-10-05), references R1-R24 | verdict, install dates, material, fill, chronology | text | n/a |
+| S_card | This project (2026). Reef card `02_research/reefs/bunbury-airwave.json` (verified 2026-09-24; developer-account check 2026-10-05), references R1-R25 | verdict, install dates, material, fill, chronology | text | n/a |
 | S_RWR | Raised Water Research (n.d.). *Bunbury Airwave* (spot page). https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/bunbury-airwave/ | "shallow point about 1 m under the surface at low tide", "rises about 2 m off the sea floor", "30-45 meters off the beach" | web text | unknown |
 | S_Tracks19 | Tracks Magazine (2019). Airwave set for live trial at Bunbury, 15 Nov. https://tracksmag.com.au/airwave-set-for-live-trial-at-bunbury-534049 | 12 m diameter, 1.6 m tall "at the highest point", "approximately 45 metres off the low tide mark", sand + air fill | web text | unknown |
 | S_ABC19 | ABC News (2019). Bunbury's Back Beach surfers deflated as artificial reef, Airwave, tears during installation, 16 Dec. https://www.abc.net.au/news/2019-12-16/word-first-surf-reef-tears-during-installation/11803228 | tear, 90 % complete, not completely anchored, "two-metre-high, 12-metre-wide" | web text | (c) ABC |
@@ -25,8 +25,9 @@ Access dates are 2026-10-05 unless stated. "Licence" is the licence stated by th
 | S_DoTidx | Western Australia Department of Transport (n.d.). *Bathymetric survey index* (same URL as the index above), Bunbury records: vertical datum LAT, AHD_Diff 0.57 below | independent check of LAT = AHD - 0.57 m | table | as above |
 | S_nav | Garmin Ltd (2026). *Navionics Marine Maps web viewer*, SonarChart Maps and Nautical Charts layers, metres. https://maps.garmin.com/en-US/marine/ (formerly https://webapp.navionics.com/). Screenshots in `src/navionics/` | independent seabed contours and spot soundings, zoom 18 (maximum) | 0.2495 m per pixel (zoom 18, device pixel ratio 2); survey dates not shown; datum and contour interval not stated by the app | (c) Garmin; private research copy; "Not to be used for navigation" |
 | S_sat | Esri (2025). *World Imagery*, Back Beach tile of 2025-08-30 (private copy `src/sat_backbeach_current.png`) | approximate waterline for the site point; surf-zone foam over the lidar contours (figure `lidar_contours_on_satellite.png`) | about 0.3 m/px | rights not cleared |
+| S_Troy | Bakalo, L. (2026). Zoom interview with Troy (founder of Airwave / Waveco), 8 October 2026; personal communication, unrecorded, no transcript, no URL; notes as reported by Lior and recorded on the card as R25 (recorded 2026-10-10). **The speaker is the developer (interested party).** | fill: "final design uses sand instead of air; air did not respond well with the waves"; failure: "a seam opened up a couple of days after installation"; before that "it worked amazingly" (founder claim); next version "concrete" | spoken, second-hand | none (private notes) |
 
-The full list of reference ids R1-R24 of the card is: R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R13, R15, R18, R19, R20, R21, R22, R23, R24. Other sources used for the chronology only (full citations in section 8): Tracks Magazine (2019, 12 Aug), Raised Water Research (2019, 14 Oct and 16 Dec), ABC News (2019, 13 June), The Inertia (2019), SurferToday (2018, 2019), South Western Times (2020), Swellnet forum (2019-2021, secondary), ABC listen (2022).
+The full list of reference ids R1-R25 of the card is: R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R13, R15, R18, R19, R20, R21, R22, R23, R24, R25. Other sources used for the chronology only (full citations in section 8): Tracks Magazine (2019, 12 Aug), Raised Water Research (2019, 14 Oct and 16 Dec), ABC News (2019, 13 June), The Inertia (2019), SurferToday (2018, 2019), South Western Times (2020), Swellnet forum (2019-2021, secondary), ABC listen (2022).
 
 ### 2.1 Chronology of the structure: what state is modelled, what is not, and why December 2019
 
@@ -58,7 +59,37 @@ Dates are as the card records them (`year`: "Installation attempted December 201
 | "a final-day overpressure event led to a seam split" | seam split confirmed; "overpressure" matches his 2021-22 explanations, not his 2019 one (deep swell and undertow); the tear was on about the fifth day, at about 90 % complete | partly supported |
 | "It wasn't a failure" | Tracks (2021): Bottegal "readily admits" the first trial was a failure; no completed trial; second prototype unconfirmed; 2025 proposal is a granite reef | a judgement, not a checkable fact |
 
-The card's verdict reason, verbatim: "The structure tore along a glued seam during installation (spotted Fri 13 Dec 2019, about 90% installed and not fully anchored), was removed within days, and never operated as a completed reef [R1][R5][R8][R18]. No independent report, photo or video documents rideable waves on it; the only wave claim is the developer's own later account of one lone 0.75 m wave seen during installation [R8][R21]. The developer's page says the trial 'wasn't a failure' [R21], but it misdates the deployment to 2018 (it was December 2019), Tracks reported in 2021 that Bottegal 'readily admits' the first trial was a failure [R22], no second install is confirmed [R18][R8], and by 2025 Waveco's Bunbury proposal is a different (granite) design [R20]. Verdict kept as 'failed' after checking the developer's account (2026-10-05)." **The verdict stays FAILED; no developer claim overrides it** (rule of this project).
+The card's verdict reason, verbatim: "The structure tore along a glued seam during installation (spotted Fri 13 Dec 2019, about 90% installed and not fully anchored), was removed within days, and never operated as a completed reef [R1][R5][R8][R18]. No independent report, photo or video documents rideable waves on it; the only wave claim is the developer's own later account of one lone 0.75 m wave seen during installation [R8][R21]. The developer's page says the trial 'wasn't a failure' [R21], but it misdates the deployment to 2018 (it was December 2019), Tracks reported in 2021 that Bottegal 'readily admits' the first trial was a failure [R22], no second install is confirmed [R18][R8], and by 2025 Waveco's Bunbury proposal is a different (granite) design [R20]. Verdict kept as 'failed' after checking the developer's account (2026-10-05). Update 2026-10-10: the verdict stays failed, because the structure failed within days (a seam opened) and was never a durable reef. In fairness, the founder (Troy) told Lior the reef worked amazingly, with perfect waves, until the seam opened, and that the final design uses sand instead of air and the next step is concrete [R25, personal communication, notes as reported by Lior]. That is a developer statement and independent confirmation of surfable waves is still lacking." **The verdict stays FAILED; no developer claim overrides it** (rule of this project).
+
+### 2.2 Source disagreement: what the bladder was filled with (recorded 2026-10-10, nothing in the model changed)
+
+| source | statement | type |
+|---|---|---|
+| Tracks Magazine (2019b) | "sand + air fill": washed, coarse beach sand for the slurry, plus air | independent press, relays the developer |
+| ABC News (2019b) | the structure is "filled with air" | independent press, loose wording |
+| Bunbury Mail (2022); Kennedy (2021); Waveco (2025) | sand slurry, 140 t (Bunbury Mail, Kennedy) or 150 t (Waveco) | developer's own figures |
+| Bakalo (2026), interview with Troy (S_Troy, card R25) | "final design uses sand instead of air; engineers found air did not respond well with the waves" | developer, personal communication, unverified |
+
+How this documentation treats it: this model describes the December 2019 attempt as a sand-slurry-ballasted bladder (sand slurry, water and air; assumption A14). That agrees with S_Troy on sand and with Tracks (2019b) and Bunbury Mail (2022) on slurry, and it does not claim an air-only fill. What is NOT resolved: whether the December 2019 bladder already had the "final" sand design that Troy describes or was an earlier, partly air-filled version (ABC and Tracks mention air), and whether "final design" means the 2019 attempt or a later, untested version. The reef card lists this under `sources_disagree` (fill type, failure timing, wave performance, future). Two further differences recorded there: Troy says the seam opened "a couple of days after installation", while the 2019 press (ABC 2019b, RWR 2019b) reports a tear at about 90 % complete, not fully anchored; Troy says the waves were "perfect", for which there is no independent record (the verdict stays FAILED). None of this changes a model value: the surface is a rigid spherical cap and carries no fill (A12).
+
+### 2.3 How each source was used (what was read, how, accuracy, which model element)
+
+| source | what was read off | how (method) | accuracy / limits | feeds | status |
+|---|---|---|---|---|---|
+| S_shape (RWR drone photo "Airwave from above", registry img1) | outline of the bladder: 29 vertices | traced by hand on the pixels; ellipse refit (Fitzgibbon) by the verifier; oblique correction by ellipse rectification (tilt 26.5 deg); scale from the text-stated 12 m (25.59 px/m) | scale is a stated dimension, not measured: +-7 %; RMS radial deviation 1.27 %; stated outline uncertainty 15 % | plan outline | used |
+| ABC video frame (img4) | outline, 23 vertices, oblique about 48 deg | traced by hand; ellipse fit RMS 2.95 % | cross-check of img1 only | none (check) | validation only |
+| design graphic (img5, "Unofficial Networks") | concept circle | traced by hand | a concept drawing, not the as-built | none | rejected as outline (context) |
+| S_RWR | crest "about 1 m under the surface at low tide"; rises "about 2 m"; "30-45 m off the beach" | read by eye (text) | "low tide" undefined (A6) | crest depth, H, y preset | used |
+| S_Tracks19 | 12 m diameter, 1.6 m high, "approximately 45 metres off the low tide mark", sand + air | read by eye (text) | pre-install design figures | H lower bound (A4), y preset, fill wording | used |
+| S_ABC19 | tear, about 90 % complete, not fully anchored, "two-metre-high, 12-metre-wide" | read by eye (text) | press, relays developer | chronology, H upper bound | used |
+| S_BunMail, S_Tracks21 | Hypalon, glued seams, 140 t, "skateboard ramp", 0.75 m wave, failure admitted | read by eye (text) | developer-sourced | material label, asymmetry slider, V8, context | used / context |
+| S_Waveco | developer's account ("2018", "150 t", "wasn't a failure") | compared claim by claim with the independent record (section 2.1) | self-published, promotional | none in geometry | context; "2018" rejected |
+| S_Troy (R25) | fill sand not air; seam opened days after install; "perfect waves" | notes read as given | personal communication, interested party, no recording | none in geometry; disagreement log (2.2) | context only |
+| S_lidar (WA DoT 2009) | seabed elevation m AHD, uncertainty layer | BAG read by script (`build_3d_lidar.py`); 10 m cells bilinear to 5 m; surf-zone gap-fill E9 | 0.47 m layer read as 1 sigma (A10); 10 years before the install (A8) | seabed | used |
+| S_tide, S_DoTidx | HAT ... LAT, MSL = +0.1 m AHD; LAT offset 0.57 | table values, AHD to MSL by subtraction (3.2) | rounded to 0.1 m; gauge 3 km away (A9) | tides, water planes | used |
+| S_nav (Navionics) | seabed contours and soundings | read by script from screenshots (`nav_annotate.py`); datum candidates tested by RMS | datum and interval not stated by the app (A11) | none | validation only |
+| S_sat (Esri 2025) | approximate waterline, foam | read by eye | rights not cleared | site point, figure | context |
+| Gemini footprint (24-gon, 113 m2) | formula-based footprint | compared, not used | contradicted / unsupported | none | rejected (rule 2) |
 
 ## 3. Methods
 
@@ -193,6 +224,25 @@ A translucent plane at the selected plane (LAT, MLLW, MHLW, MSL, MLHW, MHHW, HAT
 | A11 | Navionics: chart datum = LAT, contour interval 0.5 m, 0 m line = green/blue boundary | datum RMS test, labels, 1 m shading limit | MLLW is 0.4 m higher; counting +-0.5 m worst case |
 | A12 | no settlement, scour, slumping of the sand fill, deflation or tear modelled; no anchors, valves or hoses drawn | none; the real bladder was partly filled, unanchored and torn | the real surface is lower and flatter in places |
 | A13 | the water is static at the chosen plane | - | no waves, set-up or surge |
+| A14 | the fill of the December 2019 bladder was sand slurry plus water and air (not air only) | Tracks 2019b, Bunbury Mail 2022, RWR, forum observer; Bakalo 2026 (Troy: sand, not air, in the "final design"); ABC 2019b says "air" | none on geometry (rigid cap, no fill drawn); wording of the label only; see 2.2 |
+
+
+### 3.9 Decisions (numbered)
+
+| id | choice | options | decided by, when | reason |
+|---|---|---|---|---|
+| DEC1 | primary outline = RWR drone photo (img1) | img1; ABC frame img4; design graphic img5; 3D render img2 | agent, 2026-10-05 | near-nadir real photo, circle clearly visible; img4 oblique, img5 a concept |
+| DEC2 | state modelled = the single 2019 prototype as installed and torn (base footprint) | 2019 bladder; tank-tested redesign; 2025 granite proposal | agent, 2026-10-05 | only one full-size Airwave was ever installed; later designs are notes |
+| DEC3 | scale = stated 12 m, labelled "known dimension (text)" | text 12 m; none measured | agent, 2026-10-05 | no scale bar, EXIF or georeference |
+| DEC4 | keep the paler upper-left crescent in the outline | with (12 m); without (about 11 m, -8 %) | agent, 2026-10-05 | seen in img4; "skateboard ramp" asymmetric bladder (Kennedy 2021) |
+| DEC5 | frame: x alongshore (bearing 12.32 deg), y perpendicular to the 2009 0 m AHD contour, z = 0 at MSL | shoreline frame; arbitrary canonical frame | agent, 2026-10-05 | meaningful axes for depth and offshore distance (A1) |
+| DEC6 | datum AHD, MSL = +0.1 m AHD, local tides only, no Haifa preset | AHD; LAT; MLLW; MSL | agent, 2026-10-05; project rule 5 | datum RMS test (V5): LAT best for Navionics; local tides per Lior's rule |
+| DEC7 | seabed = WA DoT 2009 lidar, Navionics as check only | lidar; Navionics | agent, 2026-10-05 | lidar is a documented survey with a datum; Navionics datum unstated |
+| DEC8 | reef surface = symmetric spherical cap, H = 2.0 m default (1.6-2.0), asymmetry slider default 0 | symmetric; ramp; H 1.6 or 2.0 | agent, 2026-10-05 | no cross-section published (A4, A5) |
+| DEC9 | default centre y = 37.5 m offshore | 30-50 m text range; 45 m (Tracks) | agent, 2026-10-05 | midpoint; centre vs edge unspecified (A2) |
+| DEC10 | fill mass (140 vs 150 t) not used in geometry | use as volume constraint; not use | agent, 2026-10-05 | developer-only; V8 only checks plausibility |
+| DEC11 | verdict stays FAILED; no developer claim (Waveco 2025, Bakalo 2026) overrides it | accept developer claim; keep | project rule; agent, 2026-10-05 and 2026-10-10 | tear and removal well documented; waves unverified |
+| DEC12 | the Troy interview (R25) is recorded as context and a disagreement, no model value changed | change fill label to sand only; keep; record | agent on main's instruction, 2026-10-10 | interested party, unrecorded, unclear which design |
 
 ## 4. Validation (cross-checks performed)
 
@@ -267,12 +317,14 @@ So the crest is 0.38 m (H = 2.0) to 0.78 m (H = 1.6) below MLLW at the default p
 | L9 | scour, settlement, slumping of the sand fill, deflation not modelled | the real bladder rested on a slumping sand mass | monitoring data (none; the planned UWA study never started) | no |
 | L10 | the mass of the fill (140 vs 150 t, developer-only) | none on the geometry | an independent weighing (none) | no |
 | L11 | 2D drone photo has no scale bar: 12 m is the text value | outline scale +-7 % | a second photo with a scale | no |
+| L12 | what the 2019 bladder was filled with, and whether the "final" sand design of Bakalo (2026) is the 2019 one | none on geometry; documentation wording only (2.2, A14) | the installation record, or a recorded/transcribed interview with Waveco | yes, E5 |
 
 ## 8. References
 
 * ABC News (2019a). 'World-first' inflatable surf reef to be installed at beach in Western Australia, 13 June 2019. https://www.abc.net.au/news/2019-06-13/world-first-artificial-surf-reef-to-be-installed-at-bunbury/11204280. Accessed 2026-09-24. (c) ABC.
 * ABC News (2019b). Bunbury's Back Beach surfers deflated as artificial reef, Airwave, tears during installation, 16-17 December 2019. https://www.abc.net.au/news/2019-12-16/word-first-surf-reef-tears-during-installation/11803228. Accessed 2026-09-24. (c) ABC.
 * ABC listen (2022). Meet the surfer who says Bunbury can have world class waves. South West WA Breakfast, 7 October 2022 (program summary text; audio not heard). https://www.abc.net.au/listen/programs/southwestwa-breakfast/bunbury-waves/101511922. Accessed 2026-10-05.
+* Bakalo, L. (2026). Zoom interview with Troy, founder of Airwave (Waveco), 8 October 2026. Personal communication; unrecorded, no transcript; notes as reported by Lior, recorded as R25 on the reef card on 2026-10-10. Not independently verified; the speaker is the developer.
 * Bunbury Mail (2022). Airwave founder Troy Bottegal moves towards making Bunbury ..., 22 March 2022 (story 7667604). https://www.bunburymail.com.au/story/7667604/bunbury-still-set-to-become-surfing-destination/. Accessed 2026-09-24.
 * Department of Defence (2018). Tidal planes for the Port of Bunbury; cited in GHD (2021), not accessed directly.
 * Esri (2025). World Imagery, Back Beach tile of 30 August 2025. Esri, Maxar and contributors; private research copy, rights not cleared.

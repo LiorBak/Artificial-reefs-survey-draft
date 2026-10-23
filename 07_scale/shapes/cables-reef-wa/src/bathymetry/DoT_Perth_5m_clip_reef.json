@@ -1,0 +1,16 @@
+{
+ "source_file": "Perth_5m.tif (44,384,832 bytes, Last-Modified 2020-11-11)",
+ "url": "https://s3-ap-southeast-2.amazonaws.com/transport.wa/Bathymetry/Rasters/Perth_5m.tif",
+ "sha256_full_file": "f0687d0fb6d9784547b844346937cc791da6b36065a1e9f396bcb752a146486d",
+ "full_file_not_kept": "clip only (1.2 x 1.2 km around the reef); re-download from the URL",
+ "crs": "EPSG:28350 GDA94 / MGA zone 50",
+ "pixel_m": 4.999,
+ "x_left_E": 381200.2462863061,
+ "y_top_N": 6457746.461682648,
+ "shape": [
+  240,
+  240
+ ],
+ "z": "m AHD (DoT), -9999 = no data",
+ "retrieved": "2026-10-10"
+}

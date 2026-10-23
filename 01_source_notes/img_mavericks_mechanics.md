@@ -1,6 +1,6 @@
 # Mavericks — Wave Refraction & Focusing Over Irregular Bathymetry (image)
 
-- Source path: `C:\Users\lior\Documents\Gemini\AG\Artificial reef - to upload to git\Initial info from Lior\mechanic of mavrics.png`
+- Source path: `C:\Users\lior\Documents\Claude\Projects\Artificial reef\Initial info from Lior\mechanic of mavrics.png`
 - Size: 3,239,943 bytes (~3.09 MB); pixel dimensions 1559 × 877 px
 - Type: PNG (RGB, no transparency)
 - Date read: 2026-09-24
@@ -39,7 +39,7 @@ None. No mention of geotubes, breakwaters, Haifa, Tel Aviv, Netanya, Herzliya, t
 
 ## Images extracted
 
-- Copied to: `C:\Users\lior\Documents\Gemini\AG\Artificial reef - to upload to git\03_images\from_lior\mavericks_wave_refraction_bathymetry.png`
+- Copied to: `C:\Users\lior\Documents\Claude\Projects\Artificial reef\03_images\from_lior\mavericks_wave_refraction_bathymetry.png`
 - Caption: "Mavericks (Half Moon Bay, CA) — bathymetric map showing how offshore swell rays refract and focus over an irregular natural reef/ridge to produce the big-wave break at the circled '-21 ft' convergence point. Bathymetry credited to Surfline, USGS, and the Seafloor Mapping Lab at CSUMB."
 - Safe to use in the final HTML? **No — treat as a copied (third-party) figure, not Lior's own drawing.** The image carries an explicit "Bathymetry by Surfline, USGS, and Seafloor Mapping Lab at CSUMB" credit line and a Surfline watermark/logo, indicating it is a copyrighted graphic originally produced by Surfline (using USGS/CSUMB bathymetry data), not an original illustration by Lior. It should not be embedded directly in a public-facing page without checking Surfline's permission/licensing; if used at all, it should be clearly attributed to Surfline/USGS/CSUMB and ideally linked out to the original source rather than rehosted, or replaced with an original illustration made for this project.
 

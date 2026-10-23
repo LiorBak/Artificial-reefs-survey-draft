@@ -1,7 +1,7 @@
 """Catalogue of the images found by the Gold Coast gov/council/university report search (2026-10-06)."""
 import os
 
-ROOT = r"C:\Users\lior\Documents\Gemini\AG\Artificial reef - to upload to git"
+ROOT = r"C:\Users\lior\Documents\Claude\Projects\Artificial reef"
 REG = ROOT + r"\03_images\reefs"
 WORK = ROOT + r"\07_scale\bathymetry\gold_coast"
 NN = ROOT + r"\07_scale\shapes\narrowneck-gold-coast\src\gov"

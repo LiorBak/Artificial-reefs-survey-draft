@@ -162,7 +162,9 @@
  {
   "id": "cables-reef-wa-img-05",
   "file": "03_images/reefs/cables-reef-wa/cables-reef-wa_rwr-original-design-plan_1990s.jpg",
-  "annotated_files": [],
+  "annotated_files": [
+   "07_scale/shapes/cables-reef-wa/overlays/cables-reef-wa-img-05_retrace_outer_foot.png"
+  ],
   "kind": "design_drawing",
   "title": "Cables-Design.jpg: plan of the original reef design with depth contours (RWR; same file as Lior's Cable-reef-design.jpg)",
   "citation": "Raised Water Research (2019). Cables Reef [spot profile page]; image 'Cables Design (caption 'The original design.')'. https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/cables-reef/. Image file https://raisedwaterresearch.com/wp-content/uploads/2019/11/Cables-Design.jpg. Accessed 2026-10-06. A byte-identical copy was supplied by Lior at 'Initial info from Lior/Cable-reef-design.jpg'.",
@@ -194,20 +196,23 @@
   "rights_note": "Private research copy; reuse rights to be checked before any public release.",
   "display": true,
   "for_3d_check": {
-   "pending": true,
+   "pending": false,
    "what_to_check": "Planform, V apex direction and arm lengths/angles of the original design vs the satellite-visible footprint and the text (140 m N-S x 70 m max width, 275 m offshore, 3-6 m depth); also contour values for seabed",
    "model_values_affected": [
     "planform",
     "seabed",
     "crest_z"
-   ]
+   ],
+   "result": "Re-trace on this lower-resolution copy at an assumed 3.6 px/m: 4,209 m2, +4% vs img-26. Not the primary. 2026-10-10."
   },
   "added_by": "image-registry backfill, 2026-10-06"
  },
  {
   "id": "cables-reef-wa-img-06",
   "file": "03_images/reefs/cables-reef-wa/cables-reef-wa_rwr-additional-fill-area-plan_1990s.jpg",
-  "annotated_files": [],
+  "annotated_files": [
+   "07_scale/shapes/cables-reef-wa/overlays/cables-reef-wa-img-06_extension_triangle.png"
+  ],
   "kind": "design_drawing",
   "title": "Cables-Additional-Fill-Area.jpg: plan of the extension to the right ('Additional fill area', volume 320 m3) (RWR)",
   "citation": "Raised Water Research (2019). Cables Reef [spot profile page]; image 'Cables Additional Fill Area (caption 'The extension to the right.')'. https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/cables-reef/. Image file https://raisedwaterresearch.com/wp-content/uploads/2019/11/Cables-Additional-Fill-Area.jpg. Accessed 2026-10-06.",
@@ -238,19 +243,23 @@
   "rights_note": "Private research copy; reuse rights to be checked before any public release.",
   "display": true,
   "for_3d_check": {
-   "pending": true,
+   "pending": false,
    "what_to_check": "Planform change from the original design: the extension arm and its fill volume vs the footprint measured on satellite or other imagery",
    "model_values_affected": [
     "planform",
     "volume"
-   ]
+   ],
+   "result": "Extension triangle traced and registered on img-26: 347 m2; with the stated 320 m3 the mean fill is 0.92 m. Built extent still unverified. 2026-10-10."
   },
   "added_by": "image-registry backfill, 2026-10-06"
  },
  {
   "id": "cables-reef-wa-img-07",
   "file": "03_images/reefs/cables-reef-wa/cables-reef-wa_rwr-pitt-sketch-plan_1990s.jpg",
-  "annotated_files": [],
+  "annotated_files": [
+   "07_scale/shapes/cables-reef-wa/overlays/cables-reef-wa-img-07_pitt_concept_outline.png",
+   "07_scale/shapes/cables-reef-wa/3d/annotated/A4_pitt_sketch_bed_gradient_read.png"
+  ],
   "kind": "design_drawing",
   "title": "Cables-Drawing.jpg: sketch plan 'PLAN - PROPOSED CABLES SURFING REEF' (Pitt sketch, RWR)",
   "citation": "Raised Water Research (2019). Cables Reef [spot profile page]; image 'Cables Drawing'. https://raisedwaterresearch.com/spot/artificial-reef/australia/western-australia/cables-reef/. Image file https://raisedwaterresearch.com/wp-content/uploads/2019/11/Cables-Drawing.jpg. Accessed 2026-10-06.",
@@ -281,12 +290,13 @@
   "rights_note": "Private research copy; reuse rights to be checked before any public release.",
   "display": true,
   "for_3d_check": {
-   "pending": true,
+   "pending": false,
    "what_to_check": "Concept planform/contours vs the built reef (peak and wing geometry, depth contours 3-7 m)",
    "model_values_affected": [
     "planform",
     "seabed"
-   ]
+   ],
+   "result": "Bed gradient read from the 3.0-7.0 m contour labels (1:28 left, 1:33 right, used 1:30); scale bar 171 px per 200 m. Concept outline (170 x 159 m) differs from the built design. 2026-10-10."
   },
   "added_by": "image-registry backfill, 2026-10-06",
   "notes": "Date '91' read from the faint signature on the drawing; not verified."
@@ -406,12 +416,13 @@
   "rights_note": "Private research copy; reuse rights to be checked before any public release.",
   "display": true,
   "for_3d_check": {
-   "pending": true,
+   "pending": false,
    "what_to_check": "Cross-section shape (gentle back / steeper front) vs the 3D crest and slopes once a model exists; text gives crest 1-3 m below the surface and slope 1:20 in the lab design",
    "model_values_affected": [
     "height_above_seabed",
     "crest_z"
-   ]
+   ],
+   "result": "Qualitative section, no numbers: consistent with the modelled centreline section (gentle offshore ramp, steeper inner side). 2026-10-10."
   },
   "added_by": "image-registry backfill, 2026-10-06"
  },
@@ -691,11 +702,12 @@
   "rights_note": "Private research copy; reuse rights to be checked before any public release.",
   "display": true,
   "for_3d_check": {
-   "pending": true,
+   "pending": false,
    "what_to_check": "V arm lengths/angles of the final design vs the satellite-visible footprint and the text (left-hander 30-40 m, right-hander 50-80 m)",
    "model_values_affected": [
     "planform"
-   ]
+   ],
+   "result": "Oblique, not traceable. Ride-length check inconclusive: crest-line arm lengths 49 m (south) and 52 m (north) vs ride 50-80 m / 30-40 m. 2026-10-10."
   },
   "added_by": "image-registry backfill, 2026-10-06",
   "source_pdf": "07_scale/shapes/cables-reef-wa/src/S1_pattiaratchi_reefdesign.pdf"
@@ -785,7 +797,9 @@
  {
   "id": "cables-reef-wa-img-20",
   "file": "03_images/reefs/cables-reef-wa/cables-reef-wa_pattiaratchi1999-fig7-geographic-location_1999.png",
-  "annotated_files": [],
+  "annotated_files": [
+   "07_scale/shapes/cables-reef-wa/overlays/cables-reef-wa-img-20_fig7_V_outline_rotated.png"
+  ],
   "kind": "plan_figure",
   "title": "Pattiaratchi (1999) Fig. 7: the geographic location of the proposed surfing reef at Cable Station (plan map, printed rotated 90 deg, V outline over depth contours)",
   "citation": "Pattiaratchi, C. (1999). Design Studies for an Artificial Surfing Reef: Cable Station, Western Australia. Centre for Water Research, University of Western Australia, report ref. ED1483CP (5 pp.; PDF created 1999-04-13), p.4, Figure 7 (embedded raster, native resolution). http://joas.free.fr/studies/bei/g2s/reefdesign.pdf (mirror; byte-identical re-download 2026-10-05, MD5 02a6075b1eac84a68180bbfd89226fea). Accessed 2026-10-05.",
@@ -817,12 +831,13 @@
   "rights_note": "Private research copy; reuse rights to be checked before any public release.",
   "display": true,
   "for_3d_check": {
-   "pending": true,
+   "pending": false,
    "what_to_check": "Apex direction (offshore) and V outline position/orientation vs the satellite and the 275 m offshore text; use the '+' grid marks as scale if their spacing is known",
    "model_values_affected": [
     "planform",
     "position"
-   ]
+   ],
+   "result": "Apex offshore confirmed (INDIAN OCEAN label upright after rotating); V 122 x 76 m with an assumed 100 m grid agrees with img-26 (121 x 76 m); centroid 271 m from the shore line sets the 270 m offshore position. 2026-10-10."
   },
   "added_by": "image-registry backfill, 2026-10-06",
   "source_pdf": "07_scale/shapes/cables-reef-wa/src/S1_pattiaratchi_reefdesign.pdf"
@@ -942,14 +957,729 @@
   "rights_note": "Private research copy; reuse rights to be checked before any public release.",
   "display": true,
   "for_3d_check": {
-   "pending": true,
+   "pending": false,
    "what_to_check": "Apex direction/outline orientation vs satellite (see the native Fig. 7 row)",
    "model_values_affected": [
     "planform",
     "position"
-   ]
+   ],
+   "result": "Same as img-20 (upscale of the same raster). 2026-10-10."
   },
   "added_by": "image-registry backfill, 2026-10-06",
   "source_pdf": "07_scale/shapes/cables-reef-wa/src/S1_pattiaratchi_reefdesign.pdf"
+ },
+ {
+  "id": "cables-reef-wa-img-24",
+  "file": "03_images/reefs/cables-reef-wa/cables-reef-wa_p8-fig2-14-rock-placement_1999.png",
+  "annotated_files": [],
+  "kind": "report_photo",
+  "title": "Blacka et al. (2013) Fig. 2.14: placing rock on the Cable Station reef by barge-mounted excavator",
+  "citation": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08 (Final, 11 June 2013), UNSW Water Research Laboratory, for the NSW Office of Environment and Heritage. p.31 (PDF p.43), Figure 2.14; credit Jackson and Corbett (2007). https://doi.org/10.4225/53/58e1dc7368c7a. Accessed 2026-10-07.",
+  "image_url": "https://doi.org/10.4225/53/58e1dc7368c7a",
+  "source_page": "https://doi.org/10.4225/53/58e1dc7368c7a",
+  "page_or_figure": "report p.31 (PDF p.43), Figure 2.14 (clip, 200 dpi)",
+  "image_date": "1999 (construction); date not stated",
+  "credit": "Jackson and Corbett (2007) as reproduced in Blacka et al. (2013)",
+  "license": "CC BY-NC-ND 3.0 AU (as recorded in REQUESTS_FOR_LIOR.md P8; not re-checked on the PDF)",
+  "retrieved": "2026-10-10",
+  "shows": "Excavator on a barge placing granite boulders at sea.",
+  "structure_visible": false,
+  "state_shown": "as-built (construction)",
+  "used_for": [
+   "context"
+  ],
+  "how_used": "Context for the construction method (1.5 t body stones with a 3.0 t keyed perimeter, from a barge; p.93). No geometry read.",
+  "linked_records": [
+   "05_qa/papers_intake/P8_blacka_2013.md"
+  ],
+  "bytes": 395146,
+  "px": [
+   1098,
+   487
+  ],
+  "sha256": "8e1c65a27ed5949ba204d2912a65846c4d99260529403028f92460316afcb014",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": true,
+  "for_3d_check": {
+   "pending": false,
+   "what_to_check": "none",
+   "model_values_affected": []
+  },
+  "added_by": "papers intake P3/P8, 2026-10-10"
+ },
+ {
+  "id": "cables-reef-wa-img-25",
+  "file": "03_images/reefs/cables-reef-wa/cables-reef-wa_p8-figA1-location_2013.png",
+  "annotated_files": [],
+  "kind": "satellite",
+  "title": "Blacka et al. (2013) Fig. A.1: location of Cable Station ASR (satellite)",
+  "citation": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08 (Final, 11 June 2013), UNSW Water Research Laboratory, for the NSW Office of Environment and Heritage. p.92 (PDF p.104), Figure A.1. https://doi.org/10.4225/53/58e1dc7368c7a. Accessed 2026-10-07.",
+  "image_url": "https://doi.org/10.4225/53/58e1dc7368c7a",
+  "source_page": "https://doi.org/10.4225/53/58e1dc7368c7a",
+  "page_or_figure": "report p.92 (PDF p.104), Figure A.1 (clip, 200 dpi)",
+  "image_date": "unknown (imagery before 2013)",
+  "credit": "Blacka et al. (2013) over satellite imagery (provider not stated)",
+  "license": "CC BY-NC-ND 3.0 AU (as recorded in REQUESTS_FOR_LIOR.md P8; not re-checked on the PDF)",
+  "retrieved": "2026-10-10",
+  "shows": "Satellite map of Perth coast with Rottnest Island offshore and the reef marker south of Cottesloe; 5 km scale bar.",
+  "structure_visible": false,
+  "state_shown": "context (location)",
+  "used_for": [
+   "context"
+  ],
+  "how_used": "Location context; shows the sheltering by Rottnest Island noted in P3 p.2.",
+  "linked_records": [
+   "05_qa/papers_intake/P8_blacka_2013.md"
+  ],
+  "bytes": 1077627,
+  "px": [
+   1209,
+   723
+  ],
+  "sha256": "80e59359528cfafde18f140adbe1fa82e2fa45e98d331cf148325a2d0723ce40",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": true,
+  "for_3d_check": {
+   "pending": false,
+   "what_to_check": "none",
+   "model_values_affected": []
+  },
+  "added_by": "papers intake P3/P8, 2026-10-10"
+ },
+ {
+  "id": "cables-reef-wa-img-26",
+  "file": "03_images/reefs/cables-reef-wa/cables-reef-wa_p8-figA2-design-lyons-1992_1992.png",
+  "annotated_files": [
+   "07_scale/shapes/cables-reef-wa/overlays/cables-reef-wa-img-26_A2_outline_ramp_scale.png",
+   "07_scale/shapes/cables-reef-wa/3d/annotated/A1_A2_scale_and_contours_read.png"
+  ],
+  "kind": "design_drawing",
+  "title": "Blacka et al. (2013) Fig. A.2: Cable Station ASR design (after Lyons, 1992), plan with contours",
+  "citation": "Blacka, M.J., Shand, T.D., Carley, J.T. and Mariani, A. (2013). A Review of Artificial Reefs for Coastal Protection in NSW. WRL Technical Report 2012/08 (Final, 11 June 2013), UNSW Water Research Laboratory, for the NSW Office of Environment and Heritage. p.93 (PDF p.105), Figure A.2. https://doi.org/10.4225/53/58e1dc7368c7a. Accessed 2026-10-07.",
+  "image_url": "https://doi.org/10.4225/53/58e1dc7368c7a",
+  "source_page": "https://doi.org/10.4225/53/58e1dc7368c7a",
+  "page_or_figure": "report p.93 (PDF p.105), Figure A.2 (clip, 200 dpi); original Lyons (1992) BEng thesis, UWA",
+  "image_date": "1992 (design drawing, pre-construction)",
+  "credit": "Lyons (1992) as reproduced in Blacka et al. (2013)",
+  "license": "CC BY-NC-ND 3.0 AU (as recorded in REQUESTS_FOR_LIOR.md P8; not re-checked on the PDF)",
+  "retrieved": "2026-10-10",
+  "shows": "Line plan of the V-shaped reef with design contour and perimeter lines and labelled points; no scale readable at this size.",
+  "structure_visible": true,
+  "state_shown": "design (1992 concept; the built reef was extended at the south end per card)",
+  "used_for": [
+   "plan_trace",
+   "cross_check"
+  ],
+  "how_used": "Not traced: low resolution, no legible scale. Candidate for cross-checking the planform vs the traced shape (V, ~140 m long x ~70 m wide per p.92).",
+  "linked_records": [
+   "05_qa/papers_intake/P8_blacka_2013.md"
+  ],
+  "bytes": 184564,
+  "px": [
+   917,
+   682
+  ],
+  "sha256": "3c860197ca9ff1a86341733107a2f8d2d257f55d9b77bae1ec1bf659466d3061",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": true,
+  "for_3d_check": {
+   "pending": false,
+   "what_to_check": "Compare the V planform and arm proportions with the traced shape.json; built reef later extended at the south end.",
+   "model_values_affected": [
+    "planform"
+   ],
+   "result": "USED (primary, plan + levels): printed dimensions give 6.51 px/m (+-3%); footprint 4,049 m2 (121 x 76 m); ramp RL -1.0 to -3.0; model contours within 0.14 m rms. 3D 2026-10-10."
+  },
+  "added_by": "papers intake P3/P8, 2026-10-10"
+ },
+ {
+  "id": "cables-reef-wa-img-27",
+  "file": "07_scale/shapes/cables-reef-wa/overlays/cables-reef-wa_versions_compare_m.png",
+  "annotated_files": [],
+  "kind": "diagram",
+  "title": "Outline versions of the Cable Station reef compared in metres",
+  "citation": "Own figure made for this project (cables-reef-wa shape + 3D task, 2026-10-10), derived from the registered sources named in SOURCES_3D.md.",
+  "image_url": null,
+  "source_page": "07_scale/shapes/cables-reef-wa/3d/SOURCES_3D.md (own figure)",
+  "page_or_figure": "-",
+  "image_date": "2026-10-10",
+  "credit": "Claude agent for Lior (own work, derived from registered sources)",
+  "license": "own work; derived from sources whose reuse rights are not cleared",
+  "retrieved": "2026-10-10",
+  "shows": "The four outline versions (default design plan + extension, design plan, paper Fig 7 V, Pitt concept) plotted in the canonical frame.",
+  "structure_visible": true,
+  "state_shown": "design (model)",
+  "used_for": [
+   "plan_trace",
+   "cross_check"
+  ],
+  "how_used": "Shows how the versions differ in size and shape; the Pitt concept is about 2.4 times the built footprint.",
+  "linked_records": [
+   "07_scale/shapes/cables-reef-wa/shape.json outline_versions"
+  ],
+  "bytes": 123039,
+  "px": [
+   990,
+   715
+  ],
+  "sha256": "80401c8b5a57ea24dafe30ef7b5fd5e308f458f979095c8c2cfa82c3d11517ed",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": true,
+  "for_3d_check": {
+   "pending": false,
+   "what_to_check": "-",
+   "model_values_affected": []
+  },
+  "added_by": "cables-reef-wa shape + 3D task, 2026-10-10"
+ },
+ {
+  "id": "cables-reef-wa-img-28",
+  "file": "07_scale/shapes/cables-reef-wa/3d/annotated/A2_centreline_section.png",
+  "annotated_files": [],
+  "kind": "diagram",
+  "title": "Modelled section through the apex of the Cable Station reef",
+  "citation": "Own figure made for this project (cables-reef-wa shape + 3D task, 2026-10-10), derived from the registered sources named in SOURCES_3D.md.",
+  "image_url": null,
+  "source_page": "07_scale/shapes/cables-reef-wa/3d/SOURCES_3D.md (own figure)",
+  "page_or_figure": "-",
+  "image_date": "2026-10-10",
+  "credit": "Claude agent for Lior (own work, derived from registered sources)",
+  "license": "own work; derived from sources whose reuse rights are not cleared",
+  "retrieved": "2026-10-10",
+  "shows": "Section along the apex centreline: reef surface (RL -1.0 crest to -3.0 set-out), modelled bed and the water levels.",
+  "structure_visible": true,
+  "state_shown": "design (model)",
+  "used_for": [
+   "3d_crest",
+   "3d_height_slopes",
+   "3d_seabed"
+  ],
+  "how_used": "Shows the modelled crest depth (1.78 m below MSL under reading A) and the thickness over the bed; a check, not a source.",
+  "linked_records": [
+   "07_scale/shapes/cables-reef-wa/3d/SOURCES_3D.md",
+   "07_scale/shapes/cables-reef-wa/3d/METHODS_3D.md section 4"
+  ],
+  "bytes": 84911,
+  "px": [
+   1100,
+   495
+  ],
+  "sha256": "e0c8492cdddd24f8c5395b6286ba421b13fb2be6cd2130efddcbb06ffed09286",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": true,
+  "for_3d_check": {
+   "pending": false,
+   "what_to_check": "-",
+   "model_values_affected": []
+  },
+  "added_by": "cables-reef-wa shape + 3D task, 2026-10-10"
+ },
+ {
+  "id": "cables-reef-wa-img-29",
+  "file": "07_scale/shapes/cables-reef-wa/3d/annotated/A3_bed_level_vs_volume.png",
+  "annotated_files": [],
+  "kind": "diagram",
+  "title": "Bed level fitted to the stated rock volume (Cable Station reef)",
+  "citation": "Own figure made for this project (cables-reef-wa shape + 3D task, 2026-10-10), derived from the registered sources named in SOURCES_3D.md.",
+  "image_url": null,
+  "source_page": "07_scale/shapes/cables-reef-wa/3d/SOURCES_3D.md (own figure)",
+  "page_or_figure": "-",
+  "image_date": "2026-10-10",
+  "credit": "Claude agent for Lior (own work, derived from registered sources)",
+  "license": "own work; derived from sources whose reuse rights are not cleared",
+  "retrieved": "2026-10-10",
+  "shows": "Modelled rock volume versus the assumed bed depth, with the stated volumes 3,500 / 5,000 / 5,500 m3 and the bed depth each implies.",
+  "structure_visible": true,
+  "state_shown": "design (model)",
+  "used_for": [
+   "3d_seabed",
+   "3d_height_slopes"
+  ],
+  "how_used": "Documents the single free parameter of the model (bed level D0 = 3.50 m at y = 270 m).",
+  "linked_records": [
+   "07_scale/shapes/cables-reef-wa/3d/METHODS_3D.md section 3.4"
+  ],
+  "bytes": 61707,
+  "px": [
+   825,
+   495
+  ],
+  "sha256": "9161604965a2a6d4958234fa30d55259838ea70b2f3ba2e63c7b83e1df64d82f",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": true,
+  "for_3d_check": {
+   "pending": false,
+   "what_to_check": "-",
+   "model_values_affected": []
+  },
+  "added_by": "cables-reef-wa shape + 3D task, 2026-10-10"
+ },
+ {
+  "id": "cables-reef-wa-img-30",
+  "file": "07_scale/shapes/cables-reef-wa/3d/preview_plan.png",
+  "annotated_files": [],
+  "kind": "diagram",
+  "title": "Screenshot of the three.js viewer, plan view (Cable Station reef)",
+  "citation": "Own figure made for this project (cables-reef-wa shape + 3D task, 2026-10-10), derived from the registered sources named in SOURCES_3D.md.",
+  "image_url": null,
+  "source_page": "07_scale/shapes/cables-reef-wa/3d/SOURCES_3D.md (own figure)",
+  "page_or_figure": "-",
+  "image_date": "2026-10-10",
+  "credit": "Claude agent for Lior (own work, derived from registered sources)",
+  "license": "own work; derived from sources whose reuse rights are not cleared",
+  "retrieved": "2026-10-10",
+  "shows": "Plan view of the modelled reef on the modelled seabed with the 10 m grid and scale bars (north = left).",
+  "structure_visible": true,
+  "state_shown": "design (model)",
+  "used_for": [
+   "camera_match",
+   "context"
+  ],
+  "how_used": "Preview of the delivered model viewer (index.html) for the page and for camera-match planning. Regenerated 2026-10-10 after the survey rebuild (default = Nov 1999 surveyed surface). Regenerated again 2026-10-13 after the Fremantle datum link (design versions +0.05 m; default view unchanged).",
+  "linked_records": [
+   "07_scale/shapes/cables-reef-wa/3d/index.html"
+  ],
+  "bytes": 368835,
+  "px": [
+   1400,
+   900
+  ],
+  "sha256": "43011735956bf4ccf4e724ffef8eb389d0502b65fcf1a38b8e56ffead712c10b",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": true,
+  "for_3d_check": {
+   "pending": false,
+   "what_to_check": "-",
+   "model_values_affected": []
+  },
+  "added_by": "cables-reef-wa shape + 3D task, 2026-10-10"
+ },
+ {
+  "id": "cables-reef-wa-img-31",
+  "file": "07_scale/shapes/cables-reef-wa/3d/preview_oblique.png",
+  "annotated_files": [],
+  "kind": "diagram",
+  "title": "Screenshot of the three.js viewer, oblique view from the sea (Cable Station reef)",
+  "citation": "Own figure made for this project (cables-reef-wa shape + 3D task, 2026-10-10), derived from the registered sources named in SOURCES_3D.md.",
+  "image_url": null,
+  "source_page": "07_scale/shapes/cables-reef-wa/3d/SOURCES_3D.md (own figure)",
+  "page_or_figure": "-",
+  "image_date": "2026-10-10",
+  "credit": "Claude agent for Lior (own work, derived from registered sources)",
+  "license": "own work; derived from sources whose reuse rights are not cleared",
+  "retrieved": "2026-10-10",
+  "shows": "Oblique view from the sea of the modelled V-shaped reef under a translucent MSL water surface.",
+  "structure_visible": true,
+  "state_shown": "design (model)",
+  "used_for": [
+   "camera_match",
+   "context"
+  ],
+  "how_used": "Preview of the delivered model viewer (index.html). Regenerated 2026-10-10 after the survey rebuild (default = Nov 1999 surveyed surface). Regenerated again 2026-10-13 after the Fremantle datum link (design versions +0.05 m; default view unchanged).",
+  "linked_records": [
+   "07_scale/shapes/cables-reef-wa/3d/index.html"
+  ],
+  "bytes": 391537,
+  "px": [
+   1400,
+   900
+  ],
+  "sha256": "ada1815b25b4466567acf165abb5de739821d71bee5aa5cd14624b92661e9d8a",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": true,
+  "for_3d_check": {
+   "pending": false,
+   "what_to_check": "-",
+   "model_values_affected": []
+  },
+  "added_by": "cables-reef-wa shape + 3D task, 2026-10-10"
+ },
+ {
+  "id": "cables-reef-wa-img-32",
+  "file": "07_scale/shapes/cables-reef-wa/src/imagery/esri_world_imagery_2025-12-06_z19.png",
+  "annotated_files": [
+   "07_scale/shapes/cables-reef-wa/src/imagery/annotated/overlay_esri_world_imagery_2025-12-06_z19.png"
+  ],
+  "kind": "satellite",
+  "title": "Esri World Imagery (current), Cable Station reef site, zoom 19",
+  "citation": "Esri, Maxar, Earthstar Geographics, and the GIS User Community (2026). World Imagery current layer, tile mosaic around 32.0155 S 115.7478 E. Esri. https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/{y}/{x} Accessed 2026-10-10.",
+  "image_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/{y}/{x}",
+  "source_page": "https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9 (World Imagery); Wayback: https://livingatlas.arcgis.com/wayback/",
+  "page_or_figure": "zoom 19 tile mosaic, 0.25 m/px, 07_scale/tools/satellite.py fetch (sidecar .geo.json holds bounds and release id)",
+  "image_date": "2025-12-06 (capture date from the service identify DATE field)",
+  "credit": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+  "license": "Esri / Maxar imagery terms, not cleared for redistribution",
+  "retrieved": "2026-10-10",
+  "shows": "Dark rock patch of the V-shaped reef 250 m off the beach in clear water, seagrass and sand around it; no waves breaking.",
+  "structure_visible": true,
+  "state_shown": "as-built (reef built 1999; image years later)",
+  "used_for": [
+   "cross_check"
+  ],
+  "how_used": "Independent check of the outline georeferenced from the DoT soundings (position, orientation, extent, south-arm extension): outline drawn on the image by scripts/make_imagery_figs.py; no image information entered the fit. Result in VERIFY.md and METHODS_3D 3.7.",
+  "linked_records": [
+   "07_scale/shapes/cables-reef-wa/VERIFY.md",
+   "07_scale/shapes/cables-reef-wa/3d/METHODS_3D.md section 3.7",
+   "07_scale/shapes/cables-reef-wa/3d/SOURCES_3D.md I16"
+  ],
+  "bytes": 3425366,
+  "px": [
+   1580,
+   1580
+  ],
+  "sha256": "f53637c1856a3b779badbfb49d25169437af23fe2891926c44f15b88eead8684",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": true,
+  "for_3d_check": {
+   "pending": false,
+   "what_to_check": "done 2026-10-10: outline coincides with the dark rock patch; extension triangle not distinguishable",
+   "model_values_affected": [
+    "planform"
+   ]
+  },
+  "added_by": "cables imagery + bathymetry run, 2026-10-10"
+ },
+ {
+  "id": "cables-reef-wa-img-33",
+  "file": "07_scale/shapes/cables-reef-wa/src/imagery/esri_wayback_2020-03-23_z19.png",
+  "annotated_files": [
+   "07_scale/shapes/cables-reef-wa/src/imagery/annotated/overlay_esri_wayback_2020-03-23_z19.png"
+  ],
+  "kind": "satellite",
+  "title": "Esri Wayback release 2020-03-23, Cable Station reef, zoom 19",
+  "citation": "Esri, Maxar, Earthstar Geographics, and the GIS User Community (2026). World Imagery Wayback release 2020-03-23 (release id 16062). Esri. https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/16062/19/{y}/{x} Accessed 2026-10-10.",
+  "image_url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/16062/19/{y}/{x}",
+  "source_page": "https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9 (World Imagery); Wayback: https://livingatlas.arcgis.com/wayback/",
+  "page_or_figure": "zoom 19 tile mosaic, 0.25 m/px, 07_scale/tools/satellite.py fetch (sidecar .geo.json holds bounds and release id)",
+  "image_date": "release 2020-03-23; capture date not available (earlier than the release)",
+  "credit": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+  "license": "Esri / Maxar imagery terms, not cleared for redistribution",
+  "retrieved": "2026-10-10",
+  "shows": "Reef patch with a wave breaking on its north-east arm; clearest view of the structure in the series.",
+  "structure_visible": true,
+  "state_shown": "as-built (reef built 1999; image years later)",
+  "used_for": [
+   "cross_check"
+  ],
+  "how_used": "Independent check of the outline georeferenced from the DoT soundings (position, orientation, extent, south-arm extension): outline drawn on the image by scripts/make_imagery_figs.py; no image information entered the fit. Result in VERIFY.md and METHODS_3D 3.7.",
+  "linked_records": [
+   "07_scale/shapes/cables-reef-wa/VERIFY.md",
+   "07_scale/shapes/cables-reef-wa/3d/METHODS_3D.md section 3.7",
+   "07_scale/shapes/cables-reef-wa/3d/SOURCES_3D.md I16"
+  ],
+  "bytes": 1892866,
+  "px": [
+   1580,
+   1580
+  ],
+  "sha256": "fde839d1df7059bf1a6ed52b183982966b2f7475e898a7666cbb4f7ada5b867d",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": true,
+  "for_3d_check": {
+   "pending": false,
+   "what_to_check": "done 2026-10-10: outline coincides with the dark rock patch; extension triangle not distinguishable",
+   "model_values_affected": [
+    "planform"
+   ]
+  },
+  "added_by": "cables imagery + bathymetry run, 2026-10-10"
+ },
+ {
+  "id": "cables-reef-wa-img-34",
+  "file": "07_scale/shapes/cables-reef-wa/src/imagery/esri_wayback_2022-06-08_z19.png",
+  "annotated_files": [
+   "07_scale/shapes/cables-reef-wa/src/imagery/annotated/overlay_esri_wayback_2022-06-08_z19.png"
+  ],
+  "kind": "satellite",
+  "title": "Esri Wayback release 2022-06-08, Cable Station reef, zoom 19",
+  "citation": "Esri, Maxar, Earthstar Geographics, and the GIS User Community (2026). World Imagery Wayback release 2022-06-08 (release id 44710). Esri. https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/44710/19/{y}/{x} Accessed 2026-10-10.",
+  "image_url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/44710/19/{y}/{x}",
+  "source_page": "https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9 (World Imagery); Wayback: https://livingatlas.arcgis.com/wayback/",
+  "page_or_figure": "zoom 19 tile mosaic, 0.25 m/px, 07_scale/tools/satellite.py fetch (sidecar .geo.json holds bounds and release id)",
+  "image_date": "release 2022-06-08; capture date not available",
+  "credit": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+  "license": "Esri / Maxar imagery terms, not cleared for redistribution",
+  "retrieved": "2026-10-10",
+  "shows": "Dark, sharp-edged reef patch; the best contrast between rock and the surrounding sand.",
+  "structure_visible": true,
+  "state_shown": "as-built (reef built 1999; image years later)",
+  "used_for": [
+   "cross_check"
+  ],
+  "how_used": "Independent check of the outline georeferenced from the DoT soundings (position, orientation, extent, south-arm extension): outline drawn on the image by scripts/make_imagery_figs.py; no image information entered the fit. Result in VERIFY.md and METHODS_3D 3.7.",
+  "linked_records": [
+   "07_scale/shapes/cables-reef-wa/VERIFY.md",
+   "07_scale/shapes/cables-reef-wa/3d/METHODS_3D.md section 3.7",
+   "07_scale/shapes/cables-reef-wa/3d/SOURCES_3D.md I16"
+  ],
+  "bytes": 3030744,
+  "px": [
+   1580,
+   1580
+  ],
+  "sha256": "119e91ce0839756dc44ba3253a8c6944d0954dcdaf2f1886a5e10d7bc7c8ff5e",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": true,
+  "for_3d_check": {
+   "pending": false,
+   "what_to_check": "done 2026-10-10: outline coincides with the dark rock patch; extension triangle not distinguishable",
+   "model_values_affected": [
+    "planform"
+   ]
+  },
+  "added_by": "cables imagery + bathymetry run, 2026-10-10"
+ },
+ {
+  "id": "cables-reef-wa-img-35",
+  "file": "07_scale/shapes/cables-reef-wa/src/imagery/esri_wayback_2014-12-03_z19.png",
+  "annotated_files": [
+   "07_scale/shapes/cables-reef-wa/src/imagery/annotated/overlay_esri_wayback_2014-12-03_z19.png"
+  ],
+  "kind": "satellite",
+  "title": "Esri Wayback release 2014-12-03, Cable Station reef, zoom 19",
+  "citation": "Esri, Maxar, Earthstar Geographics, and the GIS User Community (2026). World Imagery Wayback release 2014-12-03 (release id 23383). Esri. https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/23383/19/{y}/{x} Accessed 2026-10-10.",
+  "image_url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/23383/19/{y}/{x}",
+  "source_page": "https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9 (World Imagery); Wayback: https://livingatlas.arcgis.com/wayback/",
+  "page_or_figure": "zoom 19 tile mosaic, 0.25 m/px, 07_scale/tools/satellite.py fetch (sidecar .geo.json holds bounds and release id)",
+  "image_date": "release 2014-12-03; capture date not available",
+  "credit": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+  "license": "Esri / Maxar imagery terms, not cleared for redistribution",
+  "retrieved": "2026-10-10",
+  "shows": "Reef patch (dark, reddish in this version) on the seagrass terrace; oldest release at zoom 19.",
+  "structure_visible": true,
+  "state_shown": "as-built (reef built 1999; image years later)",
+  "used_for": [
+   "cross_check"
+  ],
+  "how_used": "Independent check of the outline georeferenced from the DoT soundings (position, orientation, extent, south-arm extension): outline drawn on the image by scripts/make_imagery_figs.py; no image information entered the fit. Result in VERIFY.md and METHODS_3D 3.7.",
+  "linked_records": [
+   "07_scale/shapes/cables-reef-wa/VERIFY.md",
+   "07_scale/shapes/cables-reef-wa/3d/METHODS_3D.md section 3.7",
+   "07_scale/shapes/cables-reef-wa/3d/SOURCES_3D.md I16"
+  ],
+  "bytes": 1883568,
+  "px": [
+   1580,
+   1580
+  ],
+  "sha256": "88d1dfca622bd83d85e7dacd1dd0ecd0c095f706e8c535759d3b8a35f0b3a70f",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": true,
+  "for_3d_check": {
+   "pending": false,
+   "what_to_check": "done 2026-10-10: outline coincides with the dark rock patch; extension triangle not distinguishable",
+   "model_values_affected": [
+    "planform"
+   ]
+  },
+  "added_by": "cables imagery + bathymetry run, 2026-10-10"
+ },
+ {
+  "id": "cables-reef-wa-img-36",
+  "file": "07_scale/shapes/cables-reef-wa/src/imagery/esri_wayback_2024-08-15_z19.png",
+  "annotated_files": [
+   "07_scale/shapes/cables-reef-wa/src/imagery/annotated/overlay_esri_wayback_2024-08-15_z19.png"
+  ],
+  "kind": "satellite",
+  "title": "Esri Wayback release 2024-08-15, Cable Station reef, zoom 19",
+  "citation": "Esri, Maxar, Earthstar Geographics, and the GIS User Community (2026). World Imagery Wayback release 2024-08-15 (release id 32553). Esri. https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/32553/19/{y}/{x} Accessed 2026-10-10.",
+  "image_url": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/32553/19/{y}/{x}",
+  "source_page": "https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9 (World Imagery); Wayback: https://livingatlas.arcgis.com/wayback/",
+  "page_or_figure": "zoom 19 tile mosaic, 0.25 m/px, 07_scale/tools/satellite.py fetch (sidecar .geo.json holds bounds and release id)",
+  "image_date": "release 2024-08-15; capture date not available",
+  "credit": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+  "license": "Esri / Maxar imagery terms, not cleared for redistribution",
+  "retrieved": "2026-10-10",
+  "shows": "Dark water, reef patch faint; kept for completeness of the series.",
+  "structure_visible": true,
+  "state_shown": "as-built (reef built 1999; image years later)",
+  "used_for": [
+   "cross_check"
+  ],
+  "how_used": "Independent check of the outline georeferenced from the DoT soundings (position, orientation, extent, south-arm extension): outline drawn on the image by scripts/make_imagery_figs.py; no image information entered the fit. Result in VERIFY.md and METHODS_3D 3.7.",
+  "linked_records": [
+   "07_scale/shapes/cables-reef-wa/VERIFY.md",
+   "07_scale/shapes/cables-reef-wa/3d/METHODS_3D.md section 3.7",
+   "07_scale/shapes/cables-reef-wa/3d/SOURCES_3D.md I16"
+  ],
+  "bytes": 893118,
+  "px": [
+   1580,
+   1580
+  ],
+  "sha256": "50dfdfe8c7d4be03afd606788744873343060a5954cc28bbb4680c0b74c700f3",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": true,
+  "for_3d_check": {
+   "pending": false,
+   "what_to_check": "done 2026-10-10: outline coincides with the dark rock patch; extension triangle not distinguishable",
+   "model_values_affected": [
+    "planform"
+   ]
+  },
+  "added_by": "cables imagery + bathymetry run, 2026-10-10"
+ },
+ {
+  "id": "cables-reef-wa-img-37",
+  "file": "07_scale/shapes/cables-reef-wa/src/imagery/annotated/overlay_montage_4dates.png",
+  "annotated_files": [],
+  "kind": "diagram",
+  "title": "Georeferenced outline on four Esri images (2014, 2020, 2022, 2025)",
+  "citation": "Own figure made for this project (cables-reef-wa imagery + bathymetry run, 2026-10-10), derived from the sources named in 3d/SOURCES_3D.md (Esri imagery; DoT WA bathymetry, CC BY 4.0).",
+  "image_url": null,
+  "source_page": "07_scale/shapes/cables-reef-wa/3d/SOURCES_3D.md (own figure)",
+  "page_or_figure": "-",
+  "image_date": "2026-10-10",
+  "credit": "Claude agent for Lior (own work, derived from registered sources)",
+  "license": "own work; derived from sources whose reuse rights are not cleared",
+  "retrieved": "2026-10-10",
+  "shows": "Four contrast-stretched crops of the reef with the georeferenced original-plan outline (magenta) and the extension triangle (yellow).",
+  "structure_visible": true,
+  "state_shown": "as-built (years after completion)",
+  "used_for": [
+   "cross_check"
+  ],
+  "how_used": "Visual verification of position, orientation and extent; the extension triangle is not distinguishable from the surroundings.",
+  "linked_records": [
+   "07_scale/shapes/cables-reef-wa/VERIFY.md",
+   "07_scale/shapes/cables-reef-wa/scripts/make_imagery_figs.py"
+  ],
+  "bytes": 3332802,
+  "px": [
+   1200,
+   1200
+  ],
+  "sha256": "161400a2859e12754732b45358af010fca1d004b55f667cc17fdfc44b92fdffd",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": true,
+  "for_3d_check": {
+   "pending": false,
+   "what_to_check": "-",
+   "model_values_affected": []
+  },
+  "added_by": "cables imagery + bathymetry run, 2026-10-10"
+ },
+ {
+  "id": "cables-reef-wa-img-38",
+  "file": "07_scale/shapes/cables-reef-wa/src/bathymetry/figures/survey_1999_thickness.png",
+  "annotated_files": [],
+  "kind": "survey_plot",
+  "title": "DoT WA soundings Nov 1999: rock thickness over the 1998 bed, with the fitted outline",
+  "citation": "Own figure made for this project (cables-reef-wa imagery + bathymetry run, 2026-10-10), derived from the sources named in 3d/SOURCES_3D.md (Esri imagery; DoT WA bathymetry, CC BY 4.0).",
+  "image_url": null,
+  "source_page": "07_scale/shapes/cables-reef-wa/3d/SOURCES_3D.md (own figure)",
+  "page_or_figure": "-",
+  "image_date": "2026-10-10",
+  "credit": "Claude agent for Lior (own work, derived from registered sources)",
+  "license": "own work; derived from sources whose reuse rights are not cleared",
+  "retrieved": "2026-10-10",
+  "shows": "840 soundings coloured by thickness above the pre-construction bed; the V of the reef with the fitted design outline.",
+  "structure_visible": true,
+  "state_shown": "as-built (Nov 1999)",
+  "used_for": [
+   "plan_trace",
+   "3d_crest",
+   "3d_height_slopes"
+  ],
+  "how_used": "Georeference fit and default 3D surface (version survey_surface_1999_11); thickness values read as sounding minus bed.",
+  "linked_records": [
+   "07_scale/shapes/cables-reef-wa/scripts/georef_fit.py",
+   "07_scale/shapes/cables-reef-wa/3d/METHODS_3D.md 3.2, 3.4"
+  ],
+  "bytes": 151555,
+  "px": [
+   880,
+   880
+  ],
+  "sha256": "8d436ec9824e9e8677b3b4e28413152b2a2e0961abcdee6fbbb5c4f2ba953202",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": true,
+  "for_3d_check": {
+   "pending": false,
+   "what_to_check": "-",
+   "model_values_affected": []
+  },
+  "added_by": "cables imagery + bathymetry run, 2026-10-10"
+ },
+ {
+  "id": "cables-reef-wa-img-39",
+  "file": "07_scale/shapes/cables-reef-wa/src/bathymetry/figures/survey_2002_thickness.png",
+  "annotated_files": [],
+  "kind": "survey_plot",
+  "title": "DoT WA soundings Feb 2002: thickness over the 1998 bed, with the fitted outlines",
+  "citation": "Own figure made for this project (cables-reef-wa imagery + bathymetry run, 2026-10-10), derived from the sources named in 3d/SOURCES_3D.md (Esri imagery; DoT WA bathymetry, CC BY 4.0).",
+  "image_url": null,
+  "source_page": "07_scale/shapes/cables-reef-wa/3d/SOURCES_3D.md (own figure)",
+  "page_or_figure": "-",
+  "image_date": "2026-10-10",
+  "credit": "Claude agent for Lior (own work, derived from registered sources)",
+  "license": "own work; derived from sources whose reuse rights are not cleared",
+  "retrieved": "2026-10-10",
+  "shows": "Singlebeam lines (about 5 m apart) coloured by thickness above the 1998 bed; the south-arm extension triangle (SE) shows little rock.",
+  "structure_visible": true,
+  "state_shown": "as-built (Feb 2002)",
+  "used_for": [
+   "cross_check",
+   "3d_height_slopes"
+  ],
+  "how_used": "Surveyed surface version survey_surface_2002_02; extension test (+0.43 m, n = 23).",
+  "linked_records": [
+   "07_scale/shapes/cables-reef-wa/3d/METHODS_3D.md 3.5"
+  ],
+  "bytes": 321130,
+  "px": [
+   880,
+   880
+  ],
+  "sha256": "7ecb61e1592712bc8fd5d0aeb82689d516eeaac048f7059e33088140138049f6",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": true,
+  "for_3d_check": {
+   "pending": false,
+   "what_to_check": "-",
+   "model_values_affected": []
+  },
+  "added_by": "cables imagery + bathymetry run, 2026-10-10"
+ },
+ {
+  "id": "cables-reef-wa-img-40",
+  "file": "07_scale/shapes/cables-reef-wa/src/bathymetry/figures/bed_perth5m_contours.png",
+  "annotated_files": [],
+  "kind": "survey_plot",
+  "title": "DoT WA composite surface Perth_5m around the reef (m AHD) with the reef outline",
+  "citation": "Own figure made for this project (cables-reef-wa imagery + bathymetry run, 2026-10-10), derived from the sources named in 3d/SOURCES_3D.md (Esri imagery; DoT WA bathymetry, CC BY 4.0).",
+  "image_url": null,
+  "source_page": "07_scale/shapes/cables-reef-wa/3d/SOURCES_3D.md (own figure)",
+  "page_or_figure": "-",
+  "image_date": "2026-10-10",
+  "credit": "Claude agent for Lior (own work, derived from registered sources)",
+  "license": "own work; derived from sources whose reuse rights are not cleared",
+  "retrieved": "2026-10-10",
+  "shows": "Seabed contours every 1 m from the 0 m AHD shoreline to 9 m, with the reef as a smoothed shallow mound.",
+  "structure_visible": true,
+  "state_shown": "as-built (composite of mixed dates)",
+  "used_for": [
+   "3d_seabed",
+   "context"
+  ],
+  "how_used": "Seabed beyond the 1998 survey coverage; shoreline bearing (7.8 deg T) and offshore distance (254-263 m).",
+  "linked_records": [
+   "07_scale/shapes/cables-reef-wa/scripts/make_bed.py",
+   "07_scale/shapes/cables-reef-wa/scripts/shore_and_datum.py"
+  ],
+  "bytes": 128739,
+  "px": [
+   880,
+   880
+  ],
+  "sha256": "cd93799824c1af5c079492b9b26dc5f98cfe1de20356d2c29a0f7c7ddd0abf59",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": true,
+  "for_3d_check": {
+   "pending": false,
+   "what_to_check": "-",
+   "model_values_affected": []
+  },
+  "added_by": "cables imagery + bathymetry run, 2026-10-10"
  }
 ]

@@ -282,6 +282,8 @@ def main(annotations=False):
             note="(c) Garmin Navionics; private research copy; 'Not to be used for navigation'; no login or CAPTCHA; the app states no datum; screenshots in src/navionics/"),
         src("S_sat", "Esri World Imagery, Back Beach, 2025-08-30 (private research copy, rights not cleared)", "07_scale/shapes/bunbury-airwave/src/sat_backbeach_current.png", "image-derived",
             note="used only for the approximate reef location (waterline) and to draw the lidar contours over the beach"),
+        src("S_Troy", "Bakalo, L. (2026) Zoom interview with Troy, founder of Airwave (Waveco), 8 Oct 2026; personal communication, unrecorded, notes as reported by Lior (card R25, recorded 2026-10-10). Developer = interested party", "-", "personal communication",
+            quote="final design uses sand instead of air (air did not respond well with the waves); a seam opened a couple of days after installation", note="context only; disagrees with press on air in the fill and on timing of the tear; no model value uses it; see METHODS_3D section 2.2"),
     ]
 
     # ------------------------------------------------------------------------------------------ provenance
@@ -295,7 +297,7 @@ def main(annotations=False):
       "colour is a rendering choice; the sources do not state one")
     P("fill", "sand slurry (washed coarse beach sand) + water + air; mass 140-150 t", "t", "S_Tracks19, S_BunMail, S_Tracks21, S_Waveco, S_Swellnet",
       "slurry corroborated independently (Tracks 2019, Bunbury Mail, RWR, forum observer); the MASS is developer-only (140 t Tracks 2021 / Bunbury Mail; 150 t Waveco page, forum summary); no anchors drawn",
-      "mass +-7 % between the developer's own statements; no independent weighing; not used by the geometry")
+      "mass +-7 % between the developer's own statements; no independent weighing; not used by the geometry. Disagreement: ABC 2019b says air, Tracks 2019b sand + air, Bakalo 2026 (Troy, S_Troy) says the final design is sand instead of air; unresolved which design the 2019 bladder was (METHODS_3D 2.2, A14)")
     P("state modelled / date", "as installed: installation attempted December 2019 (week of 9 Dec; tear spotted Fri 13 Dec 2019); NOT 2018", "-", "S_card, S_ABC19, S_RWRtear, S_Swellnet",
       "card year and developer_account check: every dated 2019 report (ABC 2019-06-13, Tracks 2019-08-12 and 2019-11-15, RWR 2019-10-14 and 2019-12-16, ABC 2019-12-16) places the install in Dec 2019; Waveco's 'In 2018' is contradicted; the only 2018 events are a failed Kickstarter and a 'may be installed' preview",
       "day of the week of installation +-2 d; the geometry does not depend on it")

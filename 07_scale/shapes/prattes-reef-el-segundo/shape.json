@@ -2,7 +2,7 @@
  "slug": "prattes-reef-el-segundo",
  "name": "Pratte's Reef (permit name: Chevron Reef)",
  "status": "verified",
- "updated": "2026-10-05",
+ "updated": "2026-10-10",
  "confidence": {
   "level": "medium",
   "reason": "The outline is traced on the reef designer's own scaled plan drawing (Skelly Engineering design layout, 110 bags + 30 optional, also published as the 'design layout' in Borrero & Nelsen 2003), using only the solid-outline bags; the printed scale bar agrees with the known bag size (4 x 7 x 10 ft = 7.9 m3) within about 3-6% and two reproductions of the drawing agree to about 1% in area. It is a design drawing, not a survey or photo: nothing of the structure is visible on any image (removed 2008-2010), the April 2001 second phase (90 more bags, crest widened) is not drawn, the built bags moved and sank, and the map position cannot be fixed.",
@@ -16,7 +16,7 @@
    "- Drawing has no north arrow; orientation (+x toward SSE) is inferred from the 1996 concept plan (north arrow) and the present shoreline (155.5 deg, own fit)",
    "- Published coordinates disagree by 100s of metres (card/Wikipedia is 288 m offshore of today's dry-sand edge; RWR and Gemini coordinates are 113-119 m), and all three lie SOUTH of the short rock groin at 33.91685,-118.43030 (taken to be the Grand Street jetty) whereas the CCC staff report (300 yd north of the Grand Avenue jetty) and Borrero & Nelsen 2003 (about 200 m south of the Hyperion 1-mile outfall, within 500 m of it and of the Grand Street jetty) put the reef NORTH of that jetty; so no lat/lon polygon is given (geo = null)",
    "- Outline position depends on the stroke edge: +-1 px = +-0.2 m = about +-4% area; solid/dashed classification of the edge rows adds about +-10 m2; scale-bar anisotropy between reproductions about 1.5%",
-   "+ (2026-10-05, not yet re-verified) the primary 2003 paper confirms the bag size (4 x 7 x 10 ft, 7.9 m3), the Phase I count (110) and the 30 m cross-shore extent (p.14) against the 28.6 m of the outline (-4.7 %); it reprints the same drawing as Fig. 4. It does NOT contain an as-built plan, so confidence stays medium; the datum of the crest label is ambiguous (drawing '-6' MSL' vs paper '-6 ft MLLW': same number, 0.85 m apart)"
+   "+ (re-verified 2026-10-10) the primary 2003 paper confirms the bag size (4 x 7 x 10 ft, 7.9 m3), the Phase I count (110) and a 30 m cross-shore extent (p.14; its Fig. 20 re-measured at 29.0 x 58.5 m on its own bar vs our 28.6 x 58.0 m); Fig. 4 is the same Skelly design drawing as img1 (and the same raster as img5, so those two are not independent of each other). It does NOT contain an as-built plan, so confidence stays medium; the datum of the crest label stays ambiguous (drawing '-6' MSL' vs paper '-6 ft MLLW': same number, 0.85 m apart) and is not resolvable from the paper"
   ]
  },
  "design_version": {
@@ -1266,11 +1266,11 @@
   },
   {
    "quantity": "cross-shore width (apex face to the arms' shoreward ends)",
-   "text_value": "'Narrowneck extends over 150 m offshore, while Pratte's only extends 30' (Borrero & Nelsen 2003 p.14, primary); earlier polygon 31.2 m (= Gemini's bbox, not independent)",
-   "text_ref": "R28 p.14 (this replaces the untraceable web-summary snippet)",
-   "drawing_value": "28.6 m (img1); 28.7 m (img5)",
+   "text_value": "'Narrowneck extends over 150 m offshore, while Pratte's only extends 30' (Borrero & Nelsen 2003 p.14, primary; NO unit printed after 30, metres by context); independent: the paper's Fig. 20 (p.14) draws the Pratte's V beside Narrowneck on its own 0-50 m bar; earlier polygon 31.2 m (= Gemini's bbox, not independent)",
+   "text_ref": "R28 p.14 text + Fig. 20 (raster 576 x 282 px, saved src/bn2003_fig20_pratte_vs_narrowneck_raster.png; re-measurement overlays/bn2003_fig20_pratte_scale_check_2026-10-10.png)",
+   "drawing_value": "28.6 m (img1); 28.7 m (img5); Fig. 20 re-measured 2026-10-10: 29.0 m cross-shore x 58.5 m tip to tip (bar 70 px = 50 m, V 41 x 82 px, +-1 px = +-1.4%)",
    "diff_pct": -4.7,
-   "comment": "UPDATED 2026-10-05: the 30 m statement is now traced to its source (p.14 of the supplied paper). 28.6 m vs 30 m = -4.7 %: agrees within the paper's rounding ('30')."
+   "comment": "UPDATED 2026-10-10 (re-verification): the 30 in the text is rounded; Fig. 20 draws the same V (5 x 5 spine grid, two-row arms) on a 0-50 m bar and gives 29.0 x 58.5 m, i.e. +1.4% / +0.9% vs our 28.6 x 58.0 m outline, so the outline's size is confirmed by a scale bar that is independent of the Skelly bar. The text '30' is -4.7% (rounding) and does NOT change the verdict (agrees). Caution: '30' is not diagnostic of the phase, because the Phase II centreline bump in Fig. 5 is 29.4 m wide (3d/computed.json bn_base_w) - both readings give about 30 m."
   },
   {
    "quantity": "envelope area of the solid (built) bags",
@@ -1534,17 +1534,39 @@
    "check": "7 confidence",
    "verdict": "medium confirmed",
    "evidence": "Rubric: medium = traced on a scaled design drawing. Not high: no survey/photo, as-built differed (bags moved, buried), Phase II absent, not geo-referenced. Not low: scaled drawing from the designer, bag size cross-check within 6%, two reproductions agree 0.5% in area, dimensions of the drawn design are self-consistent."
+  },
+  {
+   "check": "8 re-verification 2026-10-10: Borrero & Nelsen (2003) pp.1-3, 14, 16 re-read",
+   "verdict": "confirmed, quotes and numbers as recorded",
+   "evidence": "Text re-extracted from src/borrero_nelsen_2003_prattes_monitoring_results.pdf: p.1 reef about 200 m south of the 1-mile outfall, within 500 m of outfall and Grand Street jetty; p.2 110 bags 4' x 7' x 10', 280 ft3 (7.9 m3), 80-90% filled, about 14 t, installed 22 Sept 2000, 'obtuse V' apex offshore, 'after the initial installation the depth at the outermost point of the reef was approximately - 6 ft MLLW'; p.3 Phase II 23-24 Apr 2001, 90 bags, +80% volume, crest widened and 'shallower, to within 3ft of MLLW', placed directly over Phase I; p.14 'Pratte's only extends 30' (no unit); p.16 about 1600 m3 in 200 bags, bags mostly level with the sand by 2002. Fig. 2 viewed: 'Reef' label lies between the outfall and the Grand Street jetty (north of that jetty). Minor wording: the paper calls the V 'obtuse', the drawing's arms are 89.1 deg apart (right angle); the drawing, not the wording, is what was traced."
+  },
+  {
+   "check": "9 re-verification: Fig. 4 is the same drawing as img1",
+   "verdict": "confirmed (identical drawing; img5 is the same raster as Fig. 4)",
+   "evidence": "Fig. 4 raster (371 x 468 px) has the same title block, BAG COUNT 110, OPTIONAL BAGS 30, TOP OF BAG MIN DEPTH -6' MSL call-outs, 45 deg mark and a complete 0-15-30-60-90 ft bar (segments 27 / 27 / 54 / 53 px = 1.789 px/ft, the same as img5's 1.7889). img5 (371 x 420) matches Fig. 4 at zero offset (94% of pixels within 8 grey levels, normalised correlation 0.93): img5 is a crop of the same raster, so Fig. 4 and img5 are one reproduction, independent only of img1 (RWR). The img5 outline (72 vertices) drawn on Fig. 4 (overlays/bn2003_fig4_with_img5_outline_2026-10-10.png, viewed) follows the first solid stroke of both arms, the 5 x 5 spine and both tips; the dashed optional bags lie outside. No change to polygons, canonical frame or design_version.drawn."
+  },
+  {
+   "check": "10 re-verification: does the 30 m statement (p.14) change the dimensions verdict",
+   "verdict": "no; dimensions agree, and Fig. 20 adds an independent scale",
+   "evidence": "Fig. 20 (p.14, embedded raster 576 x 282) draws the Pratte's V next to Narrowneck on a 0-50 m bar (ticks at x = 400 and 470 px, 1.40 px/m). The V measures 82 px tip to tip = 58.5 m and 41 px cross-shore = 29.0 m (+-1 px = +-1.4%), versus our 58.0 x 28.6 m (+0.9% / +1.4%). So the paper's '30' is a rounded 29, the unit is metres, and the outline size is confirmed by a scale bar independent of the Skelly bar. '30' is not diagnostic of the phase: the Phase II centreline bump of Fig. 5 is 29.4 m wide as well."
+  },
+  {
+   "check": "11 re-verification: crest datum label and what the 3D model uses",
+   "verdict": "model uses the paper's value correctly; datum ambiguity unresolved (judgement call, not changed)",
+   "evidence": "Recomputed from 3d/src/noaa_9410840_datums.json: MSL - MLLW = 1.594 - 0.745 = 0.849 m (Los Angeles 9410660: 2.028 - 1.167 = 0.861 m); MSL - NAVD88 = 0.792 m. -6 ft MLLW = -(1.829 + 0.849) = -2.678 m MSL (model zB, default state B); -3 ft MLLW = -1.763 m MSL (zC, not modelled); the drawing's -6' MSL = -1.829 m MSL (state A). A and B differ by exactly 0.849 m; the paper does not say which label is right, and the points differ too (paper: outermost point = apex, deepest; drawing: minimum depth at the shoreward arm tips). Both are selectable in the model; B (as-installed, paper, MLLW) is the default, which is the better-documented as-built statement. No evidence to overturn it, none to confirm it: left to Lior (see HANDOFF)."
+  },
+  {
+   "check": "12 re-verification: reef position, text vs Fig. 2",
+   "verdict": "geo stays null; hint uncertainty possibly +-150 m instead of +-100 m (judgement call, not changed in the model)",
+   "evidence": "Fig. 2 re-read by eye: range lines 550 m apart, reef chevron about 340 m from the outfall landfall and about 670 m from the Grand Street jetty arrow, against the text's 200 m and 'within 500 m'. The paper is internally inconsistent by 140-170 m; the hint (33.92058, -118.43335) is only a marker position and the model's reef position along the shore-normal comes from the 91.44 m text value. No polygon or model number changes."
   }
  ],
- "geo_note": "No lat/lon polygon: three published coordinates disagree by up to 313 m alongshore (card/Wikipedia 33.915,-118.4325; Gemini 33.9162,-118.4312; RWR page 33.913666,-118.429733) and none can be tied to the structure (removed 2008-2010; no pre-removal georeferenced image retrievable). All three lie south of the short rock groin at 33.91685,-118.43030 (assumed to be the Grand Street/Grand Avenue jetty: the only groin in the 800 m crop), whereas two primary sources put the reef north of the Grand Street jetty: CCC staff report E-98-15 (300 yd north of it, 100 yd offshore, 1996-98 siting) and Borrero & Nelsen 2003 (about 200 m south of the Hyperion 1-mile outfall, within 500 m of the outfall and the jetty, aerial figure labels 'Reef' between them). A text-only estimate from the CCC figures (274 m along the 335.5 deg shoreline from the groin, 91 m offshore toward 245.5 deg) is about 33.9188,-118.4324 with an uncertainty of +-150 m or worse; it is NOT used for any polygon and is listed only as a hint for a page marker labelled 'position approximate'. The RWR page coordinate (about 350 m south of that groin) contradicts both primary sources. UPDATE 2026-10-05 (3D run, Borrero & Nelsen 2003 supplied by Lior): Fig. 9 of that paper is a vector bathymetry window on a UTM zone 11N grid (E 367,449-367,561 m, N 3,754,239-3,754,311 m; contours -1..-4 m, Oct 2000 and Mar 2001); its centre is 33.92058 N, -118.43335 E. The paper says the reef is 'approximately 200 m south of the Hyperion 1-mile outfall'; the outfall landfall read on the Navionics chart (33.9231 N, -118.4337, +-20 m) + 200-318 m south along 155 deg + 91 m offshore gives 33.9202-33.9211 N, -118.4332..-118.4337, within 35 m of the window centre. INFERRED position hint 33.92058, -118.43335 (+-100 m); it lies 217 m NNW of the earlier text-derived hint (33.9188, -118.4324) and supersedes it. geo stays null: the reef outline is not drawn in Fig. 9, so there is no georeferenced polygon.",
- "pending_reverification": {
-  "since": "2026-10-05",
-  "reason": "shape.json was edited after its verification (verified_on 2026-10-04) to record the supplied Borrero & Nelsen (2003) PDF (sources img7, reference R28), the upgraded dimension checks, the position note in geo_note and one confidence factor. The outline polygons, the canonical frame, design_version.drawn and the confidence level were NOT changed.",
-  "verifier_todo": [
-   "re-read img7 / R28 pages 1-3, 14, 16 and 3d/annotated/A12-A14, A17",
-   "confirm that Fig. 4 is the same drawing as img1 (3d/annotated/A13)",
-   "decide whether the 30 m cross-shore statement (p.14) changes the dimensions_check verdict",
-   "do not mark verified until done"
-  ]
+ "geo_note": "No lat/lon polygon: three published coordinates disagree by up to 313 m alongshore (card/Wikipedia 33.915,-118.4325; Gemini 33.9162,-118.4312; RWR page 33.913666,-118.429733) and none can be tied to the structure (removed 2008-2010; no pre-removal georeferenced image retrievable). All three lie south of the short rock groin at 33.91685,-118.43030 (assumed to be the Grand Street/Grand Avenue jetty: the only groin in the 800 m crop), whereas two primary sources put the reef north of the Grand Street jetty: CCC staff report E-98-15 (300 yd north of it, 100 yd offshore, 1996-98 siting) and Borrero & Nelsen 2003 (about 200 m south of the Hyperion 1-mile outfall, within 500 m of the outfall and the jetty, aerial figure labels 'Reef' between them). A text-only estimate from the CCC figures (274 m along the 335.5 deg shoreline from the groin, 91 m offshore toward 245.5 deg) is about 33.9188,-118.4324 with an uncertainty of +-150 m or worse; it is NOT used for any polygon and is listed only as a hint for a page marker labelled 'position approximate'. The RWR page coordinate (about 350 m south of that groin) contradicts both primary sources. UPDATE 2026-10-05 (3D run, Borrero & Nelsen 2003 supplied by Lior): Fig. 9 of that paper is a vector bathymetry window on a UTM zone 11N grid (E 367,449-367,561 m, N 3,754,239-3,754,311 m; contours -1..-4 m, Oct 2000 and Mar 2001); its centre is 33.92058 N, -118.43335 E. The paper says the reef is 'approximately 200 m south of the Hyperion 1-mile outfall'; the outfall landfall read on the Navionics chart (33.9231 N, -118.4337, +-20 m) + 200-318 m south along 155 deg + 91 m offshore gives 33.9202-33.9211 N, -118.4332..-118.4337, within 35 m of the window centre. INFERRED position hint 33.92058, -118.43335 (+-150 m; stated +-100 m until 2026-10-10, changed by team decision D10 because the paper text and its Fig. 2 disagree by 140-170 m); it lies 217 m NNW of the earlier text-derived hint (33.9188, -118.4324) and supersedes it. geo stays null: the reef outline is not drawn in Fig. 9, so there is no georeferenced polygon. RE-VERIFICATION 2026-10-10: the paper's own numbers disagree: text p.1 says the reef is about 200 m south of the outfall and within 500 m of both the outfall and the Grand Street jetty, whereas Fig. 2 (range lines 550 m apart = 6.25 m/px) puts the reef chevron about 340 m from the outfall landfall and about 670 m from the Grand Street jetty arrow (re-read by eye, +-60 m). The hint (33.92058, -118.43335) is therefore stated as +-150 m (decided 2026-10-10 by the project team; the 3D notes were updated, no coordinate or polygon moved). geo stays null; nothing in the outline depends on it.",
+ "reverified_on": "2026-10-10",
+ "reverification": {
+  "on": "2026-10-10",
+  "scope": "items of the former pending_reverification block (Borrero & Nelsen 2003 pp.1-3, 14, 16; Fig. 4 = img1; 30 m statement)",
+  "result": "all confirmed; no change to polygons, canonical frame, design_version.drawn or confidence (medium); text of one dimensions_check row, one confidence factor and geo_note updated; see VERIFY.md section 'RE-VERIFICATION 2026-10-10'",
+  "archive": "07_scale/shapes/prattes-reef-el-segundo/archive/pre_reverify_2026-10-10/"
  }
 }

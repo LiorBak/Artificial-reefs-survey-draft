@@ -31,6 +31,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]          # .../Artificial reef
 CARDS_DIR = ROOT / "02_research" / "reefs"
+DEAD_ENDS_DIR = ROOT / "02_research" / "dead_ends"      # 2026-10-10 (Lior): sources that gave nothing, one file per reef
 BUILD_DIR = ROOT / "04_build"
 ASSETS_DIR = BUILD_DIR / "assets"
 DATA_DIR = BUILD_DIR / "data"
@@ -436,6 +437,26 @@ def label_images(images):
     return out
 
 
+def local_copy_for(slug, url, license_text, problems):
+    """2026-10-20: a hot-linked image with an open (CC / public domain) licence whose original is
+    saved and registered in 03_images/reefs/<slug>/images.json is shown from the LOCAL copy
+    (assets/<slug>/...). Others stay hot-linked (rights not cleared). Returns the path or None."""
+    if not url or not re.search(r"\bcc\b|creative commons|public domain", license_text or "", re.I):
+        return None
+    reg = ROOT / "03_images" / "reefs" / slug / "images.json"
+    if not reg.is_file():
+        return None
+    try:
+        rows = json.loads(reg.read_text(encoding="utf-8"))
+    except ValueError:
+        return None
+    for row in rows:
+        f = row.get("file") or ""
+        if _norm_url(row.get("image_url")) == _norm_url(url) and f.startswith(f"03_images/reefs/{slug}/") and (ROOT / f).is_file():
+            return copy_local_asset(f, slug, problems)
+    return None
+
+
 def compute_hero_image(card, slug, problems):
     """Hero = best hotlinkable image by what it shows: structure visible, then reef effect
     visible, then site context only, then unlabelled. Within a tier: the media re-check's
@@ -464,6 +485,7 @@ def compute_hero_image(card, slug, problems):
         s = norm_shows(im.get("shows"))
         return {
             "url": im.get("url"),
+            "local": local_copy_for(slug, im.get("url"), im.get("license"), problems),
             "credit": im.get("credit"),
             "license": im.get("license"),
             "source_page": im.get("source_page"),
@@ -573,6 +595,13 @@ def process_reviews(card, references, slug, problems):
         rid = by_url.get(_norm_url(rev.get("url")))
         if rid:
             r["ref_id"] = rid
+        elif not rev.get("url") and str(rev.get("outlet") or "").lower().startswith("personal communication"):
+            # 2026-10-10: an interview has no URL; its source pop-up is the card's "personal communication" reference
+            pc = [ref["id"] for ref in references if "personal communication" in str(ref.get("type") or "").lower() or "personal communication" in str(ref.get("citation") or "").lower()]
+            if len(pc) == 1:
+                r["ref_id"] = pc[0]
+            else:
+                problems.append(f"[{slug}] personal-communication review by {rev.get('who')!r}: {len(pc)} candidate references, none linked")
         elif rev.get("url"):
             problems.append(f"[{slug}] review by {rev.get('who')!r}: URL matches no reference (shown as a plain link)")
         out.append(r)
@@ -679,6 +708,172 @@ def confidence_level(text):
     return m.group(1) if m else "unknown"
 
 
+# ---------------------------------------------------------------------------
+# 2026-10-10 (Lior): "Don't show the shape of reefs you don't know."
+# An outline is drawn ONLY when it comes from a real plan source: 07_scale/shapes/<slug>/shape.json with
+# a traced/verified outline (survey, scaled drawing, or a clearly visible structure in a dated georeferenced image).
+# Hidden: footprint.json carries display:false / DO_NOT_DISPLAY, or there is no shape.json, or its status is not
+# traced/verified, or it has no canonical polygon. A hidden reef keeps NO polygon in the compiled data
+# (footprint = {display: false, hidden_reason, feasibility_md, ...}); the dialog shows a short text instead.
+# The drawn outline is shape.json canonical.polygons_m (NOT the older text-derived footprint.json polygon).
+# ---------------------------------------------------------------------------
+SHAPES_DIR = ROOT / "07_scale" / "shapes"
+DOCS_SHAPES_DIR = BUILD_DIR / "docs" / "scale" / "shapes"
+SHAPE_OK_STATUS = ("verified", "traced", "verified with issues")
+
+
+def load_shape(slug):
+    p = SHAPES_DIR / slug / "shape.json"
+    if not p.is_file():
+        return None
+    try:
+        return json.loads(p.read_text(encoding="utf-8"))
+    except ValueError:
+        return None
+
+
+def _shape_conf(shape):
+    c = (shape or {}).get("confidence")
+    if isinstance(c, dict):
+        return c
+    return {"level": confidence_level(c), "reason": str(c or ""), "factors": []}
+
+
+def footprint_hide_reason(slug, raw, shape):
+    """None = the outline may be drawn; otherwise the plain-text reason it is hidden."""
+    if raw.get("display") is False or raw.get("DO_NOT_DISPLAY"):
+        return raw.get("display_reason") or raw.get("status_flag") or "Marked do-not-display in the footprint file."
+    if shape is None:
+        return "No shape.json: no traced outline exists for this reef."
+    st = str(shape.get("status") or "").lower()
+    if st not in SHAPE_OK_STATUS:
+        return _shape_conf(shape).get("reason") or f"shape.json status is '{st}' (not a traced or verified outline)."
+    if not (shape.get("canonical") or {}).get("polygons_m"):
+        return "shape.json has no traced outline polygon."
+    return None
+
+
+def _copy_docs(slug, names, hidden=False):
+    """Copy the shape folder's method / verification / sources / feasibility notes next to the page (docs/scale/shapes/<slug>/)."""
+    out = {}
+    for n in names:
+        src = SHAPES_DIR / slug / n
+        key = n.rsplit(".", 1)[0].lower()
+        if src.is_file():
+            dst = DOCS_SHAPES_DIR / slug / n
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(src, dst)
+            out[key] = f"docs/scale/shapes/{slug}/{n}"
+            out[key + "_src"] = f"07_scale/shapes/{slug}/{n}"
+    return out
+
+
+def hidden_footprint(slug, raw, shape, reason):
+    fp = {"display": False, "hidden_reason": reason, "slug": slug, "ref_ids_in_derivation": [],
+          "status": (shape or {}).get("status") or "no shape.json", "polygons": []}
+    fp.update({"docs": _copy_docs(slug, ["FEASIBILITY.md"])})
+    # a stale copy of the earlier provenance md (it describes the hidden outline) must not stay next to the page
+    stale = DOCS_SCALE_DIR / f"{slug}.md"
+    if stale.is_file():
+        stale.unlink()
+    return fp
+
+
+def _latlon_ok(a):
+    return isinstance(a, (list, tuple)) and len(a) >= 2 and all(isinstance(x, (int, float)) for x in a[:2])
+
+
+def _decimals(x):
+    s = repr(float(x))
+    return len(s.split(".")[1].rstrip("0")) if "." in s else 0
+
+
+def _km(a, b):
+    import math
+    r = 6371.0
+    p1, p2 = math.radians(a[0]), math.radians(b[0])
+    dl = math.radians(b[1] - a[1])
+    h = math.sin((p2 - p1) / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(dl / 2) ** 2
+    return 2 * r * math.asin(math.sqrt(h))
+
+
+def location_for(slug, card, shape, shown):
+    """Where the reef is, for the 'Location: open in Google Maps' link. Order: shape.json geo (centre of the traced outline),
+    shape.json location_note.approx_centre_latlon, the card's lat/lon. approximate=True when the point is not tied to the
+    structure: coordinates of 3 or fewer decimals, a shape.json geo_note/location_note saying the card position is unreliable,
+    or a centre taken from an outline we do not show. status: ok | approximate | none."""
+    cl = (card.get("lat"), card.get("lon"))
+    card_pt = [float(cl[0]), float(cl[1])] if all(isinstance(x, (int, float)) for x in cl) else None
+    geo = (shape or {}).get("geo") or {}
+    pt = src = None
+    approx = False
+    note = ""
+    pl = geo.get("polygons_latlon") or []
+    pts = [q for ring in pl for q in ring if _latlon_ok(q)]
+    if _latlon_ok(geo.get("centroid_latlon")):
+        pt = [float(geo["centroid_latlon"][0]), float(geo["centroid_latlon"][1])]
+        src = "shape.json geo: centre of the traced outline"
+    elif pts:
+        pt = [(min(q[0] for q in pts) + max(q[0] for q in pts)) / 2, (min(q[1] for q in pts) + max(q[1] for q in pts)) / 2]
+        src = "shape.json geo: centre of the traced outline"
+    if pt and not shown:
+        approx = True
+        src = "shape.json geo: centre of a trace we do not show (rock platform / unscaled photo)"
+        note = "Centre of an outline that is not the reef's own shape, so the pin is approximate."
+    if pt is None:
+        ln = (shape or {}).get("location_note")
+        if isinstance(ln, dict) and _latlon_ok(ln.get("approx_centre_latlon")):
+            pt = [float(ln["approx_centre_latlon"][0]), float(ln["approx_centre_latlon"][1])]
+            src = "shape.json location_note: estimated centre (not traced)"
+            approx = True
+            note = f"Estimated from text and imagery, about +-{ln.get('uncertainty_m', 100)} m; the reef is not visible on any image."
+    if pt is None and card_pt:
+        pt = card_pt
+        src = f"02_research/reefs/{slug}.json lat/lon"
+        if min(_decimals(card_pt[0]), _decimals(card_pt[1])) <= 3:
+            approx = True
+            note = "The card gives the position to two or three decimals only."
+        if shape and shape.get("geo_note"):
+            approx = True
+            note = "Published coordinates disagree by hundreds of metres and none is tied to the structure (see the shape notes)."
+    elif pt and card_pt and _km(pt, card_pt) > 0.3:
+        note = (note + " " if note else "") + f"The card's own lat/lon ({card_pt[0]}, {card_pt[1]}) is {_km(pt, card_pt):.1f} km away and was not used."
+    if pt is None:
+        return {"status": "none", "label": "location not published", "note": "No coordinates are published for this reef."}
+    lat, lon = round(pt[0], 6), round(pt[1], 6)
+    loc = {
+        "status": "approximate" if approx else "ok", "lat": lat, "lon": lon, "approximate": approx,
+        "source": src, "note": note.strip(),
+        "maps_url": f"https://www.google.com/maps/search/?api=1&query={lat},{lon}",
+        "satellite_url": f"https://www.google.com/maps/@{lat},{lon},300m/data=!3m1!1e3",
+        # 2026-10-13 "Open location in..." block (Lior): same point, more tools
+        "dd": f"{lat:.5f}, {lon:.5f}", "dm": _deg_min(lat, lon),
+        "earth_url": f"https://earth.google.com/web/@{lat},{lon},0a,1000d,35y,0h,0t,0r",
+    }
+    # KML outline: ONLY for a reef whose outline is shown on the page (shape.json geo = the same canonical outline, default version)
+    rings = geo.get("polygons_latlon") or []
+    if shown and rings:
+        loc["outline_latlon"] = [[[round(float(q[0]), 6), round(float(q[1]), 6)] for q in ring if _latlon_ok(q)] for ring in rings]
+        loc["outline_latlon"] = [rg for rg in loc["outline_latlon"] if len(rg) >= 3]
+        if loc["outline_latlon"]:
+            loc["outline_source"] = "shape.json geo.polygons_latlon (the traced outline shown on the page, default version)"
+    return loc
+
+
+def _deg_min(lat, lon):
+    """'50 42.944 N, 1 50.802 W' style text: degrees and decimal minutes."""
+    def one(v, pos, neg):
+        h = pos if v >= 0 else neg
+        v = abs(v)
+        d = int(v)
+        m = (v - d) * 60
+        if round(m, 3) >= 60:
+            d, m = d + 1, 0.0
+        return f"{d}\u00b0{m:06.3f}'{h}"
+    return one(lat, "N", "S") + " " + one(lon, "E", "W")
+
+
+
 def load_footprint(slug, card, problems):
     """Footprint record for the Scale tab, plus the footprint references to merge.
     Returns (footprint_dict or None, footprint_refs)."""
@@ -687,6 +882,10 @@ def load_footprint(slug, card, problems):
         problems.append(f"[{slug}] no footprint file at {path}")
         return None, []
     raw = json.loads(path.read_text(encoding="utf-8"))
+    shape = load_shape(slug)
+    hide = footprint_hide_reason(slug, raw, shape)
+    if hide:
+        return hidden_footprint(slug, raw, shape, hide), []
 
     # --- nothing from *_rejected may reach the page: scrub rejected media URLs from the footprint text
     rej_urls = set()
@@ -708,6 +907,13 @@ def load_footprint(slug, card, problems):
     fp = deep_normalize_refs(_walk_strings(fp, scrub))
 
     polys = raw.get("polygons_m") or ([raw["polygon_m"]] if raw.get("polygon_m") else [])
+    # 2026-10-10: the drawn outline is the traced one (shape.json canonical), not the older text-derived footprint.json polygon.
+    canon = shape["canonical"]
+    flip = not re.search(r"sheet right|mirror", str(canon.get("frame") or ""))   # geom.py frames: +y = +x turned 90 deg clockwise -> sea at top needs x reversed
+    polys = [[[(-p[0] if flip else p[0]), p[1]] for p in ring] for ring in canon["polygons_m"]]
+    polys = [r if r[0] == r[-1] else r + [r[0]] for r in polys]   # canonical rings are stored open
+    fp["display"] = True
+    fp["plan_x_flipped"] = flip
     fp["polygons"] = polys
     if not polys:
         problems.append(f"[{slug}] footprint has no polygon")
@@ -716,13 +922,32 @@ def load_footprint(slug, card, problems):
     fp["geom"] = geo
     fp["closed"] = all(len(r) >= 4 and r[0] == r[-1] for r in polys)
     fp["area_computed_m2"] = round(geo["area"], 1)
-    a = raw.get("area_m2")
+    a = canon.get("area_m2")
     if isinstance(a, (int, float)) and a > 0 and abs(geo["area"] - a) / a > 0.15:
-        problems.append(f"[{slug}] polygon area {geo['area']:.0f} m2 differs >15% from area_m2 {a}")
+        problems.append(f"[{slug}] traced polygon area {geo['area']:.0f} m2 differs >15% from shape.json canonical area_m2 {a}")
+    fp["text_estimate_area_m2"] = raw.get("area_m2")
+    fp["area_m2"] = round(geo["area"], 1)
+    bb = geo["bbox"]
+    fp["bbox_m"] = {"length_alongshore": round(bb["maxx"] - bb["minx"], 1), "width_crossshore": round(bb["maxy"] - bb["miny"], 1),
+                    "note": "extent of the traced outline (shape.json canonical), alongshore x offshore"}
+    for k in ("polygon_notes", "polygon_components_notes", "area_m2_notes"):
+        fp.pop(k, None)
+    sc = _shape_conf(shape)
+    fp["status"] = shape.get("status")
+    fp["verified_on"] = shape.get("verified_on") or shape.get("updated") or fp.get("verified_on")
+    fp["confidence"] = sc.get("reason") or fp.get("confidence")
+    fp["shape_conf_factors"] = [str(x) for x in (sc.get("factors") or [])]
+    fp["text_confidence"] = raw.get("confidence")
+    srcs = {s.get("id"): s for s in (shape.get("sources") or []) if isinstance(s, dict)}
+    s0 = srcs.get(str(canon.get("derived_from") or "").split(" ")[0]) or {}
+    fp["outline_source"] = {k: s0.get(k) for k in ("id", "kind", "title", "image_date", "credit", "page_or_figure", "url", "source_page") if s0.get(k)}
+    fp["outline_source"]["derived_from"] = str(canon.get("derived_from") or "")
+    fp["outline_source"]["frame"] = str(canon.get("frame") or "")
+    fp["docs"] = _copy_docs(slug, ["METHOD.md", "VERIFY.md", "sources.md"])
 
     shape = str(raw.get("shape_type") or "")
     fp["shape_short"] = shape if len(shape) <= 40 else shape.split("(")[0].strip()
-    fp["confidence_level"] = confidence_level(raw.get("confidence"))
+    fp["confidence_level"] = sc.get("level") if sc.get("level") in ("high", "medium", "low") else confidence_level(sc.get("reason"))
 
     crest = raw.get("crest_depth_m") or {}
     spec = CREST_SHORT.get(slug)
@@ -760,6 +985,8 @@ def load_footprint(slug, card, problems):
         im["thumb_ok"] = bool(acc and acc.get("hotlink_ok") is True)
         relied.append(im)
     fp["images_relied_on"] = deep_normalize_refs(relied)
+    fp["outline_source"] = _walk_strings(fp["outline_source"], scrub)
+    fp["shape_conf_factors"] = _walk_strings(fp["shape_conf_factors"], scrub)
 
     gc = fp.get("gemini_comparison") or {}
     fp["gemini_n_disagree"] = len(gc.get("disagree") or [])
@@ -821,6 +1048,39 @@ def merge_footprint_refs(slug, references, fp_refs, problems):
 # Main compile
 # ---------------------------------------------------------------------------
 
+DEAD_END_FIELDS = ("what", "kind", "where", "checked", "by", "result", "detail", "might_work")
+
+
+def load_dead_ends(slug, problems):
+    """02_research/dead_ends/<slug>.json -> list of entries for the collapsed 'Checked, nothing useful' section of the reef dialog.
+    Not references: nothing here is cited from the card text and nothing reaches the card's references list. File order is kept (append only)."""
+    path = DEAD_ENDS_DIR / f"{slug}.json"
+    if not path.is_file():
+        problems.append(f"[{slug}] dead-ends file not found at {path}")
+        return []
+    try:
+        d = json.loads(path.read_text(encoding="utf-8"))
+    except ValueError as e:
+        problems.append(f"[{slug}] dead-ends file is not valid JSON: {e}")
+        return []
+    entries = d.get("entries") if isinstance(d, dict) else d
+    if not isinstance(entries, list):
+        problems.append(f"[{slug}] dead-ends file has no 'entries' list")
+        return []
+    if isinstance(d, dict) and d.get("slug") not in (None, slug):
+        problems.append(f"[{slug}] dead-ends file says slug {d.get('slug')!r}")
+    out = []
+    for i, e in enumerate(entries):
+        if not isinstance(e, dict):
+            problems.append(f"[{slug}] dead end #{i + 1} is not an object")
+            continue
+        miss = [k for k in DEAD_END_FIELDS if k not in e]
+        if miss:
+            problems.append(f"[{slug}] dead end #{i + 1} lacks {miss}")
+        out.append({k: ("" if e.get(k) is None else str(e.get(k))) for k in DEAD_END_FIELDS})
+    return out
+
+
 def compile_card(slug, problems):
     path = CARDS_DIR / f"{slug}.json"
     if not path.is_file():
@@ -858,10 +1118,16 @@ def compile_card(slug, problems):
     references = process_references(card, slug, problems)
     reviews = process_reviews(card, references, slug, problems)
     images = label_images(card.get("images") or [])
+    for im in images:
+        loc = local_copy_for(slug, im.get("url"), im.get("license"), problems) if im.get("hotlink_ok") is True else None
+        if loc:
+            im["local"] = loc
 
     # Scale tab: verified footprint + its references (S# ids kept distinct from the card's R#)
     footprint, fp_refs = load_footprint(slug, card, problems)
     references = merge_footprint_refs(slug, references, fp_refs, problems)
+    shape_for_loc = load_shape(slug)
+    location = location_for(slug, card, shape_for_loc, bool(footprint and footprint.get("display")))
     if footprint:
         known = {r["id"] for r in references}
         for rid in footprint["ref_ids_in_derivation"]:
@@ -902,6 +1168,8 @@ def compile_card(slug, problems):
         "references": references,
         "facts_without_ref": facts_without_ref,
         "footprint": footprint,
+        "location": location,
+        "dead_ends": load_dead_ends(slug, problems),
     })
     out.pop("hero_recommendation", None)
 
@@ -945,6 +1213,8 @@ def main():
     for f in sorted(ASSETS_DIR.rglob("*")):
         if f.is_file():
             rel = str(f.relative_to(BUILD_DIR)).replace("\\", "/")
+            if rel.startswith("assets/paper_figures/"):
+                continue          # 2026-10-19: paper figures are referenced by src/template.html, not by reef data
             if rel.startswith("assets/images/"):
                 continue          # round 11: the 3D tab's picture copies belong to compile_models3d.py (it regenerates and prunes them itself); sweeping them here forced a 55 s re-encode on every build
             if rel not in blob:

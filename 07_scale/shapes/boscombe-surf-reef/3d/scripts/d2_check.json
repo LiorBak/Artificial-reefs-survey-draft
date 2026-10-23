@@ -1,0 +1,70 @@
+{
+ "before": {
+  "nav": {
+   "mean": -0.27,
+   "sd": 1.23,
+   "rms": 1.2,
+   "n": 11
+  },
+  "slope_per100m_y380": 0.763,
+  "range_y380": 2.15,
+  "slope_per100m_y450": 0.763,
+  "range_y450": 2.15,
+  "slope_per100m_y520": 0.763,
+  "range_y520": 2.14,
+  "slope_per100m_y650": 0.763,
+  "range_y650": 2.15,
+  "trend_zone_ge380_per100m": 0.763,
+  "cross_shore_slope_ge382": -0.0141,
+  "row380_codes": [
+   1
+  ],
+  "step_378_380_max_abs_m": 0.04,
+  "edge_x-160_z380": -8.94,
+  "edge_x+160_z380": -6.79,
+  "z_mean_ge380": -9.681,
+  "min_z": -12.75,
+  "max_z": 3.44
+ },
+ "after": {
+  "nav": {
+   "mean": -0.18,
+   "sd": 0.51,
+   "rms": 0.51,
+   "n": 11
+  },
+  "slope_per100m_y380": -0.0,
+  "range_y380": 0.0,
+  "slope_per100m_y450": 0.0,
+  "range_y450": 0.0,
+  "slope_per100m_y520": -0.0,
+  "range_y520": 0.0,
+  "slope_per100m_y650": -0.0,
+  "range_y650": 0.0,
+  "trend_zone_ge380_per100m": 0.0,
+  "cross_shore_slope_ge382": -0.0141,
+  "row380_codes": [
+   1
+  ],
+  "step_378_380_max_abs_m": 1.13,
+  "edge_x-160_z380": -7.78,
+  "edge_x+160_z380": -7.78,
+  "z_mean_ge380": -9.681,
+  "min_z": -11.58,
+  "max_z": 3.44
+ },
+ "cells_changed_total": 21779,
+ "cells_changed_rows_min_y": 380.0,
+ "cells_changed_below_380": 0,
+ "codes_identical": true,
+ "datum_w_identical": true,
+ "reef_identical": true,
+ "reef_sha1": "f286920802",
+ "stats_identical": true,
+ "shoreline_identical": true,
+ "water_levels_identical": true,
+ "all_finite": true,
+ "zone5_cells": 21735,
+ "zone5_cells_before": 21735,
+ "zone5_all_rows_flat_in_x": true
+}

@@ -60,7 +60,7 @@ def main(update_shape=False):
     tail = mh + ax * dp['s']['R3'] * 0.5 + ax * dp['s']['R2'] * 0.5      # mid-point of the tail ramp
     nodes = L.seabed_nodes(F, shape, os.path.join(SRC, 'lidar_beach_SN6089_2022-03-19.npz'), os.path.join(SRC, 'fig2_contours_canonical.json'),
                            ex_union, arm_axis=((float(tail[0]), float(tail[1])), (float(mh[0]), float(mh[1]))))
-    sx, sy, Zodn, rbf = L.seabed_grid(nodes)
+    sx, sy, Zodn, rbf = L.seabed_grid(nodes, c4=L.contour4_line(os.path.join(SRC, 'fig2_contours_canonical.json')))
     # node-fit residuals (design nodes) for METHODS
     fit_res = {}
     for src in sorted(set(n['src'] for n in nodes)):
@@ -206,7 +206,7 @@ def main(update_shape=False):
 
     # --- docs.js -----------------------------------------------------------------------------------------
     docs = {}
-    for key, fn in (('methods_md', 'METHODS_3D.md'), ('sources_md', 'SOURCES_3D.md')):
+    for key, fn in (('methods_md', 'METHODS_3D.md'), ('register_md', 'REGISTER_3D.md'), ('sources_md', 'SOURCES_3D.md')):
         p = os.path.join(HERE, fn)
         docs[key] = open(p, encoding='utf-8').read() if os.path.exists(p) else ''
     with open(os.path.join(HERE, 'docs.js'), 'w', encoding='utf-8') as f:
@@ -246,10 +246,10 @@ def provenance(M, stats, nodes, fit_res, nav):
     add('toe berm and blanket (Type 0 and Type 6)', 'berm 1.35 m high x 3.0 m top, apron 2.0 m, blanket 0.5 m', 'm', 'drg1021', 'sections N1-N3 dimension labels (1350, 3000, 2000, 500)', 'as labelled', False)
     add('seabed under northern arm', '%.2f mean (%.1f..%.1f)' % (stats['seabed_under_N_foot_mean_mODN'], *stats['seabed_under_N_foot_min_max']), 'mODN', 'drg1021', 'drawn layer thicknesses below +0.50: 2.70 + 1.31 + 0.50 = -4.01 (N3); N4 about -3.8; bed lines in sections are schematic (note 4: bed levels vary); tail shallower (assumed)', '+-0.4 m (+-0.6 m at the tail)', True)
     add('seabed under southern oval', '%.2f mean (%.1f..%.1f)' % (stats['seabed_under_S_foot_mean_mODN'], *stats['seabed_under_S_foot_min_max']), 'mODN', 'drg1023', 'note on S2: bed -3.6 to -4.2 mODN (shoreward to seaward); HRPP576 text: C about -3.5', '+-0.4 m', True)
-    add('seabed contours around the reefs', '-3.0 contour at about 287 m offshore; -2.0 at about 208 m; -4.0 at about 410-425 m', 'mODN', 'hrpp576f2', 'HRPP576 Fig 2 grey contours digitised and georeferenced via oval C and the 500 m bar; only -3.0 used as seabed node outside the reef zone; the -4.0 contour is not a node: the model is %.2f m deeper than it at its traced points (METHODS_3D 4)' % stats['model_minus_fig2_-4'][0], '+-0.5 m by eye; +-10 m horizontally', True)
+    add('seabed contours around the reefs', '-3.0 contour at about 287 m offshore; -2.0 at about 208 m; -4.0 at about 410-425 m', 'mODN', 'hrpp576f2', 'HRPP576 Fig 2 grey contours digitised and georeferenced via oval C and the 500 m bar; the -3.0 and the -4.0 contours are seabed nodes outside the reef zone (-4.0 since the D6 fix of 2026-10-07; 6 assumed bridge nodes where the contour is hidden behind the drawn mounds, 3 assumed nodes east of its traced end); -2.0 is a check only. Model minus the -4.0 contour at its traced points: %+.2f m (sd %.2f, n %d); pre-D6 it was -0.89 m (METHODS_3D 3.3, 4.4)' % tuple(stats['model_minus_fig2_-4']), '+-0.5 m by eye; +-10 m horizontally', True)
     add('bed under the oval, derived from section S1-S1', '-3.4 (centreline)', 'mODN', 'drg1023', '+1.50 top; Type 4 underside -1.20, Type 5 underside -2.90 (labels); Type 6 0.5 m below: -3.4', 'printed range on S2-S2 is -4.2 to -3.6 mODN: derived value 0.2 m shallower', True)
     add('beach and lower foreshore', 'DTM down to the water edge at about -2.3 mODN', 'mODN', 'lidar2022', 'Welsh Government LiDAR DTM 2022-03-19 sampled on a 6 m grid (3,000 nodes), reef cells excluded', '+-0.1 m vertical (DTM); 12 years after the survey of Fig 2', False)
-    add('seabed offshore gradient beyond 335 m', '-1.1 % (about 1:90)', '%', 'emodnet', 'EMODnet Bathymetry soundings (CDI 115084) y 368-652 m: -0.40..-3.36 m rel. LAT; used as gradient only, anchored on the design bed level at 335 m; z_MSL = e_LAT - 2.75', '+-0.3 % in slope; the absolute cell values are 1.0-1.4 m shallower than the design bed and are NOT used', True)
+    add('seabed offshore gradient beyond the Fig 2 -4.0 contour', '-1.1 % (about 1:90)', '%', 'emodnet', 'EMODnet Bathymetry soundings (CDI 115084) y 368-652 m: -0.40..-3.36 m rel. LAT; used as gradient only, starting from the HRPP576 Fig 2 -4.0 mODN contour (y 408-473 m, D6 fix 2026-10-07; before: from an assumed anchor -4.0 at y = 335 m); z_MSL = e_LAT - 2.75', '+-0.3 % in slope; the absolute cell values are 0.7-1.2 m shallower than the model at y 368-513 and are NOT used', True)
     add('datum zero (MSL) in mODN', '+0.31', 'mODN', 'ref3', '(MLWS + MLWN + MHWN + MHWS)/4 of the Aberystwyth row; z_MSL = z_ODN - 0.31', '+-0.15 m', True)
     add('chart datum (LAT) in mODN', '-2.44', 'mODN', 'ref4', 'NTSLF: Barmouth and Fishguard -2.44 m; MHWS 5.00 m CD; LiDAR sea surface at a spring low -2.2..-2.4', '+-0.1 m', True)
     add('MHWS / MHWN / MLWN / MLWS', '+2.56 / +1.06 / -0.64 / -1.74', 'mODN', 'ref3', 'West of Wales SMP2 p.4C.3, Aberystwyth; MHWS and MLWS also printed on drawing 9V5090/1021', 'tabulated', False)

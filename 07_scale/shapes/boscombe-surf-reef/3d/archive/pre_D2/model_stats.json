@@ -1,0 +1,57 @@
+{
+ "poly_area_m2": 4040.0,
+ "survey_relief_volume_m3": 9573.0,
+ "idealised_volume_m3": 13119.0,
+ "area_relief_gt": {
+  "0.5": 4473,
+  "1.0": 3841,
+  "1.5": 3209,
+  "2.0": 2583,
+  "3.0": 700
+ },
+ "relief_inside_outline_pct_5_25_50_75_95_max": [
+  0.78,
+  1.58,
+  2.33,
+  2.76,
+  3.32,
+  4.07
+ ],
+ "tps_fit_rms_m": 0.021,
+ "crest_z_acd_inside_outline_pct_5_25_50_75_95_max": [
+  -3.4,
+  -2.03,
+  -1.2,
+  -0.5,
+  0.11,
+  0.68
+ ],
+ "crest_max": {
+  "z_acd": 0.68,
+  "x": 20.0,
+  "y": 193.0
+ },
+ "seabed_under_outline_acd_mean_min_max": [
+  -3.56,
+  -4.72,
+  -2.4
+ ],
+ "flank_gradient_median_survey": 0.172,
+ "axis": {
+  "centre_xy": [
+   0.5,
+   223.4
+  ],
+  "unit_xy_offshore_end": [
+   -0.596,
+   0.803
+  ],
+  "bearing_to_offshore_end_deg": 210.0,
+  "length_core_m": 114.5
+ },
+ "crest_zone_area_m2": {
+  "-1.0": 1609,
+  "-0.5": 956,
+  "0.0": 296
+ }
+}

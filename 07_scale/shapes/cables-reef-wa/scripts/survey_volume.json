@@ -1,0 +1,35 @@
+{
+ "original_plan": {
+  "1999-11": {
+   "volume_m3": 4751.0,
+   "mean_thickness_m": 1.17,
+   "max_thickness_m": 3.85,
+   "n_soundings_used": 728,
+   "area_m2": 4050.0
+  },
+  "2002-02": {
+   "volume_m3": 5201.0,
+   "mean_thickness_m": 1.28,
+   "max_thickness_m": 2.87,
+   "n_soundings_used": 467,
+   "area_m2": 4050.0
+  }
+ },
+ "with_extension": {
+  "1999-11": {
+   "volume_m3": 4854.0,
+   "mean_thickness_m": 1.11,
+   "max_thickness_m": 4.25,
+   "n_soundings_used": 738,
+   "area_m2": 4358.0
+  },
+  "2002-02": {
+   "volume_m3": 5320.0,
+   "mean_thickness_m": 1.22,
+   "max_thickness_m": 2.87,
+   "n_soundings_used": 501,
+   "area_m2": 4358.0
+  }
+ },
+ "note": "thickness = sounding z (AHD) minus the 1998 bed interpolated at the same point; negatives clipped to 0; interpolated linearly between sounding lines (spacing ~5 m); uncertainty: bed interpolation +-0.2-0.3 m (1995 vs 1998 surveys differ by sd 0.29 m, mean 0.09 m) -> about +-1,000 m3 over 4,000 m2; singlebeam footprint smooths ridges (volume biased low)"
+}

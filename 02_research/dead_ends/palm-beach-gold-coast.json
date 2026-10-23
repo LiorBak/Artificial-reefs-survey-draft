@@ -1,0 +1,115 @@
+{
+  "slug": "palm-beach-gold-coast",
+  "entries": [
+    {
+      "what": "papers/ folder: any plan, levels or survey of the Gold Coast Palm Beach reef in Lior's 5 PDFs",
+      "kind": "paper",
+      "where": "papers/ folder (PyMuPDF text-layer grep for 'Palm Beach', 2026-10-10; Blacka et al. 2013 pp.75, 77, 79, 100, 115-118; Rendle thesis p.283)",
+      "checked": "2026-10-10",
+      "by": "agent: dead-ends compilation (papers/ scan); consistent with papers intake P3/P8 (2026-10-10)",
+      "result": "wrong site",
+      "detail": "Every 'Palm Beach' hit is Palm Beach, Florida (Midtown and Dupont submerged breakwaters, PEP Reef units; Dean et al. 1997 in Rendle's reference list), a different project. The 2013 NSW review predates the 2019 Gold Coast reef, and Mead and Borrero 2011, the 2007 Mount Maunganui paper (no text layer) and the Narrowneck 2023 paper do not cover it. The card therefore rests on City, ICCE and Bluecoast sources instead.",
+      "might_work": "Not in papers/; see the P7 entry below and E3"
+    },
+    {
+      "what": "Royal HaskoningDHV (c. 2017-18) Palm Beach Reef Design Reference Report, and any design summary (as-built levels; meaning of HEIGHT_M 5 / VOLUME 33,000)",
+      "kind": "report",
+      "where": "Royal HaskoningDHV project page (re-fetched 2026-10-05); web searches; City of Gold Coast pages",
+      "checked": "2026-10-10",
+      "by": "agent: Palm Beach 3D and re-check agents (cloud)",
+      "result": "not found",
+      "detail": "The report is internal and unpublished. The Haskoning project page exists but gives only concept values (144 m / 330 m), not the built reef, and no design summary. No as-built CAD drawing or bathymetric survey of the constructed reef is publicly accessible (Hunt et al. 2022 Fig 4 shows the final survey only as a qualitative oblique render).",
+      "might_work": "Lior: P7 / E3 (e-mail the City of Gold Coast)"
+    },
+    {
+      "what": "City of Gold Coast 'Artificial Reef' layer attributes HEIGHT_M 5 and VOLUME 33,000 (OBJECTID 4638): units and reference level",
+      "kind": "database",
+      "where": "https://services.arcgis.com/3vStCH7NDoBOZ5zn/arcgis/rest/services/Artificial_Reef/FeatureServer/0?f=json",
+      "checked": "2026-10-05",
+      "by": "agent: Palm Beach 3D agent (cloud)",
+      "result": "other: attributes undocumented",
+      "detail": "The layer fields (HEIGHT_M, LENGTH_M, WIDTH_M, AREA_SQM, VOLUME, TOP_REDUCED_LEVEL, BASE_REDUCED_LEVEL) have no description or unit text and the reduced-level fields are empty. The polygon (154 vertices) is used for the outline, but height 5 m and volume 33,000 conflict with the model (3.9 m, 22,000 m3) and with the card (about 25,000 m3; EPW says 60,000 t); unexplained.",
+      "might_work": "Lior: E3 (ask the City what the register values mean)"
+    },
+    {
+      "what": "Gemini's Palm Beach sources and figures: 'Palm Beach Shoreline Project Monitoring (2021)', 'Palm Beach Artificial Reef Design Summary (2019)', 'Palm Beach Reef Surfing Evaluation (2020)', 'Palm Beach Artificial Reef Monitoring & Review (2020)', image bluecoastconsulting.com.au/assets/images/palm-beach-reef.jpg, coordinates -28.1181, 153.4732",
+      "kind": "report",
+      "where": "Gemini reef_footprints.json, IMAGE_PROVENANCE.md and images_provenance.json (read-only); re-fetches of the named hosts",
+      "checked": "2026-10-10",
+      "by": "agent: Palm Beach tracer (2026-10-05) and re-check (2026-10-10)",
+      "result": "not found",
+      "detail": "The four document titles have no URL; the nearest real documents (Prenzler et al. ICCE 2022 abstract; Swellnet 2019-07-29) do not match the titles. The image URL returns HTTP 404. The coordinates are 1,214 m from the council polygon (Esri shows beach and surf zone, no offshore structure within 450 m). The chevron polygon is unsourced (IoU 0.41 with the traced outline). Gemini's field photo (Wikimedia Commons 'Palm Beach, Queensland, Australia.jpg', 'fronting the 2019 submerged rock reef') is a February 1967 photograph by Jack Bain (QUT) and cannot show the reef. Height 8.5 m, crest width 24 m and volume 25,000 m3 are unsupported. Only its 160 x 80 m / 270 m figures were re-confirmed in our own sources. Gemini lead not confirmed; nothing used.",
+      "might_work": ""
+    },
+    {
+      "what": "Engineering for Public Works (IPWEAQ) Issue 19, Sept 2020, pp.50-51 on Issuu (Palm Beach Artificial Reef article)",
+      "kind": "web page",
+      "where": "Issuu link given on the Bluecoast Consulting Engineers artificialreefs page",
+      "checked": "2026-10-05",
+      "by": "agent: Palm Beach verifier (cloud)",
+      "result": "broken link",
+      "detail": "The Issuu link returns HTTP 404. The Bluecoast-hosted image of the two pages (squarespace-cdn image-asset.png) is the evidence kept and matches our copy exactly (registry img-21).",
+      "might_work": ""
+    },
+    {
+      "what": "Garmin / Navionics web chart at Palm Beach for the reef crest and seabed (webapp.navionics.com, now maps.garmin.com/en-US/marine)",
+      "kind": "chart",
+      "where": "https://maps.garmin.com/en-US/marine (Navionics ChartViewer decommissioned by Garmin in July 2024), zoom 17/18 at -28.107334, 153.470913",
+      "checked": "2026-10-05",
+      "by": "agent: Palm Beach 3D agent (cloud, own headless Chrome)",
+      "result": "other: partial, crest and datum not resolved",
+      "detail": "No login or CAPTCHA appeared. The SonarChart gives the natural seabed (used, cross-checked against the aerial's contour lines; datum test best with LAT) but no reef contours; over the reef it shows only the label 'FISH HAVEN 1.5MT' and about 4.1 m at the crest centre, and the chart datum of that label is unstated. Deeper (10-13 m) shading for the PBO3 check was not captured (marginal +0.62 m). The seabed beside the reef is inferred, not surveyed.",
+      "might_work": "Lior: Navionics app readings A1-A7 in the Palm Beach 3D REQUESTS_FOR_LIOR.md (fish-haven pop-up text, toe depths)"
+    },
+    {
+      "what": "Gold Coast DTM (data.gov.au, 4.1 GB), City Contours MapServer and open-data hub, GA bathymetry service, QSpatial for Palm Beach seabed levels",
+      "kind": "database",
+      "where": "https://data.gov.au/data/dataset/digital-elevation-models-dem ; https://maps1.goldcoast.qld.gov.au/arcgis/rest/services/Contours/MapServer ; https://data-goldcoast.opendata.arcgis.com ; Geoscience Australia bathymetry service",
+      "checked": "2026-10-06",
+      "by": "agent: Gold Coast bathymetry / reports agent (cloud)",
+      "result": "other: no data at the reef",
+      "detail": "The DTM metadata geodatabase (104-row table, 65-step lineage) names no open-coast or reef survey; at Palm Beach the last data block lies 273 m landward of the reef centre and nothing is seaward. The City Contours service has no negative contour east of x = 543,500 and the hub has no bathymetry layer. The GA service is a classified 250 m raster (not usable) and QSpatial / Queensland Globe have no open-coast layer. The 4.1 GB file was not downloaded (rule: no file over 50 MB).",
+      "might_work": "City multibeam / design survey (Lior: E3); the 2025 State bathymetric LiDAR if released (E4)"
+    },
+    {
+      "what": "Queensland State-wide Nearshore Bathymetry Survey (Gold Coast stage, 2025) and City hydrographic surveys for Palm Beach",
+      "kind": "database",
+      "where": "https://www.qcoast2100.com.au/files/assets/qcoast2100/v/1/events/forum-9-documents/2._qcoast_forum_2025_detsi_sel_sultmann_final.pdf ; City 'Whole of Coast' survey",
+      "checked": "2026-10-06",
+      "by": "agent: Gold Coast bathymetry / reports agent (cloud)",
+      "result": "not found",
+      "detail": "Airborne bathymetric LiDAR (1 m DEM, AHD, flown from mid-July 2025) is free to councils but 'no decision on public availability'; the City's Whole-of-Coast transects and the Palm Beach construction / certification survey are internal. Only the Sunshine Coast 2011-12 pilot is open. The qcoast2100.com.au file gave 403 to scripts and the WebFetch-cached copy was read.",
+      "might_work": "Lior: E4 (DETSI) and E3 (City)"
+    },
+    {
+      "what": "Damage, loss, top-up or extension of the Palm Beach reef after 2019, including Cyclone Alfred (March 2025)",
+      "kind": "search",
+      "where": "web searches 2026-10-05 and 2026-10-10 (monitoring, top-up, repair, extension, cyclone Alfred)",
+      "checked": "2026-10-10",
+      "by": "agent: Palm Beach verifier and re-check (cloud)",
+      "result": "not found",
+      "detail": "Nothing found at source. Monitoring papers to 2023 (Prenzler et al. 2022) report a stable structure; search summaries say the beach and reef held up through Alfred but were not read at source and are treated as hearsay. The Esri image of 2025-12-01 still shows the dark mound inside the council polygon. The card's gap 'Cyclone Alfred impact on this reef not found' stands.",
+      "might_work": "Lior: Google Earth Pro history before / after March 2025 (G4 / B4 in the 3D requests)"
+    },
+    {
+      "what": "EMODnet Bathymetry DTM 2024 (viewer, REST, ERDDAP) for seabed depth at the reef",
+      "kind": "database",
+      "where": "https://emodnet.ec.europa.eu/geoviewer/ ; EMODnet Bathymetry REST depth_sample / ERDDAP bathymetry_dtm_2024 at -28.1073, 153.4709",
+      "checked": "2026-10-06",
+      "by": "agent: EMODnet bathymetry agent (cloud)",
+      "result": "not found",
+      "detail": "EMODnet covers European seas only; the REST service returns HTTP 204 (empty) at this reef's coordinate (Australia), so the site is outside the grid. Only two of the 13 reefs are covered (Boscombe, Borth). Do not retry EMODnet for this reef.",
+      "might_work": "Local sources instead: national or state bathymetry, a council or authority survey, Navionics / Google Earth readings (see REQUESTS_FOR_LIOR.md section 5)"
+    },
+    {
+      "what": "YouTube video xWPl70kPFug 'A GLORIOUS Day On Palm Beach Reef' (Riko Fisho, 2024-02-23)",
+      "kind": "video",
+      "where": "https://www.youtube.com/watch?v=xWPl70kPFug",
+      "checked": "2026-09-25",
+      "by": "agent: Palm Beach media re-check (cloud)",
+      "result": "other: video not about the structure",
+      "detail": "The description (re-fetched with yt-dlp) is 'back on Palm Beach reef as QLD ends the seasonal closure for Spanish Mackerel': the reef is named only as the fishing location; the subject is tackle and technique. No frames were extracted for any Palm Beach video and the other two (City of Gold Coast 2019-05-21; The Surf Eye 2022-06-27, auto-captions only music) are 'about the reef'.",
+      "might_work": ""
+    }
+  ]
+}

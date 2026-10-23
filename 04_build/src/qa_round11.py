@@ -45,7 +45,8 @@ def dom_checks11(page: Path = PAGE, shots_prefix: str | None = None) -> dict[str
     shots: list[str] = []
 
     def errs(c):      # ERR_ABORTED = a request cancelled by a newer navigation (unloaded iframe, scrolled-away lazy image): benign
-        return [e for e in c.errors if "fonts.g" not in e and "ERR_INTERNET" not in e and "ERR_NAME" not in e and "ERR_ABORTED" not in e]
+        return [e for e in c.errors if "fonts.g" not in e and "ERR_INTERNET" not in e and "ERR_NAME" not in e and "ERR_ABORTED" not in e
+                and "ERR_TUNNEL_CONNECTION_FAILED" not in e and "fullscreen is not allowed" not in e]  # cloud: proxy blocks remote pictures; newer Chrome logs the iframe fullscreen policy
 
     def shot(c, name, **kw):
         if shots_prefix:

@@ -1,64 +1,91 @@
 {
- "updated": "2026-10-07 09:05",
+ "updated": "2026-10-20 23:07",
  "sig": {
   "models": {
    "borth-coastal-defence-reef": {
-    "viewer": "867c5e7cc16cfe26",
-    "model.js": "cac59596f051eb94",
-    "annotated": "0a0510b8b4f00a3a",
-    "shape.json": "e93aa9df4b66fca2",
-    "registry": "d7d06a5e9b1e2e82",
-    "card": "40c17c55df1bb4ce",
-    "config": "2450866ca854f8f9"
+    "viewer": "b7c0a5256049da1f",
+    "model.js": "3bd7b9a87acbe4ee",
+    "annotated": "524dabfd92d50590",
+    "shape.json": "79f821bbbcbb8216",
+    "registry": "0b971b9ecafc96a6",
+    "card": "1921c173734dc180",
+    "config": "ef26b489de2476f0"
    },
    "boscombe-surf-reef": {
-    "viewer": "852fc4a4694d2dbe",
-    "model.js": "c9861120fb9045c7",
-    "annotated": "da159c02ffd04535",
+    "viewer": "e8db33a945177645",
+    "model.js": "ac4af560e672f929",
+    "annotated": "b3d5ba567c52fceb",
     "shape.json": "b6b5a73f1edb3bb3",
-    "registry": "7f418b01a570527f",
-    "card": "cb6d4f12b45a54fa",
-    "config": "0d41e6d42122f005"
+    "registry": "7eae313cf8c1a35a",
+    "card": "78253ea94a5b1e0f",
+    "config": "314597db2694400b"
    },
    "bunbury-airwave": {
-    "viewer": "5c12c267d2f00f91",
-    "model.js": "1895211668613000",
-    "annotated": "6f46188da55d114c",
+    "viewer": "4c6898620d8f6ec2",
+    "model.js": "5c097d70eca8905a",
+    "annotated": "5f6ffe80757bc223",
     "shape.json": "f78f81e31007f34e",
     "registry": "5b81179d65f3abd3",
-    "card": "93a0e60c9449647a",
-    "config": "30a18b5efbc83d0b"
+    "card": "73d9e42fce001bfd",
+    "config": "8f4511caba80610f"
+   },
+   "cables-reef-wa": {
+    "viewer": "2368f8995993efad",
+    "model.js": "d890416171a630ca",
+    "annotated": "56f7d4835b9c905f",
+    "shape.json": "b83ef2a938544c47",
+    "registry": "0cfa6baa16eee871",
+    "card": "99481d2756a78fd7",
+    "config": "7c8888e5b75b9c34"
    },
    "mount-maunganui-reef": {
-    "viewer": "b9de8364493b088f",
-    "model.js": "42860ea45fbf54b2",
-    "annotated": "9059e371a227efa9",
-    "shape.json": "503941b10795c22d",
-    "registry": "9a4d017aaf1fae56",
-    "card": "3b72ac72353b2095",
-    "config": "688689c7b98d7503"
+    "viewer": "af8c47045781463f",
+    "model.js": "0936289fa547af97",
+    "annotated": "66b0e754f7a2b3af",
+    "shape.json": "15800bc56c7ef000",
+    "registry": "3aec3e0e7b50f400",
+    "card": "cd190f82ce47a569",
+    "config": "b82c4001e5c55272"
+   },
+   "narrowneck-gold-coast": {
+    "viewer": "68afb38ea1c7e86e",
+    "model.js": "237d9e69cc2341cc",
+    "annotated": "35ed980edd5d344c",
+    "shape.json": "99350be6db10ba96",
+    "registry": "6abbd57482eba0ed",
+    "card": "b2e8d4db6d43d42d",
+    "config": "b8bc5884a392ca6b"
    },
    "palm-beach-gold-coast": {
-    "viewer": "3811e3d6d4caa5fe",
-    "model.js": "0ab22fe8e7b0710d",
-    "annotated": "a4f1c2f523565aab",
+    "viewer": "088e823963f565f4",
+    "model.js": "53be2c2ea726fe1b",
+    "annotated": "708425714f0edd31",
     "shape.json": "9d74d332271d31bb",
-    "registry": "ef70a84962615af7",
-    "card": "ce501df9e7b36401",
-    "config": "08d80b1bf7d60e45"
+    "registry": "a0f9ca0e8bc26a39",
+    "card": "7a295b57d6b472b5",
+    "config": "6cc3935c10b7789f"
    },
    "prattes-reef-el-segundo": {
-    "viewer": "1b23230d2ecbf6f7",
-    "model.js": "39b9a34a88b79b48",
-    "annotated": "40609f4deb584b6e",
-    "shape.json": "caf79e64c4de25f0",
-    "registry": "b5cec27e7ef7914c",
-    "card": "326ef4bb8e12e8d6",
-    "config": "036d108ce91351d3"
+    "viewer": "1494ade17bcb001c",
+    "model.js": "533d1757970106f8",
+    "annotated": "c3f4f1239e62c46a",
+    "shape.json": "6d61b893baf8be08",
+    "registry": "2dcfd7a4cd326fed",
+    "card": "141b8dbb1eee6831",
+    "config": "0f6abe26168fdcb7"
+   },
+   "southern-ocean-surf-reef-albany": {
+    "viewer": "ed24972c301104d3",
+    "model.js": "0d1158b948cf2fae",
+    "annotated": "24b1d72dcfa452c5",
+    "shape.json": "57031b438df2c099",
+    "registry": "1e68d41e5010b807",
+    "card": "3890d3b54924515e",
+    "config": "8fe356573e331a75"
    }
   },
-  "hold": "498ea894054eb75f",
-  "src": "08467b728bb719f1"
+  "hold": "199b9c8e89ba5ae4",
+  "src": "a584753fa3372e3a"
  },
  "snapshot": {
   "borth-coastal-defence-reef": {
@@ -66,34 +93,34 @@
    "versions": {
     "lidar_2022": {
      "area_m2": 8675.0,
-     "volume_m3": 31336.0
+     "volume_m3": 30119.0
     },
     "design_1020": {
      "area_m2": 6989.0,
-     "volume_m3": 30091.0
+     "volume_m3": 28919.0
     },
     "sat_2024": {
      "area_m2": 5743.0,
-     "volume_m3": 26400.0
+     "volume_m3": 25504.0
     }
    },
    "key_numbers": {
     "Footprint (plan outline)": "8,675 m2 laser-survey edge (default, about -2.3 mODN); 6,989 m2 design rock foot; 5,743 m2 visible rock in the 2024 photo",
-    "Rock volume": "31,336 m3 (laser edge, default); 30,091 m3 (design foot); 26,400 m3 (photo edge); +-4,600 m3 for a bed error of 0.4 m",
+    "Rock volume": "30,119 m3 (laser edge, default); 28,919 m3 (design foot); 25,504 m3 (photo edge); +-4,600 m3 for a bed error of 0.4 m",
     "Crest levels": "north arm +0.50 mODN (+0.19 m MSL), tail +1.00, head edge +0.00 rising to +0.50; oval breakwater +1.50 mODN (+1.19 m MSL)",
     "Height above the seabed": "north arm about 4.5 m, oval about 5.5 m (+-0.5 m)",
-    "Seabed under the rock": "north foot -4.04 mODN mean (-4.72 to -2.51); oval -3.95 (-4.21 to -3.62)",
-    "Seabed seaward of the reef (y > 335 m)": "0.89 m deeper than the HRPP576 Fig 2 -4.0 m contour (sd 0.14 m, n = 13)",
+    "Seabed under the rock": "north foot -3.86 mODN mean (-4.05 to -2.51); oval -3.95 (-4.21 to -3.62)",
+    "Seabed seaward of the reef (y > 335 m)": "0.00 m against the HRPP576 Fig 2 -4.0 m contour (n = 13; the contour is a control since D6)",
     "Datum and tides": "z = 0 at mean sea level = +0.31 mODN (+-0.15 m, a 4-level mean); tide slider LAT to MHWS (+2.25 m MSL)",
     "Length of the oval breakwater": "38 m between the crest ends (setting-out table of drawing 1020)",
     "Distance offshore": "centroid of both mounds 330.5 m offshore (nearest edge 257 m, farthest 397 m)"
    },
-   "pictures": 22,
+   "pictures": 25,
    "match_buttons": 8,
    "combined": {
     "status": "ok",
     "ok": true,
-    "area_m2": 11922.0,
+    "area_m2": 11793.0,
     "crest_z_m": 1.5
    }
   },
@@ -109,7 +136,7 @@
     "Footprint": "4,042 m2 (25 vertices; minimum rotated rectangle 121.1 x 45.0 m)",
     "Volume": "13,119 m3 (loft)"
    },
-   "pictures": 26,
+   "pictures": 36,
    "match_buttons": 6,
    "combined": {
     "status": "ok",
@@ -138,34 +165,119 @@
     "crest_z_m": -0.6502518057823181
    }
   },
+  "cables-reef-wa": {
+   "default_version": "survey_surface_1999_11",
+   "versions": {
+    "design_plan_plus_extension_1999": {
+     "area_m2": 4355.0,
+     "volume_m3": 4465.0
+    },
+    "design_plan_original_1999": {
+     "area_m2": 4049.0,
+     "volume_m3": 4136.0
+    },
+    "paper_fig7_site_plan_1999": {
+     "area_m2": 4586.0,
+     "volume_m3": null
+    },
+    "pitt_concept_sketch": {
+     "area_m2": 10619.0,
+     "volume_m3": null
+    },
+    "survey_surface_1999_11": {
+     "area_m2": 4049.0,
+     "volume_m3": 4671.0
+    },
+    "survey_surface_2002_02": {
+     "area_m2": 4049.0,
+     "volume_m3": 5219.0
+    }
+   },
+   "key_numbers": {
+    "Footprint (plan outline)": "4,049 m2 (original design plan, 121 x 76 m; position and orientation fitted to the Nov 1999 soundings: 91 % of rock soundings inside); with ",
+    "Rock volume": "4,671 m3 surveyed Nov 1999 (+-1,000); 5,219 m3 surveyed Feb 2002; design surface on the measured bed 4,136 m3 (original) / 4,465 m3 (with ex",
+    "Crest level": "highest surveyed surface point -1.55 m AHD (Nov 1999), -1.71 m (Feb 2002); AHD taken as MSL (MSL 1966-68; local MSL 1992-2011 is +0.057 m)",
+    "Water depth at the reef": "measured bed (DoT 1998 soundings, AHD) 2.8-6.6 m below MSL along the outline; 254-263 m from the reef centre to the 0 m AHD line",
+    "Tide (local, Fremantle gauge)": "range 0.8 m, low / high water MSL -0.4 / +0.4 m (symmetry is an estimate); datum (Fremantle LWD) 0.716 m below AHD = MSL"
+   },
+   "pictures": 24,
+   "match_buttons": 0,
+   "combined": {
+    "status": "ok",
+    "ok": true,
+    "area_m2": 4152.5,
+    "crest_z_m": -1.5499999523162842
+   }
+  },
   "mount-maunganui-reef": {
    "default_version": "multibeam_2013_m2p0",
    "versions": {
     "multibeam_2013_m2p0": {
      "area_m2": 1071.0,
-     "volume_m3": 3620.0
+     "volume_m3": 2945.0
     },
     "asr_installed_toe_2008": {
      "area_m2": 1423.8,
-     "volume_m3": 3212.0
+     "volume_m3": 2727.0
     }
    },
    "key_numbers": {
     "Footprint (plan outline)": "1,071 m2 default (67.9 x 60.4 m, 5 bag polygons, -2.0 m CD contour of the 2013 survey); 1,424 m2 as-built toe (73.9 x 62.5 m)",
-    "Reef volume versus bed level": "3,620 m3 default / 3,212 m3 toe loft at the default bed -4.0 m CD",
-    "As-built bed at the reef centre (ASSUMPTION)": "-4.0 m CD = -5.13 m MSL (selector: -3.0, -3.5, -4.0, -4.5 m CD)",
+    "Reef volume versus bed level": "2,945 m3 default / 2,727 m3 toe loft at the default bed -3.6 m CD",
+    "As-built bed at the reef centre (ASSUMPTION)": "-3.6 m CD = -4.73 m MSL (selector: -3.6, -2.8, -3.0, -3.5, -4.0, -4.5 m CD)",
     "Crest level": "-0.9 m CD = -2.03 m MSL (selector -0.8 / -1.0 m CD)",
-    "Reef height above the bed": "maximum 3.25 m (default version, crest to bed at the default bed)",
+    "Reef height above the bed": "maximum 2.85 m (default version, crest to bed at the default bed)",
     "Distance from the shoreline": "reef centroid 307.7 m from the wet/dry-sand shoreline (Esri 2011-01-15)",
     "Vertical datum": "z = 0 at present mean sea level = Chart Datum + 1.13 m (LINZ Tauranga); Chart Datum = z -1.13 m; MVD-53 = z -0.168 m"
    },
-   "pictures": 8,
+   "pictures": 25,
    "match_buttons": 7,
    "combined": {
     "status": "ok",
     "ok": true,
-    "area_m2": 1903.5,
+    "area_m2": 1766.25,
     "crest_z_m": -2.0149998664855957
+   }
+  },
+  "narrowneck-gold-coast": {
+   "default_version": "photo_2020-08-08",
+   "versions": {
+    "photo_2020-08-08": {
+     "area_m2": 6239.0,
+     "volume_m3": 13495.0
+    },
+    "design_option2_2017": {
+     "area_m2": 13941.0,
+     "volume_m3": 21271.0
+    },
+    "design_2004_revised": {
+     "area_m2": 13631.0,
+     "volume_m3": 13603.0
+    },
+    "survey_2011-06-09": {
+     "area_m2": 4922.0,
+     "volume_m3": 6856.0
+    },
+    "navionics_4.0m_shoals": {
+     "area_m2": 537.0,
+     "volume_m3": null
+    }
+   },
+   "key_numbers": {
+    "Footprint (plan outline)": "6,239 m2 visible container field (photo 8 Aug 2020, default); 13,941 m2 Option 2 design envelope; 13,631 m2 2004 design; 4,922 m2 2011 relie",
+    "Crest level": "-2.2 m AHD measured after the 2018 renewal (= -2.32 m MSL); 1.44 m below LAT by MSQ, 1.20 m by the papers; shallowest mesh top -1.8 m AHD (i",
+    "Mound envelope volume": "13,495 m3 (photo, default); 21,271 m3 (Option 2); 13,603 m3 (2004); 6,856 m3 (2011 zone); +-3,100 m3 for 0.5 m of bed (photo)",
+    "Reef height above the seabed": "mean 2.2 m, maximum 3.9 m (default); 2-2.5 m at the crest wedge, 1-1.5 m at the toe",
+    "Seabed": "-4 m AHD at the shoreward ends of the arms, -7 m at the toe, -7.8 to -10.8 m at 400-515 m offshore; nearshore (0-190 m) assumed",
+    "Tide planes (local, Gold Coast Seaway)": "LAT -0.88, MLWS -0.66, MLWN -0.37, MSL 0, MHWN +0.36, MHWS +0.65, HAT +1.15 m MSL"
+   },
+   "pictures": 46,
+   "match_buttons": 0,
+   "combined": {
+    "status": "ok",
+    "ok": true,
+    "area_m2": 6797.0,
+    "crest_z_m": -1.9199999570846558
    }
   },
   "palm-beach-gold-coast": {
@@ -177,7 +289,7 @@
     "Reef height above the seabed": "3.89 m at the crest (3.51 m Navionics-only seabed); maximum 4.17 m",
     "Side slopes": "1:12 (north flank, outer east end), 1:4.9 (south flank), 1:25 (near-crest platform, east end)",
     "Footprint": "toe 11,972 m2 (162.3 x 91.3 m; 11,989 m2 on the 1 m grid)",
-    "Volume (rock envelope)": "22,000 m3 (22,020; voids included)"
+    "Volume (rock envelope)": "about 22,000 m3 envelope in the 3D model (22,020; voids included; inferred)"
    },
    "pictures": 27,
    "match_buttons": 6,
@@ -201,13 +313,42 @@
     "Footprint": "435.2 m2, 58.0 x 28.6 m (76 vertices)",
     "Volume": "443 m3 (state B); 550 m3 (state A)"
    },
-   "pictures": 28,
+   "pictures": 32,
    "match_buttons": 2,
    "combined": {
     "status": "ok",
     "ok": true,
     "area_m2": 478.2399520849692,
     "crest_z_m": -1.818428874015808
+   }
+  },
+  "southern-ocean-surf-reef-albany": {
+   "default_version": "design_bluecoast",
+   "versions": {
+    "design_bluecoast": {
+     "area_m2": 13105.0,
+     "volume_m3": 34000.0
+    },
+    "sat_2026": {
+     "area_m2": 10919.0,
+     "volume_m3": 30273.0
+    }
+   },
+   "key_numbers": {
+    "Crest, shallowest": "-1.0 m AHD (first 15 m of the ridge from its offshore end), -2.0 m AHD beyond 40 m",
+    "Seabed under the footprint": "-2.1 m AHD at the shoreward apex to -7.4 m AHD at the offshore toe",
+    "Rock volume, design outline": "34,000 m3 (FITTED, N = 2.73); unfitted loft 20,826 m3",
+    "Pile height above the seabed": "mean 2.59 m, maximum 6.0 m (design outline)",
+    "LAT and mean level": "LAT = -0.74 m AHD; MLLW -0.26, MHHW +0.34 m AHD",
+    "Plan, default outline": "13,104 m2 (toggle: 10,918 m2)"
+   },
+   "pictures": 17,
+   "match_buttons": 0,
+   "combined": {
+    "status": "ok",
+    "ok": true,
+    "area_m2": 13399.0,
+    "crest_z_m": -1.1640000343322754
    }
   }
  }

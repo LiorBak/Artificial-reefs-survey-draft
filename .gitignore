@@ -1,10 +1,12 @@
-# Python bytecode and caches
+# Python caches
 __pycache__/
-*.py[cod]
-*$py.class
-.pytest_cache/
+*.pyc
 
-# OS metadata
-.DS_Store
+# Page build: rollback copies and old picture copies (regenerated; git history replaces them)
+04_build/QA/prev/
+04_build/QA/removed_assets/
+
+# Editor / OS clutter
 Thumbs.db
 desktop.ini
+.DS_Store

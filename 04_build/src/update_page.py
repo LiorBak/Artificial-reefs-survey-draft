@@ -227,7 +227,7 @@ def main() -> int:
     pm = "photo-match transforms recomputed" if "photo_match: recomputed" in bout else "photo-match transforms unchanged"
     pruned = re.findall(r"pruned stale generated copy (\S+)", bout)
     m = re.search(r"models3d: (\d+) models.*?verify (\d+) checked, (\d+) failed", bout)
-    notes = [ln for ln in bout.splitlines() if ln.startswith("NOTE:") and "not on map" not in ln][:12]
+    notes = [ln for ln in bout.splitlines() if ln.startswith("NOTE:")][:12]
     warns = [ln for ln in bout.splitlines() if re.search(r"VERIFY|FAIL|HELD|no combined|not in the vendored|unresolved", ln)]
     print(f"3 build: {m.group(1) + ' models' if m else '?'}; text snippets verified {m.group(2) if m else '?'}, failed {m.group(3) if m else '?'}; "
           f"re-exported meshes: {', '.join(s for s, _ in exported) or 'none'}; cached: {len(cached)}; {pm}; pruned {len(pruned)} stale picture copies")

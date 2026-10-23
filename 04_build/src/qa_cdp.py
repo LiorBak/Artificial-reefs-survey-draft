@@ -42,10 +42,18 @@ def free_port() -> int:
 
 
 def find_chrome() -> str:
+    # CHROME_PATH wins (cloud / Linux: e.g. Playwright's chromium); then the Windows paths; then PATH names.
+    env = os.environ.get("CHROME_PATH")
+    if env and Path(env).exists():
+        return env
     for c in CANDIDATES:
         if Path(c).exists():
             return c
-    p = shutil.which("chrome") or shutil.which("google-chrome")
+    p = next((shutil.which(n) for n in ("chrome", "google-chrome", "google-chrome-stable", "chromium",
+                                         "chromium-browser") if shutil.which(n)), None)
+    if not p:  # Playwright's own Chromium (python -m playwright install chromium)
+        hits = sorted(Path.home().glob(".cache/ms-playwright/chromium-*/chrome-linux*/chrome")) + sorted(Path("/opt/pw-browsers").glob("chromium-*/chrome-linux*/chrome"))  # cloud image
+        p = str(hits[-1]) if hits else None
     if not p:
         raise SystemExit("No Chrome found")
     return p
@@ -64,6 +72,10 @@ class Chrome:
                 "--remote-allow-origins=*"]
         if allow_file_access:
             args.append("--allow-file-access-from-files")
+        if hasattr(os, "geteuid") and os.geteuid() == 0:   # cloud container runs as root: Chrome needs this there
+            args.append("--no-sandbox")
+        if os.name != "nt" and not mobile:   # Linux headless Chrome reports no mouse (hover: none); give it the PC's mouse
+            args.append("--blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4")
         args += extra_args or []
         args.append("about:blank")
         self.proc = subprocess.Popen(args, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
@@ -118,8 +130,11 @@ class Chrome:
         elif m == "Network.responseReceived":
             r = p.get("response", {})
             self.requests.append({"url": r.get("url"), "status": r.get("status")})
+        elif m == "Network.requestWillBeSent":
+            self._urls = getattr(self, "_urls", {})
+            self._urls[p.get("requestId")] = (p.get("request") or {}).get("url", "")[:140]
         elif m == "Network.loadingFailed":
-            self.errors.append(f"NETFAIL {p.get('errorText')} blocked={p.get('blockedReason')} id={p.get('requestId')}")
+            self.errors.append(f"NETFAIL {p.get('errorText')} blocked={p.get('blockedReason')} id={p.get('requestId')} url={getattr(self, '_urls', {}).get(p.get('requestId'), '?')}")
 
     def call(self, method: str, **params):
         async def go():

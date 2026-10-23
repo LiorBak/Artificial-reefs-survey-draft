@@ -1,7 +1,7 @@
 import numpy as np, math
 from PIL import Image
 from scipy import ndimage as ndi
-R='C:/Users/lior/Documents/Gemini/AG/Artificial reef - to upload to git/07_scale/shapes/mount-maunganui-reef/'
+R='C:/Users/lior/Documents/Claude/Projects/Artificial reef/07_scale/shapes/mount-maunganui-reef/'
 exec(open('reg_inst.py').read().split('mI_raw=')[0])
 ppm=5.45*1.0932
 valid=okI

@@ -1,7 +1,8 @@
 # Common brief for every agent (2026-10-04)
 
-OUR PROJECT ROOT: C:\Users\lior\Documents\Gemini\AG\Artificial reef - to upload to git
-Windows 11; Bash (Git Bash) + PowerShell; Python 3.14 (pip install allowed). Quote paths: they contain spaces.
+OUR PROJECT ROOT: C:\Users\lior\Documents\Claude\Projects\Artificial reef  (in a cloud / git checkout: the repo root - every
+C:\...\Artificial reef\ path in briefs and HANDOFFs maps to it; see CLAUDE.md "Paths" and _agent_briefs\orchestrator.md section 3)
+Windows 11; Bash (Git Bash) + PowerShell; Python 3.14 (pip install allowed; cloud: Linux, pip install -r requirements.txt). Quote paths: they contain spaces.
 
 Key locations (ours):
 - Verified reef cards: 02_research\reefs\<slug>.json, dossiers 02_research\reefs\<slug>.md
@@ -61,3 +62,18 @@ RULES
 9. REQUESTS FOR LIOR (2026-10-07): the single list is REQUESTS_FOR_LIOR.md at the PROJECT ROOT. Whenever you add a request to a
    per-folder REQUESTS_FOR_LIOR.md (or a report), also add/update one line in the root file (right section: papers with FULL
    citation, e-mails, browser pages, Navionics / Google Earth readings, decisions, media review) and mark items you resolve as done.
+10. PAPERS FIRST (2026-10-10, Lior): before any web search for a paper or report, check papers/ (Lior's PDFs; grep their text,
+    e.g. python with pymupdf, for the author, reef name and year). Say in your notes which papers/ files you checked and what
+    they gave. Never move or rename anything in papers/.
+11. DEAD ENDS (2026-10-10, Lior): every source you checked that gave nothing useful (not found, paywalled, login or bot check,
+    no plan/figure, wrong place, imagery showing nothing) gets one entry in 02_research/dead_ends/<slug>.json, append only
+    (format in 02_research/dead_ends/README.md): what, url or search string, date checked, by whom, result, what might
+    still work. Dead ends are NOT references: keep them out of the card's references list. The page shows them in a
+    collapsed 'Checked, nothing useful' section so future agents do not repeat the search.
+12. CONTEXT BUDGET (2026-10-13, Lior): when your conversation passes about 250k tokens, stop starting new work: write a
+    CHECKPOINT section in your folder's HANDOFF.md (done, files changed, exact next steps, open questions), then end with the
+    word HANDOFF_STOP and your JSON summary. The orchestrator starts a fresh agent from that checkpoint. Never go past 300k.
+13. OCR (2026-10-13, Lior): a scanned PDF (no text layer) is OCRed ONCE and saved as Markdown in 05_qa/papers_intake/
+    <short-name>_ocr.md (citation header, source file path, '## p. N' page markers, OCR tool and quality note). Before OCRing,
+    check that folder: if the .md exists, use it. Never write into papers/ or 'new uploads from lior/'. OCR jobs are run by a
+    small model agent (Haiku) when the orchestrator can choose.

@@ -1,6 +1,6 @@
 """Build the single-file page 04_build/artificial_reefs.html.
 
-Inlines src/styles.css, src/models3d.css/.js (3D models tab; runs src/compile_models3d.py first), src/scale.js (Scale view), src/app.js and data/reefs.json (plus a few display
+Inlines src/styles.css, src/models3d.css/.js (3D models tab; runs src/compile_models3d.py first), src/footprint.js (footprint detail section of the reef dialog), src/app.js and data/reefs.json (plus a few display
 fields derived here) into src/template.html. No new research: every derived
 value below is re-shaped from text already present in the verified cards.
 
@@ -50,7 +50,6 @@ COST_TILE_OVERRIDE = {
     "bunbury-airwave": "~US$350–400K total project (disputed); council share A$75,000",
 }
 
-SOUTHERN = {"Australia", "New Zealand"}   # hemisphere sanity check for map pins
 REF_RE = re.compile(r"\[(R\d+)\]")
 
 
@@ -109,21 +108,6 @@ def main() -> int:
         r["cost_tile"] = COST_TILE_OVERRIDE.get(slug, r.get("cost_short") or "cost not disclosed")
         r["hover_refs"] = {k: refs_in(r.get(k)) for k in ("size", "cost", "year", "type")}
 
-        # --- map pin sanity ---
-        lat, lon = r.get("lat"), r.get("lon")
-        if not isinstance(lat, (int, float)) or not isinstance(lon, (int, float)):
-            r["map_ok"], r["map_note"] = False, "no coordinates in the card"
-        elif not (-90 <= lat <= 90 and -180 <= lon <= 180):
-            r["map_ok"], r["map_note"] = False, "card coordinates out of range"
-        elif r.get("country") in SOUTHERN and lat > 0:
-            r["map_ok"], r["map_note"] = False, (
-                f"card coordinates ({lat}, {lon}) fail a hemisphere check "
-                f"({r['country']} lies south of the equator) — not plotted")
-        else:
-            r["map_ok"], r["map_note"] = True, ""
-        if not r["map_ok"]:
-            warnings.append(f"{slug}: not on map — {r['map_note']}")
-
         # --- slim: drop fields the page never shows ---
         r["sections"] = [s for s in r.get("sections", []) if s.get("title") != "Quick facts"]
         for k in ("images_rejected", "blocked_sources", "videos_rejected"):
@@ -154,17 +138,19 @@ def main() -> int:
 
     css = (SRC / "styles.css").read_text(encoding="utf-8")
     js = (SRC / "app.js").read_text(encoding="utf-8")
+    footprint_js = (SRC / "footprint.js").read_text(encoding="utf-8")   # reef-dialog footprint section; must load before app.js
     tpl = (SRC / "template.html").read_text(encoding="utf-8")
-    for name, body, bad in (("styles.css", css, "</style"), ("app.js", js, "</script"),
+    for name, body, bad in (("styles.css", css, "</style"), ("app.js", js, "</script"), ("footprint.js", footprint_js, "</script"),
                             ("models3d.css", m3d_css, "</style"), ("models3d.js", m3d_js, "</script")):
         if bad in body.lower():
             raise SystemExit(f"{name} contains {bad!r}; cannot inline safely")
-    for marker in ("/*__CSS__*/", "/*__M3D_CSS__*/", "/*__M3D_JS__*/", "/*__JS__*/", "__DATA__", "__DATA3D__"):
+    for marker in ("/*__CSS__*/", "/*__M3D_CSS__*/", "/*__FOOTPRINT_JS__*/", "/*__M3D_JS__*/", "/*__JS__*/", "__DATA__", "__DATA3D__"):
         if tpl.count(marker) != 1:
             raise SystemExit(f"template marker {marker} must appear exactly once")
 
     html = (tpl.replace("/*__CSS__*/", css)
                .replace("/*__M3D_CSS__*/", m3d_css)
+               .replace("/*__FOOTPRINT_JS__*/", footprint_js)
                .replace("/*__M3D_JS__*/", m3d_js)
                .replace("/*__JS__*/", js)
                .replace("__DATA3D__", data3d_json)     # before __DATA__: __DATA3D__ contains the string "__DATA"

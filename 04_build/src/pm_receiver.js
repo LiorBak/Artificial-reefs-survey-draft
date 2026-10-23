@@ -26,6 +26,21 @@
       home = { pos: camera.position.clone(), up: camera.up.clone(), tgt: controls.target.clone(), fov: camera.fov, near: camera.near, far: camera.far,
         minD: controls.minDistance, maxD: controls.maxDistance, minP: controls.minPolarAngle, maxP: controls.maxPolarAngle, sfov: s ? s.fov : null };
     }
+    // 2026-10-10: sprites with sizeAttenuation:false (Palm Beach labels, scale bars, N arrow) grow by 1/tan(fov/2) when the narrow 8 deg matching FOV replaces the viewer's own FOV:
+    // scale them by tan(FOV/2)/tan(homeFov/2) while a photo is matched, and restore them on reset.
+    function spriteList() {
+      var out = []; if (typeof scene === 'undefined' || !scene || !scene.traverse) return out;
+      scene.traverse(function (o) { if (o.isSprite && o.material && o.material.sizeAttenuation === false) out.push(o); });
+      return out;
+    }
+    function fitSprites(on) {
+      var k = on && home ? Math.tan(FOV * Math.PI / 360) / Math.tan(home.fov * Math.PI / 360) : 1;
+      spriteList().forEach(function (o) {
+        if (!o.userData.pm0) o.userData.pm0 = o.scale.clone();
+        o.scale.set(o.userData.pm0.x * k, o.userData.pm0.y * k, o.userData.pm0.z);
+        if (!on) delete o.userData.pm0;
+      });
+    }
     function overlayBox() {
       var b = document.getElementById('m3d-pmo');
       if (!b) {
@@ -61,6 +76,7 @@
       camera.position.set(c[0] - u[0] * eps, dist, c[1] - u[1] * eps);
       controls.target.set(c[0], 0, c[1]);
       camera.lookAt(controls.target); controls.update();
+      fitSprites(true);
       layoutOverlay();
       return true;
     }
@@ -81,6 +97,7 @@
     }
     function reset() {
       if (!home) return;
+      fitSprites(false);
       spec = null;                                                         // first: restoring the panels fires 'resize', which would re-place the overlay
       camera.position.copy(home.pos); camera.up.copy(home.up); controls.target.copy(home.tgt);
       camera.fov = home.fov; camera.near = home.near; camera.far = home.far; camera.updateProjectionMatrix();

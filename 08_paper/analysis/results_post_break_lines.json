@@ -1,0 +1,3137 @@
+{
+ "script": "08_paper/analysis/post_break.py",
+ "method": "post_break.py - how far a reef keeps the wave breaking after the break point, on several lines per reef (Section 4.3).\n\nRun:    python3 08_paper/analysis/post_break.py            (add --fig to redraw Figure E2)\nReads:  reef_inputs.py (main-cut profiles from 08_paper/data/profiles/<slug>.json, tidal planes), results_reef_summary.csv\n        (rep_line = the Table 2 / Figure 1 cut, outcome score), and the 3D-model grids through extract_profiles.py\n        (load_model + ADAPTERS + layer_from: the same seabed, reef surface and footprint rule; 07_scale/shapes/<slug>/3d/,\n        read only)\nWrites: results_post_break.csv (one row per reef x line x tide x Hb, plus one summary row per reef x line),\n        results_post_break_summary.csv (per reef: the median of every line + the Spearman rows),\n        results_post_break_lines.json (geometry of every line: rule, anchor, direction, ridge-path vertices),\n        figures/figE2_post_break_lines.png/.pdf (with --fig)\n\nLines (Lior's review of 2026-10-19: \"Palm Beach gets 27 m but Figure 1 shows ~100 m of reef\"):\n  main    : the Figure 1 / Table 2 cut (rep_line; Narrowneck second crest line, Pratte's centreline), for continuity.\n  sn25, sn50, sn75 : shore-normal lines at 25 %, 50 % and 75 % of the alongshore extent of the reef footprint measured from\n            its LEFT end as seen in Figure 1 (looking seaward). Alongshore coordinate u = projection on the left-pointing\n            shore-parallel unit vector l = (d_y, -d_x), d = offshore shore normal in the model frame (model +y for every reef\n            but Cables; Cables: perpendicular to the fitted 0 m AHD shoreline, bearing 7.8 deg T, as its Figure 1 cut). In every\n            model frame +x points to the left looking seaward (Figure 1 plots -x). The extent is u_max - u_min of the footprint\n            cells (thickness >= 0.10 m); the line at fraction f passes through u = u_max - f (u_max - u_min).\n  crest   : the LONGEST CREST (RIDE) LINE. Ridge cells = footprint cells whose reef surface is within DZ_CREST = 1.0 m of the\n            shallowest reef cell (the band over which a wave that breaks at the crest still finds breaking depth for\n            Hb = 1-2 m); gaps up to 3 m are bridged (binary closing) and the largest 8-connected group is kept. The line starts\n            at the most seaward ridge cell (where an incoming wave first finds the ridge: the take-off) and ends at the ridge\n            cell farthest from it measured along the ridge (geodesic distance inside the ridge cells); between the two the\n            path follows the shallowest cells (edge cost = length x (1 + 2 (z_max - z)/DZ_CREST)), is smoothed over 5 m and\n            resampled every 1 m with the same bilinear sampling as extract_profiles.py. DZ_CREST = 0.5 and 1.5 m are run as\n            sensitivity. The geodesic diameter of the ridge (longest ridge path between any two cells) is also reported.\n\nBreaking model (DERIVED, 1-D, idealised), unchanged from the first version for the shore-normal lines: at low / mid (MSL) /\nhigh water and Hb = 1.0, 1.5, 2.0 m the wave breaks at the first point from offshore where h <= Hb / 0.78 (McCowan), then\n  L_dally : Dally, Dean & Dalrymple (1985) energy-flux decay, d(H^2 h^0.5)/dx = -(K/h)(H^2 h^0.5 - (G h)^2 h^0.5), K = 0.15,\n            G = 0.4, integrated shoreward on the 1 m grid from Hb; breaking stops where H <= G h (or at the shoreline,\n            h <= 0.05 m: flag to_shore);\n  L_simple: to the first point where h > Hb / 0.4 (Hb held, upper bound);\n  L_reef_supported = min(L_dally, reef length shoreward of the break) = the breaking-length metric of the shore-normal lines.\nOn the crest line the wave does not travel along the line: it breaks progressively along the arm (peels), each point of the\narm breaking when the still-unbroken part of the crest reaches it. The crest metric is therefore\n  L_peel  : length along the crest line from the first point where h <= Hb/0.78 to the end of the contiguous stretch where\n            0.05 m < h <= Hb/0.78 (the arm keeps the wave breaking);\n  L_dally is also computed along the crest line (as if the broken wave travelled along it), reported only as a check.\nPer reef and line: median and max over the on-reef cases (3 heights x 3 water levels); Spearman rho of the medians against\nthe outcome score (summarize.OUTCOME_SCORE; permutation p from summarize.perm_p), Borth (unknown) excluded.\nLimits: normal incidence on the shore-normal lines, no refraction, no 2-D spreading, no set-up, no friction, model surfaces\n(survey or idealised, see profiles/SUMMARY.md); the crest-line rule is a geometric judgement documented here.\n",
+ "lines": {
+  "narrowneck-gold-coast": {
+   "shore_normal_xy": [
+    0.0,
+    1.0
+   ],
+   "left_note": "left looking seaward = model +x side (Figure 1 plots -x; Cables rotated into its shoreline)",
+   "main": {
+    "rule": "Figure 1 / Table 2 cut (second_crest_line of 08_paper/data/profiles/narrowneck-gold-coast.json)",
+    "reef_run_xy_m": [
+     [
+      -40.0,
+      232.0
+     ],
+     [
+      -40.0,
+      332.0
+     ]
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ]
+   },
+   "sn25": {
+    "rule": "shore-normal line at 25 % of the alongshore extent of the footprint from its left end (looking seaward)",
+    "anchor_xy_m": [
+     27.0,
+     288.13
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ],
+    "alongshore_extent_m": 112.0,
+    "reef_run_xy_m": [
+     [
+      27.0,
+      216.0
+     ],
+     [
+      27.0,
+      231.0
+     ]
+    ]
+   },
+   "sn50": {
+    "rule": "shore-normal line at 50 % of the alongshore extent of the footprint from its left end (looking seaward)",
+    "anchor_xy_m": [
+     -1.0,
+     288.13
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ],
+    "alongshore_extent_m": 112.0,
+    "reef_run_xy_m": [
+     [
+      -1.0,
+      317.0
+     ],
+     [
+      -1.0,
+      369.0
+     ]
+    ]
+   },
+   "sn75": {
+    "rule": "shore-normal line at 75 % of the alongshore extent of the footprint from its left end (looking seaward)",
+    "anchor_xy_m": [
+     -29.0,
+     288.13
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ],
+    "alongshore_extent_m": 112.0,
+    "reef_run_xy_m": [
+     [
+      -29.0,
+      241.0
+     ],
+     [
+      -29.0,
+      311.0
+     ]
+    ]
+   },
+   "crest": {
+    "rule": "longest crest (ride) line, ridge cells within 1.0 m of the shallowest reef cell (z >= -2.92 m MSL), from the most seaward ridge cell to the ridge cell farthest along the ridge",
+    "length_m": 80.0,
+    "ridge_diameter_m": 85.3,
+    "ridge_cells": 1296,
+    "start_xy_m": [
+     14.0,
+     320.0
+    ],
+    "end_xy_m": [
+     43.0,
+     247.0
+    ],
+    "path_xy_m": [
+     [
+      14.0,
+      320.0
+     ],
+     [
+      14.1,
+      318.0
+     ],
+     [
+      14.58,
+      316.07
+     ],
+     [
+      15.35,
+      314.22
+     ],
+     [
+      16.33,
+      312.48
+     ],
+     [
+      17.41,
+      310.79
+     ],
+     [
+      18.48,
+      309.1
+     ],
+     [
+      19.44,
+      307.35
+     ],
+     [
+      20.26,
+      305.53
+     ],
+     [
+      20.8,
+      303.61
+     ],
+     [
+      21.0,
+      301.62
+     ],
+     [
+      21.0,
+      299.62
+     ],
+     [
+      21.0,
+      297.62
+     ],
+     [
+      21.03,
+      295.62
+     ],
+     [
+      21.37,
+      293.65
+     ],
+     [
+      21.89,
+      291.73
+     ],
+     [
+      22.42,
+      289.8
+     ],
+     [
+      22.95,
+      287.87
+     ],
+     [
+      23.47,
+      285.94
+     ],
+     [
+      23.91,
+      283.99
+     ],
+     [
+      24.0,
+      281.99
+     ],
+     [
+      24.09,
+      280.0
+     ],
+     [
+      24.53,
+      278.05
+     ],
+     [
+      25.28,
+      276.19
+     ],
+     [
+      26.26,
+      274.45
+     ],
+     [
+      27.41,
+      272.82
+     ],
+     [
+      28.63,
+      271.23
+     ],
+     [
+      29.89,
+      269.68
+     ],
+     [
+      31.11,
+      268.1
+     ],
+     [
+      32.19,
+      266.41
+     ],
+     [
+      33.26,
+      264.73
+     ],
+     [
+      34.34,
+      263.04
+     ],
+     [
+      35.3,
+      261.29
+     ],
+     [
+      36.18,
+      259.49
+     ],
+     [
+      37.16,
+      257.75
+     ],
+     [
+      38.23,
+      256.06
+     ],
+     [
+      39.14,
+      254.28
+     ],
+     [
+      39.97,
+      252.46
+     ],
+     [
+      40.87,
+      250.67
+     ],
+     [
+      41.88,
+      248.95
+     ],
+     [
+      42.88,
+      247.22
+     ]
+    ],
+    "path_z_msl_m": [
+     -2.89,
+     -2.54,
+     -2.32,
+     -2.32,
+     -2.32,
+     -2.32,
+     -2.32,
+     -2.32,
+     -2.32,
+     -2.32,
+     -2.32,
+     -2.32,
+     -2.32,
+     -2.32,
+     -2.32,
+     -2.32,
+     -2.32,
+     -2.45,
+     -2.39,
+     -2.33,
+     -2.32,
+     -2.32,
+     -2.32,
+     -2.32,
+     -2.32,
+     -2.32,
+     -2.32,
+     -2.32,
+     -2.49,
+     -2.42,
+     -2.36,
+     -2.32,
+     -2.32,
+     -2.32,
+     -2.48,
+     -2.32,
+     -2.32,
+     -2.42,
+     -2.39,
+     -2.32,
+     -2.86
+    ]
+   },
+   "crest_dz0.5": {
+    "rule": "longest crest (ride) line, ridge cells within 0.5 m of the shallowest reef cell (z >= -2.42 m MSL), from the most seaward ridge cell to the ridge cell farthest along the ridge",
+    "length_m": 71.0,
+    "ridge_diameter_m": 74.6,
+    "ridge_cells": 854,
+    "start_xy_m": [
+     -37.0,
+     310.0
+    ],
+    "end_xy_m": [
+     -51.0,
+     242.0
+    ]
+   },
+   "crest_dz1.5": {
+    "rule": "longest crest (ride) line, ridge cells within 1.5 m of the shallowest reef cell (z >= -3.42 m MSL), from the most seaward ridge cell to the ridge cell farthest along the ridge",
+    "length_m": 91.0,
+    "ridge_diameter_m": 94.9,
+    "ridge_cells": 1871,
+    "start_xy_m": [
+     18.0,
+     326.0
+    ],
+    "end_xy_m": [
+     42.0,
+     241.0
+    ]
+   }
+  },
+  "palm-beach-gold-coast": {
+   "shore_normal_xy": [
+    0.0,
+    1.0
+   ],
+   "left_note": "left looking seaward = model +x side (Figure 1 plots -x; Cables rotated into its shoreline)",
+   "main": {
+    "rule": "Figure 1 / Table 2 cut (crest_line of 08_paper/data/profiles/palm-beach-gold-coast.json)",
+    "reef_run_xy_m": [
+     [
+      9.0,
+      240.0
+     ],
+     [
+      9.0,
+      362.0
+     ]
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ]
+   },
+   "sn25": {
+    "rule": "shore-normal line at 25 % of the alongshore extent of the footprint from its left end (looking seaward)",
+    "anchor_xy_m": [
+     33.25,
+     304.29
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ],
+    "alongshore_extent_m": 131.0,
+    "reef_run_xy_m": [
+     [
+      33.25,
+      228.0
+     ],
+     [
+      33.25,
+      324.0
+     ]
+    ]
+   },
+   "sn50": {
+    "rule": "shore-normal line at 50 % of the alongshore extent of the footprint from its left end (looking seaward)",
+    "anchor_xy_m": [
+     0.5,
+     304.29
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ],
+    "alongshore_extent_m": 131.0,
+    "reef_run_xy_m": [
+     [
+      0.5,
+      248.0
+     ],
+     [
+      0.5,
+      367.0
+     ]
+    ]
+   },
+   "sn75": {
+    "rule": "shore-normal line at 75 % of the alongshore extent of the footprint from its left end (looking seaward)",
+    "anchor_xy_m": [
+     -32.25,
+     304.29
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ],
+    "alongshore_extent_m": 131.0,
+    "reef_run_xy_m": [
+     [
+      -32.25,
+      281.0
+     ],
+     [
+      -32.25,
+      370.0
+     ]
+    ]
+   },
+   "crest": {
+    "rule": "longest crest (ride) line, ridge cells within 1.0 m of the shallowest reef cell (z >= -2.50 m MSL), from the most seaward ridge cell to the ridge cell farthest along the ridge",
+    "length_m": 92.0,
+    "ridge_diameter_m": 98.0,
+    "ridge_cells": 2087,
+    "start_xy_m": [
+     -21.0,
+     312.0
+    ],
+    "end_xy_m": [
+     29.0,
+     235.0
+    ],
+    "path_xy_m": [
+     [
+      -21.0,
+      312.0
+     ],
+     [
+      -20.71,
+      310.02
+     ],
+     [
+      -20.02,
+      308.15
+     ],
+     [
+      -19.23,
+      306.31
+     ],
+     [
+      -18.27,
+      304.56
+     ],
+     [
+      -17.19,
+      302.87
+     ],
+     [
+      -16.07,
+      301.22
+     ],
+     [
+      -14.89,
+      299.6
+     ],
+     [
+      -13.72,
+      297.98
+     ],
+     [
+      -12.6,
+      296.33
+     ],
+     [
+      -11.53,
+      294.64
+     ],
+     [
+      -10.66,
+      292.84
+     ],
+     [
+      -9.91,
+      290.99
+     ],
+     [
+      -9.3,
+      289.08
+     ],
+     [
+      -8.62,
+      287.2
+     ],
+     [
+      -7.86,
+      285.36
+     ],
+     [
+      -7.02,
+      283.54
+     ],
+     [
+      -6.05,
+      281.79
+     ],
+     [
+      -4.92,
+      280.14
+     ],
+     [
+      -3.66,
+      278.59
+     ],
+     [
+      -2.4,
+      277.04
+     ],
+     [
+      -1.16,
+      275.47
+     ],
+     [
+      0.08,
+      273.9
+     ],
+     [
+      1.35,
+      272.36
+     ],
+     [
+      2.67,
+      270.86
+     ],
+     [
+      4.02,
+      269.38
+     ],
+     [
+      5.31,
+      267.85
+     ],
+     [
+      6.57,
+      266.3
+     ],
+     [
+      7.85,
+      264.76
+     ],
+     [
+      9.2,
+      263.28
+     ],
+     [
+      10.48,
+      261.75
+     ],
+     [
+      11.74,
+      260.2
+     ],
+     [
+      13.01,
+      258.65
+     ],
+     [
+      14.32,
+      257.15
+     ],
+     [
+      15.65,
+      255.65
+     ],
+     [
+      16.92,
+      254.1
+     ],
+     [
+      18.18,
+      252.55
+     ],
+     [
+      19.5,
+      251.05
+     ],
+     [
+      20.85,
+      249.57
+     ],
+     [
+      22.14,
+      248.05
+     ],
+     [
+      23.32,
+      246.43
+     ],
+     [
+      24.51,
+      244.82
+     ],
+     [
+      25.73,
+      243.24
+     ],
+     [
+      26.79,
+      241.55
+     ],
+     [
+      27.65,
+      239.74
+     ],
+     [
+      28.33,
+      237.87
+     ],
+     [
+      28.86,
+      235.95
+     ]
+    ],
+    "path_z_msl_m": [
+     -2.49,
+     -2.41,
+     -2.33,
+     -2.24,
+     -2.16,
+     -2.08,
+     -2.0,
+     -1.92,
+     -1.85,
+     -1.77,
+     -1.69,
+     -1.62,
+     -1.55,
+     -1.5,
+     -1.5,
+     -1.5,
+     -1.5,
+     -1.5,
+     -1.5,
+     -1.5,
+     -1.5,
+     -1.5,
+     -1.5,
+     -1.52,
+     -1.51,
+     -1.5,
+     -1.5,
+     -1.51,
+     -1.51,
+     -1.5,
+     -1.51,
+     -1.51,
+     -1.52,
+     -1.5,
+     -1.51,
+     -1.5,
+     -1.51,
+     -1.5,
+     -1.5,
+     -1.5,
+     -1.52,
+     -1.53,
+     -1.52,
+     -1.64,
+     -1.82,
+     -2.0,
+     -2.25
+    ]
+   },
+   "crest_dz0.5": {
+    "rule": "longest crest (ride) line, ridge cells within 0.5 m of the shallowest reef cell (z >= -2.00 m MSL), from the most seaward ridge cell to the ridge cell farthest along the ridge",
+    "length_m": 78.0,
+    "ridge_diameter_m": 82.6,
+    "ridge_cells": 1133,
+    "start_xy_m": [
+     -14.0,
+     302.0
+    ],
+    "end_xy_m": [
+     28.0,
+     237.0
+    ]
+   },
+   "crest_dz1.5": {
+    "rule": "longest crest (ride) line, ridge cells within 1.5 m of the shallowest reef cell (z >= -3.00 m MSL), from the most seaward ridge cell to the ridge cell farthest along the ridge",
+    "length_m": 108.0,
+    "ridge_diameter_m": 113.4,
+    "ridge_cells": 3325,
+    "start_xy_m": [
+     -25.0,
+     323.0
+    ],
+    "end_xy_m": [
+     31.0,
+     233.0
+    ]
+   }
+  },
+  "cables-reef-wa": {
+   "shore_normal_xy": [
+    -0.30071,
+    0.95372
+   ],
+   "left_note": "left looking seaward = model +x side (Figure 1 plots -x; Cables rotated into its shoreline)",
+   "main": {
+    "rule": "Figure 1 / Table 2 cut (crest_line of 08_paper/data/profiles/cables-reef-wa.json)",
+    "reef_run_xy_m": [
+     [
+      -1.79,
+      264.5
+     ],
+     [
+      -17.13,
+      313.14
+     ]
+    ],
+    "direction_xy": [
+     -0.30071,
+     0.95372
+    ]
+   },
+   "sn25": {
+    "rule": "shore-normal line at 25 % of the alongshore extent of the footprint from its left end (looking seaward)",
+    "anchor_xy_m": [
+     22.22,
+     283.4
+    ],
+    "direction_xy": [
+     -0.30071,
+     0.95372
+    ],
+    "alongshore_extent_m": 107.8,
+    "reef_run_xy_m": [
+     [
+      34.07,
+      245.82
+     ],
+     [
+      24.75,
+      275.39
+     ]
+    ]
+   },
+   "sn50": {
+    "rule": "shore-normal line at 50 % of the alongshore extent of the footprint from its left end (looking seaward)",
+    "anchor_xy_m": [
+     -3.47,
+     275.3
+    ],
+    "direction_xy": [
+     -0.30071,
+     0.95372
+    ],
+    "alongshore_extent_m": 107.8,
+    "reef_run_xy_m": [
+     [
+      0.23,
+      263.57
+     ],
+     [
+      -15.41,
+      313.16
+     ]
+    ]
+   },
+   "sn75": {
+    "rule": "shore-normal line at 75 % of the alongshore extent of the footprint from its left end (looking seaward)",
+    "anchor_xy_m": [
+     -29.16,
+     267.2
+    ],
+    "direction_xy": [
+     -0.30071,
+     0.95372
+    ],
+    "alongshore_extent_m": 107.8,
+    "reef_run_xy_m": [
+     [
+      -25.19,
+      254.61
+     ],
+     [
+      -36.62,
+      290.85
+     ]
+    ]
+   },
+   "crest": {
+    "rule": "longest crest (ride) line, ridge cells within 1.0 m of the shallowest reef cell (z >= -2.55 m MSL), from the most seaward ridge cell to the ridge cell farthest along the ridge",
+    "length_m": 87.0,
+    "ridge_diameter_m": 114.0,
+    "ridge_cells": 5465,
+    "start_xy_m": [
+     -8.5,
+     288.0
+    ],
+    "end_xy_m": [
+     59.0,
+     248.0
+    ],
+    "path_xy_m": [
+     [
+      -8.5,
+      288.0
+     ],
+     [
+      -8.5,
+      286.0
+     ],
+     [
+      -8.5,
+      284.0
+     ],
+     [
+      -8.5,
+      282.0
+     ],
+     [
+      -8.43,
+      280.0
+     ],
+     [
+      -8.01,
+      278.05
+     ],
+     [
+      -7.28,
+      276.19
+     ],
+     [
+      -6.3,
+      274.45
+     ],
+     [
+      -5.11,
+      272.84
+     ],
+     [
+      -3.75,
+      271.37
+     ],
+     [
+      -2.26,
+      270.04
+     ],
+     [
+      -0.68,
+      268.82
+     ],
+     [
+      0.98,
+      267.7
+     ],
+     [
+      2.69,
+      266.68
+     ],
+     [
+      4.43,
+      265.68
+     ],
+     [
+      6.16,
+      264.68
+     ],
+     [
+      7.95,
+      263.79
+     ],
+     [
+      9.73,
+      262.87
+     ],
+     [
+      11.47,
+      261.9
+     ],
+     [
+      13.23,
+      260.94
+     ],
+     [
+      14.98,
+      259.98
+     ],
+     [
+      16.73,
+      259.01
+     ],
+     [
+      18.44,
+      257.97
+     ],
+     [
+      20.13,
+      256.9
+     ],
+     [
+      21.81,
+      255.82
+     ],
+     [
+      23.46,
+      254.69
+     ],
+     [
+      25.15,
+      253.62
+     ],
+     [
+      26.91,
+      252.66
+     ],
+     [
+      28.71,
+      251.79
+     ],
+     [
+      30.54,
+      250.99
+     ],
+     [
+      32.43,
+      250.35
+     ],
+     [
+      34.36,
+      249.82
+     ],
+     [
+      36.26,
+      249.21
+     ],
+     [
+      38.11,
+      248.46
+     ],
+     [
+      39.99,
+      247.76
+     ],
+     [
+      41.89,
+      247.13
+     ],
+     [
+      43.8,
+      246.53
+     ],
+     [
+      45.75,
+      246.11
+     ],
+     [
+      47.74,
+      246.0
+     ],
+     [
+      49.74,
+      246.12
+     ],
+     [
+      51.73,
+      246.32
+     ],
+     [
+      53.7,
+      246.68
+     ],
+     [
+      55.65,
+      247.09
+     ],
+     [
+      57.58,
+      247.63
+     ]
+    ],
+    "path_z_msl_m": [
+     -2.54,
+     -2.44,
+     -2.44,
+     -2.44,
+     -2.35,
+     -2.19,
+     -2.07,
+     -2.04,
+     -2.13,
+     -2.09,
+     -1.95,
+     -1.98,
+     -2.09,
+     -2.08,
+     -2.03,
+     -1.93,
+     -1.94,
+     -1.86,
+     -1.83,
+     -1.88,
+     -1.93,
+     -1.96,
+     -1.89,
+     -1.88,
+     -1.87,
+     -1.82,
+     -1.77,
+     -1.73,
+     -1.77,
+     -1.79,
+     -1.74,
+     -1.84,
+     -1.96,
+     -1.96,
+     -1.93,
+     -1.85,
+     -1.93,
+     -1.99,
+     -2.01,
+     -2.08,
+     -2.1,
+     -2.11,
+     -2.25,
+     -2.38
+    ]
+   },
+   "crest_dz0.5": {
+    "rule": "longest crest (ride) line, ridge cells within 0.5 m of the shallowest reef cell (z >= -2.05 m MSL), from the most seaward ridge cell to the ridge cell farthest along the ridge",
+    "length_m": 26.0,
+    "ridge_diameter_m": 40.4,
+    "ridge_cells": 797,
+    "start_xy_m": [
+     -16.0,
+     274.0
+    ],
+    "end_xy_m": [
+     -30.0,
+     252.0
+    ]
+   },
+   "crest_dz1.5": {
+    "rule": "longest crest (ride) line, ridge cells within 1.5 m of the shallowest reef cell (z >= -3.05 m MSL), from the most seaward ridge cell to the ridge cell farthest along the ridge",
+    "length_m": 98.0,
+    "ridge_diameter_m": 121.3,
+    "ridge_cells": 9235,
+    "start_xy_m": [
+     -14.0,
+     296.5
+    ],
+    "end_xy_m": [
+     61.0,
+     248.5
+    ]
+   }
+  },
+  "mount-maunganui-reef": {
+   "shore_normal_xy": [
+    0.0,
+    1.0
+   ],
+   "left_note": "left looking seaward = model +x side (Figure 1 plots -x; Cables rotated into its shoreline)",
+   "main": {
+    "rule": "Figure 1 / Table 2 cut (crest_line of 08_paper/data/profiles/mount-maunganui-reef.json)",
+    "reef_run_xy_m": [
+     [
+      14.0,
+      296.0
+     ],
+     [
+      14.0,
+      323.0
+     ]
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ]
+   },
+   "sn25": {
+    "rule": "shore-normal line at 25 % of the alongshore extent of the footprint from its left end (looking seaward)",
+    "anchor_xy_m": [
+     17.0,
+     310.47
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ],
+    "alongshore_extent_m": 70.0,
+    "reef_run_xy_m": [
+     [
+      17.0,
+      292.0
+     ],
+     [
+      17.0,
+      318.0
+     ]
+    ]
+   },
+   "sn50": {
+    "rule": "shore-normal line at 50 % of the alongshore extent of the footprint from its left end (looking seaward)",
+    "anchor_xy_m": [
+     -0.5,
+     310.47
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ],
+    "alongshore_extent_m": 70.0,
+    "reef_run_xy_m": [
+     [
+      -0.5,
+      334.0
+     ],
+     [
+      -0.5,
+      344.0
+     ]
+    ]
+   },
+   "sn75": {
+    "rule": "shore-normal line at 75 % of the alongshore extent of the footprint from its left end (looking seaward)",
+    "anchor_xy_m": [
+     -18.0,
+     310.47
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ],
+    "alongshore_extent_m": 70.0,
+    "reef_run_xy_m": [
+     [
+      -18.0,
+      296.0
+     ],
+     [
+      -18.0,
+      324.0
+     ]
+    ]
+   },
+   "crest": {
+    "rule": "longest crest (ride) line, ridge cells within 1.0 m of the shallowest reef cell (z >= -3.03 m MSL), from the most seaward ridge cell to the ridge cell farthest along the ridge",
+    "length_m": 48.0,
+    "ridge_diameter_m": 50.8,
+    "ridge_cells": 2100,
+    "start_xy_m": [
+     2.0,
+     329.5
+    ],
+    "end_xy_m": [
+     24.5,
+     288.0
+    ],
+    "path_xy_m": [
+     [
+      2.0,
+      329.5
+     ],
+     [
+      3.44,
+      328.11
+     ],
+     [
+      4.9,
+      326.75
+     ],
+     [
+      6.36,
+      325.37
+     ],
+     [
+      7.8,
+      324.0
+     ],
+     [
+      9.2,
+      322.57
+     ],
+     [
+      10.58,
+      321.12
+     ],
+     [
+      11.95,
+      319.66
+     ],
+     [
+      13.28,
+      318.17
+     ],
+     [
+      14.51,
+      316.59
+     ],
+     [
+      15.56,
+      314.89
+     ],
+     [
+      16.4,
+      313.07
+     ],
+     [
+      17.09,
+      311.2
+     ],
+     [
+      17.45,
+      309.23
+     ],
+     [
+      17.5,
+      307.24
+     ],
+     [
+      17.55,
+      305.24
+     ],
+     [
+      17.92,
+      303.28
+     ],
+     [
+      18.62,
+      301.4
+     ],
+     [
+      19.53,
+      299.62
+     ],
+     [
+      20.46,
+      297.85
+     ],
+     [
+      21.39,
+      296.08
+     ],
+     [
+      22.26,
+      294.28
+     ],
+     [
+      23.03,
+      292.44
+     ],
+     [
+      23.59,
+      290.52
+     ],
+     [
+      24.22,
+      288.63
+     ]
+    ],
+    "path_z_msl_m": [
+     -2.86,
+     -2.58,
+     -2.47,
+     -2.46,
+     -2.36,
+     -2.37,
+     -2.37,
+     -2.37,
+     -2.52,
+     -3.77,
+     -2.9,
+     -2.29,
+     -2.04,
+     -2.03,
+     -2.03,
+     -2.03,
+     -2.03,
+     -2.03,
+     -2.03,
+     -2.03,
+     -2.03,
+     -2.03,
+     -2.03,
+     -2.18,
+     -2.7
+    ]
+   },
+   "crest_dz0.5": {
+    "rule": "longest crest (ride) line, ridge cells within 0.5 m of the shallowest reef cell (z >= -2.53 m MSL), from the most seaward ridge cell to the ridge cell farthest along the ridge",
+    "length_m": 27.0,
+    "ridge_diameter_m": 32.0,
+    "ridge_cells": 1305,
+    "start_xy_m": [
+     17.0,
+     315.0
+    ],
+    "end_xy_m": [
+     23.5,
+     289.0
+    ]
+   },
+   "crest_dz1.5": {
+    "rule": "longest crest (ride) line, ridge cells within 1.5 m of the shallowest reef cell (z >= -3.53 m MSL), from the most seaward ridge cell to the ridge cell farthest along the ridge",
+    "length_m": 50.0,
+    "ridge_diameter_m": 52.3,
+    "ridge_cells": 2457,
+    "start_xy_m": [
+     1.5,
+     330.0
+    ],
+    "end_xy_m": [
+     24.0,
+     287.0
+    ]
+   }
+  },
+  "prattes-reef-el-segundo": {
+   "shore_normal_xy": [
+    0.0,
+    1.0
+   ],
+   "left_note": "left looking seaward = model +x side (Figure 1 plots -x; Cables rotated into its shoreline)",
+   "main": {
+    "rule": "Figure 1 / Table 2 cut (centreline of 08_paper/data/profiles/prattes-reef-el-segundo.json)",
+    "reef_run_xy_m": [
+     [
+      -0.02,
+      93.0
+     ],
+     [
+      -0.02,
+      103.0
+     ]
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ]
+   },
+   "sn25": {
+    "rule": "shore-normal line at 25 % of the alongshore extent of the footprint from its left end (looking seaward)",
+    "anchor_xy_m": [
+     14.36,
+     91.56
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ],
+    "alongshore_extent_m": 57.5,
+    "reef_run_xy_m": [
+     [
+      14.36,
+      88.0
+     ],
+     [
+      14.36,
+      94.0
+     ]
+    ]
+   },
+   "sn50": {
+    "rule": "shore-normal line at 50 % of the alongshore extent of the footprint from its left end (looking seaward)",
+    "anchor_xy_m": [
+     -0.02,
+     91.56
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ],
+    "alongshore_extent_m": 57.5,
+    "reef_run_xy_m": [
+     [
+      -0.02,
+      93.0
+     ],
+     [
+      -0.02,
+      103.0
+     ]
+    ]
+   },
+   "sn75": {
+    "rule": "shore-normal line at 75 % of the alongshore extent of the footprint from its left end (looking seaward)",
+    "anchor_xy_m": [
+     -14.39,
+     91.56
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ],
+    "alongshore_extent_m": 57.5,
+    "reef_run_xy_m": [
+     [
+      -14.39,
+      87.0
+     ],
+     [
+      -14.39,
+      93.0
+     ]
+    ]
+   },
+   "crest": {
+    "rule": "longest crest (ride) line, ridge cells within 1.0 m of the shallowest reef cell (z >= -2.84 m MSL), from the most seaward ridge cell to the ridge cell farthest along the ridge",
+    "length_m": 42.0,
+    "ridge_diameter_m": 70.8,
+    "ridge_cells": 5124,
+    "start_xy_m": [
+     -5.77,
+     102.03
+    ],
+    "end_xy_m": [
+     28.48,
+     78.03
+    ],
+    "path_xy_m": [
+     [
+      -5.77,
+      102.03
+     ],
+     [
+      -4.35,
+      100.61
+     ],
+     [
+      -2.94,
+      99.2
+     ],
+     [
+      -1.44,
+      97.88
+     ],
+     [
+      0.18,
+      96.7
+     ],
+     [
+      1.9,
+      95.68
+     ],
+     [
+      3.69,
+      94.8
+     ],
+     [
+      5.49,
+      93.92
+     ],
+     [
+      7.29,
+      93.04
+     ],
+     [
+      9.05,
+      92.09
+     ],
+     [
+      10.8,
+      91.13
+     ],
+     [
+      12.47,
+      90.03
+     ],
+     [
+      14.09,
+      88.85
+     ],
+     [
+      15.7,
+      87.67
+     ],
+     [
+      17.32,
+      86.49
+     ],
+     [
+      18.89,
+      85.25
+     ],
+     [
+      20.36,
+      83.9
+     ],
+     [
+      21.78,
+      82.5
+     ],
+     [
+      23.3,
+      81.19
+     ],
+     [
+      24.89,
+      79.98
+     ],
+     [
+      26.53,
+      78.84
+     ],
+     [
+      28.36,
+      78.07
+     ]
+    ],
+    "path_z_msl_m": [
+     -2.74,
+     -2.6,
+     -2.55,
+     -2.51,
+     -2.48,
+     -2.45,
+     -2.42,
+     -2.58,
+     -3.17,
+     -2.57,
+     -2.31,
+     -2.27,
+     -2.25,
+     -2.76,
+     -2.39,
+     -2.16,
+     -2.09,
+     -2.04,
+     -1.99,
+     -1.95,
+     -1.93,
+     -2.76
+    ]
+   },
+   "crest_dz0.5": {
+    "rule": "longest crest (ride) line, ridge cells within 0.5 m of the shallowest reef cell (z >= -2.34 m MSL), from the most seaward ridge cell to the ridge cell farthest along the ridge",
+    "length_m": 21.0,
+    "ridge_diameter_m": 25.2,
+    "ridge_cells": 795,
+    "start_xy_m": [
+     -13.52,
+     92.03
+    ],
+    "end_xy_m": [
+     -26.77,
+     75.78
+    ]
+   },
+   "crest_dz1.5": {
+    "rule": "longest crest (ride) line, ridge cells within 1.5 m of the shallowest reef cell (z >= -3.34 m MSL), from the most seaward ridge cell to the ridge cell farthest along the ridge",
+    "length_m": 42.0,
+    "ridge_diameter_m": 70.9,
+    "ridge_cells": 6245,
+    "start_xy_m": [
+     -6.02,
+     102.53
+    ],
+    "end_xy_m": [
+     28.73,
+     78.03
+    ]
+   }
+  },
+  "boscombe-surf-reef": {
+   "shore_normal_xy": [
+    0.0,
+    1.0
+   ],
+   "left_note": "left looking seaward = model +x side (Figure 1 plots -x; Cables rotated into its shoreline)",
+   "main": {
+    "rule": "Figure 1 / Table 2 cut (crest_line of 08_paper/data/profiles/boscombe-surf-reef.json)",
+    "reef_run_xy_m": [
+     [
+      2.0,
+      187.0
+     ],
+     [
+      2.0,
+      252.0
+     ]
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ]
+   },
+   "sn25": {
+    "rule": "shore-normal line at 25 % of the alongshore extent of the footprint from its left end (looking seaward)",
+    "anchor_xy_m": [
+     28.25,
+     226.39
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ],
+    "alongshore_extent_m": 91.0,
+    "reef_run_xy_m": [
+     [
+      28.25,
+      181.0
+     ],
+     [
+      28.25,
+      225.0
+     ]
+    ]
+   },
+   "sn50": {
+    "rule": "shore-normal line at 50 % of the alongshore extent of the footprint from its left end (looking seaward)",
+    "anchor_xy_m": [
+     5.5,
+     226.39
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ],
+    "alongshore_extent_m": 91.0,
+    "reef_run_xy_m": [
+     [
+      5.5,
+      180.0
+     ],
+     [
+      5.5,
+      249.0
+     ]
+    ]
+   },
+   "sn75": {
+    "rule": "shore-normal line at 75 % of the alongshore extent of the footprint from its left end (looking seaward)",
+    "anchor_xy_m": [
+     -17.25,
+     226.39
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ],
+    "alongshore_extent_m": 91.0,
+    "reef_run_xy_m": [
+     [
+      -17.25,
+      211.0
+     ],
+     [
+      -17.25,
+      277.0
+     ]
+    ]
+   },
+   "crest": {
+    "rule": "longest crest (ride) line, ridge cells within 1.0 m of the shallowest reef cell (z >= -1.90 m MSL), from the most seaward ridge cell to the ridge cell farthest along the ridge",
+    "length_m": 106.0,
+    "ridge_diameter_m": 105.8,
+    "ridge_cells": 2493,
+    "start_xy_m": [
+     -26.0,
+     267.0
+    ],
+    "end_xy_m": [
+     44.0,
+     191.0
+    ],
+    "path_xy_m": [
+     [
+      -26.0,
+      267.0
+     ],
+     [
+      -25.9,
+      265.0
+     ],
+     [
+      -25.65,
+      263.02
+     ],
+     [
+      -25.46,
+      261.03
+     ],
+     [
+      -25.19,
+      259.05
+     ],
+     [
+      -24.6,
+      257.14
+     ],
+     [
+      -23.78,
+      255.31
+     ],
+     [
+      -22.81,
+      253.57
+     ],
+     [
+      -21.67,
+      251.93
+     ],
+     [
+      -20.37,
+      250.41
+     ],
+     [
+      -18.97,
+      248.97
+     ],
+     [
+      -17.56,
+      247.56
+     ],
+     [
+      -16.15,
+      246.15
+     ],
+     [
+      -14.73,
+      244.73
+     ],
+     [
+      -13.32,
+      243.32
+     ],
+     [
+      -11.9,
+      241.9
+     ],
+     [
+      -10.49,
+      240.49
+     ],
+     [
+      -9.08,
+      239.08
+     ],
+     [
+      -7.66,
+      237.66
+     ],
+     [
+      -6.25,
+      236.25
+     ],
+     [
+      -4.83,
+      234.83
+     ],
+     [
+      -3.42,
+      233.42
+     ],
+     [
+      -2.0,
+      232.0
+     ],
+     [
+      -0.59,
+      230.59
+     ],
+     [
+      0.82,
+      229.18
+     ],
+     [
+      2.24,
+      227.76
+     ],
+     [
+      3.65,
+      226.35
+     ],
+     [
+      5.07,
+      224.93
+     ],
+     [
+      6.48,
+      223.52
+     ],
+     [
+      7.9,
+      222.1
+     ],
+     [
+      9.31,
+      220.69
+     ],
+     [
+      10.72,
+      219.28
+     ],
+     [
+      12.14,
+      217.86
+     ],
+     [
+      13.55,
+      216.45
+     ],
+     [
+      14.97,
+      215.03
+     ],
+     [
+      16.38,
+      213.62
+     ],
+     [
+      17.79,
+      212.21
+     ],
+     [
+      19.21,
+      210.79
+     ],
+     [
+      20.62,
+      209.38
+     ],
+     [
+      22.04,
+      207.96
+     ],
+     [
+      23.45,
+      206.55
+     ],
+     [
+      24.87,
+      205.13
+     ],
+     [
+      26.28,
+      203.72
+     ],
+     [
+      27.69,
+      202.31
+     ],
+     [
+      29.11,
+      200.89
+     ],
+     [
+      30.52,
+      199.48
+     ],
+     [
+      31.94,
+      198.06
+     ],
+     [
+      33.37,
+      196.67
+     ],
+     [
+      34.89,
+      195.37
+     ],
+     [
+      36.45,
+      194.12
+     ],
+     [
+      38.12,
+      193.02
+     ],
+     [
+      39.89,
+      192.1
+     ],
+     [
+      41.75,
+      191.37
+     ],
+     [
+      43.72,
+      191.04
+     ]
+    ],
+    "path_z_msl_m": [
+     -1.87,
+     -1.19,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.9,
+     -0.98,
+     -1.17,
+     -1.33,
+     -1.55,
+     -1.8
+    ]
+   },
+   "crest_dz0.5": {
+    "rule": "longest crest (ride) line, ridge cells within 0.5 m of the shallowest reef cell (z >= -1.40 m MSL), from the most seaward ridge cell to the ridge cell farthest along the ridge",
+    "length_m": 99.0,
+    "ridge_diameter_m": 101.3,
+    "ridge_cells": 2119,
+    "start_xy_m": [
+     -27.0,
+     265.0
+    ],
+    "end_xy_m": [
+     39.0,
+     191.0
+    ]
+   },
+   "crest_dz1.5": {
+    "rule": "longest crest (ride) line, ridge cells within 1.5 m of the shallowest reef cell (z >= -2.40 m MSL), from the most seaward ridge cell to the ridge cell farthest along the ridge",
+    "length_m": 111.0,
+    "ridge_diameter_m": 109.9,
+    "ridge_cells": 2871,
+    "start_xy_m": [
+     -27.0,
+     268.0
+    ],
+    "end_xy_m": [
+     48.0,
+     190.0
+    ]
+   }
+  },
+  "borth-coastal-defence-reef": {
+   "shore_normal_xy": [
+    0.0,
+    1.0
+   ],
+   "left_note": "left looking seaward = model +x side (Figure 1 plots -x; Cables rotated into its shoreline)",
+   "main": {
+    "rule": "Figure 1 / Table 2 cut (crest_line of 08_paper/data/profiles/borth-coastal-defence-reef.json)",
+    "reef_run_xy_m": [
+     [
+      -43.5,
+      264.0
+     ],
+     [
+      -43.5,
+      382.0
+     ]
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ]
+   },
+   "sn25": {
+    "rule": "shore-normal line at 25 % of the alongshore extent of the footprint from its left end (looking seaward)",
+    "anchor_xy_m": [
+     -9.75,
+     334.44
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ],
+    "alongshore_extent_m": 95.0,
+    "reef_run_xy_m": [
+     [
+      -9.75,
+      332.0
+     ],
+     [
+      -9.75,
+      404.0
+     ]
+    ]
+   },
+   "sn50": {
+    "rule": "shore-normal line at 50 % of the alongshore extent of the footprint from its left end (looking seaward)",
+    "anchor_xy_m": [
+     -33.5,
+     334.44
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ],
+    "alongshore_extent_m": 95.0,
+    "reef_run_xy_m": [
+     [
+      -33.5,
+      305.0
+     ],
+     [
+      -33.5,
+      396.0
+     ]
+    ]
+   },
+   "sn75": {
+    "rule": "shore-normal line at 75 % of the alongshore extent of the footprint from its left end (looking seaward)",
+    "anchor_xy_m": [
+     -57.25,
+     334.44
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ],
+    "alongshore_extent_m": 95.0,
+    "reef_run_xy_m": [
+     [
+      -57.25,
+      254.0
+     ],
+     [
+      -57.25,
+      361.0
+     ]
+    ]
+   },
+   "crest": {
+    "rule": "longest crest (ride) line, ridge cells within 1.0 m of the shallowest reef cell (z >= 0.09 m MSL), from the most seaward ridge cell to the ridge cell farthest along the ridge",
+    "length_m": 109.0,
+    "ridge_diameter_m": 120.3,
+    "ridge_cells": 1377,
+    "start_xy_m": [
+     -23.0,
+     362.0
+    ],
+    "end_xy_m": [
+     -61.0,
+     264.0
+    ],
+    "path_xy_m": [
+     [
+      -23.0,
+      362.0
+     ],
+     [
+      -24.41,
+      360.59
+     ],
+     [
+      -25.83,
+      359.17
+     ],
+     [
+      -27.24,
+      357.76
+     ],
+     [
+      -28.66,
+      356.34
+     ],
+     [
+      -30.07,
+      354.93
+     ],
+     [
+      -31.49,
+      353.51
+     ],
+     [
+      -32.9,
+      352.1
+     ],
+     [
+      -34.25,
+      350.63
+     ],
+     [
+      -35.55,
+      349.11
+     ],
+     [
+      -36.79,
+      347.54
+     ],
+     [
+      -37.89,
+      345.87
+     ],
+     [
+      -38.78,
+      344.08
+     ],
+     [
+      -39.4,
+      342.18
+     ],
+     [
+      -39.78,
+      340.22
+     ],
+     [
+      -39.98,
+      338.23
+     ],
+     [
+      -40.0,
+      336.23
+     ],
+     [
+      -40.0,
+      334.23
+     ],
+     [
+      -40.23,
+      332.25
+     ],
+     [
+      -40.79,
+      330.33
+     ],
+     [
+      -41.51,
+      328.47
+     ],
+     [
+      -42.44,
+      326.7
+     ],
+     [
+      -43.4,
+      324.94
+     ],
+     [
+      -44.47,
+      323.25
+     ],
+     [
+      -45.55,
+      321.57
+     ],
+     [
+      -46.61,
+      319.87
+     ],
+     [
+      -47.63,
+      318.15
+     ],
+     [
+      -48.6,
+      316.4
+     ],
+     [
+      -49.64,
+      314.7
+     ],
+     [
+      -50.72,
+      313.01
+     ],
+     [
+      -51.86,
+      311.37
+     ],
+     [
+      -52.93,
+      309.68
+     ],
+     [
+      -54.06,
+      308.04
+     ],
+     [
+      -55.18,
+      306.38
+     ],
+     [
+      -56.34,
+      304.75
+     ],
+     [
+      -57.41,
+      303.06
+     ],
+     [
+      -58.33,
+      301.28
+     ],
+     [
+      -59.11,
+      299.45
+     ],
+     [
+      -59.63,
+      297.52
+     ],
+     [
+      -59.95,
+      295.55
+     ],
+     [
+      -60.13,
+      293.55
+     ],
+     [
+      -60.31,
+      291.56
+     ],
+     [
+      -60.49,
+      289.57
+     ],
+     [
+      -60.67,
+      287.58
+     ],
+     [
+      -60.86,
+      285.59
+     ],
+     [
+      -61.0,
+      283.59
+     ],
+     [
+      -61.0,
+      281.59
+     ],
+     [
+      -61.0,
+      279.59
+     ],
+     [
+      -61.0,
+      277.59
+     ],
+     [
+      -61.0,
+      275.59
+     ],
+     [
+      -61.0,
+      273.59
+     ],
+     [
+      -61.0,
+      271.59
+     ],
+     [
+      -61.0,
+      269.59
+     ],
+     [
+      -61.0,
+      267.59
+     ],
+     [
+      -61.0,
+      265.59
+     ]
+    ],
+    "path_z_msl_m": [
+     0.07,
+     0.19,
+     0.19,
+     0.31,
+     0.38,
+     0.26,
+     0.27,
+     0.18,
+     0.42,
+     0.46,
+     0.45,
+     0.46,
+     0.49,
+     0.46,
+     0.46,
+     0.45,
+     0.44,
+     0.5,
+     0.41,
+     0.34,
+     0.35,
+     0.29,
+     0.32,
+     0.44,
+     0.35,
+     0.39,
+     0.41,
+     0.48,
+     0.52,
+     0.49,
+     0.52,
+     0.63,
+     0.57,
+     0.47,
+     0.4,
+     0.44,
+     0.45,
+     0.53,
+     0.57,
+     0.57,
+     0.44,
+     0.41,
+     0.44,
+     0.53,
+     0.65,
+     0.77,
+     0.84,
+     0.75,
+     0.75,
+     0.62,
+     0.83,
+     0.93,
+     0.9,
+     0.87,
+     0.59
+    ]
+   },
+   "crest_dz0.5": {
+    "rule": "longest crest (ride) line, ridge cells within 0.5 m of the shallowest reef cell (z >= 0.59 m MSL), from the most seaward ridge cell to the ridge cell farthest along the ridge",
+    "length_m": 22.0,
+    "ridge_diameter_m": 23.7,
+    "ridge_cells": 170,
+    "start_xy_m": [
+     -63.0,
+     288.0
+    ],
+    "end_xy_m": [
+     -59.0,
+     266.0
+    ]
+   },
+   "crest_dz1.5": {
+    "rule": "longest crest (ride) line, ridge cells within 1.5 m of the shallowest reef cell (z >= -0.41 m MSL), from the most seaward ridge cell to the ridge cell farthest along the ridge",
+    "length_m": 136.0,
+    "ridge_diameter_m": 143.7,
+    "ridge_cells": 2369,
+    "start_xy_m": [
+     -17.0,
+     386.0
+    ],
+    "end_xy_m": [
+     -63.0,
+     263.0
+    ]
+   }
+  },
+  "bunbury-airwave": {
+   "shore_normal_xy": [
+    0.0,
+    1.0
+   ],
+   "left_note": "left looking seaward = model +x side (Figure 1 plots -x; Cables rotated into its shoreline)",
+   "main": {
+    "rule": "Figure 1 / Table 2 cut (crest_line of 08_paper/data/profiles/bunbury-airwave.json)",
+    "reef_run_xy_m": [
+     [
+      0.0,
+      32.0
+     ],
+     [
+      0.0,
+      43.0
+     ]
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ]
+   },
+   "sn25": {
+    "rule": "shore-normal line at 25 % of the alongshore extent of the footprint from its left end (looking seaward)",
+    "anchor_xy_m": [
+     2.88,
+     37.5
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ],
+    "alongshore_extent_m": 11.5,
+    "reef_run_xy_m": [
+     [
+      2.88,
+      33.0
+     ],
+     [
+      2.88,
+      42.0
+     ]
+    ]
+   },
+   "sn50": {
+    "rule": "shore-normal line at 50 % of the alongshore extent of the footprint from its left end (looking seaward)",
+    "anchor_xy_m": [
+     0.0,
+     37.5
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ],
+    "alongshore_extent_m": 11.5,
+    "reef_run_xy_m": [
+     [
+      0.0,
+      32.0
+     ],
+     [
+      0.0,
+      43.0
+     ]
+    ]
+   },
+   "sn75": {
+    "rule": "shore-normal line at 75 % of the alongshore extent of the footprint from its left end (looking seaward)",
+    "anchor_xy_m": [
+     -2.88,
+     37.5
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ],
+    "alongshore_extent_m": 11.5,
+    "reef_run_xy_m": [
+     [
+      -2.88,
+      33.0
+     ],
+     [
+      -2.88,
+      42.0
+     ]
+    ]
+   },
+   "crest": {
+    "rule": "longest crest (ride) line, ridge cells within 1.0 m of the shallowest reef cell (z >= -1.68 m MSL), from the most seaward ridge cell to the ridge cell farthest along the ridge",
+    "length_m": 9.0,
+    "ridge_diameter_m": 9.4,
+    "ridge_cells": 955,
+    "start_xy_m": [
+     -0.75,
+     41.25
+    ],
+    "end_xy_m": [
+     2.0,
+     33.0
+    ],
+    "path_xy_m": [
+     [
+      -0.75,
+      41.25
+     ],
+     [
+      -0.75,
+      39.25
+     ],
+     [
+      -0.04,
+      37.54
+     ],
+     [
+      0.75,
+      35.87
+     ],
+     [
+      1.55,
+      34.2
+     ]
+    ],
+    "path_z_msl_m": [
+     -1.65,
+     -0.98,
+     -0.7,
+     -0.76,
+     -1.16
+    ]
+   },
+   "crest_dz0.5": {
+    "rule": "longest crest (ride) line, ridge cells within 0.5 m of the shallowest reef cell (z >= -1.18 m MSL), from the most seaward ridge cell to the ridge cell farthest along the ridge",
+    "length_m": 6.0,
+    "ridge_diameter_m": 6.7,
+    "ridge_cells": 489,
+    "start_xy_m": [
+     -0.5,
+     40.0
+    ],
+    "end_xy_m": [
+     1.75,
+     34.25
+    ]
+   },
+   "crest_dz1.5": {
+    "rule": "longest crest (ride) line, ridge cells within 1.5 m of the shallowest reef cell (z >= -2.18 m MSL), from the most seaward ridge cell to the ridge cell farthest along the ridge",
+    "length_m": 11.0,
+    "ridge_diameter_m": 11.4,
+    "ridge_cells": 1399,
+    "start_xy_m": [
+     -0.75,
+     42.25
+    ],
+    "end_xy_m": [
+     2.5,
+     32.25
+    ]
+   }
+  },
+  "southern-ocean-surf-reef-albany": {
+   "shore_normal_xy": [
+    0.0,
+    1.0
+   ],
+   "left_note": "left looking seaward = model +x side (Figure 1 plots -x; Cables rotated into its shoreline)",
+   "main": {
+    "rule": "Figure 1 / Table 2 cut (crest_line of 08_paper/data/profiles/southern-ocean-surf-reef-albany.json)",
+    "reef_run_xy_m": [
+     [
+      17.0,
+      92.0
+     ],
+     [
+      17.0,
+      231.0
+     ]
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ]
+   },
+   "sn25": {
+    "rule": "shore-normal line at 25 % of the alongshore extent of the footprint from its left end (looking seaward)",
+    "anchor_xy_m": [
+     30.0,
+     159.58
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ],
+    "alongshore_extent_m": 128.0,
+    "reef_run_xy_m": [
+     [
+      30.0,
+      127.0
+     ],
+     [
+      30.0,
+      232.0
+     ]
+    ]
+   },
+   "sn50": {
+    "rule": "shore-normal line at 50 % of the alongshore extent of the footprint from its left end (looking seaward)",
+    "anchor_xy_m": [
+     -2.0,
+     159.58
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ],
+    "alongshore_extent_m": 128.0,
+    "reef_run_xy_m": [
+     [
+      -2.0,
+      70.0
+     ],
+     [
+      -2.0,
+      217.0
+     ]
+    ]
+   },
+   "sn75": {
+    "rule": "shore-normal line at 75 % of the alongshore extent of the footprint from its left end (looking seaward)",
+    "anchor_xy_m": [
+     -34.0,
+     159.58
+    ],
+    "direction_xy": [
+     0.0,
+     1.0
+    ],
+    "alongshore_extent_m": 128.0,
+    "reef_run_xy_m": [
+     [
+      -34.0,
+      98.0
+     ],
+     [
+      -34.0,
+      207.0
+     ]
+    ]
+   },
+   "crest": {
+    "rule": "longest crest (ride) line, ridge cells within 1.0 m of the shallowest reef cell (z >= -2.17 m MSL), from the most seaward ridge cell to the ridge cell farthest along the ridge",
+    "length_m": 155.0,
+    "ridge_diameter_m": 162.1,
+    "ridge_cells": 2650,
+    "start_xy_m": [
+     35.0,
+     211.0
+    ],
+    "end_xy_m": [
+     -4.0,
+     70.0
+    ],
+    "path_xy_m": [
+     [
+      35.0,
+      211.0
+     ],
+     [
+      36.41,
+      209.59
+     ],
+     [
+      37.83,
+      208.17
+     ],
+     [
+      39.24,
+      206.76
+     ],
+     [
+      40.66,
+      205.34
+     ],
+     [
+      42.01,
+      203.87
+     ],
+     [
+      43.24,
+      202.3
+     ],
+     [
+      44.31,
+      200.61
+     ],
+     [
+      45.16,
+      198.8
+     ],
+     [
+      45.75,
+      196.89
+     ],
+     [
+      46.0,
+      194.91
+     ],
+     [
+      46.0,
+      192.91
+     ],
+     [
+      46.0,
+      190.91
+     ],
+     [
+      46.0,
+      188.91
+     ],
+     [
+      45.9,
+      186.91
+     ],
+     [
+      45.72,
+      184.92
+     ],
+     [
+      45.44,
+      182.94
+     ],
+     [
+      45.0,
+      181.0
+     ],
+     [
+      44.4,
+      179.09
+     ],
+     [
+      43.65,
+      177.24
+     ],
+     [
+      42.9,
+      175.38
+     ],
+     [
+      42.04,
+      173.58
+     ],
+     [
+      41.16,
+      171.79
+     ],
+     [
+      40.2,
+      170.03
+     ],
+     [
+      39.24,
+      168.27
+     ],
+     [
+      38.28,
+      166.52
+     ],
+     [
+      37.26,
+      164.8
+     ],
+     [
+      36.24,
+      163.09
+     ],
+     [
+      35.23,
+      161.36
+     ],
+     [
+      34.27,
+      159.6
+     ],
+     [
+      33.37,
+      157.82
+     ],
+     [
+      32.47,
+      156.03
+     ],
+     [
+      31.71,
+      154.19
+     ],
+     [
+      30.94,
+      152.34
+     ],
+     [
+      30.14,
+      150.51
+     ],
+     [
+      29.31,
+      148.69
+     ],
+     [
+      28.56,
+      146.84
+     ],
+     [
+      27.81,
+      144.99
+     ],
+     [
+      26.98,
+      143.17
+     ],
+     [
+      26.11,
+      141.37
+     ],
+     [
+      25.29,
+      139.55
+     ],
+     [
+      24.58,
+      137.68
+     ],
+     [
+      23.75,
+      135.86
+     ],
+     [
+      22.93,
+      134.04
+     ],
+     [
+      22.1,
+      132.22
+     ],
+     [
+      21.45,
+      130.33
+     ],
+     [
+      20.8,
+      128.44
+     ],
+     [
+      20.11,
+      126.56
+     ],
+     [
+      19.43,
+      124.68
+     ],
+     [
+      18.67,
+      122.83
+     ],
+     [
+      17.98,
+      120.95
+     ],
+     [
+      17.23,
+      119.1
+     ],
+     [
+      16.4,
+      117.28
+     ],
+     [
+      15.62,
+      115.44
+     ],
+     [
+      14.93,
+      113.56
+     ],
+     [
+      14.25,
+      111.68
+     ],
+     [
+      13.56,
+      109.8
+     ],
+     [
+      12.97,
+      107.9
+     ],
+     [
+      12.45,
+      105.97
+     ],
+     [
+      11.92,
+      104.04
+     ],
+     [
+      11.24,
+      102.16
+     ],
+     [
+      10.55,
+      100.28
+     ],
+     [
+      9.87,
+      98.4
+     ],
+     [
+      9.19,
+      96.52
+     ],
+     [
+      8.38,
+      94.69
+     ],
+     [
+      7.35,
+      92.98
+     ],
+     [
+      6.45,
+      91.19
+     ],
+     [
+      5.75,
+      89.32
+     ],
+     [
+      5.07,
+      87.44
+     ],
+     [
+      4.27,
+      85.6
+     ],
+     [
+      3.46,
+      83.78
+     ],
+     [
+      2.86,
+      81.87
+     ],
+     [
+      2.18,
+      79.99
+     ],
+     [
+      1.43,
+      78.14
+     ],
+     [
+      0.44,
+      76.4
+     ],
+     [
+      -0.63,
+      74.71
+     ],
+     [
+      -1.64,
+      72.98
+     ],
+     [
+      -2.82,
+      71.38
+     ]
+    ],
+    "path_z_msl_m": [
+     -2.15,
+     -1.99,
+     -1.84,
+     -1.69,
+     -1.58,
+     -1.48,
+     -1.4,
+     -1.33,
+     -1.29,
+     -1.25,
+     -1.23,
+     -1.21,
+     -1.21,
+     -1.2,
+     -1.22,
+     -1.27,
+     -1.35,
+     -1.41,
+     -1.51,
+     -1.59,
+     -1.65,
+     -1.71,
+     -1.78,
+     -1.85,
+     -1.93,
+     -1.99,
+     -2.03,
+     -2.03,
+     -2.03,
+     -2.02,
+     -2.02,
+     -2.02,
+     -2.01,
+     -2.01,
+     -2.01,
+     -2.01,
+     -2.0,
+     -2.0,
+     -2.0,
+     -2.0,
+     -1.99,
+     -1.99,
+     -2.0,
+     -1.99,
+     -1.99,
+     -1.99,
+     -1.99,
+     -1.99,
+     -1.98,
+     -1.98,
+     -1.98,
+     -1.97,
+     -1.98,
+     -1.99,
+     -1.99,
+     -1.99,
+     -1.99,
+     -1.99,
+     -1.99,
+     -1.98,
+     -1.97,
+     -1.97,
+     -1.96,
+     -1.98,
+     -1.98,
+     -1.98,
+     -1.98,
+     -1.98,
+     -1.98,
+     -1.98,
+     -1.99,
+     -1.98,
+     -1.98,
+     -1.99,
+     -1.99,
+     -2.0,
+     -2.02,
+     -2.08
+    ]
+   },
+   "crest_dz0.5": {
+    "rule": "longest crest (ride) line, ridge cells within 0.5 m of the shallowest reef cell (z >= -1.67 m MSL), from the most seaward ridge cell to the ridge cell farthest along the ridge",
+    "length_m": 34.0,
+    "ridge_diameter_m": 34.1,
+    "ridge_cells": 508,
+    "start_xy_m": [
+     41.0,
+     207.0
+    ],
+    "end_xy_m": [
+     43.0,
+     175.0
+    ]
+   },
+   "crest_dz1.5": {
+    "rule": "longest crest (ride) line, ridge cells within 1.5 m of the shallowest reef cell (z >= -2.67 m MSL), from the most seaward ridge cell to the ridge cell farthest along the ridge",
+    "length_m": 159.0,
+    "ridge_diameter_m": 164.5,
+    "ridge_cells": 5976,
+    "start_xy_m": [
+     35.0,
+     215.0
+    ],
+    "end_xy_m": [
+     -7.0,
+     71.0
+    ]
+   }
+  }
+ },
+ "spearman": {
+  "main": {
+   "rho": 0.77,
+   "p_perm": 0.037,
+   "n": 8
+  },
+  "sn25": {
+   "rho": 0.69,
+   "p_perm": 0.073,
+   "n": 8
+  },
+  "sn50": {
+   "rho": 0.66,
+   "p_perm": 0.155,
+   "n": 7
+  },
+  "sn75": {
+   "rho": 0.68,
+   "p_perm": 0.097,
+   "n": 7
+  },
+  "sn_all": {
+   "rho": 0.77,
+   "p_perm": 0.037,
+   "n": 8
+  },
+  "sn_best": {
+   "rho": 0.77,
+   "p_perm": 0.037,
+   "n": 8
+  },
+  "crest": {
+   "rho": 0.62,
+   "p_perm": 0.147,
+   "n": 8
+  },
+  "crest_dz0.5": {
+   "rho": 0.69,
+   "p_perm": 0.078,
+   "n": 8
+  },
+  "crest_dz1.5": {
+   "rho": 0.69,
+   "p_perm": 0.077,
+   "n": 8
+  },
+  "crest_line_length": {
+   "rho": 0.85,
+   "p_perm": 0.015,
+   "n": 8
+  }
+ }
+}

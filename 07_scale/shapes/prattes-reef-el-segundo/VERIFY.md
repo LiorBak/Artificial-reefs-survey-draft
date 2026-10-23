@@ -1,4 +1,4 @@
-**PENDING RE-VERIFICATION (2026-10-05, 3D run).** After this verification (verified_on 2026-10-04) shape.json was edited to add the supplied Borrero & Nelsen (2003) PDF (src/borrero_nelsen_2003_prattes_monitoring_results.pdf) as source img7 / reference R28, to upgrade three dimension checks (cross-shore width 30 m now traced to p.14; bag size 4 x 7 x 10 ft now primary; crest label '-6' MSL' vs paper '- 6 ft MLLW' = same number, two datum labels), to add a position note (geo stays null) and one confidence factor. The outline polygons, the canonical frame, the design version and the confidence level (medium) were NOT changed: the paper's Fig. 4 is the same Skelly design drawing as img1 (3d/annotated/A13_bn2003_fig4_vs_skelly_img1.png) and the paper has no as-built plan. A verifier should re-read the paper (pages 1-3, 14, 16; 3d/annotated/A12, A13, A14, A17) before this file is called verified again. Status in shape.json was left as it was; the editing agent did not re-verify.
+**RE-VERIFIED 2026-10-10** (the pending note of 2026-10-05 is resolved; see the last section of this file; the old note is kept in archive/pre_reverify_2026-10-10/VERIFY.md).
 
 # VERIFY - prattes-reef-el-segundo (adversarial verification, run 2026-10-05; stamped verified_on 2026-10-04 per brief)
 
@@ -77,3 +77,19 @@ Verifier notes are appended check by check. Starting state: shape.json status "t
 
 ## Final status
 status = verified; verified_on = 2026-10-04 (as the brief requires; checks run 2026-10-05); confidence = medium; overlay_match = good.
+
+
+## RE-VERIFICATION 2026-10-10 (fresh agent; items of the former `pending_reverification` block)
+Why: after the 2026-10-04 stamp an agent had edited shape.json to add the supplied Borrero & Nelsen (2003) PDF (img7 / R28), three upgraded dimension checks, the position note and one confidence factor. Files archived before any edit: `archive/pre_reverify_2026-10-10/`.
+
+| # | item | verdict | key evidence |
+|---|---|---|---|
+| 1 | Re-read img7 / R28 pp.1-3, 14, 16 | confirmed | text re-extracted with pymupdf; every quoted number matches shape.json / METHODS_3D (110 bags, 4 x 7 x 10 ft = 7.9 m3, 22 Sept 2000, '-6 ft MLLW' outermost point, Phase II 23-24 Apr 2001 +90 bags, 'within 3ft of MLLW', 1600 m3 / 200 bags). Fig. 2 viewed. Wording: paper says 'obtuse V'; the drawing's arms are 89.1 deg apart. |
+| 2 | Fig. 4 = same drawing as img1 | confirmed | same title block, counts, call-outs, 45 deg mark, complete bar (27/27/54/53 px = 1.789 px/ft). img5 is a crop of the same raster as Fig. 4 (zero offset, 94% of pixels within 8 grey levels), so they are one reproduction, not two; the other, independent one is img1 (RWR). img5 outline drawn on Fig. 4 follows the solid strokes (`overlays/bn2003_fig4_with_img5_outline_2026-10-10.png`). |
+| 3 | 30 m cross-shore statement | no change to the verdict (agrees) | p.14 prints '30' with no unit. Fig. 20 (p.14) draws the V on its own 0-50 m bar: 29.0 m cross-shore x 58.5 m tip to tip (+-1.4%) vs our 28.6 x 58.0 m (`overlays/bn2003_fig20_pratte_scale_check_2026-10-10.png`). Not diagnostic of the phase (Fig. 5 Phase II bump is 29.4 m). |
+| 4 | 3D model uses the right values? | yes for plan, tides and crest; two judgement calls left open | plan md5 in 3d/computed.json = md5 of shape.json (plan unchanged); tidal offsets and zA/zB/zC recomputed from the NOAA json and equal the model's (0.849 m, -1.829 / -2.678 / -1.763 m MSL); crest datum label ambiguity (drawing MSL vs paper MLLW) and the unresolved volume gap (V8: 443 m3 vs 695-782 m3 of bags) are not decidable from the sources. |
+| 5 | position text vs Fig. 2 (new finding) | geo stays null | paper text: 200 m from outfall, within 500 m of both structures; Fig. 2 reading: about 340 m and 670 m. Hint uncertainty may be +-150 m instead of +-100 m (recorded, decided 2026-10-10 by the project team: +-150 m now stated in the 3D notes; hint and model unchanged). |
+
+Method notes. Fig. 20: embedded raster extracted from PDF p.14 (576 x 282 px, saved in `src/`), scale bar ticks found by run-length scan at x = 400 and 470 px (1.40 px/m); V extents read at 8x NEAREST zoom (tips y = 77.5 and 159.5 px, cross-shore x = 99 to 140 px). Fig. 4 bar: run-length scan of rows 392 and 397 of the 371 x 468 raster. Fig. 2: read by eye on the 432 x 231 raster (6.25 m/px from the 550 m range-line spacing), +-10 px = +-60 m.
+
+Result: status stays `verified`; `reverified_on` = 2026-10-10 added; `pending_reverification` removed (replaced by a short `reverification` record); confidence stays medium. Polygons, canonical frame and design_version.drawn unchanged. Text changes only: dimensions_check row 2, one confidence factor, geo_note, verification array items 8-12. The 3D model needed no value change; build_3d.py was re-run so that the model's recorded shape.json md5 matches the edited file (before/after table in HANDOFF.md).

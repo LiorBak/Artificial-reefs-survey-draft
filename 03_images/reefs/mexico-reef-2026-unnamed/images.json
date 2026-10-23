@@ -81,5 +81,87 @@
    ]
   },
   "added_by": "image-registry backfill, 2026-10-06"
+ },
+ {
+  "id": "mexico-reef-2026-unnamed-img-03",
+  "file": "07_scale/shapes/mexico-reef-2026-unnamed/src/imagery/costalegre_esri_img2025-05-23_z15_r6500m.png",
+  "annotated_files": [],
+  "kind": "satellite",
+  "title": "Costalegre coast near Chalacatepec and the Xola-Paraman lagoon (Esri 2025-05-23, z15, r=6.5 km) - site search, reef NOT identified",
+  "citation": "Esri, Maxar, Earthstar Geographics and the GIS User Community. World Imagery (current layer), image captured 2025-05-23 (identify DATE field via satellite.py). Esri World Imagery tile service, https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer. Accessed 2026-10-10.",
+  "image_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+  "source_page": "Esri World Imagery",
+  "page_or_figure": "centre 19.735,-105.255, 2891x2891 px, ~4.5 m/px",
+  "image_date": "2025-05-23",
+  "credit": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+  "license": "Esri/Maxar imagery terms (not an open licence); private research copy only",
+  "retrieved": "2026-10-10",
+  "shows": "Long surf beach, the Xola-Paraman lagoon mouth at about 19.731,-105.291, Chalacatepec airstrip at about 19.719,-105.231 (matches the card area pin), farmland and a rocky point in the south; no visible artificial structure.",
+  "structure_visible": false,
+  "state_shown": "site context (reef location unconfirmed)",
+  "used_for": [
+   "context",
+   "not_used"
+  ],
+  "how_used": "2026-10-10: searched the coast for rock works or a break line; none visible (a submerged reef would not show). Not used for geometry. display false: the reef is not identified here.",
+  "linked_records": [
+   "07_scale/shapes/mexico-reef-2026-unnamed/FEASIBILITY.md section 6",
+   "02_research/dead_ends/mexico-reef-2026-unnamed.json"
+  ],
+  "for_3d_check": {
+   "pending": false,
+   "what_to_check": "",
+   "model_values_affected": []
+  },
+  "bytes": 14473776,
+  "px": [
+   2891,
+   2891
+  ],
+  "sha256": "153fa9f468a1e1cda47ad3df238da397e2b43e520c75b3300a451b7ed82a4fb2",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": false,
+  "added_by": "Burkitts+Mexico network pass, 2026-10-10"
+ },
+ {
+  "id": "mexico-reef-2026-unnamed-img-04",
+  "file": "07_scale/shapes/mexico-reef-2026-unnamed/src/imagery/chalacatepec_south_point_esri_img2025-05-23_z17_r900m.png",
+  "annotated_files": [],
+  "kind": "satellite",
+  "title": "Natural rocky point and bay about 19.679,-105.262 (Esri 2025-05-23, z17, r=0.9 km) - candidate by eye, NOT confirmed as Xala",
+  "citation": "Esri, Maxar, Earthstar Geographics and the GIS User Community. World Imagery (current layer), image captured 2025-05-23 (identify DATE field via satellite.py). Esri World Imagery tile service, https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer. Accessed 2026-10-10.",
+  "image_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+  "source_page": "Esri World Imagery",
+  "page_or_figure": "centre 19.6805,-105.262, 1601x1601 px, ~1.1 m/px",
+  "image_date": "2025-05-23",
+  "credit": "Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+  "license": "Esri/Maxar imagery terms (not an open licence); private research copy only",
+  "retrieved": "2026-10-10",
+  "shows": "A natural basalt/rock point with a curved sandy bay and a surf line along the open beach to the south-east; a few buildings and tracks; no artificial rock structure visible.",
+  "structure_visible": false,
+  "state_shown": "site context (unconfirmed candidate)",
+  "used_for": [
+   "context",
+   "not_used"
+  ],
+  "how_used": "2026-10-10: looked at as a possible Xala bay; nothing in the image links it to the reef (no works, no coordinates published). Not used. display false to avoid implying the location.",
+  "linked_records": [
+   "07_scale/shapes/mexico-reef-2026-unnamed/FEASIBILITY.md section 6",
+   "02_research/dead_ends/mexico-reef-2026-unnamed.json"
+  ],
+  "for_3d_check": {
+   "pending": false,
+   "what_to_check": "",
+   "model_values_affected": []
+  },
+  "bytes": 5056879,
+  "px": [
+   1601,
+   1601
+  ],
+  "sha256": "f2c24f6b8ce388ae298398d601e8573189cabfe526971cb3db3081c86a6c1226",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": false,
+  "added_by": "Burkitts+Mexico network pass, 2026-10-10"
  }
 ]

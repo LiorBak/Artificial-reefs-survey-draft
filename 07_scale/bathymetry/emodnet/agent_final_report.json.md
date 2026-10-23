@@ -42,7 +42,7 @@
     "borth-coastal-defence-reef-img-15 - 07_scale/bathymetry/emodnet/viewer/borth-coastal-defence-reef_viewer_sources_raw.png (annotated: ..._sources_annotated.png) - EMODnet source-references layer at Borth (CDI 115084 patch)",
     "borth-coastal-defence-reef-img-16 - 07_scale/bathymetry/emodnet/figures/borth-coastal-defence-reef_profile_emodnet.png - EMODnet cells along three shore-normal lines through the Borth mounds"
   ],
-  "report_md_status": "NOT WRITTEN: the harness refused the Write call for a report file; full text is in section B of this message. Save as C:/Users/lior/Documents/Gemini/AG/Artificial reef - to upload to git/07_scale/bathymetry/emodnet/REPORT.md",
+  "report_md_status": "NOT WRITTEN: the harness refused the Write call for a report file; full text is in section B of this message. Save as C:/Users/lior/Documents/Claude/Projects/Artificial reef/07_scale/bathymetry/emodnet/REPORT.md",
   "files": [
     "07_scale/bathymetry/emodnet/METHOD.md",
     "07_scale/bathymetry/emodnet/REQUESTS_FOR_LIOR.md",

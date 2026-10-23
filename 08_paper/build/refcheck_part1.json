@@ -1,0 +1,478 @@
+[
+ {
+  "entry": "ABC News. (2019, December 16). Bunbury's Back Beach surfers deflated as artifici",
+  "status": "OK",
+  "what_was_checked": "url (ABC News page)",
+  "corrected_entry": null,
+  "note": "Headline and title match."
+ },
+ {
+  "entry": "ABC News. (2022, September 3). Millions spent to protect Gold Coast beaches, but",
+  "status": "OK",
+  "what_was_checked": "url (ABC News page)",
+  "corrected_entry": null,
+  "note": "Headline and title match."
+ },
+ {
+  "entry": "ACE Geosynthetics. (n.d.). *Beach nourishment, Fujarah, UAE* [Case study, 2010-2",
+  "status": "OK",
+  "what_was_checked": "url (ACE Geosynthetics case page)",
+  "corrected_entry": null,
+  "note": "Title matches; the 2010-2014 date range is an annotation not checked on the page."
+ },
+ {
+  "entry": "Alvarez, E., Rubio, R., & Ricalde, H. (2006, June 1). Back to the beach in Mexic",
+  "status": "OK",
+  "what_was_checked": "url/PDF or search",
+  "corrected_entry": null,
+  "note": "Page or document reachable and title/authors consistent; not every detail compared."
+ },
+ {
+  "entry": "Alvarez, E., Rubio, R., & Ricalde, H. (2007). Beach restoration with geotextile ",
+  "status": "OK",
+  "what_was_checked": "Crossref 10.1016/j.geotexmem.2007.02.005",
+  "corrected_entry": null,
+  "note": "Authors, volume 25, pages 233-241 match."
+ },
+ {
+  "entry": "Antunes do Carmo, J. S., Neves, M. G., & ten Voorde, M. (2011). Designing a mult",
+  "status": "OK",
+  "what_was_checked": "Crossref 10.1007/s11852-010-0124-1",
+  "corrected_entry": null,
+  "note": "Authors, volume 15, pages 99-112 match. Crossref issued date is 2010 (online first); volume 15 is 2011 in print. Acceptable, but check which year the journal prints."
+ },
+ {
+  "entry": "Baker, S., Brashear, P., Tschirky, P., Marrone, J., & Larson, M. (2018). Design ",
+  "status": "OK",
+  "what_was_checked": "Crossref 10.9753/icce.v36.papers.59",
+  "corrected_entry": null,
+  "note": "Authors and year match; Crossref has no volume field, paper number matches the DOI."
+ },
+ {
+  "entry": "Bar, D., & Drimer, N. (2023). Preliminary design tools for hydrodynamic aspects ",
+  "status": "OK",
+  "what_was_checked": "Crossref 10.3390/jmse11020236",
+  "corrected_entry": null,
+  "note": "Authors, year, title, volume 11, article 236 match."
+ },
+ {
+  "entry": "Barlow, M. (2013). *The effects of anthropometrical, physiological and environme",
+  "status": "OK",
+  "what_was_checked": "url/PDF or search",
+  "corrected_entry": null,
+  "note": "Page or document reachable and title/authors consistent; not every detail compared."
+ },
+ {
+  "entry": "Battjes, J. A. (1974). Surf similarity. *Proceedings of the 14th International C",
+  "status": "OK",
+  "what_was_checked": "Crossref 10.9753/icce.v14.26",
+  "corrected_entry": null,
+  "note": "Author, year 1974, ICCE proceedings match."
+ },
+ {
+  "entry": "Bitan, M., & Zviely, D. (2020). Sand beach nourishment: Experience from the Medi",
+  "status": "OK",
+  "what_was_checked": "Crossref 10.3390/jmse8040273",
+  "corrected_entry": null,
+  "note": "Authors, year 2020, title, volume 8, article 273 match."
+ },
+ {
+  "entry": "Black, K. P., & Andrews, C. J. (2001). Sandy shoreline response to offshore obst",
+  "status": "NOT_FOUND",
+  "what_was_checked": "web search (Black and Andrews 2001, JCR)",
+  "corrected_entry": null,
+  "note": "No bibliographic record found. Secondary sources (Univ. of Cagliari study; a Sardinian paper) discuss the 2001 salient/tombolo work, so the work probably exists, but the title, venue and pages could not be confirmed. Needs a library or Scopus check."
+ },
+ {
+  "entry": "Blacka, M. J., Shand, T. D., Carley, J. T., & Mariani, A. (2013). *A review of a",
+  "status": "OK",
+  "what_was_checked": "DataCite 10.4225/53/58e1dc7368c7a",
+  "corrected_entry": null,
+  "note": "Title, year 2013 and authors match. DataCite publisher is \"UNSW Sydney\"; the entry says \"UNSW Water Research Laboratory\" (both are plausible; minor)."
+ },
+ {
+  "entry": "Bluecoast Consulting Engineers. (n.d.). *Artificial reefs* [Project page with th",
+  "status": "FIXED",
+  "what_was_checked": "url (Bluecoast page)",
+  "corrected_entry": "Bluecoast Consulting Engineers. (n.d.). *Artificial reefs for coastal protection and surfing* [Project page with the Nearmap aerial of the Palm Beach reef]. https://www.bluecoastconsulting.com.au/artificialreefs",
+  "note": "Page title is \"Artificial reefs for coastal protection and surfing\"; the entry shortens it."
+ },
+ {
+  "entry": "BMT Western Australia. (2018). *Middleton Beach artificial surf reef environment",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "url (epa.wa.gov.au PDF)",
+  "corrected_entry": null,
+  "note": "HTTP 403 (web application firewall). Not bypassed."
+ },
+ {
+  "entry": "Borrero, J. C., & Nelsen, C. (2003). Results of a comprehensive monitoring progr",
+  "status": "NOT_FOUND",
+  "what_was_checked": "web search (Borrero and Nelsen 2003)",
+  "corrected_entry": null,
+  "note": "Paper not found. The search found that Borrero and Nelsen co-organised the 4th International Surfing Reef Symposium, held in January 2005, not 2003. The 2003 date and the proceedings title are doubtful. Likely a wrong year or event; needs checking before submission."
+ },
+ {
+  "entry": "Borth Community. (n.d.). *Borth coastal defence overview*. http://www.borthcommu",
+  "status": "OK",
+  "what_was_checked": "url over https (borthcommunity overview, 200)",
+  "corrected_entry": null,
+  "note": "Page reachable over https (the http link failed). Title not compared."
+ },
+ {
+  "entry": "Briganti, R., van der Meer, J. W., Buccino, M., & Calabrese, M. (2003). Wave tra",
+  "status": "OK",
+  "what_was_checked": "web search (Briganti et al. 2003)",
+  "corrected_entry": null,
+  "note": "ASCE Coastal Structures 2003, Portland, pp. 580-592, authors Briganti, van der Meer, Buccino, Calabrese, all confirmed."
+ },
+ {
+  "entry": "Bunbury Mail. (2022, March 22). Airwave founder Troy Bottegal moves towards maki",
+  "status": "OK",
+  "what_was_checked": "url (Bunbury Mail)",
+  "corrected_entry": null,
+  "note": "Headline \"Airwave founder Troy Bottegal ...\" matches; date and spelling confirmed."
+ },
+ {
+  "entry": "Carmel, Z., Inman, D. L., & Golik, A. (1985). Characteristics of storm waves off",
+  "status": "OK",
+  "what_was_checked": "Crossref 10.1016/0378-3839(85)90024-9",
+  "corrected_entry": null,
+  "note": "Authors, 1985, Coastal Engineering 9(1), 1-19 and title match. (The DOI must be quoted with its parentheses; a truncated DOI gives a 404.)"
+ },
+ {
+  "entry": "Channel Coastal Observatory. (2026a). *Beach profile surveys, Boscombe frontage,",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "url (coastalmonitoring.org landing page, 200)",
+  "corrected_entry": null,
+  "note": "Dataset itself not reached; only the network landing page was checked. Check the dataset record manually."
+ },
+ {
+  "entry": "Channel Coastal Observatory. (2026b). *Beach profile surveys, Boscombe lines 5f0",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "url (coastalmonitoring.org landing page, 200)",
+  "corrected_entry": null,
+  "note": "As entry 21: dataset record not reached."
+ },
+ {
+  "entry": "Chien, A., Tseng, F., & Tang, A. (2013). Geotextile tube application on beach re",
+  "status": "OK",
+  "what_was_checked": "Crossref 10.2495/CP130201",
+  "corrected_entry": null,
+  "note": "Authors, 2013, title and pages 231-239 match. Crossref volume field reads \"1\", the entry gives volume 169 (WIT series volume). Check the volume number."
+ },
+ {
+  "entry": "Chien, A., Wu, S., Tseng, F., & Tang, A. (2014). Geotextile tubes application on",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "Crossref 10.7763/IJESD.2014.V5.535",
+  "corrected_entry": null,
+  "note": "Kept UNVERIFIABLE as instructed. Note: the entry note says the DOI resolves to an unrelated paper, but Crossref lists \"Geotextile Tubes Application on Beach Nourishment in UAE\" by Chien, Wu, Tseng and Tang, IJESD 5, pp. 506-509, which matches the entry. The note is wrong and should be corrected; the reference itself may well be correct."
+ },
+ {
+  "entry": "City of Albany. (n.d.). *Southern Ocean Surf Reef (SOSR)* [Project pages, includ",
+  "status": "OK",
+  "what_was_checked": "url (City of Albany SOSR page)",
+  "corrected_entry": null,
+  "note": "Project page exists with the SOSR title."
+ },
+ {
+  "entry": "City of Albany. (2023, May). *Albany artificial surf reef: Community update and ",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "none (private copy supplied by the author)",
+  "corrected_entry": null,
+  "note": "Community document, private copy; not online. Cannot be checked from here."
+ },
+ {
+  "entry": "City of Gold Coast. (n.d.). *Artificial reef* [Feature layer, Open Data, CC BY 3",
+  "status": "OK",
+  "what_was_checked": "url/PDF or search",
+  "corrected_entry": null,
+  "note": "Page or document reachable and title/authors consistent; not every detail compared."
+ },
+ {
+  "entry": "Collins, S. (2010, April 29). Artificial reef in Kovalam. Surfing India / Mantra",
+  "status": "OK",
+  "what_was_checked": "url/PDF or search",
+  "corrected_entry": null,
+  "note": "Page or document reachable and title/authors consistent; not every detail compared."
+ },
+ {
+  "entry": "Corbett, B. B., Mulcahy, M. G., Elliott-Perkins, Z., & Hunt, S. (2023). Narrowne",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "DOI 10.3316/informit.477067242341136 (doi.org and Crossref 404)",
+  "corrected_entry": null,
+  "note": "Informit DOI not resolvable from this environment (404 at doi.org, no Crossref or DataCite record). Check in the Informit or Trove database."
+ },
+ {
+  "entry": "Corvaro, S., Lorenzoni, C., Mancinelli, A., Marini, F., & Rocchi, S. (2022). Hyd",
+  "status": "OK",
+  "what_was_checked": "url/PDF or search",
+  "corrected_entry": null,
+  "note": "Page or document reachable and title/authors consistent; not every detail compared."
+ },
+ {
+  "entry": "Dahm, J., & Gibberd, B. (2013). *Mount Maunganui Reef: Assessment of management ",
+  "status": "OK",
+  "what_was_checked": "url/PDF or search",
+  "corrected_entry": null,
+  "note": "Page or document reachable and title/authors consistent; not every detail compared."
+ },
+ {
+  "entry": "Daily Post. (2013, April 16). Borth's new coastal defences to transform town int",
+  "status": "OK",
+  "what_was_checked": "url/PDF or search",
+  "corrected_entry": null,
+  "note": "Page or document reachable and title/authors consistent; not every detail compared."
+ },
+ {
+  "entry": "Dan Harmon. (2026, February 17). *The $500k surf reef failure* [Video; viewer co",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "url (YouTube)",
+  "corrected_entry": null,
+  "note": "HTTP 429 (rate limit). Not bypassed. The entry is an evidence-grade-D video, so keep it flagged as such."
+ },
+ {
+  "entry": "Davidson, M. (2010). *6-month interim report: Performance of Boscombe surfing re",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "none",
+  "corrected_entry": null,
+  "note": "Report not obtained; cited as reported by Rendle et al. Cannot be checked."
+ },
+ {
+  "entry": "Dean, R. G., & Dalrymple, R. A. (1991). *Water wave mechanics for engineers and ",
+  "status": "OK",
+  "what_was_checked": "web search (Dean and Dalrymple 1991)",
+  "corrected_entry": null,
+  "note": "World Scientific 1991, Advanced Series on Ocean Engineering vol. 2; first edition 1984 (Prentice-Hall) confirmed."
+ },
+ {
+  "entry": "ECOncrete. (n.d.). *ECOncrete case studies* [Company document]. https://www.monm",
+  "status": "OK",
+  "what_was_checked": "url/PDF or search",
+  "corrected_entry": null,
+  "note": "Page or document reachable and title/authors consistent; not every detail compared."
+ },
+ {
+  "entry": "EcoShape. (n.d.). *Artificial reefs: Example cases*. https://www.ecoshape.org/en",
+  "status": "OK",
+  "what_was_checked": "url/PDF or search",
+  "corrected_entry": null,
+  "note": "Page or document reachable and title/authors consistent; not every detail compared."
+ },
+ {
+  "entry": "EMODnet Bathymetry Consortium. (2024). *EMODnet digital bathymetry (DTM 2024)* [",
+  "status": "OK",
+  "what_was_checked": "DataCite 10.12770/cf51df64-56f9-4a99-b1aa-36b8d7b743a1",
+  "corrected_entry": null,
+  "note": "Title \"EMODnet Digital Bathymetry (DTM 2024)\", 2024, EMODnet Bathymetry Consortium match."
+ },
+ {
+  "entry": "Esri, Maxar, Earthstar Geographics, & the GIS User Community. (n.d.). *World Ima",
+  "status": "OK",
+  "what_was_checked": "url/PDF or search",
+  "corrected_entry": null,
+  "note": "Page or document reachable and title/authors consistent; not every detail compared."
+ },
+ {
+  "entry": "Fontaine, E. (2008, October 11). Sandbagged: After years of unspectacular closeo",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "url (Surfline)",
+  "corrected_entry": null,
+  "note": "HTTP 403 (Cloudflare challenge). Not bypassed."
+ },
+ {
+  "entry": "Galvin, C. J. (1968). Breaker type classification on three laboratory beaches. *",
+  "status": "OK",
+  "what_was_checked": "Crossref 10.1029/JB073i012p03651",
+  "corrected_entry": null,
+  "note": "Author, 1968, JGR 73(12), 3651-3659 match."
+ },
+ {
+  "entry": "Garmin Navionics. (n.d.). *Navionics SonarChart* [Crowd-sourced bathymetric char",
+  "status": "OK",
+  "what_was_checked": "url/PDF or search",
+  "corrected_entry": null,
+  "note": "Page or document reachable and title/authors consistent; not every detail compared."
+ },
+ {
+  "entry": "Geosynthetics Magazine. (2023, June 7). Why have most geotextile artificial reef",
+  "status": "OK",
+  "what_was_checked": "url/PDF or search",
+  "corrected_entry": null,
+  "note": "Page or document reachable and title/authors consistent; not every detail compared."
+ },
+ {
+  "entry": "GHD. (2021). *Tidal inundation monitoring and modelling report* (Appendix B, Tab",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "url (epa.wa.gov.au PDF)",
+  "corrected_entry": null,
+  "note": "HTTP 403. Not bypassed."
+ },
+ {
+  "entry": "González Leija, M. B., Chávez, X., Alvarez, E., Mendoza, E., & Silva, R. (2014).",
+  "status": "OK",
+  "what_was_checked": "Crossref 10.9753/icce.v34.posters.25",
+  "corrected_entry": null,
+  "note": "Authors (5), 2014, Coastal Eng. Proc. 34, posters.25 match."
+ },
+ {
+  "entry": "Government Company for the Protection of Mediterranean Sea Cliffs [MCCP]. (2026)",
+  "status": "OK",
+  "what_was_checked": "url (MCCP project page, Hebrew, 200)",
+  "corrected_entry": null,
+  "note": "Page reachable; the project list was not read in detail."
+ },
+ {
+  "entry": "Hansford, M. (2011, September 15). Borth's big dig. *New Civil Engineer*. https:",
+  "status": "OK",
+  "what_was_checked": "url/PDF or search",
+  "corrected_entry": null,
+  "note": "Page or document reachable and title/authors consistent; not every detail compared."
+ },
+ {
+  "entry": "Haskoning UK. (2011). *Borth coastal protection scheme, Phase 1: Drawings 9V5090",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "url (borthcommunity planning-drawings page, 200)",
+  "corrected_entry": null,
+  "note": "Page reachable, but the drawing set itself was not inspected for the drawing numbers."
+ },
+ {
+  "entry": "Hochul, K. (2024). *Governor Hochul announces completion of $111 million coastal",
+  "status": "OK",
+  "what_was_checked": "url/PDF or search",
+  "corrected_entry": null,
+  "note": "Page or document reachable and title/authors consistent; not every detail compared."
+ },
+ {
+  "entry": "Howells, S., & O'Neal, D. (2024, January 28). How a sugarcane cutter and his mat",
+  "status": "OK",
+  "what_was_checked": "url/PDF or search",
+  "corrected_entry": null,
+  "note": "Page or document reachable and title/authors consistent; not every detail compared."
+ },
+ {
+  "entry": "Hunt, S., Britton, G., Messiter, D., Prenzler, P., Knight, S., & Watterson, E. (",
+  "status": "OK",
+  "what_was_checked": "Crossref 10.9753/icce.v37.management.66",
+  "corrected_entry": null,
+  "note": "Authors and pages match. Crossref date is 2023 (online); the entry says ICCE 2022 and notes this. Acceptable."
+ },
+ {
+  "entry": "Hutt, J. A., Black, K. P., & Mead, S. T. (2001). Classification of surf breaks i",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "web search (Hutt, Black and Mead 2001)",
+  "corrected_entry": null,
+  "note": "Authors and year confirmed by a reference list. Volume 29 is consistent with a companion Mead and Black paper in the same issue (pp. 5-20), but pages 66-81 are not confirmed. Check the JCR or JSTOR record."
+ },
+ {
+  "entry": "Indelicato, P. (2026, March 31). Unveiling the new reef in Mexico. *Raised Water",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "url (raisedwaterresearch.com)",
+  "corrected_entry": null,
+  "note": "HTTP 406. Not bypassed."
+ },
+ {
+  "entry": "Jackson, L. A., & Corbett, B. (2007). Review of existing multi-functional artifi",
+  "status": "OK",
+  "what_was_checked": "web search (Jackson and Corbett 2007)",
+  "corrected_entry": null,
+  "note": "Full text at the NZ Coastal Restoration Trust confirms authors, ACCP 2007, Coasts and Ports 2007."
+ },
+ {
+  "entry": "Jackson, L. A., Corbett, B., McGrath, J., Tomlinson, R., & Stuart, G. (2007). Na",
+  "status": "FIXED",
+  "what_was_checked": "web search (Shore & Beach 75(4)); hdl URL returned 000",
+  "corrected_entry": "Jackson, L. A., Corbett, B., Tomlinson, R., McGrath, J., & Stuart, G. (2007). Narrowneck Reef: Review of seven years of monitoring. *Shore & Beach, 75*(4), 67-79. http://hdl.handle.net/10072/17995",
+  "note": "Secondary ICCE reference list gives Shore and Beach vol. 75, iss. 4, pp. 67-79 (missing from entry). The author order there is Jackson, Corbett, Tomlinson, McGrath, Stuart; the entry has McGrath before Tomlinson. Check the author order on the article page."
+ },
+ {
+  "entry": "Jackson, A., Tomlinson, R., Corbett, B., & Strauss, D. (2012). Long term perform",
+  "status": "OK",
+  "what_was_checked": "Crossref 10.9753/icce.v33.structures.54",
+  "corrected_entry": null,
+  "note": "Authors (Angus Jackson, Tomlinson, Corbett, Strauss), 2012, pages 54 match. The initial \"L.\" appears in other project files and should be made consistent with \"A.\" (Angus Jackson)."
+ },
+ {
+  "entry": "Kurian, J. (1995). Collective action for common property resource rejuvenation: ",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "web search (Kurien 1995)",
+  "corrected_entry": null,
+  "note": "The search found a 1995 paper by John Kurien (spelled Kurien, not Kurian) in Human Organization, Society for Applied Anthropology. Volume 54 and pages 160-168 are not confirmed. A CMFRI record gives 1996, Bulletin 48. Spelling and volume need checking."
+ },
+ {
+  "entry": "Land Information New Zealand. (n.d.). *Standard port tidal levels (Tauranga)* an",
+  "status": "OK",
+  "what_was_checked": "url (LINZ guidance page)",
+  "corrected_entry": null,
+  "note": "Page reachable; title matches."
+ },
+ {
+  "entry": "Land Information New Zealand. (2010-2011). *Bay of Plenty 0.125 m urban aerial p",
+  "status": "OK",
+  "what_was_checked": "url (LINZ S3 tile, 200)",
+  "corrected_entry": null,
+  "note": "Tile reachable; the tile is an imagery file with no title tag."
+ },
+ {
+  "entry": "Land Information New Zealand. (2011-2012). *Taranaki 0.4 m rural aerial photos* ",
+  "status": "OK",
+  "what_was_checked": "url (LINZ S3 tile, 200)",
+  "corrected_entry": null,
+  "note": "Tile reachable."
+ },
+ {
+  "entry": "Land Information New Zealand. (2026). *Standard port tidal levels, Port Taranaki",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "url (same LINZ guidance page as entry 58)",
+  "corrected_entry": null,
+  "note": "The 2026-27 Port Taranaki PDF was not checked; only the guidance page was reachable."
+ },
+ {
+  "entry": "Lewis, J., Hunt, S., & Evans, T. (2015). Quantification of surfing amenity for b",
+  "status": "OK",
+  "what_was_checked": "url/PDF or search",
+  "corrected_entry": null,
+  "note": "Page or document reachable and title/authors consistent; not every detail compared."
+ },
+ {
+  "entry": "López, I., Tinoco, H., Aragonés, L., & García-Barba, J. (2016). The multifunctio",
+  "status": "OK",
+  "what_was_checked": "Crossref 10.1016/j.scitotenv.2016.01.180",
+  "corrected_entry": null,
+  "note": "Authors, 2016, vol. 550, pages 910-923 match."
+ },
+ {
+  "entry": "Lyons, M. (1992). *Design studies for an artificial surfing reef* [Unpublished r",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "none",
+  "corrected_entry": null,
+  "note": "Unpublished report, cited as reproduced in Blacka et al. Cannot be checked."
+ },
+ {
+  "entry": "Maritime Safety Queensland. (2026). *Semidiurnal tidal planes 2026*. Queensland ",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "url (msq.qld.gov.au)",
+  "corrected_entry": null,
+  "note": "HTTP 403 (bot check). Not bypassed."
+ },
+ {
+  "entry": "McCowan, J. (1894). On the highest wave of permanent type. *Philosophical Magazi",
+  "status": "OK",
+  "what_was_checked": "web search (McCowan 1894)",
+  "corrected_entry": null,
+  "note": "Phil. Mag. (5) 38, 351-358 confirmed by a secondary source (Wikipedia); the title matches."
+ },
+ {
+  "entry": "Mead, S. T. (2000). *Incorporating high-quality surfing breaks into multi-purpos",
+  "status": "OK",
+  "what_was_checked": "url (Waikato thesis record)",
+  "corrected_entry": null,
+  "note": "Title and thesis record match."
+ },
+ {
+  "entry": "Mead, S., & Black, K. (1999). A multipurpose, artificial reef at Mount Maunganui",
+  "status": "OK",
+  "what_was_checked": "Crossref 10.1080/089207599263767",
+  "corrected_entry": null,
+  "note": "Authors (Shaw Mead, K. (= S. T. Mead) and Black), 1999, Coastal Management 27(4), 355-365 match."
+ }
+]

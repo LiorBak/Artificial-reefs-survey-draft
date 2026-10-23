@@ -89,7 +89,7 @@ def main():
                      "2": "INTERPOLATED under the reef (thin-plate spline across the reef footprint) - pre-reef seabed estimate",
                      "3": "CCO BEACH PROFILE (Channel Coastal Observatory, survey of %s, m ODN): measured at the 11 profile lines, linearly interpolated alongshore between lines; y -66 m to the seaward end of the lines (y about 21-38 m)" % ex.CCO_DATE,
                      "4": "INTERPOLATION between the seaward end of the CCO profiles and the survey: spline extrapolation + the CCO offset decaying over %d m" % ex.BLEND_L,
-                     "5": "EMODnet SLOPE EXTRAPOLATION y > 380 m: z(y) = z_model(x, 380) - %.4f (y - 380), EMODnet DTM 2024 slope, +-%.1f m; no local data" % (ex.EMODNET_SLOPE, ex.EMODNET_UNC)},
+                     "5": "EMODnet SLOPE EXTRAPOLATION y > 380 m (D2 2026-10-10: alongshore flat): z(y) = mean over x of z_model(x, 380) - %.4f (y - 380), EMODnet DTM 2024 slope, +-%.1f m; no local data" % (ex.EMODNET_SLOPE, ex.EMODNET_UNC)},
         "datum_w": "".join(chr(48 + int(v)) for v in dw10.ravel()),
         "datum_w_key": "one character per cell: chr(48 + round(10 * w)), w in 0..1 = fraction of the 'survey zero = ODN' switch (+1.40 m) applied to the cell; the CCO beach (ODN-referenced) has w = 0",
         "survey_valid_area_m2": int(valid.sum()),
@@ -257,6 +257,8 @@ def main():
                       "Raw copies: ../src/cco_profiles/.") % ex.CCO_DATE, "kind": "data"},
         {"id": "S14", "short": "Project EMODnet feasibility report (integration plan 9.1, comparison 6)",
          "citation": "This project (2026) 07_scale/bathymetry/emodnet/REPORT.md, sections 6 (comparison with the Boscombe model) and 9.1 (integration plan: far-field slope -1.41 % +-0.10 %).", "kind": "project"},
+        {"id": "S15", "short": "Rendle (2016) PhD thesis, University of Plymouth (validation only)",
+         "citation": "Rendle, E.J. (2016) The Environmental, Social and Economic Impacts of an Artificial Surf Reef - The UK Experience. PhD thesis, University of Plymouth. https://pearl.plymouth.ac.uk/bms-theses/412/ (PDF supplied by Lior, read 2026-10-10; printed page = PDF page - 3). Used for validation only, no model value changed: built crest about +0.5 m CD (p. 70), design 0 m CD (Table 4.4) / 0.3 m CD (Fig. 5.3), design footprint 4,474 / 5,450 m2, design volume 11,900 / 12,200 m3, bag counts 32 / about 46; no as-built plan in the thesis. Notes: 07_scale/shapes/boscombe-surf-reef/P5_RENDLE2016_NOTES.md.", "kind": "text"},
     ]
 
     A_ = lambda a: float(a)
@@ -275,8 +277,8 @@ def main():
          "uncertainty": "+-0.1 m", "estimated": True},
         {"parameter": "Tide levels HAT/MHWS/MHWN/MLWN/MLWS/LAT (ACD)", "value": "2.59 / 2.21 / 1.67 / 1.17 / 0.45 / -0.06", "unit": "m ACD", "source_id": "S3",
          "method": "Mead et al. (2010) Table 1; converted to the model frame by subtracting 1.40", "uncertainty": "+-0.05 m (table precision); tide gauge on Bournemouth Pier, ~1.5 km W of the reef", "estimated": False},
-        {"parameter": "Design crest height", "value": "+0.5 m ACD (= -0.90 m MSL)", "unit": "m", "source_id": "S3",
-         "method": "Quote: 'The design has a crest height of 0.5 m above chart datum'; settlement 0.5 m or less", "uncertainty": "design value; as-built/settled crest differs (see survey)", "estimated": False},
+        {"parameter": "Built crest height (design 0 m CD / 0.3 m CD)", "value": "+0.5 m ACD (= -0.90 m MSL)", "unit": "m", "source_id": "S3",
+         "method": "Quote: 'The design has a crest height of 0.5 m above chart datum'; settlement 0.5 m or less", "uncertainty": "BUILT crest per Rendle 2016 p.70 (design 0 m CD Table 4.4 / 0.3 m CD Fig. 5.3); as-built/settled crest differs locally (see survey)", "estimated": False},
         {"parameter": "Surveyed crest (April 2011)", "value": f"max {stats['crest_max']['z_acd']:+.2f} m ACD at x={stats['crest_max']['x']:.0f}, y={stats['crest_max']['y']:.0f}; median inside outline {stats['crest_z_acd_inside_outline_pct_5_25_50_75_95_max'][2]:+.2f}", "unit": "m ACD", "source_id": "S2",
          "method": "Highest survey value along the reef axis every 5 m (crest_profile); damaged 70 m container gives a -1.2..-2 m trough (Fig. 9 profiles)",
          "uncertainty": "+-0.2 m colour read; peaks smoothed by the plot interpolation", "estimated": False},
@@ -336,17 +338,17 @@ def main():
     seabed["extension"]["emodnet_tie_x0"] = {"rows": [{"y": a, "model_z_msl": b, "emodnet_z_msl": c, "model_minus_emodnet": d} for a, b, c, d in emo_tie],
                                              "note": "EMODnet cell means at the centres y = 380 / 445 / 505 / 605 m (REPORT 9.1; LAT -> MSL with 1.46 m); model = extension at x = 0"}
     prov += [
-        {"parameter": "Seabed y 380-650 m (zone 'EMODnet slope', code 5)", "value": "z(y) = z_model(x, 380) - 0.0141 (y - 380); z(x=0, y=650) = %.2f m MSL" % zx0(650.0), "unit": "m", "source_id": "S5/S14",
-         "method": "EMODnet DTM 2024 slope -1.41 % (+-0.10 %) from the four full cells beyond the model grid, applied from the model's own y = 380 row (column by column, so the alongshore pattern of the spline row continues); EXTRAPOLATED, no local data. Ties to EMODnet cell means within 0.8-1.4 m (model shallower): " +
+        {"parameter": "Seabed y 380-650 m (zone 'EMODnet slope', code 5)", "value": "z(y) = mean over x of z_model(x, 380) - 0.0141 (y - 380), flat alongshore (D2, 2026-10-10); z(x=0, y=650) = %.2f m MSL" % zx0(650.0), "unit": "m", "source_id": "S5/S14",
+         "method": "EMODnet DTM 2024 slope -1.41 % (+-0.10 %) from the four full cells beyond the model grid, applied from the alongshore MEAN of the model's own y = 380 row (D2, 2026-10-10: the row and everything seaward of it is flat alongshore; before D2 the spline row was copied column by column and carried a tilt of +0.76 m per 100 m of x that neither EMODnet nor Navionics show); EXTRAPOLATED, no local data. Ties to EMODnet cell means within 0.7-1.3 m (model shallower): " +
                    "; ".join("y %d: model %+.2f vs EMODnet %+.2f (%+.2f)" % r for r in emo_tie),
-         "uncertainty": "+-1.2 m (REPORT 9.1 gave +-1.0 m; Navionics z16 check of 11 soundings: rms 1.2 m, model deeper at x<0 and shallower at x>0, about -1.2 m per 100 m of x); EMODnet absolute levels themselves carry +-1.5 m datum/sampling uncertainty at Boscombe", "estimated": True},
+         "uncertainty": "+-0.5 m (D2: Navionics z16 check of 11 soundings, rms 0.5 m after flattening; before D2 +-1.2 m with a misfit of about -1.2 m per 100 m of x; REPORT 9.1 had +-1.0 m); EMODnet absolute levels themselves carry +-1.5 m datum/sampling uncertainty at Boscombe", "estimated": True},
         {"parameter": "EMODnet cross-check of the model seabed (validation, not a model value)", "value": "reef-centre cell (ki34288/kj32794, n = 12): EMODnet -5.62 m LAT = -7.08 m MSL; model minus EMODnet = +1.39 m; seven cells fully inside the grid: mean +1.80 m, sd 0.66 m (range +1.14 .. +3.05)", "unit": "m", "source_id": "S5/S14",
          "method": "EMODnet cell means vs the model averaged over the same cell footprints (z_LAT = z_MSL + 1.46); not a constant offset (smallest where best sampled), so not a datum shift (REPORT 6.2); the DTM shows no reef; EMODnet is not used for the reef, toe, beach or the seabed around the reef",
          "uncertainty": "+-1.5 m datum and sampling (REPORT 6.2)", "estimated": False},
     ]
 
     conf = {"level": "medium",
-            "reason": "Outline (2011 satellite), seabed (April 2011 DGPS plot, +-0.2 m colour read) and the as-built crest (designers +0.5 m ACD, Oct 2009 survey +0.45..0.65) are all sourced and agree, and Garmin Navionics shows the same shoal; but the zero of the survey plot (chart datum) is assumed (+-1.4 m if wrong), the as-built flanks and flat crest are an idealised loft, and the ground under the reef and the strip between the beach profiles and the survey (y ~35-100 m) are interpolated. From 2026-10-07 the beach is a measured profile (Channel Coastal Observatory, April 2010) and it also supports the chart-datum reading (CCO minus model = +0.03 m, sd 0.30 m); the seabed beyond y = 380 m is an EMODnet-slope extrapolation (+-1 m)."}
+            "reason": "Outline (2011 satellite), seabed (April 2011 DGPS plot, +-0.2 m colour read) and the as-built crest (designers +0.5 m ACD, Oct 2009 survey +0.45..0.65) are all sourced and agree, and Garmin Navionics shows the same shoal; but the zero of the survey plot (chart datum) is assumed (+-1.4 m if wrong), the as-built flanks and flat crest are an idealised loft, and the ground under the reef and the strip between the beach profiles and the survey (y ~35-100 m) are interpolated. From 2026-10-07 the beach is a measured profile (Channel Coastal Observatory, April 2010) and it also supports the chart-datum reading (CCO minus model = +0.03 m, sd 0.30 m); the seabed beyond y = 380 m is an EMODnet-slope extrapolation, flat alongshore since D2 2026-10-10 (+-0.5 m)."}
 
     history = [
         {"date": "2008-06", "event": "Construction starts (lower container layer placed in 2008)", "source_id": "S3/S12"},

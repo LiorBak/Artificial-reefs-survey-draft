@@ -4,6 +4,7 @@ EXTRAPOLATION of the Fig. 9 survey, which ends at y ~312 m) out to y = 650 m.  T
 (nav_z16_offshore.json), (b) fits the EMODnet DTM 2024 cells (y 380-700, |x| < 400 m, 27 cells, files in 07_scale/bathymetry/emodnet/data),
 (c) shows what the Navionics misfit would be if the y = 380 row were replaced by a flat (alongshore-mean) row.  Model NOT changed.
 Prints a few lines and writes offshore_tilt_check.json.
+NOTE 2026-10-10: this file documents the PRE-D2 analysis (offshore_tilt_check.json is the pre-D2 result; copy in ../archive/pre_D2/scripts/).  D2 was then applied; do NOT re-run on the new model.js (it would apply the tilt test to an already flat row).  After-D2 numbers: d2_check.py / d2_check.json.
 """
 import csv, json, sys
 from pathlib import Path

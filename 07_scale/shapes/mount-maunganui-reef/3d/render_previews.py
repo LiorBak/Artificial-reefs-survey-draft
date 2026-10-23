@@ -11,7 +11,13 @@ import asyncio, base64, json, os, socket, subprocess, sys, tempfile, time, urlli
 import websockets
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-CHROME = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
+def _find_chrome():   # Windows PC path, else the cloud Chromium found by 04_build/src/qa_cdp.py (read-only use)
+    w = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
+    if os.path.exists(w): return w
+    sys.path.insert(0, os.path.join(HERE, '..', '..', '..', '..', '04_build', 'src'))
+    import qa_cdp
+    return qa_cdp.find_chrome()
+CHROME = _find_chrome()
 
 
 def free_port():
@@ -53,9 +59,9 @@ class Dev:
 async def main(jobs, w, h):
     hp = free_port()
     http = subprocess.Popen([sys.executable, '-m', 'http.server', str(hp), '--bind', '127.0.0.1'], cwd=HERE, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-    port = free_port(); prof = tempfile.mkdtemp(prefix='mmr3d_chrome_')
+    port = free_port(); prof = tempfile.mkdtemp(prefix='mmr3d_chrome_')   # fresh profile
     proc = subprocess.Popen([CHROME, '--headless=new', '--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist', '--remote-debugging-port=%d' % port,
-                             '--user-data-dir=' + prof, '--window-size=%d,%d' % (w, h), '--no-first-run', '--hide-scrollbars', 'about:blank'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                             '--user-data-dir=' + prof, '--window-size=%d,%d' % (w, h), '--no-first-run', '--no-sandbox', '--hide-scrollbars', 'about:blank'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     try:
         ws_url = None
         for _ in range(60):

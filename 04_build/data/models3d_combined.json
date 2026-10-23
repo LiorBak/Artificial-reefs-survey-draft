@@ -88,6 +88,55 @@
           "text": "M.roles.north.label"
         }
       ]
+    },
+    "narrowneck-gold-coast": {
+      "frame_note": "model.js frame: x alongshore toward NORTH (bearing 356.21), y offshore toward EAST (bearing 86.21) (x turned 90 deg clockwise); viewer maps (X = x, Y = z, Z = y); default outline version (photo trace 8 Aug 2020)",
+      "offshore_scene_xz": [
+        0,
+        1
+      ],
+      "hand": 1,
+      "polygon": "M.versions.filter(function(v){return v.id===M.default_version;})[0].outline_m",
+      "area_ref_expr": "M.versions.filter(function(v){return v.id===M.default_version;})[0].area_m2",
+      "area_ref_label": "footprint area vs model.js area of the default version (the mesh covers the 7 traced polygons)",
+      "crest_z": "M.versions.filter(function(v){return v.id===M.default_version;})[0].crest_shallowest_AHD - M.datum.ahd_msl_msq",
+      "crest_note": "shallowest top of the default mesh (-1.8 m AHD, an isolated container at the shoreward wing; the arm crest is -2.2 m AHD measured) minus 0.12 = -1.92 m MSL",
+      "shore_mode": "crossing",
+      "sublabels": []
+    },
+    "cables-reef-wa": {
+      "frame_note": "model.js frame: x along the design-drawing axis toward SOUTH-SOUTH-EAST (bearing 170.3 deg T, M.frame.bearing_x_deg), y offshore toward WEST-SOUTH-WEST (bearing 260.3 deg T); the frame is rotated 9.7 deg from true north (georeferenced, DoT soundings); viewer maps (X = x, Y = z, Z = y); default version = Nov 1999 surveyed surface on the original-plan footprint (M.default_version = survey_surface_1999_11)",
+      "offshore_scene_xz": [
+        0,
+        1
+      ],
+      "hand": 1,
+      "polygon": "M.versions.filter(function(v){return v.id===M.default_version;})[0].outline_m",
+      "crest_z": "M.versions.filter(function(v){return v.id===M.default_version;})[0].crest_AHD_m",
+      "crest_note": "surveyed (Nov 1999) highest surface point -1.55 m AHD (highest single sounding -1.40 m); design crest line RL -1.0 = -1.72 m AHD under datum reading A (RL = Fremantle Low Water Datum, AHD = RL - 0.716 m; DNM TR12 Table 3) or -1.0 m under reading B; the soundings imply an RL-AHD offset of 0.5-0.6 m (nearer to A); AHD = MSL 1966-68 (local MSL 1992-2011 is +0.057 m)",
+      "shore_mode": "none",
+      "sublabels": [
+        {
+          "xy": "M.roles.south.centroid",
+          "text": "M.roles.south.label"
+        },
+        {
+          "xy": "M.roles.north.centroid",
+          "text": "M.roles.north.label"
+        }
+      ],
+      "shore_note": "the seabed window starts at y = 190 m, so the shore line (y = 0) is not in the exported patch: the 'seabed near 0 m MSL along y = 0' check cannot apply (export_combined.py shore_mode 'none')"
+    },
+    "southern-ocean-surf-reef-albany": {
+      "frame_note": "model.js frame: x alongshore toward 30.26 deg true (NNE), y offshore toward 120.26 deg (x turned 90 deg clockwise); viewer maps (X = x, Y = z, Z = y)",
+      "offshore_scene_xz": [
+        0,
+        1
+      ],
+      "hand": 1,
+      "polygon": "M.versions.filter(function(v){return v.id===M.default_version;})[0].outline_m[0]",
+      "crest_z": "-1.0",
+      "crest_note": "shallowest crest of the City design table, -1.0 m AHD (about MSL), a design value; the crest is -2.0 m AHD over most of the ridge (assumption A7)"
     }
   }
 }

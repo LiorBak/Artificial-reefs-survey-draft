@@ -127,7 +127,7 @@ My first Navionics captures ran in an own Chrome on the FIXED DevTools port 9341
 - Files of this run (3d/): METHODS_3D.template.md, METHODS_3D.md, docs.js, model.js, computed.json, REQUESTS_FOR_LIOR.md, build_3d.py (stage 2), build_3d_lidar.py (stage 1, unchanged apart from output names, not re-run), make_requests.py, nav_annotate.py, nav_figures.py, data/{lidar_derived.json, nav_transects.json}, src/navionics/{capture_navionics.py, 6 PNGs, session_state.json}, annotated/N1-N4, previews, index.html. Backups of the previous log and viewer are in %TEMP% only.
 
 <!-- BUILD-AUTO-START -->
-## Build state (written by build_3d.py on 2026-10-05)
+## Build state (written by build_3d.py on 2026-10-10)
 - shape.json status = **verified**, verified_on = 2026-10-04, plan confidence = medium, md5 f046605f97ddb20b3fb80a86d07b9a03; outline 29 vertices, area 112.1 m2.
 - Reef card verdict = **failed**; card year field: Installation attempted December 2019 (failed during install); concept development began ~2008-2009 [R2]
 - Seabed: 61 x 49 nodes (5 m), 286 gap-filled; Navionics datum test (lines with valid lidar): LAT 0.32 m RMS, MLLW 0.67, AHD 0.87, MSL 0.96 (n = 111).

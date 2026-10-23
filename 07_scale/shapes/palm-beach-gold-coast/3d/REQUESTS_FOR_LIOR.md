@@ -33,7 +33,7 @@ Tap each point and read the depth label (long-press shows a depth at the pin). N
 | # | tool | what | datum | why |
 |---|---|---|---|---|
 | C1 | e-mail to City of Gold Coast (Palm Beach Shoreline Project team) | the "Palm Beach Reef Design Reference Report" (Royal HaskoningDHV) and the final as-built multibeam survey (ICCE 2022 Fig 4 was made from it) as a point cloud or contour PDF; and the meaning/units of the asset-register fields HEIGHT_M = 5 and VOLUME = 33,000 | m vs AHD or LAT? | would replace the inferred seabed and contour interval with surveyed values and settle the 20-33 % gap between the register and the model |
-| C2 | Gold Coast DTM (data.gov.au, City of Gold Coast, CC BY 2.5 AU, 4.1 GB file geodatabase, "includes bathymetry in certain areas") | download and open the layer around the reef (needs your go-ahead: size) | AHD | if it contains Palm Beach nearshore soundings, it replaces the Navionics seabed |
+| C2 | Gold Coast DTM (data.gov.au, City of Gold Coast, CC BY 2.5 AU, 4.1 GB file geodatabase, "includes bathymetry in certain areas") | download and open the layer around the reef (needs your go-ahead: size) | AHD | if it contains Palm Beach nearshore soundings, it replaces the Navionics seabed | **ANSWERED 2026-10-10 (no, nothing to download): the DTM has no Palm Beach nearshore cells (07_scale/bathymetry/gold_coast/REPORT.md 2.3, 5.3; registry img-11). Closed.**
 
 ## D. Not needed from you
 Tide planes (MSQ 2026 table fetched and read), the contour interval (inferred twice, see METHODS_3D.md 4.2), the plan outline, the frame and handedness check. No Haifa / Israel tide preset (local tides only).

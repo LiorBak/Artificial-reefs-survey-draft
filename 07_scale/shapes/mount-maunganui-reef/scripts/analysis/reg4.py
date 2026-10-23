@@ -2,7 +2,7 @@ import numpy as np, math, json
 from PIL import Image
 from scipy import ndimage as ndi
 from scipy.optimize import minimize
-R='C:/Users/lior/Documents/Gemini/AG/Artificial reef - to upload to git/07_scale/shapes/mount-maunganui-reef/'
+R='C:/Users/lior/Documents/Claude/Projects/Artificial reef/07_scale/shapes/mount-maunganui-reef/'
 exec(open('reg_inst.py').read().split('mI_raw=')[0])
 def imask(T):
     m=(depI>T)&okI; m=ndi.binary_opening(m,iterations=1); return np.rot90(m,k=-1)

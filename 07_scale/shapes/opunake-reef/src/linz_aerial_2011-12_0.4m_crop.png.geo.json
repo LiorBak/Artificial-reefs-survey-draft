@@ -1,0 +1,9 @@
+{
+ "crs": "EPSG:2193",
+ "px_m": 0.4,
+ "x_left": 1672970.8,
+ "y_top": 5632659.2,
+ "w": 2500,
+ "h": 2500,
+ "source": "https://nz-imagery.s3.ap-southeast-2.amazonaws.com/taranaki/taranaki_2011-2012_0.4m/rgb/2193/BJ28_5000_0806.tiff"
+}

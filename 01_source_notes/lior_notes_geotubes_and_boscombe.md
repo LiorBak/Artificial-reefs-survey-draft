@@ -1,6 +1,6 @@
 # Lior's Notes — Geotubes in Israel & the Boscombe (England) Surf Reef
 
-- **Source path:** `C:\Users\lior\Documents\Gemini\AG\Artificial reef - to upload to git\Initial info from Lior\geotubes in israel and the england surf reef.txt`
+- **Source path:** `C:\Users\lior\Documents\Claude\Projects\Artificial reef\Initial info from Lior\geotubes in israel and the england surf reef.txt`
 - **Size:** 4,103 bytes (~4.0 KB), 20 lines (several blank)
 - **Type:** Plain text (.txt); Hebrew (primary) with some English and two URLs
 - **Date read:** 2026-09-24

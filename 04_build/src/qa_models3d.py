@@ -61,7 +61,8 @@ def dom_checks(page: Path = PAGE, shots_prefix: str | None = None) -> dict[str, 
 
     def noerr(c):
         # ERR_ABORTED = a request cancelled by a newer navigation (an unloaded viewer iframe, a lazy image that scrolled away): benign
-        return [e for e in c.errors if "fonts.g" not in e and "ERR_INTERNET" not in e and "ERR_NAME" not in e and "ERR_ABORTED" not in e]
+        return [e for e in c.errors if "fonts.g" not in e and "ERR_INTERNET" not in e and "ERR_NAME" not in e and "ERR_ABORTED" not in e
+                and "ERR_TUNNEL_CONNECTION_FAILED" not in e and not ("ERR_BLOCKED_BY_ORB" in e and "url=http" in e) and "fullscreen is not allowed" not in e]  # cloud: proxy blocks remote pictures; newer Chrome logs the iframe fullscreen policy
 
     SHORT = "(el=>{const c=el.cloneNode(true);c.querySelectorAll('.info-pop').forEach(p=>p.remove());return c.textContent.replace(/\\s+/g,' ').trim().length})"
 

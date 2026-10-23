@@ -1,0 +1,125 @@
+{
+  "slug": "bunbury-airwave",
+  "entries": [
+    {
+      "what": "Independent report, photograph or video of surfable waves on the Airwave in December 2019 (the developer's claim 'successfully created peeling waves')",
+      "kind": "search",
+      "where": "web searches 2026-10-05/10 across ABC, Tracks, Bunbury Mail, South Western Times, RWR, Swellnet forum; Waveco's About page (R21)",
+      "checked": "2026-10-10",
+      "by": "agent: Bunbury source check and 3D agents (cloud)",
+      "result": "not found",
+      "detail": "ABC (2019-12-16) reports only the tear and paraphrases a tourist 'looking forward to riding whatever wave'; no independent photo, video or report of surfable waves exists. Waveco's own account is self-published, says 'In 2018' (the installation was attempted in December 2019 and the bladder was removed within about three days), and Bottegal's Zoom interview of 8 Oct 2026 is unrecorded personal communication. So the card keeps the verdict FAILED.",
+      "might_work": "Lior: any recording, photos or video from the founder (Troy Bottegal); E5 (Waveco / City of Bunbury)"
+    },
+    {
+      "what": "Waveco's own Facebook and Instagram posts from Dec 2019 and the Global Wave Conference 2020 talk (video)",
+      "kind": "video",
+      "where": "facebook.com and instagram.com Waveco accounts; Global Wave Conference 2020 recording",
+      "checked": "2026-09-24",
+      "by": "agent: Bunbury card research (cloud)",
+      "result": "login needed",
+      "detail": "Not accessible, so Waveco's own footage and slides, if any, are unchecked; the only trace of the 2020 talk is a forum summary (R15, second-hand). The Waveco website (R21 About page, R20) was read.",
+      "might_work": "Lior: check the social posts and the conference recording for photos with a scale and the as-installed height"
+    },
+    {
+      "what": "YouTube videos 'Live Surf Cam Bunbury Airwave by Waveco' (K2DQ-C7OR0U) and Digital Hitmen podcast Ep.6 on Airwave (hfz92plwENs)",
+      "kind": "video",
+      "where": "https://www.youtube.com/watch?v=K2DQ-C7OR0U ; https://www.youtube.com/watch?v=hfz92plwENs",
+      "checked": "2026-09-25",
+      "by": "agent: Bunbury card research and media re-check (cloud)",
+      "result": "broken link",
+      "detail": "yt-dlp: 'Video unavailable' for both, and the thumbnail endpoints also return 404, so there is no image fallback. Re-confirmed unavailable in the media re-check; kept out of the accepted card.",
+      "might_work": "Wayback copies or the podcast host's own page (not tried)"
+    },
+    {
+      "what": "Swellnet forum single post https://www.swellnet.com/comment/625653 and The Inertia 2019-12-18 'The Inflatable Artificial Reef in Australia Popped During Installation' (a Gemini citation)",
+      "kind": "web page",
+      "where": "https://www.swellnet.com/comment/625653 ; theinertia.com (2019-12-18 article named by Gemini)",
+      "checked": "2026-10-05",
+      "by": "agent: Bunbury card research and verification (cloud)",
+      "result": "bot check (not bypassed)",
+      "detail": "The single-post URL still fails (connection reset); the parent thread https://www.swellnet.com/forums/surfing-reef-designs/472884 (pages 1-2) loaded on 2026-10-05 and is cited as R15 (secondary, anonymous forum posts). The Inertia 2019-12-18 article named by Gemini returns 403 to scripts (the real Inertia article, R6, has a different title and was read). Several Swellnet, The Inertia, SurferToday and BeachGrit pages were first blocked (HTTP 403) but were later read (BeachGrit R17 with a standard browser user-agent, HTTP 200) and are card references; the card's 'surfers' view' paragraph still says primary surfer voices were not found in detail, so surfer commentary on the Airwave remains thin.",
+      "might_work": "Lior in a normal browser for surfer commentary"
+    },
+    {
+      "what": "Tradie Magazine (2019-01-31) 'Creating the Perfect Wave' (circular base of the bladder)",
+      "kind": "web page",
+      "where": "https://www.tradiemagazine.com.au/creating-the-perfect-wave/",
+      "checked": "2026-10-05",
+      "by": "agent: Bunbury verifier (cloud)",
+      "result": "bot check (not bypassed)",
+      "detail": "HTTP 403 to scripts; the quote about the circular base was seen only in search-result text and is cited as such.",
+      "might_work": ""
+    },
+    {
+      "what": "Google Earth / Esri imagery of the Airwave in the water (9-20 December 2019) and Esri Wayback release 4756 (2019-12-12)",
+      "kind": "imagery",
+      "where": "https://wayback.maptiles.arcgis.com (release 4756 tile); Esri World Imagery -33.327276, 115.629902; Google Earth Pro history",
+      "checked": "2026-10-05",
+      "by": "agent: Bunbury tracer and 3D agent (cloud)",
+      "result": "imagery shows no structure",
+      "detail": "Release 4756 is labelled 2019-12-12 but its imagery at this spot dates from 2016-03-03, i.e. before the reef (tile removed). The current Esri image (2025-08-30) shows the real site (Bunbury Back Beach SLSC) with no trace of the structure; the nearest imagery found at the site is 2016 and 2025. The bladder sat in the water only about 9-16 Dec 2019, so only an image from that week could show it. The position (about 45 m off the low-tide mark, just south of the surf club) is text only, +-100 m alongshore.",
+      "might_work": "Google Earth Pro historical imagery for 9-20 Dec 2019 (Lior: G3 / A1-A4 in the Bunbury 3D requests)"
+    },
+    {
+      "what": "As-installed record of the bladder: dive log, photos with a scale, as-installed height (1.6 m or 2.0 m), cross-section, fill level when the seam tore; RWR original un-cropped drone frames",
+      "kind": "e-mail contact",
+      "where": "Waveco (Troy Bottegal), City of Bunbury December 2019 council papers, Raised Water Research",
+      "checked": "2026-10-05",
+      "by": "agent: Bunbury 3D agent (cloud)",
+      "result": "not found",
+      "detail": "Not found anywhere online. The 12 m diameter and 1.6 m height are text (Tracks 2019-11-15); the planform drawing is a regular circle, so the size agreement is by construction. The drone photo (RWR) and ABC video frame carry no scale or georeference. Claude never sends e-mail.",
+      "might_work": "Lior: E5 (Waveco / City of Bunbury) and E6 (RWR drone frames with metadata)"
+    },
+    {
+      "what": "Local tide gauge, post-2009 bathymetric survey and measured wave data at Bunbury Back Beach",
+      "kind": "database",
+      "where": "WA Department of Transport survey index; GHD 2021 tide planes (Bunbury Port gauge, inner harbour about 3 km NE of Back Beach)",
+      "checked": "2026-10-05",
+      "by": "agent: Bunbury 3D agent (cloud)",
+      "result": "not found",
+      "detail": "No local gauge found at Back Beach (Bunbury Port planes assumed to apply on the micro-tidal open coast); the only seabed survey is the WA DoT 2009 airborne lidar (10 m grid, 10 years before the install, cannot resolve a 12 m reef; the 67 MB .bag was not re-downloaded). Navionics SonarChart matches it only after reading depths below LAT (RMS 0.32 m) and does not show the structure.",
+      "might_work": "Lior: E7 (WA Department of Transport) for any later survey; Navionics app readings B1-B11"
+    },
+    {
+      "what": "Planned second Airwave prototype (December 2020), the planned 12-month UWA study and any later Airwave installation",
+      "kind": "search",
+      "where": "South Western Times 2020-07-09; Tracks 2021-10-08; Bunbury Mail 2022; waveco.com.au (2025)",
+      "checked": "2026-10-10",
+      "by": "agent: Bunbury card research and 3D agent (cloud)",
+      "result": "not found",
+      "detail": "No source confirms that the December 2020 second installation took place or succeeded, that the inflatable was ever reinstalled after December 2019, or that the 12-month University of Western Australia study ever started (no results found). By 2025 Waveco's public Bunbury project appears to be a different (granite) design. The cost is disputed between sources (about US$350,000 vs US$400,000); only the A$75,000 council contribution is corroborated.",
+      "might_work": "Lior: E5 (City of Bunbury, Waveco)"
+    },
+    {
+      "what": "Gemini's Bunbury sources and shape: ABC .../airwave-artificial-surf-reef-bursts-bunbury-back-beach/11802958, ABC image 'airwave-torn-bladder-bunbury-2019.jpg', Bottegal (2019) 'Airwave Project Brief', 'Surfer Magazine Bunbury Airwave Trial Review (2020)', Wikimedia Back Beach photos",
+      "kind": "report",
+      "where": "Gemini dossier and images_provenance.json (read-only); the named URLs fetched 2026-10-05",
+      "checked": "2026-10-05",
+      "by": "agent: Bunbury tracer (cloud)",
+      "result": "wrong site",
+      "detail": "The ABC URL returns 200 but id 11802958 is an unrelated ABC Listen item (Townsville floods); the real article is .../word-first-surf-reef-tears-during-installation/11803228. The ABC image URL is 404. The Wikimedia Back Beach photos are generic beach photos from 2006 and 2021 and do not mention Airwave. The Brief and the Surfer Magazine review were not found (Surfer was on hiatus 2020 to Aug 2024). Gemini's 24-gon footprint (113 m2) is a formula, its coordinates (-33.3362, 115.6261) are about 1 km south of the real site, and its helical anchors, 130 t, crest 1.8 m and hemispherical dome are contradicted or unsupported. Gemini lead not confirmed; nothing used.",
+      "might_work": ""
+    },
+    {
+      "what": "papers/ folder: any mention of the Bunbury Airwave or Waveco in Lior's 5 PDFs",
+      "kind": "paper",
+      "where": "papers/ folder (PyMuPDF text-layer grep for Bunbury, Airwave, Koombana, Waveco, 2026-10-10)",
+      "checked": "2026-10-10",
+      "by": "agent: dead-ends compilation (papers/ scan, cloud)",
+      "result": "not found",
+      "detail": "None of the five PDFs mentions Bunbury or the Airwave (an inflatable sand-slurry bladder of 2019 is outside their scope). The Mount Maunganui 2007 paper has no text layer (image pages, not OCR'd) but is about another reef. Press, forum and developer pages are the only sources.",
+      "might_work": "Not in papers/; see the entries above"
+    },
+    {
+      "what": "EMODnet Bathymetry DTM 2024 (viewer, REST, ERDDAP) for seabed depth at the reef",
+      "kind": "database",
+      "where": "https://emodnet.ec.europa.eu/geoviewer/ ; EMODnet Bathymetry REST depth_sample / ERDDAP bathymetry_dtm_2024 at -33.3276, 115.6284",
+      "checked": "2026-10-06",
+      "by": "agent: EMODnet bathymetry agent (cloud)",
+      "result": "not found",
+      "detail": "EMODnet covers European seas only; the REST service returns HTTP 204 (empty) at this reef's coordinate (Australia), so the site is outside the grid. Only two of the 13 reefs are covered (Boscombe, Borth). Do not retry EMODnet for this reef.",
+      "might_work": "Local sources instead: national or state bathymetry, a council or authority survey, Navionics / Google Earth readings (see REQUESTS_FOR_LIOR.md section 5)"
+    }
+  ]
+}

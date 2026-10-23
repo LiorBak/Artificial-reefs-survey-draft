@@ -1,0 +1,509 @@
+[
+ {
+  "entry": "Mead, S. T., & Black, K. P. (2001b). Predicting the breaking intensity of surfin",
+  "status": "NOT_FOUND",
+  "what_was_checked": "Crossref bibliographic search: no match for Mead and Black 2001b title",
+  "note": "Pages conflict noted in entry remains open",
+  "line": 145
+ },
+ {
+  "entry": "Mead, S. T., Black, K. P., & Moores, A. (2007). Mount Maunganui Reef: Amalgamati",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "web search: paper exists (InformIT catalogue, Coasts and Ports 2007); doi.org/10.3316/informit.816670201626573 returns 404",
+  "note": "DOI string does not resolve; check DOI on InformIT",
+  "line": 147
+ },
+ {
+  "entry": "Mead, S., Blenkinsopp, C., Moores, A., & Borrero, J. (2010). Design and construc",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 149
+ },
+ {
+  "entry": "Mead, S. T., & Borrero, J. C. (2011). Multi-purpose reefs: A decade of applicati",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "web search: paper exists (Mead and Borrero 2011, Coasts and Ports 2011, Perth); doi.org/10.3316/informit.715072832934166 returns 404",
+  "note": "DOI string does not resolve",
+  "line": 151
+ },
+ {
+  "entry": "Mercer, D. (2025, July 16). Artificial reef at Middleton Beach transforms Albany",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 153
+ },
+ {
+  "entry": "Moores, A. (2006, March-April). Artificial surf reefs: Coming to a beach near yo",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "HTTP 403 (site blocks automated access)",
+  "note": "",
+  "line": 155
+ },
+ {
+  "entry": "Mortensen, S. B., Hibberd, S., Kaergaard, K., Kristensen, S. E., Deigaard, R., &",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 157
+ },
+ {
+  "entry": "National Tidal and Sea Level Facility. (n.d.). *Chart datum and ordnance datum*.",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 159
+ },
+ {
+  "entry": "Nettle, S. (2019, August 19). Narrowneck renewal deemed a success. *Swellnet Ana",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "HTTP 403 (site blocks automated access)",
+  "note": "",
+  "line": 161
+ },
+ {
+  "entry": "NOAA Center for Operational Oceanographic Products and Services. (2026). *Tidal ",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 163
+ },
+ {
+  "entry": "NOAA National Geophysical Data Center. (2010). *Santa Monica, California 1/3 arc",
+  "status": "NOT_FOUND",
+  "what_was_checked": "URL www.ngdc.noaa.gov/metaview ... xml=726 returns HTTP 400",
+  "note": "dataset not relocated; find current NCEI record",
+  "line": 165
+ },
+ {
+  "entry": "NZ Herald. (2014). Mount's artificial reef to be removed. *Bay of Plenty Times*.",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 167
+ },
+ {
+  "entry": "Oh, Y. I., & Shin, E. C. (2006a). Application of submerged geotextile tubes for ",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 169
+ },
+ {
+  "entry": "Oh, Y. I., & Shin, E. C. (2006b). Using submerged geotextile tubes in the protec",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 171
+ },
+ {
+  "entry": "Pattiaratchi, C. B. (1999). *Design studies for an artificial surfing reef: Cabl",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "host joas.free.fr does not resolve from this environment",
+  "note": "mirror copy; not checked",
+  "line": 173
+ },
+ {
+  "entry": "Pitt, A. (2009). Critique of Cables Reef. [original not seen; cited as reported ",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "no link; original not seen",
+  "note": "cited as reported by Raised Water Research (2019b)",
+  "line": 175
+ },
+ {
+  "entry": "Prenzler, P., Hunt, S., Elliott-Perkins, Z., Hamilton, D., Messiter, D., Wharton",
+  "status": "FIXED",
+  "what_was_checked": "Crossref issued date 2023 (entry 2022)",
+  "note": "ICCE 2022 conference; proceedings dated 2023",
+  "line": 177,
+  "corrected_entry": "Prenzler, P., Hunt, S., Elliott-Perkins, Z., Hamilton, D., Messiter, D., Wharton, C., & Watterson, E. (2023). Monitoring of the Palm Beach artificial reef. *Coastal Engineering Proceedings, 37*, structures.65. https://doi.org/10.9753/icce.v37.structures.65 [ICCE 2022 extended abstract; dated 2023 in 08_paper/notes/sediment.md]"
+ },
+ {
+  "entry": "Raised Water Research. (n.d.-a). *Bunbury Airwave* [Spot page in the artificial-",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "HTTP 406 to automated requests (Raised Water Research spot pages)",
+  "note": "content read earlier per entry notes; not re-checked",
+  "line": 179
+ },
+ {
+  "entry": "Raised Water Research. (n.d.-b). *Burkitts Reef* [Spot page in the artificial-re",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "HTTP 406 to automated requests (Raised Water Research spot pages)",
+  "note": "content read earlier per entry notes; not re-checked",
+  "line": 181
+ },
+ {
+  "entry": "Raised Water Research. (n.d.-c). *Kovalam* [Spot page in the artificial-reef dat",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "HTTP 406 to automated requests (Raised Water Research spot pages)",
+  "note": "content read earlier per entry notes; not re-checked",
+  "line": 183
+ },
+ {
+  "entry": "Raised Water Research. (n.d.-d). *Midds Reef* [Spot page in the artificial-reef ",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "HTTP 406 to automated requests (Raised Water Research spot pages)",
+  "note": "content read earlier per entry notes; not re-checked",
+  "line": 185
+ },
+ {
+  "entry": "Raised Water Research. (n.d.-e). *Boscombe Surf Reef* [Spot page in the artifici",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "HTTP 406 to automated requests (Raised Water Research spot pages)",
+  "note": "content read earlier per entry notes; not re-checked",
+  "line": 187
+ },
+ {
+  "entry": "Raised Water Research. (n.d.-f). *Pratte's Reef* [Spot page in the artificial-re",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "HTTP 406 to automated requests (Raised Water Research spot pages)",
+  "note": "content read earlier per entry notes; not re-checked",
+  "line": 189
+ },
+ {
+  "entry": "Raised Water Research. (2019a, December 16). The Bunbury Airwave artificial surf",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "HTTP 406 to automated requests (Raised Water Research spot pages)",
+  "note": "content read earlier per entry notes; not re-checked",
+  "line": 191
+ },
+ {
+  "entry": "Raised Water Research. (2019b). *Cables Reef* [Spot page in the artificial-reef ",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "HTTP 406 to automated requests (Raised Water Research spot pages)",
+  "note": "content read earlier per entry notes; not re-checked",
+  "line": 193
+ },
+ {
+  "entry": "Raised Water Research. (2019c). *Mount Maunganui* [Spot page in the artificial-r",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "HTTP 406 to automated requests (Raised Water Research spot pages)",
+  "note": "content read earlier per entry notes; not re-checked",
+  "line": 195
+ },
+ {
+  "entry": "Ranasinghe, R., & Turner, I. L. (2006). Shoreline response to submerged structur",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 197
+ },
+ {
+  "entry": "Ranasinghe, R., Turner, I. L., & Symonds, G. (2006). Shoreline response to multi",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 199
+ },
+ {
+  "entry": "Reid, M., & Sumner, B. (2021, December 6). The Kiwi scientist and the failed sur",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 201
+ },
+ {
+  "entry": "Rendle, E. J. (2016). *The environmental, social and economic impacts of an arti",
+  "status": "OK",
+  "what_was_checked": "pearl.plymouth.ac.uk record 200; doi.org/10.24382/4536 200 (not in Crossref, DataCite DOI)",
+  "note": "",
+  "line": 203
+ },
+ {
+  "entry": "Rendle, E. J., & Davidson, M. A. (2012). An evaluation of the physical impact an",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 205
+ },
+ {
+  "entry": "Rigden, T., Stewart, T., Allsop, W., & Johnson, A. (2013). *Surf reefs: Physical",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 207
+ },
+ {
+  "entry": "Rinat, Z. (2019, February 7). Agency halts project to maintain Ashkelon cliff af",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 209
+ },
+ {
+  "entry": "Robertson, B., Nistor, I., Hall, K., & Buckham, B. (2014). Remote measurement an",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 211
+ },
+ {
+  "entry": "Roelse, A., Granger, H. W., & Graham, J. W. (1975). *The adjustment of the Austr",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "no link; not searched",
+  "note": "technical report, 1975",
+  "line": 213
+ },
+ {
+  "entry": "Romeyn, K. (2025, April 22). With Xala, Richard Gere has co-founded a luxury Mex",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 215
+ },
+ {
+  "entry": "Rosen, D. S. (2001). *A review of sea level monitoring status in Israel*. Israel",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 217
+ },
+ {
+  "entry": "Royal Commission on the Ancient and Historical Monuments of Wales [RCAHMW]. (202",
+  "status": "OK",
+  "what_was_checked": "coflein.gov.uk /en/sites/424699 200",
+  "note": "entry path /en/site/424699 not separately tested",
+  "line": 219
+ },
+ {
+  "entry": "Royal HaskoningDHV. (n.d.). *Holistic beach nourishment to protect Palm Beach, G",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 221
+ },
+ {
+  "entry": "Royal HaskoningDHV. (2011). *West of Wales Shoreline Management Plan 2, Section ",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 223
+ },
+ {
+  "entry": "Royal HaskoningDHV. (2015). *Albany artificial surf reef feasibility study, Midd",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 225
+ },
+ {
+  "entry": "Sheil, M. (2026, March 11). Eighteen rocks of Southern Ocean Surf Reef repositio",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 227
+ },
+ {
+  "entry": "Skelly Engineering. (c. 2000). *Pratte's Reef* [Plan-view design drawing, 110 ba",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 229
+ },
+ {
+  "entry": "Solmax. (2023). *GEOTUBE breakwaters: Shoreline protection at Sigandu Beach, Ind",
+  "status": "OK",
+  "what_was_checked": "URL 200 after redirect to solmax.com/asia/en/",
+  "note": "entry URL redirects",
+  "line": 231
+ },
+ {
+  "entry": "Spanier, E., & Zviely, D. (2023). Key environmental impacts along the Mediterran",
+  "status": "FIXED",
+  "what_was_checked": "Crossref issued date 2022 (entry 2023)",
+  "note": "Crossref issued 2022; volume 11 (issue 1) is a 2023 print volume: Lior to choose year",
+  "line": 233,
+  "corrected_entry": "Spanier, E., & Zviely, D. (2022). Key environmental impacts along the Mediterranean coast of Israel in the last 100 years. *Journal of Marine Science and Engineering, 11*(1), 2. https://doi.org/10.3390/jmse11010002"
+ },
+ {
+  "entry": "State Comptroller of Israel. (2020). *How government authorities deal with the p",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 235
+ },
+ {
+  "entry": "State Comptroller of Israel. (2024, July). *How government authorities deal with",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 237
+ },
+ {
+  "entry": "Sulaiman, D. M., Bachtiar, H., Taufiq, A., & Hermanto. (2015). Beach profile cha",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 239
+ },
+ {
+  "entry": "Sulaiman, D. M., Junarsa, D., Bachtiar, H., & Nurhabni, F. (2017). Lessons learn",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 241
+ },
+ {
+  "entry": "SunLive. (n.d.). Time called on artificial reef. https://www.sunlive.co.nz/news/",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 243
+ },
+ {
+  "entry": "Taranaki Regional Council. (2009). *Opunake artificial reef monitoring programme",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "no link; private copy supplied by author",
+  "note": "council site blocks automated access",
+  "line": 245
+ },
+ {
+  "entry": "ten Voorde, M., Antunes do Carmo, J., & Neves, M. G. (2009). Designing a prelimi",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 247
+ },
+ {
+  "entry": "The Daily News. (2004, June 11). Surf reef decision has Opunake buzzing at touri",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "HTTP 406 to automated requests (artificialreefs.org copy)",
+  "note": "author not printed in source",
+  "line": 249
+ },
+ {
+  "entry": "US Army Coastal Engineering Research Center. (1984). *Shore protection manual* (",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "no link; not searched",
+  "note": "standard manual, book",
+  "line": 251
+ },
+ {
+  "entry": "US Army Corps of Engineers. (2002). *Coastal engineering manual* (EM 1110-2-1100",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 253
+ },
+ {
+  "entry": "van Steeg, P., Vastenburg, E., Bezuijen, A., Zengerink, E., & de Gijt, J. (2011)",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 255
+ },
+ {
+  "entry": "Verhagen, H. J. (2012). *CT5308 Breakwaters and closure dams, Chapter 7: Stabili",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 257
+ },
+ {
+  "entry": "Vieira da Silva, G., Hamilton, D., Strauss, D., Murray, T., & Tomlinson, R. (202",
+  "status": "OK",
+  "what_was_checked": "Crossref: issued 2022, vol 171 p104027",
+  "note": "entry year 2021 = online-first; check preferred year",
+  "line": 259
+ },
+ {
+  "entry": "Walker, J. R. (1975). Surf parameters. In *Beach and Surf Parameters Workshop*, ",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "HTTP 403 (NOAA repository blocks automated access)",
+  "note": "",
+  "line": 261
+ },
+ {
+  "entry": "Weggel, J. R. (1972). Maximum breaker height for design. In *Proceedings of the ",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 263
+ },
+ {
+  "entry": "Welsh Government. (2022). *LiDAR 2020-22, 1 m DSM and DTM, tile SN6089, flown 19",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 265
+ },
+ {
+  "entry": "Western Australia Department of Transport. (2009). *Two Rocks to Naturaliste lid",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 267
+ },
+ {
+  "entry": "Western Australia Department of Transport. (2020). *Bathymetry point data, Frema",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 269
+ },
+ {
+  "entry": "Western Australia Department of Transport, & Bureau of Meteorology. (2024). *Tid",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 271
+ },
+ {
+  "entry": "Western Australia Department of Transport, & Bureau of Meteorology. (2026). *Tid",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 273
+ },
+ {
+  "entry": "World Bank. (2026). *World Development Indicators: PA.NUS.FCRF Official exchange",
+  "status": "FIXED",
+  "what_was_checked": "api.worldbank.org/v2 base returns 404; indicator endpoint for PA.NUS.FCRF returns 200",
+  "note": "URL replaced by endpoint",
+  "line": 275,
+  "corrected_entry": "World Bank. (2026). *World Development Indicators: PA.NUS.FCRF Official exchange rate (LCU per US$, period average) and FP.CPI.TOTL Consumer price index (2010 = 100), United States* [Data set]. https://api.worldbank.org/v2/country/USA/indicator/PA.NUS.FCRF?format=json (retrieved 15 October 2026)"
+ },
+ {
+  "entry": "Zalul. (2025, July 2). *Appeal to the appeals sub-committee of the National Plan",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 277
+ },
+ {
+  "entry": "Zviely, D., Kit, E., & Klein, M. (2007). Longshore sand transport estimates alon",
+  "status": "OK",
+  "what_was_checked": "DOI via Crossref or URL via HTTP 200 (see note)",
+  "note": "",
+  "line": 279
+ },
+ {
+  "entry": "Zviely, D., Kit, E., Rosen, B., Galili, E., & Klein, M. (2009). Shoreline migrat",
+  "status": "OK",
+  "what_was_checked": "Crossref: issued 2008 (online), print vol 29(2) 2009",
+  "note": "entry year 2009 = print year; left as is",
+  "line": 281
+ },
+ {
+  "entry": "- Shand, T. D. (2011). *Making waves? A philosophical review of artificial surfi",
+  "status": "NOT_FOUND",
+  "what_was_checked": "Crossref and web search: no 2011 Shand item matching title; closest \"Making Waves\" chapter (2021, Surfing and the Philosophy of Sport)",
+  "note": "secondary-only item",
+  "line": 287
+ },
+ {
+  "entry": "- Weppe et al. (2007), Mount Maunganui monitoring; cited as quoted in Blacka et ",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "grey literature cited only as quoted in Blacka et al. (2013)",
+  "note": "secondary-only item",
+  "line": 288
+ },
+ {
+  "entry": "- Geofabrics (2013), design life of geotextile containers; cited as quoted in Bl",
+  "status": "UNVERIFIABLE",
+  "what_was_checked": "grey literature cited only as quoted in Blacka et al. (2013)",
+  "note": "secondary-only item",
+  "line": 289
+ }
+]
