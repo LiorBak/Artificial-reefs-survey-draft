@@ -79,9 +79,9 @@ def dom_checks(page: Path = PAGE, shots_prefix: str | None = None) -> dict[str, 
         res["ONE model section visible (one at a time)"] = c.eval(f"document.querySelectorAll('{VIS}').length") == 1 and c.eval(f"document.querySelector('{VIS}').getAttribute('data-slug')") == first
         res[f"{len(models)} model sections rendered (others hidden)"] = c.eval("document.querySelectorAll('section.m3d-model[data-slug]:not(#m3d-all)').length") == len(models)
         res[f"{n_tiles} thumbnails rendered (one per selected picture)"] = c.eval("document.querySelectorAll('.m3d-tile').length") == n_tiles
-        res["header: badge + one-line reason + state + vertical-exaggeration note"] = c.eval(
-            f"(()=>{{const s=document.querySelector('{VIS}');const b=s.querySelector('.m3d-conf .m3d-badge'),r=s.querySelector('.m3d-conf .m3d-reason'),st=s.querySelector('.m3d-state'),v=s.querySelector('.m3d-ve');"
-            "return !!(b&&r&&st&&v&&b.offsetParent&&r.offsetParent&&r.textContent.trim().length>20&&/^3D confidence: (high|medium|low)/i.test(b.textContent.trim())&&/Vertical exaggeration/.test(v.textContent)&&r.getBoundingClientRect().height<40)})()") is True
+        res["header: badge + one-line reason + Surf (A) / Construction (B) lines (2026-10-24)"] = c.eval(
+            f"(()=>{{const s=document.querySelector('{VIS}');const b=s.querySelector('.m3d-conf .m3d-badge'),r=s.querySelector('.m3d-conf .m3d-reason'),st=s.querySelector('.m3d-rate'),v=true;"
+            "return !!(b&&r&&st&&v&&b.offsetParent&&r.offsetParent&&r.textContent.trim().length>20&&/^3D confidence: (high|medium|low)/i.test(b.textContent.trim())&&r.getBoundingClientRect().height<40)})()") is True
         res["every model has the full vertical-exaggeration text behind its (i)"] = c.eval("[...document.querySelectorAll('section.m3d-model[data-slug]:not(#m3d-all) .m3d-conf .info-pop')].every(p=>/Vertical exaggeration/.test(p.textContent)&&/3D confidence/.test(p.textContent))") is True
         res["text at the top is short: tab intro <= 260 chars, page intro <= 260 chars (the rest sits behind (i))"] = c.eval(f"{SHORT}(document.querySelector('.m3d-lead'))<=260&&{SHORT}(document.getElementById('intro'))<=260") is True
         res["site header (long text) is collapsed on this tab"] = c.eval("getComputedStyle(document.querySelector('.site-head')).display") == "none"

@@ -126,7 +126,7 @@ html:not(.m3d-embedded) #app { height: 100% !important; }
 html.m3d-embedded .m3d-topbar { display: none; }
 html.m3d-embedded:not(.m3d-sidectl) #side, html.m3d-embedded #right, html.m3d-embedded #wideBtn, html.m3d-embedded #reason { display: none !important; }
 /* Borth: #side holds the controls (view, water level, toggles), so it stays when framed, narrower, and the header is compacted */
-html.m3d-sidectl.m3d-embedded #app { grid-template-columns: minmax(0, 1fr) 280px; }
+html.m3d-sidectl.m3d-embedded #app { grid-template-columns: minmax(0, 1fr) 280px; grid-template-rows: minmax(0, 1fr); }   /* 2026-10-24: the viewers' own narrow rule (58% 42% rows) left the lower half empty when framed at < 900 px */
 html.m3d-sidectl.m3d-embedded #conf, html.m3d-sidectl.m3d-embedded #state, html.m3d-sidectl.m3d-embedded #top h1 { display: none; }
 html.m3d-sidectl.m3d-embedded #top { padding: 3px 8px; grid-template-columns: minmax(0, 1fr); grid-template-areas: 'v'; }
 html.m3d-sidectl.m3d-embedded #cap { display: none; }
@@ -205,6 +205,90 @@ html.m3d-grid3.m3d-hide-left.m3d-hide-right:not(.m3d-embedded) #app { grid-templ
 })();</script>
 <script>try { var _c = ''; if (_c) _c.split(' ').forEach(function (x) { document.documentElement.classList.add(x); }); } catch (e) { /* ignore */ }</script>
 <script>try { if (window.self !== window.top) document.documentElement.classList.add('m3d-embedded'); } catch (e) { document.documentElement.classList.add('m3d-embedded'); }</script>
+<style id="m3d-ui-css">
+/* 2026-10-24 (Lior A1, A2), injected by compile_models3d.py: the on-screen camera / cursor text hides with Labels off or a hidden panel; project-picture picker for photo match */
+html.m3d-hud-off #hud, html.m3d-hud-off .m3d-hudx { display: none !important; }
+.m3d-pickbtn { display: inline-block; margin: 4px 0; font: 600 12px/1.2 system-ui, "Segoe UI", Roboto, sans-serif; color: #fff; background: #0b6b9e; border: 1px solid #0b6b9e; border-radius: 5px; padding: 5px 9px; cursor: pointer; }
+.m3d-pickbtn:hover { background: #0d80bd; }
+.m3d-picker { position: fixed; inset: 0; z-index: 2147483600; background: rgba(5,10,15,.82); display: flex; align-items: center; justify-content: center; padding: 16px; }
+.m3d-picker[hidden] { display: none; }
+.m3d-picker .pk { background: #101820; color: #e8eef2; border: 1px solid #38505f; border-radius: 10px; width: min(980px, 100%); max-height: 100%; overflow: auto; padding: 12px 14px; font: 13px/1.35 system-ui, "Segoe UI", Roboto, sans-serif; }
+.m3d-picker .hd { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+.m3d-picker .hd b { flex: 1; font-size: 15px; }
+.m3d-picker .x { background: #1d2b36; color: #e8eef2; border: 1px solid #38505f; border-radius: 6px; padding: 4px 10px; cursor: pointer; font: inherit; }
+.m3d-picker h4 { margin: 12px 0 6px; font-size: 13px; color: #9fd3ff; }
+.m3d-picker h4.plan { color: #ffd479; }
+.m3d-picker .gr { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+.m3d-picker .it { display: flex; flex-direction: column; gap: 4px; text-align: left; background: #16222b; color: #e8eef2; border: 1px solid #2b3a46; border-radius: 6px; padding: 5px; cursor: pointer; font: 11px/1.3 system-ui, sans-serif; }
+.m3d-picker .it.plan { border-color: #b8902a; }
+.m3d-picker .it:hover, .m3d-picker .it:focus-visible { border-color: #ffb347; outline: none; }
+.m3d-picker .it img { width: 100%; height: 100px; object-fit: contain; background: #0b1117; border-radius: 4px; }
+.m3d-picker .note { color: #8fa3b1; margin: 0 0 4px; }
+</style>
+<script>(function () {
+  /* A1: hide the long camera / cursor read-out when Labels is off or a side panel is hidden (in the viewer or the page's photo panel) */
+  var root = document.documentElement, st = { labels: true, page: false };
+  function labelsCtl() {
+    var ids = ['labels', 'tLabels', 't-labels', 't-lab', 't-lbl'];
+    for (var i = 0; i < ids.length; i++) { var e = document.getElementById(ids[i]); if (e && e.type === 'checkbox') return e; }
+    var bs = document.querySelectorAll('button'); for (var k = 0; k < bs.length; k++) if ((bs[k].textContent || '').trim() === 'Labels') return bs[k];
+    return null;
+  }
+  function apply() {
+    var c = labelsCtl();
+    if (c) st.labels = c.type === 'checkbox' ? c.checked : (c.classList.contains('on') || c.getAttribute('aria-pressed') === 'true');
+    var panel = root.classList.contains('m3d-hide-left') || root.classList.contains('m3d-hide-right') || (document.body && document.body.classList.contains('ctrl-off'));
+    var r = document.getElementById('readout'); if (r && getComputedStyle(r).position === 'absolute') r.classList.add('m3d-hudx');
+    var off = !st.labels || panel || st.page;
+    if (root.classList.contains('m3d-hud-off') !== off) root.classList.toggle('m3d-hud-off', off);
+  }
+  window.addEventListener('message', function (e) { var d = e.data; if (d && d.type === 'm3d-hud') { st.page = !!d.panelHidden; apply(); } });
+  function ready(f) { if (document.readyState !== 'loading') f(); else document.addEventListener('DOMContentLoaded', f); }
+  ready(function () {
+    document.addEventListener('click', function () { setTimeout(apply, 0); });
+    document.addEventListener('change', function () { setTimeout(apply, 0); });
+    try { new MutationObserver(function () { apply(); }).observe(root, { attributes: true, attributeFilter: ['class'] }); if (document.body) new MutationObserver(function () { apply(); }).observe(document.body, { attributes: true, attributeFilter: ['class'] }); } catch (e) { /* old browser */ }
+    setTimeout(apply, 300); setTimeout(apply, 1500);
+  });
+
+  /* A2: choose one of the project's pictures for the viewer's own photo match (same pictures as the page's photo panel; "Plan shape" first) */
+  var PICS = [{"id": "palm-beach-gold-coast-img-02", "t": "Hunt et al. 2022 Fig 3: backhoe dredger at the reef during construction (oblique aerial, 2019)", "g": "plan", "gl": "Plan shape", "w": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-02.jpg", "th": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-02_400.jpg"}, {"id": "palm-beach-gold-coast-img-13", "t": "City of Gold Coast 2020 brochure p.9: plan aerial with the reef icon and the 270 m offshore distance", "g": "plan", "gl": "Plan shape", "w": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-13.jpg", "th": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-13_400.jpg"}, {"id": "palm-beach-gold-coast-img-20", "t": "AR_aerial_Nearmaps.jpg: Palm Beach artificial reef, vertical Nearmap aerial with survey contour lines, north arrow and 0-25-50 m scale bar", "g": "plan", "gl": "Plan shape", "w": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-20.jpg", "th": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-20_400.jpg"}, {"id": "palm-beach-gold-coast-img-22", "t": "Esri World Imagery z18 context crop, Palm Beach (1.4 km box, 2658 px, 0.527 m/px)", "g": "plan", "gl": "Plan shape", "w": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-22.jpg", "th": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-22_400.jpg"}, {"id": "palm-beach-gold-coast-img-14", "t": "City of Gold Coast 2020 brochure p.9: section view of the artificial reef (not to scale), crest 1.5 m below average water level", "g": "crest", "gl": "Crest & height", "w": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-14.png", "th": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-14_400.jpg"}, {"id": "palm-beach-gold-coast-img-21", "t": "Engineering for Public Works (IPWEAQ), Sept 2020, pp.50-51: 'Palm Beach Artificial Reef' article pages (Bluecoast-hosted image)", "g": "crest", "gl": "Crest & height", "w": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-21.jpg", "th": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-21_400.jpg"}, {"id": "palm-beach-gold-coast-img-26", "t": "Mortensen et al. (2015) Fig. 3: dimensions and form of the SCS - concept SCS B (oblique 3D render with slope labels 1/2, 1/5, 1/12, 1/15; crest -1.5 m; 53,319 m3)", "g": "crest", "gl": "Crest & height", "w": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-26.png", "th": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-26_400.jpg"}, {"id": "palm-beach-gold-coast-img-32", "t": "Model sections: cross-shore section through the crest centre and section along the crest axis", "g": "crest", "gl": "Crest & height", "w": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-32.png", "th": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-32_400.jpg"}, {"id": "palm-beach-gold-coast-img-05", "t": "Daniels et al. 2022 Fig 1: wave buoy locations PBO1-4 at the natural Palm Beach reef", "g": "seabed", "gl": "Seabed & depth", "w": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-05.jpg", "th": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-05_400.jpg"}, {"id": "palm-beach-gold-coast-img-09", "t": "Mortensen et al. 2015 Fig 6 (top): pre-construction seabed depth contours at the Palm Beach concept site (no structure)", "g": "seabed", "gl": "Seabed & depth", "w": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-09.jpg", "th": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-09_400.jpg"}, {"id": "palm-beach-gold-coast-img-28", "t": "Garmin Navionics Nautical Charts, zoom 17, Palm Beach reef: shallow-shading series 0-10 m (11 files)", "g": "seabed", "gl": "Seabed & depth", "w": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-28.png", "th": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-28_400.jpg"}, {"id": "palm-beach-gold-coast-img-29", "t": "Garmin Navionics Nautical Charts, zoom 18, Palm Beach reef: shallow-shading series 0-10 m (11 files)", "g": "seabed", "gl": "Seabed & depth", "w": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-29.png", "th": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-29_400.jpg"}, {"id": "palm-beach-gold-coast-img-30", "t": "Garmin Navionics SonarChart Maps, zoom 17, Palm Beach reef: shallow-shading series 0-10 m (11 files)", "g": "seabed", "gl": "Seabed & depth", "w": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-30.png", "th": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-30_400.jpg"}, {"id": "palm-beach-gold-coast-img-31", "t": "Garmin Navionics SonarChart Maps, zoom 18, Palm Beach reef: shallow-shading series 0-10 m (11 files)", "g": "seabed", "gl": "Seabed & depth", "w": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-31.png", "th": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-31_400.jpg"}, {"id": "palm-beach-gold-coast-img-34", "t": "Navionics iso-lines extracted from the shading series, toe residuals and RMS per candidate chart datum", "g": "seabed", "gl": "Seabed & depth", "w": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-34.png", "th": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-34_400.jpg"}, {"id": "palm-beach-gold-coast-img-33", "t": "MSQ Semidiurnal Tidal Planes 2026 table with the Gold Coast Seaway row highlighted", "g": "tides", "gl": "Tides & datum", "w": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-33.jpg", "th": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-33_400.jpg"}, {"id": "palm-beach-gold-coast-img-03", "t": "Hunt et al. 2022 Fig 5: wave breaking and surf amenity on Palm Beach Reef", "g": "validation", "gl": "Validation & cross-checks", "w": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-03.jpg", "th": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-03_400.jpg"}, {"id": "palm-beach-gold-coast-img-04", "t": "Prenzler et al. 2022 Fig 1 (top): CCTV camera view of the reef with the camera field of view drawn on an aerial", "g": "validation", "gl": "Validation & cross-checks", "w": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-04.jpg", "th": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-04_400.jpg"}, {"id": "palm-beach-gold-coast-img-10", "t": "Mortensen et al. 2015 Fig 6 (bottom): seabed contours with the concept SCS in place", "g": "validation", "gl": "Validation & cross-checks", "w": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-10.jpg", "th": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-10_400.jpg"}, {"id": "palm-beach-gold-coast-img-11", "t": "Q1 evidence: City of Gold Coast DTM (source-ID raster) coverage and 1 m contours over Esri imagery at Palm Beach", "g": "validation", "gl": "Validation & cross-checks", "w": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-11.jpg", "th": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-11_400.jpg"}, {"id": "palm-beach-gold-coast-img-15", "t": "Palm Beach reef and inshore sandbank: two satellite views (ICM 2023 article)", "g": "validation", "gl": "Validation & cross-checks", "w": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-15.jpg", "th": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-15_400.jpg"}, {"id": "palm-beach-gold-coast-img-16", "t": "Aerial of Palm Beach with a backhoe dredger working over the artificial reef (City of Gold Coast via ABC, 2019)", "g": "validation", "gl": "Validation & cross-checks", "w": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-16.jpg", "th": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-16_400.jpg"}, {"id": "palm-beach-gold-coast-img-18", "t": "Cru Collective: schematic overlay - reef about 270 m offshore of the 21st Avenue groyne", "g": "validation", "gl": "Validation & cross-checks", "w": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-18.jpg", "th": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-18_400.jpg"}, {"id": "palm-beach-gold-coast-img-23", "t": "Esri World Imagery z19 crop around the Palm Beach reef (400 m box, 1519 px, 0.263 m/px)", "g": "validation", "gl": "Validation & cross-checks", "w": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-23.jpg", "th": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-23_400.jpg"}, {"id": "palm-beach-gold-coast-img-24", "t": "Hunt et al. (2022) Fig. 1: location and orientation of the artificial reef (aerial photo with a schematic reef icon; north up)", "g": "validation", "gl": "Validation & cross-checks", "w": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-24.jpg", "th": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-24_400.jpg"}, {"id": "palm-beach-gold-coast-img-25", "t": "Hunt et al. (2022) Fig. 4: final survey of the completed reef structure (oblique 3D multibeam render, colour ramp, no scale)", "g": "validation", "gl": "Validation & cross-checks", "w": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-25.png", "th": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-25_400.jpg"}, {"id": "palm-beach-gold-coast-img-12", "t": "City of Gold Coast 2020 brochure p.8: oblique aerial of Palm Beach with the artificial reef, natural reef and benefit area labelled", "g": "linked", "gl": "Other pictures named in the model sources", "w": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-12.jpg", "th": "../../assets/images/palm-beach-gold-coast/palm-beach-gold-coast-img-12_400.jpg"}];
+  ready(function () {
+    if (!PICS || !PICS.length) return;
+    var inp = document.querySelector('input[type="file"][accept^="image"]'); if (!inp) return;
+    var b = document.createElement('button'); b.type = 'button'; b.className = 'm3d-pickbtn'; b.textContent = 'Choose a project picture (' + PICS.length + ')';
+    b.title = 'Pick one of the pictures registered for this model (the same list as the photo panel of the page); Plan-shape pictures first';
+    inp.parentNode.insertBefore(b, inp.nextSibling);
+    var ov = document.createElement('div'); ov.className = 'm3d-picker'; ov.hidden = true; ov.setAttribute('role', 'dialog'); ov.setAttribute('aria-label', 'Choose a project picture');
+    var groups = [], seen = {};
+    PICS.forEach(function (p) { if (!seen[p.g]) { seen[p.g] = { key: p.g, label: p.gl, items: [] }; groups.push(seen[p.g]); } seen[p.g].items.push(p); });
+    function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+    ov.innerHTML = '<div class="pk"><div class="hd"><b>Project pictures for photo match (' + PICS.length + ')</b><button type="button" class="x" data-x>Close</button></div>' +
+      '<p class="note">The picture is laid over the model like an uploaded photo; then set the camera with the viewer\'s own photo-match controls. Plan-shape pictures (top-down drawings, satellite and charts) are the easiest to match.</p>' +
+      groups.map(function (g) {
+        return '<h4 class="' + (g.key === 'plan' ? 'plan' : '') + '">' + esc(g.label) + (g.key === 'plan' ? ' &mdash; most useful for matching' : '') + ' (' + g.items.length + ')</h4><div class="gr">' +
+          g.items.map(function (p) { return '<button type="button" class="it' + (g.key === 'plan' ? ' plan' : '') + '" data-pick="' + esc(p.id) + '" title="' + esc(p.t) + '"><img src="' + esc(p.th) + '" alt="" loading="lazy"><span>' + esc(p.t.length > 90 ? p.t.slice(0, 88) + '…' : p.t) + '</span></button>'; }).join('') + '</div>';
+      }).join('') + '</div>';
+    document.body.appendChild(ov);
+    function close() { ov.hidden = true; b.focus(); }
+    b.addEventListener('click', function () { ov.hidden = false; var f = ov.querySelector('[data-pick]'); if (f) f.focus(); });
+    ov.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+    ov.addEventListener('click', function (e) {
+      if (e.target === ov || e.target.closest('[data-x]')) { close(); return; }
+      var it = e.target.closest('[data-pick]'); if (!it) return;
+      var p = PICS.filter(function (x) { return x.id === it.getAttribute('data-pick'); })[0]; if (!p) return;
+      var url = new URL(p.w, location.href).href, name = p.id + (/\.png$/i.test(p.w) ? '.png' : '.jpg');
+      var file = new File([new Blob([''])], name, { type: /\.png$/i.test(p.w) ? 'image/png' : 'image/jpeg' });
+      var orig = URL.createObjectURL;
+      // the viewer's own handler reads files[0] and calls URL.createObjectURL(file): hand it the picture's URL instead (works from file:// too)
+      URL.createObjectURL = function (o) { return (o && o.name === name) ? url : orig.apply(URL, arguments); };
+      try { var dt = new DataTransfer(); dt.items.add(file); inp.files = dt.files; inp.dispatchEvent(new Event('change', { bubbles: true })); }
+      catch (err) { if (window.console) console.warn('picture picker: could not hand the picture to the viewer', err); }
+      finally { URL.createObjectURL = orig; }
+      close();
+    });
+  });
+})();</script>
 <script src="../vendor/three.bundle.js"></script>
 <script>window.addEventListener("error",function(e){var d=document.getElementById("err");d.style.display="block";d.textContent+=(e.message||"error")+" @"+(e.filename||"").split("/").pop()+":"+e.lineno+"\n";});window.addEventListener("unhandledrejection",function(e){var d=document.getElementById("err");d.style.display="block";d.textContent+="promise: "+(e.reason&&e.reason.message||e.reason)+"\n";});</script>
 <script src="model.js"></script>

@@ -1,0 +1,104 @@
+{
+  "_comment": "Lior's page requests of 2026-10-24 (04_build/LIOR_PAGE_REQUESTS_2026-10-24.md). Read by src/compile_data.py (heroes, extra_images) and passed to the page as meta.page (gallery_excluded, announced, avg_cost). Edit here, then run python src/update_page.py.",
+  "heroes": {
+    "_comment": "slug -> {card_url: an image URL already in the card's images (hot-linked)} or {registry_id: a row of 03_images/reefs/<slug>/images.json shown from a local copy}",
+    "cables-reef-wa": {
+      "card_url": "https://raisedwaterresearch.com/wp-content/uploads/2019/11/cabletopturn.jpg",
+      "why": "Lior D12: surfer top turn at Cables (RWR spot page, link only)"
+    },
+    "burkitts-reef-bargara": {
+      "card_url": "https://live-production.wcms.abc-cdn.net.au/a315cc055a6a5d93d4c292c7857238d7?impolicy=wcms_crop_resize&cropH=1152&cropW=1728&xPos=160&yPos=0&width=862&height=575",
+      "why": "Lior D12: Greg surfing Greg's Reef (ABC News, link only)"
+    },
+    "bunbury-airwave": {
+      "card_url": "https://live-production.wcms.abc-cdn.net.au/1a68756faf1cc30ccfdfad69bc4ad197",
+      "why": "Lior D12: Airwave design/technology graphic (ABC News, link only)"
+    },
+    "prattes-reef-el-segundo": {
+      "registry_id": "prattes-reef-el-segundo-img-41",
+      "why": "Lior D12: Pratte's panel cropped from the original RWR four-reef comparison (saved at Lior's request)"
+    },
+    "opunake-reef": {
+      "registry_id": "opunake-reef-img-26",
+      "why": "Lior D12: his screenshot of YouTube GXYYCbZtz_s at t = 10 s"
+    }
+  },
+  "extra_images": {
+    "_comment": "slug -> registry ids appended to the reef's Images section (local copies)",
+    "narrowneck-gold-coast": [
+      "narrowneck-gold-coast-img-80",
+      "narrowneck-gold-coast-img-79"
+    ],
+    "cables-reef-wa": [
+      "cables-reef-wa-img-42",
+      "cables-reef-wa-img-41"
+    ],
+    "mount-maunganui-reef": [
+      "mount-maunganui-reef-img-42"
+    ],
+    "prattes-reef-el-segundo": [
+      "prattes-reef-el-segundo-img-41",
+      "prattes-reef-el-segundo-img-40"
+    ],
+    "opunake-reef": [
+      "opunake-reef-img-26"
+    ]
+  },
+  "gallery_excluded": {
+    "borth-coastal-defence-reef": "Coastal defence scheme, not a surf reef (Lior 2026-10-24, D10): kept on the 3D tab and in the References index, not in the Gallery or the Table."
+  },
+  "announced": {
+    "mexico-reef-2026-unnamed": {
+      "text": "Reported completed in 2026 (Raised Water Research, 31 Mar 2026); location, design and performance not yet published.",
+      "quote": "On April 16 at 6:30 PM, the California Surf Club will host the unveiling of a newly completed artificial surf reef off the coast of Mexico ... reef designer Simon Brandi Mortensen and Raised Water Research founder Peter Indelicato will reveal the reef's location and debut never-before-seen footage of the reef in action.",
+      "ref": "Indelicato, P. (2026-03-31). Unveiling the new reef in Mexico. Raised Water Research, Surf Reef News.",
+      "url": "https://raisedwaterresearch.com/unveiling-the-new-reef-in-mexico/",
+      "why": "Lior 2026-10-24 (D11, correction): we know almost nothing about it; only in a collapsible part at the bottom of the Gallery; excluded from the Table, the 3D reef list, counts, averages and sorts. Status check: 08_paper/notes/xala_status_check.md."
+    }
+  },
+  "avg_cost": {
+    "source": "08_paper/sections/03_survey.md, Table 1, column 'Cost (USD M, 2024 prices)' (read 2026-10-24)",
+    "rule": "Reefs that did not break: B (safety and longevity) score 3 or more. Excluded: B = 1 failed (Boscombe, Kovalam, Mount Maunganui, Pratte's, Opunake, Bunbury Airwave), B = 2 hazard (Albany), Borth (coastal defence; its cost is the whole scheme) and Xala (no cost).",
+    "basis": "US$ million at 2024 prices: each whole-project cost as reported, converted to US dollars at the World Bank annual-average exchange rate of its price year and raised to 2024 with the US consumer price index (paper, Section 2 and Table 1 notes)",
+    "reefs": [
+      {
+        "slug": "cables-reef-wa",
+        "name": "Cables",
+        "usd_m_2024": 2.19,
+        "B": 4
+      },
+      {
+        "slug": "burkitts-reef-bargara",
+        "name": "Burkitts",
+        "usd_m_2024": 0.015,
+        "B": 4
+      },
+      {
+        "slug": "palm-beach-gold-coast",
+        "name": "Palm Beach",
+        "usd_m_2024": 15.52,
+        "B": 4
+      },
+      {
+        "slug": "narrowneck-gold-coast",
+        "name": "Narrowneck",
+        "usd_m_2024": 2.96,
+        "B": 3
+      }
+    ]
+  },
+  "volume_reported": {
+    "_source": "08_paper/sections/03_survey.md, Table 1, column 'Volume, reported (m^3)' (as stated by the sources; not one common quantity, see the paper's notes); read 2026-10-24",
+    "southern-ocean-surf-reef-albany": "34,000 m³",
+    "cables-reef-wa": "5,500 m³",
+    "burkitts-reef-bargara": "300 m³ (est.)",
+    "palm-beach-gold-coast": "25,000 m³",
+    "narrowneck-gold-coast": "70,000 m³",
+    "boscombe-surf-reef": "12,800 m³",
+    "kovalam-reef-india": "4,000 m³",
+    "mount-maunganui-reef": "2,800 m³",
+    "prattes-reef-el-segundo": "1,350 m³",
+    "opunake-reef": "4,900 m³ (design)",
+    "bunbury-airwave": "70–94 m³ (sand fill)"
+  }
+}

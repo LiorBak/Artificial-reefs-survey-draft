@@ -96,7 +96,7 @@ html:not(.m3d-embedded) #app { height: 100% !important; }
 html.m3d-embedded .m3d-topbar { display: none; }
 html.m3d-embedded:not(.m3d-sidectl) #side, html.m3d-embedded #right, html.m3d-embedded #wideBtn, html.m3d-embedded #reason { display: none !important; }
 /* Borth: #side holds the controls (view, water level, toggles), so it stays when framed, narrower, and the header is compacted */
-html.m3d-sidectl.m3d-embedded #app { grid-template-columns: minmax(0, 1fr) 280px; }
+html.m3d-sidectl.m3d-embedded #app { grid-template-columns: minmax(0, 1fr) 280px; grid-template-rows: minmax(0, 1fr); }   /* 2026-10-24: the viewers' own narrow rule (58% 42% rows) left the lower half empty when framed at < 900 px */
 html.m3d-sidectl.m3d-embedded #conf, html.m3d-sidectl.m3d-embedded #state, html.m3d-sidectl.m3d-embedded #top h1 { display: none; }
 html.m3d-sidectl.m3d-embedded #top { padding: 3px 8px; grid-template-columns: minmax(0, 1fr); grid-template-areas: 'v'; }
 html.m3d-sidectl.m3d-embedded #cap { display: none; }
@@ -175,6 +175,90 @@ html.m3d-grid3.m3d-hide-left.m3d-hide-right:not(.m3d-embedded) #app { grid-templ
 })();</script>
 <script>try { var _c = ''; if (_c) _c.split(' ').forEach(function (x) { document.documentElement.classList.add(x); }); } catch (e) { /* ignore */ }</script>
 <script>try { if (window.self !== window.top) document.documentElement.classList.add('m3d-embedded'); } catch (e) { document.documentElement.classList.add('m3d-embedded'); }</script>
+<style id="m3d-ui-css">
+/* 2026-10-24 (Lior A1, A2), injected by compile_models3d.py: the on-screen camera / cursor text hides with Labels off or a hidden panel; project-picture picker for photo match */
+html.m3d-hud-off #hud, html.m3d-hud-off .m3d-hudx { display: none !important; }
+.m3d-pickbtn { display: inline-block; margin: 4px 0; font: 600 12px/1.2 system-ui, "Segoe UI", Roboto, sans-serif; color: #fff; background: #0b6b9e; border: 1px solid #0b6b9e; border-radius: 5px; padding: 5px 9px; cursor: pointer; }
+.m3d-pickbtn:hover { background: #0d80bd; }
+.m3d-picker { position: fixed; inset: 0; z-index: 2147483600; background: rgba(5,10,15,.82); display: flex; align-items: center; justify-content: center; padding: 16px; }
+.m3d-picker[hidden] { display: none; }
+.m3d-picker .pk { background: #101820; color: #e8eef2; border: 1px solid #38505f; border-radius: 10px; width: min(980px, 100%); max-height: 100%; overflow: auto; padding: 12px 14px; font: 13px/1.35 system-ui, "Segoe UI", Roboto, sans-serif; }
+.m3d-picker .hd { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+.m3d-picker .hd b { flex: 1; font-size: 15px; }
+.m3d-picker .x { background: #1d2b36; color: #e8eef2; border: 1px solid #38505f; border-radius: 6px; padding: 4px 10px; cursor: pointer; font: inherit; }
+.m3d-picker h4 { margin: 12px 0 6px; font-size: 13px; color: #9fd3ff; }
+.m3d-picker h4.plan { color: #ffd479; }
+.m3d-picker .gr { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+.m3d-picker .it { display: flex; flex-direction: column; gap: 4px; text-align: left; background: #16222b; color: #e8eef2; border: 1px solid #2b3a46; border-radius: 6px; padding: 5px; cursor: pointer; font: 11px/1.3 system-ui, sans-serif; }
+.m3d-picker .it.plan { border-color: #b8902a; }
+.m3d-picker .it:hover, .m3d-picker .it:focus-visible { border-color: #ffb347; outline: none; }
+.m3d-picker .it img { width: 100%; height: 100px; object-fit: contain; background: #0b1117; border-radius: 4px; }
+.m3d-picker .note { color: #8fa3b1; margin: 0 0 4px; }
+</style>
+<script>(function () {
+  /* A1: hide the long camera / cursor read-out when Labels is off or a side panel is hidden (in the viewer or the page's photo panel) */
+  var root = document.documentElement, st = { labels: true, page: false };
+  function labelsCtl() {
+    var ids = ['labels', 'tLabels', 't-labels', 't-lab', 't-lbl'];
+    for (var i = 0; i < ids.length; i++) { var e = document.getElementById(ids[i]); if (e && e.type === 'checkbox') return e; }
+    var bs = document.querySelectorAll('button'); for (var k = 0; k < bs.length; k++) if ((bs[k].textContent || '').trim() === 'Labels') return bs[k];
+    return null;
+  }
+  function apply() {
+    var c = labelsCtl();
+    if (c) st.labels = c.type === 'checkbox' ? c.checked : (c.classList.contains('on') || c.getAttribute('aria-pressed') === 'true');
+    var panel = root.classList.contains('m3d-hide-left') || root.classList.contains('m3d-hide-right') || (document.body && document.body.classList.contains('ctrl-off'));
+    var r = document.getElementById('readout'); if (r && getComputedStyle(r).position === 'absolute') r.classList.add('m3d-hudx');
+    var off = !st.labels || panel || st.page;
+    if (root.classList.contains('m3d-hud-off') !== off) root.classList.toggle('m3d-hud-off', off);
+  }
+  window.addEventListener('message', function (e) { var d = e.data; if (d && d.type === 'm3d-hud') { st.page = !!d.panelHidden; apply(); } });
+  function ready(f) { if (document.readyState !== 'loading') f(); else document.addEventListener('DOMContentLoaded', f); }
+  ready(function () {
+    document.addEventListener('click', function () { setTimeout(apply, 0); });
+    document.addEventListener('change', function () { setTimeout(apply, 0); });
+    try { new MutationObserver(function () { apply(); }).observe(root, { attributes: true, attributeFilter: ['class'] }); if (document.body) new MutationObserver(function () { apply(); }).observe(document.body, { attributes: true, attributeFilter: ['class'] }); } catch (e) { /* old browser */ }
+    setTimeout(apply, 300); setTimeout(apply, 1500);
+  });
+
+  /* A2: choose one of the project's pictures for the viewer's own photo match (same pictures as the page's photo panel; "Plan shape" first) */
+  var PICS = [{"id": "bunbury-airwave-img-06", "t": "Airwave-from-Above.jpg: near-nadir drone photo of the inflated bladder on the seabed", "g": "plan", "gl": "Plan shape", "w": "../../assets/images/bunbury-airwave/bunbury-airwave-img-06.jpg", "th": "../../assets/images/bunbury-airwave/bunbury-airwave-img-06_400.jpg"}, {"id": "bunbury-airwave-img-08", "t": "ABC News video frame 11804314_0005: oblique drone shot of the inflated bladder ('Dream on hold for Bunbury surfers')", "g": "plan", "gl": "Plan shape", "w": "../../assets/images/bunbury-airwave/bunbury-airwave-img-08.jpg", "th": "../../assets/images/bunbury-airwave/bunbury-airwave-img-08_400.jpg"}, {"id": "bunbury-airwave-img-16", "t": "Garmin Navionics viewer, Bunbury Back Beach: SonarChart, zoom 18, device-pixel-ratio 2", "g": "seabed", "gl": "Seabed & depth", "w": "../../assets/images/bunbury-airwave/bunbury-airwave-img-16.png", "th": "../../assets/images/bunbury-airwave/bunbury-airwave-img-16_400.jpg"}, {"id": "bunbury-airwave-img-17", "t": "Garmin Navionics viewer, Bunbury Back Beach: Nautical Chart, zoom 17", "g": "seabed", "gl": "Seabed & depth", "w": "../../assets/images/bunbury-airwave/bunbury-airwave-img-17.png", "th": "../../assets/images/bunbury-airwave/bunbury-airwave-img-17_400.jpg"}, {"id": "bunbury-airwave-img-18", "t": "Garmin Navionics viewer, Bunbury Back Beach: Nautical Chart, zoom 18, device-pixel-ratio 2", "g": "seabed", "gl": "Seabed & depth", "w": "../../assets/images/bunbury-airwave/bunbury-airwave-img-18.png", "th": "../../assets/images/bunbury-airwave/bunbury-airwave-img-18_400.jpg"}, {"id": "bunbury-airwave-img-19", "t": "Individual 10 m lidar cells around the reef, rotated into the model frame (m AHD)", "g": "seabed", "gl": "Seabed & depth", "w": "../../assets/images/bunbury-airwave/bunbury-airwave-img-19.png", "th": "../../assets/images/bunbury-airwave/bunbury-airwave-img-19_400.jpg"}, {"id": "bunbury-airwave-img-20", "t": "Alongshore-median seabed profile (2009 lidar) with tide planes, text-range band and model reef cross-section", "g": "seabed", "gl": "Seabed & depth", "w": "../../assets/images/bunbury-airwave/bunbury-airwave-img-20.png", "th": "../../assets/images/bunbury-airwave/bunbury-airwave-img-20_400.jpg"}, {"id": "bunbury-airwave-img-21", "t": "Navionics-vs-lidar datum RMS test (profile and RMS bars for LAT / MLLW / AHD / MSL)", "g": "seabed", "gl": "Seabed & depth", "w": "../../assets/images/bunbury-airwave/bunbury-airwave-img-21.png", "th": "../../assets/images/bunbury-airwave/bunbury-airwave-img-21_400.jpg"}, {"id": "bunbury-airwave-img-10", "t": "ReefTopView.png: plan-view concept graphic (circle with concentric seam rings over a stock beach aerial; arrow '30m')", "g": "validation", "gl": "Validation & cross-checks", "w": "../../assets/images/bunbury-airwave/bunbury-airwave-img-10.jpg", "th": "../../assets/images/bunbury-airwave/bunbury-airwave-img-10_400.jpg"}, {"id": "bunbury-airwave-img-12", "t": "Esri World Imagery, Bunbury Back Beach SLSC (-33.327276, 115.629902), zoom 18, r = 400 m", "g": "validation", "gl": "Validation & cross-checks", "w": "../../assets/images/bunbury-airwave/bunbury-airwave-img-12.jpg", "th": "../../assets/images/bunbury-airwave/bunbury-airwave-img-12_400.jpg"}, {"id": "bunbury-airwave-img-13", "t": "Garmin Navionics viewer, Bunbury Back Beach: Map Options panel", "g": "linked", "gl": "Other pictures named in the model sources", "w": "../../assets/images/bunbury-airwave/bunbury-airwave-img-13.png", "th": "../../assets/images/bunbury-airwave/bunbury-airwave-img-13_400.jpg"}, {"id": "bunbury-airwave-img-14", "t": "Garmin Navionics viewer, Bunbury Back Beach: SonarChart, zoom 17", "g": "linked", "gl": "Other pictures named in the model sources", "w": "../../assets/images/bunbury-airwave/bunbury-airwave-img-14.png", "th": "../../assets/images/bunbury-airwave/bunbury-airwave-img-14_400.jpg"}, {"id": "bunbury-airwave-img-15", "t": "Garmin Navionics viewer, Bunbury Back Beach: SonarChart, zoom 18", "g": "linked", "gl": "Other pictures named in the model sources", "w": "../../assets/images/bunbury-airwave/bunbury-airwave-img-15.png", "th": "../../assets/images/bunbury-airwave/bunbury-airwave-img-15_400.jpg"}];
+  ready(function () {
+    if (!PICS || !PICS.length) return;
+    var inp = document.querySelector('input[type="file"][accept^="image"]'); if (!inp) return;
+    var b = document.createElement('button'); b.type = 'button'; b.className = 'm3d-pickbtn'; b.textContent = 'Choose a project picture (' + PICS.length + ')';
+    b.title = 'Pick one of the pictures registered for this model (the same list as the photo panel of the page); Plan-shape pictures first';
+    inp.parentNode.insertBefore(b, inp.nextSibling);
+    var ov = document.createElement('div'); ov.className = 'm3d-picker'; ov.hidden = true; ov.setAttribute('role', 'dialog'); ov.setAttribute('aria-label', 'Choose a project picture');
+    var groups = [], seen = {};
+    PICS.forEach(function (p) { if (!seen[p.g]) { seen[p.g] = { key: p.g, label: p.gl, items: [] }; groups.push(seen[p.g]); } seen[p.g].items.push(p); });
+    function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+    ov.innerHTML = '<div class="pk"><div class="hd"><b>Project pictures for photo match (' + PICS.length + ')</b><button type="button" class="x" data-x>Close</button></div>' +
+      '<p class="note">The picture is laid over the model like an uploaded photo; then set the camera with the viewer\'s own photo-match controls. Plan-shape pictures (top-down drawings, satellite and charts) are the easiest to match.</p>' +
+      groups.map(function (g) {
+        return '<h4 class="' + (g.key === 'plan' ? 'plan' : '') + '">' + esc(g.label) + (g.key === 'plan' ? ' &mdash; most useful for matching' : '') + ' (' + g.items.length + ')</h4><div class="gr">' +
+          g.items.map(function (p) { return '<button type="button" class="it' + (g.key === 'plan' ? ' plan' : '') + '" data-pick="' + esc(p.id) + '" title="' + esc(p.t) + '"><img src="' + esc(p.th) + '" alt="" loading="lazy"><span>' + esc(p.t.length > 90 ? p.t.slice(0, 88) + '…' : p.t) + '</span></button>'; }).join('') + '</div>';
+      }).join('') + '</div>';
+    document.body.appendChild(ov);
+    function close() { ov.hidden = true; b.focus(); }
+    b.addEventListener('click', function () { ov.hidden = false; var f = ov.querySelector('[data-pick]'); if (f) f.focus(); });
+    ov.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+    ov.addEventListener('click', function (e) {
+      if (e.target === ov || e.target.closest('[data-x]')) { close(); return; }
+      var it = e.target.closest('[data-pick]'); if (!it) return;
+      var p = PICS.filter(function (x) { return x.id === it.getAttribute('data-pick'); })[0]; if (!p) return;
+      var url = new URL(p.w, location.href).href, name = p.id + (/\.png$/i.test(p.w) ? '.png' : '.jpg');
+      var file = new File([new Blob([''])], name, { type: /\.png$/i.test(p.w) ? 'image/png' : 'image/jpeg' });
+      var orig = URL.createObjectURL;
+      // the viewer's own handler reads files[0] and calls URL.createObjectURL(file): hand it the picture's URL instead (works from file:// too)
+      URL.createObjectURL = function (o) { return (o && o.name === name) ? url : orig.apply(URL, arguments); };
+      try { var dt = new DataTransfer(); dt.items.add(file); inp.files = dt.files; inp.dispatchEvent(new Event('change', { bubbles: true })); }
+      catch (err) { if (window.console) console.warn('picture picker: could not hand the picture to the viewer', err); }
+      finally { URL.createObjectURL = orig; }
+      close();
+    });
+  });
+})();</script>
 <script src="../vendor/three.bundle.js"></script>
 <script src="model.js"></script>
 <script src="docs.js"></script>

@@ -3,16 +3,16 @@ NOTE: cables-reef-wa: METHODS_3D.md section 'References' has no list: 9 referenc
 NOTE: opunake-reef: HELD by data/models3d_hold.json (Not yet modelled)
 NOTE: kovalam-reef-india: HELD by data/models3d_hold.json (Not yet modelled)
 NOTE: mexico-reef-2026-unnamed: HELD by data/models3d_hold.json (Not yet modelled)
-combined: borth-coastal-defence-reef: cached (ok)
-combined: boscombe-surf-reef: cached (ok)
-combined: bunbury-airwave: cached (ok)
-combined: cables-reef-wa: cached (ok)
-combined: mount-maunganui-reef: cached (ok)
-combined: narrowneck-gold-coast: cached (ok)
-combined: palm-beach-gold-coast: cached (ok)
-combined: prattes-reef-el-segundo: cached (ok)
-combined: southern-ocean-surf-reef-albany: cached (ok)
-models3d: 9 models, 0 feasibility, 4 not yet; pictures {'borth-coastal-defence-reef': 25, 'boscombe-surf-reef': 36, 'bunbury-airwave': 13, 'cables-reef-wa': 24, 'mount-maunganui-reef': 25, 'narrowneck-gold-coast': 46, 'palm-beach-gold-coast': 27, 'prattes-reef-el-segundo': 32, 'southern-ocean-surf-reef-albany': 17}; 128 references (from 212); caveat rows 85; verify 146 checked, 0 failed; json 1681 KB; 12.0s
-wrote /home/user/artificial-reef-survey/04_build/artificial_reefs.html (3185 KB)
+combined: borth-coastal-defence-reef: ok ok=True (7 s)
+combined: boscombe-surf-reef: ok ok=True (7 s)
+combined: bunbury-airwave: ok ok=True (6 s)
+combined: cables-reef-wa: ok ok=True (7 s)
+combined: mount-maunganui-reef: ok ok=True (6 s)
+combined: narrowneck-gold-coast: ok ok=True (6 s)
+combined: palm-beach-gold-coast: ok ok=True (7 s)
+combined: prattes-reef-el-segundo: ok ok=True (6 s)
+combined: southern-ocean-surf-reef-albany: ok ok=True (6 s)
+models3d: 9 models, 0 feasibility, 4 not yet; pictures {'borth-coastal-defence-reef': 25, 'boscombe-surf-reef': 36, 'bunbury-airwave': 13, 'cables-reef-wa': 24, 'mount-maunganui-reef': 25, 'narrowneck-gold-coast': 46, 'palm-beach-gold-coast': 27, 'prattes-reef-el-segundo': 32, 'southern-ocean-surf-reef-albany': 17}; 128 references (from 212); caveat rows 85; verify 146 checked, 0 failed; json 1684 KB; 59.3s
+wrote /home/user/artificial-reef-survey/04_build/artificial_reefs.html (3222 KB)
 reefs: 13; with USD cost: 11; total ~US$46,306,500-49,357,500
 NOTE: kovalam-reef-india: USD needle '1100000' not found in cost_usd_approx -> dropped from total

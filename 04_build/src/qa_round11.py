@@ -145,6 +145,7 @@ def dom_checks11(page: Path = PAGE, shots_prefix: str | None = None) -> dict[str
             c.pump(3.5)
             sel = f"section.m3d-model[data-slug='{slug}']"
             c.eval(f"document.querySelector(\"{sel}\").scrollIntoView()"); c.pump(0.6)
+            c.eval("document.querySelectorAll('.m3d-toolpanel').forEach(function(p){p.hidden=false});document.querySelectorAll('details.m3d-kndet').forEach(function(d){d.open=true})"); c.pump(0.3)   # 2026-10-24: outline-version box and key numbers are collapsed by default (Lior A3): open them first
             short = slug.split("-")[0]
             shot(c, f"versions_{short}_default")
             res[f"{slug}: default version '{m['default_version']}' is pressed on load, {len(vs)} versions offered"] = bool(c.eval(f"document.querySelector(\"{sel} .m3d-vbtn[aria-pressed='true']\").getAttribute('data-m3d-ver')===\"{slug}|{m['default_version']}\""))

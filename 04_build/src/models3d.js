@@ -114,6 +114,7 @@
     if (pmState[slug]) { delete pmState[slug]; pmRefresh(slug); }          // the viewer re-loads with the new version: a photo match no longer applies
     $all('[data-m3d-ver^="' + slug + '|"]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-m3d-ver') === slug + '|' + id)); });
     var now = $('[data-vnow="' + slug + '"]'); if (now) now.innerHTML = versionNowHTML(m);
+    var vsh = $('[data-vshort="' + slug + '"]'); if (vsh) vsh.textContent = verShort(m);
     var kn = $('[data-knbody="' + slug + '"]'); if (kn) kn.innerHTML = knInner(m);
     var fs = $('a[data-m3d-full="' + slug + '"]'); if (fs) fs.href = m.viewer + verSrcHash(m);
     var f = $('[data-viewer="' + slug + '"] iframe');           // live viewer: tell it (postMessage, then a hash-only navigation as a fallback)
@@ -297,15 +298,58 @@
       pp('<b>Vertical exaggeration.</b> ' + esc(D.ve_generic) + (m.ve_note ? ' ' + esc(m.ve_note) : '')) +
       goLink('#m3d-methods', 'Appendix A: methods and the confidence rubric (section 8)'));
   }
+  /* 2026-10-24 (Lior): Surf (A) and Construction (B) as one word + score; wave icon if A >= 4, beach-umbrella icon if C >= 4 (none of the 12 reefs has C >= 4 today). */
+  var WORD_A = { 5: 'excellent', 4: 'good', 3: 'inconsistent', 2: 'rarely', 1: 'unsurfable' };
+  var WORD_B = { 5: 'intact', 4: 'intact', 3: 'renewed', 2: 'hazard', 1: 'failure' };
+  var CLS_B = { 5: 'v-worked', 4: 'v-worked', 3: 'v-blue', 2: 'v-yellow', 1: 'v-failed' };
+  var CLS_A = { 5: 'v-worked', 4: 'v-partly-worked', 3: 'v-mixed', 2: 'v-orange', 1: 'v-failed' };
+  var WORD_C = { 5: 'good', 4: 'good', 3: 'mixed', 2: 'poor', 1: 'harm' };
+  var ICO_WAVE = '<svg class="wico" viewBox="0 0 24 24" width="16" height="16" role="img" aria-label="good surf wave (A at least 4)"><title>Good surf wave: Surf (A) at least 4</title><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M2 15c2.5 0 2.5-3 5-3s2.5 3 5 3 2.5-3 5-3 2.5 3 5 3M2 20c2.5 0 2.5-3 5-3s2.5 3 5 3 2.5-3 5-3 2.5 3 5 3M3 9c3-1 5-4 8-6 0 3 2 5 5 6"/></svg>';
+  var ICO_SAND = '<svg class="wico" viewBox="0 0 24 24" width="16" height="16" role="img" aria-label="protects the beach (C at least 4)"><title>Sediment and coast protection good or proven: C at least 4</title><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 11a9 7 0 0 1 18 0zM12 11v10M3 21h18"/></svg>';
+  function sc(m, k) { var v = m.rating && m.rating[k] != null ? parseInt(String(m.rating[k]), 10) : NaN; return isNaN(v) ? null : v; }
+  function icons(m) { return (sc(m, 'A') >= 4 ? ICO_WAVE : '') + (sc(m, 'C') >= 4 ? ICO_SAND : ''); }
+  function rateLine(m, k) {
+    var v = sc(m, k), star = m.rating && String(m.rating[k]).indexOf('*') >= 0 ? '*' : '';
+    if (v == null) return '<span class="badge v-n-a">not rated</span>';
+    return '<span class="badge ' + (k === 'A' ? CLS_A : CLS_B)[v] + '">' + v + star + ' &ndash; ' + (k === 'A' ? WORD_A : WORD_B)[v] + '</span>';
+  }
+  function rateHTML(m) {
+    if (!m.rating) return '';
+    var c = sc(m, 'C'), cn = c != null && (c >= 4 || c <= 1) ? ' <span class="m3d-rc">C (sediment): ' + c + ' &ndash; ' + WORD_C[c] + (c >= 4 ? ICO_SAND : '') + '</span>' : '';
+    return '<p class="m3d-rate"><b>Surf (A):</b> ' + rateLine(m, 'A') + (sc(m, 'A') >= 4 ? ICO_WAVE : '') + '</p>' +
+      '<p class="m3d-rate"><b>Construction (B):</b> ' + rateLine(m, 'B') + cn + '</p>';
+  }
   function headerHTML(m) {
     var c = m.confidence, lvl = c.level, s = esc(m.slug);
     // one line each: the full text stays in the DOM (CSS ellipsis) and sits behind the (i)
     return '<header class="m3d-mhead"><h2 id="m3d-h-' + s + '" tabindex="-1">' + (m.flag ? '<span class="flag" aria-hidden="true">' + m.flag + '</span> ' : '') + esc(m.name) +
-      '<small>' + esc(m.place) + (m.verdict_label ? ' &middot; verdict: ' + esc(m.verdict_label) : '') + '</small></h2>' +
+      '<small>' + esc(m.place) + '</small></h2>' +
       '<div class="m3d-conf m3d-conf-' + esc(lvl) + '"><span class="m3d-badge" title="3D confidence rubric: Appendix A, section 8">3D confidence: ' + esc(lvl) + '</span>' +
       '<span class="m3d-reason" title="' + esc(c.reason_short || c.reason) + '">' + esc(c.reason_short || c.reason) + '</span>' + confInfoHTML(m) + '</div>' +
-      '<p class="m3d-state"><b>State modelled:</b> <span class="t" title="' + esc(m.state_short) + '">' + esc(m.state_short) + '</span><span class="m3d-ve">Vertical exaggeration 1&times; by default</span></p>' +
-      '<p class="m3d-loc">' + (window.ReefLoc ? window.ReefLoc.extras(m.slug, true) : '') + '</p></header>';
+      rateHTML(m) +
+      '</header>';
+  }
+  /* 2026-10-24 (Lior A3): map info and the outline-version box open only on click, from icon buttons; the key numbers are a closed <details> below the viewer. */
+  var ICON = {
+    map: '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></svg>',
+    ver: '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="m12 3 9 5-9 5-9-5 9-5zM3 13l9 5 9-5"/></svg>'
+  };
+  function verShort(m) { var v = verOf(m, activeVer(m)); return v ? cut(v.name, 46) : ''; }
+  function verInfo(m) {      // (i) next to the version selector: what the versions are
+    var list = (m.versions || []).map(function (v) { return '<li><b>' + esc(v.name) + '</b>' + (v.date ? ' (' + esc(v.date) + ')' : '') + (v.id === m.default_version ? ' <i>default</i>' : '') + (v.level ? ': ' + esc(v.level) : '') + '</li>'; }).join('');
+    return info('Outline versions: ' + shortName(m),
+      pp('The outline is the plan shape of the reef. Each version is a different source for it. The default is the best-evidenced one: measured survey, then design drawing of the built version, then a trace of a photo. The others can be switched on to compare; the model, the footprint, the volume and the key-number rows follow the chosen version.') +
+      (list ? '<ul class="m3d-vlist">' + list + '</ul>' : '') + pp('The 3D scene shows the as-built state; later changes are notes. Details of the chosen version: the line under the selector.'));
+  }
+  function toolsHTML(m) {
+    var s = esc(m.slug), loc = window.ReefLoc ? window.ReefLoc.extras(m.slug, true) : '';
+    var b = '';
+    if (loc) b += '<button type="button" class="m3d-tool" data-m3d-tog="loc-' + s + '" aria-expanded="false" aria-controls="m3d-tp-loc-' + s + '" title="Map: coordinates, Copy, Google Maps, satellite, Google Earth, KML, Navionics">' + ICON.map + '<span>Map</span></button>';
+    if (hasVers(m)) b += '<button type="button" class="m3d-tool" data-m3d-tog="ver-' + s + '" aria-expanded="false" aria-controls="m3d-tp-ver-' + s + '" title="Outline version: choose which outline the model shows">' + ICON.ver + '<span>Outline version: <i data-vshort="' + s + '">' + esc(verShort(m)) + '</i></span></button>' + verInfo(m);
+    if (!b) return '';
+    return '<div class="m3d-tools">' + b + '</div>' +
+      (loc ? '<div class="m3d-toolpanel" id="m3d-tp-loc-' + s + '" hidden><p class="m3d-loc">' + loc + '</p></div>' : '') +
+      (hasVers(m) ? '<div class="m3d-toolpanel" id="m3d-tp-ver-' + s + '" hidden>' + versionBarHTML(m) + '</div>' : '');
   }
 
   function knNotesHTML(m) {
@@ -333,7 +377,8 @@
         (tideSrc ? '<p class="m3d-note">Source of the levels: ' + esc((m.tides.levels[0].src || '')) + '</p>' : '') : '');
   }
   function keyNumbersHTML(m) {
-    return '<h3 class="m3d-h3" id="m3d-' + esc(m.slug) + '-kn">Key numbers: model vs stated in the sources' + knNotesHTML(m) + '</h3><div data-knbody="' + esc(m.slug) + '">' + knInner(m) + '</div>';
+    return '<details class="m3d-det m3d-kndet" id="m3d-' + esc(m.slug) + '-kn"><summary>Key numbers: model vs stated in the sources</summary>' +
+      '<p class="m3d-note">How to read them ' + knNotesHTML(m) + '</p><div data-knbody="' + esc(m.slug) + '">' + knInner(m) + '</div></details>';
   }
 
   function docsHTML(m) {
@@ -368,11 +413,12 @@
       st.classList.toggle('pics-off', picsOff);
       $all('[data-m3d-pcol]', st).forEach(function (b) { b.setAttribute('aria-expanded', String(!picsOff)); });
     });
+    $all('.m3d-viewer iframe').forEach(function (f) { try { f.contentWindow.postMessage({ type: 'm3d-hud', panelHidden: picsOff }, '*'); } catch (e) { /* ignore */ } });
     try { window.dispatchEvent(new Event('resize')); } catch (e) { /* ignore */ }
   }
   function modelHTML(m) {
     return '<section class="m3d-model" id="m3d-' + esc(m.slug) + '" data-slug="' + esc(m.slug) + '" aria-labelledby="m3d-h-' + esc(m.slug) + '" hidden>' +
-      headerHTML(m) + versionBarHTML(m) + stageHTML(m.slug, picsHTML(m)) +
+      headerHTML(m) + toolsHTML(m) + stageHTML(m.slug, picsHTML(m)) +
       '<div class="m3d-below">' + keyNumbersHTML(m) + docsHTML(m) + refChips(m) + '</div></section>';
   }
 
@@ -445,7 +491,7 @@
 
   // ------------------------------------------------------------------ intro + selector (top of the tab)
   function introHTML() {
-    var n = D.models.length, notyet = D.not_yet.length + D.feasibility.length;
+    var n = D.models.length, notyet = notYetList().length + D.feasibility.length;
     return '<div class="m3d-intro">' +
       '<p class="m3d-lead"><b>3D models of the built reefs:</b> reconstructions from drawings, charts, surveys and text, <b>not surveys of the structures</b>. Pick a reef, or compare them all.' +
       info('About the 3D models',
@@ -463,20 +509,25 @@
   function selectorHTML() {
     var btn = D.models.map(function (m) {
       var lvl = m.confidence.level;
-      return '<button type="button" class="m3d-selbtn" data-m3d-sel="' + esc(m.slug) + '" aria-pressed="false" title="' + esc(m.name + ' - 3D confidence: ' + lvl) + '"><span class="m3d-dot m3d-dot-' + esc(lvl) + '" aria-hidden="true"></span><span class="nm">' + esc(shortName(m)) + '</span><span class="sr"> (3D confidence ' + esc(lvl) + ')</span></button>';
+      return '<button type="button" class="m3d-selbtn" data-m3d-sel="' + esc(m.slug) + '" aria-pressed="false" title="' + esc(m.name + ' - 3D confidence: ' + lvl) + '"><span class="m3d-dot m3d-dot-' + esc(lvl) + '" aria-hidden="true"></span><span class="nm">' + esc(shortName(m)) + '</span>' + icons(m) + '<span class="sr"> (3D confidence ' + esc(lvl) + ')</span></button>';
     }).join('');
     if (CMP) btn += '<button type="button" class="m3d-selbtn all" data-m3d-sel="all" aria-pressed="false" title="All built models in one scene at the same scale"><span class="nm">All (compare)</span></button>';
     return '<div class="m3d-selwrap" id="m3d-selwrap"><span class="lbl" id="m3d-sellbl">Reef</span><div class="m3d-sel" role="group" aria-labelledby="m3d-sellbl">' + btn + '</div>' +
       '<span class="m3d-selhint">dot = 3D confidence: <span class="m3d-dot m3d-dot-high"></span>high <span class="m3d-dot m3d-dot-medium"></span>medium <span class="m3d-dot m3d-dot-low"></span>low</span></div>';
   }
 
+  function notYetList() {   // 2026-10-24 (Lior D11): announced-only reefs (Xala) are listed under the Gallery, not on the 3D tab
+    var ann = (window.ReefApp && window.ReefApp.ANNOUNCED) || {};
+    return D.not_yet.filter(function (r) { return !ann[r.slug]; });
+  }
   function notModelledHTML() {
     var out = '';
     D.feasibility.forEach(function (f) {
       out += '<article class="m3d-feas" id="m3d-' + esc(f.slug) + '"><h3>' + esc(f.name) + ': not modelled</h3><p>' + esc(f.summary) + '</p><details class="m3d-det" data-doc="feas" data-slug="' + esc(f.slug) + '"><summary>Why, and what is missing (FEASIBILITY.md)</summary><div class="m3d-doc"></div></details></article>';
     });
-    if (D.not_yet.length) {
-      out += '<div class="m3d-not"><h3>Not yet modelled</h3><ul>' + D.not_yet.map(function (r) { return '<li>' + esc(r.name) + ' &mdash; not yet modelled' + (r.note ? ' (' + esc(r.note) + ')' : '') + '</li>'; }).join('') + '</ul></div>';
+    var notYet = notYetList();
+    if (notYet.length) {
+      out += '<div class="m3d-not"><h3>Not yet modelled</h3><ul>' + notYet.map(function (r) { return '<li>' + esc(r.name) + ' &mdash; not yet modelled' + (r.note ? ' (' + esc(r.note) + ')' : '') + '</li>'; }).join('') + '</ul></div>';
     }
     return out;
   }
@@ -490,7 +541,7 @@
     }
     applyHash();
   }
-  function firstId() { return D.models.length ? D.models[0].slug : null; }
+  function firstId() { return BY['narrowneck-gold-coast'] ? 'narrowneck-gold-coast' : (D.models.length ? D.models[0].slug : null); }   // 2026-10-24 (Lior): Narrowneck is the default reef
   function validId(id) { return id === 'all' ? !!CMP : !!BY[id]; }
   function hashId() { var m = /^#view\/models3d(?:\/([a-z0-9-]+))?$/.exec(location.hash); return m ? (m[1] || '') : null; }
   function applyHash() {
@@ -581,6 +632,7 @@
     var f = document.createElement('iframe');
     f.title = '3D model: ' + v.name; f.setAttribute('allow', 'fullscreen');
     f.src = viewerSrc(slug);
+    f.addEventListener('load', function () { try { f.contentWindow.postMessage({ type: 'm3d-hud', panelHidden: picsOff }, '*'); } catch (e) { /* ignore */ } });   // A1: the viewer hides its camera/cursor text while a panel is hidden
     box.appendChild(f);
     var u = $('[data-m3d-unload="' + slug + '"]'); if (u) u.hidden = false;
   }
@@ -712,6 +764,7 @@
       var pc = t.closest('[data-m3d-pcol]'); if (pc) { var st0 = pc.closest('.m3d-stage'); setPics(picsOff); var nb = st0 && $(picsOff ? '.m3d-pcol-open' : '.m3d-pcol-bar .m3d-pcol', st0); if (nb) nb.focus({ preventScroll: true }); return; }
       var mt = t.closest('[data-m3d-match]'); if (mt) { var sm = mt.closest('.m3d-stage'); if (sm) matchPhoto(sm.getAttribute('data-stage'), mt.getAttribute('data-m3d-match')); return; }
       var mr = t.closest('[data-m3d-pmreset]'); if (mr) { var sr = mr.closest('.m3d-stage'); if (sr) resetMatch(sr.getAttribute('data-stage')); return; }
+      var tg = t.closest('[data-m3d-tog]'); if (tg) { var tp = document.getElementById(tg.getAttribute('aria-controls')); if (tp) { tp.hidden = !tp.hidden; tg.setAttribute('aria-expanded', String(!tp.hidden)); } return; }
       var vn = t.closest('[data-vnow]'); if (vn) { vn.classList.toggle('open'); vn.title = vn.classList.contains('open') ? 'Click to fold' : 'Click to read the whole text'; return; }
       var vb = t.closest('[data-m3d-ver]'); if (vb) { var kv = vb.getAttribute('data-m3d-ver').split('|'); setVersion(kv[0], kv.slice(1).join('|')); return; }
       var vi = t.closest('[data-m3d-vinfo]'); if (vi) { openVerDlg(vi.getAttribute('data-m3d-vinfo'), vi); return; }

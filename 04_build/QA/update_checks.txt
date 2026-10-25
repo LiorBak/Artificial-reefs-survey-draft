@@ -5,7 +5,7 @@ PASS  selector buttons show the 3D-confidence dot of each reef
 PASS  ONE model section visible (one at a time)
 PASS  9 model sections rendered (others hidden)
 PASS  245 thumbnails rendered (one per selected picture)
-PASS  header: badge + one-line reason + state + vertical-exaggeration note
+PASS  header: badge + one-line reason + Surf (A) / Construction (B) lines (2026-10-24)
 PASS  every model has the full vertical-exaggeration text behind its (i)
 PASS  text at the top is short: tab intro <= 260 chars, page intro <= 260 chars (the rest sits behind (i))
 PASS  site header (long text) is collapsed on this tab

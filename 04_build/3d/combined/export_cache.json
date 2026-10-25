@@ -1,6 +1,6 @@
 {
  "boscombe-surf-reef": {
-  "sig": "8c1f525e39c31a03094c3a2b562558f6ef5d4ee4",
+  "sig": "96803c883d43671910d65d794ef9381a655f9069",
   "result": {
    "slug": "boscombe-surf-reef",
    "status": "ok",
@@ -98,7 +98,7 @@
   }
  },
  "bunbury-airwave": {
-  "sig": "dc7038a7899cea4af0df4067fcd3ee9fff40ef4e",
+  "sig": "4ca24fcf8ddce89897336aaeab6717f63a3757ee",
   "result": {
    "slug": "bunbury-airwave",
    "status": "ok",
@@ -196,7 +196,7 @@
   }
  },
  "mount-maunganui-reef": {
-  "sig": "c1fe26e3856b953ec41e55ba72a262ecfeb0c16f",
+  "sig": "73c05969b875943c6b14af8c0d64236a9ad816db",
   "result": {
    "slug": "mount-maunganui-reef",
    "status": "ok",
@@ -294,7 +294,7 @@
   }
  },
  "palm-beach-gold-coast": {
-  "sig": "edcb1db51537fb133d1858cbfa7e76b996976193",
+  "sig": "33c2af194a02679d9fdb7e21233cfe16d5aa6c36",
   "result": {
    "slug": "palm-beach-gold-coast",
    "status": "ok",
@@ -392,7 +392,7 @@
   }
  },
  "prattes-reef-el-segundo": {
-  "sig": "466fb5aff43cc26e0c6d6623a60233689268dc5d",
+  "sig": "5ac93f1bb86ff0a73b9fce12050a4e18dfedb8a9",
   "result": {
    "slug": "prattes-reef-el-segundo",
    "status": "ok",
@@ -490,7 +490,7 @@
   }
  },
  "borth-coastal-defence-reef": {
-  "sig": "d343fcdc2e5ae2099dbf1320df71a8a7bb5d9196",
+  "sig": "e380d42b51b209fcea193116d4b7c964c3db91c1",
   "result": {
    "slug": "borth-coastal-defence-reef",
    "status": "ok",
@@ -588,7 +588,7 @@
   }
  },
  "narrowneck-gold-coast": {
-  "sig": "47a7c79867da1e2f3525aaf5ff6ebf534d010fd3",
+  "sig": "47b42c92e14a3d51ad2140f5eaa10c8fb2f730e8",
   "result": {
    "slug": "narrowneck-gold-coast",
    "status": "ok",
@@ -686,7 +686,7 @@
   }
  },
  "cables-reef-wa": {
-  "sig": "bf06c99d69355030c20bb137783303c72d14dd10",
+  "sig": "51a21eb919c81ee03980e722e557e2e3b94a946f",
   "result": {
    "slug": "cables-reef-wa",
    "status": "ok",
@@ -784,7 +784,7 @@
   }
  },
  "southern-ocean-surf-reef-albany": {
-  "sig": "c27cdf1ac0a4f3602fad9da25345ad5cdea3230f",
+  "sig": "0b035c0ff907f77c38abb856508f7b199a592125",
   "result": {
    "slug": "southern-ocean-surf-reef-albany",
    "status": "ok",

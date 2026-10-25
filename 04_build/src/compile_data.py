@@ -457,7 +457,60 @@ def local_copy_for(slug, url, license_text, problems):
     return None
 
 
+OVERRIDES_PATH = Path(__file__).resolve().parent.parent / "data" / "page_overrides.json"   # Lior's page requests 2026-10-24
+
+
+def page_overrides():
+    try:
+        return json.loads(OVERRIDES_PATH.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+
+
+def registry_row(slug, rid):
+    reg = ROOT / "03_images" / "reefs" / slug / "images.json"
+    try:
+        rows = json.loads(reg.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return None
+    return next((r for r in rows if r.get("id") == rid), None)
+
+
+def registry_image(slug, rid, problems):
+    """2026-10-24: a registered picture shown from its local copy (page_overrides.json heroes / extra_images)."""
+    row = registry_row(slug, rid)
+    if not row:
+        problems.append(f"[{slug}] page_overrides: registry id {rid} not found")
+        return None
+    loc = copy_local_asset(row.get("file"), slug, problems)
+    if not loc:
+        return None
+    sp = row.get("source_page") or ""
+    m = re.search(r"https?://\S+", sp)
+    return {
+        "url": row.get("image_url") or (m.group(0) if m else ""), "local": loc, "kind": "photo" if row.get("kind") in ("photo", "video_frame") else row.get("kind"),
+        "credit": row.get("credit"), "license": row.get("license"), "source_page": (m.group(0) if m else row.get("image_url")),
+        "depicts": row.get("title"), "registry_id": rid, "citation": row.get("citation"), "hotlink_ok": False,
+    }
+
+
 def compute_hero_image(card, slug, problems):
+    ov = (page_overrides().get("heroes") or {}).get(slug)
+    if isinstance(ov, dict) and ov.get("registry_id"):
+        h = registry_image(slug, ov["registry_id"], problems)
+        if h:
+            h["override"] = ov.get("why", "")
+            return h
+    if isinstance(ov, dict) and ov.get("card_url"):
+        hit = next((im for im in (card.get("images") or []) if im.get("url") == ov["card_url"]), None)
+        if hit:
+            card = dict(card, images=[hit])
+        else:
+            problems.append(f"[{slug}] page_overrides hero card_url not in the card's images")
+    return _compute_hero_image(card, slug, problems)
+
+
+def _compute_hero_image(card, slug, problems):
     """Hero = best hotlinkable image by what it shows: structure visible, then reef effect
     visible, then site context only, then unlabelled. Within a tier: the media re-check's
     hero_recommendation first, then a photo/aerial with a permissive licence, then card order.
@@ -1122,6 +1175,10 @@ def compile_card(slug, problems):
         loc = local_copy_for(slug, im.get("url"), im.get("license"), problems) if im.get("hotlink_ok") is True else None
         if loc:
             im["local"] = loc
+    for rid in (page_overrides().get("extra_images") or {}).get(slug, []):   # 2026-10-24 (Lior D12)
+        x = registry_image(slug, rid, problems)
+        if x:
+            images.append(x)
 
     # Scale tab: verified footprint + its references (S# ids kept distinct from the card's R#)
     footprint, fp_refs = load_footprint(slug, card, problems)

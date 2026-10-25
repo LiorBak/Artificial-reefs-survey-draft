@@ -108,7 +108,8 @@
   var META = window.M3D_COMBINED_META || [], DATA = window.M3D_COMBINED || {};
   var HUES = ['#E69F00', '#56B4E9', '#CC79A7', '#F0E442', '#D55E00', '#0072B2', '#009E73', '#999999'];   // Okabe-Ito
   var GAP = 40, items = [], notIn = [];
-  META.forEach(function (m, i) { if (m.status === 'ok' && DATA[m.slug]) items.push({ meta: m, d: DATA[m.slug], hue: HUES[items.length % HUES.length], visible: true }); else notIn.push(m); });
+  var OFF_DEFAULT = { 'borth-coastal-defence-reef': true };   // 2026-10-24 (Lior): coastal defence, not a surf reef: unchecked in the default compare view, still selectable
+  META.forEach(function (m, i) { if (m.status === 'ok' && DATA[m.slug]) items.push({ meta: m, d: DATA[m.slug], hue: HUES[items.length % HUES.length], visible: !OFF_DEFAULT[m.slug] }); else notIn.push(m); });
   if (!items.length) { fail('No model could be exported for the combined view.'); return; }
 
   var $ = function (id) { return document.getElementById(id); };
@@ -317,7 +318,7 @@
   var ul = $('reefs');
   items.forEach(function (it) {
     var li = document.createElement('li');
-    li.innerHTML = '<input type="checkbox" checked aria-label="Show ' + it.meta.short + '"><span class="sw" style="background:' + it.hue + '"></span><button type="button" class="nm" title="Fly to this reef">' + it.meta.short + '</button><small><span class="dot c-' + it.meta.level + '"></span>' + it.meta.level + '</small>';
+    li.innerHTML = '<input type="checkbox"' + (it.visible ? ' checked' : '') + ' aria-label="Show ' + it.meta.short + '"><span class="sw" style="background:' + it.hue + '"></span><button type="button" class="nm" title="Fly to this reef">' + it.meta.short + '</button><small><span class="dot c-' + it.meta.level + '"></span>' + it.meta.level + '</small>';
     li.querySelector('input').addEventListener('change', function (e) { it.visible = e.target.checked; layout(); need = true; });
     li.querySelector('button').addEventListener('click', function () { flyTo(it); });
     ul.appendChild(li);

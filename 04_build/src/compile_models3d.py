@@ -65,6 +65,19 @@ ROLE_LABEL = {"plan_trace": "plan trace", "scale": "scale", "3d_crest": "crest",
 WARN: list[str] = []
 
 
+# one word per level (Lior 2026-10-24); same as WORD_A / WORD_B in src/app.js and WORD_* in src/models3d.js
+SCALE_A = {"5": "excellent", "4": "good", "3": "inconsistent", "2": "rarely", "1": "unsurfable", "?": "unknown"}
+SCALE_B = {"5": "intact", "4": "intact", "3": "renewed", "2": "hazard", "1": "failure", "?": "unknown"}
+
+
+def _rating_label(q):
+    """Paper Table 1 wording (A surf, B construction) instead of the old outcome verdict."""
+    if not q:
+        return ""
+    a, b = str(q.get("A", "?")), str(q.get("B", "?"))
+    return "surf %s \u2013 %s; construction %s \u2013 %s" % (a, SCALE_A.get(a.strip("*"), ""), b, SCALE_B.get(b.strip("*"), ""))
+
+
 def warn(msg: str) -> None:
     WARN.append(msg)
     print("NOTE:", msg)
@@ -324,7 +337,7 @@ html:not(.m3d-embedded) #app { height: 100% !important; }
 html.m3d-embedded .m3d-topbar { display: none; }
 html.m3d-embedded:not(.m3d-sidectl) #side, html.m3d-embedded #right, html.m3d-embedded #wideBtn, html.m3d-embedded #reason { display: none !important; }
 /* Borth: #side holds the controls (view, water level, toggles), so it stays when framed, narrower, and the header is compacted */
-html.m3d-sidectl.m3d-embedded #app { grid-template-columns: minmax(0, 1fr) 280px; }
+html.m3d-sidectl.m3d-embedded #app { grid-template-columns: minmax(0, 1fr) 280px; grid-template-rows: minmax(0, 1fr); }   /* 2026-10-24: the viewers' own narrow rule (58% 42% rows) left the lower half empty when framed at < 900 px */
 html.m3d-sidectl.m3d-embedded #conf, html.m3d-sidectl.m3d-embedded #state, html.m3d-sidectl.m3d-embedded #top h1 { display: none; }
 html.m3d-sidectl.m3d-embedded #top { padding: 3px 8px; grid-template-columns: minmax(0, 1fr); grid-template-areas: 'v'; }
 html.m3d-sidectl.m3d-embedded #cap { display: none; }
@@ -406,6 +419,20 @@ html.m3d-grid3.m3d-hide-left.m3d-hide-right:not(.m3d-embedded) #app { grid-templ
 """
 
 
+def fill_picker(slug: str, gallery: list) -> None:
+    """2026-10-24 (Lior A2): the viewer's 'Choose a project picture' list = the pictures of the page's photo panel, Plan shape first (GROUPS order)."""
+    vp = VIEW_DIR / slug / "index.html"
+    if not vp.is_file():
+        return
+    gl = {g[0]: g[1] for g in GROUPS}
+    pics = [{"id": g["id"], "t": g["title"], "g": g["group"], "gl": gl.get(g["group"], g["group"]), "w": "../../" + g["web"], "th": "../../" + (g.get("thumb") or g["web"])} for g in gallery]
+    html = vp.read_text(encoding="utf-8")
+    if "/*M3D_PICS*/null" not in html:
+        warn(f"{slug}: picture-picker placeholder not found in the copied viewer")
+        return
+    vp.write_text(html.replace("/*M3D_PICS*/null", json.dumps(pics, ensure_ascii=False).replace("</", "<\\/"), 1), encoding="utf-8", newline="\n")
+
+
 def bar_html(slug: str, title: str) -> str:
     links = "".join(f'<a href="../../artificial_reefs.html{h.format(slug=slug)}">{n}</a>' for n, h in BAR_TABS)
     return (f'<nav class="m3d-topbar" aria-label="Back to the survey page"><a class="back" href="../../artificial_reefs.html#view/models3d/{slug}">&larr; Back to the page</a>'
@@ -444,7 +471,7 @@ def inject_receiver(html: str, slug: str) -> str:
 def inject_chrome(html: str, slug: str, title: str) -> str:
     html = inject_receiver(html, slug)
     i = html.find("<script")
-    css = BAR_CSS.replace("/*M3D_CLASSES*/", layout_classes(html))
+    css = BAR_CSS.replace("/*M3D_CLASSES*/", layout_classes(html)) + (SRC / "viewer_ui.html").read_text(encoding="utf-8")   # 2026-10-24: HUD hide + picture picker
     html = html[:i] + css + html[i:] if i >= 0 else html + css
     m = re.search(r"<body[^>]*>", html)
     if m:
@@ -931,6 +958,7 @@ def main() -> int:
             vinfo = copy_viewer(slug, d3)
             ann_names = set((d3 / "annotated").iterdir()) if (d3 / "annotated").is_dir() else set()
             gallery, gstats = build_gallery(slug, {a.name for a in ann_names})
+            fill_picker(slug, gallery)
             for g in gallery:                                   # round 11: pictures with a documented plan-view transform get a 'Match this photo' button
                 pmv = PM_PICS.get(g["id"])
                 if pmv and pmv.get("slug") == slug and slug in PM_VIEWERS:
@@ -992,7 +1020,7 @@ def main() -> int:
             models.append({
                 "slug": slug, "name": rname, "place": names.get(slug, {}).get("place_short") or "",
                 "flag": names.get(slug, {}).get("country_flag") or "", "verdict": names.get(slug, {}).get("verdict") or "",
-                "verdict_label": names.get(slug, {}).get("verdict_label") or "",
+                "verdict_label": _rating_label(names.get(slug, {}).get("rating")), "rating": names.get(slug, {}).get("rating"),
                 "model_name": m.get("name") or (m.get("meta") or {}).get("name") or "", "built": built,
                 "state_short": cur.get("state_short") or (state_auto if len(state_auto) < 330 else state_auto[:327].rsplit(" ", 1)[0] + "..."),
                 "state_full": state_auto, "caption": first_str(m, "caption"),

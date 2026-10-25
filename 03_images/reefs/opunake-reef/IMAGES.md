@@ -432,3 +432,15 @@ Source of truth: `images.json` in this folder (convention: `_agent_briefs/image_
 - State shown: during construction (site unconfirmed, probably Mount Maunganui); structure visible: false
 - How used: Context only: shows the method (slurry pumped from a barge) used at both NZ reefs. NOT used for Opunake geometry. Orchestrator: consider also registering it for mount-maunganui-reef (not done here: another agent's folder).
 - Private research copy; reuse rights to be checked before any public release.
+
+## Added 2026-10-24 (page agent, Lior's page requests D12)
+
+### opunake-reef-img-26 - Opunake Beach, frame at about t = 10 s of the YouTube video 'Opunake Beach - Taranaki NZ' (Michael Herman, 2021), Lior's screenshot
+- File: 03_images/reefs/opunake-reef/opunake-reef_beach-youtube-GXYYCbZtz_s-t10s_2021.jpg (1091 x 600 px, 135873 bytes)
+- Citation: Herman, M. (2021-02-10). Opunake Beach - Taranaki NZ [video, 1:41]. YouTube. https://www.youtube.com/watch?v=GXYYCbZtz_s&t=10s . Frame at t of about 10 s, screenshot supplied by Lior Baruch 2026-10-24 (05_qa/lior_uploads_2026-10-24/opunake_beach_from_youtube_GXYYCbZtz_s_t10s.webp, converted to JPG). Video already documented in the reef card (videos, best_timestamp_seconds 10).
+- Link: https://www.youtube.com/watch?v=GXYYCbZtz_s&t=10s
+- Date: 2021 or earlier (video uploaded 2021-02-10); credit Michael Herman (YouTube); screenshot by Lior Baruch; licence YouTube standard licence (not an open licence); single frame, private research copy; retrieved 2026-10-24
+- Shows: Opunake Beach, Taranaki: the sandy bay and surf seen from the shore; the submerged reef is not identifiable in the frame (site context).
+- State shown: unknown (2021 or earlier; reef by then largely gone); structure visible: false
+- How used: Gallery hero picture of Opunake at Lior's request (LIOR_PAGE_REQUESTS_2026-10-24 D12). Site context only; not used for any shape or model value.
+- Private research copy; reuse rights to be checked before any public release.

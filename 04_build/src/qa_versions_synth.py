@@ -201,6 +201,7 @@ def main() -> int:
         c.goto(page.as_uri() + "#view/models3d", 3)
         c.eval("document.documentElement.style.scrollBehavior='auto'")
         c.eval("window.__vlog=[];window.addEventListener('message',function(e){if(e.data&&e.data.type==='m3d-viewer-version')window.__vlog.push([e.data.version,e.data.via]);});")
+        js(c, "document.querySelectorAll('.m3d-toolpanel').forEach(function(p){p.hidden=false});document.querySelectorAll('details.m3d-kndet').forEach(function(d){d.open=true})")   # 2026-10-24: collapsed by default (Lior A3)
         res["synthetic model discovered (slug not in reefs.json)"] = bool(js(c, f"!!document.querySelector('{sel}')"))
         res["model without versions has no version bar"] = js(c, "!document.querySelector('section.m3d-model[data-slug=\"prattes-reef-el-segundo\"] .m3d-versions')") is True
         res["toggle shows 3 buttons with names and dates"] = js(

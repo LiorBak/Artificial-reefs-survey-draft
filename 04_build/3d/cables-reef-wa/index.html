@@ -94,7 +94,7 @@ html:not(.m3d-embedded) #app { height: 100% !important; }
 html.m3d-embedded .m3d-topbar { display: none; }
 html.m3d-embedded:not(.m3d-sidectl) #side, html.m3d-embedded #right, html.m3d-embedded #wideBtn, html.m3d-embedded #reason { display: none !important; }
 /* Borth: #side holds the controls (view, water level, toggles), so it stays when framed, narrower, and the header is compacted */
-html.m3d-sidectl.m3d-embedded #app { grid-template-columns: minmax(0, 1fr) 280px; }
+html.m3d-sidectl.m3d-embedded #app { grid-template-columns: minmax(0, 1fr) 280px; grid-template-rows: minmax(0, 1fr); }   /* 2026-10-24: the viewers' own narrow rule (58% 42% rows) left the lower half empty when framed at < 900 px */
 html.m3d-sidectl.m3d-embedded #conf, html.m3d-sidectl.m3d-embedded #state, html.m3d-sidectl.m3d-embedded #top h1 { display: none; }
 html.m3d-sidectl.m3d-embedded #top { padding: 3px 8px; grid-template-columns: minmax(0, 1fr); grid-template-areas: 'v'; }
 html.m3d-sidectl.m3d-embedded #cap { display: none; }
@@ -173,6 +173,90 @@ html.m3d-grid3.m3d-hide-left.m3d-hide-right:not(.m3d-embedded) #app { grid-templ
 })();</script>
 <script>try { var _c = 'm3d-sidectl'; if (_c) _c.split(' ').forEach(function (x) { document.documentElement.classList.add(x); }); } catch (e) { /* ignore */ }</script>
 <script>try { if (window.self !== window.top) document.documentElement.classList.add('m3d-embedded'); } catch (e) { document.documentElement.classList.add('m3d-embedded'); }</script>
+<style id="m3d-ui-css">
+/* 2026-10-24 (Lior A1, A2), injected by compile_models3d.py: the on-screen camera / cursor text hides with Labels off or a hidden panel; project-picture picker for photo match */
+html.m3d-hud-off #hud, html.m3d-hud-off .m3d-hudx { display: none !important; }
+.m3d-pickbtn { display: inline-block; margin: 4px 0; font: 600 12px/1.2 system-ui, "Segoe UI", Roboto, sans-serif; color: #fff; background: #0b6b9e; border: 1px solid #0b6b9e; border-radius: 5px; padding: 5px 9px; cursor: pointer; }
+.m3d-pickbtn:hover { background: #0d80bd; }
+.m3d-picker { position: fixed; inset: 0; z-index: 2147483600; background: rgba(5,10,15,.82); display: flex; align-items: center; justify-content: center; padding: 16px; }
+.m3d-picker[hidden] { display: none; }
+.m3d-picker .pk { background: #101820; color: #e8eef2; border: 1px solid #38505f; border-radius: 10px; width: min(980px, 100%); max-height: 100%; overflow: auto; padding: 12px 14px; font: 13px/1.35 system-ui, "Segoe UI", Roboto, sans-serif; }
+.m3d-picker .hd { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+.m3d-picker .hd b { flex: 1; font-size: 15px; }
+.m3d-picker .x { background: #1d2b36; color: #e8eef2; border: 1px solid #38505f; border-radius: 6px; padding: 4px 10px; cursor: pointer; font: inherit; }
+.m3d-picker h4 { margin: 12px 0 6px; font-size: 13px; color: #9fd3ff; }
+.m3d-picker h4.plan { color: #ffd479; }
+.m3d-picker .gr { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+.m3d-picker .it { display: flex; flex-direction: column; gap: 4px; text-align: left; background: #16222b; color: #e8eef2; border: 1px solid #2b3a46; border-radius: 6px; padding: 5px; cursor: pointer; font: 11px/1.3 system-ui, sans-serif; }
+.m3d-picker .it.plan { border-color: #b8902a; }
+.m3d-picker .it:hover, .m3d-picker .it:focus-visible { border-color: #ffb347; outline: none; }
+.m3d-picker .it img { width: 100%; height: 100px; object-fit: contain; background: #0b1117; border-radius: 4px; }
+.m3d-picker .note { color: #8fa3b1; margin: 0 0 4px; }
+</style>
+<script>(function () {
+  /* A1: hide the long camera / cursor read-out when Labels is off or a side panel is hidden (in the viewer or the page's photo panel) */
+  var root = document.documentElement, st = { labels: true, page: false };
+  function labelsCtl() {
+    var ids = ['labels', 'tLabels', 't-labels', 't-lab', 't-lbl'];
+    for (var i = 0; i < ids.length; i++) { var e = document.getElementById(ids[i]); if (e && e.type === 'checkbox') return e; }
+    var bs = document.querySelectorAll('button'); for (var k = 0; k < bs.length; k++) if ((bs[k].textContent || '').trim() === 'Labels') return bs[k];
+    return null;
+  }
+  function apply() {
+    var c = labelsCtl();
+    if (c) st.labels = c.type === 'checkbox' ? c.checked : (c.classList.contains('on') || c.getAttribute('aria-pressed') === 'true');
+    var panel = root.classList.contains('m3d-hide-left') || root.classList.contains('m3d-hide-right') || (document.body && document.body.classList.contains('ctrl-off'));
+    var r = document.getElementById('readout'); if (r && getComputedStyle(r).position === 'absolute') r.classList.add('m3d-hudx');
+    var off = !st.labels || panel || st.page;
+    if (root.classList.contains('m3d-hud-off') !== off) root.classList.toggle('m3d-hud-off', off);
+  }
+  window.addEventListener('message', function (e) { var d = e.data; if (d && d.type === 'm3d-hud') { st.page = !!d.panelHidden; apply(); } });
+  function ready(f) { if (document.readyState !== 'loading') f(); else document.addEventListener('DOMContentLoaded', f); }
+  ready(function () {
+    document.addEventListener('click', function () { setTimeout(apply, 0); });
+    document.addEventListener('change', function () { setTimeout(apply, 0); });
+    try { new MutationObserver(function () { apply(); }).observe(root, { attributes: true, attributeFilter: ['class'] }); if (document.body) new MutationObserver(function () { apply(); }).observe(document.body, { attributes: true, attributeFilter: ['class'] }); } catch (e) { /* old browser */ }
+    setTimeout(apply, 300); setTimeout(apply, 1500);
+  });
+
+  /* A2: choose one of the project's pictures for the viewer's own photo match (same pictures as the page's photo panel; "Plan shape" first) */
+  var PICS = [{"id": "cables-reef-wa-img-20", "t": "Pattiaratchi (1999) Fig. 7: the geographic location of the proposed surfing reef at Cable Station (plan map, printed rotated 90 deg, V outline over depth contours)", "g": "plan", "gl": "Plan shape", "w": "../../assets/images/cables-reef-wa/cables-reef-wa-img-20.png", "th": "../../assets/images/cables-reef-wa/cables-reef-wa-img-20_400.jpg"}, {"id": "cables-reef-wa-img-23", "t": "Pattiaratchi (1999) page 4 render: Figure 7 geographic location of the proposed reef (upscaled)", "g": "plan", "gl": "Plan shape", "w": "../../assets/images/cables-reef-wa/cables-reef-wa-img-23.jpg", "th": "../../assets/images/cables-reef-wa/cables-reef-wa-img-23_400.jpg"}, {"id": "cables-reef-wa-img-26", "t": "Blacka et al. (2013) Fig. A.2: Cable Station ASR design (after Lyons, 1992), plan with contours", "g": "plan", "gl": "Plan shape", "w": "../../assets/images/cables-reef-wa/cables-reef-wa-img-26.png", "th": "../../assets/images/cables-reef-wa/cables-reef-wa-img-26_400.jpg"}, {"id": "cables-reef-wa-img-27", "t": "Outline versions of the Cable Station reef compared in metres", "g": "plan", "gl": "Plan shape", "w": "../../assets/images/cables-reef-wa/cables-reef-wa-img-27.png", "th": "../../assets/images/cables-reef-wa/cables-reef-wa-img-27_400.jpg"}, {"id": "cables-reef-wa-img-38", "t": "DoT WA soundings Nov 1999: rock thickness over the 1998 bed, with the fitted outline", "g": "plan", "gl": "Plan shape", "w": "../../assets/images/cables-reef-wa/cables-reef-wa-img-38.png", "th": "../../assets/images/cables-reef-wa/cables-reef-wa-img-38_400.jpg"}, {"id": "cables-reef-wa-img-28", "t": "Modelled section through the apex of the Cable Station reef", "g": "crest", "gl": "Crest & height", "w": "../../assets/images/cables-reef-wa/cables-reef-wa-img-28.png", "th": "../../assets/images/cables-reef-wa/cables-reef-wa-img-28_400.jpg"}, {"id": "cables-reef-wa-img-29", "t": "Bed level fitted to the stated rock volume (Cable Station reef)", "g": "seabed", "gl": "Seabed & depth", "w": "../../assets/images/cables-reef-wa/cables-reef-wa-img-29.png", "th": "../../assets/images/cables-reef-wa/cables-reef-wa-img-29_400.jpg"}, {"id": "cables-reef-wa-img-40", "t": "DoT WA composite surface Perth_5m around the reef (m AHD) with the reef outline", "g": "seabed", "gl": "Seabed & depth", "w": "../../assets/images/cables-reef-wa/cables-reef-wa-img-40.png", "th": "../../assets/images/cables-reef-wa/cables-reef-wa-img-40_400.jpg"}, {"id": "cables-reef-wa-img-05", "t": "Cables-Design.jpg: plan of the original reef design with depth contours (RWR; same file as Lior's Cable-reef-design.jpg)", "g": "validation", "gl": "Validation & cross-checks", "w": "../../assets/images/cables-reef-wa/cables-reef-wa-img-05.jpg", "th": "../../assets/images/cables-reef-wa/cables-reef-wa-img-05_400.jpg"}, {"id": "cables-reef-wa-img-06", "t": "Cables-Additional-Fill-Area.jpg: plan of the extension to the right ('Additional fill area', volume 320 m3) (RWR)", "g": "validation", "gl": "Validation & cross-checks", "w": "../../assets/images/cables-reef-wa/cables-reef-wa-img-06.jpg", "th": "../../assets/images/cables-reef-wa/cables-reef-wa-img-06_400.jpg"}, {"id": "cables-reef-wa-img-07", "t": "Cables-Drawing.jpg: sketch plan 'PLAN - PROPOSED CABLES SURFING REEF' (Pitt sketch, RWR)", "g": "validation", "gl": "Validation & cross-checks", "w": "../../assets/images/cables-reef-wa/cables-reef-wa-img-07.jpg", "th": "../../assets/images/cables-reef-wa/cables-reef-wa-img-07_400.jpg"}, {"id": "cables-reef-wa-img-10", "t": "Cables-Side-View.jpg: 'Side view of Cables Reef' - existing sea bed and proposed enhancement (RWR)", "g": "validation", "gl": "Validation & cross-checks", "w": "../../assets/images/cables-reef-wa/cables-reef-wa-img-10.jpg", "th": "../../assets/images/cables-reef-wa/cables-reef-wa-img-10_400.jpg"}, {"id": "cables-reef-wa-img-16", "t": "Pattiaratchi (1999) Fig. 3: conceptual design of the proposed enhancement (typical cross-section of existing reef and proposed enhancement)", "g": "validation", "gl": "Validation & cross-checks", "w": "../../assets/images/cables-reef-wa/cables-reef-wa-img-16.png", "th": "../../assets/images/cables-reef-wa/cables-reef-wa-img-16_400.jpg"}, {"id": "cables-reef-wa-img-17", "t": "Pattiaratchi (1999) Fig. 4: final design of the Cable Station artificial reef (3D contour sketch used in the wave-basin tests)", "g": "validation", "gl": "Validation & cross-checks", "w": "../../assets/images/cables-reef-wa/cables-reef-wa-img-17.png", "th": "../../assets/images/cables-reef-wa/cables-reef-wa-img-17_400.jpg"}, {"id": "cables-reef-wa-img-22", "t": "Pattiaratchi (1999) page 3 full-page render (wave-flume and wave-basin studies, Figs 3 and 4)", "g": "validation", "gl": "Validation & cross-checks", "w": "../../assets/images/cables-reef-wa/cables-reef-wa-img-22.jpg", "th": "../../assets/images/cables-reef-wa/cables-reef-wa-img-22_400.jpg"}, {"id": "cables-reef-wa-img-30", "t": "Screenshot of the three.js viewer, plan view (Cable Station reef)", "g": "validation", "gl": "Validation & cross-checks", "w": "../../assets/images/cables-reef-wa/cables-reef-wa-img-30.png", "th": "../../assets/images/cables-reef-wa/cables-reef-wa-img-30_400.jpg"}, {"id": "cables-reef-wa-img-31", "t": "Screenshot of the three.js viewer, oblique view from the sea (Cable Station reef)", "g": "validation", "gl": "Validation & cross-checks", "w": "../../assets/images/cables-reef-wa/cables-reef-wa-img-31.png", "th": "../../assets/images/cables-reef-wa/cables-reef-wa-img-31_400.jpg"}, {"id": "cables-reef-wa-img-32", "t": "Esri World Imagery (current), Cable Station reef site, zoom 19", "g": "validation", "gl": "Validation & cross-checks", "w": "../../assets/images/cables-reef-wa/cables-reef-wa-img-32.jpg", "th": "../../assets/images/cables-reef-wa/cables-reef-wa-img-32_400.jpg"}, {"id": "cables-reef-wa-img-33", "t": "Esri Wayback release 2020-03-23, Cable Station reef, zoom 19", "g": "validation", "gl": "Validation & cross-checks", "w": "../../assets/images/cables-reef-wa/cables-reef-wa-img-33.jpg", "th": "../../assets/images/cables-reef-wa/cables-reef-wa-img-33_400.jpg"}, {"id": "cables-reef-wa-img-34", "t": "Esri Wayback release 2022-06-08, Cable Station reef, zoom 19", "g": "validation", "gl": "Validation & cross-checks", "w": "../../assets/images/cables-reef-wa/cables-reef-wa-img-34.jpg", "th": "../../assets/images/cables-reef-wa/cables-reef-wa-img-34_400.jpg"}, {"id": "cables-reef-wa-img-35", "t": "Esri Wayback release 2014-12-03, Cable Station reef, zoom 19", "g": "validation", "gl": "Validation & cross-checks", "w": "../../assets/images/cables-reef-wa/cables-reef-wa-img-35.jpg", "th": "../../assets/images/cables-reef-wa/cables-reef-wa-img-35_400.jpg"}, {"id": "cables-reef-wa-img-36", "t": "Esri Wayback release 2024-08-15, Cable Station reef, zoom 19", "g": "validation", "gl": "Validation & cross-checks", "w": "../../assets/images/cables-reef-wa/cables-reef-wa-img-36.jpg", "th": "../../assets/images/cables-reef-wa/cables-reef-wa-img-36_400.jpg"}, {"id": "cables-reef-wa-img-37", "t": "Georeferenced outline on four Esri images (2014, 2020, 2022, 2025)", "g": "validation", "gl": "Validation & cross-checks", "w": "../../assets/images/cables-reef-wa/cables-reef-wa-img-37.jpg", "th": "../../assets/images/cables-reef-wa/cables-reef-wa-img-37_400.jpg"}, {"id": "cables-reef-wa-img-39", "t": "DoT WA soundings Feb 2002: thickness over the 1998 bed, with the fitted outlines", "g": "validation", "gl": "Validation & cross-checks", "w": "../../assets/images/cables-reef-wa/cables-reef-wa-img-39.png", "th": "../../assets/images/cables-reef-wa/cables-reef-wa-img-39_400.jpg"}];
+  ready(function () {
+    if (!PICS || !PICS.length) return;
+    var inp = document.querySelector('input[type="file"][accept^="image"]'); if (!inp) return;
+    var b = document.createElement('button'); b.type = 'button'; b.className = 'm3d-pickbtn'; b.textContent = 'Choose a project picture (' + PICS.length + ')';
+    b.title = 'Pick one of the pictures registered for this model (the same list as the photo panel of the page); Plan-shape pictures first';
+    inp.parentNode.insertBefore(b, inp.nextSibling);
+    var ov = document.createElement('div'); ov.className = 'm3d-picker'; ov.hidden = true; ov.setAttribute('role', 'dialog'); ov.setAttribute('aria-label', 'Choose a project picture');
+    var groups = [], seen = {};
+    PICS.forEach(function (p) { if (!seen[p.g]) { seen[p.g] = { key: p.g, label: p.gl, items: [] }; groups.push(seen[p.g]); } seen[p.g].items.push(p); });
+    function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+    ov.innerHTML = '<div class="pk"><div class="hd"><b>Project pictures for photo match (' + PICS.length + ')</b><button type="button" class="x" data-x>Close</button></div>' +
+      '<p class="note">The picture is laid over the model like an uploaded photo; then set the camera with the viewer\'s own photo-match controls. Plan-shape pictures (top-down drawings, satellite and charts) are the easiest to match.</p>' +
+      groups.map(function (g) {
+        return '<h4 class="' + (g.key === 'plan' ? 'plan' : '') + '">' + esc(g.label) + (g.key === 'plan' ? ' &mdash; most useful for matching' : '') + ' (' + g.items.length + ')</h4><div class="gr">' +
+          g.items.map(function (p) { return '<button type="button" class="it' + (g.key === 'plan' ? ' plan' : '') + '" data-pick="' + esc(p.id) + '" title="' + esc(p.t) + '"><img src="' + esc(p.th) + '" alt="" loading="lazy"><span>' + esc(p.t.length > 90 ? p.t.slice(0, 88) + '…' : p.t) + '</span></button>'; }).join('') + '</div>';
+      }).join('') + '</div>';
+    document.body.appendChild(ov);
+    function close() { ov.hidden = true; b.focus(); }
+    b.addEventListener('click', function () { ov.hidden = false; var f = ov.querySelector('[data-pick]'); if (f) f.focus(); });
+    ov.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+    ov.addEventListener('click', function (e) {
+      if (e.target === ov || e.target.closest('[data-x]')) { close(); return; }
+      var it = e.target.closest('[data-pick]'); if (!it) return;
+      var p = PICS.filter(function (x) { return x.id === it.getAttribute('data-pick'); })[0]; if (!p) return;
+      var url = new URL(p.w, location.href).href, name = p.id + (/\.png$/i.test(p.w) ? '.png' : '.jpg');
+      var file = new File([new Blob([''])], name, { type: /\.png$/i.test(p.w) ? 'image/png' : 'image/jpeg' });
+      var orig = URL.createObjectURL;
+      // the viewer's own handler reads files[0] and calls URL.createObjectURL(file): hand it the picture's URL instead (works from file:// too)
+      URL.createObjectURL = function (o) { return (o && o.name === name) ? url : orig.apply(URL, arguments); };
+      try { var dt = new DataTransfer(); dt.items.add(file); inp.files = dt.files; inp.dispatchEvent(new Event('change', { bubbles: true })); }
+      catch (err) { if (window.console) console.warn('picture picker: could not hand the picture to the viewer', err); }
+      finally { URL.createObjectURL = orig; }
+      close();
+    });
+  });
+})();</script>
 <script src="../vendor/three.bundle.js"></script>
 <script src="model.js"></script>
 <script src="docs.js"></script>

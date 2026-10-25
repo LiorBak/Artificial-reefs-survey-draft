@@ -122,6 +122,9 @@ def main() -> int:
             "usd_total_low": sum(r["usd"]["low"] for r in with_cost),
             "usd_total_high": sum(r["usd"]["high"] for r in with_cost),
             "usd_total_mid": sum(r["usd"]["mid"] for r in with_cost),
+            # 2026-10-24 (Lior's page requests): gallery/table exclusions, the "announced" reef, the average cost of reefs that did not break
+            "page": {k: v for k, v in json.loads((BUILD / "data" / "page_overrides.json").read_text(encoding="utf-8")).items()
+                     if k in ("gallery_excluded", "announced", "avg_cost", "volume_reported")},
         },
         "reefs": reefs,
     }

@@ -58,7 +58,7 @@ def retired_view_checks(dom):
         "retired route falls back to the gallery (visible)": bool(g) and "hidden" not in g.group(1),
         "no Map / Scale view section or button": 'id="view-scale"' not in body and 'id="view-map"' not in body
             and 'data-view="scale"' not in body and 'data-view="map"' not in body,
-        "top navigation is exactly Gallery, Table, 3D models": re.findall(r'<button type="button" data-view="([a-z0-9]+)"', body) == ["gallery", "table", "models3d"],
+        "top navigation is exactly Gallery, Table, 3D models, Details": re.findall(r'<button type="button" data-view="([a-z0-9]+)"', body) == ["gallery", "table", "models3d", "details"],   # Details tab added 2026-10-24 (Lior C8)
     }
 
 

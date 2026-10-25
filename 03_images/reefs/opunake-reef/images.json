@@ -1020,5 +1020,46 @@
    "model_values_affected": []
   },
   "added_by": "Opunake TRC/NZGeo upload task, 2026-10-13"
+ },
+ {
+  "id": "opunake-reef-img-26",
+  "file": "03_images/reefs/opunake-reef/opunake-reef_beach-youtube-GXYYCbZtz_s-t10s_2021.jpg",
+  "annotated_files": [],
+  "kind": "video_frame",
+  "title": "Opunake Beach, frame at about t = 10 s of the YouTube video 'Opunake Beach - Taranaki NZ' (Michael Herman, 2021), Lior's screenshot",
+  "citation": "Herman, M. (2021-02-10). Opunake Beach - Taranaki NZ [video, 1:41]. YouTube. https://www.youtube.com/watch?v=GXYYCbZtz_s&t=10s . Frame at t of about 10 s, screenshot supplied by Lior Baruch 2026-10-24 (05_qa/lior_uploads_2026-10-24/opunake_beach_from_youtube_GXYYCbZtz_s_t10s.webp, converted to JPG). Video already documented in the reef card (videos, best_timestamp_seconds 10).",
+  "image_url": "https://www.youtube.com/watch?v=GXYYCbZtz_s&t=10s",
+  "source_page": "https://www.youtube.com/watch?v=GXYYCbZtz_s",
+  "page_or_figure": "video frame, t about 10 s",
+  "image_date": "2021 or earlier (video uploaded 2021-02-10)",
+  "credit": "Michael Herman (YouTube); screenshot by Lior Baruch",
+  "license": "YouTube standard licence (not an open licence); single frame, private research copy",
+  "retrieved": "2026-10-24",
+  "shows": "Opunake Beach, Taranaki: the sandy bay and surf seen from the shore; the submerged reef is not identifiable in the frame (site context).",
+  "structure_visible": false,
+  "state_shown": "unknown (2021 or earlier; reef by then largely gone)",
+  "used_for": [
+   "context"
+  ],
+  "how_used": "Gallery hero picture of Opunake at Lior's request (LIOR_PAGE_REQUESTS_2026-10-24 D12). Site context only; not used for any shape or model value.",
+  "linked_records": [
+   "02_research/reefs/opunake-reef.json videos GXYYCbZtz_s",
+   "04_build/LIOR_PAGE_REQUESTS_2026-10-24.md D12",
+   "04_build/data/hero_overrides.json"
+  ],
+  "bytes": 135873,
+  "px": [
+   1091,
+   600
+  ],
+  "sha256": "16c170d899c6cd97d09745b5aed36742c717abde701ab83e6db005314715bac4",
+  "rights_note": "Private research copy; reuse rights to be checked before any public release.",
+  "display": true,
+  "for_3d_check": {
+   "pending": false,
+   "what_to_check": "",
+   "model_values_affected": []
+  },
+  "added_by": "page agent (Lior's page requests), 2026-10-24"
  }
 ]

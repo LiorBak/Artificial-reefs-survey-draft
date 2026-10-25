@@ -313,3 +313,7 @@ Source for all new values: 08_paper/notes/tides_check.md (WA DoT/BoM *Tide Predi
 | T4 | Opunake (not modelled, on hold) | mean range ">3.0 m" | Port Taranaki spring 3.16, neap 1.53, mean 2.35 m (LINZ 2026-27) | use when the model is built |
 | T5 | Burkitts (not modelled, on hold) | mean 2.5 m "tide swing" (RWR) | Burnett Heads spring 2.33, mean 1.74 m (MSQ 2026; row not read directly) | use when the model is built |
 Pratte's needs no value change (NOAA great diurnal range 1.654 m; only the label "spring" was wrong).
+
+## 2026-10-24 (page agent) - page requests A-E done; two small questions
+- **Four-reef comparison (RWR)**: we saved your PowerPoint copy (image26, 812 x 660 px) because the composite's own web address was not found (raisedwaterresearch.com refused scripted access; not bypassed). If you have the original link or a larger file, send it and we replace the copy.
+- **Mount Reef panel**: cropped and registered, not shown (you named Pratte's, Narrowneck and Cables). Say if Mount Maunganui should show it too.

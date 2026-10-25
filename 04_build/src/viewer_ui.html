@@ -1,0 +1,84 @@
+<style id="m3d-ui-css">
+/* 2026-10-24 (Lior A1, A2), injected by compile_models3d.py: the on-screen camera / cursor text hides with Labels off or a hidden panel; project-picture picker for photo match */
+html.m3d-hud-off #hud, html.m3d-hud-off .m3d-hudx { display: none !important; }
+.m3d-pickbtn { display: inline-block; margin: 4px 0; font: 600 12px/1.2 system-ui, "Segoe UI", Roboto, sans-serif; color: #fff; background: #0b6b9e; border: 1px solid #0b6b9e; border-radius: 5px; padding: 5px 9px; cursor: pointer; }
+.m3d-pickbtn:hover { background: #0d80bd; }
+.m3d-picker { position: fixed; inset: 0; z-index: 2147483600; background: rgba(5,10,15,.82); display: flex; align-items: center; justify-content: center; padding: 16px; }
+.m3d-picker[hidden] { display: none; }
+.m3d-picker .pk { background: #101820; color: #e8eef2; border: 1px solid #38505f; border-radius: 10px; width: min(980px, 100%); max-height: 100%; overflow: auto; padding: 12px 14px; font: 13px/1.35 system-ui, "Segoe UI", Roboto, sans-serif; }
+.m3d-picker .hd { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+.m3d-picker .hd b { flex: 1; font-size: 15px; }
+.m3d-picker .x { background: #1d2b36; color: #e8eef2; border: 1px solid #38505f; border-radius: 6px; padding: 4px 10px; cursor: pointer; font: inherit; }
+.m3d-picker h4 { margin: 12px 0 6px; font-size: 13px; color: #9fd3ff; }
+.m3d-picker h4.plan { color: #ffd479; }
+.m3d-picker .gr { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+.m3d-picker .it { display: flex; flex-direction: column; gap: 4px; text-align: left; background: #16222b; color: #e8eef2; border: 1px solid #2b3a46; border-radius: 6px; padding: 5px; cursor: pointer; font: 11px/1.3 system-ui, sans-serif; }
+.m3d-picker .it.plan { border-color: #b8902a; }
+.m3d-picker .it:hover, .m3d-picker .it:focus-visible { border-color: #ffb347; outline: none; }
+.m3d-picker .it img { width: 100%; height: 100px; object-fit: contain; background: #0b1117; border-radius: 4px; }
+.m3d-picker .note { color: #8fa3b1; margin: 0 0 4px; }
+</style>
+<script>(function () {
+  /* A1: hide the long camera / cursor read-out when Labels is off or a side panel is hidden (in the viewer or the page's photo panel) */
+  var root = document.documentElement, st = { labels: true, page: false };
+  function labelsCtl() {
+    var ids = ['labels', 'tLabels', 't-labels', 't-lab', 't-lbl'];
+    for (var i = 0; i < ids.length; i++) { var e = document.getElementById(ids[i]); if (e && e.type === 'checkbox') return e; }
+    var bs = document.querySelectorAll('button'); for (var k = 0; k < bs.length; k++) if ((bs[k].textContent || '').trim() === 'Labels') return bs[k];
+    return null;
+  }
+  function apply() {
+    var c = labelsCtl();
+    if (c) st.labels = c.type === 'checkbox' ? c.checked : (c.classList.contains('on') || c.getAttribute('aria-pressed') === 'true');
+    var panel = root.classList.contains('m3d-hide-left') || root.classList.contains('m3d-hide-right') || (document.body && document.body.classList.contains('ctrl-off'));
+    var r = document.getElementById('readout'); if (r && getComputedStyle(r).position === 'absolute') r.classList.add('m3d-hudx');
+    var off = !st.labels || panel || st.page;
+    if (root.classList.contains('m3d-hud-off') !== off) root.classList.toggle('m3d-hud-off', off);
+  }
+  window.addEventListener('message', function (e) { var d = e.data; if (d && d.type === 'm3d-hud') { st.page = !!d.panelHidden; apply(); } });
+  function ready(f) { if (document.readyState !== 'loading') f(); else document.addEventListener('DOMContentLoaded', f); }
+  ready(function () {
+    document.addEventListener('click', function () { setTimeout(apply, 0); });
+    document.addEventListener('change', function () { setTimeout(apply, 0); });
+    try { new MutationObserver(function () { apply(); }).observe(root, { attributes: true, attributeFilter: ['class'] }); if (document.body) new MutationObserver(function () { apply(); }).observe(document.body, { attributes: true, attributeFilter: ['class'] }); } catch (e) { /* old browser */ }
+    setTimeout(apply, 300); setTimeout(apply, 1500);
+  });
+
+  /* A2: choose one of the project's pictures for the viewer's own photo match (same pictures as the page's photo panel; "Plan shape" first) */
+  var PICS = /*M3D_PICS*/null;
+  ready(function () {
+    if (!PICS || !PICS.length) return;
+    var inp = document.querySelector('input[type="file"][accept^="image"]'); if (!inp) return;
+    var b = document.createElement('button'); b.type = 'button'; b.className = 'm3d-pickbtn'; b.textContent = 'Choose a project picture (' + PICS.length + ')';
+    b.title = 'Pick one of the pictures registered for this model (the same list as the photo panel of the page); Plan-shape pictures first';
+    inp.parentNode.insertBefore(b, inp.nextSibling);
+    var ov = document.createElement('div'); ov.className = 'm3d-picker'; ov.hidden = true; ov.setAttribute('role', 'dialog'); ov.setAttribute('aria-label', 'Choose a project picture');
+    var groups = [], seen = {};
+    PICS.forEach(function (p) { if (!seen[p.g]) { seen[p.g] = { key: p.g, label: p.gl, items: [] }; groups.push(seen[p.g]); } seen[p.g].items.push(p); });
+    function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+    ov.innerHTML = '<div class="pk"><div class="hd"><b>Project pictures for photo match (' + PICS.length + ')</b><button type="button" class="x" data-x>Close</button></div>' +
+      '<p class="note">The picture is laid over the model like an uploaded photo; then set the camera with the viewer\'s own photo-match controls. Plan-shape pictures (top-down drawings, satellite and charts) are the easiest to match.</p>' +
+      groups.map(function (g) {
+        return '<h4 class="' + (g.key === 'plan' ? 'plan' : '') + '">' + esc(g.label) + (g.key === 'plan' ? ' &mdash; most useful for matching' : '') + ' (' + g.items.length + ')</h4><div class="gr">' +
+          g.items.map(function (p) { return '<button type="button" class="it' + (g.key === 'plan' ? ' plan' : '') + '" data-pick="' + esc(p.id) + '" title="' + esc(p.t) + '"><img src="' + esc(p.th) + '" alt="" loading="lazy"><span>' + esc(p.t.length > 90 ? p.t.slice(0, 88) + '…' : p.t) + '</span></button>'; }).join('') + '</div>';
+      }).join('') + '</div>';
+    document.body.appendChild(ov);
+    function close() { ov.hidden = true; b.focus(); }
+    b.addEventListener('click', function () { ov.hidden = false; var f = ov.querySelector('[data-pick]'); if (f) f.focus(); });
+    ov.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+    ov.addEventListener('click', function (e) {
+      if (e.target === ov || e.target.closest('[data-x]')) { close(); return; }
+      var it = e.target.closest('[data-pick]'); if (!it) return;
+      var p = PICS.filter(function (x) { return x.id === it.getAttribute('data-pick'); })[0]; if (!p) return;
+      var url = new URL(p.w, location.href).href, name = p.id + (/\.png$/i.test(p.w) ? '.png' : '.jpg');
+      var file = new File([new Blob([''])], name, { type: /\.png$/i.test(p.w) ? 'image/png' : 'image/jpeg' });
+      var orig = URL.createObjectURL;
+      // the viewer's own handler reads files[0] and calls URL.createObjectURL(file): hand it the picture's URL instead (works from file:// too)
+      URL.createObjectURL = function (o) { return (o && o.name === name) ? url : orig.apply(URL, arguments); };
+      try { var dt = new DataTransfer(); dt.items.add(file); inp.files = dt.files; inp.dispatchEvent(new Event('change', { bubbles: true })); }
+      catch (err) { if (window.console) console.warn('picture picker: could not hand the picture to the viewer', err); }
+      finally { URL.createObjectURL = orig; }
+      close();
+    });
+  });
+})();</script>

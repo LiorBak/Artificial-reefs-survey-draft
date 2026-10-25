@@ -477,10 +477,15 @@ def main() -> int:
             _body = _qs.strip_scripts(_dom)
             _tiles = re.findall(r'<article class="tile" data-slug="([a-z0-9-]+)">(.*?)</article>', _body, re.S)
             _tb = {s: t for s, t in _tiles}
-            bad_t = [s for s in SLUGS if (by[s].get("location") or {}).get("lat") is not None and
+            # 2026-10-24 (Lior D10, D11): reefs in data/page_overrides.json gallery_excluded / announced have no Gallery tile and no Table row
+            _ov = json.loads((BUILD / "data" / "page_overrides.json").read_text(encoding="utf-8"))
+            _off = set(_ov.get("gallery_excluded", {})) | set(_ov.get("announced", {}))
+            _gal = [s for s in SLUGS if s not in _off]
+            check(not (_off & set(_tb)), f"[gallery] no tile for the reefs Lior took out of the Gallery ({sorted(_off)})")
+            bad_t = [s for s in _gal if (by[s].get("location") or {}).get("lat") is not None and
                      not ('class="loc-menu"' in _tb.get(s, "") and 'data-loc-copy="' + by[s]["location"]["dd"] + '"' in _tb.get(s, "") and 'data-loc-kml="' + s + '"' in _tb.get(s, "")
                           and by[s]["location"]["earth_url"] in _tb.get(s, "") and 'rel="noopener noreferrer"' in _tb.get(s, ""))]
-            check(not bad_t and len(_tb) == len(SLUGS), f"[gallery] every reef with coordinates has the 'Open location in' menu in its tile (copy, KML, Google Earth; bad={bad_t}; tiles={len(_tb)})")
+            check(not bad_t and len(_tb) == len(_gal), f"[gallery] every reef with coordinates has the 'Open location in' menu in its tile (copy, KML, Google Earth; bad={bad_t}; tiles={len(_tb)})")
             check('data-loc-kml="all"' in _body, "[gallery] 'All reefs (KML)' button in the controls header")
             check('Navionics: paste the copied coordinates' in "".join(_tb.values()) and "webapp.navionics.com" not in _body, "Navionics: paste-the-coordinates hint, no Navionics web link (webapp.navionics.com redirects to a Garmin page, tested 2026-10-13)")
             _m3 = [m["slug"] for m in json.loads((BUILD / "data" / "models3d.json").read_text(encoding="utf-8"))["models"]]
@@ -554,7 +559,8 @@ def main() -> int:
             tdom = qa_shots.dump_dom(HTML.as_uri() + "#view/table", exe0)[1]
             tb = qa_shots.strip_scripts(tdom)
             n_links = len(re.findall(r'<td class="loc"><a class="loc-link" href="https://www\.google\.com/maps/search/\?api=1&amp;query=', tb))
-            n_expect = sum(1 for s in SLUGS if (by[s].get("location") or {}).get("maps_url"))
+            _off2 = set(json.loads((BUILD / "data" / "page_overrides.json").read_text(encoding="utf-8")).get("gallery_excluded", {}))   # no Table row (Lior D10)
+            n_expect = sum(1 for s in SLUGS if (by[s].get("location") or {}).get("maps_url") and s not in _off2)
             check(n_links == n_expect and 'class="loc"' in tb, f"table: a Location link in every row that has coordinates ({n_links} of {n_expect}; Mexico shows 'not published')")
     except Exception as e:  # noqa: BLE001
         check(False, f"dialog / Maps-link DOM check crashed: {e!r}")
@@ -575,6 +581,8 @@ def main() -> int:
     hero_bad = []
     for r in reefs:
         h = r.get("hero_image") or {}
+        if h.get("override") is not None or r["slug"] in (json.loads((BUILD / "data" / "page_overrides.json").read_text(encoding="utf-8")).get("heroes") or {}):
+            continue          # hero chosen by Lior (data/page_overrides.json, 2026-10-24): not ranked
         ims = [im for im in r.get("images", []) if im.get("hotlink_ok") is True]
         best = min([rank.get(str(im.get("shows")).lower(), 3) for im in ims] or [9])
         got = next((rank.get(str(im.get("shows")).lower(), 3) for im in ims if im.get("url") == h.get("url")), 9 if ims else best)

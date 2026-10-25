@@ -728,3 +728,12 @@ Mexico/Xala: nothing new that allows a trace. RWR post fetched (announcement onl
 
 ## 2026-10-20 (page agent) - Opunake photo localised; testimony check
 - Opunake Wikimedia photo (CC BY-SA 3.0) now served from `assets/opunake-reef/` via new generic `local` field (compile_data.py + app.js); same for other CC images already registered. Other hot-links left (rights not cleared). Pratte's/Palm Beach comments, videos and A/B/C rating confirmed in dialogs and Table. Full update "state saved", check.py 0 failures.
+
+## 2026-10-24 (page agent) - paper ratings A/B replace the outcome verdict on the page
+- Gallery, dialogs, Table, filters, sort and legend use A (surf) and B (construction) with the paper's Table 1 words; see `04_build/HANDOFF.md` section 0h. check.py 0 failures.
+
+## 2026-10-24 (page agent) - Lior's page requests A-E (04_build/LIOR_PAGE_REQUESTS_2026-10-24.md)
+- Details tab; Section 2/3, footer, header title, verdict legend/chips and Table Verdict/# refs removed; newest first; Borth out of Gallery/Table; Xala only under "Announced, not yet documented"; new heroes (Cables, Pratte's, Burkitts, Opunake, Bunbury); RWR four-reef comparison saved at Lior's request + crops (registered in 4 registries); average cost of reefs that did not break (paper Table 1, US$5.2 M 2024 prices); Table scores A/B/C coloured, volume first, Location last; 3D: HUD hides with Labels off / hidden panels, project-picture picker for photo match, map + outline-version + key numbers collapsed. Details: `04_build/HANDOFF.md` 0i.
+
+## 2026-10-24 (page agent) - one-word ratings, Gallery filters, 3D header
+B words: intact / renewed / hazard (yellow) / failure; A one word per level. Gallery filters by A and B; Table score cells coloured with words; 3D list/header icons (wave: Albany only; sand icon: none, C max 3), header two lines, (i) on version selector. update_page --full: check.py 0 failures. Details: 04_build/HANDOFF.md 0j.

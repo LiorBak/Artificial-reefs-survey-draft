@@ -3351,5 +3351,86 @@
    "model_values_affected": []
   },
   "added_by": "narrowneck-gold-coast 3D model (stage 2), 2026-10-10"
+ },
+ {
+  "annotated_files": [],
+  "citation": "Raised Water Research (n.d.). Four-panel satellite comparison of artificial surf reefs at one scale: Narrowneck, Cables, Mount Reef (Mount Maunganui), Pratte's Reef, with the caption 'Size wasn't the only problem... Divers who surveyed the reef saw bags had moved, sunken and got covered by sand. And the black polypropylene bags were falling apart.' Web graphic reproduced (as a screenshot of the web page including its caption) on slide 12 of Lior Baruch's PowerPoint 'surfable swells measurments, key people, and photoes from goldcoast artificial reef.pptx' (extracted file 03_images/from_lior/goldcoast_pptx/image26.png, 812 x 660 px); the slide names raisedwaterresearch.com as the source. The composite's own web URL was not located (raisedwaterresearch.com answered HTTP 406 to a scripted request on 2026-10-24; not bypassed). Saved 2026-10-24 at Lior's explicit request.",
+  "image_url": null,
+  "source_page": "https://raisedwaterresearch.com/ (composite's own page not located; Pratte's spot page: https://raisedwaterresearch.com/spot/artificial-reef/us/california/prattes-reef/)",
+  "image_date": "unknown (undated web graphic; Pratte's Reef existed 2000-2008)",
+  "credit": "Raised Water Research (composite); copy from Lior Baruch's PowerPoint",
+  "license": "all rights reserved (Raised Water Research; no licence stated) - private research copy saved at the author's request (Lior, 2026-10-24)",
+  "retrieved": "2026-10-24",
+  "rights_note": "Private research copy saved at the author's request; reuse rights not cleared. Keep the repo private.",
+  "display": true,
+  "for_3d_check": {
+   "pending": false,
+   "what_to_check": "",
+   "model_values_affected": []
+  },
+  "added_by": "page agent (Lior's page requests D12), 2026-10-24",
+  "id": "narrowneck-gold-coast-img-79",
+  "file": "03_images/reefs/prattes-reef-el-segundo/rwr_4reef-satellite-comparison_narrowneck-cables-mount-prattes_original.png",
+  "kind": "plan_figure",
+  "title": "Four reefs at one scale: Narrowneck, Cables, Mount Reef, Pratte's Reef (Raised Water Research satellite comparison, original graphic)",
+  "page_or_figure": "whole graphic, 4 panels left to right: Narrowneck, Cables, Mount Reef, Pratte's Reef; caption below",
+  "shows": "Four vertical satellite panels with each reef outlined in white and labelled, one shared 200 m scale bar, and the caption about Pratte's bags moving, sinking and falling apart. Composite: each panel is a satellite image with the reef outline drawn in white; one 200 m scale bar for all four panels, which is NOT valid across panels (see 07_scale/shapes/prattes-reef-el-segundo/sources.md); the Pratte's V is the Skelly design drawing, not a survey.",
+  "structure_visible": true,
+  "state_shown": "design / as-built outlines drawn over undated satellite images",
+  "used_for": [
+   "context"
+  ],
+  "how_used": "Shown on the page as media of all four reefs it shows (Lior 2026-10-24, D12). Not used for any trace or model value.",
+  "linked_records": [
+   "03_images/from_lior/goldcoast_pptx/INDEX.md image26",
+   "04_build/LIOR_PAGE_REQUESTS_2026-10-24.md D12",
+   "04_build/data/page_media.json"
+  ],
+  "bytes": 726495,
+  "px": [
+   812,
+   660
+  ],
+  "sha256": "e0e631b92f789456f08c8322028d414ba1c4bd464e41e2c90d5be6780d7417ff"
+ },
+ {
+  "annotated_files": [],
+  "citation": "Raised Water Research (n.d.). Four-panel satellite comparison of artificial surf reefs at one scale: Narrowneck, Cables, Mount Reef (Mount Maunganui), Pratte's Reef, with the caption 'Size wasn't the only problem... Divers who surveyed the reef saw bags had moved, sunken and got covered by sand. And the black polypropylene bags were falling apart.' Web graphic reproduced (as a screenshot of the web page including its caption) on slide 12 of Lior Baruch's PowerPoint 'surfable swells measurments, key people, and photoes from goldcoast artificial reef.pptx' (extracted file 03_images/from_lior/goldcoast_pptx/image26.png, 812 x 660 px); the slide names raisedwaterresearch.com as the source. The composite's own web URL was not located (raisedwaterresearch.com answered HTTP 406 to a scripted request on 2026-10-24; not bypassed). Saved 2026-10-24 at Lior's explicit request.",
+  "image_url": null,
+  "source_page": "https://raisedwaterresearch.com/ (composite's own page not located; Pratte's spot page: https://raisedwaterresearch.com/spot/artificial-reef/us/california/prattes-reef/)",
+  "image_date": "unknown (undated web graphic; Pratte's Reef existed 2000-2008)",
+  "credit": "Raised Water Research (composite); copy from Lior Baruch's PowerPoint",
+  "license": "all rights reserved (Raised Water Research; no licence stated) - private research copy saved at the author's request (Lior, 2026-10-24)",
+  "retrieved": "2026-10-24",
+  "rights_note": "Private research copy saved at the author's request; reuse rights not cleared. Keep the repo private.",
+  "display": true,
+  "for_3d_check": {
+   "pending": false,
+   "what_to_check": "",
+   "model_values_affected": []
+  },
+  "added_by": "page agent (Lior's page requests D12), 2026-10-24",
+  "id": "narrowneck-gold-coast-img-80",
+  "file": "03_images/reefs/narrowneck-gold-coast/narrowneck-gold-coast_rwr-4reef-comparison-panel-crop.png",
+  "kind": "plan_figure",
+  "title": "Narrowneck panel cropped from the Raised Water Research four-reef satellite comparison",
+  "page_or_figure": "Narrowneck panel of the composite, crop x 30-218, y 5-600 px of the 812 x 660 px original (rwr_4reef-satellite-comparison_narrowneck-cables-mount-prattes_original.png)",
+  "shows": "Satellite image of the Narrowneck site with the reef outline drawn in white and the label 'Narrowneck'. Composite: each panel is a satellite image with the reef outline drawn in white; one 200 m scale bar for all four panels, which is NOT valid across panels (see 07_scale/shapes/prattes-reef-el-segundo/sources.md); the Pratte's V is the Skelly design drawing, not a survey.",
+  "structure_visible": true,
+  "state_shown": "design / as-built outline drawn over an undated satellite image",
+  "used_for": [
+   "context"
+  ],
+  "how_used": "Shown on the page as extra media of Narrowneck (Lior 2026-10-24, D12). Not used for any trace or model value.",
+  "linked_records": [
+   "narrowneck-gold-coast-img-79 (whole graphic)",
+   "04_build/data/page_media.json"
+  ],
+  "bytes": 159655,
+  "px": [
+   188,
+   595
+  ],
+  "sha256": "b77d83fadff1f4a2fdfc33bd643778de483a9f088da11d4845547018649c8874"
  }
 ]

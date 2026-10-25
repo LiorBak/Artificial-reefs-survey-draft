@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20 23:07",
+ "updated": "2026-10-24 22:24",
  "sig": {
   "models": {
    "borth-coastal-defence-reef": {
@@ -34,7 +34,7 @@
     "model.js": "d890416171a630ca",
     "annotated": "56f7d4835b9c905f",
     "shape.json": "b83ef2a938544c47",
-    "registry": "0cfa6baa16eee871",
+    "registry": "fc7e5b09a2b67491",
     "card": "99481d2756a78fd7",
     "config": "7c8888e5b75b9c34"
    },
@@ -43,7 +43,7 @@
     "model.js": "0936289fa547af97",
     "annotated": "66b0e754f7a2b3af",
     "shape.json": "15800bc56c7ef000",
-    "registry": "3aec3e0e7b50f400",
+    "registry": "87cf376bff97ff41",
     "card": "cd190f82ce47a569",
     "config": "b82c4001e5c55272"
    },
@@ -52,7 +52,7 @@
     "model.js": "237d9e69cc2341cc",
     "annotated": "35ed980edd5d344c",
     "shape.json": "99350be6db10ba96",
-    "registry": "6abbd57482eba0ed",
+    "registry": "72ed820d243beb75",
     "card": "b2e8d4db6d43d42d",
     "config": "b8bc5884a392ca6b"
    },
@@ -70,7 +70,7 @@
     "model.js": "533d1757970106f8",
     "annotated": "c3f4f1239e62c46a",
     "shape.json": "6d61b893baf8be08",
-    "registry": "2dcfd7a4cd326fed",
+    "registry": "f5b1aee23570068b",
     "card": "141b8dbb1eee6831",
     "config": "0f6abe26168fdcb7"
    },
@@ -85,7 +85,7 @@
    }
   },
   "hold": "199b9c8e89ba5ae4",
-  "src": "a584753fa3372e3a"
+  "src": "f7ed267eba8670c1"
  },
  "snapshot": {
   "borth-coastal-defence-reef": {
